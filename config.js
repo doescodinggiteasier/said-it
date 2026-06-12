@@ -1,0 +1,13 @@
+/* Said It? — runtime config. Edit this one file; no rebuild needed.
+ *
+ * LOG_ENDPOINT  — paste the URL of your deployed logging endpoint here (see ../endpoint/).
+ *                 Until it's set, the app still tracks return/streak locally on each device
+ *                 (so the D1/D7 *return* signal survives), it just can't aggregate across people.
+ * AGG_ENDPOINT  — optional. A read endpoint that returns {fooled_most_idx, fooled_pct} for ?day=YYYY-MM-DD,
+ *                 to show "the fake that fooled the most players today". Leave "" to use the editorial
+ *                 `trickiest_fake` from each daily file instead.
+ */
+window.SAIDIT_CONFIG = {
+  LOG_ENDPOINT: "",
+  AGG_ENDPOINT: ""
+};

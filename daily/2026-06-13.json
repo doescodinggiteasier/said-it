@@ -1,0 +1,65 @@
+{
+  "date": "2026-06-13",
+  "edition": 2,
+  "curator": "Claude (launch demo set — see CURATION.md; reals sourced + dated, verify before public seeding)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Current observations hint that our standard model of the universe is incorrect.",
+      "speaker": "Julie McEnery",
+      "context": "Roman Space Telescope senior project scientist, NASA",
+      "real": true,
+      "source": {
+        "title": "Scientific American — NASA's Roman Space Telescope will launch in September",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Humanity is about to be handed almost unimaginable power, and it is deeply unclear whether our social, political, and technological systems possess the maturity to wield it.",
+      "speaker": "Dario Amodei",
+      "context": "Anthropic CEO, on the arrival of beyond-human AI",
+      "real": true,
+      "source": {
+        "title": "TechRadar — Quote of the day: Dario Amodei on AI",
+        "url": "https://www.techradar.com/pro/quote-of-the-day-by-anthropic-ceo-dario-amodei-humanity-is-about-to-be-handed-almost-unimaginable-power-and-it-is-deeply-unclear-whether-we-possess-the-maturity-to-wield-it-warnings-on-the-looming-threat-of-beyond-human-ai",
+        "date": "2026-06-03"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "We received the first full-colour image from the telescope and the whole control room went quiet. Then someone in the back said, 'that's a lot of galaxies,' and that's now the file name.",
+      "speaker": "a Roman telescope engineer",
+      "context": "supposedly at NASA Goddard",
+      "real": false,
+      "fake_note": "Fake. A charming, totally invented anecdote. Roman hasn't launched yet (targeting September 2026), so there is no first image to go quiet over."
+    },
+    {
+      "id": "q4",
+      "text": "We trained a model only on instruction manuals for six months to see what would happen. It became extremely polite and refused to do anything fun. We shut it down out of respect.",
+      "speaker": "Demis Hassabis",
+      "context": "supposedly on an AI research podcast",
+      "real": false,
+      "fake_note": "Fake. The deadpan 'we shut it down out of respect' is the tell — but lab-anecdote cadence is real, which is why it fools people."
+    },
+    {
+      "id": "q5",
+      "text": "I wrote four songs this year I refuse to put out, because an AI guessed where the chord progression was going before I'd finished writing it. If a machine can see where I'm headed, I'm headed somewhere else.",
+      "speaker": "SZA",
+      "context": "supposedly in a magazine cover interview",
+      "real": false,
+      "fake_note": "Fake — but barely. SZA really did talk this year about feeling 'at war because of AI,' so a fabricated quote in that exact spirit is brutal to catch."
+    },
+    {
+      "id": "q6",
+      "text": "People ask if I still get nervous before a show. I'm 85. The only thing I get nervous about is whether the drum stool is at the right height.",
+      "speaker": "Ringo Starr",
+      "context": "supposedly promoting a new album",
+      "real": false,
+      "fake_note": "Fake. Ringo did just put out a new record at 85, so the premise is real — the cozy drum-stool punchline is the invented part."
+    }
+  ]
+}

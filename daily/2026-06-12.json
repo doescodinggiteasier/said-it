@@ -1,0 +1,69 @@
+{
+  "date": "2026-06-12",
+  "edition": 1,
+  "curator": "Claude (launch demo set — see CURATION.md; reals sourced + dated, verify before public seeding)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't know if those are B's. They might be Cardi D's. I'm pretty sure those aren't B's. She's got the wrong initials.",
+      "speaker": "Charles Barkley",
+      "context": "on the TNT desk during Cardi B's halftime show, NBA Finals Game 3",
+      "real": true,
+      "source": {
+        "title": "Larry Brown Sports — Charles Barkley's wild Cardi B quote",
+        "url": "https://larrybrownsports.com/basketball/charles-barkley-wildest-quote-cardi-b-nba-finals/757513",
+        "date": "2026-06-09"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I measured the rim before the game. It is exactly regulation height. I was a little disappointed — I had hoped it would be slightly higher, for the challenge.",
+      "speaker": "Victor Wembanyama",
+      "context": "reportedly before Game 3 of the NBA Finals",
+      "real": false,
+      "fake_note": "Fake. Wemby really does say poetic, eccentric things, which is exactly why this one is hard — the voice is right, the fact is invented. No, he did not measure the rim."
+    },
+    {
+      "id": "q3",
+      "text": "What would take Hubble 2,000 years to process, Roman can do in a year.",
+      "speaker": "Jared Isaacman",
+      "context": "NASA Administrator, on the Nancy Grace Roman Space Telescope",
+      "real": true,
+      "source": {
+        "title": "Scientific American — NASA's Roman Space Telescope will launch in September",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Statistically, there should be a planet out there made almost entirely of diamond. We've quietly decided not to go looking for it — because the day we find it, someone is going to want to go get it.",
+      "speaker": "a NASA astrophysicist",
+      "context": "supposedly at a Roman telescope media briefing",
+      "real": false,
+      "fake_note": "Fake. 'Diamond planets' are a real hypothesis, which is what sells the lie — but no NASA scientist said this, and 'we decided not to look' is the giveaway."
+    },
+    {
+      "id": "q5",
+      "text": "I appreciate that many of us grew up and enjoyed science fiction, but it's not helpful.",
+      "speaker": "Jensen Huang",
+      "context": "Nvidia CEO, on quantifying the existential risk of AI",
+      "real": true,
+      "source": {
+        "title": "TechRadar — Quote of the day: Jensen Huang on AI risk",
+        "url": "https://www.techradar.com/pro/quote-of-the-day-by-nvidia-ceo-jensen-huang-i-appreciate-that-many-of-us-grew-up-and-enjoyed-science-fiction-but-its-not-helpful-on-quantifying-the-existential-risks-posed-by-ai",
+        "date": "2026-06-06"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The new Siri can now tell when you're about to say something you'll regret, and it waits half a second before sending it. Internally, we call it the grace period.",
+      "speaker": "Tim Cook",
+      "context": "supposedly at his final WWDC keynote as CEO",
+      "real": false,
+      "fake_note": "Fake. Cook's last WWDC keynote and a big Siri overhaul were both real this month — so the setting is true, which makes the invented feature land. There is no 'grace period.'"
+    }
+  ]
+}
