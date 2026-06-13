@@ -102,6 +102,17 @@
     border-radius:10px;padding:9px 12px;font-size:13px;margin:8px 0;text-align:center}
   .count{text-align:center;color:var(--mut);font-size:13px;margin:14px 0 6px}
   .count b{color:var(--ink);font-variant-numeric:tabular-nums}
+  /* archive + past-edition nav */
+  .navlinks{display:flex;gap:16px;justify-content:center;margin:16px 0 4px;flex-wrap:wrap}
+  .navlink{color:var(--accent);font-size:13px;font-weight:600;cursor:pointer;background:none;border:none;padding:6px}
+  #pastbar{background:rgba(255,209,102,.08);border:1px solid rgba(255,209,102,.4);border-radius:10px;padding:8px 12px;margin:0 2px 12px;font-size:13px;color:var(--gold);display:flex;justify-content:space-between;align-items:center;gap:8px}
+  #pastbar a{color:var(--ink);text-decoration:underline;cursor:pointer;white-space:nowrap}
+  .arc-row{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;margin:8px 0}
+  .arc-row .meta{flex:1;min-width:0}
+  .arc-row .ed{font-weight:700}
+  .arc-row .st{font-size:12px;color:var(--mut)}
+  .arc-row button{padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);font-size:13px;font-weight:600;white-space:nowrap}
+  .arc-row button.play{background:var(--accent);color:#06101f;border-color:var(--accent)}
   footer{color:var(--dim);font-size:11px;text-align:center;padding:24px 0 30px;line-height:1.6}
   footer a{color:var(--dim)}
   .err{color:var(--fake);text-align:center;padding:30px 10px}
@@ -114,6 +125,7 @@
   <div class="editiontag" id="editiontag"></div>
 </header>
 <div class="sub" id="sub">Six quotes from this week. Some are real. Some are AI fakes.</div>
+<div id="pastbar" class="hide"></div>
 
 <!-- LOADING -->
 <div id="screen-loading" class="card">Loading today's set…</div>
@@ -131,6 +143,7 @@
   <div class="equityrow" id="introStats"></div>
   <div class="sticky"><button class="btn" id="startBtn">Play today's set →</button>
     <div class="hint" id="introHint"></div></div>
+  <div class="navlinks"><button class="navlink" id="introArchive">📚 Past editions</button></div>
 </div>
 
 <!-- PLAY -->
@@ -165,12 +178,23 @@
     <div class="hint">Spoiler-free — it shows how you did, never the answers.</div>
   </div>
 
+  <div class="navlinks">
+    <button class="navlink" id="revealArchive">📚 Past editions</button>
+    <button class="navlink" id="revealLink">🔗 Copy link to this set</button>
+  </div>
   <div class="count" id="countdown"></div>
   <footer>
     Fakes are AI-generated and labeled here for what they are. Real quotes link to their source.
     No game is a claim that anyone really said a quote marked FAKE.
     <br/><a class="reset" id="resetLink">reset my data</a>
   </footer>
+</div>
+
+<!-- ARCHIVE -->
+<div id="screen-archive" class="hide">
+  <div class="card">📚 <b>Past editions</b> — replay any day, or tap 🔗 to copy a link and send the questions to someone. Replaying old sets won't change your streak.</div>
+  <div id="archiveList"></div>
+  <div class="sticky"><button class="btn ghost" id="archiveBack">← Back</button></div>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -223,28 +247,37 @@ function refreshFreeze(date){ var wk=weekKey(date); if(ST.freeze_week!==wk){ST.f
 function daysBetween(a,b){return Math.round((new Date(b+"T12:00:00")-new Date(a+"T12:00:00"))/86400000);}
 
 /* ---------- screens ---------- */
-var SCREENS=["loading","error","intro","play","reveal"];
+var SCREENS=["loading","error","intro","play","reveal","archive"];
 function show(name){SCREENS.forEach(function(s){$("screen-"+s).classList.toggle("hide",s!==name);});window.scrollTo(0,0);}
 function toast(msg){var t=$("toast");t.textContent=msg;t.classList.add("show");setTimeout(function(){t.classList.remove("show");},1400);}
 
 /* ---------- state for the current play ---------- */
-var DAY=null;            // today's loaded set
+var DAY=null;            // the currently-loaded edition (today's OR an archive one)
 var ANS={};             // id -> "real"|"fake"
 var LOCK=null;          // id of locked quote
+var MANIFEST={days:[]}; // published editions (daily/index.json)
 
 /* ---------- boot ---------- */
 function boot(){
-  var wanted = qsDay() || todayStr();
+  fetch("daily/index.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;})
+    .then(function(idx){ if(idx&&idx.days) MANIFEST=idx; }, function(){})
+    .then(function(){ loadAndRoute(qsDay()||todayStr()); });
+}
+function loadAndRoute(wanted){
+  show("loading");
   fetchDay(wanted).then(function(day){
-    DAY=day;
+    DAY=day; ANS={}; LOCK=null;
+    var isToday = day.date===todayStr();
     $("editiontag").textContent = "No. "+(day.edition||"?")+" · "+prettyDate(day.date);
-    logEvent("visit");
-    if(ST.last_played && ST.last_played!==day.date && daysBetween(ST.last_played,day.date)>=1) logEvent("return",{gap:daysBetween(ST.last_played,day.date)});
-    if(ST.days[day.date] && ST.days[day.date].done){ renderReveal(ST.days[day.date].result, true); }
-    else { renderIntro(); }
+    updatePastBar(isToday, day);
+    logEvent("visit",{archive:!isToday});
+    if(isToday && ST.last_realday && ST.last_realday!==todayStr() && daysBetween(ST.last_realday,todayStr())>=1)
+      logEvent("return",{gap:daysBetween(ST.last_realday,todayStr())});
+    if(ST.days[day.date] && ST.days[day.date].done){ renderReveal(ST.days[day.date].result, false); }
+    else { renderIntro(isToday); }
   }).catch(function(e){
     show("error");
-    $("screen-error").innerHTML="Couldn't load today's set.<br><span style='color:var(--mut);font-size:13px'>"+esc(e.message||e)+"</span>";
+    $("screen-error").innerHTML="Couldn't load that set.<br><span style='color:var(--mut);font-size:13px'>"+esc(e.message||e)+"</span>";
   });
 }
 function prettyDate(s){var d=new Date(s+"T12:00:00");return d.toLocaleDateString(undefined,{month:"short",day:"numeric"});}
@@ -275,9 +308,15 @@ function renderStats(host){
     var d=el("div","pill");d.innerHTML='<div class="n">'+p[0]+' '+p[2]+'</div><div class="l">'+p[1]+'</div>';host.appendChild(d);
   });
 }
-function renderIntro(){
+function renderIntro(isToday){
   renderStats($("introStats"));
-  $("introHint").textContent = ST.streak>0 ? ("Keep your "+ST.streak+"-day streak alive.") : "Build a streak. Miss a day and it resets (you get one freeze a week).";
+  if(isToday===false){
+    $("introHint").textContent = "Past edition — replay it for fun or to send to friends; it won't change your streak.";
+    $("startBtn").textContent = "Play this past set →";
+  } else {
+    $("introHint").textContent = ST.streak>0 ? ("Keep your "+ST.streak+"-day streak alive.") : "Build a streak. Miss a day and it resets (you get one freeze a week).";
+    $("startBtn").textContent = "Play today's set →";
+  }
   show("intro");
 }
 
@@ -341,18 +380,21 @@ function submit(){
     perq.push({i:i+1,id:q.id,guess:guess,truth:truth,right:right,locked:LOCK===q.id});
   });
 
-  // equity update
-  var prev=ST.last_played, date=DAY.date;
-  refreshFreeze(date);
-  if(prev && prev!==date){
-    var gap=daysBetween(prev,date);
-    if(gap===1){ ST.streak+=1; }
-    else if(gap>1){
-      if(ST.freezes_left>0){ ST.freezes_left-=1; ST.streak+=1; ST._frozen=true; }
-      else { ST.streak=1; }
+  // equity: STREAK tracks consecutive real CALENDAR days you showed up (any edition counts),
+  // so replaying old editions can never corrupt or inflate it. Rating/accuracy count for any set.
+  var date=DAY.date, realToday=todayStr();
+  refreshFreeze(realToday);
+  var prevReal=ST.last_realday||ST.last_played||null;   // migrate the legacy field
+  if(prevReal!==realToday){
+    if(!prevReal){ ST.streak=1; }
+    else {
+      var gap=daysBetween(prevReal,realToday);
+      if(gap===1){ ST.streak+=1; }
+      else if(gap>1){ if(ST.freezes_left>0){ST.freezes_left-=1;ST.streak+=1;ST._frozen=true;} else {ST.streak=1;} }
+      // gap<=0 can't happen: the real calendar day never precedes a prior real day
     }
-  } else if(!prev){ ST.streak=1; }
-  ST.last_played=date;
+    ST.last_realday=realToday; ST.last_played=realToday;
+  }
   ST.best_streak=Math.max(ST.best_streak||0,ST.streak);
 
   // rating: simple, transparent. +score above/below 3/6 baseline, lock swings double.
@@ -366,15 +408,16 @@ function submit(){
     streak:ST.streak, rating:ST.rating, frozen:!!ST._frozen};
   ST.days[date]={done:true,result:result};
   delete ST._frozen; save(ST);
-  logEvent("complete",{score:correct,n:n,streak:ST.streak,rating:ST.rating,lock:lockCorrect,gotme:gotme,returning:(ST.judged>n)});
-  renderReveal(result,false);
+  logEvent("complete",{score:correct,n:n,streak:ST.streak,rating:ST.rating,lock:lockCorrect,gotme:gotme,archive:(date!==realToday),returning:(ST.judged>n)});
+  renderReveal(result,true);
 }
 
 /* ---------- REVEAL ---------- */
 function ordinal(arr){return arr.map(function(x){return "#"+x;}).join(", ");}
-function renderReveal(res, replay){
+function renderReveal(res, fresh){
+  var isToday = DAY.date===todayStr();
   $("scoreBig").textContent = res.score+"/"+res.n;
-  $("scoreCap").textContent = capFor(res.score,res.n) + (replay?" · already played today":"");
+  $("scoreCap").textContent = capFor(res.score,res.n) + (fresh?"":(isToday?" · already played today":" · already played"));
   // freeze note
   $("freezeNote").innerHTML = res.frozen ? '<div class="freeze">🛡️ Streak-freeze used — your streak survived a missed day. One freeze per week.</div>' : "";
   renderStats($("revealStats"));
@@ -406,13 +449,17 @@ function renderReveal(res, replay){
   // trickiest fake (editorial fallback; replaced by live "fooled the most" if AGG endpoint set)
   var tb=$("trickBox"); tb.innerHTML="";
   var tf=DAY.quotes.findIndex(function(q){return q.id===DAY.trickiest_fake;});
-  if(tf>=0){ tb.className="trick"; tb.innerHTML="🏆 <b>Today's sneakiest fake:</b> #"+(tf+1)+" — the one built to fool the room."; }
+  if(tf>=0){ tb.className="trick"; tb.innerHTML="🏆 <b>This set's sneakiest fake:</b> #"+(tf+1)+" — the one built to fool the room."; }
   if(AGG_ENDPOINT){ fetchFooledMost(res.date); }
 
   // token
   $("tokenBox").textContent = buildToken(res);
+  // today -> live countdown to the next set; past edition -> a way back to today
   $("countdown").innerHTML="";
-  tickCountdown();
+  if(isToday){ tickCountdown(); }
+  else { clearInterval(window._cd);
+    $("countdown").innerHTML='<a class="reset" id="backTodayLink">← back to today’s set</a>';
+    var bl=$("backTodayLink"); if(bl) bl.onclick=backToToday; }
   show("reveal");
 }
 function capFor(s,n){
@@ -430,9 +477,12 @@ function buildToken(res){
   if(res.gotme && res.gotme.length){ lines.push("🎭 the fake that got me: "+res.gotme.map(function(x){return "#"+x;}).join(", ")); }
   else { lines.push("🎭 no fake fooled me today"); }
   lines.push("🔥 streak "+res.streak+"   ⭐ "+res.rating);
-  lines.push(location.origin+location.pathname.replace(/index\.html?$/,""));
+  // today's token links to the evergreen URL; a past-edition token links straight to that edition
+  lines.push(res.date===todayStr() ? baseURL() : editionLink(res.date));
   return lines.join("\n");
 }
+function baseURL(){ return location.origin+location.pathname.replace(/index\.html?$/,""); }
+function editionLink(date){ return baseURL()+"?d="+date; }
 function copyToken(){
   var txt=$("tokenBox").textContent;
   function ok(){toast("Copied — go paste it 😈");logEvent("token_copy");}
@@ -459,11 +509,56 @@ function tickCountdown(){
   upd(); clearInterval(window._cd); window._cd=setInterval(upd,1000);
 }
 
+/* ---------- archive / past editions ---------- */
+function updatePastBar(isToday, day){
+  var pb=$("pastbar");
+  if(isToday){ pb.classList.add("hide"); pb.innerHTML=""; return; }
+  pb.classList.remove("hide");
+  pb.innerHTML="<span>📅 Past edition · No."+(day.edition||"?")+" · "+prettyDate(day.date)+"</span><a id='pbBack'>today →</a>";
+  var b=$("pbBack"); if(b) b.onclick=backToToday;
+}
+function backToToday(){ history.replaceState(null,"",location.pathname); loadAndRoute(todayStr()); }
+function goToEdition(date){ history.replaceState(null,"","?d="+date); loadAndRoute(date); }
+function openArchive(){ renderArchive(); show("archive"); }
+function renderArchive(){
+  var host=$("archiveList"); host.innerHTML="";
+  var days=(MANIFEST.days||[]).slice().sort();            // ascending → index+1 = edition number
+  if(!days.length){ host.innerHTML="<div class='card'>No editions published yet.</div>"; return; }
+  var today=todayStr();
+  days.slice().reverse().forEach(function(date){
+    var ed=days.indexOf(date)+1;
+    var done=(ST.days[date]&&ST.days[date].done)?ST.days[date].result:null;
+    var status=done ? ("✓ you scored "+done.score+"/"+done.n)
+      : (date===today?"● today's set — not played yet":(date>today?"upcoming":"▶ not played yet"));
+    var row=el("div","arc-row");
+    row.innerHTML="<div class='meta'><div class='ed'>No. "+ed+" · "+prettyDate(date)+"</div><div class='st'>"+status+"</div></div>"+
+      "<button data-link='"+date+"' title='copy a link to send'>🔗</button>"+
+      "<button class='play' data-go='"+date+"'>"+(done?"view":"play")+"</button>";
+    host.appendChild(row);
+  });
+  host.querySelectorAll("button[data-go]").forEach(function(b){ b.onclick=function(){ goToEdition(b.dataset.go); }; });
+  host.querySelectorAll("button[data-link]").forEach(function(b){ b.onclick=function(){ copyEditionLink(b.dataset.link); }; });
+}
+function copyEditionLink(date){
+  var url=editionLink(date);
+  function ok(){ toast("Link copied — send it 📨"); logEvent("edition_link_copy",{ed:date}); }
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(ok,function(){window.prompt("Copy this link:",url);}); }
+  else { window.prompt("Copy this link:",url); }
+}
+
 /* ---------- wire up ---------- */
 $("startBtn").addEventListener("click",function(){logEvent("start");renderPlay();});
 $("submitBtn").addEventListener("click",function(){if(!$("submitBtn").disabled)submit();});
 $("copyBtn").addEventListener("click",copyToken);
 $("shareBtn").addEventListener("click",shareToken);
+$("introArchive").addEventListener("click",openArchive);
+$("revealArchive").addEventListener("click",openArchive);
+$("revealLink").addEventListener("click",function(){ if(DAY) copyEditionLink(DAY.date); });
+$("archiveBack").addEventListener("click",function(){
+  if(DAY && ST.days[DAY.date] && ST.days[DAY.date].done){ renderReveal(ST.days[DAY.date].result,false); }
+  else if(DAY){ renderIntro(DAY.date===todayStr()); }
+  else { loadAndRoute(todayStr()); }
+});
 $("resetLink").addEventListener("click",function(){if(confirm("Erase your streak, rating and history on this device?")){localStorage.removeItem(K);location.reload();}});
 
 boot();
