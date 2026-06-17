@@ -117,12 +117,18 @@ Output a JSON array of objects EXACTLY: {{"i": <index>, "safe": <true|false>}}""
 
 
 # ---------- LLM (provider-agnostic) ----------
-def _call_gemini(system: str, prompt: str) -> str:
+def _call_gemini(system: str, prompt: str, model: str | None = None) -> str:
     from google import genai  # type: ignore
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-    model = os.environ.get("SAIDIT_GEMINI_MODEL", "gemini-2.5-flash")
+    # Default = the strong creative model (fakes are the product). Mechanical JSON steps pass a fast model.
+    model = model or os.environ.get("SAIDIT_GEMINI_MODEL", "gemini-3.1-pro")
     r = client.models.generate_content(model=model, contents=system + "\n\n" + prompt)
     return r.text or ""
+
+
+# Fast, non-thinking model for the mechanical JSON steps (quote extraction, safety screen) — more
+# reliable for JSON arrays than a thinking model, and quality there is irrelevant.
+FAST_GEMINI = os.environ.get("SAIDIT_GEMINI_FAST", "gemini-2.5-flash")
 
 
 def _call_claude(system: str, prompt: str, max_tokens: int) -> str:
@@ -134,9 +140,10 @@ def _call_claude(system: str, prompt: str, max_tokens: int) -> str:
     return "".join(b.text for b in r.content if getattr(b, "type", None) == "text")
 
 
-def llm(system: str, prompt: str, max_tokens: int = 2000) -> str:
+def llm(system: str, prompt: str, max_tokens: int = 2000, gemini_model: str | None = None) -> str:
     """Prefer Gemini (free GCP credit, CLAUDE.md rule 7); fall back to Claude if Gemini errors or is
-    misconfigured — so a bad Gemini key/model can never silently break the unattended cron."""
+    misconfigured — so a bad Gemini key/model can never silently break the unattended cron.
+    `gemini_model` overrides the Gemini model for this call (mechanical steps pass the fast model)."""
     order = []
     if os.environ.get("GEMINI_API_KEY"):
         order.append("gemini")
@@ -147,7 +154,7 @@ def llm(system: str, prompt: str, max_tokens: int = 2000) -> str:
     last = None
     for prov in order:
         try:
-            return _call_gemini(system, prompt) if prov == "gemini" else _call_claude(system, prompt, max_tokens)
+            return _call_gemini(system, prompt, gemini_model) if prov == "gemini" else _call_claude(system, prompt, max_tokens)
         except Exception as e:  # noqa: BLE001
             last = e
             tail = "falling back to next provider" if prov != order[-1] else "no more providers"
@@ -282,7 +289,7 @@ def gather_reals(feeds, days, used, want=6):
         return []
     block = "\n".join(f'{i} | {it["domain"]} | {it["title"]}. {it["summary"][:400]}' for i, it in enumerate(items))
     try:
-        cands = largest_json(llm(REAL_SYS, REAL_TMPL.format(k=12, items=block), max_tokens=2500)) or []
+        cands = largest_json(llm(REAL_SYS, REAL_TMPL.format(k=12, items=block), max_tokens=2500, gemini_model=FAST_GEMINI)) or []
     except Exception as e:  # noqa: BLE001
         print(f"  ! reals LLM: {e}", file=sys.stderr); return []
     verified = []
@@ -338,7 +345,7 @@ def safety_screen(quotes):
         return quotes
     try:
         block = "\n".join(f'{i}: "{q["text"]}" — {q["speaker"]} ({q.get("context","")})' for i, q in screenable)
-        verdicts = largest_json(llm(SCREEN_SYS, SCREEN_TMPL.format(items=block), max_tokens=800)) or []
+        verdicts = largest_json(llm(SCREEN_SYS, SCREEN_TMPL.format(items=block), max_tokens=800, gemini_model=FAST_GEMINI)) or []
         unsafe = {int(v["i"]) for v in verdicts if isinstance(v, dict) and v.get("safe") is False}
         # guard: a screen that flags MOST items is misfiring (e.g. flagging fabrication itself) — the
         # deterministic denylist already gates real harm, so don't let a bad screen nuke the whole set.
