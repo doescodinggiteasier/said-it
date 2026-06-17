@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-17",
+  "edition": 1,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Ann bought me a waffle iron for my birthday, which was thrilling until I realized you actually have to make the batter. I thought it was like a toaster.",
+      "speaker": "Mitt Romney",
+      "context": "Late Night with Seth Meyers interview, 2015",
+      "real": false,
+      "fake_note": "Matches his famously mild, slightly out-of-touch dad persona perfectly. It sounds entirely plausible, but it is just a bit too perfectly sitcom-esque for him to have actually admitted on late-night TV."
+    },
+    {
+      "id": "q2",
+      "text": "The trick to painting a dog's nose is you can't just use black. You gotta mix in a little purple. It sounds crazy, but otherwise they look like they're wearing a fake mustache.",
+      "speaker": "George W. Bush",
+      "context": "Interview with Southern Living magazine, 2017",
+      "real": false,
+      "fake_note": "Fits perfectly with his post-presidency painting hobby and his folksy, self-deprecating delivery. It sounds like genuine art advice, but is entirely fabricated."
+    },
+    {
+      "id": "q3",
+      "text": "I will do it myself where does he live?",
+      "speaker": "Cory Booker",
+      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes. A wholesome, surprising-but",
+      "real": true,
+      "source": {
+        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
+        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
+        "date": "2010-12-27"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Look, let me be clear. I’m not saying I invented the concept of mixing popcorn and Milk Duds at the movies, but I definitely popularized it in the greater Chicago area.",
+      "speaker": "Barack Obama",
+      "context": "Podcast interview, 2021",
+      "real": false,
+      "fake_note": "Nails his classic 'let me be clear' rhetorical framing applied to a highly trivial, relatable topic. The tell is the hyper-specific geographic boast about a common movie theater habit."
+    },
+    {
+      "id": "q5",
+      "text": "I have said it before and I will say it again: there is absolutely no reason a grocery store needs fourteen different types of vanilla extract. Pure, imitation, Mexican, Madagascar—just pick one and let us go home.",
+      "speaker": "Bernie Sanders",
+      "context": "Town hall in Vermont, 2019",
+      "real": false,
+      "fake_note": "Captures his signature repetitive cadence and frustration with consumer excess. The tell is that he famously focuses on the abundance of deodorant choices or sneakers, not baking supplies."
+    },
+    {
+      "id": "q6",
+      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
+      "speaker": "Ted Stevens",
+      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality. The clumsy analogy became an instant, beloved inte",
+      "real": true,
+      "source": {
+        "title": "Series of tubes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
+        "date": "2006-06-28"
+      }
+    }
+  ]
+}

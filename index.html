@@ -335,7 +335,7 @@ function prettyDate(s){var d=new Date(s+"T12:00:00");return d.toLocaleDateString
 function lanePath(lane,date){ return lane==="general"?("daily/"+date+".json"):("daily/"+lane+"/"+date+".json"); }
 function laneDays(lane){ var c=MANIFEST.categories&&MANIFEST.categories[lane]; if(c)return c; return lane==="general"?(MANIFEST.days||[]):[]; }
 function dayKey(lane,date){ return lane==="general"?date:(lane+":"+date); }   // per-lane completion record
-function laneLabel(l){ return l==="general"?"📰 General":(l==="sports"?"🏀 Sports":(l==="music"?"🎵 Music":("# "+l))); }
+function laneLabel(l){ return l==="general"?"📰 General":(l==="sports"?"🏀 Sports":(l==="music"?"🎵 Music":(l==="politics"?"🏛️ Politics":("# "+l)))); }
 function availableLanes(){ var ls=Object.keys((MANIFEST.categories)||{}); if(ls.indexOf("general")<0)ls.unshift("general");
   return ls.filter(function(l){ return l==="general"||laneDays(l).length; }); }
 function curDone(){ if(!DAY) return null; var r=ST.days[dayKey(DAY._lane||"general",DAY.date)]; return (r&&r.done)?r.result:null; }

@@ -56,11 +56,20 @@ POLITICS_FEEDS = ["https://feeds.npr.org/1014/rss.xml"]
 # G-C category packs. The shared-daily-instance gate holds PER LANE: everyone in a lane gets the same 6.
 # Politics stays OFF (a separate Wes decision). Add lanes here; each gets its own evergreen bank + ledger.
 CATEGORIES = {
-    "general": {"feeds": FEEDS, "lane": "", "figures": "different public figures across sports, tech, science, music, film and food"},
+    "general": {"feeds": FEEDS, "lane": "", "allow_politics": False,
+                "figures": "different public figures across sports, tech, science, music, film and food"},
     "sports":  {"feeds": {"sports": ["https://www.espn.com/espn/rss/news", "https://api.foxsports.com/v1/rss"]},
-                "lane": "SPORTS ", "figures": "different real NON-politician athletes, coaches and sports figures"},
+                "lane": "SPORTS ", "allow_politics": False,
+                "figures": "different real NON-politician athletes, coaches and sports figures"},
     "music":   {"feeds": {"music": ["https://www.rollingstone.com/music/feed/", "https://pitchfork.com/rss/news/"]},
-                "lane": "MUSIC ", "figures": "different real musicians, singers, producers and music figures"},
+                "lane": "MUSIC ", "allow_politics": False,
+                "figures": "different real musicians, singers, producers and music figures"},
+    # The politics LANE (opt-in; the dial is ON). Political figures/process allowed; HARD_DENY still gates
+    # crime/violence/slur/scandal/conflict. Fakes must be LIGHT + balanced; reals are cross-validated (strict).
+    "politics": {"feeds": {"politics": ["https://feeds.npr.org/1014/rss.xml", "https://www.politico.com/rss/politicopicks.xml"]},
+                 "lane": "POLITICS ", "allow_politics": True,
+                 "figures": "different real politicians/political figures BALANCED across parties — only LIGHT, "
+                            "funny, non-inflammatory lines (gaffes, witty asides), NEVER an attack or hot-take"},
 }
 
 def evergreen_path(cat): return EVERGREEN if cat == "general" else os.path.join(HERE, f"evergreen_{cat}.json")
@@ -68,15 +77,23 @@ def used_path(cat): return USED if cat == "general" else os.path.join(HERE, f"us
 def daily_dir(cat): return DAILY if cat == "general" else os.path.join(DAILY, cat)
 def target_path(cat, date): return os.path.join(daily_dir(cat), f"{date}.json")
 
-# Hard denylist — if any appears in a quote/speaker/context, drop it (politics + tragedy + defamation-shaped).
-DENY = [
-    "trump", "biden", "president", "senator", "congress", "election", "republican", "democrat",
-    "abortion", "shooting", "killed", "dead", "death", "died", "suicide", "rape", "assault",
-    "war", "hamas", "israel", "gaza", "ukraine", "russia", "putin", "terror", "lawsuit", "arrested",
-    "charged", "accused", "guilty", "racist", "slur", "nazi", "overdose", "crash", "victim",
-    # keep auto-editions light: no health/mental-health/medical topics (real or fake)
+# HARD denylist — ALWAYS dropped, in EVERY lane incl. politics: crime/violence/death/slur/scandal/conflict/
+# medical. The no-fabricated-crime/slur/defamation guard never relaxes, even for politicians.
+HARD_DENY = [
+    "abortion", "shooting", "shooter", "killed", "dead", "death", "died", "suicide", "rape", "assault",
+    "war", "hamas", "israel", "gaza", "ukraine", "russia", "putin", "terror", "terrorist", "lawsuit",
+    "arrested", "charged", "indicted", "accused", "guilty", "convicted", "racist", "slur", "nazi",
+    "overdose", "crash", "victim", "scandal", "impeach", "epstein", "shooting",
+    # keep editions light: no health/mental-health/medical topics (real or fake)
     "bipolar", "depression", "diagnosis", "diagnosed", "cancer", "disorder", "rehab", "addiction",
     "mental health", "illness", "tumor", "disease", "suicidal", "anxiety", "therapy",
+]
+# POLITICAL-topic terms — dropped in EVERY lane EXCEPT the opt-in `politics` lane (the dial). Names + office
+# + process; relaxing these is what "politics on" means, while HARD_DENY still gates the dangerous content.
+POLITICAL_TERMS = [
+    "trump", "biden", "obama", "clinton", "bush", "reagan", "harris", "pence", "president", "senator",
+    "congress", "election", "republican", "democrat", "governor", "mayor", "parliament", "minister",
+    "prime minister", "campaign", "candidate", "ballot", "politician", "white house", "congressman",
 ]
 
 REAL_SYS = ("You surface CANDIDATE real quotes from recent news items for a 'real or fake?' game. You are "
@@ -131,6 +148,21 @@ ITEMS:
 {items}
 
 Output a JSON array of objects EXACTLY: {{"i": <index>, "safe": <true|false>}}"""
+
+VALIDATE_SYS = ("You are an independent attribution RED-FLAG checker for a 'real or fake?' game. Each quote has "
+                "ALREADY been verified to appear verbatim on a cited reputable source — so do NOT re-verify from "
+                "memory. Your ONLY job: catch CLEAR problems — an obviously wrong/swapped attribution, a known "
+                "satirical or fabricated 'quote', an anachronism, or content that plainly contradicts who the "
+                "person is. DEFAULT to ok=true; mark ok=false ONLY with a SPECIFIC concrete reason, never mere "
+                "unfamiliarity. Output STRICT JSON only.")
+VALIDATE_TMPL = """Each quote below was already confirmed to appear VERBATIM on a reputable source. Flag ok=false
+ONLY for a clear red flag (wrong attribution, known fake/satire, anachronism, obvious fabrication). If you simply
+don't recognize a quote, that is NOT a reason to flag it — mark ok=true.
+
+ITEMS:
+{items}
+
+Output a JSON array EXACTLY: [{{"i": <index>, "ok": <true|false>, "why": "<short reason>"}}]"""
 
 
 # ---------- LLM (provider-agnostic) ----------
@@ -295,9 +327,10 @@ def quote_is_verbatim(quote, corpus):
     return False
 
 
-def deny_hit(*parts):
-    blob = _norm(" ".join(p or "" for p in parts))
-    return any((" " + w + " ") in (" " + blob + " ") for w in DENY)
+def deny_hit(*parts, allow_politics=False):
+    blob = " " + _norm(" ".join(p or "" for p in parts)) + " "
+    terms = HARD_DENY if allow_politics else (HARD_DENY + POLITICAL_TERMS)
+    return any((" " + w + " ") in blob for w in terms)
 
 
 # Generic "speakers" that aren't a named person — a real-or-fake QUOTE game needs an attributable human.
@@ -316,7 +349,8 @@ def named_speaker(sp):
 
 
 # ---------- pipeline stages ----------
-def gather_reals(feeds, days, used, want=6):
+def gather_reals(feeds, days, used, cat="general", want=6):
+    ap = CATEGORIES.get(cat, {}).get("allow_politics", False)
     items = []
     for domain, urls in feeds.items():
         for u in urls:
@@ -325,7 +359,7 @@ def gather_reals(feeds, days, used, want=6):
                 items.append(g)
     random.shuffle(items)
     # screen feed-level by denylist, then ask the LLM to extract candidate quotes from a batch
-    items = [it for it in items if not deny_hit(it["title"], it["summary"])][:30]
+    items = [it for it in items if not deny_hit(it["title"], it["summary"], allow_politics=ap)][:30]
     if not items:
         return []
     block = "\n".join(f'{i} | {it["domain"]} | {it["title"]}. {it["summary"][:400]}' for i, it in enumerate(items))
@@ -341,7 +375,7 @@ def gather_reals(feeds, days, used, want=6):
         except Exception:  # noqa: BLE001
             continue
         q, sp = c.get("text", ""), c.get("speaker", "")
-        if not q or not sp or deny_hit(q, sp, c.get("context")):
+        if not q or not sp or deny_hit(q, sp, c.get("context"), allow_politics=ap):
             continue
         if not named_speaker(sp):           # a quote game needs a named human, not "Scientists"
             continue
@@ -359,7 +393,8 @@ def gather_reals(feeds, days, used, want=6):
                                     "url": it["link"], "date": dt.date.today().isoformat()}})
         if len(verified) >= want:
             break
-    print(f"  reals: {len(verified)} verified verbatim (of {len(cands) if isinstance(cands, list) else 0} proposed)")
+    verified = validate_reals(verified, strict=ap)   # cross-LLM attribution check (replaces the human fact-check)
+    print(f"  reals: {len(verified)} verified verbatim + cross-validated (of {len(cands) if isinstance(cands, list) else 0} proposed)")
     return verified
 
 
@@ -369,9 +404,10 @@ def forge_fakes(used, cat="general", n=6):
         fakes = largest_json(llm(FAKE_SYS, FAKE_TMPL.format(n=n, lane=meta["lane"], figures=meta["figures"]), max_tokens=2500)) or []
     except Exception as e:  # noqa: BLE001
         print(f"  ! fakes LLM: {e}", file=sys.stderr); return []
+    ap = meta.get("allow_politics", False)
     out = []
     for f in fakes if isinstance(fakes, list) else []:
-        if f.get("text") and f.get("speaker") and not deny_hit(f["text"], f["speaker"], f.get("context")) \
+        if f.get("text") and f.get("speaker") and not deny_hit(f["text"], f["speaker"], f.get("context"), allow_politics=ap) \
                 and _norm(f["text"]) not in used:      # never repeat a published quote (real or fake)
             out.append({"text": f["text"], "speaker": f["speaker"], "context": f.get("context", ""),
                         "real": False, "fake_note": f.get("fake_note", "AI-fabricated for this game."),
@@ -398,6 +434,42 @@ def safety_screen(quotes):
     except Exception as e:  # noqa: BLE001
         print(f"  ! screen LLM (keeping set): {e}", file=sys.stderr)
         return quotes
+
+
+def _call_other(system, prompt):
+    """Use a DIFFERENT model/provider than the primary, for an adversarial cross-check. Gemini-primary →
+    validate with Claude (cross-provider); otherwise validate with Gemini Pro (≠ the fast extraction model)."""
+    if _gemini_mode() and os.environ.get("ANTHROPIC_API_KEY"):
+        return _call_claude(system, prompt, 1500)
+    if _gemini_mode():
+        return _call_gemini(system, prompt, os.environ.get("SAIDIT_GEMINI_MODEL", "gemini-3.1-pro-preview"))
+    return _call_claude(system, prompt, 1500)
+
+
+def validate_reals(reals, strict=False):
+    """Independent cross-LLM attribution check on top of the verbatim match (replaces the human fact-check).
+    `strict` (politics lane) runs a SECOND, independent reviewer-of-the-reviewer pass and unions the rejects."""
+    if not reals:
+        return reals
+    def _pass():
+        block = "\n".join(f'{i}: "{r["text"]}" — {r["speaker"]} ({r.get("context", "")[:80]})' for i, r in enumerate(reals))
+        v = largest_json(_call_other(VALIDATE_SYS, VALIDATE_TMPL.format(items=block))) or []
+        bad = {int(x["i"]) for x in v if isinstance(x, dict) and x.get("ok") is False and 0 <= int(x["i"]) < len(reals)}
+        if len(bad) > len(reals) // 2:                # a pass that flags the majority is misfiring (over-rejecting)
+            print(f"  ! cross-validate pass flagged {len(bad)}/{len(reals)} — likely misfiring; ignoring this pass", file=sys.stderr)
+            return set()
+        return bad
+    try:
+        bad = _pass()
+        if strict:
+            bad = bad | _pass()                       # reviewer-of-the-reviewer (a 2nd independent pass)
+        kept = [r for i, r in enumerate(reals) if i not in bad]
+        if len(kept) < len(reals):
+            print(f"  cross-validate: dropped {len(reals) - len(kept)}/{len(reals)} reals (attribution doubt)", file=sys.stderr)
+        return kept
+    except Exception as e:  # noqa: BLE001
+        print(f"  ! cross-validate failed (keeping verbatim-verified reals): {e}", file=sys.stderr)
+        return reals
 
 
 def load_evergreen(cat="general"):
@@ -447,8 +519,8 @@ def assemble(date, reals_fresh, fakes, evergreen, used, cat="general"):
     if trick is None:
         trick = next((it["id"] for it in out_quotes if not it["real"]), None)
     return {"date": date, "edition": None, "category": cat,
-            "curator": "auto (generate_day.py — reals verified verbatim vs source)",
-            "politics_dial": "off", "trickiest_fake": trick, "quotes": out_quotes}
+            "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+            "politics_dial": ("on" if cat == "politics" else "off"), "trickiest_fake": trick, "quotes": out_quotes}
 
 
 def update_manifest(date, cat="general"):
@@ -481,14 +553,15 @@ def main():
     if os.path.exists(target) and not a.force:
         print(f"{cat}/{a.date} already exists — skipping (use --force to regenerate)."); return 0
 
-    print(f"== generating [{cat}] {a.date} (politics {'ON' if a.politics else 'OFF'}) ==")
+    politics_on = CATEGORIES[cat].get("allow_politics") or (a.politics and cat == "general")
+    print(f"== generating [{cat}] {a.date} (politics {'ON' if politics_on else 'OFF'}) ==")
     feeds = dict(CATEGORIES[cat]["feeds"])
     if a.politics and cat == "general":
         feeds["politics"] = POLITICS_FEEDS
 
     used = load_used(cat)
     print(f"  used-quote ledger [{cat}]: {len(used)} already-published quotes excluded")
-    reals = gather_reals(feeds, a.days, used)
+    reals = gather_reals(feeds, a.days, used, cat)
     fakes = forge_fakes(used, cat, 8)            # lane-aware, forge extra for headroom
     fakes = safety_screen(fakes)                 # screen the fabricated content UP FRONT (not post-assembly)
     print(f"  fakes: {len(fakes)} forged + screened safe")
