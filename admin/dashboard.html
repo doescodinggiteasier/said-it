@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Said It? — read-out (private)</title>
+<style>
+  :root{--ink:#23202e;--mut:#6b6577;--line:#ece7f4;--accent:#7c5cff;--good:#10a36a;--warn:#f59e0b;--bad:#ef4d5b}
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(165deg,#fff1f2,#fff7ed 42%,#eef4ff);color:var(--ink);
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;padding:18px;max-width:780px;margin:0 auto}
+  h1{font-size:20px;margin:4px 0 2px} .sub{color:var(--mut);font-size:13px;margin-bottom:14px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0;box-shadow:0 6px 22px rgba(70,45,130,.08)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+  .kpi{background:#faf8ff;border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+  .kpi .n{font-size:24px;font-weight:800} .kpi .l{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+  table{width:100%;border-collapse:collapse;font-size:13px} th,td{padding:6px 8px;text-align:right;border-bottom:1px solid var(--line)}
+  th:first-child,td:first-child{text-align:left}
+  .verdict{font-weight:800;padding:3px 10px;border-radius:20px;color:#fff;display:inline-block}
+  .v-good{background:var(--good)} .v-warn{background:var(--warn)} .v-bad{background:var(--bad)} .v-na{background:var(--mut)}
+  .bars{font-size:12px;color:var(--mut);margin-top:6px}
+  code{background:#f4f2fb;padding:1px 5px;border-radius:5px}
+  .err{color:var(--bad)} .mut{color:var(--mut)}
+</style>
+</head>
+<body>
+<h1>Said <b style="color:var(--accent)">It?</b> — private read-out</h1>
+<div class="sub">Unlisted. Anonymous device ids only — no PII. Pre-committed bars below (Wes-approved gate #1).</div>
+<div id="out"><div class="card mut">Loading…</div></div>
+
+<!-- reuse the deployed endpoint URL from the site config -->
+<script src="../config.js"></script>
+<script>
+(function(){
+  "use strict";
+  // PRE-COMMITTED BARS (propose; Wes approves the numbers). Grounded in outputs/design_principles.md:
+  // D7 is the proven retention metric (Cookie Cats moved D7 causally; Duolingo loss-aversion bites ~day 7).
+  // Wordle's share grid hit k>1 (the ceiling). 20-25% D7 is genuinely strong for a daily game; k>=0.5 = healthy WOM.
+  var BARS = {
+    d7:  { green: 25, flat: 10, unit: "%", min_n: 15,
+           note: "GREEN ≥ 25% · WATCH 10–25% · FLAT-KILL < 10% (pooled across mature cohorts; needs n≥15 to trust the rate). " +
+                 "OR absolute GREEN: ≥3 non-friend devices returning D7+ unprompted, OR any organic share-chain." },
+    k:   { green: 0.5, flat: 0.2, unit: "", stretch: 1.0,
+           note: "GREEN ≥ 0.5 · WATCH 0.2–0.5 · FLAT-KILL < 0.2 · STRETCH (scale generation) ≥ 1.0. k = invites_opened ÷ installs." }
+  };
+  var CFG = window.SAIDIT_CONFIG || {};
+  var EP = CFG.AGG_ENDPOINT || CFG.LOG_ENDPOINT || "";
+  function tok(){ var m = location.search.match(/[?&]k=([^&]+)/); return m ? decodeURIComponent(m[1]) : ""; }
+  var out = document.getElementById("out");
+
+  if(!EP){ out.innerHTML = "<div class='card err'>No endpoint set in <code>config.js</code> (LOG_ENDPOINT/AGG_ENDPOINT). Deploy the endpoint first.</div>"; return; }
+  if(!tok()){ out.innerHTML = "<div class='card err'>Add your admin token to the URL: <code>?k=YOUR_ADMIN_TOKEN</code> (the token you set as ADMIN_TOKEN in the endpoint). Never link this page anywhere.</div>"; return; }
+
+  fetch(EP + (EP.indexOf("?")>=0?"&":"?") + "admin=" + encodeURIComponent(tok()), {cache:"no-store"})
+    .then(function(r){ return r.json(); })
+    .then(render)
+    .catch(function(e){ out.innerHTML = "<div class='card err'>Fetch failed: " + e + "</div>"; });
+
+  function verdict(val, bar, mature_n){
+    if(val==null || (bar.min_n && mature_n!=null && mature_n < bar.min_n)) return ["v-na","SMALL-n / WATCH"];
+    if(val >= bar.green) return ["v-good","GREEN"];
+    if(val < bar.flat)  return ["v-bad","FLAT-KILL"];
+    return ["v-warn","WATCH"];
+  }
+  function esc(s){return String(s).replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+
+  function render(d){
+    if(d && d.ok===false){ out.innerHTML = "<div class='card err'>" + esc(d.error||"error") + " — check the admin token.</div>"; return; }
+    // pooled D7 across cohorts old enough to have reached day 7
+    var today = d.generated_at;
+    function mature(install, days){ var dt=new Date(install+"T12:00:00"); dt.setDate(dt.getDate()+days); return today >= dt.getFullYear()+"-"+p2(dt.getMonth()+1)+"-"+p2(dt.getDate()); }
+    function p2(n){return n<10?"0"+n:n;}
+    var d7n=0, d7size=0;
+    (d.cohorts||[]).forEach(function(c){ if(mature(c.install,9)){ d7n+=c.d7_n; d7size+=c.size; } });
+    var d7pct = d7size? Math.round(100*d7n/d7size) : null;
+    var vd7 = verdict(d7pct, BARS.d7, d7size);
+    var vk  = verdict(d.k_factor, BARS.k, 999);
+
+    var html = "";
+    html += "<div class='card'><div class='grid'>" +
+      kpi(d.installs,"installs") + kpi(d.completers,"completers") + kpi(d.completion_rate+"%","completion") +
+      kpi(d.dau_today,"DAU today") + kpi(d.wau,"WAU") + kpi(d.sessions_per_user,"sessions/user") +
+      kpi(d.token_copy_rate+"%","token-copy") + kpi(d.crew_joins,"crew joins") +
+      "</div></div>";
+
+    html += "<div class='card'><b>The two gates (pre-committed)</b>" +
+      "<table><tr><th>Metric</th><th>Value</th><th>n</th><th>Verdict</th></tr>" +
+      "<tr><td>D7 return (pooled, mature cohorts)</td><td>"+(d7pct==null?"—":d7pct+"%")+"</td><td>"+d7size+"</td><td><span class='verdict "+vd7[0]+"'>"+vd7[1]+"</span></td></tr>" +
+      "<tr><td>k-factor (invites_opened ÷ installs)</td><td>"+d.k_factor+"</td><td>"+d.installs+"</td><td><span class='verdict "+vk[0]+"'>"+vk[1]+"</span></td></tr>" +
+      "</table>" +
+      "<div class='bars'>D7: "+esc(BARS.d7.note)+"</div>" +
+      "<div class='bars'>k: "+esc(BARS.k.note)+"</div>" +
+      "<div class='bars'>invites created "+d.invites_created+" · opened "+d.invites_opened+". Descriptive, not an oracle — the human read decides.</div></div>";
+
+    var crows = (d.cohorts||[]).slice().reverse().map(function(c){
+      return "<tr><td>"+c.install+"</td><td>"+c.size+"</td><td>"+c.d1+"% ("+c.d1_n+")</td><td>"+c.d7+"% ("+c.d7_n+")</td><td>"+c.d30+"% ("+c.d30_n+")</td></tr>";
+    }).join("") || "<tr><td colspan=5 class='mut'>no install cohorts yet</td></tr>";
+    html += "<div class='card'><b>Return by install cohort</b>" +
+      "<table><tr><th>install day</th><th>size</th><th>D1</th><th>D7</th><th>D30</th></tr>"+crows+"</table></div>";
+
+    var sd = d.streak_distribution||{}; var order=["1","2-3","4-6","7-13","14+"];
+    html += "<div class='card'><b>Streak distribution</b><table><tr><th>streak</th><th>devices</th></tr>" +
+      order.map(function(b){return "<tr><td>"+b+"</td><td>"+(sd[b]||0)+"</td></tr>";}).join("") + "</table></div>";
+
+    var cbd = d.completes_by_day||{};
+    var days = Object.keys(cbd).sort().reverse().slice(0,14);
+    html += "<div class='card'><b>Completes by day (last 14)</b><table><tr><th>day</th><th>completes</th></tr>" +
+      (days.map(function(dy){return "<tr><td>"+dy+"</td><td>"+cbd[dy]+"</td></tr>";}).join("")||"<tr><td colspan=2 class='mut'>none</td></tr>") + "</table></div>";
+
+    out.innerHTML = html;
+  }
+  function kpi(n,l){ return "<div class='kpi'><div class='n'>"+n+"</div><div class='l'>"+l+"</div></div>"; }
+})();
+</script>
+</body>
+</html>

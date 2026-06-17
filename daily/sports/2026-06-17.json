@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-17",
+  "edition": 1,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "One time I went to a petting zoo and a goat tried to eat my shoelaces. I bought the goat, named him Chuck, and he lives in my backyard now. Shoelaces are expensive, Chuck!",
+      "speaker": "Shaquille O'Neal",
+      "context": "TNT halftime show banter",
+      "real": false,
+      "fake_note": "Shaq's playful feud with Charles Barkley and his history of larger-than-life impulse purchases make this very believable. The giveaway is the sheer cartoonish absurdity of buying a goat just to complain to it about footwear costs."
+    },
+    {
+      "id": "q2",
+      "text": "I spent maybe forty hours this week evaluating the spin rate of college long snappers in wet weather conditions. It’s not exactly a hobby, but it keeps my mind sharp.",
+      "speaker": "Bill Belichick",
+      "context": "Post-season podcast interview",
+      "real": false,
+      "fake_note": "Belichick actually did once give a real, passionate 10-minute press conference on the history of long snappers, making this obsession sound incredibly authentic. The tell is the 'forty hours'—even Bill couldn't dedicate a full work week solely to long snapper spin rates."
+    },
+    {
+      "id": "q3",
+      "text": "Just leave me alone, I know what I'm doing!",
+      "speaker": "Kimi Raikkonen",
+      "context": "Formula 1 driver's deadpan team-radio reply to his Lotus race engineer Simon Rennie, who kept feeding him instructions during the 2012 Abu Dhabi Grand Prix (which Raikkonen went on to win). It became one of the most iconic radio messages in",
+      "real": true,
+      "source": {
+        "title": "'Leave me alone, I know what I'm doing': the Kimi Raikkonen radio message from a past F1 era - Motor Sport Magazine",
+        "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/leave-me-alone-i-know-what-im-doing-the-kimi-raikkonen-radio-message-from-a-past-f1-era/",
+        "date": "2022-11-04"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I don't watch boxing anymore, I watch bird documentaries. You look at a hummingbird, the way it bobs and weaves to get to the nectar—that’s the exact same head movement Cus D'Amato taught me in '84.",
+      "speaker": "Mike Tyson",
+      "context": "Sports documentary interview",
+      "real": false,
+      "fake_note": "Tyson has a genuine, well-documented lifelong obsession with birds (specifically pigeons), making this pivot sound highly plausible. However, he never compared the hyperactive flight of a hummingbird to his legendary peek-a-boo boxing style."
+    },
+    {
+      "id": "q5",
+      "text": "vibes on this year's Bengals' team are similar to what they were on the 2019 LSU team",
+      "speaker": "Joe Burrow",
+      "context": "Comparing his current NFL team to his college championship team",
+      "real": true,
+      "source": {
+        "title": "Sports — Burrow: Bengals have same vibes as LSU title team",
+        "url": "https://www.espn.com/nfl/story/_/id/49098918/burrow-says-bengals-remind-2019-national-champion-lsu",
+        "date": "2026-06-17"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Never even liked tennis anyway.",
+      "speaker": "Andy Murray",
+      "context": "British tennis great and two-time Olympic singles gold medalist Murray posted this deadpan one-liner on X immediately after his final professional match, a men's doubles quarterfinal loss at the 2024 Paris Olympics, confirming his retiremen",
+      "real": true,
+      "source": {
+        "title": "'Never liked tennis anyway': Andy Murray shares epic post to confirm retirement from professional tennis - India TV",
+        "url": "https://www.indiatvnews.com/sports/tennis/never-liked-tennis-anyway-andy-murray-shares-epic-post-to-confirm-retirement-from-professional-tennis-2024-08-02-944827",
+        "date": "2024-08-02"
+      }
+    }
+  ]
+}

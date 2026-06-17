@@ -11,3 +11,6 @@ window.SAIDIT_CONFIG = {
   LOG_ENDPOINT: "",
   AGG_ENDPOINT: ""
 };
+/* Admin dashboard (G-A): open /admin/dashboard.html?k=<ADMIN_TOKEN>. The token is NOT stored here (this
+ * file is public) — it lives only in the endpoint (Apps Script Script Property / Worker env var ADMIN_TOKEN)
+ * and in the unguessable URL you keep private. The dashboard reuses AGG_ENDPOINT/LOG_ENDPOINT above. */

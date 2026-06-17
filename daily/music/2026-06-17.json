@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-17",
+  "edition": 1,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Everyone thinks the whispering on the first album was this intense artistic choice. Really, Finneas was just asleep in the next room and I didn't want him to wake up and eat my cereal.",
+      "speaker": "Billie Eilish",
+      "context": "2020 Vanity Fair video interview",
+      "real": false,
+      "fake_note": "Billie and her brother Finneas famously recorded their debut in his bedroom, making this sibling dynamic sound very real. However, the whispering was a deliberate vocal styling, not a cereal defense strategy."
+    },
+    {
+      "id": "q2",
+      "text": "My topic is the shift from 'architect' to 'gardener', where 'architect' stands for 'someone who carries a full picture of the work before it is made', to 'gardener' standing for 'someone who plants seeds and waits to see exactly what will come up'.",
+      "speaker": "Brian Eno",
+      "context": "Composer/producer Brian Eno (Roxy Music, ambient music pioneer, producer for Bowie, Talking Heads, U2) framing how he thinks about making music — not as an architect with the finished work in his head, but as a gardener who plants seeds and",
+      "real": true,
+      "source": {
+        "title": "Composers as Gardeners — Brian Eno, Edge.org",
+        "url": "https://www.edge.org/conversation/brian_eno-composers-as-gardeners",
+        "date": "2011-11-10"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I refuse to use modern guitar picks. If it's not carved from a melted-down 1930s Bakelite radio dial, you are fundamentally disrespecting the frequency of the blues.",
+      "speaker": "Jack White",
+      "context": "2014 Guitar Player magazine interview",
+      "real": false,
+      "fake_note": "White's legendary obsession with vintage, analog equipment and strict self-imposed rules makes this rigid mandate sound completely true. The giveaway is the absurdity of melting down antique radios just to strum a guitar."
+    },
+    {
+      "id": "q4",
+      "text": "It’s kind of ironic that there is a British guy a part of it",
+      "speaker": "Al Shux",
+      "context": "Describing his role in producing the song 'Empire State of Mind'",
+      "real": true,
+      "source": {
+        "title": "Music — “It’s Fucking Sick”: “Empire State of Mind” Producer on Soundtracking the Knicks",
+        "url": "https://pitchfork.com/news/empire-state-of-mind-producer-on-soundtracking-the-knicks-win/",
+        "date": "2026-06-17"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I spent three weeks trying to make a synthesizer sound exactly like dust settling on velvet. We eventually just recorded the velvet.",
+      "speaker": "Brian Eno",
+      "context": "2016 Red Bull Music Academy lecture",
+      "real": false,
+      "fake_note": "Eno is famous for his extreme ambient experimentation and esoteric recording techniques, making this sound exactly like his creative process. The tell is the impossible acoustics of recording 'dust.'"
+    },
+    {
+      "id": "q6",
+      "text": "Martha showed me how to perfectly fold a fitted sheet, and in return I taught her how to make a pancake that looks exactly like a basset hound. It’s an exchange of cultures.",
+      "speaker": "Snoop Dogg",
+      "context": "2021 appearance on The Tonight Show",
+      "real": false,
+      "fake_note": "Snoop and Martha Stewart's real-life friendship is full of endearing, domestic moments, making this trade of skills highly plausible. But Snoop's pancake artistry is pure wholesome fiction."
+    }
+  ]
+}

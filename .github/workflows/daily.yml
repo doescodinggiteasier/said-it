@@ -37,23 +37,26 @@ jobs:
         # and falls back to Claude (ANTHROPIC_API_KEY) if Gemini errors. Set either or both secrets.
         run: pip install google-genai anthropic
 
-      - name: Generate today's edition
+      - name: Generate today's editions (all category lanes)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SAIDIT_MODEL: ${{ vars.SAIDIT_MODEL || 'claude-sonnet-4-6' }}
         run: |
-          python tools/generate_day.py ${{ (github.event.inputs.force == 'true') && '--force' || '' }} || true
+          for cat in general sports music; do
+            echo "--- generating $cat ---"
+            python tools/generate_day.py --category "$cat" ${{ (github.event.inputs.force == 'true') && '--force' || '' }} || true
+          done
 
       - name: Commit & push if a new edition was written
         run: |
-          if [ -n "$(git status --porcelain daily/ tools/used_quotes.json)" ]; then
+          if [ -n "$(git status --porcelain daily/ tools/)" ]; then
             git config user.name "said-it-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add daily/ tools/used_quotes.json   # commit the no-repeat ledger too, so it persists
-            git commit -m "auto: daily edition $(date -u +%F)"
+            git add daily/ tools/           # editions + the per-lane no-repeat ledgers (used_*.json), so they persist
+            git commit -m "auto: daily editions $(date -u +%F)"
             git push
-            echo "Published a new edition."
+            echo "Published new editions."
           else
-            echo "No new edition this run (fail-safe, or today already published). Site keeps serving the latest. Nothing to commit."
+            echo "No new editions this run (fail-safe, or today already published). Site keeps serving the latest."
           fi

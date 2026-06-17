@@ -108,6 +108,22 @@
     border-radius:10px;padding:9px 12px;font-size:13px;margin:8px 0;text-align:center}
   .count{text-align:center;color:var(--mut);font-size:13px;margin:14px 0 6px}
   .count b{color:var(--ink);font-variant-numeric:tabular-nums}
+  /* crew */
+  .lb-row{display:flex;align-items:center;gap:8px;padding:8px 10px;border-bottom:1px solid var(--line);font-size:14px}
+  .lb-row:last-child{border-bottom:none}
+  .lb-row .rk{width:26px;font-weight:800;text-align:center}
+  .lb-row .nm{flex:1;font-weight:600} .lb-row .nm.you{color:var(--accent)}
+  .lb-row .sc{font-weight:800;font-variant-numeric:tabular-nums}
+  .crew-code{display:inline-block;font:700 16px ui-monospace,Menlo,monospace;letter-spacing:.14em;
+    background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:5px 12px;color:var(--accent)}
+  .crewbadge{font-size:11px;color:var(--accent);font-weight:700}
+  .lanes{display:flex;gap:8px;justify-content:center;margin:2px 0 12px;flex-wrap:wrap}
+  .lane-b{padding:7px 13px;border-radius:20px;border:1px solid var(--line);background:var(--panel2);
+    color:var(--mut);font-weight:600;font-size:13px;cursor:pointer}
+  .lane-b.on{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px rgba(124,92,255,.28)}
+  .crewcard{background:rgba(124,92,255,.06);border:1px solid rgba(124,92,255,.3)}
+  input.fld{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:#fff;
+    font:inherit;color:var(--ink);margin:6px 0}
   /* archive + past-edition nav */
   .navlinks{display:flex;gap:16px;justify-content:center;margin:16px 0 4px;flex-wrap:wrap}
   .navlink{color:var(--accent);font-size:13px;font-weight:600;cursor:pointer;background:none;border:none;padding:6px}
@@ -141,6 +157,7 @@
 
 <!-- INTRO -->
 <div id="screen-intro" class="hide">
+  <div id="lanePicker" class="lanes"></div>
   <div class="card">
     <div class="lede">Every day, the same six quotes for everyone — pulled from the week's news, sports &amp; pop culture.
       <span class="real">Some really said it.</span> <span class="fake">Some are AI fakes.</span>
@@ -149,7 +166,10 @@
   <div class="equityrow" id="introStats"></div>
   <div class="sticky"><button class="btn" id="startBtn">Play today's set →</button>
     <div class="hint" id="introHint"></div></div>
-  <div class="navlinks"><button class="navlink" id="introArchive">📚 Past editions</button></div>
+  <div class="navlinks">
+    <button class="navlink" id="introCrew">👥 Crew</button>
+    <button class="navlink" id="introArchive">📚 Past editions</button>
+  </div>
 </div>
 
 <!-- PLAY -->
@@ -170,6 +190,7 @@
   </div>
   <div id="freezeNote"></div>
   <div class="equityrow" id="revealStats"></div>
+  <div id="crewCompare"></div>
   <div id="gotmeBox"></div>
   <div id="revealList"></div>
   <div id="trickBox"></div>
@@ -185,6 +206,7 @@
   </div>
 
   <div class="navlinks">
+    <button class="navlink" id="revealCrew">👥 Crew</button>
     <button class="navlink" id="revealArchive">📚 Past editions</button>
     <button class="navlink" id="revealLink">🔗 Copy link to this set</button>
   </div>
@@ -201,6 +223,12 @@
   <div class="card">📚 <b>Past editions</b> — replay any day, or tap 🔗 to copy a link and send the questions to someone. Replaying old sets won't change your streak.</div>
   <div id="archiveList"></div>
   <div class="sticky"><button class="btn ghost" id="archiveBack">← Back</button></div>
+</div>
+
+<!-- CREW -->
+<div id="screen-crew" class="hide">
+  <div id="crewBody"></div>
+  <div class="sticky"><button class="btn ghost" id="crewBack">← Back</button></div>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -230,6 +258,12 @@ var ST = load();
 if(!ST.sid){ST.sid=uid();ST.first_seen=todayStr();ST.referrer=document.referrer||"direct";ST.days={};ST.streak=0;ST.best_streak=0;
   ST.rating=1000;ST.judged=0;ST.correct=0;ST.locks=0;ST.locks_correct=0;ST.last_played=null;ST.freeze_week=null;ST.freezes_left=1;save(ST);}
 if(!ST.days)ST.days={};
+if(!ST.crewSeasons)ST.crewSeasons={};   // {weekKey: champName} — memorialized weekly champ (client-side)
+if(ST.crew===undefined)ST.crew=null;    // {code, joined} — one active crew per device this round
+if(!ST.lane)ST.lane="general";          // G-C category pack the player picked (shared daily instance PER lane)
+// Fire one `install` per device, ever. For pre-G-A devices (sid exists, never instrumented) this is a
+// one-time BACKFILL carrying their real first_seen, so the launch cohort lands in the endpoint, not lost.
+if(!ST.installed){ ST.installed=true; save(ST); logEvent("install",{first:ST.first_seen, backfill:(ST.judged>0||(ST.log&&ST.log.length>0))}); }
 
 /* ---------- instrumentation ---------- */
 function logEvent(name, extra){
@@ -253,7 +287,7 @@ function refreshFreeze(date){ var wk=weekKey(date); if(ST.freeze_week!==wk){ST.f
 function daysBetween(a,b){return Math.round((new Date(b+"T12:00:00")-new Date(a+"T12:00:00"))/86400000);}
 
 /* ---------- screens ---------- */
-var SCREENS=["loading","error","intro","play","reveal","archive"];
+var SCREENS=["loading","error","intro","play","reveal","archive","crew"];
 function show(name){SCREENS.forEach(function(s){$("screen-"+s).classList.toggle("hide",s!==name);});window.scrollTo(0,0);}
 function toast(msg){var t=$("toast");t.textContent=msg;t.classList.add("show");setTimeout(function(){t.classList.remove("show");},1400);}
 
@@ -265,21 +299,30 @@ var MANIFEST={days:[]}; // published editions (daily/index.json)
 
 /* ---------- boot ---------- */
 function boot(){
+  handleCrewInvite();
   fetch("daily/index.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;})
     .then(function(idx){ if(idx&&idx.days) MANIFEST=idx; }, function(){})
     .then(function(){ loadAndRoute(qsDay()||todayStr()); });
 }
+function handleCrewInvite(){       // a ?crew=CODE&inv=SID link joins the crew + logs invite_opened (k-factor)
+  var m=location.search.match(/[?&]crew=([A-Za-z0-9]{3,8})/); if(!m) return;
+  var inv=(location.search.match(/[?&]inv=([A-Za-z0-9_]+)/)||[])[1]||"";
+  joinCrew(m[1], inv);
+  try{ history.replaceState(null,"",location.pathname); }catch(e){}   // clean URL so a refresh doesn't re-log
+}
 function loadAndRoute(wanted){
+  var lane=ST.lane||"general";
   show("loading");
-  fetchDay(wanted).then(function(day){
-    DAY=day; ANS={}; LOCK=null;
+  fetchDay(wanted, lane).then(function(day){
+    DAY=day; DAY._lane=lane; ANS={}; LOCK=null;
     var isToday = day.date===todayStr();
-    $("editiontag").textContent = "No. "+(day.edition||"?")+" · "+prettyDate(day.date);
+    $("editiontag").textContent = (lane!=="general"?(laneLabel(lane).replace(/^\S+\s/,"")+" · "):"")+"No. "+(day.edition||"?")+" · "+prettyDate(day.date);
     updatePastBar(isToday, day);
-    logEvent("visit",{archive:!isToday});
+    logEvent("visit",{archive:!isToday, cat:lane});
     if(isToday && ST.last_realday && ST.last_realday!==todayStr() && daysBetween(ST.last_realday,todayStr())>=1)
-      logEvent("return",{gap:daysBetween(ST.last_realday,todayStr())});
-    if(ST.days[day.date] && ST.days[day.date].done){ renderReveal(ST.days[day.date].result, false); }
+      logEvent("return",{gap:daysBetween(ST.last_realday,todayStr()), cat:lane});
+    var key=dayKey(lane, day.date);
+    if(ST.days[key] && ST.days[key].done){ renderReveal(ST.days[key].result, false); }
     else { renderIntro(isToday); }
   }).catch(function(e){
     show("error");
@@ -288,18 +331,21 @@ function loadAndRoute(wanted){
 }
 function prettyDate(s){var d=new Date(s+"T12:00:00");return d.toLocaleDateString(undefined,{month:"short",day:"numeric"});}
 
-function fetchDay(date){
-  return fetch("daily/"+date+".json",{cache:"no-store"}).then(function(r){
+/* ---------- category lanes (G-C): shared daily instance holds PER lane ---------- */
+function lanePath(lane,date){ return lane==="general"?("daily/"+date+".json"):("daily/"+lane+"/"+date+".json"); }
+function laneDays(lane){ var c=MANIFEST.categories&&MANIFEST.categories[lane]; if(c)return c; return lane==="general"?(MANIFEST.days||[]):[]; }
+function dayKey(lane,date){ return lane==="general"?date:(lane+":"+date); }   // per-lane completion record
+function laneLabel(l){ return l==="general"?"📰 General":(l==="sports"?"🏀 Sports":(l==="music"?"🎵 Music":("# "+l))); }
+function availableLanes(){ var ls=Object.keys((MANIFEST.categories)||{}); if(ls.indexOf("general")<0)ls.unshift("general");
+  return ls.filter(function(l){ return l==="general"||laneDays(l).length; }); }
+function curDone(){ if(!DAY) return null; var r=ST.days[dayKey(DAY._lane||"general",DAY.date)]; return (r&&r.done)?r.result:null; }
+
+function fetchDay(date, lane){
+  return fetch(lanePath(lane,date),{cache:"no-store"}).then(function(r){
     if(r.ok) return r.json();
-    // fall back to the latest available edition listed in the manifest
-    return fetch("daily/index.json",{cache:"no-store"}).then(function(r2){
-      if(!r2.ok) throw new Error("no set for "+date);
-      return r2.json();
-    }).then(function(idx){
-      var avail=(idx.days||[]).slice().sort(); if(!avail.length) throw new Error("no editions published yet");
-      var latest=avail[avail.length-1];
-      return fetch("daily/"+latest+".json",{cache:"no-store"}).then(function(r3){if(!r3.ok)throw new Error("set missing");return r3.json();});
-    });
+    var avail=laneDays(lane).slice().sort(); if(!avail.length) throw new Error("no "+lane+" editions yet");
+    var latest=avail[avail.length-1];
+    return fetch(lanePath(lane,latest),{cache:"no-store"}).then(function(r3){if(!r3.ok)throw new Error("set missing");return r3.json();});
   });
 }
 
@@ -314,7 +360,18 @@ function renderStats(host){
     var d=el("div","pill");d.innerHTML='<div class="n">'+p[0]+' '+p[2]+'</div><div class="l">'+p[1]+'</div>';host.appendChild(d);
   });
 }
+function renderLanes(){
+  var host=$("lanePicker"); if(!host) return; host.innerHTML="";
+  var lanes=availableLanes();
+  if(lanes.length<2){ return; }                 // only show the picker once a 2nd lane exists
+  lanes.forEach(function(lane){
+    var b=el("button","lane-b"+(ST.lane===lane?" on":"")); b.textContent=laneLabel(lane);
+    b.onclick=function(){ if(ST.lane===lane) return; ST.lane=lane; save(ST); logEvent("lane_switch",{cat:lane}); loadAndRoute(todayStr()); };
+    host.appendChild(b);
+  });
+}
 function renderIntro(isToday){
+  renderLanes();
   renderStats($("introStats"));
   if(isToday===false){
     $("introHint").textContent = "Past edition — replay it for fun or to send to friends; it won't change your streak.";
@@ -409,12 +466,14 @@ function submit(){
   ST.judged += n; ST.correct += correct;
   if(LOCK){ST.locks+=1; if(lockCorrect)ST.locks_correct+=1;}
 
-  var result={date:date, edition:DAY.edition, score:correct, n:n, grid:grid, perq:perq,
+  var lane=(DAY&&DAY._lane)||"general";
+  var result={date:date, edition:DAY.edition, lane:lane, score:correct, n:n, grid:grid, perq:perq,
     gotme:gotme, lockCorrect:lockCorrect, lockIdx:(function(){for(var i=0;i<quotes.length;i++)if(quotes[i].id===LOCK)return i+1;return null;})(),
     streak:ST.streak, rating:ST.rating, frozen:!!ST._frozen};
-  ST.days[date]={done:true,result:result};
+  ST.days[dayKey(lane,date)]={done:true,result:result};
   delete ST._frozen; save(ST);
-  logEvent("complete",{score:correct,n:n,streak:ST.streak,rating:ST.rating,lock:lockCorrect,gotme:gotme,archive:(date!==realToday),returning:(ST.judged>n)});
+  logEvent("complete",{score:correct,n:n,streak:ST.streak,rating:ST.rating,lock:lockCorrect,gotme:gotme,
+    archive:(date!==realToday),returning:(ST.judged>n),crew:(inCrew()?ST.crew.code:""),name:ST.displayName||"",cat:lane});
   renderReveal(result,true);
 }
 
@@ -427,6 +486,7 @@ function renderReveal(res, fresh){
   // freeze note
   $("freezeNote").innerHTML = res.frozen ? '<div class="freeze">🛡️ Streak-freeze used — your streak survived a missed day. One freeze per week.</div>' : "";
   renderStats($("revealStats"));
+  if(isToday){ renderCompare(res); } else { var cc=$("crewCompare"); cc.innerHTML=""; cc.className=""; }   // crew compare only for today's set
 
   // "the fake that got me"
   var gm=$("gotmeBox");
@@ -528,12 +588,13 @@ function goToEdition(date){ history.replaceState(null,"","?d="+date); loadAndRou
 function openArchive(){ renderArchive(); show("archive"); }
 function renderArchive(){
   var host=$("archiveList"); host.innerHTML="";
-  var days=(MANIFEST.days||[]).slice().sort();            // ascending → index+1 = edition number
+  var lane=ST.lane||"general";
+  var days=laneDays(lane).slice().sort();                 // current lane's editions, ascending → index+1 = edition number
   if(!days.length){ host.innerHTML="<div class='card'>No editions published yet.</div>"; return; }
   var today=todayStr();
   days.slice().reverse().forEach(function(date){
     var ed=days.indexOf(date)+1;
-    var done=(ST.days[date]&&ST.days[date].done)?ST.days[date].result:null;
+    var done=(ST.days[dayKey(lane,date)]&&ST.days[dayKey(lane,date)].done)?ST.days[dayKey(lane,date)].result:null;
     var status=done ? ("✓ you scored "+done.score+"/"+done.n)
       : (date===today?"● today's set — not played yet":(date>today?"upcoming":"▶ not played yet"));
     var row=el("div","arc-row");
@@ -552,16 +613,119 @@ function copyEditionLink(date){
   else { window.prompt("Copy this link:",url); }
 }
 
+/* ---------- crew (G-B) ----------
+   Guardrails: renewable equity ONLY (shared streak + standing). NO trait-polling (no "rate your friends"),
+   NO live/synchronous tournaments (that's the tbh/Gas graph-fragile death) — async leaderboard + weekly
+   season standing only. Consent-native (you opt in with a code). Spoiler-free is ENFORCED: the endpoint
+   returns scores/standings only, never per-quote answers, so a crew-mate who hasn't played stays safe. */
+function inCrew(){ return !!(ST.crew && ST.crew.code); }
+function genCode(){ var s="ABCDEFGHJKLMNPQRSTUVWXYZ23456789",c=""; for(var i=0;i<5;i++)c+=s[Math.floor(Math.random()*s.length)]; return c; }
+function askName(def){ var n=(window.prompt && window.prompt("Your name in the crew?", def||ST.displayName||"")) || ST.displayName || "you"; n=String(n).slice(0,16).trim()||"you"; ST.displayName=n; save(ST); return n; }
+function createCrew(){ askName(); var code=genCode(); ST.crew={code:code, joined:todayStr()}; save(ST);
+  logEvent("crew_create",{crew:code, name:ST.displayName}); toast("Crew "+code+" created 🎉"); renderCrew(); }
+function joinCrew(code, inviter){ code=String(code||"").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,6); if(!code){toast("Enter a code");return;}
+  if(inCrew() && ST.crew.code===code){ return; }
+  if(!ST.displayName) askName();
+  ST.crew={code:code, joined:todayStr()}; save(ST);
+  logEvent("crew_join",{crew:code, name:ST.displayName, inviter:inviter||""});
+  if(inviter && inviter!==ST.sid) logEvent("invite_opened",{crew:code, inviter:inviter, invitee:ST.sid});  // <-- k-factor instrument
+  toast("Joined "+code+" 👥"); }
+function leaveCrew(){ if(window.confirm && !window.confirm("Leave this crew?")) return; ST.crew=null; save(ST); renderCrew(); }
+function crewEndpoint(){ return AGG_ENDPOINT||LOG_ENDPOINT; }
+function crewInviteLink(){ return baseURL()+"?crew="+ST.crew.code+"&inv="+ST.sid; }
+function copyCrewInvite(){ if(!inCrew())return; var url=crewInviteLink();
+  function ok(){ toast("Invite link copied — send it 👥"); logEvent("invite_created",{crew:ST.crew.code}); }
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(ok,function(){window.prompt("Copy:",url);ok();}); } else { window.prompt("Copy:",url); ok(); } }
+function fetchCrew(day){ var ep=crewEndpoint(); if(!ep||!inCrew()) return Promise.resolve(null);
+  return fetch(ep+(ep.indexOf("?")>=0?"&":"?")+"crew="+encodeURIComponent(ST.crew.code)+"&day="+encodeURIComponent(day),{cache:"no-store"})
+    .then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); }
+function mergeYou(standings, res){          // standings carry scores only; match self by sid (spoiler-free)
+  var list=(standings||[]).map(function(s){return {sid:s.sid,name:s.name,score:s.score,you:s.sid===ST.sid};});
+  var mine=list.filter(function(s){return s.you;})[0];
+  if(mine){ if(res) mine.score=res.score; } else if(res){ list.push({sid:ST.sid,name:ST.displayName||"you",score:res.score,you:true}); }
+  return list.sort(function(a,b){return b.score-a.score;});
+}
+function medal(i){ return i===0?"🥇":i===1?"🥈":i===2?"🥉":(i+1)+"."; }
+function lbRow(i,name,score,you){ return "<div class='lb-row'><span class='rk'>"+medal(i)+"</span><span class='nm"+(you?" you":"")+"'>"+esc(name)+(you?" (you)":"")+"</span><span class='sc'>"+score+"</span></div>"; }
+function addDaysStr(s,n){ var d=new Date(s+"T12:00:00"); d.setDate(d.getDate()+n); return todayStr(d); }
+
+function renderCompare(res){                 // the instant friend-compare on submit (the reply-bait engine)
+  var box=$("crewCompare"); box.innerHTML=""; box.className="";
+  if(!inCrew()||!crewEndpoint()){ return; }
+  box.className="card crewcard"; box.innerHTML="<div class='hint' style='text-align:left'>loading crew…</div>";
+  fetchCrew(res.date).then(function(c){
+    var list=mergeYou(c&&c.standings, res);
+    var rankIdx=0; for(var i=0;i<list.length;i++){ if(list[i].you){ rankIdx=i; break; } }
+    var streak=c?c.crew_streak:0;
+    var rows=list.map(function(s,i){ return lbRow(i,s.name,s.score+"/"+res.n,s.you); }).join("");
+    box.innerHTML="<div style='font-weight:700;margin-bottom:6px'>👥 Crew "+esc(ST.crew.code)+(streak?" · 🔥 "+streak+"-day run":"")+"</div>"+rows+
+      "<div class='hint' style='text-align:left;margin-top:8px'>"+(rankIdx===0&&list.length>1?"On top 👑 — ":(list.length>1?"":"You're first today — bait the crew back. "))+"Scores only, never the answers.</div>"+
+      "<div class='row' style='margin-top:8px'><button class='btn ghost' id='compShare' style='flex:2'>Share standings</button><button class='btn ghost' id='compInvite' style='flex:1'>Invite</button></div>";
+    var cs=$("compShare"); if(cs) cs.onclick=function(){ shareCrewToken(c,res); };
+    var ci=$("compInvite"); if(ci) ci.onclick=copyCrewInvite;
+  });
+}
+function crewToken(c,res){ var list=mergeYou(c&&c.standings,res); var lines=[];
+  lines.push("Said It? crew "+ST.crew.code+(c&&c.crew_streak?" · 🔥 "+c.crew_streak:""));
+  list.slice(0,6).forEach(function(s,i){ lines.push(medal(i)+" "+s.name+(s.you?" (me)":"")+" "+s.score+"/"+(res?res.n:6)); });
+  lines.push(baseURL()+"?crew="+ST.crew.code);
+  return lines.join("\n"); }
+function shareCrewToken(c,res){ var txt=crewToken(c,res);
+  function ok(){ toast("Standings copied 👥"); logEvent("token_copy",{kind:"crew",crew:ST.crew.code}); }
+  if(navigator.share){ navigator.share({text:txt}).then(ok,function(){}); return; }
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(ok,function(){window.prompt("Copy:",txt);ok();}); } else { window.prompt("Copy:",txt); ok(); } }
+
+function openCrew(){ renderCrew(); show("crew"); }
+function renderCrew(){
+  var b=$("crewBody");
+  if(!crewEndpoint()){ b.innerHTML="<div class='card'>👥 <b>Crews</b> need the shared endpoint deployed (see <code>endpoint/</code>). Solo play works fine without it.</div>"; return; }
+  if(!inCrew()){
+    b.innerHTML="<div class='card'>👥 <b>Play with your crew</b><div class='hint' style='text-align:left;margin:6px 0'>Same daily set for everyone — compare scores, build a shared streak. No accounts.</div>"+
+      "<button class='btn' id='crewCreate'>Create a crew</button>"+
+      "<div style='text-align:center;color:var(--mut);margin:12px 0;font-size:13px'>— or join one —</div>"+
+      "<input class='fld' id='crewCodeIn' placeholder='enter 5-letter code' maxlength='6'>"+
+      "<button class='btn ghost' id='crewJoinBtn'>Join crew</button></div>";
+    $("crewCreate").onclick=createCrew;
+    $("crewJoinBtn").onclick=function(){ joinCrew($("crewCodeIn").value,""); renderCrew(); };
+    return;
+  }
+  b.innerHTML="<div class='card crewcard'><div style='display:flex;justify-content:space-between;align-items:center'>"+
+    "<div><div style='font-weight:700'>Your crew</div><span class='crew-code'>"+esc(ST.crew.code)+"</span></div>"+
+    "<button class='btn' id='crewInviteBtn' style='width:auto;padding:10px 14px'>Invite</button></div>"+
+    "<div id='crewBoard' class='hint' style='text-align:left;margin-top:12px'>loading standings…</div></div>"+
+    "<div class='navlinks'><button class='navlink' id='crewLeave'>leave crew</button></div>";
+  $("crewInviteBtn").onclick=copyCrewInvite; $("crewLeave").onclick=leaveCrew;
+  var board=$("crewBoard"), today=todayStr();
+  fetchCrew(today).then(function(c){
+    if(!c){ board.innerHTML="No standings yet — play today's set, then your crew shows up here."; return; }
+    var todayRows=(c.standings||[]).map(function(s,i){return lbRow(i,s.name,s.score+"/"+(s.n||6),s.sid===ST.sid);}).join("")||"<div class='hint'>nobody's played today yet</div>";
+    var wk=(c.week||[]).map(function(s,i){ if(i===0 && c.week_key){ ST.crewSeasons[c.week_key]=s.name; save(ST); } return lbRow(i,s.name,s.total,s.sid===ST.sid); }).join("")||"<div class='hint'>—</div>";
+    var champ=ST.crewSeasons[weekKey(addDaysStr(today,-7))];
+    board.innerHTML=(c.crew_streak?"<div style='margin-bottom:8px'>🔥 <b>"+c.crew_streak+"-day crew run</b> · 🛡️ "+(c.crew_freezes_left||0)+" freeze left this week</div>":"")+
+      (champ?"<div style='margin-bottom:8px'>🏆 last week's champ: <b>"+esc(champ)+"</b></div>":"")+
+      "<div style='font-weight:700;margin:6px 0 2px'>Today</div>"+todayRows+
+      "<div style='font-weight:700;margin:10px 0 2px'>This week (season standing)</div>"+wk+
+      "<div class='row' style='margin-top:10px'><button class='btn ghost' id='boardShare'>Share standings</button></div>";
+    var bs=$("boardShare"); if(bs) bs.onclick=function(){ var dk=dayKey(ST.lane||"general",today); var r=(ST.days[dk]&&ST.days[dk].done)?ST.days[dk].result:{n:6,score:0,date:today}; shareCrewToken(c,r); };
+  });
+}
+
 /* ---------- wire up ---------- */
 $("startBtn").addEventListener("click",function(){logEvent("start");renderPlay();});
 $("submitBtn").addEventListener("click",function(){if(!$("submitBtn").disabled)submit();});
 $("copyBtn").addEventListener("click",copyToken);
 $("shareBtn").addEventListener("click",shareToken);
+$("introCrew").addEventListener("click",openCrew);
+$("revealCrew").addEventListener("click",openCrew);
+$("crewBack").addEventListener("click",function(){
+  var d=curDone(); if(d){ renderReveal(d,false); }
+  else if(DAY){ renderIntro(DAY.date===todayStr()); } else { loadAndRoute(todayStr()); }
+});
 $("introArchive").addEventListener("click",openArchive);
 $("revealArchive").addEventListener("click",openArchive);
 $("revealLink").addEventListener("click",function(){ if(DAY) copyEditionLink(DAY.date); });
 $("archiveBack").addEventListener("click",function(){
-  if(DAY && ST.days[DAY.date] && ST.days[DAY.date].done){ renderReveal(ST.days[DAY.date].result,false); }
+  var d=curDone(); if(d){ renderReveal(d,false); }
   else if(DAY){ renderIntro(DAY.date===todayStr()); }
   else { loadAndRoute(todayStr()); }
 });

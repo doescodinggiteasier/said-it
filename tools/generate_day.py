@@ -14,11 +14,14 @@ Because nobody reviews the output, the integrity gates are the product:
   4. FAIL-SAFE. If a quality set of >=5 quotes can't be assembled, it writes NOTHING — the site keeps
      serving the previous edition rather than publishing a broken/empty one. The CI job then alerts.
 
-LLM provider is auto-detected from env (provider-agnostic — JSON via prompt, tolerant parse):
-  - GEMINI_API_KEY set  -> Gemini (google-genai, AI Studio). Preferred (free credit, CLAUDE.md rule 7).
-  - else ANTHROPIC_API_KEY -> Claude (you already have this key). ~1 small call/day = pennies, not bulk.
+LLM provider is auto-detected from env (provider-agnostic — JSON via prompt, tolerant parse), preferring
+Gemini (free GCP credit, CLAUDE.md rule 7) and falling back to Claude if Gemini errors:
+  - GEMINI_API_KEY set                         -> Gemini via AI Studio (works in CI; the cron uses this).
+  - else GOOGLE_CLOUD_PROJECT / ADC present    -> Gemini via Vertex AI (gemini-3.1-pro-preview; local runs).
+  - else ANTHROPIC_API_KEY                     -> Claude Sonnet (fallback).
+Hybrid: the strong creative model writes the fakes (the product); a fast model does the mechanical JSON steps.
 
-Usage:  python generate_day.py [--date YYYY-MM-DD] [--force] [--politics]
+Usage:  python generate_day.py [--date YYYY-MM-DD] [--force] [--politics] [--category general|sports|music]
 """
 from __future__ import annotations
 
@@ -49,6 +52,21 @@ FEEDS = {
     "music":         ["https://www.rollingstone.com/music/feed/"],
 }
 POLITICS_FEEDS = ["https://feeds.npr.org/1014/rss.xml"]
+
+# G-C category packs. The shared-daily-instance gate holds PER LANE: everyone in a lane gets the same 6.
+# Politics stays OFF (a separate Wes decision). Add lanes here; each gets its own evergreen bank + ledger.
+CATEGORIES = {
+    "general": {"feeds": FEEDS, "lane": "", "figures": "different public figures across sports, tech, science, music, film and food"},
+    "sports":  {"feeds": {"sports": ["https://www.espn.com/espn/rss/news", "https://api.foxsports.com/v1/rss"]},
+                "lane": "SPORTS ", "figures": "different real NON-politician athletes, coaches and sports figures"},
+    "music":   {"feeds": {"music": ["https://www.rollingstone.com/music/feed/", "https://pitchfork.com/rss/news/"]},
+                "lane": "MUSIC ", "figures": "different real musicians, singers, producers and music figures"},
+}
+
+def evergreen_path(cat): return EVERGREEN if cat == "general" else os.path.join(HERE, f"evergreen_{cat}.json")
+def used_path(cat): return USED if cat == "general" else os.path.join(HERE, f"used_{cat}.json")
+def daily_dir(cat): return DAILY if cat == "general" else os.path.join(DAILY, cat)
+def target_path(cat, date): return os.path.join(daily_dir(cat), f"{date}.json")
 
 # Hard denylist — if any appears in a quote/speaker/context, drop it (politics + tragedy + defamation-shaped).
 DENY = [
@@ -91,10 +109,9 @@ FAKE_SYS = ("You fabricate plausible-but-fake quotes for a 'real or fake?' daily
             "to a real, well-known NON-POLITICIAN public figure and must be INNOCUOUS: never an invented "
             "crime, scandal, slur, medical/financial claim, or anything reputationally damaging — just the "
             "kind of funny, harmless thing the person might plausibly say. Output STRICT JSON only.")
-FAKE_TMPL = """Write {n} DISTINCT fake quotes for today's game. Vary them hard: different public figures,
-different domains (sports, tech, science, music, film, food), and different comedic registers (a quietly
-absurd boast; an oddly specific technical detail; a deadpan admission; a wholesome invented anecdote).
-Each must be funny-plausible and HARMLESS. Avoid politics entirely.
+FAKE_TMPL = """Write {n} DISTINCT fake quotes for today's {lane}game. Vary them hard: {figures}, and
+different comedic registers (a quietly absurd boast; an oddly specific technical detail; a deadpan
+admission; a wholesome invented anecdote). Each must be funny-plausible and HARMLESS. Avoid politics entirely.
 
 Output a JSON array; each element EXACTLY:
 {{"text": "<the fabricated quote, no surrounding quotes>", "speaker": "<a real non-politician public figure>",
@@ -117,18 +134,42 @@ Output a JSON array of objects EXACTLY: {{"i": <index>, "safe": <true|false>}}""
 
 
 # ---------- LLM (provider-agnostic) ----------
+ADC_PATH = os.path.expanduser("~/.config/gcloud/application_default_credentials.json")
+
+def _gemini_mode():
+    """Which Gemini transport is available. AI-Studio key wins (works in CI); else Vertex via ADC (local)."""
+    if os.environ.get("GEMINI_API_KEY"):
+        return "aistudio"
+    if os.environ.get("GOOGLE_CLOUD_PROJECT") or os.path.exists(ADC_PATH):
+        return "vertex"
+    return None
+
+def _vertex_project():
+    p = os.environ.get("GOOGLE_CLOUD_PROJECT")
+    if p:
+        return p
+    try:
+        return json.load(open(ADC_PATH)).get("quota_project_id")
+    except Exception:  # noqa: BLE001
+        return None
+
+def _fast_model():
+    # Mechanical JSON steps (extraction, safety screen): a fast non-thinking model — more reliable for JSON
+    # arrays than a thinking model. IDs differ by transport (Vertex preview IDs vs AI-Studio GA IDs).
+    return os.environ.get("SAIDIT_GEMINI_FAST") or ("gemini-3.1-flash-lite" if _gemini_mode() == "vertex" else "gemini-2.5-flash")
+
 def _call_gemini(system: str, prompt: str, model: str | None = None) -> str:
     from google import genai  # type: ignore
-    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-    # Default = the strong creative model (fakes are the product). Mechanical JSON steps pass a fast model.
-    model = model or os.environ.get("SAIDIT_GEMINI_MODEL", "gemini-3.1-pro")
+    mode = _gemini_mode()
+    if mode == "vertex":     # local: Vertex AI via ADC (gcloud auth application-default login) — the working route
+        client = genai.Client(vertexai=True, project=_vertex_project(),
+                              location=os.environ.get("GOOGLE_CLOUD_LOCATION", "global"))
+        model = model or os.environ.get("SAIDIT_GEMINI_MODEL", "gemini-3.1-pro-preview")
+    else:                    # CI: Gemini Developer API (AI Studio) via GEMINI_API_KEY
+        client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+        model = model or os.environ.get("SAIDIT_GEMINI_MODEL", "gemini-3.1-pro")
     r = client.models.generate_content(model=model, contents=system + "\n\n" + prompt)
     return r.text or ""
-
-
-# Fast, non-thinking model for the mechanical JSON steps (quote extraction, safety screen) — more
-# reliable for JSON arrays than a thinking model, and quality there is irrelevant.
-FAST_GEMINI = os.environ.get("SAIDIT_GEMINI_FAST", "gemini-2.5-flash")
 
 
 def _call_claude(system: str, prompt: str, max_tokens: int) -> str:
@@ -145,7 +186,7 @@ def llm(system: str, prompt: str, max_tokens: int = 2000, gemini_model: str | No
     misconfigured — so a bad Gemini key/model can never silently break the unattended cron.
     `gemini_model` overrides the Gemini model for this call (mechanical steps pass the fast model)."""
     order = []
-    if os.environ.get("GEMINI_API_KEY"):
+    if _gemini_mode():
         order.append("gemini")
     if os.environ.get("ANTHROPIC_API_KEY"):
         order.append("claude")
@@ -289,7 +330,7 @@ def gather_reals(feeds, days, used, want=6):
         return []
     block = "\n".join(f'{i} | {it["domain"]} | {it["title"]}. {it["summary"][:400]}' for i, it in enumerate(items))
     try:
-        cands = largest_json(llm(REAL_SYS, REAL_TMPL.format(k=12, items=block), max_tokens=2500, gemini_model=FAST_GEMINI)) or []
+        cands = largest_json(llm(REAL_SYS, REAL_TMPL.format(k=12, items=block), max_tokens=2500, gemini_model=_fast_model())) or []
     except Exception as e:  # noqa: BLE001
         print(f"  ! reals LLM: {e}", file=sys.stderr); return []
     verified = []
@@ -322,9 +363,10 @@ def gather_reals(feeds, days, used, want=6):
     return verified
 
 
-def forge_fakes(used, n=6):
+def forge_fakes(used, cat="general", n=6):
+    meta = CATEGORIES.get(cat, CATEGORIES["general"])
     try:
-        fakes = largest_json(llm(FAKE_SYS, FAKE_TMPL.format(n=n), max_tokens=2500)) or []
+        fakes = largest_json(llm(FAKE_SYS, FAKE_TMPL.format(n=n, lane=meta["lane"], figures=meta["figures"]), max_tokens=2500)) or []
     except Exception as e:  # noqa: BLE001
         print(f"  ! fakes LLM: {e}", file=sys.stderr); return []
     out = []
@@ -345,7 +387,7 @@ def safety_screen(quotes):
         return quotes
     try:
         block = "\n".join(f'{i}: "{q["text"]}" — {q["speaker"]} ({q.get("context","")})' for i, q in screenable)
-        verdicts = largest_json(llm(SCREEN_SYS, SCREEN_TMPL.format(items=block), max_tokens=800, gemini_model=FAST_GEMINI)) or []
+        verdicts = largest_json(llm(SCREEN_SYS, SCREEN_TMPL.format(items=block), max_tokens=800, gemini_model=_fast_model())) or []
         unsafe = {int(v["i"]) for v in verdicts if isinstance(v, dict) and v.get("safe") is False}
         # guard: a screen that flags MOST items is misfiring (e.g. flagging fabrication itself) — the
         # deterministic denylist already gates real harm, so don't let a bad screen nuke the whole set.
@@ -358,26 +400,26 @@ def safety_screen(quotes):
         return quotes
 
 
-def load_evergreen():
+def load_evergreen(cat="general"):
     try:
-        return json.load(open(EVERGREEN))
+        return json.load(open(evergreen_path(cat)))
     except Exception:  # noqa: BLE001
         return []
 
 
-def load_used():
-    """Set of normalized texts of every quote ever published — used to guarantee no repeats, ever."""
+def load_used(cat="general"):
+    """Set of normalized texts of every quote ever published in this lane — no repeats, ever, per category."""
     try:
-        return set(json.load(open(USED)))
+        return set(json.load(open(used_path(cat))))
     except Exception:  # noqa: BLE001
         return set()
 
 
-def save_used(used):
-    json.dump(sorted(used), open(USED, "w"), indent=0)
+def save_used(used, cat="general"):
+    json.dump(sorted(used), open(used_path(cat), "w"), indent=0)
 
 
-def assemble(date, reals_fresh, fakes, evergreen, used):
+def assemble(date, reals_fresh, fakes, evergreen, used, cat="general"):
     n_real = random.choice([2, 3, 3])                      # vary the ratio so it isn't always 3:3
     reals = list(reals_fresh[:n_real])
     pool = [e for e in evergreen if _norm(e["text"]) not in used]   # only evergreen quotes never published
@@ -404,20 +446,24 @@ def assemble(date, reals_fresh, fakes, evergreen, used):
         out_quotes.append(item)
     if trick is None:
         trick = next((it["id"] for it in out_quotes if not it["real"]), None)
-    return {"date": date, "edition": None, "curator": "auto (generate_day.py — reals verified verbatim vs source)",
+    return {"date": date, "edition": None, "category": cat,
+            "curator": "auto (generate_day.py — reals verified verbatim vs source)",
             "politics_dial": "off", "trickiest_fake": trick, "quotes": out_quotes}
 
 
-def update_manifest(date):
-    path = os.path.join(DAILY, "index.json")
+def update_manifest(date, cat="general"):
+    path = os.path.join(DAILY, "index.json")        # one manifest at the root; lanes nest under categories
     try:
         idx = json.load(open(path))
     except Exception:  # noqa: BLE001
         idx = {"game": "Said It?", "days": []}
-    days = sorted(set(idx.get("days", []) + [date]))
-    idx["days"] = days
+    cats = idx.get("categories") or {}
+    cats[cat] = sorted(set(cats.get(cat, []) + [date]))
+    idx["categories"] = cats
+    if cat == "general":                            # back-compat: `days` mirrors the general lane
+        idx["days"] = sorted(set(idx.get("days", []) + [date]))
     json.dump(idx, open(path, "w"), indent=2)
-    return len(days)
+    return len(cats[cat])
 
 
 def main():
@@ -426,38 +472,38 @@ def main():
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--politics", action="store_true")
     ap.add_argument("--days", type=int, default=8)
+    ap.add_argument("--category", default="general", choices=list(CATEGORIES.keys()))
     a = ap.parse_args()
+    cat = a.category
 
-    target = os.path.join(DAILY, f"{a.date}.json")
+    target = target_path(cat, a.date)
+    os.makedirs(daily_dir(cat), exist_ok=True)
     if os.path.exists(target) and not a.force:
-        print(f"{a.date} already exists — skipping (use --force to regenerate)."); return 0
+        print(f"{cat}/{a.date} already exists — skipping (use --force to regenerate)."); return 0
 
-    print(f"== generating {a.date} (politics {'ON' if a.politics else 'OFF'}) ==")
-    feeds = dict(FEEDS)
-    if a.politics:
+    print(f"== generating [{cat}] {a.date} (politics {'ON' if a.politics else 'OFF'}) ==")
+    feeds = dict(CATEGORIES[cat]["feeds"])
+    if a.politics and cat == "general":
         feeds["politics"] = POLITICS_FEEDS
 
-    used = load_used()
-    print(f"  used-quote ledger: {len(used)} already-published quotes excluded")
+    used = load_used(cat)
+    print(f"  used-quote ledger [{cat}]: {len(used)} already-published quotes excluded")
     reals = gather_reals(feeds, a.days, used)
-    fakes = forge_fakes(used, 8)                 # forge extra for headroom
+    fakes = forge_fakes(used, cat, 8)            # lane-aware, forge extra for headroom
     fakes = safety_screen(fakes)                 # screen the fabricated content UP FRONT (not post-assembly)
     print(f"  fakes: {len(fakes)} forged + screened safe")
-    edition = assemble(a.date, reals, fakes, load_evergreen(), used)
+    edition = assemble(a.date, reals, fakes, load_evergreen(cat), used, cat)
     if not edition:
-        print("  FAIL-SAFE: could not assemble a quality, NON-REPEATING set (>=5 quotes, >=2 real, >=2 fake). "
-              "Wrote nothing (likely the evergreen bank is exhausted and fresh news yielded too few new quotes — "
-              "grow evergreen_reals.json or add quote-rich feeds).", file=sys.stderr)
+        print(f"  FAIL-SAFE [{cat}]: could not assemble a quality, NON-REPEATING set (>=5 quotes, >=2 real, "
+              f">=2 fake). Wrote nothing (grow evergreen_{cat if cat!='general' else 'reals'}.json or add "
+              "quote-rich feeds for this lane).", file=sys.stderr)
         return 2
 
-    # edition number = position in the manifest after adding today
-    n = update_manifest(a.date)
+    n = update_manifest(a.date, cat)             # edition number = position in this lane's manifest
     edition["edition"] = n
     json.dump(edition, open(target, "w"), indent=2, ensure_ascii=False)
-
-    # record every quote in this edition so it is NEVER published again
-    used |= {_norm(q["text"]) for q in edition["quotes"]}
-    save_used(used)
+    used |= {_norm(q["text"]) for q in edition["quotes"]}   # never publish these again in this lane
+    save_used(used, cat)
     print(f"  WROTE {target}  (edition {n}, {len(edition['quotes'])} quotes, "
           f"{sum(1 for q in edition['quotes'] if q['real'])} real / {sum(1 for q in edition['quotes'] if not q['real'])} fake)")
     return 0
