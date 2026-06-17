@@ -1,0 +1,65 @@
+{
+  "date": "2026-06-17",
+  "edition": 3,
+  "curator": "auto (generate_day.py — reals verified verbatim vs source)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The secret ingredient in my grandmother's tiramisu recipe is cardamom, which absolutely horrifies food historians. I'm keeping it secret from them out of pure spite.",
+      "speaker": "Lidia Bastianich",
+      "context": "Chefland podcast interview, 2024",
+      "real": false,
+      "fake_note": "Lidia is known for both honoring traditional Italian cooking and playfully subverting expectations. An invented unconventional ingredient paired with dry humor about food gatekeeping feels authentically hers."
+    },
+    {
+      "id": "q2",
+      "text": "When I was designing the original iPod, I spent three weeks arguing with someone about whether the scroll wheel should click. It did not click. I was right, but I have never been more certain I was wrong.",
+      "speaker": "Jonathan Ive",
+      "context": "BBC Design podcast, 2023",
+      "real": false,
+      "fake_note": "Ive is famous for obsessing over tiny design details and second-guessing himself publicly. The quote captures his verbose, paradoxical way of discussing decisions without claiming anything false about his work."
+    },
+    {
+      "id": "q3",
+      "text": "I once tried to explain to my kids what a DVD is. They thought I was describing a religion. Honestly, they might be right.",
+      "speaker": "Bill Burr",
+      "context": "Late-night comedy set, Boston, 2024",
+      "real": false,
+      "fake_note": "Classic Burr structure: bewilderment at technology becoming obsolete, landing in a self-aware absurdist punchline. Totally in his wheelhouse of generational exasperation."
+    },
+    {
+      "id": "q4",
+      "text": "What would take Hubble 2,000 years to process, Roman can do in a year.",
+      "speaker": "Jared Isaacman",
+      "context": "NASA Administrator, on the Nancy Grace Roman Space Telescope",
+      "real": true,
+      "source": {
+        "title": "Scientific American — Roman Space Telescope",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I don't know if those are B's. They might be Cardi D's. I'm pretty sure those aren't B's. She's got the wrong initials.",
+      "speaker": "Charles Barkley",
+      "context": "on the TNT desk during Cardi B's NBA Finals halftime show",
+      "real": true,
+      "source": {
+        "title": "Larry Brown Sports — Charles Barkley's Cardi B quote",
+        "url": "https://larrybrownsports.com/basketball/charles-barkley-wildest-quote-cardi-b-nba-finals/757513",
+        "date": "2026-06-09"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've always said that tennis is 90% mental, 10% physical, and 5% just accepting that your strings will betray you at the worst possible moment.",
+      "speaker": "Serena Williams",
+      "context": "Interview with The Athletic, March 2024",
+      "real": false,
+      "fake_note": "The math is deliberately broken (105% total), which is the kind of self-aware joke Serena might make about sports clichés. The specific frustration about strings is absurdly relatable for any player."
+    }
+  ]
+}

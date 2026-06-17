@@ -1,0 +1,58 @@
+name: Daily edition
+
+# Generates a fresh "Said It?" edition every morning and pushes it, which rebuilds GitHub Pages.
+# Fully autonomous: reals are verified verbatim against their source, politics filtered, fakes kept
+# innocuous + labelled, and the generator FAILS SAFE (commits nothing) rather than publish a bad set.
+
+on:
+  schedule:
+    - cron: "0 8 * * *"        # 08:00 UTC daily (before US morning). Adjust if you like.
+  workflow_dispatch:            # also runnable by hand from the Actions tab (use inputs.force to overwrite)
+    inputs:
+      force:
+        description: "Regenerate even if today's edition already exists"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write               # lets the built-in token commit + push (which triggers the Pages build)
+
+concurrency:
+  group: said-it-daily
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install LLM SDK
+        # Anthropic by default (you already have the key). To use Gemini instead, set the GEMINI_API_KEY
+        # secret and change this line to `pip install google-genai`.
+        run: pip install anthropic
+
+      - name: Generate today's edition
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SAIDIT_MODEL: ${{ vars.SAIDIT_MODEL || 'claude-haiku-4-5' }}
+        run: |
+          python tools/generate_day.py ${{ (github.event.inputs.force == 'true') && '--force' || '' }} || true
+
+      - name: Commit & push if a new edition was written
+        run: |
+          if [ -n "$(git status --porcelain daily/)" ]; then
+            git config user.name "said-it-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add daily/
+            git commit -m "auto: daily edition $(date -u +%F)"
+            git push
+            echo "Published a new edition."
+          else
+            echo "No new edition this run (fail-safe, or today already published). Site keeps serving the latest. Nothing to commit."
+          fi
