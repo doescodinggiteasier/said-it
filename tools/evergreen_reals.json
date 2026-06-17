@@ -3,30 +3,320 @@
     "text": "I don't know if those are B's. They might be Cardi D's. I'm pretty sure those aren't B's. She's got the wrong initials.",
     "speaker": "Charles Barkley",
     "context": "on the TNT desk during Cardi B's NBA Finals halftime show",
-    "source": {"title": "Larry Brown Sports — Charles Barkley's Cardi B quote", "url": "https://larrybrownsports.com/basketball/charles-barkley-wildest-quote-cardi-b-nba-finals/757513", "date": "2026-06-09"}
+    "source": {
+      "title": "Larry Brown Sports — Charles Barkley's Cardi B quote",
+      "url": "https://larrybrownsports.com/basketball/charles-barkley-wildest-quote-cardi-b-nba-finals/757513",
+      "date": "2026-06-09"
+    }
   },
   {
     "text": "I appreciate that many of us grew up and enjoyed science fiction, but it's not helpful.",
     "speaker": "Jensen Huang",
     "context": "Nvidia CEO, on quantifying the existential risk of AI",
-    "source": {"title": "TechRadar — Quote of the day: Jensen Huang on AI risk", "url": "https://www.techradar.com/pro/quote-of-the-day-by-nvidia-ceo-jensen-huang-i-appreciate-that-many-of-us-grew-up-and-enjoyed-science-fiction-but-its-not-helpful-on-quantifying-the-existential-risks-posed-by-ai", "date": "2026-06-06"}
+    "source": {
+      "title": "TechRadar — Quote of the day: Jensen Huang on AI risk",
+      "url": "https://www.techradar.com/pro/quote-of-the-day-by-nvidia-ceo-jensen-huang-i-appreciate-that-many-of-us-grew-up-and-enjoyed-science-fiction-but-its-not-helpful-on-quantifying-the-existential-risks-posed-by-ai",
+      "date": "2026-06-06"
+    }
   },
   {
     "text": "Humanity is about to be handed almost unimaginable power, and it is deeply unclear whether our social, political, and technological systems possess the maturity to wield it.",
     "speaker": "Dario Amodei",
     "context": "Anthropic CEO, on the arrival of beyond-human AI",
-    "source": {"title": "TechRadar — Quote of the day: Dario Amodei on AI", "url": "https://www.techradar.com/pro/quote-of-the-day-by-anthropic-ceo-dario-amodei-humanity-is-about-to-be-handed-almost-unimaginable-power-and-it-is-deeply-unclear-whether-we-possess-the-maturity-to-wield-it-warnings-on-the-looming-threat-of-beyond-human-ai", "date": "2026-06-03"}
+    "source": {
+      "title": "TechRadar — Quote of the day: Dario Amodei on AI",
+      "url": "https://www.techradar.com/pro/quote-of-the-day-by-anthropic-ceo-dario-amodei-humanity-is-about-to-be-handed-almost-unimaginable-power-and-it-is-deeply-unclear-whether-we-possess-the-maturity-to-wield-it-warnings-on-the-looming-threat-of-beyond-human-ai",
+      "date": "2026-06-03"
+    }
   },
   {
     "text": "What would take Hubble 2,000 years to process, Roman can do in a year.",
     "speaker": "Jared Isaacman",
     "context": "NASA Administrator, on the Nancy Grace Roman Space Telescope",
-    "source": {"title": "Scientific American — Roman Space Telescope", "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/", "date": "2026-04-22"}
+    "source": {
+      "title": "Scientific American — Roman Space Telescope",
+      "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+      "date": "2026-04-22"
+    }
   },
   {
     "text": "Current observations hint that our standard model of the universe is incorrect.",
     "speaker": "Julie McEnery",
     "context": "Roman Space Telescope senior project scientist, NASA",
-    "source": {"title": "Scientific American — Roman Space Telescope", "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/", "date": "2026-04-22"}
+    "source": {
+      "title": "Scientific American — Roman Space Telescope",
+      "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+      "date": "2026-04-22"
+    }
+  },
+  {
+    "text": "I'm tired of hearing about money, money, money, money, money. I just want to play the game, drink Pepsi, wear Reebok.",
+    "speaker": "Shaquille O'Neal",
+    "context": "NBA center, in July 1996 after leaving the Orlando Magic for the Lakers, when asked about contract money",
+    "source": {
+      "title": "'I Just Want To Play The Game, Drink Pepsi, Wear Reebok': Remembering The Time Shaquille O'Neal Dropped Random Knowledge",
+      "url": "https://clutchpoints.com/i-just-want-to-play-the-game-drink-pepsi-wear-reebok-remembering-the-time-shaq-dropped-random-knowledge",
+      "date": "2022-07-30"
+    }
+  },
+  {
+    "text": "I'm just here so I won't get fined, boss. That's the only reason why.",
+    "speaker": "Marshawn Lynch",
+    "context": "Seattle Seahawks running back, repeated this line at Super Bowl XLIX Media Day in January 2015 after being fined for not speaking to reporters",
+    "source": {
+      "title": "Marshawn Lynch: 'I'm just here so I won't get fined'",
+      "url": "https://www.nfl.com/news/marshawn-lynch-i-m-just-here-so-i-won-t-get-fined-0ap2000000319691",
+      "date": "2015-01-27"
+    }
+  },
+  {
+    "text": "Ah -- playoffs? Don't talk about -- playoffs? You kidding me? Playoffs? I just hope we can win a game!",
+    "speaker": "Jim Mora",
+    "context": "Indianapolis Colts head coach, at a November 2001 press conference when a reporter asked about the team's playoff chances after a loss",
+    "source": {
+      "title": "Garber: Mora reflects on \"Playoffs?\" moment",
+      "url": "https://www.espn.com/nfl/story/_/id/7302157/jim-mora-reflects-playoffs-moment",
+      "date": "2012-01-12"
+    }
+  },
+  {
+    "text": "You better cut the pizza in four pieces because I'm not hungry enough to eat six.",
+    "speaker": "Yogi Berra",
+    "context": "Hall of Fame baseball catcher and manager, one of his famous 'Yogi-isms'",
+    "source": {
+      "title": "Famous 'Yogi-isms'",
+      "url": "https://www.cbsnews.com/news/famous-yogi-isms",
+      "date": "2002-03-06"
+    }
+  },
+  {
+    "text": "You look into the eyes of a chicken and you lose yourself in a completely flat, frightening stupidity. They are like a great metaphor for me... I kind of love chicken, but they frighten me more than any other animal.",
+    "speaker": "Werner Herzog",
+    "context": "The director explaining his lifelong fear of chickens, on the Signs of Life (1968) DVD audio commentary (2005), as collected on Wikiquote",
+    "source": {
+      "title": "Werner Herzog - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Werner_Herzog",
+      "date": "2005-01-01"
+    }
+  },
+  {
+    "text": "I make up different names for my cat all the time—Flapjack, Bowtie, Popcorn. But he's really, 'Hey you, cat.'",
+    "speaker": "Christopher Walken",
+    "context": "The actor on his pet cat in an Interview Magazine feature",
+    "source": {
+      "title": "Christopher Walken on Cats, Characters, and Career Highlights - Interview Magazine",
+      "url": "https://www.interviewmagazine.com/film/christopher-walken",
+      "date": "2012-01-01"
+    }
+  },
+  {
+    "text": "I know acting is a childlike endeavour but it's no license to be childish.",
+    "speaker": "Jeff Goldblum",
+    "context": "The actor reflecting on his craft in a Time Out interview",
+    "source": {
+      "title": "Jeff Goldblum: 'What do people quote at me? That is one big pile of shit' - Time Out",
+      "url": "https://www.timeout.com/film/jeff-goldblum-what-do-people-quote-at-me-that-is-one-big-pile-of-shit",
+      "date": "2017-01-01"
+    }
+  },
+  {
+    "text": "I'm ready to drink tonight, until next morning. Thank you.",
+    "speaker": "Bong Joon-ho",
+    "context": "The director, through his interpreter, accepting the Best International Feature Film Oscar for Parasite at the 2020 Academy Awards",
+    "source": {
+      "title": "Bong Joon-ho Oscar Acceptance Speech Transcripts: Parasite Wins Big at the Academy Awards - Rev",
+      "url": "https://www.rev.com/transcripts/bong-joon-ho-oscar-acceptance-speech-transcripts-parasite-wins-big-at-the-academy-awards",
+      "date": "2020-02-09"
+    }
+  },
+  {
+    "text": "You shouldn't let poets lie to you",
+    "speaker": "Björk",
+    "context": "In a 1988 TV interview, after taking apart a television to explain how it works and recounting how an Icelandic poet's spooky description had once scared her",
+    "source": {
+      "title": "Björk on television (1988 interview transcript)",
+      "url": "https://thomasr.nvg.org/bjork/zabor-int.txt",
+      "date": "1988-01-01"
+    }
+  },
+  {
+    "text": "They say that I have no hits, and I'm difficult to work with. And they say that like it's a bad thing.",
+    "speaker": "Tom Waits",
+    "context": "Speaking at his Rock and Roll Hall of Fame induction, March 14, 2001",
+    "source": {
+      "title": "Tom Waits - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Tom_Waits",
+      "date": "2001-03-14"
+    }
+  },
+  {
+    "text": "Well, it pissed a few people off and I figured it was worth doing.",
+    "speaker": "Willie Nelson",
+    "context": "Explaining why he stuck with his iconic long braids, in an interview with Larry King (as reported by Whiskey Riff)",
+    "source": {
+      "title": "“It Pissed A Few People Off, And I Figured It Was Worth Doing” — Willie Nelson On Why He’s Stuck With His Iconic Braids | Whiskey Riff",
+      "url": "https://www.whiskeyriff.com/2024/08/20/it-pissed-a-few-people-off-and-i-figured-it-was-worth-doing-willie-nelson-on-why-hes-stuck-with-his-iconic-braids/",
+      "date": "2024-08-20"
+    }
+  },
+  {
+    "text": "I do not have a five-year plan. I do not have a moonshot. I'm looking at the ground, and I want to fix the pothole that's right in front of me before I go in.",
+    "speaker": "Linus Torvalds",
+    "context": "Interviewed by Chris Anderson onstage at TED2016, contrasting himself with visionaries (he also says \"I am not a visionary. I'm an engineer.\")",
+    "source": {
+      "title": "The quotable Linus Torvalds, live onstage at TED | TED Blog",
+      "url": "https://blog.ted.com/the-quotable-linus-torvalds-live-onstage-at-ted/",
+      "date": "2016-02-17"
+    }
+  },
+  {
+    "text": "I never lie, even to this day. Not even a little. Unless you count playing pranks on people, which I don't. That's comedy. Entertainment doesn't count. A joke is different from a lie, even if the difference is kind of subtle.",
+    "speaker": "Steve Wozniak",
+    "context": "From his memoir iWoz (2006), the Apple co-founder on his lifelong commitment to honesty and his exception for pranks",
+    "source": {
+      "title": "Steve Wozniak (10+ Sourced Quotes) - Lib Quotes",
+      "url": "https://libquotes.com/steve-wozniak",
+      "date": "2006-09-17"
+    }
+  },
+  {
+    "text": "I like to say not only was that the first human on the moon, but the first software to run on the moon.",
+    "speaker": "Margaret Hamilton",
+    "context": "The Apollo flight-software lead (who popularized the term \"software engineering\") in a CBS Boston interview, on her code's role in the moon landing",
+    "source": {
+      "title": "Margaret Hamilton: MIT Software Pioneer Who Helped Save Apollo 11 Moon Mission - CBS Boston",
+      "url": "https://www.cbsnews.com/boston/news/margaret-hamilton-apollo-11-software-pioneer-interview/",
+      "date": "2019-07-15"
+    }
+  },
+  {
+    "text": "I'm not an animal lover if that means you think things are nice if you can pet them, but I am intoxicated by animals.",
+    "speaker": "David Attenborough",
+    "context": "Naturalist and broadcaster, in a 2013 Metro interview, on his relationship with wildlife",
+    "source": {
+      "title": "David Attenborough - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/David_Attenborough",
+      "date": "2013-01-29"
+    }
+  },
+  {
+    "text": "The best description I can come up with is metallic; a rather pleasant sweet metallic sensation. It reminded me of my college summers where I labored for many hours with an arc welding torch repairing heavy equipment for a small logging outfit. It reminded me of pleasant sweet-smelling welding fumes. That is the smell of space.",
+    "speaker": "Don Pettit",
+    "context": "Astronaut and ISS Science Officer, describing what space smells like (NASA blog, quoted on NASA.gov)",
+    "source": {
+      "title": "December 2021: What does space smell like? - NASA",
+      "url": "https://www.nasa.gov/space-science-and-astrobiology-at-ames/interesting-fact-of-the-month-current/interesting-fact-of-the-month-2021/",
+      "date": "2021-12-01"
+    }
+  },
+  {
+    "text": "Well, I prefer the soft singing voice of Karen Carpenter. I have heard Frank Sinatra sing 'Fly Me to the Moon' almost too many times. So I'm interested in composing a new song, entitled 'Get your ass to Mars!'",
+    "speaker": "Buzz Aldrin",
+    "context": "Apollo 11 astronaut, in a July 2014 Reddit AMA marking the 45th anniversary of the Moon landing, answering a question about his music taste",
+    "source": {
+      "title": "The 15 Most Fascinating Answers From Buzz Aldrin's Reddit AMA | Fox News",
+      "url": "https://www.foxnews.com/entertainment/the-15-most-fascinating-answers-from-buzz-aldrins-reddit-ama",
+      "date": "2014-07-22"
+    }
+  },
+  {
+    "text": "I like the escalator, man, 'cause the escalator can never break. It can only become stairs. There would never be an 'Escalator Temporarily Out of Order' sign, only an 'Escalator Temporarily Stairs - Sorry for the Convenience.'",
+    "speaker": "Mitch Hedberg",
+    "context": "From his Comedy Central Presents stand-up set, a signature observational one-liner",
+    "source": {
+      "title": "Mitch Hedberg quote on Quotes.net (Comedy Central Presents)",
+      "url": "https://www.quotes.net/mquote/706033",
+      "date": "1998-01-01"
+    }
+  },
+  {
+    "text": "I always thought that, uh, quicksand was gonna be a much bigger problem than it turned out to be.",
+    "speaker": "John Mulaney",
+    "context": "From his stand-up special 'New in Town' (2012), riffing on childhood fears from cartoons",
+    "source": {
+      "title": "John Mulaney: New In Town (2012) - Full Transcript - Scraps from the Loft",
+      "url": "https://scrapsfromtheloft.com/comedy/john-mulaney-new-in-town-2012-full-transcript/",
+      "date": "2012-01-13"
+    }
+  },
+  {
+    "text": "The speed of light is never going to go out of style. Gravity, lint, signs, time itself, is not going to go out of style.",
+    "speaker": "Steven Wright",
+    "context": "In a Salon Talks interview, explaining why he avoids topical jokes so his material stays timeless",
+    "source": {
+      "title": "\"Gravity is never going to go out of style\": Steven Wright on the secret to comedy longevity - Salon.com",
+      "url": "https://www.salon.com/2024/05/22/steven-wright-harold-salon-talks/",
+      "date": "2024-05-22"
+    }
+  },
+  {
+    "text": "The only time to eat diet food is while you're waiting for the steak to cook.",
+    "speaker": "Julia Child",
+    "context": "Famous saying by the chef and TV cook, listed among quotes she actually said",
+    "source": {
+      "title": "17 Quotes From Julia Child, Which She Actually Said | GBH",
+      "url": "https://www.wgbh.org/lifestyle/food/food-stories/2019-01-28/17-quotes-from-julia-child-which-she-actually-said",
+      "date": "2019-01-28"
+    }
+  },
+  {
+    "text": "Your body is not a temple, it's an amusement park. Enjoy the ride.",
+    "speaker": "Anthony Bourdain",
+    "context": "From his memoir Kitchen Confidential, on his attitude toward eating",
+    "source": {
+      "title": "Quote by Anthony Bourdain: \"your body is not a temple, it's an amusement pa...\"",
+      "url": "https://www.goodreads.com/quotes/271353-your-body-is-not-a-temple-it-s-an-amusement-park",
+      "date": "2000-01-01"
+    }
+  },
+  {
+    "text": "Not everyone can be a truffle. Most of us are potatoes. And a potato is a very good thing to be.",
+    "speaker": "Massimo Bottura",
+    "context": "Quote by the Italian chef of Osteria Francescana, on humility",
+    "source": {
+      "title": "Massimo Bottura Quotes (Author of Never Trust A Skinny Italian Chef)",
+      "url": "https://www.goodreads.com/author/quotes/406174.Massimo_Bottura",
+      "date": "2021-01-01"
+    }
+  },
+  {
+    "text": "You could probably get through life without knowing how to roast a chicken, but the question is, would you want to?",
+    "speaker": "Nigella Lawson",
+    "context": "Quote attributed to her book Eating (Vintage Minis), on home cooking",
+    "source": {
+      "title": "TOP 25 QUOTES BY NIGELLA LAWSON | A-Z Quotes",
+      "url": "https://www.azquotes.com/author/8589-Nigella_Lawson",
+      "date": "2017-01-01"
+    }
+  },
+  {
+    "text": "Honestly, I ate nothing else in all my time out in China except chicken nuggets. They were the only food I could properly trust which wouldn't affect my stomach.",
+    "speaker": "Usain Bolt",
+    "context": "Sprinter recalling his diet during the 2008 Beijing Olympics, in his autobiography, as quoted by NBC Sports",
+    "source": {
+      "title": "Why Usain Bolt ate chicken nuggets for every meal at Beijing Olympics",
+      "url": "https://www.nbcsports.com/olympics/news/usain-bolt-beijing-olympics-2008-chicken-nuggets",
+      "date": "2024-07-23"
+    }
+  },
+  {
+    "text": "I had about two bites because it was straight up chocolate cake, and I can't do that for breakfast.",
+    "speaker": "Katie Ledecky",
+    "context": "Swimmer describing trying the 'infamous' chocolate muffins in the 2024 Paris Olympic Village, as quoted by AOL/People",
+    "source": {
+      "title": "Katie Ledecky Says She Tried the 'Infamous' Chocolate Muffins at 2024 Olympics: 'I Can't Do That for Breakfast'",
+      "url": "https://www.aol.com/katie-ledecky-says-she-tried-140000011.html",
+      "date": "2024-08-08"
+    }
+  },
+  {
+    "text": "I think everybody pees in the pool. It's kind of a normal thing to do for swimmers.",
+    "speaker": "Michael Phelps",
+    "context": "Swimmer answering a Wall Street Journal interview question about pool etiquette, as quoted by CBS News",
+    "source": {
+      "title": "Michael Phelps on peeing in the pool: Everybody does it",
+      "url": "https://www.cbsnews.com/news/michael-phelps-on-peeing-in-the-pool-everybody-does-it/",
+      "date": "2012-08-10"
+    }
   }
 ]

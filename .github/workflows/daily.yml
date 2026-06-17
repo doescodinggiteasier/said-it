@@ -6,7 +6,8 @@ name: Daily edition
 
 on:
   schedule:
-    - cron: "0 8 * * *"        # 08:00 UTC daily (before US morning). Adjust if you like.
+    - cron: "0 7 * * *"        # 07:00 UTC = 12am Pacific / 1am Mountain / 2am Central / 3am Eastern (during US daylight time).
+                                # NOTE: GitHub cron is fixed-UTC, so in winter (standard time) this shifts to 11pm PT / 2am ET.
   workflow_dispatch:            # also runnable by hand from the Actions tab (use inputs.force to overwrite)
     inputs:
       force:
@@ -31,25 +32,25 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install LLM SDK
-        # Anthropic by default (you already have the key). To use Gemini instead, set the GEMINI_API_KEY
-        # secret and change this line to `pip install google-genai`.
-        run: pip install anthropic
+      - name: Install LLM SDKs
+        # Both providers: the generator PREFERS Gemini (free GCP credit) when GEMINI_API_KEY is set,
+        # and falls back to Claude (ANTHROPIC_API_KEY) if Gemini errors. Set either or both secrets.
+        run: pip install google-genai anthropic
 
       - name: Generate today's edition
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          SAIDIT_MODEL: ${{ vars.SAIDIT_MODEL || 'claude-haiku-4-5' }}
+          SAIDIT_MODEL: ${{ vars.SAIDIT_MODEL || 'claude-sonnet-4-6' }}
         run: |
           python tools/generate_day.py ${{ (github.event.inputs.force == 'true') && '--force' || '' }} || true
 
       - name: Commit & push if a new edition was written
         run: |
-          if [ -n "$(git status --porcelain daily/)" ]; then
+          if [ -n "$(git status --porcelain daily/ tools/used_quotes.json)" ]; then
             git config user.name "said-it-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add daily/
+            git add daily/ tools/used_quotes.json   # commit the no-repeat ledger too, so it persists
             git commit -m "auto: daily edition $(date -u +%F)"
             git push
             echo "Published a new edition."

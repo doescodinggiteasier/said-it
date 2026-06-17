@@ -3,63 +3,67 @@
   "edition": 3,
   "curator": "auto (generate_day.py — reals verified verbatim vs source)",
   "politics_dial": "off",
-  "trickiest_fake": "q2",
+  "trickiest_fake": "q6",
   "quotes": [
     {
       "id": "q1",
-      "text": "The secret ingredient in my grandmother's tiramisu recipe is cardamom, which absolutely horrifies food historians. I'm keeping it secret from them out of pure spite.",
-      "speaker": "Lidia Bastianich",
-      "context": "Chefland podcast interview, 2024",
-      "real": false,
-      "fake_note": "Lidia is known for both honoring traditional Italian cooking and playfully subverting expectations. An invented unconventional ingredient paired with dry humor about food gatekeeping feels authentically hers."
+      "text": "I had about two bites because it was straight up chocolate cake, and I can't do that for breakfast.",
+      "speaker": "Katie Ledecky",
+      "context": "Swimmer describing trying the 'infamous' chocolate muffins in the 2024 Paris Olympic Village, as quoted by AOL/People",
+      "real": true,
+      "source": {
+        "title": "Katie Ledecky Says She Tried the 'Infamous' Chocolate Muffins at 2024 Olympics: 'I Can't Do That for Breakfast'",
+        "url": "https://www.aol.com/katie-ledecky-says-she-tried-140000011.html",
+        "date": "2024-08-08"
+      }
     },
     {
       "id": "q2",
-      "text": "When I was designing the original iPod, I spent three weeks arguing with someone about whether the scroll wheel should click. It did not click. I was right, but I have never been more certain I was wrong.",
-      "speaker": "Jonathan Ive",
-      "context": "BBC Design podcast, 2023",
-      "real": false,
-      "fake_note": "Ive is famous for obsessing over tiny design details and second-guessing himself publicly. The quote captures his verbose, paradoxical way of discussing decisions without claiming anything false about his work."
+      "text": "I'm tired of hearing about money, money, money, money, money. I just want to play the game, drink Pepsi, wear Reebok.",
+      "speaker": "Shaquille O'Neal",
+      "context": "NBA center, in July 1996 after leaving the Orlando Magic for the Lakers, when asked about contract money",
+      "real": true,
+      "source": {
+        "title": "'I Just Want To Play The Game, Drink Pepsi, Wear Reebok': Remembering The Time Shaquille O'Neal Dropped Random Knowledge",
+        "url": "https://clutchpoints.com/i-just-want-to-play-the-game-drink-pepsi-wear-reebok-remembering-the-time-shaq-dropped-random-knowledge",
+        "date": "2022-07-30"
+      }
     },
     {
       "id": "q3",
-      "text": "I once tried to explain to my kids what a DVD is. They thought I was describing a religion. Honestly, they might be right.",
-      "speaker": "Bill Burr",
-      "context": "Late-night comedy set, Boston, 2024",
+      "text": "I've never actually owned a telescope. I just describe space in a way that makes people assume I have one nearby.",
+      "speaker": "Neil deGrasse Tyson",
+      "context": "Supposedly at a Q&A after a public lecture, 2023",
       "real": false,
-      "fake_note": "Classic Burr structure: bewilderment at technology becoming obsolete, landing in a self-aware absurdist punchline. Totally in his wheelhouse of generational exasperation."
+      "fake_note": "Fits his self-aware, slightly theatrical persona perfectly. The tell is that Tyson famously does own and use telescopes and would never frame his expertise as a performance."
     },
     {
       "id": "q4",
-      "text": "What would take Hubble 2,000 years to process, Roman can do in a year.",
-      "speaker": "Jared Isaacman",
-      "context": "NASA Administrator, on the Nancy Grace Roman Space Telescope",
+      "text": "Well, it pissed a few people off and I figured it was worth doing.",
+      "speaker": "Willie Nelson",
+      "context": "Explaining why he stuck with his iconic long braids, in an interview with Larry King (as reported by Whiskey Riff)",
       "real": true,
       "source": {
-        "title": "Scientific American — Roman Space Telescope",
-        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
-        "date": "2026-04-22"
+        "title": "“It Pissed A Few People Off, And I Figured It Was Worth Doing” — Willie Nelson On Why He’s Stuck With His Iconic Braids | Whiskey Riff",
+        "url": "https://www.whiskeyriff.com/2024/08/20/it-pissed-a-few-people-off-and-i-figured-it-was-worth-doing-willie-nelson-on-why-hes-stuck-with-his-iconic-braids/",
+        "date": "2024-08-20"
       }
     },
     {
       "id": "q5",
-      "text": "I don't know if those are B's. They might be Cardi D's. I'm pretty sure those aren't B's. She's got the wrong initials.",
-      "speaker": "Charles Barkley",
-      "context": "on the TNT desk during Cardi B's NBA Finals halftime show",
-      "real": true,
-      "source": {
-        "title": "Larry Brown Sports — Charles Barkley's Cardi B quote",
-        "url": "https://larrybrownsports.com/basketball/charles-barkley-wildest-quote-cardi-b-nba-finals/757513",
-        "date": "2026-06-09"
-      }
+      "text": "People ask how I stay motivated. Honestly? I just really, deeply hate losing to myself. Past-me set a record and present-me finds that offensive.",
+      "speaker": "Serena Williams",
+      "context": "Supposedly in a 2019 Nike promotional podcast",
+      "real": false,
+      "fake_note": "The competitive self-rivalry narrative matches her documented mindset. The tell is the oddly comedic framing — she's spoken intensely about competition but not quite this self-deprecatingly absurd."
     },
     {
       "id": "q6",
-      "text": "I've always said that tennis is 90% mental, 10% physical, and 5% just accepting that your strings will betray you at the worst possible moment.",
-      "speaker": "Serena Williams",
-      "context": "Interview with The Athletic, March 2024",
+      "text": "The secret to a perfect risotto is exactly 22 minutes of stirring. Not 20. Not 25. Twenty-two. I set a timer and I leave the room so I'm not tempted to rush.",
+      "speaker": "Gordon Ramsay",
+      "context": "Supposedly in a 2022 MasterChef behind-the-scenes interview",
       "real": false,
-      "fake_note": "The math is deliberately broken (105% total), which is the kind of self-aware joke Serena might make about sports clichés. The specific frustration about strings is absurdly relatable for any player."
+      "fake_note": "The obsessive precision is totally on-brand for Ramsay. The tell is that professional risotto technique deliberately varies timing based on heat and rice variety — no real chef would give a single fixed number."
     }
   ]
 }

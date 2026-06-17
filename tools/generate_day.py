@@ -36,6 +36,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 WEB = os.path.abspath(os.path.join(HERE, ".."))          # apps/said-it/web
 DAILY = os.path.join(WEB, "daily")
 EVERGREEN = os.path.join(HERE, "evergreen_reals.json")
+USED = os.path.join(HERE, "used_quotes.json")     # ledger of every quote ever published — NEVER repeat one
 
 UA = {"User-Agent": "SaidItBot/1.0 (+daily real-or-fake game; contact via repo)"}
 
@@ -100,9 +101,14 @@ Output a JSON array; each element EXACTLY:
   "context": "<supposedly where/when, short>", "fake_note": "<1-2 sentences for the reveal: what makes it
   plausible + the tell>", "sneaky": <true for the ONE you think is hardest to catch, else false>}}"""
 
-SCREEN_SYS = "You are a safety screen. Output STRICT JSON only."
-SCREEN_TMPL = """For each item, answer whether it is SAFE to publish in a light entertainment game: innocuous,
-NOT political, NOT about death/crime/tragedy, NOT defamatory or reputationally harmful to the named person.
+SCREEN_SYS = ("You screen INTENTIONALLY-FABRICATED quotes for a clearly-labeled 'real or fake?' game. "
+              "Fabrication is the entire point and is disclosed to players, so do NOT flag a quote merely "
+              "for being made up or attributed to a real person. Judge ONLY whether the CONTENT is harmful. "
+              "Output STRICT JSON only.")
+SCREEN_TMPL = """These are intentionally fabricated, clearly-labeled quotes for a light game (players know they
+may be fake). For each, mark "safe": false ONLY if its CONTENT is genuinely harmful — an invented crime,
+scandal, sexual content, slur, hate, a medical/health claim, death/tragedy, or a damaging real-world
+accusation. Harmless, funny, wholesome, or mundane content is SAFE (true) — even though it is fabricated.
 
 ITEMS:
 {items}
@@ -111,30 +117,42 @@ Output a JSON array of objects EXACTLY: {{"i": <index>, "safe": <true|false>}}""
 
 
 # ---------- LLM (provider-agnostic) ----------
-def _llm_provider():
-    if os.environ.get("GEMINI_API_KEY"):
-        return "gemini"
-    if os.environ.get("ANTHROPIC_API_KEY"):
-        return "claude"
-    return None
+def _call_gemini(system: str, prompt: str) -> str:
+    from google import genai  # type: ignore
+    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    model = os.environ.get("SAIDIT_GEMINI_MODEL", "gemini-2.5-flash")
+    r = client.models.generate_content(model=model, contents=system + "\n\n" + prompt)
+    return r.text or ""
+
+
+def _call_claude(system: str, prompt: str, max_tokens: int) -> str:
+    import anthropic  # type: ignore
+    client = anthropic.Anthropic()
+    model = os.environ.get("SAIDIT_MODEL", "claude-sonnet-4-6")
+    r = client.messages.create(model=model, max_tokens=max_tokens, system=system,
+                                messages=[{"role": "user", "content": prompt}])
+    return "".join(b.text for b in r.content if getattr(b, "type", None) == "text")
 
 
 def llm(system: str, prompt: str, max_tokens: int = 2000) -> str:
-    prov = _llm_provider()
-    if prov == "gemini":
-        from google import genai  # type: ignore
-        client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-        model = os.environ.get("SAIDIT_GEMINI_MODEL", "gemini-2.5-flash")
-        r = client.models.generate_content(model=model, contents=system + "\n\n" + prompt)
-        return r.text or ""
-    if prov == "claude":
-        import anthropic  # type: ignore
-        client = anthropic.Anthropic()
-        model = os.environ.get("SAIDIT_MODEL", "claude-haiku-4-5")
-        r = client.messages.create(model=model, max_tokens=max_tokens, system=system,
-                                    messages=[{"role": "user", "content": prompt}])
-        return "".join(b.text for b in r.content if getattr(b, "type", None) == "text")
-    raise RuntimeError("No LLM key: set GEMINI_API_KEY or ANTHROPIC_API_KEY.")
+    """Prefer Gemini (free GCP credit, CLAUDE.md rule 7); fall back to Claude if Gemini errors or is
+    misconfigured — so a bad Gemini key/model can never silently break the unattended cron."""
+    order = []
+    if os.environ.get("GEMINI_API_KEY"):
+        order.append("gemini")
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        order.append("claude")
+    if not order:
+        raise RuntimeError("No LLM key: set GEMINI_API_KEY (preferred) or ANTHROPIC_API_KEY.")
+    last = None
+    for prov in order:
+        try:
+            return _call_gemini(system, prompt) if prov == "gemini" else _call_claude(system, prompt, max_tokens)
+        except Exception as e:  # noqa: BLE001
+            last = e
+            tail = "falling back to next provider" if prov != order[-1] else "no more providers"
+            print(f"  ! LLM '{prov}' failed ({e.__class__.__name__}: {str(e)[:120]}) — {tail}", file=sys.stderr)
+    raise last
 
 
 def largest_json(text: str):
@@ -250,7 +268,7 @@ def named_speaker(sp):
 
 
 # ---------- pipeline stages ----------
-def gather_reals(feeds, days, want=6):
+def gather_reals(feeds, days, used, want=6):
     items = []
     for domain, urls in feeds.items():
         for u in urls:
@@ -279,7 +297,7 @@ def gather_reals(feeds, days, want=6):
             continue
         if not named_speaker(sp):           # a quote game needs a named human, not "Scientists"
             continue
-        if q.lower() in seen:
+        if q.lower() in seen or _norm(q) in used:   # never repeat a quote that's already been published
             continue
         # verify against the snippet first, then the full article if needed
         corpus = it["title"] + " " + it["summary"]
@@ -297,14 +315,15 @@ def gather_reals(feeds, days, want=6):
     return verified
 
 
-def forge_fakes(n=6):
+def forge_fakes(used, n=6):
     try:
         fakes = largest_json(llm(FAKE_SYS, FAKE_TMPL.format(n=n), max_tokens=2500)) or []
     except Exception as e:  # noqa: BLE001
         print(f"  ! fakes LLM: {e}", file=sys.stderr); return []
     out = []
     for f in fakes if isinstance(fakes, list) else []:
-        if f.get("text") and f.get("speaker") and not deny_hit(f["text"], f["speaker"], f.get("context")):
+        if f.get("text") and f.get("speaker") and not deny_hit(f["text"], f["speaker"], f.get("context")) \
+                and _norm(f["text"]) not in used:      # never repeat a published quote (real or fake)
             out.append({"text": f["text"], "speaker": f["speaker"], "context": f.get("context", ""),
                         "real": False, "fake_note": f.get("fake_note", "AI-fabricated for this game."),
                         "_sneaky": bool(f.get("sneaky"))})
@@ -321,6 +340,11 @@ def safety_screen(quotes):
         block = "\n".join(f'{i}: "{q["text"]}" — {q["speaker"]} ({q.get("context","")})' for i, q in screenable)
         verdicts = largest_json(llm(SCREEN_SYS, SCREEN_TMPL.format(items=block), max_tokens=800)) or []
         unsafe = {int(v["i"]) for v in verdicts if isinstance(v, dict) and v.get("safe") is False}
+        # guard: a screen that flags MOST items is misfiring (e.g. flagging fabrication itself) — the
+        # deterministic denylist already gates real harm, so don't let a bad screen nuke the whole set.
+        if len(unsafe) > len(screenable) // 2:
+            print(f"  ! screen flagged {len(unsafe)}/{len(screenable)} — likely misfiring; keeping denylist-filtered set", file=sys.stderr)
+            return quotes
         return [q for i, q in enumerate(quotes) if i not in unsafe]
     except Exception as e:  # noqa: BLE001
         print(f"  ! screen LLM (keeping set): {e}", file=sys.stderr)
@@ -334,20 +358,30 @@ def load_evergreen():
         return []
 
 
-def assemble(date, reals_fresh, fakes, evergreen):
+def load_used():
+    """Set of normalized texts of every quote ever published — used to guarantee no repeats, ever."""
+    try:
+        return set(json.load(open(USED)))
+    except Exception:  # noqa: BLE001
+        return set()
+
+
+def save_used(used):
+    json.dump(sorted(used), open(USED, "w"), indent=0)
+
+
+def assemble(date, reals_fresh, fakes, evergreen, used):
     n_real = random.choice([2, 3, 3])                      # vary the ratio so it isn't always 3:3
     reals = list(reals_fresh[:n_real])
-    if len(reals) < n_real and evergreen:                  # top up from the vetted evergreen bank
-        for r in random.sample(evergreen, min(len(evergreen), n_real - len(reals))):
+    pool = [e for e in evergreen if _norm(e["text"]) not in used]   # only evergreen quotes never published
+    if len(reals) < n_real and pool:                       # top up from the UNUSED vetted evergreen bank
+        for r in random.sample(pool, min(len(pool), n_real - len(reals))):
             r = dict(r); r["real"] = True; r["_vetted"] = True; reals.append(r)
     n_fake = 6 - len(reals)
     fakes = fakes[:n_fake]
     quotes = reals + fakes
     if len(quotes) < 5 or sum(1 for q in quotes if q["real"]) < 2 or sum(1 for q in quotes if not q["real"]) < 2:
-        return None                                        # fail-safe: not a quality set
-    quotes = safety_screen(quotes)
-    if len(quotes) < 5:
-        return None
+        return None                                        # fail-safe: not a quality / non-repeating set
     random.shuffle(quotes)
     sneaky_idx = next((i for i, q in enumerate(quotes) if q.get("_sneaky")), None)
     out_quotes, trick = [], None
@@ -396,19 +430,27 @@ def main():
     if a.politics:
         feeds["politics"] = POLITICS_FEEDS
 
-    reals = gather_reals(feeds, a.days)
-    fakes = forge_fakes(6)
-    print(f"  fakes: {len(fakes)} forged")
-    edition = assemble(a.date, reals, fakes, load_evergreen())
+    used = load_used()
+    print(f"  used-quote ledger: {len(used)} already-published quotes excluded")
+    reals = gather_reals(feeds, a.days, used)
+    fakes = forge_fakes(used, 8)                 # forge extra for headroom
+    fakes = safety_screen(fakes)                 # screen the fabricated content UP FRONT (not post-assembly)
+    print(f"  fakes: {len(fakes)} forged + screened safe")
+    edition = assemble(a.date, reals, fakes, load_evergreen(), used)
     if not edition:
-        print("  FAIL-SAFE: could not assemble a quality set (>=5 quotes, >=2 real, >=2 fake). Wrote nothing.",
-              file=sys.stderr)
+        print("  FAIL-SAFE: could not assemble a quality, NON-REPEATING set (>=5 quotes, >=2 real, >=2 fake). "
+              "Wrote nothing (likely the evergreen bank is exhausted and fresh news yielded too few new quotes — "
+              "grow evergreen_reals.json or add quote-rich feeds).", file=sys.stderr)
         return 2
 
     # edition number = position in the manifest after adding today
     n = update_manifest(a.date)
     edition["edition"] = n
     json.dump(edition, open(target, "w"), indent=2, ensure_ascii=False)
+
+    # record every quote in this edition so it is NEVER published again
+    used |= {_norm(q["text"]) for q in edition["quotes"]}
+    save_used(used)
     print(f"  WROTE {target}  (edition {n}, {len(edition['quotes'])} quotes, "
           f"{sum(1 for q in edition['quotes'] if q['real'])} real / {sum(1 for q in edition['quotes'] if not q['real'])} fake)")
     return 0
