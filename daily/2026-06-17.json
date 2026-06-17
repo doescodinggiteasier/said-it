@@ -1,69 +1,66 @@
 {
   "date": "2026-06-17",
-  "edition": 3,
-  "curator": "auto (generate_day.py — reals verified verbatim vs source)",
-  "politics_dial": "off",
+  "edition": 1,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
   "trickiest_fake": "q6",
   "quotes": [
     {
       "id": "q1",
-      "text": "I had about two bites because it was straight up chocolate cake, and I can't do that for breakfast.",
-      "speaker": "Katie Ledecky",
-      "context": "Swimmer describing trying the 'infamous' chocolate muffins in the 2024 Paris Olympic Village, as quoted by AOL/People",
-      "real": true,
-      "source": {
-        "title": "Katie Ledecky Says She Tried the 'Infamous' Chocolate Muffins at 2024 Olympics: 'I Can't Do That for Breakfast'",
-        "url": "https://www.aol.com/katie-ledecky-says-she-tried-140000011.html",
-        "date": "2024-08-08"
-      }
+      "text": "Martha taught me a lot of things, but the most important is that you gotta fold your bath towels in thirds. If you fold them in halves, you ain't living right. Thirds is pure luxury, man.",
+      "speaker": "Snoop Dogg",
+      "context": "Red carpet interview at the MTV Video Music Awards, 2022",
+      "real": false,
+      "fake_note": "Snoop and Martha Stewart's friendship is famously documented, making this wholesome domestic advice entirely plausible. But he never gave this specific dissertation on towel-folding geometry."
     },
     {
       "id": "q2",
-      "text": "I'm tired of hearing about money, money, money, money, money. I just want to play the game, drink Pepsi, wear Reebok.",
-      "speaker": "Shaquille O'Neal",
-      "context": "NBA center, in July 1996 after leaving the Orlando Magic for the Lakers, when asked about contract money",
-      "real": true,
-      "source": {
-        "title": "'I Just Want To Play The Game, Drink Pepsi, Wear Reebok': Remembering The Time Shaquille O'Neal Dropped Random Knowledge",
-        "url": "https://clutchpoints.com/i-just-want-to-play-the-game-drink-pepsi-wear-reebok-remembering-the-time-shaq-dropped-random-knowledge",
-        "date": "2022-07-30"
-      }
+      "text": "We spent six months in Cupertino trying to engineer a perfectly silent alarm clock. We ultimately realized that is, by definition, just a broken clock, but the brushed aluminum prototypes were absolutely gorgeous.",
+      "speaker": "Tim Cook",
+      "context": "Apple Worldwide Developers Conference keynote opener, 2018",
+      "real": false,
+      "fake_note": "It perfectly mimics Apple's obsessive design philosophy and Cook's earnest delivery of minor hardware details. The joke is a classic tech-bro logic failure disguised as innovation."
     },
     {
       "id": "q3",
-      "text": "I've never actually owned a telescope. I just describe space in a way that makes people assume I have one nearby.",
+      "text": "Technically, when you drop your phone on your face in bed, it isn't falling. The Earth and your face are accelerating upward to meet the phone. It doesn't hurt any less, but the astrophysics are beautiful.",
       "speaker": "Neil deGrasse Tyson",
-      "context": "Supposedly at a Q&A after a public lecture, 2023",
+      "context": "A viral tweet from late 2019",
       "real": false,
-      "fake_note": "Fits his self-aware, slightly theatrical persona perfectly. The tell is that Tyson famously does own and use telescopes and would never frame his expertise as a performance."
+      "fake_note": "Tyson is notorious for pedantically ruining movies and daily phenomena with physics facts. This mimics his exact cadence, though he never tweeted this specific bedtime observation."
     },
     {
       "id": "q4",
-      "text": "Well, it pissed a few people off and I figured it was worth doing.",
-      "speaker": "Willie Nelson",
-      "context": "Explaining why he stuck with his iconic long braids, in an interview with Larry King (as reported by Whiskey Riff)",
+      "text": "bring computing into the world",
+      "speaker": "Evan Spiegel",
+      "context": "Interview with CNBC about Snap's new glasses",
       "real": true,
       "source": {
-        "title": "“It Pissed A Few People Off, And I Figured It Was Worth Doing” — Willie Nelson On Why He’s Stuck With His Iconic Braids | Whiskey Riff",
-        "url": "https://www.whiskeyriff.com/2024/08/20/it-pissed-a-few-people-off-and-i-figured-it-was-worth-doing-willie-nelson-on-why-hes-stuck-with-his-iconic-braids/",
-        "date": "2024-08-20"
+        "title": "Tech — Can anyone look cool wearing Snap’s $2,000 glasses?",
+        "url": "https://www.theverge.com/report/951481/snap-specs-wearables-smart-glasses-fashion",
+        "date": "2026-06-17"
       }
     },
     {
       "id": "q5",
-      "text": "People ask how I stay motivated. Honestly? I just really, deeply hate losing to myself. Past-me set a record and present-me finds that offensive.",
-      "speaker": "Serena Williams",
-      "context": "Supposedly in a 2019 Nike promotional podcast",
-      "real": false,
-      "fake_note": "The competitive self-rivalry narrative matches her documented mindset. The tell is the oddly comedic framing — she's spoken intensely about competition but not quite this self-deprecatingly absurd."
+      "text": "I think this is the most extraordinary collection of talent, of human knowledge, that has ever been gathered together at the White House, with the possible exception of when Thomas Jefferson dined alone.",
+      "speaker": "John F. Kennedy",
+      "context": "Opening of President Kennedy's toast at a dinner honoring Western Hemisphere Nobel Prize winners, April 29, 1962 — a famously gracious, witty compliment to the assembled laureates by invoking Jefferson's solitary genius. Speaker was a US De",
+      "real": true,
+      "source": {
+        "title": "Remarks at a Dinner Honoring Nobel Prize Winners of the Western Hemisphere | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-dinner-honoring-nobel-prize-winners-the-western-hemisphere",
+        "date": "1962-04-29"
+      }
     },
     {
       "id": "q6",
-      "text": "The secret to a perfect risotto is exactly 22 minutes of stirring. Not 20. Not 25. Twenty-two. I set a timer and I leave the room so I'm not tempted to rush.",
-      "speaker": "Gordon Ramsay",
-      "context": "Supposedly in a 2022 MasterChef behind-the-scenes interview",
+      "text": "People ask what scares me. Ghosts? Demons? No. It's those automatic paper towel dispensers that make you wave your hands like a desperate wizard just to get a single, damp napkin.",
+      "speaker": "Stephen King",
+      "context": "Interview on The Late Show with Stephen Colbert, 2021",
       "real": false,
-      "fake_note": "The obsessive precision is totally on-brand for Ramsay. The tell is that professional risotto technique deliberately varies timing based on heat and rice variety — no real chef would give a single fixed number."
+      "fake_note": "King famously draws horror from mundane everyday objects, making this completely on-brand for his conversational humor. However, he has never actually ranted about bathroom dispensers."
     }
   ]
 }

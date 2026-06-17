@@ -1,8 +1,9 @@
 name: Daily edition
 
 # Generates a fresh "Said It?" edition every morning and pushes it, which rebuilds GitHub Pages.
-# Fully autonomous: reals are verified verbatim against their source, politics filtered, fakes kept
-# innocuous + labelled, and the generator FAILS SAFE (commits nothing) rather than publish a bad set.
+# Fully autonomous: reals are verified verbatim against their source + cross-validated, political lines kept
+# LIGHT/balanced (HARD_DENY still blocks crime/violence/slur/scandal in every lane), fakes innocuous +
+# labelled, and the generator FAILS SAFE (commits nothing) rather than publish a bad set.
 
 on:
   schedule:

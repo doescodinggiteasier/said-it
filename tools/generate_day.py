@@ -54,10 +54,14 @@ FEEDS = {
 POLITICS_FEEDS = ["https://feeds.npr.org/1014/rss.xml"]
 
 # G-C category packs. The shared-daily-instance gate holds PER LANE: everyone in a lane gets the same 6.
-# Politics stays OFF (a separate Wes decision). Add lanes here; each gets its own evergreen bank + ledger.
+# Politics is ON everywhere (Wes, 2026-06-17): the dedicated lane PLUS mixed into the default general feed.
+# HARD_DENY still gates crime/violence/slur/scandal/conflict in every lane; only the political-figure/process
+# terms are unblocked. Add lanes here; each gets its own evergreen bank + ledger.
 CATEGORIES = {
-    "general": {"feeds": FEEDS, "lane": "", "allow_politics": False,
-                "figures": "different public figures across sports, tech, science, music, film and food"},
+    "general": {"feeds": {**FEEDS, "politics": POLITICS_FEEDS}, "lane": "", "allow_politics": True,
+                "figures": "different public figures across sports, tech, science, music, film, food AND "
+                           "politics — but political lines ONLY as LIGHT, balanced, non-inflammatory asides "
+                           "(gaffes, witty quips), NEVER an attack or hot-take"},
     "sports":  {"feeds": {"sports": ["https://www.espn.com/espn/rss/news", "https://api.foxsports.com/v1/rss"]},
                 "lane": "SPORTS ", "allow_politics": False,
                 "figures": "different real NON-politician athletes, coaches and sports figures"},
@@ -474,9 +478,16 @@ def validate_reals(reals, strict=False):
 
 def load_evergreen(cat="general"):
     try:
-        return json.load(open(evergreen_path(cat)))
+        bank = json.load(open(evergreen_path(cat)))
     except Exception:  # noqa: BLE001
-        return []
+        bank = []
+    if cat == "general":  # politics is ON in the default feed too — mix the verified politics bank into general
+        try:
+            pol = [dict(e, _politics=True) for e in json.load(open(evergreen_path("politics")))]
+            bank = bank + pol                         # tagged so assemble can keep ≥1 visible per edition
+        except Exception:  # noqa: BLE001
+            pass
+    return bank
 
 
 def load_used(cat="general"):
@@ -496,7 +507,15 @@ def assemble(date, reals_fresh, fakes, evergreen, used, cat="general"):
     reals = list(reals_fresh[:n_real])
     pool = [e for e in evergreen if _norm(e["text"]) not in used]   # only evergreen quotes never published
     if len(reals) < n_real and pool:                       # top up from the UNUSED vetted evergreen bank
-        for r in random.sample(pool, min(len(pool), n_real - len(reals))):
+        need = n_real - len(reals)
+        picks = []
+        pol_pool = [e for e in pool if e.get("_politics")]
+        if cat == "general" and pol_pool and not any(r.get("_politics") for r in reals):
+            picks.append(random.choice(pol_pool))          # keep politics visible in the default feed (≥1)
+        taken = {_norm(p["text"]) for p in picks}
+        rest = [e for e in pool if _norm(e["text"]) not in taken]
+        picks += random.sample(rest, min(len(rest), need - len(picks)))
+        for r in picks[:need]:
             r = dict(r); r["real"] = True; r["_vetted"] = True; reals.append(r)
     n_fake = 6 - len(reals)
     fakes = fakes[:n_fake]
@@ -520,7 +539,7 @@ def assemble(date, reals_fresh, fakes, evergreen, used, cat="general"):
         trick = next((it["id"] for it in out_quotes if not it["real"]), None)
     return {"date": date, "edition": None, "category": cat,
             "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
-            "politics_dial": ("on" if cat == "politics" else "off"), "trickiest_fake": trick, "quotes": out_quotes}
+            "politics_dial": ("on" if CATEGORIES.get(cat, {}).get("allow_politics") else "off"), "trickiest_fake": trick, "quotes": out_quotes}
 
 
 def update_manifest(date, cat="general"):
@@ -530,10 +549,13 @@ def update_manifest(date, cat="general"):
     except Exception:  # noqa: BLE001
         idx = {"game": "Said It?", "days": []}
     cats = idx.get("categories") or {}
+    if cat == "general":                            # general IS the back-compat `days` array; it has NO
+        idx["days"] = sorted(set(idx.get("days", []) + [date]))   # categories.general key (the app reads
+        idx["categories"] = cats                    # `days` for the default lane — keep it that way)
+        json.dump(idx, open(path, "w"), indent=2)
+        return len(idx["days"])
     cats[cat] = sorted(set(cats.get(cat, []) + [date]))
     idx["categories"] = cats
-    if cat == "general":                            # back-compat: `days` mirrors the general lane
-        idx["days"] = sorted(set(idx.get("days", []) + [date]))
     json.dump(idx, open(path, "w"), indent=2)
     return len(cats[cat])
 
