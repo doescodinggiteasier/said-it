@@ -15,21 +15,26 @@ never put the `service_role`/secret key in `config.js`).
 
 ### 1. Run this SQL  (Supabase dashboard → **SQL Editor** → paste → **Run**)
 
+Paste exactly this (unquoted policy names so nothing can be mangled; `drop policy if exists` makes it safely
+re-runnable). One row per account — their canonical play id + a synced state blob; read/write your OWN row only.
+
 ```sql
--- one row per signed-in account: their canonical play id + a synced state blob
 create table if not exists public.profiles (
-  id          uuid primary key references auth.users on delete cascade,
-  sid         text,                      -- the account's canonical "play id" (carried across devices)
-  state       jsonb,                     -- the player's own ST blob (streak, days, crews, stats, name)
-  updated_at  timestamptz default now()
+  id uuid primary key references auth.users on delete cascade,
+  sid text,
+  state jsonb,
+  updated_at timestamptz default now()
 );
 
 alter table public.profiles enable row level security;
 
--- a user can read/write ONLY their own row. No one can read anyone else's state (spoiler-free + private).
-create policy "profiles_select_own" on public.profiles for select using (auth.uid() = id);
-create policy "profiles_insert_own" on public.profiles for insert with check (auth.uid() = id);
-create policy "profiles_update_own" on public.profiles for update using (auth.uid() = id) with check (auth.uid() = id);
+drop policy if exists profiles_select_own on public.profiles;
+drop policy if exists profiles_insert_own on public.profiles;
+drop policy if exists profiles_update_own on public.profiles;
+
+create policy profiles_select_own on public.profiles for select using (auth.uid() = id);
+create policy profiles_insert_own on public.profiles for insert with check (auth.uid() = id);
+create policy profiles_update_own on public.profiles for update using (auth.uid() = id) with check (auth.uid() = id);
 ```
 
 Why this is spoiler-free + safe: a player's per-quote answers only ever live in **their own** `state` row, which
@@ -43,8 +48,10 @@ account's synced `sid`, so the same account on a second device sees the same cre
 - **Apple**: deferred (needs a paid $99/yr Apple Developer account).
 
 ### 3. Redirect URL  (Authentication → URL Configuration)
-Add the live site as an allowed redirect so the magic-link returns to the app:
-`https://doescodinggiteasier.github.io/said-it/`  (and `http://localhost*` if you test locally).
+So the magic-link email returns into the app:
+- **Site URL** → `https://doescodinggiteasier.github.io/said-it/`
+- **Redirect URLs** → **Add URL** → `https://doescodinggiteasier.github.io/said-it/` (optionally also
+  `https://doescodinggiteasier.github.io/said-it/**` to allow any sub-path). **Save.**
 
 ### (Optional) Anonymous sign-ins
 Not required — guests use a local id and still play fully. If you enable **Authentication → Anonymous sign-ins**,
