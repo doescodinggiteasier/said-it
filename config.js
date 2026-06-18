@@ -8,8 +8,8 @@
  *                 `trickiest_fake` from each daily file instead.
  */
 window.SAIDIT_CONFIG = {
-  LOG_ENDPOINT: "",
-  AGG_ENDPOINT: ""
+  LOG_ENDPOINT: "https://script.google.com/macros/s/AKfycbxyjy6u1c3lU9q4FdTVX_6rm5t3T7nRcu3wYRzNvdyH5EP4xl96DCudAvHM79Ov9b8z/exec",
+  AGG_ENDPOINT: "https://script.google.com/macros/s/AKfycbxyjy6u1c3lU9q4FdTVX_6rm5t3T7nRcu3wYRzNvdyH5EP4xl96DCudAvHM79Ov9b8z/exec"
 };
 /* Admin dashboard (G-A): open /admin/dashboard.html?k=<ADMIN_TOKEN>. The token is NOT stored here (this
  * file is public) — it lives only in the endpoint (Apps Script Script Property / Worker env var ADMIN_TOKEN)
