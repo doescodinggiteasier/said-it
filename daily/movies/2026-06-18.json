@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-18",
+  "edition": 2,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The ocean doesn't care who you are. That's the only honest thing left in this world.",
+      "speaker": "Jaws (1975)",
+      "context": "Quint, on the Orca at night before the final hunt",
+      "real": false,
+      "fake_note": "Quint's fatalistic, salty worldview makes this feel authentic. Subtle giveaway: Quint speaks in vivid images and stories, not clean epigrams — this is too tidy for him."
+    },
+    {
+      "id": "q2",
+      "text": "I'll be back.",
+      "speaker": "The Terminator (1984)",
+      "context": "The Terminator (Arnold Schwarzenegger) tells the police desk sergeant he'll be back, then drives a car through the front of the station.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "The Dude abides.",
+      "speaker": "The Big Lebowski (1998)",
+      "context": "The Dude (Jeff Bridges) to The Stranger (Sam Elliott) at the bar near the film's end, summing up his laid-back philosophy.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "Say 'what' again. I dare you, I double dare you.",
+      "speaker": "Pulp Fiction (1994)",
+      "context": "Jules (Samuel L. Jackson) menaces Brett, a terrified young man, during the apartment confrontation.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "You don't get to decide what people are worth, son. That's not your job.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Sheriff Ed Tom Bell, talking to a deputy early in the film",
+      "real": false,
+      "fake_note": "Matches Bell's gravelly moral fatalism and Cormac McCarthy's cadence. Subtle giveaway: Bell's real dialogue is more self-doubting and avoids instructing others so directly."
+    },
+    {
+      "id": "q6",
+      "text": "I used to think the worst thing in life was ending up alone. I was wrong.",
+      "speaker": "Schindler's List (1993)",
+      "context": "Oskar Schindler, in quiet reflection near the film's midpoint",
+      "real": false,
+      "fake_note": "Tonally fits the film's moral gravity and Schindler's evolving conscience. Subtle giveaway: the line feels more like a stand-up comedy preamble — it's actually Robin Williams' real-world quote, transplanted here to trip up players."
+    }
+  ]
+}

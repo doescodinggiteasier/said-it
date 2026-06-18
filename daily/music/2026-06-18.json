@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-18",
+  "edition": 2,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People think I sit down and the whole thing just pours out. But some of my best songs took two years of avoiding them before I could finish them. Distance is an instrument too.",
+      "speaker": "Taylor Swift",
+      "context": "Interview with Rolling Stone during the Midnights promo cycle",
+      "real": false,
+      "fake_note": "Taylor frequently discusses her songwriting process and uses literary metaphors, so 'distance is an instrument' sounds exactly like her articulate, introspective voice. The subtle giveaway is that she more often emphasizes writing quickly and prolifically — she rarely frames avoidance as a method."
+    },
+    {
+      "id": "q2",
+      "text": "Jazz taught me that the note you don't play is doing half the work. I try to bring that into everything — production, performance, even conversations.",
+      "speaker": "Kendrick Lamar",
+      "context": "Rare print interview discussing musical influences",
+      "real": false,
+      "fake_note": "Kendrick has cited jazz as a core influence and speaks about music with conceptual depth; the extension of the idea into 'even conversations' fits his introspective public persona. The subtle tell is that Kendrick typically names specific artists like Terrace Martin rather than invoking 'jazz' as a general category."
+    },
+    {
+      "id": "q3",
+      "text": "There was a period where I wouldn't play a show unless the monitors were set up the exact same way every single night. I've loosened up on some things. Not that one.",
+      "speaker": "St. Vincent",
+      "context": "Interview with Pitchfork about touring and live performance",
+      "real": false,
+      "fake_note": "St. Vincent is known for her precise, technical approach to live performance and her dry humor, making the deadpan last line sound completely authentic. The giveaway is small: she typically discusses her guitar tone obsessively rather than monitors specifically."
+    },
+    {
+      "id": "q4",
+      "text": "It's not about how many times you get rejected ... it's about how many times you stand up and are brave and you keep on going.",
+      "speaker": "Lady Gaga",
+      "context": "Accepting the Oscar for Best Original Song ('Shallow' from 'A Star Is Born') at the 2019 Academy Awards, Lady Gaga delivered an emotional, encouraging acceptance speech about perseverance and not giving up on your dreams. A wholesome, quota",
+      "real": true,
+      "source": {
+        "title": "Lady Gaga's 2019 Oscars Acceptance Speech: \"If You Have A Dream, Fight For It\"",
+        "url": "https://www.grammy.com/news/lady-gagas-2019-oscars-acceptance-speech-if-you-have-dream-fight-it",
+        "date": "2019-02-25"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People want the gospel of hip-hop delivered like a TED Talk. But the whole point is that it was never supposed to be comfortable for everyone in the room.",
+      "speaker": "Questlove",
+      "context": "Panel discussion at SXSW on hip-hop's cultural legacy",
+      "real": false,
+      "fake_note": "Questlove is an articulate cultural commentator who regularly speaks on hip-hop's intellectual credibility, and the TED Talk reference fits his world perfectly. The subtle giveaway: he tends to use more specific historical examples rather than the slightly broad phrase 'gospel of hip-hop.'"
+    },
+    {
+      "id": "q6",
+      "text": "She was flamboyant. She had bright red lipstick, long red fingernails. She had high-heeled shoes, little floating plastic goldfish in the heels of them, short skirts, low-cut tops, and I just thought she was beautiful.",
+      "speaker": "Dolly Parton",
+      "context": "In a Guardian interview (quoted by HuffPost), Dolly Parton describes the local 'town tramp' whose flashy style inspired her own signature look as a child. The 'little floating plastic goldfish in the heels' detail is the oddly-specific, sur",
+      "real": true,
+      "source": {
+        "title": "Dolly Parton Says Her Signature Style Was Inspired By The Actual 'Town Tramp'",
+        "url": "https://www.huffpost.com/entry/dolly-parton-town-tramp_n_6526d0bae4b0102e69645427",
+        "date": "2023-10-11"
+      }
+    }
+  ]
+}

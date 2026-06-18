@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-18",
+  "edition": 2,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've shaken enough hands in county fairs to know that the person who squeezes hardest is usually the one who wants something.",
+      "speaker": "Tim Kaine",
+      "context": "Anecdote shared during a C-SPAN interview, 2023",
+      "real": false,
+      "fake_note": "Kaine has a folksy, self-amused style and often uses campaign-trail anecdotes. The subtle tell is the observation is slightly too aphoristic — his real stories tend to name an actual place or moment."
+    },
+    {
+      "id": "q2",
+      "text": "I think this is the most extraordinary collection of talent, of human knowledge, that has ever been gathered together at the White House, with the possible exception of when Thomas Jefferson dined alone.",
+      "speaker": "John F. Kennedy",
+      "context": "Opening of President Kennedy's toast at a dinner honoring Western Hemisphere Nobel Prize winners, April 29, 1962 — a famously gracious, witty compliment to the assembled laureates by invoking Jefferson's solitary genius. Speaker was a US De",
+      "real": true,
+      "source": {
+        "title": "Remarks at a Dinner Honoring Nobel Prize Winners of the Western Hemisphere | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-dinner-honoring-nobel-prize-winners-the-western-hemisphere",
+        "date": "1962-04-29"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've been in enough budget meetings to know that the number everyone agrees on in the room is never the number anyone meant.",
+      "speaker": "Janet Yellen",
+      "context": "Informal remarks at a university economics forum, 2024",
+      "real": false,
+      "fake_note": "Yellen's dry, procedural wit and insider-Washington tone make this completely credible. The subtle giveaway is that she almost never does self-deprecating humor about the budget process itself."
+    },
+    {
+      "id": "q4",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "Reagan's famous quip during the October 21, 1984 presidential debate against Walter Mondale, when asked whether, at 73, he was too old for the job. The line drew laughter from the audience and even from Mondale himself. Witty and self-depre",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "An old friend of mine once told me, you know, just be yourself - unless you suck.",
+      "speaker": "John Kennedy",
+      "context": "Republican U.S. Senator from Louisiana, known for his folksy one-liners, sharing a piece of self-deprecating advice. He used the line in a Jan. 25, 2018 Fox News interview. Innocuous and funny, with no target or policy edge.",
+      "real": true,
+      "source": {
+        "title": "15 times Sen. John Kennedy got folksy, snarky or both | nola.com",
+        "url": "https://www.nola.com/news/15-times-sen-john-kennedy-got-folksy-snarky-or-both/article_7fb01151-5776-54f2-a04f-49ffeb4d0447.html",
+        "date": "2018-01-25"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People assume I wake up ready to fight. Honestly, before the first cup of coffee I can barely remember what state I'm in.",
+      "speaker": "Nikki Haley",
+      "context": "Lighthearted interview segment during the 2024 primary campaign trail",
+      "real": false,
+      "fake_note": "Haley has made casual references to her travel schedule and used self-deprecating humor in interviews. The giveaway is the punchline is a little too tidy — her actual ad-libs tend to be sharper and less self-mocking."
+    }
+  ]
+}

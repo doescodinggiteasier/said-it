@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-18",
+  "edition": 4,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Be true to yourself and just don't try to please everybody.",
+      "speaker": "Cecilia Yip",
+      "context": "Kering's Women in Motion panel in Shanghai",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Shanghai: Kering’s Women in Motion Reflects on Changing Times, Offers Inspiratio",
+        "url": "https://www.hollywoodreporter.com/movies/movie-news/shanghai-film-festival-kering-women-in-motion-2026-1236622952/",
+        "date": "2026-06-18"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I think the honest answer is that taste memory is more powerful than any technique I know. You can teach someone a perfect beurre blanc, but you can't teach them the feeling they're chasing.",
+      "speaker": "Thomas Keller",
+      "context": "Interview with a culinary magazine, discussing what separates great chefs",
+      "real": false,
+      "fake_note": "Keller is known for his philosophical, almost meditative statements about cooking and sense memory — this fits his documented voice precisely. The giveaway is he tends to ground such thoughts in a specific dish from his own menu rather than a generic example."
+    },
+    {
+      "id": "q3",
+      "text": "We kept the interface intentionally boring for about the first year. Boring meant it was working. The moment people stop noticing the tool is the moment it actually becomes useful.",
+      "speaker": "Susan Wojcicki",
+      "context": "Keynote or panel discussion on product design philosophy, circa 2019–2022",
+      "real": false,
+      "fake_note": "Wojcicki was known for measured, product-focused language and the idea that good UX disappears — this reflects her documented thinking. The slight giveaway is she'd typically anchor this to a specific YouTube metric or user-behavior data point."
+    },
+    {
+      "id": "q4",
+      "text": "People always want to talk about the dunks, but honestly the play I've spent the most time on is probably the pick-and-roll read. That half-second decision is where games are actually won.",
+      "speaker": "LeBron James",
+      "context": "Post-game press conference, sometime during the 2024 NBA season",
+      "real": false,
+      "fake_note": "LeBron frequently talks about basketball IQ over athleticism and emphasizes the cerebral side of the game — exactly his brand. The subtle giveaway is that he'd more likely credit a specific teammate or name a coach in this context rather than speaking so abstractly."
+    },
+    {
+      "id": "q5",
+      "text": "Rehearsing silence is an underrated skill. I spend as much time figuring out where not to play as I do on the notes themselves.",
+      "speaker": "Yo-Yo Ma",
+      "context": "Masterclass Q&A with music students, undated",
+      "real": false,
+      "fake_note": "Yo-Yo Ma often speaks about restraint, space in music, and the communicative power of silence — completely consistent with his public philosophy. The subtle giveaway is that he almost always ties such observations to a cultural or human-connection point rather than leaving it as craft-talk."
+    },
+    {
+      "id": "q6",
+      "text": "price increases are unavoidable",
+      "speaker": "Tim Cook",
+      "context": "Interview with The Wall Street Journal about Apple raising prices due to memory shortage",
+      "real": true,
+      "source": {
+        "title": "Tech — Tim Cook says RAM expenses are ‘unsustainable’ and Apple is going to raise price",
+        "url": "https://www.theverge.com/tech/951948/apple-tim-cook-price-increases-ram",
+        "date": "2026-06-18"
+      }
+    }
+  ]
+}

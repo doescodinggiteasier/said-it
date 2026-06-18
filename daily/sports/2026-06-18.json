@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-18",
+  "edition": 2,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The ball knows. I don't know how to explain it better than that. You hit it and there's this half-second before you look up where your body already knows.",
+      "speaker": "Ken Griffey Jr.",
+      "context": "Hall of Fame weekend interview discussing his hitting instincts, Cooperstown 2023",
+      "real": false,
+      "fake_note": "Griffey often speaks with a relaxed, almost poetic looseness about his natural gifts, and this matches his known reluctance to over-analyze his mechanics. The subtle giveaway is the phrasing 'the ball knows' — Griffey tends to attribute the feel to his hands or his swing, not the ball itself."
+    },
+    {
+      "id": "q2",
+      "text": "I had a cheeseburger and went to bed.",
+      "speaker": "Andy Reid",
+      "context": "Kansas City Chiefs head coach Andy Reid's reply, with a smile, when asked at his press conference how he celebrated the Chiefs' 35-24 AFC Championship win over the Tennessee Titans that sent them to Super Bowl LIV. A wholesome, oddly specif",
+      "real": true,
+      "source": {
+        "title": "Andy Reid on how he celebrated Chiefs win: 'I had a cheeseburger and went to bed'",
+        "url": "https://www.nfl.com/videos/andy-reid-on-how-he-celebrated-chiefs-win-i-had-a-cheeseburger-and-went-to-bed",
+        "date": "2020-01-20"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People talk about winning like it's the finish line. For me, winning is just the moment when the work you've already done finally gets to show itself.",
+      "speaker": "Novak Djokovic",
+      "context": "Post-match press conference after a Grand Slam semifinal, 2024",
+      "real": false,
+      "fake_note": "Djokovic frequently speaks philosophically about process over results and uses this kind of meditative framing in interviews. The subtle giveaway is that he typically credits his mental coaching or specific preparation routines rather than speaking in pure abstraction."
+    },
+    {
+      "id": "q4",
+      "text": "I think there might be a change of schedule. I don't think I'll be in a fit state to get to Troon. I don't think I'll be legally able to drive.",
+      "speaker": "Robert MacIntyre",
+      "context": "Scottish golfer MacIntyre, joking with reporters right after winning the 2024 Genesis Scottish Open, explaining he planned to celebrate so hard he might not make his next-day press conference at Royal Troon ahead of the Open Championship. W",
+      "real": true,
+      "source": {
+        "title": "Open Championship 2024: Bob MacIntyre 'might be too drunk' for a press conference at Troon - Australian Golf Digest",
+        "url": "https://www.australiangolfdigest.com.au/robert-macintyre-delivers-all-time-quote-being-too-drunk-to-get-to-british-open-press-conference/",
+        "date": "2024-07-16"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Happy? Happy is not a word that we think about in the game. You gotta think of something different. Happy, I don't know how to judge happy. We're in the middle of a contest. Nobody's happy.",
+      "speaker": "Gregg Popovich",
+      "context": "San Antonio Spurs head coach Gregg Popovich's deadpan reply during a mid-game sideline interview when TNT's David Aldridge asked whether he was happy with his team's shot selection against the Thunder. A classic example of Popovich's famous",
+      "real": true,
+      "source": {
+        "title": "Gregg Popovich rips reporter for asking if he's 'happy' about shot selection (Video)",
+        "url": "https://larrybrownsports.com/basketball/gregg-popovich-rips-reporter-happy/160946",
+        "date": "2012-11-02"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My dad used to say the ocean doesn't apologize for the wave. I think about that every time someone tells me I'm too aggressive out there.",
+      "speaker": "Megan Rapinoe",
+      "context": "Feature interview in The Players' Tribune, discussing her on-field mentality",
+      "real": false,
+      "fake_note": "Rapinoe frequently references family, speaks in vivid metaphor, and addresses her on-field identity directly. The quote feels exactly like her voice. The giveaway is the specific paternal attribution — she more often credits her own instincts or broader cultural influences rather than a father quote."
+    }
+  ]
+}

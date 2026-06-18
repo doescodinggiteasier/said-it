@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-18",
+  "edition": 2,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Vegetarians, and their Hezbollah-like splinter faction, the vegans, are a persistent irritant to any chef worth a damn.",
+      "speaker": "Anthony Bourdain",
+      "context": "From Bourdain's 2000 memoir Kitchen Confidential, his blunt take on dietary restrictions in restaurant kitchens.",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "I know it's supposed to be ladies first, but when it comes to chicken, there's no rules.",
+      "speaker": "Snoop Dogg",
+      "context": "During the fried-chicken cook-off on the premiere of VH1's 'Martha & Snoop's Potluck Dinner Party' (November 2016), where Snoop and Martha Stewart competed over who made the best fried chicken.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "Someone on the internet said I peaked in 2009. Peaked. In 2009. I just want to find that person and shake their hand, because brother, you are delusional and I respect the commitment.",
+      "speaker": "Conan O'Brien",
+      "context": "Conan O'Brien Needs a Friend podcast, 2023",
+      "real": false,
+      "fake_note": "Nails his self-deprecating sarcasm and podcast voice — the phrase 'delusional and I respect the commitment' is very him — but 'brother' isn't a typical Conan word choice."
+    },
+    {
+      "id": "q4",
+      "text": "I'm gonna be honest — half the Senate can kiss my entire ass. You want bipartisanship? I'll give you bipartisanship: both sides are equally full of shit on a Tuesday.",
+      "speaker": "Bernie Sanders",
+      "context": "Candid backstage comment caught on a hot mic after a budget vote, 2022",
+      "real": false,
+      "fake_note": "Bernie's frustration with Congress is well-documented and he rarely minces words — but the profanity level is slightly elevated from his usual public register, which is the giveaway."
+    },
+    {
+      "id": "q5",
+      "text": "I don't read my own press. I don't read good press, I don't read bad press. I barely read the menu at restaurants. I point at things and hope for the best. That's my whole system.",
+      "speaker": "Keanu Reeves",
+      "context": "Backstage interview at a film premiere, 2023",
+      "real": false,
+      "fake_note": "Keanu's zen, self-deprecating humor is authentic — but the 'I point at things' bit is funnier and more off-the-cuff than his typically philosophical public responses."
+    },
+    {
+      "id": "q6",
+      "text": "You play to win the game! Hello?! You play to win the game. You don't play it to just play it.",
+      "speaker": "Herm Edwards",
+      "context": "New York Jets head coach, press conference, October 30, 2002, responding to a question from NYT reporter Judy Battista about his 2-5 team's mindset",
+      "real": true
+    }
+  ]
+}
