@@ -319,6 +319,7 @@
 
 <div class="toast" id="toast"></div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="config.js"></script>
 <script>
 (function(){
@@ -328,6 +329,10 @@
 var CFG = window.SAIDIT_CONFIG || {};
 var LOG_ENDPOINT = CFG.LOG_ENDPOINT || "";          // set in config.js once the endpoint is deployed
 var AGG_ENDPOINT = CFG.AGG_ENDPOINT || "";          // optional: "fake that fooled the most" cross-player
+/* H-A accounts (Supabase) — OPTIONAL + defensive: if the SDK/keys aren't present (e.g. offline, or in tests),
+   SB stays null and the whole app works exactly as before on the local id. Signing in only ADDS cloud sync. */
+var SB=null; try{ if(window.supabase && CFG.SUPABASE_URL && CFG.SUPABASE_ANON_KEY){ SB=window.supabase.createClient(CFG.SUPABASE_URL, CFG.SUPABASE_ANON_KEY); } }catch(e){}
+var ACCOUNT=null;   // {uid,email} once signed in
 var $ = function(id){return document.getElementById(id);};
 var el = function(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e;};
 // make a click-only element keyboard-accessible (role + tab order + Enter/Space) — for the hub's cards/strips
@@ -404,6 +409,7 @@ var CREW_INVITE=false, LINKED=false, JUST_JOINED=null, INVITE_BY="", INVITE_CN="
 function boot(){
   LINKED=handleDeviceLink();    // ?me=SID → adopt that identity (same person, another device) — BEFORE any logging
   handleCrewInvite();           // ?crew=CODE&inv=SID → join + log invite_opened (k-factor)
+  initAuth();                   // H-A: pick up an existing Supabase session + listen for sign-in (magic-link return)
   // fire the single per-device install NOW (after sid adoption), so it's tagged with the final identity
   if(!ST.installed){ ST.installed=true; logEvent("install",{first:ST.first_seen, backfill:INSTALL_BACKFILL}); save(ST); }
   fetch("daily/index.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;})
@@ -792,6 +798,7 @@ function submit(){
     archive:(date!==realToday),returning:(ST.judged>n),crew:((curCrew()||{}).code||""),
     crews:(ST.crews||[]).map(function(c){return c.code;}).join(","),   // self-heals membership for EVERY crew you're in
     name:ST.displayName||"",cat:lane});
+  saveProfile();   // H-A: push the updated streak/stats up to the account (no-op when signed out)
   renderReveal(result,true);
 }
 
@@ -971,6 +978,55 @@ function leaveCrew(code){ code=code||(curCrew()||{}).code; if(!code) return;
   save(ST); logEvent("crew_leave",{crew:code}); JUST_JOINED=null; renderCrew(); }
 function crewEndpoint(){ return AGG_ENDPOINT||LOG_ENDPOINT; }
 function liveCrew(){ return curCrew() && crewEndpoint(); }   // in a crew AND able to load a live board
+
+/* ---------- H-A accounts: anonymous-first, sign in to SAVE + SYNC across devices (Supabase) ---------- */
+function recomputeStats(){ var j=0,c=0,l=0,lc=0; for(var k in (ST.days||{})){ var r=ST.days[k]&&ST.days[k].done&&ST.days[k].result; if(!r)continue;
+  j+=r.n||0; c+=r.score||0; if(r.lockCorrect===true||r.lockCorrect===false){ l++; if(r.lockCorrect)lc++; } } ST.judged=j;ST.correct=c;ST.locks=l;ST.locks_correct=lc; }
+function mergeState(remote){ if(!remote) return;   // merge a cloud profile into local — never lose progress
+  ST.streak=Math.max(ST.streak||0, remote.streak||0); ST.best_streak=Math.max(ST.best_streak||0, remote.best_streak||0);
+  ST.rating=Math.max(ST.rating||1000, remote.rating||1000);
+  ST.days=ST.days||{}; for(var k in (remote.days||{})){ if(!ST.days[k]) ST.days[k]=remote.days[k]; }   // union the play history
+  ST.crews=ST.crews||[]; (remote.crews||[]).forEach(function(rc){ if(rc&&rc.code && !hasCrew(rc.code)) ST.crews.push(rc); });
+  if(!ST.activeCrew) ST.activeCrew=remote.activeCrew||(ST.crews[0]||{}).code||null;
+  if(remote.displayName && !ST.displayName) ST.displayName=remote.displayName;
+  if(remote.last_realday && (!ST.last_realday || remote.last_realday>ST.last_realday)) ST.last_realday=remote.last_realday;
+  if(remote.crewSeasons) ST.crewSeasons=Object.assign({}, remote.crewSeasons, ST.crewSeasons||{});
+  recomputeStats();   // derive accuracy/lock totals from the UNIONED play history (authoritative — no double-count)
+}
+function profileBlob(){ return { streak:ST.streak, best_streak:ST.best_streak, rating:ST.rating, days:ST.days,
+  crews:ST.crews, activeCrew:ST.activeCrew, displayName:ST.displayName, last_realday:ST.last_realday, crewSeasons:ST.crewSeasons }; }
+function saveProfile(){ if(!SB||!ACCOUNT) return;
+  try{ SB.from("profiles").upsert({ id:ACCOUNT.uid, sid:ST.sid, state:profileBlob(), updated_at:new Date().toISOString() }).then(function(){},function(){}); }catch(e){} }
+function onSignedIn(user){ if(!user) return; ACCOUNT={uid:user.id, email:user.email||""}; logEvent("signed_in");
+  try{ SB.from("profiles").select("sid,state").eq("id",user.id).maybeSingle().then(function(res){
+    var row=res&&res.data;
+    if(row){ if(row.sid) ST.sid=row.sid; if(row.state) mergeState(row.state); save(ST); }   // existing account → adopt its play-id + merge state
+    saveProfile();                                                                            // capture this device's (merged) state
+    if(currentScreen()==="crew") renderCrew(); else if(currentScreen()==="home") renderHome();
+  }, function(){ saveProfile(); }); }catch(e){} }
+function initAuth(){ if(!SB) return;
+  try{ SB.auth.getSession().then(function(res){ var s=res&&res.data&&res.data.session; if(s&&s.user) onSignedIn(s.user); }); }catch(e){}
+  try{ SB.auth.onAuthStateChange(function(ev,session){ if(session&&session.user){ if(!ACCOUNT||ACCOUNT.uid!==session.user.id) onSignedIn(session.user); } else if(ev==="SIGNED_OUT"){ ACCOUNT=null; } }); }catch(e){}
+}
+function signInEmail(email){ if(!SB) return; email=String(email||"").trim();
+  if(!/.+@.+\..+/.test(email)){ toast("Enter a valid email"); return; }
+  SB.auth.signInWithOtp({ email:email, options:{ emailRedirectTo: baseURL() } }).then(function(res){
+    if(res&&res.error){ toast("Couldn't send the link — try again"); } else { toast("Check your email for a sign-in link 📧"); logEvent("signin_link_sent"); } }, function(){ toast("Sign-in unavailable right now"); }); }
+function signInGoogle(){ if(!SB) return;
+  SB.auth.signInWithOAuth({ provider:"google", options:{ redirectTo: baseURL() } }).then(function(res){ if(res&&res.error) toast("Google sign-in isn't set up yet"); }, function(){ toast("Google sign-in isn't set up yet"); }); }
+function signOutAcct(){ if(!SB) return; SB.auth.signOut().then(function(){ ACCOUNT=null; toast("Signed out"); if(currentScreen()==="crew") renderCrew(); }); }
+function accountHTML(){ if(!SB) return "";
+  if(ACCOUNT) return "<div class='card'><div style='font-weight:700'>☁️ Synced across your devices</div>"+
+    "<div class='hint' style='text-align:left'>Signed in as "+esc(ACCOUNT.email||"your account")+" — streak, stats &amp; crews follow you everywhere.</div>"+
+    "<button class='btn ghost' id='acctOut' style='margin-top:8px'>Sign out</button></div>";
+  return "<div class='card'><div style='font-weight:700'>☁️ Save your progress</div>"+
+    "<div class='hint' style='text-align:left;margin:4px 0 8px'>Sign in to keep your streak &amp; crews and play on your other devices. No password — we email you a link.</div>"+
+    "<input class='fld' id='acctEmail' type='email' placeholder='you@email.com' autocomplete='email' autocapitalize='off'>"+
+    "<button class='btn' id='acctEmailBtn' style='margin-top:6px'>Email me a sign-in link</button>"+
+    "<button class='btn ghost' id='acctGoogle' style='margin-top:8px'>Continue with Google</button></div>";
+}
+function wireAccount(){ var e=$("acctEmailBtn"); if(e) e.onclick=function(){ signInEmail($("acctEmail")&&$("acctEmail").value); };
+  var g=$("acctGoogle"); if(g) g.onclick=signInGoogle; var o=$("acctOut"); if(o) o.onclick=signOutAcct; }
 function clip(txt,ok){ if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(ok,function(){window.prompt("Copy:",txt);if(ok)ok();}); } else { window.prompt("Copy:",txt); if(ok)ok(); } }
 function crewNameFor(code){ var c=(ST.crews||[]).filter(function(x){return x.code===code;})[0]; return (c&&c.name)||code; }
 function crewInviteLink(code){ code=code||(curCrew()||{}).code;   // carry sender + crew NAME so the recipient sees context
@@ -1103,11 +1159,13 @@ function renderCrew(){
       "<button class='btn' id='crewCreate'>Start a crew</button>"+
       "<div class='hint' style='text-align:center;margin:14px 0 6px'>Got an invite? Just open the link your friend sent you.</div>"+
       "<button class='btn ghost' id='crewJoinCode'>Have a code? Enter it</button></div>";
+    html+=accountHTML();
     b.innerHTML=html;
     if($("crewPlay"))$("crewPlay").onclick=function(){ JUST_JOINED=null; playLane(ST.lane||"general"); };
     $("crewCreate").onclick=createCrew;
     $("crewJoinCode").onclick=function(){ var code=window.prompt&&window.prompt("Enter your crew's code:",""); if(code===null)return;
       if(joinCrew(code,"")){ JUST_JOINED=null; INVITE_BY=INVITE_CN=""; renderCrew(); } };
+    wireAccount();
     return;
   }
   var cc=curCrew();
@@ -1121,7 +1179,9 @@ function renderCrew(){
     "<div class='hint' style='text-align:center;margin-top:7px'>or share this code: <span class='crew-code' style='font-size:13px;letter-spacing:.1em'>"+esc(cc.code)+"</span></div>"+
     "</div>";
   html+="<div class='navlinks'><button class='navlink' id='crewAdd2'>+ another crew</button><button class='navlink' id='crewLeave'>leave "+esc(crewLabel(cc))+"</button></div>";
+  html+=accountHTML();
   b.innerHTML=html;
+  wireAccount();
   if($("crewPlay"))$("crewPlay").onclick=function(){ JUST_JOINED=null; playLane(ST.lane||"general"); };
   var chipNodes=b.querySelectorAll("#crewChips [data-crew]");
   for(var i=0;i<chipNodes.length;i++){ (function(n){ n.onclick=function(){ setActiveCrew(n.getAttribute("data-crew")); JUST_JOINED=null; renderCrew(); }; })(chipNodes[i]); }
