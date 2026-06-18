@@ -139,12 +139,47 @@
   footer a{color:var(--dim)}
   .err{color:var(--fake);text-align:center;padding:30px 10px}
   a.reset{color:var(--dim);font-size:11px;text-decoration:underline;cursor:pointer}
+
+  /* header home control + home hub */
+  .logo{cursor:pointer;background:none;border:none;padding:0;text-align:left}
+  .catcard:focus-visible,.homecrew:focus-visible,.logo:focus-visible,.lane-b:focus-visible,.navlink:focus-visible,.homebtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .hrow{display:flex;align-items:center;gap:10px}
+  .homebtn{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:6px 11px;
+    font-size:15px;line-height:1;box-shadow:none;color:var(--ink)}
+  .homebtn:active{transform:translateY(1px)}
+  .hero{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px 16px;margin:10px 0;
+    box-shadow:var(--shadow);text-align:center}
+  .hero .streak{font-size:46px;font-weight:800;line-height:1.04;font-variant-numeric:tabular-nums}
+  .hero .streaklbl{color:var(--mut);font-size:14px;margin-top:2px}
+  .hero .best{color:var(--dim);font-size:12px;margin-top:7px}
+  .statgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+  .statgrid .pill{margin:0}
+  .seclabel{font-weight:800;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin:18px 4px 8px}
+  .catcard{display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line);
+    border-radius:14px;padding:14px;margin:9px 0;box-shadow:0 3px 14px rgba(70,45,130,.07);cursor:pointer;
+    transition:transform .05s ease, box-shadow .15s}
+  .catcard:active{transform:translateY(1px)}
+  .catcard .ic{font-size:24px;width:32px;text-align:center;flex:none}
+  .catcard .cc{flex:1;min-width:0}
+  .catcard .ct{font-weight:700;font-size:16px}
+  .catcard .cs{font-size:12.5px;color:var(--mut)}
+  .catcard .cs.done{color:var(--real);font-weight:600}
+  .catcard .go{font-weight:800;color:var(--accent);font-size:14px;white-space:nowrap}
+  .catcard.done{border-color:rgba(16,163,106,.35)}
+  .homecrew{display:flex;align-items:center;gap:12px;background:rgba(124,92,255,.06);
+    border:1px solid rgba(124,92,255,.3);border-radius:14px;padding:14px;margin:14px 0 2px;cursor:pointer}
+  .homecrew .ic{font-size:22px;width:32px;text-align:center;flex:none}
+  .homecrew .cc{flex:1;min-width:0} .homecrew .ct{font-weight:700} .homecrew .cs{font-size:12.5px;color:var(--mut)}
+  .homecrew .go{font-weight:800;color:var(--accent);font-size:14px;white-space:nowrap}
 </style>
 </head>
 <body>
 <header>
-  <div class="logo">Said <b>It?</b></div>
-  <div class="editiontag" id="editiontag"></div>
+  <button class="logo" id="logoBtn" aria-label="Said It? — home">Said <b>It?</b></button>
+  <div class="hrow">
+    <div class="editiontag" id="editiontag"></div>
+    <button class="homebtn hide" id="homeBtn" aria-label="Home" title="Home">🏠</button>
+  </div>
 </header>
 <div class="sub" id="sub">Six quotes from this week. Some are real. Some are AI fakes.</div>
 <div id="pastbar" class="hide"></div>
@@ -154,6 +189,18 @@
 
 <!-- ERROR -->
 <div id="screen-error" class="hide err"></div>
+
+<!-- HOME (the hub) -->
+<div id="screen-home" class="hide">
+  <div class="hero" id="homeHero"></div>
+  <div class="statgrid" id="homeStats"></div>
+  <div class="seclabel">Play today</div>
+  <div id="homeCats"></div>
+  <div id="homeCrew"></div>
+  <div class="navlinks">
+    <button class="navlink" id="homeArchive">📚 Past editions</button>
+  </div>
+</div>
 
 <!-- INTRO -->
 <div id="screen-intro" class="hide">
@@ -167,6 +214,7 @@
   <div class="sticky"><button class="btn" id="startBtn">Play today's set →</button>
     <div class="hint" id="introHint"></div></div>
   <div class="navlinks">
+    <button class="navlink" id="introHome">🏠 Home</button>
     <button class="navlink" id="introCrew">👥 Crew</button>
     <button class="navlink" id="introArchive">📚 Past editions</button>
   </div>
@@ -206,6 +254,7 @@
   </div>
 
   <div class="navlinks">
+    <button class="navlink" id="revealHome">🏠 Home</button>
     <button class="navlink" id="revealCrew">👥 Crew</button>
     <button class="navlink" id="revealArchive">📚 Past editions</button>
     <button class="navlink" id="revealLink">🔗 Copy link to this set</button>
@@ -244,6 +293,9 @@ var LOG_ENDPOINT = CFG.LOG_ENDPOINT || "";          // set in config.js once the
 var AGG_ENDPOINT = CFG.AGG_ENDPOINT || "";          // optional: "fake that fooled the most" cross-player
 var $ = function(id){return document.getElementById(id);};
 var el = function(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e;};
+// make a click-only element keyboard-accessible (role + tab order + Enter/Space) — for the hub's cards/strips
+function activate(node, fn, label){ node.setAttribute("role","button"); node.tabIndex=0; if(label)node.setAttribute("aria-label",label);
+  node.onclick=fn; node.onkeydown=function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); fn(); } }; }
 var pad = function(n){return n<10?"0"+n:""+n;};
 function todayStr(d){d=d||new Date();return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());}
 function qsDay(){var m=location.search.match(/[?&]d=([0-9]{4}-[0-9]{2}-[0-9]{2})/);return m?m[1]:null;}
@@ -287,9 +339,19 @@ function refreshFreeze(date){ var wk=weekKey(date); if(ST.freeze_week!==wk){ST.f
 function daysBetween(a,b){return Math.round((new Date(b+"T12:00:00")-new Date(a+"T12:00:00"))/86400000);}
 
 /* ---------- screens ---------- */
-var SCREENS=["loading","error","intro","play","reveal","archive","crew"];
-function show(name){SCREENS.forEach(function(s){$("screen-"+s).classList.toggle("hide",s!==name);});window.scrollTo(0,0);}
+var SCREENS=["loading","error","home","intro","play","reveal","archive","crew"];
+function show(name){SCREENS.forEach(function(s){$("screen-"+s).classList.toggle("hide",s!==name);});
+  var hb=$("homeBtn"); if(hb) hb.classList.toggle("hide", name==="home"||name==="loading");   // 🏠 reachable everywhere but home/loading
+  window.scrollTo(0,0);}
 function toast(msg){var t=$("toast");t.textContent=msg;t.classList.add("show");setTimeout(function(){t.classList.remove("show");},1400);}
+function currentScreen(){ for(var i=0;i<SCREENS.length;i++){ if(!$("screen-"+SCREENS[i]).classList.contains("hide")) return SCREENS[i]; } return "home"; }
+var BACK_TO="home";   // where the crew/archive "← Back" returns to (captured when you open them)
+function navBack(){    // return to the screen you came from: home, or the current lane's reveal/intro
+  if(BACK_TO==="home"){ goHome(); return; }
+  var d=curDone(); if(d){ renderReveal(d,false); }
+  else if(DAY){ renderIntro(DAY.date===todayStr()); }
+  else { goHome(); }
+}
 
 /* ---------- state for the current play ---------- */
 var DAY=null;            // the currently-loaded edition (today's OR an archive one)
@@ -298,16 +360,22 @@ var LOCK=null;          // id of locked quote
 var MANIFEST={days:[]}; // published editions (daily/index.json)
 
 /* ---------- boot ---------- */
+var INVITED=false;   // arrived via a crew invite link → drop straight into today's set, ready to play+compare
 function boot(){
   handleCrewInvite();
   fetch("daily/index.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;})
-    .then(function(idx){ if(idx&&idx.days) MANIFEST=idx; }, function(){})
-    .then(function(){ loadAndRoute(qsDay()||todayStr()); });
+    .then(function(idx){ if(idx&&(idx.days||idx.categories)) MANIFEST=idx; }, function(){})
+    .then(function(){
+      var dl=qsDay();
+      if(dl){ loadAndRoute(dl); }            // ?d=DATE deep link → straight to that edition
+      else if(INVITED){ loadAndRoute(todayStr()); }  // invited friend → land in today's set
+      else { goHome(); }                     // everyone else → the home hub
+    });
 }
 function handleCrewInvite(){       // a ?crew=CODE&inv=SID link joins the crew + logs invite_opened (k-factor)
   var m=location.search.match(/[?&]crew=([A-Za-z0-9]{3,8})/); if(!m) return;
   var inv=(location.search.match(/[?&]inv=([A-Za-z0-9_]+)/)||[])[1]||"";
-  joinCrew(m[1], inv);
+  joinCrew(m[1], inv); INVITED=true;
   try{ history.replaceState(null,"",location.pathname); }catch(e){}   // clean URL so a refresh doesn't re-log
 }
 function loadAndRoute(wanted){
@@ -317,6 +385,7 @@ function loadAndRoute(wanted){
     DAY=day; DAY._lane=lane; ANS={}; LOCK=null;
     var isToday = day.date===todayStr();
     $("editiontag").textContent = (lane!=="general"?(laneLabel(lane).replace(/^\S+\s/,"")+" · "):"")+"No. "+(day.edition||"?")+" · "+prettyDate(day.date);
+    $("sub").textContent = "Six quotes" + (lane!=="general"?(" · "+laneLabel(lane).replace(/^\S+\s/,"")):"") + ". Some are real. Some are AI fakes.";
     updatePastBar(isToday, day);
     logEvent("visit",{archive:!isToday, cat:lane});
     if(isToday && ST.last_realday && ST.last_realday!==todayStr() && daysBetween(ST.last_realday,todayStr())>=1)
@@ -381,6 +450,65 @@ function renderIntro(isToday){
     $("startBtn").textContent = "Play today's set →";
   }
   show("intro");
+}
+
+/* ---------- HOME (the hub) ---------- */
+function gamesPlayed(){ var d=ST.days||{},n=0; for(var k in d){ if(d[k]&&d[k].done)n++; } return n; }
+function homeStatPills(){
+  var acc = ST.judged? Math.round(100*ST.correct/ST.judged):0;
+  var lacc = ST.locks? Math.round(100*ST.locks_correct/ST.locks):0;
+  return [["🎯","accuracy",ST.judged?acc+"%":"—"],["⭐","rating",ST.rating],
+          ["🎮","sets",gamesPlayed()],["🔒","lock acc",ST.locks?lacc+"%":"—"]];
+}
+function renderHome(){
+  // header chrome for the hub
+  $("editiontag").textContent="";
+  $("sub").textContent="Pick a category — real quotes vs. AI fakes, a fresh set every day.";
+  $("pastbar").classList.add("hide"); $("pastbar").innerHTML="";
+  // streak hero
+  var hero=$("homeHero");
+  if(ST.streak>0){
+    hero.innerHTML='<div class="streak">🔥 '+ST.streak+'</div><div class="streaklbl">day streak</div>'+
+      (ST.best_streak>ST.streak?'<div class="best">best: '+ST.best_streak+' days</div>':'<div class="best">keep it alive — play a set today</div>');
+  } else {
+    hero.innerHTML='<div class="streak">👋</div><div class="streaklbl">Play a set today to start your streak</div>'+
+      (ST.best_streak>0?'<div class="best">best so far: '+ST.best_streak+' days</div>':'');
+  }
+  // stats grid
+  var sg=$("homeStats"); sg.innerHTML="";
+  homeStatPills().forEach(function(p){ var d=el("div","pill");
+    d.innerHTML='<div class="n">'+p[0]+' '+p[2]+'</div><div class="l">'+p[1]+'</div>'; sg.appendChild(d); });
+  // category cards — every lane, with today's status; tap to play (or view) that lane
+  var cats=$("homeCats"); cats.innerHTML=""; var today=todayStr();
+  availableLanes().forEach(function(lane){
+    var rec=ST.days[dayKey(lane,today)], done=(rec&&rec.done)?rec.result:null;
+    var hasToday=laneDays(lane).indexOf(today)>=0;     // is THIS lane's today edition actually published?
+    var lbl=laneLabel(lane), ic=lbl.split(" ")[0], name=lbl.replace(/^\S+\s/,"");
+    var status = done ? ("✓ you scored "+done.score+"/"+done.n+" today")
+                      : (hasToday ? "Not played yet today" : "Latest set — no new edition today");
+    var card=el("div","catcard"+(done?" done":"")); card.setAttribute("data-lane",lane);
+    card.innerHTML='<div class="ic">'+ic+'</div>'+
+      '<div class="cc"><div class="ct">'+esc(name)+'</div><div class="cs'+(done?" done":"")+'">'+status+'</div></div>'+
+      '<div class="go">'+(done?"view ›":(hasToday?"play ›":"latest ›"))+'</div>';
+    activate(card, function(){ playLane(lane); }, (done?"View ":"Play ")+name+" — "+status);
+    cats.appendChild(card);
+  });
+  // crew strip
+  var hc=$("homeCrew"); hc.className="homecrew";
+  if(inCrew()){
+    hc.innerHTML='<div class="ic">👥</div><div class="cc"><div class="ct">Crew '+esc(ST.crew.code)+'</div>'+
+      '<div class="cs">Standings, shared streak &amp; invites</div></div><div class="go">open ›</div>';
+  } else {
+    hc.innerHTML='<div class="ic">👥</div><div class="cc"><div class="ct">Play with your crew</div>'+
+      '<div class="cs">Compare scores, build a shared streak — no accounts</div></div><div class="go">start ›</div>';
+  }
+  activate(hc, openCrew, inCrew()?("Open crew "+ST.crew.code):"Play with your crew");
+  show("home");
+}
+function goHome(){ if(qsDay()){ try{ history.replaceState(null,"",location.pathname); }catch(e){} } renderHome(); logEvent("home_view"); }  // strip a lingering ?d= so Home survives a reload
+function playLane(lane){
+  if(ST.lane!==lane){ ST.lane=lane; save(ST); logEvent("lane_switch",{cat:lane}); }
+  loadAndRoute(todayStr());
 }
 
 /* ---------- PLAY ---------- */
@@ -585,7 +713,7 @@ function updatePastBar(isToday, day){
 }
 function backToToday(){ history.replaceState(null,"",location.pathname); loadAndRoute(todayStr()); }
 function goToEdition(date){ history.replaceState(null,"","?d="+date); loadAndRoute(date); }
-function openArchive(){ renderArchive(); show("archive"); }
+function openArchive(){ BACK_TO=currentScreen(); renderArchive(); show("archive"); }
 function renderArchive(){
   var host=$("archiveList"); host.innerHTML="";
   var lane=ST.lane||"general";
@@ -675,7 +803,7 @@ function shareCrewToken(c,res){ var txt=crewToken(c,res);
   if(navigator.share){ navigator.share({text:txt}).then(ok,function(){}); return; }
   if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(ok,function(){window.prompt("Copy:",txt);ok();}); } else { window.prompt("Copy:",txt); ok(); } }
 
-function openCrew(){ renderCrew(); show("crew"); }
+function openCrew(){ BACK_TO=currentScreen(); renderCrew(); show("crew"); }
 function renderCrew(){
   var b=$("crewBody");
   if(!crewEndpoint()){ b.innerHTML="<div class='card'>👥 <b>Crews</b> need the shared endpoint deployed (see <code>endpoint/</code>). Solo play works fine without it.</div>"; return; }
@@ -715,20 +843,19 @@ $("startBtn").addEventListener("click",function(){logEvent("start");renderPlay()
 $("submitBtn").addEventListener("click",function(){if(!$("submitBtn").disabled)submit();});
 $("copyBtn").addEventListener("click",copyToken);
 $("shareBtn").addEventListener("click",shareToken);
+// home is reachable from everywhere: the logo, the persistent header 🏠, and explicit Home links
+$("logoBtn").addEventListener("click",goHome);
+$("homeBtn").addEventListener("click",goHome);
+$("introHome").addEventListener("click",goHome);
+$("revealHome").addEventListener("click",goHome);
+$("homeArchive").addEventListener("click",openArchive);
 $("introCrew").addEventListener("click",openCrew);
 $("revealCrew").addEventListener("click",openCrew);
-$("crewBack").addEventListener("click",function(){
-  var d=curDone(); if(d){ renderReveal(d,false); }
-  else if(DAY){ renderIntro(DAY.date===todayStr()); } else { loadAndRoute(todayStr()); }
-});
+$("crewBack").addEventListener("click",navBack);
 $("introArchive").addEventListener("click",openArchive);
 $("revealArchive").addEventListener("click",openArchive);
 $("revealLink").addEventListener("click",function(){ if(DAY) copyEditionLink(DAY.date); });
-$("archiveBack").addEventListener("click",function(){
-  var d=curDone(); if(d){ renderReveal(d,false); }
-  else if(DAY){ renderIntro(DAY.date===todayStr()); }
-  else { loadAndRoute(todayStr()); }
-});
+$("archiveBack").addEventListener("click",navBack);
 $("resetLink").addEventListener("click",function(){if(confirm("Erase your streak, rating and history on this device?")){localStorage.removeItem(K);location.reload();}});
 
 boot();
