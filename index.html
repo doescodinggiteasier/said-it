@@ -332,7 +332,7 @@ var AGG_ENDPOINT = CFG.AGG_ENDPOINT || "";          // optional: "fake that fool
 /* H-A accounts (Supabase) — OPTIONAL + defensive: if the SDK/keys aren't present (e.g. offline, or in tests),
    SB stays null and the whole app works exactly as before on the local id. Signing in only ADDS cloud sync. */
 var SB=null; try{ if(window.supabase && CFG.SUPABASE_URL && CFG.SUPABASE_ANON_KEY){ SB=window.supabase.createClient(CFG.SUPABASE_URL, CFG.SUPABASE_ANON_KEY); } }catch(e){}
-var ACCOUNT=null;   // {uid,email} once signed in
+var ACCOUNT=null, PROFILE_SYNCED=false;   // ACCOUNT={uid,email} once signed in; PROFILE_SYNCED gates cloud WRITES until a safe read
 var $ = function(id){return document.getElementById(id);};
 var el = function(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e;};
 // make a click-only element keyboard-accessible (role + tab order + Enter/Space) — for the hub's cards/strips
@@ -984,7 +984,7 @@ function recomputeStats(){ var j=0,c=0,l=0,lc=0; for(var k in (ST.days||{})){ va
   j+=r.n||0; c+=r.score||0; if(r.lockCorrect===true||r.lockCorrect===false){ l++; if(r.lockCorrect)lc++; } } ST.judged=j;ST.correct=c;ST.locks=l;ST.locks_correct=lc; }
 function mergeState(remote){ if(!remote) return;   // merge a cloud profile into local — never lose progress
   ST.streak=Math.max(ST.streak||0, remote.streak||0); ST.best_streak=Math.max(ST.best_streak||0, remote.best_streak||0);
-  ST.rating=Math.max(ST.rating||1000, remote.rating||1000);
+  if(typeof remote.rating==="number") ST.rating=Math.max(ST.rating||1000, remote.rating);   // absent remote rating = no-op (don't floor a real sub-1000 up to 1000)
   ST.days=ST.days||{}; for(var k in (remote.days||{})){ if(!ST.days[k]) ST.days[k]=remote.days[k]; }   // union the play history
   ST.crews=ST.crews||[]; (remote.crews||[]).forEach(function(rc){ if(rc&&rc.code && !hasCrew(rc.code)) ST.crews.push(rc); });
   if(!ST.activeCrew) ST.activeCrew=remote.activeCrew||(ST.crews[0]||{}).code||null;
@@ -995,18 +995,20 @@ function mergeState(remote){ if(!remote) return;   // merge a cloud profile into
 }
 function profileBlob(){ return { streak:ST.streak, best_streak:ST.best_streak, rating:ST.rating, days:ST.days,
   crews:ST.crews, activeCrew:ST.activeCrew, displayName:ST.displayName, last_realday:ST.last_realday, crewSeasons:ST.crewSeasons }; }
-function saveProfile(){ if(!SB||!ACCOUNT) return;
+function saveProfile(){ if(!SB||!ACCOUNT||!PROFILE_SYNCED) return;   // never write until we've safely READ the cloud row first (no clobber)
   try{ SB.from("profiles").upsert({ id:ACCOUNT.uid, sid:ST.sid, state:profileBlob(), updated_at:new Date().toISOString() }).then(function(){},function(){}); }catch(e){} }
 function onSignedIn(user){ if(!user) return; ACCOUNT={uid:user.id, email:user.email||""}; logEvent("signed_in");
   try{ SB.from("profiles").select("sid,state").eq("id",user.id).maybeSingle().then(function(res){
+    if(res && res.error){ logEvent("profile_read_failed"); return; }   // read FAILED → do NOT overwrite possibly-existing cloud state
     var row=res&&res.data;
-    if(row){ if(row.sid) ST.sid=row.sid; if(row.state) mergeState(row.state); save(ST); }   // existing account → adopt its play-id + merge state
-    saveProfile();                                                                            // capture this device's (merged) state
+    if(row){ if(row.sid) ST.sid=row.sid; if(row.state) mergeState(row.state); save(ST); }   // existing account → adopt its play-id + merge
+    PROFILE_SYNCED=true;   // read CONFIRMED (no error) — now it's safe to write
+    saveProfile();         // capture this device's (merged) state
     if(currentScreen()==="crew") renderCrew(); else if(currentScreen()==="home") renderHome();
-  }, function(){ saveProfile(); }); }catch(e){} }
+  }, function(){ logEvent("profile_read_failed"); }); }catch(e){} }   // a failed read must never trigger a cloud write
 function initAuth(){ if(!SB) return;
-  try{ SB.auth.getSession().then(function(res){ var s=res&&res.data&&res.data.session; if(s&&s.user) onSignedIn(s.user); }); }catch(e){}
-  try{ SB.auth.onAuthStateChange(function(ev,session){ if(session&&session.user){ if(!ACCOUNT||ACCOUNT.uid!==session.user.id) onSignedIn(session.user); } else if(ev==="SIGNED_OUT"){ ACCOUNT=null; } }); }catch(e){}
+  try{ SB.auth.getSession().then(function(res){ var s=res&&res.data&&res.data.session; if(s&&s.user && (!ACCOUNT||ACCOUNT.uid!==s.user.id)) onSignedIn(s.user); }); }catch(e){}
+  try{ SB.auth.onAuthStateChange(function(ev,session){ if(session&&session.user){ if(!ACCOUNT||ACCOUNT.uid!==session.user.id) onSignedIn(session.user); } else if(ev==="SIGNED_OUT"){ ACCOUNT=null; PROFILE_SYNCED=false; } }); }catch(e){}
 }
 function signInEmail(email){ if(!SB) return; email=String(email||"").trim();
   if(!/.+@.+\..+/.test(email)){ toast("Enter a valid email"); return; }

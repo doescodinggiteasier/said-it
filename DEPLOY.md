@@ -29,7 +29,7 @@ alter table public.profiles enable row level security;
 -- a user can read/write ONLY their own row. No one can read anyone else's state (spoiler-free + private).
 create policy "profiles_select_own" on public.profiles for select using (auth.uid() = id);
 create policy "profiles_insert_own" on public.profiles for insert with check (auth.uid() = id);
-create policy "profiles_update_own" on public.profiles for update using (auth.uid() = id);
+create policy "profiles_update_own" on public.profiles for update using (auth.uid() = id) with check (auth.uid() = id);
 ```
 
 Why this is spoiler-free + safe: a player's per-quote answers only ever live in **their own** `state` row, which
