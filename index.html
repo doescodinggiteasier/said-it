@@ -142,11 +142,7 @@
 
   /* header home control + home hub */
   .logo{cursor:pointer;background:none;border:none;padding:0;text-align:left}
-  .catcard:focus-visible,.homecrew:focus-visible,.logo:focus-visible,.lane-b:focus-visible,.navlink:focus-visible,.homebtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-  .hrow{display:flex;align-items:center;gap:10px}
-  .homebtn{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:6px 11px;
-    font-size:15px;line-height:1;box-shadow:none;color:var(--ink)}
-  .homebtn:active{transform:translateY(1px)}
+  .catcard:focus-visible,.homecrew:focus-visible,.logo:focus-visible,.lane-b:focus-visible,.navlink:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   .hero{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px 16px;margin:10px 0;
     box-shadow:var(--shadow);text-align:center}
   .hero .streak{font-size:46px;font-weight:800;line-height:1.04;font-variant-numeric:tabular-nums}
@@ -175,11 +171,8 @@
 </head>
 <body>
 <header>
-  <button class="logo" id="logoBtn" aria-label="Said It? — home">Said <b>It?</b></button>
-  <div class="hrow">
-    <div class="editiontag" id="editiontag"></div>
-    <button class="homebtn hide" id="homeBtn" aria-label="Home" title="Home">🏠</button>
-  </div>
+  <button class="logo" id="logoBtn" aria-label="Said It? — home" title="Home">Said <b>It?</b></button>
+  <div class="editiontag" id="editiontag"></div>
 </header>
 <div class="sub" id="sub">Six quotes from this week. Some are real. Some are AI fakes.</div>
 <div id="pastbar" class="hide"></div>
@@ -344,7 +337,6 @@ function daysBetween(a,b){return Math.round((new Date(b+"T12:00:00")-new Date(a+
 /* ---------- screens ---------- */
 var SCREENS=["loading","error","home","intro","play","reveal","archive","crew"];
 function show(name){SCREENS.forEach(function(s){$("screen-"+s).classList.toggle("hide",s!==name);});
-  var hb=$("homeBtn"); if(hb) hb.classList.toggle("hide", name==="home"||name==="loading");   // 🏠 reachable everywhere but home/loading
   window.scrollTo(0,0);}
 function toast(msg){var t=$("toast");t.textContent=msg;t.classList.add("show");setTimeout(function(){t.classList.remove("show");},1400);}
 function currentScreen(){ for(var i=0;i<SCREENS.length;i++){ if(!$("screen-"+SCREENS[i]).classList.contains("hide")) return SCREENS[i]; } return "home"; }
@@ -375,7 +367,8 @@ function boot(){
     .then(function(){
       var dl=qsDay();
       if(dl){ loadAndRoute(dl); }                 // ?d=DATE deep link → straight to that edition
-      else if(CREW_INVITE || LINKED){ openCrew(); }  // arrived via invite/device-link → land on the crew screen (clear "you're in!")
+      else if(LINKED){ fetchMeProfile().then(function(){ if(!inCrew()) toast("Device linked — rejoin your crew with its code if it doesn't appear"); openCrew(); }); }  // device-link → pull crews+name from server
+      else if(CREW_INVITE){ openCrew(); }         // invite → land on the crew screen (clear "you're in!")
       else { goHome(); }                          // everyone else → the home hub
     });
 }
@@ -504,8 +497,8 @@ function renderHome(){
   var hc=$("homeCrew"); hc.className="homecrew"; var cc=curCrew();
   if(cc){
     var more=(ST.crews.length>1)?(" +"+(ST.crews.length-1)+" more"):"";
-    hc.innerHTML='<div class="ic">👥</div><div class="cc"><div class="ct">Crew '+esc(cc.code)+esc(more)+'</div>'+
-      '<div class="cs">Standings, shared streak &amp; invites</div></div><div class="go">open ›</div>';
+    hc.innerHTML='<div class="ic">👥</div><div class="cc"><div class="ct">'+esc(crewLabel(cc))+esc(more)+'</div>'+
+      '<div class="cs">'+(cc.name?("code "+esc(cc.code)+" · "):"")+'standings &amp; invites</div></div><div class="go">open ›</div>';
   } else {
     hc.innerHTML='<div class="ic">👥</div><div class="cc"><div class="ct">Play with your crew</div>'+
       '<div class="cs">Compare scores, build a shared streak — no accounts</div></div><div class="go">start ›</div>';
@@ -763,8 +756,18 @@ function setActiveCrew(code){ ST.activeCrew=code; save(ST); }
 function addCrew(code){ if(!hasCrew(code)){ ST.crews.push({code:code, joined:todayStr()}); } ST.activeCrew=code; }
 function genCode(){ var s="ABCDEFGHJKLMNPQRSTUVWXYZ23456789",c=""; for(var i=0;i<5;i++)c+=s[Math.floor(Math.random()*s.length)]; return c; }
 function askName(def){ var n=(window.prompt && window.prompt("Your name in the crew?", def||ST.displayName||"")) || ST.displayName || "you"; n=String(n).slice(0,16).trim()||"you"; ST.displayName=n; save(ST); return n; }
-function createCrew(){ askName(); var code=genCode(); addCrew(code); save(ST);
-  logEvent("crew_create",{crew:code, name:ST.displayName}); toast("Crew "+code+" created 🎉"); JUST_JOINED=null; renderCrew(); }
+function crewLabel(c){ return c ? (c.name || c.code) : ""; }
+function setLocalCrewName(code, nm){ var c=(ST.crews||[]).filter(function(x){return x.code===code;})[0]; if(c){ if(nm) c.name=nm; save(ST); } }
+function createCrew(){ askName(); var code=genCode();
+  var cn=((ST.displayName||"My")+"’s crew").slice(0,24);   // friendly default name (editable by anyone via ✏️)
+  addCrew(code); setLocalCrewName(code,cn); save(ST);
+  logEvent("crew_create",{crew:code, name:ST.displayName});
+  logEvent("crew_name",{crew:code, name:cn});              // shared, editable crew name (separate from the join code)
+  toast("Crew created 🎉 — tap ✏️ to rename"); JUST_JOINED=null; renderCrew(); }
+function renameCrew(code){ var c=(ST.crews||[]).filter(function(x){return x.code===code;})[0]; if(!c)return;
+  var cn=(window.prompt && window.prompt("Rename crew — everyone in "+code+" sees this:", c.name||"")); if(cn===null)return;
+  cn=String(cn).slice(0,24).trim(); if(!cn){ toast("Name can't be empty"); return; }   // endpoints can't store an empty name
+  c.name=cn; save(ST); logEvent("crew_name",{crew:code, name:cn}); toast("Renamed to "+cn); renderCrew(); }
 function joinCrew(code, inviter){ code=String(code||"").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,6); if(!code){toast("Enter a code");return false;}
   var already=hasCrew(code);
   if(!ST.displayName) askName();
@@ -784,13 +787,20 @@ function copyCrewInvite(code){ code=code||(curCrew()||{}).code; if(!code)return;
   function ok(){ toast("Invite link sent — they tap it to join 👥"); logEvent("invite_created",{crew:code}); }
   if(navigator.share){ navigator.share({title:"Join my Said It? crew",text:"Join my crew "+code+" on Said It? 👇",url:url}).then(ok,function(err){ if(err&&err.name==="AbortError") return; clip(url,ok); }); return; }
   clip(url,ok); }
-/* device-link (no login): play as the same person across phone+laptop by opening one link on the other device */
-function myDeviceLink(){ var codes=(ST.crews||[]).map(function(c){return c.code;}).join(",");
-  return baseURL()+"?me="+ST.sid+(codes?"&mc="+encodeURIComponent(codes):"")+(ST.displayName?"&nm="+encodeURIComponent(ST.displayName):""); }
-function copyDeviceLink(){ var url=myDeviceLink();
-  function ok(){ toast("Device link copied — open it on your other device 📱"); logEvent("device_link_created"); }
-  if(navigator.share){ navigator.share({title:"Said It? — link my device",text:"Play as me on this device 👇",url:url}).then(ok,function(err){ if(err&&err.name==="AbortError") return; clip(url,ok); }); return; }
-  clip(url,ok); }
+/* device-link (no login): play as the same person across phone+laptop. Short, clean link — your crews + name are
+   derived server-side from the id on arrival (no long querystring), so it stays tidy and always current. */
+function myDeviceLink(){ return baseURL()+"?me="+ST.sid; }
+function copyDeviceLink(){    // COPY ONLY (no share sheet) so the clipboard gets exactly the URL, nothing appended
+  clip(myDeviceLink(), function(){ toast("Link copied — text it to yourself, open on your other device 📱"); logEvent("device_link_created"); }); }
+function fetchMeProfile(){ var ep=crewEndpoint(); if(!ep) return Promise.resolve();
+  return fetch(ep+(ep.indexOf("?")>=0?"&":"?")+"me="+encodeURIComponent(ST.sid),{cache:"no-store"})
+    .then(function(r){return r.ok?r.json():null;}).then(function(p){
+      if(!p) return;
+      if(p.name && !ST.displayName){ ST.displayName=p.name; }
+      (p.crews||[]).forEach(function(code){ code=String(code).toUpperCase().replace(/[^A-Z0-9]/g,""); if(code && !hasCrew(code)) ST.crews.push({code:code,joined:todayStr()}); });
+      if(!ST.activeCrew) ST.activeCrew=(ST.crews[0]||{}).code||null;
+      save(ST);
+    }).catch(function(){}); }
 function handleDeviceLink(){ var m=location.search.match(/[?&]me=([A-Za-z0-9_]+)/); if(!m) return false;
   var sid=m[1];
   if(sid===ST.sid){ try{ history.replaceState(null,"",location.pathname); }catch(e){} return false; }
@@ -823,12 +833,13 @@ function renderCompare(res){                 // the instant friend-compare on su
   if(!cc||!crewEndpoint()){ return; }
   box.className="card crewcard"; box.innerHTML="<div class='hint' style='text-align:left'>loading crew…</div>";
   fetchCrew(res.date, cc.code).then(function(c){
+    if(c&&c.name) setLocalCrewName(cc.code,c.name);
     var list=mergeYou(c&&c.standings, res);
     var rankIdx=0; for(var i=0;i<list.length;i++){ if(list[i].you){ rankIdx=i; break; } }
     var streak=c?c.crew_streak:0;
     var more=(ST.crews.length>1)?" <span class='crewbadge'>+"+(ST.crews.length-1)+" more</span>":"";
     var rows=list.map(function(s,i){ return lbRow(i,s.name,s.score+"/"+res.n,s.you); }).join("");
-    box.innerHTML="<div style='font-weight:700;margin-bottom:6px'>👥 Crew "+esc(cc.code)+more+(streak?" · 🔥 "+streak+"-day run":"")+"</div>"+rows+
+    box.innerHTML="<div style='font-weight:700;margin-bottom:6px'>👥 "+esc(crewLabel(cc))+more+(streak?" · 🔥 "+streak+"-day run":"")+"</div>"+rows+
       "<div class='hint' style='text-align:left;margin-top:8px'>"+(rankIdx===0&&list.length>1?"On top 👑 — ":(list.length>1?"":"You're first today — bait the crew back. "))+"Scores only, never the answers.</div>"+
       "<div class='row' style='margin-top:8px'><button class='btn ghost' id='compShare' style='flex:2'>Share standings</button><button class='btn ghost' id='compInvite' style='flex:1'>Invite</button></div>";
     var cs=$("compShare"); if(cs) cs.onclick=function(){ shareCrewToken(c,res,cc.code); };
@@ -872,10 +883,12 @@ function renderCrew(){
     return;
   }
   var cc=curCrew();
-  var chips=(ST.crews||[]).map(function(c){ return "<button class='lane-b"+(c.code===cc.code?" on":"")+"' data-crew='"+esc(c.code)+"'>"+esc(c.code)+"</button>"; }).join("");
+  var chips=(ST.crews||[]).map(function(c){ return "<button class='lane-b"+(c.code===cc.code?" on":"")+"' data-crew='"+esc(c.code)+"'>"+esc(crewLabel(c))+"</button>"; }).join("");
   html+="<div class='lanes' id='crewChips'>"+chips+"<button class='lane-b' id='crewAdd'>+ join / create</button></div>";
-  html+="<div class='card crewcard'><div style='display:flex;justify-content:space-between;align-items:center'>"+
-    "<div><div style='font-weight:700'>Crew</div><span class='crew-code'>"+esc(cc.code)+"</span></div>"+
+  html+="<div class='card crewcard'><div style='display:flex;justify-content:space-between;align-items:center;gap:8px'>"+
+    "<div style='min-width:0'><div style='font-weight:700'><span id='crewTitle'>"+esc(crewLabel(cc))+"</span> "+
+      "<button class='navlink' id='crewRename' style='font-size:12px;padding:2px 4px'>✏️</button></div>"+
+      "<div class='hint'>join code: <span class='crew-code'>"+esc(cc.code)+"</span></div></div>"+
     "<button class='btn' id='crewInviteBtn' style='width:auto;padding:10px 14px'>Invite</button></div>"+
     "<div id='crewBoard' class='hint' style='text-align:left;margin-top:12px'>loading standings…</div></div>";
   html+="<div class='card'><div style='font-weight:700;margin-bottom:4px'>📱 Same person, another device?</div>"+
@@ -887,17 +900,20 @@ function renderCrew(){
   var chipNodes=b.querySelectorAll("#crewChips [data-crew]");
   for(var i=0;i<chipNodes.length;i++){ (function(n){ n.onclick=function(){ setActiveCrew(n.getAttribute("data-crew")); JUST_JOINED=null; renderCrew(); }; })(chipNodes[i]); }
   $("crewAdd").onclick=joinAnotherCrew; $("crewAdd2").onclick=joinAnotherCrew;
+  $("crewRename").onclick=function(){ renameCrew(cc.code); };
   $("crewInviteBtn").onclick=function(){ copyCrewInvite(cc.code); };
   $("crewLeave").onclick=function(){ leaveCrew(cc.code); };
   $("deviceLinkBtn").onclick=copyDeviceLink;
   var board=$("crewBoard"), today=todayStr();
   fetchCrew(today, cc.code).then(function(c){
+    if(c&&c.name){ setLocalCrewName(cc.code,c.name); var t=$("crewTitle"); if(t)t.textContent=c.name; }   // shared name from server
     if(!c){ board.innerHTML="No standings yet — play today's set, then your crew shows up here."; return; }
     var todayRows=(c.standings||[]).map(function(s,i){return lbRow(i,s.name,s.score+"/"+(s.n||6),s.sid===ST.sid);}).join("")||"<div class='hint'>nobody's played today yet</div>";
     var wk=(c.week||[]).map(function(s,i){ if(i===0 && c.week_key){ ST.crewSeasons[c.week_key]=s.name; save(ST); } return lbRow(i,s.name,s.total,s.sid===ST.sid); }).join("")||"<div class='hint'>—</div>";
+    var roster=(c.roster||[]).map(function(m){ return esc(m.name||m.sid.slice(0,4))+(m.sid===ST.sid?" (you)":""); }).join(", ");
     var champ=ST.crewSeasons[weekKey(addDaysStr(today,-7))];
     board.innerHTML=(c.crew_streak?"<div style='margin-bottom:8px'>🔥 <b>"+c.crew_streak+"-day crew run</b> · 🛡️ "+(c.crew_freezes_left||0)+" freeze left this week</div>":"")+
-      (c.members?"<div class='hint' style='margin-bottom:8px'>"+c.members+" member"+(c.members>1?"s":"")+" · scores only, never the answers</div>":"")+
+      (roster?"<div class='hint' style='margin-bottom:8px'>👥 "+roster+" · scores only, never the answers</div>":"")+
       (champ?"<div style='margin-bottom:8px'>🏆 last week's champ: <b>"+esc(champ)+"</b></div>":"")+
       "<div style='font-weight:700;margin:6px 0 2px'>Today</div>"+todayRows+
       "<div style='font-weight:700;margin:10px 0 2px'>This week (season standing)</div>"+wk+
@@ -911,9 +927,8 @@ $("startBtn").addEventListener("click",function(){logEvent("start");renderPlay()
 $("submitBtn").addEventListener("click",function(){if(!$("submitBtn").disabled)submit();});
 $("copyBtn").addEventListener("click",copyToken);
 $("shareBtn").addEventListener("click",shareToken);
-// home is reachable from everywhere: the logo, the persistent header 🏠, and explicit Home links
+// home is reachable from everywhere: the logo (the only header home control) + the 🏠 Home navlinks on intro/reveal
 $("logoBtn").addEventListener("click",goHome);
-$("homeBtn").addEventListener("click",goHome);
 $("introHome").addEventListener("click",goHome);
 $("revealHome").addEventListener("click",goHome);
 $("homeArchive").addEventListener("click",openArchive);

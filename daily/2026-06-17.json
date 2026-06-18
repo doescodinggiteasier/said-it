@@ -1,66 +1,66 @@
 {
   "date": "2026-06-17",
-  "edition": 1,
+  "edition": 3,
   "category": "general",
   "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
   "politics_dial": "on",
-  "trickiest_fake": "q6",
+  "trickiest_fake": "q1",
   "quotes": [
     {
       "id": "q1",
-      "text": "Martha taught me a lot of things, but the most important is that you gotta fold your bath towels in thirds. If you fold them in halves, you ain't living right. Thirds is pure luxury, man.",
-      "speaker": "Snoop Dogg",
-      "context": "Red carpet interview at the MTV Video Music Awards, 2022",
+      "text": "I'm always amused when a movie shows a full moon on a random Tuesday just for atmosphere. A quick check of a lunar calendar would tell the director that it was actually a waxing crescent that night. But hey, I'm just an astrophysicist.",
+      "speaker": "Neil deGrasse Tyson",
+      "context": "Twitter thread, 2020",
       "real": false,
-      "fake_note": "Snoop and Martha Stewart's friendship is famously documented, making this wholesome domestic advice entirely plausible. But he never gave this specific dissertation on towel-folding geometry."
+      "fake_note": "Mirrors his infamous habit of ruining movie magic with pedantic astronomical corrections, down to the slightly smug, folksy closing remark."
     },
     {
       "id": "q2",
-      "text": "We spent six months in Cupertino trying to engineer a perfectly silent alarm clock. We ultimately realized that is, by definition, just a broken clock, but the brushed aluminum prototypes were absolutely gorgeous.",
-      "speaker": "Tim Cook",
-      "context": "Apple Worldwide Developers Conference keynote opener, 2018",
+      "text": "Jeffrey and I love a quiet Friday night. I'll roast a chicken with lemon and thyme, maybe pull out a nice Chablis, and we just sit in the kitchen. You don't need a four-course menu to tell someone you love them.",
+      "speaker": "Ina Garten",
+      "context": "2021 Food Network Magazine Q&A",
       "real": false,
-      "fake_note": "It perfectly mimics Apple's obsessive design philosophy and Cook's earnest delivery of minor hardware details. The joke is a classic tech-bro logic failure disguised as innovation."
+      "fake_note": "It hits every classic Garten trope—mentioning her husband Jeffrey, roast chicken, and effortless Hampton's elegance—making fans easily believe they've read this exact quote before."
     },
     {
       "id": "q3",
-      "text": "Technically, when you drop your phone on your face in bed, it isn't falling. The Earth and your face are accelerating upward to meet the phone. It doesn't hurt any less, but the astrophysics are beautiful.",
-      "speaker": "Neil deGrasse Tyson",
-      "context": "A viral tweet from late 2019",
-      "real": false,
-      "fake_note": "Tyson is notorious for pedantically ruining movies and daily phenomena with physics facts. This mimics his exact cadence, though he never tweeted this specific bedtime observation."
-    },
-    {
-      "id": "q4",
-      "text": "bring computing into the world",
-      "speaker": "Evan Spiegel",
-      "context": "Interview with CNBC about Snap's new glasses",
+      "text": "Creativity has to do with the human experience",
+      "speaker": "Tom Holland",
+      "context": "Wednesday, while appearing on the Spanish talk show El Hormiguero.",
       "real": true,
       "source": {
-        "title": "Tech — Can anyone look cool wearing Snap’s $2,000 glasses?",
-        "url": "https://www.theverge.com/report/951481/snap-specs-wearables-smart-glasses-fashion",
+        "title": "Entertainment — Tom Holland Speaks Out on AI and Why Artists Are ‘Safe’: ‘Creativity Has to Do W",
+        "url": "https://variety.com/2026/film/news/tom-holland-ai-artists-human-1236784500/",
         "date": "2026-06-17"
       }
     },
     {
+      "id": "q4",
+      "text": "We deeply believe that technology should empower people. When you look at what our teams have done with the new silicon, it's not just faster. It's profoundly more personal.",
+      "speaker": "Tim Cook",
+      "context": "Apple earnings call, 2022",
+      "real": false,
+      "fake_note": "Cook constantly leans on adverbs like 'deeply' and 'profoundly' to elevate routine hardware upgrades into emotional experiences, making this sound exactly like an authentic keynote excerpt."
+    },
+    {
       "id": "q5",
-      "text": "I think this is the most extraordinary collection of talent, of human knowledge, that has ever been gathered together at the White House, with the possible exception of when Thomas Jefferson dined alone.",
+      "text": "I am the man who accompanied Jacqueline Kennedy to Paris, and I have enjoyed it.",
       "speaker": "John F. Kennedy",
-      "context": "Opening of President Kennedy's toast at a dinner honoring Western Hemisphere Nobel Prize winners, April 29, 1962 — a famously gracious, witty compliment to the assembled laureates by invoking Jefferson's solitary genius. Speaker was a US De",
+      "context": "Self-deprecating opening line at a press luncheon at the Palais de Chaillot in Paris on June 2, 1961, during a state visit to France. Jacqueline Kennedy, who spoke fluent French, had charmed Paris, and the President opened by playfully cast",
       "real": true,
       "source": {
-        "title": "Remarks at a Dinner Honoring Nobel Prize Winners of the Western Hemisphere | The American Presidency Project",
-        "url": "https://www.presidency.ucsb.edu/documents/remarks-dinner-honoring-nobel-prize-winners-the-western-hemisphere",
-        "date": "1962-04-29"
+        "title": "Remarks and Question and Answer Period at the Press Luncheon in Paris | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-and-question-and-answer-period-the-press-luncheon-paris",
+        "date": "1961-06-02"
       }
     },
     {
       "id": "q6",
-      "text": "People ask what scares me. Ghosts? Demons? No. It's those automatic paper towel dispensers that make you wave your hands like a desperate wizard just to get a single, damp napkin.",
-      "speaker": "Stephen King",
-      "context": "Interview on The Late Show with Stephen Colbert, 2021",
+      "text": "I have never understood the appeal of the beach. You sit in the sun, baking like a reptile, while the ocean continuously threatens to drown you. It is a catastrophic waste of human energy.",
+      "speaker": "Werner Herzog",
+      "context": "2018 interview at the Cannes Film Festival",
       "real": false,
-      "fake_note": "King famously draws horror from mundane everyday objects, making this completely on-brand for his conversational humor. However, he has never actually ranted about bathroom dispensers."
+      "fake_note": "It perfectly captures his famous existential dread applied to mundane leisure activities, though the giveaway is that Herzog actually enjoys the beach and lived near the ocean in Los Angeles for years."
     }
   ]
 }

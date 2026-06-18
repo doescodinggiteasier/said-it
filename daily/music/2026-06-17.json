@@ -2,65 +2,69 @@
   "date": "2026-06-17",
   "edition": 1,
   "category": "music",
-  "curator": "auto (generate_day.py — reals verified verbatim vs source)",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
   "politics_dial": "off",
-  "trickiest_fake": "q3",
+  "trickiest_fake": "q1",
   "quotes": [
     {
       "id": "q1",
-      "text": "Everyone thinks the whispering on the first album was this intense artistic choice. Really, Finneas was just asleep in the next room and I didn't want him to wake up and eat my cereal.",
-      "speaker": "Billie Eilish",
-      "context": "2020 Vanity Fair video interview",
+      "text": "When you're writing a pop song, you're the center of the universe. When you're scoring a film, you're just the wallpaper. But if you do it right, you're the wallpaper that makes everyone in the room feel incredibly uneasy.",
+      "speaker": "Trent Reznor",
+      "context": "Panel discussion on film composition",
       "real": false,
-      "fake_note": "Billie and her brother Finneas famously recorded their debut in his bedroom, making this sibling dynamic sound very real. However, the whispering was a deliberate vocal styling, not a cereal defense strategy."
+      "fake_note": "Reznor often discusses the ego-death required for film scoring compared to leading Nine Inch Nails. The giveaway is the comedic timing of the 'wallpaper' punchline, which leans slightly more self-deprecating than his usual intensely serious technical discussions."
     },
     {
       "id": "q2",
-      "text": "My topic is the shift from 'architect' to 'gardener', where 'architect' stands for 'someone who carries a full picture of the work before it is made', to 'gardener' standing for 'someone who plants seeds and waits to see exactly what will come up'.",
-      "speaker": "Brian Eno",
-      "context": "Composer/producer Brian Eno (Roxy Music, ambient music pioneer, producer for Bowie, Talking Heads, U2) framing how he thinks about making music — not as an architect with the finished work in his head, but as a gardener who plants seeds and",
+      "text": "I can't possibly accept this award.",
+      "speaker": "Adele",
+      "context": "Accepting Album of the Year for '25' at the 2017 Grammy Awards, Adele stunned the room by opening her acceptance speech declaring she couldn't accept the award, then turning to praise Beyonce — whose 'Lemonade' she felt should have won. A s",
       "real": true,
       "source": {
-        "title": "Composers as Gardeners — Brian Eno, Edge.org",
-        "url": "https://www.edge.org/conversation/brian_eno-composers-as-gardeners",
-        "date": "2011-11-10"
+        "title": "GRAMMY Rewind: Adele Urges That Beyonce's 'Monumental' 'Lemonade' Should've Won Album Of The Year In 2017",
+        "url": "https://www.grammy.com/news/adele-25-beyonce-lemonade-grammys-2017-album-of-the-year-win-acceptance-speech-video-rewind",
+        "date": "2017-02-12"
       }
     },
     {
       "id": "q3",
-      "text": "I refuse to use modern guitar picks. If it's not carved from a melted-down 1930s Bakelite radio dial, you are fundamentally disrespecting the frequency of the blues.",
-      "speaker": "Jack White",
-      "context": "2014 Guitar Player magazine interview",
-      "real": false,
-      "fake_note": "White's legendary obsession with vintage, analog equipment and strict self-imposed rules makes this rigid mandate sound completely true. The giveaway is the absurdity of melting down antique radios just to strum a guitar."
-    },
-    {
-      "id": "q4",
-      "text": "It’s kind of ironic that there is a British guy a part of it",
-      "speaker": "Al Shux",
-      "context": "Describing his role in producing the song 'Empire State of Mind'",
+      "text": "Nobody touches the shepherd's pie till I've been in there. Don't bust my crust, baby.",
+      "speaker": "Keith Richards",
+      "context": "The Rolling Stones guitarist explaining his strict on-the-road rule about his pre-show shepherd's pie, written in his autobiography 'Life'. Oddly specific and very funny rock-star demand. Innocuous: it's about food and touring rituals, noth",
       "real": true,
       "source": {
-        "title": "Music — “It’s Fucking Sick”: “Empire State of Mind” Producer on Soundtracking the Knicks",
-        "url": "https://pitchfork.com/news/empire-state-of-mind-producer-on-soundtracking-the-knicks-win/",
-        "date": "2026-06-17"
+        "title": "Don't mess with Keith Richards' pre-show shepherd's pie ritual, or he might threaten to cut you up and bake you into one",
+        "url": "https://www.loudersound.com/features/dont-mess-with-keith-richards-pre-show-shepherds-pie-ritual-or-he-might-threaten-to-cut-you-up-and-bake-you-into-one",
+        "date": "2023-03-23"
       }
     },
     {
-      "id": "q5",
-      "text": "I spent three weeks trying to make a synthesizer sound exactly like dust settling on velvet. We eventually just recorded the velvet.",
-      "speaker": "Brian Eno",
-      "context": "2016 Red Bull Music Academy lecture",
+      "id": "q4",
+      "text": "I don't listen for the notes. The notes are just the vehicle. I listen to see if the room changes temperature when the song is playing. If the room doesn't change, we haven't found it yet.",
+      "speaker": "Rick Rubin",
+      "context": "Podcast interview about his production philosophy",
       "real": false,
-      "fake_note": "Eno is famous for his extreme ambient experimentation and esoteric recording techniques, making this sound exactly like his creative process. The tell is the impossible acoustics of recording 'dust.'"
+      "fake_note": "Rubin constantly talks about feeling over technicality and reducing music to spiritual or energetic responses. The giveaway is the 'changes temperature' metaphor, which is a bit more literal than his usual abstract, meditative vocabulary."
+    },
+    {
+      "id": "q5",
+      "text": "Every time I write a song, I'm still that same girl sitting on the floor in a velvet jacket, trying to make sense of a broken heart. You never really outgrow the ghosts, you just learn how to sing with them.",
+      "speaker": "Stevie Nicks",
+      "context": "Rolling Stone retrospective interview",
+      "real": false,
+      "fake_note": "Nicks frequently references her younger self, her signature wardrobe, and spirits/ghosts in her work. The giveaway is the final aphorism, which is a bit too neatly packaged for her typical rambling, stream-of-consciousness interview style."
     },
     {
       "id": "q6",
-      "text": "Martha showed me how to perfectly fold a fitted sheet, and in return I taught her how to make a pancake that looks exactly like a basset hound. It’s an exchange of cultures.",
-      "speaker": "Snoop Dogg",
-      "context": "2021 appearance on The Tonight Show",
-      "real": false,
-      "fake_note": "Snoop and Martha Stewart's real-life friendship is full of endearing, domestic moments, making this trade of skills highly plausible. But Snoop's pancake artistry is pure wholesome fiction."
+      "text": "A genius is the one most like himself.",
+      "speaker": "Thelonious Monk",
+      "context": "One line from 'T. Monk's Advice' — a set of pointers the jazz pianist Thelonious Monk gave saxophonist Steve Lacy, who wrote them down while playing in Monk's band in 1960. Wry and oddly specific aphorism about originality; sits alongside g",
+      "real": true,
+      "source": {
+        "title": "Thelonious Monk’s Advice — Howard Rees’ Jazz Workshops (transcribed by Steve Lacy, 1960)",
+        "url": "https://jazzworkshops.com/thelonious-monks-advice/",
+        "date": "1960-01-01"
+      }
     }
   ]
 }

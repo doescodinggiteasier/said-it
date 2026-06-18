@@ -8,59 +8,63 @@
   "quotes": [
     {
       "id": "q1",
-      "text": "Ann bought me a waffle iron for my birthday, which was thrilling until I realized you actually have to make the batter. I thought it was like a toaster.",
-      "speaker": "Mitt Romney",
-      "context": "Late Night with Seth Meyers interview, 2015",
+      "text": "People ask how I pick the colors. I don't overthink it. If the dog looks a little too blue, well, maybe he was having a sad day. You just put it on the canvas and hope for the best.",
+      "speaker": "George W. Bush",
+      "context": "Art exhibit opening, 2017",
       "real": false,
-      "fake_note": "Matches his famously mild, slightly out-of-touch dad persona perfectly. It sounds entirely plausible, but it is just a bit too perfectly sitcom-esque for him to have actually admitted on late-night TV."
+      "fake_note": "Mirrors his folksy, unassuming attitude toward his post-presidency painting hobby. It perfectly matches his famously simple, literal sense of humor, though it's just a bit too on-the-nose for a real art critique."
     },
     {
       "id": "q2",
-      "text": "The trick to painting a dog's nose is you can't just use black. You gotta mix in a little purple. It sounds crazy, but otherwise they look like they're wearing a fake mustache.",
-      "speaker": "George W. Bush",
-      "context": "Interview with Southern Living magazine, 2017",
-      "real": false,
-      "fake_note": "Fits perfectly with his post-presidency painting hobby and his folksy, self-deprecating delivery. It sounds like genuine art advice, but is entirely fabricated."
+      "text": "I do not like broccoli. And I haven't liked it since I was a little kid, and my mother made me eat it. And I'm President of the United States, and I'm not going to eat any more broccoli.",
+      "speaker": "George H. W. Bush",
+      "context": "Bush's lighthearted declaration at his March 22, 1990 news conference, when asked whether he had 'lost the broccoli vote' after it emerged he'd banned broccoli from Air Force One. The remark became a running joke of his presidency and promp",
+      "real": true,
+      "source": {
+        "title": "George H.W. Bush: Hater of Broccoli - Smart Politics (University of Minnesota Libraries)",
+        "url": "https://smartpolitics.lib.umn.edu/2013/07/09/george-hw-bush-hater-of-brocco/",
+        "date": "1990-03-22"
+      }
     },
     {
       "id": "q3",
-      "text": "I will do it myself where does he live?",
-      "speaker": "Cory Booker",
-      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes. A wholesome, surprising-but",
+      "text": "Where my reason, imagination or interest were not engaged, I would not or I could not learn.",
+      "speaker": "Winston Churchill",
+      "context": "From Churchill's own autobiography 'My Early Life: A Roving Commission' (1930), in the chapter recalling his schooldays at Harrow where he was placed in the lowest form. A charming, self-deprecating reflection on being a stubborn, indiffere",
       "real": true,
       "source": {
-        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
-        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
-        "date": "2010-12-27"
+        "title": "My Early Life, by Winston S. Churchill (Project Gutenberg Canada full text)",
+        "url": "https://gutenberg.ca/ebooks/churchillws-myearlylife/churchillws-myearlylife-00-h-dir/churchillws-myearlylife-00-h.html",
+        "date": "1930-01-01"
       }
     },
     {
       "id": "q4",
-      "text": "Look, let me be clear. I’m not saying I invented the concept of mixing popcorn and Milk Duds at the movies, but I definitely popularized it in the greater Chicago area.",
-      "speaker": "Barack Obama",
-      "context": "Podcast interview, 2021",
-      "real": false,
-      "fake_note": "Nails his classic 'let me be clear' rhetorical framing applied to a highly trivial, relatable topic. The tell is the hyper-specific geographic boast about a common movie theater habit."
+      "text": "I am a Ford, not a Lincoln. My addresses will never be as eloquent as Mr. Lincoln's. But I will do my very best to equal his brevity and his plain speaking.",
+      "speaker": "Gerald Ford",
+      "context": "Self-deprecating remark Ford made on December 6, 1973, immediately after taking the oath of office as the 40th Vice President (following Spiro Agnew's resignation). A pun on his own surname contrasting himself with Abraham Lincoln's eloquen",
+      "real": true,
+      "source": {
+        "title": "Gerald Ford - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Gerald_Ford",
+        "date": "1973-12-06"
+      }
     },
     {
       "id": "q5",
-      "text": "I have said it before and I will say it again: there is absolutely no reason a grocery store needs fourteen different types of vanilla extract. Pure, imitation, Mexican, Madagascar—just pick one and let us go home.",
-      "speaker": "Bernie Sanders",
-      "context": "Town hall in Vermont, 2019",
+      "text": "Look, I've accepted that my crossover is mostly just a suggestion at this point. The knees have formed their own filibuster.",
+      "speaker": "Barack Obama",
+      "context": "Sports podcast interview, 2021",
       "real": false,
-      "fake_note": "Captures his signature repetitive cadence and frustration with consumer excess. The tell is that he famously focuses on the abundance of deodorant choices or sneakers, not baking supplies."
+      "fake_note": "Captures his deliberate, self-deprecating cadence and his well-documented love for basketball. The subtle giveaway is the slightly too-perfect integration of a legislative term (filibuster) to describe his aging joints."
     },
     {
       "id": "q6",
-      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
-      "speaker": "Ted Stevens",
-      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality. The clumsy analogy became an instant, beloved inte",
-      "real": true,
-      "source": {
-        "title": "Series of tubes - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
-        "date": "2006-06-28"
-      }
+      "text": "I went into the coffee shop and they asked if I wanted oat milk, almond milk, or macadamia milk. I said, 'I want the milk that comes from a cow, please.' It shouldn't be this complicated.",
+      "speaker": "Bernie Sanders",
+      "context": "Town hall warm-up chatter, 2019",
+      "real": false,
+      "fake_note": "Nails his signature curmudgeonly pragmatism and rhythmic 'It shouldn't be this complicated' phrasing. The giveaway is placing his classic anti-establishment frustration squarely onto trendy barista milk options."
     }
   ]
 }

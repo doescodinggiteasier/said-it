@@ -126,18 +126,29 @@ Output a JSON array; each element EXACTLY:
   "context": "<short, where/when>"}}
 Only include a quote whose words literally appear in that snippet AND has a named-person speaker. Prefer fewer."""
 
-FAKE_SYS = ("You fabricate plausible-but-fake quotes for a 'real or fake?' daily game. Each is attributed "
-            "to a real, well-known NON-POLITICIAN public figure and must be INNOCUOUS: never an invented "
-            "crime, scandal, slur, medical/financial claim, or anything reputationally damaging — just the "
-            "kind of funny, harmless thing the person might plausibly say. Output STRICT JSON only.")
-FAKE_TMPL = """Write {n} DISTINCT fake quotes for today's {lane}game. Vary them hard: {figures}, and
-different comedic registers (a quietly absurd boast; an oddly specific technical detail; a deadpan
-admission; a wholesome invented anecdote). Each must be funny-plausible and HARMLESS. Avoid politics entirely.
+FAKE_SYS = ("You fabricate MAXIMALLY BELIEVABLE fake quotes for a 'real or fake?' daily game. The whole point "
+            "is to FOOL sharp players, so each quote must sound EXACTLY like something the real person would "
+            "actually say: match their documented voice, cadence, vocabulary and the subjects they really talk "
+            "about, and stay strictly WITHIN their real-life plausibility — NO dead giveaways (no absurd numbers, "
+            "wild exaggerations, or on-the-nose details that let people instantly call 'fake'). It must still be "
+            "INNOCUOUS: never an invented crime, scandal, slur, medical/financial claim, or anything reputationally "
+            "damaging. Output STRICT JSON only.")
+FAKE_TMPL = """Write {n} DISTINCT, HIGHLY BELIEVABLE fake quotes for today's {lane}game. {figures}.
+
+Each quote MUST:
+- sound like the REAL person — their actual tone, phrasing, vocabulary and the topics they genuinely discuss;
+- stay WITHIN plausible reality — a thing they really COULD have said. NO dead giveaways: avoid oddly specific
+  numbers, absurd exaggerations, or winking details. (Bad: "I spent forty hours studying long-snapper spin rates."
+  Better: "I've definitely lost sleep over a long snapper's technique." Dial it to where a fan would HESITATE.)
+- be interesting/funny in a SUBTLE, true-to-character way — not a caricature or an obvious joke;
+- be HARMLESS (no invented crime, scandal, slur, medical/financial claim). Avoid politics entirely.
+Use DIFFERENT, varied people — NEVER repeat a speaker, and mix the kinds of people you pick.
+The bar: a real fan of that person would genuinely struggle to tell it's fake.
 
 Output a JSON array; each element EXACTLY:
 {{"text": "<the fabricated quote, no surrounding quotes>", "speaker": "<a real non-politician public figure>",
-  "context": "<supposedly where/when, short>", "fake_note": "<1-2 sentences for the reveal: what makes it
-  plausible + the tell>", "sneaky": <true for the ONE you think is hardest to catch, else false>}}"""
+  "context": "<plausibly where/when, short>", "fake_note": "<1-2 sentences for the reveal: why it's so plausible
+  for this person + the SUBTLE giveaway>", "sneaky": <true for the ONE hardest to catch, else false>}}"""
 
 SCREEN_SYS = ("You screen INTENTIONALLY-FABRICATED quotes for a clearly-labeled 'real or fake?' game. "
               "Fabrication is the entire point and is disclosed to players, so do NOT flag a quote merely "
@@ -314,6 +325,11 @@ def fetch_article_text(url):
 def _norm(s):
     s = (s or "").lower().replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
     return re.sub(r"[^a-z0-9 ]+", " ", re.sub(r"\s+", " ", s)).strip()
+
+
+def _spk(q):
+    """Normalized speaker key for de-duplication (so no two of the same person in one edition)."""
+    return _norm(q.get("speaker", ""))
 
 
 def quote_is_verbatim(quote, corpus):
@@ -498,30 +514,84 @@ def load_used(cat="general"):
         return set()
 
 
+def speakers_path(cat):
+    return os.path.join(HERE, "used_speakers.json" if cat == "general" else f"used_speakers_{cat}.json")
+
+
+def load_recent_speakers(cat, date, days=21):
+    """{normalized_speaker: last_used_date}; returns (recent_set, full_dict) — bias new editions AWAY from recent names."""
+    try:
+        d = json.load(open(speakers_path(cat)))
+    except Exception:  # noqa: BLE001
+        d = {}
+    cutoff = (dt.date.fromisoformat(date) - dt.timedelta(days=days)).isoformat()
+    return {sp for sp, dy in d.items() if str(dy) >= cutoff}, d
+
+
+def save_recent_speakers(d, edition, date, cat):
+    for q in edition["quotes"]:
+        s = _norm(q.get("speaker", ""))
+        if s:
+            d[s] = date
+    json.dump(d, open(speakers_path(cat), "w"), indent=0)
+
+
+def today_speakers(date, exclude_cat):
+    """Speakers ALREADY used in OTHER lanes' editions for the same day → avoid cross-lane same-day repeats."""
+    spk = set()
+    for c in CATEGORIES:
+        if c == exclude_cat:
+            continue
+        try:
+            ed = json.load(open(target_path(c, date)))
+        except Exception:  # noqa: BLE001
+            continue
+        for q in ed.get("quotes", []):
+            s = _norm(q.get("speaker", ""))
+            if s:
+                spk.add(s)
+    return spk
+
+
 def save_used(used, cat="general"):
     json.dump(sorted(used), open(used_path(cat), "w"), indent=0)
 
 
-def assemble(date, reals_fresh, fakes, evergreen, used, cat="general"):
+def assemble(date, reals_fresh, fakes, evergreen, used, cat="general", recent=None):
+    recent = recent or set()                               # speakers used in recent days → bias AGAINST (variety)
     n_real = random.choice([2, 3, 3])                      # vary the ratio so it isn't always 3:3
-    reals = list(reals_fresh[:n_real])
-    pool = [e for e in evergreen if _norm(e["text"]) not in used]   # only evergreen quotes never published
+    reals, seen_spk = [], set()
+    def take(q):                                           # add only if this speaker isn't already in the edition
+        s = _spk(q)
+        if not s or s in seen_spk: return False
+        seen_spk.add(s); reals.append(q); return True
+    for r in sorted(reals_fresh, key=lambda x: _spk(x) in recent):   # fresh feed reals, fresh-name first
+        if len(reals) >= n_real: break
+        take(r)
+    pool = [e for e in evergreen if _norm(e["text"]) not in used and _spk(e) not in seen_spk]   # unused, distinct
     if len(reals) < n_real and pool:                       # top up from the UNUSED vetted evergreen bank
-        need = n_real - len(reals)
-        picks = []
-        pol_pool = [e for e in pool if e.get("_politics")]
-        if cat == "general" and pol_pool and not any(r.get("_politics") for r in reals):
-            picks.append(random.choice(pol_pool))          # keep politics visible in the default feed (≥1)
-        taken = {_norm(p["text"]) for p in picks}
-        rest = [e for e in pool if _norm(e["text"]) not in taken]
-        picks += random.sample(rest, min(len(rest), need - len(picks)))
-        for r in picks[:need]:
-            r = dict(r); r["real"] = True; r["_vetted"] = True; reals.append(r)
-    n_fake = 6 - len(reals)
-    fakes = fakes[:n_fake]
-    quotes = reals + fakes
-    if len(quotes) < 5 or sum(1 for q in quotes if q["real"]) < 2 or sum(1 for q in quotes if not q["real"]) < 2:
-        return None                                        # fail-safe: not a quality / non-repeating set
+        pol = [e for e in pool if e.get("_politics")]
+        if cat == "general" and pol and not any(r.get("_politics") for r in reals):
+            pol.sort(key=lambda x: _spk(x) in recent)
+            cand = dict(pol[0]); cand["real"] = True; cand["_vetted"] = True; take(cand)   # keep ≥1 politics in general
+        rest = [e for e in pool if _spk(e) not in seen_spk]
+        random.shuffle(rest); rest.sort(key=lambda x: _spk(x) in recent)   # prefer speakers not used recently
+        for e in rest:
+            if len(reals) >= n_real: break
+            e = dict(e); e["real"] = True; e["_vetted"] = True; take(e)
+    n_fake = 6 - len(reals)                                # fakes: distinct speakers, not overlapping the reals
+    chosen_fakes = []
+    for f in sorted(fakes, key=lambda x: _spk(x) in recent):
+        if len(chosen_fakes) >= n_fake: break
+        s = _spk(f)
+        if not s or s in seen_spk: continue
+        seen_spk.add(s); chosen_fakes.append(f)
+    quotes = reals + chosen_fakes
+    # fail-safe: a real 6-quote set with all-distinct speakers and ≥2 real / ≥2 fake (else publish nothing)
+    if len(quotes) < 6 or sum(1 for q in quotes if q["real"]) < 2 or sum(1 for q in quotes if not q["real"]) < 2:
+        return None
+    if len({_spk(q) for q in quotes}) < len(quotes):
+        return None                                        # belt-and-suspenders: never two of the same person
     random.shuffle(quotes)
     sneaky_idx = next((i for i, q in enumerate(quotes) if q.get("_sneaky")), None)
     out_quotes, trick = [], None
@@ -582,16 +652,18 @@ def main():
         feeds["politics"] = POLITICS_FEEDS
 
     used = load_used(cat)
-    print(f"  used-quote ledger [{cat}]: {len(used)} already-published quotes excluded")
+    recent_spk, spk_ledger = load_recent_speakers(cat, a.date)   # names used in the last ~21 days → vary away from them
+    recent_spk |= today_speakers(a.date, cat)                    # + names already used in OTHER lanes today (cross-lane variety)
+    print(f"  used-quote ledger [{cat}]: {len(used)} excluded · recent speakers to vary from: {len(recent_spk)}")
     reals = gather_reals(feeds, a.days, used, cat)
-    fakes = forge_fakes(used, cat, 8)            # lane-aware, forge extra for headroom
+    fakes = forge_fakes(used, cat, 10)           # lane-aware, forge extra for headroom (distinct-speaker dedup needs slack)
     fakes = safety_screen(fakes)                 # screen the fabricated content UP FRONT (not post-assembly)
     print(f"  fakes: {len(fakes)} forged + screened safe")
-    edition = assemble(a.date, reals, fakes, load_evergreen(cat), used, cat)
+    edition = assemble(a.date, reals, fakes, load_evergreen(cat), used, cat, recent=recent_spk)
     if not edition:
-        print(f"  FAIL-SAFE [{cat}]: could not assemble a quality, NON-REPEATING set (>=5 quotes, >=2 real, "
-              f">=2 fake). Wrote nothing (grow evergreen_{cat if cat!='general' else 'reals'}.json or add "
-              "quote-rich feeds for this lane).", file=sys.stderr)
+        print(f"  FAIL-SAFE [{cat}]: could not assemble a quality, NON-REPEATING set (6 quotes, ALL distinct "
+              f"speakers, >=2 real, >=2 fake). Wrote nothing (grow evergreen_{cat if cat!='general' else 'reals'}.json "
+              "or add quote-rich feeds for this lane).", file=sys.stderr)
         return 2
 
     n = update_manifest(a.date, cat)             # edition number = position in this lane's manifest
@@ -599,6 +671,7 @@ def main():
     json.dump(edition, open(target, "w"), indent=2, ensure_ascii=False)
     used |= {_norm(q["text"]) for q in edition["quotes"]}   # never publish these again in this lane
     save_used(used, cat)
+    save_recent_speakers(spk_ledger, edition, a.date, cat)   # record today's speakers → cross-day name variety
     print(f"  WROTE {target}  (edition {n}, {len(edition['quotes'])} quotes, "
           f"{sum(1 for q in edition['quotes'] if q['real'])} real / {sum(1 for q in edition['quotes'] if not q['real'])} fake)")
     return 0
