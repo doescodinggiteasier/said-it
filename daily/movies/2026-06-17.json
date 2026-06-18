@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-17",
+  "edition": 1,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "May the Force be with you.",
+      "speaker": "Star Wars (1977)",
+      "context": "Said during the Rebel briefing before the assault on the Death Star (and by Han to Luke).",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "You assume your incompetence is a secret, and yet it announces itself the moment you walk into the room.",
+      "speaker": "The Devil Wears Prada (2006)",
+      "context": "Miranda Priestly quietly dressing down Andy Sachs.",
+      "real": false,
+      "fake_note": "Nails Miranda's icy, devastatingly articulate cruelty, but she traditionally attacks specific fashion choices (like the cerulean sweater) rather than dealing in broad workplace insults."
+    },
+    {
+      "id": "q3",
+      "text": "There are a lot of things I regret, Ilsa, but Paris isn't one of them.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick Blaine speaking to Ilsa in his office after hours.",
+      "real": false,
+      "fake_note": "Perfectly captures Rick's cynical, world-weary cadence, but the subtle giveaway is that it contradicts his deeply sentimental attachment to their past ('We'll always have Paris')."
+    },
+    {
+      "id": "q4",
+      "text": "You didn't build a park, John, you built a ticking clock.",
+      "speaker": "Jurassic Park (1993)",
+      "context": "Ian Malcolm lecturing Hammond during the Chilean sea bass lunch.",
+      "real": false,
+      "fake_note": "Flawlessly mimics Malcolm's condescending doomsday warnings, but 'ticking clock' is standard action-movie jargon; the real Malcolm uses highly specific chaos theory metaphors."
+    },
+    {
+      "id": "q5",
+      "text": "Did we just become best friends?",
+      "speaker": "Step Brothers (2008)",
+      "context": "Brennan (Will Ferrell) to Dale (John C. Reilly) after they bond over shared interests; Dale replies \"Yup!\"",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "I didn't fly three thousand miles just to die in a ventilation shaft.",
+      "speaker": "Die Hard (1988)",
+      "context": "John McClane muttering to himself while crawling through the ductwork.",
+      "real": false,
+      "fake_note": "Sounds exactly like McClane's sarcastic, self-deprecating humor during the vent scene, but it replaces his iconic, much more ironic line about coming to the coast for 'a few laughs'."
+    }
+  ]
+}

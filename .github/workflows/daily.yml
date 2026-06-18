@@ -44,7 +44,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SAIDIT_MODEL: ${{ vars.SAIDIT_MODEL || 'claude-sonnet-4-6' }}
         run: |
-          for cat in general sports music politics; do
+          for cat in general sports music politics movies nsfw; do
             echo "--- generating $cat ---"
             python tools/generate_day.py --category "$cat" ${{ (github.event.inputs.force == 'true') && '--force' || '' }} || true
           done

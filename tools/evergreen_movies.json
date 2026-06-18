@@ -1,0 +1,212 @@
+[
+  {
+    "text": "Frankly, my dear, I don't give a damn.",
+    "speaker": "Gone with the Wind (1939)",
+    "context": "Rhett Butler's (Clark Gable) parting words to Scarlett O'Hara as he leaves her at the end of the film",
+    "real": true
+  },
+  {
+    "text": "Here's looking at you, kid.",
+    "speaker": "Casablanca (1942)",
+    "context": "Rick Blaine (Humphrey Bogart) says this to Ilsa (Ingrid Bergman) as a recurring toast, most memorably at the airport farewell.",
+    "real": true
+  },
+  {
+    "text": "I'm gonna make him an offer he can't refuse.",
+    "speaker": "The Godfather (1972)",
+    "context": "Don Vito Corleone (Marlon Brando) tells his godson Johnny Fontane how he'll persuade movie producer Jack Woltz to cast him.",
+    "real": true
+  },
+  {
+    "text": "Toto, I've a feeling we're not in Kansas anymore.",
+    "speaker": "The Wizard of Oz (1939)",
+    "context": "Dorothy, having landed in the strange new world of Oz after the tornado, says this to her dog Toto.",
+    "real": true
+  },
+  {
+    "text": "You're gonna need a bigger boat.",
+    "speaker": "Jaws (1975)",
+    "context": "Chief Brody, after seeing the shark's full size while chumming, backs into the cabin and says this to Quint.",
+    "real": true
+  },
+  {
+    "text": "May the Force be with you.",
+    "speaker": "Star Wars (1977)",
+    "context": "Said during the Rebel briefing before the assault on the Death Star (and by Han to Luke).",
+    "real": true
+  },
+  {
+    "text": "I'll be back.",
+    "speaker": "The Terminator (1984)",
+    "context": "The Terminator (Arnold Schwarzenegger) tells the police desk sergeant he'll be back, then drives a car through the front of the station.",
+    "real": true
+  },
+  {
+    "text": "I feel the need... the need for speed!",
+    "speaker": "Top Gun (1986)",
+    "context": "Maverick (Tom Cruise) and Goose (Anthony Edwards) say it together, high-fiving as they get pumped up to fly.",
+    "real": true
+  },
+  {
+    "text": "You can't handle the truth!",
+    "speaker": "A Few Good Men (1992)",
+    "context": "Col. Nathan Jessep (Jack Nicholson) erupts on the witness stand during cross-examination by Lt. Daniel Kaffee (Tom Cruise).",
+    "real": true
+  },
+  {
+    "text": "My mama always said life was like a box of chocolates. You never know what you're gonna get.",
+    "speaker": "Forrest Gump (1994)",
+    "context": "Forrest (Tom Hanks) sits on a bus-stop bench recounting his mother's favorite saying.",
+    "real": true
+  },
+  {
+    "text": "Say 'what' again. I dare you, I double dare you.",
+    "speaker": "Pulp Fiction (1994)",
+    "context": "Jules (Samuel L. Jackson) menaces Brett, a terrified young man, during the apartment confrontation.",
+    "real": true
+  },
+  {
+    "text": "Life finds a way.",
+    "speaker": "Jurassic Park (1993)",
+    "context": "Dr. Ian Malcolm (Jeff Goldblum) argues that the park's all-female engineered dinosaurs cannot truly be prevented from breeding or controlled.",
+    "real": true
+  },
+  {
+    "text": "I'm the king of the world!",
+    "speaker": "Titanic (1997)",
+    "context": "Jack (Leonardo DiCaprio) shouts triumphantly from the bow of the ship, arms outstretched.",
+    "real": true
+  },
+  {
+    "text": "Here's Johnny!",
+    "speaker": "The Shining (1980)",
+    "context": "Jack Torrance (Jack Nicholson) hacks through a bathroom door with an axe and grins through the hole.",
+    "real": true
+  },
+  {
+    "text": "Why so serious?",
+    "speaker": "The Dark Knight (2008)",
+    "context": "The Joker (Heath Ledger) taunts a victim while telling a story about how he got his scars",
+    "real": true
+  },
+  {
+    "text": "One does not simply walk into Mordor.",
+    "speaker": "The Lord of the Rings: The Fellowship of the Ring (2001)",
+    "context": "Boromir (Sean Bean) arguing against the plan to destroy the Ring, at the Council of Elrond",
+    "real": true
+  },
+  {
+    "text": "I am Iron Man.",
+    "speaker": "Iron Man (2008)",
+    "context": "Tony Stark (Robert Downey Jr.) goes off-script and reveals his identity to the press at the very end of the film.",
+    "real": true
+  },
+  {
+    "text": "I'm kind of a big deal.",
+    "speaker": "Anchorman: The Legend of Ron Burgundy (2004)",
+    "context": "Ron Burgundy (Will Ferrell) boasting to Veronica Corningstone about his fame",
+    "real": true
+  },
+  {
+    "text": "I drink your milkshake! I drink it up!",
+    "speaker": "There Will Be Blood (2007)",
+    "context": "Daniel Plainview (Daniel Day-Lewis) berating Eli Sunday in the bowling-alley confrontation, using a milkshake as a metaphor for draining oil from beneath neighboring land",
+    "real": true
+  },
+  {
+    "text": "A million dollars isn't cool. You know what's cool? A billion dollars.",
+    "speaker": "The Social Network (2010)",
+    "context": "Sean Parker (Justin Timberlake) pitching ambition to Mark Zuckerberg and Eduardo Saverin at a restaurant; the punchline lands in an intercut deposition scene",
+    "real": true
+  },
+  {
+    "text": "Did we just become best friends?",
+    "speaker": "Step Brothers (2008)",
+    "context": "Brennan (Will Ferrell) to Dale (John C. Reilly) after they bond over shared interests; Dale replies \"Yup!\"",
+    "real": true
+  },
+  {
+    "text": "On Wednesdays we wear pink.",
+    "speaker": "Mean Girls (2004)",
+    "context": "Karen Smith explaining the Plastics' dress code rule to Cady",
+    "real": true
+  },
+  {
+    "text": "The best way to spread Christmas cheer is singing loud for all to hear.",
+    "speaker": "Elf (2003)",
+    "context": "Buddy the Elf sharing his philosophy on holiday spirit",
+    "real": true
+  },
+  {
+    "text": "To infinity and beyond!",
+    "speaker": "Toy Story (1995)",
+    "context": "Buzz Lightyear's heroic catchphrase as he strikes a pose and 'flies'",
+    "real": true
+  },
+  {
+    "text": "Hakuna matata.",
+    "speaker": "The Lion King (1994)",
+    "context": "Timon and Pumbaa teach Simba their carefree \"no worries\" philosophy, both as spoken dialogue and as the title song.",
+    "real": true
+  },
+  {
+    "text": "Ogres are like onions.",
+    "speaker": "Shrek (2001)",
+    "context": "Shrek explains to Donkey that ogres have layers, like onions",
+    "real": true
+  },
+  {
+    "text": "Just keep swimming.",
+    "speaker": "Finding Nemo (2003)",
+    "context": "Dory's optimistic mantra, which she sings to Marlin to keep him going during the search for Nemo.",
+    "real": true
+  },
+  {
+    "text": "As you wish.",
+    "speaker": "The Princess Bride (1987)",
+    "context": "Westley the farmhand says this to Buttercup; it's revealed to be his way of saying \"I love you,\" and recurs throughout the film.",
+    "real": true
+  },
+  {
+    "text": "Be the ball.",
+    "speaker": "Caddyshack (1980)",
+    "context": "Ty Webb (Chevy Chase) giving zen golf advice to caddy Danny Noonan during their night-golf lesson",
+    "real": true
+  },
+  {
+    "text": "Yo, Adrian!",
+    "speaker": "Rocky (1976)",
+    "context": "Rocky Balboa addressing Adrian; \"Yo, Adrian! It's me, Rocky.\" The phrase appears in the 1976 film.",
+    "real": true
+  },
+  {
+    "text": "As far back as I can remember, I always wanted to be a gangster.",
+    "speaker": "Goodfellas (1990)",
+    "context": "Henry Hill's (Ray Liotta) opening voiceover narration",
+    "real": true
+  },
+  {
+    "text": "The first rule of Fight Club is: you do not talk about Fight Club.",
+    "speaker": "Fight Club (1999)",
+    "context": "Tyler Durden (Brad Pitt) laying down the rules to the members of Fight Club.",
+    "real": true
+  },
+  {
+    "text": "The Dude abides.",
+    "speaker": "The Big Lebowski (1998)",
+    "context": "The Dude (Jeff Bridges) to The Stranger (Sam Elliott) at the bar near the film's end, summing up his laid-back philosophy.",
+    "real": true
+  },
+  {
+    "text": "Are you not entertained?",
+    "speaker": "Gladiator (2000)",
+    "context": "Maximus (Russell Crowe) shouts at the Zucchabar arena crowd after killing his opponents in a brutal fight.",
+    "real": true
+  },
+  {
+    "text": "Houston, we have a problem.",
+    "speaker": "Apollo 13 (1995)",
+    "context": "Aboard the damaged spacecraft, the crew reports the malfunction to mission control. The line is spoken by Jim Lovell (Tom Hanks), echoing Jack Swigert; the film's \"we have a problem\" differs from the real transmission's \"we've had a problem.\"",
+    "real": true
+  }
+]

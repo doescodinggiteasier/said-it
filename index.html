@@ -404,7 +404,8 @@ function prettyDate(s){var d=new Date(s+"T12:00:00");return d.toLocaleDateString
 function lanePath(lane,date){ return lane==="general"?("daily/"+date+".json"):("daily/"+lane+"/"+date+".json"); }
 function laneDays(lane){ var c=MANIFEST.categories&&MANIFEST.categories[lane]; if(c)return c; return lane==="general"?(MANIFEST.days||[]):[]; }
 function dayKey(lane,date){ return lane==="general"?date:(lane+":"+date); }   // per-lane completion record
-function laneLabel(l){ return l==="general"?"📰 General":(l==="sports"?"🏀 Sports":(l==="music"?"🎵 Music":(l==="politics"?"🏛️ Politics":("# "+l)))); }
+var LANE_LABELS={general:"📰 General",sports:"🏀 Sports",music:"🎵 Music",politics:"🏛️ Politics",movies:"🎬 Movies",nsfw:"🔞 NSFW"};
+function laneLabel(l){ return LANE_LABELS[l] || ("# "+l); }
 function availableLanes(){ var ls=Object.keys((MANIFEST.categories)||{}); if(ls.indexOf("general")<0)ls.unshift("general");
   return ls.filter(function(l){ return l==="general"||laneDays(l).length; }); }
 function curDone(){ if(!DAY) return null; var r=ST.days[dayKey(DAY._lane||"general",DAY.date)]; return (r&&r.done)?r.result:null; }
@@ -435,7 +436,7 @@ function renderLanes(){
   if(lanes.length<2){ return; }                 // only show the picker once a 2nd lane exists
   lanes.forEach(function(lane){
     var b=el("button","lane-b"+(ST.lane===lane?" on":"")); b.textContent=laneLabel(lane);
-    b.onclick=function(){ if(ST.lane===lane) return; ST.lane=lane; save(ST); logEvent("lane_switch",{cat:lane}); loadAndRoute(todayStr()); };
+    b.onclick=function(){ if(ST.lane===lane) return; playLane(lane); };   // playLane carries the NSFW age gate
     host.appendChild(b);
   });
 }
@@ -486,6 +487,7 @@ function renderHome(){
     var lbl=laneLabel(lane), ic=lbl.split(" ")[0], name=lbl.replace(/^\S+\s/,"");
     var status = done ? ("✓ you scored "+done.score+"/"+done.n+" today")
                       : (hasToday ? "Not played yet today" : "Latest set — no new edition today");
+    if(lane==="nsfw") status = "🔞 18+ · adult content · " + status;   // visible warning on the card
     var card=el("div","catcard"+(done?" done":"")); card.setAttribute("data-lane",lane);
     card.innerHTML='<div class="ic">'+ic+'</div>'+
       '<div class="cc"><div class="ct">'+esc(name)+'</div><div class="cs'+(done?" done":"")+'">'+status+'</div></div>'+
@@ -507,7 +509,14 @@ function renderHome(){
   show("home");
 }
 function goHome(){ JUST_JOINED=null; if(qsDay()){ try{ history.replaceState(null,"",location.pathname); }catch(e){} } renderHome(); logEvent("home_view"); }  // strip a lingering ?d= so Home survives a reload
+function nsfwOK(){   // one-time 18+ gate for the NSFW lane (the "warning" before adult content)
+  if(ST.nsfw_ok) return true;
+  var ok = window.confirm && window.confirm("🔞 Adult edition — expect profanity, crude humor and unfiltered outbursts. Confirm you're 18+ to continue.");
+  if(ok){ ST.nsfw_ok=true; save(ST); logEvent("nsfw_optin"); }
+  return !!ok;
+}
 function playLane(lane){
+  if(lane==="nsfw" && !nsfwOK()) return;
   if(ST.lane!==lane){ ST.lane=lane; save(ST); logEvent("lane_switch",{cat:lane}); }
   loadAndRoute(todayStr());
 }

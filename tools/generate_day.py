@@ -74,6 +74,17 @@ CATEGORIES = {
                  "lane": "POLITICS ", "allow_politics": True,
                  "figures": "different real politicians/political figures BALANCED across parties — only LIGHT, "
                             "funny, non-inflammatory lines (gaffes, witty asides), NEVER an attack or hot-take"},
+    # MOVIES lane: real iconic FILM lines (short, fair-use) vs AI-fabricated film lines. Speaker = the FILM,
+    # not a person, so the named-person rule doesn't apply. Evergreen-only (curated, verified real lines).
+    "movies":  {"feeds": {}, "lane": "MOVIES ", "allow_politics": False, "kind": "movie",
+                "figures": "famous, widely-recognized MOVIES — attribute each line to the FILM and year, "
+                           "e.g. 'The Godfather (1972)'; vary genres and eras"},
+    # NSFW lane (18+, behind an in-app warning gate): real crude/profane/unfiltered celebrity moments vs AI
+    # fakes in the same register. Profanity/crudeness is WELCOME; the HARD guards never relax (no fabricated
+    # slur/crime/assault/sexual-misconduct/medical/defamation about a real person — that's a lawsuit, not edgy).
+    "nsfw":    {"feeds": {}, "lane": "NSFW ", "allow_politics": False, "kind": "nsfw", "nsfw": True,
+                "figures": "different real celebrities/public figures in CRUDE, profane, unfiltered or "
+                           "unsophisticated moments (rants, swearing, blunt outbursts)"},
 }
 
 def evergreen_path(cat): return EVERGREEN if cat == "general" else os.path.join(HERE, f"evergreen_{cat}.json")
@@ -150,6 +161,42 @@ Output a JSON array; each element EXACTLY:
   "context": "<plausibly where/when, short>", "fake_note": "<1-2 sentences for the reveal: why it's so plausible
   for this person + the SUBTLE giveaway>", "sneaky": <true for the ONE hardest to catch, else false>}}"""
 
+# MOVIES — fabricate BELIEVABLE film lines (speaker = the FILM, not a person)
+FAKE_SYS_MOVIE = ("You fabricate MAXIMALLY BELIEVABLE fake MOVIE LINES for a 'real or fake?' game. Each must read "
+                  "like a genuine line from the named film — match its genre, era, tone and a character's voice — "
+                  "and stay plausible (no anachronisms, no plot-explaining giveaways). Keep it general-audience "
+                  "(no slurs/graphic content). Output STRICT JSON only.")
+FAKE_TMPL_MOVIE = """Write {n} DISTINCT, BELIEVABLE fake movie lines for today's game. {figures}.
+Each line MUST:
+- sound like a REAL line from that specific film — its genre, era, and a character's natural voice;
+- be SHORT and quotable (one sentence), and plausibly something actually said in that movie;
+- have NO dead giveaways (don't over-explain the plot; no anachronisms or winking meta);
+- be clean enough for a general audience.
+Use DIFFERENT, well-known films — NEVER repeat a film. The bar: a fan of that movie would hesitate.
+
+Output a JSON array; each element EXACTLY:
+{{"text": "<the fabricated line>", "speaker": "<Film Title (Year)>", "context": "<the character or scene, short>",
+  "fake_note": "<why it's plausible for that film + the SUBTLE giveaway>", "sneaky": <true for the hardest, else false>}}"""
+
+# NSFW — crude/profane but HARMLESS (the hard guards never relax)
+FAKE_SYS_NSFW = ("You fabricate BELIEVABLE, crude-but-HARMLESS fake quotes for an ADULT (18+) 'real or fake?' game. "
+                 "Profanity, crudeness and unfiltered/blunt humor are WELCOME and on-brand. But it must stay "
+                 "harmless: NEVER an invented slur, hate, crime, sexual-misconduct/assault, drug-crime, medical "
+                 "claim, or anything defamatory about a real person. Match the person's real unfiltered voice and "
+                 "stay within plausibility. Output STRICT JSON only.")
+FAKE_TMPL_NSFW = """Write {n} DISTINCT, BELIEVABLE fake quotes for today's ADULT (18+) game. {figures}.
+Each MUST:
+- sound like the REAL person in a crude/unfiltered/profane moment — their actual voice and cadence;
+- profanity/crudeness/adult humor is GOOD — but HARMLESS only: NO slurs, NO hate, NO invented crime, assault,
+  sexual misconduct, drug crime, medical claim, or anything defamatory about a real person;
+- stay WITHIN plausibility — a crude thing they really COULD have said; NO dead giveaways.
+Use DIFFERENT, varied people — NEVER repeat a speaker.
+
+Output a JSON array; each element EXACTLY:
+{{"text": "<the fabricated crude-but-harmless quote>", "speaker": "<a real public figure>",
+  "context": "<plausibly where/when, short>", "fake_note": "<why it's plausible + the SUBTLE giveaway>",
+  "sneaky": <true for the ONE hardest to catch, else false>}}"""
+
 SCREEN_SYS = ("You screen INTENTIONALLY-FABRICATED quotes for a clearly-labeled 'real or fake?' game. "
               "Fabrication is the entire point and is disclosed to players, so do NOT flag a quote merely "
               "for being made up or attributed to a real person. Judge ONLY whether the CONTENT is harmful. "
@@ -158,6 +205,18 @@ SCREEN_TMPL = """These are intentionally fabricated, clearly-labeled quotes for 
 may be fake). For each, mark "safe": false ONLY if its CONTENT is genuinely harmful — an invented crime,
 scandal, sexual content, slur, hate, a medical/health claim, death/tragedy, or a damaging real-world
 accusation. Harmless, funny, wholesome, or mundane content is SAFE (true) — even though it is fabricated.
+
+ITEMS:
+{items}
+
+Output a JSON array of objects EXACTLY: {{"i": <index>, "safe": <true|false>}}"""
+
+# NSFW screen — profanity/crudeness is ALLOWED; only genuinely harmful content is dropped (the hard guards).
+SCREEN_TMPL_NSFW = """These are intentionally fabricated, clearly-labeled quotes for an ADULT (18+) game where
+profanity, crudeness, blunt outbursts and adult humor are EXPECTED and fine. Do NOT flag a quote for swearing,
+rudeness, innuendo, or being crude/unsophisticated. Mark "safe": false ONLY if the CONTENT is genuinely HARMFUL:
+a slur or hate speech, an invented crime, sexual misconduct/assault, a drug crime, a medical/health claim, a
+death/tragedy, or a damaging real-world accusation about a real person. Crude-but-harmless = SAFE (true).
 
 ITEMS:
 {items}
@@ -420,8 +479,11 @@ def gather_reals(feeds, days, used, cat="general", want=6):
 
 def forge_fakes(used, cat="general", n=6):
     meta = CATEGORIES.get(cat, CATEGORIES["general"])
+    kind = meta.get("kind", "person")
+    sysp, tmpl = {"movie": (FAKE_SYS_MOVIE, FAKE_TMPL_MOVIE),
+                  "nsfw": (FAKE_SYS_NSFW, FAKE_TMPL_NSFW)}.get(kind, (FAKE_SYS, FAKE_TMPL))
     try:
-        fakes = largest_json(llm(FAKE_SYS, FAKE_TMPL.format(n=n, lane=meta["lane"], figures=meta["figures"]), max_tokens=2500)) or []
+        fakes = largest_json(llm(sysp, tmpl.format(n=n, lane=meta["lane"], figures=meta["figures"]), max_tokens=2800)) or []
     except Exception as e:  # noqa: BLE001
         print(f"  ! fakes LLM: {e}", file=sys.stderr); return []
     ap = meta.get("allow_politics", False)
@@ -435,19 +497,27 @@ def forge_fakes(used, cat="general", n=6):
     return out
 
 
-def safety_screen(quotes):
+def safety_screen(quotes, nsfw=False):
     """Final LLM gate over LLM-SOURCED items only (fakes + fresh reals). Pre-vetted evergreen reals are
-    never screened out (they're hand-checked). Drops only on an explicit `safe: false`."""
+    never screened out (they're hand-checked). Drops only on an explicit `safe: false`. In the NSFW lane the
+    screen ALLOWS profanity/crudeness and drops only genuinely harmful content (the hard guards never relax)."""
     screenable = [(i, q) for i, q in enumerate(quotes) if not q.get("_vetted")]
     if not screenable:
         return quotes
     try:
         block = "\n".join(f'{i}: "{q["text"]}" — {q["speaker"]} ({q.get("context","")})' for i, q in screenable)
-        verdicts = largest_json(llm(SCREEN_SYS, SCREEN_TMPL.format(items=block), max_tokens=800, gemini_model=_fast_model())) or []
+        tmpl = SCREEN_TMPL_NSFW if nsfw else SCREEN_TMPL
+        verdicts = largest_json(llm(SCREEN_SYS, tmpl.format(items=block), max_tokens=800, gemini_model=_fast_model())) or []
         unsafe = {int(v["i"]) for v in verdicts if isinstance(v, dict) and v.get("safe") is False}
-        # guard: a screen that flags MOST items is misfiring (e.g. flagging fabrication itself) — the
-        # deterministic denylist already gates real harm, so don't let a bad screen nuke the whole set.
         if len(unsafe) > len(screenable) // 2:
+            if nsfw:
+                # The NSFW screen is ALREADY permissive (profanity passes) — a majority-harmful flag is REAL, not a
+                # misfire. FAIL SAFE: drop the flagged items; assemble's >=2-fake fail-safe writes nothing if too few
+                # survive. (Never ship an unscreened edgy batch unattended — deny_hit can't catch keyword-free harm.)
+                print(f"  ! nsfw screen flagged {len(unsafe)}/{len(screenable)} — DROPPING them (fail-safe)", file=sys.stderr)
+                return [q for i, q in enumerate(quotes) if i not in unsafe]
+            # SFW lanes: a majority flag usually means the screen is misreading fabrication-itself as harm; the
+            # deterministic denylist already gates real harm, so keep the denylist-filtered set rather than nuke it.
             print(f"  ! screen flagged {len(unsafe)}/{len(screenable)} — likely misfiring; keeping denylist-filtered set", file=sys.stderr)
             return quotes
         return [q for i, q in enumerate(quotes) if i not in unsafe]
@@ -657,7 +727,7 @@ def main():
     print(f"  used-quote ledger [{cat}]: {len(used)} excluded · recent speakers to vary from: {len(recent_spk)}")
     reals = gather_reals(feeds, a.days, used, cat)
     fakes = forge_fakes(used, cat, 10)           # lane-aware, forge extra for headroom (distinct-speaker dedup needs slack)
-    fakes = safety_screen(fakes)                 # screen the fabricated content UP FRONT (not post-assembly)
+    fakes = safety_screen(fakes, nsfw=CATEGORIES[cat].get("nsfw", False))   # screen UP FRONT (NSFW lane: profanity OK, harm not)
     print(f"  fakes: {len(fakes)} forged + screened safe")
     edition = assemble(a.date, reals, fakes, load_evergreen(cat), used, cat, recent=recent_spk)
     if not edition:

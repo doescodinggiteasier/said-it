@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-17",
+  "edition": 1,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "These Spanx got my organs fighting for their life. I just burped and I swear to God I tasted my own kidney. It's too damn tight, bro.",
+      "speaker": "Cardi B",
+      "context": "Instagram Live while getting ready for the Met Gala, 2022",
+      "real": false,
+      "fake_note": "Nails her exact brand of hyper-specific, crude bodily oversharing and casual cadence, making it incredibly hard to distinguish from her actual unhinged red carpet prep videos."
+    },
+    {
+      "id": "q2",
+      "text": "Look, I’m not saying I’m the best golfer out there. But if you talk during my backswing, I will absolutely bounce a Titleist off your motherfucking forehead.",
+      "speaker": "Samuel L. Jackson",
+      "context": "Celebrity Charity Golf Tournament interview, 2018",
+      "real": false,
+      "fake_note": "Channels his trademark profanity and well-known love for golf, but Jackson is famously strict about golf etiquette and wouldn't actually joke about physical injury on the course."
+    },
+    {
+      "id": "q3",
+      "text": "If you're gonna do it, you might as well fuckin' put your name above the door. It's always been about me anyway.",
+      "speaker": "Liam Gallagher",
+      "context": "Oasis frontman, on going solo and releasing music under his own name rather than a band name, in his trademark blunt interview style (Vice/Noisey interview).",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "I once asked a Jesuit priest what was the best short prayer he knew. He said, \"Fuck it,\" as in \"Fuck it; it's in God's hands.\"",
+      "speaker": "Anthony Hopkins",
+      "context": "Anthony Hopkins recounting a Jesuit priest's answer when he asked for the best short prayer — an anecdote he has told publicly, including on Inside the Actors Studio.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "I don’t give a flying fuck if it’s a non-stick pan. If you treat it like a goddamn slip-and-slide for cheap butter, your eggs are still gonna taste like absolute dog shit.",
+      "speaker": "Gordon Ramsay",
+      "context": "Kitchen Nightmares outtake, 2011",
+      "real": false,
+      "fake_note": "Captures his culinary rage and colorful profanity perfectly, but 'slip-and-slide' is a slightly too American-casual reference for his usual hyper-British arsenal of insults."
+    },
+    {
+      "id": "q6",
+      "text": "Why the fuck do I need an app to toast a bagel? It’s a toaster! Just push the little plastic lever down! I don’t need a software update to make bread hot, you psycho!",
+      "speaker": "Bill Burr",
+      "context": "Monday Morning Podcast, ranting about smart appliances",
+      "real": false,
+      "fake_note": "Matches his exasperated, technophobic comedic persona to a tee, but he actually famously ranted about smart refrigerators and vacuums, not a smart toaster."
+    }
+  ]
+}
