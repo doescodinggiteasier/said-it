@@ -153,8 +153,9 @@
   .herorow{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:8px;flex-wrap:wrap}
   .hero .best{color:var(--mut);font-size:12.5px;font-weight:600}
   .d7wrap{display:inline-flex;gap:5px;align-items:center}
-  .d7{width:11px;height:11px;border-radius:3px;background:var(--line);border:1px solid #e0d8ee}
+  .d7{width:12px;height:12px;border-radius:3px;background:var(--line);border:1px solid #e0d8ee}
   .d7.on{background:var(--accent);border-color:var(--accent)}
+  .d7.today{box-shadow:0 0 0 2px var(--gold);border-color:var(--gold)}   /* today = rightmost, ringed */
   .statgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
   .statcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:13px 14px;
     box-shadow:0 3px 14px rgba(70,45,130,.06);min-height:84px}
@@ -491,9 +492,11 @@ function categoryStats(){
   return by;
 }
 // last 7 real calendar days — did a `complete` happen that day (from the local event trail)?
-function last7(){
+function last7(){   // strictly chronological: 7 cells, oldest (left) → today (right); a cell is filled iff a set was played that real day
   var played={}; (ST.log||[]).forEach(function(e){ if(e.ev==="complete"&&e.ts){ try{ played[todayStr(new Date(e.ts))]=1; }catch(x){} } });
-  var out=[]; for(var i=6;i>=0;i--) out.push(!!played[addDaysStr(todayStr(),-i)]); return out;
+  var t=todayStr(), out=[];
+  for(var i=6;i>=0;i--){ var d=addDaysStr(t,-i); out.push({date:d, played:!!played[d], today:i===0}); }
+  return out;
 }
 // named rank ladder, earned by accuracy; hidden until 5 sets; seeded partway into the tier (endowed progress)
 var TIERS=[{n:"Gullible"},{n:"Skeptic",a:.50},{n:"Sharp Eye",a:.60},{n:"Truth Sleuth",a:.70},{n:"Lie Detector",a:.80},{n:"Human Polygraph",a:.90}];
@@ -516,8 +519,8 @@ function renderHome(){
   var games=gamesPlayed();
   // streak hero + best + last-7-days strip
   var hero=$("homeHero");
-  var d7=last7(), n7=d7.filter(Boolean).length;
-  var strip=d7.map(function(p){ return '<i class="d7'+(p?" on":"")+'" aria-hidden="true"></i>'; }).join("");
+  var d7=last7(), n7=d7.filter(function(x){return x.played;}).length;
+  var strip=d7.map(function(x){ return '<i class="d7'+(x.played?" on":"")+(x.today?" today":"")+'" title="'+x.date+(x.played?" · played":"")+'" aria-hidden="true"></i>'; }).join("");
   var head = ST.streak>0
     ? '<div class="streak">🔥 '+ST.streak+'</div><div class="streaklbl">day streak</div>'
     : '<div class="streak">👋</div><div class="streaklbl">Play a set today to start your streak</div>';
