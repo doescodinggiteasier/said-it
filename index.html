@@ -910,6 +910,11 @@ function mergeYou(standings, res){          // standings carry scores only; matc
 function medal(i){ return i===0?"🥇":i===1?"🥈":i===2?"🥉":(i+1)+"."; }
 function lbRow(i,name,score,you){ return "<div class='lb-row'><span class='rk'>"+medal(i)+"</span><span class='nm"+(you?" you":"")+"'>"+esc(name)+(you?" (you)":"")+"</span><span class='sc'>"+score+"</span></div>"; }
 function addDaysStr(s,n){ var d=new Date(s+"T12:00:00"); d.setDate(d.getDate()+n); return todayStr(d); }
+// the player's OWN plays from local state — so the crew board reflects what this device knows even if the
+// server hasn't registered today's beacon yet (network lag, a dropped sendBeacon, or just-finished play)
+function myResult(date){ var best=null; for(var k in (ST.days||{})){ var r=ST.days[k]&&ST.days[k].done&&ST.days[k].result; if(r&&r.date===date) best=r; } return best; }
+function myWeekTotal(){ var wk=weekKey(todayStr()), byDay={}; for(var k in (ST.days||{})){ var r=ST.days[k]&&ST.days[k].done&&ST.days[k].result;
+  if(r&&r.date&&weekKey(r.date)===wk) byDay[r.date]=r.score||0; } var t=0,d=0; for(var dd in byDay){ t+=byDay[dd]; d++; } return {total:t,days:d}; }
 
 function renderCompare(res){                 // the instant friend-compare on submit (the reply-bait engine)
   var box=$("crewCompare"); box.innerHTML=""; box.className="";
@@ -1011,11 +1016,22 @@ function renderCrew(){
   $("deviceLinkBtn").onclick=copyDeviceLink;
   var board=$("crewBoard"), today=todayStr();
   fetchCrew(today, cc.code).then(function(c){
-    if(c&&c.name){ setLocalCrewName(cc.code,c.name); var t=$("crewTitle"); if(t)t.textContent=c.name; }   // shared name from server
-    if(!c){ board.innerHTML="No standings yet — play today's set, then your crew shows up here."; return; }
-    var todayRows=(c.standings||[]).map(function(s,i){return lbRow(i,s.name,s.score+"/"+(s.n||6),s.sid===ST.sid);}).join("")||"<div class='hint'>nobody's played today yet</div>";
-    var wk=(c.week||[]).map(function(s,i){ if(i===0 && c.week_key){ ST.crewSeasons[c.week_key]=s.name; save(ST); } return lbRow(i,s.name,s.total,s.sid===ST.sid); }).join("")||"<div class='hint'>—</div>";
-    var roster=(c.roster||[]).map(function(m){ return esc(m.name||m.sid.slice(0,4))+(m.sid===ST.sid?" (you)":""); }).join(", ");
+    c = c || {};
+    if(c.name){ setLocalCrewName(cc.code,c.name); var t=$("crewTitle"); if(t)t.textContent=c.name; }   // shared name from server
+    // TODAY — merge the player's own today play from local state (so it shows even if the server hasn't caught it)
+    var todayList=mergeYou(c.standings||[], myResult(today));
+    var todayRows=todayList.length ? todayList.map(function(s,i){return lbRow(i,s.name,(s.score!=null?s.score:0)+"/"+(s.n||6),s.sid===ST.sid);}).join("")
+                  : "<div class='hint'>No one's played today's set yet — play it to top the board.</div>";
+    // THIS WEEK — merge the player's own week total from local state
+    var myW=myWeekTotal();
+    var week=(c.week||[]).map(function(s){ return {sid:s.sid,name:s.name,total:s.total,you:s.sid===ST.sid}; });
+    var meW=week.filter(function(s){return s.you;})[0];
+    if(meW){ if(myW.total>meW.total) meW.total=myW.total; } else if(myW.days){ week.push({sid:ST.sid,name:ST.displayName||"you",total:myW.total,you:true}); }
+    week.sort(function(a,b){return b.total-a.total;});
+    var wk=week.length ? week.map(function(s,i){ if(i===0 && c.week_key){ ST.crewSeasons[c.week_key]=s.name; save(ST); } return lbRow(i,s.name,s.total,s.you); }).join("") : "<div class='hint'>—</div>";
+    // roster — include yourself even if the server hasn't recorded membership yet
+    var ros=(c.roster||[]).slice(); if(!ros.some(function(m){return m.sid===ST.sid;})) ros.push({sid:ST.sid,name:ST.displayName||"you"});
+    var roster=ros.map(function(m){ return esc(m.name||m.sid.slice(0,4))+(m.sid===ST.sid?" (you)":""); }).join(", ");
     var champ=ST.crewSeasons[weekKey(addDaysStr(today,-7))];
     board.innerHTML=(c.crew_streak?"<div style='margin-bottom:8px'>🔥 <b>"+c.crew_streak+"-day crew run</b> · 🛡️ "+(c.crew_freezes_left||0)+" freeze left this week</div>":"")+
       (roster?"<div class='hint' style='margin-bottom:8px'>👥 "+roster+" · scores only, never the answers</div>":"")+
