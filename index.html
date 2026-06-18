@@ -162,16 +162,30 @@
   .statcard.tap{cursor:pointer}
   .statcard .sc-top{display:flex;align-items:center;justify-content:space-between}
   .statcard .sc-big{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--ink)}
-  .statcard .sc-chev{color:var(--accent);font-weight:800;font-size:15px}
   .statcard .sc-lbl{font-size:13px;font-weight:700;color:var(--ink);margin-top:3px}
   .statcard .sc-sub{font-size:11.5px;color:var(--mut);margin-top:2px;line-height:1.35}
   .statcard .bar{height:7px;border-radius:5px;background:var(--panel2);border:1px solid var(--line);margin:7px 0 4px;overflow:hidden}
   .statcard .bar i{display:block;height:100%;background:var(--accent);border-radius:5px}
-  #homeBreakdown{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:6px 14px;margin:0 0 10px;box-shadow:var(--shadow)}
   .brk-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px solid var(--line);min-height:44px}
   .brk-row:last-child{border-bottom:none}
   .brk-l{font-weight:600;color:var(--ink)} .brk-v{font-size:13px;color:var(--mut);font-variant-numeric:tabular-nums}
   .brk-v.dim{color:var(--mut)}   /* WCAG AA: --mut 5.6:1 (--dim failed at 2.64:1) */
+  /* H-B social home: crew-standing headline, coach line, tappable tiles, detail views */
+  .headline{background:linear-gradient(135deg,rgba(124,92,255,.12),rgba(245,158,11,.10));border:1px solid rgba(124,92,255,.3);
+    border-radius:14px;padding:13px 15px;margin:10px 0 0;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:52px}
+  .headline .hl-main{font-weight:800;font-size:16px;color:var(--ink)} .headline .hl-sub{font-size:12.5px;color:var(--mut);margin-top:2px}
+  .headline .go{color:var(--accent);font-weight:800;white-space:nowrap}
+  .coach{background:rgba(16,163,106,.08);border:1px solid rgba(16,163,106,.30);border-radius:12px;padding:9px 13px;margin:10px 0 0;font-size:13px;color:#0a7d50;font-weight:600}
+  .statcard.tap .sc-top::after{content:"›";color:var(--accent);font-weight:800;margin-left:auto}
+  .detail-h{font-size:20px;font-weight:800;margin:14px 2px 4px}
+  .detail-sub{color:var(--mut);font-size:13px;margin:0 2px 12px}
+  .hist-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 12px;border-bottom:1px solid var(--line);min-height:44px}
+  .hist-row:last-child{border-bottom:none}
+  .hist-row .hl{font-weight:600;color:var(--ink)} .hist-row .hr{color:var(--mut);font-size:13px;font-variant-numeric:tabular-nums}
+  .ladder-row{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;margin:4px 0}
+  .ladder-row.cur{background:rgba(124,92,255,.10);border:1px solid rgba(124,92,255,.35)}
+  .ladder-row .lt{flex:1;font-weight:600} .ladder-row.cur .lt{color:var(--accent)} .ladder-row .lm{font-size:12px;color:var(--mut)}
+  .gap{font-size:12px;color:var(--gold);font-weight:600}
   .seclabel{font-weight:800;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin:18px 4px 8px}
   .catcard{display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line);
     border-radius:14px;padding:14px;margin:9px 0;box-shadow:0 3px 14px rgba(70,45,130,.07);cursor:pointer;
@@ -207,15 +221,22 @@
 
 <!-- HOME (the hub) -->
 <div id="screen-home" class="hide">
+  <div id="homeHeadline"></div>
   <div class="hero" id="homeHero"></div>
+  <div id="homeCoach"></div>
   <div class="statgrid" id="homeStats"></div>
-  <div id="homeBreakdown" class="hide"></div>
   <div class="seclabel">Play today</div>
   <div id="homeCats"></div>
   <div id="homeCrew"></div>
   <div class="navlinks">
     <button class="navlink" id="homeArchive">📚 Past editions</button>
   </div>
+</div>
+
+<!-- STAT DETAIL (every tile opens one of these) -->
+<div id="screen-detail" class="hide">
+  <div id="detailBody"></div>
+  <div class="sticky"><button class="btn ghost" id="detailBack">← Back</button></div>
 </div>
 
 <!-- INTRO -->
@@ -358,7 +379,7 @@ function refreshFreeze(date){ var wk=weekKey(date); if(ST.freeze_week!==wk){ST.f
 function daysBetween(a,b){return Math.round((new Date(b+"T12:00:00")-new Date(a+"T12:00:00"))/86400000);}
 
 /* ---------- screens ---------- */
-var SCREENS=["loading","error","home","intro","play","reveal","archive","crew"];
+var SCREENS=["loading","error","home","intro","play","reveal","archive","crew","detail"];
 function show(name){SCREENS.forEach(function(s){$("screen-"+s).classList.toggle("hide",s!==name);});
   window.scrollTo(0,0);}
 function toast(msg){var t=$("toast");t.textContent=msg;t.classList.add("show");setTimeout(function(){t.classList.remove("show");},1400);}
@@ -366,7 +387,7 @@ function currentScreen(){ for(var i=0;i<SCREENS.length;i++){ if(!$("screen-"+SCR
 var BACK_TO="home";   // where the crew/archive "← Back" returns to (captured when you open them)
 function navBack(){    // return to the screen you came from: home, or the current lane's reveal/intro
   JUST_JOINED=null;
-  if(BACK_TO==="home"){ goHome(); return; }
+  if(BACK_TO==="home"||BACK_TO==="detail"){ goHome(); return; }   // detail/home origins → hub (not a play-context resume)
   var d=curDone(); if(d){ renderReveal(d,false); }
   else if(DAY){ renderIntro(DAY.date===todayStr()); }
   else { goHome(); }
@@ -379,7 +400,7 @@ var LOCK=null;          // id of locked quote
 var MANIFEST={days:[]}; // published editions (daily/index.json)
 
 /* ---------- boot ---------- */
-var CREW_INVITE=false, LINKED=false, JUST_JOINED=null;
+var CREW_INVITE=false, LINKED=false, JUST_JOINED=null, INVITE_BY="", INVITE_CN="";
 function boot(){
   LINKED=handleDeviceLink();    // ?me=SID → adopt that identity (same person, another device) — BEFORE any logging
   handleCrewInvite();           // ?crew=CODE&inv=SID → join + log invite_opened (k-factor)
@@ -395,10 +416,15 @@ function boot(){
       else { goHome(); }                          // everyone else → the home hub
     });
 }
-function handleCrewInvite(){       // a ?crew=CODE&inv=SID link joins the crew + logs invite_opened (k-factor)
+function handleCrewInvite(){       // a ?crew=CODE&inv=SID&by=NAME&cn=CREWNAME link → one-tap join w/ sender context
   var m=location.search.match(/[?&]crew=([A-Za-z0-9]{3,8})/); if(!m) return;
   var inv=(location.search.match(/[?&]inv=([A-Za-z0-9_]+)/)||[])[1]||"";
-  if(joinCrew(m[1], inv)){ CREW_INVITE=true; JUST_JOINED=(curCrew()||{}).code; }
+  var by=(location.search.match(/[?&]by=([^&]+)/)||[])[1], cn=(location.search.match(/[?&]cn=([^&]+)/)||[])[1];
+  if(by){ try{ INVITE_BY=decodeURIComponent(by); }catch(e){} }
+  if(cn){ try{ INVITE_CN=decodeURIComponent(cn); }catch(e){} }
+  if(joinCrew(m[1], inv)){ CREW_INVITE=true; JUST_JOINED=(curCrew()||{}).code;
+    // seed the crew NAME from the link ONLY for a genuinely new join (don't clobber an existing/renamed name with a stale link)
+    if(INVITE_CN){ var _c=(ST.crews||[]).filter(function(x){return x.code===(curCrew()||{}).code;})[0]; if(_c && !_c.name) setLocalCrewName(_c.code, INVITE_CN); } }
   try{ history.replaceState(null,"",location.pathname); }catch(e){}   // clean URL so a refresh doesn't re-log
 }
 function loadAndRoute(wanted){
@@ -510,14 +536,56 @@ function rankInfo(){
   var prog=Math.max(.08, Math.min(.97, (acc-(cur.a||0))/(next.a-(cur.a||0))));
   return {locked:false, tier:cur.n, next:next.n, prog:prog, line:Math.round(acc*100)+"% over "+games+" sets — climb to "+next.n};
 }
-var ACC_OPEN=false;   // transient UI state for the accuracy → category accordion
+function allResults(){ var out=[]; for(var k in (ST.days||{})){ var r=ST.days[k]&&ST.days[k].done&&ST.days[k].result; if(r) out.push(r); }
+  return out.sort(function(a,b){ return (a.date||"")<(b.date||"")?1:-1; }); }   // newest first
+function statTile(big,label,sub,which,bigStyle){
+  var card=el("div","statcard tap");
+  card.innerHTML='<div class="sc-top"><span class="sc-big"'+(bigStyle?(' style="'+bigStyle+'"'):'')+'>'+big+'</span></div>'+
+    '<div class="sc-lbl">'+label+'</div><div class="sc-sub">'+sub+'</div>';
+  activate(card, function(){ openDetail(which); }, label+" — tap for detail");
+  return card;
+}
+// the social-first headline: your crew standing today, or a start-a-crew nudge when crew-less
+function renderHeadline(){
+  var h=$("homeHeadline"), cc=curCrew();
+  if(!cc || !crewEndpoint()){
+    h.className="headline";
+    h.innerHTML='<div><div class="hl-main">👥 Play with your crew</div><div class="hl-sub">Start a crew — compare on a shared daily board</div></div><div class="go">start ›</div>';
+    activate(h, openCrew, "Start a crew"); return;
+  }
+  h.className="headline";
+  h.innerHTML='<div><div class="hl-main">👥 '+esc(crewLabel(cc))+'</div><div class="hl-sub">loading your standing…</div></div><div class="go">open ›</div>';
+  activate(h, openCrew, "Open crew leaderboard");
+  fetchCrew(todayStr(), cc.code).then(function(c){
+    if(c&&c.name) setLocalCrewName(cc.code,c.name);
+    var list=mergeYou((c&&c.standings)||[], myResult(todayStr())), sub=h.querySelector(".hl-sub"), main=h.querySelector(".hl-main");
+    if(main) main.textContent="👥 "+crewLabel(curCrew());
+    if(!list.length){ if(sub) sub.textContent="No one's played today yet — play to lead "+crewLabel(cc); return; }
+    var rank=0; for(var i=0;i<list.length;i++){ if(list[i].you){ rank=i; break; } }
+    var txt;
+    if(rank===0 && list.length>1) txt="🥇 1st of "+list.length+" — leading by "+(list[0].score-list[1].score);
+    else if(rank===0) txt="You're first today — invite your people to compete";
+    else { var gap=list[rank-1].score-list[rank].score; txt="#"+(rank+1)+" of "+list.length+" · "+(gap>0?(gap+" behind "+list[rank-1].name):("tied with "+list[rank-1].name)); }
+    if(sub) sub.textContent=txt;
+  });
+}
+// personal "coach" line — keep the ~90% who aren't #1 motivated
+function renderCoach(){
+  var c=$("homeCoach"); c.className=""; c.innerHTML=""; var msg="";
+  if(ST.streak>=3) msg="🔥 "+ST.streak+"-day streak — the habit's forming. Keep it alive.";
+  else if(ST.best_streak>0 && ST.streak>0 && ST.streak>=ST.best_streak) msg="🔥 Matching your best streak ("+ST.best_streak+") — push past it today.";
+  else if(ST.judged>=18 && accPct()>=70) msg="🎯 "+accPct()+"% accuracy — you've got a genuinely sharp eye.";
+  else if(gamesPlayed()>=1 && gamesPlayed()<5) msg="📈 "+(5-gamesPlayed())+" more set"+((5-gamesPlayed())>1?"s":"")+" to earn your rank — you're close.";
+  if(msg){ c.className="coach"; c.textContent=msg; }
+}
 function renderHome(){
   // header chrome for the hub
   $("editiontag").textContent="";
   $("sub").textContent="Pick a category — real quotes vs. AI fakes, a fresh set every day.";
   $("pastbar").classList.add("hide"); $("pastbar").innerHTML="";
   var games=gamesPlayed();
-  // streak hero + best + last-7-days strip
+  renderHeadline();
+  // streak hero + best + last-7-days strip (tap → streak detail)
   var hero=$("homeHero");
   var d7=last7(), n7=d7.filter(function(x){return x.played;}).length;
   var strip=d7.map(function(x){ return '<i class="d7'+(x.played?" on":"")+(x.today?" today":"")+'" title="'+x.date+(x.played?" · played":"")+'" aria-hidden="true"></i>'; }).join("");
@@ -527,34 +595,19 @@ function renderHome(){
   hero.innerHTML = head + '<div class="herorow"><span class="best">'+
     (ST.best_streak>0?('Best: '+ST.best_streak+' day'+(ST.best_streak>1?'s':'')):'Build your streak')+
     '</span><span class="d7wrap" role="img" aria-label="Played '+n7+' of the last 7 days">'+strip+'</span></div>';
-  // stats grid: Accuracy (tap to expand) · Rank (named tier) · Sets played · Lock accuracy
+  hero.style.cursor="pointer"; activate(hero, function(){ openDetail("streak"); }, "Streak — tap for history");
+  renderCoach();
+  // stat tiles — every tile is a button → its own detail view
   var sg=$("homeStats"); sg.innerHTML="";
-  var accCard=el("div","statcard tap"); accCard.setAttribute("aria-controls","homeBreakdown");
-  accCard.innerHTML='<div class="sc-top"><span class="sc-big">🎯 '+(ST.judged?accPct()+"%":"—")+'</span><span class="sc-chev">'+(ACC_OPEN?"⌃":"⌄")+'</span></div>'+
-    '<div class="sc-lbl">Accuracy</div><div class="sc-sub">tap for category breakdown</div>';
-  var rk=rankInfo(), rankCard=el("div","statcard");
-  if(rk.locked){ rankCard.innerHTML='<div class="sc-big">🏅</div><div class="sc-lbl">Rank</div><div class="sc-sub">Play '+rk.need+' more set'+(rk.need>1?'s':'')+' to earn your rank</div>'; }
-  else { rankCard.innerHTML='<div class="sc-big" style="font-size:17px;line-height:1.2">🏅 '+esc(rk.tier)+'</div><div class="sc-lbl">Rank</div>'+
-    '<div class="bar"><i style="width:'+Math.round(rk.prog*100)+'%"></i></div><div class="sc-sub">'+esc(rk.line)+'</div>'; }
-  var setsCard=el("div","statcard"); setsCard.innerHTML='<div class="sc-big">🎮 '+games+'</div><div class="sc-lbl">Sets played</div><div class="sc-sub">across all categories</div>';
-  var lockCard=el("div","statcard"); lockCard.innerHTML='<div class="sc-big">🔒 '+(ST.locks?lockPct()+"%":"—")+'</div><div class="sc-lbl">Lock accuracy</div><div class="sc-sub">how often your most-confident pick was right</div>';
-  sg.appendChild(accCard); sg.appendChild(rankCard); sg.appendChild(setsCard); sg.appendChild(lockCard);
-  var brk=$("homeBreakdown");
-  function renderBreakdown(){
-    accCard.setAttribute("aria-expanded", ACC_OPEN?"true":"false");
-    var chev=accCard.querySelector(".sc-chev"); if(chev) chev.textContent=ACC_OPEN?"⌃":"⌄";
-    if(!ACC_OPEN){ brk.classList.add("hide"); brk.innerHTML=""; return; }
-    var cs=categoryStats(), rows="";
-    availableLanes().forEach(function(lane){
-      var b=cs[lane], lbl=laneLabel(lane);
-      if(b && b.n){ var a=Math.round(100*b.score/b.n), la=b.locks?(Math.round(100*b.locksRight/b.locks)+"%"):"—";
-        rows+='<div class="brk-row"><span class="brk-l">'+esc(lbl)+'</span><span class="brk-v">'+a+'% · '+b.sets+' set'+(b.sets>1?'s':'')+' · lock '+la+'</span></div>'; }
-      else rows+='<div class="brk-row"><span class="brk-l">'+esc(lbl)+'</span><span class="brk-v dim">not played yet</span></div>';
-    });
-    brk.innerHTML=rows; brk.classList.remove("hide");
-  }
-  activate(accCard, function(){ ACC_OPEN=!ACC_OPEN; renderBreakdown(); });
-  renderBreakdown();
+  sg.appendChild(statTile("🎯 "+(ST.judged?accPct()+"%":"—"), "Accuracy", "by category + recent sets", "accuracy"));
+  var rk=rankInfo();
+  if(rk.locked) sg.appendChild(statTile("🏅", liveCrew()?"Standing":"Rank", "Play "+rk.need+" more to unlock", "standing"));
+  else { var rcard=el("div","statcard tap");
+    rcard.innerHTML='<div class="sc-top"><span class="sc-big" style="font-size:17px;line-height:1.2">🏅 '+esc(rk.tier)+'</span></div>'+
+      '<div class="sc-lbl">'+(liveCrew()?"Standing":"Rank")+'</div><div class="bar"><i style="width:'+Math.round(rk.prog*100)+'%"></i></div>';
+    activate(rcard, function(){ openDetail("standing"); }, "Standing — tap for detail"); sg.appendChild(rcard); }
+  sg.appendChild(statTile("🎮 "+games, "Sets played", "your full history", "sets"));
+  sg.appendChild(statTile("🔒 "+(ST.locks?lockPct()+"%":"—"), "Lock accuracy", "your confident-pick record", "lock"));
   // category cards — every lane, with today's status; tap to play (or view) that lane
   var cats=$("homeCats"); cats.innerHTML=""; var today=todayStr();
   availableLanes().forEach(function(lane){
@@ -595,6 +648,55 @@ function playLane(lane){
   if(lane==="nsfw" && !nsfwOK()) return;
   if(ST.lane!==lane){ ST.lane=lane; save(ST); logEvent("lane_switch",{cat:lane}); }
   loadAndRoute(todayStr());
+}
+
+/* ---------- STAT DETAIL VIEWS (every home tile → its own detail) ---------- */
+function lastNplayed(n){ var played={}; (ST.log||[]).forEach(function(e){ if(e.ev==="complete"&&e.ts){ try{played[todayStr(new Date(e.ts))]=1;}catch(x){} } });
+  var t=todayStr(), out=[]; for(var i=n-1;i>=0;i--){ var d=addDaysStr(t,-i); out.push({date:d,played:!!played[d],today:i===0}); } return out; }
+function recentSets(n){ return allResults().slice(0,n||10); }
+function laneName(l){ return laneLabel(l).replace(/^\S+\s/,""); }
+function openDetail(which){
+  if(which==="standing" && liveCrew()){ openCrew(); return; }   // live crew → standing IS the leaderboard; else solo ladder
+  renderDetail(which); show("detail"); logEvent("stat_detail",{which:which});
+}
+function renderDetail(which){
+  var b=$("detailBody");
+  if(which==="accuracy"){
+    var cs=categoryStats(), rows="";
+    availableLanes().forEach(function(lane){ var x=cs[lane], lbl=laneLabel(lane);
+      rows += (x&&x.n)
+        ? '<div class="brk-row"><span class="brk-l">'+esc(lbl)+'</span><span class="brk-v">'+Math.round(100*x.score/x.n)+'% · '+x.sets+' set'+(x.sets>1?'s':'')+' · lock '+(x.locks?Math.round(100*x.locksRight/x.locks)+'%':'—')+'</span></div>'
+        : '<div class="brk-row"><span class="brk-l">'+esc(lbl)+'</span><span class="brk-v dim">not played yet</span></div>'; });
+    var trend=recentSets(12).map(function(r){ return '<div class="hist-row"><span class="hl">'+prettyDate(r.date)+' · '+esc(laneName(r.lane||"general"))+'</span><span class="hr">'+r.score+'/'+r.n+'</span></div>'; }).join("")||"<div class='hint' style='padding:12px'>No sets yet — play one to start your history.</div>";
+    b.innerHTML='<div class="detail-h">🎯 Accuracy</div><div class="detail-sub">'+(ST.judged?accPct()+"% correct across "+gamesPlayed()+" sets.":"Play a set to start tracking accuracy.")+'</div>'+
+      '<div class="seclabel">By category</div><div class="card" style="padding:4px 14px">'+rows+'</div>'+
+      '<div class="seclabel">Recent sets</div><div class="card" style="padding:0 12px">'+trend+'</div>';
+  } else if(which==="streak"){
+    var grid=lastNplayed(28).map(function(x){ return '<i class="d7'+(x.played?" on":"")+(x.today?" today":"")+'" title="'+x.date+'" aria-hidden="true"></i>'; }).join("");
+    var fz=(ST.freezes_left==null?1:ST.freezes_left);
+    b.innerHTML='<div class="detail-h">🔥 Streak</div>'+
+      '<div class="card" style="text-align:center"><div class="streak">'+(ST.streak||0)+'</div><div class="streaklbl">current day streak</div>'+
+      '<div class="best" style="margin-top:6px">Best: '+(ST.best_streak||0)+' day'+((ST.best_streak||0)===1?"":"s")+' · 🛡️ '+(fz>0?(fz+" freeze available this week"):"freeze used this week")+'</div></div>'+
+      '<div class="seclabel">Last 4 weeks</div><div class="card"><div class="d7wrap" style="flex-wrap:wrap;gap:6px;justify-content:flex-start">'+grid+'</div>'+
+      '<div class="hint" style="margin-top:8px">A cell fills when you play any set that day. Miss a day and the streak resets — one freeze a week covers a single miss.</div></div>';
+  } else if(which==="sets"){
+    var rows=allResults().map(function(r){ return '<div class="hist-row"><span class="hl">'+prettyDate(r.date)+' · '+esc(laneName(r.lane||"general"))+'</span><span class="hr">'+r.score+'/'+r.n+(r.lockCorrect===true?' · 🔒✓':(r.lockCorrect===false?' · 🔒✗':''))+'</span></div>'; }).join("")||"<div class='hint' style='padding:12px'>No sets played yet.</div>";
+    b.innerHTML='<div class="detail-h">🎮 Sets played</div><div class="detail-sub">'+gamesPlayed()+' set'+(gamesPlayed()===1?"":"s")+' across all categories (newest first).</div><div class="card" style="padding:0 12px">'+rows+'</div>';
+  } else if(which==="lock"){
+    var lk=allResults().filter(function(r){ return r.lockCorrect===true||r.lockCorrect===false; });
+    var rows=lk.map(function(r){ return '<div class="hist-row"><span class="hl">'+prettyDate(r.date)+' · '+esc(laneName(r.lane||"general"))+'</span><span class="hr">'+(r.lockCorrect?"✓ nailed it":"✗ missed")+(r.lockIdx?(" (#"+r.lockIdx+")"):"")+'</span></div>'; }).join("")||"<div class='hint' style='padding:12px'>No locks yet — tap ★ on your most-confident quote.</div>";
+    b.innerHTML='<div class="detail-h">🔒 Lock accuracy</div><div class="detail-sub">'+(ST.locks?(lockPct()+"% — your most-confident pick was right "+ST.locks_correct+" of "+ST.locks+" times."):"Lock your most-confident quote each game; this tracks how often you nail it.")+'</div><div class="card" style="padding:0 12px">'+rows+'</div>';
+  } else {  // "standing" with no crew → solo tier ladder + start-a-crew CTA
+    var rk=rankInfo(), acc=ST.judged?Math.round(ST.correct/ST.judged*100):0;
+    var rows=TIERS.map(function(tt){ var cur=!rk.locked && tt.n===rk.tier;
+      return '<div class="ladder-row'+(cur?" cur":"")+'"><span class="lt">'+esc(tt.n)+(cur?" — you":"")+'</span><span class="lm">'+(tt.a?(Math.round(tt.a*100)+"%+ accuracy"):"starting tier")+'</span></div>'; }).join("");
+    b.innerHTML='<div class="detail-h">🏅 Your rank</div>'+
+      (rk.locked?'<div class="detail-sub">Play '+rk.need+' more set'+(rk.need>1?"s":"")+' to earn your rank — you\'re at '+acc+'% so far.</div>'
+                :'<div class="detail-sub">You\'re <b>'+esc(rk.tier)+'</b> — '+esc(rk.line)+'.</div>')+
+      '<div class="card" style="padding:6px 10px">'+rows+'</div>'+
+      '<div class="card crewcard" style="text-align:center">👥 <b>Compete with friends</b><div class="hint" style="margin:4px 0 8px">Rank is your solo climb. Add a crew for a live, head-to-head leaderboard.</div><button class="btn" id="detStartCrew">Start a crew →</button></div>';
+    var sc=$("detStartCrew"); if(sc) sc.onclick=openCrew;
+  }
 }
 
 /* ---------- PLAY ---------- */
@@ -868,12 +970,20 @@ function leaveCrew(code){ code=code||(curCrew()||{}).code; if(!code) return;
   if(ST.activeCrew===code) ST.activeCrew=(ST.crews[0]||{}).code||null;
   save(ST); logEvent("crew_leave",{crew:code}); JUST_JOINED=null; renderCrew(); }
 function crewEndpoint(){ return AGG_ENDPOINT||LOG_ENDPOINT; }
+function liveCrew(){ return curCrew() && crewEndpoint(); }   // in a crew AND able to load a live board
 function clip(txt,ok){ if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(ok,function(){window.prompt("Copy:",txt);if(ok)ok();}); } else { window.prompt("Copy:",txt); if(ok)ok(); } }
-function crewInviteLink(code){ code=code||(curCrew()||{}).code; return baseURL()+"?crew="+code+"&inv="+ST.sid; }
-function copyCrewInvite(code){ code=code||(curCrew()||{}).code; if(!code)return; var url=crewInviteLink(code);
-  function ok(){ toast("Invite link sent — they tap it to join 👥"); logEvent("invite_created",{crew:code}); }
-  if(navigator.share){ navigator.share({title:"Join my Said It? crew",text:"Join my crew "+code+" on Said It? 👇",url:url}).then(ok,function(err){ if(err&&err.name==="AbortError") return; clip(url,ok); }); return; }
-  clip(url,ok); }
+function crewNameFor(code){ var c=(ST.crews||[]).filter(function(x){return x.code===code;})[0]; return (c&&c.name)||code; }
+function crewInviteLink(code){ code=code||(curCrew()||{}).code;   // carry sender + crew NAME so the recipient sees context
+  var c=(ST.crews||[]).filter(function(x){return x.code===code;})[0], u=baseURL()+"?crew="+code+"&inv="+ST.sid;
+  if(ST.displayName) u+="&by="+encodeURIComponent(ST.displayName);
+  if(c&&c.name) u+="&cn="+encodeURIComponent(c.name);
+  return u; }
+function copyCrewInvite(code){ code=code||(curCrew()||{}).code; if(!code)return;
+  var url=crewInviteLink(code), cn=crewNameFor(code), who=ST.displayName||"A friend";
+  var msg=who+" invited you to "+cn+" on Said It? — tap to join:";
+  function ok(){ toast("Invite ready — send it 👥"); logEvent("invite_created",{crew:code}); }
+  if(navigator.share){ navigator.share({title:"Join "+cn+" on Said It?",text:msg,url:url}).then(ok,function(err){ if(err&&err.name==="AbortError") return; clip(msg+" "+url,ok); }); return; }
+  clip(msg+" "+url,ok); }
 /* device-link (no login): play as the same person across phone+laptop. Short, clean link — your crews + name are
    derived server-side from the id on arrival (no long querystring), so it stays tidy and always current. */
 function myDeviceLink(){ return baseURL()+"?me="+ST.sid; }
@@ -980,34 +1090,37 @@ function renderCrew(){
   var b=$("crewBody");
   if(!crewEndpoint()){ b.innerHTML="<div class='card'>👥 <b>Crews</b> need the shared endpoint deployed (see <code>endpoint/</code>). Solo play works fine without it.</div>"; return; }
   var html="";
-  if(JUST_JOINED){ html+="<div class='card crewcard' style='text-align:center'>🎉 <b>You're in crew "+esc(JUST_JOINED)+"</b>"+
-    "<div class='hint' style='margin-top:4px'>Play today's set and you'll show up on the board.</div>"+
-    "<button class='btn' id='crewPlay' style='margin-top:10px'>Play today's set →</button></div>"; }
+  if(JUST_JOINED){
+    var jn=INVITE_CN||crewLabel(curCrew())||JUST_JOINED;
+    var lead=INVITE_BY?(esc(INVITE_BY)+" added you to "):"You're in ";
+    html+="<div class='card crewcard' style='text-align:center'>🎉 <b>"+lead+esc(jn)+"</b>"+
+      "<div class='hint' style='margin-top:4px'>Play today's set and you'll show up on the board.</div>"+
+      "<button class='btn' id='crewPlay' style='margin-top:10px'>Play today's set →</button></div>";
+  }
   if(!inCrew()){
-    html+="<div class='card'>👥 <b>Play with your crew</b><div class='hint' style='text-align:left;margin:6px 0'>Same daily set for everyone — compare scores, build a shared streak. No accounts. You can be in several crews at once.</div>"+
-      "<button class='btn' id='crewCreate'>Create a crew</button>"+
-      "<div style='text-align:center;color:var(--mut);margin:12px 0;font-size:13px'>— or join one —</div>"+
-      "<input class='fld' id='crewCodeIn' placeholder='enter 5-letter code' maxlength='6' autocapitalize='characters' autocomplete='off'>"+
-      "<button class='btn ghost' id='crewJoinBtn'>Join crew</button></div>";
+    html+="<div class='card'><div style='font-weight:800;font-size:17px'>👥 Play with your friends</div>"+
+      "<div class='hint' style='text-align:left;margin:6px 0 12px'>Everyone gets the same six quotes — compare scores and build a shared streak. No accounts needed.</div>"+
+      "<button class='btn' id='crewCreate'>Start a crew</button>"+
+      "<div class='hint' style='text-align:center;margin:14px 0 6px'>Got an invite? Just open the link your friend sent you.</div>"+
+      "<button class='btn ghost' id='crewJoinCode'>Have a code? Enter it</button></div>";
     b.innerHTML=html;
     if($("crewPlay"))$("crewPlay").onclick=function(){ JUST_JOINED=null; playLane(ST.lane||"general"); };
     $("crewCreate").onclick=createCrew;
-    $("crewJoinBtn").onclick=function(){ if(joinCrew($("crewCodeIn").value,"")){ JUST_JOINED=null; renderCrew(); } };
+    $("crewJoinCode").onclick=function(){ var code=window.prompt&&window.prompt("Enter your crew's code:",""); if(code===null)return;
+      if(joinCrew(code,"")){ JUST_JOINED=null; INVITE_BY=INVITE_CN=""; renderCrew(); } };
     return;
   }
   var cc=curCrew();
   var chips=(ST.crews||[]).map(function(c){ return "<button class='lane-b"+(c.code===cc.code?" on":"")+"' data-crew='"+esc(c.code)+"'>"+esc(crewLabel(c))+"</button>"; }).join("");
-  html+="<div class='lanes' id='crewChips'>"+chips+"<button class='lane-b' id='crewAdd'>+ join / create</button></div>";
-  html+="<div class='card crewcard'><div style='display:flex;justify-content:space-between;align-items:center;gap:8px'>"+
-    "<div style='min-width:0'><div style='font-weight:700'><span id='crewTitle'>"+esc(crewLabel(cc))+"</span> "+
-      "<button class='navlink' id='crewRename' style='font-size:12px;padding:2px 4px'>✏️</button></div>"+
-      "<div class='hint'>join code: <span class='crew-code'>"+esc(cc.code)+"</span></div></div>"+
-    "<button class='btn' id='crewInviteBtn' style='width:auto;padding:10px 14px'>Invite</button></div>"+
-    "<div id='crewBoard' class='hint' style='text-align:left;margin-top:12px'>loading standings…</div></div>";
-  html+="<div class='card'><div style='font-weight:700;margin-bottom:4px'>📱 Same person, another device?</div>"+
-    "<div class='hint' style='text-align:left'>No login — open this link on your other device (or send it to yourself) to play as the SAME person across phone &amp; laptop.</div>"+
-    "<button class='btn ghost' id='deviceLinkBtn' style='margin-top:8px'>Copy my device link</button></div>";
-  html+="<div class='navlinks'><button class='navlink' id='crewAdd2'>+ another crew</button><button class='navlink' id='crewLeave'>leave "+esc(cc.code)+"</button></div>";
+  html+="<div class='lanes' id='crewChips'>"+chips+"<button class='lane-b' id='crewAdd'>+ crew</button></div>";
+  html+="<div class='card crewcard'>"+
+    "<div style='font-weight:800;font-size:18px'><span id='crewTitle'>"+esc(crewLabel(cc))+"</span> "+
+      "<button class='navlink' id='crewRename' style='font-size:12px;padding:2px 4px'>✏️ rename</button></div>"+
+    "<div id='crewBoard' class='hint' style='text-align:left;margin-top:10px'>loading standings…</div>"+
+    "<button class='btn' id='crewInviteBtn' style='margin-top:14px'>Invite your people</button>"+
+    "<div class='hint' style='text-align:center;margin-top:7px'>or share this code: <span class='crew-code' style='font-size:13px;letter-spacing:.1em'>"+esc(cc.code)+"</span></div>"+
+    "</div>";
+  html+="<div class='navlinks'><button class='navlink' id='crewAdd2'>+ another crew</button><button class='navlink' id='crewLeave'>leave "+esc(crewLabel(cc))+"</button></div>";
   b.innerHTML=html;
   if($("crewPlay"))$("crewPlay").onclick=function(){ JUST_JOINED=null; playLane(ST.lane||"general"); };
   var chipNodes=b.querySelectorAll("#crewChips [data-crew]");
@@ -1016,7 +1129,6 @@ function renderCrew(){
   $("crewRename").onclick=function(){ renameCrew(cc.code); };
   $("crewInviteBtn").onclick=function(){ copyCrewInvite(cc.code); };
   $("crewLeave").onclick=function(){ leaveCrew(cc.code); };
-  $("deviceLinkBtn").onclick=copyDeviceLink;
   var board=$("crewBoard"), today=todayStr();
   fetchCrew(today, cc.code).then(function(c){
     c = c || {};
@@ -1063,6 +1175,7 @@ $("introArchive").addEventListener("click",openArchive);
 $("revealArchive").addEventListener("click",openArchive);
 $("revealLink").addEventListener("click",function(){ if(DAY) copyEditionLink(DAY.date); });
 $("archiveBack").addEventListener("click",navBack);
+$("detailBack").addEventListener("click",goHome);
 $("resetLink").addEventListener("click",function(){if(confirm("Erase your streak, rating and history on this device?")){localStorage.removeItem(K);location.reload();}});
 
 boot();
