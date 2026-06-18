@@ -311,11 +311,14 @@ if(!ST.sid){ST.sid=uid();ST.first_seen=todayStr();ST.referrer=document.referrer|
   ST.rating=1000;ST.judged=0;ST.correct=0;ST.locks=0;ST.locks_correct=0;ST.last_played=null;ST.freeze_week=null;ST.freezes_left=1;save(ST);}
 if(!ST.days)ST.days={};
 if(!ST.crewSeasons)ST.crewSeasons={};   // {weekKey: champName} — memorialized weekly champ (client-side)
-if(ST.crew===undefined)ST.crew=null;    // {code, joined} — one active crew per device this round
+if(ST.crew===undefined)ST.crew=null;    // legacy single-crew field — migrated to ST.crews below
+if(!ST.crews){ ST.crews = ST.crew ? [ST.crew] : []; }       // MULTI-CREW: be in several friend groups at once
+if(ST.activeCrew===undefined){ ST.activeCrew = ST.crews.length ? ST.crews[0].code : null; }  // the one you're viewing
 if(!ST.lane)ST.lane="general";          // G-C category pack the player picked (shared daily instance PER lane)
-// Fire one `install` per device, ever. For pre-G-A devices (sid exists, never instrumented) this is a
-// one-time BACKFILL carrying their real first_seen, so the launch cohort lands in the endpoint, not lost.
-if(!ST.installed){ ST.installed=true; save(ST); logEvent("install",{first:ST.first_seen, backfill:(ST.judged>0||(ST.log&&ST.log.length>0))}); }
+// The one-per-device `install` is fired in boot() — AFTER any device-link sid adoption — so it's tagged with the
+// FINAL identity, never a throwaway sid (otherwise it corrupts install/cohort analytics). Capture the backfill
+// flag NOW, before any other event is logged. (Pre-G-A devices: sid exists but never instrumented → backfill.)
+var INSTALL_BACKFILL = (ST.judged>0 || (ST.log && ST.log.length>0));
 
 /* ---------- instrumentation ---------- */
 function logEvent(name, extra){
@@ -347,6 +350,7 @@ function toast(msg){var t=$("toast");t.textContent=msg;t.classList.add("show");s
 function currentScreen(){ for(var i=0;i<SCREENS.length;i++){ if(!$("screen-"+SCREENS[i]).classList.contains("hide")) return SCREENS[i]; } return "home"; }
 var BACK_TO="home";   // where the crew/archive "← Back" returns to (captured when you open them)
 function navBack(){    // return to the screen you came from: home, or the current lane's reveal/intro
+  JUST_JOINED=null;
   if(BACK_TO==="home"){ goHome(); return; }
   var d=curDone(); if(d){ renderReveal(d,false); }
   else if(DAY){ renderIntro(DAY.date===todayStr()); }
@@ -360,22 +364,25 @@ var LOCK=null;          // id of locked quote
 var MANIFEST={days:[]}; // published editions (daily/index.json)
 
 /* ---------- boot ---------- */
-var INVITED=false;   // arrived via a crew invite link → drop straight into today's set, ready to play+compare
+var CREW_INVITE=false, LINKED=false, JUST_JOINED=null;
 function boot(){
-  handleCrewInvite();
+  LINKED=handleDeviceLink();    // ?me=SID → adopt that identity (same person, another device) — BEFORE any logging
+  handleCrewInvite();           // ?crew=CODE&inv=SID → join + log invite_opened (k-factor)
+  // fire the single per-device install NOW (after sid adoption), so it's tagged with the final identity
+  if(!ST.installed){ ST.installed=true; logEvent("install",{first:ST.first_seen, backfill:INSTALL_BACKFILL}); save(ST); }
   fetch("daily/index.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;})
     .then(function(idx){ if(idx&&(idx.days||idx.categories)) MANIFEST=idx; }, function(){})
     .then(function(){
       var dl=qsDay();
-      if(dl){ loadAndRoute(dl); }            // ?d=DATE deep link → straight to that edition
-      else if(INVITED){ loadAndRoute(todayStr()); }  // invited friend → land in today's set
-      else { goHome(); }                     // everyone else → the home hub
+      if(dl){ loadAndRoute(dl); }                 // ?d=DATE deep link → straight to that edition
+      else if(CREW_INVITE || LINKED){ openCrew(); }  // arrived via invite/device-link → land on the crew screen (clear "you're in!")
+      else { goHome(); }                          // everyone else → the home hub
     });
 }
 function handleCrewInvite(){       // a ?crew=CODE&inv=SID link joins the crew + logs invite_opened (k-factor)
   var m=location.search.match(/[?&]crew=([A-Za-z0-9]{3,8})/); if(!m) return;
   var inv=(location.search.match(/[?&]inv=([A-Za-z0-9_]+)/)||[])[1]||"";
-  joinCrew(m[1], inv); INVITED=true;
+  if(joinCrew(m[1], inv)){ CREW_INVITE=true; JUST_JOINED=(curCrew()||{}).code; }
   try{ history.replaceState(null,"",location.pathname); }catch(e){}   // clean URL so a refresh doesn't re-log
 }
 function loadAndRoute(wanted){
@@ -494,18 +501,19 @@ function renderHome(){
     cats.appendChild(card);
   });
   // crew strip
-  var hc=$("homeCrew"); hc.className="homecrew";
-  if(inCrew()){
-    hc.innerHTML='<div class="ic">👥</div><div class="cc"><div class="ct">Crew '+esc(ST.crew.code)+'</div>'+
+  var hc=$("homeCrew"); hc.className="homecrew"; var cc=curCrew();
+  if(cc){
+    var more=(ST.crews.length>1)?(" +"+(ST.crews.length-1)+" more"):"";
+    hc.innerHTML='<div class="ic">👥</div><div class="cc"><div class="ct">Crew '+esc(cc.code)+esc(more)+'</div>'+
       '<div class="cs">Standings, shared streak &amp; invites</div></div><div class="go">open ›</div>';
   } else {
     hc.innerHTML='<div class="ic">👥</div><div class="cc"><div class="ct">Play with your crew</div>'+
       '<div class="cs">Compare scores, build a shared streak — no accounts</div></div><div class="go">start ›</div>';
   }
-  activate(hc, openCrew, inCrew()?("Open crew "+ST.crew.code):"Play with your crew");
+  activate(hc, openCrew, cc?("Open crew "+cc.code):"Play with your crew");
   show("home");
 }
-function goHome(){ if(qsDay()){ try{ history.replaceState(null,"",location.pathname); }catch(e){} } renderHome(); logEvent("home_view"); }  // strip a lingering ?d= so Home survives a reload
+function goHome(){ JUST_JOINED=null; if(qsDay()){ try{ history.replaceState(null,"",location.pathname); }catch(e){} } renderHome(); logEvent("home_view"); }  // strip a lingering ?d= so Home survives a reload
 function playLane(lane){
   if(ST.lane!==lane){ ST.lane=lane; save(ST); logEvent("lane_switch",{cat:lane}); }
   loadAndRoute(todayStr());
@@ -601,7 +609,9 @@ function submit(){
   ST.days[dayKey(lane,date)]={done:true,result:result};
   delete ST._frozen; save(ST);
   logEvent("complete",{score:correct,n:n,streak:ST.streak,rating:ST.rating,lock:lockCorrect,gotme:gotme,
-    archive:(date!==realToday),returning:(ST.judged>n),crew:(inCrew()?ST.crew.code:""),name:ST.displayName||"",cat:lane});
+    archive:(date!==realToday),returning:(ST.judged>n),crew:((curCrew()||{}).code||""),
+    crews:(ST.crews||[]).map(function(c){return c.code;}).join(","),   // self-heals membership for EVERY crew you're in
+    name:ST.displayName||"",cat:lane});
   renderReveal(result,true);
 }
 
@@ -746,26 +756,56 @@ function copyEditionLink(date){
    NO live/synchronous tournaments (that's the tbh/Gas graph-fragile death) — async leaderboard + weekly
    season standing only. Consent-native (you opt in with a code). Spoiler-free is ENFORCED: the endpoint
    returns scores/standings only, never per-quote answers, so a crew-mate who hasn't played stays safe. */
-function inCrew(){ return !!(ST.crew && ST.crew.code); }
+function inCrew(){ return !!(ST.crews && ST.crews.length); }
+function hasCrew(code){ return (ST.crews||[]).some(function(c){return c.code===code;}); }
+function curCrew(){ var cs=ST.crews||[]; return cs.filter(function(c){return c.code===ST.activeCrew;})[0] || cs[0] || null; }
+function setActiveCrew(code){ ST.activeCrew=code; save(ST); }
+function addCrew(code){ if(!hasCrew(code)){ ST.crews.push({code:code, joined:todayStr()}); } ST.activeCrew=code; }
 function genCode(){ var s="ABCDEFGHJKLMNPQRSTUVWXYZ23456789",c=""; for(var i=0;i<5;i++)c+=s[Math.floor(Math.random()*s.length)]; return c; }
 function askName(def){ var n=(window.prompt && window.prompt("Your name in the crew?", def||ST.displayName||"")) || ST.displayName || "you"; n=String(n).slice(0,16).trim()||"you"; ST.displayName=n; save(ST); return n; }
-function createCrew(){ askName(); var code=genCode(); ST.crew={code:code, joined:todayStr()}; save(ST);
-  logEvent("crew_create",{crew:code, name:ST.displayName}); toast("Crew "+code+" created 🎉"); renderCrew(); }
-function joinCrew(code, inviter){ code=String(code||"").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,6); if(!code){toast("Enter a code");return;}
-  if(inCrew() && ST.crew.code===code){ return; }
+function createCrew(){ askName(); var code=genCode(); addCrew(code); save(ST);
+  logEvent("crew_create",{crew:code, name:ST.displayName}); toast("Crew "+code+" created 🎉"); JUST_JOINED=null; renderCrew(); }
+function joinCrew(code, inviter){ code=String(code||"").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,6); if(!code){toast("Enter a code");return false;}
+  var already=hasCrew(code);
   if(!ST.displayName) askName();
-  ST.crew={code:code, joined:todayStr()}; save(ST);
-  logEvent("crew_join",{crew:code, name:ST.displayName, inviter:inviter||""});
+  addCrew(code); save(ST);
+  if(!already) logEvent("crew_join",{crew:code, name:ST.displayName, inviter:inviter||""});   // membership is server-derived from this
   if(inviter && inviter!==ST.sid) logEvent("invite_opened",{crew:code, inviter:inviter, invitee:ST.sid});  // <-- k-factor instrument
-  toast("Joined "+code+" 👥"); }
-function leaveCrew(){ if(window.confirm && !window.confirm("Leave this crew?")) return; ST.crew=null; save(ST); renderCrew(); }
+  toast("Joined "+code+" 👥"); return true; }
+function leaveCrew(code){ code=code||(curCrew()||{}).code; if(!code) return;
+  if(window.confirm && !window.confirm("Leave crew "+code+"?")) return;
+  ST.crews=(ST.crews||[]).filter(function(c){return c.code!==code;});
+  if(ST.activeCrew===code) ST.activeCrew=(ST.crews[0]||{}).code||null;
+  save(ST); logEvent("crew_leave",{crew:code}); JUST_JOINED=null; renderCrew(); }
 function crewEndpoint(){ return AGG_ENDPOINT||LOG_ENDPOINT; }
-function crewInviteLink(){ return baseURL()+"?crew="+ST.crew.code+"&inv="+ST.sid; }
-function copyCrewInvite(){ if(!inCrew())return; var url=crewInviteLink();
-  function ok(){ toast("Invite link copied — send it 👥"); logEvent("invite_created",{crew:ST.crew.code}); }
-  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(ok,function(){window.prompt("Copy:",url);ok();}); } else { window.prompt("Copy:",url); ok(); } }
-function fetchCrew(day){ var ep=crewEndpoint(); if(!ep||!inCrew()) return Promise.resolve(null);
-  return fetch(ep+(ep.indexOf("?")>=0?"&":"?")+"crew="+encodeURIComponent(ST.crew.code)+"&day="+encodeURIComponent(day),{cache:"no-store"})
+function clip(txt,ok){ if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(ok,function(){window.prompt("Copy:",txt);if(ok)ok();}); } else { window.prompt("Copy:",txt); if(ok)ok(); } }
+function crewInviteLink(code){ code=code||(curCrew()||{}).code; return baseURL()+"?crew="+code+"&inv="+ST.sid; }
+function copyCrewInvite(code){ code=code||(curCrew()||{}).code; if(!code)return; var url=crewInviteLink(code);
+  function ok(){ toast("Invite link sent — they tap it to join 👥"); logEvent("invite_created",{crew:code}); }
+  if(navigator.share){ navigator.share({title:"Join my Said It? crew",text:"Join my crew "+code+" on Said It? 👇",url:url}).then(ok,function(err){ if(err&&err.name==="AbortError") return; clip(url,ok); }); return; }
+  clip(url,ok); }
+/* device-link (no login): play as the same person across phone+laptop by opening one link on the other device */
+function myDeviceLink(){ var codes=(ST.crews||[]).map(function(c){return c.code;}).join(",");
+  return baseURL()+"?me="+ST.sid+(codes?"&mc="+encodeURIComponent(codes):"")+(ST.displayName?"&nm="+encodeURIComponent(ST.displayName):""); }
+function copyDeviceLink(){ var url=myDeviceLink();
+  function ok(){ toast("Device link copied — open it on your other device 📱"); logEvent("device_link_created"); }
+  if(navigator.share){ navigator.share({title:"Said It? — link my device",text:"Play as me on this device 👇",url:url}).then(ok,function(err){ if(err&&err.name==="AbortError") return; clip(url,ok); }); return; }
+  clip(url,ok); }
+function handleDeviceLink(){ var m=location.search.match(/[?&]me=([A-Za-z0-9_]+)/); if(!m) return false;
+  var sid=m[1];
+  if(sid===ST.sid){ try{ history.replaceState(null,"",location.pathname); }catch(e){} return false; }
+  var hadHistory=(ST.judged>0)||(ST.crews&&ST.crews.length>0);
+  if(hadHistory && window.confirm && !window.confirm("Play as your other device here? Crew play across your devices will merge under one player.")){ try{ history.replaceState(null,"",location.pathname); }catch(e){} return false; }
+  ST.sid=sid;
+  var nm=(location.search.match(/[?&]nm=([^&]+)/)||[])[1]; if(nm){ try{ ST.displayName=decodeURIComponent(nm); }catch(e){} }
+  var mc=(location.search.match(/[?&]mc=([^&]+)/)||[])[1];
+  if(mc){ try{ decodeURIComponent(mc).split(",").forEach(function(code){ code=String(code).toUpperCase().replace(/[^A-Z0-9]/g,""); if(code && !hasCrew(code)){ ST.crews.push({code:code,joined:todayStr()}); } }); }catch(e){} }
+  if(!ST.activeCrew) ST.activeCrew=(ST.crews[0]||{}).code||null;
+  ST.installed=true;   // this sid already installed on its origin device → don't emit a duplicate install
+  save(ST); try{ history.replaceState(null,"",location.pathname); }catch(e){}
+  toast("Device linked 📱"); logEvent("device_linked"); return true; }
+function fetchCrew(day, code){ var ep=crewEndpoint(); code=code||(curCrew()||{}).code; if(!ep||!code) return Promise.resolve(null);
+  return fetch(ep+(ep.indexOf("?")>=0?"&":"?")+"crew="+encodeURIComponent(code)+"&day="+encodeURIComponent(day),{cache:"no-store"})
     .then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); }
 function mergeYou(standings, res){          // standings carry scores only; match self by sid (spoiler-free)
   var list=(standings||[]).map(function(s){return {sid:s.sid,name:s.name,score:s.score,you:s.sid===ST.sid};});
@@ -779,62 +819,90 @@ function addDaysStr(s,n){ var d=new Date(s+"T12:00:00"); d.setDate(d.getDate()+n
 
 function renderCompare(res){                 // the instant friend-compare on submit (the reply-bait engine)
   var box=$("crewCompare"); box.innerHTML=""; box.className="";
-  if(!inCrew()||!crewEndpoint()){ return; }
+  var cc=curCrew();
+  if(!cc||!crewEndpoint()){ return; }
   box.className="card crewcard"; box.innerHTML="<div class='hint' style='text-align:left'>loading crew…</div>";
-  fetchCrew(res.date).then(function(c){
+  fetchCrew(res.date, cc.code).then(function(c){
     var list=mergeYou(c&&c.standings, res);
     var rankIdx=0; for(var i=0;i<list.length;i++){ if(list[i].you){ rankIdx=i; break; } }
     var streak=c?c.crew_streak:0;
+    var more=(ST.crews.length>1)?" <span class='crewbadge'>+"+(ST.crews.length-1)+" more</span>":"";
     var rows=list.map(function(s,i){ return lbRow(i,s.name,s.score+"/"+res.n,s.you); }).join("");
-    box.innerHTML="<div style='font-weight:700;margin-bottom:6px'>👥 Crew "+esc(ST.crew.code)+(streak?" · 🔥 "+streak+"-day run":"")+"</div>"+rows+
+    box.innerHTML="<div style='font-weight:700;margin-bottom:6px'>👥 Crew "+esc(cc.code)+more+(streak?" · 🔥 "+streak+"-day run":"")+"</div>"+rows+
       "<div class='hint' style='text-align:left;margin-top:8px'>"+(rankIdx===0&&list.length>1?"On top 👑 — ":(list.length>1?"":"You're first today — bait the crew back. "))+"Scores only, never the answers.</div>"+
       "<div class='row' style='margin-top:8px'><button class='btn ghost' id='compShare' style='flex:2'>Share standings</button><button class='btn ghost' id='compInvite' style='flex:1'>Invite</button></div>";
-    var cs=$("compShare"); if(cs) cs.onclick=function(){ shareCrewToken(c,res); };
-    var ci=$("compInvite"); if(ci) ci.onclick=copyCrewInvite;
+    var cs=$("compShare"); if(cs) cs.onclick=function(){ shareCrewToken(c,res,cc.code); };
+    var ci=$("compInvite"); if(ci) ci.onclick=function(){ copyCrewInvite(cc.code); };
   });
 }
-function crewToken(c,res){ var list=mergeYou(c&&c.standings,res); var lines=[];
-  lines.push("Said It? crew "+ST.crew.code+(c&&c.crew_streak?" · 🔥 "+c.crew_streak:""));
+function crewToken(c,res,code){ var list=mergeYou(c&&c.standings,res); var lines=[];
+  lines.push("Said It? crew "+code+(c&&c.crew_streak?" · 🔥 "+c.crew_streak:""));
   list.slice(0,6).forEach(function(s,i){ lines.push(medal(i)+" "+s.name+(s.you?" (me)":"")+" "+s.score+"/"+(res?res.n:6)); });
-  lines.push(baseURL()+"?crew="+ST.crew.code);
+  lines.push(baseURL()+"?crew="+code);
   return lines.join("\n"); }
-function shareCrewToken(c,res){ var txt=crewToken(c,res);
-  function ok(){ toast("Standings copied 👥"); logEvent("token_copy",{kind:"crew",crew:ST.crew.code}); }
+function shareCrewToken(c,res,code){ var txt=crewToken(c,res,code);
+  function ok(){ toast("Standings copied 👥"); logEvent("token_copy",{kind:"crew",crew:code}); }
   if(navigator.share){ navigator.share({text:txt}).then(ok,function(){}); return; }
-  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(ok,function(){window.prompt("Copy:",txt);ok();}); } else { window.prompt("Copy:",txt); ok(); } }
+  clip(txt,ok); }
 
 function openCrew(){ BACK_TO=currentScreen(); renderCrew(); show("crew"); }
+function joinAnotherCrew(){
+  var code=window.prompt && window.prompt("Enter a crew code to join (leave blank to create a new crew):","");
+  if(code===null) return;
+  code=String(code).toUpperCase().replace(/[^A-Z0-9]/g,"");
+  if(code){ if(joinCrew(code,"")){ JUST_JOINED=null; renderCrew(); } } else { createCrew(); }
+}
 function renderCrew(){
   var b=$("crewBody");
   if(!crewEndpoint()){ b.innerHTML="<div class='card'>👥 <b>Crews</b> need the shared endpoint deployed (see <code>endpoint/</code>). Solo play works fine without it.</div>"; return; }
+  var html="";
+  if(JUST_JOINED){ html+="<div class='card crewcard' style='text-align:center'>🎉 <b>You're in crew "+esc(JUST_JOINED)+"</b>"+
+    "<div class='hint' style='margin-top:4px'>Play today's set and you'll show up on the board.</div>"+
+    "<button class='btn' id='crewPlay' style='margin-top:10px'>Play today's set →</button></div>"; }
   if(!inCrew()){
-    b.innerHTML="<div class='card'>👥 <b>Play with your crew</b><div class='hint' style='text-align:left;margin:6px 0'>Same daily set for everyone — compare scores, build a shared streak. No accounts.</div>"+
+    html+="<div class='card'>👥 <b>Play with your crew</b><div class='hint' style='text-align:left;margin:6px 0'>Same daily set for everyone — compare scores, build a shared streak. No accounts. You can be in several crews at once.</div>"+
       "<button class='btn' id='crewCreate'>Create a crew</button>"+
       "<div style='text-align:center;color:var(--mut);margin:12px 0;font-size:13px'>— or join one —</div>"+
-      "<input class='fld' id='crewCodeIn' placeholder='enter 5-letter code' maxlength='6'>"+
+      "<input class='fld' id='crewCodeIn' placeholder='enter 5-letter code' maxlength='6' autocapitalize='characters' autocomplete='off'>"+
       "<button class='btn ghost' id='crewJoinBtn'>Join crew</button></div>";
+    b.innerHTML=html;
+    if($("crewPlay"))$("crewPlay").onclick=function(){ JUST_JOINED=null; playLane(ST.lane||"general"); };
     $("crewCreate").onclick=createCrew;
-    $("crewJoinBtn").onclick=function(){ joinCrew($("crewCodeIn").value,""); renderCrew(); };
+    $("crewJoinBtn").onclick=function(){ if(joinCrew($("crewCodeIn").value,"")){ JUST_JOINED=null; renderCrew(); } };
     return;
   }
-  b.innerHTML="<div class='card crewcard'><div style='display:flex;justify-content:space-between;align-items:center'>"+
-    "<div><div style='font-weight:700'>Your crew</div><span class='crew-code'>"+esc(ST.crew.code)+"</span></div>"+
+  var cc=curCrew();
+  var chips=(ST.crews||[]).map(function(c){ return "<button class='lane-b"+(c.code===cc.code?" on":"")+"' data-crew='"+esc(c.code)+"'>"+esc(c.code)+"</button>"; }).join("");
+  html+="<div class='lanes' id='crewChips'>"+chips+"<button class='lane-b' id='crewAdd'>+ join / create</button></div>";
+  html+="<div class='card crewcard'><div style='display:flex;justify-content:space-between;align-items:center'>"+
+    "<div><div style='font-weight:700'>Crew</div><span class='crew-code'>"+esc(cc.code)+"</span></div>"+
     "<button class='btn' id='crewInviteBtn' style='width:auto;padding:10px 14px'>Invite</button></div>"+
-    "<div id='crewBoard' class='hint' style='text-align:left;margin-top:12px'>loading standings…</div></div>"+
-    "<div class='navlinks'><button class='navlink' id='crewLeave'>leave crew</button></div>";
-  $("crewInviteBtn").onclick=copyCrewInvite; $("crewLeave").onclick=leaveCrew;
+    "<div id='crewBoard' class='hint' style='text-align:left;margin-top:12px'>loading standings…</div></div>";
+  html+="<div class='card'><div style='font-weight:700;margin-bottom:4px'>📱 Same person, another device?</div>"+
+    "<div class='hint' style='text-align:left'>No login — open this link on your other device (or send it to yourself) to play as the SAME person across phone &amp; laptop.</div>"+
+    "<button class='btn ghost' id='deviceLinkBtn' style='margin-top:8px'>Copy my device link</button></div>";
+  html+="<div class='navlinks'><button class='navlink' id='crewAdd2'>+ another crew</button><button class='navlink' id='crewLeave'>leave "+esc(cc.code)+"</button></div>";
+  b.innerHTML=html;
+  if($("crewPlay"))$("crewPlay").onclick=function(){ JUST_JOINED=null; playLane(ST.lane||"general"); };
+  var chipNodes=b.querySelectorAll("#crewChips [data-crew]");
+  for(var i=0;i<chipNodes.length;i++){ (function(n){ n.onclick=function(){ setActiveCrew(n.getAttribute("data-crew")); JUST_JOINED=null; renderCrew(); }; })(chipNodes[i]); }
+  $("crewAdd").onclick=joinAnotherCrew; $("crewAdd2").onclick=joinAnotherCrew;
+  $("crewInviteBtn").onclick=function(){ copyCrewInvite(cc.code); };
+  $("crewLeave").onclick=function(){ leaveCrew(cc.code); };
+  $("deviceLinkBtn").onclick=copyDeviceLink;
   var board=$("crewBoard"), today=todayStr();
-  fetchCrew(today).then(function(c){
+  fetchCrew(today, cc.code).then(function(c){
     if(!c){ board.innerHTML="No standings yet — play today's set, then your crew shows up here."; return; }
     var todayRows=(c.standings||[]).map(function(s,i){return lbRow(i,s.name,s.score+"/"+(s.n||6),s.sid===ST.sid);}).join("")||"<div class='hint'>nobody's played today yet</div>";
     var wk=(c.week||[]).map(function(s,i){ if(i===0 && c.week_key){ ST.crewSeasons[c.week_key]=s.name; save(ST); } return lbRow(i,s.name,s.total,s.sid===ST.sid); }).join("")||"<div class='hint'>—</div>";
     var champ=ST.crewSeasons[weekKey(addDaysStr(today,-7))];
     board.innerHTML=(c.crew_streak?"<div style='margin-bottom:8px'>🔥 <b>"+c.crew_streak+"-day crew run</b> · 🛡️ "+(c.crew_freezes_left||0)+" freeze left this week</div>":"")+
+      (c.members?"<div class='hint' style='margin-bottom:8px'>"+c.members+" member"+(c.members>1?"s":"")+" · scores only, never the answers</div>":"")+
       (champ?"<div style='margin-bottom:8px'>🏆 last week's champ: <b>"+esc(champ)+"</b></div>":"")+
       "<div style='font-weight:700;margin:6px 0 2px'>Today</div>"+todayRows+
       "<div style='font-weight:700;margin:10px 0 2px'>This week (season standing)</div>"+wk+
       "<div class='row' style='margin-top:10px'><button class='btn ghost' id='boardShare'>Share standings</button></div>";
-    var bs=$("boardShare"); if(bs) bs.onclick=function(){ var dk=dayKey(ST.lane||"general",today); var r=(ST.days[dk]&&ST.days[dk].done)?ST.days[dk].result:{n:6,score:0,date:today}; shareCrewToken(c,r); };
+    var bs=$("boardShare"); if(bs) bs.onclick=function(){ var dk=dayKey(ST.lane||"general",today); var r=(ST.days[dk]&&ST.days[dk].done)?ST.days[dk].result:{n:6,score:0,date:today}; shareCrewToken(c,r,cc.code); };
   });
 }
 
