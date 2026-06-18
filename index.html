@@ -229,6 +229,7 @@
   <div id="homeCats"></div>
   <div id="homeCrew"></div>
   <div class="navlinks">
+    <button class="navlink hide" id="homeAccount">☁️ Save progress</button>
     <button class="navlink" id="homeArchive">📚 Past editions</button>
   </div>
 </div>
@@ -332,6 +333,7 @@ var AGG_ENDPOINT = CFG.AGG_ENDPOINT || "";          // optional: "fake that fool
 /* H-A accounts (Supabase) — OPTIONAL + defensive: if the SDK/keys aren't present (e.g. offline, or in tests),
    SB stays null and the whole app works exactly as before on the local id. Signing in only ADDS cloud sync. */
 var SB=null; try{ if(window.supabase && CFG.SUPABASE_URL && CFG.SUPABASE_ANON_KEY){ SB=window.supabase.createClient(CFG.SUPABASE_URL, CFG.SUPABASE_ANON_KEY); } }catch(e){}
+var GOOGLE_AUTH=!!CFG.GOOGLE_AUTH;   // only show "Continue with Google" once the Google OAuth client is configured in Supabase
 var ACCOUNT=null, PROFILE_SYNCED=false;   // ACCOUNT={uid,email} once signed in; PROFILE_SYNCED gates cloud WRITES until a safe read
 var $ = function(id){return document.getElementById(id);};
 var el = function(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e;};
@@ -641,6 +643,9 @@ function renderHome(){
       '<div class="cs">Compare scores, build a shared streak — no accounts</div></div><div class="go">start ›</div>';
   }
   activate(hc, openCrew, cc?("Open crew "+cc.code):"Play with your crew");
+  // discoverable account entry on the hub (sign-in lives on the crew page; this just points there)
+  var ha=$("homeAccount");
+  if(ha){ if(SB){ ha.classList.remove("hide"); ha.textContent=ACCOUNT?("☁️ "+(ACCOUNT.email||"Synced")):"☁️ Save progress"; ha.onclick=openCrew; } else ha.classList.add("hide"); }
   show("home");
 }
 function goHome(){ JUST_JOINED=null; if(qsDay()){ try{ history.replaceState(null,"",location.pathname); }catch(e){} } renderHome(); logEvent("home_view"); }  // strip a lingering ?d= so Home survives a reload
@@ -1025,7 +1030,7 @@ function accountHTML(){ if(!SB) return "";
     "<div class='hint' style='text-align:left;margin:4px 0 8px'>Sign in to keep your streak &amp; crews and play on your other devices. No password — we email you a link.</div>"+
     "<input class='fld' id='acctEmail' type='email' placeholder='you@email.com' autocomplete='email' autocapitalize='off'>"+
     "<button class='btn' id='acctEmailBtn' style='margin-top:6px'>Email me a sign-in link</button>"+
-    "<button class='btn ghost' id='acctGoogle' style='margin-top:8px'>Continue with Google</button></div>";
+    (GOOGLE_AUTH?"<button class='btn ghost' id='acctGoogle' style='margin-top:8px'>Continue with Google</button>":"")+"</div>";
 }
 function wireAccount(){ var e=$("acctEmailBtn"); if(e) e.onclick=function(){ signInEmail($("acctEmail")&&$("acctEmail").value); };
   var g=$("acctGoogle"); if(g) g.onclick=signInGoogle; var o=$("acctOut"); if(o) o.onclick=signOutAcct; }
