@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-18",
+  "edition": 2,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I drink your milkshake! I drink it up!",
+      "speaker": "There Will Be Blood (2007)",
+      "context": "Daniel Plainview (Daniel Day-Lewis) berating Eli Sunday in the bowling-alley confrontation",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "Hakuna matata.",
+      "speaker": "The Lion King (1994)",
+      "context": "Timon and Pumbaa teach Simba their carefree \"no worries\" philosophy, both as spoken dialogue and as the title song.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "A system built on rules is a system begging to be broken.",
+      "speaker": "The Matrix (1999)",
+      "context": "Morpheus explaining the constraints of the simulated world to Neo.",
+      "real": false,
+      "fake_note": "Matches Morpheus's philosophical, anti-establishment rhetoric perfectly. The subtle giveaway is that his actual teachings focus on 'bending' the rules of the Matrix, rather than the system 'begging' to be broken."
+    },
+    {
+      "id": "q4",
+      "text": "Say 'what' again. I dare you, I double dare you.",
+      "speaker": "Pulp Fiction (1994)",
+      "context": "Jules (Samuel L. Jackson) menaces Brett, a terrified young man, during the apartment confrontation.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Some men don't want a shiny medal, Master Wayne, they just want a quiet night.",
+      "speaker": "The Dark Knight (2008)",
+      "context": "Alfred Pennyworth offering counsel to a bruised Bruce Wayne in the Batbunker.",
+      "real": false,
+      "fake_note": "Perfectly mimics Alfred's paternal, weary tone and famously borrows the rhythmic 'Some men...' sentence structure, but is entirely fabricated."
+    },
+    {
+      "id": "q6",
+      "text": "The space-time continuum has no respect for a high school dance, Marty!",
+      "speaker": "Back to the Future (1985)",
+      "context": "Doc Brown frantically yelling at Marty while adjusting the DeLorean's circuitry.",
+      "real": false,
+      "fake_note": "Melds Doc's high-concept pseudo-science panic with the utterly mundane teenage stakes of the movie's third act. It sounds exactly like a line Christopher Lloyd would scream."
+    }
+  ]
+}

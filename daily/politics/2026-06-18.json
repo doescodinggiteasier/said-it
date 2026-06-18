@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-18",
+  "edition": 2,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You cannot rush caramelized onions. I tell people this all the time. They say, 'Oh, I can do it in fifteen minutes on high heat.' No, you can't. That’s just burnt onions. You have to have patience.",
+      "speaker": "Kamala Harris",
+      "context": "A casual digital video segment while cooking in her kitchen.",
+      "real": false,
+      "fake_note": "She is a genuinely avid cook who frequently gives very specific, passionate culinary advice in interviews. The subtle giveaway is that while she famously rants about washing greens and roasting turkeys, the caramelized onion rule is a fabricated pet peeve assigned to her."
+    },
+    {
+      "id": "q2",
+      "text": "I think this is the most extraordinary collection of talent, of human knowledge, that has ever been gathered together at the White House, with the possible exception of when Thomas Jefferson dined alone.",
+      "speaker": "John F. Kennedy",
+      "context": "Opening of President Kennedy's toast at a dinner honoring Western Hemisphere Nobel Prize winners, April 29, 1962 — a famously gracious, witty compliment to the assembled laureates by invoking Jefferson's solitary genius.",
+      "real": true,
+      "source": {
+        "title": "Remarks at a Dinner Honoring Nobel Prize Winners of the Western Hemisphere | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-dinner-honoring-nobel-prize-winners-the-western-hemisphere",
+        "date": "1962-04-29"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I have an ongoing battle with the Wi-Fi router at our house. I’ve read the manual, I’ve moved it to three different shelves, and I’m slowly coming to the realization that it might just be smarter than I am.",
+      "speaker": "Mitt Romney",
+      "context": "A lighthearted aside during a rotary club luncheon.",
+      "real": false,
+      "fake_note": "It matches his mild-mannered, relatable 'dad' energy and formal phrasing. The giveaway is that admitting complete technological defeat breaks slightly from his meticulously competent, highly organized executive persona."
+    },
+    {
+      "id": "q4",
+      "text": "The last time I was this high, I was trying to decide on my major.",
+      "speaker": "Barack Obama",
+      "context": "Self-deprecating joke at his final White House Correspondents' Dinner on April 30, 2016, riffing on how his approval ratings kept climbing in his last year in office ('in my final year, my approval ratings keep going up').",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at the White House Correspondents' Dinner | whitehouse.gov (Obama White House Archives)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2016/05/01/remarks-president-white-house-correspondents-dinner/",
+        "date": "2016-04-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I am extraordinarily patient, provided I get my own way in the end.",
+      "speaker": "Margaret Thatcher",
+      "context": "Self-aware, tongue-in-cheek remark by the British Prime Minister in an interview published in The Observer, 4 April 1989 (as catalogued by the Margaret Thatcher Centre's quotes page). Speaker was a UK Conservative Prime Minister.",
+      "real": true,
+      "source": {
+        "title": "Quotes - The Margaret Thatcher Centre",
+        "url": "https://www.thatchercentre.com/quotes/",
+        "date": "1989-04-04"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I'm convinced that keeping a fiddle leaf fig alive requires more diplomacy than actual legislating. I followed all the instructions, gave it the perfect amount of light, and it still dropped three leaves just to spite me.",
+      "speaker": "Alexandria Ocasio-Cortez",
+      "context": "An informal Instagram Live broadcast while repotting plants.",
+      "real": false,
+      "fake_note": "It perfectly captures her millennial vocabulary and habit of comparing mundane tasks to her congressional work. The giveaway is the phrasing 'more diplomacy than actual legislating,' which is a bit too on-the-nose for a casual plant update."
+    }
+  ]
+}

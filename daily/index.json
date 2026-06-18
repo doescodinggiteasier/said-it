@@ -3,24 +3,30 @@
   "days": [
     "2026-06-12",
     "2026-06-13",
-    "2026-06-17"
+    "2026-06-17",
+    "2026-06-18"
   ],
   "note": "Manifest of published editions. The app loads daily/<local-date>.json; if that date isn't published yet, it falls back to the latest entry here.",
   "categories": {
     "sports": [
-      "2026-06-17"
+      "2026-06-17",
+      "2026-06-18"
     ],
     "music": [
-      "2026-06-17"
+      "2026-06-17",
+      "2026-06-18"
     ],
     "politics": [
-      "2026-06-17"
+      "2026-06-17",
+      "2026-06-18"
     ],
     "movies": [
-      "2026-06-17"
+      "2026-06-17",
+      "2026-06-18"
     ],
     "nsfw": [
-      "2026-06-17"
+      "2026-06-17",
+      "2026-06-18"
     ]
   }
 }

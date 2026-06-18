@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-18",
+  "edition": 2,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "What the heck took Nike so long?",
+      "speaker": "Dan Wetzel",
+      "context": "Commentary on the release of Caitlin Clark's signature shoe.",
+      "real": true,
+      "source": {
+        "title": "Sports — Wetzel: Caitlin Clark's shoe is here. What took Ni...",
+        "url": "https://www.espn.com/wnba/story/_/id/49033131/caitlin-clark-shoe-here-took-nike-long",
+        "date": "2026-06-18"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Listen, everybody wants to shoot thirty-footers now. It's great when they go in, but when you're 2-for-11 and we're down twelve, I need you to just go get a layup, man. It's not math, it's basketball.",
+      "speaker": "Charles Barkley",
+      "context": "Inside the NBA halftime show",
+      "real": false,
+      "fake_note": "Perfectly channels his frequent annoyance with analytics and modern three-point volume, but is just slightly too cleanly articulated without his usual mid-sentence stumbles."
+    },
+    {
+      "id": "q3",
+      "text": "You can spend all week looking for the shortcut, but eventually you gotta run the ball in the mud. We don't run from the mud. We pack an extra pair of cleats.",
+      "speaker": "Mike Tomlin",
+      "context": "Tuesday NFL press conference",
+      "real": false,
+      "fake_note": "Captures his classic 'Tomlinisms' and metaphor-heavy approach to gritty football, but it's a bit too perfectly distilled and lacks the specific opponent context he usually anchors these quotes to."
+    },
+    {
+      "id": "q4",
+      "text": "Happy? Happy is not a word that we think about in the game. You gotta think of something different. Happy, I don't know how to judge happy. We're in the middle of a contest. Nobody's happy.",
+      "speaker": "Gregg Popovich",
+      "context": "San Antonio Spurs head coach Gregg Popovich's deadpan reply during a mid-game sideline interview when TNT's David Aldridge asked whether he was happy with his team's shot selection against the Thunder.",
+      "real": true,
+      "source": {
+        "title": "Gregg Popovich rips reporter for asking if he's 'happy' about shot selection (Video)",
+        "url": "https://larrybrownsports.com/basketball/gregg-popovich-rips-reporter-happy/160946",
+        "date": "2012-11-02"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I had a cheeseburger and went to bed.",
+      "speaker": "Andy Reid",
+      "context": "Kansas City Chiefs head coach Andy Reid's reply, with a smile, when asked at his press conference how he celebrated the Chiefs' 35-24 AFC Championship win over the Tennessee Titans that sent them to Super Bowl LIV.",
+      "real": true,
+      "source": {
+        "title": "Andy Reid on how he celebrated Chiefs win: 'I had a cheeseburger and went to bed'",
+        "url": "https://www.nfl.com/videos/andy-reid-on-how-he-celebrated-chiefs-win-i-had-a-cheeseburger-and-went-to-bed",
+        "date": "2020-01-20"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "In football, you can have the perfect plan on the tactic board, but if the boys do not bring the fire, the board is just a piece of plastic. The magic is in the running.",
+      "speaker": "Jurgen Klopp",
+      "context": "Post-match interview",
+      "real": false,
+      "fake_note": "Mirrors his romanticized, emotion-driven view of the game and slight German syntax ('the boys', 'tactic board'), but it's a completely fabricated metaphor."
+    }
+  ]
+}

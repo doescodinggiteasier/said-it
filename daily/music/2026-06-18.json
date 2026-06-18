@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-18",
+  "edition": 2,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You don't arrange the horns, man, you arrange the air around them. Frank knew that. Miles knew it. If you stack too much brass on a track, you're just suffocating the groove.",
+      "speaker": "Quincy Jones",
+      "context": "Archival documentary interview outtake",
+      "real": false,
+      "fake_note": "Features Quincy's trademark casual name-dropping of jazz legends (Sinatra, Davis) and his deep, physical understanding of acoustic space and musical 'groove'."
+    },
+    {
+      "id": "q2",
+      "text": "If you give a guitar player an endless pedalboard, they'll spend three hours trying to sound like a synthesizer. Give them a broken amp and one string, and they'll have to bleed a little bit just to make a point.",
+      "speaker": "Jack White",
+      "context": "Magazine interview on analog recording equipment",
+      "real": false,
+      "fake_note": "Reflects his well-documented obsession with musical friction, artificial limitations, and his disdain for over-digitized music production."
+    },
+    {
+      "id": "q3",
+      "text": "The City’s Asking for You",
+      "speaker": "OG Anunoby",
+      "context": "Speaking to Alicia Keys ahead of a Knicks ceremony",
+      "real": true,
+      "source": {
+        "title": "Music — OG Anunoby Tells Alicia Keys ‘The City’s Asking for You’ Ahead of Knicks Ceremon",
+        "url": "https://www.rollingstone.com/music/music-news/alicia-keys-perform-new-york-knicks-city-hall-ceremony-1235579698/",
+        "date": "2026-06-18"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I've always treated the bridge as the place where you finally admit the thing you've been avoiding for the first two choruses. It's the musical equivalent of a 2 a.m. text message.",
+      "speaker": "Taylor Swift",
+      "context": "Virtual songwriting masterclass",
+      "real": false,
+      "fake_note": "She constantly discusses her deep love for writing bridges and uses highly relatable, modern-romantic metaphors. Swifties would easily believe she dropped this exact '2 a.m. text' analogy."
+    },
+    {
+      "id": "q5",
+      "text": "If I'm playing and it's a Chinese driver, He'll turn around like, 'That reminds me of my country!' Or if it's a Japanese driver… or if it's an African. I'm playing the same flute, but every nationality of driver will turn around and tell me it reminds them of their country.",
+      "speaker": "André 3000",
+      "context": "The Outkast rapper, on Questlove's 'Questlove Supreme' podcast, describing how he'd play his flute in the back of Ubers and how drivers of every nationality told him it reminded them of their home country",
+      "real": true,
+      "source": {
+        "title": "How Did André 3000 Learn To Play Flute?",
+        "url": "https://uproxx.com/music/how-did-andre-3000-learn-to-play-flute/",
+        "date": "2023-12-13"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "It's not about how many times you get rejected ... it's about how many times you stand up and are brave and you keep on going.",
+      "speaker": "Lady Gaga",
+      "context": "Accepting the Oscar for Best Original Song ('Shallow' from 'A Star Is Born') at the 2019 Academy Awards, Lady Gaga delivered an emotional, encouraging acceptance speech about perseverance and not giving up on your dreams.",
+      "real": true,
+      "source": {
+        "title": "Lady Gaga's 2019 Oscars Acceptance Speech: \"If You Have A Dream, Fight For It\"",
+        "url": "https://www.grammy.com/news/lady-gagas-2019-oscars-acceptance-speech-if-you-have-dream-fight-it",
+        "date": "2019-02-25"
+      }
+    }
+  ]
+}

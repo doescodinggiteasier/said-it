@@ -92,7 +92,7 @@
   {
     "text": "One does not simply walk into Mordor.",
     "speaker": "The Lord of the Rings: The Fellowship of the Ring (2001)",
-    "context": "Boromir (Sean Bean) arguing against the plan to destroy the Ring, at the Council of Elrond",
+    "context": "Boromir (Sean Bean) arguing against the plan to destroy the Ring",
     "real": true
   },
   {
@@ -110,7 +110,7 @@
   {
     "text": "I drink your milkshake! I drink it up!",
     "speaker": "There Will Be Blood (2007)",
-    "context": "Daniel Plainview (Daniel Day-Lewis) berating Eli Sunday in the bowling-alley confrontation, using a milkshake as a metaphor for draining oil from beneath neighboring land",
+    "context": "Daniel Plainview (Daniel Day-Lewis) berating Eli Sunday in the bowling-alley confrontation",
     "real": true
   },
   {
@@ -152,7 +152,7 @@
   {
     "text": "Ogres are like onions.",
     "speaker": "Shrek (2001)",
-    "context": "Shrek explains to Donkey that ogres have layers, like onions",
+    "context": "Shrek explains to Donkey that ogres have layers",
     "real": true
   },
   {

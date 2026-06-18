@@ -118,9 +118,10 @@ REAL_SYS = ("You surface CANDIDATE real quotes from recent news items for a 'rea
             "team'. The text must be words that PERSON actually said (a real quotation), not the article's "
             "own description. Skip anything political, tragic, about death/crime, or defamation-adjacent. "
             "Output STRICT JSON only.")
-REAL_TMPL = """From these news snippets, extract up to {k} VERBATIM direct quotes that would be fun in a
-"did they really say that?" game (surprising, funny, oddly specific). Copy the quoted words EXACTLY as
-they appear — do not fix grammar, do not paraphrase, do not merge sentences.
+REAL_TMPL = """From these news snippets, extract up to {k} VERBATIM direct quotes that are genuinely
+ENTERTAINING to read — funny, witty, insightful, wise, or surprising — the kind of line people enjoy
+regardless of whether it's real or fake. SKIP mundane, dull, procedural news soundbites. Copy the quoted
+words EXACTLY as they appear — do not fix grammar, do not paraphrase, do not merge sentences.
 
 HARD RULES:
 - The speaker must be a SPECIFIC NAMED PERSON (a real human's name). Reject quotes attributed to
@@ -151,7 +152,8 @@ Each quote MUST:
 - stay WITHIN plausible reality — a thing they really COULD have said. NO dead giveaways: avoid oddly specific
   numbers, absurd exaggerations, or winking details. (Bad: "I spent forty hours studying long-snapper spin rates."
   Better: "I've definitely lost sleep over a long snapper's technique." Dial it to where a fan would HESITATE.)
-- be interesting/funny in a SUBTLE, true-to-character way — not a caricature or an obvious joke;
+- be genuinely ENTERTAINING — funny, insightful or wise, a pleasure to read either way — in a SUBTLE,
+  true-to-character way (not a caricature or an obvious joke);
 - be HARMLESS (no invented crime, scandal, slur, medical/financial claim). Avoid politics entirely.
 Use DIFFERENT, varied people — NEVER repeat a speaker, and mix the kinds of people you pick.
 The bar: a real fan of that person would genuinely struggle to tell it's fake.
@@ -386,9 +388,20 @@ def _norm(s):
     return re.sub(r"[^a-z0-9 ]+", " ", re.sub(r"\s+", " ", s)).strip()
 
 
+def _spk_str(speaker):
+    """Canonical speaker key for de-dup. People → first+last only, so naming variants collapse
+    ('John F. Kennedy' == 'John Kennedy' == 'JFK'→'jfk' single-token). Films (a year in the name) → full title,
+    since the year disambiguates ('The Terminator (1984)' vs 'Terminator 2 (1991)')."""
+    n = _norm(speaker)
+    if re.search(r"\b(18|19|20)\d{2}\b", n):    # contains a year → treat as a film title, keep full
+        return n
+    toks = n.split()
+    return (toks[0] + " " + toks[-1]) if len(toks) >= 2 else n
+
+
 def _spk(q):
-    """Normalized speaker key for de-duplication (so no two of the same person in one edition)."""
-    return _norm(q.get("speaker", ""))
+    """Canonical speaker key for an item (no two of the same person — or naming-variant — in one edition)."""
+    return _spk_str(q.get("speaker", ""))
 
 
 def quote_is_verbatim(quote, corpus):
@@ -600,7 +613,7 @@ def load_recent_speakers(cat, date, days=21):
 
 def save_recent_speakers(d, edition, date, cat):
     for q in edition["quotes"]:
-        s = _norm(q.get("speaker", ""))
+        s = _spk_str(q.get("speaker", ""))
         if s:
             d[s] = date
     json.dump(d, open(speakers_path(cat), "w"), indent=0)
@@ -617,7 +630,7 @@ def today_speakers(date, exclude_cat):
         except Exception:  # noqa: BLE001
             continue
         for q in ed.get("quotes", []):
-            s = _norm(q.get("speaker", ""))
+            s = _spk_str(q.get("speaker", ""))
             if s:
                 spk.add(s)
     return spk

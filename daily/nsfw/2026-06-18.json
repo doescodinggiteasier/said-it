@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-18",
+  "edition": 2,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It's quite valuable to have the courage and the confidence to say, 'No, fuck off, leave me alone, thank you very much.'",
+      "speaker": "Helen Mirren",
+      "context": "In a 2013 Daily Mail interview, the Oscar-winning actress said that if she'd had a daughter, \"fuck off\" is the first phrase she would have taught her, to give her the confidence to set boundaries.",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "Fatherhood is basically just whispering 'what the absolute fuck' under your breath while scraping unidentified crusty shit off a coffee table.",
+      "speaker": "Ryan Reynolds",
+      "context": "A viral tweet from 2021",
+      "real": false,
+      "fake_note": "This perfectly mirrors Reynolds' sarcastic, slightly crude online persona regarding parenting, but you won't find this exact tweet anywhere on his actual timeline."
+    },
+    {
+      "id": "q3",
+      "text": "A couple nights ago, I was licking jelly off my boyfriend's penis. And I thought, \"Oh my God — I'm turning into my mother!\"",
+      "speaker": "Sarah Silverman",
+      "context": "From her 2005 stand-up special \"Sarah Silverman: Jesus Is Magic.\" Her signature sweet-faced delivery lands a graphic sex image as the setup, with the punchline being the realization she's inheriting her mother's habits.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "I don't give a motherfuck about your truffle aioli. Just hand me the damn Heinz ketchup before I lose my mind and flip this table.",
+      "speaker": "Samuel L. Jackson",
+      "context": "Rumored outburst at a press junket lunch",
+      "real": false,
+      "fake_note": "Jackson's legendary affinity for the word 'motherfucker' makes this highly believable, but he never actually went on a viral tirade about artisanal condiments."
+    },
+    {
+      "id": "q5",
+      "text": "Whoever invented the fitted sheet is a sick motherfucker. I just spent twenty minutes wrestling my mattress and this bitch still looks like a dirty diaper.",
+      "speaker": "Snoop Dogg",
+      "context": "A late-night gaming Twitch stream",
+      "real": false,
+      "fake_note": "Snoop's laid-back but profane observations on mundane, everyday struggles are a staple of his social media, though this specific domestic rant is fabricated."
+    },
+    {
+      "id": "q6",
+      "text": "I firmly believe that if I didn't have to take shits, I’d be immortal. It's the only pathetic biological function keeping me tethered to this hellscape.",
+      "speaker": "Aubrey Plaza",
+      "context": "A late-night talk show interview",
+      "real": false,
+      "fake_note": "This captures Plaza's signature deadpan, slightly morbid, and blunt humor perfectly, but she never shared this philosophical take on digestion on air."
+    }
+  ]
+}
