@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-19",
+  "edition": 3,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I didn't have any plates or silverware or anything, and I just started eating it with my hands.",
+      "speaker": "John Madden",
+      "context": "Beloved NFL coach-turned-broadcaster John Madden recounting his very first encounter with a turducken (a chicken inside a duck inside a turkey), brought to his broadcast booth during a Saints game.",
+      "real": true,
+      "source": {
+        "title": "John Madden made turducken a Thanksgiving football tradition (NOLA.com / The Times-Picayune)",
+        "url": "https://www.nola.com/entertainment_life/eat-drink/john-madden-made-turducken-a-thanksgiving-football-tradition/article_ae8ca8ac-ab55-11ef-8fb0-135b1f214168.html",
+        "date": "2024-11-27"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Golf is the only sport where you can be absolutely furious at yourself and still have to shake someone's hand and mean it thirty seconds later.",
+      "speaker": "Rory McIlroy",
+      "context": "Casual interview on a golf podcast, discussing the mental side of the game",
+      "real": false,
+      "fake_note": "Rory frequently discusses the psychological demands of golf and has a self-deprecating wit that fits this observation perfectly. The giveaway is the neatness of the punchline — Rory's real quotes tend to unravel a bit more naturally, less aphorism-shaped than this."
+    },
+    {
+      "id": "q3",
+      "text": "My grandmother used to say that the ocean doesn't apologize for being deep. I think about that every time someone tells me I'm too intense.",
+      "speaker": "Simone Biles",
+      "context": "Feature profile interview for a magazine, discussing her competitive drive",
+      "real": false,
+      "fake_note": "Simone often credits her family — particularly her parents and grandparents — for grounding wisdom, and she's spoken openly about being labeled 'too much.' The giveaway is the grandmother attribution: Simone's real family references tend to center on her parents and aunt, not a grandmother figure."
+    },
+    {
+      "id": "q4",
+      "text": "When I was coming up, nobody handed you a blueprint. You watched, you failed, and eventually you figured out which failures were worth repeating.",
+      "speaker": "Wayne Gretzky",
+      "context": "Speaking at a hockey development camp for young players",
+      "real": false,
+      "fake_note": "Gretzky frequently mentors young players and speaks about learning through observation and repetition, themes consistent throughout his public life. The giveaway is 'failures worth repeating' — a clever inversion Gretzky might appreciate, but his real quotes about failure are more straightforward and less epigram-polished."
+    },
+    {
+      "id": "q5",
+      "text": "I've played with quarterbacks who made every single read perfect and couldn't win a game, and I've played with guys who had no business being on the field and found a way. Football has never been as clean as the analysts want it to be.",
+      "speaker": "Larry Fitzgerald",
+      "context": "Appearance on a sports talk radio program after retiring",
+      "real": false,
+      "fake_note": "Fitzgerald is known for his thoughtful, measured perspective on the game and his respect for the complexity of football, honed over a long career with many different quarterbacks. The subtle giveaway is 'no business being on the field' — Fitzgerald's real speech is more diplomatically phrased, avoiding even mild dismissals of fellow players."
+    },
+    {
+      "id": "q6",
+      "text": "What Carew does with a football, I can do with an orange.",
+      "speaker": "Zlatan Ibrahimovic",
+      "context": "Swedish soccer star's cocky teenage retort to fellow striker John Carew, who had dismissed Zlatan's tricks and flicks as pointless. Said in the Norwegian tabloid VG in April 2002. A classic surprising, deadpan brag.",
+      "real": true,
+      "source": {
+        "title": "Zlatan Ibrahimovic - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Zlatan_Ibrahimovi%C4%87",
+        "date": "2002-04-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-19",
+  "edition": 3,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Be the ball.",
+      "speaker": "Caddyshack (1980)",
+      "context": "Ty Webb (Chevy Chase) giving zen golf advice to caddy Danny Noonan during their night-golf lesson",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "You want the truth? The truth doesn't care what you want.",
+      "speaker": "A Few Good Men (1992)",
+      "context": "Col. Jessup during the courtroom confrontation",
+      "real": false,
+      "fake_note": "Eerily close to Jessup's actual blustering courtroom monologue style. Subtle giveaway: Jessup's real lines are more self-aggrandizing; this is slightly too philosophical and detached."
+    },
+    {
+      "id": "q3",
+      "text": "Every scar you carry is a map of somewhere you survived.",
+      "speaker": "Rocky (1976)",
+      "context": "Mickey to Rocky in the gym",
+      "real": false,
+      "fake_note": "Matches Mickey's gruff-but-poetic trainer wisdom and the film's working-class grit. Subtle giveaway: slightly too lyrical; Mickey's real dialogue is more blunt and specific."
+    },
+    {
+      "id": "q4",
+      "text": "Houston, we have a problem.",
+      "speaker": "Apollo 13 (1995)",
+      "context": "Aboard the damaged spacecraft, the crew reports the malfunction to mission control. The line is spoken by Jim Lovell (Tom Hanks), echoing Jack Swigert; the film's \"we have a problem\" differs from the real transmission's \"we've had a problem.\"",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "I'm kind of a big deal.",
+      "speaker": "Anchorman: The Legend of Ron Burgundy (2004)",
+      "context": "Ron Burgundy (Will Ferrell) boasting to Veronica Corningstone about his fame",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "I've seen what hope does to a man. It's crueler than despair.",
+      "speaker": "The Shawshank Redemption (1994)",
+      "context": "Red in voiceover, reflecting on prison life",
+      "real": false,
+      "fake_note": "Perfectly captures Red's weary, Morgan Freeman voiceover cadence and the film's themes. Subtle giveaway: the film ultimately argues the opposite — this inverts the message just enough."
+    }
+  ]
+}

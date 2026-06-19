@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-19",
+  "edition": 5,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The last time I was this high, I was trying to decide on my major.",
+      "speaker": "Barack Obama",
+      "context": "Self-deprecating joke at his final White House Correspondents' Dinner on April 30, 2016, riffing on how his approval ratings kept climbing in his last year in office ('in my final year, my approval ratings keep going up').",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at the White House Correspondents' Dinner | whitehouse.gov (Obama White House Archives)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2016/05/01/remarks-president-white-house-correspondents-dinner/",
+        "date": "2016-04-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "President Obama and Michelle, you have exemplified that ideal with lives that have served us all with heart and commitment and love and compassion",
+      "speaker": "Bruce Springsteen",
+      "context": "Opening of the Obama Presidential Center",
+      "real": true,
+      "source": {
+        "title": "Music — See Bruce Springsteen Sing ‘Land of Hope and Dreams’ at Opening of the Obama Pre",
+        "url": "https://www.rollingstone.com/music/music-news/bruce-springsteen-performance-obama-presidential-center-1235580393/",
+        "date": "2026-06-19"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "There's a version of AI that genuinely terrifies me, and it's not the dramatic one everyone makes movies about. It's the boring version — the one that's just persuasive enough to make people stop checking.",
+      "speaker": "Sam Altman",
+      "context": "Panel discussion at a technology conference, 2023",
+      "real": false,
+      "fake_note": "Altman frequently discusses AI risk and misinformation in measured, non-alarmist tones, and this phrasing echoes his public nuance on the subject. The subtle giveaway is 'stop checking' — Altman tends to use more precise language like 'verification' or 'critical evaluation' in actual recorded remarks."
+    },
+    {
+      "id": "q4",
+      "text": "I've said this before and nobody believes me — the best meal I ever had was at a truck stop in New Mexico. Green chile cheeseburger, 2 a.m., middle of nowhere. Nothing since has come close.",
+      "speaker": "Anthony Bourdain",
+      "context": "From a Reddit AMA, circa 2016",
+      "real": false,
+      "fake_note": "Bourdain famously championed humble, roadside food over fine dining and had deep affection for the American Southwest's green chile culture — this fits his ethos perfectly. The giveaway is that Bourdain's real truck-stop love stories were usually more specific about the people he met, not just the food."
+    },
+    {
+      "id": "q5",
+      "text": "I do not have a five-year plan. I do not have a moonshot. I'm looking at the ground, and I want to fix the pothole that's right in front of me before I go in.",
+      "speaker": "Linus Torvalds",
+      "context": "Interviewed by Chris Anderson onstage at TED2016, contrasting himself with visionaries (he also says \"I am not a visionary.",
+      "real": true,
+      "source": {
+        "title": "The quotable Linus Torvalds, live onstage at TED | TED Blog",
+        "url": "https://blog.ted.com/the-quotable-linus-torvalds-live-onstage-at-ted/",
+        "date": "2016-02-17"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what I'm thinking about before a big serve and the honest answer is — nothing. That's the whole job. You spend years filling your head with technique so that when it actually matters, there's nothing left to think.",
+      "speaker": "Serena Williams",
+      "context": "Interviewed on a tennis podcast discussing mental preparation, circa 2022",
+      "real": false,
+      "fake_note": "Serena has spoken extensively about the mental game and achieving flow state under pressure — this mirrors her documented philosophy closely. The subtle giveaway is the slightly too-tidy paradox, which is more polished than her typically direct, personal anecdotes."
+    }
+  ]
+}

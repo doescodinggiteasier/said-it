@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-19",
+  "edition": 3,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've been doing this for thirty years. Thirty. Years. If you're still asking me to explain my process in a press junket, I will absolutely walk out of this room and nobody will stop me.",
+      "speaker": "Daniel Day-Lewis",
+      "context": "Alleged off-the-record exchange with a journalist during a film promotional tour",
+      "real": false,
+      "fake_note": "Fits his intensely private, serious reputation. Subtle giveaway: Day-Lewis rarely does press junkets at all, making this scenario slightly implausible."
+    },
+    {
+      "id": "q2",
+      "text": "Over the past forty years I've been loaded on booze, coke, acid, Quaaludes, glue, cough mixture, heroin, Rohypnol, Klonopin, Vicodin, and too many other heavy-duty substances to list in this footnote. On more than a few occasions I was on all of these at the same time.",
+      "speaker": "Ozzy Osbourne",
+      "context": "From a footnote in his 2010 autobiography 'I Am Ozzy' (with Chris Ayres), cataloguing four decades of his own substance abuse.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "Nobody tells me what's funny. I've been telling people what's funny since before some of these writers were born, and I will continue to do that until I physically cannot, which won't happen.",
+      "speaker": "Jerry Seinfeld",
+      "context": "Behind-the-scenes remarks on a comedy special set, reported by a crew member",
+      "real": false,
+      "fake_note": "Captures Seinfeld's known confidence in his own comedic authority. Subtle giveaway: 'which won't happen' is slightly too cocky for his usual measured self-assuredness."
+    },
+    {
+      "id": "q4",
+      "text": "Twitter was a goddamn mess before I got here and everyone knows it. I'm just the guy willing to say it out loud and also, you know, own the thing.",
+      "speaker": "Elon Musk",
+      "context": "Casual remarks during an X Spaces session, 2023",
+      "real": false,
+      "fake_note": "Fits Musk's combative, self-aggrandizing public persona on X. Subtle giveaway: he rarely says 'everyone knows it' so plainly — he'd usually add a meme reference."
+    },
+    {
+      "id": "q5",
+      "text": "You want to know what the secret is? There's no secret. You just work your ass off and then people who didn't work their ass off get pissed about it. That's the whole story.",
+      "speaker": "Dwayne Johnson",
+      "context": "Instagram Live Q&A session, 2022",
+      "real": false,
+      "fake_note": "Fits his well-known work-ethic preaching and direct motivational style. Subtle giveaway: Johnson is usually slightly more gracious and less dismissive in public."
+    },
+    {
+      "id": "q6",
+      "text": "There are 400,000 words in the English language, and there are seven of them you can't say on television. What a ratio that is. 399,993 to 7. They must really be bad. Shit, piss, fuck, cunt, cocksucker, motherfucker, and tits.",
+      "speaker": "George Carlin",
+      "context": "Carlin's landmark \"Seven Words You Can Never Say on Television\" routine from his 1972 album Class Clown, listing the broadcast-banned words verbatim and reveling in saying them all out loud.",
+      "real": true
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-19",
+  "edition": 3,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I am the man who accompanied Jacqueline Kennedy to Paris, and I have enjoyed it.",
+      "speaker": "John F. Kennedy",
+      "context": "Self-deprecating opening line at a press luncheon at the Palais de Chaillot in Paris on June 2, 1961, during a state visit to France.",
+      "real": true,
+      "source": {
+        "title": "Remarks and Question and Answer Period at the Press Luncheon in Paris | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-and-question-and-answer-period-the-press-luncheon-paris",
+        "date": "1961-06-02"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've been in enough budget meetings to know that the phrase 'we'll circle back on that' is Washington's most expensive sentence.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks at a Kentucky business roundtable, 2023",
+      "real": false,
+      "fake_note": "McConnell is known for dry, procedural humor about Washington dysfunction, and budget process jokes fit his Senate Finance background perfectly. The subtle giveaway is that McConnell rarely offers self-deprecating institutional jokes this quotable — his wit tends to be more guarded."
+    },
+    {
+      "id": "q3",
+      "text": "I've now been in 57 states? I think one left to go.",
+      "speaker": "Barack Obama",
+      "context": "Then a Democratic U.S. Senator from Illinois campaigning for president, Obama misspoke at a May 9, 2008 event in Beaverton, Oregon, after a long stretch of travel (he meant 47).",
+      "real": true,
+      "source": {
+        "title": "Obama's 'Bumbles' - FactCheck.org",
+        "url": "https://www.factcheck.org/2011/06/obamas-bumbles/",
+        "date": "2008-05-09"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My grandmother used to say you can tell everything about a person by how they treat a waiter and how they handle a lost luggage claim. She was right on both counts.",
+      "speaker": "Pete Buttigieg",
+      "context": "Interview with a midwest regional newspaper, 2024",
+      "real": false,
+      "fake_note": "Buttigieg frequently invokes his grandmother and Midwestern values, and transportation-adjacent anecdotes fit his portfolio perfectly. The giveaway is that his real grandmother references tend to be more substantive and policy-linked rather than this tidy a parable."
+    },
+    {
+      "id": "q5",
+      "text": "I will say this about C-SPAN — it is the only place on television where falling asleep is considered a sign of respect for the process.",
+      "speaker": "Nancy Pelosi",
+      "context": "Remarks at a Democratic fundraiser dinner, Washington D.C., 2022",
+      "real": false,
+      "fake_note": "Pelosi has a well-documented dry wit and is known to make self-aware jokes about Congress's public image. The subtle tell is that Pelosi rarely punches at the institution she spent decades leading — her real humor tends to be sharper and more directional."
+    },
+    {
+      "id": "q6",
+      "text": "They misunderestimated me.",
+      "speaker": "George W. Bush",
+      "context": "George W. Bush, then the sitting Republican Governor of Texas and a presidential candidate, coined this signature malapropism on Nov. 6, 2000 in Bentonville, Arkansas. A classic, self-aimed, innocuous Bushism with no target or controversy.",
+      "real": true,
+      "source": {
+        "title": "Bushism - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Bushism",
+        "date": "2000-11-06"
+      }
+    }
+  ]
+}

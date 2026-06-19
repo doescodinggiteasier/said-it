@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-19",
+  "edition": 3,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The kick drum is the heartbeat. If that isn't right, nothing else matters. I've scrapped full sessions over a kick drum.",
+      "speaker": "Questlove",
+      "context": "Podcast interview on production philosophy, circa 2022",
+      "real": false,
+      "fake_note": "Questlove is deeply documented talking about the primacy of rhythm and obsessive studio perfectionism. The phrasing is casual and specific in exactly his way. The tiny tell is 'scrapped full sessions' — he's meticulous but rarely describes wholesale abandonment."
+    },
+    {
+      "id": "q2",
+      "text": "it never ceases to amaze me how pain can manifest into the hardest and most euphoric sonics",
+      "speaker": "FKA twigs",
+      "context": "Commenting on new electro song featuring Lil Yachty",
+      "real": true,
+      "source": {
+        "title": "Music — Listen to FKA twigs’ New Electro Song Featuring Lil Yachty",
+        "url": "https://pitchfork.com/news/fka-twigs-lil-yachty-on-your-mind/",
+        "date": "2026-06-19"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I used to think I needed to understand every song I sang. Now I think understanding gets in the way sometimes. You just have to feel where the lyric wants to land.",
+      "speaker": "Alicia Keys",
+      "context": "Interview discussing her vocal approach, promoting an album",
+      "real": false,
+      "fake_note": "Keys frequently speaks about music as an emotional and intuitive process, and this phrasing tracks with her documented interviews. The giveaway is the slight self-contradiction — she's also well known for being a deeply analytical and classically trained musician."
+    },
+    {
+      "id": "q4",
+      "text": "Country radio treated me like I was a guest in my own house for a long time. You just keep writing until they can't ignore the song anymore.",
+      "speaker": "Kacey Musgraves",
+      "context": "Interview with NPR Music on the difficulty of fitting into country's mainstream",
+      "real": false,
+      "fake_note": "Musgraves has extensively discussed feeling like an outsider in Nashville, and the 'house' metaphor feels natural to her poetic phrasing style. The giveaway is the slightly defiant tone — she's more likely to express this with wry humor than quiet persistence."
+    },
+    {
+      "id": "q5",
+      "text": "Y'all can't read this, can you?",
+      "speaker": "Stevie Wonder",
+      "context": "Presenting Song of the Year at the 2016 Grammy Awards (alongside Pentatonix), the blind musician held up the winner's envelope, which was written in Braille, and playfully teased his fellow presenters and the audience.",
+      "real": true,
+      "source": {
+        "title": "Stevie Wonder Charms GRAMMYs Audience With Braille Joke, Important Message",
+        "url": "https://www.etonline.com/awards/grammys/182416_stevie_wonder_charms_grammys_audience_with_braille_joke_important_message",
+        "date": "2016-02-15"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I have a credit on the back of the album that says, 'Nails by Dolly!'",
+      "speaker": "Dolly Parton",
+      "context": "Dolly Parton explaining that she composed and partly performed the percussive 'typewriter' rhythm of '9 to 5' by clacking her long acrylic fingernails together — and that the album '9 to 5 and Odd Jobs' literally credits 'Nails by Dolly.'",
+      "real": true,
+      "source": {
+        "title": "“I have a credit on the back of the album that says, ‘Nails by Dolly!’” Dolly Parton on the hit song she wrote without a",
+        "url": "https://www.guitarplayer.com/music/albums-singles/i-have-a-credit-on-the-back-of-the-album-that-says-nails-by-dolly-dolly-parton-on-the-award-winning-hit-song-she-wrote-without-a-guitar-using-only-her-fingernails",
+        "date": "2024-01-01"
+      }
+    }
+  ]
+}
