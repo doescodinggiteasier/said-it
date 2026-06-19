@@ -4,33 +4,51 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Said It? — real or fake, daily</title>
-<meta name="description" content="Six quotes from this week. Some are real. Some are AI fakes. Spot them. New set every day." />
-<meta name="theme-color" content="#fff1f2" />
+<meta name="description" content="Six quotes from this week. Some are real. Some are made up. Spot them. New set every day." />
+<meta name="theme-color" content="#F7F8FC" />
 <!-- Open Graph: spoiler-free, so a shared link in a group chat reads well -->
 <meta property="og:title" content="Said It? — real or fake, daily" />
-<meta property="og:description" content="6 quotes from this week. Some real, some AI fakes. How many can you catch?" />
+<meta property="og:description" content="6 quotes from this week. Some real, some made up. How many can you catch?" />
 <meta property="og:type" content="website" />
+<!-- Bright redesign: one type family (Plus Jakarta Sans) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" id="favicon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 112 112'%3E%3Crect width='112' height='112' rx='26' fill='%23EEF1FE'/%3E%3C/svg%3E" />
 <style>
   :root{
-    --bg:#fff6ef;
+    /* legacy tokens — still drive the not-yet-rebuilt intro/play/reveal/crew screens (later phases) */
+    --bg:#F7F8FC;
     --grad:linear-gradient(165deg,#fff1f2 0%,#fff7ed 42%,#eef4ff 100%);
     --panel:#ffffff; --panel2:#f5f3fb; --line:#ece7f4;
-    --ink:#23202e; --mut:#6b6577; --dim:#a39cb1;
-    --real:#10a36a; --fake:#ef4d5b; --gold:#f59e0b; --accent:#7c5cff;
-    --good:#10a36a; --bad:#ef4d5b;
+    --mut:#6b6577; --dim:#a39cb1;
+    --good:#16B981; --bad:#FA5252; --gold:#f59e0b; --accent:#4C6EF5;  /* accent re-pointed to the new primary blue so legacy chrome (archive/account) stays coherent */
     --r:16px; --shadow:0 6px 22px rgba(70,45,130,.10), 0 1px 3px rgba(0,0,0,.04);
+    /* ---- Bright redesign tokens (single source of truth for the new UI) ---- */
+    --primary:#4C6EF5; --primary-dark:#3B5BDB; --primary-soft:#EEF1FE; --primary-shadow:rgba(76,110,245,.5);
+    --mint:#16B981; --fake:#FA5252; --real:#16B981; --amber:#FBA94C; --purple:#7048E8;
+    --amber-text:#C76A09;   /* AA-safe amber for TEXT (the #FBA94C fill fails contrast as text) */
+    --canvas:#F7F8FC; --card:#FFFFFF;
+    --ink:#23253A; --ink2:#5B6079; --ink3:#6B6F8C;   /* muted text — darkened from #9499B5 to clear WCAG AA (4.9:1 on white) */
+    --hair:#E6E8F0; --track:#EFF0F6;
+    --shadow-card:0 5px 16px -12px rgba(40,50,90,.4);
+    --shadow-raised:0 8px 22px -14px var(--primary-shadow);
   }
-  *{box-sizing:border-box}
-  html{background:var(--grad);background-attachment:fixed;min-height:100%}
-  body{margin:0 auto;background:transparent;color:var(--ink);
-    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  /* coral is the one-token alt theme — flip body.theme-coral; blue is the default/lead */
+  body.theme-coral{ --primary:#FF6B5C; --primary-dark:#EF4F3E; --primary-soft:#FFF0ED; --primary-shadow:rgba(255,107,92,.5); }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{background:var(--canvas);min-height:100%}
+  body{margin:0 auto;background:var(--canvas);color:var(--ink);
+    font:15px/1.5 'Plus Jakarta Sans',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     -webkit-text-size-adjust:100%;
-    padding:0 14px env(safe-area-inset-bottom);max-width:560px;min-height:100vh}
-  header{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:16px 2px 6px}
-  .logo{font-weight:800;font-size:22px;letter-spacing:-.02em;color:var(--ink)}
-  .logo b{color:var(--accent)}
-  .editiontag{color:var(--dim);font-size:12px;font-variant-numeric:tabular-nums}
-  .sub{color:var(--mut);font-size:13px;margin:0 2px 12px}
+    padding:0 20px env(safe-area-inset-bottom);max-width:460px;min-height:100vh}
+  header{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:14px 0 6px}
+  .logo{display:flex;align-items:center;gap:9px;background:none;border:none;padding:0;cursor:pointer;text-align:left}
+  .logo .mags{flex:none}
+  .logo .wm{font-weight:700;font-size:24px;letter-spacing:-.3px;color:var(--ink)}
+  .logo .wm b{color:var(--primary)}
+  .editiontag{color:var(--ink3);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
+  .sub{display:none}
   .hide{display:none !important}
 
   /* generic */
@@ -203,14 +221,389 @@
   .homecrew .ic{font-size:22px;width:32px;text-align:center;flex:none}
   .homecrew .cc{flex:1;min-width:0} .homecrew .ct{font-weight:700} .homecrew .cs{font-size:12.5px;color:var(--mut)}
   .homecrew .go{font-weight:800;color:var(--accent);font-size:14px;white-space:nowrap}
+
+  /* ============================================================
+     BRIGHT REDESIGN — Home (Phase 1)
+     ============================================================ */
+  .mags{display:block;overflow:visible}
+  #screen-home{padding-bottom:30px}
+
+  /* hero: in-crew standing card */
+  .hero-crew{background:var(--primary-soft);border-radius:12px;padding:20px 20px 22px;margin:8px 0 0;
+    box-shadow:var(--shadow-raised);cursor:pointer}
+  .hero-crew:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+  .hc-row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .hc-name{display:flex;align-items:center;gap:7px;background:var(--card);color:var(--ink);border:none;
+    border-radius:9px;padding:8px 11px 8px 14px;font-weight:600;font-size:15px;min-height:40px;cursor:pointer;
+    box-shadow:0 3px 10px -5px rgba(40,50,90,.3);max-width:70%}
+  .hc-name span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .hc-name svg{flex:none;stroke:var(--primary)}
+  .hc-week{font-size:12px;font-weight:700;color:var(--primary-dark);opacity:.8;white-space:nowrap}
+  .hc-rank{display:flex;align-items:flex-end;gap:10px;line-height:.9;margin-top:14px}
+  .hc-rank-n{font-weight:700;font-size:56px;color:var(--ink);letter-spacing:-2px;font-variant-numeric:tabular-nums}
+  .hc-rank-of{font-weight:600;font-size:19px;color:var(--ink2);padding-bottom:9px}
+  .hc-gap{margin-top:10px;font-size:14.5px;font-weight:600;color:var(--ink2)}
+  .hc-foot{display:flex;align-items:center;margin-top:15px}
+  .hc-avs{display:flex}
+  .av{width:34px;height:34px;border-radius:50%;background:var(--card);border:2px solid var(--ink3);
+    margin-right:-9px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px}
+  .hc-see{margin-left:18px;font-size:13px;font-weight:700;color:var(--primary-dark)}
+
+  /* hero: solo / new-player nudge */
+  .hero-solo{background:var(--primary-soft);border-radius:12px;padding:22px;margin:8px 0 0;box-shadow:var(--shadow-raised)}
+  .hs-top{display:flex;align-items:center;gap:12px}
+  .hs-mags{flex:none;line-height:0}
+  .hs-title{font-weight:700;font-size:23px;color:var(--ink);letter-spacing:-.4px;line-height:1.05}
+  .hs-sub{font-size:14px;font-weight:500;color:var(--ink2);margin-top:4px}
+  .hs-btn{width:100%;margin-top:16px;border:none;background:var(--card);color:var(--primary-dark);
+    font-weight:700;font-size:15px;padding:14px;border-radius:9px;cursor:pointer;min-height:48px;
+    box-shadow:0 4px 12px -6px rgba(40,50,90,.3)}
+
+  /* play CTA (outline-first) */
+  .play-cta{width:100%;margin-top:16px;cursor:pointer;background:transparent;border:2.5px solid var(--primary);
+    color:var(--primary);border-radius:9px;padding:19px;font-weight:700;font-size:21px;letter-spacing:-.2px;
+    display:flex;align-items:center;justify-content:center;gap:9px}
+  .play-cta svg{stroke:var(--primary)}
+  .play-sub{text-align:center;margin-top:9px;font-size:13px;font-weight:600;color:var(--ink3)}
+
+  /* mascot fakes note */
+  .fakes-note{margin-top:18px;display:flex;align-items:center;gap:11px;background:var(--card);border-radius:8px;
+    padding:13px 15px;box-shadow:var(--shadow-card)}
+  .fakes-note .mags-wrap{flex:none;line-height:0}
+  .fakes-note .fk-txt{font-size:14px;font-weight:600;color:#3A3D55;line-height:1.35}
+  .fakes-note .fk{color:var(--fake);font-weight:700}
+
+  /* streak + 7-day strip */
+  .streak-blk{margin-top:24px}
+  .streak-head{display:flex;align-items:center;gap:10px}
+  .streak-head .fire{font-size:25px}
+  .streak-num{font-weight:700;font-size:30px;color:var(--amber-text);font-variant-numeric:tabular-nums;letter-spacing:-.5px}
+  .streak-num.zero{color:var(--ink3)}
+  .streak-lbl{font-size:14.5px;font-weight:700;color:#3A3D55;line-height:1.2}
+  .streak-lbl .best-yet{color:var(--mint);font-weight:600;font-size:13px}
+  .streak-lbl .best-num{color:var(--ink3);font-weight:600;font-size:13px}
+  .d7strip{display:flex;gap:7px;margin-top:14px}
+  .d7cell{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px}
+  .d7pill{width:100%;height:38px;border-radius:8px;background:var(--card);display:flex;align-items:center;justify-content:center;
+    border:2px solid var(--hair)}
+  .d7pill.hit{border:2px solid var(--mint)}
+  .d7pill.today{border:2px dashed var(--primary)}
+  .d7pill svg{stroke:var(--mint)}
+  .d7lbl{font-size:11px;font-weight:700;color:var(--ink3)}
+  .d7lbl.hit{color:var(--mint)} .d7lbl.today{color:var(--primary)}
+
+  /* coach line (mint-tinted) */
+  .coach{background:#E7F8F1;border:none;border-radius:8px;padding:13px 15px;margin:20px 0 0;
+    font-size:13.5px;font-weight:600;color:#1C6B4F;line-height:1.35}
+
+  /* stat chips row */
+  .stat-row{display:flex;gap:9px;margin-top:18px}
+  .stat-chip{flex:1;min-width:0;border:none;background:var(--card);cursor:pointer;border-radius:8px;
+    padding:13px 12px;text-align:left;min-height:62px;box-shadow:var(--shadow-card)}
+  .stat-chip .sc-lbl{font-size:11px;font-weight:700;color:var(--ink3)}
+  .stat-chip .sc-val{font-weight:700;font-size:19px;color:var(--ink);margin-top:4px;letter-spacing:-.3px;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+  /* footer links */
+  .home-links{margin-top:18px;display:flex;align-items:center;justify-content:center;gap:12px;
+    font-size:13px;font-weight:600;color:var(--ink3)}
+  .home-links .navlink{color:var(--ink3);background:none;border:none;cursor:pointer;font:inherit;font-weight:600;padding:6px 2px}
+  .home-links .dot-sep{opacity:.5}
+
+  .play-cta:active,.hs-btn:active,.stat-chip:active,.hc-name:active,.hero-crew:active{transform:scale(.985)}
+  .play-cta,.hs-btn,.stat-chip,.hc-name,.hero-crew{transition:transform .06s ease}
+
+  /* ============================================================
+     BRIGHT REDESIGN — Lanes picker + Play (Phase 2)
+     ============================================================ */
+  /* inner screens carry their own back header; hide the global brand header there */
+  body.scr-lanes header, body.scr-play header{display:none}
+
+  .scr-head{display:flex;align-items:center;gap:13px;padding:6px 0 16px}
+  .back-btn{border:none;background:var(--card);width:44px;height:44px;border-radius:9px;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 4px 12px -7px rgba(40,50,90,.5)}
+  .back-btn svg{stroke:var(--ink)}
+  .scr-title{font-weight:700;font-size:25px;color:var(--ink);letter-spacing:-.4px}
+
+  /* Lanes picker */
+  #screen-lanes{padding-bottom:120px}
+  .lanes-sub{font-size:14.5px;font-weight:500;color:var(--ink2);margin:-6px 0 20px;line-height:1.5}
+  .lane-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .lane-card{position:relative;border:2px solid var(--card);cursor:pointer;background:var(--card);border-radius:9px;
+    padding:16px;text-align:left;min-height:112px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow-card)}
+  .lane-card .lc-top{display:flex;align-items:center;justify-content:space-between;min-height:24px}
+  .lane-dot{width:30px;height:30px;border-radius:50%;border:2.5px solid var(--ink3);background:transparent;flex:none}
+  .lane-badge{display:flex;align-items:center;gap:4px;font-size:11px;font-weight:700;padding:3px 7px;border-radius:6px}
+  .lane-badge.hot{color:#9A5B12;background:#FFF1DE}
+  .lane-badge.adult{background:transparent;border:1.5px solid var(--purple);color:var(--purple)}
+  .lane-name{font-weight:700;font-size:19px;color:var(--ink);letter-spacing:-.3px}
+  .lane-vibe{font-size:12.5px;font-weight:500;color:var(--ink3);margin-top:2px}
+  .sticky-cta{position:sticky;bottom:0;left:0;right:0;margin:30px -20px -120px;padding:16px 20px 26px;
+    background:linear-gradient(to top,var(--canvas) 70%,rgba(247,248,252,0))}
+  .outline-cta{width:100%;cursor:pointer;background:transparent;border:2.5px solid var(--primary);color:var(--primary);
+    border-radius:9px;padding:18px;font-weight:700;font-size:19px;letter-spacing:-.2px;display:flex;align-items:center;justify-content:center;gap:8px}
+  .outline-cta svg{stroke:var(--primary)}
+
+  /* Play */
+  #screen-play{padding-bottom:150px;min-height:100%}
+  .play-head{display:flex;align-items:center;gap:11px;padding:6px 0 16px}
+  .pbar{display:flex;gap:6px;flex:1}
+  .pseg{flex:1;height:44px;border:none;cursor:pointer;background:none;position:relative;padding:0;display:flex;align-items:center;justify-content:center}
+  .pseg .bar{width:100%;height:8px;border-radius:4px;background:var(--hair)}
+  .pseg.cur .bar{background:var(--primary)}
+  .pseg.ans .bar{background:var(--mint)}
+  .pseg.lck .bar{background:var(--amber)}
+  .pseg .lockico{position:absolute;top:-2px;left:50%;transform:translateX(-50%);line-height:0}
+  .pseg .lockico svg{stroke:var(--amber)}
+  .pstep{font-size:13px;font-weight:700;color:var(--ink3);font-variant-numeric:tabular-nums;flex:none}
+  .qcard{position:relative;background:var(--card);border-radius:11px;padding:24px 22px 22px;overflow:hidden;
+    touch-action:none;cursor:grab;box-shadow:0 14px 34px -20px rgba(40,50,90,.5);transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+  .qtint{position:absolute;inset:0;pointer-events:none;opacity:0}
+  .qtint.real{background:var(--mint)} .qtint.fake{background:var(--fake)}
+  .qcard-top{position:relative;display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+  .qchip{font-size:12px;font-weight:700;background:transparent;border:1.5px solid var(--ink3);padding:4px 10px;border-radius:6px}
+  .qdate{font-size:12px;font-weight:600;color:var(--ink3)}
+  .qtext{position:relative;font-weight:600;font-size:24px;line-height:1.34;color:var(--ink);letter-spacing:-.2px}
+  .qspk{position:relative;margin-top:18px;display:flex;align-items:center;gap:11px}
+  .qav{width:36px;height:36px;border-radius:50%;background:var(--card);border:2px solid var(--ink3);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;flex:none}
+  .qspk .nm{font-size:15px;font-weight:700;color:var(--ink)}
+  .qspk .rl{font-size:12.5px;font-weight:500;color:var(--ink3)}
+  .swipe-hint{text-align:center;font-size:12px;font-weight:600;color:#5C6180;margin-top:10px}
+  .rf-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+  .rfbtn{border:2px solid var(--card);cursor:pointer;border-radius:9px;padding:16px 12px;background:var(--card);
+    display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:var(--shadow-card)}
+  .rfbtn .ic{display:flex;align-items:center;justify-content:center}
+  .rfbtn.real .ic{width:38px;height:38px;border-radius:50%;border:2.5px solid var(--mint)}
+  .rfbtn.fake .ic{width:38px;height:30px;border-radius:6px;border:2.5px solid var(--fake);transform:rotate(-5deg)}
+  .rfbtn.real .ic svg{stroke:var(--mint)} .rfbtn.fake .ic svg{stroke:var(--fake)}
+  .rfbtn .lbl{font-weight:700;font-size:17px}
+  .rfbtn.real .lbl{color:#1C6B4F} .rfbtn.fake .lbl{color:#B0282E}   /* AA on white + on the selected tints */
+  .rfbtn.real.sel{background:#E7F8F1;border-color:var(--mint);box-shadow:0 8px 20px -12px var(--mint)}
+  .rfbtn.real.sel .lbl{color:#1C6B4F}
+  .rfbtn.fake.sel{background:#FFECEC;border-color:var(--fake);box-shadow:0 8px 20px -12px var(--fake)}
+  .rfbtn.fake.sel .lbl{color:#B0282E}
+  .rfbtn .ic.pop{animation:sit-pop .32s cubic-bezier(.34,1.7,.5,1)}
+  .lockbtn2{width:100%;margin-top:12px;border:2px solid var(--track);cursor:pointer;border-radius:8px;padding:14px;min-height:54px;
+    background:var(--card);display:flex;align-items:center;justify-content:center;gap:10px}
+  .lockbtn2 .ic{width:30px;height:30px;border-radius:6px;border:2px solid var(--ink3);display:flex;align-items:center;justify-content:center}
+  .lockbtn2 .ic svg{stroke:var(--ink3)}
+  .lockbtn2 .lbl{font-weight:700;font-size:16px;color:var(--ink3)}
+  .lockbtn2.ready{border-color:var(--amber);background:#FFF9F0}
+  .lockbtn2.ready .ic,.lockbtn2.on .ic{border-color:var(--amber)}
+  .lockbtn2.ready .ic svg,.lockbtn2.on .ic svg{stroke:var(--amber)}
+  .lockbtn2.ready .lbl,.lockbtn2.on .lbl{color:#9A5B12}   /* AA on the warm lock backgrounds */
+  .lockbtn2.on{border-color:var(--amber);background:#FFF4E2;box-shadow:0 8px 20px -12px var(--amber)}
+  .lockbtn2.pulse{animation:sit-pulse .42s cubic-bezier(.34,1.56,.64,1)}
+  .lock-sub{text-align:center;font-size:12.5px;font-weight:500;color:var(--ink3);margin-top:9px;line-height:1.4}
+  .cta-wrap{position:sticky;bottom:0;left:0;right:0;margin:22px -20px -150px;padding:14px 20px 26px;
+    background:linear-gradient(to top,var(--canvas) 70%,rgba(247,248,252,0))}
+  .cta-btn{width:100%;border:2.5px solid var(--primary);cursor:pointer;background:transparent;color:var(--primary);
+    border-radius:9px;padding:18px;font-weight:700;font-size:19px;letter-spacing:-.2px}
+  .cta-btn.next{border:none;background:var(--card);color:var(--primary-dark);box-shadow:0 6px 18px -10px rgba(40,50,90,.4)}
+  .cta-btn.disabled{border:none;background:#EAECF3;color:#6E7290;cursor:default}
+  .cta-btn.lockfirst{border:none;background:#FFF4E2;color:#9A5B12;cursor:default}
+
+  .rfbtn:active,.lockbtn2:active,.back-btn:active,.lane-card:active,.outline-cta:active,
+  .cta-btn.next:active{transform:scale(.97)}
+  .rfbtn,.lockbtn2,.back-btn,.lane-card,.outline-cta,.cta-btn{transition:transform .06s ease, background .2s, border-color .15s}
+  @keyframes sit-pop{0%{transform:scale(1)}50%{transform:scale(1.18)}100%{transform:scale(1)}}
+  @keyframes sit-pulse{0%{transform:scale(1)}50%{transform:scale(1.04)}100%{transform:scale(1)}}
+
+  /* ============================================================
+     BRIGHT REDESIGN — Reveal (Phase 3)
+     ============================================================ */
+  #screen-reveal{padding-bottom:36px}
+  .rv-confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:60}
+  .rv-confetti i{position:absolute;top:-16px;display:block;animation-name:sit-confetti;animation-timing-function:ease-in;animation-fill-mode:forwards}
+  @keyframes sit-confetti{0%{transform:translateY(-16px) rotate(0);opacity:1}100%{transform:translateY(900px) rotate(560deg);opacity:0}}
+  @keyframes sit-stamp{0%{transform:translateY(-14px) scale(.6) rotate(-10deg);opacity:0}60%{transform:translateY(0) scale(1.08) rotate(-4deg);opacity:1}100%{transform:scale(1) rotate(-4deg);opacity:1}}
+
+  .rv-head{display:flex;align-items:center;gap:14px;padding:8px 0 4px}
+  .rv-head .mags{flex:none}
+  .rv-score{display:flex;align-items:flex-end;gap:8px;line-height:.85}
+  .rv-score .n{font-weight:700;font-size:64px;color:var(--primary);letter-spacing:-2px;font-variant-numeric:tabular-nums}
+  .rv-score .of{font-weight:600;font-size:22px;color:var(--ink3);padding-bottom:9px}
+  .rv-cap{font-size:21px;font-weight:500;color:var(--ink);margin-top:10px;letter-spacing:-.2px;line-height:1.3}
+  .rv-cap .replayed{color:var(--ink3);font-weight:500;font-size:14px}
+  .rv-streak{margin-top:14px;display:flex;align-items:center;gap:9px;font-size:13.5px;font-weight:600;color:var(--ink2)}
+  .rv-streak .fire{font-size:19px}
+  .rv-streak .num{font-weight:700;font-size:22px;color:var(--amber-text);font-variant-numeric:tabular-nums;display:inline-block;transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
+  .rv-streak .num.bump{transform:scale(1.3)}
+  .rv-freeze{margin-top:12px;background:var(--primary-soft);border-radius:8px;padding:10px 13px;font-size:13px;font-weight:600;color:var(--primary-dark)}
+  .rv-gotme{margin-top:20px;background:#FFF1F1;border-radius:9px;padding:17px}
+  .rv-gotme .k{font-size:12px;font-weight:700;color:#B5363B}
+  .rv-gotme .q{font-weight:600;font-size:17px;line-height:1.35;color:var(--ink);margin-top:8px}
+  .rv-gotme .m{font-size:12.5px;font-weight:600;color:#8A4A4D;margin-top:8px}
+  .rv-clean{margin-top:20px;background:#E7F8F1;border-radius:9px;padding:16px 18px;display:flex;align-items:center;gap:10px;font-size:16px;font-weight:500;color:#1C6B4F}
+  .rv-clean .mags{flex:none}
+  .rv-truth-label{margin-top:24px;font-size:12px;font-weight:700;color:var(--ink3);margin-bottom:11px}
+  .rv-truth{display:flex;flex-direction:column;gap:9px}
+  .tr{background:var(--card);border-radius:8px;padding:14px 15px;box-shadow:0 4px 14px -12px rgba(40,50,90,.4);opacity:0;transform:translateY(8px);transition:opacity .25s,transform .25s}
+  .tr.shown{opacity:1;transform:none}
+  .tr-row{display:flex;align-items:flex-start;gap:12px}
+  .tr-stamp{flex:none;width:48px;display:flex;justify-content:center;padding-top:2px}
+  .stamp{font-weight:700;font-size:11px;letter-spacing:.3px;background:transparent;border:1.5px solid;border-radius:7px;padding:4px 6px;transform:rotate(-4deg);display:inline-block}
+  .stamp.real{color:var(--mint);border-color:var(--mint)} .stamp.fake{color:var(--fake);border-color:var(--fake)}
+  .tr.shown .stamp{animation:sit-stamp .4s cubic-bezier(.34,1.56,.64,1) both}
+  .tr-body{flex:1;min-width:0}
+  .tr-q{font-size:14px;font-weight:600;color:#3A3D55;line-height:1.4}
+  .tr-meta{font-size:11.5px;font-weight:600;color:var(--ink3);margin-top:6px}
+  .tr-meta a{color:var(--primary-dark)}
+  .tr-note{font-size:12.5px;font-weight:500;color:#C0454A;margin-top:8px;line-height:1.4;background:#FFF1F1;border-radius:7px;padding:8px 10px}
+  .tr-call{flex:none;display:flex;flex-direction:column;align-items:center;gap:4px;padding-top:2px;width:42px}
+  .tr-call .dot{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%}
+  .tr-call .dot.right{background:#E7F8F1} .tr-call .dot.wrong{background:#FFECEC} .tr-call .dot.skip{background:#EEF0F6}
+  .tr-call .dot.right svg{stroke:var(--mint)} .tr-call .dot.wrong svg{stroke:var(--fake)}
+  .tr-call .dot.skip span{color:var(--ink2);font-weight:700;font-size:13px}
+  .tr-call .cl{font-size:10px;font-weight:600;color:var(--ink3);text-align:center}
+
+  .share-card{margin-top:26px;border-radius:11px;padding:22px;overflow:hidden;background:var(--card);border:2px solid var(--primary);box-shadow:0 12px 30px -16px var(--primary-shadow)}
+  .sc-row{display:flex;align-items:center;justify-content:space-between}
+  .sc-brand{display:flex;align-items:center;gap:8px}
+  .sc-brand .wm{font-weight:700;font-size:18px;color:var(--primary);letter-spacing:-.3px}
+  .sc-date{font-size:11.5px;font-weight:600;color:var(--ink3)}
+  .sc-score{display:flex;align-items:baseline;gap:10px;margin-top:18px}
+  .sc-score .big{font-weight:700;font-size:46px;color:var(--primary);letter-spacing:-1.5px;font-variant-numeric:tabular-nums}
+  .sc-score .st{font-size:14px;font-weight:700;color:var(--ink)}
+  .sc-pips{display:flex;gap:8px;margin-top:18px}
+  .sc-pip{flex:1;height:36px;border-radius:8px;background:var(--card);border:2px solid var(--hair);display:flex;align-items:center;justify-content:center}
+  .sc-pip.right{border-color:var(--mint)} .sc-pip.right svg{stroke:var(--mint)}
+  .sc-legend{display:flex;align-items:center;gap:14px;margin-top:14px;font-size:11px;font-weight:600;color:var(--ink3)}
+  .sc-legend span.lg{display:inline-flex;align-items:center;gap:5px}
+  .sc-legend .sw{width:13px;height:13px;border-radius:4px;border:2px solid;display:inline-block}
+  .sc-legend .sw.caught{border-color:var(--mint)} .sc-legend .sw.fooled{border-color:var(--hair)}
+  .sc-legend .url{margin-left:auto;font-weight:700;color:var(--primary)}
+
+  .rv-actions{display:flex;gap:11px;margin-top:14px}
+  .rv-actions .copy{flex:1;border:2px solid var(--track);cursor:pointer;background:var(--card);color:var(--ink);border-radius:10px;padding:15px;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px}
+  .rv-actions .copy svg{stroke:var(--ink)}
+  .rv-actions .board{flex:1;cursor:pointer;background:transparent;border:2.5px solid var(--primary);color:var(--primary);border-radius:10px;padding:15px;font-weight:700;font-size:15px;min-height:52px}
+  .rv-preview{margin-top:12px;background:var(--card);border-radius:9px;padding:13px 15px;box-shadow:0 4px 14px -12px rgba(40,50,90,.4)}
+  .rv-preview .k{font-size:10.5px;font-weight:700;color:var(--ink3);margin-bottom:8px}
+  .rv-preview .t{font-size:13.5px;font-weight:600;color:#3A3D55;line-height:1.55;white-space:pre-wrap}
+  .rv-bait{margin-top:18px;background:var(--card);border-radius:9px;padding:17px;box-shadow:0 5px 16px -12px rgba(40,50,90,.4)}
+  .rv-bait .h{font-size:16px;font-weight:600;color:var(--ink)}
+  .rv-bait .s{font-size:13px;font-weight:500;color:var(--ink3);margin-top:3px;margin-bottom:13px}
+  .rv-bait button{width:100%;border:2px solid var(--track);cursor:pointer;background:var(--card);color:var(--primary-dark);border-radius:9px;padding:14px;font-weight:700;font-size:15px;min-height:50px}
+  .rv-bait button.sent{border-color:var(--mint);background:#E7F8F1;color:var(--mint)}
+  .rv-count{text-align:center;margin-top:22px;font-size:13px;font-weight:600;color:var(--ink3)}
+  .rv-count b{color:var(--ink);font-weight:700}
+  .rv-links{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:16px;font-size:13px;font-weight:600;color:var(--ink3)}
+  .rv-links button{color:var(--ink3);background:none;border:none;cursor:pointer;font:inherit;font-weight:600;padding:6px 2px}
+  .rv-foot{text-align:center;margin-top:16px;font-size:11px;font-weight:500;color:var(--ink3);line-height:1.6}
+  .rv-foot a{color:var(--ink3);cursor:pointer;text-decoration:underline}
+  .rv-actions .copy:active,.rv-actions .board:active,.rv-bait button:active{transform:scale(.98)}
+  .rv-actions .copy,.rv-actions .board,.rv-bait button{transition:transform .06s ease, background .2s}
+
+  /* ============================================================
+     BRIGHT REDESIGN — Crew board + bottom sheets (Phases 4 & 5)
+     ============================================================ */
+  body.scr-crew header{display:none}
+  #screen-crew{padding-bottom:36px}
+  @keyframes sit-rise{0%{transform:translateY(36px) scale(.98);opacity:0}100%{transform:translateY(0) scale(1);opacity:1}}
+  @keyframes sit-fade{0%{opacity:0}100%{opacity:1}}
+  @keyframes sit-sheet{0%{transform:translateY(40px) scale(.98);opacity:.4}100%{transform:translateY(0) scale(1);opacity:1}}
+
+  .cr-name{display:flex;align-items:center;gap:9px;background:none;border:none;cursor:pointer;padding:6px 4px;min-height:44px}
+  .cr-name .nm{font-weight:700;font-size:24px;color:var(--ink);letter-spacing:-.4px;max-width:230px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .cr-name .chev{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:6px;background:var(--primary-soft);flex:none}
+  .cr-name .chev svg{stroke:var(--primary)}
+  .cr-toggle-row{display:flex;align-items:center;justify-content:space-between;margin-top:4px}
+  .cr-seclabel{font-size:12px;font-weight:700;color:var(--ink3)}
+  .seg-toggle{display:flex;background:var(--card);border-radius:8px;padding:3px;gap:2px;box-shadow:0 4px 14px -12px rgba(40,50,90,.4)}
+  .seg-toggle button{border:none;cursor:pointer;border-radius:6px;padding:8px 14px;font-weight:600;font-size:13px;min-height:44px;background:transparent;color:var(--ink2)}
+  .seg-toggle button.on{background:var(--ink);color:#fff}
+  .cr-gap{margin-top:14px;background:var(--primary-soft);border-radius:9px;padding:13px 15px;display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:var(--primary-dark)}
+  .cr-gap svg{stroke:var(--primary);flex:none}
+  .cr-rows{margin-top:14px;display:flex;flex-direction:column;gap:8px}
+  .cr-row{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:8px;background:var(--card);border:2px solid var(--card);box-shadow:0 4px 14px -12px rgba(40,50,90,.4)}
+  .cr-row.you{background:var(--primary-soft);border-color:var(--primary);box-shadow:0 8px 22px -14px var(--primary-shadow);animation:sit-rise .45s cubic-bezier(.34,1.4,.64,1) both}
+  .cr-row .rk{font-weight:700;font-size:15px;color:var(--ink3);width:20px;text-align:center;font-variant-numeric:tabular-nums;flex:none}
+  .cr-row.you .rk{color:var(--primary-dark)}
+  .cr-row .who{flex:1;min-width:0}
+  .cr-row .who .nm{font-size:15px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:8px}
+  .cr-row .moved{font-size:10px;font-weight:700;color:var(--mint);background:transparent;border:1px solid var(--mint);padding:2px 7px;border-radius:7px}
+  .cr-row .barwrap{height:6px;background:#EEF0F6;border-radius:3px;margin-top:7px;overflow:hidden}
+  .cr-row .bar{height:100%;background:#C9CDDE;border-radius:3px}
+  .cr-row.you .bar{background:var(--primary)}
+  .cr-row .sc{font-weight:700;font-size:18px;color:var(--ink);font-variant-numeric:tabular-nums;flex:none}
+  .cr-tiles{display:flex;gap:10px;margin-top:16px}
+  .cr-tile{flex:1;border-radius:8px;padding:14px 15px}
+  .cr-tile .big{font-weight:700;font-size:21px}
+  .cr-tile .lbl{font-size:11.5px;font-weight:600;margin-top:4px}
+  .cr-tile.streak{background:#FFF4E2} .cr-tile.streak .big{color:#9A5B12} .cr-tile.streak .lbl{color:#8A6A3E}
+  .cr-tile.champ{background:var(--primary-soft)} .cr-tile.champ .big{color:var(--primary-dark)} .cr-tile.champ .lbl{color:var(--ink3)}
+  .cr-invite{width:100%;margin-top:18px;cursor:pointer;background:transparent;border:2.5px solid var(--primary);color:var(--primary);border-radius:9px;padding:18px;font-weight:700;font-size:19px;letter-spacing:-.2px}
+  .cr-code{text-align:center;margin-top:12px;font-size:13px;font-weight:600;color:var(--ink3)}
+  .cr-code b{color:var(--ink);font-weight:700;letter-spacing:.06em}
+  .cr-foot{text-align:center;margin-top:16px;font-size:12px;font-weight:500;color:var(--ink3)}
+  .cr-meta{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:14px;font-size:13px;font-weight:600;color:var(--ink3)}
+  .cr-meta button{color:var(--ink3);background:none;border:none;cursor:pointer;font:inherit;font-weight:600;padding:6px 2px}
+  .cr-joined{background:var(--primary-soft);border-radius:11px;padding:18px;text-align:center;margin-top:8px;box-shadow:var(--shadow-raised)}
+  .cr-joined b{color:var(--ink);font-size:17px;font-weight:700}
+  .cr-joined .s{font-size:13px;color:var(--ink2);margin-top:4px;font-weight:500}
+  .cr-joined button{margin-top:12px;width:100%;cursor:pointer;background:transparent;border:2.5px solid var(--primary);color:var(--primary);border-radius:9px;padding:14px;font-weight:700;font-size:16px;min-height:50px}
+  .cr-empty{background:var(--card);border-radius:11px;padding:22px;box-shadow:var(--shadow-card);margin-top:8px}
+  .cr-empty .h{font-weight:700;font-size:20px;color:var(--ink);letter-spacing:-.3px}
+  .cr-empty .s{font-size:14px;font-weight:500;color:var(--ink2);margin:8px 0 16px;line-height:1.45}
+  .cr-empty .start{width:100%;cursor:pointer;background:transparent;border:2.5px solid var(--primary);color:var(--primary);border-radius:9px;padding:16px;font-weight:700;font-size:17px;min-height:52px}
+  .cr-empty .codebtn{width:100%;margin-top:10px;border:2px solid var(--track);background:var(--card);color:var(--ink2);border-radius:9px;padding:14px;font-weight:700;font-size:15px;cursor:pointer;min-height:50px}
+  .cr-empty .eh{text-align:center;font-size:12.5px;color:var(--ink3);margin:14px 0 6px;font-weight:500}
+  /* account card (restyled to the new system) */
+  .acct{background:var(--card);border-radius:11px;padding:18px;box-shadow:var(--shadow-card);margin-top:16px}
+  .acct .h{font-weight:700;font-size:16px;color:var(--ink)}
+  .acct .s{font-size:13px;font-weight:500;color:var(--ink2);margin:5px 0 12px;line-height:1.4}
+  .acct .fld{width:100%;padding:12px 13px;border-radius:9px;border:2px solid var(--track);background:var(--card);font:inherit;font-size:15px;color:var(--ink);margin-bottom:9px}
+  .acct .primary{width:100%;cursor:pointer;background:transparent;border:2.5px solid var(--primary);color:var(--primary);border-radius:9px;padding:14px;font-weight:700;font-size:15px;min-height:50px}
+  .acct .ghost{width:100%;margin-top:9px;cursor:pointer;background:var(--card);border:2px solid var(--track);color:var(--ink2);border-radius:9px;padding:14px;font-weight:700;font-size:15px;min-height:50px}
+
+  /* bottom sheets */
+  .sheet-backdrop{position:fixed;inset:0;background:rgba(35,37,58,.42);display:flex;align-items:flex-end;justify-content:center;z-index:70;animation:sit-fade .2s both}
+  .sheet{width:100%;max-width:460px;background:var(--card);border-radius:9px 9px 34px 34px;padding:20px 20px 30px;animation:sit-sheet .32s cubic-bezier(.34,1.4,.64,1) both;max-height:86vh;overflow-y:auto}
+  .sheet-grab{width:42px;height:5px;border-radius:3px;background:#E3E5EE;margin:0 auto 16px}
+  .sheet-title{font-size:18px;font-weight:600;color:var(--ink);margin-bottom:12px}
+  .sheet-close{width:100%;margin-top:14px;border:none;cursor:pointer;background:#F1F2F8;color:var(--ink2);border-radius:9px;padding:15px;font-weight:600;font-size:15px;min-height:50px}
+  .sw-row{border:2px solid var(--track);cursor:pointer;background:var(--card);border-radius:8px;padding:15px 16px;display:flex;align-items:center;justify-content:space-between;min-height:62px;text-align:left;width:100%;margin-bottom:9px}
+  .sw-row.active{border-color:var(--primary);background:var(--primary-soft)}
+  .sw-row .nm{font-weight:700;font-size:17px;color:var(--ink)}
+  .sw-row .sub{font-size:12.5px;font-weight:500;color:var(--ink3);margin-top:2px}
+  .sw-row .code{font-weight:700;font-size:13px;color:var(--ink3);letter-spacing:.06em}
+  .sw-row.active .code{color:var(--primary-dark)}
+  .sw-row .chk{display:flex} .sw-row .chk svg{stroke:var(--primary)}
+  .sw-add{width:100%;border:2px dashed var(--track);background:none;cursor:pointer;border-radius:8px;padding:14px;font-weight:700;font-size:15px;color:var(--primary-dark);min-height:50px}
+  .ag-icon{width:48px;height:48px;border-radius:9px;background:#F1ECFF;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .ag-icon svg{stroke:var(--purple)}
+  .ag-title{font-weight:700;font-size:23px;color:var(--ink);letter-spacing:-.3px}
+  .ag-body{font-size:14.5px;font-weight:500;color:var(--ink2);margin-top:8px;line-height:1.45}
+  .ag-confirm{width:100%;margin-top:20px;cursor:pointer;background:transparent;border:2.5px solid var(--purple);color:var(--purple);border-radius:8px;padding:16px;font-weight:700;font-size:17px;min-height:54px}
+  .ag-cancel{width:100%;margin-top:10px;border:none;cursor:pointer;background:none;color:var(--ink3);border-radius:9px;padding:14px;font-weight:600;font-size:15px;min-height:48px}
+  .st-row{border:none;cursor:pointer;background:#F7F8FC;border-radius:8px;padding:16px;display:flex;align-items:center;justify-content:space-between;min-height:66px;text-align:left;width:100%;margin-bottom:9px}
+  .st-row .lbl{font-size:12px;font-weight:700;color:var(--ink3)}
+  .st-row .val{font-weight:700;font-size:23px;color:var(--ink);margin-top:2px;letter-spacing:-.4px}
+  .st-row .chev{display:flex} .st-row .chev svg{stroke:var(--primary)}
+  .st-back{border:none;cursor:pointer;background:none;display:flex;align-items:center;gap:6px;padding:2px 2px 14px;font-size:14px;font-weight:500;color:var(--primary)}
+  .st-back svg{stroke:var(--primary)}
+  .st-kicker{font-size:12px;font-weight:700;color:var(--ink3)}
+  .st-big{display:flex;align-items:baseline;gap:10px;margin-top:4px}
+  .st-big .n{font-weight:700;font-size:42px;color:var(--primary);letter-spacing:-1px}
+  .st-big .s{font-size:15px;font-weight:600;color:var(--ink3)}
+  .st-blurb{font-size:14.5px;font-weight:500;color:var(--ink2);margin-top:8px;line-height:1.45}
+  .st-bars{margin-top:20px;display:flex;flex-direction:column;gap:13px}
+  .st-bar{display:flex;align-items:center;gap:12px}
+  .st-bar .bl{font-size:13px;font-weight:600;color:var(--ink2);width:96px;flex:none}
+  .st-bar .bw{flex:1;height:10px;background:#EEF0F6;border-radius:5px;overflow:hidden}
+  .st-bar .bf{height:100%;border-radius:5px}
+  .st-bar .bv{font-size:13px;font-weight:600;color:var(--ink);width:42px;text-align:right;flex:none;font-variant-numeric:tabular-nums}
+  .cr-invite:active,.cr-empty .start:active,.sw-row:active,.st-row:active,.ag-confirm:active,.acct .primary:active{transform:scale(.98)}
+  .cr-invite,.cr-empty .start,.sw-row,.st-row,.ag-confirm{transition:transform .06s ease, background .2s, border-color .15s}
 </style>
 </head>
 <body>
 <header>
-  <button class="logo" id="logoBtn" aria-label="Said It? — home" title="Home">Said <b>It?</b></button>
+  <button class="logo" id="logoBtn" aria-label="Said It? — home" title="Home"><span class="wm">Said It<b>?</b></span></button>
   <div class="editiontag" id="editiontag"></div>
 </header>
-<div class="sub" id="sub">Six quotes from this week. Some are real. Some are AI fakes.</div>
+<div class="sub" id="sub">Six quotes from this week. Some are real. Some are made up.</div>
 <div id="pastbar" class="hide"></div>
 
 <!-- LOADING -->
@@ -221,89 +614,30 @@
 
 <!-- HOME (the hub) -->
 <div id="screen-home" class="hide">
-  <div id="homeHeadline"></div>
-  <div class="hero" id="homeHero"></div>
+  <div id="homeHero"></div>
+  <button class="play-cta" id="homePlay">Play today's set
+    <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </button>
+  <div class="play-sub">6 quotes · about a minute</div>
+  <div class="fakes-note" id="homeFakes"></div>
+  <div class="streak-blk" id="homeStreak"></div>
   <div id="homeCoach"></div>
-  <div class="statgrid" id="homeStats"></div>
-  <div class="seclabel">Play today</div>
-  <div id="homeCats"></div>
-  <div id="homeCrew"></div>
-  <div class="navlinks">
-    <button class="navlink hide" id="homeAccount">☁️ Save progress</button>
-    <button class="navlink" id="homeArchive">📚 Past editions</button>
+  <div class="stat-row" id="homeStats"></div>
+  <div class="home-links">
+    <button class="navlink" id="homeArchive">Past editions</button>
+    <span class="dot-sep hide" id="homeLinkSep">·</span>
+    <button class="navlink hide" id="homeAccount">Save progress</button>
   </div>
 </div>
 
-<!-- STAT DETAIL (every tile opens one of these) -->
-<div id="screen-detail" class="hide">
-  <div id="detailBody"></div>
-  <div class="sticky"><button class="btn ghost" id="detailBack">← Back</button></div>
-</div>
+<!-- LANES picker (painted by renderLanesPicker) -->
+<div id="screen-lanes" class="hide"></div>
 
-<!-- INTRO -->
-<div id="screen-intro" class="hide">
-  <div id="lanePicker" class="lanes"></div>
-  <div class="card">
-    <div class="lede">Every day, the same six quotes for everyone — pulled from the week's news, sports &amp; pop culture.
-      <span class="real">Some really said it.</span> <span class="fake">Some are AI fakes.</span>
-      Call each one, then <b>lock the one</b> you'd bet your life on.</div>
-  </div>
-  <div class="equityrow" id="introStats"></div>
-  <div class="sticky"><button class="btn" id="startBtn">Play today's set →</button>
-    <div class="hint" id="introHint"></div></div>
-  <div class="navlinks">
-    <button class="navlink" id="introHome">🏠 Home</button>
-    <button class="navlink" id="introCrew">👥 Crew</button>
-    <button class="navlink" id="introArchive">📚 Past editions</button>
-  </div>
-</div>
+<!-- PLAY (one card at a time; painted by paintPlay) -->
+<div id="screen-play" class="hide"></div>
 
-<!-- PLAY -->
-<div id="screen-play" class="hide">
-  <div class="progress" id="progress"></div>
-  <div id="quotes"></div>
-  <div class="sticky">
-    <button class="btn" id="submitBtn" disabled>Answer all 6 to reveal</button>
-    <div class="hint">Tap <b>★ Lock</b> on the one you're most sure of — it's your flex (or your fall).</div>
-  </div>
-</div>
-
-<!-- REVEAL -->
-<div id="screen-reveal" class="hide">
-  <div class="scorehead">
-    <div class="big" id="scoreBig"></div>
-    <div class="cap" id="scoreCap"></div>
-  </div>
-  <div id="freezeNote"></div>
-  <div class="equityrow" id="revealStats"></div>
-  <div id="crewCompare"></div>
-  <div id="gotmeBox"></div>
-  <div id="revealList"></div>
-  <div id="trickBox"></div>
-
-  <div class="card">
-    <div style="font-weight:700;margin-bottom:8px">Your result — drop it in the group chat 👇</div>
-    <div class="token" id="tokenBox"></div>
-    <div class="row" style="margin-top:10px">
-      <button class="btn gold" id="copyBtn" style="flex:2">Copy result</button>
-      <button class="btn ghost" id="shareBtn" style="flex:1">Share</button>
-    </div>
-    <div class="hint">Spoiler-free — it shows how you did, never the answers.</div>
-  </div>
-
-  <div class="navlinks">
-    <button class="navlink" id="revealHome">🏠 Home</button>
-    <button class="navlink" id="revealCrew">👥 Crew</button>
-    <button class="navlink" id="revealArchive">📚 Past editions</button>
-    <button class="navlink" id="revealLink">🔗 Copy link to this set</button>
-  </div>
-  <div class="count" id="countdown"></div>
-  <footer>
-    Fakes are AI-generated and labeled here for what they are. Real quotes link to their source.
-    No game is a claim that anyone really said a quote marked FAKE.
-    <br/><a class="reset" id="resetLink">reset my data</a>
-  </footer>
-</div>
+<!-- REVEAL (painted by renderReveal) -->
+<div id="screen-reveal" class="hide"></div>
 
 <!-- ARCHIVE -->
 <div id="screen-archive" class="hide">
@@ -312,11 +646,8 @@
   <div class="sticky"><button class="btn ghost" id="archiveBack">← Back</button></div>
 </div>
 
-<!-- CREW -->
-<div id="screen-crew" class="hide">
-  <div id="crewBody"></div>
-  <div class="sticky"><button class="btn ghost" id="crewBack">← Back</button></div>
-</div>
+<!-- CREW board (painted by renderCrew) -->
+<div id="screen-crew" class="hide"></div>
 
 <div class="toast" id="toast"></div>
 
@@ -344,6 +675,65 @@ var pad = function(n){return n<10?"0"+n:""+n;};
 function todayStr(d){d=d||new Date();return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());}
 function qsDay(){var m=location.search.match(/[?&]d=([0-9]{4}-[0-9]{2}-[0-9]{2})/);return m?m[1]:null;}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+
+/* ---------- Mags, the magpie mascot (themeable inline SVG) ----------
+   Recreated from coordination/design_handoff_said_it_bright/Magpie.dc.html — one continuous monoline
+   silhouette drawn in var(--primary), with three moods. mood: 'happy' | 'delighted' | 'oops'. */
+function magpie(mood, size){
+  mood=mood||"happy"; size=size||72;
+  var eyes;
+  if(mood==="delighted"){
+    eyes='<path d="M40 32 Q45 26 50 32" stroke="var(--primary)" stroke-width="4" stroke-linecap="round" fill="none"/>'+
+      '<path d="M82 20 l1.6 3.6 3.6 1.6 -3.6 1.6 -1.6 3.6 -1.6 -3.6 -3.6 -1.6 3.6 -1.6 z" fill="var(--primary)"/>'+
+      '<path d="M96 40 l1.2 2.7 2.7 1.2 -2.7 1.2 -1.2 2.7 -1.2 -2.7 -2.7 -1.2 2.7 -1.2 z" fill="var(--primary)"/>';
+  } else if(mood==="oops"){
+    eyes='<circle cx="45" cy="31" r="3.4" fill="none" stroke="var(--primary)" stroke-width="2.4"/>'+
+      '<path d="M39 24 L50 27" stroke="var(--primary)" stroke-width="2.8" stroke-linecap="round"/>';
+  } else {
+    eyes='<circle cx="45" cy="31" r="3" fill="var(--primary)"/>';
+  }
+  return '<svg class="mags" width="'+size+'" height="'+size+'" viewBox="0 0 112 112" fill="none" aria-hidden="true">'+
+    '<path d="M40 52 C58 50 64 70 50 80 C40 76 36 62 40 52 Z" fill="var(--primary)" opacity="0.14"/>'+
+    '<g stroke="var(--primary)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">'+
+    '<path d="M18 40 C24 37 29 36 35 35 C40 17 63 15 64 36 C69 52 71 62 66 73 L99 104 L70 82 C60 92 40 91 31 73 C23 60 19 47 26 43 C22 42 20 41 18 40 Z"/>'+
+    '<path d="M18 40 L33 44"/>'+
+    '<path d="M41 51 C57 50 62 68 49 78"/>'+
+    '</g>'+eyes+'</svg>';
+}
+// app-icon / favicon variant: fixed colors (data-URI SVG gets no page CSS, so no var() here)
+function appIconSVG(){
+  return "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 112 112'>"+
+    "<rect width='112' height='112' rx='26' fill='#EEF1FE'/>"+
+    "<path d='M40 52 C58 50 64 70 50 80 C40 76 36 62 40 52 Z' fill='#4C6EF5' opacity='0.16'/>"+
+    "<g stroke='#4C6EF5' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'>"+
+    "<path d='M18 40 C24 37 29 36 35 35 C40 17 63 15 64 36 C69 52 71 62 66 73 L99 104 L70 82 C60 92 40 91 31 73 C23 60 19 47 26 43 C22 42 20 41 18 40 Z'/>"+
+    "<path d='M18 40 L33 44'/></g>"+
+    "<circle cx='45' cy='31' r='3.6' fill='#4C6EF5'/></svg>";
+}
+// avatar color, hashed by name (ported from the prototype) — ringed white avatars + colored initials
+var AVCOLORS=['#FF8FAB','#20C4A8','#9775FA','#FF922B','#4DABF7','#16B981','#FB5252'];
+function avColor(n){ n=String(n||""); var h=0; for(var i=0;i<n.length;i++){ h=(h*31+n.charCodeAt(i))>>>0; } return AVCOLORS[h%AVCOLORS.length]; }
+function avInitial(n){ return (String(n||"?").trim().charAt(0)||"?").toUpperCase(); }
+// header date label, e.g. "Wed 18 Jun"
+function homeDateLabel(){ var d=new Date(); var wd=d.toLocaleDateString(undefined,{weekday:"short"});
+  return wd+" "+d.getDate()+" "+d.toLocaleDateString(undefined,{month:"short"}); }
+function weekdayShort(dateStr){ return new Date(dateStr+"T12:00:00").toLocaleDateString(undefined,{weekday:"short"}).slice(0,2); }
+var CHECK_SVG='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6"/></svg>';
+var CHEV_DOWN='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>';
+var CHEV_RIGHT='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
+var CHEV_LEFT='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
+var BACK_ARROW='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
+/* ---------- bottom-sheet infra (spring-up modal; close on backdrop) ---------- */
+function closeSheet(){ var bd=document.getElementById("sheetBackdrop"); if(bd&&bd.parentNode) bd.parentNode.removeChild(bd); }
+function openSheet(innerHtml){
+  closeSheet();
+  var bd=el("div","sheet-backdrop"); bd.id="sheetBackdrop";
+  var sh=el("div","sheet"); sh.innerHTML='<div class="sheet-grab"></div>'+innerHtml;
+  bd.appendChild(sh);
+  bd.onclick=function(e){ if(e.target===bd) closeSheet(); };
+  document.body.appendChild(bd);
+  return sh;
+}
 
 /* ---------- persistent store (localStorage) ---------- */
 var K="saidit:v1";
@@ -386,8 +776,9 @@ function refreshFreeze(date){ var wk=weekKey(date); if(ST.freeze_week!==wk){ST.f
 function daysBetween(a,b){return Math.round((new Date(b+"T12:00:00")-new Date(a+"T12:00:00"))/86400000);}
 
 /* ---------- screens ---------- */
-var SCREENS=["loading","error","home","intro","play","reveal","archive","crew","detail"];
+var SCREENS=["loading","error","home","lanes","play","reveal","archive","crew"];
 function show(name){SCREENS.forEach(function(s){$("screen-"+s).classList.toggle("hide",s!==name);});
+  document.body.className=document.body.className.replace(/\bscr-\S+/g,"").trim(); document.body.classList.add("scr-"+name);
   window.scrollTo(0,0);}
 function toast(msg){var t=$("toast");t.textContent=msg;t.classList.add("show");setTimeout(function(){t.classList.remove("show");},1400);}
 function currentScreen(){ for(var i=0;i<SCREENS.length;i++){ if(!$("screen-"+SCREENS[i]).classList.contains("hide")) return SCREENS[i]; } return "home"; }
@@ -396,7 +787,7 @@ function navBack(){    // return to the screen you came from: home, or the curre
   JUST_JOINED=null;
   if(BACK_TO==="home"||BACK_TO==="detail"){ goHome(); return; }   // detail/home origins → hub (not a play-context resume)
   var d=curDone(); if(d){ renderReveal(d,false); }
-  else if(DAY){ renderIntro(DAY.date===todayStr()); }
+  else if(DAY){ renderPlay(); }
   else { goHome(); }
 }
 
@@ -404,6 +795,9 @@ function navBack(){    // return to the screen you came from: home, or the curre
 var DAY=null;            // the currently-loaded edition (today's OR an archive one)
 var ANS={};             // id -> "real"|"fake"
 var LOCK=null;          // id of locked quote
+var PLAY_IDX=0;          // index (0-5) of the quote currently on screen (one-card play)
+var LANES_PICK=null;     // lane highlighted in the Lanes picker (committed on "Play {lane}")
+var CREW_WHEN="today";   // crew board Today/Week toggle
 var MANIFEST={days:[]}; // published editions (daily/index.json)
 
 /* ---------- boot ---------- */
@@ -439,17 +833,17 @@ function loadAndRoute(wanted){
   var lane=ST.lane||"general";
   show("loading");
   fetchDay(wanted, lane).then(function(day){
-    DAY=day; DAY._lane=lane; ANS={}; LOCK=null;
+    DAY=day; DAY._lane=lane; ANS={}; LOCK=null; PLAY_IDX=0;
     var isToday = day.date===todayStr();
     $("editiontag").textContent = (lane!=="general"?(laneLabel(lane).replace(/^\S+\s/,"")+" · "):"")+"No. "+(day.edition||"?")+" · "+prettyDate(day.date);
-    $("sub").textContent = "Six quotes" + (lane!=="general"?(" · "+laneLabel(lane).replace(/^\S+\s/,"")):"") + ". Some are real. Some are AI fakes.";
+    $("sub").textContent = "Six quotes" + (lane!=="general"?(" · "+laneLabel(lane).replace(/^\S+\s/,"")):"") + ". Some are real. Some are made up.";
     updatePastBar(isToday, day);
     logEvent("visit",{archive:!isToday, cat:lane});
     if(isToday && ST.last_realday && ST.last_realday!==todayStr() && daysBetween(ST.last_realday,todayStr())>=1)
       logEvent("return",{gap:daysBetween(ST.last_realday,todayStr()), cat:lane});
     var key=dayKey(lane, day.date);
     if(ST.days[key] && ST.days[key].done){ renderReveal(ST.days[key].result, false); }
-    else { renderIntro(isToday); }
+    else { logEvent("start",{cat:lane, archive:!isToday}); renderPlay(); }
   }).catch(function(e){
     show("error");
     $("screen-error").innerHTML="Couldn't load that set.<br><span style='color:var(--mut);font-size:13px'>"+esc(e.message||e)+"</span>";
@@ -461,8 +855,13 @@ function prettyDate(s){var d=new Date(s+"T12:00:00");return d.toLocaleDateString
 function lanePath(lane,date){ return lane==="general"?("daily/"+date+".json"):("daily/"+lane+"/"+date+".json"); }
 function laneDays(lane){ var c=MANIFEST.categories&&MANIFEST.categories[lane]; if(c)return c; return lane==="general"?(MANIFEST.days||[]):[]; }
 function dayKey(lane,date){ return lane==="general"?date:(lane+":"+date); }   // per-lane completion record
-var LANE_LABELS={general:"📰 General",sports:"🏀 Sports",music:"🎵 Music",politics:"🏛️ Politics",movies:"🎬 Movies",nsfw:"🔞 NSFW"};
+var LANE_LABELS={general:"📰 General",sports:"🏀 Sports",music:"🎵 Music",politics:"🏛️ Politics",movies:"🎬 Movies",nsfw:"🔞 After Dark"};
+// bright-redesign lane theming (category hues + one-line vibes + flags)
+var LANE_HUES={general:"#4C6EF5",sports:"#20C4A8",music:"#9775FA",politics:"#FF922B",movies:"#FF8FAB",nsfw:"#7048E8"};
+var LANE_VIBES={general:"a mix of everything",sports:"game-day quotes",music:"backstage talk",politics:"from the podium",movies:"on the record",nsfw:"a little spicier"};
+var LANE_HOT={politics:true}, LANE_ADULT={nsfw:true};
 function laneLabel(l){ return LANE_LABELS[l] || ("# "+l); }
+function laneHue(l){ return LANE_HUES[l] || "#4C6EF5"; }
 function availableLanes(){ var ls=Object.keys((MANIFEST.categories)||{}); if(ls.indexOf("general")<0)ls.unshift("general");
   return ls.filter(function(l){ return l==="general"||laneDays(l).length; }); }
 function curDone(){ if(!DAY) return null; var r=ST.days[dayKey(DAY._lane||"general",DAY.date)]; return (r&&r.done)?r.result:null; }
@@ -476,40 +875,45 @@ function fetchDay(date, lane){
   });
 }
 
-/* ---------- INTRO ---------- */
-function statPills(){   // intro/reveal pills — no raw rating (kept internal; the home card shows the named rank)
-  var acc = ST.judged? Math.round(100*ST.correct/ST.judged):0;
-  var lacc = ST.locks? Math.round(100*ST.locks_correct/ST.locks):0;
-  return [["🔥","streak",ST.streak],["🎯","accuracy",ST.judged?acc+"%":"—"],["🔒","lock accuracy",ST.locks?lacc+"%":"—"]];
+/* ---------- LANES picker (bright redesign) ---------- */
+function openLanes(){
+  BACK_TO="home";
+  $("editiontag").textContent=""; $("pastbar").classList.add("hide"); $("pastbar").innerHTML="";
+  var avail=availableLanes();
+  LANES_PICK = (avail.indexOf(ST.lane)>=0) ? ST.lane : "general";
+  renderLanesPicker(); show("lanes");
 }
-function renderStats(host){
-  host.innerHTML="";
-  statPills().forEach(function(p){
-    var d=el("div","pill");d.innerHTML='<div class="n">'+p[0]+' '+p[2]+'</div><div class="l">'+p[1]+'</div>';host.appendChild(d);
-  });
+function laneAdultBadgeSVG(){
+  return '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 }
-function renderLanes(){
-  var host=$("lanePicker"); if(!host) return; host.innerHTML="";
-  var lanes=availableLanes();
-  if(lanes.length<2){ return; }                 // only show the picker once a 2nd lane exists
-  lanes.forEach(function(lane){
-    var b=el("button","lane-b"+(ST.lane===lane?" on":"")); b.textContent=laneLabel(lane);
-    b.onclick=function(){ if(ST.lane===lane) return; playLane(lane); };   // playLane carries the NSFW age gate
-    host.appendChild(b);
-  });
+function renderLanesPicker(){
+  var host=$("screen-lanes"), avail=availableLanes();
+  var cards=avail.map(function(lane){
+    var hue=laneHue(lane), sel=(lane===LANES_PICK), nm=laneName(lane), vibe=LANE_VIBES[lane]||"";
+    var badge = LANE_HOT[lane] ? '<span class="lane-badge hot">heated</span>'
+              : (LANE_ADULT[lane] ? '<span class="lane-badge adult">'+laneAdultBadgeSVG()+'18+</span>' : '');
+    var style = sel ? ('border-color:'+hue+';background:'+hue+'14;box-shadow:0 8px 20px -12px '+hue) : '';
+    return '<button class="lane-card'+(sel?' sel':'')+'" data-lane="'+esc(lane)+'" style="'+style+'">'+
+      '<div class="lc-top"><span class="lane-dot" style="border-color:'+hue+'"></span>'+badge+'</div>'+
+      '<div><div class="lane-name">'+esc(nm)+'</div><div class="lane-vibe">'+esc(vibe)+'</div></div></button>';
+  }).join("");
+  host.innerHTML =
+    '<div class="scr-head"><button class="back-btn" id="lanesBack" aria-label="Back">'+
+      '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>'+
+      '<div class="scr-title">Pick your lane</div></div>'+
+    '<div class="lanes-sub">Six quotes. Some real, some I faked. Spot the fakes.</div>'+
+    '<div class="lane-grid">'+cards+'</div>'+
+    '<div class="sticky-cta"><button class="outline-cta" id="lanesPlay">Play '+esc(laneName(LANES_PICK))+
+      ' <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>';
+  $("lanesBack").onclick=goHome;
+  $("lanesPlay").onclick=function(){ startLane(LANES_PICK); };
+  host.querySelectorAll(".lane-card").forEach(function(b){ b.onclick=function(){ pickLaneTile(b.getAttribute("data-lane")); }; });
 }
-function renderIntro(isToday){
-  renderLanes();
-  renderStats($("introStats"));
-  if(isToday===false){
-    $("introHint").textContent = "Past edition — replay it for fun or to send to friends; it won't change your streak.";
-    $("startBtn").textContent = "Play this past set →";
-  } else {
-    $("introHint").textContent = ST.streak>0 ? ("Keep your "+ST.streak+"-day streak alive.") : "Build a streak. Miss a day and it resets (you get one freeze a week).";
-    $("startBtn").textContent = "Play today's set →";
-  }
-  show("intro");
+function pickLaneTile(lane){
+  if(lane==="nsfw" && !ST.nsfw_ok){ ensureAgeOk(function(){ LANES_PICK="nsfw"; renderLanesPicker(); }); return; }   // After Dark 18+ sheet
+  LANES_PICK=lane; renderLanesPicker();
 }
+function startLane(lane){ playLane(lane); }   // playLane: gate + set ST.lane + loadAndRoute → renderPlay
 
 /* ---------- HOME (the hub) ---------- */
 function gamesPlayed(){ var d=ST.days||{},n=0; for(var k in d){ if(d[k]&&d[k].done)n++; } return n; }
@@ -533,7 +937,8 @@ function last7(){   // strictly chronological: 7 cells, oldest (left) → today 
   return out;
 }
 // named rank ladder, earned by accuracy; hidden until 5 sets; seeded partway into the tier (endowed progress)
-var TIERS=[{n:"Gullible"},{n:"Skeptic",a:.50},{n:"Sharp Eye",a:.60},{n:"Truth Sleuth",a:.70},{n:"Lie Detector",a:.80},{n:"Human Polygraph",a:.90}];
+// friendly rank ladder (design: never "Gullible"/"Human Polygraph"). "Mind Reader" is the top tier.
+var TIERS=[{n:"Rookie"},{n:"Skeptic",a:.50},{n:"Sharp Eye",a:.60},{n:"Truth Hound",a:.70},{n:"Lie Detector",a:.80},{n:"Mind Reader",a:.90}];
 function rankInfo(){
   var games=gamesPlayed();
   if(games<5) return {locked:true, need:5-games};
@@ -546,37 +951,6 @@ function rankInfo(){
 }
 function allResults(){ var out=[]; for(var k in (ST.days||{})){ var r=ST.days[k]&&ST.days[k].done&&ST.days[k].result; if(r) out.push(r); }
   return out.sort(function(a,b){ return (a.date||"")<(b.date||"")?1:-1; }); }   // newest first
-function statTile(big,label,sub,which,bigStyle){
-  var card=el("div","statcard tap");
-  card.innerHTML='<div class="sc-top"><span class="sc-big"'+(bigStyle?(' style="'+bigStyle+'"'):'')+'>'+big+'</span></div>'+
-    '<div class="sc-lbl">'+label+'</div><div class="sc-sub">'+sub+'</div>';
-  activate(card, function(){ openDetail(which); }, label+" — tap for detail");
-  return card;
-}
-// the social-first headline: your crew standing today, or a start-a-crew nudge when crew-less
-function renderHeadline(){
-  var h=$("homeHeadline"), cc=curCrew();
-  if(!cc || !crewEndpoint()){
-    h.className="headline";
-    h.innerHTML='<div><div class="hl-main">👥 Play with your crew</div><div class="hl-sub">Start a crew — compare on a shared daily board</div></div><div class="go">start ›</div>';
-    activate(h, openCrew, "Start a crew"); return;
-  }
-  h.className="headline";
-  h.innerHTML='<div><div class="hl-main">👥 '+esc(crewLabel(cc))+'</div><div class="hl-sub">loading your standing…</div></div><div class="go">open ›</div>';
-  activate(h, openCrew, "Open crew leaderboard");
-  fetchCrew(todayStr(), cc.code).then(function(c){
-    if(c&&c.name) setLocalCrewName(cc.code,c.name);
-    var list=mergeYou((c&&c.standings)||[], myResult(todayStr())), sub=h.querySelector(".hl-sub"), main=h.querySelector(".hl-main");
-    if(main) main.textContent="👥 "+crewLabel(curCrew());
-    if(!list.length){ if(sub) sub.textContent="No one's played today yet — play to lead "+crewLabel(cc); return; }
-    var rank=0; for(var i=0;i<list.length;i++){ if(list[i].you){ rank=i; break; } }
-    var txt;
-    if(rank===0 && list.length>1) txt="🥇 1st of "+list.length+" — leading by "+(list[0].score-list[1].score);
-    else if(rank===0) txt="You're first today — invite your people to compete";
-    else { var gap=list[rank-1].score-list[rank].score; txt="#"+(rank+1)+" of "+list.length+" · "+(gap>0?(gap+" behind "+list[rank-1].name):("tied with "+list[rank-1].name)); }
-    if(sub) sub.textContent=txt;
-  });
-}
 // personal "coach" line — keep the ~90% who aren't #1 motivated
 function renderCoach(){
   var c=$("homeCoach"); c.className=""; c.innerHTML=""; var msg="";
@@ -586,77 +960,121 @@ function renderCoach(){
   else if(gamesPlayed()>=1 && gamesPlayed()<5) msg="📈 "+(5-gamesPlayed())+" more set"+((5-gamesPlayed())>1?"s":"")+" to earn your rank — you're close.";
   if(msg){ c.className="coach"; c.textContent=msg; }
 }
-function renderHome(){
-  // header chrome for the hub
-  $("editiontag").textContent="";
-  $("sub").textContent="Pick a category — real quotes vs. AI fakes, a fresh set every day.";
-  $("pastbar").classList.add("hide"); $("pastbar").innerHTML="";
-  var games=gamesPlayed();
-  renderHeadline();
-  // streak hero + best + last-7-days strip (tap → streak detail)
-  var hero=$("homeHero");
-  var d7=last7(), n7=d7.filter(function(x){return x.played;}).length;
-  var strip=d7.map(function(x){ return '<i class="d7'+(x.played?" on":"")+(x.today?" today":"")+'" title="'+x.date+(x.played?" · played":"")+'" aria-hidden="true"></i>'; }).join("");
+/* the mascot "fakes" note — spoiler-safe; the count is fetched in the background (no set is loaded on home) */
+var _todayFakeCount=null;
+function homeFakesNote(n){
+  var host=$("homeFakes"); if(!host) return;
+  var inner = (n!=null)
+    ? ('I slipped in <span class="fk">'+n+' fake'+(n===1?'':'s')+'</span> today — can you spot them?')
+    : ('I slipped a few fakes into today’s set — can you spot them?');
+  host.innerHTML='<span class="mags-wrap">'+magpie("happy",32)+'</span><span class="fk-txt">'+inner+'</span>';
+}
+function loadTodayFakeCount(){
+  if(_todayFakeCount!=null){ homeFakesNote(_todayFakeCount); return; }
+  fetch(lanePath("general",todayStr()),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(d){
+    if(d&&d.quotes){ _todayFakeCount=d.quotes.filter(function(q){return !q.real;}).length; if(currentScreen()==="home") homeFakesNote(_todayFakeCount); }
+  }).catch(function(){});
+}
+// streak headline + 7-day strip (mint-outline = played, dashed-primary = today)
+function renderHomeStreak(){
+  var host=$("homeStreak"); if(!host) return;
+  var d7=last7();
+  var cells=d7.map(function(x){
+    var cls=x.today?"today":(x.played?"hit":"miss");
+    var lblCls=x.today?"today":(x.played?"hit":"");
+    return '<div class="d7cell"><div class="d7pill '+cls+'">'+(x.played?CHECK_SVG:"")+'</div>'+
+      '<span class="d7lbl '+lblCls+'">'+weekdayShort(x.date)+'</span></div>';
+  }).join("");
+  var sub="";
+  if(ST.streak>0 && (ST.best_streak||0)<=ST.streak) sub='<br><span class="best-yet">your best yet</span>';
+  else if(ST.streak>0 && ST.best_streak>0) sub='<br><span class="best-num">best: '+ST.best_streak+' day'+(ST.best_streak>1?'s':'')+'</span>';
   var head = ST.streak>0
-    ? '<div class="streak">🔥 '+ST.streak+'</div><div class="streaklbl">day streak</div>'
-    : '<div class="streak">👋</div><div class="streaklbl">Play a set today to start your streak</div>';
-  hero.innerHTML = head + '<div class="herorow"><span class="best">'+
-    (ST.best_streak>0?('Best: '+ST.best_streak+' day'+(ST.best_streak>1?'s':'')):'Build your streak')+
-    '</span><span class="d7wrap" role="img" aria-label="Played '+n7+' of the last 7 days">'+strip+'</span></div>';
-  hero.style.cursor="pointer"; activate(hero, function(){ openDetail("streak"); }, "Streak — tap for history");
-  renderCoach();
-  // stat tiles — every tile is a button → its own detail view
-  var sg=$("homeStats"); sg.innerHTML="";
-  sg.appendChild(statTile("🎯 "+(ST.judged?accPct()+"%":"—"), "Accuracy", "by category + recent sets", "accuracy"));
-  var rk=rankInfo();
-  if(rk.locked) sg.appendChild(statTile("🏅", liveCrew()?"Standing":"Rank", "Play "+rk.need+" more to unlock", "standing"));
-  else { var rcard=el("div","statcard tap");
-    rcard.innerHTML='<div class="sc-top"><span class="sc-big" style="font-size:17px;line-height:1.2">🏅 '+esc(rk.tier)+'</span></div>'+
-      '<div class="sc-lbl">'+(liveCrew()?"Standing":"Rank")+'</div><div class="bar"><i style="width:'+Math.round(rk.prog*100)+'%"></i></div>';
-    activate(rcard, function(){ openDetail("standing"); }, "Standing — tap for detail"); sg.appendChild(rcard); }
-  sg.appendChild(statTile("🎮 "+games, "Sets played", "your full history", "sets"));
-  sg.appendChild(statTile("🔒 "+(ST.locks?lockPct()+"%":"—"), "Lock accuracy", "your confident-pick record", "lock"));
-  // category cards — every lane, with today's status; tap to play (or view) that lane
-  var cats=$("homeCats"); cats.innerHTML=""; var today=todayStr();
-  availableLanes().forEach(function(lane){
-    var rec=ST.days[dayKey(lane,today)], done=(rec&&rec.done)?rec.result:null;
-    var hasToday=laneDays(lane).indexOf(today)>=0;     // is THIS lane's today edition actually published?
-    var lbl=laneLabel(lane), ic=lbl.split(" ")[0], name=lbl.replace(/^\S+\s/,"");
-    var status = done ? ("✓ you scored "+done.score+"/"+done.n+" today")
-                      : (hasToday ? "Not played yet today" : "Latest set — no new edition today");
-    if(lane==="nsfw") status = "🔞 18+ · adult content · " + status;   // visible warning on the card
-    var card=el("div","catcard"+(done?" done":"")); card.setAttribute("data-lane",lane);
-    card.innerHTML='<div class="ic">'+ic+'</div>'+
-      '<div class="cc"><div class="ct">'+esc(name)+'</div><div class="cs'+(done?" done":"")+'">'+status+'</div></div>'+
-      '<div class="go">'+(done?"view ›":(hasToday?"play ›":"latest ›"))+'</div>';
-    activate(card, function(){ playLane(lane); }, (done?"View ":"Play ")+name+" — "+status);
-    cats.appendChild(card);
-  });
-  // crew strip
-  var hc=$("homeCrew"); hc.className="homecrew"; var cc=curCrew();
-  if(cc){
-    var more=(ST.crews.length>1)?(" +"+(ST.crews.length-1)+" more"):"";
-    hc.innerHTML='<div class="ic">👥</div><div class="cc"><div class="ct">'+esc(crewLabel(cc))+esc(more)+'</div>'+
-      '<div class="cs">'+(cc.name?("code "+esc(cc.code)+" · "):"")+'standings &amp; invites</div></div><div class="go">open ›</div>';
-  } else {
-    hc.innerHTML='<div class="ic">👥</div><div class="cc"><div class="ct">Play with your crew</div>'+
-      '<div class="cs">Compare scores, build a shared streak — no accounts</div></div><div class="go">start ›</div>';
+    ? '<div class="streak-head"><span class="fire">🔥</span><span class="streak-num">'+ST.streak+'</span><span class="streak-lbl">day streak'+sub+'</span></div>'
+    : '<div class="streak-head"><span class="fire">🔥</span><span class="streak-num zero">0</span><span class="streak-lbl">Play today to start your streak</span></div>';
+  host.innerHTML=head+'<div class="d7strip">'+cells+'</div>';   // display only (per design — not a button)
+}
+function homeStatChip(label,value,which){
+  var b=el("button","stat-chip");
+  b.innerHTML='<div class="sc-lbl">'+esc(label)+'</div><div class="sc-val">'+esc(value)+'</div>';
+  b.setAttribute("aria-label", label+" — tap for detail");
+  b.onclick=function(){ if(which==="standing" && liveCrew()){ openCrew(); return; } openStats(which); };
+  return b;
+}
+// hero slot: in-crew standing card, or the solo / new-player crew nudge
+function renderHomeHero(){
+  var host=$("homeHero"); var cc=curCrew();
+  if(!cc || !crewEndpoint()){
+    host.className="hero-solo"; host.removeAttribute("role"); host.removeAttribute("tabindex"); host.onclick=null; host.onkeydown=null;
+    host.innerHTML='<div class="hs-top"><span class="hs-mags">'+magpie("happy",54)+'</span>'+
+      '<div><div class="hs-title">Play with friends</div><div class="hs-sub">Start a crew — no account needed.</div></div></div>'+
+      '<button class="hs-btn" id="homeStartCrew">+ Create or join a crew</button>';
+    var b=$("homeStartCrew"); if(b) b.onclick=openCrew;
+    return;
   }
-  activate(hc, openCrew, cc?("Open crew "+cc.code):"Play with your crew");
-  // discoverable account entry on the hub (sign-in lives on the crew page; this just points there)
-  var ha=$("homeAccount");
-  if(ha){ if(SB){ ha.classList.remove("hide"); ha.textContent=ACCOUNT?("☁️ "+(ACCOUNT.email||"Synced")):"☁️ Save progress"; ha.onclick=openCrew; } else ha.classList.add("hide"); }
+  host.className="hero-crew";
+  host.innerHTML='<div class="hc-row">'+
+      '<button class="hc-name" id="homeCrewName"><span>'+esc(crewLabel(cc))+'</span>'+CHEV_DOWN+'</button>'+
+      '<span class="hc-week">this week</span></div>'+
+    '<div class="hc-rank"><span class="hc-rank-n" id="hcRankN">·</span><span class="hc-rank-of" id="hcRankOf">of —</span></div>'+
+    '<div class="hc-gap" id="hcGap">loading your standing…</div>'+
+    '<div class="hc-foot"><div class="hc-avs" id="hcAvs"></div><span class="hc-see">See the board ›</span></div>';
+  activate(host, openCrew, "Open crew board");
+  var nm=$("homeCrewName"); if(nm) nm.onclick=function(e){ if(e&&e.stopPropagation)e.stopPropagation(); openCrewSwitcher(); };  // crew-name → switcher sheet
+  fetchCrew(todayStr(), cc.code).then(function(c){
+    if(c&&c.name){ setLocalCrewName(cc.code,c.name); var n2=$("homeCrewName"); if(n2){ var sp=n2.querySelector("span"); if(sp) sp.textContent=crewLabel(curCrew()); } }
+    // weekly (season) standing — merge this device's own week total so it shows before the server registers it
+    var myW=myWeekTotal();
+    var week=((c&&c.week)||[]).map(function(s){return {sid:s.sid,name:s.name,total:s.total,you:s.sid===ST.sid};});
+    var meW=week.filter(function(s){return s.you;})[0];
+    if(meW){ if(myW.total>meW.total) meW.total=myW.total; } else if(myW.days){ week.push({sid:ST.sid,name:ST.displayName||"you",total:myW.total,you:true}); }
+    week.sort(function(a,b){return b.total-a.total;});
+    var gapEl=$("hcGap"), rnEl=$("hcRankN"), roEl=$("hcRankOf"), avEl=$("hcAvs");
+    if(!gapEl) return;   // navigated away before the fetch resolved
+    if(!week.length){ rnEl.textContent="–"; roEl.textContent=""; gapEl.textContent="No scores yet this week — play to lead "+crewLabel(cc); return; }
+    var yi=0; for(var i=0;i<week.length;i++){ if(week[i].you){ yi=i; break; } }
+    rnEl.textContent=(yi+1); roEl.textContent="of "+week.length;
+    if(yi>0){ var need=week[yi-1].total-week[yi].total; gapEl.textContent=(need>0?(need+" point"+(need===1?"":"s")+" behind "+week[yi-1].name+" →"):("tied with "+week[yi-1].name)); }
+    else { gapEl.textContent="leading the board →"; }
+    avEl.innerHTML=week.slice(0,5).map(function(s){ var col=s.you?"var(--primary)":avColor(s.name);
+      return '<span class="av" style="border-color:'+col+';color:'+col+'">'+esc(s.you?"Y":avInitial(s.name))+'</span>'; }).join("");
+  });
+}
+function renderHome(){
+  $("editiontag").textContent=homeDateLabel();
+  $("sub").textContent="";
+  $("pastbar").classList.add("hide"); $("pastbar").innerHTML="";
+  renderHomeHero();
+  homeFakesNote(_todayFakeCount); loadTodayFakeCount();
+  renderHomeStreak();
+  renderCoach();
+  // three stat chips → each opens its detail (the stats bottom-sheet lands in Phase 5)
+  var sg=$("homeStats"); sg.innerHTML="";
+  var rk=rankInfo();
+  sg.appendChild(homeStatChip("Accuracy", ST.judged?accPct()+"%":"—", "accuracy"));
+  sg.appendChild(homeStatChip(liveCrew()?"Standing":"Rank", rk.locked?"—":rk.tier, "standing"));
+  sg.appendChild(homeStatChip("Played", String(gamesPlayed()), "days"));
+  // footer links: Past editions · Save progress (account link only when Supabase is configured)
+  var ha=$("homeAccount"), sep=$("homeLinkSep");
+  if(ha){ if(SB){ ha.classList.remove("hide"); if(sep)sep.classList.remove("hide");
+      ha.textContent=ACCOUNT?("Synced"+(ACCOUNT.email?(" · "+ACCOUNT.email):"")):"Save progress"; ha.onclick=openCrew; }
+    else { ha.classList.add("hide"); if(sep)sep.classList.add("hide"); } }
   show("home");
 }
 function goHome(){ JUST_JOINED=null; if(qsDay()){ try{ history.replaceState(null,"",location.pathname); }catch(e){} } renderHome(); logEvent("home_view"); }  // strip a lingering ?d= so Home survives a reload
-function nsfwOK(){   // one-time 18+ gate for the NSFW lane (the "warning" before adult content)
-  if(ST.nsfw_ok) return true;
-  var ok = window.confirm && window.confirm("🔞 Adult edition — expect profanity, crude humor and unfiltered outbursts. Confirm you're 18+ to continue.");
-  if(ok){ ST.nsfw_ok=true; save(ST); logEvent("nsfw_optin"); }
-  return !!ok;
+// After Dark 18+ gate — styled bottom sheet (replaces window.confirm); keeps the ST.nsfw_ok flag + nsfw_optin event
+function ensureAgeOk(onOk){
+  if(ST.nsfw_ok){ onOk(); return; }
+  var sh=openSheet(
+    '<div class="ag-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>'+
+    '<div class="ag-title">After Dark is 18+</div>'+
+    '<div class="ag-body">Spicier quotes, same game. Confirm you’re over 18 to play this lane.</div>'+
+    '<button class="ag-confirm" id="agOk">I’m 18 or older</button>'+
+    '<button class="ag-cancel" id="agNo">Not now</button>');
+  $("agOk").onclick=function(){ ST.nsfw_ok=true; save(ST); logEvent("nsfw_optin"); closeSheet(); onOk(); };
+  $("agNo").onclick=closeSheet;
 }
 function playLane(lane){
-  if(lane==="nsfw" && !nsfwOK()) return;
+  if(lane==="nsfw" && !ST.nsfw_ok){ ensureAgeOk(function(){ playLane("nsfw"); }); return; }
   if(ST.lane!==lane){ ST.lane=lane; save(ST); logEvent("lane_switch",{cat:lane}); }
   loadAndRoute(todayStr());
 }
@@ -664,97 +1082,178 @@ function playLane(lane){
 /* ---------- STAT DETAIL VIEWS (every home tile → its own detail) ---------- */
 function lastNplayed(n){ var played={}; (ST.log||[]).forEach(function(e){ if(e.ev==="complete"&&e.ts){ try{played[todayStr(new Date(e.ts))]=1;}catch(x){} } });
   var t=todayStr(), out=[]; for(var i=n-1;i>=0;i--){ var d=addDaysStr(t,-i); out.push({date:d,played:!!played[d],today:i===0}); } return out; }
-function recentSets(n){ return allResults().slice(0,n||10); }
 function laneName(l){ return laneLabel(l).replace(/^\S+\s/,""); }
-function openDetail(which){
-  if(which==="standing" && liveCrew()){ openCrew(); return; }   // live crew → standing IS the leaderboard; else solo ladder
-  renderDetail(which); show("detail"); logEvent("stat_detail",{which:which});
-}
-function renderDetail(which){
-  var b=$("detailBody");
+
+/* ---------- STATS bottom sheet (overview → detail), replacing the old detail screen ---------- */
+function statDetailData(which){
   if(which==="accuracy"){
-    var cs=categoryStats(), rows="";
-    availableLanes().forEach(function(lane){ var x=cs[lane], lbl=laneLabel(lane);
-      rows += (x&&x.n)
-        ? '<div class="brk-row"><span class="brk-l">'+esc(lbl)+'</span><span class="brk-v">'+Math.round(100*x.score/x.n)+'% · '+x.sets+' set'+(x.sets>1?'s':'')+' · lock '+(x.locks?Math.round(100*x.locksRight/x.locks)+'%':'—')+'</span></div>'
-        : '<div class="brk-row"><span class="brk-l">'+esc(lbl)+'</span><span class="brk-v dim">not played yet</span></div>'; });
-    var trend=recentSets(12).map(function(r){ return '<div class="hist-row"><span class="hl">'+prettyDate(r.date)+' · '+esc(laneName(r.lane||"general"))+'</span><span class="hr">'+r.score+'/'+r.n+'</span></div>'; }).join("")||"<div class='hint' style='padding:12px'>No sets yet — play one to start your history.</div>";
-    b.innerHTML='<div class="detail-h">🎯 Accuracy</div><div class="detail-sub">'+(ST.judged?accPct()+"% correct across "+gamesPlayed()+" sets.":"Play a set to start tracking accuracy.")+'</div>'+
-      '<div class="seclabel">By category</div><div class="card" style="padding:4px 14px">'+rows+'</div>'+
-      '<div class="seclabel">Recent sets</div><div class="card" style="padding:0 12px">'+trend+'</div>';
-  } else if(which==="streak"){
-    var grid=lastNplayed(28).map(function(x){ return '<i class="d7'+(x.played?" on":"")+(x.today?" today":"")+'" title="'+x.date+'" aria-hidden="true"></i>'; }).join("");
-    var fz=(ST.freezes_left==null?1:ST.freezes_left);
-    b.innerHTML='<div class="detail-h">🔥 Streak</div>'+
-      '<div class="card" style="text-align:center"><div class="streak">'+(ST.streak||0)+'</div><div class="streaklbl">current day streak</div>'+
-      '<div class="best" style="margin-top:6px">Best: '+(ST.best_streak||0)+' day'+((ST.best_streak||0)===1?"":"s")+' · 🛡️ '+(fz>0?(fz+" freeze available this week"):"freeze used this week")+'</div></div>'+
-      '<div class="seclabel">Last 4 weeks</div><div class="card"><div class="d7wrap" style="flex-wrap:wrap;gap:6px;justify-content:flex-start">'+grid+'</div>'+
-      '<div class="hint" style="margin-top:8px">A cell fills when you play any set that day. Miss a day and the streak resets — one freeze a week covers a single miss.</div></div>';
-  } else if(which==="sets"){
-    var rows=allResults().map(function(r){ return '<div class="hist-row"><span class="hl">'+prettyDate(r.date)+' · '+esc(laneName(r.lane||"general"))+'</span><span class="hr">'+r.score+'/'+r.n+(r.lockCorrect===true?' · 🔒✓':(r.lockCorrect===false?' · 🔒✗':''))+'</span></div>'; }).join("")||"<div class='hint' style='padding:12px'>No sets played yet.</div>";
-    b.innerHTML='<div class="detail-h">🎮 Sets played</div><div class="detail-sub">'+gamesPlayed()+' set'+(gamesPlayed()===1?"":"s")+' across all categories (newest first).</div><div class="card" style="padding:0 12px">'+rows+'</div>';
-  } else if(which==="lock"){
-    var lk=allResults().filter(function(r){ return r.lockCorrect===true||r.lockCorrect===false; });
-    var rows=lk.map(function(r){ return '<div class="hist-row"><span class="hl">'+prettyDate(r.date)+' · '+esc(laneName(r.lane||"general"))+'</span><span class="hr">'+(r.lockCorrect?"✓ nailed it":"✗ missed")+(r.lockIdx?(" (#"+r.lockIdx+")"):"")+'</span></div>'; }).join("")||"<div class='hint' style='padding:12px'>No locks yet — tap ★ on your most-confident quote.</div>";
-    b.innerHTML='<div class="detail-h">🔒 Lock accuracy</div><div class="detail-sub">'+(ST.locks?(lockPct()+"% — your most-confident pick was right "+ST.locks_correct+" of "+ST.locks+" times."):"Lock your most-confident quote each game; this tracks how often you nail it.")+'</div><div class="card" style="padding:0 12px">'+rows+'</div>';
-  } else {  // "standing" with no crew → solo tier ladder + start-a-crew CTA
-    var rk=rankInfo(), acc=ST.judged?Math.round(ST.correct/ST.judged*100):0;
-    var rows=TIERS.map(function(tt){ var cur=!rk.locked && tt.n===rk.tier;
-      return '<div class="ladder-row'+(cur?" cur":"")+'"><span class="lt">'+esc(tt.n)+(cur?" — you":"")+'</span><span class="lm">'+(tt.a?(Math.round(tt.a*100)+"%+ accuracy"):"starting tier")+'</span></div>'; }).join("");
-    b.innerHTML='<div class="detail-h">🏅 Your rank</div>'+
-      (rk.locked?'<div class="detail-sub">Play '+rk.need+' more set'+(rk.need>1?"s":"")+' to earn your rank — you\'re at '+acc+'% so far.</div>'
-                :'<div class="detail-sub">You\'re <b>'+esc(rk.tier)+'</b> — '+esc(rk.line)+'.</div>')+
-      '<div class="card" style="padding:6px 10px">'+rows+'</div>'+
-      '<div class="card crewcard" style="text-align:center">👥 <b>Compete with friends</b><div class="hint" style="margin:4px 0 8px">Rank is your solo climb. Add a crew for a live, head-to-head leaderboard.</div><button class="btn" id="detStartCrew">Start a crew →</button></div>';
-    var sc=$("detStartCrew"); if(sc) sc.onclick=openCrew;
+    var cs=categoryStats();
+    var rows=availableLanes().map(function(lane){ var x=cs[lane], pct=(x&&x.n)?Math.round(100*x.score/x.n):0;
+      return {label:laneName(lane), pct:(x&&x.n)?pct:0, value:(x&&x.n)?pct+"%":"—", color:laneHue(lane)}; });
+    return {kicker:"Accuracy", big: ST.judged?accPct()+"%":"—", bigSub: ST.judged?("across "+gamesPlayed()+" set"+(gamesPlayed()===1?"":"s")):"no sets yet",
+      blurb: ST.judged?"How often you call a quote right — broken down by lane.":"Play a set to start tracking accuracy.", rows:rows};
   }
+  if(which==="standing"){   // solo rank ladder (a live-crew standing routes to the board instead)
+    var rk=rankInfo(), ci=-1; if(!rk.locked){ for(var i=0;i<TIERS.length;i++){ if(TIERS[i].n===rk.tier){ ci=i; break; } } }
+    var rows=TIERS.map(function(tt,i){ var achieved=(ci>=0 && i<ci), isCur=(i===ci);
+      return {label:tt.n, pct: achieved?100:(isCur?Math.round((rk.prog||.5)*100):0),
+        value: achieved?"✓":(isCur?"now":(tt.a?(Math.round(tt.a*100)+"%"):"start")),
+        color: achieved?"#16B981":(isCur?"#4C6EF5":"#E6E8F0")}; });
+    return {kicker:"Rank", big: rk.locked?"—":rk.tier, bigSub: rk.locked?("play "+rk.need+" more"):("tier "+(ci+1)+" of "+TIERS.length),
+      blurb: rk.locked?("You're at "+(ST.judged?Math.round(ST.correct/ST.judged*100):0)+"% — "+rk.need+" more set"+(rk.need>1?"s":"")+" earns your rank."):(rk.line||""), rows:rows};
+  }
+  if(which==="days"){
+    var g=gamesPlayed(), l7=last7().filter(function(x){return x.played;}).length, l28=lastNplayed(28).filter(function(x){return x.played;}).length;
+    var rows=[
+      {label:"This week", pct:Math.round(l7/7*100), value:l7+"/7", color:"#16B981"},
+      {label:"Last 4 weeks", pct:Math.round(l28/28*100), value:l28+"/28", color:"#20C4A8"},
+      {label:"Current streak", pct:Math.min(100, (ST.streak||0)/Math.max(1,ST.best_streak||1)*100), value:(ST.streak||0)+"", color:"#FBA94C"}
+    ];
+    return {kicker:"Days played", big:g+"", bigSub:"sets", blurb:"Best streak: "+(ST.best_streak||0)+" day"+((ST.best_streak||0)===1?"":"s")+". A cell fills when you play any set that day.", rows:rows};
+  }
+  // lock record
+  var rows=[
+    {label:"Locked right", pct: ST.locks?Math.round(100*ST.locks_correct/ST.locks):0, value: ST.locks?Math.round(100*ST.locks_correct/ST.locks)+"%":"—", color:"#16B981"},
+    {label:"Locks placed", pct: gamesPlayed()?Math.min(100, Math.round(100*(ST.locks||0)/Math.max(1,gamesPlayed()))):0, value:(ST.locks||0)+"", color:"#4C6EF5"}
+  ];
+  return {kicker:"Lock record", big: ST.locks?lockPct()+"%":"—", bigSub:"locks right",
+    blurb: ST.locks?("Your one most-confident pick was right "+ST.locks_correct+" of "+ST.locks+" times."):"Lock your most-confident quote each game; this tracks how often you nail it.", rows:rows};
+}
+function openStats(which){ renderStatsSheet(which||"overview"); logEvent("stat_detail",{which:which||"overview"}); }
+function renderStatsSheet(view){
+  if(view==="overview"){
+    var rk=rankInfo();
+    var items=[{k:"accuracy",lbl:"Accuracy",val:ST.judged?accPct()+"%":"—"},
+      {k:"standing",lbl:liveCrew()?"Standing":"Rank",val:rk.locked?"—":rk.tier},
+      {k:"days",lbl:"Days played",val:gamesPlayed()+""},
+      {k:"lock",lbl:"Lock record",val:ST.locks?lockPct()+"%":"—"}];
+    var rows=items.map(function(it){ return '<button class="st-row" data-k="'+it.k+'"><div><div class="lbl">'+it.lbl+'</div><div class="val">'+esc(it.val)+'</div></div><span class="chev">'+CHEV_RIGHT+'</span></button>'; }).join("");
+    var sh=openSheet('<div class="sheet-title">Your stats</div>'+rows+'<button class="sheet-close" id="stClose">Close</button>');
+    sh.querySelectorAll(".st-row").forEach(function(b){ b.onclick=function(){ var k=b.getAttribute("data-k"); if(k==="standing"&&liveCrew()){ closeSheet(); openCrew(); return; } renderStatsSheet(k); }; });
+    $("stClose").onclick=closeSheet; return;
+  }
+  if(view==="standing" && liveCrew()){ closeSheet(); openCrew(); return; }
+  var d=statDetailData(view);
+  var bars=d.rows.map(function(r){ return '<div class="st-bar"><span class="bl">'+esc(r.label)+'</span><div class="bw"><div class="bf" style="width:'+Math.max(0,Math.min(100,r.pct))+'%;background:'+r.color+'"></div></div><span class="bv">'+esc(r.value)+'</span></div>'; }).join("");
+  openSheet('<button class="st-back" id="stBack">'+CHEV_LEFT+' All stats</button>'+
+    '<div class="st-kicker">'+esc(d.kicker)+'</div><div class="st-big"><span class="n">'+esc(d.big)+'</span><span class="s">'+esc(d.bigSub)+'</span></div>'+
+    '<div class="st-blurb">'+esc(d.blurb)+'</div><div class="st-bars">'+bars+'</div>'+
+    '<button class="sheet-close" id="stClose">Close</button>');
+  $("stBack").onclick=function(){ renderStatsSheet("overview"); };
+  $("stClose").onclick=closeSheet;
+}
+/* ---------- crew switcher bottom sheet ---------- */
+function openCrewSwitcher(){
+  if(!inCrew()){ openCrew(); return; }
+  var rows=(ST.crews||[]).map(function(c){ var active=c.code===(curCrew()||{}).code;
+    return '<button class="sw-row'+(active?' active':'')+'" data-code="'+esc(c.code)+'">'+
+      '<div><div class="nm">'+esc(crewLabel(c))+'</div><div class="sub">tap to view standings</div></div>'+
+      '<div style="display:flex;align-items:center;gap:12px"><span class="code">'+esc(c.code)+'</span>'+(active?'<span class="chk">'+CHECK_SVG+'</span>':'')+'</div></button>'; }).join("");
+  var sh=openSheet('<div class="sheet-title">Your crews</div>'+rows+
+    '<button class="sw-add" id="swAdd">+ Create or join a crew</button>'+
+    '<button class="sheet-close" id="swClose">Close</button>');
+  sh.querySelectorAll(".sw-row").forEach(function(b){ b.onclick=function(){ setActiveCrew(b.getAttribute("data-code")); closeSheet(); JUST_JOINED=null; openCrew(); }; });
+  $("swAdd").onclick=function(){ closeSheet(); joinAnotherCrew(); };
+  $("swClose").onclick=closeSheet;
 }
 
-/* ---------- PLAY ---------- */
-function renderPlay(){
-  ANS={};LOCK=null;
-  var host=$("quotes");host.innerHTML="";
-  DAY.quotes.forEach(function(q,i){
-    var c=el("div","q");
-    c.innerHTML =
-      '<div class="num">#'+(i+1)+'</div>'+
-      '<blockquote>“'+esc(q.text)+'”</blockquote>'+
-      '<div class="attr">— <b>'+esc(q.speaker)+'</b>'+(q.context?(' · '+esc(q.context)):'')+'</div>'+
-      '<div class="choices">'+
-        '<div class="choice real" data-id="'+q.id+'" data-v="real">REAL</div>'+
-        '<div class="choice fake" data-id="'+q.id+'" data-v="fake">FAKE</div>'+
-      '</div>'+
-      '<button class="lockbtn" data-lock="'+q.id+'">★ Lock — my most confident call</button>';
-    host.appendChild(c);
-  });
-  host.querySelectorAll(".choice").forEach(function(ch){
-    ch.addEventListener("click",function(){
-      var id=ch.dataset.id, v=ch.dataset.v;
-      ANS[id]=v;
-      host.querySelectorAll('.choice[data-id="'+id+'"]').forEach(function(x){x.classList.toggle("on",x.dataset.v===v);});
-      syncPlay();
+/* ---------- PLAY (bright redesign — one card at a time, swipe + tap + lock) ---------- */
+function curQ(){ return DAY.quotes[PLAY_IDX]; }
+function answeredCount(){ return DAY.quotes.filter(function(q){return ANS[q.id];}).length; }
+function firstUnanswered(){ for(var i=0;i<DAY.quotes.length;i++){ if(!ANS[DAY.quotes[i].id]) return i; } return 0; }
+function clamp01(v){ return Math.max(0,Math.min(1,v)); }
+function playNext(){ if(PLAY_IDX<DAY.quotes.length-1){ PLAY_IDX++; paintPlay(); window.scrollTo(0,0); } }
+function playJump(i){ PLAY_IDX=i; paintPlay(); window.scrollTo(0,0); }
+var LOCK_ICON='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
+var X_ICON='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="3.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+var RF_CHECK='<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6"/></svg>';
+
+function renderPlay(){ paintPlay(); show("play"); }
+function paintPlay(){
+  var host=$("screen-play"), q=curQ(), lane=DAY._lane||"general", hue=laneHue(lane), n=DAY.quotes.length;
+  host.innerHTML =
+    '<div class="play-head">'+
+      '<button class="back-btn" id="playBack" aria-label="Quit"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>'+
+      '<div class="pbar" id="playProgress"></div>'+
+      '<div class="pstep" id="playStep">'+(PLAY_IDX+1)+'/'+n+'</div>'+
+    '</div>'+
+    '<div class="qcard" id="playCard">'+
+      '<div class="qtint real" id="tintReal"></div><div class="qtint fake" id="tintFake"></div>'+
+      '<div class="qcard-top"><span class="qchip" style="color:'+hue+';border-color:'+hue+'">'+esc(laneName(lane))+'</span>'+
+        '<span class="qdate">'+esc(prettyDate(DAY.date))+'</span></div>'+
+      '<div class="qtext">“'+esc(q.text)+'”</div>'+
+      '<div class="qspk"><span class="qav" style="color:'+hue+';border-color:'+hue+'">'+esc(avInitial(q.speaker))+'</span>'+
+        '<div><div class="nm">'+esc(q.speaker)+'</div>'+(q.context?('<div class="rl">'+esc(q.context)+'</div>'):'')+'</div></div>'+
+    '</div>'+
+    '<div class="swipe-hint">Swipe the card — or tap below</div>'+
+    '<div class="rf-row">'+
+      '<button class="rfbtn real" id="btnReal" data-v="real"><span class="ic" id="popReal">'+RF_CHECK+'</span><span class="lbl">Real</span></button>'+
+      '<button class="rfbtn fake" id="btnFake" data-v="fake"><span class="ic" id="popFake">'+X_ICON+'</span><span class="lbl">Fake</span></button>'+
+    '</div>'+
+    '<button class="lockbtn2" id="btnLock"><span class="ic">'+LOCK_ICON+'</span><span class="lbl" id="lockLbl">Lock it in</span></button>'+
+    '<div class="lock-sub">Lock your one most-confident call to bet it all.</div>'+
+    '<div class="cta-wrap"><button class="cta-btn" id="playCTA"></button></div>';
+
+  var card=$("playCard"), tintR=$("tintReal"), tintF=$("tintFake");
+  var btnR=$("btnReal"), btnF=$("btnFake"), iconR=$("popReal"), iconF=$("popFake");
+  var lockBtn=$("btnLock"), cta=$("playCTA"), prog=$("playProgress");
+  var BASE_SHADOW='0 14px 34px -20px rgba(40,50,90,.5)';
+
+  function refreshProgress(){
+    var html="";
+    DAY.quotes.forEach(function(qq,i){
+      var cls="pseg"; if(LOCK===qq.id)cls+=" lck"; else if(i===PLAY_IDX)cls+=" cur"; else if(ANS[qq.id])cls+=" ans";
+      html+='<button class="'+cls+'" data-i="'+i+'"><span class="bar"></span>'+
+        (LOCK===qq.id?'<span class="lockico">'+LOCK_ICON.replace(/width="16" height="16"/,'width="12" height="12"')+'</span>':'')+'</button>';
     });
-  });
-  host.querySelectorAll(".lockbtn").forEach(function(b){
-    b.addEventListener("click",function(){
-      var id=b.dataset.lock; LOCK = (LOCK===id)?null:id;
-      host.querySelectorAll(".lockbtn").forEach(function(x){x.classList.toggle("on",x.dataset.lock===LOCK);});
-      syncPlay();
-    });
-  });
-  syncPlay(); show("play");
-}
-function syncPlay(){
-  var prog=$("progress");prog.innerHTML="";
-  DAY.quotes.forEach(function(q){
-    var i=el("i");if(ANS[q.id])i.classList.add("done");if(LOCK===q.id)i.classList.add("locked");prog.appendChild(i);
-  });
-  var answered=DAY.quotes.filter(function(q){return ANS[q.id];}).length;
-  var all = answered===DAY.quotes.length;
-  var btn=$("submitBtn");
-  btn.disabled=!all;
-  btn.textContent = !all ? ("Answer all 6 to reveal ("+answered+"/6)") : (LOCK? "Reveal results →" : "Pick a ★ lock, then reveal →");
-  if(all && !LOCK){btn.disabled=true;}
+    prog.innerHTML=html;
+    prog.querySelectorAll(".pseg").forEach(function(b){ b.onclick=function(){ playJump(+b.getAttribute("data-i")); }; });
+  }
+  function refreshRF(){ var a=ANS[q.id];
+    btnR.className="rfbtn real"+(a==="real"?" sel":"");
+    btnF.className="rfbtn fake"+(a==="fake"?" sel":""); }
+  function refreshLock(){ var isLocked=LOCK===q.id, ready=(answeredCount()===DAY.quotes.length && LOCK===null);
+    lockBtn.className="lockbtn2"+(isLocked?" on":(ready?" ready":""));
+    $("lockLbl").textContent=isLocked?"Locked in":"Lock it in"; }
+  function refreshCTA(){
+    var curAns=ANS[q.id], ac=answeredCount(), all=ac===DAY.quotes.length, last=PLAY_IDX>=DAY.quotes.length-1;
+    cta.className="cta-btn"; cta.onclick=null;
+    if(!curAns){ cta.textContent="Real or fake?"; cta.classList.add("disabled"); }
+    else if(!last){ cta.textContent="Next quote →"; cta.classList.add("next"); cta.onclick=playNext; }
+    else if(!all){ cta.textContent="Answer all six ("+ac+"/"+DAY.quotes.length+")"; cta.classList.add("next"); cta.onclick=function(){ playJump(firstUnanswered()); }; }
+    else if(LOCK===null){ cta.textContent="Lock your top pick first"; cta.classList.add("lockfirst"); }
+    else { cta.textContent="See the results"; cta.onclick=submit; }
+  }
+  function popIcon(v){ var ic=(v==="real")?iconR:iconF; if(!ic)return; ic.classList.remove("pop"); void ic.offsetWidth; ic.classList.add("pop"); setTimeout(function(){ if(ic)ic.classList.remove("pop"); },340); }
+  function pulseLock(){ lockBtn.classList.remove("pulse"); void lockBtn.offsetWidth; lockBtn.classList.add("pulse"); setTimeout(function(){ if(lockBtn)lockBtn.classList.remove("pulse"); },440); }
+  function setAns(v){ ANS[q.id]=v; refreshRF(); refreshProgress(); refreshCTA(); }
+  function tapAnswer(v){ setAns(v); popIcon(v); }
+  function swipeAnswer(v){ var wasEmpty=!ANS[q.id], last=PLAY_IDX>=DAY.quotes.length-1; setAns(v); popIcon(v); if(wasEmpty && !last){ setTimeout(playNext,230); } }
+  function toggleLock(){ if(LOCK===q.id){ LOCK=null; } else { LOCK=q.id; } refreshLock(); refreshProgress(); refreshCTA(); if(LOCK===q.id) pulseLock(); }
+
+  $("playBack").onclick=goHome;
+  btnR.onclick=function(){ tapAnswer("real"); };
+  btnF.onclick=function(){ tapAnswer("fake"); };
+  lockBtn.onclick=toggleLock;
+
+  // swipe: right=Real, left=Fake, up=Lock (80px threshold; live tint + glow; auto-advance on a fresh swipe)
+  var ds=null, dx=0, dy=0;
+  card.onpointerdown=function(e){ ds={x:e.clientX,y:e.clientY}; try{ card.setPointerCapture(e.pointerId); }catch(_){} card.style.transition="none"; };
+  card.onpointermove=function(e){ if(!ds)return; dx=e.clientX-ds.x; dy=e.clientY-ds.y;
+    card.style.transform="translate("+dx+"px,"+dy+"px) rotate("+(dx*0.035)+"deg)";
+    tintR.style.opacity=clamp01(dx/120)*0.16; tintF.style.opacity=clamp01(-dx/120)*0.16;
+    var sh=BASE_SHADOW;
+    if(dx>40) sh="0 0 0 2px var(--mint),0 16px 30px -16px var(--mint)";
+    else if(dx<-40) sh="0 0 0 2px var(--fake),0 16px 30px -16px var(--fake)";
+    else if(dy<-40) sh="0 0 0 2px var(--amber),0 16px 30px -16px var(--amber)";
+    card.style.boxShadow=sh; };
+  card.onpointerup=card.onpointercancel=function(e){ if(!ds)return; var ax=Math.abs(dx), ay=Math.abs(dy), TH=80;
+    card.style.transition="transform .3s cubic-bezier(.34,1.56,.64,1)"; card.style.transform=""; tintR.style.opacity=0; tintF.style.opacity=0; card.style.boxShadow=BASE_SHADOW;
+    var act=null; if(dy<-TH && ay>ax) act="lock"; else if(dx>TH) act="real"; else if(dx<-TH) act="fake";
+    ds=null; dx=0; dy=0;
+    if(act==="lock") toggleLock(); else if(act) swipeAnswer(act); };
+
+  refreshProgress(); refreshRF(); refreshLock(); refreshCTA();
 }
 
 /* ---------- SUBMIT / SCORING ---------- */
@@ -775,6 +1274,7 @@ function submit(){
   var date=DAY.date, realToday=todayStr();
   refreshFreeze(realToday);
   var prevReal=ST.last_realday||ST.last_played||null;   // migrate the legacy field
+  var streakBumped=(prevReal!==realToday);              // this play advanced today's streak → animate the bump
   if(prevReal!==realToday){
     if(!prevReal){ ST.streak=1; }
     else {
@@ -804,100 +1304,142 @@ function submit(){
     crews:(ST.crews||[]).map(function(c){return c.code;}).join(","),   // self-heals membership for EVERY crew you're in
     name:ST.displayName||"",cat:lane});
   saveProfile();   // H-A: push the updated streak/stats up to the account (no-op when signed out)
-  renderReveal(result,true);
+  renderReveal(result,true,streakBumped);
 }
 
-/* ---------- REVEAL ---------- */
-function ordinal(arr){return arr.map(function(x){return "#"+x;}).join(", ");}
-function renderReveal(res, fresh){
-  var isToday = DAY.date===todayStr();
-  $("scoreBig").textContent = res.score+"/"+res.n;
-  $("scoreCap").textContent = capFor(res.score,res.n) + (fresh?"":(isToday?" · already played today":" · already played"));
-  // freeze note
-  $("freezeNote").innerHTML = res.frozen ? '<div class="freeze">🛡️ Streak-freeze used — your streak survived a missed day. One freeze per week.</div>' : "";
-  renderStats($("revealStats"));
-  if(isToday){ renderCompare(res); } else { var cc=$("crewCompare"); cc.innerHTML=""; cc.className=""; }   // crew compare only for today's set
-
-  // "the fake that got me"
-  var gm=$("gotmeBox");
-  if(res.gotme && res.gotme.length){
-    gm.className="gotme";
-    gm.innerHTML="🎭 <b>The fake that got you:</b> "+ordinal(res.gotme)+" — you swore "+(res.gotme.length>1?"they were":"it was")+" real. (AI wrote "+(res.gotme.length>1?"those":"that")+".)";
-  } else { gm.className=""; gm.innerHTML='<div class="gotme" style="background:rgba(16,163,106,.08);border-color:rgba(16,163,106,.4)">🧠 No fakes fooled you today. Clean sheet.</div>'; }
-
-  // per-quote reveal with sources
-  var list=$("revealList");list.innerHTML="";
-  DAY.quotes.forEach(function(q,i){
-    var pq=res.perq[i];
-    var c=el("div","r-q "+(pq.right?"correct":"wrong"));
-    var src=q.real && q.source ? ('<div class="meta">Source: <a href="'+esc(q.source.url)+'" target="_blank" rel="noopener">'+esc(q.source.title||q.source.url)+'</a>'+(q.source.date?(' · '+esc(q.source.date)):'')+'</div>') : "";
-    var note=(!q.real && q.fake_note)? ('<div class="meta">🛠️ '+esc(q.fake_note)+'</div>'):"";
-    c.innerHTML =
-      '<span class="verdict '+(pq.right?'correct':'wrong')+'">'+(pq.right?'✓ you nailed it':'✗ fooled')+'</span>'+
-      '<span class="tag '+(q.real?'real':'fake')+'">'+(q.real?'REAL':'AI FAKE')+'</span>'+
-      (pq.locked?' <span class="lockmark">★ your lock</span>':'')+
-      '<blockquote>#'+(i+1)+' “'+esc(q.text)+'”</blockquote>'+
-      '<div class="meta">— <b>'+esc(q.speaker)+'</b>'+(q.context?(' · '+esc(q.context)):'')+'</div>'+
-      src+note+
-      '<button class="qshare" data-share="'+i+'">💬 Send to crew with a comment</button>';
-    list.appendChild(c);
-  });
-  list.querySelectorAll("button[data-share]").forEach(function(b){ b.onclick=function(){ sendQuoteToCrew(+b.dataset.share, res); }; });
-
-  // trickiest fake (editorial fallback; replaced by live "fooled the most" if AGG endpoint set)
-  var tb=$("trickBox"); tb.innerHTML="";
-  var tf=DAY.quotes.findIndex(function(q){return q.id===DAY.trickiest_fake;});
-  if(tf>=0){ tb.className="trick"; tb.innerHTML="🏆 <b>This set's sneakiest fake:</b> #"+(tf+1)+" — the one built to fool the room."; }
-  if(AGG_ENDPOINT){ fetchFooledMost(res.date); }
-
-  // token
-  $("tokenBox").textContent = buildToken(res);
-  // today -> live countdown to the next set; past edition -> a way back to today
-  $("countdown").innerHTML="";
-  if(isToday){ tickCountdown(); }
-  else { clearInterval(window._cd);
-    $("countdown").innerHTML='<a class="reset" id="backTodayLink">← back to today’s set</a>';
-    var bl=$("backTodayLink"); if(bl) bl.onclick=backToToday; }
-  show("reveal");
+/* ---------- REVEAL (bright redesign) ---------- */
+function trunc(t,nn){ t=String(t); return t.length>nn ? t.slice(0,nn).replace(/[\s,.;:]+$/,"")+"…" : t; }
+// spoiler-free share text: score, streak, 🟩/⬜ grid (right/miss — never which were fake), a tap-to-play link
+function shareGrid(res){
+  var grid=res.perq.map(function(p){ return p.right?"🟩":"⬜"; }).join("");
+  var link=(res.date===todayStr())?baseURL():editionLink(res.date);
+  return "Said It? — "+res.score+"/"+res.n+"\n🔥 "+res.streak+"-day streak\n"+grid+"\n"+link;
+}
+function fireConfetti(){
+  var host=el("div","rv-confetti"); var cols=["var(--primary)","#16B981","#FBA94C","#FF8FAB","#9775FA","#4DABF7"], html="";
+  for(var i=0;i<42;i++){ var left=Math.round(Math.random()*100), bg=cols[i%cols.length], w=7+(i%3)*2, h=9+(i%4)*2, rad=(i%2)?2:7,
+      dur=(1.8+(i%5)*0.28).toFixed(2), delay=((i%9)*0.12).toFixed(2);
+    html+='<i style="left:'+left+'%;width:'+w+'px;height:'+h+'px;background:'+bg+';border-radius:'+rad+'px;animation-duration:'+dur+'s;animation-delay:'+delay+'s"></i>'; }
+  host.innerHTML=html; document.body.appendChild(host);
+  setTimeout(function(){ if(host.parentNode) host.parentNode.removeChild(host); },4600);
+}
+// "Bait the group chat": send the fake that got you (or the set's sneakiest fake) as a SPOILER-FREE challenge
+function baitGroupChat(res, btn){
+  var idx = (res.gotme && res.gotme.length) ? (res.gotme[0]-1) : DAY.quotes.findIndex(function(q){return q.id===DAY.trickiest_fake;});
+  if(idx<0) idx = DAY.quotes.findIndex(function(q){return !q.real;});
+  if(idx<0) idx = 0;
+  var q=DAY.quotes[idx], cc=curCrew();
+  var lines=["Said It?"+(cc?(" — "+crewLabel(cc)):""), "“"+q.text+"”", "— "+q.speaker+(q.context?(" · "+q.context):""),
+    "Real or fake? Can you spot it?", baseURL()];
+  var txt=lines.join("\n");
+  function ok(){ if(btn){ btn.textContent=cc?("Sent to "+crewLabel(cc)+" ✓"):"Sent ✓"; btn.className="sent"; } logEvent("quote_share",{cat:(DAY&&DAY._lane)||"general", kind:"bait"}); }
+  if(navigator.share){ navigator.share({text:txt}).then(ok,function(err){ if(err&&err.name==="AbortError")return; clip(txt,ok); }); return; }
+  clip(txt,ok);
 }
 function capFor(s,n){
-  if(s===n)return "Flawless. Nobody got past you. 🧠";
-  if(s>=5)return "Sharp eye.";
-  if(s>=4)return "Solid read.";
-  if(s>=3)return "The fakes are getting good.";
-  return "The AI cooked you today. 🔥";
+  var miss=n-s;
+  if(miss===0) return "Nothing fooled you today.";
+  if(miss===1) return "So close — one slipped past you.";
+  if(miss===2) return "Two slipped past you.";
+  return "I had a good day — get it back tomorrow.";
 }
-function buildToken(res){
-  var lines=[];
-  lines.push("Said It? — "+prettyDate(res.date)+"  (No. "+res.edition+")");
-  lines.push(res.grid.join("")+"   "+res.score+"/"+res.n);
-  if(res.lockIdx){ lines.push("🔒 locked #"+res.lockIdx+" "+(res.lockCorrect?"✅":"❌")); }
-  if(res.gotme && res.gotme.length){ lines.push("🎭 the fake that got me: "+res.gotme.map(function(x){return "#"+x;}).join(", ")); }
-  else { lines.push("🎭 no fake fooled me today"); }
-  lines.push("🔥 streak "+res.streak+"   ⭐ "+res.rating);
-  // today's token links to the evergreen URL; a past-edition token links straight to that edition
-  lines.push(res.date===todayStr() ? baseURL() : editionLink(res.date));
-  return lines.join("\n");
+function renderReveal(res, fresh, bumped){
+  var isToday = DAY.date===todayStr(), clean=(res.score===res.n);
+  var mood = clean ? "delighted" : "oops";
+
+  // fake-that-got-you / clean-sweep card
+  var topCard="";
+  if(res.gotme && res.gotme.length){
+    var fq=DAY.quotes[res.gotme[0]-1];
+    topCard='<div class="rv-gotme"><div class="k">The fake that got you</div>'+
+      '<div class="q">“'+esc(fq.text)+'”</div>'+
+      '<div class="m">'+esc(fq.speaker)+' — I made this one up. You called it real.</div></div>';
+  } else {
+    topCard='<div class="rv-clean">'+magpie("delighted",30)+'<span>A clean sweep — you didn’t let me fool you once.</span></div>';
+  }
+
+  // truth rows
+  var rowsHtml=DAY.quotes.map(function(q,i){
+    var pq=res.perq[i], real=q.real, right=pq.right, guess=pq.guess, skipped=!guess;
+    var src = real ? (q.source ? ('<a href="'+esc(q.source.url)+'" target="_blank" rel="noopener">'+esc(q.source.title||q.source.url)+'</a>') : "on the record")
+                   : "I made this one up";
+    var note = (!real && q.fake_note) ? ('<div class="tr-note">'+esc(q.fake_note)+'</div>') : "";
+    var callDot = skipped ? '<span class="dot skip"><span>–</span></span>'
+                : (right ? '<span class="dot right">'+CHECK_SVG+'</span>'
+                         : '<span class="dot wrong">'+X_ICON+'</span>');
+    var callLbl = skipped ? "skipped" : ("you: "+guess);
+    return '<div class="tr"><div class="tr-row">'+
+      '<div class="tr-stamp"><span class="stamp '+(real?"real":"fake")+'">'+(real?"REAL":"FAKE")+'</span></div>'+
+      '<div class="tr-body"><div class="tr-q">“'+esc(trunc(q.text,72))+'”</div>'+
+        '<div class="tr-meta">'+esc(q.speaker)+' · '+src+'</div>'+note+'</div>'+
+      '<div class="tr-call">'+callDot+'<span class="cl">'+esc(callLbl)+'</span></div>'+
+    '</div></div>';
+  }).join("");
+
+  // share-card pips
+  var pips=res.perq.map(function(p){ return '<div class="sc-pip'+(p.right?" right":"")+'">'+(p.right?CHECK_SVG:"")+'</div>'; }).join("");
+
+  var host=$("screen-reveal");
+  host.innerHTML =
+    '<div class="rv-head">'+magpie(mood,68)+'<div class="rv-score"><span class="n">'+res.score+'</span><span class="of">/ '+res.n+'</span></div></div>'+
+    '<div class="rv-cap">'+esc(capFor(res.score,res.n))+(fresh?"":' <span class="replayed">· already played</span>')+'</div>'+
+    '<div class="rv-streak"><span class="fire">🔥</span><span class="num" id="rvStreakNum">'+res.streak+'</span><span>day streak — keep it rolling</span></div>'+
+    (res.frozen?'<div class="rv-freeze">🛡️ Streak-freeze used — your streak survived a missed day. One freeze per week.</div>':"")+
+    topCard+
+    '<div class="rv-truth-label">The truth</div><div class="rv-truth" id="rvTruth">'+rowsHtml+'</div>'+
+    // share card
+    '<div class="share-card"><div class="sc-row"><div class="sc-brand">'+magpie("happy",34)+'<span class="wm">Said It?</span></div>'+
+      '<span class="sc-date">'+esc(prettyDate(res.date))+'</span></div>'+
+      '<div class="sc-score"><span class="big">'+res.score+'/'+res.n+'</span><span class="st">🔥 '+res.streak+'-day streak</span></div>'+
+      '<div class="sc-pips">'+pips+'</div>'+
+      '<div class="sc-legend"><span class="lg"><span class="sw caught"></span> caught it</span>'+
+        '<span class="lg"><span class="sw fooled"></span> fooled</span><span class="url">saidit.app</span></div></div>'+
+    // actions
+    '<div class="rv-actions"><button class="copy" id="copyBtn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span id="copyLbl">Copy result</span></button>'+
+      '<button class="board" id="revealCrewBtn">Crew board →</button></div>'+
+    '<div class="rv-preview"><div class="k">Copies to your group chat</div><div class="t" id="tokenBox"></div></div>'+
+    // bait
+    '<div class="rv-bait"><div class="h">Bait the group chat</div><div class="s">Send the fake that got you — no spoilers.</div>'+
+      '<button id="baitBtn">'+(curCrew()?("Send to "+esc(crewLabel(curCrew()))):"Send to your group chat")+'</button></div>'+
+    '<div class="rv-count" id="countdown"></div>'+
+    '<div class="rv-links"><button id="revealArchiveBtn">Past editions</button><span style="opacity:.5">·</span><button id="revealLinkBtn">Copy link to this set</button></div>'+
+    '<div class="rv-foot">Mags makes up the fakes; real quotes link to their source. A quote shown as “made up” is part of the game — never a claim anyone said it.<br><a id="resetLink">reset my data</a></div>';
+
+  $("tokenBox").textContent = shareGrid(res);
+  $("copyBtn").onclick=copyToken;
+  $("revealCrewBtn").onclick=openCrew;
+  $("baitBtn").onclick=function(){ baitGroupChat(res, $("baitBtn")); };
+  $("revealArchiveBtn").onclick=openArchive;
+  $("revealLinkBtn").onclick=function(){ if(DAY) copyEditionLink(DAY.date); };
+  $("resetLink").onclick=function(){ if(confirm("Erase your streak, rating and history on this device?")){ localStorage.removeItem(K); location.reload(); } };
+
+  // countdown: today → live timer; past edition → back-to-today link
+  if(isToday){ tickCountdown(); }
+  else { clearInterval(window._cd);
+    $("countdown").innerHTML='<a class="rv-foot" id="backTodayLink" style="cursor:pointer">← back to today’s set</a>';
+    var bl=$("backTodayLink"); if(bl) bl.onclick=backToToday; }
+
+  show("reveal");
+
+  // sequential truth flip-in (200ms × index)
+  var rows=host.querySelectorAll("#rvTruth .tr");
+  rows.forEach(function(r,i){ setTimeout(function(){ if(r) r.classList.add("shown"); }, 200*i); });
+  // streak bump (+1 with a bounce) only when this play advanced the daily streak
+  if(fresh && bumped && res.streak>0){
+    var num=$("rvStreakNum"); if(num){ num.textContent=(res.streak-1);
+      setTimeout(function(){ var n2=$("rvStreakNum"); if(!n2)return; n2.textContent=res.streak; n2.classList.add("bump"); setTimeout(function(){ if(n2)n2.classList.remove("bump"); },650); }, 1650); }
+  }
+  // confetti on a clean 6/6 (fresh plays only)
+  if(fresh && clean){ setTimeout(fireConfetti, 500); }
 }
 function baseURL(){ return location.origin+location.pathname.replace(/index\.html?$/,""); }
 function editionLink(date){ return baseURL()+"?d="+date; }
 function copyToken(){
   var txt=$("tokenBox").textContent;
-  function ok(){toast("Copied — go paste it 😈");logEvent("token_copy");}
+  function ok(){ var l=$("copyLbl"); if(l){ l.textContent="Copied ✓"; setTimeout(function(){ var l2=$("copyLbl"); if(l2) l2.textContent="Copy result"; },1800); } else { toast("Copied — go paste it"); } logEvent("token_copy"); }
   if(navigator.clipboard && navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(ok,fallbackCopy);}
   else fallbackCopy();
   function fallbackCopy(){var ta=el("textarea");ta.value=txt;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();try{document.execCommand("copy");ok();}catch(e){toast("Select &amp; copy");}document.body.removeChild(ta);}
-}
-function shareToken(){
-  var txt=$("tokenBox").textContent;
-  if(navigator.share){navigator.share({text:txt}).then(function(){logEvent("token_copy",{via:"share"});},function(){});}
-  else copyToken();
-}
-function fetchFooledMost(date){
-  try{ fetch(AGG_ENDPOINT+"?day="+encodeURIComponent(date),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(j){
-    if(j && typeof j.fooled_most_idx==="number"){var tb=$("trickBox");tb.className="trick";
-      tb.innerHTML="🏆 <b>The fake that fooled the most players today:</b> #"+j.fooled_most_idx+" ("+(j.fooled_pct||"?")+"% believed it).";}
-  }).catch(function(){}); }catch(e){}
 }
 function tickCountdown(){
   var now=new Date(); var nxt=new Date(now); nxt.setHours(24,0,0,0);
@@ -1023,14 +1565,14 @@ function signInGoogle(){ if(!SB) return;
   SB.auth.signInWithOAuth({ provider:"google", options:{ redirectTo: baseURL() } }).then(function(res){ if(res&&res.error) toast("Google sign-in isn't set up yet"); }, function(){ toast("Google sign-in isn't set up yet"); }); }
 function signOutAcct(){ if(!SB) return; SB.auth.signOut().then(function(){ ACCOUNT=null; toast("Signed out"); if(currentScreen()==="crew") renderCrew(); }); }
 function accountHTML(){ if(!SB) return "";
-  if(ACCOUNT) return "<div class='card'><div style='font-weight:700'>☁️ Synced across your devices</div>"+
-    "<div class='hint' style='text-align:left'>Signed in as "+esc(ACCOUNT.email||"your account")+" — streak, stats &amp; crews follow you everywhere.</div>"+
-    "<button class='btn ghost' id='acctOut' style='margin-top:8px'>Sign out</button></div>";
-  return "<div class='card'><div style='font-weight:700'>☁️ Save your progress</div>"+
-    "<div class='hint' style='text-align:left;margin:4px 0 8px'>Sign in to keep your streak &amp; crews and play on your other devices. No password — we email you a link.</div>"+
+  if(ACCOUNT) return "<div class='acct'><div class='h'>☁️ Synced across your devices</div>"+
+    "<div class='s'>Signed in as "+esc(ACCOUNT.email||"your account")+" — streak, stats &amp; crews follow you everywhere.</div>"+
+    "<button class='ghost' id='acctOut'>Sign out</button></div>";
+  return "<div class='acct'><div class='h'>☁️ Save your progress</div>"+
+    "<div class='s'>Sign in to keep your streak &amp; crews and play on your other devices. No password — we email you a link.</div>"+
     "<input class='fld' id='acctEmail' type='email' placeholder='you@email.com' autocomplete='email' autocapitalize='off'>"+
-    "<button class='btn' id='acctEmailBtn' style='margin-top:6px'>Email me a sign-in link</button>"+
-    (GOOGLE_AUTH?"<button class='btn ghost' id='acctGoogle' style='margin-top:8px'>Continue with Google</button>":"")+"</div>";
+    "<button class='primary' id='acctEmailBtn'>Email me a sign-in link</button>"+
+    (GOOGLE_AUTH?"<button class='ghost' id='acctGoogle'>Continue with Google</button>":"")+"</div>";
 }
 function wireAccount(){ var e=$("acctEmailBtn"); if(e) e.onclick=function(){ signInEmail($("acctEmail")&&$("acctEmail").value); };
   var g=$("acctGoogle"); if(g) g.onclick=signInGoogle; var o=$("acctOut"); if(o) o.onclick=signOutAcct; }
@@ -1084,7 +1626,6 @@ function mergeYou(standings, res){          // standings carry scores only; matc
   return list.sort(function(a,b){return b.score-a.score;});
 }
 function medal(i){ return i===0?"🥇":i===1?"🥈":i===2?"🥉":(i+1)+"."; }
-function lbRow(i,name,score,you){ return "<div class='lb-row'><span class='rk'>"+medal(i)+"</span><span class='nm"+(you?" you":"")+"'>"+esc(name)+(you?" (you)":"")+"</span><span class='sc'>"+score+"</span></div>"; }
 function addDaysStr(s,n){ var d=new Date(s+"T12:00:00"); d.setDate(d.getDate()+n); return todayStr(d); }
 // the player's OWN plays from local state — so the crew board reflects what this device knows even if the
 // server hasn't registered today's beacon yet (network lag, a dropped sendBeacon, or just-finished play)
@@ -1092,26 +1633,6 @@ function myResult(date){ var best=null; for(var k in (ST.days||{})){ var r=ST.da
 function myWeekTotal(){ var wk=weekKey(todayStr()), byDay={}; for(var k in (ST.days||{})){ var r=ST.days[k]&&ST.days[k].done&&ST.days[k].result;
   if(r&&r.date&&weekKey(r.date)===wk) byDay[r.date]=r.score||0; } var t=0,d=0; for(var dd in byDay){ t+=byDay[dd]; d++; } return {total:t,days:d}; }
 
-function renderCompare(res){                 // the instant friend-compare on submit (the reply-bait engine)
-  var box=$("crewCompare"); box.innerHTML=""; box.className="";
-  var cc=curCrew();
-  if(!cc||!crewEndpoint()){ return; }
-  box.className="card crewcard"; box.innerHTML="<div class='hint' style='text-align:left'>loading crew…</div>";
-  fetchCrew(res.date, cc.code).then(function(c){
-    if(c&&c.name) setLocalCrewName(cc.code,c.name);
-    var list=mergeYou(c&&c.standings, res);
-    var rankIdx=0; for(var i=0;i<list.length;i++){ if(list[i].you){ rankIdx=i; break; } }
-    var streak=c?c.crew_streak:0;
-    var more=(ST.crews.length>1)?" <span class='crewbadge'>+"+(ST.crews.length-1)+" more</span>":"";
-    var rows=list.map(function(s,i){ return lbRow(i,s.name,s.score+"/"+res.n,s.you); }).join("");
-    box.innerHTML="<div id='compOpen' role='button' tabindex='0' style='font-weight:700;margin-bottom:6px;cursor:pointer'>👥 "+esc(crewLabel(cc))+more+(streak?" · 🔥 "+streak+"-day run":"")+" <span style='color:var(--accent);font-weight:800'>open ›</span></div>"+rows+
-      "<div class='hint' style='text-align:left;margin-top:8px'>"+(rankIdx===0&&list.length>1?"On top 👑 — ":(list.length>1?"":"You're first today — bait the crew back. "))+"Tap the crew for the full leaderboard; use 💬 on a quote below to send it to the crew.</div>"+
-      "<div class='row' style='margin-top:8px'><button class='btn ghost' id='compOpenBtn' style='flex:2'>Open crew leaderboard →</button><button class='btn ghost' id='compInvite' style='flex:1'>Invite</button></div>";
-    if($("compOpen")) activate($("compOpen"), openCrew);          // tap the standings → Crew page (#2)
-    var co=$("compOpenBtn"); if(co) co.onclick=openCrew;
-    var ci=$("compInvite"); if(ci) ci.onclick=function(){ copyCrewInvite(cc.code); };
-  });
-}
 function crewToken(c,res,code){ var list=mergeYou(c&&c.standings,res); var lines=[];
   var cobj=(ST.crews||[]).filter(function(x){return x.code===code;})[0];
   var label=(c&&c.name)||(cobj&&cobj.name)||code;     // share the crew NAME ("The fam"), not the raw code
@@ -1123,25 +1644,6 @@ function shareCrewToken(c,res,code){ var txt=crewToken(c,res,code);
   function ok(){ toast("Standings copied 👥"); logEvent("token_copy",{kind:"crew",crew:code}); }
   if(navigator.share){ navigator.share({text:txt}).then(ok,function(){}); return; }
   clip(txt,ok); }
-// send ONE specific quote to the crew with your take + whether you got it (a deliberate, opt-in spoiler of that line)
-function sendQuoteToCrew(i, res){
-  var q=DAY&&DAY.quotes[i]; if(!q) return;
-  var pq=res&&res.perq&&res.perq[i];
-  var got=pq?(pq.right?"I called it ✅":"it got me ❌"):"";
-  var comment=((window.prompt && window.prompt("Your take on this one (sent to your crew):",""))||"").slice(0,140).trim();
-  var cc=curCrew(), lines=[];
-  lines.push("Said It?"+(cc?(" — "+crewLabel(cc)):""));
-  lines.push("“"+q.text+"”");
-  lines.push("— "+q.speaker+(q.context?(" · "+q.context):""));
-  lines.push("👉 "+(q.real?"REAL":"an AI FAKE")+(got?(" — "+got):""));
-  if(comment) lines.push("💬 "+comment);
-  lines.push(baseURL());
-  var txt=lines.join("\n");
-  function ok(){ toast("Ready — paste it to your crew 💬"); logEvent("quote_share",{cat:(DAY&&DAY._lane)||"general"}); }
-  if(navigator.share){ navigator.share({text:txt}).then(ok,function(err){ if(err&&err.name==="AbortError")return; clip(txt,ok); }); return; }
-  clip(txt,ok);
-}
-
 function openCrew(){ BACK_TO=currentScreen(); renderCrew(); show("crew"); }
 function joinAnotherCrew(){
   var code=window.prompt && window.prompt("Enter a crew code to join (leave blank to create a new crew):","");
@@ -1150,100 +1652,125 @@ function joinAnotherCrew(){
   if(code){ if(joinCrew(code,"")){ JUST_JOINED=null; renderCrew(); } } else { createCrew(); }
 }
 function renderCrew(){
-  var b=$("crewBody");
-  if(!crewEndpoint()){ b.innerHTML="<div class='card'>👥 <b>Crews</b> need the shared endpoint deployed (see <code>endpoint/</code>). Solo play works fine without it.</div>"; return; }
-  var html="";
+  var host=$("screen-crew");
+  var headHtml='<div class="play-head"><button class="back-btn" id="crewBack" aria-label="Back">'+BACK_ARROW+'</button>'+
+    ((inCrew()&&crewEndpoint())
+      ? '<button class="cr-name" id="crewNameBtn"><span class="nm">'+esc(crewLabel(curCrew()))+'</span><span class="chev">'+CHEV_DOWN+'</span></button>'
+      : '<div class="scr-title">Crew</div>')+'</div>';
+  if(!crewEndpoint()){
+    host.innerHTML=headHtml+'<div class="cr-empty"><div class="h">👥 Crews need the shared endpoint</div>'+
+      '<div class="s">Deploy the endpoint (see <code>endpoint/</code>) to compare with friends. Solo play works fine without it.</div></div>';
+    $("crewBack").onclick=navBack; return;
+  }
+  var html=headHtml;
   if(JUST_JOINED){
     var jn=INVITE_CN||crewLabel(curCrew())||JUST_JOINED;
-    var lead=INVITE_BY?(esc(INVITE_BY)+" added you to "):"You're in ";
-    html+="<div class='card crewcard' style='text-align:center'>🎉 <b>"+lead+esc(jn)+"</b>"+
-      "<div class='hint' style='margin-top:4px'>Play today's set and you'll show up on the board.</div>"+
-      "<button class='btn' id='crewPlay' style='margin-top:10px'>Play today's set →</button></div>";
+    var lead=INVITE_BY?(esc(INVITE_BY)+" added you to "):"You’re in ";
+    html+='<div class="cr-joined"><b>'+lead+esc(jn)+'</b><div class="s">Play today’s set and you’ll show up on the board.</div>'+
+      '<button id="crewPlay">Play today’s set →</button></div>';
   }
   if(!inCrew()){
-    html+="<div class='card'><div style='font-weight:800;font-size:17px'>👥 Play with your friends</div>"+
-      "<div class='hint' style='text-align:left;margin:6px 0 12px'>Everyone gets the same six quotes — compare scores and build a shared streak. No accounts needed.</div>"+
-      "<button class='btn' id='crewCreate'>Start a crew</button>"+
-      "<div class='hint' style='text-align:center;margin:14px 0 6px'>Got an invite? Just open the link your friend sent you.</div>"+
-      "<button class='btn ghost' id='crewJoinCode'>Have a code? Enter it</button></div>";
-    html+=accountHTML();
-    b.innerHTML=html;
+    html+='<div class="cr-empty"><div class="h">Play with your friends</div>'+
+      '<div class="s">Everyone gets the same six quotes — compare scores and build a shared streak. No accounts needed.</div>'+
+      '<button class="start" id="crewCreate">Start a crew</button>'+
+      '<div class="eh">Got an invite? Just open the link your friend sent you.</div>'+
+      '<button class="codebtn" id="crewJoinCode">Have a code? Enter it</button></div>'+accountHTML();
+    host.innerHTML=html;
+    $("crewBack").onclick=navBack;
     if($("crewPlay"))$("crewPlay").onclick=function(){ JUST_JOINED=null; playLane(ST.lane||"general"); };
     $("crewCreate").onclick=createCrew;
     $("crewJoinCode").onclick=function(){ var code=window.prompt&&window.prompt("Enter your crew's code:",""); if(code===null)return;
       if(joinCrew(code,"")){ JUST_JOINED=null; INVITE_BY=INVITE_CN=""; renderCrew(); } };
-    wireAccount();
-    return;
+    wireAccount(); return;
   }
-  var cc=curCrew();
-  var chips=(ST.crews||[]).map(function(c){ return "<button class='lane-b"+(c.code===cc.code?" on":"")+"' data-crew='"+esc(c.code)+"'>"+esc(crewLabel(c))+"</button>"; }).join("");
-  html+="<div class='lanes' id='crewChips'>"+chips+"<button class='lane-b' id='crewAdd'>+ crew</button></div>";
-  html+="<div class='card crewcard'>"+
-    "<div style='font-weight:800;font-size:18px'><span id='crewTitle'>"+esc(crewLabel(cc))+"</span> "+
-      "<button class='navlink' id='crewRename' style='font-size:12px;padding:2px 4px'>✏️ rename</button></div>"+
-    "<div id='crewBoard' class='hint' style='text-align:left;margin-top:10px'>loading standings…</div>"+
-    "<button class='btn' id='crewInviteBtn' style='margin-top:14px'>Invite your people</button>"+
-    "<div class='hint' style='text-align:center;margin-top:7px'>or share this code: <span class='crew-code' style='font-size:13px;letter-spacing:.1em'>"+esc(cc.code)+"</span></div>"+
-    "</div>";
-  html+="<div class='navlinks'><button class='navlink' id='crewAdd2'>+ another crew</button><button class='navlink' id='crewLeave'>leave "+esc(crewLabel(cc))+"</button></div>";
-  html+=accountHTML();
-  b.innerHTML=html;
-  wireAccount();
+  var cc=curCrew(), today=todayStr();
+  html+='<div class="cr-toggle-row"><span class="cr-seclabel">Standings</span>'+
+    '<div class="seg-toggle"><button id="crewToday">Today</button><button id="crewWeek">Week</button></div></div>'+
+    '<div class="cr-gap" id="crewGap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg><span>loading…</span></div>'+
+    '<div class="cr-rows" id="crewRows"><div class="cr-foot" style="margin-top:0">loading standings…</div></div>'+
+    '<div class="cr-tiles" id="crewTiles"></div>'+
+    '<button class="cr-invite" id="crewInviteBtn">Invite your people</button>'+
+    '<div class="cr-code">or share code <b>'+esc(cc.code)+'</b></div>'+
+    '<div class="cr-foot">The roster shows scores only — never anyone’s answers.</div>'+
+    '<div class="cr-meta"><button id="crewRename">rename</button><span style="opacity:.5">·</span><button id="crewShare">share standings</button><span style="opacity:.5">·</span><button id="crewLeave">leave</button></div>'+
+    accountHTML();
+  host.innerHTML=html;
+  $("crewBack").onclick=navBack;
+  $("crewNameBtn").onclick=openCrewSwitcher;
   if($("crewPlay"))$("crewPlay").onclick=function(){ JUST_JOINED=null; playLane(ST.lane||"general"); };
-  var chipNodes=b.querySelectorAll("#crewChips [data-crew]");
-  for(var i=0;i<chipNodes.length;i++){ (function(n){ n.onclick=function(){ setActiveCrew(n.getAttribute("data-crew")); JUST_JOINED=null; renderCrew(); }; })(chipNodes[i]); }
-  $("crewAdd").onclick=joinAnotherCrew; $("crewAdd2").onclick=joinAnotherCrew;
-  $("crewRename").onclick=function(){ renameCrew(cc.code); };
   $("crewInviteBtn").onclick=function(){ copyCrewInvite(cc.code); };
+  $("crewRename").onclick=function(){ renameCrew(cc.code); };
   $("crewLeave").onclick=function(){ leaveCrew(cc.code); };
-  var board=$("crewBoard"), today=todayStr();
-  fetchCrew(today, cc.code).then(function(c){
-    c = c || {};
-    if(c.name){ setLocalCrewName(cc.code,c.name); var t=$("crewTitle"); if(t)t.textContent=c.name; }   // shared name from server
-    // TODAY — merge the player's own today play from local state (so it shows even if the server hasn't caught it)
-    var todayList=mergeYou(c.standings||[], myResult(today));
-    var todayRows=todayList.length ? todayList.map(function(s,i){return lbRow(i,s.name,(s.score!=null?s.score:0)+"/"+(s.n||6),s.sid===ST.sid);}).join("")
-                  : "<div class='hint'>No one's played today's set yet — play it to top the board.</div>";
-    // THIS WEEK — merge the player's own week total from local state
+  wireAccount();
+
+  var CREW_DATA=null;
+  function paintBoard(){
+    var t=$("crewToday"), w=$("crewWeek"); if(!t||!w) return;
+    t.className=(CREW_WHEN==="week"?"":"on"); w.className=(CREW_WHEN==="week"?"on":"");
+    if(CREW_DATA===null){ $("crewRows").innerHTML='<div class="cr-foot" style="margin-top:0">loading standings…</div>'; return; }
+    var c=CREW_DATA;
+    var todayList=mergeYou(c.standings||[], myResult(today));   // [{sid,name,score,you}] desc
     var myW=myWeekTotal();
-    var week=(c.week||[]).map(function(s){ return {sid:s.sid,name:s.name,total:s.total,you:s.sid===ST.sid}; });
+    var week=(c.week||[]).map(function(s){ return {sid:s.sid,name:s.name,val:s.total,you:s.sid===ST.sid}; });
     var meW=week.filter(function(s){return s.you;})[0];
-    if(meW){ if(myW.total>meW.total) meW.total=myW.total; } else if(myW.days){ week.push({sid:ST.sid,name:ST.displayName||"you",total:myW.total,you:true}); }
-    week.sort(function(a,b){return b.total-a.total;});
-    var wk=week.length ? week.map(function(s,i){ if(i===0 && c.week_key){ ST.crewSeasons[c.week_key]=s.name; save(ST); } return lbRow(i,s.name,s.total,s.you); }).join("") : "<div class='hint'>—</div>";
-    // roster — include yourself even if the server hasn't recorded membership yet
-    var ros=(c.roster||[]).slice(); if(!ros.some(function(m){return m.sid===ST.sid;})) ros.push({sid:ST.sid,name:ST.displayName||"you"});
-    var roster=ros.map(function(m){ return esc(m.name||m.sid.slice(0,4))+(m.sid===ST.sid?" (you)":""); }).join(", ");
+    if(meW){ if(myW.total>meW.val) meW.val=myW.total; } else if(myW.days){ week.push({sid:ST.sid,name:ST.displayName||"you",val:myW.total,you:true}); }
+    week.sort(function(a,b){return b.val-a.val;});
+    if(week.length && c.week_key){ ST.crewSeasons[c.week_key]=week[0].name; save(ST); }   // memorialize the weekly champ
+    var weekRank=week.findIndex(function(s){return s.you;});
+    var todayRank=todayList.findIndex(function(s){return s.you;});
+    var rows=(CREW_WHEN==="week")
+      ? week.map(function(s){ return {name:s.name,val:s.val,you:s.you}; })
+      : todayList.map(function(s){ return {name:s.name,val:(s.score!=null?s.score:0),you:s.you}; });
+    var top=rows.length?Math.max.apply(null,rows.map(function(r){return r.val;})):1; if(top<=0)top=1;
+    var yi=rows.findIndex(function(r){return r.you;});
+    // gap-to-next headline
+    var gapEl=$("crewGap"), gapTxt;
+    if(!rows.length) gapTxt="No scores yet — play to lead "+crewLabel(cc);
+    else if(yi<=0) gapTxt="Leading "+crewLabel(cc);
+    else { var need=rows[yi-1].val-rows[yi].val+1; gapTxt="Beat "+rows[yi-1].name+" by "+need+" to move up"; }
+    if(gapEl){ var gs=gapEl.querySelector("span"); if(gs) gs.textContent=gapTxt; }
+    // "moved up" only on Today, and only when your today rank beats your week rank (data-backed, not faked)
+    var movedUp=(CREW_WHEN==="today" && yi>=0 && weekRank>=0 && yi<weekRank);
+    var rowsHtml=rows.length ? rows.map(function(r,i){
+      var col=r.you?"var(--primary)":avColor(r.name);
+      var unit=(CREW_WHEN==="week")?"":"/6";
+      var moved=(r.you&&movedUp)?'<span class="moved">▲ moved up</span>':'';
+      return '<div class="cr-row'+(r.you?" you":"")+'"><span class="rk">'+(i+1)+'</span>'+
+        '<span class="av" style="border-color:'+col+';color:'+col+'">'+esc(r.you?"Y":avInitial(r.name))+'</span>'+
+        '<div class="who"><div class="nm">'+esc(r.you?"You":r.name)+moved+'</div>'+
+          '<div class="barwrap"><div class="bar" style="width:'+Math.round(r.val/top*100)+'%"></div></div></div>'+
+        '<span class="sc">'+r.val+unit+'</span></div>';
+    }).join("") : '<div class="cr-foot" style="margin-top:0">No one’s played '+(CREW_WHEN==="week"?"this week":"today")+' yet — play to top the board.</div>';
+    $("crewRows").innerHTML=rowsHtml;
     var champ=ST.crewSeasons[weekKey(addDaysStr(today,-7))];
-    board.innerHTML=(c.crew_streak?"<div style='margin-bottom:8px'>🔥 <b>"+c.crew_streak+"-day crew run</b> · 🛡️ "+(c.crew_freezes_left||0)+" freeze left this week</div>":"")+
-      (roster?"<div class='hint' style='margin-bottom:8px'>👥 "+roster+" · scores only, never the answers</div>":"")+
-      (champ?"<div style='margin-bottom:8px'>🏆 last week's champ: <b>"+esc(champ)+"</b></div>":"")+
-      "<div style='font-weight:700;margin:6px 0 2px'>Today</div>"+todayRows+
-      "<div style='font-weight:700;margin:10px 0 2px'>This week (season standing)</div>"+wk+
-      "<div class='row' style='margin-top:10px'><button class='btn ghost' id='boardShare'>Share standings</button></div>";
-    var bs=$("boardShare"); if(bs) bs.onclick=function(){ var dk=dayKey(ST.lane||"general",today); var r=(ST.days[dk]&&ST.days[dk].done)?ST.days[dk].result:{n:6,score:0,date:today}; shareCrewToken(c,r,cc.code); };
+    $("crewTiles").innerHTML='<div class="cr-tile streak"><div class="big">🔥 '+(c.crew_streak||0)+'</div><div class="lbl">crew streak</div></div>'+
+      '<div class="cr-tile champ"><div class="big">'+esc(champ||"—")+'</div><div class="lbl">last week’s champ</div></div>';
+  }
+  $("crewToday").onclick=function(){ CREW_WHEN="today"; paintBoard(); };
+  $("crewWeek").onclick=function(){ CREW_WHEN="week"; paintBoard(); };
+  $("crewShare").onclick=function(){ var dk=dayKey(ST.lane||"general",today); var r=(ST.days[dk]&&ST.days[dk].done)?ST.days[dk].result:{n:6,score:0,date:today}; shareCrewToken(CREW_DATA||{},r,cc.code); };
+  paintBoard();
+  fetchCrew(today, cc.code).then(function(c){
+    CREW_DATA=c||{};
+    if(CREW_DATA.name){ setLocalCrewName(cc.code,CREW_DATA.name); var nm=document.querySelector("#crewNameBtn .nm"); if(nm) nm.textContent=CREW_DATA.name; }
+    paintBoard();
   });
 }
 
-/* ---------- wire up ---------- */
-$("startBtn").addEventListener("click",function(){logEvent("start");renderPlay();});
-$("submitBtn").addEventListener("click",function(){if(!$("submitBtn").disabled)submit();});
-$("copyBtn").addEventListener("click",copyToken);
-$("shareBtn").addEventListener("click",shareToken);
-// home is reachable from everywhere: the logo (the only header home control) + the 🏠 Home navlinks on intro/reveal
+/* ---------- brand chrome (bright redesign) ---------- */
+// coral is the one-token alt theme; blue is the default/lead
+if(CFG.THEME==="coral") document.body.classList.add("theme-coral");
+// Mags in the header wordmark + the app icon/favicon
+try{ var lb=$("logoBtn"); if(lb) lb.insertAdjacentHTML("afterbegin", magpie("happy",30)); }catch(e){}
+try{ var fav=$("favicon"); if(fav) fav.setAttribute("href","data:image/svg+xml,"+encodeURIComponent(appIconSVG())); }catch(e){}
+
+/* ---------- wire up (reveal controls are wired inside renderReveal, which rebuilds that screen) ---------- */
+// Home "Play today's set" → the Lanes picker
+$("homePlay").addEventListener("click",openLanes);
+// home is reachable from everywhere: the logo (header) is the persistent home control
 $("logoBtn").addEventListener("click",goHome);
-$("introHome").addEventListener("click",goHome);
-$("revealHome").addEventListener("click",goHome);
 $("homeArchive").addEventListener("click",openArchive);
-$("introCrew").addEventListener("click",openCrew);
-$("revealCrew").addEventListener("click",openCrew);
-$("crewBack").addEventListener("click",navBack);
-$("introArchive").addEventListener("click",openArchive);
-$("revealArchive").addEventListener("click",openArchive);
-$("revealLink").addEventListener("click",function(){ if(DAY) copyEditionLink(DAY.date); });
 $("archiveBack").addEventListener("click",navBack);
-$("detailBack").addEventListener("click",goHome);
-$("resetLink").addEventListener("click",function(){if(confirm("Erase your streak, rating and history on this device?")){localStorage.removeItem(K);location.reload();}});
 
 boot();
 })();
