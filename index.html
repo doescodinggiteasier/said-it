@@ -43,10 +43,16 @@
     -webkit-text-size-adjust:100%;
     padding:0 20px env(safe-area-inset-bottom);max-width:460px;min-height:100vh}
   header{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:14px 0 6px}
-  .logo{display:flex;align-items:center;gap:9px;background:none;border:none;padding:0;cursor:pointer;text-align:left}
-  .logo .mags{flex:none}
-  .logo .wm{font-weight:700;font-size:24px;letter-spacing:-.3px;color:var(--ink)}
-  .logo .wm b{color:var(--primary)}
+  .brand{display:flex;align-items:center;gap:4px}   /* Mags sits close to the wordmark, facing it */
+  .mags-btn{background:none;border:none;padding:0;cursor:pointer;line-height:0;display:flex;align-items:center;justify-content:center;flex:none;border-radius:8px;min-width:44px;min-height:44px}
+  .mags-btn:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+  .wm-btn{display:flex;align-items:center;background:none;border:none;padding:2px;cursor:pointer;text-align:left}
+  .wm{font-weight:700;font-size:24px;letter-spacing:-.3px;color:var(--ink)}
+  .wm b{color:var(--primary)}
+  .mags-flip{transform:scaleX(-1)}
+  .mags-bob{animation:mags-bob 2.4s ease-in-out infinite}
+  @keyframes mags-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+  @media (prefers-reduced-motion: reduce){ .mags-bob{animation:none} .mags-cycle{animation:none} }
   .editiontag{color:var(--ink3);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
   .sub{display:none}
   .hide{display:none !important}
@@ -266,11 +272,14 @@
   .play-cta svg{stroke:var(--primary)}
   .play-sub{text-align:center;margin-top:9px;font-size:13px;font-weight:600;color:var(--ink3)}
 
-  /* mascot fakes note */
-  .fakes-note{margin-top:18px;display:flex;align-items:center;gap:11px;background:var(--card);border-radius:8px;
-    padding:13px 15px;box-shadow:var(--shadow-card)}
-  .fakes-note .mags-wrap{flex:none;line-height:0}
-  .fakes-note .fk-txt{font-size:14px;font-weight:600;color:#3A3D55;line-height:1.35}
+  /* mascot fakes note — a button (opens the Magpie page); Mags faces right into the text via a speech tail */
+  .fakes-note{margin-top:12px;width:100%;display:flex;align-items:center;gap:6px;background:var(--card);border-radius:8px;
+    padding:12px 15px;box-shadow:var(--shadow-card);cursor:pointer;text-align:left;border:none}
+  .fakes-note:active{transform:scale(.99)} .fakes-note{transition:transform .06s ease}
+  .fakes-note .fn-mags{flex:none;line-height:0;position:relative;display:flex;align-items:center}
+  .fakes-note .fn-tail{position:absolute;right:-5px;top:50%;transform:translateY(-50%);width:0;height:0;
+    border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:7px solid var(--primary-soft)}
+  .fakes-note .fk-txt{font-size:14px;font-weight:600;color:#3A3D55;line-height:1.35;margin-left:8px}
   .fakes-note .fk{color:var(--fake);font-weight:700}
 
   /* streak + 7-day strip */
@@ -324,6 +333,8 @@
     display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 4px 12px -7px rgba(40,50,90,.5)}
   .back-btn svg{stroke:var(--ink)}
   .scr-title{font-weight:700;font-size:25px;color:var(--ink);letter-spacing:-.4px}
+  .hdr-mags{margin-left:auto;background:none;border:none;cursor:pointer;padding:0;line-height:0;flex:none;border-radius:8px;display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}  /* small brand Mags on inner screens; 44px tap area */
+  .hdr-mags:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
 
   /* Lanes picker */
   #screen-lanes{padding-bottom:120px}
@@ -331,13 +342,16 @@
   .lane-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
   .lane-card{position:relative;border:2px solid var(--card);cursor:pointer;background:var(--card);border-radius:9px;
     padding:16px;text-align:left;min-height:112px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow-card)}
-  .lane-card .lc-top{display:flex;align-items:center;justify-content:space-between;min-height:24px}
-  .lane-dot{width:30px;height:30px;border-radius:50%;border:2.5px solid var(--ink3);background:transparent;flex:none}
-  .lane-badge{display:flex;align-items:center;gap:4px;font-size:11px;font-weight:700;padding:3px 7px;border-radius:6px}
+  .lane-card .lc-top{display:flex;align-items:center;justify-content:space-between;min-height:30px}
+  .lane-dot{width:34px;height:34px;border-radius:50%;border:2.5px solid var(--ink3);background:transparent;flex:none;
+    display:flex;align-items:center;justify-content:center}
+  .lane-dot.done{border-width:0}
+  .lane-badge{display:flex;align-items:center;gap:4px;font-size:10.5px;font-weight:700;letter-spacing:.3px;padding:3px 8px;border-radius:6px}
   .lane-badge.hot{color:#9A5B12;background:#FFF1DE}
   .lane-badge.adult{background:transparent;border:1.5px solid var(--purple);color:var(--purple)}
   .lane-name{font-weight:700;font-size:19px;color:var(--ink);letter-spacing:-.3px}
   .lane-vibe{font-size:12.5px;font-weight:500;color:var(--ink3);margin-top:2px}
+  .lane-played{color:#0E7A55;font-weight:700}   /* darker green for AA on white (mint dot fill stays mint) */
   .sticky-cta{position:sticky;bottom:0;left:0;right:0;margin:30px -20px -120px;padding:16px 20px 26px;
     background:linear-gradient(to top,var(--canvas) 70%,rgba(247,248,252,0))}
   .outline-cta{width:100%;cursor:pointer;background:transparent;border:2.5px solid var(--primary);color:var(--primary);
@@ -351,8 +365,12 @@
   .pseg{flex:1;height:44px;border:none;cursor:pointer;background:none;position:relative;padding:0;display:flex;align-items:center;justify-content:center}
   .pseg .bar{width:100%;height:8px;border-radius:4px;background:var(--hair)}
   .pseg.cur .bar{background:var(--primary)}
-  .pseg.ans .bar{background:var(--mint)}
+  .pseg.ans .bar{background:var(--ink2)}   /* answered = ink (not mint) — mint is reserved for REAL (A) */
   .pseg.lck .bar{background:var(--amber)}
+  /* play top-bar category strip */
+  .play-cat{display:flex;align-items:center;justify-content:space-between;margin:-4px 0 12px}
+  .play-cat .qchip{display:inline-flex;align-items:center;gap:6px}
+  .qcard-top{justify-content:flex-end}
   .pseg .lockico{position:absolute;top:-2px;left:50%;transform:translateX(-50%);line-height:0}
   .pseg .lockico svg{stroke:var(--amber)}
   .pstep{font-size:13px;font-weight:700;color:var(--ink3);font-variant-numeric:tabular-nums;flex:none}
@@ -450,12 +468,22 @@
   .tr-meta{font-size:11.5px;font-weight:600;color:var(--ink3);margin-top:6px}
   .tr-meta a{color:var(--primary-dark)}
   .tr-note{font-size:12.5px;font-weight:500;color:#C0454A;margin-top:8px;line-height:1.4;background:#FFF1F1;border-radius:7px;padding:8px 10px}
-  .tr-call{flex:none;display:flex;flex-direction:column;align-items:center;gap:4px;padding-top:2px;width:42px}
-  .tr-call .dot{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%}
-  .tr-call .dot.right{background:#E7F8F1} .tr-call .dot.wrong{background:#FFECEC} .tr-call .dot.skip{background:#EEF0F6}
-  .tr-call .dot.right svg{stroke:var(--mint)} .tr-call .dot.wrong svg{stroke:var(--fake)}
-  .tr-call .dot.skip span{color:var(--ink2);font-weight:700;font-size:13px}
-  .tr-call .cl{font-size:10px;font-weight:600;color:var(--ink3);text-align:center}
+  /* uniform citation (reals + fakes share footprint/formatting) */
+  .tr-cite{display:inline-block;margin-top:7px;font-size:12px;font-weight:600;text-decoration:none}
+  a.tr-cite{color:var(--primary-dark)}
+  .tr-cite.muted{color:var(--ink3)}
+  .tr-cite.fake{display:block;color:#8A4A4D;font-weight:500;line-height:1.4;background:#FFF1F1;border-radius:7px;padding:8px 10px}
+  .tr-cite.fake b{color:#B0282E;font-weight:700}
+  /* worded verdict chip — your result (blue/amber + word), off the mint/coral truth axis (F) */
+  .tr-verdict{flex:none;display:flex;align-items:flex-start;padding-top:2px}
+  .vchip{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;padding:5px 9px;border-radius:8px;white-space:nowrap}
+  .vchip svg{width:12px;height:12px}
+  .vchip.right{background:var(--primary-dark);color:#fff} .vchip.right svg{stroke:#fff}   /* darker fill so white text clears AA */
+  .vchip.wrong{background:transparent;border:1.5px solid var(--amber);color:#9A5B12} .vchip.wrong svg{stroke:#9A5B12}
+  .vchip.skip{background:var(--track);color:var(--ink2)}
+  .rv-clean-ic{flex:none;display:flex}
+  /* G: reveal shows ONE magpie (the score reaction) — drop the header brand bird here */
+  body.scr-reveal #magsBtn{display:none}
 
   .share-card{margin-top:26px;border-radius:11px;padding:22px;overflow:hidden;background:var(--card);border:2px solid var(--primary);box-shadow:0 12px 30px -16px var(--primary-shadow)}
   .sc-row{display:flex;align-items:center;justify-content:space-between}
@@ -537,6 +565,10 @@
   .cr-code{text-align:center;margin-top:12px;font-size:13px;font-weight:600;color:var(--ink3)}
   .cr-code b{color:var(--ink);font-weight:700;letter-spacing:.06em}
   .cr-foot{text-align:center;margin-top:16px;font-size:12px;font-weight:500;color:var(--ink3)}
+  .cr-join2{width:100%;margin-top:12px;background:var(--card);border:2px solid var(--track);cursor:pointer;color:var(--primary-dark);
+    border-radius:9px;padding:14px;font-weight:700;font-size:15px;min-height:50px}
+  .cr-join2:active{transform:scale(.99)} .cr-join2{transition:transform .06s ease}
+  .fooled-tag{display:inline-block;margin-top:6px;font-size:11px;font-weight:700;color:#8A4A4D;background:#FFF1F1;border-radius:7px;padding:3px 8px}
   .cr-meta{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:14px;font-size:13px;font-weight:600;color:var(--ink3)}
   .cr-meta button{color:var(--ink3);background:none;border:none;cursor:pointer;font:inherit;font-weight:600;padding:6px 2px}
   .cr-joined{background:var(--primary-soft);border-radius:11px;padding:18px;text-align:center;margin-top:8px;box-shadow:var(--shadow-raised)}
@@ -596,11 +628,75 @@
   .st-bar .bv{font-size:13px;font-weight:600;color:var(--ink);width:42px;text-align:right;flex:none;font-variant-numeric:tabular-nums}
   .cr-invite:active,.cr-empty .start:active,.sw-row:active,.st-row:active,.ag-confirm:active,.acct .primary:active{transform:scale(.98)}
   .cr-invite,.cr-empty .start,.sw-row,.st-row,.ag-confirm{transition:transform .06s ease, background .2s, border-color .15s}
+
+  /* ============================================================
+     UI BUILD amendments — Home (B) + Magpie page (D)
+     ============================================================ */
+  /* in-crew hero: "CREWS" eyebrow above the crew name */
+  .hc-eyebrow{font-size:11px;font-weight:700;letter-spacing:.5px;color:var(--primary-dark);opacity:.75;margin-bottom:6px}
+  /* streak hero: the streak-ladder name beside the number; whole block is a button */
+  .streak-blk{cursor:pointer;border-radius:10px}
+  .streak-blk:focus-visible{outline:2px solid var(--primary);outline-offset:3px}
+  .streak-ladder{font-weight:700;font-size:15px;color:#9A5B12;margin-left:2px}   /* AA on the home canvas (amber fill fails as small text) */
+  /* Magpie page */
+  body.scr-magpie header{display:none}
+  #screen-magpie{padding-bottom:40px}
+  .mag-hero{display:flex;flex-direction:column;align-items:center;text-align:center;background:var(--primary-soft);
+    border-radius:12px;padding:26px 20px 24px;margin-top:8px;box-shadow:var(--shadow-raised)}
+  .mag-hero .mags-cycle{animation:mags-bob 2.8s ease-in-out infinite}
+  .mag-hero .mag-name{font-weight:700;font-size:26px;color:var(--ink);letter-spacing:-.4px;margin-top:10px}
+  .mag-hero .mag-tag{font-size:14px;font-weight:600;color:var(--primary-dark);margin-top:2px}
+  .mag-card{background:var(--card);border-radius:11px;padding:18px;margin-top:14px;box-shadow:var(--shadow-card)}
+  .mag-card .mc-h{font-size:12px;font-weight:700;color:var(--ink3);text-transform:uppercase;letter-spacing:.4px;margin-bottom:8px}
+  .mag-story{font-size:15px;font-weight:500;color:var(--ink2);line-height:1.55}
+  .mag-facts{list-style:none;margin:6px 0 0;padding:0}
+  .mag-facts li{display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:500;color:var(--ink2);line-height:1.45;padding:7px 0}
+  .mag-facts li .dot{flex:none;width:8px;height:8px;border-radius:50%;background:var(--primary);margin-top:6px}
+  .mag-facts li b{color:var(--ink);font-weight:700}
+
+  /* Stats page (E1) + Ranks page (E2) */
+  body.scr-stats header, body.scr-ranks header{display:none}
+  #screen-stats, #screen-ranks{padding-bottom:40px}
+  .stats-range{margin-top:4px}
+  .stats-range button{flex:1}
+  .st-summary{display:flex;gap:9px;margin-top:14px}
+  .st-cell{flex:1;background:var(--card);border-radius:9px;padding:14px 10px;text-align:center;box-shadow:var(--shadow-card)}
+  .st-cell .v{font-weight:700;font-size:22px;color:var(--ink);letter-spacing:-.4px;font-variant-numeric:tabular-nums}
+  .st-cell .k{font-size:11px;font-weight:700;color:var(--ink3);margin-top:3px}
+  .st-jrow{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--track);font-size:14px;font-weight:500;color:var(--ink2)}
+  .st-jrow:last-child{border-bottom:none} .st-jrow b{color:var(--ink);font-weight:700}
+  .spark{display:flex;align-items:flex-end;gap:5px;height:80px;padding-top:6px}
+  .sp-col{flex:1;height:100%;display:flex;align-items:flex-end}
+  .sp-bar{width:100%;background:var(--primary);border-radius:4px 4px 0 0;min-height:6px}
+  .sp-empty{font-size:13px;font-weight:500;color:var(--ink3);align-self:center}
+  .st-link{width:100%;margin-top:14px;background:transparent;border:2px solid var(--track);cursor:pointer;color:var(--primary-dark);
+    border-radius:10px;padding:14px;font-weight:700;font-size:15px;min-height:50px}
+  .st-link:active{transform:scale(.99)} .st-link{transition:transform .06s ease}
+  .st-cohort{opacity:.85}
+  .st-cohort-ph{margin-top:10px;background:var(--canvas);border:1.5px dashed var(--hair);border-radius:8px;padding:16px;text-align:center;font-size:13px;font-weight:600;color:var(--ink3)}
+  .rk-intro{font-size:14.5px;font-weight:500;color:var(--ink2);margin:2px 0 4px;line-height:1.5}
+  .rk-intro b{color:var(--ink);font-weight:700}
+  .rk-cur{font-size:14px;font-weight:500;color:var(--ink2);line-height:1.45;margin-bottom:12px}
+  .rk-cur b{color:var(--ink);font-weight:700}
+  .ld{display:flex;flex-direction:column;gap:2px}
+  .ld-row{display:flex;align-items:center;gap:11px;padding:9px 8px;border-radius:8px}
+  .ld-row.cur{background:var(--primary-soft)}
+  .ld-badge{flex:none;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;
+    background:var(--track);color:var(--ink2)}   /* ink2 clears AA on the track fill */
+  .ld-badge.skill.on{background:var(--primary);color:#fff}
+  .ld-badge.streak{background:var(--track);filter:grayscale(1);opacity:.55}
+  .ld-badge.streak.on{background:#FFF1DE;filter:none;opacity:1}
+  .ld-name{flex:1;font-size:15px;font-weight:600;color:var(--ink)}
+  .ld-row.cur .ld-name{color:var(--primary-dark);font-weight:700}
+  .ld-thr{font-size:12px;font-weight:600;color:var(--ink3);font-variant-numeric:tabular-nums}
 </style>
 </head>
 <body>
 <header>
-  <button class="logo" id="logoBtn" aria-label="Said It? — home" title="Home"><span class="wm">Said It<b>?</b></span></button>
+  <div class="brand">
+    <button class="mags-btn mags-bob" id="magsBtn" aria-label="Meet Mags" title="Meet Mags"></button>
+    <button class="wm-btn" id="logoBtn" aria-label="Said It? — home" title="Home"><span class="wm">Said It<b>?</b></span></button>
+  </div>
   <div class="editiontag" id="editiontag"></div>
 </header>
 <div class="sub" id="sub">Six quotes from this week. Some are real. Some are made up.</div>
@@ -618,8 +714,7 @@
   <button class="play-cta" id="homePlay">Play today's set
     <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
   </button>
-  <div class="play-sub">6 quotes · about a minute</div>
-  <div class="fakes-note" id="homeFakes"></div>
+  <button class="fakes-note" id="homeFakes" aria-label="Meet Mags"></button>
   <div class="streak-blk" id="homeStreak"></div>
   <div id="homeCoach"></div>
   <div class="stat-row" id="homeStats"></div>
@@ -629,6 +724,15 @@
     <button class="navlink hide" id="homeAccount">Save progress</button>
   </div>
 </div>
+
+<!-- MAGPIE page (painted by renderMagpie) -->
+<div id="screen-magpie" class="hide"></div>
+
+<!-- STATS page (E1, painted by renderStats) -->
+<div id="screen-stats" class="hide"></div>
+
+<!-- RANKS page (E2, painted by renderRanks) -->
+<div id="screen-ranks" class="hide"></div>
 
 <!-- LANES picker (painted by renderLanesPicker) -->
 <div id="screen-lanes" class="hide"></div>
@@ -679,7 +783,7 @@ function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;
 /* ---------- Mags, the magpie mascot (themeable inline SVG) ----------
    Recreated from coordination/design_handoff_said_it_bright/Magpie.dc.html — one continuous monoline
    silhouette drawn in var(--primary), with three moods. mood: 'happy' | 'delighted' | 'oops'. */
-function magpie(mood, size){
+function magpie(mood, size, cls){
   mood=mood||"happy"; size=size||72;
   var eyes;
   if(mood==="delighted"){
@@ -692,7 +796,7 @@ function magpie(mood, size){
   } else {
     eyes='<circle cx="45" cy="31" r="3" fill="var(--primary)"/>';
   }
-  return '<svg class="mags" width="'+size+'" height="'+size+'" viewBox="0 0 112 112" fill="none" aria-hidden="true">'+
+  return '<svg class="mags'+(cls?(" "+cls):"")+'" width="'+size+'" height="'+size+'" viewBox="0 0 112 112" fill="none" aria-hidden="true">'+
     '<path d="M40 52 C58 50 64 70 50 80 C40 76 36 62 40 52 Z" fill="var(--primary)" opacity="0.14"/>'+
     '<g stroke="var(--primary)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">'+
     '<path d="M18 40 C24 37 29 36 35 35 C40 17 63 15 64 36 C69 52 71 62 66 73 L99 104 L70 82 C60 92 40 91 31 73 C23 60 19 47 26 43 C22 42 20 41 18 40 Z"/>'+
@@ -776,7 +880,7 @@ function refreshFreeze(date){ var wk=weekKey(date); if(ST.freeze_week!==wk){ST.f
 function daysBetween(a,b){return Math.round((new Date(b+"T12:00:00")-new Date(a+"T12:00:00"))/86400000);}
 
 /* ---------- screens ---------- */
-var SCREENS=["loading","error","home","lanes","play","reveal","archive","crew"];
+var SCREENS=["loading","error","home","magpie","stats","ranks","lanes","play","reveal","archive","crew"];
 function show(name){SCREENS.forEach(function(s){$("screen-"+s).classList.toggle("hide",s!==name);});
   document.body.className=document.body.className.replace(/\bscr-\S+/g,"").trim(); document.body.classList.add("scr-"+name);
   window.scrollTo(0,0);}
@@ -789,6 +893,20 @@ function navBack(){    // return to the screen you came from: home, or the curre
   var d=curDone(); if(d){ renderReveal(d,false); }
   else if(DAY){ renderPlay(); }
   else { goHome(); }
+}
+// content pages (magpie/stats/ranks) use a small back STACK so back returns to the actual opener — and chains
+// (e.g. Home→Stats→Ranks→back→Stats→back→Home) without corrupting BACK_TO or jumping into a stale reveal.
+var PAGE_BACK=[];
+function pageBack(){
+  var prev=PAGE_BACK.pop()||"home";
+  if(prev==="stats"){ renderStats(); show("stats"); return; }
+  if(prev==="ranks"){ renderRanks(); show("ranks"); return; }
+  if(prev==="magpie"){ renderMagpie(); show("magpie"); return; }
+  if(prev==="crew"){ openCrew(); return; }
+  if(prev==="lanes"){ openLanes(); return; }
+  if(prev==="reveal" && curDone()){ renderReveal(curDone(),false); return; }
+  if(prev==="play" && DAY){ renderPlay(); return; }
+  goHome();
 }
 
 /* ---------- state for the current play ---------- */
@@ -855,11 +973,21 @@ function prettyDate(s){var d=new Date(s+"T12:00:00");return d.toLocaleDateString
 function lanePath(lane,date){ return lane==="general"?("daily/"+date+".json"):("daily/"+lane+"/"+date+".json"); }
 function laneDays(lane){ var c=MANIFEST.categories&&MANIFEST.categories[lane]; if(c)return c; return lane==="general"?(MANIFEST.days||[]):[]; }
 function dayKey(lane,date){ return lane==="general"?date:(lane+":"+date); }   // per-lane completion record
-var LANE_LABELS={general:"📰 General",sports:"🏀 Sports",music:"🎵 Music",politics:"🏛️ Politics",movies:"🎬 Movies",nsfw:"🔞 After Dark"};
-// bright-redesign lane theming (category hues + one-line vibes + flags)
+var LANE_LABELS={general:"📰 General",sports:"🏀 Sports",music:"🎵 Music",politics:"🏛️ Politics",movies:"🎬 Movies",nsfw:"🍸 Off the Record"};
+// bright-redesign lane theming (category hues + taglines + line icons + flags)
 var LANE_HUES={general:"#4C6EF5",sports:"#20C4A8",music:"#9775FA",politics:"#FF922B",movies:"#FF8FAB",nsfw:"#7048E8"};
-var LANE_VIBES={general:"a mix of everything",sports:"game-day quotes",music:"backstage talk",politics:"from the podium",movies:"on the record",nsfw:"a little spicier"};
+var LANE_VIBES={general:"today’s mixed bag",sports:"athletes’ chit-chat",music:"artists’ gossip",politics:"hot air, fresh daily",movies:"red-carpet ramblings",nsfw:"not safe for your local newspaper"};
 var LANE_HOT={politics:true}, LANE_ADULT={nsfw:true};
+// simple line icons (stroke = lane hue), one per lane
+var LANE_ICONS={
+  general:'<path d="M5 5h11v14H5z"/><path d="M16 9h3v8a2 2 0 0 1-2 2"/><path d="M8 9h5M8 12.5h5M8 16h3"/>',          // newspaper
+  sports:'<path d="M4 12a4 4 0 0 0 4 4h4l5 3v-6.5a4.5 4.5 0 0 0-4.5-4.5H8a4 4 0 0 0-4 3z"/><path d="M16.5 8.5 19 5"/>',  // whistle
+  music:'<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0"/><path d="M12 17v4M9 21h6"/>',   // mic
+  politics:'<path d="M9 21h6M12 21v-8"/><path d="M7.5 13h9l-1.3-3.5h-6.4z"/><path d="M12 9.5V4M12 4.4l4 1.4-4 1.4z"/>',   // podium + flag
+  movies:'<path d="M4 9h16v11H4z"/><path d="M4 9l2.4-4 3.6 1.8L13.6 5l3.6 1.8"/><path d="M8 9 10.4 5M13 9l2.4-4"/>',     // clapperboard
+  nsfw:'<path d="M5 5h14l-7 8z"/><path d="M12 13v6M8 21h8"/><path d="M16 7.5l2.5-2.5"/>'                                  // martini
+};
+function laneIcon(l){ return LANE_ICONS[l]||LANE_ICONS.general; }
 function laneLabel(l){ return LANE_LABELS[l] || ("# "+l); }
 function laneHue(l){ return LANE_HUES[l] || "#4C6EF5"; }
 function availableLanes(){ var ls=Object.keys((MANIFEST.categories)||{}); if(ls.indexOf("general")<0)ls.unshift("general");
@@ -883,29 +1011,33 @@ function openLanes(){
   LANES_PICK = (avail.indexOf(ST.lane)>=0) ? ST.lane : "general";
   renderLanesPicker(); show("lanes");
 }
-function laneAdultBadgeSVG(){
-  return '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
-}
+function laneDoneToday(lane){ var r=ST.days[dayKey(lane, todayStr())]; return !!(r&&r.done); }
 function renderLanesPicker(){
   var host=$("screen-lanes"), avail=availableLanes();
   var cards=avail.map(function(lane){
-    var hue=laneHue(lane), sel=(lane===LANES_PICK), nm=laneName(lane), vibe=LANE_VIBES[lane]||"";
+    var hue=laneHue(lane), sel=(lane===LANES_PICK), nm=laneName(lane), vibe=LANE_VIBES[lane]||"", done=laneDoneToday(lane);
     var badge = LANE_HOT[lane] ? '<span class="lane-badge hot">heated</span>'
-              : (LANE_ADULT[lane] ? '<span class="lane-badge adult">'+laneAdultBadgeSVG()+'18+</span>' : '');
-    var style = sel ? ('border-color:'+hue+';background:'+hue+'14;box-shadow:0 8px 20px -12px '+hue) : '';
-    return '<button class="lane-card'+(sel?' sel':'')+'" data-lane="'+esc(lane)+'" style="'+style+'">'+
-      '<div class="lc-top"><span class="lane-dot" style="border-color:'+hue+'"></span>'+badge+'</div>'+
-      '<div><div class="lane-name">'+esc(nm)+'</div><div class="lane-vibe">'+esc(vibe)+'</div></div></button>';
+              : (LANE_ADULT[lane] ? '<span class="lane-badge adult">NSFW</span>' : '');
+    // dot: ring + line icon (hue); when played today → filled hue + white check
+    var dot = done
+      ? '<span class="lane-dot done" style="background:'+hue+';border-color:'+hue+'"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6"/></svg></span>'
+      : '<span class="lane-dot" style="border-color:'+hue+'"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="'+hue+'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+laneIcon(lane)+'</svg></span>';
+    var style = 'border-color:'+hue+(sel?(';background:'+hue+'14;box-shadow:0 8px 20px -12px '+hue):'');   // border = dot colour, always
+    return '<button class="lane-card'+(sel?' sel':'')+(done?' done':'')+'" data-lane="'+esc(lane)+'" style="'+style+'">'+
+      '<div class="lc-top">'+dot+badge+'</div>'+
+      '<div><div class="lane-name">'+esc(nm)+'</div><div class="lane-vibe">'+(done?'<span class="lane-played">✓ View results</span>':esc(vibe))+'</div></div></button>';
   }).join("");
+  var pickDone=laneDoneToday(LANES_PICK);
   host.innerHTML =
-    '<div class="scr-head"><button class="back-btn" id="lanesBack" aria-label="Back">'+
-      '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>'+
-      '<div class="scr-title">Pick your lane</div></div>'+
+    '<div class="scr-head"><button class="back-btn" id="lanesBack" aria-label="Back">'+BACK_ARROW+'</button>'+
+      '<div class="scr-title">Pick your lane</div>'+
+      '<button class="hdr-mags" id="lanesMags" aria-label="Meet Mags">'+magpie("happy",26,"mags-flip")+'</button></div>'+
     '<div class="lanes-sub">Six quotes. Some real, some I faked. Spot the fakes.</div>'+
     '<div class="lane-grid">'+cards+'</div>'+
-    '<div class="sticky-cta"><button class="outline-cta" id="lanesPlay">Play '+esc(laneName(LANES_PICK))+
+    '<div class="sticky-cta"><button class="outline-cta" id="lanesPlay">'+(pickDone?'View results':('Play '+esc(laneName(LANES_PICK))))+
       ' <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>';
   $("lanesBack").onclick=goHome;
+  $("lanesMags").onclick=openMagpie;
   $("lanesPlay").onclick=function(){ startLane(LANES_PICK); };
   host.querySelectorAll(".lane-card").forEach(function(b){ b.onclick=function(){ pickLaneTile(b.getAttribute("data-lane")); }; });
 }
@@ -938,7 +1070,11 @@ function last7(){   // strictly chronological: 7 cells, oldest (left) → today 
 }
 // named rank ladder, earned by accuracy; hidden until 5 sets; seeded partway into the tier (endowed progress)
 // friendly rank ladder (design: never "Gullible"/"Human Polygraph"). "Mind Reader" is the top tier.
-var TIERS=[{n:"Rookie"},{n:"Skeptic",a:.50},{n:"Sharp Eye",a:.60},{n:"Truth Hound",a:.70},{n:"Lie Detector",a:.80},{n:"Mind Reader",a:.90}];
+// SKILL ladder (accuracy) — thresholds per the UI script (E). Eye/detective themed.
+var TIERS=[{n:"Rookie"},{n:"Skeptic",a:.55},{n:"Sharp Eye",a:.65},{n:"Truth Hound",a:.75},{n:"Lie Detector",a:.85},{n:"Mind Reader",a:.92}];
+// STREAK ladder (commitment) — named by BEST streak. Fire themed.
+var STREAK_TIERS=[{n:"Spark",lo:1},{n:"Kindling",lo:3},{n:"Campfire",lo:7},{n:"Bonfire",lo:14},{n:"Wildfire",lo:30},{n:"Inferno",lo:60},{n:"Eternal Flame",lo:100}];
+function streakRank(best){ best=best||0; var t=null; for(var i=0;i<STREAK_TIERS.length;i++){ if(best>=STREAK_TIERS[i].lo) t=STREAK_TIERS[i]; } return t; }   // null below 1
 function rankInfo(){
   var games=gamesPlayed();
   if(games<5) return {locked:true, need:5-games};
@@ -953,13 +1089,37 @@ function allResults(){ var out=[]; for(var k in (ST.days||{})){ var r=ST.days[k]
   return out.sort(function(a,b){ return (a.date||"")<(b.date||"")?1:-1; }); }   // newest first
 // personal "coach" line — keep the ~90% who aren't #1 motivated
 function renderCoach(){
+  // de-duped: the streak hero already shows the streak, so the coach never restates it (B). Skill/rank nudges only.
   var c=$("homeCoach"); c.className=""; c.innerHTML=""; var msg="";
-  if(ST.streak>=3) msg="🔥 "+ST.streak+"-day streak — the habit's forming. Keep it alive.";
-  else if(ST.best_streak>0 && ST.streak>0 && ST.streak>=ST.best_streak) msg="🔥 Matching your best streak ("+ST.best_streak+") — push past it today.";
-  else if(ST.judged>=18 && accPct()>=70) msg="🎯 "+accPct()+"% accuracy — you've got a genuinely sharp eye.";
+  if(ST.judged>=18 && accPct()>=70) msg="🎯 "+accPct()+"% accuracy — you've got a genuinely sharp eye.";
   else if(gamesPlayed()>=1 && gamesPlayed()<5) msg="📈 "+(5-gamesPlayed())+" more set"+((5-gamesPlayed())>1?"s":"")+" to earn your rank — you're close.";
   if(msg){ c.className="coach"; c.textContent=msg; }
 }
+/* ---------- MAGPIE page (D): backstory + why-a-magpie facts + animated Mags ---------- */
+function openMagpie(){ PAGE_BACK.push(currentScreen()); renderMagpie(); show("magpie"); logEvent("magpie_view"); }
+function renderMagpie(){
+  var host=$("screen-magpie");
+  host.innerHTML=
+    '<div class="play-head"><button class="back-btn" id="magBack" aria-label="Back">'+BACK_ARROW+'</button><div class="scr-title">Meet Mags</div></div>'+
+    '<div class="mag-hero"><span id="magAnim">'+magpie("happy",96,"mags-cycle")+'</span>'+
+      '<div class="mag-name">Mags</div><div class="mag-tag">your friendly culprit</div></div>'+
+    '<div class="mag-card"><div class="mc-h">The story</div>'+
+      '<div class="mag-story">Meet Mags. Magpies are nature’s great mimics — they can copy almost any sound they hear, including human speech. They’re also one of the only animals that recognise themselves in a mirror, and they’ve got a reputation for mischief and shiny-thing thievery (a flock is literally called a “mischief” of magpies). So Mags is the perfect culprit: every day he eavesdrops on the news, then slips a few quotes he made up in among the real ones — just to see who’s paying attention. Your job is to out-smart the bird.</div></div>'+
+    '<div class="mag-card"><div class="mc-h">Why a magpie?</div><ul class="mag-facts">'+
+      '<li><span class="dot"></span><span>They’re <b>expert mimics</b> — wild magpies imitate human speech and other birds’ calls. The perfect voice-faker.</span></li>'+
+      '<li><span class="dot"></span><span>They <b>pass the mirror test</b> — one of the very few animals that recognise themselves. A clever bird for a clever game.</span></li>'+
+      '<li><span class="dot"></span><span>A group is a <b>“mischief”</b> of magpies — and they can’t resist a shiny thing. Mischief is the whole point.</span></li>'+
+      '<li><span class="dot"></span><span>That blue-black <b>iridescent sheen</b> on their wings is where Said It? gets its blue.</span></li>'+
+    '</ul></div>';
+  $("magBack").onclick=pageBack;
+  // gentle happy↔delighted cycle; disabled under prefers-reduced-motion; self-clears when you leave
+  if(window._magInt){ clearInterval(window._magInt); window._magInt=null; }
+  var reduce=false; try{ reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches; }catch(e){}
+  if(!reduce){ var moods=["happy","delighted"], i=0;
+    window._magInt=setInterval(function(){ var a=$("magAnim"); if(!a||currentScreen()!=="magpie"){ clearInterval(window._magInt); window._magInt=null; return; }
+      i=(i+1)%moods.length; a.innerHTML=magpie(moods[i],96,"mags-cycle"); }, 1500); }
+}
+
 /* the mascot "fakes" note — spoiler-safe; the count is fetched in the background (no set is loaded on home) */
 var _todayFakeCount=null;
 function homeFakesNote(n){
@@ -967,7 +1127,9 @@ function homeFakesNote(n){
   var inner = (n!=null)
     ? ('I slipped in <span class="fk">'+n+' fake'+(n===1?'':'s')+'</span> today — can you spot them?')
     : ('I slipped a few fakes into today’s set — can you spot them?');
-  host.innerHTML='<span class="mags-wrap">'+magpie("happy",32)+'</span><span class="fk-txt">'+inner+'</span>';
+  // Mags speaks: flipped to face right into the text, with a small speech-tail; whole note opens the Magpie page
+  host.innerHTML='<span class="fn-mags">'+magpie("happy",34,"mags-flip")+'<span class="fn-tail"></span></span><span class="fk-txt">'+inner+'</span>';
+  host.onclick=openMagpie;
 }
 function loadTodayFakeCount(){
   if(_todayFakeCount!=null){ homeFakesNote(_todayFakeCount); return; }
@@ -988,31 +1150,37 @@ function renderHomeStreak(){
   var sub="";
   if(ST.streak>0 && (ST.best_streak||0)<=ST.streak) sub='<br><span class="best-yet">your best yet</span>';
   else if(ST.streak>0 && ST.best_streak>0) sub='<br><span class="best-num">best: '+ST.best_streak+' day'+(ST.best_streak>1?'s':'')+'</span>';
+  // streak-ladder name (commitment axis), by best streak — the skill rank lives on the Rank tile (two axes, B)
+  var lad=streakRank(Math.max(ST.streak||0, ST.best_streak||0));
+  var ladName = (ST.streak>0 && lad) ? ' <span class="streak-ladder">· '+esc(lad.n)+'</span>' : '';
   var head = ST.streak>0
-    ? '<div class="streak-head"><span class="fire">🔥</span><span class="streak-num">'+ST.streak+'</span><span class="streak-lbl">day streak'+sub+'</span></div>'
+    ? '<div class="streak-head"><span class="fire">🔥</span><span class="streak-num">'+ST.streak+'</span>'+ladName+'<span class="streak-lbl">day streak'+sub+'</span></div>'
     : '<div class="streak-head"><span class="fire">🔥</span><span class="streak-num zero">0</span><span class="streak-lbl">Play today to start your streak</span></div>';
-  host.innerHTML=head+'<div class="d7strip">'+cells+'</div>';   // display only (per design — not a button)
+  host.innerHTML=head+'<div class="d7strip">'+cells+'</div>';
+  activate(host, function(){ openStats("overview"); }, "Your stats — streak, accuracy, history");   // streak hero → Stats page
 }
-function homeStatChip(label,value,which){
+function homeStatChip(label,value,which,onTap){
   var b=el("button","stat-chip");
   b.innerHTML='<div class="sc-lbl">'+esc(label)+'</div><div class="sc-val">'+esc(value)+'</div>';
   b.setAttribute("aria-label", label+" — tap for detail");
-  b.onclick=function(){ if(which==="standing" && liveCrew()){ openCrew(); return; } openStats(which); };
+  b.onclick=onTap || function(){ openStats(which); };
   return b;
 }
 // hero slot: in-crew standing card, or the solo / new-player crew nudge
 function renderHomeHero(){
   var host=$("homeHero"); var cc=curCrew();
   if(!cc || !crewEndpoint()){
+    // solo nudge — no standalone Mags here (header Mags + fakes-note Mags already carry the mascot; one fewer bird)
     host.className="hero-solo"; host.removeAttribute("role"); host.removeAttribute("tabindex"); host.onclick=null; host.onkeydown=null;
-    host.innerHTML='<div class="hs-top"><span class="hs-mags">'+magpie("happy",54)+'</span>'+
-      '<div><div class="hs-title">Play with friends</div><div class="hs-sub">Start a crew — no account needed.</div></div></div>'+
+    host.innerHTML='<div class="hc-eyebrow">CREWS</div>'+
+      '<div class="hs-title">Play with friends</div><div class="hs-sub">Start a crew — compare scores on a shared daily board. No account needed.</div>'+
       '<button class="hs-btn" id="homeStartCrew">+ Create or join a crew</button>';
     var b=$("homeStartCrew"); if(b) b.onclick=openCrew;
     return;
   }
   host.className="hero-crew";
-  host.innerHTML='<div class="hc-row">'+
+  host.innerHTML='<div class="hc-eyebrow">CREWS</div>'+
+    '<div class="hc-row">'+
       '<button class="hc-name" id="homeCrewName"><span>'+esc(crewLabel(cc))+'</span>'+CHEV_DOWN+'</button>'+
       '<span class="hc-week">this week</span></div>'+
     '<div class="hc-rank"><span class="hc-rank-n" id="hcRankN">·</span><span class="hc-rank-of" id="hcRankOf">of —</span></div>'+
@@ -1047,12 +1215,12 @@ function renderHome(){
   homeFakesNote(_todayFakeCount); loadTodayFakeCount();
   renderHomeStreak();
   renderCoach();
-  // three stat chips → each opens its detail (the stats bottom-sheet lands in Phase 5)
+  // two competitive axes (B): streak ladder lives on the streak hero; the Rank tile shows the SKILL rank → Ranks page.
   var sg=$("homeStats"); sg.innerHTML="";
   var rk=rankInfo();
-  sg.appendChild(homeStatChip("Accuracy", ST.judged?accPct()+"%":"—", "accuracy"));
-  sg.appendChild(homeStatChip(liveCrew()?"Standing":"Rank", rk.locked?"—":rk.tier, "standing"));
-  sg.appendChild(homeStatChip("Played", String(gamesPlayed()), "days"));
+  sg.appendChild(homeStatChip("Accuracy", ST.judged?accPct()+"%":"—", "accuracy"));            // → Stats page
+  sg.appendChild(homeStatChip("Rank", rk.locked?"—":rk.tier, "standing", openRanks));           // skill rank → Ranks page
+  sg.appendChild(homeStatChip("Played", String(gamesPlayed()), "days"));                         // → Stats page
   // footer links: Past editions · Save progress (account link only when Supabase is configured)
   var ha=$("homeAccount"), sep=$("homeLinkSep");
   if(ha){ if(SB){ ha.classList.remove("hide"); if(sep)sep.classList.remove("hide");
@@ -1066,7 +1234,7 @@ function ensureAgeOk(onOk){
   if(ST.nsfw_ok){ onOk(); return; }
   var sh=openSheet(
     '<div class="ag-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>'+
-    '<div class="ag-title">After Dark is 18+</div>'+
+    '<div class="ag-title">Off the Record is 18+</div>'+
     '<div class="ag-body">Spicier quotes, same game. Confirm you’re over 18 to play this lane.</div>'+
     '<button class="ag-confirm" id="agOk">I’m 18 or older</button>'+
     '<button class="ag-cancel" id="agNo">Not now</button>');
@@ -1084,63 +1252,75 @@ function lastNplayed(n){ var played={}; (ST.log||[]).forEach(function(e){ if(e.e
   var t=todayStr(), out=[]; for(var i=n-1;i>=0;i--){ var d=addDaysStr(t,-i); out.push({date:d,played:!!played[d],today:i===0}); } return out; }
 function laneName(l){ return laneLabel(l).replace(/^\S+\s/,""); }
 
-/* ---------- STATS bottom sheet (overview → detail), replacing the old detail screen ---------- */
-function statDetailData(which){
-  if(which==="accuracy"){
-    var cs=categoryStats();
-    var rows=availableLanes().map(function(lane){ var x=cs[lane], pct=(x&&x.n)?Math.round(100*x.score/x.n):0;
-      return {label:laneName(lane), pct:(x&&x.n)?pct:0, value:(x&&x.n)?pct+"%":"—", color:laneHue(lane)}; });
-    return {kicker:"Accuracy", big: ST.judged?accPct()+"%":"—", bigSub: ST.judged?("across "+gamesPlayed()+" set"+(gamesPlayed()===1?"":"s")):"no sets yet",
-      blurb: ST.judged?"How often you call a quote right — broken down by lane.":"Play a set to start tracking accuracy.", rows:rows};
-  }
-  if(which==="standing"){   // solo rank ladder (a live-crew standing routes to the board instead)
-    var rk=rankInfo(), ci=-1; if(!rk.locked){ for(var i=0;i<TIERS.length;i++){ if(TIERS[i].n===rk.tier){ ci=i; break; } } }
-    var rows=TIERS.map(function(tt,i){ var achieved=(ci>=0 && i<ci), isCur=(i===ci);
-      return {label:tt.n, pct: achieved?100:(isCur?Math.round((rk.prog||.5)*100):0),
-        value: achieved?"✓":(isCur?"now":(tt.a?(Math.round(tt.a*100)+"%"):"start")),
-        color: achieved?"#16B981":(isCur?"#4C6EF5":"#E6E8F0")}; });
-    return {kicker:"Rank", big: rk.locked?"—":rk.tier, bigSub: rk.locked?("play "+rk.need+" more"):("tier "+(ci+1)+" of "+TIERS.length),
-      blurb: rk.locked?("You're at "+(ST.judged?Math.round(ST.correct/ST.judged*100):0)+"% — "+rk.need+" more set"+(rk.need>1?"s":"")+" earns your rank."):(rk.line||""), rows:rows};
-  }
-  if(which==="days"){
-    var g=gamesPlayed(), l7=last7().filter(function(x){return x.played;}).length, l28=lastNplayed(28).filter(function(x){return x.played;}).length;
-    var rows=[
-      {label:"This week", pct:Math.round(l7/7*100), value:l7+"/7", color:"#16B981"},
-      {label:"Last 4 weeks", pct:Math.round(l28/28*100), value:l28+"/28", color:"#20C4A8"},
-      {label:"Current streak", pct:Math.min(100, (ST.streak||0)/Math.max(1,ST.best_streak||1)*100), value:(ST.streak||0)+"", color:"#FBA94C"}
-    ];
-    return {kicker:"Days played", big:g+"", bigSub:"sets", blurb:"Best streak: "+(ST.best_streak||0)+" day"+((ST.best_streak||0)===1?"":"s")+". A cell fills when you play any set that day.", rows:rows};
-  }
-  // lock record
-  var rows=[
-    {label:"Locked right", pct: ST.locks?Math.round(100*ST.locks_correct/ST.locks):0, value: ST.locks?Math.round(100*ST.locks_correct/ST.locks)+"%":"—", color:"#16B981"},
-    {label:"Locks placed", pct: gamesPlayed()?Math.min(100, Math.round(100*(ST.locks||0)/Math.max(1,gamesPlayed()))):0, value:(ST.locks||0)+"", color:"#4C6EF5"}
-  ];
-  return {kicker:"Lock record", big: ST.locks?lockPct()+"%":"—", bigSub:"locks right",
-    blurb: ST.locks?("Your one most-confident pick was right "+ST.locks_correct+" of "+ST.locks+" times."):"Lock your most-confident quote each game; this tracks how often you nail it.", rows:rows};
+/* ---------- STATS page (E1) + RANKS page (E2) ---------- */
+function rangeResults(range){ var all=allResults(); if(range==="all") return all; var t=todayStr();
+  if(range==="today") return all.filter(function(r){return r.date===t;});
+  var wk=weekKey(t); return all.filter(function(r){return r.date&&weekKey(r.date)===wk;}); }
+function rangeStats(range){ var rs=rangeResults(range), judged=0, correct=0, locks=0, lr=0, byLane={};
+  rs.forEach(function(r){ judged+=r.n||0; correct+=r.score||0;
+    if(r.lockCorrect===true||r.lockCorrect===false){ locks++; if(r.lockCorrect)lr++; }
+    var ln=r.lane||"general", b=byLane[ln]||(byLane[ln]={s:0,n:0}); b.s+=r.score||0; b.n+=r.n||0; });
+  return {sets:rs.length, judged:judged, correct:correct, acc:judged?Math.round(100*correct/judged):0,
+    locks:locks, lockPct:locks?Math.round(100*lr/locks):0, byLane:byLane, results:rs}; }
+var STATS_RANGE="all";
+function openStats(){ PAGE_BACK.push(currentScreen()); renderStats(); show("stats"); logEvent("stat_detail",{which:"stats"}); }
+function renderStats(){
+  var host=$("screen-stats"), s=rangeStats(STATS_RANGE);
+  var lad=streakRank(Math.max(ST.streak||0, ST.best_streak||0));
+  var recent=s.results.slice(0,10).reverse();   // accuracy over time, oldest→newest
+  var sparks=recent.length ? recent.map(function(r){ var p=r.n?Math.round(100*r.score/r.n):0;
+      return '<div class="sp-col" title="'+esc(prettyDate(r.date))+': '+r.score+'/'+r.n+'"><div class="sp-bar" style="height:'+Math.max(6,p)+'%"></div></div>'; }).join("")
+    : '<div class="sp-empty">No sets in this range yet — play one to start the chart.</div>';
+  var laneBars=availableLanes().map(function(ln){ var b=s.byLane[ln], p=(b&&b.n)?Math.round(100*b.s/b.n):0;
+    return '<div class="st-bar"><span class="bl">'+esc(laneName(ln))+'</span><div class="bw"><div class="bf" style="width:'+(b&&b.n?p:0)+'%;background:'+laneHue(ln)+'"></div></div><span class="bv">'+(b&&b.n?p+"%":"—")+'</span></div>'; }).join("");
+  var rlabel=STATS_RANGE==="all"?"all-time":(STATS_RANGE==="today"?"today":"this week");
+  host.innerHTML=
+    '<div class="scr-head"><button class="back-btn" id="statsBack" aria-label="Back">'+BACK_ARROW+'</button><div class="scr-title">Your stats</div>'+
+      '<button class="hdr-mags" id="statsMags" aria-label="Meet Mags">'+magpie("happy",26,"mags-flip")+'</button></div>'+
+    '<div class="seg-toggle stats-range">'+["today","week","all"].map(function(r){ return '<button data-r="'+r+'" class="'+(STATS_RANGE===r?"on":"")+'">'+(r==="all"?"All-time":(r==="week"?"Week":"Today"))+'</button>'; }).join("")+'</div>'+
+    '<div class="st-summary">'+
+      '<div class="st-cell"><div class="v">'+s.sets+'</div><div class="k">sets · '+rlabel+'</div></div>'+
+      '<div class="st-cell"><div class="v">'+(s.judged?s.acc+"%":"—")+'</div><div class="k">accuracy</div></div>'+
+      '<div class="st-cell"><div class="v">'+(s.locks?s.lockPct+"%":"—")+'</div><div class="k">lock record</div></div></div>'+
+    '<div class="mag-card"><div class="mc-h">Your journey</div>'+
+      '<div class="st-jrow"><span>First played</span><b>'+(ST.first_seen?esc(prettyDate(ST.first_seen)):"—")+'</b></div>'+
+      '<div class="st-jrow"><span>Days played</span><b>'+gamesPlayed()+'</b></div>'+
+      '<div class="st-jrow"><span>Current streak</span><b>🔥 '+(ST.streak||0)+(lad&&(ST.streak||ST.best_streak)?(" · "+esc(lad.n)):"")+'</b></div>'+
+      '<div class="st-jrow"><span>Best streak</span><b>'+(ST.best_streak||0)+' day'+((ST.best_streak||0)===1?"":"s")+'</b></div></div>'+
+    '<div class="mag-card"><div class="mc-h">Accuracy over time</div><div class="spark">'+sparks+'</div></div>'+
+    '<div class="mag-card"><div class="mc-h">By category ('+rlabel+')</div><div class="st-bars">'+laneBars+'</div></div>'+
+    '<button class="st-link" id="statsRanks">See how ranks work →</button>'+
+    '<div class="mag-card st-cohort"><div class="mc-h">How you compare</div>'+
+      '<div class="st-blurb">See how you stack up against players who started the same week as you.</div>'+
+      '<div class="st-cohort-ph">📊 Cohort comparison — coming soon</div></div>';
+  // v2 cohort — built later by the pipeline/endpoint work, not now (motivating framing only).
+  // TODO v2 cohort: GET {AGG_ENDPOINT}?cohort=<weekKey(first_seen)>&me=<sid>
+  //   -> { week_key, n_players, avg_days, avg_sets, my_days, my_sets, my_days_pct }  (render avg vs you; no PII)
+  $("statsBack").onclick=pageBack; $("statsMags").onclick=openMagpie; $("statsRanks").onclick=openRanks;
+  host.querySelectorAll(".stats-range button").forEach(function(b){ b.onclick=function(){ STATS_RANGE=b.getAttribute("data-r"); renderStats(); }; });
 }
-function openStats(which){ renderStatsSheet(which||"overview"); logEvent("stat_detail",{which:which||"overview"}); }
-function renderStatsSheet(view){
-  if(view==="overview"){
-    var rk=rankInfo();
-    var items=[{k:"accuracy",lbl:"Accuracy",val:ST.judged?accPct()+"%":"—"},
-      {k:"standing",lbl:liveCrew()?"Standing":"Rank",val:rk.locked?"—":rk.tier},
-      {k:"days",lbl:"Days played",val:gamesPlayed()+""},
-      {k:"lock",lbl:"Lock record",val:ST.locks?lockPct()+"%":"—"}];
-    var rows=items.map(function(it){ return '<button class="st-row" data-k="'+it.k+'"><div><div class="lbl">'+it.lbl+'</div><div class="val">'+esc(it.val)+'</div></div><span class="chev">'+CHEV_RIGHT+'</span></button>'; }).join("");
-    var sh=openSheet('<div class="sheet-title">Your stats</div>'+rows+'<button class="sheet-close" id="stClose">Close</button>');
-    sh.querySelectorAll(".st-row").forEach(function(b){ b.onclick=function(){ var k=b.getAttribute("data-k"); if(k==="standing"&&liveCrew()){ closeSheet(); openCrew(); return; } renderStatsSheet(k); }; });
-    $("stClose").onclick=closeSheet; return;
-  }
-  if(view==="standing" && liveCrew()){ closeSheet(); openCrew(); return; }
-  var d=statDetailData(view);
-  var bars=d.rows.map(function(r){ return '<div class="st-bar"><span class="bl">'+esc(r.label)+'</span><div class="bw"><div class="bf" style="width:'+Math.max(0,Math.min(100,r.pct))+'%;background:'+r.color+'"></div></div><span class="bv">'+esc(r.value)+'</span></div>'; }).join("");
-  openSheet('<button class="st-back" id="stBack">'+CHEV_LEFT+' All stats</button>'+
-    '<div class="st-kicker">'+esc(d.kicker)+'</div><div class="st-big"><span class="n">'+esc(d.big)+'</span><span class="s">'+esc(d.bigSub)+'</span></div>'+
-    '<div class="st-blurb">'+esc(d.blurb)+'</div><div class="st-bars">'+bars+'</div>'+
-    '<button class="sheet-close" id="stClose">Close</button>');
-  $("stBack").onclick=function(){ renderStatsSheet("overview"); };
-  $("stClose").onclick=closeSheet;
+function openRanks(){ PAGE_BACK.push(currentScreen()); renderRanks(); show("ranks"); logEvent("ranks_view"); }
+function renderRanks(){
+  var host=$("screen-ranks"), rk=rankInfo();
+  var ci=-1; if(!rk.locked){ for(var i=0;i<TIERS.length;i++){ if(TIERS[i].n===rk.tier) ci=i; } }
+  var skillRows=TIERS.map(function(tt,i){ var cur=(i===ci), done=(ci>=0&&i<ci);
+    return '<div class="ld-row'+(cur?" cur":"")+'"><span class="ld-badge skill'+((done||cur)?" on":"")+'">'+(done?"✓":(i+1))+'</span>'+
+      '<span class="ld-name">'+esc(tt.n)+(cur?" · you":"")+'</span><span class="ld-thr">'+(tt.a?(Math.round(tt.a*100)+"%+"):"start")+'</span></div>'; }).join("");
+  var bestStreak=Math.max(ST.streak||0, ST.best_streak||0), streakCur=streakRank(bestStreak);
+  var streakRows=STREAK_TIERS.map(function(tt,i){ var hi=(i+1<STREAK_TIERS.length)?(STREAK_TIERS[i+1].lo-1):null, cur=!!(streakCur&&streakCur.n===tt.n), done=(bestStreak>=tt.lo&&!cur);
+    return '<div class="ld-row'+(cur?" cur":"")+'"><span class="ld-badge streak'+((done||cur)?" on":"")+'">🔥</span>'+
+      '<span class="ld-name">'+esc(tt.n)+(cur?" · you":"")+'</span><span class="ld-thr">'+tt.lo+(hi?("–"+hi):"+")+' days</span></div>'; }).join("");
+  host.innerHTML=
+    '<div class="scr-head"><button class="back-btn" id="ranksBack" aria-label="Back">'+BACK_ARROW+'</button><div class="scr-title">Ranks</div>'+
+      '<button class="hdr-mags" id="ranksMags" aria-label="Meet Mags">'+magpie("happy",26,"mags-flip")+'</button></div>'+
+    '<div class="rk-intro">Two ways to climb: <b>skill</b> rises with your accuracy; <b>streak</b> rises the more days you show up.</div>'+
+    '<div class="mag-card"><div class="mc-h">Skill rank — accuracy</div>'+
+      '<div class="rk-cur">'+(rk.locked?("Play "+rk.need+" more set"+(rk.need===1?"":"s")+" to earn your first rank."):("You’re <b>"+esc(rk.tier)+"</b>"+(rk.next?(" — raise accuracy to reach <b>"+esc(rk.next)+"</b>."):" — top rank, keep it sharp.")))+'</div>'+
+      '<div class="ld">'+skillRows+'</div></div>'+
+    '<div class="mag-card"><div class="mc-h">Streak rank — commitment</div>'+
+      '<div class="rk-cur">'+(streakCur?("You’re <b>"+esc(streakCur.n)+"</b> — play more days in a row to climb."):"Not lit yet — play today to spark your streak.")+'</div>'+
+      '<div class="ld">'+streakRows+'</div></div>';
+  $("ranksBack").onclick=pageBack; $("ranksMags").onclick=openMagpie;
 }
 /* ---------- crew switcher bottom sheet ---------- */
 function openCrewSwitcher(){
@@ -1177,13 +1357,15 @@ function paintPlay(){
       '<div class="pbar" id="playProgress"></div>'+
       '<div class="pstep" id="playStep">'+(PLAY_IDX+1)+'/'+n+'</div>'+
     '</div>'+
+    '<div class="play-cat">'+   // category always visible in the top bar (J) + small brand Mags (A)
+      '<span class="qchip" style="color:'+hue+';border-color:'+hue+'"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="'+hue+'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+laneIcon(lane)+'</svg>'+esc(laneName(lane))+'</span>'+
+      '<button class="hdr-mags" id="playMags" aria-label="Meet Mags">'+magpie("happy",24,"mags-flip")+'</button></div>'+
     '<div class="qcard" id="playCard">'+
       '<div class="qtint real" id="tintReal"></div><div class="qtint fake" id="tintFake"></div>'+
-      '<div class="qcard-top"><span class="qchip" style="color:'+hue+';border-color:'+hue+'">'+esc(laneName(lane))+'</span>'+
-        '<span class="qdate">'+esc(prettyDate(DAY.date))+'</span></div>'+
+      '<div class="qcard-top"><span class="qdate">'+esc(prettyDate(DAY.date))+'</span></div>'+
       '<div class="qtext">“'+esc(q.text)+'”</div>'+
       '<div class="qspk"><span class="qav" style="color:'+hue+';border-color:'+hue+'">'+esc(avInitial(q.speaker))+'</span>'+
-        '<div><div class="nm">'+esc(q.speaker)+'</div>'+(q.context?('<div class="rl">'+esc(q.context)+'</div>'):'')+'</div></div>'+
+        '<div><div class="nm">'+esc(q.speaker)+'</div>'+(q.context?('<div class="rl">'+esc(trunc(q.context,42))+'</div>'):'')+'</div></div>'+
     '</div>'+
     '<div class="swipe-hint">Swipe the card — or tap below</div>'+
     '<div class="rf-row">'+
@@ -1232,6 +1414,7 @@ function paintPlay(){
   function toggleLock(){ if(LOCK===q.id){ LOCK=null; } else { LOCK=q.id; } refreshLock(); refreshProgress(); refreshCTA(); if(LOCK===q.id) pulseLock(); }
 
   $("playBack").onclick=goHome;
+  var pm=$("playMags"); if(pm) pm.onclick=openMagpie;
   btnR.onclick=function(){ tapAnswer("real"); };
   btnF.onclick=function(){ tapAnswer("fake"); };
   lockBtn.onclick=toggleLock;
@@ -1355,24 +1538,25 @@ function renderReveal(res, fresh, bumped){
       '<div class="q">“'+esc(fq.text)+'”</div>'+
       '<div class="m">'+esc(fq.speaker)+' — I made this one up. You called it real.</div></div>';
   } else {
-    topCard='<div class="rv-clean">'+magpie("delighted",30)+'<span>A clean sweep — you didn’t let me fool you once.</span></div>';
+    // one magpie per screen (G): the rv-head reaction bird is it — clean card uses a check, no second bird
+    topCard='<div class="rv-clean"><span class="rv-clean-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1C6B4F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6"/></svg></span><span>A clean sweep — you didn’t let me fool you once.</span></div>';
   }
 
-  // truth rows
+  // truth rows — F: truth = mint/coral stamp (left); your result = worded blue/amber verdict chip (right). Uniform citation footprint.
   var rowsHtml=DAY.quotes.map(function(q,i){
     var pq=res.perq[i], real=q.real, right=pq.right, guess=pq.guess, skipped=!guess;
-    var src = real ? (q.source ? ('<a href="'+esc(q.source.url)+'" target="_blank" rel="noopener">'+esc(q.source.title||q.source.url)+'</a>') : "on the record")
-                   : "I made this one up";
-    var note = (!real && q.fake_note) ? ('<div class="tr-note">'+esc(q.fake_note)+'</div>') : "";
-    var callDot = skipped ? '<span class="dot skip"><span>–</span></span>'
-                : (right ? '<span class="dot right">'+CHECK_SVG+'</span>'
-                         : '<span class="dot wrong">'+X_ICON+'</span>');
-    var callLbl = skipped ? "skipped" : ("you: "+guess);
+    var cite = real
+      ? (q.source ? ('<a class="tr-cite" href="'+esc(q.source.url)+'" target="_blank" rel="noopener">Source ›</a>') : '<span class="tr-cite muted">On the record</span>')
+      : ('<div class="tr-cite fake"><b>I made this one up.</b>'+(q.fake_note?(' '+esc(q.fake_note)):'')+'</div>');
+    var verdict = skipped
+      ? '<span class="vchip skip">– Skipped</span>'
+      : (right ? '<span class="vchip right">'+CHECK_SVG+' Nailed it</span>'
+               : '<span class="vchip wrong">'+X_ICON+' Got me</span>');
     return '<div class="tr"><div class="tr-row">'+
       '<div class="tr-stamp"><span class="stamp '+(real?"real":"fake")+'">'+(real?"REAL":"FAKE")+'</span></div>'+
       '<div class="tr-body"><div class="tr-q">“'+esc(trunc(q.text,72))+'”</div>'+
-        '<div class="tr-meta">'+esc(q.speaker)+' · '+src+'</div>'+note+'</div>'+
-      '<div class="tr-call">'+callDot+'<span class="cl">'+esc(callLbl)+'</span></div>'+
+        '<div class="tr-meta">'+esc(q.speaker)+(q.context?(' · '+esc(trunc(q.context,30))):'')+'</div>'+cite+'</div>'+
+      '<div class="tr-verdict">'+verdict+'</div>'+
     '</div></div>';
   }).join("");
 
@@ -1388,7 +1572,7 @@ function renderReveal(res, fresh, bumped){
     topCard+
     '<div class="rv-truth-label">The truth</div><div class="rv-truth" id="rvTruth">'+rowsHtml+'</div>'+
     // share card
-    '<div class="share-card"><div class="sc-row"><div class="sc-brand">'+magpie("happy",34)+'<span class="wm">Said It?</span></div>'+
+    '<div class="share-card"><div class="sc-row"><div class="sc-brand"><span class="wm">Said It?</span></div>'+
       '<span class="sc-date">'+esc(prettyDate(res.date))+'</span></div>'+
       '<div class="sc-score"><span class="big">'+res.score+'/'+res.n+'</span><span class="st">🔥 '+res.streak+'-day streak</span></div>'+
       '<div class="sc-pips">'+pips+'</div>'+
@@ -1617,7 +1801,8 @@ function handleDeviceLink(){ var m=location.search.match(/[?&]me=([A-Za-z0-9_]+)
   save(ST); try{ history.replaceState(null,"",location.pathname); }catch(e){}
   toast("Device linked 📱"); logEvent("device_linked"); return true; }
 function fetchCrew(day, code){ var ep=crewEndpoint(); code=code||(curCrew()||{}).code; if(!ep||!code) return Promise.resolve(null);
-  return fetch(ep+(ep.indexOf("?")>=0?"&":"?")+"crew="+encodeURIComponent(code)+"&day="+encodeURIComponent(day),{cache:"no-store"})
+  // &me=<sid> lets the server gate "who got got" (fooledBy) to requesters who've completed today — spoiler-safe
+  return fetch(ep+(ep.indexOf("?")>=0?"&":"?")+"crew="+encodeURIComponent(code)+"&day="+encodeURIComponent(day)+"&me="+encodeURIComponent(ST.sid),{cache:"no-store"})
     .then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); }
 function mergeYou(standings, res){          // standings carry scores only; match self by sid (spoiler-free)
   var list=(standings||[]).map(function(s){return {sid:s.sid,name:s.name,score:s.score,you:s.sid===ST.sid};});
@@ -1656,7 +1841,8 @@ function renderCrew(){
   var headHtml='<div class="play-head"><button class="back-btn" id="crewBack" aria-label="Back">'+BACK_ARROW+'</button>'+
     ((inCrew()&&crewEndpoint())
       ? '<button class="cr-name" id="crewNameBtn"><span class="nm">'+esc(crewLabel(curCrew()))+'</span><span class="chev">'+CHEV_DOWN+'</span></button>'
-      : '<div class="scr-title">Crew</div>')+'</div>';
+      : '<div class="scr-title">Crew</div>')+
+    '<button class="hdr-mags" id="crewMags" aria-label="Meet Mags">'+magpie("happy",26,"mags-flip")+'</button></div>';
   if(!crewEndpoint()){
     host.innerHTML=headHtml+'<div class="cr-empty"><div class="h">👥 Crews need the shared endpoint</div>'+
       '<div class="s">Deploy the endpoint (see <code>endpoint/</code>) to compare with friends. Solo play works fine without it.</div></div>';
@@ -1677,6 +1863,7 @@ function renderCrew(){
       '<button class="codebtn" id="crewJoinCode">Have a code? Enter it</button></div>'+accountHTML();
     host.innerHTML=html;
     $("crewBack").onclick=navBack;
+    var cm0=$("crewMags"); if(cm0) cm0.onclick=openMagpie;
     if($("crewPlay"))$("crewPlay").onclick=function(){ JUST_JOINED=null; playLane(ST.lane||"general"); };
     $("crewCreate").onclick=createCrew;
     $("crewJoinCode").onclick=function(){ var code=window.prompt&&window.prompt("Enter your crew's code:",""); if(code===null)return;
@@ -1691,12 +1878,15 @@ function renderCrew(){
     '<div class="cr-tiles" id="crewTiles"></div>'+
     '<button class="cr-invite" id="crewInviteBtn">Invite your people</button>'+
     '<div class="cr-code">or share code <b>'+esc(cc.code)+'</b></div>'+
-    '<div class="cr-foot">The roster shows scores only — never anyone’s answers.</div>'+
+    '<button class="cr-join2" id="crewJoin2">+ Create or join another crew</button>'+   // visible on the board, not buried behind the chevron (H)
+    '<div class="cr-foot">Play today’s set to see who got fooled — no spoilers before you do.</div>'+
     '<div class="cr-meta"><button id="crewRename">rename</button><span style="opacity:.5">·</span><button id="crewShare">share standings</button><span style="opacity:.5">·</span><button id="crewLeave">leave</button></div>'+
     accountHTML();
   host.innerHTML=html;
   $("crewBack").onclick=navBack;
+  var cm=$("crewMags"); if(cm) cm.onclick=openMagpie;
   $("crewNameBtn").onclick=openCrewSwitcher;
+  $("crewJoin2").onclick=joinAnotherCrew;
   if($("crewPlay"))$("crewPlay").onclick=function(){ JUST_JOINED=null; playLane(ST.lane||"general"); };
   $("crewInviteBtn").onclick=function(){ copyCrewInvite(cc.code); };
   $("crewRename").onclick=function(){ renameCrew(cc.code); };
@@ -1709,7 +1899,13 @@ function renderCrew(){
     t.className=(CREW_WHEN==="week"?"":"on"); w.className=(CREW_WHEN==="week"?"on":"");
     if(CREW_DATA===null){ $("crewRows").innerHTML='<div class="cr-foot" style="margin-top:0">loading standings…</div>'; return; }
     var c=CREW_DATA;
-    var todayList=mergeYou(c.standings||[], myResult(today));   // [{sid,name,score,you}] desc
+    var mine=myResult(today), iDoneToday=!!mine;
+    // TODAY — carry each member's fooledBy (the FAKES they called real) for "who got got"
+    var stand=(c.standings||[]).map(function(s){ return {sid:s.sid,name:s.name,val:(s.score!=null?s.score:0),fooledBy:s.fooledBy||null,you:s.sid===ST.sid}; });
+    var meRow=stand.filter(function(s){return s.you;})[0];
+    if(meRow){ if(mine){ meRow.val=mine.score; meRow.fooledBy=mine.gotme||meRow.fooledBy; } }
+    else if(mine){ stand.push({sid:ST.sid,name:ST.displayName||"you",val:mine.score,fooledBy:mine.gotme||null,you:true}); }
+    stand.sort(function(a,b){return b.val-a.val;});
     var myW=myWeekTotal();
     var week=(c.week||[]).map(function(s){ return {sid:s.sid,name:s.name,val:s.total,you:s.sid===ST.sid}; });
     var meW=week.filter(function(s){return s.you;})[0];
@@ -1717,10 +1913,7 @@ function renderCrew(){
     week.sort(function(a,b){return b.val-a.val;});
     if(week.length && c.week_key){ ST.crewSeasons[c.week_key]=week[0].name; save(ST); }   // memorialize the weekly champ
     var weekRank=week.findIndex(function(s){return s.you;});
-    var todayRank=todayList.findIndex(function(s){return s.you;});
-    var rows=(CREW_WHEN==="week")
-      ? week.map(function(s){ return {name:s.name,val:s.val,you:s.you}; })
-      : todayList.map(function(s){ return {name:s.name,val:(s.score!=null?s.score:0),you:s.you}; });
+    var rows=(CREW_WHEN==="week") ? week : stand;
     var top=rows.length?Math.max.apply(null,rows.map(function(r){return r.val;})):1; if(top<=0)top=1;
     var yi=rows.findIndex(function(r){return r.you;});
     // gap-to-next headline
@@ -1735,10 +1928,13 @@ function renderCrew(){
       var col=r.you?"var(--primary)":avColor(r.name);
       var unit=(CREW_WHEN==="week")?"":"/6";
       var moved=(r.you&&movedUp)?'<span class="moved">▲ moved up</span>':'';
+      // "who got got": the fakes this crewmate called real — ONLY shown once YOU'VE completed today (server also enforces)
+      var fooled=(CREW_WHEN==="today" && iDoneToday && r.fooledBy && r.fooledBy.length)
+        ? '<div class="fooled-tag">🪶 fell for '+r.fooledBy.map(function(x){return "#"+x;}).join(", ")+'</div>' : '';
       return '<div class="cr-row'+(r.you?" you":"")+'"><span class="rk">'+(i+1)+'</span>'+
         '<span class="av" style="border-color:'+col+';color:'+col+'">'+esc(r.you?"Y":avInitial(r.name))+'</span>'+
         '<div class="who"><div class="nm">'+esc(r.you?"You":r.name)+moved+'</div>'+
-          '<div class="barwrap"><div class="bar" style="width:'+Math.round(r.val/top*100)+'%"></div></div></div>'+
+          '<div class="barwrap"><div class="bar" style="width:'+Math.round(r.val/top*100)+'%"></div></div>'+fooled+'</div>'+
         '<span class="sc">'+r.val+unit+'</span></div>';
     }).join("") : '<div class="cr-foot" style="margin-top:0">No one’s played '+(CREW_WHEN==="week"?"this week":"today")+' yet — play to top the board.</div>';
     $("crewRows").innerHTML=rowsHtml;
@@ -1760,8 +1956,8 @@ function renderCrew(){
 /* ---------- brand chrome (bright redesign) ---------- */
 // coral is the one-token alt theme; blue is the default/lead
 if(CFG.THEME==="coral") document.body.classList.add("theme-coral");
-// Mags in the header wordmark + the app icon/favicon
-try{ var lb=$("logoBtn"); if(lb) lb.insertAdjacentHTML("afterbegin", magpie("happy",30)); }catch(e){}
+// header Mags: flipped to face the wordmark, gentle bob, a real button → the Magpie page (brand bird per screen)
+try{ var mb=$("magsBtn"); if(mb){ mb.innerHTML=magpie("happy",30,"mags-flip"); mb.addEventListener("click",openMagpie); } }catch(e){}
 try{ var fav=$("favicon"); if(fav) fav.setAttribute("href","data:image/svg+xml,"+encodeURIComponent(appIconSVG())); }catch(e){}
 
 /* ---------- wire up (reveal controls are wired inside renderReveal, which rebuilds that screen) ---------- */

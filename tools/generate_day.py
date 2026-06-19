@@ -10,7 +10,7 @@ Because nobody reviews the output, the integrity gates are the product:
   2. POLITICS FILTERED. Political/tragedy feeds are excluded; a keyword denylist + an LLM safety screen
      drop anything political, tragic, or defamation-shaped (the politics dial stays OFF).
   3. FAKES ARE INNOCUOUS + LABELLED. The model writes fabricated quotes constrained to be harmless and
-     in-voice; a safety screen drops anything reputationally damaging. The app labels them AI FAKE.
+     in-voice; a safety screen drops anything reputationally damaging. The app labels them FAKE (Mags' voice; never 'AI').
   4. FAIL-SAFE. If a quality set of >=5 quotes can't be assembled, it writes NOTHING — the site keeps
      serving the previous edition rather than publishing a broken/empty one. The CI job then alerts.
 
@@ -61,30 +61,38 @@ CATEGORIES = {
     "general": {"feeds": {**FEEDS, "politics": POLITICS_FEEDS}, "lane": "", "allow_politics": True,
                 "figures": "different public figures across sports, tech, science, music, film, food AND "
                            "politics — but political lines ONLY as LIGHT, balanced, non-inflammatory asides "
-                           "(gaffes, witty quips), NEVER an attack or hot-take"},
+                           "(gaffes, witty quips), NEVER an attack or hot-take",
+                "topic": "a broad mix of news, culture and well-known personalities (this is the catch-all lane)"},
     "sports":  {"feeds": {"sports": ["https://www.espn.com/espn/rss/news", "https://api.foxsports.com/v1/rss"]},
                 "lane": "SPORTS ", "allow_politics": False,
-                "figures": "different real NON-politician athletes, coaches and sports figures"},
+                "figures": "different real NON-politician athletes, coaches and sports figures",
+                "topic": "about sport or competition, OR said by an athlete, coach or sports figure"},
     "music":   {"feeds": {"music": ["https://www.rollingstone.com/music/feed/", "https://pitchfork.com/rss/news/"]},
                 "lane": "MUSIC ", "allow_politics": False,
-                "figures": "different real musicians, singers, producers and music figures"},
+                "figures": "different real musicians, singers, producers and music figures",
+                "topic": "about music, OR said by a musician, singer, producer or music-industry figure"},
     # The politics LANE (opt-in; the dial is ON). Political figures/process allowed; HARD_DENY still gates
     # crime/violence/slur/scandal/conflict. Fakes must be LIGHT + balanced; reals are cross-validated (strict).
     "politics": {"feeds": {"politics": ["https://feeds.npr.org/1014/rss.xml", "https://www.politico.com/rss/politicopicks.xml"]},
                  "lane": "POLITICS ", "allow_politics": True,
                  "figures": "different real politicians/political figures BALANCED across parties — only LIGHT, "
-                            "funny, non-inflammatory lines (gaffes, witty asides), NEVER an attack or hot-take"},
-    # MOVIES lane: real iconic FILM lines (short, fair-use) vs AI-fabricated film lines. Speaker = the FILM,
+                            "funny, non-inflammatory lines (gaffes, witty asides), NEVER an attack or hot-take",
+                 "topic": "about policy or politics, OR said by a politician or public official"},
+    # MOVIES lane: real iconic FILM lines (short, fair-use) vs fabricated film lines. Speaker = the FILM,
     # not a person, so the named-person rule doesn't apply. Evergreen-only (curated, verified real lines).
     "movies":  {"feeds": {}, "lane": "MOVIES ", "allow_politics": False, "kind": "movie",
                 "figures": "famous, widely-recognized MOVIES — attribute each line to the FILM and year, "
-                           "e.g. 'The Godfather (1972)'; vary genres and eras"},
-    # NSFW lane (18+, behind an in-app warning gate): real crude/profane/unfiltered celebrity moments vs AI
-    # fakes in the same register. Profanity/crudeness is WELCOME; the HARD guards never relax (no fabricated
-    # slur/crime/assault/sexual-misconduct/medical/defamation about a real person — that's a lawsuit, not edgy).
-    "nsfw":    {"feeds": {}, "lane": "NSFW ", "allow_politics": False, "kind": "nsfw", "nsfw": True,
-                "figures": "different real celebrities/public figures in CRUDE, profane, unfiltered or "
-                           "unsophisticated moments (rants, swearing, blunt outbursts)"},
+                           "e.g. 'The Godfather (1972)'; vary genres and eras",
+                "topic": "a line of dialogue from a famous film"},
+    # OFF THE RECORD lane (UI label "Off the Record"; KEY stays nsfw, path daily/nsfw/*). 18+ behind a gate.
+    # Genuinely ADULT: crude humour, profanity, partying/booze/drugs references, brash personality — NOT
+    # General-with-edge. HARD LAWSUIT LINE (never relaxes): never fabricate a real named person CONFESSING TO or
+    # DESCRIBING a crime, a sexual act/allegation, or any defamatory/harmful claim. No minors, ever.
+    "nsfw":    {"feeds": {}, "lane": "OFF-THE-RECORD ", "allow_politics": False, "kind": "nsfw", "nsfw": True,
+                "figures": "different real adults where crude is IN CHARACTER (comedians, rockstars, brash "
+                           "athletes/chefs/personalities) — in unfiltered, profane, party-hard moments",
+                "topic": "genuinely adult life and crude humour — partying, booze, drugs references, "
+                         "sex/relationships banter, off-colour jokes, blunt outbursts — in the speaker's real voice"},
 }
 
 def evergreen_path(cat): return EVERGREEN if cat == "general" else os.path.join(HERE, f"evergreen_{cat}.json")
@@ -128,6 +136,7 @@ HARD RULES:
   "scientists", "researchers", "the study", "experts", "officials", "a spokesperson", etc.
 - The text must be a quotation that person actually SAID (ideally shown in quotation marks in the snippet),
   not the article's own summary sentence about a finding.
+- LANE FIT: the quote must clearly belong to this lane — {topic}. Skip anything off-topic for the lane.
 - Non-political, non-tragic, non-defamatory only.
 
 SNIPPETS (id | source | text):
@@ -147,6 +156,8 @@ FAKE_SYS = ("You fabricate MAXIMALLY BELIEVABLE fake quotes for a 'real or fake?
             "damaging. Output STRICT JSON only.")
 FAKE_TMPL = """Write {n} DISTINCT, HIGHLY BELIEVABLE fake quotes for today's {lane}game. {figures}.
 
+LANE — every quote MUST clearly belong to this lane: {topic}. Reject anything off-topic for the lane.
+
 Each quote MUST:
 - sound like the REAL person — their actual tone, phrasing, vocabulary and the topics they genuinely discuss;
 - stay WITHIN plausible reality — a thing they really COULD have said. NO dead giveaways: avoid oddly specific
@@ -154,14 +165,19 @@ Each quote MUST:
   Better: "I've definitely lost sleep over a long snapper's technique." Dial it to where a fan would HESITATE.)
 - be genuinely ENTERTAINING — funny, insightful or wise, a pleasure to read either way — in a SUBTLE,
   true-to-character way (not a caricature or an obvious joke);
+- CONTEXT PARITY (kill the tell): the "context" must be a CONCRETE, SPECIFIC where/when — a named outlet, show,
+  event, venue or year — as specific and similar in LENGTH as a real citation would be. NEVER vague, hedged or
+  shorter than a real ("in an interview" / "supposedly" / "reportedly" are BANNED). It must read like a genuine source.
 - be HARMLESS (no invented crime, scandal, slur, medical/financial claim). Avoid politics entirely.
 Use DIFFERENT, varied people — NEVER repeat a speaker, and mix the kinds of people you pick.
 The bar: a real fan of that person would genuinely struggle to tell it's fake.
 
 Output a JSON array; each element EXACTLY:
 {{"text": "<the fabricated quote, no surrounding quotes>", "speaker": "<a real non-politician public figure>",
-  "context": "<plausibly where/when, short>", "fake_note": "<1-2 sentences for the reveal: why it's so plausible
-  for this person + the SUBTLE giveaway>", "sneaky": <true for the ONE hardest to catch, else false>}}"""
+  "context": "<a concrete, specific where/when — outlet/show/event/year — comparable in length to a real citation>",
+  "fake_note": "<1-2 sentences for the reveal, FIRST PERSON as the mischievous magpie 'Mags' (e.g. 'I made this one
+  up — …'): why it's so plausible for this person + the SUBTLE giveaway. Never say 'AI', 'robot' or 'machine'.>",
+  "sneaky": <true for the ONE hardest to catch, else false>}}"""
 
 # MOVIES — fabricate BELIEVABLE film lines (speaker = the FILM, not a person)
 FAKE_SYS_MOVIE = ("You fabricate MAXIMALLY BELIEVABLE fake MOVIE LINES for a 'real or fake?' game. Each must read "
@@ -178,26 +194,38 @@ Use DIFFERENT, well-known films — NEVER repeat a film. The bar: a fan of that 
 
 Output a JSON array; each element EXACTLY:
 {{"text": "<the fabricated line>", "speaker": "<Film Title (Year)>", "context": "<the character or scene, short>",
-  "fake_note": "<why it's plausible for that film + the SUBTLE giveaway>", "sneaky": <true for the hardest, else false>}}"""
+  "fake_note": "<1-2 sentences, FIRST PERSON as Mags the magpie ('I made this one up — …'): why it's plausible for
+  that film + the SUBTLE giveaway. Never say 'AI', 'robot' or 'machine'.>", "sneaky": <true for the hardest, else false>}}"""
 
-# NSFW — crude/profane but HARMLESS (the hard guards never relax)
-FAKE_SYS_NSFW = ("You fabricate BELIEVABLE, crude-but-HARMLESS fake quotes for an ADULT (18+) 'real or fake?' game. "
-                 "Profanity, crudeness and unfiltered/blunt humor are WELCOME and on-brand. But it must stay "
-                 "harmless: NEVER an invented slur, hate, crime, sexual-misconduct/assault, drug-crime, medical "
-                 "claim, or anything defamatory about a real person. Match the person's real unfiltered voice and "
-                 "stay within plausibility. Output STRICT JSON only.")
-FAKE_TMPL_NSFW = """Write {n} DISTINCT, BELIEVABLE fake quotes for today's ADULT (18+) game. {figures}.
+# OFF THE RECORD — genuinely ADULT, but lawsuit-safe. The hard line never relaxes.
+FAKE_SYS_NSFW = ("You fabricate BELIEVABLE, genuinely ADULT (18+) fake quotes for an 'Off the Record' 'real or fake?' "
+                 "game. Make them actually adult — crude humour, profanity, partying/booze/drugs references, "
+                 "sex/relationships banter, brash personality — NOT just a clean quote with one swear. "
+                 "HARD LAWSUIT LINE (never relaxes): NEVER fabricate a real named person CONFESSING TO or DESCRIBING "
+                 "a crime, a sexual act or sexual allegation, drug dealing, or anything defamatory/harmful — that is a "
+                 "lawsuit, not edgy. Lean crude/party-hard braggadocio in a plausible in-character voice. No minors, "
+                 "ever; nothing targeting a private individual. Output STRICT JSON only.")
+FAKE_TMPL_NSFW = """Write {n} DISTINCT, BELIEVABLE, genuinely ADULT (18+) fake quotes for today's Off the Record game. {figures}.
+
+LANE — every quote MUST be properly adult: {topic}. Crude/profane/party-hard is the POINT — not General-with-one-swear.
+
 Each MUST:
-- sound like the REAL person in a crude/unfiltered/profane moment — their actual voice and cadence;
-- profanity/crudeness/adult humor is GOOD — but HARMLESS only: NO slurs, NO hate, NO invented crime, assault,
-  sexual misconduct, drug crime, medical claim, or anything defamatory about a real person;
+- sound like the REAL person in a crude, unfiltered, party-hard or filthy-funny moment — their actual voice and cadence;
+- be genuinely adult: swearing, blunt outbursts, booze/drugs-as-lifestyle references, sex/relationship banter, off-colour
+  jokes — all WELCOME and encouraged;
+- HARD LAWSUIT LINE: NEVER have a real named person confess to or describe a CRIME, a SEXUAL ACT or sexual ALLEGATION,
+  drug dealing, or anything defamatory/harmful. "I got hammered at the afterparty" = fine (braggadocio).
+  "I [committed a crime / did <sex act> / dealt drugs]" = BANNED. No minors. No private individuals.
+- CONTEXT PARITY: "context" is a CONCRETE, SPECIFIC where/when (named show/podcast/event/year), as specific and
+  similar in LENGTH as a real citation — never "in an interview"/"supposedly"/"reportedly".
 - stay WITHIN plausibility — a crude thing they really COULD have said; NO dead giveaways.
 Use DIFFERENT, varied people — NEVER repeat a speaker.
 
 Output a JSON array; each element EXACTLY:
-{{"text": "<the fabricated crude-but-harmless quote>", "speaker": "<a real public figure>",
-  "context": "<plausibly where/when, short>", "fake_note": "<why it's plausible + the SUBTLE giveaway>",
-  "sneaky": <true for the ONE hardest to catch, else false>}}"""
+{{"text": "<the fabricated, genuinely-adult-but-lawsuit-safe quote>", "speaker": "<a real public figure>",
+  "context": "<a concrete, specific where/when — named show/podcast/event/year — comparable in length to a real citation>",
+  "fake_note": "<1-2 sentences, FIRST PERSON as Mags the magpie ('I made this one up — …'): why it's plausible + the
+  SUBTLE giveaway. Never say 'AI', 'robot' or 'machine'.>", "sneaky": <true for the ONE hardest to catch, else false>}}"""
 
 SCREEN_SYS = ("You screen INTENTIONALLY-FABRICATED quotes for a clearly-labeled 'real or fake?' game. "
               "Fabrication is the entire point and is disclosed to players, so do NOT flag a quote merely "
@@ -456,7 +484,7 @@ def gather_reals(feeds, days, used, cat="general", want=6):
         return []
     block = "\n".join(f'{i} | {it["domain"]} | {it["title"]}. {it["summary"][:400]}' for i, it in enumerate(items))
     try:
-        cands = largest_json(llm(REAL_SYS, REAL_TMPL.format(k=12, items=block), max_tokens=2500, gemini_model=_fast_model())) or []
+        cands = largest_json(llm(REAL_SYS, REAL_TMPL.format(k=12, items=block, topic=CATEGORIES.get(cat, {}).get("topic", "a broad mix of news and culture")), max_tokens=2500, gemini_model=_fast_model())) or []
     except Exception as e:  # noqa: BLE001
         print(f"  ! reals LLM: {e}", file=sys.stderr); return []
     verified = []
@@ -496,7 +524,7 @@ def forge_fakes(used, cat="general", n=6):
     sysp, tmpl = {"movie": (FAKE_SYS_MOVIE, FAKE_TMPL_MOVIE),
                   "nsfw": (FAKE_SYS_NSFW, FAKE_TMPL_NSFW)}.get(kind, (FAKE_SYS, FAKE_TMPL))
     try:
-        fakes = largest_json(llm(sysp, tmpl.format(n=n, lane=meta["lane"], figures=meta["figures"]), max_tokens=2800)) or []
+        fakes = largest_json(llm(sysp, tmpl.format(n=n, lane=meta["lane"], figures=meta["figures"], topic=meta.get("topic", "")), max_tokens=2800)) or []
     except Exception as e:  # noqa: BLE001
         print(f"  ! fakes LLM: {e}", file=sys.stderr); return []
     ap = meta.get("allow_politics", False)
@@ -505,7 +533,7 @@ def forge_fakes(used, cat="general", n=6):
         if f.get("text") and f.get("speaker") and not deny_hit(f["text"], f["speaker"], f.get("context"), allow_politics=ap) \
                 and _norm(f["text"]) not in used:      # never repeat a published quote (real or fake)
             out.append({"text": f["text"], "speaker": f["speaker"], "context": f.get("context", ""),
-                        "real": False, "fake_note": f.get("fake_note", "AI-fabricated for this game."),
+                        "real": False, "fake_note": f.get("fake_note") or "I made this one up.",  # Mags voice; never "AI" (copy rule)
                         "_sneaky": bool(f.get("sneaky"))})
     return out
 
@@ -684,7 +712,7 @@ def assemble(date, reals_fresh, fakes, evergreen, used, cat="general", recent=No
         if q["real"] and q.get("source"):
             item["source"] = q["source"]
         if not q["real"]:
-            item["fake_note"] = q.get("fake_note", "AI-fabricated for this game.")
+            item["fake_note"] = q.get("fake_note") or "I made this one up."   # Mags voice; never "AI" (copy rule)
             if trick is None and (sneaky_idx == i or sneaky_idx is None):
                 trick = qid
         out_quotes.append(item)
