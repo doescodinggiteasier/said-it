@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-20",
+  "edition": 6,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's a version of every song I've written that lives somewhere between the second and third take. That's usually the one I wished I'd kept.",
+      "speaker": "Taylor Swift",
+      "context": "Rolling Stone, 'Artist of the Decade' extended Q&A, print edition, December 2019",
+      "real": false,
+      "fake_note": "I made this one up — Swift is famously candid about her recording process and frequently discusses the emotional authenticity of early takes, so this lands squarely in her wheelhouse. The giveaway is the specificity of 'second and third take,' which is a little too tidy to be a real Swift memory."
+    },
+    {
+      "id": "q2",
+      "text": "People talk about pressure like it's this invisible thing, but I've always thought of it as texture. Some days the ball just has a different weight to it. You feel the whole crowd in your hands.",
+      "speaker": "LeBron James",
+      "context": "The Shop: Uninterrupted, Season 5, Episode 3, HBO (2022)",
+      "real": false,
+      "fake_note": "I made this one up — LeBron genuinely speaks in this reflective, almost poetic register about the mental side of the game, and 'The Shop' is exactly where he gets philosophical. The subtle giveaway is 'texture': it's a touch more literary than even LeBron usually goes."
+    },
+    {
+      "id": "q3",
+      "text": "I think we've been so obsessed with making things faster that we forgot to ask whether faster is actually the goal. Sometimes the constraint is the product.",
+      "speaker": "Jony Ive",
+      "context": "Wallpaper* Magazine, 'The Future of Making' cover interview, Issue 273 (2023)",
+      "real": false,
+      "fake_note": "I made this one up — Ive's whole design philosophy circles around intentionality and restraint, and phrases like 'the constraint is the product' sound exactly like his measured, precise language. The giveaway is that he typically avoids framing things as critiques of an industry trend so directly."
+    },
+    {
+      "id": "q4",
+      "text": "We have healthy, sometimes tongue-in-cheek debates about different questions that the show brings up, whether it's your personal take on what you would do or what you think your character would do",
+      "speaker": "Rhea Seehorn",
+      "context": "Interview with Variety about Apple TV's 'Pluribus'",
+      "real": true,
+      "source": {
+        "title": "Entertainment — ‘Pluribus’ Star Rhea Seehorn on Why She Hasn’t Grilled Vince Gilligan and the Wr",
+        "url": "https://variety.com/2026/tv/news/pluribus-rhea-seehorn-season-2-fan-theories-podcast-1236786174/",
+        "date": "2026-06-20"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Sometimes it might just be something on my fingers, you must watch very carefully, and it must […]",
+      "speaker": "Tony Leung Chiu-wai",
+      "context": "Masterclass at Shanghai International Film Festival, discussing his restrained performance style",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Tony Leung Reflects on ‘Silent Friend,’ Wong Kar-wai and Why His Films Must Be S",
+        "url": "https://variety.com/2026/film/festivals/tony-leung-silent-friend-shanghai-film-festival-masterclass-1236786301/",
+        "date": "2026-06-20"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My grandmother cooked by memory, not by recipe. Every dish she made was a negotiation — with the season, with what the market had, with whoever was coming to dinner. That's really what I'm trying to do.",
+      "speaker": "Samin Nosrat",
+      "context": "Lucky Peach podcast archive, episode recorded at the San Francisco Chronicle Food & Wine section, published February 2017",
+      "real": false,
+      "fake_note": "I made this one up — Nosrat constantly returns to family memory, seasonality, and the relational nature of cooking in her interviews, so this fits her voice almost perfectly. The slight tell is 'negotiation,' which is just a shade more formal than her usual warmth."
+    }
+  ]
+}

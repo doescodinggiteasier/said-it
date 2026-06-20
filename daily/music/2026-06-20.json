@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-20",
+  "edition": 4,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "No. I have no technical ability. And I know nothing about music.",
+      "speaker": "Rick Rubin",
+      "context": "Super-producer Rick Rubin (Def Jam co-founder; produced Johnny Cash, Beastie Boys, Red Hot Chili Peppers, Adele, Jay-Z) when Anderson Cooper asked on 60 Minutes whether he knew how to work a soundboard.",
+      "real": true,
+      "source": {
+        "title": "Rick Rubin: The 60 Minutes Interview (transcript) — interview by Anderson Cooper, CBS 60 Minutes",
+        "url": "https://www.rev.com/transcripts/rick-rubin-the-60-minutes-interview-transcript",
+        "date": "2023-01-15"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "There's a moment in every session where the song stops belonging to you. You have to let it go or you'll ruin it.",
+      "speaker": "Max Martin",
+      "context": "Billboard's Producer of the Year cover story, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Max Martin rarely gives interviews, but when he does he talks about the songwriting process almost clinically while occasionally letting something emotionally true slip through, which is exactly the register here. The giveaway is that real Max Martin quotes tend to be more technical and deflecting; this one is almost too emotionally revealing for him."
+    },
+    {
+      "id": "q3",
+      "text": "I never wanted to write a perfect record. I wanted to write an honest one. Those are very different goals and most people pick the wrong one.",
+      "speaker": "Brandi Carlile",
+      "context": "NPR Music Tiny Desk Concert Q&A session, recorded March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Brandi really does frame her artistic mission in terms of emotional honesty over technical achievement, and this sounds like something she'd say backstage. The slight giveaway is the closing judgment — 'most people pick the wrong one' — which is a touch more pointed than her usual warmth."
+    },
+    {
+      "id": "q4",
+      "text": "Why am I crying on Oprah?",
+      "speaker": "Pharrell Williams",
+      "context": "On Oprah Winfrey's talk show 'Oprah Prime' (April 2014), Oprah surprised Pharrell by playing a montage of fan videos of people around the world dancing to his hit song 'Happy.'",
+      "real": true,
+      "source": {
+        "title": "Watch Pharrell Cry Over 'Happy' Inspiration During Interview with Oprah Winfrey",
+        "url": "https://www.rollingstone.com/music/music-news/watch-pharrell-cry-over-happy-inspiration-231769/",
+        "date": "2014-04-14"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I played a show in Osaka once where nobody screamed. They just listened. It was the most terrifying and the most beautiful night of my career.",
+      "speaker": "St. Vincent",
+      "context": "The Guardian Long Read interview, February 2020, ahead of her All Born Screaming album cycle",
+      "real": false,
+      "fake_note": "I made this one up — Annie Clark genuinely talks about audience dynamics and performs frequently in Japan, so the geography and observation feel real. The giveaway is the near-perfect emotional arc of the anecdote; her real interview answers are usually more fragmented and wry."
+    },
+    {
+      "id": "q6",
+      "text": "A great song doesn't ask permission to be sad. It just walks in the room and everyone feels it whether they want to or not.",
+      "speaker": "Phoebe Bridgers",
+      "context": "Interview with Pitchfork, October 2022, promoting her Reunion Tour dates",
+      "real": false,
+      "fake_note": "I made this one up — Phoebe really does talk about emotional directness in songwriting, and the quiet, personifying metaphor is dead-on her style. The subtle giveaway is it's slightly too aphoristic and tidy for her; she usually trails off or undercuts herself with self-deprecation."
+    }
+  ]
+}

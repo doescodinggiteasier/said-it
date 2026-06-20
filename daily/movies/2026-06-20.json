@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-20",
+  "edition": 4,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "As far back as I can remember, I always wanted to be a gangster.",
+      "speaker": "Goodfellas (1990)",
+      "context": "Henry Hill's (Ray Liotta) opening voiceover narration",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "Are you not entertained?",
+      "speaker": "Gladiator (2000)",
+      "context": "Maximus (Russell Crowe) shouts at the Zucchabar arena crowd after killing his opponents in a brutal fight.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "A man who won't die for something isn't fit to live.",
+      "speaker": "Schindler's List (1993)",
+      "context": "Oskar Schindler, in a quiet moment of moral reckoning",
+      "real": false,
+      "fake_note": "I made this one up — it fits Schindler's arc of reluctant heroism and the film's grave moral register perfectly. The subtle giveaway is that Schindler's real lines tend to be more pragmatic and self-serving; this reads a touch too nobly resolved for where he usually stands."
+    },
+    {
+      "id": "q4",
+      "text": "Every clock in this house stopped the day you decided to stop living.",
+      "speaker": "Great Expectations (1998)",
+      "context": "Finn Bell, confronting Miss Dinsmoor",
+      "real": false,
+      "fake_note": "I made this one up — the Gothic atmosphere and the stopped clocks are central to the film, and the line fits the dramatic confrontation between Finn and the eccentric recluse. The giveaway is a slight over-literalness; the film is more visually than verbally on-the-nose about the clocks."
+    },
+    {
+      "id": "q5",
+      "text": "You can't outrun what you carry inside you, son.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Sheriff Bell, musing to a deputy",
+      "real": false,
+      "fake_note": "I made this one up — Bell's weary, philosophical voice is all over this film and the line sounds exactly like his rambling opening monologues. The giveaway is that the Coens write Bell's dialogue with slightly more oblique, rural imagery; 'carry inside you' is a hair too plain."
+    },
+    {
+      "id": "q6",
+      "text": "A million dollars isn't cool. You know what's cool? A billion dollars.",
+      "speaker": "The Social Network (2010)",
+      "context": "Sean Parker (Justin Timberlake) pitching ambition to Mark Zuckerberg and Eduardo Saverin at a restaurant; the punchline lands in an intercut deposition scene",
+      "real": true
+    }
+  ]
+}

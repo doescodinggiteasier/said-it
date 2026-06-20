@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-20",
+  "edition": 4,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I have an opinion on everything, and if I don't have an opinion, I'll fucking make one up on the spot.",
+      "speaker": "Noel Gallagher",
+      "context": "Oasis songwriter/guitarist, on his reputation as an outspoken, gobshite interviewee, in one of his many candid press interviews.",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "Somebody handed me a green juice backstage. I said 'what the hell is this?' They said 'kale, ginger, wheatgrass.' I poured it down the sink and found the rider. I'm fifty-eight years old, I've earned the whiskey.",
+      "speaker": "Jon Bon Jovi",
+      "context": "Backstage interview with Rolling Stone at the 2023 Power Station benefit concert, New York City",
+      "real": false,
+      "fake_note": "I made this one up — Bon Jovi has a reputation for being more health-conscious in recent years, which is exactly what makes this deliciously plausible as a rebellious moment. The giveaway is the specific age — he was actually 61 in 2023."
+    },
+    {
+      "id": "q3",
+      "text": "My ex used to say I had commitment issues. I said babe, I've been committed to Jack Daniel's for thirty years. That's longer than most marriages in this country. Show some respect.",
+      "speaker": "Jeff Ross",
+      "context": "Comedy Central Roast warm-up set at the Largo at the Coronet, Los Angeles, 2022",
+      "real": false,
+      "fake_note": "I made this one up — Ross's entire comedy identity is roast-style one-liners and self-deprecating relationship banter, so this fits him perfectly. The giveaway is that he'd probably name a more specific ex or make it darker — his roast jokes usually have a sharper target."
+    },
+    {
+      "id": "q4",
+      "text": "I don't believe in diets. I believe in portion control. Like, one portion of pasta, one portion of bread, one large portion of wine. It's called the Mediterranean lifestyle and it's basically science.",
+      "speaker": "Chelsea Handler",
+      "context": "Live taping of her Dear Chelsea podcast at the Wiltern Theatre, Los Angeles, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Handler has built her entire brand around unapologetic drinking and anti-diet culture jokes, and this reads exactly like her stand-up-meets-podcast voice. The giveaway is 'it's basically science' — her punchlines usually land harder and weirder than that clean callback."
+    },
+    {
+      "id": "q5",
+      "text": "Do I think about my dick? Oh, yeah, all the time. If I think about it all the time, I got a right to sing about it. If I wasn't thinking about it all the time but thought, \"It's time to write a rock song, I'd better mention my dick,\" then I wouldn't even be able to say \"dick\" right.",
+      "speaker": "Iggy Pop",
+      "context": "Defending the sexual content of his lyrics (the song \"Trollin'\" from The Weirdness) in his 2007 Rolling Stone interview.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "I left the Rocking Vicars, thinking I was going to be a star in my own right immediately. Everything was going to be wonderful and huge women would get a hold of me and do things to me with raw carrots — you know, shit like that.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Recalling his youthful rock-star fantasies after leaving an early band (the Rockin' Vickers), in his memoir White Line Fever: The Autobiography (2002).",
+      "real": true
+    }
+  ]
+}

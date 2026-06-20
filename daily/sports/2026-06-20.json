@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-20",
+  "edition": 4,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've been ejected, I've been suspended, I've been fined. None of that ever bothered me as much as watching a guy on my team not run out a ground ball.",
+      "speaker": "Lou Piniella",
+      "context": "ESPN The Magazine, June 2010",
+      "real": false,
+      "fake_note": "I made this one up — Piniella's legendary temper and obsessive hustle-ethic are both well documented, so this pairing is extremely on-brand. The giveaway is the confessional 'none of that ever bothered me' framing — Lou's actual public quotes were more reactive and in-the-moment rather than reflective rankings of what bothered him."
+    },
+    {
+      "id": "q2",
+      "text": "The ocean doesn't care how famous you are. That was the first real lesson surfing ever taught me, and I think about it almost every day.",
+      "speaker": "Kelly Slater",
+      "context": "Red Bull TV documentary One Track Mind, 2016",
+      "real": false,
+      "fake_note": "I made this one up — Slater frequently reflects on nature as a humbling force and speaks in this quiet, meditative register. The giveaway is 'almost every day' — it's a touch too earnest and rhythmically tidy; Slater's genuine quotes tend to be more conversational and less self-consciously quotable."
+    },
+    {
+      "id": "q3",
+      "text": "I have always felt that I needed you more than you needed me and that holds true to this very day.",
+      "speaker": "Vin Scully",
+      "context": "Legendary Dodgers broadcaster Vin Scully wrote a farewell letter to fans ahead of his final home series in September 2016, after 67 years calling Dodgers games.",
+      "real": true,
+      "source": {
+        "title": "Vin Scully writes farewell letter to fans before final Dodgers homestand (Sports Illustrated)",
+        "url": "https://www.si.com/mlb/2016/09/24/vin-scully-farewell-letter-los-angeles-dodgers-fans",
+        "date": "2016-09-24"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I study goalkeepers the way some people study for exams. I know their tendencies better than they know them. That's not arrogance — that's homework.",
+      "speaker": "Cristiano Ronaldo",
+      "context": "France Football interview, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Ronaldo regularly discusses his obsessive preparation and preemptively defends himself against charges of arrogance, both of which appear here. The giveaway is 'that's not arrogance — that's homework,' which is a shade too self-aware and media-trained; his real quotes on preparation are usually more nakedly proud."
+    },
+    {
+      "id": "q5",
+      "text": "People talk about pressure like it's this monster you have to slay. I've always thought pressure is just information. It's telling you something matters. Listen to it.",
+      "speaker": "Kobe Bryant",
+      "context": "The Players' Tribune, December 2015",
+      "real": false,
+      "fake_note": "I made this one up — Kobe genuinely philosophized about pressure and mental discipline in exactly this reframing style, and The Players' Tribune was his kind of platform. The subtle giveaway is 'pressure is just information' — it's slightly more Silicon Valley than Kobe, who would more likely say pressure *reveals* you rather than *informs* you."
+    },
+    {
+      "id": "q6",
+      "text": "Avoid fried meats which angry up the blood. If your stomach disputes you, lie down and pacify it with cool thoughts.",
+      "speaker": "Satchel Paige",
+      "context": "From legendary pitcher Satchel Paige's famous 'How to Stay Young' rules, published in Collier's magazine in 1953.",
+      "real": true,
+      "source": {
+        "title": "Satchel Paige — Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Satchel_Paige",
+        "date": "1953-06-13"
+      }
+    }
+  ]
+}
