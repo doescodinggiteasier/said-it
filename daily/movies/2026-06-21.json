@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-21",
+  "edition": 5,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'm gonna make him an offer he can't refuse.",
+      "speaker": "The Godfather (1972)",
+      "context": "Don Vito Corleone (Marlon Brando) tells his godson Johnny Fontane how he'll persuade movie producer Jack Woltz to cast him.",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "I'll be back.",
+      "speaker": "The Terminator (1984)",
+      "context": "The Terminator (Arnold Schwarzenegger) tells the police desk sergeant he'll be back, then drives a car through the front of the station.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "A man who won't bleed for something he believes in doesn't believe in anything.",
+      "speaker": "Braveheart (1995)",
+      "context": "William Wallace rallying a reluctant clan leader before battle",
+      "real": false,
+      "fake_note": "I made this one up — it matches Wallace's fiery, declarative rhetoric and the film's blood-and-honor themes perfectly. The subtle giveaway is that it's just a touch too aphoristic and balanced, more like a poster quote than the rawer, angrier lines Mel Gibson actually delivers."
+    },
+    {
+      "id": "q4",
+      "text": "The ocean doesn't care who you are. That's what I love about it.",
+      "speaker": "Jaws (1975)",
+      "context": "Chief Brody speaking quietly to Hooper on the Orca at night",
+      "real": false,
+      "fake_note": "I made this one up — it fits Brody's outsider-on-an-island melancholy and Spielberg's quieter character moments between the set pieces. The giveaway is that Brody is famously afraid of the water, so this wistful fondness for the ocean is slightly off his established characterization."
+    },
+    {
+      "id": "q5",
+      "text": "Toto, I've a feeling we're not in Kansas anymore.",
+      "speaker": "The Wizard of Oz (1939)",
+      "context": "Dorothy, having landed in the strange new world of Oz after the tornado, says this to her dog Toto.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Every clock in this city is lying to somebody.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes musing to himself after another lead turns cold",
+      "real": false,
+      "fake_note": "I made this one up — the cynical, hard-boiled poetry is dead-on for Gittes and the film's noir atmosphere. The subtle tell is that Chinatown keeps its dialogue grounded and clipped; this line is half a beat too literary for how Towne actually wrote Gittes's voice."
+    }
+  ]
+}

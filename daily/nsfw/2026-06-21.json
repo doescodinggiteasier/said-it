@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-21",
+  "edition": 5,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what my wellness routine is. Babe. My wellness routine is a Negroni before soundcheck and convincing myself the venue green room couch counts as a spa day. That's it. That's the whole programme.",
+      "speaker": "Lizzo",
+      "context": "Call Her Daddy, Episode 283, Spotify, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Lizzo has talked openly and breezily about self-care vs. reality in that exact self-deprecating, crowd-pleasing voice. The giveaway is 'programme' spelled with a British 'me,' which she absolutely would not say."
+    },
+    {
+      "id": "q2",
+      "text": "The strangest thing I've tried to snort? My father. I snorted my father. He was cremated and I couldn't resist grinding him up with a little bit of blow. My dad wouldn't have cared, he didn't give a shit. It went down pretty well, and I'm still alive.",
+      "speaker": "Keith Richards",
+      "context": "Rolling Stones guitarist Keith Richards, in an April 2007 NME interview, describing the strangest thing he had snorted — his late father's cremated ashes ground up with cocaine. Reported by NME, The Hollywood Reporter, VOA, and others. Richards' manager later told NME the remark was made in jest, and Richards offered a softened account in his 2010 memoir, but he is documented giving this quote in the interview.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "I blew $20 million. I snorted my Porsche. I snorted my plane. I snorted my house in that din of drugs and booze and being lost.",
+      "speaker": "Steven Tyler",
+      "context": "Tallying up what his cocaine habit cost him, in his 2011 rock memoir \"Does the Noise in My Head Bother You?\"",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "My doctor looked at my bloodwork and went quiet for like four seconds too long. I said, 'Doc, just tell me.' He goes, 'How much tequila do you drink?' I said, 'Define week.' He closed his laptop. That was the appointment.",
+      "speaker": "Nick Offerman",
+      "context": "Conan O'Brien Needs a Friend, 'Nick Offerman Returns,' recorded March 2024",
+      "real": false,
+      "fake_note": "I made this one up — Nick's whole brand is whiskey, woodworking, and understated deadpan, so a tequila bloodwork bit slots right into his persona. The subtle giveaway is tequila — he's far more publicly a whiskey man, which makes the detail slightly off."
+    },
+    {
+      "id": "q5",
+      "text": "I told my tour manager, I need three things on that rider: Jameson, a fan that actually works, and zero fucking acoustic guitarists trying to 'show me something they've been working on.' I am begging. I will pay money. Keep them away from me.",
+      "speaker": "Dave Grohl",
+      "context": "Smartless podcast, recorded live at the Palladium, Los Angeles, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Dave's known for his loud, self-deprecating touring war stories and gear-head rants, so this fits his easy-going profane cadence perfectly. The giveaway is the very specific 'acoustic guitarist' bit, which is a little too neatly packaged as a punchline even for him."
+    },
+    {
+      "id": "q6",
+      "text": "Little Miss Muffet sat on a tuffet, eating her curds and whey. Along came a spider, he sat down beside her, he said, \"Hey, what's in the bowl, bitch?\"",
+      "speaker": "Andrew Dice Clay",
+      "context": "A signature filthy nursery-rhyme parody from his late-'80s/early-'90s arena act; crowds would shout the punchlines back. Popularized on his stand-up specials and documented in VICE's piece on his nursery rhymes.",
+      "real": true
+    }
+  ]
+}

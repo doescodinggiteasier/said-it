@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-21",
+  "edition": 7,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
+      "speaker": "Ted Stevens",
+      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality.",
+      "real": true,
+      "source": {
+        "title": "Series of tubes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
+        "date": "2006-06-28"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Honestly, I ate nothing else in all my time out in China except chicken nuggets. They were the only food I could properly trust which wouldn't affect my stomach.",
+      "speaker": "Usain Bolt",
+      "context": "Sprinter recalling his diet during the 2008 Beijing Olympics, in his autobiography, as quoted by NBC Sports",
+      "real": true,
+      "source": {
+        "title": "Why Usain Bolt ate chicken nuggets for every meal at Beijing Olympics",
+        "url": "https://www.nbcsports.com/olympics/news/usain-bolt-beijing-olympics-2008-chicken-nuggets",
+        "date": "2024-07-23"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I am extraordinarily patient, provided I get my own way in the end.",
+      "speaker": "Margaret Thatcher",
+      "context": "Self-aware, tongue-in-cheek remark by the British Prime Minister in an interview published in The Observer, 4 April 1989 (as catalogued by the Margaret Thatcher Centre's quotes page). Speaker was a UK Conservative Prime Minister.",
+      "real": true,
+      "source": {
+        "title": "Quotes - The Margaret Thatcher Centre",
+        "url": "https://www.thatchercentre.com/quotes/",
+        "date": "1989-04-04"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I don't listen to music when I train. People find that strange, but I need to hear what's actually happening — my breathing, my feet, everything. Music is a conversation I can't afford to have in the middle of a race.",
+      "speaker": "Eliud Kipchoge",
+      "context": "Profile interview with Runner's World magazine, published in the September 2021 issue",
+      "real": false,
+      "fake_note": "I made this one up — Kipchoge's real interviews are full of calm, philosophical observations about running as a mental discipline, so this fits his documented voice almost perfectly. The gentle giveaway is that he has mentioned music in passing before, so the firm 'never' framing is the tiny overcorrection that might trip up a dedicated fan."
+    },
+    {
+      "id": "q5",
+      "text": "My kids have no idea what I actually do. They think I make phones. I've stopped correcting them because honestly, at a certain level, that's not wrong.",
+      "speaker": "Sundar Pichai",
+      "context": "Remarks during a fireside chat at Stanford's Graduate School of Business, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Sundar is known for his quiet, self-effacing humor and has genuinely spoken about keeping family life grounded, so this feels totally in character. The giveaway is that Google doesn't make phones as its primary identity, which a sharp player might catch — though Pixel makes it just plausible enough to hesitate."
+    },
+    {
+      "id": "q6",
+      "text": "People keep asking me what the secret is, and I always say the same thing: the secret is that there's no secret. You just have to be willing to be wrong in public for a really long time.",
+      "speaker": "Brené Brown",
+      "context": "Interview with Glennon Doyle on the 'We Can Do Hard Things' podcast, episode released March 2023",
+      "real": false,
+      "fake_note": "I made this one up — it slots perfectly into Brené's whole vulnerability-as-courage framework and even sounds like her rhythmic, self-deprecating style. The subtle giveaway is that 'wrong in public' is a touch more blunt than her usual clinical-but-warm phrasing; she'd more likely say 'uncomfortable in public.'"
+    }
+  ]
+}
