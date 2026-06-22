@@ -10,6 +10,12 @@
 <meta property="og:title" content="Said It? — real or fake, daily" />
 <meta property="og:description" content="6 quotes from this week. Some real, some made up. How many can you catch?" />
 <meta property="og:type" content="website" />
+<!-- PWA: installable, magpie icon + splash, offline shell via sw.js (Phase 4) -->
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Said It?" />
 <!-- Bright redesign: one type family (Plus Jakarta Sans) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,8 +40,9 @@
     --shadow-card:0 5px 16px -12px rgba(40,50,90,.4);
     --shadow-raised:0 8px 22px -14px var(--primary-shadow);
   }
-  /* coral is the one-token alt theme — flip body.theme-coral; blue is the default/lead */
-  body.theme-coral{ --primary:#FF6B5C; --primary-dark:#EF4F3E; --primary-soft:#FFF0ED; --primary-shadow:rgba(255,107,92,.5); }
+  /* coral is the alt theme (flip body.theme-coral; blue is the default/lead). AA-TUNED so it can be user-selectable:
+     --primary clears 3:1 (large CTA text) and --primary-dark clears 4.5:1 (small/secondary text) on white. */
+  body.theme-coral{ --primary:#E04A2E; --primary-dark:#B5362A; --primary-soft:#FFF1EE; --primary-shadow:rgba(224,74,46,.5); }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
   html{background:var(--canvas);min-height:100%}
   body{margin:0 auto;background:var(--canvas);color:var(--ink);
@@ -299,7 +306,7 @@
   .d7pill.today{border:2px dashed var(--primary)}
   .d7pill svg{stroke:var(--mint)}
   .d7lbl{font-size:11px;font-weight:700;color:var(--ink3)}
-  .d7lbl.hit{color:var(--mint)} .d7lbl.today{color:var(--primary)}
+  .d7lbl.hit{color:var(--mint)} .d7lbl.today{color:var(--primary-dark)}   /* AA: small text → the darker accent (clears 4.5:1 in both themes) */
 
   /* coach line (mint-tinted) */
   .coach{background:#E7F8F1;border:none;border-radius:8px;padding:13px 15px;margin:20px 0 0;
@@ -385,7 +392,8 @@
   .qspk{position:relative;margin-top:18px;display:flex;align-items:center;gap:11px}
   .qav{width:36px;height:36px;border-radius:50%;background:var(--card);border:2px solid var(--ink3);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;flex:none}
   .qspk .nm{font-size:15px;font-weight:700;color:var(--ink)}
-  .qspk .rl{font-size:12.5px;font-weight:500;color:var(--ink3)}
+  /* context line: one fixed-width line (ellipsis) so its LENGTH isn't a real/fake tell (J — UI half of context parity) */
+  .qspk .rl{font-size:12.5px;font-weight:500;color:var(--ink3);max-width:248px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .swipe-hint{text-align:center;font-size:12px;font-weight:600;color:#5C6180;margin-top:10px}
   .rf-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
   .rfbtn{border:2px solid var(--card);cursor:pointer;border-radius:9px;padding:16px 12px;background:var(--card);
@@ -461,7 +469,8 @@
   .tr-row{display:flex;align-items:flex-start;gap:12px}
   .tr-stamp{flex:none;width:48px;display:flex;justify-content:center;padding-top:2px}
   .stamp{font-weight:700;font-size:11px;letter-spacing:.3px;background:transparent;border:1.5px solid;border-radius:7px;padding:4px 6px;transform:rotate(-4deg);display:inline-block}
-  .stamp.real{color:var(--mint);border-color:var(--mint)} .stamp.fake{color:var(--fake);border-color:var(--fake)}
+  /* AA: mint/coral fail as 11px label text on white — keep the colored BORDER (truth identity), darken the TEXT to clear AA */
+  .stamp.real{color:#1C6B4F;border-color:var(--mint)} .stamp.fake{color:#B0282E;border-color:var(--fake)}
   .tr.shown .stamp{animation:sit-stamp .4s cubic-bezier(.34,1.56,.64,1) both}
   .tr-body{flex:1;min-width:0}
   .tr-q{font-size:14px;font-weight:600;color:#3A3D55;line-height:1.4}
@@ -486,6 +495,8 @@
   body.scr-reveal #magsBtn{display:none}
 
   .share-card{margin-top:26px;border-radius:11px;padding:22px;overflow:hidden;background:var(--card);border:2px solid var(--primary);box-shadow:0 12px 30px -16px var(--primary-shadow)}
+  button.share-card{display:block;width:100%;text-align:left;font:inherit;cursor:pointer;transition:transform .06s ease}
+  button.share-card:active{transform:scale(.99)}
   .sc-row{display:flex;align-items:center;justify-content:space-between}
   .sc-brand{display:flex;align-items:center;gap:8px}
   .sc-brand .wm{font-weight:700;font-size:18px;color:var(--primary);letter-spacing:-.3px}
@@ -500,12 +511,12 @@
   .sc-legend span.lg{display:inline-flex;align-items:center;gap:5px}
   .sc-legend .sw{width:13px;height:13px;border-radius:4px;border:2px solid;display:inline-block}
   .sc-legend .sw.caught{border-color:var(--mint)} .sc-legend .sw.fooled{border-color:var(--hair)}
-  .sc-legend .url{margin-left:auto;font-weight:700;color:var(--primary)}
+  .sc-legend .url{margin-left:auto;font-weight:700;color:var(--primary-dark)}   /* AA: 11px label */
 
   .rv-actions{display:flex;gap:11px;margin-top:14px}
   .rv-actions .copy{flex:1;border:2px solid var(--track);cursor:pointer;background:var(--card);color:var(--ink);border-radius:10px;padding:15px;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px}
   .rv-actions .copy svg{stroke:var(--ink)}
-  .rv-actions .board{flex:1;cursor:pointer;background:transparent;border:2.5px solid var(--primary);color:var(--primary);border-radius:10px;padding:15px;font-weight:700;font-size:15px;min-height:52px}
+  .rv-actions .board{flex:1;cursor:pointer;background:transparent;border:2.5px solid var(--primary);color:var(--primary-dark);border-radius:10px;padding:15px;font-weight:700;font-size:15px;min-height:52px}   /* AA: 15px normal text */
   .rv-preview{margin-top:12px;background:var(--card);border-radius:9px;padding:13px 15px;box-shadow:0 4px 14px -12px rgba(40,50,90,.4)}
   .rv-preview .k{font-size:10.5px;font-weight:700;color:var(--ink3);margin-bottom:8px}
   .rv-preview .t{font-size:13.5px;font-weight:600;color:#3A3D55;line-height:1.55;white-space:pre-wrap}
@@ -613,8 +624,8 @@
   .st-row .lbl{font-size:12px;font-weight:700;color:var(--ink3)}
   .st-row .val{font-weight:700;font-size:23px;color:var(--ink);margin-top:2px;letter-spacing:-.4px}
   .st-row .chev{display:flex} .st-row .chev svg{stroke:var(--primary)}
-  .st-back{border:none;cursor:pointer;background:none;display:flex;align-items:center;gap:6px;padding:2px 2px 14px;font-size:14px;font-weight:500;color:var(--primary)}
-  .st-back svg{stroke:var(--primary)}
+  .st-back{border:none;cursor:pointer;background:none;display:flex;align-items:center;gap:6px;padding:2px 2px 14px;font-size:14px;font-weight:500;color:var(--primary-dark)}   /* AA: 14px regular */
+  .st-back svg{stroke:var(--primary-dark)}
   .st-kicker{font-size:12px;font-weight:700;color:var(--ink3)}
   .st-big{display:flex;align-items:baseline;gap:10px;margin-top:4px}
   .st-big .n{font-weight:700;font-size:42px;color:var(--primary);letter-spacing:-1px}
@@ -689,6 +700,61 @@
   .ld-name{flex:1;font-size:15px;font-weight:600;color:var(--ink)}
   .ld-row.cur .ld-name{color:var(--primary-dark);font-weight:700}
   .ld-thr{font-size:12px;font-weight:600;color:var(--ink3);font-variant-numeric:tabular-nums}
+
+  /* ============================================================
+     PHASE 2 — a11y (live regions + reduced-motion override), Settings, onboarding, freeze chip
+     ============================================================ */
+  /* visually-hidden live region (announcements for SR users) */
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+  .scr-title:focus-visible,[data-heading]:focus-visible{outline:2px solid var(--primary);outline-offset:3px}
+  .scr-title:focus,[data-heading]:focus{outline:none}   /* programmatic focus-on-nav shouldn't draw a ring */
+  /* reduced motion — OS preference AND the in-app override (body.rm) both calm the springy transitions */
+  @media (prefers-reduced-motion: reduce){
+    .qcard,.toast,.tr,.rv-streak .num,.cr-row.you,.rfbtn,.lockbtn2{transition:none !important;animation:none !important}
+    .rv-confetti{display:none !important}
+  }
+  body.rm .mags-bob,body.rm .mags-cycle,body.rm .qcard,body.rm .toast,body.rm .tr,body.rm .rv-streak .num,
+  body.rm .cr-row.you,body.rm .rfbtn,body.rm .lockbtn2,body.rm .ic.pop,body.rm .lockbtn2.pulse{animation:none !important;transition:none !important}
+  body.rm .rv-confetti{display:none !important}
+
+  /* freeze chip on Home (🛡️ N freeze left this week) */
+  .freeze-chip{display:inline-flex;align-items:center;gap:6px;margin-top:12px;background:var(--primary-soft);
+    border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:700;color:var(--primary-dark)}
+  .freeze-chip.spent{background:var(--track);color:var(--ink3)}
+
+  /* Settings screen */
+  body.scr-settings header{display:none}
+  #screen-settings{padding-bottom:40px}
+  .set-sec{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink3);margin:20px 4px 6px}
+  .set-card{background:var(--card);border-radius:11px;padding:6px 16px;box-shadow:var(--shadow-card)}
+  .set-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--track);min-height:56px}
+  .set-row:last-child{border-bottom:none}
+  .set-row .sl{font-weight:600;font-size:15px;color:var(--ink)} .set-row .ss{font-size:12.5px;color:var(--ink3);margin-top:2px}
+  .set-ctl{flex:none;display:flex;align-items:center;gap:8px}
+  /* 44px-tall tap area wrapping a 28px visual track */
+  .switch{display:inline-flex;align-items:center;justify-content:center;width:52px;height:44px;padding:0;border:none;background:none;cursor:pointer;flex:none}
+  .switch .track{position:relative;width:46px;height:28px;border-radius:999px;background:var(--track);transition:background .15s}
+  .switch[aria-checked="true"] .track{background:var(--primary)}
+  .switch .knob{position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;transition:transform .15s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+  .switch[aria-checked="true"] .knob{transform:translateX(18px)}
+  .seg-mini{display:flex;background:var(--canvas);border-radius:8px;padding:3px;gap:2px}
+  .seg-mini button{border:none;cursor:pointer;border-radius:6px;padding:8px 13px;font-weight:700;font-size:13px;min-height:44px;background:transparent;color:var(--ink2)}   /* 44px tap target */
+  .seg-mini button.on{background:var(--ink);color:#fff}
+  .set-link{width:100%;margin-top:12px;background:transparent;border:2px solid var(--track);cursor:pointer;color:var(--primary-dark);
+    border-radius:10px;padding:14px;font-weight:700;font-size:15px;min-height:50px;text-align:center;display:block}
+  .set-link:active{transform:scale(.99)} .set-link{transition:transform .06s ease}
+  .set-link.danger{color:#B0282E;border-color:#F1CFCF}
+  .set-foot{text-align:center;margin-top:18px;font-size:12px;font-weight:500;color:var(--ink3);line-height:1.6}
+  .set-foot button{color:var(--ink3);background:none;border:none;cursor:pointer;font:inherit;text-decoration:underline;padding:4px}
+
+  /* one-card "how to play" onboarding (uses the bottom-sheet shell) */
+  .ob-title{font-weight:700;font-size:22px;color:var(--ink);letter-spacing:-.3px;margin-bottom:4px}
+  .ob-sub{font-size:14px;font-weight:500;color:var(--ink2);margin-bottom:14px;line-height:1.45}
+  .ob-steps{list-style:none;margin:0;padding:0}
+  .ob-steps li{display:flex;gap:12px;align-items:flex-start;padding:9px 0;font-size:14.5px;font-weight:500;color:var(--ink2);line-height:1.4}
+  .ob-steps li b{color:var(--ink);font-weight:700}
+  .ob-steps .obn{flex:none;width:26px;height:26px;border-radius:50%;background:var(--primary-soft);color:var(--primary-dark);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+  .ob-go{width:100%;margin-top:16px;cursor:pointer;background:transparent;border:2.5px solid var(--primary);color:var(--primary-dark);border-radius:9px;padding:16px;font-weight:700;font-size:17px;min-height:52px}   /* AA: 17px isn't "large", so use the darker token for the label */
 </style>
 </head>
 <body>
@@ -710,6 +776,7 @@
 
 <!-- HOME (the hub) -->
 <div id="screen-home" class="hide">
+  <h1 class="sr-only" data-heading tabindex="-1">Said It? — today’s set</h1>
   <div id="homeHero"></div>
   <button class="play-cta" id="homePlay">Play today's set
     <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -720,6 +787,8 @@
   <div class="stat-row" id="homeStats"></div>
   <div class="home-links">
     <button class="navlink" id="homeArchive">Past editions</button>
+    <span class="dot-sep">·</span>
+    <button class="navlink" id="homeSettings">Settings</button>
     <span class="dot-sep hide" id="homeLinkSep">·</span>
     <button class="navlink hide" id="homeAccount">Save progress</button>
   </div>
@@ -743,6 +812,9 @@
 <!-- REVEAL (painted by renderReveal) -->
 <div id="screen-reveal" class="hide"></div>
 
+<!-- SETTINGS (painted by renderSettings) -->
+<div id="screen-settings" class="hide"></div>
+
 <!-- ARCHIVE -->
 <div id="screen-archive" class="hide">
   <div class="card">📚 <b>Past editions</b> — replay any day, or tap 🔗 to copy a link and send the questions to someone. Replaying old sets won't change your streak.</div>
@@ -754,1222 +826,13 @@
 <div id="screen-crew" class="hide"></div>
 
 <div class="toast" id="toast"></div>
+<!-- a11y: polite live region — score reveal, streak bump, toasts are announced through here -->
+<div id="srLive" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+<!-- assertive region for toasts + the score reveal, so they don't coalesce with the polite screen-name announcement -->
+<div id="srAlert" class="sr-only" role="status" aria-live="assertive" aria-atomic="true"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="config.js"></script>
-<script>
-(function(){
-"use strict";
-
-/* ---------- config + tiny helpers ---------- */
-var CFG = window.SAIDIT_CONFIG || {};
-var LOG_ENDPOINT = CFG.LOG_ENDPOINT || "";          // set in config.js once the endpoint is deployed
-var AGG_ENDPOINT = CFG.AGG_ENDPOINT || "";          // optional: "fake that fooled the most" cross-player
-/* H-A accounts (Supabase) — OPTIONAL + defensive: if the SDK/keys aren't present (e.g. offline, or in tests),
-   SB stays null and the whole app works exactly as before on the local id. Signing in only ADDS cloud sync. */
-var SB=null; try{ if(window.supabase && CFG.SUPABASE_URL && CFG.SUPABASE_ANON_KEY){ SB=window.supabase.createClient(CFG.SUPABASE_URL, CFG.SUPABASE_ANON_KEY); } }catch(e){}
-var GOOGLE_AUTH=!!CFG.GOOGLE_AUTH;   // only show "Continue with Google" once the Google OAuth client is configured in Supabase
-var ACCOUNT=null, PROFILE_SYNCED=false;   // ACCOUNT={uid,email} once signed in; PROFILE_SYNCED gates cloud WRITES until a safe read
-var $ = function(id){return document.getElementById(id);};
-var el = function(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e;};
-// make a click-only element keyboard-accessible (role + tab order + Enter/Space) — for the hub's cards/strips
-function activate(node, fn, label){ node.setAttribute("role","button"); node.tabIndex=0; if(label)node.setAttribute("aria-label",label);
-  node.onclick=fn; node.onkeydown=function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); fn(); } }; }
-var pad = function(n){return n<10?"0"+n:""+n;};
-function todayStr(d){d=d||new Date();return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());}
-function qsDay(){var m=location.search.match(/[?&]d=([0-9]{4}-[0-9]{2}-[0-9]{2})/);return m?m[1]:null;}
-function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-
-/* ---------- Mags, the magpie mascot (themeable inline SVG) ----------
-   Recreated from coordination/design_handoff_said_it_bright/Magpie.dc.html — one continuous monoline
-   silhouette drawn in var(--primary), with three moods. mood: 'happy' | 'delighted' | 'oops'. */
-function magpie(mood, size, cls){
-  mood=mood||"happy"; size=size||72;
-  var eyes;
-  if(mood==="delighted"){
-    eyes='<path d="M40 32 Q45 26 50 32" stroke="var(--primary)" stroke-width="4" stroke-linecap="round" fill="none"/>'+
-      '<path d="M82 20 l1.6 3.6 3.6 1.6 -3.6 1.6 -1.6 3.6 -1.6 -3.6 -3.6 -1.6 3.6 -1.6 z" fill="var(--primary)"/>'+
-      '<path d="M96 40 l1.2 2.7 2.7 1.2 -2.7 1.2 -1.2 2.7 -1.2 -2.7 -2.7 -1.2 2.7 -1.2 z" fill="var(--primary)"/>';
-  } else if(mood==="oops"){
-    eyes='<circle cx="45" cy="31" r="3.4" fill="none" stroke="var(--primary)" stroke-width="2.4"/>'+
-      '<path d="M39 24 L50 27" stroke="var(--primary)" stroke-width="2.8" stroke-linecap="round"/>';
-  } else {
-    eyes='<circle cx="45" cy="31" r="3" fill="var(--primary)"/>';
-  }
-  return '<svg class="mags'+(cls?(" "+cls):"")+'" width="'+size+'" height="'+size+'" viewBox="0 0 112 112" fill="none" aria-hidden="true">'+
-    '<path d="M40 52 C58 50 64 70 50 80 C40 76 36 62 40 52 Z" fill="var(--primary)" opacity="0.14"/>'+
-    '<g stroke="var(--primary)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">'+
-    '<path d="M18 40 C24 37 29 36 35 35 C40 17 63 15 64 36 C69 52 71 62 66 73 L99 104 L70 82 C60 92 40 91 31 73 C23 60 19 47 26 43 C22 42 20 41 18 40 Z"/>'+
-    '<path d="M18 40 L33 44"/>'+
-    '<path d="M41 51 C57 50 62 68 49 78"/>'+
-    '</g>'+eyes+'</svg>';
-}
-// app-icon / favicon variant: fixed colors (data-URI SVG gets no page CSS, so no var() here)
-function appIconSVG(){
-  return "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 112 112'>"+
-    "<rect width='112' height='112' rx='26' fill='#EEF1FE'/>"+
-    "<path d='M40 52 C58 50 64 70 50 80 C40 76 36 62 40 52 Z' fill='#4C6EF5' opacity='0.16'/>"+
-    "<g stroke='#4C6EF5' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'>"+
-    "<path d='M18 40 C24 37 29 36 35 35 C40 17 63 15 64 36 C69 52 71 62 66 73 L99 104 L70 82 C60 92 40 91 31 73 C23 60 19 47 26 43 C22 42 20 41 18 40 Z'/>"+
-    "<path d='M18 40 L33 44'/></g>"+
-    "<circle cx='45' cy='31' r='3.6' fill='#4C6EF5'/></svg>";
-}
-// avatar color, hashed by name (ported from the prototype) — ringed white avatars + colored initials
-var AVCOLORS=['#FF8FAB','#20C4A8','#9775FA','#FF922B','#4DABF7','#16B981','#FB5252'];
-function avColor(n){ n=String(n||""); var h=0; for(var i=0;i<n.length;i++){ h=(h*31+n.charCodeAt(i))>>>0; } return AVCOLORS[h%AVCOLORS.length]; }
-function avInitial(n){ return (String(n||"?").trim().charAt(0)||"?").toUpperCase(); }
-// header date label, e.g. "Wed 18 Jun"
-function homeDateLabel(){ var d=new Date(); var wd=d.toLocaleDateString(undefined,{weekday:"short"});
-  return wd+" "+d.getDate()+" "+d.toLocaleDateString(undefined,{month:"short"}); }
-function weekdayShort(dateStr){ return new Date(dateStr+"T12:00:00").toLocaleDateString(undefined,{weekday:"short"}).slice(0,2); }
-var CHECK_SVG='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6"/></svg>';
-var CHEV_DOWN='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>';
-var CHEV_RIGHT='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
-var CHEV_LEFT='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
-var BACK_ARROW='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
-/* ---------- bottom-sheet infra (spring-up modal; close on backdrop) ---------- */
-function closeSheet(){ var bd=document.getElementById("sheetBackdrop"); if(bd&&bd.parentNode) bd.parentNode.removeChild(bd); }
-function openSheet(innerHtml){
-  closeSheet();
-  var bd=el("div","sheet-backdrop"); bd.id="sheetBackdrop";
-  var sh=el("div","sheet"); sh.innerHTML='<div class="sheet-grab"></div>'+innerHtml;
-  bd.appendChild(sh);
-  bd.onclick=function(e){ if(e.target===bd) closeSheet(); };
-  document.body.appendChild(bd);
-  return sh;
-}
-
-/* ---------- persistent store (localStorage) ---------- */
-var K="saidit:v1";
-function load(){try{return JSON.parse(localStorage.getItem(K))||{};}catch(e){return {};}}
-function save(s){try{localStorage.setItem(K,JSON.stringify(s));}catch(e){}}
-function uid(){return 's_'+Math.random().toString(36).slice(2)+Date.now().toString(36);}
-var ST = load();
-if(!ST.sid){ST.sid=uid();ST.first_seen=todayStr();ST.referrer=document.referrer||"direct";ST.days={};ST.streak=0;ST.best_streak=0;
-  ST.rating=1000;ST.judged=0;ST.correct=0;ST.locks=0;ST.locks_correct=0;ST.last_played=null;ST.freeze_week=null;ST.freezes_left=1;save(ST);}
-if(!ST.days)ST.days={};
-if(!ST.crewSeasons)ST.crewSeasons={};   // {weekKey: champName} — memorialized weekly champ (client-side)
-if(ST.crew===undefined)ST.crew=null;    // legacy single-crew field — migrated to ST.crews below
-if(!ST.crews){ ST.crews = ST.crew ? [ST.crew] : []; }       // MULTI-CREW: be in several friend groups at once
-if(ST.activeCrew===undefined){ ST.activeCrew = ST.crews.length ? ST.crews[0].code : null; }  // the one you're viewing
-if(!ST.lane)ST.lane="general";          // G-C category pack the player picked (shared daily instance PER lane)
-// The one-per-device `install` is fired in boot() — AFTER any device-link sid adoption — so it's tagged with the
-// FINAL identity, never a throwaway sid (otherwise it corrupts install/cohort analytics). Capture the backfill
-// flag NOW, before any other event is logged. (Pre-G-A devices: sid exists but never instrumented → backfill.)
-var INSTALL_BACKFILL = (ST.judged>0 || (ST.log && ST.log.length>0));
-
-/* ---------- instrumentation ---------- */
-function logEvent(name, extra){
-  var payload = Object.assign({ev:name, sid:ST.sid, day:(DAY&&DAY.date)||null, ts:Date.now(),
-    ref:ST.referrer, first:ST.first_seen, tz:(new Date()).getTimezoneOffset()}, extra||{});
-  // 1) always keep a local trail so the return signal survives with no server
-  (ST.log=ST.log||[]).push({ev:name,day:payload.day,ts:payload.ts}); if(ST.log.length>400)ST.log=ST.log.slice(-400); save(ST);
-  // 2) best-effort POST to the endpoint (deployed separately; see endpoint/)
-  if(LOG_ENDPOINT){ try{
-    if(navigator.sendBeacon){navigator.sendBeacon(LOG_ENDPOINT, new Blob([JSON.stringify(payload)],{type:"text/plain"}));}
-    else{fetch(LOG_ENDPOINT,{method:"POST",mode:"no-cors",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify(payload)});}
-  }catch(e){} }
-}
-
-/* ---------- week / freeze helpers ---------- */
-function weekKey(dateStr){ // ISO-ish week bucket (Mon-anchored) from a YYYY-MM-DD
-  var d=new Date(dateStr+"T12:00:00"); var day=(d.getDay()+6)%7; d.setDate(d.getDate()-day);
-  return todayStr(d);
-}
-function refreshFreeze(date){ var wk=weekKey(date); if(ST.freeze_week!==wk){ST.freeze_week=wk;ST.freezes_left=1;} }
-function daysBetween(a,b){return Math.round((new Date(b+"T12:00:00")-new Date(a+"T12:00:00"))/86400000);}
-
-/* ---------- screens ---------- */
-var SCREENS=["loading","error","home","magpie","stats","ranks","lanes","play","reveal","archive","crew"];
-function show(name){SCREENS.forEach(function(s){$("screen-"+s).classList.toggle("hide",s!==name);});
-  document.body.className=document.body.className.replace(/\bscr-\S+/g,"").trim(); document.body.classList.add("scr-"+name);
-  window.scrollTo(0,0);}
-function toast(msg){var t=$("toast");t.textContent=msg;t.classList.add("show");setTimeout(function(){t.classList.remove("show");},1400);}
-function currentScreen(){ for(var i=0;i<SCREENS.length;i++){ if(!$("screen-"+SCREENS[i]).classList.contains("hide")) return SCREENS[i]; } return "home"; }
-var BACK_TO="home";   // where the crew/archive "← Back" returns to (captured when you open them)
-function navBack(){    // return to the screen you came from: home, or the current lane's reveal/intro
-  JUST_JOINED=null;
-  if(BACK_TO==="home"||BACK_TO==="detail"){ goHome(); return; }   // detail/home origins → hub (not a play-context resume)
-  var d=curDone(); if(d){ renderReveal(d,false); }
-  else if(DAY){ renderPlay(); }
-  else { goHome(); }
-}
-// content pages (magpie/stats/ranks) use a small back STACK so back returns to the actual opener — and chains
-// (e.g. Home→Stats→Ranks→back→Stats→back→Home) without corrupting BACK_TO or jumping into a stale reveal.
-var PAGE_BACK=[];
-function pageBack(){
-  var prev=PAGE_BACK.pop()||"home";
-  if(prev==="stats"){ renderStats(); show("stats"); return; }
-  if(prev==="ranks"){ renderRanks(); show("ranks"); return; }
-  if(prev==="magpie"){ renderMagpie(); show("magpie"); return; }
-  if(prev==="crew"){ openCrew(); return; }
-  if(prev==="lanes"){ openLanes(); return; }
-  if(prev==="reveal" && curDone()){ renderReveal(curDone(),false); return; }
-  if(prev==="play" && DAY){ renderPlay(); return; }
-  goHome();
-}
-
-/* ---------- state for the current play ---------- */
-var DAY=null;            // the currently-loaded edition (today's OR an archive one)
-var ANS={};             // id -> "real"|"fake"
-var LOCK=null;          // id of locked quote
-var PLAY_IDX=0;          // index (0-5) of the quote currently on screen (one-card play)
-var LANES_PICK=null;     // lane highlighted in the Lanes picker (committed on "Play {lane}")
-var CREW_WHEN="today";   // crew board Today/Week toggle
-var MANIFEST={days:[]}; // published editions (daily/index.json)
-
-/* ---------- boot ---------- */
-var CREW_INVITE=false, LINKED=false, JUST_JOINED=null, INVITE_BY="", INVITE_CN="";
-function boot(){
-  LINKED=handleDeviceLink();    // ?me=SID → adopt that identity (same person, another device) — BEFORE any logging
-  handleCrewInvite();           // ?crew=CODE&inv=SID → join + log invite_opened (k-factor)
-  initAuth();                   // H-A: pick up an existing Supabase session + listen for sign-in (magic-link return)
-  // fire the single per-device install NOW (after sid adoption), so it's tagged with the final identity
-  if(!ST.installed){ ST.installed=true; logEvent("install",{first:ST.first_seen, backfill:INSTALL_BACKFILL}); save(ST); }
-  fetch("daily/index.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;})
-    .then(function(idx){ if(idx&&(idx.days||idx.categories)) MANIFEST=idx; }, function(){})
-    .then(function(){
-      var dl=qsDay();
-      if(dl){ loadAndRoute(dl); }                 // ?d=DATE deep link → straight to that edition
-      else if(LINKED){ fetchMeProfile().then(function(){ if(!inCrew()) toast("Device linked — rejoin your crew with its code if it doesn't appear"); openCrew(); }); }  // device-link → pull crews+name from server
-      else if(CREW_INVITE){ openCrew(); }         // invite → land on the crew screen (clear "you're in!")
-      else { goHome(); }                          // everyone else → the home hub
-    });
-}
-function handleCrewInvite(){       // a ?crew=CODE&inv=SID&by=NAME&cn=CREWNAME link → one-tap join w/ sender context
-  var m=location.search.match(/[?&]crew=([A-Za-z0-9]{3,8})/); if(!m) return;
-  var inv=(location.search.match(/[?&]inv=([A-Za-z0-9_]+)/)||[])[1]||"";
-  var by=(location.search.match(/[?&]by=([^&]+)/)||[])[1], cn=(location.search.match(/[?&]cn=([^&]+)/)||[])[1];
-  if(by){ try{ INVITE_BY=decodeURIComponent(by); }catch(e){} }
-  if(cn){ try{ INVITE_CN=decodeURIComponent(cn); }catch(e){} }
-  if(joinCrew(m[1], inv)){ CREW_INVITE=true; JUST_JOINED=(curCrew()||{}).code;
-    // seed the crew NAME from the link ONLY for a genuinely new join (don't clobber an existing/renamed name with a stale link)
-    if(INVITE_CN){ var _c=(ST.crews||[]).filter(function(x){return x.code===(curCrew()||{}).code;})[0]; if(_c && !_c.name) setLocalCrewName(_c.code, INVITE_CN); } }
-  try{ history.replaceState(null,"",location.pathname); }catch(e){}   // clean URL so a refresh doesn't re-log
-}
-function loadAndRoute(wanted){
-  var lane=ST.lane||"general";
-  show("loading");
-  fetchDay(wanted, lane).then(function(day){
-    DAY=day; DAY._lane=lane; ANS={}; LOCK=null; PLAY_IDX=0;
-    var isToday = day.date===todayStr();
-    $("editiontag").textContent = (lane!=="general"?(laneLabel(lane).replace(/^\S+\s/,"")+" · "):"")+"No. "+(day.edition||"?")+" · "+prettyDate(day.date);
-    $("sub").textContent = "Six quotes" + (lane!=="general"?(" · "+laneLabel(lane).replace(/^\S+\s/,"")):"") + ". Some are real. Some are made up.";
-    updatePastBar(isToday, day);
-    logEvent("visit",{archive:!isToday, cat:lane});
-    if(isToday && ST.last_realday && ST.last_realday!==todayStr() && daysBetween(ST.last_realday,todayStr())>=1)
-      logEvent("return",{gap:daysBetween(ST.last_realday,todayStr()), cat:lane});
-    var key=dayKey(lane, day.date);
-    if(ST.days[key] && ST.days[key].done){ renderReveal(ST.days[key].result, false); }
-    else { logEvent("start",{cat:lane, archive:!isToday}); renderPlay(); }
-  }).catch(function(e){
-    show("error");
-    $("screen-error").innerHTML="Couldn't load that set.<br><span style='color:var(--mut);font-size:13px'>"+esc(e.message||e)+"</span>";
-  });
-}
-function prettyDate(s){var d=new Date(s+"T12:00:00");return d.toLocaleDateString(undefined,{month:"short",day:"numeric"});}
-
-/* ---------- category lanes (G-C): shared daily instance holds PER lane ---------- */
-function lanePath(lane,date){ return lane==="general"?("daily/"+date+".json"):("daily/"+lane+"/"+date+".json"); }
-function laneDays(lane){ var c=MANIFEST.categories&&MANIFEST.categories[lane]; if(c)return c; return lane==="general"?(MANIFEST.days||[]):[]; }
-function dayKey(lane,date){ return lane==="general"?date:(lane+":"+date); }   // per-lane completion record
-var LANE_LABELS={general:"📰 General",sports:"🏀 Sports",music:"🎵 Music",politics:"🏛️ Politics",movies:"🎬 Movies",nsfw:"🍸 Off the Record"};
-// bright-redesign lane theming (category hues + taglines + line icons + flags)
-var LANE_HUES={general:"#4C6EF5",sports:"#20C4A8",music:"#9775FA",politics:"#FF922B",movies:"#FF8FAB",nsfw:"#7048E8"};
-var LANE_VIBES={general:"today’s mixed bag",sports:"athletes’ chit-chat",music:"artists’ gossip",politics:"hot air, fresh daily",movies:"red-carpet ramblings",nsfw:"not safe for your local newspaper"};
-var LANE_HOT={politics:true}, LANE_ADULT={nsfw:true};
-// simple line icons (stroke = lane hue), one per lane
-var LANE_ICONS={
-  general:'<path d="M5 5h11v14H5z"/><path d="M16 9h3v8a2 2 0 0 1-2 2"/><path d="M8 9h5M8 12.5h5M8 16h3"/>',          // newspaper
-  sports:'<path d="M4 12a4 4 0 0 0 4 4h4l5 3v-6.5a4.5 4.5 0 0 0-4.5-4.5H8a4 4 0 0 0-4 3z"/><path d="M16.5 8.5 19 5"/>',  // whistle
-  music:'<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0"/><path d="M12 17v4M9 21h6"/>',   // mic
-  politics:'<path d="M9 21h6M12 21v-8"/><path d="M7.5 13h9l-1.3-3.5h-6.4z"/><path d="M12 9.5V4M12 4.4l4 1.4-4 1.4z"/>',   // podium + flag
-  movies:'<path d="M4 9h16v11H4z"/><path d="M4 9l2.4-4 3.6 1.8L13.6 5l3.6 1.8"/><path d="M8 9 10.4 5M13 9l2.4-4"/>',     // clapperboard
-  nsfw:'<path d="M5 5h14l-7 8z"/><path d="M12 13v6M8 21h8"/><path d="M16 7.5l2.5-2.5"/>'                                  // martini
-};
-function laneIcon(l){ return LANE_ICONS[l]||LANE_ICONS.general; }
-function laneLabel(l){ return LANE_LABELS[l] || ("# "+l); }
-function laneHue(l){ return LANE_HUES[l] || "#4C6EF5"; }
-function availableLanes(){ var ls=Object.keys((MANIFEST.categories)||{}); if(ls.indexOf("general")<0)ls.unshift("general");
-  return ls.filter(function(l){ return l==="general"||laneDays(l).length; }); }
-function curDone(){ if(!DAY) return null; var r=ST.days[dayKey(DAY._lane||"general",DAY.date)]; return (r&&r.done)?r.result:null; }
-
-function fetchDay(date, lane){
-  return fetch(lanePath(lane,date),{cache:"no-store"}).then(function(r){
-    if(r.ok) return r.json();
-    var avail=laneDays(lane).slice().sort(); if(!avail.length) throw new Error("no "+lane+" editions yet");
-    var latest=avail[avail.length-1];
-    return fetch(lanePath(lane,latest),{cache:"no-store"}).then(function(r3){if(!r3.ok)throw new Error("set missing");return r3.json();});
-  });
-}
-
-/* ---------- LANES picker (bright redesign) ---------- */
-function openLanes(){
-  BACK_TO="home";
-  $("editiontag").textContent=""; $("pastbar").classList.add("hide"); $("pastbar").innerHTML="";
-  var avail=availableLanes();
-  LANES_PICK = (avail.indexOf(ST.lane)>=0) ? ST.lane : "general";
-  renderLanesPicker(); show("lanes");
-}
-function laneDoneToday(lane){ var r=ST.days[dayKey(lane, todayStr())]; return !!(r&&r.done); }
-function renderLanesPicker(){
-  var host=$("screen-lanes"), avail=availableLanes();
-  var cards=avail.map(function(lane){
-    var hue=laneHue(lane), sel=(lane===LANES_PICK), nm=laneName(lane), vibe=LANE_VIBES[lane]||"", done=laneDoneToday(lane);
-    var badge = LANE_HOT[lane] ? '<span class="lane-badge hot">heated</span>'
-              : (LANE_ADULT[lane] ? '<span class="lane-badge adult">NSFW</span>' : '');
-    // dot: ring + line icon (hue); when played today → filled hue + white check
-    var dot = done
-      ? '<span class="lane-dot done" style="background:'+hue+';border-color:'+hue+'"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6"/></svg></span>'
-      : '<span class="lane-dot" style="border-color:'+hue+'"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="'+hue+'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+laneIcon(lane)+'</svg></span>';
-    var style = 'border-color:'+hue+(sel?(';background:'+hue+'14;box-shadow:0 8px 20px -12px '+hue):'');   // border = dot colour, always
-    return '<button class="lane-card'+(sel?' sel':'')+(done?' done':'')+'" data-lane="'+esc(lane)+'" style="'+style+'">'+
-      '<div class="lc-top">'+dot+badge+'</div>'+
-      '<div><div class="lane-name">'+esc(nm)+'</div><div class="lane-vibe">'+(done?'<span class="lane-played">✓ View results</span>':esc(vibe))+'</div></div></button>';
-  }).join("");
-  var pickDone=laneDoneToday(LANES_PICK);
-  host.innerHTML =
-    '<div class="scr-head"><button class="back-btn" id="lanesBack" aria-label="Back">'+BACK_ARROW+'</button>'+
-      '<div class="scr-title">Pick your lane</div>'+
-      '<button class="hdr-mags" id="lanesMags" aria-label="Meet Mags">'+magpie("happy",26,"mags-flip")+'</button></div>'+
-    '<div class="lanes-sub">Six quotes. Some real, some I faked. Spot the fakes.</div>'+
-    '<div class="lane-grid">'+cards+'</div>'+
-    '<div class="sticky-cta"><button class="outline-cta" id="lanesPlay">'+(pickDone?'View results':('Play '+esc(laneName(LANES_PICK))))+
-      ' <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>';
-  $("lanesBack").onclick=goHome;
-  $("lanesMags").onclick=openMagpie;
-  $("lanesPlay").onclick=function(){ startLane(LANES_PICK); };
-  host.querySelectorAll(".lane-card").forEach(function(b){ b.onclick=function(){ pickLaneTile(b.getAttribute("data-lane")); }; });
-}
-function pickLaneTile(lane){
-  if(lane==="nsfw" && !ST.nsfw_ok){ ensureAgeOk(function(){ LANES_PICK="nsfw"; renderLanesPicker(); }); return; }   // After Dark 18+ sheet
-  LANES_PICK=lane; renderLanesPicker();
-}
-function startLane(lane){ playLane(lane); }   // playLane: gate + set ST.lane + loadAndRoute → renderPlay
-
-/* ---------- HOME (the hub) ---------- */
-function gamesPlayed(){ var d=ST.days||{},n=0; for(var k in d){ if(d[k]&&d[k].done)n++; } return n; }
-function accPct(){ return ST.judged? Math.round(100*ST.correct/ST.judged):0; }
-function lockPct(){ return ST.locks? Math.round(100*ST.locks_correct/ST.locks):0; }
-// per-category aggregates from ST.days history (backfills automatically; legacy results default to general)
-function categoryStats(){
-  var by={};
-  for(var k in (ST.days||{})){ var rec=ST.days[k], r=rec&&rec.done&&rec.result; if(!r) continue;
-    var lane=r.lane||"general", b=by[lane]||(by[lane]={score:0,n:0,sets:0,locks:0,locksRight:0});
-    b.score+=r.score||0; b.n+=r.n||0; b.sets++;
-    if(r.lockCorrect===true||r.lockCorrect===false){ b.locks++; if(r.lockCorrect) b.locksRight++; }
-  }
-  return by;
-}
-// last 7 real calendar days — did a `complete` happen that day (from the local event trail)?
-function last7(){   // strictly chronological: 7 cells, oldest (left) → today (right); a cell is filled iff a set was played that real day
-  var played={}; (ST.log||[]).forEach(function(e){ if(e.ev==="complete"&&e.ts){ try{ played[todayStr(new Date(e.ts))]=1; }catch(x){} } });
-  var t=todayStr(), out=[];
-  for(var i=6;i>=0;i--){ var d=addDaysStr(t,-i); out.push({date:d, played:!!played[d], today:i===0}); }
-  return out;
-}
-// named rank ladder, earned by accuracy; hidden until 5 sets; seeded partway into the tier (endowed progress)
-// friendly rank ladder (design: never "Gullible"/"Human Polygraph"). "Mind Reader" is the top tier.
-// SKILL ladder (accuracy) — thresholds per the UI script (E). Eye/detective themed.
-var TIERS=[{n:"Rookie"},{n:"Skeptic",a:.55},{n:"Sharp Eye",a:.65},{n:"Truth Hound",a:.75},{n:"Lie Detector",a:.85},{n:"Mind Reader",a:.92}];
-// STREAK ladder (commitment) — named by BEST streak. Fire themed.
-var STREAK_TIERS=[{n:"Spark",lo:1},{n:"Kindling",lo:3},{n:"Campfire",lo:7},{n:"Bonfire",lo:14},{n:"Wildfire",lo:30},{n:"Inferno",lo:60},{n:"Eternal Flame",lo:100}];
-function streakRank(best){ best=best||0; var t=null; for(var i=0;i<STREAK_TIERS.length;i++){ if(best>=STREAK_TIERS[i].lo) t=STREAK_TIERS[i]; } return t; }   // null below 1
-function rankInfo(){
-  var games=gamesPlayed();
-  if(games<5) return {locked:true, need:5-games};
-  var acc=ST.judged?ST.correct/ST.judged:0, ti=0;
-  for(var i=0;i<TIERS.length;i++){ if(acc>=(TIERS[i].a||0)) ti=i; }
-  var cur=TIERS[ti], next=TIERS[ti+1];
-  if(!next) return {locked:false, tier:cur.n, prog:1, line:"Top rank · "+Math.round(acc*100)+"% over "+games+" sets"};
-  var prog=Math.max(.08, Math.min(.97, (acc-(cur.a||0))/(next.a-(cur.a||0))));
-  return {locked:false, tier:cur.n, next:next.n, prog:prog, line:Math.round(acc*100)+"% over "+games+" sets — climb to "+next.n};
-}
-function allResults(){ var out=[]; for(var k in (ST.days||{})){ var r=ST.days[k]&&ST.days[k].done&&ST.days[k].result; if(r) out.push(r); }
-  return out.sort(function(a,b){ return (a.date||"")<(b.date||"")?1:-1; }); }   // newest first
-// personal "coach" line — keep the ~90% who aren't #1 motivated
-function renderCoach(){
-  // de-duped: the streak hero already shows the streak, so the coach never restates it (B). Skill/rank nudges only.
-  var c=$("homeCoach"); c.className=""; c.innerHTML=""; var msg="";
-  if(ST.judged>=18 && accPct()>=70) msg="🎯 "+accPct()+"% accuracy — you've got a genuinely sharp eye.";
-  else if(gamesPlayed()>=1 && gamesPlayed()<5) msg="📈 "+(5-gamesPlayed())+" more set"+((5-gamesPlayed())>1?"s":"")+" to earn your rank — you're close.";
-  if(msg){ c.className="coach"; c.textContent=msg; }
-}
-/* ---------- MAGPIE page (D): backstory + why-a-magpie facts + animated Mags ---------- */
-function openMagpie(){ PAGE_BACK.push(currentScreen()); renderMagpie(); show("magpie"); logEvent("magpie_view"); }
-function renderMagpie(){
-  var host=$("screen-magpie");
-  host.innerHTML=
-    '<div class="play-head"><button class="back-btn" id="magBack" aria-label="Back">'+BACK_ARROW+'</button><div class="scr-title">Meet Mags</div></div>'+
-    '<div class="mag-hero"><span id="magAnim">'+magpie("happy",96,"mags-cycle")+'</span>'+
-      '<div class="mag-name">Mags</div><div class="mag-tag">your friendly culprit</div></div>'+
-    '<div class="mag-card"><div class="mc-h">The story</div>'+
-      '<div class="mag-story">Meet Mags. Magpies are nature’s great mimics — they can copy almost any sound they hear, including human speech. They’re also one of the only animals that recognise themselves in a mirror, and they’ve got a reputation for mischief and shiny-thing thievery (a flock is literally called a “mischief” of magpies). So Mags is the perfect culprit: every day he eavesdrops on the news, then slips a few quotes he made up in among the real ones — just to see who’s paying attention. Your job is to out-smart the bird.</div></div>'+
-    '<div class="mag-card"><div class="mc-h">Why a magpie?</div><ul class="mag-facts">'+
-      '<li><span class="dot"></span><span>They’re <b>expert mimics</b> — wild magpies imitate human speech and other birds’ calls. The perfect voice-faker.</span></li>'+
-      '<li><span class="dot"></span><span>They <b>pass the mirror test</b> — one of the very few animals that recognise themselves. A clever bird for a clever game.</span></li>'+
-      '<li><span class="dot"></span><span>A group is a <b>“mischief”</b> of magpies — and they can’t resist a shiny thing. Mischief is the whole point.</span></li>'+
-      '<li><span class="dot"></span><span>That blue-black <b>iridescent sheen</b> on their wings is where Said It? gets its blue.</span></li>'+
-    '</ul></div>';
-  $("magBack").onclick=pageBack;
-  // gentle happy↔delighted cycle; disabled under prefers-reduced-motion; self-clears when you leave
-  if(window._magInt){ clearInterval(window._magInt); window._magInt=null; }
-  var reduce=false; try{ reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches; }catch(e){}
-  if(!reduce){ var moods=["happy","delighted"], i=0;
-    window._magInt=setInterval(function(){ var a=$("magAnim"); if(!a||currentScreen()!=="magpie"){ clearInterval(window._magInt); window._magInt=null; return; }
-      i=(i+1)%moods.length; a.innerHTML=magpie(moods[i],96,"mags-cycle"); }, 1500); }
-}
-
-/* the mascot "fakes" note — spoiler-safe; the count is fetched in the background (no set is loaded on home) */
-var _todayFakeCount=null;
-function homeFakesNote(n){
-  var host=$("homeFakes"); if(!host) return;
-  var inner = (n!=null)
-    ? ('I slipped in <span class="fk">'+n+' fake'+(n===1?'':'s')+'</span> today — can you spot them?')
-    : ('I slipped a few fakes into today’s set — can you spot them?');
-  // Mags speaks: flipped to face right into the text, with a small speech-tail; whole note opens the Magpie page
-  host.innerHTML='<span class="fn-mags">'+magpie("happy",34,"mags-flip")+'<span class="fn-tail"></span></span><span class="fk-txt">'+inner+'</span>';
-  host.onclick=openMagpie;
-}
-function loadTodayFakeCount(){
-  if(_todayFakeCount!=null){ homeFakesNote(_todayFakeCount); return; }
-  fetch(lanePath("general",todayStr()),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(d){
-    if(d&&d.quotes){ _todayFakeCount=d.quotes.filter(function(q){return !q.real;}).length; if(currentScreen()==="home") homeFakesNote(_todayFakeCount); }
-  }).catch(function(){});
-}
-// streak headline + 7-day strip (mint-outline = played, dashed-primary = today)
-function renderHomeStreak(){
-  var host=$("homeStreak"); if(!host) return;
-  var d7=last7();
-  var cells=d7.map(function(x){
-    var cls=x.today?"today":(x.played?"hit":"miss");
-    var lblCls=x.today?"today":(x.played?"hit":"");
-    return '<div class="d7cell"><div class="d7pill '+cls+'">'+(x.played?CHECK_SVG:"")+'</div>'+
-      '<span class="d7lbl '+lblCls+'">'+weekdayShort(x.date)+'</span></div>';
-  }).join("");
-  var sub="";
-  if(ST.streak>0 && (ST.best_streak||0)<=ST.streak) sub='<br><span class="best-yet">your best yet</span>';
-  else if(ST.streak>0 && ST.best_streak>0) sub='<br><span class="best-num">best: '+ST.best_streak+' day'+(ST.best_streak>1?'s':'')+'</span>';
-  // streak-ladder name (commitment axis), by best streak — the skill rank lives on the Rank tile (two axes, B)
-  var lad=streakRank(Math.max(ST.streak||0, ST.best_streak||0));
-  var ladName = (ST.streak>0 && lad) ? ' <span class="streak-ladder">· '+esc(lad.n)+'</span>' : '';
-  var head = ST.streak>0
-    ? '<div class="streak-head"><span class="fire">🔥</span><span class="streak-num">'+ST.streak+'</span>'+ladName+'<span class="streak-lbl">day streak'+sub+'</span></div>'
-    : '<div class="streak-head"><span class="fire">🔥</span><span class="streak-num zero">0</span><span class="streak-lbl">Play today to start your streak</span></div>';
-  host.innerHTML=head+'<div class="d7strip">'+cells+'</div>';
-  activate(host, function(){ openStats("overview"); }, "Your stats — streak, accuracy, history");   // streak hero → Stats page
-}
-function homeStatChip(label,value,which,onTap){
-  var b=el("button","stat-chip");
-  b.innerHTML='<div class="sc-lbl">'+esc(label)+'</div><div class="sc-val">'+esc(value)+'</div>';
-  b.setAttribute("aria-label", label+" — tap for detail");
-  b.onclick=onTap || function(){ openStats(which); };
-  return b;
-}
-// hero slot: in-crew standing card, or the solo / new-player crew nudge
-function renderHomeHero(){
-  var host=$("homeHero"); var cc=curCrew();
-  if(!cc || !crewEndpoint()){
-    // solo nudge — no standalone Mags here (header Mags + fakes-note Mags already carry the mascot; one fewer bird)
-    host.className="hero-solo"; host.removeAttribute("role"); host.removeAttribute("tabindex"); host.onclick=null; host.onkeydown=null;
-    host.innerHTML='<div class="hc-eyebrow">CREWS</div>'+
-      '<div class="hs-title">Play with friends</div><div class="hs-sub">Start a crew — compare scores on a shared daily board. No account needed.</div>'+
-      '<button class="hs-btn" id="homeStartCrew">+ Create or join a crew</button>';
-    var b=$("homeStartCrew"); if(b) b.onclick=openCrew;
-    return;
-  }
-  host.className="hero-crew";
-  host.innerHTML='<div class="hc-eyebrow">CREWS</div>'+
-    '<div class="hc-row">'+
-      '<button class="hc-name" id="homeCrewName"><span>'+esc(crewLabel(cc))+'</span>'+CHEV_DOWN+'</button>'+
-      '<span class="hc-week">this week</span></div>'+
-    '<div class="hc-rank"><span class="hc-rank-n" id="hcRankN">·</span><span class="hc-rank-of" id="hcRankOf">of —</span></div>'+
-    '<div class="hc-gap" id="hcGap">loading your standing…</div>'+
-    '<div class="hc-foot"><div class="hc-avs" id="hcAvs"></div><span class="hc-see">See the board ›</span></div>';
-  activate(host, openCrew, "Open crew board");
-  var nm=$("homeCrewName"); if(nm) nm.onclick=function(e){ if(e&&e.stopPropagation)e.stopPropagation(); openCrewSwitcher(); };  // crew-name → switcher sheet
-  fetchCrew(todayStr(), cc.code).then(function(c){
-    if(c&&c.name){ setLocalCrewName(cc.code,c.name); var n2=$("homeCrewName"); if(n2){ var sp=n2.querySelector("span"); if(sp) sp.textContent=crewLabel(curCrew()); } }
-    // weekly (season) standing — merge this device's own week total so it shows before the server registers it
-    var myW=myWeekTotal();
-    var week=((c&&c.week)||[]).map(function(s){return {sid:s.sid,name:s.name,total:s.total,you:s.sid===ST.sid};});
-    var meW=week.filter(function(s){return s.you;})[0];
-    if(meW){ if(myW.total>meW.total) meW.total=myW.total; } else if(myW.days){ week.push({sid:ST.sid,name:ST.displayName||"you",total:myW.total,you:true}); }
-    week.sort(function(a,b){return b.total-a.total;});
-    var gapEl=$("hcGap"), rnEl=$("hcRankN"), roEl=$("hcRankOf"), avEl=$("hcAvs");
-    if(!gapEl) return;   // navigated away before the fetch resolved
-    if(!week.length){ rnEl.textContent="–"; roEl.textContent=""; gapEl.textContent="No scores yet this week — play to lead "+crewLabel(cc); return; }
-    var yi=0; for(var i=0;i<week.length;i++){ if(week[i].you){ yi=i; break; } }
-    rnEl.textContent=(yi+1); roEl.textContent="of "+week.length;
-    if(yi>0){ var need=week[yi-1].total-week[yi].total; gapEl.textContent=(need>0?(need+" point"+(need===1?"":"s")+" behind "+week[yi-1].name+" →"):("tied with "+week[yi-1].name)); }
-    else { gapEl.textContent="leading the board →"; }
-    avEl.innerHTML=week.slice(0,5).map(function(s){ var col=s.you?"var(--primary)":avColor(s.name);
-      return '<span class="av" style="border-color:'+col+';color:'+col+'">'+esc(s.you?"Y":avInitial(s.name))+'</span>'; }).join("");
-  });
-}
-function renderHome(){
-  $("editiontag").textContent=homeDateLabel();
-  $("sub").textContent="";
-  $("pastbar").classList.add("hide"); $("pastbar").innerHTML="";
-  renderHomeHero();
-  homeFakesNote(_todayFakeCount); loadTodayFakeCount();
-  renderHomeStreak();
-  renderCoach();
-  // two competitive axes (B): streak ladder lives on the streak hero; the Rank tile shows the SKILL rank → Ranks page.
-  var sg=$("homeStats"); sg.innerHTML="";
-  var rk=rankInfo();
-  sg.appendChild(homeStatChip("Accuracy", ST.judged?accPct()+"%":"—", "accuracy"));            // → Stats page
-  sg.appendChild(homeStatChip("Rank", rk.locked?"—":rk.tier, "standing", openRanks));           // skill rank → Ranks page
-  sg.appendChild(homeStatChip("Played", String(gamesPlayed()), "days"));                         // → Stats page
-  // footer links: Past editions · Save progress (account link only when Supabase is configured)
-  var ha=$("homeAccount"), sep=$("homeLinkSep");
-  if(ha){ if(SB){ ha.classList.remove("hide"); if(sep)sep.classList.remove("hide");
-      ha.textContent=ACCOUNT?("Synced"+(ACCOUNT.email?(" · "+ACCOUNT.email):"")):"Save progress"; ha.onclick=openCrew; }
-    else { ha.classList.add("hide"); if(sep)sep.classList.add("hide"); } }
-  show("home");
-}
-function goHome(){ JUST_JOINED=null; if(qsDay()){ try{ history.replaceState(null,"",location.pathname); }catch(e){} } renderHome(); logEvent("home_view"); }  // strip a lingering ?d= so Home survives a reload
-// After Dark 18+ gate — styled bottom sheet (replaces window.confirm); keeps the ST.nsfw_ok flag + nsfw_optin event
-function ensureAgeOk(onOk){
-  if(ST.nsfw_ok){ onOk(); return; }
-  var sh=openSheet(
-    '<div class="ag-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>'+
-    '<div class="ag-title">Off the Record is 18+</div>'+
-    '<div class="ag-body">Spicier quotes, same game. Confirm you’re over 18 to play this lane.</div>'+
-    '<button class="ag-confirm" id="agOk">I’m 18 or older</button>'+
-    '<button class="ag-cancel" id="agNo">Not now</button>');
-  $("agOk").onclick=function(){ ST.nsfw_ok=true; save(ST); logEvent("nsfw_optin"); closeSheet(); onOk(); };
-  $("agNo").onclick=closeSheet;
-}
-function playLane(lane){
-  if(lane==="nsfw" && !ST.nsfw_ok){ ensureAgeOk(function(){ playLane("nsfw"); }); return; }
-  if(ST.lane!==lane){ ST.lane=lane; save(ST); logEvent("lane_switch",{cat:lane}); }
-  loadAndRoute(todayStr());
-}
-
-/* ---------- STAT DETAIL VIEWS (every home tile → its own detail) ---------- */
-function lastNplayed(n){ var played={}; (ST.log||[]).forEach(function(e){ if(e.ev==="complete"&&e.ts){ try{played[todayStr(new Date(e.ts))]=1;}catch(x){} } });
-  var t=todayStr(), out=[]; for(var i=n-1;i>=0;i--){ var d=addDaysStr(t,-i); out.push({date:d,played:!!played[d],today:i===0}); } return out; }
-function laneName(l){ return laneLabel(l).replace(/^\S+\s/,""); }
-
-/* ---------- STATS page (E1) + RANKS page (E2) ---------- */
-function rangeResults(range){ var all=allResults(); if(range==="all") return all; var t=todayStr();
-  if(range==="today") return all.filter(function(r){return r.date===t;});
-  var wk=weekKey(t); return all.filter(function(r){return r.date&&weekKey(r.date)===wk;}); }
-function rangeStats(range){ var rs=rangeResults(range), judged=0, correct=0, locks=0, lr=0, byLane={};
-  rs.forEach(function(r){ judged+=r.n||0; correct+=r.score||0;
-    if(r.lockCorrect===true||r.lockCorrect===false){ locks++; if(r.lockCorrect)lr++; }
-    var ln=r.lane||"general", b=byLane[ln]||(byLane[ln]={s:0,n:0}); b.s+=r.score||0; b.n+=r.n||0; });
-  return {sets:rs.length, judged:judged, correct:correct, acc:judged?Math.round(100*correct/judged):0,
-    locks:locks, lockPct:locks?Math.round(100*lr/locks):0, byLane:byLane, results:rs}; }
-var STATS_RANGE="all";
-function openStats(){ PAGE_BACK.push(currentScreen()); renderStats(); show("stats"); logEvent("stat_detail",{which:"stats"}); }
-function renderStats(){
-  var host=$("screen-stats"), s=rangeStats(STATS_RANGE);
-  var lad=streakRank(Math.max(ST.streak||0, ST.best_streak||0));
-  var recent=s.results.slice(0,10).reverse();   // accuracy over time, oldest→newest
-  var sparks=recent.length ? recent.map(function(r){ var p=r.n?Math.round(100*r.score/r.n):0;
-      return '<div class="sp-col" title="'+esc(prettyDate(r.date))+': '+r.score+'/'+r.n+'"><div class="sp-bar" style="height:'+Math.max(6,p)+'%"></div></div>'; }).join("")
-    : '<div class="sp-empty">No sets in this range yet — play one to start the chart.</div>';
-  var laneBars=availableLanes().map(function(ln){ var b=s.byLane[ln], p=(b&&b.n)?Math.round(100*b.s/b.n):0;
-    return '<div class="st-bar"><span class="bl">'+esc(laneName(ln))+'</span><div class="bw"><div class="bf" style="width:'+(b&&b.n?p:0)+'%;background:'+laneHue(ln)+'"></div></div><span class="bv">'+(b&&b.n?p+"%":"—")+'</span></div>'; }).join("");
-  var rlabel=STATS_RANGE==="all"?"all-time":(STATS_RANGE==="today"?"today":"this week");
-  host.innerHTML=
-    '<div class="scr-head"><button class="back-btn" id="statsBack" aria-label="Back">'+BACK_ARROW+'</button><div class="scr-title">Your stats</div>'+
-      '<button class="hdr-mags" id="statsMags" aria-label="Meet Mags">'+magpie("happy",26,"mags-flip")+'</button></div>'+
-    '<div class="seg-toggle stats-range">'+["today","week","all"].map(function(r){ return '<button data-r="'+r+'" class="'+(STATS_RANGE===r?"on":"")+'">'+(r==="all"?"All-time":(r==="week"?"Week":"Today"))+'</button>'; }).join("")+'</div>'+
-    '<div class="st-summary">'+
-      '<div class="st-cell"><div class="v">'+s.sets+'</div><div class="k">sets · '+rlabel+'</div></div>'+
-      '<div class="st-cell"><div class="v">'+(s.judged?s.acc+"%":"—")+'</div><div class="k">accuracy</div></div>'+
-      '<div class="st-cell"><div class="v">'+(s.locks?s.lockPct+"%":"—")+'</div><div class="k">lock record</div></div></div>'+
-    '<div class="mag-card"><div class="mc-h">Your journey</div>'+
-      '<div class="st-jrow"><span>First played</span><b>'+(ST.first_seen?esc(prettyDate(ST.first_seen)):"—")+'</b></div>'+
-      '<div class="st-jrow"><span>Days played</span><b>'+gamesPlayed()+'</b></div>'+
-      '<div class="st-jrow"><span>Current streak</span><b>🔥 '+(ST.streak||0)+(lad&&(ST.streak||ST.best_streak)?(" · "+esc(lad.n)):"")+'</b></div>'+
-      '<div class="st-jrow"><span>Best streak</span><b>'+(ST.best_streak||0)+' day'+((ST.best_streak||0)===1?"":"s")+'</b></div></div>'+
-    '<div class="mag-card"><div class="mc-h">Accuracy over time</div><div class="spark">'+sparks+'</div></div>'+
-    '<div class="mag-card"><div class="mc-h">By category ('+rlabel+')</div><div class="st-bars">'+laneBars+'</div></div>'+
-    '<button class="st-link" id="statsRanks">See how ranks work →</button>'+
-    '<div class="mag-card st-cohort"><div class="mc-h">How you compare</div>'+
-      '<div class="st-blurb">See how you stack up against players who started the same week as you.</div>'+
-      '<div class="st-cohort-ph">📊 Cohort comparison — coming soon</div></div>';
-  // v2 cohort — built later by the pipeline/endpoint work, not now (motivating framing only).
-  // TODO v2 cohort: GET {AGG_ENDPOINT}?cohort=<weekKey(first_seen)>&me=<sid>
-  //   -> { week_key, n_players, avg_days, avg_sets, my_days, my_sets, my_days_pct }  (render avg vs you; no PII)
-  $("statsBack").onclick=pageBack; $("statsMags").onclick=openMagpie; $("statsRanks").onclick=openRanks;
-  host.querySelectorAll(".stats-range button").forEach(function(b){ b.onclick=function(){ STATS_RANGE=b.getAttribute("data-r"); renderStats(); }; });
-}
-function openRanks(){ PAGE_BACK.push(currentScreen()); renderRanks(); show("ranks"); logEvent("ranks_view"); }
-function renderRanks(){
-  var host=$("screen-ranks"), rk=rankInfo();
-  var ci=-1; if(!rk.locked){ for(var i=0;i<TIERS.length;i++){ if(TIERS[i].n===rk.tier) ci=i; } }
-  var skillRows=TIERS.map(function(tt,i){ var cur=(i===ci), done=(ci>=0&&i<ci);
-    return '<div class="ld-row'+(cur?" cur":"")+'"><span class="ld-badge skill'+((done||cur)?" on":"")+'">'+(done?"✓":(i+1))+'</span>'+
-      '<span class="ld-name">'+esc(tt.n)+(cur?" · you":"")+'</span><span class="ld-thr">'+(tt.a?(Math.round(tt.a*100)+"%+"):"start")+'</span></div>'; }).join("");
-  var bestStreak=Math.max(ST.streak||0, ST.best_streak||0), streakCur=streakRank(bestStreak);
-  var streakRows=STREAK_TIERS.map(function(tt,i){ var hi=(i+1<STREAK_TIERS.length)?(STREAK_TIERS[i+1].lo-1):null, cur=!!(streakCur&&streakCur.n===tt.n), done=(bestStreak>=tt.lo&&!cur);
-    return '<div class="ld-row'+(cur?" cur":"")+'"><span class="ld-badge streak'+((done||cur)?" on":"")+'">🔥</span>'+
-      '<span class="ld-name">'+esc(tt.n)+(cur?" · you":"")+'</span><span class="ld-thr">'+tt.lo+(hi?("–"+hi):"+")+' days</span></div>'; }).join("");
-  host.innerHTML=
-    '<div class="scr-head"><button class="back-btn" id="ranksBack" aria-label="Back">'+BACK_ARROW+'</button><div class="scr-title">Ranks</div>'+
-      '<button class="hdr-mags" id="ranksMags" aria-label="Meet Mags">'+magpie("happy",26,"mags-flip")+'</button></div>'+
-    '<div class="rk-intro">Two ways to climb: <b>skill</b> rises with your accuracy; <b>streak</b> rises the more days you show up.</div>'+
-    '<div class="mag-card"><div class="mc-h">Skill rank — accuracy</div>'+
-      '<div class="rk-cur">'+(rk.locked?("Play "+rk.need+" more set"+(rk.need===1?"":"s")+" to earn your first rank."):("You’re <b>"+esc(rk.tier)+"</b>"+(rk.next?(" — raise accuracy to reach <b>"+esc(rk.next)+"</b>."):" — top rank, keep it sharp.")))+'</div>'+
-      '<div class="ld">'+skillRows+'</div></div>'+
-    '<div class="mag-card"><div class="mc-h">Streak rank — commitment</div>'+
-      '<div class="rk-cur">'+(streakCur?("You’re <b>"+esc(streakCur.n)+"</b> — play more days in a row to climb."):"Not lit yet — play today to spark your streak.")+'</div>'+
-      '<div class="ld">'+streakRows+'</div></div>';
-  $("ranksBack").onclick=pageBack; $("ranksMags").onclick=openMagpie;
-}
-/* ---------- crew switcher bottom sheet ---------- */
-function openCrewSwitcher(){
-  if(!inCrew()){ openCrew(); return; }
-  var rows=(ST.crews||[]).map(function(c){ var active=c.code===(curCrew()||{}).code;
-    return '<button class="sw-row'+(active?' active':'')+'" data-code="'+esc(c.code)+'">'+
-      '<div><div class="nm">'+esc(crewLabel(c))+'</div><div class="sub">tap to view standings</div></div>'+
-      '<div style="display:flex;align-items:center;gap:12px"><span class="code">'+esc(c.code)+'</span>'+(active?'<span class="chk">'+CHECK_SVG+'</span>':'')+'</div></button>'; }).join("");
-  var sh=openSheet('<div class="sheet-title">Your crews</div>'+rows+
-    '<button class="sw-add" id="swAdd">+ Create or join a crew</button>'+
-    '<button class="sheet-close" id="swClose">Close</button>');
-  sh.querySelectorAll(".sw-row").forEach(function(b){ b.onclick=function(){ setActiveCrew(b.getAttribute("data-code")); closeSheet(); JUST_JOINED=null; openCrew(); }; });
-  $("swAdd").onclick=function(){ closeSheet(); joinAnotherCrew(); };
-  $("swClose").onclick=closeSheet;
-}
-
-/* ---------- PLAY (bright redesign — one card at a time, swipe + tap + lock) ---------- */
-function curQ(){ return DAY.quotes[PLAY_IDX]; }
-function answeredCount(){ return DAY.quotes.filter(function(q){return ANS[q.id];}).length; }
-function firstUnanswered(){ for(var i=0;i<DAY.quotes.length;i++){ if(!ANS[DAY.quotes[i].id]) return i; } return 0; }
-function clamp01(v){ return Math.max(0,Math.min(1,v)); }
-function playNext(){ if(PLAY_IDX<DAY.quotes.length-1){ PLAY_IDX++; paintPlay(); window.scrollTo(0,0); } }
-function playJump(i){ PLAY_IDX=i; paintPlay(); window.scrollTo(0,0); }
-var LOCK_ICON='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
-var X_ICON='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="3.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>';
-var RF_CHECK='<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6"/></svg>';
-
-function renderPlay(){ paintPlay(); show("play"); }
-function paintPlay(){
-  var host=$("screen-play"), q=curQ(), lane=DAY._lane||"general", hue=laneHue(lane), n=DAY.quotes.length;
-  host.innerHTML =
-    '<div class="play-head">'+
-      '<button class="back-btn" id="playBack" aria-label="Quit"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>'+
-      '<div class="pbar" id="playProgress"></div>'+
-      '<div class="pstep" id="playStep">'+(PLAY_IDX+1)+'/'+n+'</div>'+
-    '</div>'+
-    '<div class="play-cat">'+   // category always visible in the top bar (J) + small brand Mags (A)
-      '<span class="qchip" style="color:'+hue+';border-color:'+hue+'"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="'+hue+'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+laneIcon(lane)+'</svg>'+esc(laneName(lane))+'</span>'+
-      '<button class="hdr-mags" id="playMags" aria-label="Meet Mags">'+magpie("happy",24,"mags-flip")+'</button></div>'+
-    '<div class="qcard" id="playCard">'+
-      '<div class="qtint real" id="tintReal"></div><div class="qtint fake" id="tintFake"></div>'+
-      '<div class="qcard-top"><span class="qdate">'+esc(prettyDate(DAY.date))+'</span></div>'+
-      '<div class="qtext">“'+esc(q.text)+'”</div>'+
-      '<div class="qspk"><span class="qav" style="color:'+hue+';border-color:'+hue+'">'+esc(avInitial(q.speaker))+'</span>'+
-        '<div><div class="nm">'+esc(q.speaker)+'</div>'+(q.context?('<div class="rl">'+esc(trunc(q.context,42))+'</div>'):'')+'</div></div>'+
-    '</div>'+
-    '<div class="swipe-hint">Swipe the card — or tap below</div>'+
-    '<div class="rf-row">'+
-      '<button class="rfbtn real" id="btnReal" data-v="real"><span class="ic" id="popReal">'+RF_CHECK+'</span><span class="lbl">Real</span></button>'+
-      '<button class="rfbtn fake" id="btnFake" data-v="fake"><span class="ic" id="popFake">'+X_ICON+'</span><span class="lbl">Fake</span></button>'+
-    '</div>'+
-    '<button class="lockbtn2" id="btnLock"><span class="ic">'+LOCK_ICON+'</span><span class="lbl" id="lockLbl">Lock it in</span></button>'+
-    '<div class="lock-sub">Lock your one most-confident call to bet it all.</div>'+
-    '<div class="cta-wrap"><button class="cta-btn" id="playCTA"></button></div>';
-
-  var card=$("playCard"), tintR=$("tintReal"), tintF=$("tintFake");
-  var btnR=$("btnReal"), btnF=$("btnFake"), iconR=$("popReal"), iconF=$("popFake");
-  var lockBtn=$("btnLock"), cta=$("playCTA"), prog=$("playProgress");
-  var BASE_SHADOW='0 14px 34px -20px rgba(40,50,90,.5)';
-
-  function refreshProgress(){
-    var html="";
-    DAY.quotes.forEach(function(qq,i){
-      var cls="pseg"; if(LOCK===qq.id)cls+=" lck"; else if(i===PLAY_IDX)cls+=" cur"; else if(ANS[qq.id])cls+=" ans";
-      html+='<button class="'+cls+'" data-i="'+i+'"><span class="bar"></span>'+
-        (LOCK===qq.id?'<span class="lockico">'+LOCK_ICON.replace(/width="16" height="16"/,'width="12" height="12"')+'</span>':'')+'</button>';
-    });
-    prog.innerHTML=html;
-    prog.querySelectorAll(".pseg").forEach(function(b){ b.onclick=function(){ playJump(+b.getAttribute("data-i")); }; });
-  }
-  function refreshRF(){ var a=ANS[q.id];
-    btnR.className="rfbtn real"+(a==="real"?" sel":"");
-    btnF.className="rfbtn fake"+(a==="fake"?" sel":""); }
-  function refreshLock(){ var isLocked=LOCK===q.id, ready=(answeredCount()===DAY.quotes.length && LOCK===null);
-    lockBtn.className="lockbtn2"+(isLocked?" on":(ready?" ready":""));
-    $("lockLbl").textContent=isLocked?"Locked in":"Lock it in"; }
-  function refreshCTA(){
-    var curAns=ANS[q.id], ac=answeredCount(), all=ac===DAY.quotes.length, last=PLAY_IDX>=DAY.quotes.length-1;
-    cta.className="cta-btn"; cta.onclick=null;
-    if(!curAns){ cta.textContent="Real or fake?"; cta.classList.add("disabled"); }
-    else if(!last){ cta.textContent="Next quote →"; cta.classList.add("next"); cta.onclick=playNext; }
-    else if(!all){ cta.textContent="Answer all six ("+ac+"/"+DAY.quotes.length+")"; cta.classList.add("next"); cta.onclick=function(){ playJump(firstUnanswered()); }; }
-    else if(LOCK===null){ cta.textContent="Lock your top pick first"; cta.classList.add("lockfirst"); }
-    else { cta.textContent="See the results"; cta.onclick=submit; }
-  }
-  function popIcon(v){ var ic=(v==="real")?iconR:iconF; if(!ic)return; ic.classList.remove("pop"); void ic.offsetWidth; ic.classList.add("pop"); setTimeout(function(){ if(ic)ic.classList.remove("pop"); },340); }
-  function pulseLock(){ lockBtn.classList.remove("pulse"); void lockBtn.offsetWidth; lockBtn.classList.add("pulse"); setTimeout(function(){ if(lockBtn)lockBtn.classList.remove("pulse"); },440); }
-  function setAns(v){ ANS[q.id]=v; refreshRF(); refreshProgress(); refreshCTA(); }
-  function tapAnswer(v){ setAns(v); popIcon(v); }
-  function swipeAnswer(v){ var wasEmpty=!ANS[q.id], last=PLAY_IDX>=DAY.quotes.length-1; setAns(v); popIcon(v); if(wasEmpty && !last){ setTimeout(playNext,230); } }
-  function toggleLock(){ if(LOCK===q.id){ LOCK=null; } else { LOCK=q.id; } refreshLock(); refreshProgress(); refreshCTA(); if(LOCK===q.id) pulseLock(); }
-
-  $("playBack").onclick=goHome;
-  var pm=$("playMags"); if(pm) pm.onclick=openMagpie;
-  btnR.onclick=function(){ tapAnswer("real"); };
-  btnF.onclick=function(){ tapAnswer("fake"); };
-  lockBtn.onclick=toggleLock;
-
-  // swipe: right=Real, left=Fake, up=Lock (80px threshold; live tint + glow; auto-advance on a fresh swipe)
-  var ds=null, dx=0, dy=0;
-  card.onpointerdown=function(e){ ds={x:e.clientX,y:e.clientY}; try{ card.setPointerCapture(e.pointerId); }catch(_){} card.style.transition="none"; };
-  card.onpointermove=function(e){ if(!ds)return; dx=e.clientX-ds.x; dy=e.clientY-ds.y;
-    card.style.transform="translate("+dx+"px,"+dy+"px) rotate("+(dx*0.035)+"deg)";
-    tintR.style.opacity=clamp01(dx/120)*0.16; tintF.style.opacity=clamp01(-dx/120)*0.16;
-    var sh=BASE_SHADOW;
-    if(dx>40) sh="0 0 0 2px var(--mint),0 16px 30px -16px var(--mint)";
-    else if(dx<-40) sh="0 0 0 2px var(--fake),0 16px 30px -16px var(--fake)";
-    else if(dy<-40) sh="0 0 0 2px var(--amber),0 16px 30px -16px var(--amber)";
-    card.style.boxShadow=sh; };
-  card.onpointerup=card.onpointercancel=function(e){ if(!ds)return; var ax=Math.abs(dx), ay=Math.abs(dy), TH=80;
-    card.style.transition="transform .3s cubic-bezier(.34,1.56,.64,1)"; card.style.transform=""; tintR.style.opacity=0; tintF.style.opacity=0; card.style.boxShadow=BASE_SHADOW;
-    var act=null; if(dy<-TH && ay>ax) act="lock"; else if(dx>TH) act="real"; else if(dx<-TH) act="fake";
-    ds=null; dx=0; dy=0;
-    if(act==="lock") toggleLock(); else if(act) swipeAnswer(act); };
-
-  refreshProgress(); refreshRF(); refreshLock(); refreshCTA();
-}
-
-/* ---------- SUBMIT / SCORING ---------- */
-function submit(){
-  var quotes=DAY.quotes, n=quotes.length, correct=0, lockCorrect=null, gotme=[];
-  var grid=[], perq=[];
-  quotes.forEach(function(q,i){
-    var guess=ANS[q.id]; var truth=q.real?"real":"fake"; var right=(guess===truth);
-    if(right)correct++;
-    grid.push(right?"✅":"❌");
-    if(!q.real && guess==="real") gotme.push(i+1);          // a fake the player believed
-    if(LOCK===q.id) lockCorrect=right;
-    perq.push({i:i+1,id:q.id,guess:guess,truth:truth,right:right,locked:LOCK===q.id});
-  });
-
-  // equity: STREAK tracks consecutive real CALENDAR days you showed up (any edition counts),
-  // so replaying old editions can never corrupt or inflate it. Rating/accuracy count for any set.
-  var date=DAY.date, realToday=todayStr();
-  refreshFreeze(realToday);
-  var prevReal=ST.last_realday||ST.last_played||null;   // migrate the legacy field
-  var streakBumped=(prevReal!==realToday);              // this play advanced today's streak → animate the bump
-  if(prevReal!==realToday){
-    if(!prevReal){ ST.streak=1; }
-    else {
-      var gap=daysBetween(prevReal,realToday);
-      if(gap===1){ ST.streak+=1; }
-      else if(gap>1){ if(ST.freezes_left>0){ST.freezes_left-=1;ST.streak+=1;ST._frozen=true;} else {ST.streak=1;} }
-      // gap<=0 can't happen: the real calendar day never precedes a prior real day
-    }
-    ST.last_realday=realToday; ST.last_played=realToday;
-  }
-  ST.best_streak=Math.max(ST.best_streak||0,ST.streak);
-
-  // rating: simple, transparent. +score above/below 3/6 baseline, lock swings double.
-  var delta = (correct-3)*8 + (lockCorrect===true?12:(lockCorrect===false?-12:0));
-  ST.rating = Math.max(100, Math.round(ST.rating + delta));
-  ST.judged += n; ST.correct += correct;
-  if(LOCK){ST.locks+=1; if(lockCorrect)ST.locks_correct+=1;}
-
-  var lane=(DAY&&DAY._lane)||"general";
-  var result={date:date, edition:DAY.edition, lane:lane, score:correct, n:n, grid:grid, perq:perq,
-    gotme:gotme, lockCorrect:lockCorrect, lockIdx:(function(){for(var i=0;i<quotes.length;i++)if(quotes[i].id===LOCK)return i+1;return null;})(),
-    streak:ST.streak, rating:ST.rating, frozen:!!ST._frozen};
-  ST.days[dayKey(lane,date)]={done:true,result:result};
-  delete ST._frozen; save(ST);
-  logEvent("complete",{score:correct,n:n,streak:ST.streak,rating:ST.rating,lock:lockCorrect,gotme:gotme,
-    archive:(date!==realToday),returning:(ST.judged>n),crew:((curCrew()||{}).code||""),
-    crews:(ST.crews||[]).map(function(c){return c.code;}).join(","),   // self-heals membership for EVERY crew you're in
-    name:ST.displayName||"",cat:lane});
-  saveProfile();   // H-A: push the updated streak/stats up to the account (no-op when signed out)
-  renderReveal(result,true,streakBumped);
-}
-
-/* ---------- REVEAL (bright redesign) ---------- */
-function trunc(t,nn){ t=String(t); return t.length>nn ? t.slice(0,nn).replace(/[\s,.;:]+$/,"")+"…" : t; }
-// spoiler-free share text: score, streak, 🟩/⬜ grid (right/miss — never which were fake), a tap-to-play link
-function shareGrid(res){
-  var grid=res.perq.map(function(p){ return p.right?"🟩":"⬜"; }).join("");
-  var link=(res.date===todayStr())?baseURL():editionLink(res.date);
-  return "Said It? — "+res.score+"/"+res.n+"\n🔥 "+res.streak+"-day streak\n"+grid+"\n"+link;
-}
-function fireConfetti(){
-  var host=el("div","rv-confetti"); var cols=["var(--primary)","#16B981","#FBA94C","#FF8FAB","#9775FA","#4DABF7"], html="";
-  for(var i=0;i<42;i++){ var left=Math.round(Math.random()*100), bg=cols[i%cols.length], w=7+(i%3)*2, h=9+(i%4)*2, rad=(i%2)?2:7,
-      dur=(1.8+(i%5)*0.28).toFixed(2), delay=((i%9)*0.12).toFixed(2);
-    html+='<i style="left:'+left+'%;width:'+w+'px;height:'+h+'px;background:'+bg+';border-radius:'+rad+'px;animation-duration:'+dur+'s;animation-delay:'+delay+'s"></i>'; }
-  host.innerHTML=html; document.body.appendChild(host);
-  setTimeout(function(){ if(host.parentNode) host.parentNode.removeChild(host); },4600);
-}
-// "Bait the group chat": send the fake that got you (or the set's sneakiest fake) as a SPOILER-FREE challenge
-function baitGroupChat(res, btn){
-  var idx = (res.gotme && res.gotme.length) ? (res.gotme[0]-1) : DAY.quotes.findIndex(function(q){return q.id===DAY.trickiest_fake;});
-  if(idx<0) idx = DAY.quotes.findIndex(function(q){return !q.real;});
-  if(idx<0) idx = 0;
-  var q=DAY.quotes[idx], cc=curCrew();
-  var lines=["Said It?"+(cc?(" — "+crewLabel(cc)):""), "“"+q.text+"”", "— "+q.speaker+(q.context?(" · "+q.context):""),
-    "Real or fake? Can you spot it?", baseURL()];
-  var txt=lines.join("\n");
-  function ok(){ if(btn){ btn.textContent=cc?("Sent to "+crewLabel(cc)+" ✓"):"Sent ✓"; btn.className="sent"; } logEvent("quote_share",{cat:(DAY&&DAY._lane)||"general", kind:"bait"}); }
-  if(navigator.share){ navigator.share({text:txt}).then(ok,function(err){ if(err&&err.name==="AbortError")return; clip(txt,ok); }); return; }
-  clip(txt,ok);
-}
-function capFor(s,n){
-  var miss=n-s;
-  if(miss===0) return "Nothing fooled you today.";
-  if(miss===1) return "So close — one slipped past you.";
-  if(miss===2) return "Two slipped past you.";
-  return "I had a good day — get it back tomorrow.";
-}
-function renderReveal(res, fresh, bumped){
-  var isToday = DAY.date===todayStr(), clean=(res.score===res.n);
-  var mood = clean ? "delighted" : "oops";
-
-  // fake-that-got-you / clean-sweep card
-  var topCard="";
-  if(res.gotme && res.gotme.length){
-    var fq=DAY.quotes[res.gotme[0]-1];
-    topCard='<div class="rv-gotme"><div class="k">The fake that got you</div>'+
-      '<div class="q">“'+esc(fq.text)+'”</div>'+
-      '<div class="m">'+esc(fq.speaker)+' — I made this one up. You called it real.</div></div>';
-  } else {
-    // one magpie per screen (G): the rv-head reaction bird is it — clean card uses a check, no second bird
-    topCard='<div class="rv-clean"><span class="rv-clean-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1C6B4F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6"/></svg></span><span>A clean sweep — you didn’t let me fool you once.</span></div>';
-  }
-
-  // truth rows — F: truth = mint/coral stamp (left); your result = worded blue/amber verdict chip (right). Uniform citation footprint.
-  var rowsHtml=DAY.quotes.map(function(q,i){
-    var pq=res.perq[i], real=q.real, right=pq.right, guess=pq.guess, skipped=!guess;
-    var cite = real
-      ? (q.source ? ('<a class="tr-cite" href="'+esc(q.source.url)+'" target="_blank" rel="noopener">Source ›</a>') : '<span class="tr-cite muted">On the record</span>')
-      : ('<div class="tr-cite fake"><b>I made this one up.</b>'+(q.fake_note?(' '+esc(q.fake_note)):'')+'</div>');
-    var verdict = skipped
-      ? '<span class="vchip skip">– Skipped</span>'
-      : (right ? '<span class="vchip right">'+CHECK_SVG+' Nailed it</span>'
-               : '<span class="vchip wrong">'+X_ICON+' Got me</span>');
-    return '<div class="tr"><div class="tr-row">'+
-      '<div class="tr-stamp"><span class="stamp '+(real?"real":"fake")+'">'+(real?"REAL":"FAKE")+'</span></div>'+
-      '<div class="tr-body"><div class="tr-q">“'+esc(trunc(q.text,72))+'”</div>'+
-        '<div class="tr-meta">'+esc(q.speaker)+(q.context?(' · '+esc(trunc(q.context,30))):'')+'</div>'+cite+'</div>'+
-      '<div class="tr-verdict">'+verdict+'</div>'+
-    '</div></div>';
-  }).join("");
-
-  // share-card pips
-  var pips=res.perq.map(function(p){ return '<div class="sc-pip'+(p.right?" right":"")+'">'+(p.right?CHECK_SVG:"")+'</div>'; }).join("");
-
-  var host=$("screen-reveal");
-  host.innerHTML =
-    '<div class="rv-head">'+magpie(mood,68)+'<div class="rv-score"><span class="n">'+res.score+'</span><span class="of">/ '+res.n+'</span></div></div>'+
-    '<div class="rv-cap">'+esc(capFor(res.score,res.n))+(fresh?"":' <span class="replayed">· already played</span>')+'</div>'+
-    '<div class="rv-streak"><span class="fire">🔥</span><span class="num" id="rvStreakNum">'+res.streak+'</span><span>day streak — keep it rolling</span></div>'+
-    (res.frozen?'<div class="rv-freeze">🛡️ Streak-freeze used — your streak survived a missed day. One freeze per week.</div>':"")+
-    topCard+
-    '<div class="rv-truth-label">The truth</div><div class="rv-truth" id="rvTruth">'+rowsHtml+'</div>'+
-    // share card
-    '<div class="share-card"><div class="sc-row"><div class="sc-brand"><span class="wm">Said It?</span></div>'+
-      '<span class="sc-date">'+esc(prettyDate(res.date))+'</span></div>'+
-      '<div class="sc-score"><span class="big">'+res.score+'/'+res.n+'</span><span class="st">🔥 '+res.streak+'-day streak</span></div>'+
-      '<div class="sc-pips">'+pips+'</div>'+
-      '<div class="sc-legend"><span class="lg"><span class="sw caught"></span> caught it</span>'+
-        '<span class="lg"><span class="sw fooled"></span> fooled</span><span class="url">saidit.app</span></div></div>'+
-    // actions
-    '<div class="rv-actions"><button class="copy" id="copyBtn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span id="copyLbl">Copy result</span></button>'+
-      '<button class="board" id="revealCrewBtn">Crew board →</button></div>'+
-    '<div class="rv-preview"><div class="k">Copies to your group chat</div><div class="t" id="tokenBox"></div></div>'+
-    // bait
-    '<div class="rv-bait"><div class="h">Bait the group chat</div><div class="s">Send the fake that got you — no spoilers.</div>'+
-      '<button id="baitBtn">'+(curCrew()?("Send to "+esc(crewLabel(curCrew()))):"Send to your group chat")+'</button></div>'+
-    '<div class="rv-count" id="countdown"></div>'+
-    '<div class="rv-links"><button id="revealArchiveBtn">Past editions</button><span style="opacity:.5">·</span><button id="revealLinkBtn">Copy link to this set</button></div>'+
-    '<div class="rv-foot">Mags makes up the fakes; real quotes link to their source. A quote shown as “made up” is part of the game — never a claim anyone said it.<br><a id="resetLink">reset my data</a></div>';
-
-  $("tokenBox").textContent = shareGrid(res);
-  $("copyBtn").onclick=copyToken;
-  $("revealCrewBtn").onclick=openCrew;
-  $("baitBtn").onclick=function(){ baitGroupChat(res, $("baitBtn")); };
-  $("revealArchiveBtn").onclick=openArchive;
-  $("revealLinkBtn").onclick=function(){ if(DAY) copyEditionLink(DAY.date); };
-  $("resetLink").onclick=function(){ if(confirm("Erase your streak, rating and history on this device?")){ localStorage.removeItem(K); location.reload(); } };
-
-  // countdown: today → live timer; past edition → back-to-today link
-  if(isToday){ tickCountdown(); }
-  else { clearInterval(window._cd);
-    $("countdown").innerHTML='<a class="rv-foot" id="backTodayLink" style="cursor:pointer">← back to today’s set</a>';
-    var bl=$("backTodayLink"); if(bl) bl.onclick=backToToday; }
-
-  show("reveal");
-
-  // sequential truth flip-in (200ms × index)
-  var rows=host.querySelectorAll("#rvTruth .tr");
-  rows.forEach(function(r,i){ setTimeout(function(){ if(r) r.classList.add("shown"); }, 200*i); });
-  // streak bump (+1 with a bounce) only when this play advanced the daily streak
-  if(fresh && bumped && res.streak>0){
-    var num=$("rvStreakNum"); if(num){ num.textContent=(res.streak-1);
-      setTimeout(function(){ var n2=$("rvStreakNum"); if(!n2)return; n2.textContent=res.streak; n2.classList.add("bump"); setTimeout(function(){ if(n2)n2.classList.remove("bump"); },650); }, 1650); }
-  }
-  // confetti on a clean 6/6 (fresh plays only)
-  if(fresh && clean){ setTimeout(fireConfetti, 500); }
-}
-function baseURL(){ return location.origin+location.pathname.replace(/index\.html?$/,""); }
-function editionLink(date){ return baseURL()+"?d="+date; }
-function copyToken(){
-  var txt=$("tokenBox").textContent;
-  function ok(){ var l=$("copyLbl"); if(l){ l.textContent="Copied ✓"; setTimeout(function(){ var l2=$("copyLbl"); if(l2) l2.textContent="Copy result"; },1800); } else { toast("Copied — go paste it"); } logEvent("token_copy"); }
-  if(navigator.clipboard && navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(ok,fallbackCopy);}
-  else fallbackCopy();
-  function fallbackCopy(){var ta=el("textarea");ta.value=txt;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();try{document.execCommand("copy");ok();}catch(e){toast("Select &amp; copy");}document.body.removeChild(ta);}
-}
-function tickCountdown(){
-  var now=new Date(); var nxt=new Date(now); nxt.setHours(24,0,0,0);
-  function upd(){var d=new Date(),left=nxt-d;if(left<0){$("countdown").innerHTML="New set is live — refresh.";return;}
-    var h=Math.floor(left/3.6e6),m=Math.floor(left%3.6e6/6e4),s=Math.floor(left%6e4/1e3);
-    $("countdown").innerHTML="Next set in <b>"+pad(h)+":"+pad(m)+":"+pad(s)+"</b>";}
-  upd(); clearInterval(window._cd); window._cd=setInterval(upd,1000);
-}
-
-/* ---------- archive / past editions ---------- */
-function updatePastBar(isToday, day){
-  var pb=$("pastbar");
-  if(isToday){ pb.classList.add("hide"); pb.innerHTML=""; return; }
-  pb.classList.remove("hide");
-  pb.innerHTML="<span>📅 Past edition · No."+(day.edition||"?")+" · "+prettyDate(day.date)+"</span><a id='pbBack'>today →</a>";
-  var b=$("pbBack"); if(b) b.onclick=backToToday;
-}
-function backToToday(){ history.replaceState(null,"",location.pathname); loadAndRoute(todayStr()); }
-function goToEdition(date){ history.replaceState(null,"","?d="+date); loadAndRoute(date); }
-function openArchive(){ BACK_TO=currentScreen(); renderArchive(); show("archive"); }
-function renderArchive(){
-  var host=$("archiveList"); host.innerHTML="";
-  var lane=ST.lane||"general";
-  var days=laneDays(lane).slice().sort();                 // current lane's editions, ascending → index+1 = edition number
-  if(!days.length){ host.innerHTML="<div class='card'>No editions published yet.</div>"; return; }
-  var today=todayStr();
-  days.slice().reverse().forEach(function(date){
-    var ed=days.indexOf(date)+1;
-    var done=(ST.days[dayKey(lane,date)]&&ST.days[dayKey(lane,date)].done)?ST.days[dayKey(lane,date)].result:null;
-    var status=done ? ("✓ you scored "+done.score+"/"+done.n)
-      : (date===today?"● today's set — not played yet":(date>today?"upcoming":"▶ not played yet"));
-    var row=el("div","arc-row");
-    row.innerHTML="<div class='meta'><div class='ed'>No. "+ed+" · "+prettyDate(date)+"</div><div class='st'>"+status+"</div></div>"+
-      "<button data-link='"+date+"' title='copy a link to send'>🔗</button>"+
-      "<button class='play' data-go='"+date+"'>"+(done?"view":"play")+"</button>";
-    host.appendChild(row);
-  });
-  host.querySelectorAll("button[data-go]").forEach(function(b){ b.onclick=function(){ goToEdition(b.dataset.go); }; });
-  host.querySelectorAll("button[data-link]").forEach(function(b){ b.onclick=function(){ copyEditionLink(b.dataset.link); }; });
-}
-function copyEditionLink(date){
-  var url=editionLink(date);
-  function ok(){ toast("Link copied — send it 📨"); logEvent("edition_link_copy",{ed:date}); }
-  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(ok,function(){window.prompt("Copy this link:",url);}); }
-  else { window.prompt("Copy this link:",url); }
-}
-
-/* ---------- crew (G-B) ----------
-   Guardrails: renewable equity ONLY (shared streak + standing). NO trait-polling (no "rate your friends"),
-   NO live/synchronous tournaments (that's the tbh/Gas graph-fragile death) — async leaderboard + weekly
-   season standing only. Consent-native (you opt in with a code). Spoiler-free is ENFORCED: the endpoint
-   returns scores/standings only, never per-quote answers, so a crew-mate who hasn't played stays safe. */
-function inCrew(){ return !!(ST.crews && ST.crews.length); }
-function hasCrew(code){ return (ST.crews||[]).some(function(c){return c.code===code;}); }
-function curCrew(){ var cs=ST.crews||[]; return cs.filter(function(c){return c.code===ST.activeCrew;})[0] || cs[0] || null; }
-function setActiveCrew(code){ ST.activeCrew=code; save(ST); }
-function addCrew(code){ if(!hasCrew(code)){ ST.crews.push({code:code, joined:todayStr()}); } ST.activeCrew=code; }
-function genCode(){ var s="ABCDEFGHJKLMNPQRSTUVWXYZ23456789",c=""; for(var i=0;i<5;i++)c+=s[Math.floor(Math.random()*s.length)]; return c; }
-function askName(def){ var n=(window.prompt && window.prompt("Your name in the crew?", def||ST.displayName||"")) || ST.displayName || "you"; n=String(n).slice(0,16).trim()||"you"; ST.displayName=n; save(ST); return n; }
-function crewLabel(c){ return c ? (c.name || c.code) : ""; }
-function setLocalCrewName(code, nm){ var c=(ST.crews||[]).filter(function(x){return x.code===code;})[0]; if(c){ if(nm) c.name=nm; save(ST); } }
-function createCrew(){ askName(); var code=genCode();
-  var cn=((ST.displayName||"My")+"’s crew").slice(0,24);   // friendly default name (editable by anyone via ✏️)
-  addCrew(code); setLocalCrewName(code,cn); save(ST);
-  logEvent("crew_create",{crew:code, name:ST.displayName});
-  logEvent("crew_name",{crew:code, name:cn});              // shared, editable crew name (separate from the join code)
-  toast("Crew created 🎉 — tap ✏️ to rename"); JUST_JOINED=null; renderCrew(); }
-function renameCrew(code){ var c=(ST.crews||[]).filter(function(x){return x.code===code;})[0]; if(!c)return;
-  var cn=(window.prompt && window.prompt("Rename crew — everyone in "+code+" sees this:", c.name||"")); if(cn===null)return;
-  cn=String(cn).slice(0,24).trim(); if(!cn){ toast("Name can't be empty"); return; }   // endpoints can't store an empty name
-  c.name=cn; save(ST); logEvent("crew_name",{crew:code, name:cn}); toast("Renamed to "+cn); renderCrew(); }
-function joinCrew(code, inviter){ code=String(code||"").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,6); if(!code){toast("Enter a code");return false;}
-  var already=hasCrew(code);
-  if(!ST.displayName) askName();
-  addCrew(code); save(ST);
-  if(!already) logEvent("crew_join",{crew:code, name:ST.displayName, inviter:inviter||""});   // membership is server-derived from this
-  if(inviter && inviter!==ST.sid) logEvent("invite_opened",{crew:code, inviter:inviter, invitee:ST.sid});  // <-- k-factor instrument
-  toast("Joined "+code+" 👥"); return true; }
-function leaveCrew(code){ code=code||(curCrew()||{}).code; if(!code) return;
-  if(window.confirm && !window.confirm("Leave crew "+code+"?")) return;
-  ST.crews=(ST.crews||[]).filter(function(c){return c.code!==code;});
-  if(ST.activeCrew===code) ST.activeCrew=(ST.crews[0]||{}).code||null;
-  save(ST); logEvent("crew_leave",{crew:code}); JUST_JOINED=null; renderCrew(); }
-function crewEndpoint(){ return AGG_ENDPOINT||LOG_ENDPOINT; }
-function liveCrew(){ return curCrew() && crewEndpoint(); }   // in a crew AND able to load a live board
-
-/* ---------- H-A accounts: anonymous-first, sign in to SAVE + SYNC across devices (Supabase) ---------- */
-function recomputeStats(){ var j=0,c=0,l=0,lc=0; for(var k in (ST.days||{})){ var r=ST.days[k]&&ST.days[k].done&&ST.days[k].result; if(!r)continue;
-  j+=r.n||0; c+=r.score||0; if(r.lockCorrect===true||r.lockCorrect===false){ l++; if(r.lockCorrect)lc++; } } ST.judged=j;ST.correct=c;ST.locks=l;ST.locks_correct=lc; }
-function mergeState(remote){ if(!remote) return;   // merge a cloud profile into local — never lose progress
-  ST.streak=Math.max(ST.streak||0, remote.streak||0); ST.best_streak=Math.max(ST.best_streak||0, remote.best_streak||0);
-  if(typeof remote.rating==="number") ST.rating=Math.max(ST.rating||1000, remote.rating);   // absent remote rating = no-op (don't floor a real sub-1000 up to 1000)
-  ST.days=ST.days||{}; for(var k in (remote.days||{})){ if(!ST.days[k]) ST.days[k]=remote.days[k]; }   // union the play history
-  ST.crews=ST.crews||[]; (remote.crews||[]).forEach(function(rc){ if(rc&&rc.code && !hasCrew(rc.code)) ST.crews.push(rc); });
-  if(!ST.activeCrew) ST.activeCrew=remote.activeCrew||(ST.crews[0]||{}).code||null;
-  if(remote.displayName && !ST.displayName) ST.displayName=remote.displayName;
-  if(remote.last_realday && (!ST.last_realday || remote.last_realday>ST.last_realday)) ST.last_realday=remote.last_realday;
-  if(remote.crewSeasons) ST.crewSeasons=Object.assign({}, remote.crewSeasons, ST.crewSeasons||{});
-  recomputeStats();   // derive accuracy/lock totals from the UNIONED play history (authoritative — no double-count)
-}
-function profileBlob(){ return { streak:ST.streak, best_streak:ST.best_streak, rating:ST.rating, days:ST.days,
-  crews:ST.crews, activeCrew:ST.activeCrew, displayName:ST.displayName, last_realday:ST.last_realday, crewSeasons:ST.crewSeasons }; }
-function saveProfile(){ if(!SB||!ACCOUNT||!PROFILE_SYNCED) return;   // never write until we've safely READ the cloud row first (no clobber)
-  try{ SB.from("profiles").upsert({ id:ACCOUNT.uid, sid:ST.sid, state:profileBlob(), updated_at:new Date().toISOString() }).then(function(){},function(){}); }catch(e){} }
-function onSignedIn(user){ if(!user) return; ACCOUNT={uid:user.id, email:user.email||""}; logEvent("signed_in");
-  try{ SB.from("profiles").select("sid,state").eq("id",user.id).maybeSingle().then(function(res){
-    if(res && res.error){ logEvent("profile_read_failed"); return; }   // read FAILED → do NOT overwrite possibly-existing cloud state
-    var row=res&&res.data;
-    if(row){ if(row.sid) ST.sid=row.sid; if(row.state) mergeState(row.state); save(ST); }   // existing account → adopt its play-id + merge
-    PROFILE_SYNCED=true;   // read CONFIRMED (no error) — now it's safe to write
-    saveProfile();         // capture this device's (merged) state
-    if(currentScreen()==="crew") renderCrew(); else if(currentScreen()==="home") renderHome();
-  }, function(){ logEvent("profile_read_failed"); }); }catch(e){} }   // a failed read must never trigger a cloud write
-function initAuth(){ if(!SB) return;
-  try{ SB.auth.getSession().then(function(res){ var s=res&&res.data&&res.data.session; if(s&&s.user && (!ACCOUNT||ACCOUNT.uid!==s.user.id)) onSignedIn(s.user); }); }catch(e){}
-  try{ SB.auth.onAuthStateChange(function(ev,session){ if(session&&session.user){ if(!ACCOUNT||ACCOUNT.uid!==session.user.id) onSignedIn(session.user); } else if(ev==="SIGNED_OUT"){ ACCOUNT=null; PROFILE_SYNCED=false; } }); }catch(e){}
-}
-function signInEmail(email){ if(!SB) return; email=String(email||"").trim();
-  if(!/.+@.+\..+/.test(email)){ toast("Enter a valid email"); return; }
-  SB.auth.signInWithOtp({ email:email, options:{ emailRedirectTo: baseURL() } }).then(function(res){
-    if(res&&res.error){ toast("Couldn't send the link — try again"); } else { toast("Check your email for a sign-in link 📧"); logEvent("signin_link_sent"); } }, function(){ toast("Sign-in unavailable right now"); }); }
-function signInGoogle(){ if(!SB) return;
-  SB.auth.signInWithOAuth({ provider:"google", options:{ redirectTo: baseURL() } }).then(function(res){ if(res&&res.error) toast("Google sign-in isn't set up yet"); }, function(){ toast("Google sign-in isn't set up yet"); }); }
-function signOutAcct(){ if(!SB) return; SB.auth.signOut().then(function(){ ACCOUNT=null; toast("Signed out"); if(currentScreen()==="crew") renderCrew(); }); }
-function accountHTML(){ if(!SB) return "";
-  if(ACCOUNT) return "<div class='acct'><div class='h'>☁️ Synced across your devices</div>"+
-    "<div class='s'>Signed in as "+esc(ACCOUNT.email||"your account")+" — streak, stats &amp; crews follow you everywhere.</div>"+
-    "<button class='ghost' id='acctOut'>Sign out</button></div>";
-  return "<div class='acct'><div class='h'>☁️ Save your progress</div>"+
-    "<div class='s'>Sign in to keep your streak &amp; crews and play on your other devices. No password — we email you a link.</div>"+
-    "<input class='fld' id='acctEmail' type='email' placeholder='you@email.com' autocomplete='email' autocapitalize='off'>"+
-    "<button class='primary' id='acctEmailBtn'>Email me a sign-in link</button>"+
-    (GOOGLE_AUTH?"<button class='ghost' id='acctGoogle'>Continue with Google</button>":"")+"</div>";
-}
-function wireAccount(){ var e=$("acctEmailBtn"); if(e) e.onclick=function(){ signInEmail($("acctEmail")&&$("acctEmail").value); };
-  var g=$("acctGoogle"); if(g) g.onclick=signInGoogle; var o=$("acctOut"); if(o) o.onclick=signOutAcct; }
-function clip(txt,ok){ if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(ok,function(){window.prompt("Copy:",txt);if(ok)ok();}); } else { window.prompt("Copy:",txt); if(ok)ok(); } }
-function crewNameFor(code){ var c=(ST.crews||[]).filter(function(x){return x.code===code;})[0]; return (c&&c.name)||code; }
-function crewInviteLink(code){ code=code||(curCrew()||{}).code;   // carry sender + crew NAME so the recipient sees context
-  var c=(ST.crews||[]).filter(function(x){return x.code===code;})[0], u=baseURL()+"?crew="+code+"&inv="+ST.sid;
-  if(ST.displayName) u+="&by="+encodeURIComponent(ST.displayName);
-  if(c&&c.name) u+="&cn="+encodeURIComponent(c.name);
-  return u; }
-function copyCrewInvite(code){ code=code||(curCrew()||{}).code; if(!code)return;
-  var url=crewInviteLink(code), cn=crewNameFor(code), who=ST.displayName||"A friend";
-  var msg=who+" invited you to "+cn+" on Said It? — tap to join:";
-  function ok(){ toast("Invite ready — send it 👥"); logEvent("invite_created",{crew:code}); }
-  if(navigator.share){ navigator.share({title:"Join "+cn+" on Said It?",text:msg,url:url}).then(ok,function(err){ if(err&&err.name==="AbortError") return; clip(msg+" "+url,ok); }); return; }
-  clip(msg+" "+url,ok); }
-/* device-link (no login): play as the same person across phone+laptop. Short, clean link — your crews + name are
-   derived server-side from the id on arrival (no long querystring), so it stays tidy and always current. */
-function myDeviceLink(){ return baseURL()+"?me="+ST.sid; }
-function copyDeviceLink(){    // COPY ONLY (no share sheet) so the clipboard gets exactly the URL, nothing appended
-  clip(myDeviceLink(), function(){ toast("Link copied — text it to yourself, open on your other device 📱"); logEvent("device_link_created"); }); }
-function fetchMeProfile(){ var ep=crewEndpoint(); if(!ep) return Promise.resolve();
-  return fetch(ep+(ep.indexOf("?")>=0?"&":"?")+"me="+encodeURIComponent(ST.sid),{cache:"no-store"})
-    .then(function(r){return r.ok?r.json():null;}).then(function(p){
-      if(!p) return;
-      if(p.name && !ST.displayName){ ST.displayName=p.name; }
-      (p.crews||[]).forEach(function(code){ code=String(code).toUpperCase().replace(/[^A-Z0-9]/g,""); if(code && !hasCrew(code)) ST.crews.push({code:code,joined:todayStr()}); });
-      if(!ST.activeCrew) ST.activeCrew=(ST.crews[0]||{}).code||null;
-      save(ST);
-    }).catch(function(){}); }
-function handleDeviceLink(){ var m=location.search.match(/[?&]me=([A-Za-z0-9_]+)/); if(!m) return false;
-  var sid=m[1];
-  if(sid===ST.sid){ try{ history.replaceState(null,"",location.pathname); }catch(e){} return false; }
-  var hadHistory=(ST.judged>0)||(ST.crews&&ST.crews.length>0);
-  if(hadHistory && window.confirm && !window.confirm("Play as your other device here? Crew play across your devices will merge under one player.")){ try{ history.replaceState(null,"",location.pathname); }catch(e){} return false; }
-  ST.sid=sid;
-  var nm=(location.search.match(/[?&]nm=([^&]+)/)||[])[1]; if(nm){ try{ ST.displayName=decodeURIComponent(nm); }catch(e){} }
-  var mc=(location.search.match(/[?&]mc=([^&]+)/)||[])[1];
-  if(mc){ try{ decodeURIComponent(mc).split(",").forEach(function(code){ code=String(code).toUpperCase().replace(/[^A-Z0-9]/g,""); if(code && !hasCrew(code)){ ST.crews.push({code:code,joined:todayStr()}); } }); }catch(e){} }
-  if(!ST.activeCrew) ST.activeCrew=(ST.crews[0]||{}).code||null;
-  ST.installed=true;   // this sid already installed on its origin device → don't emit a duplicate install
-  save(ST); try{ history.replaceState(null,"",location.pathname); }catch(e){}
-  toast("Device linked 📱"); logEvent("device_linked"); return true; }
-function fetchCrew(day, code){ var ep=crewEndpoint(); code=code||(curCrew()||{}).code; if(!ep||!code) return Promise.resolve(null);
-  // &me=<sid> lets the server gate "who got got" (fooledBy) to requesters who've completed today — spoiler-safe
-  return fetch(ep+(ep.indexOf("?")>=0?"&":"?")+"crew="+encodeURIComponent(code)+"&day="+encodeURIComponent(day)+"&me="+encodeURIComponent(ST.sid),{cache:"no-store"})
-    .then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); }
-function mergeYou(standings, res){          // standings carry scores only; match self by sid (spoiler-free)
-  var list=(standings||[]).map(function(s){return {sid:s.sid,name:s.name,score:s.score,you:s.sid===ST.sid};});
-  var mine=list.filter(function(s){return s.you;})[0];
-  if(mine){ if(res) mine.score=res.score; } else if(res){ list.push({sid:ST.sid,name:ST.displayName||"you",score:res.score,you:true}); }
-  return list.sort(function(a,b){return b.score-a.score;});
-}
-function medal(i){ return i===0?"🥇":i===1?"🥈":i===2?"🥉":(i+1)+"."; }
-function addDaysStr(s,n){ var d=new Date(s+"T12:00:00"); d.setDate(d.getDate()+n); return todayStr(d); }
-// the player's OWN plays from local state — so the crew board reflects what this device knows even if the
-// server hasn't registered today's beacon yet (network lag, a dropped sendBeacon, or just-finished play)
-function myResult(date){ var best=null; for(var k in (ST.days||{})){ var r=ST.days[k]&&ST.days[k].done&&ST.days[k].result; if(r&&r.date===date) best=r; } return best; }
-function myWeekTotal(){ var wk=weekKey(todayStr()), byDay={}; for(var k in (ST.days||{})){ var r=ST.days[k]&&ST.days[k].done&&ST.days[k].result;
-  if(r&&r.date&&weekKey(r.date)===wk) byDay[r.date]=r.score||0; } var t=0,d=0; for(var dd in byDay){ t+=byDay[dd]; d++; } return {total:t,days:d}; }
-
-function crewToken(c,res,code){ var list=mergeYou(c&&c.standings,res); var lines=[];
-  var cobj=(ST.crews||[]).filter(function(x){return x.code===code;})[0];
-  var label=(c&&c.name)||(cobj&&cobj.name)||code;     // share the crew NAME ("The fam"), not the raw code
-  lines.push("Said It? — "+label+(c&&c.crew_streak?" · 🔥 "+c.crew_streak:""));
-  list.slice(0,6).forEach(function(s,i){ lines.push(medal(i)+" "+s.name+(s.you?" (me)":"")+" "+s.score+"/"+(res?res.n:6)); });
-  lines.push(baseURL()+"?crew="+code);                // the link still carries the code (that's how friends join)
-  return lines.join("\n"); }
-function shareCrewToken(c,res,code){ var txt=crewToken(c,res,code);
-  function ok(){ toast("Standings copied 👥"); logEvent("token_copy",{kind:"crew",crew:code}); }
-  if(navigator.share){ navigator.share({text:txt}).then(ok,function(){}); return; }
-  clip(txt,ok); }
-function openCrew(){ BACK_TO=currentScreen(); renderCrew(); show("crew"); }
-function joinAnotherCrew(){
-  var code=window.prompt && window.prompt("Enter a crew code to join (leave blank to create a new crew):","");
-  if(code===null) return;
-  code=String(code).toUpperCase().replace(/[^A-Z0-9]/g,"");
-  if(code){ if(joinCrew(code,"")){ JUST_JOINED=null; renderCrew(); } } else { createCrew(); }
-}
-function renderCrew(){
-  var host=$("screen-crew");
-  var headHtml='<div class="play-head"><button class="back-btn" id="crewBack" aria-label="Back">'+BACK_ARROW+'</button>'+
-    ((inCrew()&&crewEndpoint())
-      ? '<button class="cr-name" id="crewNameBtn"><span class="nm">'+esc(crewLabel(curCrew()))+'</span><span class="chev">'+CHEV_DOWN+'</span></button>'
-      : '<div class="scr-title">Crew</div>')+
-    '<button class="hdr-mags" id="crewMags" aria-label="Meet Mags">'+magpie("happy",26,"mags-flip")+'</button></div>';
-  if(!crewEndpoint()){
-    host.innerHTML=headHtml+'<div class="cr-empty"><div class="h">👥 Crews need the shared endpoint</div>'+
-      '<div class="s">Deploy the endpoint (see <code>endpoint/</code>) to compare with friends. Solo play works fine without it.</div></div>';
-    $("crewBack").onclick=navBack; return;
-  }
-  var html=headHtml;
-  if(JUST_JOINED){
-    var jn=INVITE_CN||crewLabel(curCrew())||JUST_JOINED;
-    var lead=INVITE_BY?(esc(INVITE_BY)+" added you to "):"You’re in ";
-    html+='<div class="cr-joined"><b>'+lead+esc(jn)+'</b><div class="s">Play today’s set and you’ll show up on the board.</div>'+
-      '<button id="crewPlay">Play today’s set →</button></div>';
-  }
-  if(!inCrew()){
-    html+='<div class="cr-empty"><div class="h">Play with your friends</div>'+
-      '<div class="s">Everyone gets the same six quotes — compare scores and build a shared streak. No accounts needed.</div>'+
-      '<button class="start" id="crewCreate">Start a crew</button>'+
-      '<div class="eh">Got an invite? Just open the link your friend sent you.</div>'+
-      '<button class="codebtn" id="crewJoinCode">Have a code? Enter it</button></div>'+accountHTML();
-    host.innerHTML=html;
-    $("crewBack").onclick=navBack;
-    var cm0=$("crewMags"); if(cm0) cm0.onclick=openMagpie;
-    if($("crewPlay"))$("crewPlay").onclick=function(){ JUST_JOINED=null; playLane(ST.lane||"general"); };
-    $("crewCreate").onclick=createCrew;
-    $("crewJoinCode").onclick=function(){ var code=window.prompt&&window.prompt("Enter your crew's code:",""); if(code===null)return;
-      if(joinCrew(code,"")){ JUST_JOINED=null; INVITE_BY=INVITE_CN=""; renderCrew(); } };
-    wireAccount(); return;
-  }
-  var cc=curCrew(), today=todayStr();
-  html+='<div class="cr-toggle-row"><span class="cr-seclabel">Standings</span>'+
-    '<div class="seg-toggle"><button id="crewToday">Today</button><button id="crewWeek">Week</button></div></div>'+
-    '<div class="cr-gap" id="crewGap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg><span>loading…</span></div>'+
-    '<div class="cr-rows" id="crewRows"><div class="cr-foot" style="margin-top:0">loading standings…</div></div>'+
-    '<div class="cr-tiles" id="crewTiles"></div>'+
-    '<button class="cr-invite" id="crewInviteBtn">Invite your people</button>'+
-    '<div class="cr-code">or share code <b>'+esc(cc.code)+'</b></div>'+
-    '<button class="cr-join2" id="crewJoin2">+ Create or join another crew</button>'+   // visible on the board, not buried behind the chevron (H)
-    '<div class="cr-foot">Play today’s set to see who got fooled — no spoilers before you do.</div>'+
-    '<div class="cr-meta"><button id="crewRename">rename</button><span style="opacity:.5">·</span><button id="crewShare">share standings</button><span style="opacity:.5">·</span><button id="crewLeave">leave</button></div>'+
-    accountHTML();
-  host.innerHTML=html;
-  $("crewBack").onclick=navBack;
-  var cm=$("crewMags"); if(cm) cm.onclick=openMagpie;
-  $("crewNameBtn").onclick=openCrewSwitcher;
-  $("crewJoin2").onclick=joinAnotherCrew;
-  if($("crewPlay"))$("crewPlay").onclick=function(){ JUST_JOINED=null; playLane(ST.lane||"general"); };
-  $("crewInviteBtn").onclick=function(){ copyCrewInvite(cc.code); };
-  $("crewRename").onclick=function(){ renameCrew(cc.code); };
-  $("crewLeave").onclick=function(){ leaveCrew(cc.code); };
-  wireAccount();
-
-  var CREW_DATA=null;
-  function paintBoard(){
-    var t=$("crewToday"), w=$("crewWeek"); if(!t||!w) return;
-    t.className=(CREW_WHEN==="week"?"":"on"); w.className=(CREW_WHEN==="week"?"on":"");
-    if(CREW_DATA===null){ $("crewRows").innerHTML='<div class="cr-foot" style="margin-top:0">loading standings…</div>'; return; }
-    var c=CREW_DATA;
-    var mine=myResult(today), iDoneToday=!!mine;
-    // TODAY — carry each member's fooledBy (the FAKES they called real) for "who got got"
-    var stand=(c.standings||[]).map(function(s){ return {sid:s.sid,name:s.name,val:(s.score!=null?s.score:0),fooledBy:s.fooledBy||null,you:s.sid===ST.sid}; });
-    var meRow=stand.filter(function(s){return s.you;})[0];
-    if(meRow){ if(mine){ meRow.val=mine.score; meRow.fooledBy=mine.gotme||meRow.fooledBy; } }
-    else if(mine){ stand.push({sid:ST.sid,name:ST.displayName||"you",val:mine.score,fooledBy:mine.gotme||null,you:true}); }
-    stand.sort(function(a,b){return b.val-a.val;});
-    var myW=myWeekTotal();
-    var week=(c.week||[]).map(function(s){ return {sid:s.sid,name:s.name,val:s.total,you:s.sid===ST.sid}; });
-    var meW=week.filter(function(s){return s.you;})[0];
-    if(meW){ if(myW.total>meW.val) meW.val=myW.total; } else if(myW.days){ week.push({sid:ST.sid,name:ST.displayName||"you",val:myW.total,you:true}); }
-    week.sort(function(a,b){return b.val-a.val;});
-    if(week.length && c.week_key){ ST.crewSeasons[c.week_key]=week[0].name; save(ST); }   // memorialize the weekly champ
-    var weekRank=week.findIndex(function(s){return s.you;});
-    var rows=(CREW_WHEN==="week") ? week : stand;
-    var top=rows.length?Math.max.apply(null,rows.map(function(r){return r.val;})):1; if(top<=0)top=1;
-    var yi=rows.findIndex(function(r){return r.you;});
-    // gap-to-next headline
-    var gapEl=$("crewGap"), gapTxt;
-    if(!rows.length) gapTxt="No scores yet — play to lead "+crewLabel(cc);
-    else if(yi<=0) gapTxt="Leading "+crewLabel(cc);
-    else { var need=rows[yi-1].val-rows[yi].val+1; gapTxt="Beat "+rows[yi-1].name+" by "+need+" to move up"; }
-    if(gapEl){ var gs=gapEl.querySelector("span"); if(gs) gs.textContent=gapTxt; }
-    // "moved up" only on Today, and only when your today rank beats your week rank (data-backed, not faked)
-    var movedUp=(CREW_WHEN==="today" && yi>=0 && weekRank>=0 && yi<weekRank);
-    var rowsHtml=rows.length ? rows.map(function(r,i){
-      var col=r.you?"var(--primary)":avColor(r.name);
-      var unit=(CREW_WHEN==="week")?"":"/6";
-      var moved=(r.you&&movedUp)?'<span class="moved">▲ moved up</span>':'';
-      // "who got got": the fakes this crewmate called real — ONLY shown once YOU'VE completed today (server also enforces)
-      var fooled=(CREW_WHEN==="today" && iDoneToday && r.fooledBy && r.fooledBy.length)
-        ? '<div class="fooled-tag">🪶 fell for '+r.fooledBy.map(function(x){return "#"+x;}).join(", ")+'</div>' : '';
-      return '<div class="cr-row'+(r.you?" you":"")+'"><span class="rk">'+(i+1)+'</span>'+
-        '<span class="av" style="border-color:'+col+';color:'+col+'">'+esc(r.you?"Y":avInitial(r.name))+'</span>'+
-        '<div class="who"><div class="nm">'+esc(r.you?"You":r.name)+moved+'</div>'+
-          '<div class="barwrap"><div class="bar" style="width:'+Math.round(r.val/top*100)+'%"></div></div>'+fooled+'</div>'+
-        '<span class="sc">'+r.val+unit+'</span></div>';
-    }).join("") : '<div class="cr-foot" style="margin-top:0">No one’s played '+(CREW_WHEN==="week"?"this week":"today")+' yet — play to top the board.</div>';
-    $("crewRows").innerHTML=rowsHtml;
-    var champ=ST.crewSeasons[weekKey(addDaysStr(today,-7))];
-    $("crewTiles").innerHTML='<div class="cr-tile streak"><div class="big">🔥 '+(c.crew_streak||0)+'</div><div class="lbl">crew streak</div></div>'+
-      '<div class="cr-tile champ"><div class="big">'+esc(champ||"—")+'</div><div class="lbl">last week’s champ</div></div>';
-  }
-  $("crewToday").onclick=function(){ CREW_WHEN="today"; paintBoard(); };
-  $("crewWeek").onclick=function(){ CREW_WHEN="week"; paintBoard(); };
-  $("crewShare").onclick=function(){ var dk=dayKey(ST.lane||"general",today); var r=(ST.days[dk]&&ST.days[dk].done)?ST.days[dk].result:{n:6,score:0,date:today}; shareCrewToken(CREW_DATA||{},r,cc.code); };
-  paintBoard();
-  fetchCrew(today, cc.code).then(function(c){
-    CREW_DATA=c||{};
-    if(CREW_DATA.name){ setLocalCrewName(cc.code,CREW_DATA.name); var nm=document.querySelector("#crewNameBtn .nm"); if(nm) nm.textContent=CREW_DATA.name; }
-    paintBoard();
-  });
-}
-
-/* ---------- brand chrome (bright redesign) ---------- */
-// coral is the one-token alt theme; blue is the default/lead
-if(CFG.THEME==="coral") document.body.classList.add("theme-coral");
-// header Mags: flipped to face the wordmark, gentle bob, a real button → the Magpie page (brand bird per screen)
-try{ var mb=$("magsBtn"); if(mb){ mb.innerHTML=magpie("happy",30,"mags-flip"); mb.addEventListener("click",openMagpie); } }catch(e){}
-try{ var fav=$("favicon"); if(fav) fav.setAttribute("href","data:image/svg+xml,"+encodeURIComponent(appIconSVG())); }catch(e){}
-
-/* ---------- wire up (reveal controls are wired inside renderReveal, which rebuilds that screen) ---------- */
-// Home "Play today's set" → the Lanes picker
-$("homePlay").addEventListener("click",openLanes);
-// home is reachable from everywhere: the logo (header) is the persistent home control
-$("logoBtn").addEventListener("click",goHome);
-$("homeArchive").addEventListener("click",openArchive);
-$("archiveBack").addEventListener("click",navBack);
-
-boot();
-})();
-</script>
+<script type="module" src="./src/main.js"></script>
 </body>
 </html>
