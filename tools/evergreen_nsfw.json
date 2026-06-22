@@ -3,138 +3,210 @@
     "text": "Over the past forty years I've been loaded on booze, coke, acid, Quaaludes, glue, cough mixture, heroin, Rohypnol, Klonopin, Vicodin, and too many other heavy-duty substances to list in this footnote. On more than a few occasions I was on all of these at the same time.",
     "speaker": "Ozzy Osbourne",
     "context": "From a footnote in his 2010 autobiography 'I Am Ozzy' (with Chris Ayres), cataloguing four decades of his own substance abuse.",
-    "real": true
+    "source": {
+      "title": "Memoir 'I Am Ozzy' (LA Weekly excerpt)",
+      "url": "https://www.laweekly.com/i-am-ozzy-soon-to-be-classic-quotes-from-ozzy-osbournes-upcoming-autobiography/",
+      "date": "2010"
+    }
   },
   {
     "text": "I left the Rocking Vicars, thinking I was going to be a star in my own right immediately. Everything was going to be wonderful and huge women would get a hold of me and do things to me with raw carrots — you know, shit like that.",
     "speaker": "Lemmy Kilmister",
     "context": "Recalling his youthful rock-star fantasies after leaving an early band (the Rockin' Vickers), in his memoir White Line Fever: The Autobiography (2002).",
-    "real": true
+    "source": {
+      "title": "Memoir 'White Line Fever' (The Current review)",
+      "url": "https://www.thecurrent.org/feature/2021/09/01/lemmy-kilmister-white-line-fever-book-review",
+      "date": "2002"
+    }
   },
   {
     "text": "Do I think about my dick? Oh, yeah, all the time. If I think about it all the time, I got a right to sing about it. If I wasn't thinking about it all the time but thought, \"It's time to write a rock song, I'd better mention my dick,\" then I wouldn't even be able to say \"dick\" right.",
     "speaker": "Iggy Pop",
     "context": "Defending the sexual content of his lyrics (the song \"Trollin'\" from The Weirdness) in his 2007 Rolling Stone interview.",
-    "real": true
+    "source": {
+      "title": "Iggy Pop: The Rolling Stone Interview",
+      "url": "https://www.rollingstone.com/music/music-news/iggy-pop-the-rolling-stone-interview-2-78680/",
+      "date": "2007"
+    }
   },
   {
     "text": "I blew $20 million. I snorted my Porsche. I snorted my plane. I snorted my house in that din of drugs and booze and being lost.",
     "speaker": "Steven Tyler",
     "context": "Tallying up what his cocaine habit cost him, in his 2011 rock memoir \"Does the Noise in My Head Bother You?\"",
-    "real": true
+    "source": {
+      "title": "Memoir 'Does the Noise in My Head Bother You?' (NME report)",
+      "url": "https://www.nme.com/news/music/aerosmith-49-1294445",
+      "date": "2011"
+    }
   },
   {
     "text": "All the drugs just neutered me. When I was on drugs, I felt like this nunnish, non-sexual person. After I stopped doing drugs I started to fuck like a bunny!",
     "speaker": "Courtney Love",
     "context": "On how getting sober changed her sex drive, in an interview with The Fix.",
-    "real": true
+    "source": {
+      "title": "The Fix interview",
+      "url": "https://www.thefix.com/courtney-love-interview/",
+      "date": "2011"
+    }
   },
   {
     "text": "I was doing a little over $1,000 a day in heroin, and then probably the same in cocaine and alcohol.",
     "speaker": "Nikki Sixx",
     "context": "Mötley Crüe bassist describing the scale of his addiction at his worst, around the period of his December 1987 heroin overdose; said in 2019 press for the Netflix film 'The Dirt'.",
-    "real": true
+    "source": {
+      "title": "'The Dirt' press (Chicago Sun-Times)",
+      "url": "https://chicago.suntimes.com/entertainment/motley-crue-biopic-netflix-nikki-six-doing-1000-dollars-a-day-in-heroin/",
+      "date": "2019"
+    }
   },
   {
     "text": "It's cold outside, but I'm still looking like a thotty, because a hoe never gets cold.",
     "speaker": "Cardi B",
     "context": "From a now-iconic 2014 viral Instagram/Vine clip from her pre-fame days, strutting in a bra top and skirt and explaining why she's barely dressed in winter.",
-    "real": true
+    "source": {
+      "title": "Pre-fame viral clip (PAPER)",
+      "url": "https://www.papermag.com/cardi-b-cold-clothes",
+      "date": "2014"
+    }
   },
   {
     "text": "Little Miss Muffet sat on a tuffet, eating her curds and whey. Along came a spider, he sat down beside her, he said, \"Hey, what's in the bowl, bitch?\"",
     "speaker": "Andrew Dice Clay",
     "context": "A signature filthy nursery-rhyme parody from his late-'80s/early-'90s arena act; crowds would shout the punchlines back. Popularized on his stand-up specials and documented in VICE's piece on his nursery rhymes.",
-    "real": true
+    "source": {
+      "title": "Stand-up act (Vice feature)",
+      "url": "https://www.vice.com/en/article/did-andrew-dice-clay-steal-his-iconic-nursery-rhymes-from-other-successful-entertainers/",
+      "date": "2018"
+    }
   },
   {
     "text": "There are 400,000 words in the English language, and there are seven of them you can't say on television. What a ratio that is. 399,993 to 7. They must really be bad. Shit, piss, fuck, cunt, cocksucker, motherfucker, and tits.",
     "speaker": "George Carlin",
     "context": "Carlin's landmark \"Seven Words You Can Never Say on Television\" routine from his 1972 album Class Clown, listing the broadcast-banned words verbatim and reveling in saying them all out loud.",
-    "real": true
+    "source": {
+      "title": "'Class Clown' — Seven Words You Can Never Say on Television",
+      "url": "https://en.wikipedia.org/wiki/Seven_dirty_words",
+      "date": "1972"
+    }
   },
   {
     "text": "Why me? Ten million motherfuckers freebasing, and I'm the one who blows up!",
     "speaker": "Richard Pryor",
     "context": "Pryor's frank, self-lacerating bit about the 1980 freebasing accident in which he set himself on fire, from his stand-up film 'Richard Pryor: Live on the Sunset Strip' (1982).",
-    "real": true
+    "source": {
+      "title": "'Richard Pryor: Live on the Sunset Strip' (film)",
+      "url": "https://en.wikipedia.org/wiki/Richard_Pryor:_Live_on_the_Sunset_Strip_(film)",
+      "date": "1982"
+    }
   },
   {
     "text": "The ice cream man always drove an extra block away. I know he's seen us, but I think he just be in the car with his friends saying, 'Watch me how fast I make these motherfuckers run.'",
     "speaker": "Eddie Murphy",
     "context": "From Eddie Murphy's 1983 HBO stand-up special 'Delirious' (filmed at DAR Constitution Hall) — his childhood ice-cream-truck bit, where the vendor cruelly speeds off to watch the neighborhood kids chase him.",
-    "real": true
+    "source": {
+      "title": "'Delirious' (IMDb quotes)",
+      "url": "https://www.imdb.com/title/tt0085474/quotes/",
+      "date": "1983"
+    }
   },
   {
     "text": "My sex life is so bad, my G-spot has been declared a historical landmark.",
     "speaker": "Joan Rivers",
     "context": "Rivers being characteristically filthy and self-deprecating about her own dried-up sex life.",
-    "real": true
+    "source": {
+      "title": "Stand-up one-liner (CNN roundup)",
+      "url": "https://www.cnn.com/2014/09/05/showbiz/celebrity-news-gossip/joan-rivers-jokes/index.html",
+      "date": "2014"
+    }
   },
   {
     "text": "A couple nights ago, I was licking jelly off my boyfriend's penis. And I thought, \"Oh my God — I'm turning into my mother!\"",
     "speaker": "Sarah Silverman",
     "context": "From her 2005 stand-up special \"Sarah Silverman: Jesus Is Magic.\" Her signature sweet-faced delivery lands a graphic sex image as the setup, with the punchline being the realization she's inheriting her mother's habits.",
-    "real": true
+    "source": {
+      "title": "'Jesus Is Magic' (IMDb quotes)",
+      "url": "https://www.imdb.com/title/tt0422528/quotes/",
+      "date": "2005"
+    }
   },
   {
     "text": "I haven't ever tried very hard. Drugs expanded my imagination and made me think outside of, what, your fucking reality. And cigarettes gave me the patience to sit and write those thoughts down in a comedy-friendly format that you could understand. And alcohol gives me the courage to stand up here in front of you judgmental pricks and do it with a quarter million dollars worth of cameras in your face.",
     "speaker": "Doug Stanhope",
     "context": "From Doug Stanhope's 2007 stand-up special \"No Refunds\" — his defiant, self-celebrating defense of lifelong drug, cigarette, and alcohol use as the engine of his comedy.",
-    "real": true
+    "source": {
+      "title": "'No Refunds' (special)",
+      "url": "https://en.wikipedia.org/wiki/No_Refunds_(film)",
+      "date": "2007"
+    }
   },
   {
     "text": "I'd sit there and smoke crack while I listened to the play. It made me fucking crazy.",
     "speaker": "Samuel L. Jackson",
     "context": "Reflecting on his 1980s/early-90s crack-cocaine addiction during his time as an understudy on Broadway's 'The Piano Lesson' (shadowing Charles Dutton), before he got sober in 1991. From a 2019 The Hollywood Reporter interview, widely reported (Entertainment Tonight, Today, People), Jan 2019.",
-    "real": true
+    "source": {
+      "title": "The Hollywood Reporter interview (TODAY report)",
+      "url": "https://www.today.com/health/health/samuel-l-jackson-opens-drug-addiction-early-career-rcna20476",
+      "date": "2019"
+    }
   },
   {
     "text": "Last year I was really into the word cocksucker. I thought it sounded so mean!",
     "speaker": "Danny McBride",
     "context": "Answering a rapid-fire 'favorite curse word' question in a Maxim interview promoting 'Eastbound & Down.'",
-    "real": true
+    "source": {
+      "title": "Maxim interview",
+      "url": "https://www.maxim.com/entertainment/interview-danny-mcbride-eastbound-and-down/",
+      "date": "2013"
+    }
   },
   {
     "text": "Look at your mushrooms - they look like fucking tadpoles on Viagra.",
     "speaker": "Gordon Ramsay",
     "context": "Chef Gordon Ramsay critiquing a kitchen's mushroom side dish on the \"Rococo\" episode of Ramsay's Kitchen Nightmares (King's Lynn restaurant), UK Channel 4, 2006.",
-    "real": true
+    "source": {
+      "title": "'Ramsay's Kitchen Nightmares' — Rococo (IMDb quotes)",
+      "url": "https://www.imdb.com/title/tt1058681/",
+      "date": "2006"
+    }
   },
   {
     "text": "The strangest thing I've tried to snort? My father. I snorted my father. He was cremated and I couldn't resist grinding him up with a little bit of blow. My dad wouldn't have cared, he didn't give a shit. It went down pretty well, and I'm still alive.",
     "speaker": "Keith Richards",
     "context": "Rolling Stones guitarist Keith Richards, in an April 2007 NME interview, describing the strangest thing he had snorted — his late father's cremated ashes ground up with cocaine. Reported by NME, The Hollywood Reporter, VOA, and others. Richards' manager later told NME the remark was made in jest, and Richards offered a softened account in his 2010 memoir, but he is documented giving this quote in the interview.",
-    "real": true
-  },
-  {
-    "text": "If you're gonna do it, you might as well fuckin' put your name above the door. It's always been about me anyway.",
-    "speaker": "Liam Gallagher",
-    "context": "Oasis frontman, on going solo and releasing music under his own name rather than a band name, in his trademark blunt interview style (Vice/Noisey interview).",
-    "real": true
-  },
-  {
-    "text": "I have an opinion on everything, and if I don't have an opinion, I'll fucking make one up on the spot.",
-    "speaker": "Noel Gallagher",
-    "context": "Oasis songwriter/guitarist, on his reputation as an outspoken, gobshite interviewee, in one of his many candid press interviews.",
-    "real": true
+    "source": {
+      "title": "NME interview (later called a joke)",
+      "url": "https://www.nme.com/news/music/the-rolling-stones-433-1341398",
+      "date": "2007"
+    }
   },
   {
     "text": "It's quite valuable to have the courage and the confidence to say, 'No, fuck off, leave me alone, thank you very much.'",
     "speaker": "Helen Mirren",
     "context": "In a 2013 Daily Mail interview, the Oscar-winning actress said that if she'd had a daughter, \"fuck off\" is the first phrase she would have taught her, to give her the confidence to set boundaries.",
-    "real": true
+    "source": {
+      "title": "Daily Mail interview (Christian Today report)",
+      "url": "https://www.christiantoday.com/news/helen-mirren-advice-to-daughter-unconventional-brutally-honest",
+      "date": "2013"
+    }
   },
   {
     "text": "I once asked a Jesuit priest what was the best short prayer he knew. He said, \"Fuck it,\" as in \"Fuck it; it's in God's hands.\"",
     "speaker": "Anthony Hopkins",
     "context": "Anthony Hopkins recounting a Jesuit priest's answer when he asked for the best short prayer — an anecdote he has told publicly, including on Inside the Actors Studio.",
-    "real": true
+    "source": {
+      "title": "Inside the Actors Studio (IMDb quotes)",
+      "url": "https://www.imdb.com/name/nm0000164/quotes/",
+      "date": "2007"
+    }
   },
   {
     "text": "You've baked a really lovely cake, but then you've used dog shit for frosting.",
     "speaker": "Steve Jobs",
     "context": "Critiquing a NeXT programmer's work during a project review",
-    "real": true
+    "source": {
+      "title": "Book 'The Second Coming of Steve Jobs' (Cult of Mac)",
+      "url": "https://www.cultofmac.com/news/eleven-cutting-steve-jobs-quotes",
+      "date": "2000"
+    }
   }
 ]

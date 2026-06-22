@@ -453,6 +453,26 @@ def deny_hit(*parts, allow_politics=False):
     return any((" " + w + " ") in blob for w in terms)
 
 
+# Defamation guard for FAKES (every lane, incl. Off the Record): NEVER put a first-person CONFESSION of a crime,
+# sexual act/allegation, drug offence, medical condition, or serious wrongdoing in a real named person's mouth —
+# that is a lawsuit, not a game. Deterministic (never depends on an LLM), on top of HARD_DENY + the LLM screen.
+# Recreational banter ("I got hammered", "I love a good party") is NOT matched — only damaging assertions are.
+DEFAMATORY_RE = re.compile(
+    r"\b(i|i'?ve|i'?m|we|my)\b[^.?!]{0,45}\b("
+    r"killed|murder\w*|stabb\w*|shot|rap\w+|assault\w*|abus\w+|molest\w+|"
+    r"cheated\s+on|slept\s+with|had\s+an\s+affair|"
+    r"deal(t|ing)?\s+\w*\s*(drugs|coke|cocaine|heroin|meth|dope)|sold\s+\w*\s*(drugs|coke|cocaine|heroin|meth)|smuggl\w+|trafficked|"
+    r"stole|embezzl\w+|defraud\w*|committed\s+fraud|launder\w+|bribed|"
+    r"diagnosed\s+with|overdos\w+|relaps\w+|"
+    r"never\s+paid\s+(my\s+)?taxes|evad\w+\s+taxes|tax\s+evasion"
+    r")\b", re.I)
+
+
+def defamatory(text):
+    """True if a FAKE makes a first-person damaging assertion (crime/sex/drugs/medical/fraud) — block it outright."""
+    return bool(DEFAMATORY_RE.search(text or ""))
+
+
 # Generic "speakers" that aren't a named person — a real-or-fake QUOTE game needs an attributable human.
 GENERIC_SPEAKER = {"scientists", "scientist", "researchers", "researcher", "study", "team", "experts",
                    "expert", "authors", "author", "officials", "official", "spokesperson", "spokesman",
@@ -518,19 +538,33 @@ def gather_reals(feeds, days, used, cat="general", want=6):
     return verified
 
 
+def voice_refs(cat, k=5):
+    """Real, in-lane sample lines (from the evergreen bank) showing how people in this lane genuinely phrase
+    things — fed to the fake-writer so fakes are IN-VOICE (kills style tells, complements context-parity)."""
+    bank = [e for e in load_evergreen(cat) if e.get("text")]
+    if not bank:
+        return ""
+    random.shuffle(bank)
+    refs = "\n".join(f'- {e.get("speaker","?")}: "{e["text"][:160]}"' for e in bank[:k])
+    return ("\n\nVOICE REFERENCES — real lines showing how people in this lane actually sound (match this cadence, "
+            "vocabulary and attitude; do NOT reuse these speakers or lines):\n" + refs)
+
+
 def forge_fakes(used, cat="general", n=6):
     meta = CATEGORIES.get(cat, CATEGORIES["general"])
     kind = meta.get("kind", "person")
     sysp, tmpl = {"movie": (FAKE_SYS_MOVIE, FAKE_TMPL_MOVIE),
                   "nsfw": (FAKE_SYS_NSFW, FAKE_TMPL_NSFW)}.get(kind, (FAKE_SYS, FAKE_TMPL))
     try:
-        fakes = largest_json(llm(sysp, tmpl.format(n=n, lane=meta["lane"], figures=meta["figures"], topic=meta.get("topic", "")), max_tokens=2800)) or []
+        prompt = tmpl.format(n=n, lane=meta["lane"], figures=meta["figures"], topic=meta.get("topic", "")) + voice_refs(cat)
+        fakes = largest_json(llm(sysp, prompt, max_tokens=2800)) or []
     except Exception as e:  # noqa: BLE001
         print(f"  ! fakes LLM: {e}", file=sys.stderr); return []
     ap = meta.get("allow_politics", False)
     out = []
     for f in fakes if isinstance(fakes, list) else []:
         if f.get("text") and f.get("speaker") and not deny_hit(f["text"], f["speaker"], f.get("context"), allow_politics=ap) \
+                and not defamatory(f["text"]) \
                 and _norm(f["text"]) not in used:      # never repeat a published quote (real or fake)
             out.append({"text": f["text"], "speaker": f["speaker"], "context": f.get("context", ""),
                         "real": False, "fake_note": f.get("fake_note") or "I made this one up.",  # Mags voice; never "AI" (copy rule)

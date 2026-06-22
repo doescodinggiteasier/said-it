@@ -19,7 +19,12 @@
       "text": "Over the past forty years I've been loaded on booze, coke, acid, Quaaludes, glue, cough mixture, heroin, Rohypnol, Klonopin, Vicodin, and too many other heavy-duty substances to list in this footnote. On more than a few occasions I was on all of these at the same time.",
       "speaker": "Ozzy Osbourne",
       "context": "From a footnote in his 2010 autobiography 'I Am Ozzy' (with Chris Ayres), cataloguing four decades of his own substance abuse.",
-      "real": true
+      "real": true,
+      "source": {
+        "title": "Memoir 'I Am Ozzy' (LA Weekly excerpt)",
+        "url": "https://www.laweekly.com/i-am-ozzy-soon-to-be-classic-quotes-from-ozzy-osbournes-upcoming-autobiography/",
+        "date": "2010"
+      }
     },
     {
       "id": "q3",
@@ -50,7 +55,12 @@
       "text": "There are 400,000 words in the English language, and there are seven of them you can't say on television. What a ratio that is. 399,993 to 7. They must really be bad. Shit, piss, fuck, cunt, cocksucker, motherfucker, and tits.",
       "speaker": "George Carlin",
       "context": "Carlin's landmark \"Seven Words You Can Never Say on Television\" routine from his 1972 album Class Clown, listing the broadcast-banned words verbatim and reveling in saying them all out loud.",
-      "real": true
+      "real": true,
+      "source": {
+        "title": "'Class Clown' — Seven Words You Can Never Say on Television",
+        "url": "https://en.wikipedia.org/wiki/Seven_dirty_words",
+        "date": "1972"
+      }
     }
   ]
 }
