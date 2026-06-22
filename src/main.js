@@ -8,8 +8,8 @@ import { LANE_LABELS, LANE_HUES, LANE_VIBES, LANE_HOT, LANE_ADULT, LANE_ICONS,
   laneIcon, laneLabel, laneHue, laneName, lanePath, dayKey, laneDaysFrom, availableLanesFrom, fetchDayFrom,
   lanesForDay, laneDoneOn, lanesDoneCount, countLanesDoneByDate } from "./data.js";
 import { createLogger, fetchCrewBoard,
-  sbFetchCrewBoard, sbFetchMeProfile, sbFetchCohort,
-  sbRecordCompletion, sbRecordCrewMember, sbRecordCrewName, sbRecordEvent } from "./api.js";
+  sbFetchCrewBoard, sbFetchMeProfile, sbFetchCohort, sbFetchGlobal,
+  sbRecordCompletion, sbRecordCrewMember, sbRecordCrewName, sbRecordEvent, sbRecordLike } from "./api.js";
 
 (function(){
 "use strict";
@@ -76,6 +76,7 @@ function weekdayShort(dateStr){ return new Date(dateStr+"T12:00:00").toLocaleDat
 var CHECK_SVG='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6"/></svg>';
 var CHEV_DOWN='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>';
 var CHEV_RIGHT='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
+var HEART_SVG='<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5l-1.45-1.32C5.4 14.5 2 11.4 2 7.6 2 5 4.05 3 6.6 3 8.05 3 9.44 3.68 12 6.1 14.56 3.68 15.95 3 17.4 3 19.95 3 22 5 22 7.6c0 3.8-3.4 6.9-8.55 11.58z"/></svg>';
 var CHEV_LEFT='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
 var BACK_ARROW='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
 /* ---------- bottom-sheet infra (spring-up modal; close on backdrop) ---------- */
@@ -111,6 +112,30 @@ function reduceMotionOn(){ if(ST.reduceMotion) return true; try{ return !!(windo
 function applyTheme(){ var t=ST.theme||CFG.THEME; document.body.classList.toggle("theme-coral", t==="coral"); }   // coral is AA-tuned + user-selectable
 function applyMotionPref(){ document.body.classList.toggle("rm", !!ST.reduceMotion); }
 function haptic(pattern){ try{ if(ST.haptics!==false && !reduceMotionOn() && typeof navigator!=="undefined" && navigator.vibrate) navigator.vibrate(pattern); }catch(e){} }
+
+/* ---------- Mags reacts (EXTENDS the mags-bob / mags-flip pattern) ----------
+   A brief, one-shot animation on a Mags SVG, fired ONLY at real feedback moments (reveal score, streak bump,
+   clean sweep) plus an occasional idle "peek" on Home. Always guarded by reduced-motion — Mags goes still then. */
+function magsReact(kind, node){
+  if(reduceMotionOn()) return;                                   // OS pref OR in-app override → no motion
+  if(!node){ var b=$("magsBtn"); node=b&&b.querySelector(".mags"); }   // default target: the header brand bird
+  if(!node) return;
+  var dur={cheer:900,tilt:600,hop:640,peek:1400}[kind]||640;
+  node.classList.remove("mags-react-cheer","mags-react-tilt","mags-react-hop","mags-react-peek");
+  void node.offsetWidth;                                         // restart the animation if re-fired
+  node.classList.add("mags-react-"+kind);
+  setTimeout(function(){ if(node) node.classList.remove("mags-react-"+kind); }, dur);
+}
+// idle Home peek: a subtle flip every ~20–30s while Home is on screen (NOT constant motion). Self-clears on nav.
+function scheduleHomePeek(){
+  if(window._homePeek){ clearTimeout(window._homePeek); window._homePeek=null; }
+  if(reduceMotionOn()) return;
+  var delay=20000+Math.floor(Math.random()*10000);              // ~20–30s, jittered so it never feels mechanical
+  window._homePeek=setTimeout(function(){
+    if(currentScreen()==="home" && !document.getElementById("sheetBackdrop")) magsReact("peek");   // not over a sheet
+    if(currentScreen()==="home") scheduleHomePeek(); else window._homePeek=null;
+  }, delay);
+}
 
 /* ---------- week / freeze helpers — weekKey + daysBetween imported from engine.js ---------- */
 
@@ -169,13 +194,15 @@ var MANIFEST={days:[]}; // published editions (daily/index.json)
 
 /* ---------- boot ---------- */
 var CREW_INVITE=false, LINKED=false, JUST_JOINED=null, INVITE_BY="", INVITE_CN="";
+var PREV_SEEN=null, RECAP_SHOWN=false;   // last_seen BEFORE this session bumped it → drives the returner recap (once/session)
 function boot(){
   LINKED=handleDeviceLink();    // ?me=SID → adopt that identity (same person, another device) — BEFORE any logging
   handleCrewInvite();           // ?crew=CODE&inv=SID → join + log invite_opened (k-factor)
   initAuth();                   // H-A: pick up an existing Supabase session + listen for sign-in (magic-link return)
   // fire the single per-device install NOW (after sid adoption), so it's tagged with the final identity
   if(!ST.installed){ ST.installed=true; logEvent("install",{first:ST.first_seen, backfill:INSTALL_BACKFILL}); if(sbWriteOn()) sbRecordEvent(SB, "install", ST.sid, ST.first_seen); save(ST); }
-  if(ST.last_seen!==todayStr()){ ST.last_seen=todayStr(); save(ST); }   // track the last real day the app was opened
+  PREV_SEEN=ST.last_seen;   // capture BEFORE we bump it — the recap needs the day you were LAST here
+  if(ST.last_seen!==todayStr()){ ST.last_seen=todayStr(); save(ST); }   // track the last real day the app was opened (updated each load)
   fetch("daily/index.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;})
     .then(function(idx){ if(idx&&(idx.days||idx.categories)) MANIFEST=idx; }, function(){})
     .then(function(){
@@ -425,8 +452,10 @@ function renderHomeHero(){
     host.className="hero-solo"; host.removeAttribute("role"); host.removeAttribute("tabindex"); host.onclick=null; host.onkeydown=null;
     host.innerHTML='<div class="hc-eyebrow">CREWS</div>'+
       '<div class="hs-title">Play with friends</div><div class="hs-sub">Start a crew — compare scores on a shared daily board. No account needed.</div>'+
-      '<button class="hs-btn" id="homeStartCrew">+ Create or join a crew</button>';
+      '<button class="hs-btn" id="homeStartCrew">+ Create or join a crew</button>'+
+      '<div class="hs-solo" id="homeSolo" hidden></div>';   // solo loop (#11): your daily standing, for players with no crew
     var b=$("homeStartCrew"); if(b) b.onclick=openCrew;
+    renderSolo($("homeSolo"), todayStr());
     return;
   }
   host.className="hero-crew";
@@ -458,10 +487,43 @@ function renderHomeHero(){
       return '<span class="av" style="border-color:'+col+';color:'+col+'">'+esc(s.you?"Y":avInitial(s.name))+'</span>'; }).join("");
   });
 }
+/* ---------- returner recap: "great to see you again" when you've been away ≥2 days ---------- */
+// new (lane,date) editions published strictly after `since` and up to today — computed from the live MANIFEST.
+function newEditionsSince(since){
+  if(!since) return [];
+  var today=todayStr(), out=[];
+  availableLanes().forEach(function(lane){
+    laneDays(lane).forEach(function(d){ if(d>since && d<=today) out.push({lane:lane, date:d}); });
+  });
+  return out;
+}
+function maybeReturnerRecap(){
+  var host=$("homeRecap"); if(!host) return;
+  host.className=""; host.innerHTML="";
+  if(RECAP_SHOWN) return;                                            // once per session — don't re-pop on every Home visit
+  if(!PREV_SEEN) return;                                             // brand-new device → nothing to recap
+  var gap=daysBetween(PREV_SEEN, todayStr()); if(gap<2) return;      // only after a real absence (≥2 days)
+  var fresh=newEditionsSince(PREV_SEEN); if(!fresh.length) return;   // nothing new published while away
+  RECAP_SHOWN=true;
+  var dateSet={}; fresh.forEach(function(e){ dateSet[e.date]=1; }); var nDays=Object.keys(dateSet).length;
+  var chips=lanesToday().map(function(l){
+    return '<button class="rc-chip" data-lane="'+esc(l)+'"><span class="rc-dot" style="background:'+laneHue(l)+'"></span>'+esc(laneName(l))+'</button>'; }).join("");
+  host.className="home-recap";
+  host.innerHTML=
+    '<button class="rc-x" id="recapX" aria-label="Dismiss">'+X_ICON+'</button>'+
+    '<div class="rc-head">'+magpie("delighted",30,"mags-flip")+'<span class="rc-title">Great to see you again 👋</span></div>'+
+    '<div class="rc-sub">It’s been '+gap+' days — '+nDays+' new edition'+(nDays===1?'':'s')+' dropped while you were away. Jump back in:</div>'+
+    (chips?('<div class="rc-chips">'+chips+'</div>'):'')+
+    '<div class="rc-foot">Pick up where you left off and keep your streak alive.</div>';
+  $("recapX").onclick=function(){ host.className=""; host.innerHTML=""; logEvent("recap_dismiss"); };
+  host.querySelectorAll(".rc-chip").forEach(function(b){ b.onclick=function(){ startLane(b.getAttribute("data-lane")); }; });
+  logEvent("recap_shown",{gap:gap, editions:fresh.length, days:nDays});
+}
 function renderHome(){
   $("editiontag").textContent=homeDateLabel();
   $("sub").textContent="";
   $("pastbar").classList.add("hide"); $("pastbar").innerHTML="";
+  maybeReturnerRecap();   // "great to see you again" — only when you've been away ≥2 days (once per session)
   renderHomeHero();
   homeFakesNote();
   renderHomeToday();
@@ -479,6 +541,7 @@ function renderHome(){
       ha.textContent=ACCOUNT?("Synced"+(ACCOUNT.email?(" · "+ACCOUNT.email):"")):"Save progress"; ha.onclick=openCrew; }
     else { ha.classList.add("hide"); if(sep)sep.classList.add("hide"); } }
   show("home");
+  scheduleHomePeek();   // start the idle Mags peek loop (self-clears on nav; no-op under reduced motion)
 }
 function goHome(){ JUST_JOINED=null; REPLAY=false; if(qsDay()){ try{ history.replaceState(null,"",location.pathname); }catch(e){} } renderHome(); logEvent("home_view"); }  // strip a lingering ?d= so Home survives a reload
 // Off the Record 18+ gate — styled bottom sheet (replaces window.confirm); keeps the ST.nsfw_ok flag + nsfw_optin event
@@ -636,21 +699,52 @@ function renderSettings(){
     '<button class="sheet-close" id="discClose">Got it</button>'); var dc=$("discClose"); if(dc) dc.onclick=closeSheet; };
 }
 
-/* ---------- one-card "how to play" onboarding (first run, before the first set) ---------- */
+/* ---------- first-run onboarding: ONE interactive example quote (first run, before the first set) ----------
+   Faster first play — instead of a wall of text, the player tries the actual mechanic on a single safe, real
+   example (swipe or tap Real/Fake, NO scoring), then sees the framing and continues into their chosen lane.
+   Once-only (the ST.onboarded gate) and skippable (Skip link + backdrop both proceed → never strand). */
 function maybeOnboard(then){
   if(ST.onboarded || gamesPlayed()>0){ then(); return; }
   var fired=false;
   function done(){ if(fired) return; fired=true; ST.onboarded=true; save(ST); logEvent("onboarded"); closeSheet(); then(); }  // ANY dismissal proceeds → never strand, always mark onboarded
   openSheet(
-    '<div class="ob-title">How to play</div>'+
-    '<div class="ob-sub">Six quotes from this week. Some are real — some Mags made up. Out-smart the bird.</div>'+
-    '<ol class="ob-steps">'+
-      '<li><span class="obn">1</span><span>Read each quote, then call it <b>Real</b> or <b>Fake</b> — tap, or swipe the card.</span></li>'+
-      '<li><span class="obn">2</span><span><b>Lock</b> your most-confident pick to bet it for a bonus.</span></li>'+
-      '<li><span class="obn">3</span><span>See your score, grow a <b>streak</b>, and race friends in a crew.</span></li>'+
-    '</ol>'+
-    '<button class="ob-go" id="obStart">Got it — let’s play</button>');
-  var b=$("obStart"); if(b) b.onclick=done;
+    '<div class="ob-title">Real, or made up?</div>'+
+    '<div class="ob-sub">Each day you get six quotes — some real, some I faked. Call this one to see how it works:</div>'+
+    '<div class="ob-ex" id="obCard">'+
+      '<div class="ob-tint real" id="obTintReal"></div><div class="ob-tint fake" id="obTintFake"></div>'+
+      '<div class="ob-ex-q">“That’s one small step for man, one giant leap for mankind.”</div>'+
+      '<div class="ob-ex-spk"><span class="ob-ex-av">N</span><span>Neil Armstrong · on the Moon, 1969</span></div>'+
+    '</div>'+
+    '<div class="ob-ex-row" id="obRow">'+
+      '<button class="rfbtn real" id="obReal"><span class="ic">'+RF_CHECK+'</span><span class="lbl">Real</span></button>'+
+      '<button class="rfbtn fake" id="obFake"><span class="ic">'+X_ICON+'</span><span class="lbl">Fake</span></button>'+
+    '</div>'+
+    '<div class="ob-hint" id="obHint">Swipe right for Real, left for Fake — or tap.</div>'+
+    '<button class="ob-skip" id="obSkip">Skip — just let me play</button>');
+  function reveal(){
+    var row=$("obRow"), hint=$("obHint"), sk=$("obSkip");
+    if(!row) return;   // already revealed
+    row.outerHTML='<div class="ob-reveal"><b>That’s the idea.</b> Some quotes are real, some I made up — your job is to catch my fakes. '+
+      '(That one was real: Neil Armstrong really said it.)</div>'+
+      '<button class="ob-go" id="obGo">Let’s play →</button>';
+    if(hint && hint.parentNode) hint.parentNode.removeChild(hint);
+    if(sk && sk.parentNode) sk.parentNode.removeChild(sk);
+    var go=$("obGo"); if(go){ go.onclick=done; try{ go.focus({preventScroll:true}); }catch(e){} }
+    haptic(12);
+  }
+  var r=$("obReal"); if(r) r.onclick=reveal;
+  var f=$("obFake"); if(f) f.onclick=reveal;
+  var sk0=$("obSkip"); if(sk0) sk0.onclick=done;
+  // swipe the example card (mirrors Play: right=Real, left=Fake; live tint), reveal on a decisive swipe
+  var card=$("obCard"), tR=$("obTintReal"), tF=$("obTintFake");
+  if(card){ var ds=null, dx=0, dy=0;
+    card.onpointerdown=function(e){ ds={x:e.clientX,y:e.clientY}; try{ card.setPointerCapture(e.pointerId); }catch(_){} card.style.transition="none"; };
+    card.onpointermove=function(e){ if(!ds)return; dx=e.clientX-ds.x; dy=e.clientY-ds.y;
+      card.style.transform="translate("+dx+"px,"+dy+"px) rotate("+(dx*0.035)+"deg)";
+      if(tR)tR.style.opacity=clamp01(dx/120)*0.16; if(tF)tF.style.opacity=clamp01(-dx/120)*0.16; };
+    card.onpointerup=card.onpointercancel=function(){ if(!ds)return; var ax=Math.abs(dx), decided=ax>80;
+      card.style.transition="transform .3s cubic-bezier(.34,1.56,.64,1)"; card.style.transform=""; if(tR)tR.style.opacity=0; if(tF)tF.style.opacity=0;
+      ds=null; dx=0; dy=0; if(decided) reveal(); }; }
   var bd=$("sheetBackdrop"); if(bd) bd.onclick=function(e){ if(e.target===bd) done(); };   // backdrop tap also proceeds (was: strand)
 }
 
@@ -844,6 +938,65 @@ function submit(){
   renderReveal(result,true,streakBumped,swept);
 }
 
+/* ---------- likes (#6 — capture-only reactions on reveal truth cards) ----------
+   LOCAL ST.likes = [{day, lane, qid, reason, real, ts}] is the SOURCE OF TRUTH and works fully offline (additive
+   migration: ST.likes is created on first like). Supabase quote_likes is a best-effort, INSERT-only MIRROR. NOT wired
+   into quote generation yet — this only captures the signal. Natural key (day,lane,qid) — one like per quote. */
+function findLikeIdx(day,lane,qid){ var ls=ST.likes||[]; for(var i=0;i<ls.length;i++){ var l=ls[i]; if(l.day===day && l.lane===lane && String(l.qid)===String(qid)) return i; } return -1; }
+function isLiked(day,lane,qid){ return findLikeIdx(day,lane,qid)>=0; }
+function recordLikeLocal(day,lane,qid,real){   // turn a like ON (reason filled in later via the chooser). Local-only; the mirror fires once we know the reason.
+  ST.likes=ST.likes||[];
+  var row={day:day,lane:lane,qid:String(qid),reason:"",real:!!real,ts:Date.now()};
+  var i=findLikeIdx(day,lane,qid); if(i>=0) ST.likes[i]=row; else ST.likes.push(row);
+  save(ST); logEvent("quote_like",{lane:lane,real:!!real});
+}
+function setLikeReason(day,lane,qid,reason){ var i=findLikeIdx(day,lane,qid); if(i<0) return; ST.likes[i].reason=reason||""; save(ST); }
+function removeLike(day,lane,qid){   // un-like: LOCAL is the source of truth. The mirror is INSERT-only (no anon delete), so it keeps any sent row — harmless.
+  var i=findLikeIdx(day,lane,qid); if(i<0) return; ST.likes.splice(i,1); save(ST); logEvent("quote_unlike",{lane:lane});
+}
+// a brief pop on the heart at like-time — guarded by reduced-motion (OS pref OR in-app override), like every other animation here
+function heartPop(el){ if(!el || reduceMotionOn()) return; el.classList.remove("pop"); void el.offsetWidth; el.classList.add("pop"); setTimeout(function(){ if(el) el.classList.remove("pop"); }, 420); }
+// reason chooser: every dismissal path (pick / skip / backdrop) funnels through finish() → updates the local reason
+// AND mirrors the like exactly ONCE (so the INSERT-only mirror lands a single row carrying the final reason).
+function openLikeReason(day,lane,qid,real){
+  var REASONS=[["funny","😄 Funny"],["surprising","😮 Surprising"],["insightful","💡 Insightful"],["other","✶ Other"]];
+  var done=false;
+  function finish(reason){ if(done) return; done=true;
+    setLikeReason(day,lane,qid,reason);
+    if(sbWriteOn()) sbRecordLike(SB,{ sid:ST.sid, day:day, lane:lane, qid:String(qid), reason:reason||"", real:!!real });
+    liveAlert("Liked"+(reason?(" — "+reason):"")+".");
+    closeSheet();
+  }
+  var btns=REASONS.map(function(r){ return '<button class="like-reason" data-r="'+esc(r[0])+'">'+esc(r[1])+'</button>'; }).join("");
+  var sh=openSheet('<div class="sheet-title">What did you like about it?</div>'+
+    '<div class="like-reasons" role="group" aria-label="Pick a reason">'+btns+'</div>'+
+    '<button class="sheet-close" id="likeSkip">Skip</button>');
+  sh.querySelectorAll(".like-reason").forEach(function(b){ b.onclick=function(){ b.classList.add("sel"); finish(b.getAttribute("data-r")); }; });
+  var sk=$("likeSkip"); if(sk) sk.onclick=function(){ finish(""); };
+  var bd=$("sheetBackdrop"); if(bd) bd.onclick=function(e){ if(e.target===bd) finish(""); };   // backdrop dismiss = liked, no reason (still captured)
+}
+
+/* ---------- solo competitive loop (#11) ----------
+   Two purely-local signals (work offline) + one async global. "Daily score" = SUM of the day's lane scores. */
+function dayScoreTotal(date){ var t=0, any=false; availableLanes().forEach(function(lane){ var r=ST.days[dayKey(lane,date)]; if(r && r.done && r.result){ t+=r.result.score||0; any=true; } }); return any?t:null; }
+function soloDeltaText(delta){ if(delta>0) return "📈 +"+delta+" vs yesterday"; if(delta<0) return "📉 "+delta+" vs yesterday"; return "➖ even with yesterday"; }
+// Render the solo standing into `el` for `day`: local "vs yesterday" first (instant, offline), then async "you beat X%".
+// Hides gracefully (stays empty) when there's nothing to show — no yesterday to compare AND no/!offline global.
+function renderSolo(el, day){
+  if(!el) return;
+  el.innerHTML=""; el.hidden=true;
+  if(lanesDoneCount(ST.days, lanesForDay(MANIFEST,day), day)<=0) return;   // only once you've played that day
+  var s=dayScoreTotal(day), p=dayScoreTotal(addDaysStr(day,-1)), delta=(s!=null && p!=null)?(s-p):null;
+  if(delta!=null){ el.innerHTML='<span class="solo-delta">'+soloDeltaText(delta)+'</span>'; el.hidden=false; }
+  if(!useSbCrew()) return;   // global standing needs the Supabase board backend; offline/endpoint → local only
+  sbFetchGlobal(SB, day, ST.sid).then(function(g){
+    if(!el || !el.isConnected) return;
+    if(!g || !g.viewer_completed || g.beat_pct==null) return;   // null / offline / only-player-so-far → stay local-only
+    el.insertAdjacentHTML("beforeend", '<span class="solo-beat">🏆 You beat <b>'+g.beat_pct+'%</b> of players today</span>');
+    el.hidden=false;
+  });
+}
+
 /* ---------- REVEAL (bright redesign) ---------- */
 function trunc(t,nn){ t=String(t); return t.length>nn ? t.slice(0,nn).replace(/[\s,.;:]+$/,"")+"…" : t; }
 // spoiler-free share text: score, streak, 🟩/⬜ grid (right/miss — never which were fake), a tap-to-play link
@@ -851,6 +1004,22 @@ function shareGrid(res){
   var grid=res.perq.map(function(p){ return p.right?"🟩":"⬜"; }).join("");
   var link=(res.date===todayStr())?baseURL():editionLink(res.date);
   return "Said It? — "+res.score+"/"+res.n+"\n🔥 "+res.streak+"-day streak\n"+grid+"\n"+link;
+}
+// optional "quote of the day": an editorial flag in the day JSON (a quote id), else the first REAL quote. Reals only.
+function quoteOfDayId(){
+  if(!DAY) return null;
+  if(DAY.quote_of_day){ var q=(DAY.quotes||[]).filter(function(x){return x.id===DAY.quote_of_day && x.real;})[0]; if(q) return q.id; }
+  var fr=(DAY.quotes||[]).filter(function(x){return x.real;})[0]; return fr?fr.id:null;
+}
+// PER-QUOTE viral share (#12): challenge the group chat with ONE quote, reusing the navigator.share → clip path.
+// REAL quotes ONLY — we never expose a fake, and the text never states the answer, so it stays a fair, spoiler-safe dare.
+function shareOneQuote(i, btn){
+  var q=DAY&&DAY.quotes[i]; if(!q || !q.real) return;   // guard: reals only — never leak which were fake
+  var link=(DAY.date===todayStr())?baseURL():editionLink(DAY.date);
+  var txt="Did "+q.speaker+" really say this?\n“"+q.text+"”\n— real or fake? "+link;
+  function ok(){ if(btn){ btn.textContent="Shared ✓"; btn.className="tr-share shared"; } logEvent("quote_share",{cat:(DAY&&DAY._lane)||"general", kind:"one"}); }
+  if(navigator.share){ navigator.share({text:txt}).then(ok,function(err){ if(err&&err.name==="AbortError")return; clip(txt,ok); }); return; }
+  clip(txt,ok);
 }
 function fireConfetti(){
   var host=el("div","rv-confetti"); var cols=["var(--primary)","#16B981","#FBA94C","#FF8FAB","#9775FA","#4DABF7"], html="";
@@ -918,6 +1087,7 @@ function openReview(lane, date){
 function renderReveal(res, fresh, bumped, swept){
   var isToday = DAY.date===todayStr(), clean=(res.score===res.n);
   var mood = (clean||swept) ? "delighted" : "oops";
+  var rvLane = res.lane||"general";   // lane of THIS reveal — the like's natural key (with res.date + quote id)
 
   // fake-that-got-you / clean-sweep card
   var topCard="";
@@ -932,6 +1102,7 @@ function renderReveal(res, fresh, bumped, swept){
   }
 
   // truth rows — F: truth = mint/coral stamp (left); your result = worded blue/amber verdict chip (right). Uniform citation footprint.
+  var qotdId=quoteOfDayId();   // the one real quote to spotlight for sharing (editorial flag, else first real)
   var rowsHtml=DAY.quotes.map(function(q,i){
     var pq=res.perq[i], real=q.real, right=pq.right, guess=pq.guess, skipped=!guess;
     var cite = real
@@ -941,10 +1112,18 @@ function renderReveal(res, fresh, bumped, swept){
       ? '<span class="vchip skip">– Skipped</span>'
       : (right ? '<span class="vchip right">'+CHECK_SVG+' Nailed it</span>'
                : '<span class="vchip wrong">'+X_ICON+' Got me</span>');
+    // PER-QUOTE share (#12) — REAL quotes only: a "challenge a friend" CTA. Never rendered on a fake, so nothing
+    // that gets shared can leak which were fake. The day's spotlight quote gets the prominent ⭐ variant.
+    var isQotd=(real && q.id===qotdId);
+    var share = real ? ('<button class="tr-share'+(isQotd?' qotd':'')+'" data-i="'+i+'">'+(isQotd?'⭐ Quote of the day — challenge a friend':'Share this one')+'</button>') : '';
+    // double-tap-to-like (#6) — visible heart toggle too, for accessibility. Captured on REAL and FAKE alike.
+    var liked=isLiked(res.date,rvLane,q.id);
+    var heart='<button class="tr-like'+(liked?' liked':'')+'" data-i="'+i+'" aria-pressed="'+(liked?'true':'false')+'" aria-label="'+(liked?'Liked — tap to remove':'Like this quote')+'">'+HEART_SVG+'</button>';
     return '<div class="tr"><div class="tr-row">'+
       '<div class="tr-stamp"><span class="stamp '+(real?"real":"fake")+'">'+(real?"REAL":"FAKE")+'</span></div>'+
       '<div class="tr-body"><div class="tr-q">“'+esc(trunc(q.text,72))+'”</div>'+
-        '<div class="tr-meta">'+esc(q.speaker)+(q.context?(' · '+esc(trunc(q.context,30))):'')+'</div>'+cite+'</div>'+
+        '<div class="tr-meta">'+esc(q.speaker)+(q.context?(' · '+esc(trunc(q.context,30))):'')+'</div>'+cite+
+        '<div class="tr-acts">'+share+heart+'</div></div>'+
       '<div class="tr-verdict">'+verdict+'</div>'+
     '</div></div>';
   }).join("");
@@ -959,6 +1138,7 @@ function renderReveal(res, fresh, bumped, swept){
     '<div class="rv-cap">'+esc(capFor(res.score,res.n))+(fresh?"":' <span class="replayed">· already played</span>')+'</div>'+
     '<div class="rv-streak"><span class="fire">🔥</span><span class="num" id="rvStreakNum">'+res.streak+'</span><span>day streak — keep it rolling</span></div>'+
     (res.frozen?'<div class="rv-freeze">🛡️ Streak-freeze used — your streak survived a missed day. One freeze per week.</div>':"")+
+    '<div class="rv-solo" id="rvSolo" hidden></div>'+   // solo loop (#11): "vs yesterday" (local) + "you beat X%" (async, gated) — hidden until filled
     topCard+
     '<div class="rv-truth-label">The truth</div><div class="rv-truth" id="rvTruth">'+rowsHtml+'</div>'+
     // reveal = hub: jump straight into the lanes left to play today (or celebrate the clean sweep)
@@ -994,6 +1174,27 @@ function renderReveal(res, fresh, bumped, swept){
   $("resetLink").onclick=function(){ if(confirm("Erase your streak, rating and history on this device?")){ localStorage.removeItem(K); location.reload(); } };
   // reveal hub: one-tap into a remaining lane
   host.querySelectorAll(".rt-chip").forEach(function(b){ b.onclick=function(){ startLane(b.getAttribute("data-lane")); }; });
+  // per-quote viral share (#12): "Share this one" on REAL truth cards
+  host.querySelectorAll(".tr-share").forEach(function(b){ b.onclick=function(){ shareOneQuote(+b.getAttribute("data-i"), b); }; });
+  // double-tap-to-like + heart toggle (#6). Capture-only — like is stored LOCAL (offline-first), then mirrored once a reason is set.
+  function setHeart(el, on){ if(!el) return; el.classList.toggle("liked", on); el.setAttribute("aria-pressed", on?"true":"false"); el.setAttribute("aria-label", on?"Liked — tap to remove":"Like this quote"); }
+  function likeOn(i, el){   // idempotent ON: record local + pop + open the reason chooser (which mirrors once)
+    var q=DAY.quotes[i]; if(!q || isLiked(res.date,rvLane,q.id)) return;
+    recordLikeLocal(res.date, rvLane, q.id, q.real); setHeart(el, true); heartPop(el);
+    openLikeReason(res.date, rvLane, q.id, q.real);
+  }
+  function toggleLike(i, el){   // the explicit heart toggles both ways (accessibility)
+    var q=DAY.quotes[i]; if(!q) return;
+    if(isLiked(res.date,rvLane,q.id)){ removeLike(res.date, rvLane, q.id); setHeart(el, false); } else likeOn(i, el);
+  }
+  host.querySelectorAll(".tr-like").forEach(function(b){ b.onclick=function(e){ if(e&&e.stopPropagation)e.stopPropagation(); toggleLike(+b.getAttribute("data-i"), b); }; });
+  host.querySelectorAll("#rvTruth .tr").forEach(function(row,i){   // double-tap the card → like (Instagram-style; never un-likes)
+    var last=0;
+    row.addEventListener("click", function(e){
+      if(e.target.closest("a,button")) return;                    // taps on the heart/share/source handle themselves
+      var t=Date.now(); if(t-last<320){ last=0; likeOn(i, row.querySelector(".tr-like")); } else last=t;
+    });
+  });
   // "play again" — re-enter play in REPLAY mode (submit() shows the result but mutates nothing)
   var rp=$("rvReplay"); if(rp) rp.onclick=function(){ REPLAY=true; ANS={}; LOCK=null; PLAY_IDX=0; renderPlay(); };
 
@@ -1006,14 +1207,23 @@ function renderReveal(res, fresh, bumped, swept){
   show("reveal");
   // a11y: announce the result + streak through the assertive region (show() focuses the heading; this speaks the score)
   liveAlert("You scored "+res.score+" out of "+res.n+". "+capFor(res.score,res.n)+" Streak: "+res.streak+" day"+(res.streak===1?"":"s")+".");
+  // solo competitive loop (#11): "vs yesterday" (local, instant) + "you beat X%" (async, gated). Hides if there's nothing to show.
+  renderSolo($("rvSolo"), res.date);
 
   // sequential truth flip-in (200ms × index)
   var rows=host.querySelectorAll("#rvTruth .tr");
   rows.forEach(function(r,i){ setTimeout(function(){ if(r) r.classList.add("shown"); }, 200*i); });
-  // streak bump (+1 with a bounce) only when this play advanced the daily streak
+  // Mags reacts to the verdict — a high score (5/6+) or clean sweep gets a cheer; getting fooled gets a cheeky tilt
+  var revealBird=host.querySelector(".rv-head .mags");
+  if(fresh && revealBird){
+    var high=(clean||swept||res.score>=res.n-1);
+    if(high) setTimeout(function(){ magsReact("cheer", revealBird); }, 450);
+    else if(res.gotme && res.gotme.length) setTimeout(function(){ magsReact("tilt", revealBird); }, 360);
+  }
+  // streak bump (+1 with a bounce) only when this play advanced the daily streak — Mags hops along with it
   if(fresh && bumped && res.streak>0){
     var num=$("rvStreakNum"); if(num){ num.textContent=(res.streak-1);
-      setTimeout(function(){ var n2=$("rvStreakNum"); if(!n2)return; n2.textContent=res.streak; n2.classList.add("bump"); haptic(18); setTimeout(function(){ if(n2)n2.classList.remove("bump"); },650); }, 1650); }
+      setTimeout(function(){ var n2=$("rvStreakNum"); if(!n2)return; n2.textContent=res.streak; n2.classList.add("bump"); haptic(18); magsReact("hop", revealBird); setTimeout(function(){ if(n2)n2.classList.remove("bump"); },650); }, 1650); }
   }
   // haptic + confetti for a perfect score (6/6) OR a clean sweep of every lane today (reduced-motion hides confetti via CSS)
   if(fresh){ haptic((clean||swept) ? [16,55,16] : 10); }

@@ -59,7 +59,18 @@
   .mags-flip{transform:scaleX(-1)}
   .mags-bob{animation:mags-bob 2.4s ease-in-out infinite}
   @keyframes mags-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
-  @media (prefers-reduced-motion: reduce){ .mags-bob{animation:none} .mags-cycle{animation:none} }
+  /* Mags reacts — one-shot reactions fired by magsReact() at real feedback moments. EXTENDS mags-bob/mags-flip:
+     each is a brief transform animation on the Mags SVG; defined after .mags-bob so it wins while present. */
+  .mags-react-cheer{animation:mags-cheer .9s cubic-bezier(.34,1.56,.64,1)}
+  .mags-react-tilt{animation:mags-tilt .6s ease}
+  .mags-react-hop{animation:mags-hop .64s cubic-bezier(.34,1.56,.64,1)}
+  .mags-react-peek{animation:mags-peek 1.4s ease-in-out}
+  @keyframes mags-cheer{0%{transform:translateY(0) rotate(0)}22%{transform:translateY(-8px) rotate(-7deg)}48%{transform:translateY(0) rotate(0)}72%{transform:translateY(-6px) rotate(7deg)}100%{transform:translateY(0) rotate(0)}}
+  @keyframes mags-tilt{0%{transform:rotate(0)}32%{transform:rotate(13deg)}62%{transform:rotate(9deg)}100%{transform:rotate(0)}}   /* cheeky head-tilt when you got fooled */
+  @keyframes mags-hop{0%{transform:translateY(0)}30%{transform:translateY(-10px)}55%{transform:translateY(0)}75%{transform:translateY(-4px)}100%{transform:translateY(0)}}
+  @keyframes mags-peek{0%{transform:scaleX(1) rotate(0)}25%{transform:scaleX(-1) rotate(-6deg)}55%{transform:scaleX(-1) rotate(4deg)}80%{transform:scaleX(-1) rotate(0)}100%{transform:scaleX(1) rotate(0)}}   /* idle: a quick flip/peek, then back */
+  @media (prefers-reduced-motion: reduce){ .mags-bob{animation:none} .mags-cycle{animation:none}
+    .mags-react-cheer,.mags-react-tilt,.mags-react-hop,.mags-react-peek{animation:none} }
   .editiontag{color:var(--ink3);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
   .sub{display:none}
   .hide{display:none !important}
@@ -349,6 +360,21 @@
   .play-cta:active,.hs-btn:active,.stat-chip:active,.hc-name:active,.hero-crew:active{transform:scale(.985)}
   .play-cta,.hs-btn,.stat-chip,.hc-name,.hero-crew{transition:transform .06s ease}
 
+  /* returner recap — dismissible "great to see you again" banner with quick lane chips */
+  .home-recap{position:relative;background:var(--primary-soft);border-radius:12px;padding:16px 16px 15px;margin:6px 0 4px;box-shadow:var(--shadow-raised)}
+  .home-recap .rc-x{position:absolute;top:5px;right:5px;width:44px;height:44px;border-radius:8px;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center}
+  .home-recap .rc-x svg{stroke:var(--ink3)}
+  .rc-head{display:flex;align-items:center;gap:9px;padding-right:40px}
+  .rc-title{font-weight:700;font-size:17px;color:var(--ink);letter-spacing:-.2px}
+  .rc-sub{font-size:13.5px;font-weight:500;color:var(--ink2);margin-top:7px;line-height:1.45}
+  .rc-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .rc-chip{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--card);background:var(--card);cursor:pointer;
+    border-radius:999px;padding:10px 14px;font-weight:700;font-size:13.5px;color:var(--ink);min-height:44px;box-shadow:var(--shadow-card)}
+  .rc-chip .rc-dot{width:9px;height:9px;border-radius:50%;flex:none}
+  .rc-chip:active{transform:scale(.96)} .rc-chip{transition:transform .06s ease}
+  .rc-chip:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+  .rc-foot{font-size:12px;font-weight:600;color:var(--primary-dark);margin-top:11px}
+
   /* ============================================================
      BRIGHT REDESIGN — Lanes picker + Play (Phase 2)
      ============================================================ */
@@ -512,6 +538,13 @@
   .tr-cite.muted{color:var(--ink3)}
   .tr-cite.fake{display:block;color:#8A4A4D;font-weight:500;line-height:1.4;background:#FFF1F1;border-radius:7px;padding:8px 10px}
   .tr-cite.fake b{color:#B0282E;font-weight:700}
+  /* per-quote viral share (#12) — REAL rows only; compact, sits under the citation */
+  .tr-share{display:flex;width:fit-content;align-items:center;margin-top:10px;background:transparent;border:1.5px solid var(--track);cursor:pointer;
+    color:var(--primary-dark);border-radius:8px;padding:8px 12px;font-weight:700;font-size:12.5px;min-height:44px}
+  .tr-share.qotd{border-color:var(--primary);background:var(--primary-soft);color:var(--primary-dark)}
+  .tr-share.shared{border-color:var(--mint);background:#E7F8F1;color:#1C6B4F}
+  .tr-share:active{transform:scale(.97)} .tr-share{transition:transform .06s ease, background .2s}
+  .tr-share:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
   /* worded verdict chip — your result (blue/amber + word), off the mint/coral truth axis (F) */
   .tr-verdict{flex:none;display:flex;align-items:flex-start;padding-top:2px}
   .vchip{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;padding:5px 9px;border-radius:8px;white-space:nowrap}
@@ -519,6 +552,35 @@
   .vchip.right{background:var(--primary-dark);color:#fff} .vchip.right svg{stroke:#fff}   /* darker fill so white text clears AA */
   .vchip.wrong{background:transparent;border:1.5px solid var(--amber);color:#9A5B12} .vchip.wrong svg{stroke:#9A5B12}
   .vchip.skip{background:var(--track);color:var(--ink2)}
+  /* like (#6): a card actions row holds the share button (reals only) + the heart toggle (every row) */
+  .tr-acts{display:flex;align-items:center;gap:10px;margin-top:10px;flex-wrap:wrap}
+  .tr-acts .tr-share{margin-top:0}
+  .tr-like{flex:none;margin-left:auto;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;
+    background:transparent;border:1.5px solid var(--track);border-radius:10px;cursor:pointer;color:var(--ink3);
+    transition:transform .06s ease,color .2s,border-color .2s,background .2s}
+  .tr-like svg{fill:none;stroke:currentColor}
+  .tr-like.liked{color:var(--fake);border-color:var(--fake);background:#FFF1F1}
+  .tr-like.liked svg{fill:var(--fake);stroke:var(--fake)}
+  .tr-like:active{transform:scale(.92)}
+  .tr-like:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+  .tr-like.pop{animation:sit-heart-pop .42s cubic-bezier(.34,1.56,.64,1)}
+  @keyframes sit-heart-pop{0%{transform:scale(1)}40%{transform:scale(1.32)}100%{transform:scale(1)}}
+  /* like reason chooser (bottom sheet) */
+  .like-reasons{display:flex;flex-direction:column;gap:9px}
+  .like-reason{width:100%;border:2px solid var(--track);background:var(--card);color:var(--ink);border-radius:8px;
+    padding:15px 16px;font-weight:700;font-size:16px;text-align:left;cursor:pointer;min-height:54px;
+    transition:transform .06s ease,border-color .2s,background .2s}
+  .like-reason:active{transform:scale(.99)}
+  .like-reason.sel{border-color:var(--primary);background:var(--primary-soft);color:var(--primary-dark)}
+  .like-reason:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+  /* solo competitive standing (#11): on the reveal (rv-solo) + the solo home hero (hs-solo) */
+  .rv-solo{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+  .hs-solo{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .solo-delta,.solo-beat{display:inline-flex;align-items:center;font-size:13px;font-weight:700;border-radius:8px;padding:8px 12px}
+  .solo-delta{background:var(--track);color:var(--ink2)}
+  .solo-beat{background:var(--card);color:var(--primary-dark);box-shadow:0 4px 12px -8px rgba(40,50,90,.4)}
+  .hs-solo .solo-beat{background:var(--card)} .rv-solo .solo-beat{background:var(--primary-soft)}
+  .solo-beat b{font-weight:800}
   .rv-clean-ic{flex:none;display:flex}
   /* G: reveal shows ONE magpie (the score reaction) — drop the header brand bird here */
   body.scr-reveal #magsBtn{display:none}
@@ -759,11 +821,12 @@
   .scr-title:focus,[data-heading]:focus{outline:none}   /* programmatic focus-on-nav shouldn't draw a ring */
   /* reduced motion — OS preference AND the in-app override (body.rm) both calm the springy transitions */
   @media (prefers-reduced-motion: reduce){
-    .qcard,.toast,.tr,.rv-streak .num,.cr-row.you,.rfbtn,.lockbtn2{transition:none !important;animation:none !important}
+    .qcard,.toast,.tr,.rv-streak .num,.cr-row.you,.rfbtn,.lockbtn2,.tr-like,.tr-like.pop,.like-reason{transition:none !important;animation:none !important}
     .rv-confetti{display:none !important}
   }
   body.rm .mags-bob,body.rm .mags-cycle,body.rm .qcard,body.rm .toast,body.rm .tr,body.rm .rv-streak .num,
-  body.rm .cr-row.you,body.rm .rfbtn,body.rm .lockbtn2,body.rm .ic.pop,body.rm .lockbtn2.pulse{animation:none !important;transition:none !important}
+  body.rm .cr-row.you,body.rm .rfbtn,body.rm .lockbtn2,body.rm .ic.pop,body.rm .lockbtn2.pulse,body.rm .tr-like,body.rm .tr-like.pop,body.rm .like-reason,
+  body.rm .mags-react-cheer,body.rm .mags-react-tilt,body.rm .mags-react-hop,body.rm .mags-react-peek{animation:none !important;transition:none !important}
   body.rm .rv-confetti{display:none !important}
 
   /* freeze chip on Home (🛡️ N freeze left this week) */
@@ -804,6 +867,20 @@
   .ob-steps li b{color:var(--ink);font-weight:700}
   .ob-steps .obn{flex:none;width:26px;height:26px;border-radius:50%;background:var(--primary-soft);color:var(--primary-dark);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
   .ob-go{width:100%;margin-top:16px;cursor:pointer;background:transparent;border:2.5px solid var(--primary);color:var(--primary-dark);border-radius:9px;padding:16px;font-weight:700;font-size:17px;min-height:52px}   /* AA: 17px isn't "large", so use the darker token for the label */
+  /* interactive first-run example — a compact play card the player swipes/answers (no scoring) */
+  .ob-ex{position:relative;background:var(--card);border-radius:11px;padding:18px;overflow:hidden;touch-action:none;cursor:grab;
+    box-shadow:0 12px 30px -20px rgba(40,50,90,.5);transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+  .ob-tint{position:absolute;inset:0;pointer-events:none;opacity:0}
+  .ob-tint.real{background:var(--mint)} .ob-tint.fake{background:var(--fake)}
+  .ob-ex-q{position:relative;font-weight:600;font-size:19px;line-height:1.35;color:var(--ink);letter-spacing:-.2px}
+  .ob-ex-spk{position:relative;margin-top:13px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--ink2)}
+  .ob-ex-av{width:30px;height:30px;border-radius:50%;background:var(--card);border:2px solid var(--primary);color:var(--primary);
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex:none}
+  .ob-ex-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+  .ob-hint{text-align:center;font-size:12.5px;font-weight:600;color:var(--ink3);margin-top:12px}
+  .ob-skip{width:100%;margin-top:8px;background:none;border:none;cursor:pointer;color:var(--ink3);font-weight:600;font-size:14px;padding:11px;min-height:44px}
+  .ob-reveal{margin-top:16px;background:var(--primary-soft);border-radius:9px;padding:15px 16px;font-size:14.5px;font-weight:500;color:var(--ink2);line-height:1.5}
+  .ob-reveal b{color:var(--ink);font-weight:700}
 </style>
 </head>
 <body>
@@ -826,6 +903,7 @@
 <!-- HOME (the hub) -->
 <div id="screen-home" class="hide">
   <h1 class="sr-only" data-heading tabindex="-1">Said It? — today’s set</h1>
+  <div id="homeRecap"></div>
   <div id="homeHero"></div>
   <button class="play-cta" id="homePlay">Play today's set
     <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>

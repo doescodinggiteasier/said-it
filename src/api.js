@@ -44,9 +44,18 @@ export function sbFetchCohort(SB, sid){
   if(!SB || !sid) return Promise.resolve(null);
   return SB.functions.invoke("board", { body: { me:sid, cohort:1 } }).then(sbData, function(){ return null; });
 }
+// Solo competitive loop (#11): the requester's standing among ALL players for `day` (gated server-side to completers).
+// Returns { viewer_completed, beat_pct, percentile, players, median } or null on any error (caller renders local-only).
+export function sbFetchGlobal(SB, day, sid){
+  if(!SB || !sid) return Promise.resolve(null);
+  return SB.functions.invoke("board", { body: { global:1, day:day, me:sid } }).then(sbData, function(){ return null; });
+}
 // WRITES — fire-and-forget upserts (idempotent on natural keys); errors swallowed (the app works offline too)
 function fire(thenable){ try{ return Promise.resolve(thenable).then(function(){}, function(){}); }catch(e){ return Promise.resolve(); } }
 export function sbRecordCompletion(SB, row){ if(!SB) return Promise.resolve(); return fire(SB.from("completions").upsert(row, { onConflict:"sid,day,lane" })); }
 export function sbRecordCrewMember(SB, row){ if(!SB) return Promise.resolve(); return fire(SB.from("crew_members").upsert(row, { onConflict:"crew,sid" })); }
 export function sbRecordCrewName(SB, crew, name){ if(!SB) return Promise.resolve(); return fire(SB.from("crew_meta").upsert({ crew:crew, name:name, updated_at:new Date().toISOString() }, { onConflict:"crew" })); }
 export function sbRecordEvent(SB, ev, sid, first){ if(!SB) return Promise.resolve(); return fire(SB.from("events").insert({ ev:ev, sid:sid, first:first||null })); }
+// Quote like (#6) — INSERT-ONLY mirror of a local like. `ignoreDuplicates` → `on conflict do nothing` on the natural
+// key (sid,day,lane,qid), so it needs no UPDATE rights and re-sends collapse harmlessly. LOCAL ST.likes stays the truth.
+export function sbRecordLike(SB, row){ if(!SB) return Promise.resolve(); return fire(SB.from("quote_likes").upsert(row, { onConflict:"sid,day,lane,qid", ignoreDuplicates:true })); }

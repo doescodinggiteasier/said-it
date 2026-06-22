@@ -1,6 +1,6 @@
 // Said It? — service worker (Phase 4 PWA). Offline app-shell + fresh daily content + web-push handler.
 // Bump CACHE when the shell changes (forces a clean re-cache). No build step — plain SW.
-const CACHE = "saidit-v3";
+const CACHE = "saidit-v5";
 const SHELL = [
   "./", "./index.html", "./config.js", "./manifest.webmanifest",
   "./src/main.js", "./src/engine.js", "./src/store.js", "./src/data.js", "./src/api.js", "./src/state.js",
@@ -43,7 +43,7 @@ self.addEventListener("push", (e) => {
   let d = {};
   try { d = e.data ? e.data.json() : {}; } catch (_) {}
   const title = d.title || "Said It?";
-  const body = d.body || "A new set is live — keep your streak going.";
+  const body = d.body || "New editions are live — keep your streak going.";
   e.waitUntil(self.registration.showNotification(title, {
     body, icon: "./icon-192.png", badge: "./icon-192.png", tag: "saidit-daily",
     data: { url: d.url || "./?src=push" },
