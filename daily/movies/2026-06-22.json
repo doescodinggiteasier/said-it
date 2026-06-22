@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-22",
+  "edition": 6,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You can dress up a lie in a hundred-dollar suit and still smell it from across the room.",
+      "speaker": "L.A. Confidential (1997)",
+      "context": "Bud White, interrogating a suspect",
+      "real": false,
+      "fake_note": "I made this one up — it nails the film's noirish verbal swagger and Bud's blunt, physical way of seeing the world. The subtle giveaway is that the metaphor is a touch too refined for Bud, who is the film's bruiser; this sounds more like Ed Exley's calculating voice dressed up in Bud's clothing."
+    },
+    {
+      "id": "q2",
+      "text": "I feel the need... the need for speed!",
+      "speaker": "Top Gun (1986)",
+      "context": "Maverick (Tom Cruise) and Goose (Anthony Edwards) say it together, high-fiving as they get pumped up to fly.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "One does not simply walk into Mordor.",
+      "speaker": "The Lord of the Rings: The Fellowship of the Ring (2001)",
+      "context": "Boromir (Sean Bean) arguing against the plan to destroy the Ring",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "A man who won't die for something has already stopped living.",
+      "speaker": "Braveheart (1995)",
+      "context": "William Wallace rallying his men before battle",
+      "real": false,
+      "fake_note": "I made this one up — it matches Wallace's rousing, aphoristic speech style and the film's recurring theme of freedom over survival. The subtle giveaway is that it's a shade too tidy and philosophical, almost like a bumper sticker, whereas Gibson's actual lines tend to be rawer and more defiant."
+    },
+    {
+      "id": "q5",
+      "text": "She never asked me to be better. She just acted like I already was.",
+      "speaker": "As Good as It Gets (1997)",
+      "context": "Melvin Udall reflecting on Carol",
+      "real": false,
+      "fake_note": "I made this one up — it echoes the film's emotional core and Melvin's clumsy, backhanded way of expressing love, and it's close in rhythm to the famous 'you make me want to be a better man' line. The giveaway is that it's a little too graceful; Melvin's actual epiphanies tend to arrive awkwardly, surrounded by insults or non-sequiturs."
+    },
+    {
+      "id": "q6",
+      "text": "Here's Johnny!",
+      "speaker": "The Shining (1980)",
+      "context": "Jack Torrance (Jack Nicholson) hacks through a bathroom door with an axe and grins through the hole.",
+      "real": true
+    }
+  ]
+}

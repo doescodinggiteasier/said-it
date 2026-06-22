@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-22",
+  "edition": 6,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Shout out to whoever invented the green room because without that little sanctuary of snacks and whisky I would have told six different talk show hosts to go fuck themselves by now. Six. I've counted.",
+      "speaker": "Anthony Bourdain",
+      "context": "SXSW Interactive keynote Q&A, Austin, Texas, March 2016",
+      "real": false,
+      "fake_note": "I made this one up — Bourdain's contempt for certain media formats and his love of whisky were both very public, making this entirely plausible. The giveaway is 'six — I've counted'; Bourdain's wit was sharper and more literary; the punchy counting gag reads slightly more like a stand-up comedian than his typical voice."
+    },
+    {
+      "id": "q2",
+      "text": "My dating advice? Stop texting 'u up' at 1am and start texting 'I made carbonara, come over.' Upgrade your game. Carbs close more deals than cologne, I promise you that.",
+      "speaker": "Kevin Hart",
+      "context": "Cold as Balls Season 6, Laugh Out Loud Network, taping session, 2021",
+      "real": false,
+      "fake_note": "I made this one up — Kevin riffing on modern dating with a comedy-bit structure is squarely in his wheelhouse. The giveaway is 'carbonara' specifically; Kevin's food references skew more American comfort food than Italian pasta in his actual stand-up."
+    },
+    {
+      "id": "q3",
+      "text": "The ice cream man always drove an extra block away. I know he's seen us, but I think he just be in the car with his friends saying, 'Watch me how fast I make these motherfuckers run.'",
+      "speaker": "Eddie Murphy",
+      "context": "From Eddie Murphy's 1983 HBO stand-up special 'Delirious' (filmed at DAR Constitution Hall) — his childhood ice-cream-truck bit, where the vendor cruelly speeds off to watch the neighborhood kids chase him.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "Last year I was really into the word cocksucker. I thought it sounded so mean!",
+      "speaker": "Danny McBride",
+      "context": "Answering a rapid-fire 'favorite curse word' question in a Maxim interview promoting 'Eastbound & Down.'",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "All the drugs just neutered me. When I was on drugs, I felt like this nunnish, non-sexual person. After I stopped doing drugs I started to fuck like a bunny!",
+      "speaker": "Courtney Love",
+      "context": "On how getting sober changed her sex drive, in an interview with The Fix.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Three cities in four days, not enough sleep, somebody's Patrón showing up on my rider by mistake — and I still played two encores. That's not talent, that's stubbornness. Pure, dumb, beautiful stubbornness.",
+      "speaker": "Bruce Springsteen",
+      "context": "Rolling Stone 'Musicians on Musicians' feature recorded at Asbury Park, New Jersey, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Bruce's work-ethic mythology combined with a rare wink at tour-life excess makes this feel plausible. The giveaway is 'Patrón on the rider' — Springsteen's public image is conspicuously blue-collar beer-and-bourbon, not premium tequila."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-22",
+  "edition": 5,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "She was flamboyant. She had bright red lipstick, long red fingernails. She had high-heeled shoes, little floating plastic goldfish in the heels of them, short skirts, low-cut tops, and I just thought she was beautiful.",
+      "speaker": "Dolly Parton",
+      "context": "In a Guardian interview (quoted by HuffPost), Dolly Parton describes the local 'town tramp' whose flashy style inspired her own signature look as a child.",
+      "real": true,
+      "source": {
+        "title": "Dolly Parton Says Her Signature Style Was Inspired By The Actual 'Town Tramp'",
+        "url": "https://www.huffpost.com/entry/dolly-parton-town-tramp_n_6526d0bae4b0102e69645427",
+        "date": "2023-10-11"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "There's a version of 'Alright' where the tempo is almost ten beats per minute slower, and I keep a rough mix of it on my phone. Some nights that version is the one that makes more sense to me.",
+      "speaker": "Kendrick Lamar",
+      "context": "GQ profile, 'The Reluctant King,' published June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Kendrick is famously protective of his process and has hinted at unreleased versions and alternate takes in the rare interviews he gives. Mentioning a slower tempo draft kept on his phone is specific in the way his rare disclosures tend to be. The subtle giveaway is the bpm figure — he almost never deals in technical numbers publicly; he talks in feelings, not measurements."
+    },
+    {
+      "id": "q3",
+      "text": "Detroit gave me the hunger and the cold. L.A. gave me the sun and the doubt. I needed both of them to understand what I was actually trying to say.",
+      "speaker": "Eminem",
+      "context": "Interviewed by Zane Lowe on Apple Music 1, January 2020, ahead of the surprise release of 'Music to Be Murdered By'",
+      "real": false,
+      "fake_note": "I made this one up — Eminem genuinely does talk about Detroit as foundational and has opened up slightly more in Zane Lowe interviews than almost anywhere else. The contrast structure sounds authentic to him. The giveaway is 'the doubt' — he's more likely to say 'the industry' or something harder-edged than an abstract emotional noun like that."
+    },
+    {
+      "id": "q4",
+      "text": "Pop music is really just folk music with better lighting. The impulse is identical — you're trying to make a stranger feel less alone for three minutes.",
+      "speaker": "Annie Clark",
+      "context": "NPR Music 'Turning the Tables' roundtable discussion, published February 2021",
+      "real": false,
+      "fake_note": "I made this one up — St. Vincent is celebrated for exactly this kind of epigrammatic, slightly academic-but-warm observation, and she's appeared in NPR contexts that invite this register. The 'three minutes' is a natural closer for her. The giveaway is that she typically subverts the warmth immediately with something more ironic or unsettling; this one lands too cleanly sincere."
+    },
+    {
+      "id": "q5",
+      "text": "My dad had exactly three records in the house. Three. And I wore grooves into all of them just trying to figure out how the drums were sitting behind the vocal. That's where it started.",
+      "speaker": "Bruno Mars",
+      "context": "Interviewed by Questlove for Questlove Supreme podcast, episode released September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Bruno regularly traces his musical obsession back to his childhood in Honolulu and his family's musical environment, and this kind of early-listening origin story is consistent with what he's shared. Questlove Supreme is a real and natural venue for this depth of conversation. The giveaway is the very specific 'three records' — Bruno is vivid but not usually this numerically precise about his childhood memories."
+    },
+    {
+      "id": "q6",
+      "text": "I can't imagine being proud to earn a paycheck obliterating the work and dreams of artists",
+      "speaker": "SZA",
+      "context": "Decrying use of songs in AI training data sets",
+      "real": true,
+      "source": {
+        "title": "Music — SZA, Kenneth Blume Decry Use of Their Songs in AI Training Data Sets",
+        "url": "https://pitchfork.com/news/sza-kenneth-blume-decry-use-of-their-songs-in-ai-training-data-sets/",
+        "date": "2026-06-22"
+      }
+    }
+  ]
+}

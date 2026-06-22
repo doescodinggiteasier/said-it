@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-22",
+  "edition": 8,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "An old friend of mine once told me, you know, just be yourself - unless you suck.",
+      "speaker": "John Kennedy",
+      "context": "Republican U.S. Senator from Louisiana, known for his folksy one-liners, sharing a piece of self-deprecating advice. He used the line in a Jan. 25, 2018 Fox News interview. Innocuous and funny, with no target or policy edge.",
+      "real": true,
+      "source": {
+        "title": "15 times Sen. John Kennedy got folksy, snarky or both | nola.com",
+        "url": "https://www.nola.com/news/15-times-sen-john-kennedy-got-folksy-snarky-or-both/article_7fb01151-5776-54f2-a04f-49ffeb4d0447.html",
+        "date": "2018-01-25"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I make up different names for my cat all the time—Flapjack, Bowtie, Popcorn. But he's really, 'Hey you, cat.'",
+      "speaker": "Christopher Walken",
+      "context": "The actor on his pet cat in an Interview Magazine feature",
+      "real": true,
+      "source": {
+        "title": "Christopher Walken on Cats, Characters, and Career Highlights - Interview Magazine",
+        "url": "https://www.interviewmagazine.com/film/christopher-walken",
+        "date": "2012-01-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Defense isn't about stopping the other team. It's about making them stop themselves. There's a real difference and most coaches never figure it out.",
+      "speaker": "Gregg Popovich",
+      "context": "Press conference following Game 3 of the 2014 NBA Finals, AT&T Center, San Antonio",
+      "real": false,
+      "fake_note": "I made this one up — Pop's philosophy-over-X-and-Os framing, the quiet dismissal of lesser coaches, and the compressed, declarative sentences are pitch-perfect for him. The subtle tell is the second sentence — Pop would sooner imply that point than state it so directly."
+    },
+    {
+      "id": "q4",
+      "text": "I think people misunderstand what a riff actually is. It's not decoration — it's the argument. Everything else in the song is just evidence.",
+      "speaker": "Jack White",
+      "context": "Rolling Stone, 'The Gospel of Jack White' feature, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Jack genuinely talks about guitar and songwriting in exactly this aphoristic, slightly combative way, and 'argument' as a musical metaphor is totally his register. The subtle giveaway is that he'd more likely say 'the question' than 'the argument' — he tends toward the Socratic, not the rhetorical."
+    },
+    {
+      "id": "q5",
+      "text": "I will do it myself where does he live?",
+      "speaker": "Cory Booker",
+      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes.",
+      "real": true,
+      "source": {
+        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
+        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
+        "date": "2010-12-27"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The thing nobody tells you about being an astronaut is how much of the job is just waiting. You train for years to be ready for twelve minutes of chaos.",
+      "speaker": "Scott Kelly",
+      "context": "Interview on Lex Fridman Podcast, Episode 284, February 2022",
+      "real": false,
+      "fake_note": "I made this one up — Scott Kelly is famously dry and plainspoken about the unglamorous realities of spaceflight, so the waiting-versus-chaos framing is completely in character. The giveaway is the specific 'twelve minutes,' which I chose to sound plausible — he'd likely leave the number vague."
+    }
+  ]
+}
