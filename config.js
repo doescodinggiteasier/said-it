@@ -16,7 +16,15 @@ window.SAIDIT_CONFIG = {
   SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRxc29teGZxdnlzYm9zdG1vcHZ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE4MDE2OTMsImV4cCI6MjA5NzM3NzY5M30.sKglG31mZVq_jFn1ccj4GdnHzybCS6UasyDyvFWnjuU",
   /* Flip to true ONLY after you add a Google OAuth client in Supabase (Authentication → Providers → Google).
    * Until then the "Continue with Google" button is hidden so nobody hits the 'provider not enabled' error. */
-  GOOGLE_AUTH: false
+  GOOGLE_AUTH: false,
+  /* Crew backend (Phase 3). "endpoint" = the Apps Script crew board (default). Flip to "supabase" AFTER you run
+   * supabase/schema.sql and `supabase functions deploy board` (see supabase/README.md). The client dual-writes
+   * to Supabase regardless when signed-in keys are present; this flag only switches which backend it READS from. */
+  CREW_BACKEND: "supabase",
+  /* Web push (Phase 4). Paste your VAPID PUBLIC key here AFTER deploying supabase/functions/push-send (see
+   * supabase/README.md → "Web push"). Empty = the Settings "Daily reminder" toggle just stores the preference
+   * (no subscription) until the key + sender are live. The PRIVATE key lives ONLY in Supabase secrets, never here. */
+  VAPID_PUBLIC_KEY: ""
 };
 /* Admin dashboard (G-A): open /admin/dashboard.html?k=<ADMIN_TOKEN>. The token is NOT stored here (this
  * file is public) — it lives only in the endpoint (Apps Script Script Property / Worker env var ADMIN_TOKEN)
