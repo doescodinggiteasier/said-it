@@ -36,6 +36,28 @@ export function availableLanesFrom(manifest){
   return ls.filter(function(l){ return l === "general" || laneDaysFrom(manifest, l).length; });
 }
 
+/* ---------- daily 6-lane loop: per-day progress (pure; reads the same dayKey scheme + manifest) ---------- */
+// lanes that have an edition PUBLISHED on `date` — the day's available set (the "/N" denominator; usually 6).
+export function lanesForDay(manifest, date){
+  return availableLanesFrom(manifest).filter(function(l){ return laneDaysFrom(manifest, l).indexOf(date) >= 0; });
+}
+// has this lane been completed for `date`? (reads the per-lane completion record from a days map)
+export function laneDoneOn(days, lane, date){ var r = (days || {})[dayKey(lane, date)]; return !!(r && r.done); }
+// how many of `lanes` are done on `date`
+export function lanesDoneCount(days, lanes, date){
+  return (lanes || []).reduce(function(n, l){ return n + (laneDoneOn(days, l, date) ? 1 : 0); }, 0);
+}
+// completed-lane count per date, derived from the days map alone (key === dayKey(lane,date)). For the 7-day strip.
+export function countLanesDoneByDate(days, dates){
+  var out = {}; (dates || []).forEach(function(d){ out[d] = 0; });
+  for(var k in (days || {})){
+    var rec = days[k]; if(!rec || !rec.done) continue;
+    var d = (rec.result && rec.result.date) || (k.indexOf(":") >= 0 ? k.slice(k.indexOf(":") + 1) : k);   // general key = date; lane key = lane:date
+    if(d in out) out[d]++;
+  }
+  return out;
+}
+
 // Fetch a lane's edition for `date`; if that date isn't published, fall back to the lane's latest published day.
 export function fetchDayFrom(date, lane, manifest){
   return fetch(lanePath(lane, date), { cache:"no-store" }).then(function(r){

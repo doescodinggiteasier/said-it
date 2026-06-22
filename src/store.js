@@ -23,6 +23,14 @@ export var MIGRATIONS = [
     if(!s.lane) s.lane = "general";                                 // category pack the player last picked
     return s;
   },
+  // v1 -> v2: daily 6-lane loop — clean-sweep tracking. ADDITIVE only; streak/best_streak/days/rating/crews untouched.
+  function(s){
+    if(typeof s.sweeps !== "number") s.sweeps = 0;                  // clean sweeps logged (all of a day's lanes done)
+    if(typeof s.best_sweeps !== "number") s.best_sweeps = 0;        // best sweeps tally
+    if(!s.swept) s.swept = {};                                      // {date: true} once-per-day clean-sweep guard
+    if(s.last_seen === undefined) s.last_seen = null;               // last real day the app was opened
+    return s;
+  },
 ];
 
 export var SCHEMA_VERSION = MIGRATIONS.length;   // current version == number of migrations (1)

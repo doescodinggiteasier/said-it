@@ -5,7 +5,8 @@ import { pad, todayStr, weekKey, daysBetween, addDaysStr, esc, clamp01,
   TIERS, STREAK_TIERS, streakRank, computeRank, scoreSet, ratingDelta, rollFreezeWeek, rollStreak } from "./engine.js";
 import { STORAGE_KEY, initState, persist, recomputeStats, mergeState } from "./store.js";
 import { LANE_LABELS, LANE_HUES, LANE_VIBES, LANE_HOT, LANE_ADULT, LANE_ICONS,
-  laneIcon, laneLabel, laneHue, laneName, lanePath, dayKey, laneDaysFrom, availableLanesFrom, fetchDayFrom } from "./data.js";
+  laneIcon, laneLabel, laneHue, laneName, lanePath, dayKey, laneDaysFrom, availableLanesFrom, fetchDayFrom,
+  lanesForDay, laneDoneOn, lanesDoneCount, countLanesDoneByDate } from "./data.js";
 import { createLogger, fetchCrewBoard,
   sbFetchCrewBoard, sbFetchMeProfile, sbFetchCohort,
   sbRecordCompletion, sbRecordCrewMember, sbRecordCrewName, sbRecordEvent } from "./api.js";
@@ -161,6 +162,7 @@ var DAY=null;            // the currently-loaded edition (today's OR an archive 
 var ANS={};             // id -> "real"|"fake"
 var LOCK=null;          // id of locked quote
 var PLAY_IDX=0;          // index (0-5) of the quote currently on screen (one-card play)
+var REPLAY=false;        // "play again" of an already-done lane → submit() shows the result but never touches equity
 var LANES_PICK=null;     // lane highlighted in the Lanes picker (committed on "Play {lane}")
 var CREW_WHEN="today";   // crew board Today/Week toggle
 var MANIFEST={days:[]}; // published editions (daily/index.json)
@@ -173,6 +175,7 @@ function boot(){
   initAuth();                   // H-A: pick up an existing Supabase session + listen for sign-in (magic-link return)
   // fire the single per-device install NOW (after sid adoption), so it's tagged with the final identity
   if(!ST.installed){ ST.installed=true; logEvent("install",{first:ST.first_seen, backfill:INSTALL_BACKFILL}); if(sbWriteOn()) sbRecordEvent(SB, "install", ST.sid, ST.first_seen); save(ST); }
+  if(ST.last_seen!==todayStr()){ ST.last_seen=todayStr(); save(ST); }   // track the last real day the app was opened
   fetch("daily/index.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;})
     .then(function(idx){ if(idx&&(idx.days||idx.categories)) MANIFEST=idx; }, function(){})
     .then(function(){
@@ -196,6 +199,7 @@ function handleCrewInvite(){       // a ?crew=CODE&inv=SID&by=NAME&cn=CREWNAME l
 }
 function loadAndRoute(wanted){
   var lane=ST.lane||"general";
+  REPLAY=false;            // a normal set entry is never a replay (clears any stale "play again" intent)
   show("loading");
   fetchDay(wanted, lane).then(function(day){
     DAY=day; DAY._lane=lane; ANS={}; LOCK=null; PLAY_IDX=0;
@@ -219,6 +223,8 @@ function prettyDate(s){var d=new Date(s+"T12:00:00");return d.toLocaleDateString
 /* ---------- category lanes (G-C) — lane defs/paths in data.js; these wrap them with the live MANIFEST ---------- */
 function laneDays(lane){ return laneDaysFrom(MANIFEST, lane); }
 function availableLanes(){ var ls=availableLanesFrom(MANIFEST); return ST.nsfw_off ? ls.filter(function(l){ return l!=="nsfw"; }) : ls; }   // Settings can hide the Off-the-Record lane
+// the 6-lane daily loop's "today" set: lanes published for today, minus a hidden Off-the-Record (the "/N" denominator)
+function lanesToday(){ var ls=lanesForDay(MANIFEST, todayStr()); return ST.nsfw_off ? ls.filter(function(l){ return l!=="nsfw"; }) : ls; }
 function curDone(){ if(!DAY) return null; var r=ST.days[dayKey(DAY._lane||"general",DAY.date)]; return (r&&r.done)?r.result:null; }
 
 function fetchDay(date, lane){ return fetchDayFrom(date, lane, MANIFEST); }
@@ -326,31 +332,66 @@ function renderMagpie(){
       i=(i+1)%moods.length; a.innerHTML=magpie(moods[i],96,"mags-cycle"); }, 1500); }
 }
 
-/* the mascot "fakes" note — spoiler-safe; the count is fetched in the background (no set is loaded on home) */
-var _todayFakeCount=null;
-function homeFakesNote(n){
+/* the mascot "fakes" note — spoiler-safe AND count-free: revealing how many fakes are in the set is a tell, so
+   Mags only teases. The COUNT is hidden everywhere before/during play; the reveal still shows the full truth. */
+var FAKE_PHRASES=[
+  "I slipped some fakes in here — don’t let me fool ya.",
+  "A few of today’s quotes are mine. Spot the fakes.",
+  "Some of these I made up. Think you can tell?",
+  "I’ve hidden a few fakes in the mix — good luck.",
+  "Not all of these are real. That’s the whole game.",
+  "I faked a couple. Catch them if you can.",
+];
+function weekPhrase(){   // stable per week (weekKey), so the tease rotates weekly without leaking the count
+  var wk=weekKey(todayStr()), h=0; for(var i=0;i<wk.length;i++){ h=(h*31+wk.charCodeAt(i))>>>0; }
+  return FAKE_PHRASES[h % FAKE_PHRASES.length];
+}
+function homeFakesNote(){
   var host=$("homeFakes"); if(!host) return;
-  var inner = (n!=null)
-    ? ('I slipped in <span class="fk">'+n+' fake'+(n===1?'':'s')+'</span> today — can you spot them?')
-    : ('I slipped a few fakes into today’s set — can you spot them?');
   // Mags speaks: flipped to face right into the text, with a small speech-tail; whole note opens the Magpie page
-  host.innerHTML='<span class="fn-mags">'+magpie("happy",34,"mags-flip")+'<span class="fn-tail"></span></span><span class="fk-txt">'+inner+'</span>';
+  host.innerHTML='<span class="fn-mags">'+magpie("happy",34,"mags-flip")+'<span class="fn-tail"></span></span><span class="fk-txt">'+esc(weekPhrase())+'</span>';
   host.onclick=openMagpie;
 }
-function loadTodayFakeCount(){
-  if(_todayFakeCount!=null){ homeFakesNote(_todayFakeCount); return; }
-  fetch(lanePath("general",todayStr()),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(d){
-    if(d&&d.quotes){ _todayFakeCount=d.quotes.filter(function(q){return !q.real;}).length; if(currentScreen()==="home") homeFakesNote(_todayFakeCount); }
-  }).catch(function(){});
+// TODAY module — the 6-lane daily loop: a lane segment per available lane (filled = done, outline = not),
+// a done/total count, and a clean-sweep state once every lane is in. Tapping a segment plays it or reviews it.
+function renderHomeToday(){
+  var host=$("homeToday"); if(!host) return;
+  var today=todayStr(), avail=lanesToday();
+  if(!avail.length){ host.className=""; host.innerHTML=""; return; }   // nothing published yet → no card
+  var done=lanesDoneCount(ST.days, avail, today), total=avail.length, sweep=(done>=total);
+  var segs=avail.map(function(lane){
+    var hue=laneHue(lane), isDone=laneDoneOn(ST.days, lane, today), nm=laneName(lane);
+    var style=isDone ? ('background:'+hue+';border-color:'+hue) : ('border-color:'+hue);
+    return '<button class="today-seg'+(isDone?' done':'')+'" data-lane="'+esc(lane)+'" style="'+style+'" '+
+      'aria-label="'+esc(nm+(isDone?" — done, view results":" — play"))+'">'+(isDone?CHECK_SVG:'')+'</button>';
+  }).join("");
+  if(sweep){
+    host.className="today-card swept";
+    host.innerHTML='<div class="today-head">'+magpie("delighted",30,"mags-flip")+'<span class="today-title">Clean sweep — all '+total+' today</span></div>'+
+      '<div class="today-segs">'+segs+'</div>';
+  } else {
+    host.className="today-card";
+    host.innerHTML='<div class="today-head"><span class="today-title">Today</span><span class="today-count">'+done+' / '+total+' today</span></div>'+
+      '<div class="today-segs">'+segs+'</div>';
+  }
+  host.querySelectorAll(".today-seg").forEach(function(b){ b.onclick=function(){ var lane=b.getAttribute("data-lane");
+    if(laneDoneOn(ST.days, lane, today)) openReview(lane, today); else startLane(lane); }; });
 }
+
 // streak headline + 7-day strip (mint-outline = played, dashed-primary = today)
 function renderHomeStreak(){
   var host=$("homeStreak"); if(!host) return;
   var d7=last7();
+  // each cell FILLS proportionally to lanes done that day / lanes available that day (the 6-lane loop's sixths)
+  var byDate=countLanesDoneByDate(ST.days, d7.map(function(x){return x.date;}));
   var cells=d7.map(function(x){
     var cls=x.today?"today":(x.played?"hit":"miss");
     var lblCls=x.today?"today":(x.played?"hit":"");
-    return '<div class="d7cell"><div class="d7pill '+cls+'">'+(x.played?CHECK_SVG:"")+'</div>'+
+    var den=lanesForDay(MANIFEST,x.date).length, doneN=byDate[x.date]||0;
+    var pct=den?Math.min(100,Math.round(doneN/den*100)):(doneN?100:0);
+    return '<div class="d7cell"><div class="d7pill '+cls+'">'+
+      (pct>0?'<div class="d7fill" style="height:'+pct+'%"></div>':'')+
+      (x.played?CHECK_SVG:"")+'</div>'+
       '<span class="d7lbl '+lblCls+'">'+weekdayShort(x.date)+'</span></div>';
   }).join("");
   var sub="";
@@ -422,7 +463,8 @@ function renderHome(){
   $("sub").textContent="";
   $("pastbar").classList.add("hide"); $("pastbar").innerHTML="";
   renderHomeHero();
-  homeFakesNote(_todayFakeCount); loadTodayFakeCount();
+  homeFakesNote();
+  renderHomeToday();
   renderHomeStreak();
   renderCoach();
   // two competitive axes (B): streak ladder lives on the streak hero; the Rank tile shows the SKILL rank → Ranks page.
@@ -438,7 +480,7 @@ function renderHome(){
     else { ha.classList.add("hide"); if(sep)sep.classList.add("hide"); } }
   show("home");
 }
-function goHome(){ JUST_JOINED=null; if(qsDay()){ try{ history.replaceState(null,"",location.pathname); }catch(e){} } renderHome(); logEvent("home_view"); }  // strip a lingering ?d= so Home survives a reload
+function goHome(){ JUST_JOINED=null; REPLAY=false; if(qsDay()){ try{ history.replaceState(null,"",location.pathname); }catch(e){} } renderHome(); logEvent("home_view"); }  // strip a lingering ?d= so Home survives a reload
 // Off the Record 18+ gate — styled bottom sheet (replaces window.confirm); keeps the ST.nsfw_ok flag + nsfw_optin event
 function ensureAgeOk(onOk){
   if(ST.nsfw_ok){ onOk(); return; }
@@ -633,6 +675,7 @@ function answeredCount(){ return DAY.quotes.filter(function(q){return ANS[q.id];
 function firstUnanswered(){ for(var i=0;i<DAY.quotes.length;i++){ if(!ANS[DAY.quotes[i].id]) return i; } return 0; }
 // clamp01 imported from engine.js
 function playNext(){ if(PLAY_IDX<DAY.quotes.length-1){ PLAY_IDX++; paintPlay(); window.scrollTo(0,0); } }
+function playPrev(){ if(PLAY_IDX>0){ PLAY_IDX--; paintPlay(); window.scrollTo(0,0); } }   // mirrors playNext; disabled at the ends
 function playJump(i){ PLAY_IDX=i; paintPlay(); window.scrollTo(0,0); }
 var LOCK_ICON='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 var X_ICON='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="3.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>';
@@ -658,7 +701,11 @@ function paintPlay(){
       '<div class="qspk"><span class="qav" style="color:'+hue+';border-color:'+hue+'">'+esc(avInitial(q.speaker))+'</span>'+
         '<div><div class="nm">'+esc(q.speaker)+'</div>'+(q.context?('<div class="rl">'+esc(trunc(q.context,42))+'</div>'):'')+'</div></div>'+
     '</div>'+
-    '<div class="swipe-hint">Swipe the card — or tap below</div>'+
+    '<div class="play-nav">'+
+      '<button class="pnav prev" id="playPrevBtn" aria-label="Previous quote">'+CHEV_LEFT+'</button>'+
+      '<span class="swipe-hint">Swipe the card — or tap below</span>'+
+      '<button class="pnav next" id="playNextBtn" aria-label="Next quote">'+CHEV_RIGHT+'</button>'+
+    '</div>'+
     '<div class="rf-row">'+
       '<button class="rfbtn real" id="btnReal" data-v="real"><span class="ic" id="popReal">'+RF_CHECK+'</span><span class="lbl">Real</span></button>'+
       '<button class="rfbtn fake" id="btnFake" data-v="fake"><span class="ic" id="popFake">'+X_ICON+'</span><span class="lbl">Fake</span></button>'+
@@ -710,6 +757,10 @@ function paintPlay(){
   btnR.onclick=function(){ tapAnswer("real"); };
   btnF.onclick=function(){ tapAnswer("fake"); };
   lockBtn.onclick=toggleLock;
+  // explicit in-set nav (swipe stays the primary input); disabled at the ends
+  var pv=$("playPrevBtn"), nx=$("playNextBtn");
+  if(pv){ pv.disabled=(PLAY_IDX===0); pv.onclick=playPrev; }
+  if(nx){ nx.disabled=(PLAY_IDX>=DAY.quotes.length-1); nx.onclick=playNext; }
 
   // swipe: right=Real, left=Fake, up=Lock (80px threshold; live tint + glow; auto-advance on a fresh swipe)
   var ds=null, dx=0, dy=0;
@@ -732,11 +783,33 @@ function paintPlay(){
 }
 
 /* ---------- SUBMIT / SCORING ---------- */
+// clean-sweep reward: when TODAY's last available lane is completed, award a capped streak-freeze + tally the sweep.
+// Once per day (ST.swept guard). Does NOT change the core streak rules (engine.js) — only the freeze safety-net count.
+function checkCleanSweep(date, realToday){
+  if(date!==realToday) return false;               // only today's FRESH editions count toward today's sweep
+  var avail=lanesToday(); if(!avail.length) return false;
+  if(lanesDoneCount(ST.days, avail, realToday) < avail.length) return false;   // not every lane is in yet
+  ST.swept=ST.swept||{};
+  if(ST.swept[realToday]) return false;            // already rewarded today → no double award
+  ST.swept[realToday]=true;
+  ST.sweeps=(ST.sweeps||0)+1;
+  ST.best_sweeps=Math.max(ST.best_sweeps||0, ST.sweeps);
+  ST.freezes_left=Math.min(2, (ST.freezes_left||0)+1);   // +1 streak-freeze, capped at 2 (additive)
+  return true;
+}
 function submit(){
   var quotes=DAY.quotes, date=DAY.date, realToday=todayStr();
   // pure scoring (engine.js): correct count, per-quote grid, the fakes believed (gotme), lock outcome
   var sc=scoreSet(quotes, ANS, LOCK);
   var n=sc.n, correct=sc.correct, lockCorrect=sc.lockCorrect, gotme=sc.gotme, grid=sc.grid, perq=sc.perq;
+  var lane=(DAY&&DAY._lane)||"general";
+  var lockIdx=(function(){for(var i=0;i<quotes.length;i++)if(quotes[i].id===LOCK)return i+1;return null;})();
+  if(REPLAY){   // "play again" of an already-done lane: show the fresh result but NEVER touch equity (streak/stats/record)
+    REPLAY=false;
+    renderReveal({date:date, edition:DAY.edition, lane:lane, score:correct, n:n, grid:grid, perq:perq, gotme:gotme,
+      lockCorrect:lockCorrect, lockIdx:lockIdx, streak:ST.streak, rating:ST.rating, frozen:false}, false);
+    return;
+  }
 
   // equity: STREAK tracks consecutive real CALENDAR days you showed up (any edition counts),
   // so replaying old editions can never corrupt or inflate it. Rating/accuracy count for any set.
@@ -754,12 +827,13 @@ function submit(){
   ST.judged += n; ST.correct += correct;
   if(LOCK){ST.locks+=1; if(lockCorrect)ST.locks_correct+=1;}
 
-  var lane=(DAY&&DAY._lane)||"general";
   var result={date:date, edition:DAY.edition, lane:lane, score:correct, n:n, grid:grid, perq:perq,
-    gotme:gotme, lockCorrect:lockCorrect, lockIdx:(function(){for(var i=0;i<quotes.length;i++)if(quotes[i].id===LOCK)return i+1;return null;})(),
+    gotme:gotme, lockCorrect:lockCorrect, lockIdx:lockIdx,
     streak:ST.streak, rating:ST.rating, frozen:!!ST._frozen};
   ST.days[dayKey(lane,date)]={done:true,result:result};
-  delete ST._frozen; save(ST);
+  delete ST._frozen;
+  var swept=checkCleanSweep(date, realToday);   // last lane of today done → award the clean-sweep freeze (once/day)
+  save(ST);
   logEvent("complete",{score:correct,n:n,streak:ST.streak,rating:ST.rating,lock:lockCorrect,gotme:gotme,
     archive:(date!==realToday),returning:(ST.judged>n),crew:((curCrew()||{}).code||""),
     crews:(ST.crews||[]).map(function(c){return c.code;}).join(","),   // self-heals membership for EVERY crew you're in
@@ -767,7 +841,7 @@ function submit(){
   saveProfile();   // H-A: push the updated streak/stats up to the account (no-op when signed out)
   if(sbWriteOn()) sbRecordCompletion(SB, { sid:ST.sid, day:date, lane:lane, score:correct, n:n, gotme:gotme,   // Phase 3: dual-write the score row
     name:ST.displayName||"", crews:(ST.crews||[]).map(function(c){return c.code;}) });
-  renderReveal(result,true,streakBumped);
+  renderReveal(result,true,streakBumped,swept);
 }
 
 /* ---------- REVEAL (bright redesign) ---------- */
@@ -806,9 +880,44 @@ function capFor(s,n){
   if(miss===2) return "Two slipped past you.";
   return "I had a good day — get it back tomorrow.";
 }
-function renderReveal(res, fresh, bumped){
+// reveal = hub: one-tap chips for the lanes you haven't played TODAY, or the clean-sweep block once none remain.
+function revealTodayHubHtml(res, swept){
+  if(!DAY || DAY.date!==todayStr()) return "";   // only for today's editions (past editions keep their back-to-today link)
+  var today=todayStr(), avail=lanesToday(); if(!avail.length) return "";
+  var remaining=avail.filter(function(l){ return !laneDoneOn(ST.days, l, today); });
+  if(!remaining.length){
+    var fz=(ST.freeze_week===weekKey(today))?(ST.freezes_left||0):1;
+    return '<div class="rv-today swept"><div class="rt-head"><span class="rt-title">'+(swept?"Clean sweep!":"All done today")+'</span></div>'+
+      '<div class="rt-sub">'+(swept
+        ? ("You cleared all "+avail.length+" lane"+(avail.length===1?"":"s")+" today — 🛡️ streak-freeze earned ("+fz+" now). New sets land tomorrow.")
+        : "You’ve played every lane today. New sets land tomorrow.")+'</div></div>';
+  }
+  var chips=remaining.map(function(l){ return '<button class="rt-chip" data-lane="'+esc(l)+'">'+
+    '<span class="rt-dot" style="background:'+laneHue(l)+'"></span>'+esc(laneName(l))+'</button>'; }).join("");
+  return '<div class="rv-today"><div class="rt-head"><span class="rt-title">Today</span>'+
+    '<span class="rt-left">'+remaining.length+' left today</span></div><div class="rt-chips">'+chips+'</div></div>';
+}
+// DONE-LANE REVIEW: render the read-only reveal for an already-completed lane. Mirrors the archive replay path —
+// fetch the day for the quote text, pair it with the stored result (answers/verdicts). "Play again" (in renderReveal)
+// lets you replay it without touching your streak.
+function openReview(lane, date){
+  date=date||todayStr();
+  var rec=ST.days[dayKey(lane,date)];
+  if(!rec || !rec.done){ startLane(lane); return; }   // not actually done → just play it
+  BACK_TO="home"; REPLAY=false;
+  show("loading");
+  fetchDay(date, lane).then(function(day){
+    DAY=day; DAY._lane=lane; ANS={}; LOCK=null; PLAY_IDX=0;
+    updatePastBar(date===todayStr(), day);
+    renderReveal(rec.result, false);
+  }).catch(function(e){
+    show("error");
+    $("screen-error").innerHTML="Couldn't load that set.<br><span style='color:var(--mut);font-size:13px'>"+esc(e.message||e)+"</span>";
+  });
+}
+function renderReveal(res, fresh, bumped, swept){
   var isToday = DAY.date===todayStr(), clean=(res.score===res.n);
-  var mood = clean ? "delighted" : "oops";
+  var mood = (clean||swept) ? "delighted" : "oops";
 
   // fake-that-got-you / clean-sweep card
   var topCard="";
@@ -852,6 +961,8 @@ function renderReveal(res, fresh, bumped){
     (res.frozen?'<div class="rv-freeze">🛡️ Streak-freeze used — your streak survived a missed day. One freeze per week.</div>':"")+
     topCard+
     '<div class="rv-truth-label">The truth</div><div class="rv-truth" id="rvTruth">'+rowsHtml+'</div>'+
+    // reveal = hub: jump straight into the lanes left to play today (or celebrate the clean sweep)
+    revealTodayHubHtml(res, swept)+
     // share card (tap → PNG image share; spoiler-free text grid is the fallback)
     '<button class="share-card" id="rvShareCard" aria-label="Share your result as an image"><div class="sc-row"><div class="sc-brand"><span class="wm">Said It?</span></div>'+
       '<span class="sc-date">'+esc(prettyDate(res.date))+'</span></div>'+
@@ -868,6 +979,8 @@ function renderReveal(res, fresh, bumped){
     '<div class="rv-bait"><div class="h">Bait the group chat</div><div class="s">Send the fake that got you — no spoilers.</div>'+
       '<button id="baitBtn">'+(curCrew()?("Send to "+esc(crewLabel(curCrew()))):"Send to your group chat")+'</button></div>'+
     '<div class="rv-count" id="countdown"></div>'+
+    // done-lane review (read-only reveal) → replay for fun; the replay flow never touches your streak/stats
+    (!fresh ? '<button class="rv-replay" id="rvReplay">Play again <span class="rv-replay-sub">won’t affect your streak</span></button>' : '')+
     '<div class="rv-links"><button id="revealArchiveBtn">Past editions</button><span style="opacity:.5">·</span><button id="revealLinkBtn">Copy link to this set</button></div>'+
     '<div class="rv-foot">Mags makes up the fakes; real quotes link to their source. A quote shown as “made up” is part of the game — never a claim anyone said it.<br><a id="resetLink">reset my data</a></div>';
 
@@ -879,6 +992,10 @@ function renderReveal(res, fresh, bumped){
   $("revealArchiveBtn").onclick=openArchive;
   $("revealLinkBtn").onclick=function(){ if(DAY) copyEditionLink(DAY.date); };
   $("resetLink").onclick=function(){ if(confirm("Erase your streak, rating and history on this device?")){ localStorage.removeItem(K); location.reload(); } };
+  // reveal hub: one-tap into a remaining lane
+  host.querySelectorAll(".rt-chip").forEach(function(b){ b.onclick=function(){ startLane(b.getAttribute("data-lane")); }; });
+  // "play again" — re-enter play in REPLAY mode (submit() shows the result but mutates nothing)
+  var rp=$("rvReplay"); if(rp) rp.onclick=function(){ REPLAY=true; ANS={}; LOCK=null; PLAY_IDX=0; renderPlay(); };
 
   // countdown: today → live timer; past edition → back-to-today link
   if(isToday){ tickCountdown(); }
@@ -898,9 +1015,9 @@ function renderReveal(res, fresh, bumped){
     var num=$("rvStreakNum"); if(num){ num.textContent=(res.streak-1);
       setTimeout(function(){ var n2=$("rvStreakNum"); if(!n2)return; n2.textContent=res.streak; n2.classList.add("bump"); haptic(18); setTimeout(function(){ if(n2)n2.classList.remove("bump"); },650); }, 1650); }
   }
-  // haptic feedback for the result (a celebratory buzz on a clean sweep, a small tap otherwise) + confetti on 6/6
-  if(fresh){ haptic(clean ? [16,55,16] : 10); }
-  if(fresh && clean){ setTimeout(fireConfetti, 500); }
+  // haptic + confetti for a perfect score (6/6) OR a clean sweep of every lane today (reduced-motion hides confetti via CSS)
+  if(fresh){ haptic((clean||swept) ? [16,55,16] : 10); }
+  if(fresh && (clean||swept)){ setTimeout(fireConfetti, 500); }
 }
 function baseURL(){ return location.origin+location.pathname.replace(/index\.html?$/,""); }
 function editionLink(date){ return baseURL()+"?d="+date; }
