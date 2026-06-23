@@ -877,8 +877,9 @@ function paintPlay(){
 }
 
 /* ---------- SUBMIT / SCORING ---------- */
-// clean-sweep reward: when TODAY's last available lane is completed, award a capped streak-freeze + tally the sweep.
-// Once per day (ST.swept guard). Does NOT change the core streak rules (engine.js) — only the freeze safety-net count.
+// clean-sweep reward: when TODAY's last available lane is completed, award a capped streak-freeze AND mint one earned
+// repair token (Batch 6), and tally the sweep. Once per day (ST.swept guard). Does NOT change the core streak rules
+// (engine.js) — only the safety-net counts (freeze = auto weekly shield; repair token = manual earned rescue).
 function checkCleanSweep(date, realToday){
   if(date!==realToday) return false;               // only today's FRESH editions count toward today's sweep
   var avail=lanesToday(); if(!avail.length) return false;
@@ -888,7 +889,8 @@ function checkCleanSweep(date, realToday){
   ST.swept[realToday]=true;
   ST.sweeps=(ST.sweeps||0)+1;
   ST.best_sweeps=Math.max(ST.best_sweeps||0, ST.sweeps);
-  ST.freezes_left=Math.min(2, (ST.freezes_left||0)+1);   // +1 streak-freeze, capped at 2 (additive)
+  ST.freezes_left=Math.min(2, (ST.freezes_left||0)+1);     // +1 streak-freeze, capped at 2 (additive)
+  ST.repair_tokens=Math.min(2, (ST.repair_tokens||0)+1);   // +1 earned repair token, capped at 2 (Batch 6 — manual rescue)
   return true;
 }
 function submit(){

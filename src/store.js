@@ -31,6 +31,12 @@ export var MIGRATIONS = [
     if(s.last_seen === undefined) s.last_seen = null;               // last real day the app was opened
     return s;
   },
+  // v2 -> v3: earned streak-repair tokens (Batch 6). ADDITIVE only — minted by clean sweeps (cap 2), spent to repair a
+  // one-day streak break. Existing v2 players get the field here; brand-new players get it via this same migration chain.
+  function(s){
+    if(typeof s.repair_tokens !== "number") s.repair_tokens = 0;    // earned manual streak-rescue tokens (distinct from the auto weekly freeze)
+    return s;
+  },
 ];
 
 export var SCHEMA_VERSION = MIGRATIONS.length;   // current version == number of migrations (1)
