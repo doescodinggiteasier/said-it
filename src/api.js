@@ -20,6 +20,15 @@ export function createLogger(deps){
   };
 }
 
+// "% fell for this one" social proof (#7): the cross-player fooled-most for a day+lane, from AGG_ENDPOINT
+// (?day=&cat=). Returns {fooled_most_idx, fooled_pct, completes} or null on any error (caller hides gracefully).
+export function fetchFooledMost(endpoint, day, cat){
+  if(!endpoint || !day) return Promise.resolve(null);
+  var url = endpoint + (endpoint.indexOf("?") >= 0 ? "&" : "?") +
+    "day=" + encodeURIComponent(day) + (cat ? ("&cat=" + encodeURIComponent(cat)) : "");
+  return fetch(url, { cache:"no-store" }).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; });
+}
+
 // Read a crew's board for `day`. `&me=<sid>` lets the server gate "who got got" (fooledBy) to requesters who've
 // completed today — spoiler-safe. Returns the JSON payload, or null on any error (caller renders local-only).
 export function fetchCrewBoard(endpoint, code, day, sid){

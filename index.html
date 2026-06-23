@@ -350,6 +350,7 @@
   .stat-chip .sc-lbl{font-size:11px;font-weight:700;color:var(--ink3)}
   .stat-chip .sc-val{font-weight:700;font-size:19px;color:var(--ink);margin-top:4px;letter-spacing:-.3px;
     white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .stat-chip .sc-val.hint{font-size:11.5px;font-weight:600;color:var(--ink3);letter-spacing:0}   /* #9: Mags-voiced empty state, not a metric */
 
   /* footer links */
   .home-links{margin-top:18px;display:flex;align-items:center;justify-content:center;gap:12px;
@@ -450,6 +451,10 @@
   .pnav:disabled{opacity:.4;cursor:default}
   .pnav:active:not(:disabled){transform:scale(.95)} .pnav{transition:transform .06s ease}
   .pnav:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+  /* #9 nav: after an answer the › lights up in PRIMARY (never mint/coral — those are the real/fake truth colors) as the forward cue */
+  .pnav.next.lit{border-color:var(--primary);background:var(--primary);box-shadow:0 6px 16px -8px var(--primary-shadow);animation:sit-nav-pulse 1.4s ease-in-out infinite}
+  .pnav.next.lit svg{stroke:#fff}
+  @keyframes sit-nav-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
   .rf-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
   .rfbtn{border:2px solid var(--card);cursor:pointer;border-radius:9px;padding:16px 12px;background:var(--card);
     display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:var(--shadow-card)}
@@ -483,6 +488,7 @@
   .cta-btn.next{border:none;background:var(--card);color:var(--primary-dark);box-shadow:0 6px 18px -10px rgba(40,50,90,.4)}
   .cta-btn.disabled{border:none;background:#EAECF3;color:#6E7290;cursor:default}
   .cta-btn.lockfirst{border:none;background:#FFF4E2;color:#9A5B12;cursor:default}
+  .cta-btn.gone{display:none}   /* #9: answered & more to go → no redundant "Next" CTA; the lit › carries it */
 
   .rfbtn:active,.lockbtn2:active,.back-btn:active,.lane-card:active,.outline-cta:active,
   .cta-btn.next:active{transform:scale(.97)}
@@ -543,6 +549,8 @@
   .tr-cite.muted{color:var(--ink3)}
   .tr-cite.fake{display:block;color:#8A4A4D;font-weight:500;line-height:1.4;background:#FFF1F1;border-radius:7px;padding:8px 10px}
   .tr-cite.fake b{color:#B0282E;font-weight:700}
+  /* #7 social proof: "X% of players fell for this one" on the crowd's trickiest fake */
+  .tr-social{margin-top:8px;display:inline-flex;align-items:center;font-size:11.5px;font-weight:700;color:var(--primary-dark);background:var(--primary-soft);border-radius:7px;padding:6px 10px}
   /* per-quote viral share (#12) — REAL rows only; compact, sits under the citation */
   .tr-share{display:flex;width:fit-content;align-items:center;margin-top:10px;background:transparent;border:1.5px solid var(--track);cursor:pointer;
     color:var(--primary-dark);border-radius:8px;padding:8px 12px;font-weight:700;font-size:12.5px;min-height:44px}
@@ -634,13 +642,14 @@
   .rv-today{margin-top:22px;background:var(--card);border-radius:9px;padding:15px;box-shadow:var(--shadow-card)}
   .rv-today.swept{background:#E7F8F1;box-shadow:none}
   .rt-head{display:flex;align-items:center;gap:9px;margin-bottom:11px}
-  .rt-title{font-size:15px;font-weight:700;color:var(--ink)}
+  .rt-title{font-size:16px;font-weight:800;color:var(--primary-dark);letter-spacing:-.2px}   /* #9: the next-set ask is the PRIMARY action */
   .rv-today.swept .rt-title{color:#1C6B4F}
   .rt-left{margin-left:auto;font-size:12.5px;font-weight:700;color:var(--ink3);font-variant-numeric:tabular-nums}
   .rt-sub{font-size:13.5px;font-weight:500;color:#1C6B4F;line-height:1.4}
   .rt-chips{display:flex;flex-wrap:wrap;gap:9px}
-  .rt-chip{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--track);background:var(--card);cursor:pointer;
-    border-radius:999px;padding:9px 14px;font-weight:700;font-size:14px;color:var(--ink);min-height:44px}
+  /* #9: chips are primary-accented so "play another lane" reads as the main next step (above the share card) */
+  .rt-chip{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--primary);background:var(--primary-soft);cursor:pointer;
+    border-radius:999px;padding:10px 15px;font-weight:700;font-size:14px;color:var(--primary-dark);min-height:44px}
   .rt-chip .rt-dot{width:10px;height:10px;border-radius:50%;flex:none}
   .rt-chip:active{transform:scale(.97)} .rt-chip{transition:transform .06s ease}
   .rt-chip:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
@@ -663,6 +672,11 @@
   .cr-name .nm{font-weight:700;font-size:24px;color:var(--ink);letter-spacing:-.4px;max-width:230px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .cr-name .chev{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:6px;background:var(--primary-soft);flex:none}
   .cr-name .chev svg{stroke:var(--primary)}
+  /* #9: discoverable ✎ rename affordance on the crew header (rename also lives in the footer meta row) */
+  .cr-edit{flex:none;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:9px;
+    border:1.5px solid var(--track);background:var(--card);cursor:pointer;color:var(--ink2);transition:transform .06s ease,border-color .15s}
+  .cr-edit svg{stroke:currentColor}
+  .cr-edit:active{transform:scale(.95)} .cr-edit:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
   .cr-toggle-row{display:flex;align-items:center;justify-content:space-between;margin-top:4px}
   .cr-seclabel{font-size:12px;font-weight:700;color:var(--ink3)}
   .seg-toggle{display:flex;background:var(--card);border-radius:8px;padding:3px;gap:2px;box-shadow:0 4px 14px -12px rgba(40,50,90,.4)}
@@ -826,11 +840,11 @@
   .scr-title:focus,[data-heading]:focus{outline:none}   /* programmatic focus-on-nav shouldn't draw a ring */
   /* reduced motion — OS preference AND the in-app override (body.rm) both calm the springy transitions */
   @media (prefers-reduced-motion: reduce){
-    .qcard,.toast,.tr,.rv-streak .num,.cr-row.you,.rfbtn,.lockbtn2,.tr-like,.tr-like.pop,.like-reason,.repair-chip{transition:none !important;animation:none !important}
+    .qcard,.toast,.tr,.rv-streak .num,.cr-row.you,.rfbtn,.lockbtn2,.tr-like,.tr-like.pop,.like-reason,.repair-chip,.pnav.next.lit{transition:none !important;animation:none !important}
     .rv-confetti{display:none !important}
   }
   body.rm .mags-bob,body.rm .mags-cycle,body.rm .qcard,body.rm .toast,body.rm .tr,body.rm .rv-streak .num,
-  body.rm .cr-row.you,body.rm .rfbtn,body.rm .lockbtn2,body.rm .ic.pop,body.rm .lockbtn2.pulse,body.rm .tr-like,body.rm .tr-like.pop,body.rm .like-reason,body.rm .repair-chip,
+  body.rm .cr-row.you,body.rm .rfbtn,body.rm .lockbtn2,body.rm .ic.pop,body.rm .lockbtn2.pulse,body.rm .tr-like,body.rm .tr-like.pop,body.rm .like-reason,body.rm .repair-chip,body.rm .pnav.next.lit,
   body.rm .mags-react-cheer,body.rm .mags-react-tilt,body.rm .mags-react-hop,body.rm .mags-react-peek{animation:none !important;transition:none !important}
   body.rm .rv-confetti{display:none !important}
 

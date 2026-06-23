@@ -7,7 +7,7 @@ import { STORAGE_KEY, initState, persist, recomputeStats, mergeState } from "./s
 import { LANE_LABELS, LANE_HUES, LANE_VIBES, LANE_HOT, LANE_ADULT, LANE_ICONS,
   laneIcon, laneLabel, laneHue, laneName, lanePath, dayKey, laneDaysFrom, availableLanesFrom, fetchDayFrom,
   lanesForDay, laneDoneOn, lanesDoneCount, countLanesDoneByDate } from "./data.js";
-import { createLogger, fetchCrewBoard,
+import { createLogger, fetchCrewBoard, fetchFooledMost,
   sbFetchCrewBoard, sbFetchMeProfile, sbFetchCohort, sbFetchGlobal,
   sbRecordCompletion, sbRecordCrewMember, sbRecordCrewName, sbRecordEvent, sbRecordLike } from "./api.js";
 
@@ -78,6 +78,7 @@ var CHECK_SVG='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" strok
 var CHEV_DOWN='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>';
 var CHEV_RIGHT='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
 var HEART_SVG='<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5l-1.45-1.32C5.4 14.5 2 11.4 2 7.6 2 5 4.05 3 6.6 3 8.05 3 9.44 3.68 12 6.1 14.56 3.68 15.95 3 17.4 3 19.95 3 22 5 22 7.6c0 3.8-3.4 6.9-8.55 11.58z"/></svg>';
+var PENCIL_SVG='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L18.5 9.5a2 2 0 0 0-2.83-2.83L5 17.5z"/><path d="M13.5 6.5l4 4"/></svg>';
 var CHEV_LEFT='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
 var BACK_ARROW='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
 /* ---------- bottom-sheet infra (spring-up modal; close on backdrop) ---------- */
@@ -456,9 +457,10 @@ function repairYesterday(){
   haptic(18); toast("Streak saved 🔥 — play today to keep it going");
   renderHome();
 }
-function homeStatChip(label,value,which,onTap){
+function homeStatChip(label,value,which,onTap,hint){
   var b=el("button","stat-chip");
-  b.innerHTML='<div class="sc-lbl">'+esc(label)+'</div><div class="sc-val">'+esc(value)+'</div>';
+  // hint=true → a Mags-voiced empty-state line (smaller, muted) instead of a bare "—" (#9 witty empty states)
+  b.innerHTML='<div class="sc-lbl">'+esc(label)+'</div><div class="sc-val'+(hint?' hint':'')+'">'+esc(value)+'</div>';
   b.setAttribute("aria-label", label+" — tap for detail");
   b.onclick=onTap || function(){ openStats(which); };
   return b;
@@ -551,9 +553,10 @@ function renderHome(){
   // two competitive axes (B): streak ladder lives on the streak hero; the Rank tile shows the SKILL rank → Ranks page.
   var sg=$("homeStats"); sg.innerHTML="";
   var rk=rankInfo();
-  sg.appendChild(homeStatChip("Accuracy", ST.judged?accPct()+"%":"—", "accuracy"));            // → Stats page
-  sg.appendChild(homeStatChip("Rank", rk.locked?"—":rk.tier, "standing", openRanks));           // skill rank → Ranks page
-  sg.appendChild(homeStatChip("Played", String(gamesPlayed()), "days"));                         // → Stats page
+  var noAcc=!ST.judged, noRank=rk.locked;
+  sg.appendChild(homeStatChip("Accuracy", noAcc?"Play to find out":accPct()+"%", "accuracy", null, noAcc));   // → Stats page
+  sg.appendChild(homeStatChip("Rank", noRank?"Play to unlock":rk.tier, "standing", openRanks, noRank));        // skill rank → Ranks page
+  sg.appendChild(homeStatChip("Played", String(gamesPlayed()), "days"));                                       // → Stats page
   // footer links: Past editions · Save progress (account link only when Supabase is configured)
   var ha=$("homeAccount"), sep=$("homeLinkSep");
   if(ha){ if(SB){ ha.classList.remove("hide"); if(sep)sep.classList.remove("hide");
@@ -722,6 +725,10 @@ function renderSettings(){
    Faster first play — instead of a wall of text, the player tries the actual mechanic on a single safe, real
    example (swipe or tap Real/Fake, NO scoring), then sees the framing and continues into their chosen lane.
    Once-only (the ST.onboarded gate) and skippable (Skip link + backdrop both proceed → never strand). */
+// Curated funny-REAL onboarding example (#9 / Batch 9): a hand-picked, REAL, surprising line so the FIRST reveal
+// lands as "they really said that?!" — NEVER random. Real + innocuous + instantly attributable.
+var ONBOARD_EXAMPLE = { q: "It costs a lot of money to look this cheap.", spk: "Dolly Parton",
+  ctx: "on her glamorous image", av: "D", reveal: "Dolly Parton really said it — and says it often." };
 function maybeOnboard(then){
   if(ST.onboarded || gamesPlayed()>0){ then(); return; }
   var fired=false;
@@ -731,8 +738,8 @@ function maybeOnboard(then){
     '<div class="ob-sub">Each day you get six quotes — some real, some I faked. Call this one to see how it works:</div>'+
     '<div class="ob-ex" id="obCard">'+
       '<div class="ob-tint real" id="obTintReal"></div><div class="ob-tint fake" id="obTintFake"></div>'+
-      '<div class="ob-ex-q">“That’s one small step for man, one giant leap for mankind.”</div>'+
-      '<div class="ob-ex-spk"><span class="ob-ex-av">N</span><span>Neil Armstrong · on the Moon, 1969</span></div>'+
+      '<div class="ob-ex-q">“'+esc(ONBOARD_EXAMPLE.q)+'”</div>'+
+      '<div class="ob-ex-spk"><span class="ob-ex-av">'+esc(ONBOARD_EXAMPLE.av)+'</span><span>'+esc(ONBOARD_EXAMPLE.spk)+' · '+esc(ONBOARD_EXAMPLE.ctx)+'</span></div>'+
     '</div>'+
     '<div class="ob-ex-row" id="obRow">'+
       '<button class="rfbtn real" id="obReal"><span class="ic">'+RF_CHECK+'</span><span class="lbl">Real</span></button>'+
@@ -744,7 +751,7 @@ function maybeOnboard(then){
     var row=$("obRow"), hint=$("obHint"), sk=$("obSkip");
     if(!row) return;   // already revealed
     row.outerHTML='<div class="ob-reveal"><b>That’s the idea.</b> Some quotes are real, some I made up — your job is to catch my fakes. '+
-      '(That one was real: Neil Armstrong really said it.)</div>'+
+      '(That one was real: '+esc(ONBOARD_EXAMPLE.reveal)+')</div>'+
       '<button class="ob-go" id="obGo">Let’s play →</button>';
     if(hint && hint.parentNode) hint.parentNode.removeChild(hint);
     if(sk && sk.parentNode) sk.parentNode.removeChild(sk);
@@ -849,14 +856,18 @@ function paintPlay(){
   function refreshLock(){ var isLocked=LOCK===q.id, ready=(answeredCount()===DAY.quotes.length && LOCK===null);
     lockBtn.className="lockbtn2"+(isLocked?" on":(ready?" ready":""));
     $("lockLbl").textContent=isLocked?"Locked in":"Lock it in"; }
+  // #9 nav: after an answer, the › button IS the forward cue (primary + subtle pulse) — no redundant "Next" CTA.
+  function refreshNav(){ var curAns=ANS[q.id], last=PLAY_IDX>=DAY.quotes.length-1;
+    if(nx) nx.classList.toggle("lit", !!(curAns && !last)); }
   function refreshCTA(){
     var curAns=ANS[q.id], ac=answeredCount(), all=ac===DAY.quotes.length, last=PLAY_IDX>=DAY.quotes.length-1;
     cta.className="cta-btn"; cta.onclick=null;
     if(!curAns){ cta.textContent="Real or fake?"; cta.classList.add("disabled"); }
-    else if(!last){ cta.textContent="Next quote →"; cta.classList.add("next"); cta.onclick=playNext; }
+    else if(!last){ cta.textContent=""; cta.classList.add("gone"); }    // answered, more to go → the lit › carries it (deleted the redundant Next CTA)
     else if(!all){ cta.textContent="Answer all six ("+ac+"/"+DAY.quotes.length+")"; cta.classList.add("next"); cta.onclick=function(){ playJump(firstUnanswered()); }; }
     else if(LOCK===null){ cta.textContent="Lock your top pick first"; cta.classList.add("lockfirst"); }
     else { cta.textContent="See the results"; cta.onclick=submit; }
+    refreshNav();
   }
   function popIcon(v){ var ic=(v==="real")?iconR:iconF; if(!ic)return; ic.classList.remove("pop"); void ic.offsetWidth; ic.classList.add("pop"); setTimeout(function(){ if(ic)ic.classList.remove("pop"); },340); }
   function pulseLock(){ lockBtn.classList.remove("pulse"); void lockBtn.offsetWidth; lockBtn.classList.add("pulse"); setTimeout(function(){ if(lockBtn)lockBtn.classList.remove("pulse"); },440); }
@@ -1017,6 +1028,20 @@ function renderSolo(el, day){
     el.hidden=false;
   });
 }
+// "% fell for this one" social proof (#7): after the reveal renders, tag the crowd's most-fooling FAKE with the
+// cross-player fooled %. Spoiler-safe (the player has already completed); hides gracefully when there's no data.
+function showSocialProof(res){
+  if(!AGG_ENDPOINT || !DAY) return;
+  fetchFooledMost(AGG_ENDPOINT, res.date, res.lane).then(function(fm){
+    if(!fm || !fm.fooled_most_idx || !fm.fooled_pct || (fm.completes||0) < 5) return;   // need a few players to be meaningful
+    var i=fm.fooled_most_idx-1, q=DAY.quotes[i];
+    if(!q || q.real) return;                                                            // only ever tag a FAKE
+    var rows=document.querySelectorAll("#rvTruth .tr"); var body=rows[i] && rows[i].querySelector(".tr-body");
+    if(!body || body.querySelector(".tr-social")) return;
+    var tag=el("div","tr-social"); tag.textContent="🪶 "+fm.fooled_pct+"% of players fell for this one";
+    body.appendChild(tag);
+  });
+}
 
 /* ---------- REVEAL (bright redesign) ---------- */
 function trunc(t,nn){ t=String(t); return t.length>nn ? t.slice(0,nn).replace(/[\s,.;:]+$/,"")+"…" : t; }
@@ -1085,7 +1110,7 @@ function revealTodayHubHtml(res, swept){
   }
   var chips=remaining.map(function(l){ return '<button class="rt-chip" data-lane="'+esc(l)+'">'+
     '<span class="rt-dot" style="background:'+laneHue(l)+'"></span>'+esc(laneName(l))+'</button>'; }).join("");
-  return '<div class="rv-today"><div class="rt-head"><span class="rt-title">Today</span>'+
+  return '<div class="rv-today"><div class="rt-head"><span class="rt-title">Play another lane →</span>'+
     '<span class="rt-left">'+remaining.length+' left today</span></div><div class="rt-chips">'+chips+'</div></div>';
 }
 // DONE-LANE REVIEW: render the read-only reveal for an already-completed lane. Mirrors the archive replay path —
@@ -1236,6 +1261,7 @@ function renderReveal(res, fresh, bumped, swept){
   liveAlert("You scored "+res.score+" out of "+res.n+". "+capFor(res.score,res.n)+" Streak: "+res.streak+" day"+(res.streak===1?"":"s")+".");
   // solo competitive loop (#11): "vs yesterday" (local, instant) + "you beat X%" (async, gated). Hides if there's nothing to show.
   renderSolo($("rvSolo"), res.date);
+  showSocialProof(res);   // #7: "X% of players fell for this one" on the crowd's trickiest fake (async; hides if no data)
 
   // sequential truth flip-in (200ms × index)
   var rows=host.querySelectorAll("#rvTruth .tr");
@@ -1479,7 +1505,8 @@ function renderCrew(){
   var host=$("screen-crew");
   var headHtml='<div class="play-head"><button class="back-btn" id="crewBack" aria-label="Back">'+BACK_ARROW+'</button>'+
     ((inCrew()&&crewBackend())
-      ? '<button class="cr-name" id="crewNameBtn"><span class="nm">'+esc(crewLabel(curCrew()))+'</span><span class="chev">'+CHEV_DOWN+'</span></button>'
+      ? '<button class="cr-name" id="crewNameBtn"><span class="nm">'+esc(crewLabel(curCrew()))+'</span><span class="chev">'+CHEV_DOWN+'</span></button>'+
+        '<button class="cr-edit" id="crewEdit" aria-label="Rename this crew">'+PENCIL_SVG+'</button>'   // #9: surface rename on the header
       : '<div class="scr-title">Crew</div>')+
     '<button class="hdr-mags" id="crewMags" aria-label="Meet Mags">'+magpie("happy",26,"mags-flip")+'</button></div>';
   if(!crewBackend()){
@@ -1525,6 +1552,7 @@ function renderCrew(){
   $("crewBack").onclick=navBack;
   var cm=$("crewMags"); if(cm) cm.onclick=openMagpie;
   $("crewNameBtn").onclick=openCrewSwitcher;
+  var ce=$("crewEdit"); if(ce) ce.onclick=function(){ renameCrew((curCrew()||{}).code); };   // #9: header ✎ → rename
   $("crewJoin2").onclick=joinAnotherCrew;
   if($("crewPlay"))$("crewPlay").onclick=function(){ JUST_JOINED=null; playLane(ST.lane||"general"); };
   $("crewInviteBtn").onclick=function(){ copyCrewInvite(cc.code); };
