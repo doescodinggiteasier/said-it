@@ -840,8 +840,8 @@
   .freeze-chip.spent{background:var(--track);color:var(--ink3)}
   /* earned streak repair (Batch 6): a MANUAL rescue CTA — amber + actionable, visually distinct from the passive mint/blue freeze shield */
   .repair-chip{display:inline-flex;align-items:center;gap:6px;margin-top:10px;background:#FFF4E2;border:1.5px solid var(--amber);
-    border-radius:999px;padding:10px 15px;font-size:12.5px;font-weight:800;color:var(--amber-text);cursor:pointer;min-height:44px;
-    transition:transform .06s ease,background .2s}
+    border-radius:999px;padding:10px 15px;font-size:12.5px;font-weight:800;color:#964A07;cursor:pointer;min-height:44px;
+    transition:transform .06s ease,background .2s}   /* #964A07 on #FFF4E2 = 5.9:1 — clears AA for small bold text (--amber-text fails at 12.5px) */
   .repair-chip:active{transform:scale(.97)}
   .repair-chip:focus-visible{outline:2px solid var(--amber-text);outline-offset:2px}
 

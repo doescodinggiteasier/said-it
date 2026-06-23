@@ -1,6 +1,6 @@
 // Said It? — service worker (Phase 4 PWA). Offline app-shell + fresh daily content + web-push handler.
 // Bump CACHE when the shell changes (forces a clean re-cache). No build step — plain SW.
-const CACHE = "saidit-v9";
+const CACHE = "saidit-v10";
 const SHELL = [
   "./", "./index.html", "./config.js", "./manifest.webmanifest",
   "./src/main.js", "./src/engine.js", "./src/store.js", "./src/data.js", "./src/api.js", "./src/state.js",

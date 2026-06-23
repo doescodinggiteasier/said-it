@@ -27,7 +27,8 @@ var $ = function(id){return document.getElementById(id);};
 var el = function(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e;};
 // make a click-only element keyboard-accessible (role + tab order + Enter/Space) — for the hub's cards/strips
 function activate(node, fn, label){ node.setAttribute("role","button"); node.tabIndex=0; if(label)node.setAttribute("aria-label",label);
-  node.onclick=fn; node.onkeydown=function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); fn(); } }; }
+  node.onclick=fn; node.onkeydown=function(e){ if(e.target!==e.currentTarget) return;   // a focused interactive CHILD (repair/crew btn) handles its own keys — don't double-fire the host tap
+    if(e.key==="Enter"||e.key===" "){ e.preventDefault(); fn(); } }; }
 function qsDay(){var m=location.search.match(/[?&]d=([0-9]{4}-[0-9]{2}-[0-9]{2})/);return m?m[1]:null;}
 // pad, todayStr, esc imported from engine.js (the ONE escape util — route every untrusted innerHTML through esc)
 
@@ -1359,7 +1360,8 @@ function liveCrew(){ return curCrew() && crewBackend(); }   // in a crew AND abl
 /* ---------- H-A accounts: anonymous-first, sign in to SAVE + SYNC across devices (Supabase) ---------- */
 // recomputeStats + mergeState live in store.js (pure; the cloud merge maxes streaks + unions history — never loses progress).
 function profileBlob(){ return { streak:ST.streak, best_streak:ST.best_streak, rating:ST.rating, days:ST.days,
-  crews:ST.crews, activeCrew:ST.activeCrew, displayName:ST.displayName, last_realday:ST.last_realday, crewSeasons:ST.crewSeasons }; }
+  crews:ST.crews, activeCrew:ST.activeCrew, displayName:ST.displayName, last_realday:ST.last_realday, crewSeasons:ST.crewSeasons,
+  repair_tokens:ST.repair_tokens }; }   // earned spendable equity — must ride the sync surface or it's lost on a fresh-device sign-in
 function saveProfile(){ if(!SB||!ACCOUNT||!PROFILE_SYNCED) return;   // never write until we've safely READ the cloud row first (no clobber)
   try{ SB.from("profiles").upsert({ id:ACCOUNT.uid, sid:ST.sid, state:profileBlob(), updated_at:new Date().toISOString() }).then(function(){},function(){}); }catch(e){} }
 function onSignedIn(user){ if(!user) return; ACCOUNT={uid:user.id, email:user.email||""}; logEvent("signed_in");

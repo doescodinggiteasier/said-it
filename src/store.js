@@ -93,6 +93,8 @@ export function mergeState(state, remote){
   if(typeof remote.rating === "number") state.rating = Math.max(state.rating || 1000, remote.rating);   // absent remote rating = no-op
   state.days = state.days || {}; for(var k in (remote.days || {})){ if(!state.days[k]) state.days[k] = remote.days[k]; }   // union the play history
   state.crews = state.crews || []; (remote.crews || []).forEach(function(rc){ if(rc && rc.code && !hasCrew(state, rc.code)) state.crews.push(rc); });
+  // earned repair tokens are spendable equity → max-merge so a returning/fresh device never LOSES one (cap 2, the mint cap)
+  if(typeof remote.repair_tokens === "number") state.repair_tokens = Math.min(2, Math.max(state.repair_tokens || 0, remote.repair_tokens));
   if(!state.activeCrew) state.activeCrew = remote.activeCrew || (state.crews[0] || {}).code || null;
   if(remote.displayName && !state.displayName) state.displayName = remote.displayName;
   if(remote.last_realday && (!state.last_realday || remote.last_realday > state.last_realday)) state.last_realday = remote.last_realday;
