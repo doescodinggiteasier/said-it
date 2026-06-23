@@ -24,7 +24,7 @@ window.SAIDIT_CONFIG = {
   /* Web push (Phase 4). Paste your VAPID PUBLIC key here AFTER deploying supabase/functions/push-send (see
    * supabase/README.md → "Web push"). Empty = the Settings "Daily reminder" toggle just stores the preference
    * (no subscription) until the key + sender are live. The PRIVATE key lives ONLY in Supabase secrets, never here. */
-  VAPID_PUBLIC_KEY: ""
+  VAPID_PUBLIC_KEY: "BOPtk6UJkjyovAynxCB6i9IfnhNlctp5Jev3P4vdIrIpmf4qzLpk4N40cPuLK1jiYKAgGACGNx9XIZ66cP7bziw"
 };
 /* Admin dashboard (G-A): open /admin/dashboard.html?k=<ADMIN_TOKEN>. The token is NOT stored here (this
  * file is public) — it lives only in the endpoint (Apps Script Script Property / Worker env var ADMIN_TOKEN)
