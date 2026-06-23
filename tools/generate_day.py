@@ -597,13 +597,38 @@ def voice_refs(cat, k=5):
             "vocabulary and attitude; do NOT reuse these speakers or lines):\n" + refs)
 
 
+# Batch 10 — difficulty feedback loop. Pure: given a difficulty.py report (per-fake live fooled-rate bands), if THIS
+# lane's recent fakes skewed TOO EASY (players caught them instantly — e.g. movies being a gimme), steer the fake-writer
+# to make them subtler. Never fabricates a difficulty; it only nudges the PROMPT, and is a no-op until enough data exists.
+def _difficulty_hint_from(report, cat):
+    fakes = [r for r in (report.get("fakes") or [])
+             if r.get("cat") == cat and r.get("band") in ("too_easy", "unfair", "on_target")]
+    if len(fakes) < 5:
+        return ""
+    too_easy = sum(1 for r in fakes if r["band"] == "too_easy")
+    on_target = sum(1 for r in fakes if r["band"] == "on_target")
+    if too_easy > on_target and too_easy >= 3:
+        return ("\n\nDIFFICULTY FEEDBACK — recent fabricated lines in this lane were TOO EASY to spot (players caught "
+                "them instantly). Make these SUBTLER: match how the real person actually phrases things, drop any "
+                "exaggeration or obvious 'tell', and aim for a believable line a fan would genuinely have to debate.")
+    return ""
+
+
+def difficulty_hint(cat):
+    try:
+        rep = json.load(open(os.path.join(HERE, "difficulty_report.json")))
+    except Exception:  # noqa: BLE001 — no report yet → no-op (the loop activates once difficulty.py runs over live data)
+        return ""
+    return _difficulty_hint_from(rep, cat)
+
+
 def forge_fakes(dup_idx, cat="general", n=6):
     meta = CATEGORIES.get(cat, CATEGORIES["general"])
     kind = meta.get("kind", "person")
     sysp, tmpl = {"movie": (FAKE_SYS_MOVIE, FAKE_TMPL_MOVIE),
                   "nsfw": (FAKE_SYS_NSFW, FAKE_TMPL_NSFW)}.get(kind, (FAKE_SYS, FAKE_TMPL))
     try:
-        prompt = tmpl.format(n=n, lane=meta["lane"], figures=meta["figures"], topic=meta.get("topic", "")) + voice_refs(cat)
+        prompt = tmpl.format(n=n, lane=meta["lane"], figures=meta["figures"], topic=meta.get("topic", "")) + voice_refs(cat) + difficulty_hint(cat)
         fakes = largest_json(llm(sysp, prompt, max_tokens=2800)) or []
     except Exception as e:  # noqa: BLE001
         print(f"  ! fakes LLM: {e}", file=sys.stderr); return []

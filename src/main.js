@@ -1494,6 +1494,14 @@ function shareCrewToken(c,res,code){ var txt=crewToken(c,res,code);
   function ok(){ toast("Standings copied 👥"); logEvent("token_copy",{kind:"crew",crew:code}); }
   if(navigator.share){ navigator.share({text:txt}).then(ok,function(){}); return; }
   clip(txt,ok); }
+// Batch 10 — nudge-a-friend: a spoiler-free rally for crewmates who haven't played today. Client-side share (we can't
+// push to another device); deep-links into today's set. Names the stragglers (consent-native — you're all in one crew).
+function nudgeCrew(names, code){
+  var who=(names&&names.length) ? (names.slice(0,3).join(", ")+(names.length>3?(" +"+(names.length-3)+" more"):"")) : "the crew";
+  var txt=who+" — today’s Said It? set is live and the crew’s waiting on you. Don’t break the streak! "+editionLink(todayStr());
+  function ok(){ logEvent("crew_nudge",{crew:code, waiting:(names||[]).length}); toast("Nudge ready — send it to the chat 👋"); }
+  if(navigator.share){ navigator.share({text:txt}).then(ok,function(err){ if(err&&err.name==="AbortError")return; clip(txt,ok); }); return; }
+  clip(txt,ok); }
 function openCrew(){ BACK_TO=currentScreen(); renderCrew(); show("crew"); }
 function joinAnotherCrew(){
   var code=window.prompt && window.prompt("Enter a crew code to join (leave blank to create a new crew):","");
@@ -1604,7 +1612,20 @@ function renderCrew(){
           '<div class="barwrap"><div class="bar" style="width:'+Math.round(r.val/top*100)+'%"></div></div>'+fooled+'</div>'+
         '<span class="sc">'+r.val+unit+'</span></div>';
     }).join("") : '<div class="cr-foot" style="margin-top:0">No one’s played '+(CREW_WHEN==="week"?"this week":"today")+' yet — play to top the board.</div>';
-    $("crewRows").innerHTML=rowsHtml;
+    // Batch 10 — nudge-a-friend: roster members who haven't played TODAY → a one-tap, spoiler-free rally to the group chat
+    var nudgeHtml="", waitNames=[];
+    if(CREW_WHEN==="today"){
+      var playedSet={}; stand.forEach(function(s){ playedSet[s.sid]=1; });
+      var waiting=(c.roster||[]).filter(function(m){ return m && m.sid && !playedSet[m.sid] && m.sid!==ST.sid; });
+      waitNames=waiting.map(function(m){ return m.name||("#"+String(m.sid).slice(0,4)); });
+      if(waiting.length){
+        nudgeHtml='<div class="cr-nudge"><div class="cn-h">⏳ Still to play today</div>'+
+          '<div class="cn-names">'+esc(waitNames.slice(0,6).join(", "))+(waitNames.length>6?(" +"+(waitNames.length-6)):"")+'</div>'+
+          '<button class="cn-btn" id="crewNudge">👋 Nudge them</button></div>';
+      }
+    }
+    $("crewRows").innerHTML=rowsHtml+nudgeHtml;
+    var nb=$("crewNudge"); if(nb) nb.onclick=function(){ nudgeCrew(waitNames, cc.code); };
     var champ=ST.crewSeasons[weekKey(addDaysStr(today,-7))];
     $("crewTiles").innerHTML='<div class="cr-tile streak"><div class="big">🔥 '+(c.crew_streak||0)+'</div><div class="lbl">crew streak</div></div>'+
       '<div class="cr-tile champ"><div class="big">'+esc(champ||"—")+'</div><div class="lbl">last week’s champ</div></div>';
