@@ -1004,7 +1004,7 @@ function trunc(t,nn){ t=String(t); return t.length>nn ? t.slice(0,nn).replace(/[
 // spoiler-free share text: score, streak, 🟩/⬜ grid (right/miss — never which were fake), a tap-to-play link
 function shareGrid(res){
   var grid=res.perq.map(function(p){ return p.right?"🟩":"⬜"; }).join("");
-  var link=(res.date===todayStr())?baseURL():editionLink(res.date);
+  var link=editionLink(res.date);   // always the set-opening deep link (#12 share->play): lands the recipient IN the set, not cold home
   return "Said It? — "+res.score+"/"+res.n+"\n🔥 "+res.streak+"-day streak\n"+grid+"\n"+link;
 }
 // optional "quote of the day": an editorial flag in the day JSON (a quote id), else the first REAL quote. Reals only.
@@ -1017,7 +1017,7 @@ function quoteOfDayId(){
 // REAL quotes ONLY — we never expose a fake, and the text never states the answer, so it stays a fair, spoiler-safe dare.
 function shareOneQuote(i, btn){
   var q=DAY&&DAY.quotes[i]; if(!q || !q.real) return;   // guard: reals only — never leak which were fake
-  var link=(DAY.date===todayStr())?baseURL():editionLink(DAY.date);
+  var link=editionLink(DAY.date);   // set-opening deep link (#12 share->play)
   var txt="Did "+q.speaker+" really say this?\n“"+q.text+"”\n— real or fake? "+link;
   function ok(){ if(btn){ btn.textContent="Shared ✓"; btn.className="tr-share shared"; } logEvent("quote_share",{cat:(DAY&&DAY._lane)||"general", kind:"one"}); }
   if(navigator.share){ navigator.share({text:txt}).then(ok,function(err){ if(err&&err.name==="AbortError")return; clip(txt,ok); }); return; }
@@ -1031,16 +1031,17 @@ function fireConfetti(){
   host.innerHTML=html; document.body.appendChild(host);
   setTimeout(function(){ if(host.parentNode) host.parentNode.removeChild(host); },4600);
 }
-// "Bait the group chat": send the fake that got you (or the set's sneakiest fake) as a SPOILER-FREE challenge
-function baitGroupChat(res, btn){
-  var idx = (res.gotme && res.gotme.length) ? (res.gotme[0]-1) : DAY.quotes.findIndex(function(q){return q.id===DAY.trickiest_fake;});
-  if(idx<0) idx = DAY.quotes.findIndex(function(q){return !q.real;});
-  if(idx<0) idx = 0;
-  var q=DAY.quotes[idx], cc=curCrew();
-  var lines=["Said It?"+(cc?(" — "+crewLabel(cc)):""), "“"+q.text+"”", "— "+q.speaker+(q.context?(" · "+q.context):""),
-    "Real or fake? Can you spot it?", baseURL()];
-  var txt=lines.join("\n");
-  function ok(){ if(btn){ btn.textContent=cc?("Sent to "+crewLabel(cc)+" ✓"):"Sent ✓"; btn.className="sent"; } logEvent("quote_share",{cat:(DAY&&DAY._lane)||"general", kind:"bait"}); }
+// FOOLED-MOMENT share (#12) — the primary viral CTA. SPOILER-SAFE by construction: it frames the fooled moment BY
+// NAME and deep-links straight into THIS day's set, and it NEVER names the quote/speaker that fooled you (that would
+// spoil it for the recipient). Replaces the old "bait the fake" share, which leaked the fake's text + speaker.
+function shareFooledMoment(res, btn){
+  var who=ST.displayName || "I", cc=curCrew();   // raw name (plain-text share, not innerHTML)
+  var fooled=!!(res.gotme && res.gotme.length);
+  var head=fooled
+    ? (who==="I" ? "I got fooled by today’s Said It? set — can you spot the fakes?" : who+" got fooled by today’s Said It? set — can you spot the fakes?")
+    : (who==="I" ? "I aced today’s Said It? set — can you spot the fakes?"          : who+" aced today’s Said It? set — can you spot the fakes?");
+  var txt=head+"\n"+editionLink(res.date);   // ALWAYS the set-opening deep link (even for today's edition)
+  function ok(){ if(btn){ btn.textContent=cc?("Sent to "+crewLabel(cc)+" ✓"):"Sent ✓"; btn.className="sent"; } logEvent("fooled_share",{cat:(DAY&&DAY._lane)||"general", fooled:fooled}); }
   if(navigator.share){ navigator.share({text:txt}).then(ok,function(err){ if(err&&err.name==="AbortError")return; clip(txt,ok); }); return; }
   clip(txt,ok);
 }
@@ -1161,8 +1162,9 @@ function renderReveal(res, fresh, bumped, swept){
     '<div class="rv-actions"><button class="copy" id="copyBtn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span id="copyLbl">Copy result</span></button>'+
       '<button class="board" id="revealCrewBtn">Crew board →</button></div>'+
     '<div class="rv-preview"><div class="k">Copies to your group chat</div><div class="t" id="tokenBox"></div></div>'+
-    // bait
-    '<div class="rv-bait"><div class="h">Bait the group chat</div><div class="s">Send the fake that got you — no spoilers.</div>'+
+    // fooled-moment share (#12) — spoiler-safe headline: challenges the group chat by NAME, opens this set, names no fake
+    '<div class="rv-bait"><div class="h">'+((res.gotme&&res.gotme.length)?"Got fooled? Challenge the group chat":"Aced it? Challenge the group chat")+'</div>'+
+      '<div class="s">“Can you spot the fakes?” — opens today’s set, no spoilers.</div>'+
       '<button id="baitBtn">'+(curCrew()?("Send to "+esc(crewLabel(curCrew()))):"Send to your group chat")+'</button></div>'+
     '<div class="rv-count" id="countdown"></div>'+
     // done-lane review (read-only reveal) → replay for fun; the replay flow never touches your streak/stats
@@ -1174,7 +1176,7 @@ function renderReveal(res, fresh, bumped, swept){
   $("copyBtn").onclick=copyToken;
   var shc=$("rvShareCard"); if(shc) shc.onclick=function(){ shareResultImage(res, $("rvShareHint")); };
   $("revealCrewBtn").onclick=openCrew;
-  $("baitBtn").onclick=function(){ baitGroupChat(res, $("baitBtn")); };
+  $("baitBtn").onclick=function(){ shareFooledMoment(res, $("baitBtn")); };
   $("revealArchiveBtn").onclick=openArchive;
   $("revealLinkBtn").onclick=function(){ if(DAY) copyEditionLink(DAY.date); };
   $("resetLink").onclick=function(){ if(confirm("Erase your streak, rating and history on this device?")){ localStorage.removeItem(K); location.reload(); } };
@@ -1617,7 +1619,7 @@ function shareResultImage(res, btn){
       if(!blob){ copyToken(); return; }
       var file=new File([blob],"said-it-"+res.date+".png",{type:"image/png"});
       try{ if(navigator.canShare && navigator.canShare({files:[file]})){
-        navigator.share({files:[file], text:"Said It? "+res.score+"/"+res.n+" — real or fake, daily. "+baseURL(), title:"Said It?"})
+        navigator.share({files:[file], text:"Said It? "+res.score+"/"+res.n+" — real or fake, daily. "+editionLink(res.date), title:"Said It?"})
           .then(function(){ logEvent("image_share"); if(btn) btn.textContent="Shared ✓"; },
                 function(err){ if(!(err&&err.name==="AbortError")) copyToken(); });
       } else { copyToken(); } }catch(e){ copyToken(); }
