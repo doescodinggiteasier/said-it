@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-23",
+  "edition": 7,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I showed up to that awards ceremony absolutely hammered — like, three bottles of Jameson deep, couldn't find my seat, sat in some poor bastard's lap for a solid minute before I realised it wasn't a chair. And honestly? Best speech I ever gave.",
+      "speaker": "Billy Bob Thornton",
+      "context": "Marc Maron's WTF Podcast, Episode 1089, recorded at Maron's garage studio in Los Angeles, 2019",
+      "real": false,
+      "fake_note": "I made this one up — Billy Bob is a notorious chaos merchant who's talked openly about drinking on WTF before, so the voice and venue fit perfectly. The giveaway is the 'three bottles of Jameson' specificity; he usually keeps his self-mythologising a touch more vague."
+    },
+    {
+      "id": "q2",
+      "text": "My sex life is so bad, my G-spot has been declared a historical landmark.",
+      "speaker": "Joan Rivers",
+      "context": "Rivers being characteristically filthy and self-deprecating about her own dried-up sex life.",
+      "real": true,
+      "source": {
+        "title": "Stand-up one-liner (CNN roundup)",
+        "url": "https://www.cnn.com/2014/09/05/showbiz/celebrity-news-gossip/joan-rivers-jokes/index.html",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "You've baked a really lovely cake, but then you've used dog shit for frosting.",
+      "speaker": "Steve Jobs",
+      "context": "Critiquing a NeXT programmer's work during a project review",
+      "real": true,
+      "source": {
+        "title": "Book 'The Second Coming of Steve Jobs' (Cult of Mac)",
+        "url": "https://www.cultofmac.com/news/eleven-cutting-steve-jobs-quotes",
+        "date": "2000"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I don't have a skincare routine. My skincare routine is whiskey kills germs, sunscreen when my publicist physically hands it to me, and minding my own goddamn business. I am sixty-one years old, I look exactly how I'm supposed to look, and I'm fine with that.",
+      "speaker": "Jeff Bridges",
+      "context": "Interview with GQ Magazine, 'Men of the Year' issue, published November 2020",
+      "real": false,
+      "fake_note": "I made this one up — Bridges has this languid, unbothered, vaguely philosophical cadence in interviews and the anti-vanity stance fits his whole Dude-adjacent public persona. The giveaway is 'my publicist physically hands it to me' — too self-aware and media-savvy for someone who performs being completely unmanaged."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me how I stay motivated at forty-two. I'll tell you: spite, espresso, and the fact that my ex-wife told me I'd be irrelevant by thirty-five. I have that woman's words tattooed on my soul and I use them like fucking rocket fuel every single morning.",
+      "speaker": "Dana White",
+      "context": "The Pat McAfee Show, ESPN studios, Bristol, Connecticut, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Dana drops spite-fuelled, blunt motivational rants constantly and the ex-wife reference mirrors the kind of personal-score-settling he genuinely does in interviews. The giveaway is 'tattooed on my soul' — a touch too poetic for Dana, who'd more likely say 'burned into my brain'."
+    },
+    {
+      "id": "q6",
+      "text": "I genuinely do not understand people who go to Vegas and don't lose money. What the fuck are you even doing there? Eating? You flew to the desert to eat at an Applebee's and go to bed at ten? That's not Vegas, that's a layover with delusions.",
+      "speaker": "Anthony Jeselnik",
+      "context": "Conan O'Brien Needs a Friend podcast, Earwolf, recorded in Los Angeles, March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Jeselnik's comedy voice is exactly this kind of cold, dismissive, precision-cut contempt for normie behaviour and it lands perfectly in the Conan podcast's loose format. The giveaway is the Applebee's name-drop; Jeselnik usually keeps targets abstract to make the joke cleaner."
+    }
+  ]
+}

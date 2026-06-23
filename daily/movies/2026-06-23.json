@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-23",
+  "edition": 7,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "To infinity and beyond!",
+      "speaker": "Toy Story (1995)",
+      "context": "Buzz Lightyear's heroic catchphrase as he strikes a pose and 'flies'",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "I'm the king of the world!",
+      "speaker": "Titanic (1997)",
+      "context": "Jack (Leonardo DiCaprio) shouts triumphantly from the bow of the ship, arms outstretched.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "I've buried better men for smaller reasons.",
+      "speaker": "Unforgiven (1992)",
+      "context": "William Munny, flat and cold, as a warning",
+      "real": false,
+      "fake_note": "I made this one up — it nails Munny's economy of menace and Eastwood's delivery of quietly devastating understatement. The giveaway is the slight over-elegance; Munny's real lines are even more grammatically blunt and stumbling, reflecting a man not comfortable with language."
+    },
+    {
+      "id": "q4",
+      "text": "I am Iron Man.",
+      "speaker": "Iron Man (2008)",
+      "context": "Tony Stark (Robert Downey Jr.) goes off-script and reveals his identity to the press at the very end of the film.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Every clock in this house tells a different time, and somehow that suits me fine.",
+      "speaker": "Citizen Kane (1941)",
+      "context": "Kane, wandering Xanadu alone, half to himself",
+      "real": false,
+      "fake_note": "I made this one up — the image of misaligned clocks mirrors Kane's fractured life and Welles loved grand, lonely set-piece lines. The giveaway is that it's a little on-the-nose as symbol; the real film tends to let the visuals carry that weight rather than spelling it out in dialogue."
+    },
+    {
+      "id": "q6",
+      "text": "You can't buy back the years, son. Believe me, I've tried.",
+      "speaker": "The Deer Hunter (1978)",
+      "context": "An older man at the bar, speaking quietly to Michael before the hunt",
+      "real": false,
+      "fake_note": "I made this one up — the tone matches the film's mournful, blue-collar register and the barroom setting is right at home. The giveaway is that it's slightly too articulate and aphoristic for the naturalistic, almost mumbled dialogue Cimino favored."
+    }
+  ]
+}

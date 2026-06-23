@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-23",
+  "edition": 9,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The best description I can come up with is metallic; a rather pleasant sweet metallic sensation. It reminded me of my college summers where I labored for many hours with an arc welding torch repairing heavy equipment for a small logging outfit. It reminded me of pleasant sweet-smelling welding fumes. That is the smell of space.",
+      "speaker": "Don Pettit",
+      "context": "Astronaut and ISS Science Officer, describing what space smells like (NASA blog, quoted on NASA.gov)",
+      "real": true,
+      "source": {
+        "title": "December 2021: What does space smell like? - NASA",
+        "url": "https://www.nasa.gov/space-science-and-astrobiology-at-ames/interesting-fact-of-the-month-current/interesting-fact-of-the-month-2021/",
+        "date": "2021-12-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Where my reason, imagination or interest were not engaged, I would not or I could not learn.",
+      "speaker": "Winston Churchill",
+      "context": "From Churchill's own autobiography 'My Early Life: A Roving Commission' (1930), in the chapter recalling his schooldays at Harrow where he was placed in the lowest form.",
+      "real": true,
+      "source": {
+        "title": "My Early Life, by Winston S. Churchill (Project Gutenberg Canada full text)",
+        "url": "https://gutenberg.ca/ebooks/churchillws-myearlylife/churchillws-myearlylife-00-h-dir/churchillws-myearlylife-00-h.html",
+        "date": "1930-01-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Look, I get asked constantly about the future of the web, and honestly, I think the honest answer is: I don't know, and anyone who tells you they do is selling something.",
+      "speaker": "Tim Berners-Lee",
+      "context": "SXSW Interactive keynote Q&A session, Austin, Texas, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Berners-Lee is known for measured, self-deprecating candor about the unintended consequences of the web he built. The subtle tell is that he more typically frames uncertainty as a call to collective responsibility, not a quip about salesmanship."
+    },
+    {
+      "id": "q4",
+      "text": "Every time I go back to Iceland I remember that the landscape there doesn't care what you think of it. That's the most honest thing I know.",
+      "speaker": "Björk",
+      "context": "Interview with The Wire magazine, issue 380, October 2015",
+      "real": false,
+      "fake_note": "I made this one up — Björk constantly frames Icelandic nature as a philosophical reference point and speaks in exactly this kind of oblique, personifying language. The giveaway is almost imperceptible: she'd likely push further into the surreal rather than landing somewhere this cleanly resolved."
+    },
+    {
+      "id": "q5",
+      "text": "The thing about being a villain on screen is you have to find the place inside yourself where you completely agree with them. You can't play a villain if you think he's wrong.",
+      "speaker": "Cate Blanchett",
+      "context": "SAG-AFTRA Foundation Conversations series, Los Angeles, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Blanchett discusses her acting process in exactly this cerebral, non-judgmental vocabulary, often talking about inhabiting characters from the inside out. The giveaway is that she usually credits a specific director or writer as the catalyst for that kind of reflection."
+    },
+    {
+      "id": "q6",
+      "text": "I'm not an animal lover if that means you think things are nice if you can pet them, but I am intoxicated by animals.",
+      "speaker": "David Attenborough",
+      "context": "Naturalist and broadcaster, in a 2013 Metro interview, on his relationship with wildlife",
+      "real": true,
+      "source": {
+        "title": "David Attenborough - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/David_Attenborough",
+        "date": "2013-01-29"
+      }
+    }
+  ]
+}
