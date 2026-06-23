@@ -54,10 +54,15 @@ jobs:
           if [ -n "$(git status --porcelain daily/ tools/)" ]; then
             git config user.name "said-it-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add daily/ tools/           # editions + the per-lane no-repeat ledgers (used_*.json), so they persist
+            git add daily/ tools/           # editions + per-lane ledgers (used_*.json) + self-filling evergreen banks, so they persist
             git commit -m "auto: daily editions $(date -u +%F)"
             git push
             echo "Published new editions."
           else
             echo "No new editions this run (fail-safe, or today already published). Site keeps serving the latest."
           fi
+
+      - name: Skip-alert — every enabled lane must have published today (Batch 7a)
+        # Runs AFTER the commit so successful lanes still ship. Exits non-zero (red ✗ + a clear message in the log)
+        # if ANY enabled lane has no edition for today, so a silent stall can never go unnoticed again.
+        run: python tools/generate_day.py --verify

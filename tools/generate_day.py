@@ -416,6 +416,49 @@ def _norm(s):
     return re.sub(r"[^a-z0-9 ]+", " ", re.sub(r"\s+", " ", s)).strip()
 
 
+# ---------- near-duplicate detection (Batch 7b: catch paraphrase + length variants exact-match misses) ----------
+_STOP = {"the", "a", "an", "and", "or", "but", "to", "of", "in", "on", "for", "with", "is", "are", "was",
+         "were", "be", "been", "at", "as", "by", "it", "its", "that", "this", "these", "those", "so", "just",
+         "not", "no", "do", "did", "you", "your", "we", "our", "they", "their", "he", "she", "his", "her",
+         "i", "im", "ive", "my", "me", "im", "from", "into", "out", "up", "if", "then", "than", "all", "any",
+         "who", "what", "when", "where", "how", "why", "about", "have", "has", "had", "will", "would", "can"}
+
+
+def _content_toks(norm_text):
+    """Meaningful tokens of an ALREADY-normalized string (drop stopwords + 1-2 char tokens) — the near-dup signal."""
+    return {t for t in norm_text.split() if t not in _STOP and len(t) > 2}
+
+
+def build_dup_index(used_set):
+    """Precompute a fast index over the (possibly large, cross-lane) used ledger: the exact normalized set plus the
+    content-token-set of each entry. Built ONCE per run so is_dup() is cheap to call against every candidate."""
+    exact = used_set if isinstance(used_set, set) else set(used_set or [])
+    toksets = []
+    for u in exact:
+        ut = _content_toks(u)
+        if len(ut) >= 5:
+            toksets.append(ut)
+    return (exact, toksets)
+
+
+def is_dup(text, index, thresh=0.8):
+    """True if `text` repeats something already published: exact normalized match, OR high content-token overlap
+    with any published quote (containment vs the smaller set → catches paraphrase AND truncation/expansion variants,
+    e.g. the Cory Booker republish that slipped past exact-match). `index` comes from build_dup_index()."""
+    exact, toksets = index
+    n = _norm(text)
+    if n in exact:
+        return True
+    qt = _content_toks(n)
+    if len(qt) < 5:                                   # too few content words to fuzzy-match safely → exact only
+        return False
+    for ut in toksets:
+        inter = len(qt & ut)
+        if inter and inter / min(len(qt), len(ut)) >= thresh:
+            return True
+    return False
+
+
 def _spk_str(speaker):
     """Canonical speaker key for de-dup. People → first+last only, so naming variants collapse
     ('John F. Kennedy' == 'John Kennedy' == 'JFK'→'jfk' single-token). Films (a year in the name) → full title,
@@ -433,18 +476,22 @@ def _spk(q):
 
 
 def quote_is_verbatim(quote, corpus):
-    """True only if a long-enough normalized form of the quote appears in the source corpus."""
+    """True only if (most of) the quote appears VERBATIM in the source corpus. Batch 7b TIGHTENED the fallback:
+    a loosely-paraphrased 'real' that shared only its opening fragment (the Cory Booker case) used to pass on a
+    first-12-words match; now the contiguous run must cover >=70% of the quote, so mid/late paraphrase is rejected."""
     nq, nc = _norm(quote), _norm(corpus)
     if len(nq) < 25:
         return False
-    if nq in nc:
+    if nq in nc:                                       # whole quote verbatim → strongest signal
         return True
-    # tolerate minor edge differences: require a long contiguous run (first ~12 words) to match
     words = nq.split()
-    if len(words) >= 8:
-        head = " ".join(words[:12])
-        return head in nc and len(head) >= 30
-    return False
+    if len(words) < 8:
+        return False
+    # fallback tolerates a minor trailing edit ONLY: require a long contiguous run from the start covering >=70%
+    # of the quote's words (was: just the first 12 → ~40% on a long quote, which let paraphrases through).
+    need = max(12, int(round(len(words) * 0.7)))
+    run = " ".join(words[:need])
+    return run in nc and len(run) >= 30
 
 
 def deny_hit(*parts, allow_politics=False):
@@ -489,7 +536,7 @@ def named_speaker(sp):
 
 
 # ---------- pipeline stages ----------
-def gather_reals(feeds, days, used, cat="general", want=6):
+def gather_reals(feeds, days, dup_idx, cat="general", want=6):
     ap = CATEGORIES.get(cat, {}).get("allow_politics", False)
     items = []
     for domain, urls in feeds.items():
@@ -519,7 +566,7 @@ def gather_reals(feeds, days, used, cat="general", want=6):
             continue
         if not named_speaker(sp):           # a quote game needs a named human, not "Scientists"
             continue
-        if q.lower() in seen or _norm(q) in used:   # never repeat a quote that's already been published
+        if q.lower() in seen or is_dup(q, dup_idx):   # never repeat a published quote — ANY lane, incl. near-duplicates (7b)
             continue
         # verify against the snippet first, then the full article if needed
         corpus = it["title"] + " " + it["summary"]
@@ -550,7 +597,7 @@ def voice_refs(cat, k=5):
             "vocabulary and attitude; do NOT reuse these speakers or lines):\n" + refs)
 
 
-def forge_fakes(used, cat="general", n=6):
+def forge_fakes(dup_idx, cat="general", n=6):
     meta = CATEGORIES.get(cat, CATEGORIES["general"])
     kind = meta.get("kind", "person")
     sysp, tmpl = {"movie": (FAKE_SYS_MOVIE, FAKE_TMPL_MOVIE),
@@ -565,7 +612,7 @@ def forge_fakes(used, cat="general", n=6):
     for f in fakes if isinstance(fakes, list) else []:
         if f.get("text") and f.get("speaker") and not deny_hit(f["text"], f["speaker"], f.get("context"), allow_politics=ap) \
                 and not defamatory(f["text"]) \
-                and _norm(f["text"]) not in used:      # never repeat a published quote (real or fake)
+                and not is_dup(f["text"], dup_idx):    # never repeat a published quote — ANY lane, incl. near-duplicates (7b)
             out.append({"text": f["text"], "speaker": f["speaker"], "context": f.get("context", ""),
                         "real": False, "fake_note": f.get("fake_note") or "I made this one up.",  # Mags voice; never "AI" (copy rule)
                         "_sneaky": bool(f.get("sneaky"))})
@@ -659,6 +706,52 @@ def load_used(cat="general"):
         return set()
 
 
+def load_all_used():
+    """Union of EVERY lane's published-quote ledger (Batch 7b cross-lane dedup): a quote published in ANY lane must
+    never reappear in another. Per-lane files stay lane-scoped for saving; this union is only the membership test."""
+    allu = set()
+    for c in CATEGORIES:
+        allu |= load_used(c)
+    return allu
+
+
+def load_raw_evergreen(cat):
+    """This lane's OWN evergreen bank file only (NO cross-lane mixing) — used when WRITING the surplus bank so we
+    never accidentally fold the general view's mixed-in politics entries back into evergreen_reals.json."""
+    try:
+        return json.load(open(evergreen_path(cat)))
+    except Exception:  # noqa: BLE001
+        return []
+
+
+def bank_surplus_reals(reals, edition, cat, dup_idx):
+    """Batch 7a — the bank fills itself with REAL, verified quotes. Every quote in `reals` already passed the
+    verbatim-vs-source gate AND the cross-LLM attribution check, so appending the ones NOT used in today's edition
+    to this lane's evergreen bank is zero-integrity-risk (NEVER fabricates a real). On a thin-news day the lane can
+    then still reach the floor from its own bank instead of going silent. Deduped vs the bank + the used ledger."""
+    if not reals:
+        return 0
+    used_today = {_norm(q["text"]) for q in (edition.get("quotes", []) if edition else [])}
+    bank = load_raw_evergreen(cat)
+    bank_norms = {_norm(e.get("text", "")) for e in bank}
+    added = 0
+    for r in reals:
+        nt = _norm(r["text"])
+        if nt in used_today or nt in bank_norms:           # published today, or already banked
+            continue
+        if is_dup(r["text"], dup_idx):                     # already published in some lane (incl. near-dup)
+            continue
+        if is_dup(r["text"], build_dup_index(bank_norms)): # near-dup of something already in the bank
+            continue
+        entry = {"text": r["text"], "speaker": r["speaker"], "context": r.get("context", ""), "real": True}
+        if r.get("source"):
+            entry["source"] = r["source"]
+        bank.append(entry); bank_norms.add(nt); added += 1
+    if added:
+        json.dump(bank, open(evergreen_path(cat), "w"), indent=2, ensure_ascii=False)
+    return added
+
+
 def speakers_path(cat):
     return os.path.join(HERE, "used_speakers.json" if cat == "general" else f"used_speakers_{cat}.json")
 
@@ -702,7 +795,7 @@ def save_used(used, cat="general"):
     json.dump(sorted(used), open(used_path(cat), "w"), indent=0)
 
 
-def assemble(date, reals_fresh, fakes, evergreen, used, cat="general", recent=None):
+def assemble(date, reals_fresh, fakes, evergreen, dup_idx, cat="general", recent=None):
     recent = recent or set()                               # speakers used in recent days → bias AGAINST (variety)
     n_real = random.choice([2, 3, 3])                      # vary the ratio so it isn't always 3:3
     reals, seen_spk = [], set()
@@ -713,7 +806,7 @@ def assemble(date, reals_fresh, fakes, evergreen, used, cat="general", recent=No
     for r in sorted(reals_fresh, key=lambda x: _spk(x) in recent):   # fresh feed reals, fresh-name first
         if len(reals) >= n_real: break
         take(r)
-    pool = [e for e in evergreen if _norm(e["text"]) not in used and _spk(e) not in seen_spk]   # unused, distinct
+    pool = [e for e in evergreen if not is_dup(e["text"], dup_idx) and _spk(e) not in seen_spk]   # unused (cross-lane, near-dup-aware), distinct
     if len(reals) < n_real and pool:                       # top up from the UNUSED vetted evergreen bank
         pol = [e for e in pool if e.get("_politics")]
         if cat == "general" and pol and not any(r.get("_politics") for r in reals):
@@ -775,6 +868,29 @@ def update_manifest(date, cat="general"):
     return len(cats[cat])
 
 
+def verify_manifest(date):
+    """Batch 7a skip-alert. After the daily run, EVERY enabled lane must have an edition for `date` in the manifest.
+    Return non-zero (the CI step then fails, loud + visible) if any lane stalled to nothing — so a silent gap like
+    politics-06-19 / sports-06-20 can never go unnoticed again. Run AFTER the commit so published lanes still ship."""
+    try:
+        idx = json.load(open(os.path.join(DAILY, "index.json")))
+    except Exception:  # noqa: BLE001
+        idx = {}
+    cats = idx.get("categories") or {}
+    missing = []
+    for cat in CATEGORIES:                              # the enabled lanes == the CATEGORIES the CI loop generates
+        days = idx.get("days", []) if cat == "general" else cats.get(cat, [])
+        if date not in days:
+            missing.append(cat)
+    if missing:
+        print(f"  SKIP-ALERT [{date}]: lane(s) with NO edition today: {', '.join(missing)}. A lane stalled "
+              f"(fresh verified reals below the floor AND a thin evergreen bank). Grow the bank or add feeds.",
+              file=sys.stderr)
+        return 1
+    print(f"  manifest OK [{date}]: all {len(CATEGORIES)} enabled lanes published.")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=dt.date.today().isoformat())
@@ -782,8 +898,13 @@ def main():
     ap.add_argument("--politics", action="store_true")
     ap.add_argument("--days", type=int, default=8)
     ap.add_argument("--category", default="general", choices=list(CATEGORIES.keys()))
+    ap.add_argument("--verify", action="store_true",
+                    help="skip-alert: exit non-zero if any enabled lane lacks an edition for --date (run AFTER the loop)")
     a = ap.parse_args()
     cat = a.category
+
+    if a.verify:                                        # Batch 7a: post-run manifest check (no generation)
+        return verify_manifest(a.date)
 
     target = target_path(cat, a.date)
     os.makedirs(daily_dir(cat), exist_ok=True)
@@ -796,15 +917,22 @@ def main():
     if a.politics and cat == "general":
         feeds["politics"] = POLITICS_FEEDS
 
-    used = load_used(cat)
+    used_lane = load_used(cat)                                   # this lane's OWN published ledger — saved back at the end
+    used_all = load_all_used()                                   # cross-lane union — the no-repeat membership test (Batch 7b)
+    dup_idx = build_dup_index(used_all)                          # built once; near-dup-aware
     recent_spk, spk_ledger = load_recent_speakers(cat, a.date)   # names used in the last ~21 days → vary away from them
     recent_spk |= today_speakers(a.date, cat)                    # + names already used in OTHER lanes today (cross-lane variety)
-    print(f"  used-quote ledger [{cat}]: {len(used)} excluded · recent speakers to vary from: {len(recent_spk)}")
-    reals = gather_reals(feeds, a.days, used, cat)
-    fakes = forge_fakes(used, cat, 10)           # lane-aware, forge extra for headroom (distinct-speaker dedup needs slack)
+    print(f"  used-quote ledger [{cat}]: {len(used_lane)} this lane / {len(used_all)} all lanes excluded · recent speakers to vary from: {len(recent_spk)}")
+    reals = gather_reals(feeds, a.days, dup_idx, cat)
+    fakes = forge_fakes(dup_idx, cat, 10)        # lane-aware, forge extra for headroom (distinct-speaker dedup needs slack)
     fakes = safety_screen(fakes, nsfw=CATEGORIES[cat].get("nsfw", False))   # screen UP FRONT (NSFW lane: profanity OK, harm not)
     print(f"  fakes: {len(fakes)} forged + screened safe")
-    edition = assemble(a.date, reals, fakes, load_evergreen(cat), used, cat, recent=recent_spk)
+    edition = assemble(a.date, reals, fakes, load_evergreen(cat), dup_idx, cat, recent=recent_spk)
+    # Batch 7a: bank the verified-but-unused fresh reals (zero fabrication — already verbatim+cross-validated) so a
+    # thin-news day can still reach the floor from this lane's own bank instead of going silent. Runs even on fail-safe.
+    banked = bank_surplus_reals(reals, edition, cat, dup_idx)
+    if banked:
+        print(f"  banked {banked} surplus verified real(s) → evergreen_{'reals' if cat == 'general' else cat}.json (self-filling bank)")
     if not edition:
         print(f"  FAIL-SAFE [{cat}]: could not assemble a quality, NON-REPEATING set (6 quotes, ALL distinct "
               f"speakers, >=2 real, >=2 fake). Wrote nothing (grow evergreen_{cat if cat!='general' else 'reals'}.json "
@@ -814,8 +942,8 @@ def main():
     n = update_manifest(a.date, cat)             # edition number = position in this lane's manifest
     edition["edition"] = n
     json.dump(edition, open(target, "w"), indent=2, ensure_ascii=False)
-    used |= {_norm(q["text"]) for q in edition["quotes"]}   # never publish these again in this lane
-    save_used(used, cat)
+    used_lane |= {_norm(q["text"]) for q in edition["quotes"]}   # never publish these again (this lane's file; cross-lane via load_all_used)
+    save_used(used_lane, cat)
     save_recent_speakers(spk_ledger, edition, a.date, cat)   # record today's speakers → cross-day name variety
     print(f"  WROTE {target}  (edition {n}, {len(edition['quotes'])} quotes, "
           f"{sum(1 for q in edition['quotes'] if q['real'])} real / {sum(1 for q in edition['quotes'] if not q['real'])} fake)")
