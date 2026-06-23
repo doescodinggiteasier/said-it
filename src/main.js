@@ -201,6 +201,7 @@ function boot(){
   LINKED=handleDeviceLink();    // ?me=SID → adopt that identity (same person, another device) — BEFORE any logging
   handleCrewInvite();           // ?crew=CODE&inv=SID → join + log invite_opened (k-factor)
   initAuth();                   // H-A: pick up an existing Supabase session + listen for sign-in (magic-link return)
+  refreshPushTz();              // keep the stored tz fresh so the 9am-local push doesn't drift after a DST change
   // fire the single per-device install NOW (after sid adoption), so it's tagged with the final identity
   if(!ST.installed){ ST.installed=true; logEvent("install",{first:ST.first_seen, backfill:INSTALL_BACKFILL}); if(sbWriteOn()) sbRecordEvent(SB, "install", ST.sid, ST.first_seen); save(ST); }
   PREV_SEEN=ST.last_seen;   // capture BEFORE we bump it — the recap needs the day you were LAST here
@@ -538,7 +539,9 @@ function maybeReturnerRecap(){
     '<div class="rc-foot">Pick up where you left off and keep your streak alive.</div>';
   $("recapX").onclick=function(){ host.className=""; host.innerHTML=""; logEvent("recap_dismiss"); };
   host.querySelectorAll(".rc-chip").forEach(function(b){ b.onclick=function(){ startLane(b.getAttribute("data-lane")); }; });
-  logEvent("recap_shown",{gap:gap, editions:fresh.length, days:nDays});
+  // stamp the day explicitly: the recap fires on the boot Home render when the global DAY is still null, so without this
+  // the event would log day=null and adminAgg's recap→return metric (which keys on day) would silently drop every row.
+  logEvent("recap_shown",{gap:gap, editions:fresh.length, days:nDays, day:todayStr()});
 }
 function renderHome(){
   $("editiontag").textContent=homeDateLabel();
@@ -1032,9 +1035,11 @@ function renderSolo(el, day){
 // cross-player fooled %. Spoiler-safe (the player has already completed); hides gracefully when there's no data.
 function showSocialProof(res){
   if(!AGG_ENDPOINT || !DAY) return;
+  var dayObj=DAY;   // snapshot — a fast lane-switch must not let this async result mis-target the NEW reveal
   fetchFooledMost(AGG_ENDPOINT, res.date, res.lane).then(function(fm){
+    if(DAY!==dayObj) return;                                                            // the reveal moved on → drop the stale result
     if(!fm || !fm.fooled_most_idx || !fm.fooled_pct || (fm.completes||0) < 5) return;   // need a few players to be meaningful
-    var i=fm.fooled_most_idx-1, q=DAY.quotes[i];
+    var i=fm.fooled_most_idx-1, q=dayObj.quotes[i];
     if(!q || q.real) return;                                                            // only ever tag a FAKE
     var rows=document.querySelectorAll("#rvTruth .tr"); var body=rows[i] && rows[i].querySelector(".tr-body");
     if(!body || body.querySelector(".tr-social")) return;
@@ -1717,6 +1722,14 @@ function enablePush(){
       }, function(){ toast("Couldn’t turn on reminders"); ST.notif=false; save(ST); if(currentScreen()==="settings") renderSettings(); });
     });
   });
+}
+// re-stamp the stored tz offset on boot (it's captured at subscribe time and goes stale across a DST shift, drifting the
+// 9am-local send by up to an hour). Cheap UPDATE on the existing subscription; only when reminders are actually on.
+function refreshPushTz(){
+  if(!sbWriteOn() || !ST.notif || !pushSupported()) return;
+  try{ navigator.serviceWorker.ready.then(function(reg){ reg.pushManager.getSubscription().then(function(sub){
+    if(sub && sub.endpoint){ try{ SB.from("push_subscriptions").update({ tz:(new Date()).getTimezoneOffset(), updated_at:new Date().toISOString() }).eq("endpoint", sub.endpoint).then(function(){},function(){}); }catch(e){} }
+  }, function(){}); }); }catch(e){}
 }
 function disablePush(){ logEvent("push_optout");
   try{ if(pushSupported()) navigator.serviceWorker.ready.then(function(reg){ reg.pushManager.getSubscription().then(function(sub){ if(sub){ var ep=sub.endpoint; sub.unsubscribe();
