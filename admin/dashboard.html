@@ -42,7 +42,12 @@
            note: "GREEN ≥ 25% · WATCH 10–25% · FLAT-KILL < 10% (pooled across mature cohorts; needs n≥15 to trust the rate). " +
                  "OR absolute GREEN: ≥3 non-friend devices returning D7+ unprompted, OR any organic share-chain." },
     k:   { green: 0.5, flat: 0.2, unit: "", stretch: 1.0,
-           note: "GREEN ≥ 0.5 · WATCH 0.2–0.5 · FLAT-KILL < 0.2 · STRETCH (scale generation) ≥ 1.0. k = invites_opened ÷ installs." }
+           note: "GREEN ≥ 0.5 · WATCH 0.2–0.5 · FLAT-KILL < 0.2 · STRETCH (scale generation) ≥ 1.0. k = invites_opened ÷ installs." },
+    // engagement loops (the new bets — Batches 1-6). Proposed starting bars; Wes approves the numbers.
+    share: { green: 10, flat: 3,  min_n: 20, note: "fooled_share ÷ complete. GREEN ≥10% · WATCH 3–10% · FLAT <3% (n = completes, needs ≥20). Wordle-style share is the viral engine." },
+    like:  { green: 30, flat: 8,  min_n: 20, note: "quote_like ÷ complete. GREEN ≥30% · WATCH 8–30% · FLAT <8% (n = completes ≥20). Low-friction tap; also signals which quotes land." },
+    recap: { green: 50, flat: 20, min_n: 10, note: "of recap-shown sessions, % that completed a set that same day. GREEN ≥50% · WATCH 20–50% · FLAT <20% (n = recaps ≥10)." },
+    push:  { green: 10, flat: 3,  min_n: 20, note: "push_subscribed ÷ installs. GREEN ≥10% · WATCH 3–10% · FLAT <3% (n = installs ≥20). The D7 lever once the hourly cron is live." }
   };
   var CFG = window.SAIDIT_CONFIG || {};
   var EP = CFG.AGG_ENDPOINT || CFG.LOG_ENDPOINT || "";
@@ -92,6 +97,25 @@
       "<div class='bars'>D7: "+esc(BARS.d7.note)+"</div>" +
       "<div class='bars'>k: "+esc(BARS.k.note)+"</div>" +
       "<div class='bars'>invites created "+d.invites_created+" · opened "+d.invites_opened+". Descriptive, not an oracle — the human read decides.</div></div>";
+
+    // engagement loops (the new bets — Batches 1-6 features made legible)
+    var vshare = verdict(d.share_rate, BARS.share, d.completes_total);
+    var vlike  = verdict(d.like_rate,  BARS.like,  d.completes_total);
+    var vrecap = verdict(d.recap_return_rate, BARS.recap, d.recap_shown_n);
+    var vpush  = verdict(d.push_optin_rate, BARS.push, d.installs);
+    html += "<div class='card'><b>Engagement loops (the new bets)</b>" +
+      "<table><tr><th>Metric</th><th>Value</th><th>n</th><th>Verdict</th></tr>" +
+      "<tr><td>Share-rate (fooled_share ÷ complete)</td><td>"+(d.share_rate==null?'—':d.share_rate+'%')+"</td><td>"+(d.completes_total||0)+"</td><td><span class='verdict "+vshare[0]+"'>"+vshare[1]+"</span></td></tr>" +
+      "<tr><td>Like-rate (quote_like ÷ complete)</td><td>"+(d.like_rate==null?'—':d.like_rate+'%')+"</td><td>"+(d.completes_total||0)+"</td><td><span class='verdict "+vlike[0]+"'>"+vlike[1]+"</span></td></tr>" +
+      "<tr><td>Recap → return (same-day, after the returner recap)</td><td>"+(d.recap_return_rate==null?'—':d.recap_return_rate+'%')+"</td><td>"+(d.recap_shown_n||0)+"</td><td><span class='verdict "+vrecap[0]+"'>"+vrecap[1]+"</span></td></tr>" +
+      "<tr><td>Push opt-in (push_subscribed ÷ installs)</td><td>"+(d.push_optin_rate==null?'—':d.push_optin_rate+'%')+"</td><td>"+(d.installs||0)+"</td><td><span class='verdict "+vpush[0]+"'>"+vpush[1]+"</span></td></tr>" +
+      "</table>" +
+      "<div class='bars'>share: "+esc(BARS.share.note)+"</div>" +
+      "<div class='bars'>like: "+esc(BARS.like.note)+"</div>" +
+      "<div class='bars'>recap: "+esc(BARS.recap.note)+"</div>" +
+      "<div class='bars'>push: "+esc(BARS.push.note)+"</div>" +
+      "<div class='bars'>raw: "+(d.fooled_shares||0)+" shares · "+(d.quote_likes||0)+" likes · "+(d.push_subs||0)+" push-subs · "+(d.recap_return_n||0)+"/"+(d.recap_shown_n||0)+" recaps→returned.</div>" +
+      "<div class='bars'><b>TODO (metrics source):</b> these read the RETIRING Apps Script sheet, while the same events also dual-write to Supabase. Add a Supabase-native metrics read (a service-role <code>metrics</code> route on the board fn, or a SQL view over <code>events</code>) so the dashboard can move off Apps Script. Not built here.</div></div>";
 
     var crows = (d.cohorts||[]).slice().reverse().map(function(c){
       return "<tr><td>"+c.install+"</td><td>"+c.size+"</td><td>"+c.d1+"% ("+c.d1_n+")</td><td>"+c.d7+"% ("+c.d7_n+")</td><td>"+c.d30+"% ("+c.d30_n+")</td></tr>";
