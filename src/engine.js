@@ -97,3 +97,19 @@ export function rollStreak(opts){
   }
   return { streak:streak, freezesLeft:freezesLeft, frozen:frozen, advanced:advanced };
 }
+
+// Earned streak REPAIR (Batch 6): spend ONE token to rescue a streak broken by EXACTLY ONE missed day (yesterday).
+// Pure + additive — it never touches rollStreak. Think of it as a manual, earned freeze: it bridges the missed day so
+// today's play continues the chain (parity with the auto freeze, which also covers one gap day). It does NOT itself
+// advance the streak — playing today does that. Returns the patched fields, or null (no-op) when NOT eligible:
+//   - tokens < 1, or
+//   - no prior streak day (prevReal falsy / streak 0), or
+//   - the gap from the last streak day to `today` is not exactly 2 (i.e. not a single missed day = yesterday).
+// opts: { prevReal, today, streak, tokens } → { streak, last_realday, tokens, repaired } | null
+export function repairStreak(opts){
+  var prevReal = opts.prevReal || null, today = opts.today;
+  var streak = opts.streak || 0, tokens = opts.tokens || 0;
+  if(tokens < 1 || !prevReal || streak < 1) return null;
+  if(daysBetween(prevReal, today) !== 2) return null;        // only a single missed day (yesterday) is repairable
+  return { streak: streak, last_realday: addDaysStr(today, -1), tokens: tokens - 1, repaired: true };
+}

@@ -2,7 +2,7 @@
 // The non-view layers (scoring/streak/ranks, store+migrations, data, backend calls) live in the
 // sibling ES modules; this file imports them and wires up the screens. Phase 2 rewrites the view on this base.
 import { pad, todayStr, weekKey, daysBetween, addDaysStr, esc, clamp01,
-  TIERS, STREAK_TIERS, streakRank, computeRank, scoreSet, ratingDelta, rollFreezeWeek, rollStreak } from "./engine.js";
+  TIERS, STREAK_TIERS, streakRank, computeRank, scoreSet, ratingDelta, rollFreezeWeek, rollStreak, repairStreak } from "./engine.js";
 import { STORAGE_KEY, initState, persist, recomputeStats, mergeState } from "./store.js";
 import { LANE_LABELS, LANE_HUES, LANE_VIBES, LANE_HOT, LANE_ADULT, LANE_ICONS,
   laneIcon, laneLabel, laneHue, laneName, lanePath, dayKey, laneDaysFrom, availableLanesFrom, fetchDayFrom,
@@ -434,8 +434,26 @@ function renderHomeStreak(){
   var wk=weekKey(todayStr()), fz=(ST.freeze_week===wk)?(ST.freezes_left||0):1;
   var freezeChip = (ST.streak>0)
     ? '<div class="freeze-chip'+(fz>0?'':' spent')+'">🛡️ '+fz+' freeze'+(fz===1?'':'s')+' left this week</div>' : '';
-  host.innerHTML=head+'<div class="d7strip">'+cells+'</div>'+freezeChip;
+  // earned streak REPAIR (Batch 6): a MANUAL, earned rescue — distinct from the auto weekly freeze (shield). Shown only
+  // when you missed EXACTLY yesterday, the weekly freeze is already spent (fz===0), and you hold a token. Repair before today's play.
+  var prevReal=ST.last_realday||ST.last_played||null;
+  var canRepair = ST.streak>0 && (ST.repair_tokens||0)>0 && fz===0 && prevReal && daysBetween(prevReal, todayStr())===2;
+  var repairChip = canRepair
+    ? '<button class="repair-chip" id="repairBtn" aria-label="Repair yesterday — restore your streak by spending one earned repair token">🩹 Missed yesterday? Repair it · '+(ST.repair_tokens)+' token'+(ST.repair_tokens===1?'':'s')+' left</button>'
+    : '';
+  host.innerHTML=head+'<div class="d7strip">'+cells+'</div>'+freezeChip+repairChip;
   activate(host, function(){ openStats("overview"); }, "Your stats — streak, accuracy, history");   // streak hero → Stats page
+  var rb=$("repairBtn"); if(rb) rb.onclick=function(e){ if(e&&e.stopPropagation)e.stopPropagation(); repairYesterday(); };   // stop the host's stats-tap
+}
+// spend ONE earned repair token to rescue a streak broken by a single missed day. LOCAL-first equity move; mirrors to the cloud profile.
+function repairYesterday(){
+  var r=repairStreak({ prevReal:ST.last_realday||ST.last_played||null, today:todayStr(), streak:ST.streak, tokens:ST.repair_tokens||0 });
+  if(!r) return;   // not eligible — defensive (the chip only renders when eligible)
+  ST.last_realday=r.last_realday; ST.streak=r.streak; ST.repair_tokens=r.tokens;
+  save(ST); saveProfile();   // H-A: push the rescued streak to the synced profile (no-op when signed out)
+  logEvent("streak_repair",{streak:ST.streak, tokens_left:ST.repair_tokens});
+  haptic(18); toast("Streak saved 🔥 — play today to keep it going");
+  renderHome();
 }
 function homeStatChip(label,value,which,onTap){
   var b=el("button","stat-chip");
