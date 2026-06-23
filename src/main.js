@@ -1095,9 +1095,13 @@ function renderReveal(res, fresh, bumped, swept){
   var topCard="";
   if(res.gotme && res.gotme.length){
     var fq=DAY.quotes[res.gotme[0]-1];
+    // THEATER (#2): Mags gloats the fake's own "tell" (fq.fake_note is already written in her first-person voice).
+    // No second bird — the rv-head reaction bird (which gets magsReact('tilt') below) is the one magpie on this screen.
+    var gloat=fq.fake_note ? esc(fq.fake_note) : "I made this one up and you called it real — gotcha.";
     topCard='<div class="rv-gotme"><div class="k">The fake that got you</div>'+
       '<div class="q">“'+esc(fq.text)+'”</div>'+
-      '<div class="m">'+esc(fq.speaker)+' — I made this one up. You called it real.</div></div>';
+      '<div class="m">'+esc(fq.speaker)+' — I made this one up. You called it real.</div>'+
+      '<div class="rv-gloat"><span class="rv-gloat-who">Mags gloats</span><span class="rv-gloat-txt">'+gloat+'</span></div></div>';
   } else {
     // one magpie per screen (G): the rv-head reaction bird is it — clean card uses a check, no second bird
     topCard='<div class="rv-clean"><span class="rv-clean-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1C6B4F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6"/></svg></span><span>A clean sweep — you didn’t let me fool you once.</span></div>';
