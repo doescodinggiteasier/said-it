@@ -15,27 +15,27 @@
     },
     {
       "id": "q2",
-      "text": "Somebody handed me a green juice backstage. I said 'what the hell is this?' They said 'kale, ginger, wheatgrass.' I poured it down the sink and found the rider. I'm fifty-eight years old, I've earned the whiskey.",
-      "speaker": "Jon Bon Jovi",
-      "context": "Backstage interview with Rolling Stone at the 2023 Power Station benefit concert, New York City",
+      "text": "Self-checkout, that's my favorite con they ever ran. You scan it, you bag it, you do the whole goddamn job — and then the kiosk's got the balls to ask if you want to leave a tip. A tip? For who? Me? I'm the employee now! Hand me a vest and a fifteen-minute break and we'll discuss it.",
+      "speaker": "George Carlin",
+      "context": "Riffing on modern 'convenience' during his final HBO stand-up special, 2008",
       "real": false,
-      "fake_note": "I made this one up — Bon Jovi has a reputation for being more health-conscious in recent years, which is exactly what makes this deliciously plausible as a rebellious moment. The giveaway is the specific age — he was actually 61 in 2023."
+      "fake_note": "I made this one up — the consumer-hypocrisy rant, the building outrage, the 'hand me a vest' button: that's the Carlin engine firing on all cylinders. The tell — self-checkout was barely a thing on his last tour, so the reference sits a hair too modern for him."
     },
     {
       "id": "q3",
-      "text": "My ex used to say I had commitment issues. I said babe, I've been committed to Jack Daniel's for thirty years. That's longer than most marriages in this country. Show some respect.",
-      "speaker": "Jeff Ross",
-      "context": "Comedy Central Roast warm-up set at the Largo at the Coronet, Los Angeles, 2022",
+      "text": "Look at this crowd. I've worked smarter rooms at the DMV. You, pal, in the shirt — what happened, you lose a fight with a curtain? Ah, I kid because I love. I don't, really. But it's a hell of a nice thing to say to a face like that.",
+      "speaker": "Don Rickles",
+      "context": "Working the room during a 1970s Las Vegas lounge set",
       "real": false,
-      "fake_note": "I made this one up — Ross's entire comedy identity is roast-style one-liners and self-deprecating relationship banter, so this fits him perfectly. The giveaway is that he'd probably name a more specific ex or make it darker — his roast jokes usually have a sharper target."
+      "fake_note": "I made this one up — the affectionate-insult rhythm and the 'I kid because I love… I don't, really' reversal are Rickles to the bone. The tell: he almost always locked onto ONE named target up front; the scattershot 'this crowd' is a touch generic for the Merchant of Venom."
     },
     {
       "id": "q4",
-      "text": "I don't believe in diets. I believe in portion control. Like, one portion of pasta, one portion of bread, one large portion of wine. It's called the Mediterranean lifestyle and it's basically science.",
-      "speaker": "Chelsea Handler",
-      "context": "Live taping of her Dear Chelsea podcast at the Wiltern Theatre, Los Angeles, October 2023",
+      "text": "No respect, I tell ya, none. My wife says the romance is gone. Gone? Lady, we met because both our cars got booted on the same block — it was a clerical error from day one. I only proposed so I'd have somebody to split the towing with.",
+      "speaker": "Rodney Dangerfield",
+      "context": "His 'no respect' monologue on The Tonight Show, 1983",
       "real": false,
-      "fake_note": "I made this one up — Handler has built her entire brand around unapologetic drinking and anti-diet culture jokes, and this reads exactly like her stand-up-meets-podcast voice. The giveaway is 'it's basically science' — her punchlines usually land harder and weirder than that clean callback."
+      "fake_note": "I made this one up — 'I get no respect' plus a self-roasting marriage punchline is the Dangerfield formula down to the beat. The tell: his real jokes snap shut in two lines; this one takes the scenic route to the punch."
     },
     {
       "id": "q5",

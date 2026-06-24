@@ -8,11 +8,11 @@
   "quotes": [
     {
       "id": "q1",
-      "text": "People ask me what my wellness routine is. Babe. My wellness routine is a Negroni before soundcheck and convincing myself the venue green room couch counts as a spa day. That's it. That's the whole programme.",
-      "speaker": "Lizzo",
-      "context": "Call Her Daddy, Episode 283, Spotify, September 2023",
+      "text": "Stand-up is just jazz for people who never learned an instrument — you're flying blind at a hundred miles an hour, praying your mouth knows something your brain doesn't. And the SECOND it works, some jackass in row three yells 'DO THE VOICE!' Sir. I am having a breakthrough up here, and you want the duck.",
+      "speaker": "Robin Williams",
+      "context": "On his comedy process, Inside the Actors Studio, 2001",
       "real": false,
-      "fake_note": "I made this one up — Lizzo has talked openly and breezily about self-care vs. reality in that exact self-deprecating, crowd-pleasing voice. The giveaway is 'programme' spelled with a British 'me,' which she absolutely would not say."
+      "fake_note": "I made this one up — the manic free-association, the swerve into a character, the 'do the voice' heckle: that's the Williams whirlwind. The tell — the real him would've spun into three more voices before the sentence ended; this one stays suspiciously on a single track."
     },
     {
       "id": "q2",
@@ -30,19 +30,19 @@
     },
     {
       "id": "q4",
-      "text": "My doctor looked at my bloodwork and went quiet for like four seconds too long. I said, 'Doc, just tell me.' He goes, 'How much tequila do you drink?' I said, 'Define week.' He closed his laptop. That was the appointment.",
-      "speaker": "Nick Offerman",
-      "context": "Conan O'Brien Needs a Friend, 'Nick Offerman Returns,' recorded March 2024",
+      "text": "Marriage counseling! You pay a guy a hundred bucks an hour to tell you what your wife's been screaming AT you, for FREE, for a DECADE! OH! OHHHH! You want her to open up?! She's OPEN, pal! The whole CUL-DE-SAC's got the minutes!",
+      "speaker": "Sam Kinison",
+      "context": "His marriage routine during a 1988 set at Dangerfield's, New York",
       "real": false,
-      "fake_note": "I made this one up — Nick's whole brand is whiskey, woodworking, and understated deadpan, so a tequila bloodwork bit slots right into his persona. The subtle giveaway is tequila — he's far more publicly a whiskey man, which makes the detail slightly off."
+      "fake_note": "I made this one up — the trademark scream, the marital rage, the 'free for a decade' math: that's the whole Kinison act in four sentences. The tell: his real screamers usually detonated off a nastier, darker setup; this one's almost good-natured by his standards."
     },
     {
       "id": "q5",
-      "text": "I told my tour manager, I need three things on that rider: Jameson, a fan that actually works, and zero fucking acoustic guitarists trying to 'show me something they've been working on.' I am begging. I will pay money. Keep them away from me.",
-      "speaker": "Dave Grohl",
-      "context": "Smartless podcast, recorded live at the Palladium, Los Angeles, October 2023",
+      "text": "Women say they want honesty. No you don't. You want a flattering lie said with a straight face and a lot of confidence. I told a woman the actual truth one time and she's still mad — and she should be! It was unflattering AND correct. That's the worst combination there is.",
+      "speaker": "Patrice O'Neal",
+      "context": "On relationships during a 2011 appearance on The Black Phillip Show podcast",
       "real": false,
-      "fake_note": "I made this one up — Dave's known for his loud, self-deprecating touring war stories and gear-head rants, so this fits his easy-going profane cadence perfectly. The giveaway is the very specific 'acoustic guitarist' bit, which is a little too neatly packaged as a punchline even for him."
+      "fake_note": "I made this one up — the blunt, provocative 'truth-bomb' framing about men and women is dead-center in Patrice's lane. The tell: the real him would've pushed it somewhere far more uncomfortable; this one pulls the punch right at the end."
     },
     {
       "id": "q6",

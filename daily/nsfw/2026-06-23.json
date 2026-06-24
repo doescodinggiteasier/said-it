@@ -8,11 +8,11 @@
   "quotes": [
     {
       "id": "q1",
-      "text": "I showed up to that awards ceremony absolutely hammered — like, three bottles of Jameson deep, couldn't find my seat, sat in some poor bastard's lap for a solid minute before I realised it wasn't a chair. And honestly? Best speech I ever gave.",
-      "speaker": "Billy Bob Thornton",
-      "context": "Marc Maron's WTF Podcast, Episode 1089, recorded at Maron's garage studio in Los Angeles, 2019",
+      "text": "My grandmother could end a whole argument with one look — didn't say shit, just turned her head real slow, like an owl that pays taxes, and grown men suddenly remembered they had somewhere to be. I've met men who ran whole city blocks with less power than that woman had in a single eyebrow.",
+      "speaker": "Richard Pryor",
+      "context": "On growing up, from a 1979 concert-film stage set",
       "real": false,
-      "fake_note": "I made this one up — Billy Bob is a notorious chaos merchant who's talked openly about drinking on WTF before, so the voice and venue fit perfectly. The giveaway is the 'three bottles of Jameson' specificity; he usually keeps his self-mythologising a touch more vague."
+      "fake_note": "I made this one up — the family-storytelling warmth with a sudden vivid image ('an owl that pays taxes') is pure Pryor. The tell: his real concert bits built to a bigger, riskier payoff; this one stays cozy where the real one would've gone for the throat."
     },
     {
       "id": "q2",
@@ -40,19 +40,19 @@
     },
     {
       "id": "q4",
-      "text": "I don't have a skincare routine. My skincare routine is whiskey kills germs, sunscreen when my publicist physically hands it to me, and minding my own goddamn business. I am sixty-one years old, I look exactly how I'm supposed to look, and I'm fine with that.",
-      "speaker": "Jeff Bridges",
-      "context": "Interview with GQ Magazine, 'Men of the Year' issue, published November 2020",
+      "text": "The record business is a room full of accountants in expensive sneakers trying to sell you a feeling they have personally never had. They'll slap a warning label on a guitar solo before they'd ever put one on the contract — and the contract is the only genuinely obscene thing in the building.",
+      "speaker": "Frank Zappa",
+      "context": "On the music industry, a 1986 television interview",
       "real": false,
-      "fake_note": "I made this one up — Bridges has this languid, unbothered, vaguely philosophical cadence in interviews and the anti-vanity stance fits his whole Dude-adjacent public persona. The giveaway is 'my publicist physically hands it to me' — too self-aware and media-savvy for someone who performs being completely unmanaged."
+      "fake_note": "I made this one up — Zappa's contempt for the industry and the warning-label jab (his real crusade) are exactly his soapbox. The tell: it's too tidy — the real Zappa would've named the accountants, the label, and the specific clause."
     },
     {
       "id": "q5",
-      "text": "People ask me how I stay motivated at forty-two. I'll tell you: spite, espresso, and the fact that my ex-wife told me I'd be irrelevant by thirty-five. I have that woman's words tattooed on my soul and I use them like fucking rocket fuel every single morning.",
-      "speaker": "Dana White",
-      "context": "The Pat McAfee Show, ESPN studios, Bristol, Connecticut, February 2023",
+      "text": "People say you can't put a price on a good night's sleep, and I say you absolutely can — it's the price of the mattress, I've done the math, and frankly some of you are wildly overpaying to feel rested. That's not wisdom, friend. That's just a receipt.",
+      "speaker": "Norm Macdonald",
+      "context": "A deadpan run during a 2011 appearance on Conan",
       "real": false,
-      "fake_note": "I made this one up — Dana drops spite-fuelled, blunt motivational rants constantly and the ex-wife reference mirrors the kind of personal-score-settling he genuinely does in interviews. The giveaway is 'tattooed on my soul' — a touch too poetic for Dana, who'd more likely say 'burned into my brain'."
+      "fake_note": "I made this one up — the flat, over-literal dismantling of a cliché, capped with 'that's just a receipt,' is the Norm Macdonald special. The tell: a real Norm bit would've taken a sharp left into something absurd and slightly menacing by now."
     },
     {
       "id": "q6",
