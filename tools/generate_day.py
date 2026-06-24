@@ -153,7 +153,11 @@ FAKE_SYS = ("You fabricate MAXIMALLY BELIEVABLE fake quotes for a 'real or fake?
             "about, and stay strictly WITHIN their real-life plausibility — NO dead giveaways (no absurd numbers, "
             "wild exaggerations, or on-the-nose details that let people instantly call 'fake'). It must still be "
             "INNOCUOUS: never an invented crime, scandal, slur, medical/financial claim, or anything reputationally "
-            "damaging. Output STRICT JSON only.")
+            "damaging. The bar is HARM-IF-BELIEVED — if a reader who believed it would think LESS of the person, do "
+            "not write it: no drinking/drug PATTERN or dependency (a one-off 'I got hammered once' is fine, 'I drink "
+            "every night' is NOT), no implied dishonesty/incompetence/hypocrisy, no cruelty or contempt, no false "
+            "endorsement, and never drag in a private relationship (an ex, an affair). Attribute ONLY to a WIDELY-KNOWN "
+            "public figure — never a private individual or someone obscure. Output STRICT JSON only.")
 FAKE_TMPL = """Write {n} DISTINCT, HIGHLY BELIEVABLE fake quotes for today's {lane}game. {figures}.
 
 LANE — every quote MUST clearly belong to this lane: {topic}. Reject anything off-topic for the lane.
@@ -168,7 +172,12 @@ Each quote MUST:
 - CONTEXT PARITY (kill the tell): the "context" must be a CONCRETE, SPECIFIC where/when — a named outlet, show,
   event, venue or year — as specific and similar in LENGTH as a real citation would be. NEVER vague, hedged or
   shorter than a real ("in an interview" / "supposedly" / "reportedly" are BANNED). It must read like a genuine source.
-- be HARMLESS (no invented crime, scandal, slur, medical/financial claim). Avoid politics entirely.
+- be HARMLESS — pass the HARM-IF-BELIEVED test: if someone believed it, it must NOT lower the person's reputation.
+  No crime/scandal/slur/medical/financial claim; NO drinking/drug PATTERN or dependency (one-off banter is fine, a
+  habit is not); no implied dishonesty, incompetence, hypocrisy, cruelty, or false endorsement; never invent a private
+  relationship (an ex/affair). Avoid politics entirely.
+- attribute ONLY to a WIDELY-KNOWN public figure (a real non-politician everyone would recognize) — NEVER a private
+  individual or an obscure person.
 Use DIFFERENT, varied people — NEVER repeat a speaker, and mix the kinds of people you pick.
 The bar: a real fan of that person would genuinely struggle to tell it's fake.
 
@@ -229,24 +238,35 @@ Output a JSON array; each element EXACTLY:
 
 SCREEN_SYS = ("You screen INTENTIONALLY-FABRICATED quotes for a clearly-labeled 'real or fake?' game. "
               "Fabrication is the entire point and is disclosed to players, so do NOT flag a quote merely "
-              "for being made up or attributed to a real person. Judge ONLY whether the CONTENT is harmful. "
-              "Output STRICT JSON only.")
+              "for being made up or attributed to a real person. Judge whether the CONTENT is harmful AND whether the "
+              "named person is a genuine public figure. The governing test is HARM-IF-BELIEVED. Output STRICT JSON only.")
 SCREEN_TMPL = """These are intentionally fabricated, clearly-labeled quotes for a light game (players know they
-may be fake). For each, mark "safe": false ONLY if its CONTENT is genuinely harmful — an invented crime,
-scandal, sexual content, slur, hate, a medical/health claim, death/tragedy, or a damaging real-world
-accusation. Harmless, funny, wholesome, or mundane content is SAFE (true) — even though it is fabricated.
+may be fake). Mark "safe": false if EITHER:
+ (1) the CONTENT is harmful — an invented crime, scandal, sexual content, slur, hate, a medical/health claim,
+     death/tragedy, or a damaging real-world accusation; OR
+ (2) it is REPUTATION-HARMING IF BELIEVED (the key test): if a reader who believed it would think LESS of the
+     person — a drinking/drug PATTERN or dependency (a one-off mention is fine, a habit is not), implied
+     dishonesty/incompetence/hypocrisy, cruelty/contempt, a false endorsement, or an invented private
+     relationship (an ex/affair); OR
+ (3) the named person is NOT a widely-known public figure (a private individual or an obscure name).
+Harmless, funny, wholesome, mundane content about a clear public figure is SAFE (true) — even though fabricated.
 
 ITEMS:
 {items}
 
 Output a JSON array of objects EXACTLY: {{"i": <index>, "safe": <true|false>}}"""
 
-# NSFW screen — profanity/crudeness is ALLOWED; only genuinely harmful content is dropped (the hard guards).
+# NSFW screen — profanity/crudeness is ALLOWED; only genuinely harmful, reputation-harming-if-believed, or
+# non-public-figure content is dropped (the hard guards + Tier-B).
 SCREEN_TMPL_NSFW = """These are intentionally fabricated, clearly-labeled quotes for an ADULT (18+) game where
 profanity, crudeness, blunt outbursts and adult humor are EXPECTED and fine. Do NOT flag a quote for swearing,
-rudeness, innuendo, or being crude/unsophisticated. Mark "safe": false ONLY if the CONTENT is genuinely HARMFUL:
-a slur or hate speech, an invented crime, sexual misconduct/assault, a drug crime, a medical/health claim, a
-death/tragedy, or a damaging real-world accusation about a real person. Crude-but-harmless = SAFE (true).
+rudeness, innuendo, or being crude/unsophisticated. Mark "safe": false if EITHER:
+ (1) the CONTENT is genuinely HARMFUL — a slur or hate speech, an invented crime, sexual misconduct/assault, a drug
+     crime, a medical/health claim, a death/tragedy, or a damaging real-world accusation about a real person; OR
+ (2) it is REPUTATION-HARMING IF BELIEVED — a drinking/drug PATTERN or dependency (not a one-off), implied
+     dishonesty/hypocrisy/cruelty, a false endorsement, or an invented private relationship (an ex/affair); OR
+ (3) the named person is NOT a widely-known public figure.
+Crude-but-harmless content about a clear public figure = SAFE (true).
 
 ITEMS:
 {items}
@@ -255,13 +275,15 @@ Output a JSON array of objects EXACTLY: {{"i": <index>, "safe": <true|false>}}""
 
 VALIDATE_SYS = ("You are an independent attribution RED-FLAG checker for a 'real or fake?' game. Each quote has "
                 "ALREADY been verified to appear verbatim on a cited reputable source — so do NOT re-verify from "
-                "memory. Your ONLY job: catch CLEAR problems — an obviously wrong/swapped attribution, a known "
-                "satirical or fabricated 'quote', an anachronism, or content that plainly contradicts who the "
-                "person is. DEFAULT to ok=true; mark ok=false ONLY with a SPECIFIC concrete reason, never mere "
-                "unfamiliarity. Output STRICT JSON only.")
+                "memory. Catch CLEAR problems: an obviously wrong/swapped attribution, a known satirical/fabricated "
+                "'quote', an anachronism, content that plainly contradicts who the person is, a speaker who is NOT a "
+                "widely-known PUBLIC FIGURE (a private individual / obscure name → flag), or a speaker who clearly "
+                "belongs to a DIFFERENT lane than this one. DEFAULT to ok=true; mark ok=false ONLY with a SPECIFIC "
+                "concrete reason, never mere unfamiliarity. Output STRICT JSON only.")
 VALIDATE_TMPL = """Each quote below was already confirmed to appear VERBATIM on a reputable source. Flag ok=false
-ONLY for a clear red flag (wrong attribution, known fake/satire, anachronism, obvious fabrication). If you simply
-don't recognize a quote, that is NOT a reason to flag it — mark ok=true.
+ONLY for a clear red flag: wrong attribution, known fake/satire, anachronism, obvious fabrication, the speaker is NOT
+a widely-known public figure (a private individual or obscure name), or the speaker clearly belongs to a different
+lane (this lane is "{lane}"). If you simply don't recognize a quote, that is NOT a reason to flag it — mark ok=true.
 
 ITEMS:
 {items}
@@ -516,8 +538,32 @@ DEFAMATORY_RE = re.compile(
 
 
 def defamatory(text):
-    """True if a FAKE makes a first-person damaging assertion (crime/sex/drugs/medical/fraud) — block it outright."""
+    """True if a FAKE makes a first-person damaging assertion (crime/sex/drugs/medical/fraud) — block it outright.
+    NOTE: this is a deterministic FLOOR (English keyword + first-person), not a ceiling — the LLM screen (safety_screen)
+    catches euphemism/implication. See CONTENT_RISK_POLICY.md §8 gap 4."""
     return bool(DEFAMATORY_RE.search(text or ""))
+
+
+# Tier-B "harm-if-believed" deterministic FLOOR (CONTENT_RISK_POLICY.md §2 Tier B). Beyond Tier-A crime/sex/fraud,
+# block fabrications that would lower a person's esteem IF BELIEVED: a substance/drinking PATTERN or dependency (not
+# one-off banter), a booze quantity, or dragging a private relationship in. The LLM screen does the semantic rest
+# (dishonesty, hypocrisy, cruelty, false endorsement) — this catches the clearest repeat offenders deterministically.
+REPUTATIONAL_RE = re.compile(
+    r"\b\d+\s+bottles?\b"                                               # a quantity of bottles ("three bottles ...")
+    r"|\bbottles?\s+(of|deep)\b[^.?!]{0,25}\b(jameson|whiskey|whisky|vodka|tequila|bourbon|jack\s+daniel|patr[oó]n|wine|gin|rum|scotch)\b"
+    r"|\b(jameson|whiskey|whisky|vodka|tequila|bourbon|jack\s+daniel|patr[oó]n|negroni|booze|liquor|martinis?)\b[^.?!]{0,30}\b(every|each|before\s+(noon|breakfast|soundcheck|the\s+show)|for\s+\w+\s+years|thirty\s+years|a\s+decade|daily|nightly)\b"
+    r"|\b(committed|addicted|hooked|dependent)\b[^.?!]{0,25}\b(jameson|whiskey|whisky|vodka|tequila|bourbon|jack\s+daniel|booze|drink|liquor|bottle)\b"
+    r"|\b(fell\s+off\s+the\s+wagon|sober\s+since)\b"                    # relapse / recovery = a dependency PATTERN (one-off 'I got hammered' is NOT matched — policy permits it)
+    r"|\bbloodwork\b"
+    r"|\bmy\s+doctor\b[^.?!]{0,30}\b(drink|liver|tequila|whiskey|whisky|booze)\b"
+    r"|\b(my|her|his)\s+ex-(wife|husband|girlfriend|boyfriend)\b"       # fabricating a real person's private relationship
+    , re.I)
+
+
+def reputational_harm(text):
+    """True if a FAKE makes a CLEAR Tier-B reputation-harm-if-believed assertion (substance PATTERN/dependency, a
+    booze quantity, a named ex / private relationship). Deterministic FLOOR; the LLM screen judges the subtler cases."""
+    return bool(REPUTATIONAL_RE.search(text or ""))
 
 
 # Generic "speakers" that aren't a named person — a real-or-fake QUOTE game needs an attributable human.
@@ -580,7 +626,7 @@ def gather_reals(feeds, days, dup_idx, cat="general", want=6):
                                     "url": it["link"], "date": dt.date.today().isoformat()}})
         if len(verified) >= want:
             break
-    verified = validate_reals(verified, strict=ap)   # cross-LLM attribution check (replaces the human fact-check)
+    verified = validate_reals(verified, strict=ap, cat=cat)   # cross-LLM attribution + public-figure + lane-fit check
     print(f"  reals: {len(verified)} verified verbatim + cross-validated (of {len(cands) if isinstance(cands, list) else 0} proposed)")
     return verified
 
@@ -637,6 +683,7 @@ def forge_fakes(dup_idx, cat="general", n=6):
     for f in fakes if isinstance(fakes, list) else []:
         if f.get("text") and f.get("speaker") and not deny_hit(f["text"], f["speaker"], f.get("context"), allow_politics=ap) \
                 and not defamatory(f["text"]) \
+                and not reputational_harm(f["text"]) \
                 and not is_dup(f["text"], dup_idx):    # never repeat a published quote — ANY lane, incl. near-duplicates (7b)
             out.append({"text": f["text"], "speaker": f["speaker"], "context": f.get("context", ""),
                         "real": False, "fake_note": f.get("fake_note") or "I made this one up.",  # Mags voice; never "AI" (copy rule)
@@ -683,14 +730,15 @@ def _call_other(system, prompt):
     return _call_claude(system, prompt, 1500)
 
 
-def validate_reals(reals, strict=False):
-    """Independent cross-LLM attribution check on top of the verbatim match (replaces the human fact-check).
+def validate_reals(reals, strict=False, cat="general"):
+    """Independent cross-LLM attribution check on top of the verbatim match (replaces the human fact-check). Also flags
+    a non-public-figure speaker or a wrong-lane speaker (CONTENT_RISK_POLICY.md §8 gap 2; CONTENT_QUALITY_REVIEW REC 5).
     `strict` (politics lane) runs a SECOND, independent reviewer-of-the-reviewer pass and unions the rejects."""
     if not reals:
         return reals
     def _pass():
         block = "\n".join(f'{i}: "{r["text"]}" — {r["speaker"]} ({r.get("context", "")[:80]})' for i, r in enumerate(reals))
-        v = largest_json(_call_other(VALIDATE_SYS, VALIDATE_TMPL.format(items=block))) or []
+        v = largest_json(_call_other(VALIDATE_SYS, VALIDATE_TMPL.format(items=block, lane=cat))) or []
         bad = {int(x["i"]) for x in v if isinstance(x, dict) and x.get("ok") is False and 0 <= int(x["i"]) < len(reals)}
         if len(bad) > len(reals) // 2:                # a pass that flags the majority is misfiring (over-rejecting)
             print(f"  ! cross-validate pass flagged {len(bad)}/{len(reals)} — likely misfiring; ignoring this pass", file=sys.stderr)
