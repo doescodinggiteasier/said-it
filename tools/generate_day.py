@@ -557,14 +557,15 @@ def defamatory(text):
 # block fabrications that would lower a person's esteem IF BELIEVED: a substance/drinking PATTERN or dependency (not
 # one-off banter), a booze quantity, or dragging a private relationship in. The LLM screen does the semantic rest
 # (dishonesty, hypocrisy, cruelty, false endorsement) — this catches the clearest repeat offenders deterministically.
+_BOOZE = r"(jameson|whiskey|whisky|vodka|tequila|bourbon|jack\s+daniel|patr[oó]n|negroni|gin|rum|scotch|liquor|booze)"
 REPUTATIONAL_RE = re.compile(
-    r"\b\d+\s+bottles?\b"                                               # a quantity of bottles ("three bottles ...")
-    r"|\bbottles?\s+(of|deep)\b[^.?!]{0,25}\b(jameson|whiskey|whisky|vodka|tequila|bourbon|jack\s+daniel|patr[oó]n|wine|gin|rum|scotch)\b"
-    r"|\b(jameson|whiskey|whisky|vodka|tequila|bourbon|jack\s+daniel|patr[oó]n|negroni|booze|liquor|martinis?)\b[^.?!]{0,30}\b(every|each|before\s+(noon|breakfast|soundcheck|the\s+show)|for\s+\w+\s+years|thirty\s+years|a\s+decade|daily|nightly)\b"
-    r"|\b(committed|addicted|hooked|dependent)\b[^.?!]{0,25}\b(jameson|whiskey|whisky|vodka|tequila|bourbon|jack\s+daniel|booze|drink|liquor|bottle)\b"
+    r"\b\d+\s+bottles?\s+(of\s+)?(wine|" + _BOOZE + r")\b"              # a quantity of BOOZE ("three bottles of jameson"), not generic bottles
+    r"|\bbottles?\s+(of|deep)\b[^.?!]{0,25}\b(wine|" + _BOOZE + r")\b"
+    r"|\b(wine|" + _BOOZE + r"|martinis?)\b[^.?!]{0,30}\b(every\s+(night|day|morning)|each\s+(night|day)|before\s+(noon|breakfast|lunch|soundcheck|the\s+show|every\s+show)|for\s+\w+\s+years|thirty\s+years|a\s+decade|daily|nightly)\b"   # CONSUMPTION frequency, not 'every year'
+    r"|\b(committed|addicted|hooked|dependent)\b[^.?!]{0,25}\b(wine|" + _BOOZE + r"|drinking|the\s+bottle)\b"
     r"|\b(fell\s+off\s+the\s+wagon|sober\s+since)\b"                    # relapse / recovery = a dependency PATTERN (one-off 'I got hammered' is NOT matched — policy permits it)
     r"|\bbloodwork\b"
-    r"|\bmy\s+doctor\b[^.?!]{0,30}\b(drink|liver|tequila|whiskey|whisky|booze)\b"
+    r"|\bmy\s+doctor\b[^.?!]{0,30}\b(liver|tequila|whiskey|whisky|booze|drinking)\b"   # a drinking-health concern, not 'drink more water'
     r"|\b(my|her|his)\s+ex-(wife|husband|girlfriend|boyfriend)\b"       # fabricating a real person's private relationship
     , re.I)
 
