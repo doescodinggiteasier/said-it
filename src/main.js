@@ -9,7 +9,7 @@ import { LANE_LABELS, LANE_HUES, LANE_VIBES, LANE_HOT, LANE_ADULT, LANE_ICONS,
   lanesForDay, laneDoneOn, lanesDoneCount, countLanesDoneByDate } from "./data.js";
 import { createLogger, fetchCrewBoard, fetchFooledMost,
   sbFetchCrewBoard, sbFetchMeProfile, sbFetchCohort, sbFetchGlobal,
-  sbRecordCompletion, sbRecordCrewMember, sbRecordCrewName, sbRecordEvent, sbRecordLike } from "./api.js";
+  sbRecordCompletion, sbRecordCrewMember, sbRecordCrewName, sbRecordEvent, sbRecordLike, sbRecordReport } from "./api.js";
 
 (function(){
 "use strict";
@@ -79,6 +79,7 @@ var CHEV_DOWN='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" strok
 var CHEV_RIGHT='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
 var HEART_SVG='<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5l-1.45-1.32C5.4 14.5 2 11.4 2 7.6 2 5 4.05 3 6.6 3 8.05 3 9.44 3.68 12 6.1 14.56 3.68 15.95 3 17.4 3 19.95 3 22 5 22 7.6c0 3.8-3.4 6.9-8.55 11.58z"/></svg>';
 var PENCIL_SVG='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L18.5 9.5a2 2 0 0 0-2.83-2.83L5 17.5z"/><path d="M13.5 6.5l4 4"/></svg>';
+var FLAG_SVG='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V4M4 4h11l-2 4 2 4H4"/></svg>';
 var CHEV_LEFT='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
 var BACK_ARROW='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
 /* ---------- bottom-sheet infra (spring-up modal; close on backdrop) ---------- */
@@ -708,7 +709,7 @@ function renderSettings(){
     ((!isStandalone() && (DEFERRED_INSTALL || isIOS())) ? ('<div class="set-sec">App</div><button class="set-link" id="setInstall">📲 Add Said It? to your home screen</button>') : '')+
     '<div class="set-sec">Data</div>'+
     '<button class="set-link danger" id="setReset">Reset my data on this device</button>'+
-    '<div class="set-foot">Mags makes up the fakes; real quotes link to their source. A quote shown as “made up” is part of the game — never a claim anyone actually said it.<br><button id="setDisclaimer">Read the full disclaimer</button></div>';
+    '<div class="set-foot">Mags makes up the fakes; real quotes link to their source. A quote shown as “made up” is part of the game — never a claim anyone actually said it.<br><button id="setDisclaimer">Read the full disclaimer</button> · <a href="about.html">About &amp; terms</a></div>';
   $("setBack").onclick=pageBack; $("setMags").onclick=openMagpie;
   host.querySelectorAll("#setTheme button").forEach(function(b){ b.onclick=function(){ ST.theme=b.getAttribute("data-t"); save(ST); applyTheme(); logEvent("theme_set",{theme:ST.theme}); renderSettings(); }; });
   function wire(id, cur, apply){ var s=$(id); if(!s) return; s.onclick=function(){ var nv=!cur(); s.setAttribute("aria-checked", nv?"true":"false"); apply(nv); save(ST); }; }
@@ -1010,6 +1011,25 @@ function openLikeReason(day,lane,qid,real){
   var sk=$("likeSkip"); if(sk) sk.onclick=function(){ finish(""); };
   var bd=$("sheetBackdrop"); if(bd) bd.onclick=function(e){ if(e.target===bd) finish(""); };   // backdrop dismiss = liked, no reason (still captured)
 }
+// Report-a-quote (content-risk takedown path, CONTENT_RISK_POLICY.md §6). LOCAL-first (logEvent always trails the
+// report) + best-effort Supabase mirror (events.meta, no schema change). Cancel/dismiss = NO report (deliberate action).
+function openReportReason(day,lane,qid){
+  var REASONS=[["wrong","🤔 Wrong / misattributed"],["harmful","⚠️ Harmful or offensive"],["spoiler","🙈 Spoils the answer"],["other","✶ Something else"]];
+  var done=false;
+  function finish(reason){ if(done) return; done=true;
+    logEvent("quote_report",{ day:day, cat:lane, qid:String(qid), reason:reason });          // local trail + endpoint beacon (cat=lane → admin sheet column)
+    if(sbWriteOn()) sbRecordReport(SB,{ sid:ST.sid, day:day, lane:lane, qid:String(qid), reason:reason });   // Supabase events.meta
+    liveAlert("Report sent. Thank you."); toast("Thanks — we’ll take a look 🪶"); closeSheet();
+  }
+  var btns=REASONS.map(function(r){ return '<button class="report-reason" data-r="'+esc(r[0])+'">'+esc(r[1])+'</button>'; }).join("");
+  var sh=openSheet('<div class="sheet-title">Report this quote</div>'+
+    '<div class="sheet-sub">Tell us what’s wrong — we review flagged quotes and remove them quickly.</div>'+
+    '<div class="like-reasons" role="group" aria-label="Pick a reason">'+btns+'</div>'+
+    '<button class="sheet-close" id="reportCancel">Cancel</button>');
+  sh.querySelectorAll(".report-reason").forEach(function(b){ b.onclick=function(){ finish(b.getAttribute("data-r")); }; });
+  var cc=$("reportCancel"); if(cc) cc.onclick=closeSheet;                       // cancel = no report
+  var bd=$("sheetBackdrop"); if(bd) bd.onclick=function(e){ if(e.target===bd) closeSheet(); };   // backdrop dismiss = no report
+}
 
 /* ---------- solo competitive loop (#11) ----------
    Two purely-local signals (work offline) + one async global. "Daily score" = SUM of the day's lane scores. */
@@ -1175,11 +1195,12 @@ function renderReveal(res, fresh, bumped, swept){
     // double-tap-to-like (#6) — visible heart toggle too, for accessibility. Captured on REAL and FAKE alike.
     var liked=isLiked(res.date,rvLane,q.id);
     var heart='<button class="tr-like'+(liked?' liked':'')+'" data-i="'+i+'" aria-pressed="'+(liked?'true':'false')+'" aria-label="'+(liked?'Liked — tap to remove':'Like this quote')+'">'+HEART_SVG+'</button>';
+    var report='<button class="tr-report" data-i="'+i+'" aria-label="Report this quote">'+FLAG_SVG+'</button>';   // §6 takedown path
     return '<div class="tr"><div class="tr-row">'+
       '<div class="tr-stamp"><span class="stamp '+(real?"real":"fake")+'">'+(real?"REAL":"FAKE")+'</span></div>'+
       '<div class="tr-body"><div class="tr-q">“'+esc(trunc(q.text,72))+'”</div>'+
         '<div class="tr-meta">'+esc(q.speaker)+(q.context?(' · '+esc(trunc(q.context,30))):'')+'</div>'+cite+
-        '<div class="tr-acts">'+share+heart+'</div></div>'+
+        '<div class="tr-acts">'+share+heart+report+'</div></div>'+
       '<div class="tr-verdict">'+verdict+'</div>'+
     '</div></div>';
   }).join("");
@@ -1219,7 +1240,7 @@ function renderReveal(res, fresh, bumped, swept){
     // done-lane review (read-only reveal) → replay for fun; the replay flow never touches your streak/stats
     (!fresh ? '<button class="rv-replay" id="rvReplay">Play again <span class="rv-replay-sub">won’t affect your streak</span></button>' : '')+
     '<div class="rv-links"><button id="revealArchiveBtn">Past editions</button><span style="opacity:.5">·</span><button id="revealLinkBtn">Copy link to this set</button></div>'+
-    '<div class="rv-foot">Mags makes up the fakes; real quotes link to their source. A quote shown as “made up” is part of the game — never a claim anyone said it.<br><a id="resetLink">reset my data</a></div>';
+    '<div class="rv-foot">Mags makes up the fakes; real quotes link to their source. A quote shown as “made up” is part of the game — never a claim anyone said it.<br><a href="about.html">About &amp; terms</a> · <a id="resetLink">reset my data</a></div>';
 
   $("tokenBox").textContent = shareGrid(res);
   $("copyBtn").onclick=copyToken;
@@ -1245,6 +1266,7 @@ function renderReveal(res, fresh, bumped, swept){
     if(isLiked(res.date,rvLane,q.id)){ removeLike(res.date, rvLane, q.id); setHeart(el, false); } else likeOn(i, el);
   }
   host.querySelectorAll(".tr-like").forEach(function(b){ b.onclick=function(e){ if(e&&e.stopPropagation)e.stopPropagation(); toggleLike(+b.getAttribute("data-i"), b); }; });
+  host.querySelectorAll(".tr-report").forEach(function(b){ b.onclick=function(e){ if(e&&e.stopPropagation)e.stopPropagation(); var q=DAY.quotes[+b.getAttribute("data-i")]; if(q) openReportReason(res.date, rvLane, q.id); }; });
   host.querySelectorAll("#rvTruth .tr").forEach(function(row,i){   // double-tap the card → like (Instagram-style; never un-likes)
     var last=0;
     row.addEventListener("click", function(e){

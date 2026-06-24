@@ -65,6 +65,9 @@ export function sbRecordCompletion(SB, row){ if(!SB) return Promise.resolve(); r
 export function sbRecordCrewMember(SB, row){ if(!SB) return Promise.resolve(); return fire(SB.from("crew_members").upsert(row, { onConflict:"crew,sid" })); }
 export function sbRecordCrewName(SB, crew, name){ if(!SB) return Promise.resolve(); return fire(SB.from("crew_meta").upsert({ crew:crew, name:name, updated_at:new Date().toISOString() }, { onConflict:"crew" })); }
 export function sbRecordEvent(SB, ev, sid, first){ if(!SB) return Promise.resolve(); return fire(SB.from("events").insert({ ev:ev, sid:sid, first:first||null })); }
+// Quote report (content-risk takedown path) — fire-and-forget into the EXISTING events table; the day + {lane,qid,reason}
+// ride the existing `meta` jsonb, so there is NO schema change. Anon may INSERT events (no SELECT) — triage via service role.
+export function sbRecordReport(SB, row){ if(!SB) return Promise.resolve(); return fire(SB.from("events").insert({ ev:"quote_report", sid:row.sid, day:row.day||null, meta:{ lane:row.lane, qid:row.qid, reason:row.reason } })); }
 // Quote like (#6) — INSERT-ONLY mirror of a local like. `ignoreDuplicates` → `on conflict do nothing` on the natural
 // key (sid,day,lane,qid), so it needs no UPDATE rights and re-sends collapse harmlessly. LOCAL ST.likes stays the truth.
 export function sbRecordLike(SB, row){ if(!SB) return Promise.resolve(); return fire(SB.from("quote_likes").upsert(row, { onConflict:"sid,day,lane,qid", ignoreDuplicates:true })); }

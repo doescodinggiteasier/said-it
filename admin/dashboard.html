@@ -117,6 +117,17 @@
       "<div class='bars'>raw: "+(d.fooled_shares||0)+" shares · "+(d.quote_likes||0)+" likes · "+(d.push_subs||0)+" push-subs · "+(d.recap_return_n||0)+"/"+(d.recap_shown_n||0)+" recaps→returned.</div>" +
       "<div class='bars'><b>TODO (metrics source):</b> these read the RETIRING Apps Script sheet, while the same events also dual-write to Supabase. Add a Supabase-native metrics read (a service-role <code>metrics</code> route on the board fn, or a SQL view over <code>events</code>) so the dashboard can move off Apps Script. Not built here.</div></div>";
 
+    // content-risk: quote-report triage. Each row is a reported (day · lane); pull/review that edition. Full
+    // {qid, reason} lives in Supabase events.meta (the dashboard reads the Apps Script sheet, which has no meta column).
+    var rbc = d.reports_by_day_cat || {};
+    var rkeys = Object.keys(rbc).sort().reverse();
+    var rrows = rkeys.map(function(k){ return "<tr><td>"+esc(k)+"</td><td>"+rbc[k]+"</td></tr>"; }).join("")
+      || "<tr><td colspan=2 class='mut'>no quote reports 🎉</td></tr>";
+    var rtot = d.reports_total||0;
+    html += "<div class='card' style="+(rtot?"\"border-color:var(--bad)\"":"\"\"")+"><b>⚑ Quote reports (triage)"+(rtot?" — "+rtot:"")+"</b>" +
+      "<table><tr><th>reported (day · lane)</th><th>count</th></tr>"+rrows+"</table>" +
+      "<div class='bars'>Pull/review the flagged edition (e.g. via <code>pull_set.py</code>). The full report reason + quote id is in Supabase <code>events.meta</code> (service-role read).</div></div>";
+
     var crows = (d.cohorts||[]).slice().reverse().map(function(c){
       return "<tr><td>"+c.install+"</td><td>"+c.size+"</td><td>"+c.d1+"% ("+c.d1_n+")</td><td>"+c.d7+"% ("+c.d7_n+")</td><td>"+c.d30+"% ("+c.d30_n+")</td></tr>";
     }).join("") || "<tr><td colspan=5 class='mut'>no install cohorts yet</td></tr>";
