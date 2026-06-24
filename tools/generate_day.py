@@ -85,14 +85,17 @@ CATEGORIES = {
                            "e.g. 'The Godfather (1972)'; vary genres and eras",
                 "topic": "a line of dialogue from a famous film"},
     # OFF THE RECORD lane (UI label "Off the Record"; KEY stays nsfw, path daily/nsfw/*). 18+ behind a gate.
-    # Genuinely ADULT: crude humour, profanity, partying/booze/drugs references, brash personality — NOT
-    # General-with-edge. HARD LAWSUIT LINE (never relaxes): never fabricate a real named person CONFESSING TO or
-    # DESCRIBING a crime, a sexual act/allegation, or any defamatory/harmful claim. No minors, ever.
+    # Genuinely ADULT: crude humour, profanity, partying/booze references, brash personality — NOT General-with-edge.
+    # RE-SKIN (CONTENT_RISK_POLICY.md §5, decision A): FAKES may be attributed ONLY to DECEASED people, FILMS, or
+    # SONGS — NEVER a living person (crude fabrications on the living are the biggest defamation surface). LIVING
+    # people appear in this lane ONLY as real, verbatim-verified quotes. HARD LAWSUIT LINE still never relaxes:
+    # never fabricate a CONFESSION to a crime, a sexual act/allegation, or any defamatory/harmful claim. No minors.
     "nsfw":    {"feeds": {}, "lane": "OFF-THE-RECORD ", "allow_politics": False, "kind": "nsfw", "nsfw": True,
-                "figures": "different real adults where crude is IN CHARACTER (comedians, rockstars, brash "
-                           "athletes/chefs/personalities) — in unfiltered, profane, party-hard moments",
-                "topic": "genuinely adult life and crude humour — partying, booze, drugs references, "
-                         "sex/relationships banter, off-colour jokes, blunt outbursts — in the speaker's real voice"},
+                "figures": "different DECEASED public figures where crude is IN CHARACTER (late comedians, rock "
+                           "legends, brash departed personalities) in unfiltered, profane, party-hard moments — "
+                           "ONLY deceased people (or a film/song), NEVER a living person",
+                "topic": "genuinely adult life and crude humour — partying, booze, sex/relationships banter, "
+                         "off-colour jokes, blunt outbursts — in the speaker's real voice"},
 }
 
 def evergreen_path(cat): return EVERGREEN if cat == "general" else os.path.join(HERE, f"evergreen_{cat}.json")
@@ -210,28 +213,32 @@ Output a JSON array; each element EXACTLY:
 FAKE_SYS_NSFW = ("You fabricate BELIEVABLE, genuinely ADULT (18+) fake quotes for an 'Off the Record' 'real or fake?' "
                  "game. Make them actually adult — crude humour, profanity, partying/booze/drugs references, "
                  "sex/relationships banter, brash personality — NOT just a clean quote with one swear. "
-                 "HARD LAWSUIT LINE (never relaxes): NEVER fabricate a real named person CONFESSING TO or DESCRIBING "
-                 "a crime, a sexual act or sexual allegation, drug dealing, or anything defamatory/harmful — that is a "
-                 "lawsuit, not edgy. Lean crude/party-hard braggadocio in a plausible in-character voice. No minors, "
-                 "ever; nothing targeting a private individual. Output STRICT JSON only.")
+                 "RE-SKIN RULE (decision A): attribute every fake ONLY to a DECEASED public figure, a FILM, or a SONG "
+                 "— NEVER a living person (living people appear in this lane only as real, verified quotes). "
+                 "HARD LAWSUIT LINE (never relaxes): NEVER fabricate a CONFESSION to or description of a crime, a "
+                 "sexual act or allegation, drug dealing, or anything defamatory/harmful — that is a lawsuit, not edgy. "
+                 "Lean crude/party-hard braggadocio in a plausible in-character voice. No minors, ever; no private "
+                 "individuals. Output STRICT JSON only.")
 FAKE_TMPL_NSFW = """Write {n} DISTINCT, BELIEVABLE, genuinely ADULT (18+) fake quotes for today's Off the Record game. {figures}.
 
 LANE — every quote MUST be properly adult: {topic}. Crude/profane/party-hard is the POINT — not General-with-one-swear.
 
 Each MUST:
-- sound like the REAL person in a crude, unfiltered, party-hard or filthy-funny moment — their actual voice and cadence;
-- be genuinely adult: swearing, blunt outbursts, booze/drugs-as-lifestyle references, sex/relationship banter, off-colour
-  jokes — all WELCOME and encouraged;
-- HARD LAWSUIT LINE: NEVER have a real named person confess to or describe a CRIME, a SEXUAL ACT or sexual ALLEGATION,
-  drug dealing, or anything defamatory/harmful. "I got hammered at the afterparty" = fine (braggadocio).
-  "I [committed a crime / did <sex act> / dealt drugs]" = BANNED. No minors. No private individuals.
+- be attributed ONLY to a DECEASED public figure (or a Film Title (Year) / a Song) — NEVER a living person. This is
+  the lane's re-skin: crude fabrications about the living are off-limits; only the dead/fictional get fabricated lines.
+- sound like the REAL (departed) person in a crude, unfiltered, party-hard or filthy-funny moment — their voice/cadence;
+- be genuinely adult: swearing, blunt outbursts, one-off booze/party references, sex/relationship banter, off-colour
+  jokes — all WELCOME — but NOT a substance DEPENDENCY/PATTERN framing (a one-off is fine, "I drink every day" is not);
+- HARD LAWSUIT LINE: NEVER have the person confess to or describe a CRIME, a SEXUAL ACT or sexual ALLEGATION,
+  drug dealing, or anything defamatory/harmful. "I got hammered at the afterparty" = fine (one-off braggadocio).
+  "I [committed a crime / did <sex act> / dealt drugs]" = BANNED. No minors. No private individuals. NO living people.
 - CONTEXT PARITY: "context" is a CONCRETE, SPECIFIC where/when (named show/podcast/event/year), as specific and
   similar in LENGTH as a real citation — never "in an interview"/"supposedly"/"reportedly".
 - stay WITHIN plausibility — a crude thing they really COULD have said; NO dead giveaways.
 Use DIFFERENT, varied people — NEVER repeat a speaker.
 
 Output a JSON array; each element EXACTLY:
-{{"text": "<the fabricated, genuinely-adult-but-lawsuit-safe quote>", "speaker": "<a real public figure>",
+{{"text": "<the fabricated, genuinely-adult-but-lawsuit-safe quote>", "speaker": "<a DECEASED public figure, or a Film Title (Year) / Song>",
   "context": "<a concrete, specific where/when — named show/podcast/event/year — comparable in length to a real citation>",
   "fake_note": "<1-2 sentences, FIRST PERSON as Mags the magpie ('I made this one up — …'): why it's plausible + the
   SUBTLE giveaway. Never say 'AI', 'robot' or 'machine'.>", "sneaky": <true for the ONE hardest to catch, else false>}}"""
@@ -265,8 +272,10 @@ rudeness, innuendo, or being crude/unsophisticated. Mark "safe": false if EITHER
      crime, a medical/health claim, a death/tragedy, or a damaging real-world accusation about a real person; OR
  (2) it is REPUTATION-HARMING IF BELIEVED — a drinking/drug PATTERN or dependency (not a one-off), implied
      dishonesty/hypocrisy/cruelty, a false endorsement, or an invented private relationship (an ex/affair); OR
- (3) the named person is NOT a widely-known public figure.
-Crude-but-harmless content about a clear public figure = SAFE (true).
+ (3) the named person is NOT a widely-known public figure; OR
+ (4) the speaker is a LIVING person — in this lane (re-skin), a fabricated quote may ONLY be attributed to a
+     DECEASED person, a film, or a song. A fabricated line on anyone still living = UNSAFE (false).
+Crude-but-harmless content about a clear DECEASED public figure (or a film/song) = SAFE (true).
 
 ITEMS:
 {items}
