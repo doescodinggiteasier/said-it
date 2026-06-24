@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-24",
+  "edition": 8,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Nobody remembers who came second, sweetheart.",
+      "speaker": "All About Eve (1950)",
+      "context": "Margo Channing, to a younger actress backstage",
+      "real": false,
+      "fake_note": "I made this one up — the sharp, theatrical bite and the 'sweetheart' with a blade inside it are pitch-perfect for Margo, and the competitive-fame theme is central to the film. The subtle giveaway is that it's a fraction too pithy; Margo's real barbs tend to unfurl over a few more words."
+    },
+    {
+      "id": "q2",
+      "text": "I never said I was the good guy, Colonel. I said I was the necessary one.",
+      "speaker": "Apocalypse Now (1979)",
+      "context": "Kurtz, speaking quietly to Willard in the compound",
+      "real": false,
+      "fake_note": "I made this one up — Kurtz's philosophical, self-justifying monologues are exactly this rhythm, and the 'necessary' framing echoes real lines about order and chaos in the film. The subtle giveaway is the direct address to rank; Kurtz tends to speak in more mythic, impersonal terms rather than military titles."
+    },
+    {
+      "id": "q3",
+      "text": "Frankly, my dear, I don't give a damn.",
+      "speaker": "Gone with the Wind (1939)",
+      "context": "Rhett Butler's (Clark Gable) parting words to Scarlett O'Hara as he leaves her at the end of the film",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "Just keep swimming.",
+      "speaker": "Finding Nemo (2003)",
+      "context": "Dory's optimistic mantra, which she sings to Marlin to keep him going during the search for Nemo.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "My mama always said life was like a box of chocolates. You never know what you're gonna get.",
+      "speaker": "Forrest Gump (1994)",
+      "context": "Forrest (Tom Hanks) sits on a bus-stop bench recounting his mother's favorite saying.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "I used to think silence meant peace. Then I learned what peace actually costs.",
+      "speaker": "Platoon (1986)",
+      "context": "Chris Taylor, in voiceover narration",
+      "real": false,
+      "fake_note": "I made this one up — Taylor's voiceover narration throughout the film has exactly this reflective, disillusioned cadence, drawing on his letters home. The subtle giveaway is that it's slightly too clean and resolved; Oliver Stone's real narration lines tend to be rougher and more searching."
+    }
+  ]
+}

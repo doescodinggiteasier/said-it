@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-24",
+  "edition": 10,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People think being an astronaut is about being fearless. It's actually about being afraid of exactly the right things at exactly the right time.",
+      "speaker": "Chris Hadfield",
+      "context": "Royal Ontario Museum public lecture series 'Ideas That Matter,' Toronto, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Hadfield's whole public brand is reframing fear as a useful tool, and he speaks in precisely this kind of clean, aphoristic style. The giveaway is that it's a touch too tidy; his real lines tend to come wrapped in a specific mission anecdote."
+    },
+    {
+      "id": "q2",
+      "text": "I Don't Make Money From Residuals",
+      "speaker": "Danny Pintauro",
+      "context": "Former 'Who's the Boss?' child star explaining why he now works as an Amazon delivery driver among five jobs",
+      "real": true,
+      "source": {
+        "title": "Entertainment — ‘Who’s the Boss?’ Star Danny Pintauro Says Being an Amazon Delivery Driver Is ‘O",
+        "url": "https://variety.com/2026/tv/news/danny-pintauro-amazon-delivery-driver-whos-the-boss-residuals-1236788605/",
+        "date": "2026-06-24"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've cooked for kings and I've cooked for line cooks at two in the morning, and I'll tell you honestly — the line cooks are harder to impress.",
+      "speaker": "Gordon Ramsay",
+      "context": "Interview with Bon Appétit magazine, published in the November 2017 issue",
+      "real": false,
+      "fake_note": "I made this one up — Gordon has a well-documented respect for working kitchen staff and frequently contrasts fine dining with the rough, honest world of professional cooks. The slight tell is 'honestly,' which he uses constantly in real interviews, making it feel almost too on-brand."
+    },
+    {
+      "id": "q4",
+      "text": "I'm ready to drink tonight, until next morning. Thank you.",
+      "speaker": "Bong Joon-ho",
+      "context": "The director, through his interpreter, accepting the Best International Feature Film Oscar for Parasite at the 2020 Academy Awards",
+      "real": true,
+      "source": {
+        "title": "Bong Joon-ho Oscar Acceptance Speech Transcripts: Parasite Wins Big at the Academy Awards - Rev",
+        "url": "https://www.rev.com/transcripts/bong-joon-ho-oscar-acceptance-speech-transcripts-parasite-wins-big-at-the-academy-awards",
+        "date": "2020-02-09"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I don't watch my old fights anymore. What's the point? That guy didn't know what he didn't know. I'm more interested in the guy I'm going to be next year.",
+      "speaker": "Floyd Mayweather Jr.",
+      "context": "Interview with ESPN's Stephen A. Smith on First Take, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Floyd genuinely talks this way about self-improvement and legacy, and the forward-looking humility fits his post-retirement persona perfectly. The subtle giveaway is the phrase 'didn't know what he didn't know,' which is slightly more introspective than Floyd typically goes."
+    },
+    {
+      "id": "q6",
+      "text": "I'm Already Starting to Feel Better",
+      "speaker": "Daryl Hall",
+      "context": "Daryl Hall revealing he received a kidney transplant",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Daryl Hall Reveals He Got a Kidney Transplant: “I’m Already Starting to Feel Bet",
+        "url": "https://www.hollywoodreporter.com/music/music-news/daryl-hall-reveals-kidney-transplant-1236628877/",
+        "date": "2026-06-24"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-24",
+  "edition": 8,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Somebody asked me what my skincare routine was. Darling, it's red wine, bad decisions, and the absolute refusal to apologise for either.",
+      "speaker": "Eartha Kitt",
+      "context": "Panel discussion at the Provincetown Playhouse fundraiser gala, Provincetown, Massachusetts, August 1998",
+      "real": false,
+      "fake_note": "I made this one up — Kitt's notorious delivery of feline self-satisfaction and her well-documented 'I please myself first' philosophy make this very on-brand; the tell is that she tended to be more mythologically theatrical than this punchy and modern in phrasing."
+    },
+    {
+      "id": "q2",
+      "text": "Why me? Ten million motherfuckers freebasing, and I'm the one who blows up!",
+      "speaker": "Richard Pryor",
+      "context": "Pryor's frank, self-lacerating bit about the 1980 freebasing accident in which he set himself on fire, from his stand-up film 'Richard Pryor: Live on the Sunset Strip' (1982).",
+      "real": true,
+      "source": {
+        "title": "'Richard Pryor: Live on the Sunset Strip' (film)",
+        "url": "https://en.wikipedia.org/wiki/Richard_Pryor:_Live_on_the_Sunset_Strip_(film)",
+        "date": "1982"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I haven't ever tried very hard. Drugs expanded my imagination and made me think outside of, what, your fucking reality. And cigarettes gave me the patience to sit and write those thoughts down in a comedy-friendly format that you could understand. And alcohol gives me the courage to stand up here in front of you judgmental pricks and do it with a quarter million dollars worth of cameras in your face.",
+      "speaker": "Doug Stanhope",
+      "context": "From Doug Stanhope's 2007 stand-up special \"No Refunds\" — his defiant, self-celebrating defense of lifelong drug, cigarette, and alcohol use as the engine of his comedy.",
+      "real": true,
+      "source": {
+        "title": "'No Refunds' (special)",
+        "url": "https://en.wikipedia.org/wiki/No_Refunds_(film)",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I woke up on Mick's tour bus somewhere outside of Düsseldorf with one boot on, a half-eaten wheel of Brie, and absolutely zero regrets. That, children, is how you do a Tuesday.",
+      "speaker": "Keith Moon",
+      "context": "Anecdote relayed during a live interview on Tommy Vance's Friday Rock Show, BBC Radio 1, recorded spring 1977",
+      "real": false,
+      "fake_note": "I made this one up — Moon's gleeful chaos-braggadocio is perfectly in character and the specific European geography gives it a nice verisimilitude; the subtle giveaway is that Moon rarely did composed radio interviews of this kind — his radio appearances tended to be brief and chaotic rather than anecdote-length."
+    },
+    {
+      "id": "q5",
+      "text": "I was doing a little over $1,000 a day in heroin, and then probably the same in cocaine and alcohol.",
+      "speaker": "Nikki Sixx",
+      "context": "Mötley Crüe bassist describing the scale of his addiction at his worst, around the period of his December 1987 heroin overdose; said in 2019 press for the Netflix film 'The Dirt'.",
+      "real": true,
+      "source": {
+        "title": "'The Dirt' press (Chicago Sun-Times)",
+        "url": "https://chicago.suntimes.com/entertainment/motley-crue-biopic-netflix-nikki-six-doing-1000-dollars-a-day-in-heroin/",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People say sex sells. Sure it does. So does beer. So does a good steak. The trick is knowing when to put all three on the same billboard and point at Texas.",
+      "speaker": "Frank Zappa",
+      "context": "Interview segment recorded for the documentary 'The Real Frank Zappa Story' during production meetings at Utility Muffin Research Kitchen, Los Angeles, 1987",
+      "real": false,
+      "fake_note": "I made this one up — Zappa's commercial-cynicism-meets-absurdist-geography sense of humour is the right flavour; the tell is that Zappa was more likely to go philosophical and political in long-form interviews than to deliver punchy one-liners like this."
+    }
+  ]
+}
