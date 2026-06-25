@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-25",
+  "edition": 9,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I threw a television out of a hotel window once and the bastard landed on a room-service cart. Beef Wellington everywhere. Housekeeping sent me a bill. I sent them a signed drum skin. We called it even.",
+      "speaker": "John Bonham",
+      "context": "Circus magazine, backstage interview at Madison Square Garden, June 1977",
+      "real": false,
+      "fake_note": "I made this one up — Bonham's rep for hotel destruction is legendary and the beef Wellington detail feels perfectly absurd and on-brand. The giveaway is 'signed drum skin' as currency; too tidy and self-mythologising even for Bonham."
+    },
+    {
+      "id": "q2",
+      "text": "Look at your mushrooms - they look like fucking tadpoles on Viagra.",
+      "speaker": "Gordon Ramsay",
+      "context": "Chef Gordon Ramsay critiquing a kitchen's mushroom side dish on the \"Rococo\" episode of Ramsay's Kitchen Nightmares (King's Lynn restaurant), UK Channel 4, 2006.",
+      "real": true,
+      "source": {
+        "title": "'Ramsay's Kitchen Nightmares' — Rococo (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt1058681/",
+        "date": "2006"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I'd sit there and smoke crack while I listened to the play. It made me fucking crazy.",
+      "speaker": "Samuel L. Jackson",
+      "context": "Reflecting on his 1980s/early-90s crack-cocaine addiction during his time as an understudy on Broadway's 'The Piano Lesson' (shadowing Charles Dutton), before he got sober in 1991. From a 2019 The Hollywood Reporter interview, widely reported (Entertainment Tonight, Today, People), Jan 2019.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter interview (TODAY report)",
+        "url": "https://www.today.com/health/health/samuel-l-jackson-opens-drug-addiction-early-career-rcna20476",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My wife asked me what I find attractive. I said, 'Honestly? A woman who laughs at my jokes and doesn't check my credit score.' She said, 'So literally anyone but me.' I said, 'Baby, you got two out of three.'",
+      "speaker": "Rodney Dangerfield",
+      "context": "The Tonight Show Starring Johnny Carson, NBC, recorded November 1981",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield's entire persona was self-deprecating marriage grief and the punchline structure is pure him. The giveaway is 'credit score' — that phrasing wasn't really everyday slang in his prime TV years."
+    },
+    {
+      "id": "q5",
+      "text": "It's cold outside, but I'm still looking like a thotty, because a hoe never gets cold.",
+      "speaker": "Cardi B",
+      "context": "From a now-iconic 2014 viral Instagram/Vine clip from her pre-fame days, strutting in a bra top and skirt and explaining why she's barely dressed in winter.",
+      "real": true,
+      "source": {
+        "title": "Pre-fame viral clip (PAPER)",
+        "url": "https://www.papermag.com/cardi-b-cold-clothes",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I did a gig in Cleveland once — and look, I love Cleveland, mostly — but a man in the third row fell asleep during my set, and I thought, either I'm off tonight or this man is genuinely broken. Turns out both. We went for drinks after. Great guy.",
+      "speaker": "Bill Hicks",
+      "context": "Recorded Q&A at the Laff Stop, Austin, Texas, February 1992",
+      "real": false,
+      "fake_note": "I made this one up — Hicks's love-hate relationship with mid-America crowds is well documented and the ending redemption twist is his style. The giveaway is 'we went for drinks after' — Hicks would more likely have ended on the misanthropy than a warm reunion."
+    }
+  ]
+}

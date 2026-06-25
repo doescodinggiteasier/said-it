@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-25",
+  "edition": 9,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You want loyalty? Buy a dog.",
+      "speaker": "The Godfather (1972)",
+      "context": "A Corleone enforcer dismissing a rival's appeal for mercy",
+      "real": false,
+      "fake_note": "I made this one up — it fits the clipped, world-weary cynicism of the Corleone inner circle perfectly. The subtle giveaway is that it's almost *too* aphoristic; the real film's sharpest lines tend to be a beat longer."
+    },
+    {
+      "id": "q2",
+      "text": "Every time I close my eyes I still see that runway.",
+      "speaker": "Top Gun (1986)",
+      "context": "Maverick speaking to Goose's wife after the accident",
+      "real": false,
+      "fake_note": "I made this one up — it matches the film's earnest, melodramatic emotional register and Maverick's survivor's guilt arc. The giveaway is 'runway' — the real emotional anchor in the film is the sky, not the ground."
+    },
+    {
+      "id": "q3",
+      "text": "The Dude abides.",
+      "speaker": "The Big Lebowski (1998)",
+      "context": "The Dude (Jeff Bridges) to The Stranger (Sam Elliott) at the bar near the film's end, summing up his laid-back philosophy.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "The first rule of Fight Club is: you do not talk about Fight Club.",
+      "speaker": "Fight Club (1999)",
+      "context": "Tyler Durden (Brad Pitt) laying down the rules to the members of Fight Club.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Magic's just science that hasn't been written down yet.",
+      "speaker": "Indiana Jones and the Raiders of the Lost Ark (1981)",
+      "context": "Indy explaining the Ark's power to a skeptical colleague",
+      "real": false,
+      "fake_note": "I made this one up — it sounds exactly like Indy's classroom-voice bleeding into his field instincts. The giveaway is that Indy in the real film never quite reconciles science and the supernatural this neatly; his awe is left deliberately unresolved."
+    },
+    {
+      "id": "q6",
+      "text": "I never asked you to understand me. I asked you to trust me.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick speaking quietly to Ilsa during a tense confrontation",
+      "real": false,
+      "fake_note": "I made this one up — the cadence and world-worn romanticism are dead-on for Bogart's Rick Blaine. The giveaway is that Rick in the real film leans more on bitter wit than direct emotional appeals like this."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-25",
+  "edition": 6,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember the exact moment I realized I could actually sing. Not perform — anybody can perform. But really sing. I was alone in a bathroom in my aunt's house in Detroit, and I scared myself a little.",
+      "speaker": "Diana Ross",
+      "context": "Memoir excerpt read aloud during her appearance on Desert Island Discs, BBC Radio 4, January 2012",
+      "real": false,
+      "fake_note": "I made this one up — Diana Ross has a long history of framing her origin story in precise, personal, almost cinematic details, and the Detroit setting anchors it in genuine biography. The giveaway is the distinction between 'sing' and 'perform' — it's slightly too self-aware, the kind of insight that usually comes from decades of interviews rather than a spontaneous recollection."
+    },
+    {
+      "id": "q2",
+      "text": "Every time I think I understand what a song needs, I go back and strip something out. It's almost always better. Producers who are afraid of empty space are producers who don't trust the listener.",
+      "speaker": "Brian Eno",
+      "context": "Keynote conversation moderated by Bob Boilen at the Red Bull Music Academy, New York, April 2015",
+      "real": false,
+      "fake_note": "I made this one up — Brian Eno's entire philosophy of ambient and generative music is built around restraint and trust in the listener, making this quote feel like it could be lifted from any of his real lectures. The tell is the slight editorializing about other producers, which is marginally more pointed than his typically gentle, academic tone."
+    },
+    {
+      "id": "q3",
+      "text": "He built this entire empire based on what he thought would turn the world on. That was his superpower",
+      "speaker": "Rob Thomas",
+      "context": "Remembering Clive Davis",
+      "real": true,
+      "source": {
+        "title": "Music — Rob Thomas Remembers Clive Davis: ‘Losing Clive Is the End of an Era’",
+        "url": "https://www.rollingstone.com/music/music-features/rob-thomas-clive-davis-tribute-essay-1235582736/",
+        "date": "2026-06-24"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Nashville is a town that will celebrate you and bury you in the same weekend. I've been on both ends of it, and I'll tell you, the burying part taught me a lot more.",
+      "speaker": "Kris Kristofferson",
+      "context": "Acceptance remarks at the Americana Music Association Honors and Awards ceremony, Ryman Auditorium, Nashville, September 2014",
+      "real": false,
+      "fake_note": "I made this one up — Kristofferson had a famously rocky early relationship with Nashville's industry machine, and his dry, unsentimental wisdom makes this feel entirely like him. The subtle tell is that it's almost too perfectly structured, like a country lyric dressed as a speech."
+    },
+    {
+      "id": "q5",
+      "text": "I Couldn't Leave It to Beavers",
+      "speaker": "Dolly Parton",
+      "context": "Opening of Dolly's Tennessean Travel Stop",
+      "real": true,
+      "source": {
+        "title": "Music — Dolly Parton Graces Opening of Tennessee Truck Stop: ‘I Couldn’t Leave It to Bea",
+        "url": "https://www.rollingstone.com/music/music-news/dolly-parton-tennessee-travel-stop-1235583690/",
+        "date": "2026-06-25"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My mother used to say the church is just a stage with better acoustics. I think about that every single time I step in front of a microphone.",
+      "speaker": "Aretha Franklin",
+      "context": "Spoken during a pre-show conversation with David Letterman, published in Rolling Stone's oral history tribute, September 2018",
+      "real": false,
+      "fake_note": "I made this one up — Aretha genuinely and frequently drew the line between gospel and performance, and invoking her mother lands perfectly in her real lane. The tell is that the church-as-stage metaphor is almost too tidy, a little too quotable for a casual conversation."
+    }
+  ]
+}

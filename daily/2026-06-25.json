@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-25",
+  "edition": 11,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what it's like being in the ocean at four in the morning before a race. Honestly, it's the most honest place I've ever been. The water doesn't care who you are.",
+      "speaker": "Michael Phelps",
+      "context": "interview with Tom Bilyeu on Impact Theory, published March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Phelps really does speak in this reflective, stripped-down way about swimming as a mental sanctuary, which makes it land perfectly. The subtle giveaway is 'the water doesn't care who you are': a touch too aphoristic for his usual conversational register."
+    },
+    {
+      "id": "q2",
+      "text": "You better cut the pizza in four pieces because I'm not hungry enough to eat six.",
+      "speaker": "Yogi Berra",
+      "context": "Hall of Fame baseball catcher and manager, one of his famous 'Yogi-isms'",
+      "real": true,
+      "source": {
+        "title": "Famous 'Yogi-isms'",
+        "url": "https://www.cbsnews.com/news/famous-yogi-isms",
+        "date": "2002-03-06"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The only time to eat diet food is while you're waiting for the steak to cook.",
+      "speaker": "Julia Child",
+      "context": "Famous saying by the chef and TV cook, listed among quotes she actually said",
+      "real": true,
+      "source": {
+        "title": "17 Quotes From Julia Child, Which She Actually Said | GBH",
+        "url": "https://www.wgbh.org/lifestyle/food/food-stories/2019-01-28/17-quotes-from-julia-child-which-she-actually-said",
+        "date": "2019-01-28"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I never read reviews. My wife reads them. Then she tells me I shouldn't read them. It's a very efficient system.",
+      "speaker": "Tom Hanks",
+      "context": "press roundtable for A Beautiful Day in the Neighborhood, Toronto International Film Festival, September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Hanks frequently deflects press questions with warm, self-deprecating humor about his domestic life, and the deadpan escalation here fits his rhythm exactly. The giveaway is the punchline structure: it's slightly too crafted, like a prepared bit rather than a spontaneous aside."
+    },
+    {
+      "id": "q5",
+      "text": "Basketball taught me that ego is just fear in a nicer outfit. The guys who couldn't get past it — and I was one of them for a while — you could see it every time they didn't pass.",
+      "speaker": "Kobe Bryant",
+      "context": "interview with Lewis Howes on The School of Greatness podcast, episode 391, recorded 2016",
+      "real": false,
+      "fake_note": "I made this one up — Bryant appeared on that podcast around that era and spoke candidly about ego and team dynamics, especially in his later reflective years. The tell is 'ego is just fear in a nicer outfit': it's a bit too epigrammatic, more motivational-speaker than his usual blunt self-analysis."
+    },
+    {
+      "id": "q6",
+      "text": "There's a version of artificial intelligence that genuinely excites me and a version that keeps me up at night. The unsettling part is that they might be the same version.",
+      "speaker": "Elon Musk",
+      "context": "panel discussion at the World Government Summit in Dubai, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Musk has for years publicly worried about AI as both humanity's greatest tool and existential risk, and this kind of compressed, paradoxical framing matches his rhetoric closely. The tell is how tidy it is: his real remarks on the subject tend to be choppier and less polished."
+    }
+  ]
+}
