@@ -11,7 +11,8 @@
     "2026-06-22",
     "2026-06-23",
     "2026-06-24",
-    "2026-06-25"
+    "2026-06-25",
+    "2026-06-26"
   ],
   "note": "Manifest of published editions. The app loads daily/<local-date>.json; if that date isn't published yet, it falls back to the latest entry here.",
   "categories": {
@@ -43,7 +44,8 @@
       "2026-06-22",
       "2026-06-23",
       "2026-06-24",
-      "2026-06-25"
+      "2026-06-25",
+      "2026-06-26"
     ],
     "nsfw": [
       "2026-06-17",

@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-26",
+  "edition": 10,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The cold doesn't bother me half as much as the quiet.",
+      "speaker": "Fargo (1996)",
+      "context": "Marge Gunderson making small talk with Norm on a winter morning",
+      "real": false,
+      "fake_note": "I made this one up — Marge's plainspoken Midwestern warmth and her comfort with mundane observation are spot-on for her character. The giveaway is that Marge usually directs her observations outward at the world; musing on personal feeling is slightly out of register for her."
+    },
+    {
+      "id": "q2",
+      "text": "You fly casual, or you don't fly at all.",
+      "speaker": "Star Wars: Return of the Jedi (1983)",
+      "context": "Han Solo briefing the team before the Endor mission",
+      "real": false,
+      "fake_note": "I made this one up — 'fly casual' is actually a real-adjacent Han Solo phrase from this era, which is exactly what makes it dangerous for players. The giveaway is the rhythm; Han's real quips tend to be reactive rather than instructional."
+    },
+    {
+      "id": "q3",
+      "text": "As you wish.",
+      "speaker": "The Princess Bride (1987)",
+      "context": "Westley the farmhand says this to Buttercup; it's revealed to be his way of saying \"I love you,\" and recurs throughout the film.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "Ogres are like onions.",
+      "speaker": "Shrek (2001)",
+      "context": "Shrek explains to Donkey that ogres have layers",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Every man in that trench was somebody's son. Don't you ever let yourself forget that.",
+      "speaker": "Saving Private Ryan (1998)",
+      "context": "Captain Miller speaking quietly to Sergeant Horvath after a firefight",
+      "real": false,
+      "fake_note": "I made this one up — Hanks's Miller carries this kind of moral exhaustion throughout the film and speaks in plain, soldierly sentences. The giveaway is a faint sentimentality; Miller more often deflects personal feeling than names it this plainly."
+    },
+    {
+      "id": "q6",
+      "text": "You keep calling it a negotiation, Frank. It stopped being a negotiation when you walked in without a lawyer.",
+      "speaker": "Heat (1995)",
+      "context": "Lt. Hanna pressing a suspect during an interrogation",
+      "real": false,
+      "fake_note": "I made this one up — the clipped, procedural tension fits Mann's style perfectly, and Pacino's Hanna is exactly the type to reframe the room's power dynamic mid-scene. The subtle giveaway is that Hanna rarely names suspects so directly; his confrontations tend to be more elliptical."
+    }
+  ]
+}

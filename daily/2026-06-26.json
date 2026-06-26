@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-26",
+  "edition": 12,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I genuinely cannot tell you what day of the week it is when we're in the middle of a long shoot. Like, someone told me it was Thursday and I thought they were messing with me. It was a Wednesday, which, fine, that's close, but still.",
+      "speaker": "Meryl Streep",
+      "context": "Interview with Actors on Actors, Variety, published June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Streep has often talked about the immersive disorientation of long productions, so this reads exactly like her self-deprecating, slightly scattered interview voice. The subtle giveaway is that she'd more likely frame the anecdote around a character she was inhabiting, not pure logistical confusion."
+    },
+    {
+      "id": "q2",
+      "text": "I always thought that, uh, quicksand was gonna be a much bigger problem than it turned out to be.",
+      "speaker": "John Mulaney",
+      "context": "From his stand-up special 'New in Town' (2012), riffing on childhood fears from cartoons",
+      "real": true,
+      "source": {
+        "title": "John Mulaney: New In Town (2012) - Full Transcript - Scraps from the Loft",
+        "url": "https://scrapsfromtheloft.com/comedy/john-mulaney-new-in-town-2012-full-transcript/",
+        "date": "2012-01-13"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I like the escalator, man, 'cause the escalator can never break. It can only become stairs. There would never be an 'Escalator Temporarily Out of Order' sign, only an 'Escalator Temporarily Stairs - Sorry for the Convenience.'",
+      "speaker": "Mitch Hedberg",
+      "context": "From his Comedy Central Presents stand-up set, a signature observational one-liner",
+      "real": true,
+      "source": {
+        "title": "Mitch Hedberg quote on Quotes.net (Comedy Central Presents)",
+        "url": "https://www.quotes.net/mquote/706033",
+        "date": "1998-01-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The thing about curry is that every household has a version and every household thinks theirs is the real one. My auntie would not accept that there are other valid opinions on this matter. She is not a woman who does 'valid opinions.'",
+      "speaker": "Padma Lakshmi",
+      "context": "Podcast appearance on Bon Appétit's Dinner SOS, episode aired March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Lakshmi has talked publicly and warmly about her South Indian family's cooking and the fierce informal authority of older female relatives, so this specific family texture rings true. The giveaway is the repeated joke construction at the end; her actual storytelling usually builds through more sensory detail before the punchline."
+    },
+    {
+      "id": "q5",
+      "text": "I remember watching the '92 Finals on a little TV in a gym somewhere, eating out of a vending machine, thinking these guys are from a different planet. Then you actually get to the league and you realize they were just obsessed in a way that most people aren't willing to be. That part you can work on.",
+      "speaker": "Tim Duncan",
+      "context": "Profile interview with ESPN The Magazine, March 2015 issue",
+      "real": false,
+      "fake_note": "I made this one up — Duncan's documented public persona is famously understated and he has spoken about his late start in basketball and watching the Dream Team era, so this measured, non-braggy reflection suits him precisely. The subtle tell is the final sentence, which edges just slightly toward the aphoristic tidiness Duncan typically avoids in real interviews."
+    },
+    {
+      "id": "q6",
+      "text": "I'm just here so I won't get fined, boss. That's the only reason why.",
+      "speaker": "Marshawn Lynch",
+      "context": "Seattle Seahawks running back, repeated this line at Super Bowl XLIX Media Day in January 2015 after being fined for not speaking to reporters",
+      "real": true,
+      "source": {
+        "title": "Marshawn Lynch: 'I'm just here so I won't get fined'",
+        "url": "https://www.nfl.com/news/marshawn-lynch-i-m-just-here-so-i-won-t-get-fined-0ap2000000319691",
+        "date": "2015-01-27"
+      }
+    }
+  ]
+}
