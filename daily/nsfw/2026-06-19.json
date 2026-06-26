@@ -8,11 +8,11 @@
   "quotes": [
     {
       "id": "q1",
-      "text": "The morning began, as all decent mornings do, with a deep and abiding suspicion that the toaster was working against me. I have never trusted an appliance that gets hot and makes decisions on my behalf. You put the bread in, you get back a VERDICT — and I have never once been found innocent. This is not breakfast. It is a hostile interrogation with a crumb tray.",
+      "text": "The morning began, as all decent mornings do, with the deep and abiding suspicion that the toaster was working against me. I have never trusted an appliance that gets hot and makes decisions on my behalf. You put the bread in and you get back a VERDICT, and I have never once been found innocent. This is not breakfast. It is a hostile goddamn interrogation with a crumb tray, and I will not be the first to break.",
       "speaker": "Hunter S. Thompson",
       "context": "A characteristically unhinged 1998 column on domestic life",
       "real": false,
-      "fake_note": "I made this one up — the paranoid grandiosity aimed at a harmless household object is the Hunter S. Thompson register exactly. The tell: the real Hunter would've escalated into the federal government by sentence two; this one stays in the kitchen."
+      "fake_note": "I made this one up — the paranoid grandiosity aimed at a harmless appliance is the Hunter S. Thompson register. The tell: the real Hunter would've dragged a federal conspiracy into it by the second sentence; this one never leaves the kitchen."
     },
     {
       "id": "q2",
@@ -28,27 +28,27 @@
     },
     {
       "id": "q3",
-      "text": "People ask me the secret to a long life. I tell 'em: ignore every single thing your doctor says, marry somebody who can cook, and never, EVER trust a man who doesn't sweat. A dry man is hiding something. That's not wisdom — that's sixty years of paying attention and zero years of listening.",
+      "text": "People ask me the secret to a long life. I tell 'em: ignore every goddamn thing your doctor says, marry somebody who can cook, and never, EVER trust a man who doesn't sweat. A dry man is hiding something — money, a second family, or a personality. That ain't wisdom, sweetheart, that's sixty years of paying attention and zero years of shutting up about it.",
       "speaker": "Redd Foxx",
       "context": "On longevity, a raunchy 1970s nightclub set",
       "real": false,
-      "fake_note": "I made this one up — the blunt, cantankerous life-advice with a filthy-adjacent kicker is Redd Foxx to the bone. The tell: the real Redd would've been far more explicit; this one keeps its shirt on."
+      "fake_note": "I made this one up — the blunt, cantankerous life-advice with a filthy-adjacent kicker is Redd Foxx to the bone. The tell: the real Redd would've named the part and the price; this one keeps it almost gentle."
     },
     {
       "id": "q4",
-      "text": "Frank used to call me at four in the morning to rehearse. I'd pick up, listen for a second, and say 'Frank, it's a saloon song, not the moon landing — sing it sleepy, that's the whole trick.' Then I'd hang up and go back to doing absolutely nothing, which, for the record, I have perfected into an art form.",
+      "text": "Frank used to call me at four in the morning to rehearse. Four! I'd pick up, listen for a second, and say Frank, it's a saloon song, not the goddamn moon landing — sing it sleepy, nobody's grading you. Then I'd hang up, roll over, and go back to doing absolutely nothing, which, for the record, I have turned into an art form that got three women to marry me and exactly none to stay.",
       "speaker": "Dean Martin",
       "context": "On his friendship with Sinatra, a 1970s variety-show chat",
       "real": false,
-      "fake_note": "I made this one up — the laid-back 'I've perfected doing nothing' shtick and the Sinatra needle are the Dean Martin persona. The tell: the real Dean would've worked a punchline in half the words."
+      "fake_note": "I made this one up — the laid-back 'I've perfected doing nothing' shtick and the Sinatra needle are the Dean Martin persona. The tell: the real Dean would've landed the whole thing in half the words and a raised eyebrow."
     },
     {
       "id": "q5",
-      "text": "People keep asking how I made it to a hundred. A cigar, a nap, and absolutely no opinion of my own about anything that matters. Every doctor I ever had told me to quit the cigars. I quit the doctors instead. Simplest decision I ever made — and look, here I am, still ruining everybody's actuarial tables.",
+      "text": "People keep asking me the secret and they want it to be oatmeal. It's not oatmeal. It's a cigar, a martini I'm technically not supposed to have, and a young woman who laughs at my material whether or not it's any good. I've done the same act for sixty years. The act didn't get better — the audience just got too polite to walk out on a man my age.",
       "speaker": "George Burns",
-      "context": "On reaching 100, a 1996 interview",
+      "context": "On longevity and showbiz, a 1980s interview",
       "real": false,
-      "fake_note": "I made this one up — the cigar-and-spite longevity bit and the dry 'I quit the doctors' inversion are George Burns's deadpan. The tell: the real George would've landed it with a perfectly-timed puff and a one-liner half this long."
+      "fake_note": "I made this one up — the cigar-and-a-martini, randy-old-showman bit is exactly George Burns's lane. The tell: the real George would've delivered it slower, with a puff between every clause, and made the young woman a specific punchline."
     },
     {
       "id": "q6",
