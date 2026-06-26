@@ -611,8 +611,14 @@ CANON_MOVIE_RE = re.compile("|".join([
 
 
 def is_canon_movie_line(text):
-    """True if a movie line is an instantly-recognizable 'warhorse' (recognition, not plausibility, is the giveaway)."""
-    return bool(CANON_MOVIE_RE.search(text or ""))
+    """True if a movie line IS an instantly-recognizable 'warhorse' (recognition, not plausibility, is the giveaway).
+    Coverage-anchored: the canon phrase must DOMINATE the line (>=60%), so a longer line that merely contains a canon
+    fragment ('my precious memories of that summer') is NOT a warhorse — only the line that essentially IS the quote."""
+    t = (text or "").strip().lower()                 # lowercased RAW (apostrophes intact — the patterns use '?); NOT _norm, which spaces apostrophes out
+    if not t:
+        return False
+    m = CANON_MOVIE_RE.search(t)
+    return bool(m) and (m.end() - m.start()) >= 0.6 * len(t)
 
 
 # REC 2 — a REAL should be a surprising, self-contained thing a person SAID ("they really said that?"), not a
@@ -636,13 +642,15 @@ def looks_like_headline_or_fragment(text):
 
 
 def real_quality_ok(text, cat="general"):
-    """Deterministic 'surprise/quality' floor for a REAL (REC 1+2): reject headline fragments / truncated clips, and in
-    the movies lane reject instantly-recognizable canonical 'warhorse' lines. The LLM cross-validate judges the rest."""
-    if looks_like_headline_or_fragment(text):
-        return False
-    if cat == "movies" and is_canon_movie_line(text):
-        return False
-    return True
+    """Deterministic 'surprise/quality' floor for a REAL (REC 2): reject headline fragments / truncated clips / chyrons
+    in the NEWS-sourced lanes. MOVIES are exempt from this floor — film dialogue is legitimately short and may use a
+    dramatic ellipsis ('I never drink... wine'), so the news-fragment heuristic doesn't apply; canonical-WARHORSE
+    handling for movies is a SOFT deprioritization in assemble() (deep cuts preferred, warhorses as fallback), never a
+    hard reject — so the unreplenishable movies bank can never be starved below the fail-safe. The LLM cross-validate
+    adds the semantic surprise/recognition judgement (incl. movies canon) on top for every lane."""
+    if cat == "movies":
+        return True
+    return not looks_like_headline_or_fragment(text)
 
 
 # REC 4a — observed fake "crutch" phrases: over-used rhetorical skeletons the audit flagged. A fabricated line that
@@ -668,19 +676,19 @@ def _stem(t):
 
 
 def skeleton(text):
-    """REC 4b — the rhetorical SKELETON of a quote: the opening function-word frame (where templates live) + the
-    stemmed first/last content token + a coarse length bucket. Two lines with the same SHAPE but different nouns
-    collide (e.g. 'A man who won't die for X isn't fit to live' ~ '…won't bleed for Y has already stopped living'),
-    catching repeated templates that token-overlap dedup (is_dup) misses. Tuned to catch frames, not nuke variety."""
+    """REC 4b — the rhetorical SKELETON of a quote: its opening function-word frame (where templates live, content
+    words blanked) + the stemmed first content token + a coarse length bucket. Two lines built on the SAME opening
+    scaffold with different content words collide (e.g. 'A man who won't ___ for ___ isn't fit to ___' reused), which
+    token-overlap dedup (is_dup) misses when the nouns differ. The trailing content token is deliberately NOT in the
+    key (it pins the ending and defeats same-frame matching). A backstop to the precise STOP_PHRASE_RE ban-list."""
     n = _norm(text)
     toks = n.split()
-    if len(toks) < 4:
+    if len(toks) < 5:
         return ""
     content = [t for t in toks if t not in _STOP and len(t) > 2]
     first = _stem(content[0]) if content else ""
-    last = _stem(content[-1]) if content else ""
-    frame = " ".join(t if t in _STOP else "_" for t in toks[:12])   # opening rhetorical frame
-    return f"{first}|{frame}|{last}|{len(toks) // 6}"
+    frame = " ".join(t if t in _STOP else "_" for t in toks[:12])   # opening rhetorical frame (content words blanked)
+    return f"{first}|{frame}|{len(toks) // 6}"
 
 
 # Generic "speakers" that aren't a named person — a real-or-fake QUOTE game needs an attributable human.
@@ -1018,15 +1026,15 @@ def spot_check_summary(edition, cat):
     eyeball a set before/after publish, plus an auto quality-floor residue readout (canon/fragment/cliche)."""
     if not edition:
         return
-    qs = edition["quotes"]
-    canon = sum(1 for q in qs if q["real"] and cat == "movies" and is_canon_movie_line(q["text"]))
-    frag = sum(1 for q in qs if q["real"] and looks_like_headline_or_fragment(q["text"]))
-    clich = sum(1 for q in qs if not q["real"] and is_template_cliche(q["text"]))
-    print(f"  SPOT-CHECK [{cat} {edition['date']}] — eyeball: REAL recognizable-on-sight? FAKE a polished aphorism? a template/cliche repeat?")
+    qs = edition.get("quotes", [])
+    canon = sum(1 for q in qs if q.get("real") and cat == "movies" and is_canon_movie_line(q.get("text", "")))
+    frag = sum(1 for q in qs if q.get("real") and looks_like_headline_or_fragment(q.get("text", "")))
+    clich = sum(1 for q in qs if not q.get("real") and is_template_cliche(q.get("text", "")))
+    print(f"  SPOT-CHECK [{cat} {edition.get('date','?')}] — eyeball: REAL recognizable-on-sight? FAKE a polished aphorism? a template/cliche repeat?")
     for q in qs:
-        rf = "R" if q["real"] else "F"
-        tick = "" if q["id"] != edition.get("trickiest_fake") else "  <- trickiest"
-        print(f"    {q['id']:>3} {rf}  {q['speaker'][:24]:<24} | {q['text'][:62]}{tick}")
+        rf = "R" if q.get("real") else "F"
+        tick = "" if q.get("id") != edition.get("trickiest_fake") else "  <- trickiest"
+        print(f"    {str(q.get('id','?')):>3} {rf}  {q.get('speaker','?')[:24]:<24} | {q.get('text','')[:62]}{tick}")
     print(f"    auto-floor residue: canon={canon} fragment={frag} cliche={clich} (each should be 0)")
 
 
@@ -1049,7 +1057,8 @@ def assemble(date, reals_fresh, fakes, evergreen, dup_idx, cat="general", recent
             pol.sort(key=lambda x: _spk(x) in recent)
             cand = dict(pol[0]); cand["real"] = True; cand["_vetted"] = True; take(cand)   # keep ≥1 politics in general
         rest = [e for e in pool if _spk(e) not in seen_spk]
-        random.shuffle(rest); rest.sort(key=lambda x: _spk(x) in recent)   # prefer speakers not used recently
+        random.shuffle(rest)
+        rest.sort(key=lambda x: (_spk(x) in recent, is_canon_movie_line(x["text"])))   # prefer fresh names, then DEEP CUTS over canonical warhorses (REC 1 — soft: warhorses stay a fallback so the movies lane never starves)
         for e in rest:
             if len(reals) >= n_real: break
             e = dict(e); e["real"] = True; e["_vetted"] = True; take(e)
