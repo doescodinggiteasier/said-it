@@ -172,6 +172,10 @@ Each quote MUST:
   Better: "I've definitely lost sleep over a long snapper's technique." Dial it to where a fan would HESITATE.)
 - be genuinely ENTERTAINING — funny, insightful or wise, a pleasure to read either way — in a SUBTLE,
   true-to-character way (not a caricature or an obvious joke);
+- AVOID THE TIDY APHORISM (this is the #1 style tell): no fortune-cookie wisdom, no "X isn't about Y, it's about Z",
+  no "the secret is there's no secret", no "pressure is a privilege", no "the ocean doesn't care". Real off-the-cuff
+  speech is MESSIER, more specific and idiosyncratic than a tweetable maxim — lean into concrete personal detail over
+  elegant universal truths. And vary the SHAPE: do NOT reuse one rhetorical skeleton across your quotes;
 - CONTEXT PARITY (kill the tell): the "context" must be a CONCRETE, SPECIFIC where/when — a named outlet, show,
   event, venue or year — as specific and similar in LENGTH as a real citation would be. NEVER vague, hedged or
   shorter than a real ("in an interview" / "supposedly" / "reportedly" are BANNED). It must read like a genuine source.
@@ -201,6 +205,8 @@ Each line MUST:
 - sound like a REAL line from that specific film — its genre, era, and a character's natural voice;
 - be SHORT and quotable (one sentence), and plausibly something actually said in that movie;
 - have NO dead giveaways (don't over-explain the plot; no anachronisms or winking meta);
+- NOT be a fortune-cookie life-maxim dropped into a scene — real film lines are in-character and situational, not
+  detachable inspirational quotes; avoid the over-polished aphorism;
 - be clean enough for a general audience.
 Use DIFFERENT, well-known films — NEVER repeat a film. The bar: a fan of that movie would hesitate.
 
@@ -235,6 +241,8 @@ Each MUST:
 - CONTEXT PARITY: "context" is a CONCRETE, SPECIFIC where/when (named show/podcast/event/year), as specific and
   similar in LENGTH as a real citation — never "in an interview"/"supposedly"/"reportedly".
 - stay WITHIN plausibility — a crude thing they really COULD have said; NO dead giveaways.
+- AVOID THE TIDY APHORISM — crude does not mean a polished maxim with a swear bolted on. No fortune-cookie wisdom
+  ("X isn't about Y, it's about Z"); real filthy off-the-cuff speech is messy and specific. Vary the SHAPE across quotes.
 Use DIFFERENT, varied people — NEVER repeat a speaker.
 
 Output a JSON array; each element EXACTLY:
@@ -282,17 +290,27 @@ ITEMS:
 
 Output a JSON array of objects EXACTLY: {{"i": <index>, "safe": <true|false>}}"""
 
-VALIDATE_SYS = ("You are an independent attribution RED-FLAG checker for a 'real or fake?' game. Each quote has "
-                "ALREADY been verified to appear verbatim on a cited reputable source — so do NOT re-verify from "
+VALIDATE_SYS = ("You are an independent attribution + QUALITY RED-FLAG checker for a 'real or fake?' game. Each quote "
+                "has ALREADY been verified to appear verbatim on a cited reputable source — so do NOT re-verify from "
                 "memory. Catch CLEAR problems: an obviously wrong/swapped attribution, a known satirical/fabricated "
                 "'quote', an anachronism, content that plainly contradicts who the person is, a speaker who is NOT a "
                 "widely-known PUBLIC FIGURE (a private individual / obscure name → flag), or a speaker who clearly "
-                "belongs to a DIFFERENT lane than this one. DEFAULT to ok=true; mark ok=false ONLY with a SPECIFIC "
-                "concrete reason, never mere unfamiliarity. Output STRICT JSON only.")
+                "belongs to a DIFFERENT lane than this one. ALSO flag QUALITY duds: an instantly-recognizable "
+                "canonical line where RECOGNITION alone gives the game away (the iconic poster quote everyone knows), "
+                "or a bland headline fragment / procedural soundbite that is NOT a surprising, self-contained thing a "
+                "person actually SAID. DEFAULT to ok=true; mark ok=false ONLY with a SPECIFIC reason, never mere "
+                "unfamiliarity. Output STRICT JSON only.")
 VALIDATE_TMPL = """Each quote below was already confirmed to appear VERBATIM on a reputable source. Flag ok=false
-ONLY for a clear red flag: wrong attribution, known fake/satire, anachronism, obvious fabrication, the speaker is NOT
-a widely-known public figure (a private individual or obscure name), or the speaker clearly belongs to a different
-lane (this lane is "{lane}"). If you simply don't recognize a quote, that is NOT a reason to flag it — mark ok=true.
+ONLY for a clear red flag:
+- wrong attribution, known fake/satire, anachronism, obvious fabrication;
+- the speaker is NOT a widely-known public figure (a private individual or obscure name);
+- the speaker clearly belongs to a different lane (this lane is "{lane}");
+- QUALITY: it is an instantly-recognizable CANONICAL line where mere recognition is the giveaway (the famous poster
+  quote) — we want surprising deep cuts, not warhorses;
+- QUALITY: it reads as a bland headline fragment, ad slogan, or procedural soundbite rather than a surprising,
+  self-contained thing the person SAID (the "wait, they really said that?" test).
+If you simply don't recognize a quote, that is NOT a reason to flag it — an unfamiliar but plausible line is GOOD
+(it's a surprising deep cut). Mark ok=true.
 
 ITEMS:
 {items}
@@ -576,6 +594,95 @@ def reputational_harm(text):
     return bool(REPUTATIONAL_RE.search(text or ""))
 
 
+# ---------- content-quality floors (CONTENT_QUALITY_REVIEW.md REC 1-4) ----------
+# REC 1 — the canonical movie "warhorses": a casual viewer recognizes these on sight, so RECOGNITION (not
+# plausibility) becomes the tell. Reject them as movies REALS so the lane biases toward deep-cut lines instead.
+CANON_MOVIE_RE = re.compile("|".join([
+    r"may the force be with you", r"i'?ll be back", r"the need for speed", r"one does not simply",
+    r"here'?s johnny", r"to infinity and beyond", r"hakuna matata", r"are you not entertained",
+    r"houston,? we (have|ve got) a problem", r"king of the world", r"i am iron man",
+    r"you can'?t handle the truth", r"say hello to my little friend", r"i see dead people",
+    r"life (is|was) like a box of chocolates", r"why so serious", r"frankly,? my dear,? i don'?t give a damn",
+    r"e\.?\s?t\.? phone home", r"show me the money", r"you'?re gonna need a bigger boat",
+    r"there'?s no place like home", r"my precious", r"go ahead,? make my day", r"yippee.?ki.?yay",
+    r"with great power comes great responsibility", r"wax on,? wax off", r"i'?ll have what she'?s having",
+    r"keep your friends close", r"i'?m gonna make him an offer he can'?t refuse", r"toto,? i'?ve a feeling",
+]), re.I)
+
+
+def is_canon_movie_line(text):
+    """True if a movie line is an instantly-recognizable 'warhorse' (recognition, not plausibility, is the giveaway)."""
+    return bool(CANON_MOVIE_RE.search(text or ""))
+
+
+# REC 2 — a REAL should be a surprising, self-contained thing a person SAID ("they really said that?"), not a
+# headline fragment / truncated clip / chyron. Deterministic floor; the LLM cross-validate adds the semantic judgement.
+_TRUNC_RE = re.compile(r"\[\s*[.…]+\s*\]|\.\.\.|…|\[\s*\w+\s*\]|\[\s*sic\s*\]", re.I)
+
+
+def looks_like_headline_or_fragment(text):
+    t = (text or "").strip()
+    if not t:
+        return True
+    words = t.split()
+    if len(words) < 6:                                   # too short to be a self-contained spoken line
+        return True
+    if _TRUNC_RE.search(t):                               # ellipsis / editorial brackets = a truncated clip, not speech
+        return True
+    letters = [c for c in t if c.isalpha()]
+    if letters and sum(1 for c in letters if c.isupper()) / len(letters) > 0.6:   # SHOUTY CHYRON / all-caps headline
+        return True
+    return False
+
+
+def real_quality_ok(text, cat="general"):
+    """Deterministic 'surprise/quality' floor for a REAL (REC 1+2): reject headline fragments / truncated clips, and in
+    the movies lane reject instantly-recognizable canonical 'warhorse' lines. The LLM cross-validate judges the rest."""
+    if looks_like_headline_or_fragment(text):
+        return False
+    if cat == "movies" and is_canon_movie_line(text):
+        return False
+    return True
+
+
+# REC 4a — observed fake "crutch" phrases: over-used rhetorical skeletons the audit flagged. A fabricated line that
+# leans on one reads as template/machine-made. forge_fakes rejects these (and the fake-writer is told to avoid them).
+STOP_PHRASE_RE = re.compile("|".join([
+    r"\bevery clock\b", r"the ocean does ?n.?t (care|apologi[sz]e)", r"\ba man who won.?t (die|bleed|fight) for\b",
+    r"\bpressure is (just|like|nothing|a privilege)\b", r"is ?n.?t about .{1,30}\bit.?s about\b",
+    r"\bwas ?n.?t about .{1,30}\bit was about\b", r"the secret is there.?s no secret",
+    r"they do ?n.?t (build|make) .{1,20} like (that|they used to)", r"\bthe (real )?magic (is|happens)\b.{0,30}\bbetween\b",
+]), re.I)
+
+
+def is_template_cliche(text):
+    """True if a FAKE leans on a known over-used rhetorical skeleton / fortune-cookie aphorism (the style tell)."""
+    return bool(STOP_PHRASE_RE.search(text or ""))
+
+
+def _stem(t):
+    for suf in ("ing", "edly", "ed", "ly", "es", "s"):
+        if len(t) > len(suf) + 2 and t.endswith(suf):
+            return t[:-len(suf)]
+    return t
+
+
+def skeleton(text):
+    """REC 4b — the rhetorical SKELETON of a quote: the opening function-word frame (where templates live) + the
+    stemmed first/last content token + a coarse length bucket. Two lines with the same SHAPE but different nouns
+    collide (e.g. 'A man who won't die for X isn't fit to live' ~ '…won't bleed for Y has already stopped living'),
+    catching repeated templates that token-overlap dedup (is_dup) misses. Tuned to catch frames, not nuke variety."""
+    n = _norm(text)
+    toks = n.split()
+    if len(toks) < 4:
+        return ""
+    content = [t for t in toks if t not in _STOP and len(t) > 2]
+    first = _stem(content[0]) if content else ""
+    last = _stem(content[-1]) if content else ""
+    frame = " ".join(t if t in _STOP else "_" for t in toks[:12])   # opening rhetorical frame
+    return f"{first}|{frame}|{last}|{len(toks) // 6}"
+
+
 # Generic "speakers" that aren't a named person — a real-or-fake QUOTE game needs an attributable human.
 GENERIC_SPEAKER = {"scientists", "scientist", "researchers", "researcher", "study", "team", "experts",
                    "expert", "authors", "author", "officials", "official", "spokesperson", "spokesman",
@@ -621,6 +728,8 @@ def gather_reals(feeds, days, dup_idx, cat="general", want=6):
         if not q or not sp or deny_hit(q, sp, c.get("context"), allow_politics=ap):
             continue
         if not named_speaker(sp):           # a quote game needs a named human, not "Scientists"
+            continue
+        if not real_quality_ok(q, cat):     # REC 1+2: drop headline fragments / truncated clips / canonical movie warhorses
             continue
         if q.lower() in seen or is_dup(q, dup_idx):   # never repeat a published quote — ANY lane, incl. near-duplicates (7b)
             continue
@@ -678,7 +787,7 @@ def difficulty_hint(cat):
     return _difficulty_hint_from(rep, cat)
 
 
-def forge_fakes(dup_idx, cat="general", n=6):
+def forge_fakes(dup_idx, cat="general", n=6, skel_seen=None):
     meta = CATEGORIES.get(cat, CATEGORIES["general"])
     kind = meta.get("kind", "person")
     sysp, tmpl = {"movie": (FAKE_SYS_MOVIE, FAKE_TMPL_MOVIE),
@@ -689,15 +798,24 @@ def forge_fakes(dup_idx, cat="general", n=6):
     except Exception as e:  # noqa: BLE001
         print(f"  ! fakes LLM: {e}", file=sys.stderr); return []
     ap = meta.get("allow_politics", False)
+    skel_seen = set() if skel_seen is None else skel_seen   # REC 4b: rhetorical skeletons already used (recent ledger + this batch)
     out = []
     for f in fakes if isinstance(fakes, list) else []:
-        if f.get("text") and f.get("speaker") and not deny_hit(f["text"], f["speaker"], f.get("context"), allow_politics=ap) \
-                and not defamatory(f["text"]) \
-                and not reputational_harm(f["text"]) \
-                and not is_dup(f["text"], dup_idx):    # never repeat a published quote — ANY lane, incl. near-duplicates (7b)
-            out.append({"text": f["text"], "speaker": f["speaker"], "context": f.get("context", ""),
-                        "real": False, "fake_note": f.get("fake_note") or "I made this one up.",  # Mags voice; never "AI" (copy rule)
-                        "_sneaky": bool(f.get("sneaky"))})
+        t, sp = f.get("text"), f.get("speaker")
+        if not (t and sp):
+            continue
+        if deny_hit(t, sp, f.get("context"), allow_politics=ap) or defamatory(t) or reputational_harm(t) \
+                or is_template_cliche(t) \
+                or is_dup(t, dup_idx):              # never repeat a published quote — ANY lane, incl. near-duplicates (7b)
+            continue
+        sk = skeleton(t)                            # REC 4b: reject a fake that repeats a recent OR in-batch rhetorical shape
+        if sk and sk in skel_seen:
+            continue
+        if sk:
+            skel_seen.add(sk)
+        out.append({"text": t, "speaker": sp, "context": f.get("context", ""),
+                    "real": False, "fake_note": f.get("fake_note") or "I made this one up.",  # Mags voice; never "AI" (copy rule)
+                    "_sneaky": bool(f.get("sneaky"))})
     return out
 
 
@@ -878,6 +996,40 @@ def save_used(used, cat="general"):
     json.dump(sorted(used), open(used_path(cat), "w"), indent=0)
 
 
+def skeleton_path(cat):
+    return os.path.join(HERE, "used_skeletons.json" if cat == "general" else f"used_skeletons_{cat}.json")
+
+
+def load_recent_skeletons(cat):
+    """REC 4b — rolling list of recently-published FAKE rhetorical skeletons for this lane; forge_fakes avoids
+    repeating a shape across editions (complements the text-level dedup ledger). Missing file → empty (no-op)."""
+    try:
+        return [s for s in json.load(open(skeleton_path(cat))) if s]
+    except Exception:  # noqa: BLE001
+        return []
+
+
+def save_skeletons(skels, cat, cap=200):
+    json.dump([s for s in skels if s][-cap:], open(skeleton_path(cat), "w"), indent=0)
+
+
+def spot_check_summary(edition, cat):
+    """REC 7 — emit a compact per-edition 6x6 summary to the run log (the Action captures stdout) so a human can
+    eyeball a set before/after publish, plus an auto quality-floor residue readout (canon/fragment/cliche)."""
+    if not edition:
+        return
+    qs = edition["quotes"]
+    canon = sum(1 for q in qs if q["real"] and cat == "movies" and is_canon_movie_line(q["text"]))
+    frag = sum(1 for q in qs if q["real"] and looks_like_headline_or_fragment(q["text"]))
+    clich = sum(1 for q in qs if not q["real"] and is_template_cliche(q["text"]))
+    print(f"  SPOT-CHECK [{cat} {edition['date']}] — eyeball: REAL recognizable-on-sight? FAKE a polished aphorism? a template/cliche repeat?")
+    for q in qs:
+        rf = "R" if q["real"] else "F"
+        tick = "" if q["id"] != edition.get("trickiest_fake") else "  <- trickiest"
+        print(f"    {q['id']:>3} {rf}  {q['speaker'][:24]:<24} | {q['text'][:62]}{tick}")
+    print(f"    auto-floor residue: canon={canon} fragment={frag} cliche={clich} (each should be 0)")
+
+
 def assemble(date, reals_fresh, fakes, evergreen, dup_idx, cat="general", recent=None):
     recent = recent or set()                               # speakers used in recent days → bias AGAINST (variety)
     n_real = random.choice([2, 3, 3])                      # vary the ratio so it isn't always 3:3
@@ -889,7 +1041,8 @@ def assemble(date, reals_fresh, fakes, evergreen, dup_idx, cat="general", recent
     for r in sorted(reals_fresh, key=lambda x: _spk(x) in recent):   # fresh feed reals, fresh-name first
         if len(reals) >= n_real: break
         take(r)
-    pool = [e for e in evergreen if not is_dup(e["text"], dup_idx) and _spk(e) not in seen_spk]   # unused (cross-lane, near-dup-aware), distinct
+    pool = [e for e in evergreen if not is_dup(e["text"], dup_idx) and _spk(e) not in seen_spk
+            and real_quality_ok(e["text"], cat)]   # unused (cross-lane, near-dup-aware), distinct, + REC 1+2 quality floor (no warhorses/fragments)
     if len(reals) < n_real and pool:                       # top up from the UNUSED vetted evergreen bank
         pol = [e for e in pool if e.get("_politics")]
         if cat == "general" and pol and not any(r.get("_politics") for r in reals):
@@ -1005,9 +1158,11 @@ def main():
     dup_idx = build_dup_index(used_all)                          # built once; near-dup-aware
     recent_spk, spk_ledger = load_recent_speakers(cat, a.date)   # names used in the last ~21 days → vary away from them
     recent_spk |= today_speakers(a.date, cat)                    # + names already used in OTHER lanes today (cross-lane variety)
-    print(f"  used-quote ledger [{cat}]: {len(used_lane)} this lane / {len(used_all)} all lanes excluded · recent speakers to vary from: {len(recent_spk)}")
+    recent_skels = load_recent_skeletons(cat)                    # REC 4b: rhetorical shapes recently used in this lane → vary away
+    skel_seen = set(recent_skels)
+    print(f"  used-quote ledger [{cat}]: {len(used_lane)} this lane / {len(used_all)} all lanes excluded · recent speakers to vary from: {len(recent_spk)} · recent fake-skeletons: {len(recent_skels)}")
     reals = gather_reals(feeds, a.days, dup_idx, cat)
-    fakes = forge_fakes(dup_idx, cat, 10)        # lane-aware, forge extra for headroom (distinct-speaker dedup needs slack)
+    fakes = forge_fakes(dup_idx, cat, 10, skel_seen=skel_seen)   # lane-aware, forge extra for headroom (distinct-speaker + skeleton dedup needs slack)
     fakes = safety_screen(fakes, nsfw=CATEGORIES[cat].get("nsfw", False))   # screen UP FRONT (NSFW lane: profanity OK, harm not)
     print(f"  fakes: {len(fakes)} forged + screened safe")
     edition = assemble(a.date, reals, fakes, load_evergreen(cat), dup_idx, cat, recent=recent_spk)
@@ -1028,8 +1183,10 @@ def main():
     used_lane |= {_norm(q["text"]) for q in edition["quotes"]}   # never publish these again (this lane's file; cross-lane via load_all_used)
     save_used(used_lane, cat)
     save_recent_speakers(spk_ledger, edition, a.date, cat)   # record today's speakers → cross-day name variety
+    save_skeletons(recent_skels + [skeleton(q["text"]) for q in edition["quotes"] if not q["real"]], cat)  # REC 4b: record this edition's fake shapes
     print(f"  WROTE {target}  (edition {n}, {len(edition['quotes'])} quotes, "
           f"{sum(1 for q in edition['quotes'] if q['real'])} real / {sum(1 for q in edition['quotes'] if not q['real'])} fake)")
+    spot_check_summary(edition, cat)                         # REC 7: compact 6x6 readout for the human morning spot-check
     return 0
 
 
