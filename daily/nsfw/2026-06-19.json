@@ -8,11 +8,11 @@
   "quotes": [
     {
       "id": "q1",
-      "text": "I've been doing this for thirty years. Thirty. Years. If you're still asking me to explain my process in a press junket, I will absolutely walk out of this room and nobody will stop me.",
-      "speaker": "Daniel Day-Lewis",
-      "context": "Alleged off-the-record exchange with a journalist during a film promotional tour",
+      "text": "The morning began, as all decent mornings do, with a deep and abiding suspicion that the toaster was working against me. I have never trusted an appliance that gets hot and makes decisions on my behalf. You put the bread in, you get back a VERDICT — and I have never once been found innocent. This is not breakfast. It is a hostile interrogation with a crumb tray.",
+      "speaker": "Hunter S. Thompson",
+      "context": "A characteristically unhinged 1998 column on domestic life",
       "real": false,
-      "fake_note": "Fits his intensely private, serious reputation. Subtle giveaway: Day-Lewis rarely does press junkets at all, making this scenario slightly implausible."
+      "fake_note": "I made this one up — the paranoid grandiosity aimed at a harmless household object is the Hunter S. Thompson register exactly. The tell: the real Hunter would've escalated into the federal government by sentence two; this one stays in the kitchen."
     },
     {
       "id": "q2",
@@ -28,27 +28,27 @@
     },
     {
       "id": "q3",
-      "text": "Nobody tells me what's funny. I've been telling people what's funny since before some of these writers were born, and I will continue to do that until I physically cannot, which won't happen.",
-      "speaker": "Jerry Seinfeld",
-      "context": "Behind-the-scenes remarks on a comedy special set, reported by a crew member",
+      "text": "People ask me the secret to a long life. I tell 'em: ignore every single thing your doctor says, marry somebody who can cook, and never, EVER trust a man who doesn't sweat. A dry man is hiding something. That's not wisdom — that's sixty years of paying attention and zero years of listening.",
+      "speaker": "Redd Foxx",
+      "context": "On longevity, a raunchy 1970s nightclub set",
       "real": false,
-      "fake_note": "Captures Seinfeld's known confidence in his own comedic authority. Subtle giveaway: 'which won't happen' is slightly too cocky for his usual measured self-assuredness."
+      "fake_note": "I made this one up — the blunt, cantankerous life-advice with a filthy-adjacent kicker is Redd Foxx to the bone. The tell: the real Redd would've been far more explicit; this one keeps its shirt on."
     },
     {
       "id": "q4",
-      "text": "Twitter was a goddamn mess before I got here and everyone knows it. I'm just the guy willing to say it out loud and also, you know, own the thing.",
-      "speaker": "Elon Musk",
-      "context": "Casual remarks during an X Spaces session, 2023",
+      "text": "Frank used to call me at four in the morning to rehearse. I'd pick up, listen for a second, and say 'Frank, it's a saloon song, not the moon landing — sing it sleepy, that's the whole trick.' Then I'd hang up and go back to doing absolutely nothing, which, for the record, I have perfected into an art form.",
+      "speaker": "Dean Martin",
+      "context": "On his friendship with Sinatra, a 1970s variety-show chat",
       "real": false,
-      "fake_note": "Fits Musk's combative, self-aggrandizing public persona on X. Subtle giveaway: he rarely says 'everyone knows it' so plainly — he'd usually add a meme reference."
+      "fake_note": "I made this one up — the laid-back 'I've perfected doing nothing' shtick and the Sinatra needle are the Dean Martin persona. The tell: the real Dean would've worked a punchline in half the words."
     },
     {
       "id": "q5",
-      "text": "You want to know what the secret is? There's no secret. You just work your ass off and then people who didn't work their ass off get pissed about it. That's the whole story.",
-      "speaker": "Dwayne Johnson",
-      "context": "Instagram Live Q&A session, 2022",
+      "text": "People keep asking how I made it to a hundred. A cigar, a nap, and absolutely no opinion of my own about anything that matters. Every doctor I ever had told me to quit the cigars. I quit the doctors instead. Simplest decision I ever made — and look, here I am, still ruining everybody's actuarial tables.",
+      "speaker": "George Burns",
+      "context": "On reaching 100, a 1996 interview",
       "real": false,
-      "fake_note": "Fits his well-known work-ethic preaching and direct motivational style. Subtle giveaway: Johnson is usually slightly more gracious and less dismissive in public."
+      "fake_note": "I made this one up — the cigar-and-spite longevity bit and the dry 'I quit the doctors' inversion are George Burns's deadpan. The tell: the real George would've landed it with a perfectly-timed puff and a one-liner half this long."
     },
     {
       "id": "q6",

@@ -20,11 +20,11 @@
     },
     {
       "id": "q2",
-      "text": "Fatherhood is basically just whispering 'what the absolute fuck' under your breath while scraping unidentified crusty shit off a coffee table.",
-      "speaker": "Ryan Reynolds",
-      "context": "A viral tweet from 2021",
+      "text": "People meet me and go 'oh, the wholesome dad!' and I have to gently explain that the man on television and the man at the two a.m. show are legally separate individuals. One of them coaches little league. The other one is not allowed within five hundred feet of a brunch.",
+      "speaker": "Bob Saget",
+      "context": "On his stand-up vs. TV reputation, a 2014 podcast appearance",
       "real": false,
-      "fake_note": "This perfectly mirrors Reynolds' sarcastic, slightly crude online persona regarding parenting, but you won't find this exact tweet anywhere on his actual timeline."
+      "fake_note": "I made this one up — the 'wholesome dad on TV, filthy animal on stage' contrast was Saget's whole bit. The tell: the real Bob would've immediately given you a specific, far more graphic example; this one stays coy."
     },
     {
       "id": "q3",
@@ -40,27 +40,27 @@
     },
     {
       "id": "q4",
-      "text": "I don't give a motherfuck about your truffle aioli. Just hand me the damn Heinz ketchup before I lose my mind and flip this table.",
-      "speaker": "Samuel L. Jackson",
-      "context": "Rumored outburst at a press junket lunch",
+      "text": "I went to one of these fancy joints where the portions are the size of a postage stamp and the bill is the size of a phone book. The waiter goes 'and how did we find everything?' I said WE didn't find nothing — I'm still LOOKING. Bring me a real plate before I start in on the centerpiece, because I will eat the flowers, pal. I've done it before.",
+      "speaker": "Buddy Hackett",
+      "context": "A raunchy 1970s Las Vegas nightclub set",
       "real": false,
-      "fake_note": "Jackson's legendary affinity for the word 'motherfucker' makes this highly believable, but he never actually went on a viral tirade about artisanal condiments."
+      "fake_note": "I made this one up — the borscht-belt restaurant gripe escalating into 'I'll eat the flowers' is exactly Buddy Hackett's nightclub register. The tell: the real Buddy would've detoured into something filthy halfway through; this one stays on the food."
     },
     {
       "id": "q5",
-      "text": "Whoever invented the fitted sheet is a sick motherfucker. I just spent twenty minutes wrestling my mattress and this bitch still looks like a dirty diaper.",
-      "speaker": "Snoop Dogg",
-      "context": "A late-night gaming Twitch stream",
+      "text": "I tried one of those standing desks. You know what a standing desk is for a man my size? It's called STANDING. We had the technology the whole time, we just kept sitting on it. I stood up for one meeting and three coworkers asked if I was okay. I said no, Karen, I am WORKING OUT.",
+      "speaker": "Ralphie May",
+      "context": "On modern office culture, a 2015 stand-up taping",
       "real": false,
-      "fake_note": "Snoop's laid-back but profane observations on mundane, everyday struggles are a staple of his social media, though this specific domestic rant is fabricated."
+      "fake_note": "I made this one up — the self-deprecating size humor with a sudden specific target ('Karen') is the Ralphie May move. The tell: the real Ralphie would've taken it somewhere far more brutal and personal."
     },
     {
       "id": "q6",
-      "text": "I firmly believe that if I didn't have to take shits, I’d be immortal. It's the only pathetic biological function keeping me tethered to this hellscape.",
-      "speaker": "Aubrey Plaza",
-      "context": "A late-night talk show interview",
+      "text": "My beauty routine? I get up, I put on my face, and I apologize to it. I told my plastic surgeon to do whatever he wanted — he took one look and billed me for a full demolition. My husband Fang said I looked refreshed. I said Fang, you've been asleep since Tuesday.",
+      "speaker": "Phyllis Diller",
+      "context": "A 1970s Tonight Show appearance",
       "real": false,
-      "fake_note": "This captures Plaza's signature deadpan, slightly morbid, and blunt humor perfectly, but she never shared this philosophical take on digestion on air."
+      "fake_note": "I made this one up — the self-roasting beauty jokes and the 'Fang' husband bit are pure Phyllis Diller. The tell: the real Phyllis fired these as rapid one-liners; this one lingers a beat too long on the setup."
     }
   ]
 }
