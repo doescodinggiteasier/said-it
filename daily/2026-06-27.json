@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-27",
+  "edition": 13,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what it felt like to walk on the moon and I never quite know what to say, because the honest answer is that what I kept thinking about was the checklist. You train so hard that the wonder kind of sneaks up on you later, usually at two in the morning about six months after you're home.",
+      "speaker": "Buzz Aldrin",
+      "context": "Recorded conversation with Neil deGrasse Tyson for StarTalk Radio, aired October 2015",
+      "real": false,
+      "fake_note": "I made this one up — Buzz spent decades reflecting on the psychological aftermath of the Apollo 11 mission and was famously candid about his emotional struggles post-splashdown, so delayed wonder fits him perfectly. The subtle giveaway is 'six months after you're home' — a little too precise and tidy for an off-the-cuff answer."
+    },
+    {
+      "id": "q2",
+      "text": "Ah -- playoffs? Don't talk about -- playoffs? You kidding me? Playoffs? I just hope we can win a game!",
+      "speaker": "Jim Mora",
+      "context": "Indianapolis Colts head coach, at a November 2001 press conference when a reporter asked about the team's playoff chances after a loss",
+      "real": true,
+      "source": {
+        "title": "Garber: Mora reflects on \"Playoffs?\" moment",
+        "url": "https://www.espn.com/nfl/story/_/id/7302157/jim-mora-reflects-playoffs-moment",
+        "date": "2012-01-12"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I had a writing teacher who told me I used the word 'just' too much. I went home and counted. It was in every other sentence. I still use it too much, I've just — see, there it is — I've accepted that it's load-bearing for me.",
+      "speaker": "Tina Fey",
+      "context": "Masterclass live Q&A session at the 92nd Street Y, New York City, November 2018",
+      "real": false,
+      "fake_note": "I made this one up — Tina is beloved for this brand of self-correcting, meta-aware humor that folds the joke into the structure of the sentence itself, which is very on-brand. The giveaway is that the bit is almost too perfectly constructed; real off-the-cuff Tina would have stumbled slightly more genuinely before the punchline landed."
+    },
+    {
+      "id": "q4",
+      "text": "Tennis is strange because the crowd is silent exactly when you need them most, and roaring when you'd rather just think. I've learned to treat the noise like weather — you don't argue with it, you just dress appropriately.",
+      "speaker": "Roger Federer",
+      "context": "Press conference at the Laver Cup, London, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Roger's press conference style is measured, a little philosophical, and gently self-deprecating in exactly this register. The weather metaphor is the tell: it's a degree too polished for an actual press scrum answer, where he'd more likely trail off with a small laugh."
+    },
+    {
+      "id": "q5",
+      "text": "You could probably get through life without knowing how to roast a chicken, but the question is, would you want to?",
+      "speaker": "Nigella Lawson",
+      "context": "Quote attributed to her book Eating (Vintage Minis), on home cooking",
+      "real": true,
+      "source": {
+        "title": "TOP 25 QUOTES BY NIGELLA LAWSON | A-Z Quotes",
+        "url": "https://www.azquotes.com/author/8589-Nigella_Lawson",
+        "date": "2017-01-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I like to say not only was that the first human on the moon, but the first software to run on the moon.",
+      "speaker": "Margaret Hamilton",
+      "context": "The Apollo flight-software lead (who popularized the term \"software engineering\") in a CBS Boston interview, on her code's role in the moon landing",
+      "real": true,
+      "source": {
+        "title": "Margaret Hamilton: MIT Software Pioneer Who Helped Save Apollo 11 Moon Mission - CBS Boston",
+        "url": "https://www.cbsnews.com/boston/news/margaret-hamilton-apollo-11-software-pioneer-interview/",
+        "date": "2019-07-15"
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-27",
+  "edition": 11,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "On Wednesdays we wear pink.",
+      "speaker": "Mean Girls (2004)",
+      "context": "Karen Smith explaining the Plastics' dress code rule to Cady",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "You keep calling it a negotiation. I call it a countdown.",
+      "speaker": "Die Hard (1988)",
+      "context": "McClane taunting Hans Gruber over the radio",
+      "real": false,
+      "fake_note": "I made this one up — McClane's wisecracks at Gruber are exactly this clipped and combative, so it fits the banter perfectly. The subtle giveaway is that 'countdown' is slightly too tidy a mic-drop; his real zingers tend to be rougher and more self-deprecating."
+    },
+    {
+      "id": "q3",
+      "text": "Yo, Adrian!",
+      "speaker": "Rocky (1976)",
+      "context": "Rocky Balboa addressing Adrian; \"Yo, Adrian! It's me, Rocky.\" The phrase appears in the 1976 film.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "You scared the hell out of me. Good.",
+      "speaker": "Aliens (1986)",
+      "context": "Ripley to a marine after a tense close call",
+      "real": false,
+      "fake_note": "I made this one up — Ripley's terse, command-style approval fits her character in this sequel perfectly, and the two-beat delivery matches James Cameron's action dialogue rhythm. The giveaway is the second sentence; Ripley's real praise tends to come through action rather than a verbal aside."
+    },
+    {
+      "id": "q5",
+      "text": "I didn't steal it. I just never gave it back.",
+      "speaker": "Catch Me If You Can (2002)",
+      "context": "Frank Abagnale Jr. explaining one of his early cons to an FBI agent",
+      "real": false,
+      "fake_note": "I made this one up — Frank's cheerful, slippery logic in self-justification is exactly the film's comic engine, and DiCaprio delivers lines with this kind of breezy semantic dodge throughout. The giveaway is it's almost too quotable; the film's best Frank lines tend to be embedded in longer, charming riffs."
+    },
+    {
+      "id": "q6",
+      "text": "The best way to spread Christmas cheer is singing loud for all to hear.",
+      "speaker": "Elf (2003)",
+      "context": "Buddy the Elf sharing his philosophy on holiday spirit",
+      "real": true
+    }
+  ]
+}
