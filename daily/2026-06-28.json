@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-28",
+  "edition": 14,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I grew up eating my grandmother's jollof rice every Sunday, and I will go to my grave believing it is the best thing ever cooked on this planet. I have been to three-Michelin-star restaurants. I stand by that statement completely.",
+      "speaker": "Lupita Nyong'o",
+      "context": "Bon Appétit magazine, Chef's Table profile, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Lupita has publicly celebrated her Kenyan and Nigerian cultural roots and is known for heartfelt, slightly emphatic declarations, so the tone is spot-on. The tell is the Michelin-star comparison; she's talked about family food but never quite framed it against fine-dining benchmarks."
+    },
+    {
+      "id": "q2",
+      "text": "The honest answer is that the first time I held a completed chip — like a physical wafer fresh off the line — I thought about my dad, who was an electrician. He would have had a thousand questions and I probably could have answered maybe two of them well.",
+      "speaker": "Jensen Huang",
+      "context": "Lex Fridman Podcast, Episode 309, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Jensen often connects NVIDIA's technical achievements to personal and family context, and his conversational style mixes engineering pride with genuine humility. The subtle tell is that his father's actual profession is not publicly documented, making the electrician detail unverifiable but dangerously plausible."
+    },
+    {
+      "id": "q3",
+      "text": "I never lie, even to this day. Not even a little. Unless you count playing pranks on people, which I don't. That's comedy. Entertainment doesn't count. A joke is different from a lie, even if the difference is kind of subtle.",
+      "speaker": "Steve Wozniak",
+      "context": "From his memoir iWoz (2006), the Apple co-founder on his lifelong commitment to honesty and his exception for pranks",
+      "real": true,
+      "source": {
+        "title": "Steve Wozniak (10+ Sourced Quotes) - Lib Quotes",
+        "url": "https://libquotes.com/steve-wozniak",
+        "date": "2006-09-17"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My kids think everything I cook is either 'pretty good' or 'fine.' Those are their two settings. Last month I made a bouillabaisse that took me the better part of a day and my son said — and I quote — 'it's fine, Dad.' I need new critics.",
+      "speaker": "Stanley Tucci",
+      "context": "The Late Show with Stephen Colbert, recorded appearance, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Stanley Tucci frequently discusses cooking for his family with warm, wry humor and has multiple children from two marriages, making the parental anecdote feel completely lived-in. The giveaway is the specific dish; his documented home cooking stories tend to feature simpler Italian-American comfort food rather than French bourride-style preparations."
+    },
+    {
+      "id": "q5",
+      "text": "They say that I have no hits, and I'm difficult to work with. And they say that like it's a bad thing.",
+      "speaker": "Tom Waits",
+      "context": "Speaking at his Rock and Roll Hall of Fame induction, March 14, 2001",
+      "real": true,
+      "source": {
+        "title": "Tom Waits - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Tom_Waits",
+        "date": "2001-03-14"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "humans behave better when they're being watched",
+      "speaker": "Peter Diamandis",
+      "context": "Xprize founder commenting on global surveillance, 2025",
+      "real": true,
+      "source": {
+        "title": "Tech — Xprize founder says ‘humans behave better when they’re being watched’",
+        "url": "https://techcrunch.com/2026/06/26/xprize-founder-says-humans-behave-better-when-theyre-being-watched/",
+        "date": "2026-06-28"
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-28",
+  "edition": 12,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He didn't even look up when I walked in. That's how I knew he was scared.",
+      "speaker": "The Maltese Falcon (1941)",
+      "context": "Spade narrating or confiding to Effie about a meeting with Gutman",
+      "real": false,
+      "fake_note": "I made this one up — the inverted-logic read of body language is pure Spade, and the confiding tone with Effie is a relationship the film uses exactly this way. The giveaway is it sounds a little too much like hardboiled-fiction prose; Bogart's Spade delivers these beats more casually in person."
+    },
+    {
+      "id": "q2",
+      "text": "Here's looking at you, kid.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick Blaine (Humphrey Bogart) says this to Ilsa (Ingrid Bergman) as a recurring toast, most memorably at the airport farewell.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "You smiled. That's the first time I've seen you smile since you got here.",
+      "speaker": "One Flew Over the Cuckoo's Nest (1975)",
+      "context": "Nurse Ratched to McMurphy during a seemingly calm group session, with quiet menace",
+      "real": false,
+      "fake_note": "I made this one up — the line weaponizes warmth the way Ratched always does, turning an observation into surveillance, which is her whole method. The giveaway is it's perhaps too precisely sinister; her real dialogue tends to hide the threat even further inside institutional pleasantries."
+    },
+    {
+      "id": "q4",
+      "text": "Life finds a way.",
+      "speaker": "Jurassic Park (1993)",
+      "context": "Dr. Ian Malcolm (Jeff Goldblum) argues that the park's all-female engineered dinosaurs cannot truly be prevented from breeding or controlled.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "She cried at the wedding. I thought that meant something.",
+      "speaker": "Kramer vs. Kramer (1979)",
+      "context": "Ted talking quietly to a colleague about his marriage falling apart",
+      "real": false,
+      "fake_note": "I made this one up — the defeated, half-confused tone matches Dustin Hoffman's Ted Kramer exactly, and the detail feels like real misread-signal grief. The giveaway is it's almost too neatly retrospective, more fitting a courtroom drama than a domestic kitchen scene."
+    },
+    {
+      "id": "q6",
+      "text": "Don't touch the glass, and don't stand too close.",
+      "speaker": "The Silence of the Lambs (1991)",
+      "context": "A corrections officer warning Clarice before her first visit to Lecter's cell",
+      "real": false,
+      "fake_note": "I made this one up — procedural caution delivered in a flat institutional tone is exactly how that prison staff talks, and the line primes dread without over-explaining anything. The giveaway is it's slightly too clean and symmetrical for throwaway background dialogue."
+    }
+  ]
+}
