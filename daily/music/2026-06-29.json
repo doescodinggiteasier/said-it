@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-29",
+  "edition": 7,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't really think of bass as a low instrument. I think of it as a slow one. It's moving through the same space as everything else, it just takes its time getting there.",
+      "speaker": "Flea",
+      "context": "Masterclass series filmed at USC Thornton School of Music, Los Angeles, 2018",
+      "real": false,
+      "fake_note": "I made this one up — Flea is genuinely philosophical and almost zen about bass in interviews, and his language tends toward the physical and spatial. The giveaway is 'slow' as a metaphor — his actual musical vocabulary leans more toward the biological and emotional than the temporal."
+    },
+    {
+      "id": "q2",
+      "text": "People always ask me what key I write in, like there's some magic answer. I wrote 'Gold Digger' on a Tuesday afternoon eating leftover Chinese food. The key was that the food was cold and I was annoyed about it.",
+      "speaker": "Kanye West",
+      "context": "Zane Lowe interview on Beats 1 Radio, September 2015",
+      "real": false,
+      "fake_note": "I made this one up — Kanye genuinely talks about mundane creative triggers in grandiose contexts, so the cold Chinese food detail feels very him. The giveaway is that 'Gold Digger' was a Jay-Z collab and Kanye typically inflates, not deflates, the origin stories of his biggest hits."
+    },
+    {
+      "id": "q3",
+      "text": "There was a version of 'Crazy in Love' that was slower. Way slower. Like a lullaby, almost. Jay heard it and said absolutely not, and he was completely right, but I still think about that version sometimes.",
+      "speaker": "Beyoncé",
+      "context": "Interview with Oprah Winfrey for O Magazine's 20th Anniversary Issue, April 2020",
+      "real": false,
+      "fake_note": "I made this one up — Beyoncé has spoken about alternate versions of songs and crediting Jay's instincts in ways that sound exactly like this: generous, specific, with a quiet private attachment underneath. The tell is that she's almost never discussed alternate versions of 'Crazy in Love' specifically in any documented interview."
+    },
+    {
+      "id": "q4",
+      "text": "Last night was a total disaster. The promoter knew the dangerous storm that was brewing and on its way to The C Trop Music Festival",
+      "speaker": "Fred Schneider",
+      "context": "B-52s frontman Fred Schneider on a canceled French festival set after a tornado struck the venue",
+      "real": true,
+      "source": {
+        "title": "Music — The B-52s’ French Festival Set Canceled ‘Minutes’ Before Tornado Struck Venue",
+        "url": "https://www.rollingstone.com/music/music-news/the-b-52s-show-canceled-tornado-c-trop-fest-france-1235585711/",
+        "date": "2026-06-29"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I was backstage at the show in the middle of hair and makeup when this news was delivered, and they gave me no choice",
+      "speaker": "Katy Perry",
+      "context": "Katy Perry on being forced to cancel her Belgian festival set due to inclement weather",
+      "real": true,
+      "source": {
+        "title": "Music — Katy Perry Forced to Cancel Belgian Fest Set Over ‘Inclement Weather’: ‘Beyond M",
+        "url": "https://www.rollingstone.com/music/music-news/katy-perry-belgium-fest-set-canceled-inclement-weather-1235585701/",
+        "date": "2026-06-29"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Touring with the Stones in the seventies, some nights I'd play the first song and think, yeah, that's it, that's the one, everything else is just us being polite to the audience.",
+      "speaker": "Mick Jagger",
+      "context": "Uncut Magazine cover interview, November 2012",
+      "real": false,
+      "fake_note": "I made this one up — Mick talks about individual performances with this kind of detached, slightly aristocratic self-awareness, and the 'polite to the audience' line captures his ironic distance from rock mythology. The tell is that he rarely singles out 'the first song' as the peak; he'd more likely say it happens mid-set."
+    }
+  ]
+}

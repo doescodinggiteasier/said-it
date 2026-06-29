@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-29",
+  "edition": 13,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "She doesn't need you to save her. She needs you to get out of her way.",
+      "speaker": "Aliens (1986)",
+      "context": "Ripley dressing down a colonial marine who underestimates her",
+      "real": false,
+      "fake_note": "I made this one up — Ripley's no-nonsense authority and the military setting make this feel right at home, and the rhythm matches Weaver's clipped delivery in that film. The giveaway is it's a hair too evenly constructed; Ripley's real put-downs tend to be more situational and messier."
+    },
+    {
+      "id": "q2",
+      "text": "You want the money, you take the room. That's always been the deal.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes pressing a shady landlord for information about a tenant",
+      "real": false,
+      "fake_note": "I made this one up — Gittes talks in clipped, transactional half-threats that fit the noir register perfectly, and 'that's always been the deal' sounds like the kind of worn-out corruption-speak the film wallows in. The subtle giveaway is that Gittes is more sardonic than blunt; he'd usually twist the knife with a little more irony."
+    },
+    {
+      "id": "q3",
+      "text": "Seventeen years on the same corner and I never once saw a cop buy his own coffee.",
+      "speaker": "The Departed (2006)",
+      "context": "A South Boston neighborhood fixture making a dry aside to Costigan",
+      "real": false,
+      "fake_note": "I made this one up — Scorsese's Boston dialogue is full of this kind of sideways social observation delivered like it's nothing, and the detail about free coffee grounds it in working-class texture. The giveaway is it's slightly too aphoristic; the film's real throwaway lines are even rougher and less neatly framed."
+    },
+    {
+      "id": "q4",
+      "text": "Nobody writes letters anymore. That's why I trust them.",
+      "speaker": "The Talented Mr. Ripley (1999)",
+      "context": "Tom Ripley explaining his forgery habit to Meredith",
+      "real": false,
+      "fake_note": "I made this one up — Ripley's self-satisfied little paradoxes and Minghella's sun-drenched European dialogue make this feel at home in that film's register. The giveaway is it's a fraction too clever and self-aware; the film's Tom tends to expose himself accidentally rather than through deliberate wit."
+    },
+    {
+      "id": "q5",
+      "text": "Why so serious?",
+      "speaker": "The Dark Knight (2008)",
+      "context": "The Joker (Heath Ledger) taunts a victim while telling a story about how he got his scars",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "You can't handle the truth!",
+      "speaker": "A Few Good Men (1992)",
+      "context": "Col. Nathan Jessep (Jack Nicholson) erupts on the witness stand during cross-examination by Lt. Daniel Kaffee (Tom Cruise).",
+      "real": true
+    }
+  ]
+}

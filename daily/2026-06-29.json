@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-29",
+  "edition": 15,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The thing about free throws is you've had ten thousand of them in an empty gym with nobody watching, and then suddenly the whole gym is watching and your brain acts like it's never seen a basketball before in its life. It's genuinely insulting.",
+      "speaker": "Shaquille O'Neal",
+      "context": "Appearance on The Dan Patrick Show, NBC Sports Network, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Shaq's free throw struggles are legendary and he's addressed them countless times with exactly this kind of loud, self-aware exasperation. The giveaway is 'genuinely insulting' — Shaq goes bigger and funnier than that; he'd probably blame the rims or the lighting before turning on his own brain so articulately."
+    },
+    {
+      "id": "q2",
+      "text": "I know acting is a childlike endeavour but it's no license to be childish.",
+      "speaker": "Jeff Goldblum",
+      "context": "The actor reflecting on his craft in a Time Out interview",
+      "real": true,
+      "source": {
+        "title": "Jeff Goldblum: 'What do people quote at me? That is one big pile of shit' - Time Out",
+        "url": "https://www.timeout.com/film/jeff-goldblum-what-do-people-quote-at-me-that-is-one-big-pile-of-shit",
+        "date": "2017-01-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Not everyone can be a truffle. Most of us are potatoes. And a potato is a very good thing to be.",
+      "speaker": "Massimo Bottura",
+      "context": "Quote by the Italian chef of Osteria Francescana, on humility",
+      "real": true,
+      "source": {
+        "title": "Massimo Bottura Quotes (Author of Never Trust A Skinny Italian Chef)",
+        "url": "https://www.goodreads.com/author/quotes/406174.Massimo_Bottura",
+        "date": "2021-01-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Directing is mostly just apologizing. You apologize to the actors for the schedule, to the crew for the weather, to the studio for the rough cut, and then to yourself every night around two in the morning for reasons you can't fully articulate.",
+      "speaker": "Christopher Nolan",
+      "context": "Masterclass panel at the American Film Institute Conservatory, Los Angeles, April 2023",
+      "real": false,
+      "fake_note": "I made this one up — Nolan is known for speaking about filmmaking with a kind of earnest gravity, and this has his precise, slightly formal sentence rhythm. The giveaway is the 'apologizing to yourself' flourish — Nolan tends to go cerebral and structural rather than emotionally confessional, even in a self-deprecating mode."
+    },
+    {
+      "id": "q5",
+      "text": "My mum still calls to ask if I've eaten. I'm forty-three years old and I just won a Grammy and she wants to know if I've had a proper lunch. I told her yes. I had half a granola bar in a green room in Stockholm. She was not satisfied.",
+      "speaker": "Adele",
+      "context": "Radio interview on BBC Radio 2's The Zoe Ball Breakfast Show, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Adele's public personality leans heavily on her relationship with her mum, self-deprecating humor, and very specific mundane detail, all of which this hits. The giveaway is the Grammy detail — her actual Grammy press cycle in 2022 didn't include this radio appearance, and a sharp Adele watcher would clock the timeline."
+    },
+    {
+      "id": "q6",
+      "text": "The speed of light is never going to go out of style. Gravity, lint, signs, time itself, is not going to go out of style.",
+      "speaker": "Steven Wright",
+      "context": "In a Salon Talks interview, explaining why he avoids topical jokes so his material stays timeless",
+      "real": true,
+      "source": {
+        "title": "\"Gravity is never going to go out of style\": Steven Wright on the secret to comedy longevity - Salon.com",
+        "url": "https://www.salon.com/2024/05/22/steven-wright-harold-salon-talks/",
+        "date": "2024-05-22"
+      }
+    }
+  ]
+}
