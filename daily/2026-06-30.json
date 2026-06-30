@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-30",
+  "edition": 16,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Well, I prefer the soft singing voice of Karen Carpenter. I have heard Frank Sinatra sing 'Fly Me to the Moon' almost too many times. So I'm interested in composing a new song, entitled 'Get your ass to Mars!'",
+      "speaker": "Buzz Aldrin",
+      "context": "Apollo 11 astronaut, in a July 2014 Reddit AMA marking the 45th anniversary of the Moon landing, answering a question about his music taste",
+      "real": true,
+      "source": {
+        "title": "The 15 Most Fascinating Answers From Buzz Aldrin's Reddit AMA | Fox News",
+        "url": "https://www.foxnews.com/entertainment/the-15-most-fascinating-answers-from-buzz-aldrins-reddit-ama",
+        "date": "2014-07-22"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I don't actually think I'm a natural cook. I've just spent an embarrassing number of hours being wrong about things in a kitchen until eventually the mistakes started to feel like style.",
+      "speaker": "Yotam Ottolenghi",
+      "context": "Keynote conversation with Jay Rayner at the Oxford Symposium on Food and Cookery, July 2019",
+      "real": false,
+      "fake_note": "I made this one up — Ottolenghi has spoken openly about being a late arrival to professional cooking and often frames his process through accumulated iteration rather than innate talent. The giveaway is the phrase 'mistakes started to feel like style,' which is a bit too neatly aphoristic for his usual warmly discursive interview voice."
+    },
+    {
+      "id": "q3",
+      "text": "Your body is not a temple, it's an amusement park. Enjoy the ride.",
+      "speaker": "Anthony Bourdain",
+      "context": "From his memoir Kitchen Confidential, on his attitude toward eating",
+      "real": true,
+      "source": {
+        "title": "Quote by Anthony Bourdain: \"your body is not a temple, it's an amusement pa...\"",
+        "url": "https://www.goodreads.com/quotes/271353-your-body-is-not-a-temple-it-s-an-amusement-park",
+        "date": "2000-01-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I've always found it strange that people apologize for liking pop music, as if complexity is the only thing that earns you the right to feel something. I cried at an ABBA song on a plane once and I'm completely at peace with that.",
+      "speaker": "Elton John",
+      "context": "Interview with Zane Lowe on Apple Music 1, broadcast November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Elton's well-documented championing of pop melody and his emotional candor make this feel completely natural, and the ABBA detail is exactly the kind of specific name-drop he'd deploy. The subtle giveaway is that Elton tends to be a little more theatrical and self-deprecating together; this is slightly too composed and philosophical for his usual off-the-cuff register."
+    },
+    {
+      "id": "q5",
+      "text": "I remember the first time we played a stadium and I genuinely couldn't hear the band. I thought something had gone wrong with my ears. Turned out forty thousand people singing is just louder than the monitors.",
+      "speaker": "Chris Martin",
+      "context": "Interview with Matt Everitt on BBC 6 Music's The First Time With…, February 2021",
+      "real": false,
+      "fake_note": "I made this one up — Chris Martin has discussed the sensory shock of playing large venues multiple times and tends toward this self-deprecating, slightly bewildered storytelling style. The giveaway is that the BBC 6 Music show 'The First Time With…' focuses on artists' first encounters with albums, not concerts — the format doesn't quite match."
+    },
+    {
+      "id": "q6",
+      "text": "The phone changed everything and I include myself in that indictment. I catch myself reading a headline and thinking I've read the article. I've done it enough times now that I actually feel a little ashamed about it.",
+      "speaker": "David Letterman",
+      "context": "Interview with Howard Stern on The Howard Stern Show, SiriusXM, aired October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Letterman has been publicly candid about media consumption habits and his own relationship to modern technology since retiring, and the Stern show is exactly where he'd air this kind of wry self-criticism. The giveaway is the word 'indictment,' which is slightly more formal and legalistic than Letterman's usual casual-gruff register."
+    }
+  ]
+}
