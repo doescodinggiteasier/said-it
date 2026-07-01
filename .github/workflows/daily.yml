@@ -44,10 +44,21 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SAIDIT_MODEL: ${{ vars.SAIDIT_MODEL || 'claude-sonnet-4-6' }}
         run: |
+          # Exit codes (generate_day.py main): 0 = wrote an edition · 2 = content FAIL-SAFE (thin bank / no verified
+          # reals — tolerated per-run; the skip-alert step flags PERSISTENT gaps) · anything else = a REAL error
+          # (LLM/provider outage, bad model or secret, code bug). We deliberately DROPPED `|| true`: a hard error must
+          # fail the run LOUD (red) instead of hiding a total outage behind "No new editions this run" for 5 days.
+          set +e                        # manage per-lane exit codes ourselves (don't let errexit abort the loop mid-way)
+          failed=""
           for cat in general sports music politics movies nsfw; do
             echo "--- generating $cat ---"
-            python tools/generate_day.py --category "$cat" ${{ (github.event.inputs.force == 'true') && '--force' || '' }} || true
+            python tools/generate_day.py --category "$cat" ${{ (github.event.inputs.force == 'true') && '--force' || '' }}
+            rc=$?
+            if [ "$rc" -eq 0 ]; then echo "  $cat: wrote an edition";
+            elif [ "$rc" -eq 2 ]; then echo "::warning::$cat fail-safe (thin bank / no verified reals) — wrote nothing this run";
+            else echo "::error::$cat HARD-FAILED (exit $rc) — LLM/provider/code error, NOT a content fail-safe"; failed="$failed$cat "; fi
           done
+          if [ -n "$failed" ]; then echo "::error::daily generation hard-failed for: $failed"; exit 1; fi
 
       - name: Commit & push if a new edition was written
         run: |

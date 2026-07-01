@@ -366,17 +366,25 @@ def _call_claude(system: str, prompt: str, max_tokens: int) -> str:
     return "".join(b.text for b in r.content if getattr(b, "type", None) == "text")
 
 
+class LLMUnavailable(RuntimeError):
+    """EVERY configured LLM provider failed (or none is configured). This is an OPS/config failure, NOT a
+    content fail-safe — pipeline stages must let it PROPAGATE (never swallow it as an empty result) so the run
+    fails LOUD (red) instead of silently writing nothing. See daily.yml: exit 2 = fail-safe (tolerated), any
+    other non-zero = a real error. Root-cause of the 06-26→ silent outage: this used to be swallowed."""
+
+
 def llm(system: str, prompt: str, max_tokens: int = 2000, gemini_model: str | None = None) -> str:
     """Prefer Gemini (free GCP credit, CLAUDE.md rule 7); fall back to Claude if Gemini errors or is
     misconfigured — so a bad Gemini key/model can never silently break the unattended cron.
-    `gemini_model` overrides the Gemini model for this call (mechanical steps pass the fast model)."""
+    `gemini_model` overrides the Gemini model for this call (mechanical steps pass the fast model).
+    Raises LLMUnavailable if NO provider succeeds (so a total provider outage is loud, not a silent fail-safe)."""
     order = []
     if _gemini_mode():
         order.append("gemini")
     if os.environ.get("ANTHROPIC_API_KEY"):
         order.append("claude")
     if not order:
-        raise RuntimeError("No LLM key: set GEMINI_API_KEY (preferred) or ANTHROPIC_API_KEY.")
+        raise LLMUnavailable("No LLM key: set GEMINI_API_KEY (preferred) or ANTHROPIC_API_KEY.")
     last = None
     for prov in order:
         try:
@@ -385,7 +393,7 @@ def llm(system: str, prompt: str, max_tokens: int = 2000, gemini_model: str | No
             last = e
             tail = "falling back to next provider" if prov != order[-1] else "no more providers"
             print(f"  ! LLM '{prov}' failed ({e.__class__.__name__}: {str(e)[:120]}) — {tail}", file=sys.stderr)
-    raise last
+    raise LLMUnavailable(f"all LLM providers failed ({', '.join(order)}); last error: {last.__class__.__name__}: {str(last)[:160]}") from last
 
 
 def largest_json(text: str):
@@ -723,6 +731,8 @@ def gather_reals(feeds, days, dup_idx, cat="general", want=6):
     block = "\n".join(f'{i} | {it["domain"]} | {it["title"]}. {it["summary"][:400]}' for i, it in enumerate(items))
     try:
         cands = largest_json(llm(REAL_SYS, REAL_TMPL.format(k=12, items=block, topic=CATEGORIES.get(cat, {}).get("topic", "a broad mix of news and culture")), max_tokens=2500, gemini_model=_fast_model())) or []
+    except LLMUnavailable:
+        raise                                          # total provider outage → propagate (loud), NEVER a silent empty-reals fail-safe
     except Exception as e:  # noqa: BLE001
         print(f"  ! reals LLM: {e}", file=sys.stderr); return []
     verified = []
@@ -803,6 +813,8 @@ def forge_fakes(dup_idx, cat="general", n=6, skel_seen=None):
     try:
         prompt = tmpl.format(n=n, lane=meta["lane"], figures=meta["figures"], topic=meta.get("topic", "")) + voice_refs(cat) + difficulty_hint(cat)
         fakes = largest_json(llm(sysp, prompt, max_tokens=2800)) or []
+    except LLMUnavailable:
+        raise                                          # total provider outage → propagate (loud), NEVER a silent empty-fakes fail-safe
     except Exception as e:  # noqa: BLE001
         print(f"  ! fakes LLM: {e}", file=sys.stderr); return []
     ap = meta.get("allow_politics", False)
@@ -851,6 +863,8 @@ def safety_screen(quotes, nsfw=False):
             print(f"  ! screen flagged {len(unsafe)}/{len(screenable)} — likely misfiring; keeping denylist-filtered set", file=sys.stderr)
             return quotes
         return [q for i, q in enumerate(quotes) if i not in unsafe]
+    except LLMUnavailable:
+        raise                                          # never ship UNSCREENED fakes on a provider outage → propagate (loud)
     except Exception as e:  # noqa: BLE001
         print(f"  ! screen LLM (keeping set): {e}", file=sys.stderr)
         return quotes
