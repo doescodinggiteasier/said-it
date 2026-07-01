@@ -1086,7 +1086,29 @@ def spot_check_summary(edition, cat):
     print(f"    auto-floor residue: canon={canon} fragment={frag} cliche={clich} (each should be 0)")
 
 
-def assemble(date, reals_fresh, fakes, evergreen, dup_idx, cat="general", recent=None):
+def bank_recency(cat):
+    """Most-recent publish date per REAL text for this lane, read from the editions on disk. Drives the bank-FLOOR
+    recycle in assemble() (least-recently-used first). The used ledger is stored SORTED (save_used), so it can't
+    give recency — the editions are the authoritative record of when a real was last shown. {norm_text: 'YYYY-MM-DD'}."""
+    import glob
+    rec = {}
+    for p in glob.glob(os.path.join(daily_dir(cat), "*.json")):
+        if os.path.basename(p) == "index.json":
+            continue
+        try:
+            ed = json.load(open(p))
+        except Exception:  # noqa: BLE001
+            continue
+        d = ed.get("date") or os.path.basename(p)[:-5]
+        for q in ed.get("quotes", []):
+            if q.get("real"):
+                nt = _norm(q.get("text", ""))
+                if nt and (nt not in rec or d > rec[nt]):
+                    rec[nt] = d
+    return rec
+
+
+def assemble(date, reals_fresh, fakes, evergreen, dup_idx, cat="general", recent=None, recency=None):
     recent = recent or set()                               # speakers used in recent days → bias AGAINST (variety)
     n_real = random.choice([2, 3, 3])                      # vary the ratio so it isn't always 3:3
     reals, seen_spk = [], set()
@@ -1111,6 +1133,21 @@ def assemble(date, reals_fresh, fakes, evergreen, dup_idx, cat="general", recent
         for e in rest:
             if len(reals) >= n_real: break
             e = dict(e); e["real"] = True; e["_vetted"] = True; take(e)
+    if len(reals) < n_real:                                # BANK FLOOR — a lane must NEVER go dark when its bank has reals.
+        # The UNUSED pool is exhausted: every banked real is a near-dup of the ever-growing no-repeat ledger, so the
+        # dedup has starved the bank (movies hit this first — bank-only, no feeds). RECYCLE already-published banked
+        # reals, LEAST-RECENTLY-USED first (oldest last-publish date; never-shown entries first). A repeated real every
+        # few weeks is fine; a blank day is not. Same distinct-speaker + quality + family-lane-clean rules; recent
+        # names and canon warhorses stay last. This is the guaranteed floor — after it, fail-safe means a genuinely
+        # empty bank or a provider outage, never dedup starvation.
+        recency = recency or {}
+        recyc = [e for e in evergreen if _spk(e) and _spk(e) not in seen_spk
+                 and real_quality_ok(e["text"], cat)
+                 and (is_nsfw_lane(cat) or not has_profanity(e["text"]))]
+        recyc.sort(key=lambda e: (_spk(e) in recent, is_canon_movie_line(e["text"]), recency.get(_norm(e["text"]), "")))
+        for e in recyc:
+            if len(reals) >= n_real: break
+            e = dict(e); e["real"] = True; e["_vetted"] = True; e["_recycled"] = True; take(e)
     n_fake = 6 - len(reals)                                # fakes: distinct speakers, not overlapping the reals
     chosen_fakes = []
     for f in sorted(fakes, key=lambda x: _spk(x) in recent):
@@ -1223,7 +1260,7 @@ def main():
     fakes = forge_fakes(dup_idx, cat, 10, skel_seen=skel_seen)   # lane-aware, forge extra for headroom (distinct-speaker + skeleton dedup needs slack)
     fakes = safety_screen(fakes, nsfw=CATEGORIES[cat].get("nsfw", False))   # screen UP FRONT (NSFW lane: profanity OK, harm not)
     print(f"  fakes: {len(fakes)} forged + screened safe")
-    edition = assemble(a.date, reals, fakes, load_evergreen(cat), dup_idx, cat, recent=recent_spk)
+    edition = assemble(a.date, reals, fakes, load_evergreen(cat), dup_idx, cat, recent=recent_spk, recency=bank_recency(cat))
     # Batch 7a: bank the verified-but-unused fresh reals (zero fabrication — already verbatim+cross-validated) so a
     # thin-news day can still reach the floor from this lane's own bank instead of going silent. Runs even on fail-safe.
     banked = bank_surplus_reals(reals, edition, cat, dup_idx)
