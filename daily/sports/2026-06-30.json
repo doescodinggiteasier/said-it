@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-30",
+  "edition": 5,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "If everyone likes me, they're watching, so there has to be something there.",
+      "speaker": "Tony Romo",
+      "context": "The CBS lead NFL analyst, on Pat McAfee's show in January 2026, responding to criticism of his polarizing broadcasting style.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Tony Romo addresses criticism after another up-and-down year in CBS booth",
+        "url": "https://www.foxnews.com/sports/tony-romo-opens-up-about-commentating-criticism-he-chooses-ignore-theyre-watching",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "You guys always ask about the blitz packages, but honestly, it comes down to the left gunner. If he doesn’t jam the release and forces the returner inside... I mean, you’re just giving away forty yards of field position. We spent three hours on it Thursday and still got beat.",
+      "speaker": "Bill Belichick",
+      "context": "Post-game press conference following a Week 6 loss to the Miami Dolphins, October 2018",
+      "real": false,
+      "fake_note": "I made this one up! Belichick obsessing over a left gunner's technique instead of a star quarterback is exactly his brand of football nerdery, but I threw in the 'three hours on Thursday' to give it away—even Bill doesn't spend three straight hours on one single special teams assignment."
+    },
+    {
+      "id": "q3",
+      "text": "People always ask me how I'd do in today's game. Are you kidding me? If they're playing that switch-everything defense, and I got a point guard on me in the post... man, I wouldn't even dribble. I'd just turn around, drop-step, and it's barbecue chicken every single time down. The coach would have to call a timeout after two minutes.",
+      "speaker": "Shaquille O'Neal",
+      "context": "The Big Podcast with Shaq, Episode 62, discussing modern NBA defense",
+      "real": false,
+      "fake_note": "I invented this quote. Shaq loves insisting he'd destroy modern small-ball defenses, and throwing around his catchphrase 'barbecue chicken' makes it feel authentic. But if Shaq were really bragging, he'd claim the opposing coach would foul out his whole roster, not just call a quick timeout."
+    },
+    {
+      "id": "q4",
+      "text": "Basketball is something that I'm just good at. But horses is something that I feel the most happiness and sadness.",
+      "speaker": "Nikola Jokic",
+      "context": "The Denver Nuggets center, speaking during a 2025 promotional tour at a horse ranch in Beijing, on where his real emotional highs and lows come from.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — \"Basketball is just something I'm good at\": Jokic's admission",
+        "url": "https://sports.yahoo.com/article/basketball-just-something-im-good-103300970.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The media, you like to say my teams park the bus. Okay. But let me ask you, if the other team has the ball for seventy percent of the game, and they create zero clear chances, and we score two times on the counter-attack... is that a bus? No, that is a perfectly calibrated machine. Trophies are not given for possession.",
+      "speaker": "Jose Mourinho",
+      "context": "Press conference following Tottenham Hotspur's 2-0 win against Arsenal, December 2020",
+      "real": false,
+      "fake_note": "I fabricated this one. Mourinho leaning into the 'park the bus' criticism to rebrand it as a 'perfectly calibrated machine' fits his defensive masterclass narrative to a tee. The tell is the phrasing—Mourinho usually scowls at the bus metaphor and insists his teams play beautiful football, rather than fully playing along with the joke."
+    },
+    {
+      "id": "q6",
+      "text": "Look, I ain't really got a whole lot of philosophy on it. If I see a linebacker filling the A-gap, I'm not trying to juke him and end up on a highlight reel. I'm trying to step on his foot so he remembers we played a football game today. That's just how I was raised to run.",
+      "speaker": "Marshawn Lynch",
+      "context": "Interview with Michael Robinson on NFL Network's 'NFL Total Access', 2013",
+      "real": false,
+      "fake_note": "I made this one up! Marshawn’s physical running style is legendary, and this fits his laid-back but bruising persona perfectly. But saying he wants to 'step on his foot' is just a bit too delicate for Beast Mode—he'd usually say he was trying to run through a guy's face."
+    }
+  ]
+}

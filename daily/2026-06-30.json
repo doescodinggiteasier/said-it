@@ -4,63 +4,67 @@
   "category": "general",
   "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
   "politics_dial": "on",
-  "trickiest_fake": "q2",
+  "trickiest_fake": "q3",
   "quotes": [
     {
       "id": "q1",
-      "text": "Well, I prefer the soft singing voice of Karen Carpenter. I have heard Frank Sinatra sing 'Fly Me to the Moon' almost too many times. So I'm interested in composing a new song, entitled 'Get your ass to Mars!'",
-      "speaker": "Buzz Aldrin",
-      "context": "Apollo 11 astronaut, in a July 2014 Reddit AMA marking the 45th anniversary of the Moon landing, answering a question about his music taste",
+      "text": "So disappointing to find out he is such a coward",
+      "speaker": "George Takei",
+      "context": "Written on Threads regarding Dwayne Johnson's stance on politics.",
       "real": true,
       "source": {
-        "title": "The 15 Most Fascinating Answers From Buzz Aldrin's Reddit AMA | Fox News",
-        "url": "https://www.foxnews.com/entertainment/the-15-most-fascinating-answers-from-buzz-aldrins-reddit-ama",
-        "date": "2014-07-22"
+        "title": "Entertainment — Dwayne Johnson Slammed as a ‘Coward’ for Staying Quiet on Politics; ‘Star Trek’ ",
+        "url": "https://variety.com/2026/film/news/dwayne-johnson-backlash-staying-quiet-politics-1236799627/",
+        "date": "2026-06-30"
       }
     },
     {
       "id": "q2",
-      "text": "I don't actually think I'm a natural cook. I've just spent an embarrassing number of hours being wrong about things in a kitchen until eventually the mistakes started to feel like style.",
-      "speaker": "Yotam Ottolenghi",
-      "context": "Keynote conversation with Jay Rayner at the Oxford Symposium on Food and Cookery, July 2019",
-      "real": false,
-      "fake_note": "I made this one up — Ottolenghi has spoken openly about being a late arrival to professional cooking and often frames his process through accumulated iteration rather than innate talent. The giveaway is the phrase 'mistakes started to feel like style,' which is a bit too neatly aphoristic for his usual warmly discursive interview voice."
-    },
-    {
-      "id": "q3",
-      "text": "Your body is not a temple, it's an amusement park. Enjoy the ride.",
-      "speaker": "Anthony Bourdain",
-      "context": "From his memoir Kitchen Confidential, on his attitude toward eating",
+      "text": "He said he felt like a little boy who had stubbed his toe in the dark. That he was too old to cry, but it hurt too much to laugh.",
+      "speaker": "Adlai Stevenson",
+      "context": "Quoting a Lincoln anecdote to describe how he felt conceding the 1952 presidential election, Springfield, Illinois, Nov. 5, 1952.",
       "real": true,
       "source": {
-        "title": "Quote by Anthony Bourdain: \"your body is not a temple, it's an amusement pa...\"",
-        "url": "https://www.goodreads.com/quotes/271353-your-body-is-not-a-temple-it-s-an-amusement-park",
-        "date": "2000-01-01"
+        "title": "The American Presidency Project: Remarks Conceding the Presidential Election in Springfield, Illinois",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-conceding-the-presidential-election-springfield-illinois",
+        "date": "2026-06-30"
       }
     },
     {
-      "id": "q4",
-      "text": "I've always found it strange that people apologize for liking pop music, as if complexity is the only thing that earns you the right to feel something. I cried at an ABBA song on a plane once and I'm completely at peace with that.",
-      "speaker": "Elton John",
-      "context": "Interview with Zane Lowe on Apple Music 1, broadcast November 2022",
+      "id": "q3",
+      "text": "Martha tried to tell me about letting the dough rest. I said, look, I get the concept of resting, believe me. But if the chocolate chips are already in the mix, we need to put it in the oven immediately. That’s just a neighborhood rule. You don't make the chocolate wait.",
+      "speaker": "Snoop Dogg",
+      "context": "Cooking segment on Martha & Snoop's Potluck Dinner Party, VH1 (2017)",
       "real": false,
-      "fake_note": "I made this one up — Elton's well-documented championing of pop melody and his emotional candor make this feel completely natural, and the ABBA detail is exactly the kind of specific name-drop he'd deploy. The subtle giveaway is that Elton tends to be a little more theatrical and self-deprecating together; this is slightly too composed and philosophical for his usual off-the-cuff register."
+      "fake_note": "I made this one up — Snoop and Martha's dynamic is legendary, but this specific dispute over resting cookie dough is entirely my own recipe."
+    },
+    {
+      "id": "q4",
+      "text": "I still organize my physical books by the year they were published. Melinda always thought it was madness, because you'd have a book on sanitation next to a biography of Napoleon. But in my head, if I pull down a book, I want to see what else people were obsessing over in, say, 1994. It makes sense to me.",
+      "speaker": "Bill Gates",
+      "context": "Profile interview in The Wall Street Journal's weekend edition (2019)",
+      "real": false,
+      "fake_note": "I made this one up — Bill famously reads a ton and reviews books constantly, but I invented this highly specific, highly nerdy chronological sorting system."
     },
     {
       "id": "q5",
-      "text": "I remember the first time we played a stadium and I genuinely couldn't hear the band. I thought something had gone wrong with my ears. Turned out forty thousand people singing is just louder than the monitors.",
-      "speaker": "Chris Martin",
-      "context": "Interview with Matt Everitt on BBC 6 Music's The First Time With…, February 2021",
+      "text": "I don't understand the communal dipping bowl at a party. You've got ten people standing around, all pretending they aren't monitoring the chip-to-dip ratio. Just give everybody their own little ramekin. We have the technology to give everyone a ramekin, okay? It solves everything.",
+      "speaker": "Larry David",
+      "context": "Guest appearance on Comedians in Cars Getting Coffee, Season 1 (2012)",
       "real": false,
-      "fake_note": "I made this one up — Chris Martin has discussed the sensory shock of playing large venues multiple times and tends toward this self-deprecating, slightly bewildered storytelling style. The giveaway is that the BBC 6 Music show 'The First Time With…' focuses on artists' first encounters with albums, not concerts — the format doesn't quite match."
+      "fake_note": "I made this one up — it sounds exactly like a 'Curb Your Enthusiasm' premise, but Larry never went on a public crusade against communal dipping bowls. The 'ramekin' plea was my little addition."
     },
     {
       "id": "q6",
-      "text": "The phone changed everything and I include myself in that indictment. I catch myself reading a headline and thinking I've read the article. I've done it enough times now that I actually feel a little ashamed about it.",
-      "speaker": "David Letterman",
-      "context": "Interview with Howard Stern on The Howard Stern Show, SiriusXM, aired October 2021",
-      "real": false,
-      "fake_note": "I made this one up — Letterman has been publicly candid about media consumption habits and his own relationship to modern technology since retiring, and the Stern show is exactly where he'd air this kind of wry self-criticism. The giveaway is the word 'indictment,' which is slightly more formal and legalistic than Letterman's usual casual-gruff register."
+      "text": "Few thought he was even a starter / There were many who thought themselves smarter / But he ended PM / CH and OM / An earl and a knight of the garter.",
+      "speaker": "Clement Attlee",
+      "context": "A self-mocking limerick the former British PM wrote about himself in a letter to his brother Tom Attlee, April 8, 1956.",
+      "real": true,
+      "source": {
+        "title": "Lib Quotes: Clement Attlee (self-description limerick)",
+        "url": "https://libquotes.com/clement-attlee",
+        "date": "2026-06-30"
+      }
     }
   ]
 }

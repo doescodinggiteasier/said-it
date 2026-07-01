@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-30",
+  "edition": 4,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Look, folks, I've spent so much time on Amtrak over the years, I'm pretty sure I know how to couple the dining car to the sleeper. Seriously. I asked one of the engineers, Tommy, to let me throw the switch once. He wouldn't let me do it, but I know how.",
+      "speaker": "Joe Biden",
+      "context": "Keynote address at the US Conference of Mayors, January 2015",
+      "real": false,
+      "fake_note": "I totally invented this! Biden's Amtrak lore is legendary and he drops first names of train personnel constantly, but the anecdote about Tommy the engineer denying him the rail-yard coupling switch is my own little addition."
+    },
+    {
+      "id": "q2",
+      "text": "This was a very disappointing ruling from the Supreme Court. We respect it, but we also think that it was a major, major mistake",
+      "speaker": "Vance",
+      "context": "Speaking to Laura Ingraham about the birthright citizenship ruling",
+      "real": true,
+      "source": {
+        "title": "Politics — Vance calls Supreme Court birthright ruling a 'major mistake'",
+        "url": "https://thehill.com/regulation/court-battles/5948804-birthright-citizenship-ruling-criticized/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My favorite was The Scrunchie Chronicles: 112 Countries and It's Still All about My Hair",
+      "speaker": "Hillary Clinton",
+      "context": "Joking about a rejected memoir title, poking fun at coverage of her hair, in 2014",
+      "real": true,
+      "source": {
+        "title": "The Week — Hillary Clinton jokes she considered calling her memoir The Scrunchie Chronicles",
+        "url": "https://theweek.com/speedreads/452686/hillary-clinton-jokes-considered-calling-memoir-scrunchie-chronicles",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "You get to a diner in Iowa at seven in the morning, and someone hands you a slice of warm rhubarb pie. Now, my doctors tell me I'm supposed to just take a polite bite and put the fork down. But I'll tell you a secret: I have never once put the fork down.",
+      "speaker": "Bill Clinton",
+      "context": "Remarks at the National Governors Association Winter Meeting, 1998",
+      "real": false,
+      "fake_note": "I made this one up! It sounds exactly like his classic retail politics charm and famous appetite, but the giveaway is the timeline—his major heart-related dietary shifts and doctor warnings about pie became much more prominent in his post-presidency."
+    },
+    {
+      "id": "q5",
+      "text": "BIG NEWS! For the first time ever, the Republican Party will hold a MIDTERM CONVENTION. It will be in Dallas, Texas — One of my favorite places in the World. It will be fantastic! It has never been done before, and",
+      "speaker": "Donald Trump",
+      "context": "Announcing a new convention in Dallas via statement",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump announces GOP 'midterm convention' in Dallas",
+        "url": "https://thehill.com/homenews/campaign/5948776-trump-announces-republican-midterm-convention/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The worst part of running for president isn't the debates. It's the fact that for eighteen months, your entire diet consists of lukewarm coffee and whatever powdered donuts survived the ride from Manchester to Concord. By November, I was sweating confectioner's sugar.",
+      "speaker": "John McCain",
+      "context": "Interview on the Late Show with David Letterman, May 2009",
+      "real": false,
+      "fake_note": "I wrote this! McCain loved making deadpan complaints about the terrible 'Straight Talk Express' road diet, but true campaign trail aficionados know his actual junk food of choice was famously Pringles, not donuts."
+    }
+  ]
+}

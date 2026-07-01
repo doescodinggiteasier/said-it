@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-30",
+  "edition": 10,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I never took heroin, really because I'm too lazy.",
+      "speaker": "Grace Slick",
+      "context": "The Jefferson Airplane singer, in a Forbes interview, on why heroin never appealed to her despite her heavy drug era.",
+      "real": true,
+      "source": {
+        "title": "Forbes — Grace Slick Part II: 'I Never Took Heroin, Really Because I'm Too Lazy'",
+        "url": "https://www.forbes.com/sites/jimclash/2015/12/12/grace-slick-part-ii-i-never-took-heroin-really-because-im-too-lazy/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "These promoter guys come backstage in their nice little suits, asking if I need some herbal tea. Man, I look at them and say, 'Unless that tea is eighty proof and comes with a pack of Marlboros, you can shove it right up your ass and let me sing.'",
+      "speaker": "Janis Joplin",
+      "context": "Backstage audio recording at the Monterey Pop Festival, 1967",
+      "real": false,
+      "fake_note": "I whipped up this brash, boozy quote to fit Janis's raw blues persona. The giveaway is the cigarette brand — Joplin famously favored unfiltered cigarettes, usually Pall Malls or Camels, making Marlboros a slight anachronism for her specific vibe."
+    },
+    {
+      "id": "q3",
+      "text": "You think a million dollars makes you a king? Try spending fifty grand on vintage champagne just to spray it on a bunch of half-naked models on a yacht in Monaco. That's when you know you've got the world by the balls.",
+      "speaker": "The Wolf of Wall Street (2013)",
+      "context": "Screenplay draft by Terence Winter, omitted from the final cut",
+      "real": false,
+      "fake_note": "I wrote this line to perfectly mimic the film's relentless excess and crude swagger. The tell is the location — the movie's infamous yacht scene actually takes place en route to Monaco, but the boat sinks in a storm before they can party there."
+    },
+    {
+      "id": "q4",
+      "text": "The problem with these so-called wild men in journalism today is they think two shots of cheap gin and a joint makes them outlaws. I wouldn’t trust these bastards to buy my cigarettes, let alone cover a riot without pissing their khaki pants.",
+      "speaker": "Hunter S. Thompson",
+      "context": "Keynote address at the American Society of Magazine Editors convention, Chicago, 1997",
+      "real": false,
+      "fake_note": "I crafted this venomous rant to channel Thompson's gonzo arrogance perfectly. But die-hard fans will know Hunter rarely bothered to attend formal journalism conventions, preferring to mail in unhinged faxes instead of giving keynote addresses."
+    },
+    {
+      "id": "q5",
+      "text": "I think that weed kept me from wanting to kill people. And probably kept a lot of people from wanting to kill me, too — out there drunk, running around.",
+      "speaker": "Willie Nelson",
+      "context": "In Rolling Stone's 2019 Weed Issue cover interview, explaining how marijuana replaced his heavy drinking.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Willie Nelson: 'Marijuana Saved My Life'",
+        "url": "https://www.rollingstone.com/music/music-features/willie-nelson-weed-issue-826290/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "And if you can write an hour of great stuff, you're like fucking Tolstoy.",
+      "speaker": "Norm Macdonald",
+      "context": "In a 2011 A.V. Club interview, arguing that stand-up is the hardest writing there is.",
+      "real": true,
+      "source": {
+        "title": "The A.V. Club — Interview: Norm Macdonald",
+        "url": "https://www.avclub.com/norm-macdonald-1798225024",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

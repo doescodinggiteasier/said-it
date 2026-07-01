@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-30",
+  "edition": 8,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "new stuff with lasers that's never been done before.",
+      "speaker": "Matt Bellamy",
+      "context": "Discussing Muse's upcoming tour production",
+      "real": true,
+      "source": {
+        "title": "Music — Muse Attempting to “Build a Spaceship” for UK and European Tour",
+        "url": "https://consequence.net/2026/06/muse-spaceship-uk-europe-tour/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I was sitting in the kitchen making a cup of tea, and David had put on this new track by Chappell Roan. I literally dropped the teaspoon on the counter. The chord progression in the chorus went somewhere so unexpected, I had to run to the piano in my dressing gown just to figure out what key she had modulated into. Absolute bloody genius.",
+      "speaker": "Elton John",
+      "context": "Discussing his Apple Music show 'Rocket Hour' with Billboard in a late 2023 feature.",
+      "real": false,
+      "fake_note": "I made this one up — Elton is legendary for his passionate fandom of new pop artists and figuring out chord progressions by ear, but I conjured up the image of him sprinting to the piano in a dressing gown."
+    },
+    {
+      "id": "q3",
+      "text": "Finneas had the mic set up right next to my bed, and I was so exhausted I literally refused to stand up. We did the entire vocal take for 'bury a friend' with me lying flat on my back on the mattress, staring at the ceiling fan. If you listen really closely to the stems, I'm pretty sure you can hear the fan clicking in the background.",
+      "speaker": "Billie Eilish",
+      "context": "Breaking down her vocal recording process with Sound on Sound magazine in July 2019.",
+      "real": false,
+      "fake_note": "I made this one up — Eilish and her brother famously recorded their debut album in his bedroom, but the story about lying flat on the mattress and the clicking ceiling fan is my own fake studio lore."
+    },
+    {
+      "id": "q4",
+      "text": "I’ve only been addicted to two things – funk and praise",
+      "speaker": "Eddie Marsan",
+      "context": "An interview about his honest playlist",
+      "real": true,
+      "source": {
+        "title": "Music — ‘I’ve only been addicted to two things – funk and praise’: Eddie Marsan’s honest",
+        "url": "https://www.theguardian.com/culture/2026/jun/28/eddie-marsan-honest-playlist-eric-clapton-james-brown-cameo-chas-dave",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "If you listen to the isolated drum tracks on 'The Colour and the Shape', you can actually hear me grunting. I was hitting the snare so hard my whole jaw was clenching. Butch Vig kept telling me to breathe, but I honestly thought if I stopped holding my breath, the tempo would drag.",
+      "speaker": "Dave Grohl",
+      "context": "Speaking to Kerrang! magazine during a 2017 Foo Fighters retrospective interview.",
+      "real": false,
+      "fake_note": "I made this one up — Grohl often talks about his physically punishing drumming style and working with producer Butch Vig, but the detail about holding his breath to keep tempo is a complete fabrication."
+    },
+    {
+      "id": "q6",
+      "text": "I remember John had this little riff going, and I couldn't figure out what the bass was supposed to be doing underneath it. I was just plinking around up high on the neck, practically playing a counter-melody. George Martin popped his head in and said, 'Paul, are we going to have a bassline, or are you just playing lead guitar with thicker strings?'",
+      "speaker": "Paul McCartney",
+      "context": "Speaking to Terry Gross on NPR's Fresh Air in 2015.",
+      "real": false,
+      "fake_note": "I made this one up — McCartney often tells highly affectionate stories about George Martin acting as the adult in the room during Beatles sessions, but this exact exchange about thick strings never happened."
+    }
+  ]
+}
