@@ -1,66 +1,66 @@
 {
   "date": "2026-07-01",
-  "edition": 9,
+  "edition": 8,
   "category": "music",
   "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
   "politics_dial": "off",
-  "trickiest_fake": "q1",
+  "trickiest_fake": "q2",
   "quotes": [
     {
       "id": "q1",
-      "text": "People always want to play me the fully mixed demo right away. I'll usually ask them to turn the monitors off and just tap the tempo on their leg. If the tempo feels urgent, if it makes you lean forward in your chair without a single chord playing, we can build the rest.",
-      "speaker": "Rick Rubin",
-      "context": "Rick Rubin speaking on the 'Broken Record' podcast, November 2021",
-      "real": false,
-      "fake_note": "I made this one up — it perfectly echoes his famously reductive, anti-technical approach to producing. The subtle tell is the idea of 'tapping the tempo on their leg,' which sounds a bit too aggressively folksy for his usual esoteric zen vibe."
+      "text": "I don't want anyone to feel ripped off",
+      "speaker": "Lily Allen",
+      "context": "Defending the length of her West End Girl live shows",
+      "real": true,
+      "source": {
+        "title": "Music — Lily Allen defends length of West End Girl shows: ‘I don’t want anyone to feel r",
+        "url": "https://www.theguardian.com/music/2026/jul/01/lily-allen-west-end-girl-live-shows-singer-defends-length-format",
+        "date": "2026-07-01"
+      }
     },
     {
       "id": "q2",
-      "text": "There’s a shaker track on ‘bad guy’ that isn’t actually a shaker. I couldn't find my percussion bag that day, so I just grabbed a half-empty box of Altoids from my desk and shook it right into the mic. We just EQ'd the low end out, and it actually had this perfectly aggressive, chalky sound.",
-      "speaker": "Finneas O'Connell",
-      "context": "Finneas O'Connell breaking down his production process on a 2020 episode of Sound on Sound's YouTube channel",
+      "text": "I grew up watching my dad fix car engines on weekends and there was always this moment where something that was completely broken would turn over and just — run. And that's genuinely what it feels like when a track comes together. It's mechanical to me in that way. I don't mean cold, I mean there are actual parts and they either fit or they don't.",
+      "speaker": "Dr. Dre",
+      "context": "Interview with Los Angeles Times journalist Mikael Wood, published July 2015, ahead of the 'Straight Outta Compton' film release",
       "real": false,
-      "fake_note": "I totally invented the Altoids box detail. It sounds incredibly believable because he and Billie Eilish famously used weird found sounds—like an Invisalign slurp and an Australian crosswalk beep—on that exact album."
+      "fake_note": "I made this one up — Dre's known for the engineering-brain approach to production and the Compton childhood backdrop makes the car-engine detail feel autobiographically real. The giveaway is the phrase 'I don't mean cold' — a clarification that's slightly too considered for off-the-cuff speech."
     },
     {
       "id": "q3",
-      "text": "I wasn’t really prepared for it",
-      "speaker": "Robert Smith",
-      "context": "NME interview regarding a Rolling Stones collaboration",
-      "real": true,
-      "source": {
-        "title": "Music — The Cure’s Robert Smith initially turned down Rolling Stones collaboration: “I w",
-        "url": "https://www.nme.com/news/music/the-cures-robert-smith-initially-turned-down-rolling-stones-collaboration-i-wasnt-really-prepared-for-it-3954279?utm_source=rss&utm_medium=rss&utm_campaign=the-cures-robert-smith-initially-turned-down-rolling-stones-collaboration-i-wasnt-really-prepared-for-it",
-        "date": "2026-07-01"
-      }
+      "text": "When I was producing in the nineties I'd sometimes put a wrong note in deliberately, just buried in there, to see if anyone in the room would flinch. Most of the time nobody said a word. A few people I respected very much said something immediately. That told me a lot.",
+      "speaker": "Nile Rodgers",
+      "context": "Berklee Online Master Series Q&A session, streamed live in November 2018",
+      "real": false,
+      "fake_note": "I made this one up — Nile is known for his exacting musicianship and his tendency to test collaborators, and this anecdote fits his documented personality perfectly. The tell is the slightly too-neat moral at the end — 'that told me a lot' is the kind of conclusion a storyteller plants, not one that emerges naturally."
     },
     {
       "id": "q4",
-      "text": "Stevie Wonder and Prince played all the instruments on their albums, but in recording studios. I did it all in a back room at home – and then it won two Grammys",
-      "speaker": "Jacob Collier",
-      "context": "Interview about his creative process",
-      "real": true,
-      "source": {
-        "title": "Music — Quincy Jones emailed saying, ‘Hey man, I need to have a word’: how Jacob Collier",
-        "url": "https://www.theguardian.com/culture/2026/jun/29/how-jacob-collier-made-in-my-room-quincy-jones",
-        "date": "2026-07-01"
-      }
+      "text": "Sampling is archaeology. You're digging and most of what you find is rubble and then occasionally your brush hits something and you go still. I've definitely stood in a record store in some city I can barely remember and just gone completely still.",
+      "speaker": "RZA",
+      "context": "Red Bull Music Academy lecture, New York, April 2012, transcribed in full on the RBMA website",
+      "real": false,
+      "fake_note": "I made this one up — RZA's crate-digging philosophy and his tendency toward extended metaphor are both well documented, and the archaeology framing echoes his real spoken style. The giveaway is 'some city I can barely remember' — it's a vivid vagueness that's just slightly too cinematic."
     },
     {
       "id": "q5",
-      "text": "There was an entire week on 'The Downward Spiral' where we just recorded the sound of different objects hitting a metal trash can in the studio alley. I think the final snare on 'Closer' is actually just a heavy leather boot hitting the side of it, pitched down two octaves. It felt heavier than an actual drum kit.",
-      "speaker": "Trent Reznor",
-      "context": "Trent Reznor during a keynote conversation at Moogfest, May 2017",
+      "text": "People always want to know what the creative process looks like and I'm like — it looks like me eating cereal at two in the morning staring at a wall. That's it. That's the whole thing. And then eventually something happens and you don't even know why.",
+      "speaker": "Billie Eilish",
+      "context": "Apple Music's Zane Lowe interview, February 2022, promoting the album 'Happier Than Ever'",
       "real": false,
-      "fake_note": "I completely fabricated this studio anecdote! While he is famous for using weird, destroyed samples in the 90s, the snare on 'Closer' is actually a heavily modified TR-808 drum machine, not a leather boot."
+      "fake_note": "I made this one up — Billie's self-deprecating, mundane-detail style makes this feel totally at home next to her real interviews. The giveaway is that 'you don't even know why' is slightly too tidy a landing for someone who usually trails off into something weirder."
     },
     {
       "id": "q6",
-      "text": "Half those crazy vocal effects on the early records weren't even plugins. Timbaland would literally just wrap a heavy winter coat around my head and the microphone to deaden the room noise, and tell me to make spaceship noises. We looked absolutely ridiculous, but the isolation was incredible.",
-      "speaker": "Missy Elliott",
-      "context": "Missy Elliott reflecting on her debut album on Apple Music's 'Essentials' radio show, July 2023",
-      "real": false,
-      "fake_note": "I made this trick up entirely! It totally tracks with the legendary, eccentric studio chemistry between her and Timbaland, turning a silly visual into a believable piece of low-tech studio mythology."
+      "text": "new stuff with lasers that's never been done before",
+      "speaker": "Matt Bellamy",
+      "context": "Muse frontman on plans for their UK and European tour",
+      "real": true,
+      "source": {
+        "title": "Music — Muse Attempting to “Build a Spaceship” for UK and European Tour",
+        "url": "https://consequence.net/2026/06/muse-spaceship-uk-europe-tour/",
+        "date": "2026-07-01"
+      }
     }
   ]
 }
