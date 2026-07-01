@@ -678,6 +678,11 @@ def looks_like_headline_or_fragment(text):
     letters = [c for c in t if c.isalpha()]
     if letters and sum(1 for c in letters if c.isupper()) / len(letters) > 0.6:   # SHOUTY CHYRON / all-caps headline
         return True
+    # a properly-extracted standalone line is always capitalized; lowercase-initial means it was clipped out of the
+    # MIDDLE of a sentence (e.g. "expecting just to get drunk, really" — a trailing dependent clause, not the quote)
+    first_letter = next((c for c in t if c.isalpha()), None)
+    if first_letter and first_letter.islower():
+        return True
     return False
 
 
@@ -986,7 +991,11 @@ def bank_surplus_reals(reals, edition, cat, dup_idx):
     """Batch 7a — the bank fills itself with REAL, verified quotes. Every quote in `reals` already passed the
     verbatim-vs-source gate AND the cross-LLM attribution check, so appending the ones NOT used in today's edition
     to this lane's evergreen bank is zero-integrity-risk (NEVER fabricates a real). On a thin-news day the lane can
-    then still reach the floor from its own bank instead of going silent. Deduped vs the bank + the used ledger."""
+    then still reach the floor from its own bank instead of going silent. Deduped vs the bank + the used ledger.
+    Also runs the SAME real_quality_ok() gate assemble()/gather_reals() apply — a candidate can be genuinely
+    verbatim+attributed and STILL be a weak conversational fragment not worth banking (a 2026-07-01 incident: a
+    lowercase-initial dependent clause like "expecting just to get drunk, really" got harvested here); reject it
+    at harvest time instead of relying on manual review before commit."""
     if not reals:
         return 0
     used_today = {_norm(q["text"]) for q in (edition.get("quotes", []) if edition else [])}
@@ -996,6 +1005,8 @@ def bank_surplus_reals(reals, edition, cat, dup_idx):
     for r in reals:
         nt = _norm(r["text"])
         if nt in used_today or nt in bank_norms:           # published today, or already banked
+            continue
+        if not real_quality_ok(r["text"], cat):            # same quality floor as live generation — reject weak fragments
             continue
         if is_dup(r["text"], dup_idx):                     # already published in some lane (incl. near-dup)
             continue
