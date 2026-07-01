@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-01",
+  "edition": 11,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't go on stage high but I'll take an edible after I get off stage and chill out. I do write a lot of jokes while high though, and then the next day I'll look at them and go, 'Well that's not that funny.'",
+      "speaker": "Jim Jefferies",
+      "context": "Crude Australian comedian Jim Jefferies — who built his name on drinking, drugs, and porn material — talking candidly about weed and his creative process, in a High Times interview (Aug 2023).",
+      "real": true,
+      "source": {
+        "title": "Jim Jefferies Is Living His Best Life (High Times)",
+        "url": "https://hightimes.com/culture/jim-jefferies-is-living-his-best-life/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Hollywood is a coke town, but weed is so much better.",
+      "speaker": "Miley Cyrus",
+      "context": "In a 2013 Rolling Stone cover interview, contrasting cocaine with the 'happy drugs' she prefers.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Miley Cyrus on Why She Loves Weed, Went Wild at the VMAs and Much More",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I used to have a drug problem, but now I make enough money.",
+      "speaker": "David Lee Roth",
+      "context": "The Van Halen frontman quipping about his lifestyle, quoted in a Louder roundup of his wit (originally on Nightwatch With Charlie Rose, 1986).",
+      "real": true,
+      "source": {
+        "title": "Louder — The wit and wisdom of David Lee Roth",
+        "url": "https://www.loudersound.com/features/all-i-ever-really-needed-to-know-i-learned-from-david-lee-roth",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "You want to know what marriage is?! It’s waking up every morning next to the same person, looking at the ceiling, and screaming internally because she took half your blankets, half your money, and all your fucking will to live! AAAAAAAAAAAHHHH!",
+      "speaker": "Sam Kinison",
+      "context": "1988 appearance on Late Night with David Letterman.",
+      "real": false,
+      "fake_note": "I made this one up — it nails his legendary screaming hatred of matrimony, but the tidy 'blankets and money' setup is too cleanly structured compared to his real chaotic, off-the-cuff rants."
+    },
+    {
+      "id": "q5",
+      "text": "I don't mind Americans, truly I don't. But you lot sip a pint of watery piss for two hours and call it a bender. I spilled more vodka on my shirt last night than your entire frat-house drinks in a bloody semester.",
+      "speaker": "Oliver Reed",
+      "context": "1975 appearance on The Tonight Show Starring Johnny Carson.",
+      "real": false,
+      "fake_note": "I made this one up — it perfectly captures his absolute disdain for lightweight drinkers and his aggressive English swagger, but a classic Brit like him would never naturally use the phrase 'frat-house'."
+    },
+    {
+      "id": "q6",
+      "text": "If you’re gonna drink a bottle of Jack before going on stage, you better be ready to sweat out the devil. I did that in Berlin, woke up the next afternoon with some bird's knickers on my lamp and my boots in the fucking fridge.",
+      "speaker": "Lemmy Kilmister",
+      "context": "1998 backstage interview at the Wacken Open Air festival.",
+      "real": false,
+      "fake_note": "I made this one up — it sounds exactly like his famous heavy-drinking invincibility myth, but the boots in the fridge detail is pure rock and roll fiction I added for flavor!"
+    }
+  ]
+}

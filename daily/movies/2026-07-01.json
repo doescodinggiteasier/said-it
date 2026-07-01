@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-01",
+  "edition": 14,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'm not saying it's a ghost, I'm just saying I wouldn't sign a lease here.",
+      "speaker": "Ghostbusters (1984)",
+      "context": "Peter Venkman, inspecting a haunted apartment.",
+      "real": false,
+      "fake_note": "I made this one up — Venkman is always more concerned with real estate, money, and avoiding work than actual paranormal science. The giveaway is that by the time they are inside apartments doing inspections, Venkman is actively trying to overcharge people by confirming ghosts."
+    },
+    {
+      "id": "q2",
+      "text": "I guess we learned not to do it again.",
+      "speaker": "Burn After Reading (2008)",
+      "context": "The CIA Superior (J.K. Simmons) in the final debrief scene, summarizing the botched operation to Officer Palmer.",
+      "real": true,
+      "source": {
+        "title": "Burn After Reading - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Burn_After_Reading",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "That's the way it crumbles, cookie-wise.",
+      "speaker": "The Apartment (1960)",
+      "context": "C.C. 'Bud' Baxter (Jack Lemmon) parroting his boss Sheldrake's glib corporate-speak philosophy back to him.",
+      "real": true,
+      "source": {
+        "title": "The Apartment - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Apartment",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "If you drop that phone, we both disappear.",
+      "speaker": "The Matrix (1999)",
+      "context": "Trinity, holding the line open while fleeing Agents.",
+      "real": false,
+      "fake_note": "I made this one up — Trinity is constantly barking frantic orders about landlines, so the urgency fits perfectly. The subtle giveaway is that dropping the physical phone doesn't disconnect a hacker in the lore; they have to actually answer the call to exit the Matrix."
+    },
+    {
+      "id": "q5",
+      "text": "There's something about this that's so black, it's like how much more black could this be? And the answer is none. None more black.",
+      "speaker": "This Is Spinal Tap (1984)",
+      "context": "Nigel Tufnel (Christopher Guest) shows off a new album cover; his deadpan musing on its blackness.",
+      "real": true,
+      "source": {
+        "title": "This Is Spinal Tap - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/This_Is_Spinal_Tap",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "If you want to get out and push, Princess, be my guest.",
+      "speaker": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "context": "Han Solo, struggling to fix the Millennium Falcon while Leia criticizes him.",
+      "real": false,
+      "fake_note": "I made this one up — Han's frustrated sarcasm while the Falcon is breaking down is classic Star Wars romantic tension. The only reason it's fake is that getting out to push a spaceship is a very Earth-bound, automotive idiom that doesn't quite fit a galaxy far, far away."
+    }
+  ]
+}

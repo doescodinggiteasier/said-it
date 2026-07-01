@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-01",
+  "edition": 6,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People always ask how I celebrate after a win. I go back to my motorhome, maybe eat a burger, and boot up the simulator. To me, driving a GT3 car on iRacing for three hours is relaxing. The media stuff, the champagne, that's the tiring part.",
+      "speaker": "Max Verstappen",
+      "context": "Post-race press conference at the Belgian Grand Prix, Spa-Francorchamps, 2023",
+      "real": false,
+      "fake_note": "I crafted this one! Max’s absolute obsession with sim racing immediately after winning grueling real-life F1 races is a running joke in the paddock, but I wrote this exact quote about the burger and the GT3 cars."
+    },
+    {
+      "id": "q2",
+      "text": "I walk into a locker room now, guys got a stretch coach, a breath coach, a guy holding their phone. Back in the day, if you brought a breath coach to practice, Moses Malone would have made him run stadium stairs.",
+      "speaker": "Charles Barkley",
+      "context": "Inside the NBA broadcast on TNT, pre-game segment, May 2021",
+      "real": false,
+      "fake_note": "I totally invented this one! Chuck is always dragging modern players' entourages, but bringing the late, great Moses Malone in to punish a 'breath coach' is my own little sprinkle of TNT magic."
+    },
+    {
+      "id": "q3",
+      "text": "I'm watching the pre-match, and they're hugging in the tunnel. Hugging. Half of them are sharing a private jet to Ibiza next week, probably. In my day, if I saw Gary Neville smiling at a Vieira or a Pires in the tunnel, I'd have had a word. You're meant to be going to battle.",
+      "speaker": "Roy Keane",
+      "context": "Sky Sports 'Super Sunday' post-match analysis, April 2021",
+      "real": false,
+      "fake_note": "I completely fabricated this! Keano constantly fumes about modern players being too friendly before kickoff, but inserting Gary Neville smiling at the Arsenal lads is my own mischievous addition."
+    },
+    {
+      "id": "q4",
+      "text": "This ain't a football game, we do this every day.",
+      "speaker": "Earl Weaver",
+      "context": "The Baltimore Orioles manager on the day-in, day-out grind that makes baseball unlike other sports.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Eye on Quotes: The pithy brilliance of Earl Weaver",
+        "url": "https://www.cbssports.com/mlb/news/eye-on-quotes-the-pithy-brilliance-of-earl-weaver/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "You go up to the roof, right, and it's quiet. Just the birds. And they're beautiful, but they're brutal too. People think pigeons are gentle. I saw a male nearly tear the wing off another one over a nesting spot once. Everybody thinks they just eat breadcrumbs. Nah, they're savages when they need to be.",
+      "speaker": "Mike Tyson",
+      "context": "Interview on the Hotboxin' with Mike Tyson podcast, Episode 42, 2020",
+      "real": false,
+      "fake_note": "I conjured this out of thin air. Mike’s lifelong devotion to raising pigeons is completely real, but I wrote this specific, slightly dark reflection on their territorial habits to match his raw conversational vibe."
+    },
+    {
+      "id": "q6",
+      "text": "He can take his'n and beat your'n and take your'n and beat his'n.",
+      "speaker": "Bum Phillips",
+      "context": "The Houston Oilers head coach paying tribute to rival coach Don Shula's ability with any roster.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — Remembering Bum Phillips, the unsung defensive innovator",
+        "url": "https://www.si.com/nfl/2013/10/19/remembering-bum-phillips-the-unsung-defensive-innovator",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

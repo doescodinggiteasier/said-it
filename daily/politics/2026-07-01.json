@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-01",
+  "edition": 5,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You spend eight years having people hand you perfectly poured glasses of water, and then you get out and realize you've genuinely forgotten how the ice dispenser on your own fridge works. Michelle caught me just staring at it for a solid minute.",
+      "speaker": "Barack Obama",
+      "context": "2018 interview with David Letterman on the Netflix series My Next Guest Needs No Introduction",
+      "real": false,
+      "fake_note": "I made this one up! It hits that perfect Obama post-presidency note of domestic self-deprecation, but he never actually told this specific fridge story to Letterman."
+    },
+    {
+      "id": "q2",
+      "text": "A leadership contest is rather like trying to assemble a flat-pack wardrobe without the instructions. You're never entirely sure if you've got the right screws, and by the end of it, everyone is inexplicably shouting.",
+      "speaker": "Boris Johnson",
+      "context": "2019 interview on the BBC's The Andrew Marr Show",
+      "real": false,
+      "fake_note": "I dreamed this one up. It has his classic formula of combining a high-stakes political situation with a bumbling, mundane domestic frustration, but it's entirely fake."
+    },
+    {
+      "id": "q3",
+      "text": "If you hate the Democratic Party, then please don’t run for our nomination",
+      "speaker": "Jaime Harrison",
+      "context": "Tweeted on election day",
+      "real": true,
+      "source": {
+        "title": "Politics — Progressive primary victories have corporate Democrats panicking | Norman Solomo",
+        "url": "https://www.theguardian.com/commentisfree/2026/jul/01/democratic-socialists-versus-corporate-democrats",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Bob Dole doesn't mind a filibuster. Gives you time to catch up on the crossword. The problem is when somebody starts reading poetry. Once they bring out Robert Frost, you know you're not making it home for dinner.",
+      "speaker": "Bob Dole",
+      "context": "1996 interview on Larry King Live on CNN",
+      "real": false,
+      "fake_note": "I spun this one out of thin air. Dole was legendary for his dry wit and third-person references, but his specific critique of Senate poetry readings is a pure invention of mine."
+    },
+    {
+      "id": "q5",
+      "text": "If you want to know who someone really is, watch how they load a pickup truck at Menards. You see a guy putting the drywall in before the two-by-fours, you know you're dealing with a fundamentally chaotic individual.",
+      "speaker": "Tim Walz",
+      "context": "2024 campaign stop at a local diner in Eau Claire, Wisconsin",
+      "real": false,
+      "fake_note": "I invented this one! It channels his exact brand of upper-Midwestern dad-judging, but he never actually offered this philosophical take on lumber yard loading."
+    },
+    {
+      "id": "q6",
+      "text": "Bill is there just for a fairly short period of time. But while he’s there, I said you can declassify whatever you want",
+      "speaker": "Donald Trump",
+      "context": "Speaking to reporters before heading to North Dakota",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump says he told Pulte to 'declassify almost everything' while DNI",
+        "url": "https://thehill.com/homenews/administration/5949532-pulte-lacks-intelligence-experience/",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}
