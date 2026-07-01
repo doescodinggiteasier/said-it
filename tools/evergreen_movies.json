@@ -208,5 +208,379 @@
     "speaker": "Apollo 13 (1995)",
     "context": "Aboard the damaged spacecraft, the crew reports the malfunction to mission control. The line is spoken by Jim Lovell (Tom Hanks), echoing Jack Swigert; the film's \"we have a problem\" differs from the real transmission's \"we've had a problem.\"",
     "real": true
+  },
+  {
+    "text": "Death's at the bottom of everything, Martins. Leave death to the professionals.",
+    "speaker": "The Third Man (1949)",
+    "context": "Major Calloway (Trevor Howard) to pulp novelist Holly Martins (Joseph Cotten), warning him off his amateur investigation in postwar Vienna.",
+    "real": true,
+    "source": {
+      "title": "The Third Man - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/The_Third_Man",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "How could I have known that murder can sometimes smell like honeysuckle?",
+    "speaker": "Double Indemnity (1944)",
+    "context": "Insurance salesman Walter Neff (Fred MacMurray) narrating his dictaphone confession about the affair and murder plot with Phyllis Dietrichson.",
+    "real": true,
+    "source": {
+      "title": "Double Indemnity - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Double_Indemnity",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "The cheaper the crook, the gaudier the patter.",
+    "speaker": "The Maltese Falcon (1941)",
+    "context": "Private detective Sam Spade (Humphrey Bogart) sizing up the small-time gunman Wilmer.",
+    "real": true,
+    "source": {
+      "title": "The Maltese Falcon (1941 film) - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/The_Maltese_Falcon_(1941_film)",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "I hate that word. It's a return, a return to the millions of people who have never forgiven me for deserting the screen.",
+    "speaker": "Sunset Boulevard (1950)",
+    "context": "Faded silent star Norma Desmond (Gloria Swanson) correcting screenwriter Joe Gillis (William Holden) when he calls her planned return a 'comeback.'",
+    "real": true,
+    "source": {
+      "title": "Sunset Boulevard - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Sunset_Boulevard",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Never knew a prospector yet that died rich.",
+    "speaker": "The Treasure of the Sierra Madre (1948)",
+    "context": "Grizzled old prospector Howard (Walter Huston) offering hard-won wisdom about the gold-hunting life.",
+    "real": true,
+    "source": {
+      "title": "The Treasure of the Sierra Madre - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/The_Treasure_of_the_Sierra_Madre",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "That's the way it crumbles, cookie-wise.",
+    "speaker": "The Apartment (1960)",
+    "context": "C.C. 'Bud' Baxter (Jack Lemmon) parroting his boss Sheldrake's glib corporate-speak philosophy back to him.",
+    "real": true,
+    "source": {
+      "title": "The Apartment - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/The_Apartment",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Funny business, a woman's career. The things you drop on your way up the ladder so you can move faster. You forget you'll need them again when you get back to being a woman.",
+    "speaker": "All About Eve (1950)",
+    "context": "Aging Broadway star Margo Channing (Bette Davis) reflecting on the costs of ambition.",
+    "real": true,
+    "source": {
+      "title": "All About Eve - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/All_About_Eve",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "I came to Casablanca for the waters.",
+    "speaker": "Casablanca (1942)",
+    "context": "Rick Blaine (Humphrey Bogart) deflecting Captain Renault's (Claude Rains) question about why he came to Casablanca; Renault replies there are no waters in the desert, and Rick says he was misinformed.",
+    "real": true,
+    "source": {
+      "title": "Casablanca (film) - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Casablanca_(film)",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Is this testing whether I'm a Replicant or a lesbian, Mr. Deckard?",
+    "speaker": "Blade Runner (1982)",
+    "context": "Rachael (Sean Young) to Rick Deckard (Harrison Ford) during her Voight-Kampff test at the Tyrell Corporation, early in the film.",
+    "real": true,
+    "source": {
+      "title": "Blade Runner - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Blade_Runner",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "The world is a business, Mr. Beale. It has been since man crawled out of the slime.",
+    "speaker": "Network (1976)",
+    "context": "Corporate chairman Arthur Jensen (Ned Beatty) delivering his boardroom sermon to news anchor Howard Beale (Peter Finch).",
+    "real": true,
+    "source": {
+      "title": "Network (film) - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Network_(film)",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "You're an errand boy sent by grocery clerks to collect a bill.",
+    "speaker": "Apocalypse Now (1979)",
+    "context": "Colonel Kurtz (Marlon Brando) to Captain Willard (Martin Sheen) at his compound, dismissing Willard's mission.",
+    "real": true,
+    "source": {
+      "title": "Apocalypse Now - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Apocalypse_Now",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Some places are like people. Some shine and some don't.",
+    "speaker": "The Shining (1980)",
+    "context": "Head chef Dick Hallorann (Scatman Crothers) explaining 'the shining' to young Danny Torrance (Danny Lloyd) at the Overlook Hotel.",
+    "real": true,
+    "source": {
+      "title": "The Shining (film) - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/The_Shining_(film)",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Loneliness has followed me my whole life. Everywhere.",
+    "speaker": "Taxi Driver (1976)",
+    "context": "Travis Bickle (Robert De Niro) in voice-over narration from his diary.",
+    "real": true,
+    "source": {
+      "title": "Taxi Driver - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Taxi_Driver",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Mr. Vaughn, what we are dealing with here is a perfect engine, an eating machine.",
+    "speaker": "Jaws (1975)",
+    "context": "Marine biologist Matt Hooper (Richard Dreyfuss) warning Mayor Vaughn (Murray Hamilton) about the shark.",
+    "real": true,
+    "source": {
+      "title": "Jaws (film) - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Jaws_(film)",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "I'm not sure that I agree with you a hundred percent on your policework there, Lou.",
+    "speaker": "Fargo (1996)",
+    "context": "Marge Gunderson (Frances McDormand), the pregnant police chief, gently correcting her deputy Lou's flawed reasoning at a crime scene.",
+    "real": true,
+    "source": {
+      "title": "Fargo (film) - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Fargo_(film)",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Smokey, this is not 'Nam. This is bowling. There are rules.",
+    "speaker": "The Big Lebowski (1998)",
+    "context": "Walter Sobchak (John Goodman) pulling a gun over a foot-fault dispute during league bowling, to opponent Smokey.",
+    "real": true,
+    "source": {
+      "title": "The Big Lebowski - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/The_Big_Lebowski",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Have you a valediction, boyo?",
+    "speaker": "L.A. Confidential (1997)",
+    "context": "Captain Dudley Smith (James Cromwell) to Jack Vincennes (Kevin Spacey), moments before shooting him.",
+    "real": true,
+    "source": {
+      "title": "L.A. Confidential (film) - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/L.A._Confidential_(film)",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "It appears my hypocrisy knows no bounds.",
+    "speaker": "Tombstone (1993)",
+    "context": "Doc Holliday (Val Kilmer), the consumptive gambler-gunslinger, wryly acknowledging his own contradictions.",
+    "real": true,
+    "source": {
+      "title": "Tombstone (film) - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Tombstone_(film)",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Rough business, this movie business. I may have to go back to loan sharking for a rest.",
+    "speaker": "Get Shorty (1995)",
+    "context": "Chili Palmer (John Travolta), the Miami loan shark turned Hollywood player, at the film's close.",
+    "real": true,
+    "source": {
+      "title": "Get Shorty - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Get_Shorty",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Don't ever let yourself get attached to anything you are not willing to walk out on in 30 seconds flat if you feel the heat around the corner.",
+    "speaker": "Heat (1995)",
+    "context": "Master thief Neil McCauley (Robert De Niro) explaining his creed to detective Vincent Hanna across a diner table.",
+    "real": true,
+    "source": {
+      "title": "Heat (1995 film) - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Heat_(1995_film)",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "I specifically reminded her; bedside table. On the kangaroo.",
+    "speaker": "Pulp Fiction (1994)",
+    "context": "Boxer Butch Coolidge (Bruce Willis) fuming that his girlfriend Fabienne forgot his late father's gold watch.",
+    "real": true,
+    "source": {
+      "title": "Pulp Fiction - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Pulp_Fiction",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "You need to call it. I can't call it for you. It wouldn't be fair.",
+    "speaker": "No Country for Old Men (2007)",
+    "context": "Anton Chigurh (Javier Bardem) to the gas station proprietor during the coin-toss scene, pressing him to call heads or tails for his life.",
+    "real": true,
+    "source": {
+      "title": "No Country for Old Men (film) - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/No_Country_for_Old_Men_(film)",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "I have a competition in me. I want no one else to succeed. I hate most people.",
+    "speaker": "There Will Be Blood (2007)",
+    "context": "Daniel Plainview (Daniel Day-Lewis) confessing his misanthropy to the man claiming to be his half-brother Henry.",
+    "real": true,
+    "source": {
+      "title": "There Will Be Blood - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/There_Will_Be_Blood",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "I'm not the guy you kill, I'm the guy you buy!",
+    "speaker": "Michael Clayton (2007)",
+    "context": "Michael Clayton (George Clooney) shouting at Karen Crowder near the film's climax, after realizing the conspiracy against him.",
+    "real": true,
+    "source": {
+      "title": "Michael Clayton - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Michael_Clayton",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "This town deserves a better class of criminal, and I'm gonna give it to 'em.",
+    "speaker": "The Dark Knight (2008)",
+    "context": "The Joker (Heath Ledger) addressing Gotham's mob bosses during his hostile takeover of their operation.",
+    "real": true,
+    "source": {
+      "title": "The Dark Knight (film) - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/The_Dark_Knight_(film)",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Each and every man under my command owes me one hundred Nazi scalps.",
+    "speaker": "Inglourious Basterds (2009)",
+    "context": "Lt. Aldo Raine (Brad Pitt) rallying his squad of Jewish-American soldiers in his opening address.",
+    "real": true,
+    "source": {
+      "title": "Inglourious Basterds - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Inglourious_Basterds",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "I guess we learned not to do it again.",
+    "speaker": "Burn After Reading (2008)",
+    "context": "The CIA Superior (J.K. Simmons) in the final debrief scene, summarizing the botched operation to Officer Palmer.",
+    "real": true,
+    "source": {
+      "title": "Burn After Reading - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Burn_After_Reading",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "I don't want to be a product of my environment. I want my environment to be a product of me.",
+    "speaker": "The Departed (2006)",
+    "context": "Frank Costello (Jack Nicholson) in the film's opening voiceover, laying out his philosophy of power in South Boston.",
+    "real": true,
+    "source": {
+      "title": "The Departed - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/The_Departed",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "There's something about this that's so black, it's like how much more black could this be? And the answer is none. None more black.",
+    "speaker": "This Is Spinal Tap (1984)",
+    "context": "Nigel Tufnel (Christopher Guest) shows off a new album cover; his deadpan musing on its blackness.",
+    "real": true,
+    "source": {
+      "title": "This Is Spinal Tap - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/This_Is_Spinal_Tap",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Back off, man. I'm a scientist.",
+    "speaker": "Ghostbusters (1984)",
+    "context": "Dr. Peter Venkman (Bill Murray) defends his research methods to a skeptical librarian.",
+    "real": true,
+    "source": {
+      "title": "Ghostbusters - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Ghostbusters",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Rudeness is merely an expression of fear. People fear they won't get what they want. The most dreadful and unattractive person only needs to be loved, and they will open up like a flower.",
+    "speaker": "The Grand Budapest Hotel (2014)",
+    "context": "M. Gustave (Ralph Fiennes), the fastidious concierge, instructs his lobby boy Zero on his philosophy of service.",
+    "real": true,
+    "source": {
+      "title": "The Grand Budapest Hotel - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/The_Grand_Budapest_Hotel",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Strange women lying in ponds distributing swords is no basis for a system of government.",
+    "speaker": "Monty Python and the Holy Grail (1975)",
+    "context": "Dennis the peasant (Michael Palin) argues political theory with King Arthur about the Lady of the Lake.",
+    "real": true,
+    "source": {
+      "title": "Monty Python and the Holy Grail - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Monty_Python_and_the_Holy_Grail",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "This? Why, I could make a hat, or a brooch, or a pterodactyl.",
+    "speaker": "Airplane! (1980)",
+    "context": "Johnny (Stephen Stucker), the air traffic control clown, riffs when asked what he can make of the situation.",
+    "real": true,
+    "source": {
+      "title": "Airplane! - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Airplane!",
+      "date": "2026-07-01"
+    }
+  },
+  {
+    "text": "Looks like I picked the wrong week to quit smoking.",
+    "speaker": "Airplane! (1980)",
+    "context": "Steve McCroskey (Lloyd Bridges), the harried air traffic supervisor, laments amid the crisis (the first of his escalating vices).",
+    "real": true,
+    "source": {
+      "title": "Airplane! - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Airplane!",
+      "date": "2026-07-01"
+    }
   }
 ]
