@@ -63,17 +63,23 @@ CATEGORIES = {
                            "politics — but political lines ONLY as LIGHT, balanced, non-inflammatory asides "
                            "(gaffes, witty quips), NEVER an attack or hot-take",
                 "topic": "a broad mix of news, culture and well-known personalities (this is the catch-all lane)"},
-    "sports":  {"feeds": {"sports": ["https://www.espn.com/espn/rss/news", "https://api.foxsports.com/v1/rss"]},
+    "sports":  {"feeds": {"sports": ["https://www.espn.com/espn/rss/news", "https://api.foxsports.com/v1/rss",
+                                     "https://www.cbssports.com/rss/headlines/", "https://sports.yahoo.com/rss/",
+                                     "https://www.theguardian.com/sport/rss"]},
                 "lane": "SPORTS ", "allow_politics": False,
                 "figures": "different real NON-politician athletes, coaches and sports figures",
                 "topic": "about sport or competition, OR said by an athlete, coach or sports figure"},
-    "music":   {"feeds": {"music": ["https://www.rollingstone.com/music/feed/", "https://pitchfork.com/rss/news/"]},
+    "music":   {"feeds": {"music": ["https://www.rollingstone.com/music/feed/", "https://pitchfork.com/rss/news/",
+                                    "https://consequence.net/feed/", "https://www.nme.com/news/music/feed",
+                                    "https://www.theguardian.com/music/rss"]},
                 "lane": "MUSIC ", "allow_politics": False,
                 "figures": "different real musicians, singers, producers and music figures",
                 "topic": "about music, OR said by a musician, singer, producer or music-industry figure"},
     # The politics LANE (opt-in; the dial is ON). Political figures/process allowed; HARD_DENY still gates
     # crime/violence/slur/scandal/conflict. Fakes must be LIGHT + balanced; reals are cross-validated (strict).
-    "politics": {"feeds": {"politics": ["https://feeds.npr.org/1014/rss.xml", "https://www.politico.com/rss/politicopicks.xml"]},
+    "politics": {"feeds": {"politics": ["https://feeds.npr.org/1014/rss.xml", "https://www.politico.com/rss/politicopicks.xml",
+                                        "https://thehill.com/homenews/feed/", "https://feeds.washingtonpost.com/rss/politics",
+                                        "https://www.theguardian.com/us-news/us-politics/rss"]},
                  "lane": "POLITICS ", "allow_politics": True,
                  "figures": "different real politicians/political figures BALANCED across parties — only LIGHT, "
                             "funny, non-inflammatory lines (gaffes, witty asides), NEVER an attack or hot-take",
@@ -602,6 +608,25 @@ def reputational_harm(text):
     return bool(REPUTATIONAL_RE.search(text or ""))
 
 
+# BATCH 12 — General/non-nsfw cleanliness. Profanity (even MILD) belongs ONLY in Off the Record; it must never
+# surface in general/sports/music/politics/movies (a real "get your ass to Mars" leaked into General). Word-boundary
+# matched so it never trips inside a clean word (class/pass/asset/shell/Michelle/hello/damnation stay clean). A good
+# but profane real is routed to Off the Record instead of shown in a family lane.
+PROFANITY_RE = re.compile(
+    r"\b(ass|asses|asshole\w*|asshat|jackass|dumbass|badass|hell|hells|damn|damned|damnit|goddamn\w*|"
+    r"shit\w*|bull\s?shit|bitch\w*|fuck\w*|motherfuck\w*|crap\w*|piss\w*|prick\w*|dick|dickhead|"
+    r"bastard\w*|cock|bollocks|bugger|wank\w*|twat|slut\w*|whore\w*|douche\w*)\b", re.I)
+
+
+def has_profanity(text):
+    """True if the text contains profanity (even mild). Applied to REALS + FAKES in every NON-nsfw lane."""
+    return bool(PROFANITY_RE.search(text or ""))
+
+
+def is_nsfw_lane(cat):
+    return bool(CATEGORIES.get(cat, {}).get("nsfw"))
+
+
 # ---------- content-quality floors (CONTENT_QUALITY_REVIEW.md REC 1-4) ----------
 # REC 1 — the canonical movie "warhorses": a casual viewer recognizes these on sight, so RECOGNITION (not
 # plausibility) becomes the tell. Reject them as movies REALS so the lane biases toward deep-cut lines instead.
@@ -749,6 +774,8 @@ def gather_reals(feeds, days, dup_idx, cat="general", want=6):
             continue
         if not real_quality_ok(q, cat):     # REC 1+2: drop headline fragments / truncated clips / canonical movie warhorses
             continue
+        if not is_nsfw_lane(cat) and has_profanity(q):   # BATCH 12: profanity (even mild) belongs ONLY in Off the Record — keep family lanes clean
+            continue
         if q.lower() in seen or is_dup(q, dup_idx):   # never repeat a published quote — ANY lane, incl. near-duplicates (7b)
             continue
         # verify against the snippet first, then the full article if needed
@@ -826,6 +853,7 @@ def forge_fakes(dup_idx, cat="general", n=6, skel_seen=None):
             continue
         if deny_hit(t, sp, f.get("context"), allow_politics=ap) or defamatory(t) or reputational_harm(t) \
                 or is_template_cliche(t) \
+                or (not is_nsfw_lane(cat) and has_profanity(t)) \
                 or is_dup(t, dup_idx):              # never repeat a published quote — ANY lane, incl. near-duplicates (7b)
             continue
         sk = skeleton(t)                            # REC 4b: reject a fake that repeats a recent OR in-batch rhetorical shape
@@ -1064,7 +1092,8 @@ def assemble(date, reals_fresh, fakes, evergreen, dup_idx, cat="general", recent
         if len(reals) >= n_real: break
         take(r)
     pool = [e for e in evergreen if not is_dup(e["text"], dup_idx) and _spk(e) not in seen_spk
-            and real_quality_ok(e["text"], cat)]   # unused (cross-lane, near-dup-aware), distinct, + REC 1+2 quality floor (no warhorses/fragments)
+            and real_quality_ok(e["text"], cat)
+            and (is_nsfw_lane(cat) or not has_profanity(e["text"]))]   # unused, distinct, quality floor + BATCH 12 non-nsfw cleanliness
     if len(reals) < n_real and pool:                       # top up from the UNUSED vetted evergreen bank
         pol = [e for e in pool if e.get("_politics")]
         if cat == "general" and pol and not any(r.get("_politics") for r in reals):

@@ -30,11 +30,11 @@
     },
     {
       "id": "q4",
-      "text": "You scared the hell out of me. Good.",
+      "text": "Check the motion tracker again. If it reads clear, it's lying.",
       "speaker": "Aliens (1986)",
-      "context": "Ripley to a marine after a tense close call",
+      "context": "A marine, mid-sweep of the colony",
       "real": false,
-      "fake_note": "I made this one up — Ripley's terse, command-style approval fits her character in this sequel perfectly, and the two-beat delivery matches James Cameron's action dialogue rhythm. The giveaway is the second sentence; Ripley's real praise tends to come through action rather than a verbal aside."
+      "fake_note": "I made this one up — it has the clipped, tense cadence of the colony sweep, but the real film never spells the dread out this neatly."
     },
     {
       "id": "q5",
