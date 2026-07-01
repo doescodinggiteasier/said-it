@@ -38,6 +38,18 @@ jobs:
         # and falls back to Claude (ANTHROPIC_API_KEY) if Gemini errors. Set either or both secrets.
         run: pip install google-genai anthropic
 
+      - name: Refresh difficulty feedback (live fooled-rates → fake calibration)
+        # ACTIVATES the difficulty loop: export player completions from Supabase, grade each published fake by its
+        # live "fooled %", and write difficulty_report.json — which the generate step below reads to steer the
+        # fake-writer subtler where fakes were too obvious. Fully graceful: no service key / no rows / an API blip
+        # all just produce an empty report, so the daily run never breaks and the loop stays a no-op until data exists.
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL || 'https://dqsomxfqvysbostmopvx.supabase.co' }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          python tools/export_completions.py
+          python tools/difficulty.py tools/completions.json --json || echo "::warning::difficulty grading skipped (thin/absent telemetry)"
+
       - name: Generate today's editions (all category lanes)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
