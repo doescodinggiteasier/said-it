@@ -32,6 +32,7 @@ import json
 import os
 import random
 import re
+import subprocess
 import sys
 import urllib.request
 
@@ -1222,6 +1223,54 @@ def verify_manifest(date):
     return 0
 
 
+def _git(args, timeout=15):
+    """Run a git command inside the web/ repo. Never raises: (returncode, stdout) — None returncode means git/network
+    was unavailable (no repo, no remote, offline, timeout), which callers must treat as 'cannot verify', not 'clean'."""
+    try:
+        r = subprocess.run(["git"] + args, cwd=WEB, capture_output=True, text=True, timeout=timeout)
+        return r.returncode, r.stdout
+    except Exception:  # noqa: BLE001 — no git binary, no network, hang: never let this crash generation
+        return None, ""
+
+
+def origin_has_diverged(head_exists, head_blob, origin_exists, origin_blob):
+    """Pure decision (unit-testable without git/network): has another writer already published a DIFFERENT edition
+    for this lane+date than the local checkout knows about? True only when origin has real content this checkout
+    can't already account for — i.e. origin has it and either we don't (yet), or ours differs byte-for-byte."""
+    if not origin_exists:
+        return False                                    # nothing on origin to race against
+    return (not head_exists) or (head_blob != origin_blob)
+
+
+def check_not_stale(cat, date):
+    """BATCH 12 follow-up (closes the 2026-07-01 incident): a local `generate_day.py` run and the nightly bot can
+    both target the same lane+date independently — since generation is randomized, they diverge, and reconciling
+    that after the fact means hand-repairing merge conflicts in the used-ledgers (exactly what Phase 1 fixed).
+    Close the race INSTEAD OF merging around it: fetch origin (best-effort — silently skip if git/network isn't
+    available, this must never block offline dev) and refuse LOUD if origin already has a different edition for
+    this lane+date than local HEAD knows about. Applies even under --force (that's exactly the case that raced)."""
+    rel = os.path.relpath(target_path(cat, date), WEB)
+    rc, _ = _git(["rev-parse", "--is-inside-work-tree"])
+    if rc != 0:
+        return                                           # not a git checkout — nothing to verify against
+    rc, branch = _git(["rev-parse", "--abbrev-ref", "HEAD"])
+    branch = branch.strip()
+    if rc != 0 or not branch or branch == "HEAD":
+        return                                           # detached HEAD / unknown — can't safely compare
+    rc, _ = _git(["fetch", "origin", branch, "--quiet"])
+    if rc != 0:
+        print(f"  (origin-freshness check skipped for {cat}/{date}: git fetch failed — offline or no remote)")
+        return
+    rc_head, head_blob = _git(["show", f"HEAD:{rel}"])
+    rc_origin, origin_blob = _git(["show", f"origin/{branch}:{rel}"])
+    if origin_has_diverged(rc_head == 0, head_blob, rc_origin == 0, origin_blob):
+        print(f"::error::origin/{branch} already has a DIFFERENT edition for {cat}/{date} than this checkout knows "
+              f"about — another writer (the nightly bot, or another manual run) published it first. Refusing to "
+              f"generate a diverging duplicate (this is exactly the 2026-07-01 race). Run `git pull` and re-run.",
+              file=sys.stderr)
+        sys.exit(1)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=dt.date.today().isoformat())
@@ -1239,6 +1288,7 @@ def main():
 
     target = target_path(cat, a.date)
     os.makedirs(daily_dir(cat), exist_ok=True)
+    check_not_stale(cat, a.date)                         # refuse loud if origin already raced ahead of this checkout (even under --force)
     if os.path.exists(target) and not a.force:
         print(f"{cat}/{a.date} already exists — skipping (use --force to regenerate)."); return 0
 
