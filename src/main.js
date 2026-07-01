@@ -1221,13 +1221,14 @@ function renderReveal(res, fresh, bumped, swept){
     '</div></div>';
   }).join("");
 
-  // share-card pips
-  var pips=res.perq.map(function(p){ return '<div class="sc-pip'+(p.right?" right":"")+'">'+(p.right?CHECK_SVG:"")+'</div>'; }).join("");
+  // share-card per-question results — deliberately ROUND caught/fooled DOTS (a distinct visual language from the
+  // home day-strip's fillable SQUARES), so a "box" never means two things (Batch 12 P1 day-vs-question).
+  var dots=res.perq.map(function(p){ return '<span class="sc-dot'+(p.right?" caught":" fooled")+'" aria-hidden="true"></span>'; }).join("");
 
   var host=$("screen-reveal");
   host.innerHTML =
     '<h1 class="sr-only" data-heading tabindex="-1">Results — '+res.score+' out of '+res.n+'</h1>'+
-    '<div class="rv-head">'+magpie(mood,68)+'<div class="rv-score"><span class="n">'+res.score+'</span><span class="of">/ '+res.n+'</span></div></div>'+
+    '<div class="rv-head">'+magpie(mood,68,"mags-flip")+'<div class="rv-score"><span class="n">'+res.score+'</span><span class="of">/ '+res.n+'</span></div></div>'+   /* Batch 12: Mags faces INWARD toward the score (like every note/header bird), with flip-preserving reactions */
     '<div class="rv-cap">'+esc(capFor(res.score,res.n))+(fresh?"":' <span class="replayed">· already played</span>')+'</div>'+
     '<div class="rv-streak"><span class="fire">🔥</span><span class="num" id="rvStreakNum">'+res.streak+'</span><span>day streak — keep it rolling</span></div>'+
     (res.frozen?'<div class="rv-freeze">🛡️ Streak-freeze used — your streak survived a missed day. One freeze per week.</div>':"")+
@@ -1239,8 +1240,12 @@ function renderReveal(res, fresh, bumped, swept){
     // share card (tap → PNG image share; spoiler-free text grid is the fallback)
     '<button class="share-card" id="rvShareCard" aria-label="Share your result as an image"><div class="sc-row"><div class="sc-brand"><span class="wm">Said It?</span></div>'+
       '<span class="sc-date">'+esc(prettyDate(res.date))+'</span></div>'+
-      '<div class="sc-score"><span class="big">'+res.score+'/'+res.n+'</span><span class="st">🔥 '+res.streak+'-day streak</span></div>'+
-      '<div class="sc-pips">'+pips+'</div>'+
+      // GROUP 1 — today’s result: the score + the six per-question caught/fooled dots belong together
+      '<div class="sc-result"><span class="sc-group-lbl">Today’s result</span>'+
+        '<div class="sc-score"><span class="big">'+res.score+'/'+res.n+'</span><span class="sc-outof">correct</span></div>'+
+        '<div class="sc-dots">'+dots+'</div></div>'+
+      // GROUP 2 — the streak, its OWN labeled row (a divider above it), so 3/6 + 6 dots can never be misread as the streak
+      '<div class="sc-streak"><span class="sc-group-lbl">Streak</span><span class="sc-streak-val">🔥 '+res.streak+' day'+(res.streak===1?'':'s')+'</span></div>'+
       '<div class="sc-legend"><span class="lg"><span class="sw caught"></span> caught it</span>'+
         '<span class="lg"><span class="sw fooled"></span> fooled</span><span class="url">saidit.app</span></div></button>'+
     '<div class="play-sub" style="margin-top:9px"><span id="rvShareHint">📸 Tap the card to share an image</span></div>'+

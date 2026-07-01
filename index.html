@@ -69,8 +69,17 @@
   @keyframes mags-tilt{0%{transform:rotate(0)}32%{transform:rotate(13deg)}62%{transform:rotate(9deg)}100%{transform:rotate(0)}}   /* cheeky head-tilt when you got fooled */
   @keyframes mags-hop{0%{transform:translateY(0)}30%{transform:translateY(-10px)}55%{transform:translateY(0)}75%{transform:translateY(-4px)}100%{transform:translateY(0)}}
   @keyframes mags-peek{0%{transform:scaleX(1) rotate(0)}25%{transform:scaleX(-1) rotate(-6deg)}55%{transform:scaleX(-1) rotate(4deg)}80%{transform:scaleX(-1) rotate(0)}100%{transform:scaleX(1) rotate(0)}}   /* idle: a quick flip/peek, then back */
+  /* Batch 12 — a Mags that faces INWARD (mags-flip) keeps its reactions: these variants preserve scaleX(-1) through
+     the animation so the reveal bird doesn't un-flip mid-cheer (rotate signs negated so the wiggle reads the same). */
+  .mags-flip.mags-react-cheer{animation:mags-cheer-f .9s cubic-bezier(.34,1.56,.64,1)}
+  .mags-flip.mags-react-tilt{animation:mags-tilt-f .6s ease}
+  .mags-flip.mags-react-hop{animation:mags-hop-f .64s cubic-bezier(.34,1.56,.64,1)}
+  @keyframes mags-cheer-f{0%{transform:scaleX(-1) translateY(0) rotate(0)}22%{transform:scaleX(-1) translateY(-8px) rotate(7deg)}48%{transform:scaleX(-1) translateY(0) rotate(0)}72%{transform:scaleX(-1) translateY(-6px) rotate(-7deg)}100%{transform:scaleX(-1) translateY(0) rotate(0)}}
+  @keyframes mags-tilt-f{0%{transform:scaleX(-1) rotate(0)}32%{transform:scaleX(-1) rotate(-13deg)}62%{transform:scaleX(-1) rotate(-9deg)}100%{transform:scaleX(-1) rotate(0)}}
+  @keyframes mags-hop-f{0%{transform:scaleX(-1) translateY(0)}30%{transform:scaleX(-1) translateY(-10px)}55%{transform:scaleX(-1) translateY(0)}75%{transform:scaleX(-1) translateY(-4px)}100%{transform:scaleX(-1) translateY(0)}}
   @media (prefers-reduced-motion: reduce){ .mags-bob{animation:none} .mags-cycle{animation:none}
-    .mags-react-cheer,.mags-react-tilt,.mags-react-hop,.mags-react-peek{animation:none} }
+    .mags-react-cheer,.mags-react-tilt,.mags-react-hop,.mags-react-peek{animation:none}
+    .mags-flip.mags-react-cheer,.mags-flip.mags-react-tilt,.mags-flip.mags-react-hop{animation:none} }
   .editiontag{color:var(--ink3);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
   .sub{display:none}
   .hide{display:none !important}
@@ -619,16 +628,24 @@
   .sc-brand{display:flex;align-items:center;gap:8px}
   .sc-brand .wm{font-weight:700;font-size:18px;color:var(--primary);letter-spacing:-.3px}
   .sc-date{font-size:11.5px;font-weight:600;color:var(--ink3)}
-  .sc-score{display:flex;align-items:baseline;gap:10px;margin-top:18px}
-  .sc-score .big{font-weight:700;font-size:46px;color:var(--primary);letter-spacing:-1.5px;font-variant-numeric:tabular-nums}
-  .sc-score .st{font-size:14px;font-weight:700;color:var(--ink)}
-  .sc-pips{display:flex;gap:8px;margin-top:18px}
-  .sc-pip{flex:1;height:36px;border-radius:8px;background:var(--card);border:2px solid var(--hair);display:flex;align-items:center;justify-content:center}
-  .sc-pip.right{border-color:var(--mint)} .sc-pip.right svg{stroke:var(--mint)}
+  /* group labels separate "today's result" (score + per-question dots) from the streak — no more one-blob card */
+  .sc-group-lbl{display:block;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+  .sc-result{margin-top:16px}
+  .sc-score{display:flex;align-items:baseline;gap:8px;margin-top:6px}
+  .sc-score .big{font-weight:700;font-size:44px;color:var(--primary);letter-spacing:-1.5px;font-variant-numeric:tabular-nums}
+  .sc-score .sc-outof{font-size:13px;font-weight:700;color:var(--ink3)}
+  /* per-question results = ROUND caught/fooled dots (NOT the day-strip's fillable squares — a box never means two things) */
+  .sc-dots{display:flex;gap:9px;margin-top:12px}
+  .sc-dot{width:16px;height:16px;border-radius:50%;display:inline-block}
+  .sc-dot.caught{background:var(--mint)}
+  .sc-dot.fooled{background:transparent;border:2px solid var(--hair)}
+  /* streak = its own labeled row, divided from the result group above */
+  .sc-streak{display:flex;align-items:center;justify-content:space-between;margin-top:16px;padding-top:14px;border-top:1.5px solid var(--hair)}
+  .sc-streak-val{font-size:17px;font-weight:800;color:var(--ink)}
   .sc-legend{display:flex;align-items:center;gap:14px;margin-top:14px;font-size:11px;font-weight:600;color:var(--ink3)}
   .sc-legend span.lg{display:inline-flex;align-items:center;gap:5px}
-  .sc-legend .sw{width:13px;height:13px;border-radius:4px;border:2px solid;display:inline-block}
-  .sc-legend .sw.caught{border-color:var(--mint)} .sc-legend .sw.fooled{border-color:var(--hair)}
+  .sc-legend .sw{width:13px;height:13px;border-radius:50%;border:2px solid;display:inline-block}   /* round dots, matching the per-question dots */
+  .sc-legend .sw.caught{background:var(--mint);border-color:var(--mint)} .sc-legend .sw.fooled{background:transparent;border-color:var(--hair)}
   .sc-legend .url{margin-left:auto;font-weight:700;color:var(--primary-dark)}   /* AA: 11px label */
 
   .rv-actions{display:flex;gap:11px;margin-top:14px}
