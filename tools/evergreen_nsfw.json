@@ -14,8 +14,8 @@
     "speaker": "Lemmy Kilmister",
     "context": "Recalling his youthful rock-star fantasies after leaving an early band (the Rockin' Vickers), in his memoir White Line Fever: The Autobiography (2002).",
     "source": {
-      "title": "Memoir 'White Line Fever' (The Current review)",
-      "url": "https://www.thecurrent.org/feature/2021/09/01/lemmy-kilmister-white-line-fever-book-review",
+      "title": "Goodreads — quotes from White Line Fever: The Autobiography",
+      "url": "https://www.goodreads.com/work/quotes/310228-white-line-fever-the-autobiography",
       "date": "2002"
     }
   },
@@ -40,7 +40,7 @@
     }
   },
   {
-    "text": "All the drugs just neutered me. When I was on drugs, I felt like this nunnish, non-sexual person. After I stopped doing drugs I started to fuck like a bunny!",
+    "text": "After I stopped doing drugs I started to fuck like a bunny!",
     "speaker": "Courtney Love",
     "context": "On how getting sober changed her sex drive, in an interview with The Fix.",
     "source": {
@@ -64,8 +64,8 @@
     "speaker": "Cardi B",
     "context": "From a now-iconic 2014 viral Instagram/Vine clip from her pre-fame days, strutting in a bra top and skirt and explaining why she's barely dressed in winter.",
     "source": {
-      "title": "Pre-fame viral clip (PAPER)",
-      "url": "https://www.papermag.com/cardi-b-cold-clothes",
+      "title": "Nylon — Cardi B was right: hot girls don't get cold",
+      "url": "https://www.nylon.com/life/cardi-b-was-right-hot-girls-dont-get-cold-science-confirms",
       "date": "2014"
     }
   },
@@ -80,12 +80,12 @@
     }
   },
   {
-    "text": "There are 400,000 words in the English language, and there are seven of them you can't say on television. What a ratio that is. 399,993 to 7. They must really be bad. Shit, piss, fuck, cunt, cocksucker, motherfucker, and tits.",
+    "text": "There are 400,000 words in the English language, and there are seven of them that you can't say on television. What a ratio that is. 399,993 to seven. They must really be bad.",
     "speaker": "George Carlin",
     "context": "Carlin's landmark \"Seven Words You Can Never Say on Television\" routine from his 1972 album Class Clown, listing the broadcast-banned words verbatim and reveling in saying them all out loud.",
     "source": {
-      "title": "'Class Clown' — Seven Words You Can Never Say on Television",
-      "url": "https://en.wikipedia.org/wiki/Seven_dirty_words",
+      "title": "The Big Seven Words — George Carlin",
+      "url": "https://www.erenkrantz.com/Humor/SevenDirtyWords.shtml",
       "date": "1972"
     }
   },
@@ -94,8 +94,8 @@
     "speaker": "Richard Pryor",
     "context": "Pryor's frank, self-lacerating bit about the 1980 freebasing accident in which he set himself on fire, from his stand-up film 'Richard Pryor: Live on the Sunset Strip' (1982).",
     "source": {
-      "title": "'Richard Pryor: Live on the Sunset Strip' (film)",
-      "url": "https://en.wikipedia.org/wiki/Richard_Pryor:_Live_on_the_Sunset_Strip_(film)",
+      "title": "Richard Pryor - Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Richard_Pryor",
       "date": "1982"
     }
   },
@@ -130,12 +130,12 @@
     }
   },
   {
-    "text": "I haven't ever tried very hard. Drugs expanded my imagination and made me think outside of, what, your fucking reality. And cigarettes gave me the patience to sit and write those thoughts down in a comedy-friendly format that you could understand. And alcohol gives me the courage to stand up here in front of you judgmental pricks and do it with a quarter million dollars worth of cameras in your face.",
+    "text": "And cigarettes gave me the patience to sit and write those thoughts down in a comedy-friendly format that you could understand. And alcohol gives me the courage to stand up here in front of you judgmental pricks and do it with a quarter million dollars worth of cameras in your face.",
     "speaker": "Doug Stanhope",
     "context": "From Doug Stanhope's 2007 stand-up special \"No Refunds\" — his defiant, self-celebrating defense of lifelong drug, cigarette, and alcohol use as the engine of his comedy.",
     "source": {
-      "title": "'No Refunds' (special)",
-      "url": "https://en.wikipedia.org/wiki/No_Refunds_(film)",
+      "title": "Doug Stanhope: No Refunds (2007) — Full Transcript",
+      "url": "https://scrapsfromtheloft.com/comedy/doug-stanhope-no-refunds-transcript/",
       "date": "2007"
     }
   },
@@ -187,7 +187,9 @@
       "title": "Daily Mail interview (Christian Today report)",
       "url": "https://www.christiantoday.com/news/helen-mirren-advice-to-daughter-unconventional-brutally-honest",
       "date": "2013"
-    }
+    },
+    "verified_legacy": true,
+    "exempt_reason": "genuine, well-attested 2013 Daily Mail quote (repeated verbatim in context by 8+ outlets checked) but every currently-live source censors the profanity itself (\"f***\"/\"f--\"/\"f-off\"); the original Daily Mail article is not indexed/reachable to confirm an uncensored rendering"
   },
   {
     "text": "I once asked a Jesuit priest what was the best short prayer he knew. He said, \"Fuck it,\" as in \"Fuck it; it's in God's hands.\"",

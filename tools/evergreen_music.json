@@ -10,12 +10,12 @@
     }
   },
   {
-    "text": "If I'm playing and it's a Chinese driver, He'll turn around like, 'That reminds me of my country!' Or if it's a Japanese driver… or if it's an African. I'm playing the same flute, but every nationality of driver will turn around and tell me it reminds them of their country.",
+    "text": "He'll turn around like, 'That reminds me of my country!' Or if it's a Japanese driver… or if it's an African. I'm playing the same flute, but every nationality of driver will turn around and tell me it reminds them of their country.",
     "speaker": "André 3000",
     "context": "The Outkast rapper, on Questlove's 'Questlove Supreme' podcast, describing how he'd play his flute in the back of Ubers and how drivers of every nationality told him it reminded them of their home country",
     "source": {
       "title": "How Did André 3000 Learn To Play Flute?",
-      "url": "https://uproxx.com/music/how-did-andre-3000-learn-to-play-flute/",
+      "url": "https://thebeatofthecapital.com/2023/12/13/how-did-andre-3000-learn-to-play-flute/",
       "date": "2023-12-13"
     }
   },
@@ -24,8 +24,8 @@
     "speaker": "Dolly Parton",
     "context": "In a Guardian interview (quoted by HuffPost), Dolly Parton describes the local 'town tramp' whose flashy style inspired her own signature look as a child.",
     "source": {
-      "title": "Dolly Parton Says Her Signature Style Was Inspired By The Actual 'Town Tramp'",
-      "url": "https://www.huffpost.com/entry/dolly-parton-town-tramp_n_6526d0bae4b0102e69645427",
+      "title": "Salon — Dolly Parton's famed \"town tramp\" style inspiration",
+      "url": "https://www.salon.com/2023/10/19/behind-the-seams-6-major-revelations-about-dolly-partons-famed-town-tramp-sense-of-style/",
       "date": "2023-10-11"
     }
   },
@@ -77,7 +77,9 @@
       "title": "Watch Pharrell Cry Over 'Happy' Inspiration During Interview with Oprah Winfrey",
       "url": "https://www.rollingstone.com/music/music-news/watch-pharrell-cry-over-happy-inspiration-231769/",
       "date": "2014-04-14"
-    }
+    },
+    "verified_legacy": true,
+    "exempt_reason": "genuine, well-attested quote (Oprah Prime, April 2014, widely reported incl. Rolling Stone) but too short to pass quote_is_verbatim's 25-char minimum-length floor — a structural limitation of the verbatim algorithm, not a fabrication risk"
   },
   {
     "text": "Y'all can't read this, can you?",

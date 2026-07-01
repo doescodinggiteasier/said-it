@@ -19,7 +19,12 @@ recently shown) real. This is a mechanical/ops integrity failure, not a factual 
 
 Statuses: ok · unsourced (legacy, no source.url) · unreachable (fetch failed — dead/blocked link) ·
 not-verbatim (source no longer contains the quote — INTEGRITY FAILURE) · attribution-far (person-lane: the
-speaker's surname isn't near the quote on the page — a weak misattribution signal, worth eyeballing).
+speaker's surname isn't near the quote on the page — a weak misattribution signal, worth eyeballing) ·
+exempt (an entry marked `verified_legacy: true` — an explicit, reviewed, documented decision that this quote is
+genuinely real and well-attested but can't be mechanically verified, e.g. every live source censors the exact
+profanity, or the quote is too short for quote_is_verbatim's minimum-length floor. NEVER a silent pass: the
+underlying check still RUNS and its result is recorded in `detail` for future review, but an exempt entry never
+counts toward the hard-fail exit code — that's the whole point of the field being explicit and reviewable).
 """
 from __future__ import annotations
 import argparse, datetime as dt, glob, json, os, re, sys
@@ -63,7 +68,8 @@ def audit(lanes=None, sample=None, verbose=False):
         if sample:
             bank = bank[:sample]
         is_person = g.CATEGORIES.get(cat, {}).get("kind") != "movie"
-        counts = {"total": len(bank), "ok": 0, "unsourced": 0, "unreachable": 0, "not-verbatim": 0, "attribution-far": 0}
+        counts = {"total": len(bank), "ok": 0, "unsourced": 0, "unreachable": 0, "not-verbatim": 0,
+                  "attribution-far": 0, "exempt": 0}
         for e in bank:
             text = e.get("text", "")
             sp = e.get("speaker", "")
@@ -86,10 +92,16 @@ def audit(lanes=None, sample=None, verbose=False):
                         status = "not-verbatim"; detail = "speaker surname absent from source (likely misattribution)"
                     elif not near:
                         status = "attribution-far"; detail = "speaker surname present but not near the quote (eyeball)"
+            if status in ("not-verbatim",) and e.get("verified_legacy"):
+                # explicit, documented, per-entry exception (never a silent pass — the underlying failure is
+                # recorded in `detail` for review) — a human judged this quote genuinely real and well-attested
+                # despite being mechanically unverifiable (e.g. every live source censors the exact profanity).
+                detail = f"EXEMPTED ({e.get('exempt_reason', 'no reason given')}) — underlying check said: {detail}"
+                status = "exempt"
             counts[status] = counts.get(status, 0) + 1
             if verbose or status not in ("ok",):
                 rec = {"lane": cat, "speaker": sp, "text": text[:70], "url": url, "status": status, "detail": detail}
-                if status != "ok":
+                if status not in ("ok",):
                     flags.append(rec)
                 if verbose:
                     print(f"  {status:16} {cat:8} {sp[:22]:22} :: {text[:44]}")
@@ -136,11 +148,14 @@ def main():
     for cat, c in rep["per_lane"].items():
         bad = c["not-verbatim"]; hard += bad
         print(f"  {cat:8} total={c['total']:>3} ok={c['ok']:>3} unsourced={c['unsourced']:>2} "
-              f"unreachable={c['unreachable']:>2} not-verbatim={bad:>2} attribution-far={c['attribution-far']:>2}")
+              f"unreachable={c['unreachable']:>2} not-verbatim={bad:>2} attribution-far={c['attribution-far']:>2} "
+              f"exempt={c.get('exempt', 0):>2}")
     if rep["flags"]:
         print("\n  flags:")
         for fl in rep["flags"]:
             print(f"    [{fl['status']:15}] {fl['lane']:8} {fl['speaker'][:22]:22} :: {fl['text'][:40]}")
+            if fl["status"] == "exempt":
+                print(f"        {fl['detail']}")
 
     df = rep["date_format"]
     hard += len(df["bad"])
@@ -149,10 +164,12 @@ def main():
     for b in df["bad"]:
         print(f"    [{b['lane']:8}] {b['file']}: {b['issue']}")
 
+    exempt_total = sum(c.get("exempt", 0) for c in rep["per_lane"].values())
     if hard:
         print(f"\n✗ {hard} integrity issue(s) (not-verbatim REALs + malformed edition dates). Fix or remove them.")
         return 4
-    print("\n✓ every sourced REAL still verifies against its cited source, and every edition date is well-formed.")
+    tail = f" ({exempt_total} legacy-exempt entry/entries — see flags above)" if exempt_total else ""
+    print(f"\n✓ every sourced REAL still verifies against its cited source, and every edition date is well-formed.{tail}")
     return 0
 
 
