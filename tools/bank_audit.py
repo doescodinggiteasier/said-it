@@ -5,9 +5,16 @@ SAME verbatim check the live pipeline uses (fetch the cited source, confirm the 
 across the WHOLE bank, plus a speaker-proximity sanity check for the person-lanes, and flags anything that no
 longer holds up. Meant to run on a schedule (weekly) so integrity drift is caught, not discovered by a player.
 
-  python bank_audit.py                  # audit every banked lane; write tools/bank_audit_report.json; exit 4 if any REAL is no longer verbatim
+Also audits edition DATE FORMAT (Phase 4, extends rather than duplicates): bank_recency() sorts the bank-floor
+recycle's least-recently-used candidates by `ed.get("date")` strings, relying on ISO 'YYYY-MM-DD' sorting
+lexicographically == chronologically. A malformed date (or a fallback to a non-ISO filename stem) would silently
+misrank recycle order — the bank-floor fix would still assemble an edition, but might recycle the WRONG (more
+recently shown) real. This is a mechanical/ops integrity failure, not a factual one, but undermines the same fix.
+
+  python bank_audit.py                  # audit every banked lane + every edition's date format; write tools/bank_audit_report.json
+                                         # exit 4 if any REAL is no longer verbatim OR any edition date is malformed
   python bank_audit.py --lane movies     # one lane
-  python bank_audit.py --sample 5        # first N entries per lane (fast smoke check)
+  python bank_audit.py --sample 5        # first N bank entries per lane (fast smoke check; date-format check is unaffected — it's free)
   python bank_audit.py --verbose         # print every entry's status, not just the flagged ones
 
 Statuses: ok · unsourced (legacy, no source.url) · unreachable (fetch failed — dead/blocked link) ·
@@ -15,11 +22,13 @@ not-verbatim (source no longer contains the quote — INTEGRITY FAILURE) · attr
 speaker's surname isn't near the quote on the page — a weak misattribution signal, worth eyeballing).
 """
 from __future__ import annotations
-import argparse, datetime as dt, json, os, re, sys
+import argparse, datetime as dt, glob, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import generate_day as g  # noqa: E402
+
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def _surname(sp):
@@ -88,6 +97,29 @@ def audit(lanes=None, sample=None, verbose=False):
     return {"generated_at": dt.date.today().isoformat(), "per_lane": per_lane, "flags": flags}
 
 
+def audit_edition_dates(lanes=None):
+    """Phase 4 — scan every published edition on disk (the same files + the same date-fallback logic
+    bank_recency() uses: `ed.get("date") or <filename stem>`) and flag any date that isn't a valid YYYY-MM-DD
+    string. Pure local file reads, no network — always cheap, always worth running."""
+    cats = lanes or list(g.CATEGORIES)
+    bad = []
+    checked = 0
+    for cat in cats:
+        for p in sorted(glob.glob(os.path.join(g.daily_dir(cat), "*.json"))):
+            if os.path.basename(p) == "index.json":
+                continue
+            checked += 1
+            try:
+                ed = json.load(open(p))
+            except Exception:  # noqa: BLE001
+                bad.append({"lane": cat, "file": os.path.relpath(p, g.WEB), "issue": "unparseable JSON"})
+                continue
+            d = ed.get("date") or os.path.basename(p)[:-5]
+            if not DATE_RE.match(str(d)):
+                bad.append({"lane": cat, "file": os.path.relpath(p, g.WEB), "issue": f"malformed date: {d!r}"})
+    return {"checked": checked, "bad": bad}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--lane", action="append", help="limit to lane(s); repeatable")
@@ -95,6 +127,7 @@ def main():
     ap.add_argument("--verbose", action="store_true")
     a = ap.parse_args()
     rep = audit(lanes=a.lane, sample=a.sample, verbose=a.verbose)
+    rep["date_format"] = audit_edition_dates(lanes=a.lane)
     with open(os.path.join(HERE, "bank_audit_report.json"), "w") as f:
         json.dump(rep, f, indent=2, ensure_ascii=False)
 
@@ -108,10 +141,18 @@ def main():
         print("\n  flags:")
         for fl in rep["flags"]:
             print(f"    [{fl['status']:15}] {fl['lane']:8} {fl['speaker'][:22]:22} :: {fl['text'][:40]}")
+
+    df = rep["date_format"]
+    hard += len(df["bad"])
+    print(f"\n=== edition date-format audit (bank-floor recycle relies on ISO date sort) ===")
+    print(f"  checked {df['checked']} published editions, {len(df['bad'])} with a malformed/missing date")
+    for b in df["bad"]:
+        print(f"    [{b['lane']:8}] {b['file']}: {b['issue']}")
+
     if hard:
-        print(f"\n✗ {hard} REAL(s) no longer verify against their source — INTEGRITY FAILURE. Fix or remove them.")
+        print(f"\n✗ {hard} integrity issue(s) (not-verbatim REALs + malformed edition dates). Fix or remove them.")
         return 4
-    print("\n✓ every sourced REAL still verifies against its cited source.")
+    print("\n✓ every sourced REAL still verifies against its cited source, and every edition date is well-formed.")
     return 0
 
 
