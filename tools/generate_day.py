@@ -612,10 +612,16 @@ def reputational_harm(text):
 # surface in general/sports/music/politics/movies (a real "get your ass to Mars" leaked into General). Word-boundary
 # matched so it never trips inside a clean word (class/pass/asset/shell/Michelle/hello/damnation stay clean). A good
 # but profane real is routed to Off the Record instead of shown in a family lane.
+# Short stems that are PREFIXES of real names/words use enumerated forms, not \w*, so we don't drop legitimate
+# reals: crap\w* hit Sen. Crapo / Thomas Crapper; piss\w* hit (Camille) Pissarro; prick\w* hit Prickett; bare
+# `dick` hit Dick Cheney/Clark/Van Dyke/Butkus/Vitale, Philip K. Dick, Moby Dick — so `dick` is dropped and only
+# `dickhead` is kept. \w* is retained only where it can't collide (fuck/shit/bitch/goddamn/asshole/bastard/whore).
 PROFANITY_RE = re.compile(
     r"\b(ass|asses|asshole\w*|asshat|jackass|dumbass|badass|hell|hells|damn|damned|damnit|goddamn\w*|"
-    r"shit\w*|bull\s?shit|bitch\w*|fuck\w*|motherfuck\w*|crap\w*|piss\w*|prick\w*|dick|dickhead|"
-    r"bastard\w*|cock|bollocks|bugger|wank\w*|twat|slut\w*|whore\w*|douche\w*)\b", re.I)
+    r"shit\w*|bull\s?shit|bitch\w*|fuck\w*|motherfuck\w*|crap|craps|crappy|crapped|crapping|"
+    r"piss|pissed|pisses|pissing|pisser|pissy|prick|pricks|dickhead\w*|"
+    r"bastard\w*|cock|bollocks|bugger|wank|wanker|wankers|wanking|wanked|twat|slut|sluts|slutty|"
+    r"whore\w*|douche\w*)\b", re.I)
 
 
 def has_profanity(text):
