@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-01",
+  "edition": 8,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't want anyone to feel ripped off",
+      "speaker": "Lily Allen",
+      "context": "Defending the length of her West End Girl live shows",
+      "real": true,
+      "source": {
+        "title": "Music — Lily Allen defends length of West End Girl shows: ‘I don’t want anyone to feel r",
+        "url": "https://www.theguardian.com/music/2026/jul/01/lily-allen-west-end-girl-live-shows-singer-defends-length-format",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I grew up watching my dad fix car engines on weekends and there was always this moment where something that was completely broken would turn over and just — run. And that's genuinely what it feels like when a track comes together. It's mechanical to me in that way. I don't mean cold, I mean there are actual parts and they either fit or they don't.",
+      "speaker": "Dr. Dre",
+      "context": "Interview with Los Angeles Times journalist Mikael Wood, published July 2015, ahead of the 'Straight Outta Compton' film release",
+      "real": false,
+      "fake_note": "I made this one up — Dre's known for the engineering-brain approach to production and the Compton childhood backdrop makes the car-engine detail feel autobiographically real. The giveaway is the phrase 'I don't mean cold' — a clarification that's slightly too considered for off-the-cuff speech."
+    },
+    {
+      "id": "q3",
+      "text": "When I was producing in the nineties I'd sometimes put a wrong note in deliberately, just buried in there, to see if anyone in the room would flinch. Most of the time nobody said a word. A few people I respected very much said something immediately. That told me a lot.",
+      "speaker": "Nile Rodgers",
+      "context": "Berklee Online Master Series Q&A session, streamed live in November 2018",
+      "real": false,
+      "fake_note": "I made this one up — Nile is known for his exacting musicianship and his tendency to test collaborators, and this anecdote fits his documented personality perfectly. The tell is the slightly too-neat moral at the end — 'that told me a lot' is the kind of conclusion a storyteller plants, not one that emerges naturally."
+    },
+    {
+      "id": "q4",
+      "text": "Sampling is archaeology. You're digging and most of what you find is rubble and then occasionally your brush hits something and you go still. I've definitely stood in a record store in some city I can barely remember and just gone completely still.",
+      "speaker": "RZA",
+      "context": "Red Bull Music Academy lecture, New York, April 2012, transcribed in full on the RBMA website",
+      "real": false,
+      "fake_note": "I made this one up — RZA's crate-digging philosophy and his tendency toward extended metaphor are both well documented, and the archaeology framing echoes his real spoken style. The giveaway is 'some city I can barely remember' — it's a vivid vagueness that's just slightly too cinematic."
+    },
+    {
+      "id": "q5",
+      "text": "People always want to know what the creative process looks like and I'm like — it looks like me eating cereal at two in the morning staring at a wall. That's it. That's the whole thing. And then eventually something happens and you don't even know why.",
+      "speaker": "Billie Eilish",
+      "context": "Apple Music's Zane Lowe interview, February 2022, promoting the album 'Happier Than Ever'",
+      "real": false,
+      "fake_note": "I made this one up — Billie's self-deprecating, mundane-detail style makes this feel totally at home next to her real interviews. The giveaway is that 'you don't even know why' is slightly too tidy a landing for someone who usually trails off into something weirder."
+    },
+    {
+      "id": "q6",
+      "text": "new stuff with lasers that's never been done before",
+      "speaker": "Matt Bellamy",
+      "context": "Muse frontman on plans for their UK and European tour",
+      "real": true,
+      "source": {
+        "title": "Music — Muse Attempting to “Build a Spaceship” for UK and European Tour",
+        "url": "https://consequence.net/2026/06/muse-spaceship-uk-europe-tour/",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}
