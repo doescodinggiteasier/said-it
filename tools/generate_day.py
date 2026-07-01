@@ -476,8 +476,13 @@ def fetch_article_text(url):
 
 # ---------- verification (the integrity gate) ----------
 def _norm(s):
+    # Punctuation-to-space (below) can ITSELF create new multi-space runs (e.g. an HTML citation-marker artifact
+    # like "Lincoln<sup>[1]</sup>." strips to "Lincoln  ." -> "Lincoln   "), so whitespace must be collapsed AFTER
+    # punctuation removal, not before — collapsing first (the old order) left those runs uncollapsed, which made
+    # quote_is_verbatim's `run in nc` substring check silently fail on genuinely-matching quotes whenever the
+    # fetched source had ANY such artifact (a bank_audit false "not-verbatim" that looked like link rot but wasn't).
     s = (s or "").lower().replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
-    return re.sub(r"[^a-z0-9 ]+", " ", re.sub(r"\s+", " ", s)).strip()
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]+", " ", s)).strip()
 
 
 # ---------- near-duplicate detection (Batch 7b: catch paraphrase + length variants exact-match misses) ----------
