@@ -91,7 +91,13 @@ export function rollStreak(opts){
     else {
       var gap = daysBetween(prevReal, today);
       if(gap === 1){ streak += 1; }
-      else if(gap > 1){ if(freezesLeft > 0){ freezesLeft -= 1; streak += 1; frozen = true; } else { streak = 1; } }
+      else if(gap > 1){
+        // Batch 12 P1: a freeze shields exactly ONE missed day — not an arbitrary gap. The missed days lie strictly
+        // between prevReal and today; the streak survives only if there's a freeze for EACH of them (else it resets).
+        var missed = gap - 1;
+        if(freezesLeft >= missed){ freezesLeft -= missed; streak += 1; frozen = true; }
+        else { streak = 1; }
+      }
       // gap <= 0 can't happen: a real calendar day never precedes a prior real day
     }
   }

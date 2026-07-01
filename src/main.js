@@ -415,14 +415,18 @@ function renderHomeStreak(){
   var d7=last7();
   // each cell FILLS proportionally to lanes done that day / lanes available that day (the 6-lane loop's sixths)
   var byDate=countLanesDoneByDate(ST.days, d7.map(function(x){return x.date;}));
+  var frozenDays=ST.frozen_days||{};
   var cells=d7.map(function(x){
-    var cls=x.today?"today":(x.played?"hit":"miss");
-    var lblCls=x.today?"today":(x.played?"hit":"");
     var den=lanesForDay(MANIFEST,x.date).length, doneN=byDate[x.date]||0;
-    var pct=den?Math.min(100,Math.round(doneN/den*100)):(doneN?100:0);
-    return '<div class="d7cell"><div class="d7pill '+cls+'">'+
-      (pct>0?'<div class="d7fill" style="height:'+pct+'%"></div>':'')+
-      (x.played?CHECK_SVG:"")+'</div>'+
+    var played=doneN>0;                                       // edition-date based → matches the streak + ST.days (a stand-in does NOT count here)
+    var frozen=!played && !x.today && !!frozenDays[x.date];   // a missed-but-shielded day → 🛡️, not a contradictory empty gap beside the streak number
+    var pct=den?Math.min(100,Math.round(doneN/den*100)):(played?100:0);
+    // today-played = the SAME played fill as green days + a distinct 'today' ring (was a jarring solid-blue box w/ white check)
+    var pill="d7pill"+(x.today?" today":"")+(played?" hit":(frozen?" frozen":" miss"));
+    var mark=played?CHECK_SVG:(frozen?'<span class="d7shield" aria-hidden="true">🛡️</span>':"");
+    var lblCls=x.today?"today":(played?"hit":(frozen?"frozen":""));
+    return '<div class="d7cell"><div class="'+pill+'">'+
+      (pct>0?'<div class="d7fill" style="height:'+pct+'%"></div>':'')+mark+'</div>'+
       '<span class="d7lbl '+lblCls+'">'+weekdayShort(x.date)+'</span></div>';
   }).join("");
   var sub="";
@@ -956,7 +960,11 @@ function submit(){
     streakBumped=roll.advanced;                            // this play advanced today's streak → animate the bump
     ST.streak=roll.streak; ST.freezes_left=roll.freezesLeft;
     if(roll.advanced){ ST.last_realday=realToday; ST.last_played=realToday; }
-    if(roll.frozen) ST._frozen=true;
+    if(roll.frozen){
+      ST._frozen=true;
+      ST.frozen_days=ST.frozen_days||{};   // Batch 12 P1: remember WHICH days a freeze shielded → the strip marks them 🛡️ (not empty gaps)
+      for(var _gd=addDaysStr(prevReal,1); _gd<realToday; _gd=addDaysStr(_gd,1)){ ST.frozen_days[_gd]=1; }
+    }
     ST.best_streak=Math.max(ST.best_streak||0,ST.streak);
   }
 

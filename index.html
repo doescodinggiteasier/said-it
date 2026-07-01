@@ -320,8 +320,15 @@
   .d7pill.today .d7fill{background:var(--primary)}
   .d7pill svg{position:relative;z-index:1;stroke:#fff}   /* check sits above the fill (white on the mint/primary fill) */
   .d7pill:not(.hit):not(.today) svg{stroke:var(--mint)}  /* a check with no fill (synthetic states) keeps the mint stroke */
+  /* today-PLAYED (Batch 12): fill GREEN like every other played day, marked by a solid 'today' ring — not a jarring solid-blue box */
+  .d7pill.today.hit{border:2px solid var(--primary)}
+  .d7pill.today.hit .d7fill{background:var(--mint)}
+  .d7pill.today.hit svg{stroke:#fff}
+  /* frozen = a missed day a streak-freeze shielded → 🛡️ in a shield-styled cell (reads as protected, not an empty gap) */
+  .d7pill.frozen{border:2px dashed var(--mint);opacity:.92}
+  .d7shield{position:relative;z-index:1;font-size:15px;line-height:1}
   .d7lbl{font-size:11px;font-weight:700;color:var(--ink3)}
-  .d7lbl.hit{color:var(--mint)} .d7lbl.today{color:var(--primary-dark)}   /* AA: small text → the darker accent (clears 4.5:1 in both themes) */
+  .d7lbl.hit{color:var(--mint)} .d7lbl.today{color:var(--primary-dark)} .d7lbl.frozen{color:var(--mint)}   /* AA: small text → the darker accent (clears 4.5:1 in both themes) */
 
   /* TODAY module — the 6-lane daily loop: a row of lane segments + a done/total count */
   .today-card{margin-top:18px;background:var(--card);border-radius:9px;padding:14px 15px;box-shadow:var(--shadow-card)}
