@@ -964,6 +964,11 @@ function submit(){
       ST._frozen=true;
       ST.frozen_days=ST.frozen_days||{};   // Batch 12 P1: remember WHICH days a freeze shielded → the strip marks them 🛡️ (not empty gaps)
       for(var _gd=addDaysStr(prevReal,1); _gd<realToday; _gd=addDaysStr(_gd,1)){ ST.frozen_days[_gd]=1; }
+    } else if(roll.advanced && roll.streak===1 && prevReal){
+      // Batch 12 fix (adversarial review): the streak just BROKE and reset to 1 (a gap the freezes couldn't cover).
+      // Any 🛡️ days remembered from the prior, now-dead streak are stale — leaving them would paint a protected,
+      // continued-looking run on the strip right beside "1 day streak". Drop them so the strip agrees with the number.
+      ST.frozen_days={};
     }
     ST.best_streak=Math.max(ST.best_streak||0,ST.streak);
   }
