@@ -2,3 +2,8 @@ tools/__pycache__/
 *.pyc
 __pycache__/
 .DS_Store
+# generated ops reports (rebuilt each run; not source)
+tools/bank_health.json
+tools/difficulty_report.json
+tools/completions.json
+tools/bank_audit_report.json

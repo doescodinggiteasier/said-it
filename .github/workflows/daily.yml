@@ -77,3 +77,23 @@ jobs:
         # Runs AFTER the commit so successful lanes still ship. Exits non-zero (red ✗ + a clear message in the log)
         # if ANY enabled lane has no edition for today, so a silent stall can never go unnoticed again.
         run: python tools/generate_day.py --verify
+
+      - name: Bank-health early-warning — catch lane starvation BEFORE it goes dark
+        # Proactive counterpart to the reactive skip-alert above. Non-blocking: prints the per-lane fresh-reals
+        # gauge and annotates any lane running low on publishable distinct-speaker reals, so a bank gets seeded
+        # BEFORE it exhausts and fail-safes (as movies did). Never fails the run — it's an early warning.
+        if: always()
+        run: |
+          python tools/bank_health.py || true
+          python - <<'PY'
+          import json
+          try:
+              lanes = json.load(open("tools/bank_health.json"))["lanes"]
+          except Exception:
+              lanes = []
+          for l in lanes:
+              if l["verdict"] == "STARVED":
+                  print(f"::error::bank '{l['lane']}' is STARVED — only {l['fresh_speakers']} fresh distinct-speaker reals left; it will fail-safe on a thin-feed day. Seed it.")
+              elif l["verdict"] == "LOW":
+                  print(f"::warning::bank '{l['lane']}' is LOW — {l['fresh_speakers']} fresh distinct-speaker reals left; seed it soon.")
+          PY
