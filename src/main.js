@@ -941,18 +941,26 @@ function submit(){
     return;
   }
 
-  // equity: STREAK tracks consecutive real CALENDAR days you showed up (any edition counts),
-  // so replaying old editions can never corrupt or inflate it. Rating/accuracy count for any set.
-  var fw=rollFreezeWeek(ST.freeze_week, realToday); if(fw){ ST.freeze_week=fw.freeze_week; ST.freezes_left=fw.freezes_left; }
-  var prevReal=ST.last_realday||ST.last_played||null;   // migrate the legacy field
-  var roll=rollStreak({prevReal:prevReal, today:realToday, streak:ST.streak, freezesLeft:ST.freezes_left});
-  var streakBumped=roll.advanced;                       // this play advanced today's streak → animate the bump
-  ST.streak=roll.streak; ST.freezes_left=roll.freezesLeft;
-  if(roll.advanced){ ST.last_realday=realToday; ST.last_played=realToday; }
-  if(roll.frozen) ST._frozen=true;
-  ST.best_streak=Math.max(ST.best_streak||0,ST.streak);
+  // equity: STREAK counts consecutive real CALENDAR days you played TODAY'S edition. Only a genuine "today"
+  // edition (date===realToday) advances it — NOT a stand-in (today's set isn't published yet, so fetchDay served
+  // the latest as a fill-in) and NOT a deliberately-replayed past edition. Every other today-surface (the ST.days
+  // key, the home strip, lane-done, the reveal hub) keys off the EDITION's own date; the streak used to key off
+  // realToday, so during a generation outage it climbed while the day-boxes stayed empty ("8-day streak, empty
+  // boxes"). Gating it here makes all five agree — a missed day is instead protected by the freeze. (Batch 12 P0)
+  var countsToday = (date===realToday);
+  var streakBumped=false;
+  if(countsToday){
+    var fw=rollFreezeWeek(ST.freeze_week, realToday); if(fw){ ST.freeze_week=fw.freeze_week; ST.freezes_left=fw.freezes_left; }
+    var prevReal=ST.last_realday||ST.last_played||null;   // migrate the legacy field
+    var roll=rollStreak({prevReal:prevReal, today:realToday, streak:ST.streak, freezesLeft:ST.freezes_left});
+    streakBumped=roll.advanced;                            // this play advanced today's streak → animate the bump
+    ST.streak=roll.streak; ST.freezes_left=roll.freezesLeft;
+    if(roll.advanced){ ST.last_realday=realToday; ST.last_played=realToday; }
+    if(roll.frozen) ST._frozen=true;
+    ST.best_streak=Math.max(ST.best_streak||0,ST.streak);
+  }
 
-  // rating: transparent — ±score around the 3/6 baseline, the lock swings double.
+  // rating/accuracy count for ANY set (playing improves your stats regardless of which edition it was).
   ST.rating = Math.max(100, Math.round(ST.rating + ratingDelta(correct, lockCorrect)));
   ST.judged += n; ST.correct += correct;
   if(LOCK){ST.locks+=1; if(lockCorrect)ST.locks_correct+=1;}
@@ -962,7 +970,7 @@ function submit(){
     streak:ST.streak, rating:ST.rating, frozen:!!ST._frozen};
   ST.days[dayKey(lane,date)]={done:true,result:result};
   delete ST._frozen;
-  var swept=checkCleanSweep(date, realToday);   // last lane of today done → award the clean-sweep freeze (once/day)
+  var swept=countsToday && checkCleanSweep(date, realToday);   // last lane of today done → award the clean-sweep freeze (once/day)
   save(ST);
   logEvent("complete",{score:correct,n:n,streak:ST.streak,rating:ST.rating,lock:lockCorrect,gotme:gotme,
     archive:(date!==realToday),returning:(ST.judged>n),crew:((curCrew()||{}).code||""),
