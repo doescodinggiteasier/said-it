@@ -56,12 +56,17 @@ def health(today=None):
     today = today or dt.date.today()
     manifest = _manifest()
     all_used = g.load_all_used()   # cross-lane union — the membership test a real must pass to be publishable
+    dup_idx = g.build_dup_index(all_used)   # SAME near-dup index assemble() uses — a raw exact-set check would
+                                             # disagree with real generation whenever a bank text's normalized form
+                                             # doesn't byte-match an old ledger entry (harmless spacing differences,
+                                             # rewordings) even though assemble()'s is_dup() would still catch it.
     rows = []
     for cat in g.CATEGORIES:
         is_general = (cat == "general")
         bank = [] if is_general else g.load_raw_evergreen(cat)
-        # FRESH = bank reals never published in any lane; distinct speakers among them is the true headroom.
-        fresh = [e for e in bank if g._norm(e.get("text", "")) not in all_used]
+        # FRESH = bank reals never published in any lane (by the SAME near-dup test assemble() uses); distinct
+        # speakers among them is the true headroom.
+        fresh = [e for e in bank if not g.is_dup(e.get("text", ""), dup_idx)]
         fresh_speakers = sorted({(e.get("speaker") or "").strip() for e in fresh if (e.get("speaker") or "").strip()})
         days = _lane_days(manifest, cat)
         last = days[-1] if days else None

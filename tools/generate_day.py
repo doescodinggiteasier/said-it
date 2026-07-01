@@ -1128,11 +1128,20 @@ def bank_recency(cat):
 def assemble(date, reals_fresh, fakes, evergreen, dup_idx, cat="general", recent=None, recency=None):
     recent = recent or set()                               # speakers used in recent days → bias AGAINST (variety)
     n_real = random.choice([2, 3, 3])                      # vary the ratio so it isn't always 3:3
-    reals, seen_spk = [], set()
-    def take(q):                                           # add only if this speaker isn't already in the edition
+    reals, seen_spk, seen_texts = [], set(), set()
+    def take(q):                                           # add only if this speaker AND this text aren't already in the edition
         s = _spk(q)
         if not s or s in seen_spk: return False
-        seen_spk.add(s); reals.append(q); return True
+        # BUGFIX: a speaker-name spelling variant (_spk collapses to first+last token, so "Jeff Goldblum" ->
+        # "jeff goldblum" but a single-token "Goldblum" -> "goldblum" — a DIFFERENT key for the same person)
+        # let the identical quote text publish twice in one edition under two different speaker strings, since
+        # seen_spk alone never caught it. Track normalized text too — the belt-and-suspenders distinct-speaker
+        # check below can't catch this either, since it's a text collision, not a speaker-key collision.
+        nt = _norm(q.get("text", ""))
+        if nt and nt in seen_texts: return False
+        seen_spk.add(s)
+        if nt: seen_texts.add(nt)
+        reals.append(q); return True
     for r in sorted(reals_fresh, key=lambda x: _spk(x) in recent):   # fresh feed reals, fresh-name first
         if len(reals) >= n_real: break
         take(r)
@@ -1171,7 +1180,11 @@ def assemble(date, reals_fresh, fakes, evergreen, dup_idx, cat="general", recent
         if len(chosen_fakes) >= n_fake: break
         s = _spk(f)
         if not s or s in seen_spk: continue
-        seen_spk.add(s); chosen_fakes.append(f)
+        nt = _norm(f.get("text", ""))                      # same text-collision guard as take() above
+        if nt and nt in seen_texts: continue
+        seen_spk.add(s)
+        if nt: seen_texts.add(nt)
+        chosen_fakes.append(f)
     quotes = reals + chosen_fakes
     # fail-safe: a real 6-quote set with all-distinct speakers and ≥2 real / ≥2 fake (else publish nothing)
     if len(quotes) < 6 or sum(1 for q in quotes if q["real"]) < 2 or sum(1 for q in quotes if not q["real"]) < 2:
@@ -1273,9 +1286,19 @@ def check_not_stale(cat, date):
     branch = branch.strip()
     if rc != 0 or not branch or branch == "HEAD":
         return                                           # detached HEAD / unknown — can't safely compare
+    rc, remotes = _git(["remote"])
+    has_origin = rc == 0 and "origin" in remotes.split()
     rc, _ = _git(["fetch", "origin", branch, "--quiet"])
     if rc != 0:
-        print(f"  (origin-freshness check skipped for {cat}/{date}: git fetch failed — offline or no remote)")
+        if has_origin:
+            # origin IS configured but fetching THIS branch failed (renamed/deleted branch, auth, network blip) —
+            # distinct from plain offline/no-remote dev: the race-guard just went silently inert, worth flagging
+            # loudly rather than indistinguishably from ordinary offline use.
+            print(f"::warning::origin-freshness check could not verify {cat}/{date} — 'origin' is configured but "
+                  f"fetching branch '{branch}' failed (renamed/deleted branch? network blip?). The bot/manual push "
+                  f"race-guard is inert for this run — proceeding without it.")
+        else:
+            print(f"  (origin-freshness check skipped for {cat}/{date}: no 'origin' remote — offline dev)")
         return
     rc_head, head_blob = _git(["show", f"HEAD:{rel}"])
     rc_origin, origin_blob = _git(["show", f"origin/{branch}:{rel}"])

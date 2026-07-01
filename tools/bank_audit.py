@@ -18,13 +18,20 @@ recently shown) real. This is a mechanical/ops integrity failure, not a factual 
   python bank_audit.py --verbose         # print every entry's status, not just the flagged ones
 
 Statuses: ok · unsourced (legacy, no source.url) · unreachable (fetch failed — dead/blocked link) ·
-not-verbatim (source no longer contains the quote — INTEGRITY FAILURE) · attribution-far (person-lane: the
-speaker's surname isn't near the quote on the page — a weak misattribution signal, worth eyeballing) ·
-exempt (an entry marked `verified_legacy: true` — an explicit, reviewed, documented decision that this quote is
-genuinely real and well-attested but can't be mechanically verified, e.g. every live source censors the exact
-profanity, or the quote is too short for quote_is_verbatim's minimum-length floor. NEVER a silent pass: the
-underlying check still RUNS and its result is recorded in `detail` for future review, but an exempt entry never
-counts toward the hard-fail exit code — that's the whole point of the field being explicit and reviewable).
+not-verbatim (source no longer contains the quote — INTEGRITY FAILURE) · misattribution (person-lane: the
+speaker's surname is entirely ABSENT from the source page — a much stronger signal than attribution-far, since
+the quote may genuinely belong to someone else) · attribution-far (person-lane: the speaker's surname IS on the
+page but isn't near the quote — a weaker signal, worth eyeballing, not a hard failure) · exempt (an entry marked
+`verified_legacy: true` — an explicit, reviewed, documented decision that this quote is genuinely real and
+well-attested but can't be mechanically verified, e.g. every live source censors the exact profanity, or the
+quote is too short for quote_is_verbatim's minimum-length floor. NEVER a silent pass: the underlying check still
+RUNS and its result is recorded in `detail` for future review, but an exempt entry never counts toward the
+hard-fail exit code — that's the whole point of the field being explicit and reviewable).
+
+`verified_legacy` can ONLY exempt `not-verbatim` — never `misattribution`. A sourcing/censorship problem ("the
+quote is real but every outlet censors the profanity") is a fundamentally different, lower-stakes kind of failure
+than a misattribution problem ("this may not even be the right person") — the latter is never something a
+documented exemption should be able to paper over, however well-intentioned the reason given.
 """
 from __future__ import annotations
 import argparse, datetime as dt, glob, json, os, re, sys
@@ -69,7 +76,7 @@ def audit(lanes=None, sample=None, verbose=False):
             bank = bank[:sample]
         is_person = g.CATEGORIES.get(cat, {}).get("kind") != "movie"
         counts = {"total": len(bank), "ok": 0, "unsourced": 0, "unreachable": 0, "not-verbatim": 0,
-                  "attribution-far": 0, "exempt": 0}
+                  "misattribution": 0, "attribution-far": 0, "exempt": 0}
         for e in bank:
             text = e.get("text", "")
             sp = e.get("speaker", "")
@@ -89,10 +96,12 @@ def audit(lanes=None, sample=None, verbose=False):
                 elif is_person:
                     near, anywhere = _proximity_ok(text, sp, corpus)
                     if not anywhere:
-                        status = "not-verbatim"; detail = "speaker surname absent from source (likely misattribution)"
+                        # a STRONGER signal than attribution-far — the speaker's name isn't on the page at all,
+                        # so this may not even be the right person. Deliberately NOT exemptible (see module docstring).
+                        status = "misattribution"; detail = "speaker surname absent from source (likely misattribution)"
                     elif not near:
                         status = "attribution-far"; detail = "speaker surname present but not near the quote (eyeball)"
-            if status in ("not-verbatim",) and e.get("verified_legacy"):
+            if status == "not-verbatim" and e.get("verified_legacy"):
                 # explicit, documented, per-entry exception (never a silent pass — the underlying failure is
                 # recorded in `detail` for review) — a human judged this quote genuinely real and well-attested
                 # despite being mechanically unverifiable (e.g. every live source censors the exact profanity).
@@ -146,9 +155,10 @@ def main():
     hard = 0
     print("\n=== bank audit ===")
     for cat, c in rep["per_lane"].items():
-        bad = c["not-verbatim"]; hard += bad
+        bad = c["not-verbatim"] + c.get("misattribution", 0); hard += bad
         print(f"  {cat:8} total={c['total']:>3} ok={c['ok']:>3} unsourced={c['unsourced']:>2} "
-              f"unreachable={c['unreachable']:>2} not-verbatim={bad:>2} attribution-far={c['attribution-far']:>2} "
+              f"unreachable={c['unreachable']:>2} not-verbatim={c['not-verbatim']:>2} "
+              f"misattribution={c.get('misattribution', 0):>2} attribution-far={c['attribution-far']:>2} "
               f"exempt={c.get('exempt', 0):>2}")
     if rep["flags"]:
         print("\n  flags:")
@@ -166,7 +176,7 @@ def main():
 
     exempt_total = sum(c.get("exempt", 0) for c in rep["per_lane"].values())
     if hard:
-        print(f"\n✗ {hard} integrity issue(s) (not-verbatim REALs + malformed edition dates). Fix or remove them.")
+        print(f"\n✗ {hard} integrity issue(s) (not-verbatim/misattributed REALs + malformed edition dates). Fix or remove them.")
         return 4
     tail = f" ({exempt_total} legacy-exempt entry/entries — see flags above)" if exempt_total else ""
     print(f"\n✓ every sourced REAL still verifies against its cited source, and every edition date is well-formed.{tail}")
