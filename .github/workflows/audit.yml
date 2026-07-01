@@ -1,0 +1,26 @@
+name: Bank integrity audit
+
+# Weekly re-verification that every REAL in the evergreen banks is STILL provably on its cited source.
+# Integrity decays silently — sources 404, articles get rewritten, links rot — so this re-runs the live
+# verbatim check across the whole bank. Fails RED (exit 4) only when a real no longer verifies (a genuine
+# integrity failure); unreachable/legacy-unsourced entries are reported but do not fail the run.
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"        # Mondays 08:00 UTC — weekly
+  workflow_dispatch:            # runnable by hand from the Actions tab
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # No pip install: bank_audit.py uses only stdlib (urllib) and imports generate_day, whose LLM SDKs are lazy.
+      - name: Audit the evergreen banks against their cited sources
+        run: python tools/bank_audit.py
