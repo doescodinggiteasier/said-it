@@ -1,0 +1,65 @@
+{
+  "date": "2026-07-02",
+  "edition": 15,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You'd be surprised how fast a man changes his story when the room gets cold enough.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes, narrating or speaking drily to a client",
+      "real": false,
+      "fake_note": "I made this one up — it nails the world-weary noir cynicism of Gittes and sounds exactly like his brand of wisecrack. The giveaway is it leans slightly too aphoristic; Polanski's script keeps Jake's wit more reactive and specific."
+    },
+    {
+      "id": "q2",
+      "text": "I've never once asked you to be something you're not, and I think that deserves at least a little consideration.",
+      "speaker": "Kramer vs. Kramer (1979)",
+      "context": "Ted Kramer, during a heated exchange with Joanna",
+      "real": false,
+      "fake_note": "I made this one up — the measured, slightly wounded tone matches Dustin Hoffman's performance style in this film, and the domestic-legal drama context makes it feel right. The giveaway is that the dialogue in this film is usually more fragmented and emotionally raw, less composed."
+    },
+    {
+      "id": "q3",
+      "text": "You think I don't know what goes on in this neighborhood? I built this neighborhood.",
+      "speaker": "The Godfather (1972)",
+      "context": "Vito Corleone, warning a rival during a tense meeting",
+      "real": false,
+      "fake_note": "I made this one up — it fits Brando's quiet-authority cadence perfectly, and 'built this neighborhood' echoes the Corleone origin mythology. The subtle giveaway is that Vito tends to speak in requests and favors, not boasts this direct."
+    },
+    {
+      "id": "q4",
+      "text": "Here's looking at you, kid.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick Blaine (Humphrey Bogart) says this to Ilsa (Ingrid Bergman) as a recurring toast, most memorably at the airport farewell.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Loneliness has followed me my whole life. Everywhere.",
+      "speaker": "Taxi Driver (1976)",
+      "context": "Travis Bickle (Robert De Niro) in voice-over narration from his diary.",
+      "real": true,
+      "source": {
+        "title": "Taxi Driver - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Taxi_Driver",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Never knew a prospector yet that died rich.",
+      "speaker": "The Treasure of the Sierra Madre (1948)",
+      "context": "Grizzled old prospector Howard (Walter Huston) offering hard-won wisdom about the gold-hunting life.",
+      "real": true,
+      "source": {
+        "title": "The Treasure of the Sierra Madre - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Treasure_of_the_Sierra_Madre",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

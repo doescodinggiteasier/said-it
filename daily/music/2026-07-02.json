@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-02",
+  "edition": 10,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask why I still tour and I genuinely don't have a clean answer. Some of it's the obvious stuff. But some of it is that I still get nervous before I walk out, and I've decided that's the part I don't ever want to fix.",
+      "speaker": "Bruce Springsteen",
+      "context": "The New Yorker Radio Hour, extended interview with David Remnick, aired October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Bruce has talked openly about stage fright and what live performance means to him throughout his career. The tell is that it's slightly too composed; real Bruce in conversation tends to loop back and contradict himself a bit more before landing."
+    },
+    {
+      "id": "q2",
+      "text": "The guitar was made by God",
+      "speaker": "Father Dionysios Tabakis",
+      "context": "Greek priest and doom metal musician, interviewed in his flat in Nafplio, Greece",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Techno in a monastery – are you ready?’ The Greek priest whose doom metal album",
+        "url": "https://www.theguardian.com/music/2026/jul/02/father-tabakis-greek-priest-doom-paradise-metal",
+        "date": "2026-07-02"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I don't think I've ever written a song in the morning in my life. I've tried. It's not happening. Something about mornings feels like a negotiation I'm not ready to have.",
+      "speaker": "Lana Del Rey",
+      "context": "Interview Magazine, cover story by Alex Needham, published in the Spring 2023 issue",
+      "real": false,
+      "fake_note": "I made this one up — Lana rarely discusses process in practical terms, so when she does it tends to be a little oblique and wry, which I leaned into. The giveaway is 'a negotiation I'm not ready to have' — it's the exact kind of line she might actually say, but it's a hair too epigrammatic for pure candid speech."
+    },
+    {
+      "id": "q4",
+      "text": "You know what's wild is that I can't listen to that record anymore. Not because I don't like it — I think it holds up fine — but because when I put it on I don't hear the music, I just hear every room I was in while we were making it. The couch. The takeout containers. All of it.",
+      "speaker": "Frank Ocean",
+      "context": "i-D Magazine, rare print interview conducted during a pop-up event at Blonded Radio's physical installation in Los Angeles, 2023",
+      "real": false,
+      "fake_note": "I made this one up — Frank has talked about the intensely personal and spatial memories attached to Blonde's creation, and this kind of sensory-memory observation is very consistent with his public voice. The giveaway is it's a degree too communicative and complete for Frank, who in real interviews tends to leave more unsaid."
+    },
+    {
+      "id": "q5",
+      "text": "I used to get so annoyed when journalists would call something we did 'experimental.' Like, no — we just hadn't figured out the right way to do it yet. Experimental implies you planned the confusion, and we absolutely did not.",
+      "speaker": "Thom Yorke",
+      "context": "The Guardian, long-read profile by Alexis Petridis, published alongside the WALL OF EYES announcement, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Thom has a well-documented prickliness about how Radiohead's process gets described by critics, and the distinction he draws here is exactly the kind of pedantic-but-genuine correction he'd make. The tell is that it's slightly too witty and resolved; he usually trails off or qualifies more."
+    },
+    {
+      "id": "q6",
+      "text": "'Bull riding and boobies' — that is potentially the greatest lyric in any song ever.",
+      "speaker": "Harry Styles",
+      "context": "In his 2019 Rolling Stone cover interview, riffing on a line from Lil Nas X's 'Old Town Road.'",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — The Eternal Sunshine of Harry Styles",
+        "url": "https://www.rollingstone.com/music/music-features/harry-styles-cover-interview-album-871568/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

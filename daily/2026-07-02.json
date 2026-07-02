@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-02",
+  "edition": 18,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The disappointment of manhood succeeds to the delusion of youth: let us hope that the heritage of old age is not despair.",
+      "speaker": "Benjamin Disraeli",
+      "context": "The British Prime Minister and novelist, in a candidly reflective aside on the disappointments of the ages of life (from his fiction, Book VIII, Chapter 4).",
+      "real": true,
+      "source": {
+        "title": "Benjamin Disraeli - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Worst damnfool mistake I ever made was letting myself be elected Vice President of the United States. Should have stuck with my old chores as Speaker of the House. I gave up the second most important job in the Government for one that didn't amount to a hill of beans. I spent eight long years as Mr. Roosevelt's spare tire.",
+      "speaker": "John Nance Garner",
+      "context": "FDR's first vice president (\"Cactus Jack\"), ruefully mocking his own decision to take the job and his powerlessness in it, after leaving office.",
+      "real": true,
+      "source": {
+        "title": "John Nance Garner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Nance_Garner",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Fermentation is basically controlled rot, and once you make peace with that, a whole world opens up. My grandmother would have called it spoiled. I call it a two-year project.",
+      "speaker": "René Redzepi",
+      "context": "MAD Food Symposium, Copenhagen, keynote session, August 2018",
+      "real": false,
+      "fake_note": "I made this one up — Redzepi speaks constantly about fermentation (it's a cornerstone of Noma's philosophy), and the MAD Symposium is his own platform, so this context is highly plausible. The tell: he almost always roots these explanations in specific ingredients or scientific process; the grandmother reference gives it a sentimental softness that's slightly more Jamie Oliver than Redzepi."
+    },
+    {
+      "id": "q4",
+      "text": "I did the genome sequencing on myself partly out of curiosity and partly because I'd run out of excuses not to. It confirmed I am, in fact, mostly Scandinavian, which explains nothing about my personality and everything about my reaction to cold weather.",
+      "speaker": "Bill Bryson",
+      "context": "Edinburgh International Book Festival, main auditorium, August 2019",
+      "real": false,
+      "fake_note": "I made this one up — Bryson has written extensively about genetics and human biology in The Body and speaks regularly at literary festivals with exactly this dry, self-deprecating conversational style. The tell for sharp players: Bryson is American-born and has publicly played on his outsider status in Britain, so pivoting to a Scandinavian ancestry gag is plausible but slightly misses his usual anglophile self-deprecation beat."
+    },
+    {
+      "id": "q5",
+      "text": "My kids have no idea what I do for a living, not really. My daughter told her class I was a basketball coach. I didn't correct her. Felt like the most accurate thing anyone's said about me in years.",
+      "speaker": "LeBron James",
+      "context": "Uninterrupted Road Trippin' podcast with Caris LeVert and Iman Shumpert, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — LeBron frequently references his children and has a well-documented self-deprecating streak beneath the confidence, especially in long-form podcast settings. The giveaway for sharp players: his kids are quite public and would almost certainly know what he does, making the premise charming but slightly off."
+    },
+    {
+      "id": "q6",
+      "text": "I remember the first time I cooked for a Michelin inspector — well, I didn't know it at the time, which was probably the only reason the food was any good. The moment you start performing, it's over.",
+      "speaker": "Gordon Ramsay",
+      "context": "Interview with Jay Rayner for The Guardian's Weekend Magazine, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Ramsay genuinely talks about the psychology of pressure in the kitchen and has discussed Michelin stars obsessively throughout his career, so this lands right in his wheelhouse. The subtle giveaway is that final sentence: it's a shade too clean and aphoristic for his usual blunter, more expletive-seasoned delivery."
+    }
+  ]
+}

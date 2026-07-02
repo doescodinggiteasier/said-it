@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-02",
+  "edition": 12,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Alcohol was my poison. I drank Seagrams VO, a Canadian rye, with Coca-Cola. And beer. For me, beer was like air. I'd have a six-pack before noon.",
+      "speaker": "Alice Cooper",
+      "context": "Shock-rock legend Alice Cooper describing his heavy daily drinking before he got sober, in a Louder/Classic Rock feature on going cold turkey.",
+      "real": true,
+      "source": {
+        "title": "How Alice Cooper went cold turkey and made his most personal album (Louder)",
+        "url": "https://www.loudersound.com/features/how-alice-cooper-went-cold-turkey-and-made-his-most-personal-album",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People keep asking me how I stay so sharp at my age. I'll tell you — I avoid jogging, I avoid salad, and I avoid anyone who uses the word 'journey' to describe losing fifteen pounds. Other than that, I'm basically a goddamn physician.",
+      "speaker": "George Carlin",
+      "context": "Backstage Q&A session at the Beacon Theatre, New York, recorded for a DVD bonus feature, September 2007",
+      "real": false,
+      "fake_note": "I made this one up — Carlin absolutely railed against wellness culture and self-help language, so the targets are pitch-perfect. The giveaway is the punchline is slightly too tidy for his late-career style, which got rawer and less structured than this."
+    },
+    {
+      "id": "q3",
+      "text": "Somebody told me the green room had a fruit platter and I nearly quit the tour on the spot. I don't travel three hundred miles on a bus that smells like a men's locker room to eat a goddamn cantaloupe wedge. Find me a burger or find me a different rider negotiator.",
+      "speaker": "John Belushi",
+      "context": "Captured in an audio recording during the Animal House press junket in Los Angeles, July 1978, later quoted in a Rolling Stone retrospective",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's legendary rider demands and contempt for anything health-adjacent are extremely well documented, so this lands in character. The giveaway is 'rider negotiator' — slightly too precise a term for how he'd actually have phrased it mid-rant."
+    },
+    {
+      "id": "q4",
+      "text": "I used to do drugs. I still do, but I used to, too.",
+      "speaker": "Mitch Hedberg",
+      "context": "One of late absurdist comedian Mitch Hedberg's most iconic one-liners, a paradoxical drug-use confession from his album 'Strategic Grill Locations' (1999). Hedberg's easygoing stoner persona and drug jokes were central to his act.",
+      "real": true,
+      "source": {
+        "title": "Mitch Hedberg — Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Mitch_Hedberg",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People think acting is about crying on cue and finding your motivation. Mostly it's about not laughing when someone has spinach in their teeth during a dramatic scene and knowing which craft services table has the decent whiskey.",
+      "speaker": "Peter O'Toole",
+      "context": "After-dinner remarks at the BAFTA Fellowship dinner, London, recorded and partially transcribed in The Guardian, February 2003",
+      "real": false,
+      "fake_note": "I made this one up — O'Toole's caustic, self-deprecating wit about the film industry is legendary, and his relationship with whiskey was famously part of his public persona. The giveaway is it's slightly too polished and two-part structured — his ad-libs were usually more rambling and digressive."
+    },
+    {
+      "id": "q6",
+      "text": "Health nuts are going to feel stupid someday, lying in hospitals dying of nothing.",
+      "speaker": "Redd Foxx",
+      "context": "A signature dark one-liner from the pioneering, famously raunchy stand-up comedian (star of 'Sanford and Son'), mocking clean-living health fanatics. Foxx's party-hard, cigarette-and-booze persona was legendary.",
+      "real": true,
+      "source": {
+        "title": "Quote Details: Redd Foxx (The Quotations Page)",
+        "url": "https://www.quotationspage.com/quote/699.html",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}
