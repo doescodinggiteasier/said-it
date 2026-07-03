@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-03",
+  "edition": 11,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You're about to play 'Shakedown Street,' and you just did a heroic dose of mushrooms. How do you even perform?",
+      "speaker": "Susan Tedeschi",
+      "context": "Recalling touring with Bob Weir and the Other Ones in 2002",
+      "real": true,
+      "source": {
+        "title": "Music — Susan Tedeschi Says Bob Weir Loved to Offer Her Mushrooms",
+        "url": "https://www.rollingstone.com/music/music-features/susan-tedeschi-bob-weir-mushrooms-tour-1235586087/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "We are part of each other, you know. When one person is hurt, it hurts me, too. When I see their condition, I know what they feel, and I feel it. And it hurts.",
+      "speaker": "B.B. King",
+      "context": "Explaining why the blues transcends stereotypes and speaks to shared human suffering, in collected words of wisdom published by Guitar Player.",
+      "real": true,
+      "source": {
+        "title": "Guitar Player — Some Collected Words of Wisdom From B.B. King Himself",
+        "url": "https://www.guitarplayer.com/players/bb-king-quotes",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've probably rewritten the bridge on 'Gold Digger' in my head about a hundred times since it came out. Not because I think it's wrong — just because that's what I do at three in the morning when I can't sleep. It's a sickness, honestly.",
+      "speaker": "Kanye West",
+      "context": "Zane Lowe interview on Beats 1, Apple Music, October 2015",
+      "real": false,
+      "fake_note": "I made this one up — Ye obsessing over his own catalog at odd hours is completely on-brand, and the self-deprecating 'it's a sickness' mirrors his real conversational tics. The subtle giveaway is he'd almost certainly pivot to claiming the original was actually perfect."
+    },
+    {
+      "id": "q4",
+      "text": "My mother used to say that if you can make a chord on a ukulele you can make one on anything. She was wrong about a lot of things but she wasn't wrong about that.",
+      "speaker": "Paul McCartney",
+      "context": "Rolling Stone 50th Anniversary oral history feature, November 2017",
+      "real": false,
+      "fake_note": "I made this one up — Paul frequently credits family and early instruments in exactly this wry, warm register, and the ukulele detail fits his very real and well-documented love of the instrument. The tell is the slightly too-neat structure of the 'wrong about a lot of things' pivot."
+    },
+    {
+      "id": "q5",
+      "text": "Rick Rubin walked into the studio, sat on the couch, listened to the whole thing with his eyes closed, and when it was done he said, 'What if there was just less of it?' That was his note. That was the whole note. And he was right, which is the annoying part.",
+      "speaker": "Johnny Cash",
+      "context": "Interview with Bill Flanagan for MTV, published in accompanying American IV promotional materials, 2002",
+      "real": false,
+      "fake_note": "I made this one up — Cash's documented working relationship with Rubin is famous, and Cash was on record admiring Rubin's minimalism even when it frustrated him. The 'annoying part' kicker sounds like Cash's gruff, self-aware humor. The tell is the anecdote is slightly too perfectly shaped for real off-the-cuff recall."
+    },
+    {
+      "id": "q6",
+      "text": "Stevie Wonder and Prince played all the instruments on their albums, but in recording studios. I did it all in a back room at home – and then it won two Grammys",
+      "speaker": "Jacob Collier",
+      "context": "Reflecting on making his debut album In My Room",
+      "real": true,
+      "source": {
+        "title": "Music — Quincy Jones emailed saying, ‘Hey man, I need to have a word’: how Jacob Collier",
+        "url": "https://www.theguardian.com/culture/2026/jun/29/how-jacob-collier-made-in-my-room-quincy-jones",
+        "date": "2026-07-03"
+      }
+    }
+  ]
+}

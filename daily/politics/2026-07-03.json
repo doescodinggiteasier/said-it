@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-03",
+  "edition": 7,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Freedom is the right to be wrong, not the right to do wrong.",
+      "speaker": "John Diefenbaker",
+      "context": "The Canadian Prime Minister, in a candid, aphoristic reflection on liberty (11 March 1958).",
+      "real": true,
+      "source": {
+        "title": "John Diefenbaker - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Diefenbaker",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My first week in Sacramento I asked where the good coffee was and three people handed me competing spreadsheets. I thought, okay, I understand California now.",
+      "speaker": "Gavin Newsom",
+      "context": "Moderated conversation at the Milken Institute Global Conference, Beverly Hills, May 2019",
+      "real": false,
+      "fake_note": "I made this one up — Newsom often uses quick, self-aware vignettes to signal that he gets California's particular culture, and the spreadsheet detail is very him. The tell is the specificity of 'three people'; a real throwaway line like this would more likely be 'everyone immediately.'"
+    },
+    {
+      "id": "q3",
+      "text": "I could know about it. I didn't. There's nothing illegal. There's nothing wrong with it I could know.",
+      "speaker": "Donald Trump",
+      "context": "Trump in a CNBC interview denying wrongdoing over massive crypto profits",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump says 'nothing illegal' about massive crypto profits",
+        "url": "https://thehill.com/homenews/administration/5952294-trump-crypto-profits/",
+        "date": "2026-07-03"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I have been to Iowa in February more times than I'd like to count, and every single time I tell myself I'm prepared for it, and every single time Iowa proves me wrong.",
+      "speaker": "Chris Christie",
+      "context": "Remarks at the Politics and Eggs breakfast, New Hampshire Institute of Politics, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Christie built a whole persona around blunt, self-aware complaining, and Iowa weather is a genuine perennial grievance for presidential hopefuls, so this fits snugly. The giveaway is the venue; Christie telling this story in New Hampshire rather than Iowa is the kind of specific I planted."
+    },
+    {
+      "id": "q5",
+      "text": "I will say, nobody warned me that about forty percent of this job is just standing in rooms waiting for other people to finish talking. I could've used that information before I ran.",
+      "speaker": "Pete Buttigieg",
+      "context": "Appearing on WTF with Marc Maron, recorded November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Pete frequently riffs on the unglamorous logistics of public service in exactly this dry, self-aware register, so it lands perfectly. The subtle giveaway is 'forty percent,' a weirdly precise fraction that real off-the-cuff Pete would leave vaguer."
+    },
+    {
+      "id": "q6",
+      "text": "I once spent a flight to Brussels reading the entire consolidated text of a trade framework and then landed and was told the framework had been superseded. That's diplomacy.",
+      "speaker": "Condoleezza Rice",
+      "context": "Panel discussion at the Aspen Security Forum, July 2018",
+      "real": false,
+      "fake_note": "I made this one up — Condi regularly speaks with wry, professorial precision about the futility of bureaucratic preparation, which makes this feel completely authentic. The tell is the destination; 'Brussels' is almost too perfect a symbol of trade bureaucracy, just a touch on-the-nose."
+    }
+  ]
+}

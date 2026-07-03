@@ -1,0 +1,65 @@
+{
+  "date": "2026-07-03",
+  "edition": 16,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Toto, I've a feeling we're not in Kansas anymore.",
+      "speaker": "The Wizard of Oz (1939)",
+      "context": "Dorothy, having landed in the strange new world of Oz after the tornado, says this to her dog Toto.",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "You don't apologize to a crowd. You apologize to a person.",
+      "speaker": "The Social Network (2010)",
+      "context": "Eduardo Saverin, confronting Mark Zuckerberg after a public embarrassment",
+      "real": false,
+      "fake_note": "I made this one up — the moralistic clarity fits Eduardo's role as Mark's conscience, and Sorkin's staccato rhythm is well-imitated. The giveaway is that it sounds a half-step too epigrammatic; Sorkin usually hides his maxims inside faster overlapping argument."
+    },
+    {
+      "id": "q3",
+      "text": "I've been calm my whole life. Look where it got me.",
+      "speaker": "Fargo (1996)",
+      "context": "Jerry Lundegaard, unraveling during a phone call as his plan falls apart",
+      "real": false,
+      "fake_note": "I made this one up — Jerry's pathetic self-pity and his tendency to blame circumstance rather than himself ring true here. The giveaway is that it's a touch too articulate for Jerry; the Coens write him with more stammering deflection and fewer clean sentences."
+    },
+    {
+      "id": "q4",
+      "text": "Every time I look at that water I think about how much of it there is and how little of it matters.",
+      "speaker": "Jaws (1975)",
+      "context": "Quint, late at night on the Orca before the final hunt",
+      "real": false,
+      "fake_note": "I made this one up — it imitates Quint's fatalistic, salty monologue register, especially the mood around the Indianapolis speech. The giveaway is that it tips into aphorism territory; Quint's real lines are grittier and more anchored in specific, visceral imagery."
+    },
+    {
+      "id": "q5",
+      "text": "Have you a valediction, boyo?",
+      "speaker": "L.A. Confidential (1997)",
+      "context": "Captain Dudley Smith (James Cromwell) to Jack Vincennes (Kevin Spacey), moments before shooting him.",
+      "real": true,
+      "source": {
+        "title": "L.A. Confidential (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/L.A._Confidential_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The world is a business, Mr. Beale. It has been since man crawled out of the slime.",
+      "speaker": "Network (1976)",
+      "context": "Corporate chairman Arthur Jensen (Ned Beatty) delivering his boardroom sermon to news anchor Howard Beale (Peter Finch).",
+      "real": true,
+      "source": {
+        "title": "Network (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Network_(film)",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

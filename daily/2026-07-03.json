@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-03",
+  "edition": 19,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My mother still calls me every time there's something wrong with her computer. I have explained to her, multiple times, that I don't actually — it doesn't matter. I remote in and fix it.",
+      "speaker": "Neil deGrasse Tyson",
+      "context": "StarTalk Radio podcast, 'Fan Questions' episode, recorded live at the Hayden Planetarium, March 2020",
+      "real": false,
+      "fake_note": "I made this one up — Neil is extremely good at the self-deprecating family-life aside in the middle of a technical conversation, and this captures the rhythm of his live performance persona perfectly. The tell is the sentence fragment 'it doesn't matter,' which is a little too consciously comedic for genuine unscripted speech."
+    },
+    {
+      "id": "q2",
+      "text": "I wore the same jeans to every single recording session for Rumours. I thought if I washed them something would break. Lindsey thought I had lost my mind. He was probably correct.",
+      "speaker": "Stevie Nicks",
+      "context": "Interview with Cameron Crowe for Rolling Stone's 50th Anniversary oral history series, November 2017",
+      "real": false,
+      "fake_note": "I made this one up — Stevie is widely known for her mystical, superstition-forward personality, and her affectionate-but-wry comments about Lindsey Buckingham are a longtime interview staple. The giveaway is the final 'He was probably correct,' which is almost too gracious and self-aware compared to her usual more elliptical style."
+    },
+    {
+      "id": "q3",
+      "text": "There's a version of me that stayed in New Zealand and probably teaches at a university and argues about Tolkien at dinner parties. I think about that guy sometimes. I think he's fine.",
+      "speaker": "Peter Jackson",
+      "context": "Empire Magazine retrospective oral history on The Lord of the Rings trilogy, December 2021",
+      "real": false,
+      "fake_note": "I made this one up — Peter Jackson frequently reflects on his origins in Wellington and the improbability of his career trajectory, and the specific Tolkien-nerd detail is exactly right for him. The tell is the phrase 'I think he's fine,' which is a little too wryly polished for genuine off-the-cuff reflection."
+    },
+    {
+      "id": "q4",
+      "text": "It's hard to lead a cavalry charge if you think you look funny on a horse.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The two-time Democratic presidential nominee and UN ambassador, known for his wit; a characteristically self-deprecating line about self-confidence and self-image.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I thought I looked real cute in my uniform, and then I heard a boy yell from the bleachers, 'Make that basket, bird legs.' And my greatest fear is that same guy is somewhere out there in the audience tonight, and he's going to cut me down to size.",
+      "speaker": "Ann Richards",
+      "context": "The Texas governor opening her celebrated 1988 Democratic National Convention keynote with a self-deprecating story about her eighth-grade basketball days.",
+      "real": true,
+      "source": {
+        "title": "Ann Richards, DNC keynote address, 1988 - Speakola",
+        "url": "https://speakola.com/political/ann-richards-dnc-keynote-1988",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "When we were writing the Eras Tour setlist I kept a running spreadsheet and then threw it out and started over about four times. At some point Taylor looked at me and said, 'You need to go for a walk.' She was right.",
+      "speaker": "Jack Antonoff",
+      "context": "Interview with Rolling Stone, 'The Record Men' feature, July 2023",
+      "real": false,
+      "fake_note": "I made this one up — Jack Antonoff is famous for his neurotic, self-deprecating humor and his close creative partnership with Taylor Swift, and he really does discuss collaborative process in this exact register. The subtle tell is that having Taylor deliver the punchline makes the quote almost too perfectly framed."
+    }
+  ]
+}

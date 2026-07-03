@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-03",
+  "edition": 13,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone handed me a drink at the Grammys and I said, 'What is this?' and they said, 'It's sparkling water.' I said, 'Get away from me. I don't trust a man who brings sparkling water to a party. That's the behaviour of someone who's planning something.'",
+      "speaker": "Rick James",
+      "context": "Jet Magazine, 'Rick James: Still Super Freaky' profile, published March 1983",
+      "real": false,
+      "fake_note": "I made this one up — Rick James's theatrical suspicion and performative excess are well documented, and the paranoid party-guest logic tracks with his persona. The giveaway is that it's a shade too articulate and structured; his real interviews tended to spiral rather than land cleanly."
+    },
+    {
+      "id": "q2",
+      "text": "Maybe it was because we did it unabashedly out in the open. We didn't know it was shocking. Perhaps we were just too fucking frank.",
+      "speaker": "Slash",
+      "context": "The Guns N' Roses guitarist, in a Classic Rock/Louder interview, explaining why his band got a wilder reputation than peers who did 'the same shit'.",
+      "real": true,
+      "source": {
+        "title": "Louder (Classic Rock) — Six Pack: Slash on drugs, dying and Axl Rose",
+        "url": "https://www.loudersound.com/features/six-pack-slash-on-drugs-dying-and-axl-rose",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The reason we first started strumming guitars was because we wanted women and lots of them. And their daughters.",
+      "speaker": "Gene Simmons",
+      "context": "KISS bassist Gene Simmons, on The Oprah Winfrey Show in 1988, dismissing the idea that rock stars pick up guitars for lofty reasons — it was about groupies.",
+      "real": true,
+      "source": {
+        "title": "Gene Simmons Called KISS Groupie Hookups 'More Honest' Than Real Relationships (Best Life)",
+        "url": "https://bestlifeonline.com/gene-simmons-kiss-groupies/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People say money can't buy happiness. Those people have clearly never paid off a bar tab the size of a small mortgage and walked out into fresh air knowing the night is still young and none of it was on credit. That is happiness. That is pure, uncomplicated happiness.",
+      "speaker": "Dean Martin",
+      "context": "Photoplay Magazine, 'Dean Martin: Relaxed, Rat-Packed and Refreshingly Honest' feature, published September 1967",
+      "real": false,
+      "fake_note": "I made this one up — the breezy, slightly boastful relationship with money and booze fits Dino's cultivated persona of effortless cool, and Photoplay ran extensive celebrity profiles in that era. The giveaway is the phrase 'pure, uncomplicated happiness' — Dean Martin usually played things cooler and more throwaway; this buttons up a little too neatly for his shrug-and-sip style."
+    },
+    {
+      "id": "q5",
+      "text": "I've done gigs in forty-seven countries and the only universal truth I've found — the only thing that transcends all language and culture — is that somebody, somewhere in the audience, always has their tits out by the third song. God bless humanity.",
+      "speaker": "Bon Scott",
+      "context": "RAM Magazine (Australia), 'AC/DC On The Road' backstage interview, Sydney, Issue 44, August 1977",
+      "real": false,
+      "fake_note": "I made this one up — the cheerful, unpretentious lewdness and the mock-philosophical frame are very much in Bon Scott's wheelhouse, and RAM covered AC/DC extensively in that period. The giveaway is that it wraps up a little too warmly; Scott was more likely to follow it with something deliberately cruder."
+    },
+    {
+      "id": "q6",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore.",
+      "speaker": "Bob Saget",
+      "context": "Bob Saget — the wholesome 'Full House' dad whose real-life stand-up was famously filthy — on fully embracing his profane comedy persona, in a Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

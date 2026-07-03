@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-03",
+  "edition": 8,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The ice doesn't care how tired you are. I know that sounds obvious but it took me until probably my third season to actually believe it in my legs and not just in my head.",
+      "speaker": "Sidney Crosby",
+      "context": "Sportsnet Magazine cover story, 'The Weight of the C,' published October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Crosby talks about the physical and mental gap in professional conditioning in exactly this understated way, and 'believe it in my legs' is the kind of specific physical language he uses. I snuck in a mild aphorism opening ('the ice doesn't care') which is a slight tell — he'd usually come at it from a personal anecdote first."
+    },
+    {
+      "id": "q2",
+      "text": "When I got traded to LA I called my mom before I called my agent. She said, 'Do they have good weather?' I said, 'Yeah, Mom.' She said, 'Okay, good.' That was the whole conversation.",
+      "speaker": "LeBron James",
+      "context": "Road Trippin' podcast with Richard Jefferson and Channing Frye, Episode 182, July 2018",
+      "real": false,
+      "fake_note": "I made this one up — LeBron frequently credits his mother Gloria in interviews and has that self-aware humor about how she keeps him grounded. The format also fits Road Trippin' perfectly. The giveaway is the punchline structure — LeBron's real mom stories tend to be more emotionally layered than a clean two-beat joke."
+    },
+    {
+      "id": "q3",
+      "text": "This is a season where Newcastle need to find players who are off the radar; then we can spend a fair price and not have them stolen by teams with more money.",
+      "speaker": "Russell",
+      "context": "World Cup scouting column, discussing Newcastle transfer strategy",
+      "real": true,
+      "source": {
+        "title": "Sports — Your World Cup scouting: A new goalkeeper and midfield strengthening",
+        "url": "https://sports.yahoo.com/articles/world-cup-scouting-goalkeeper-midfield-091641363.html",
+        "date": "2026-07-03"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Leave me alone, I know what I'm doing!",
+      "speaker": "Kimi Raikkonen",
+      "context": "Formula 1 driver's deadpan team-radio reply to his Lotus race engineer Simon Rennie, who kept feeding him instructions during the 2012 Abu Dhabi Grand Prix (which Raikkonen went on to win).",
+      "real": true,
+      "source": {
+        "title": "F1.com — Leave me alone, I know what I'm doing: the best of Räikkönen on race radio",
+        "url": "https://www.formula1.com/en/latest/article/leave-me-alone-i-know-what-doing-best-of-raikkonen-race-radio.rCKOidDkwt70dZdOENU3e",
+        "date": "2022-11-04"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've managed guys who were convinced they were the best pitcher in baseball and guys who needed you to tell them that every single day. The second type wins you more games than people want to admit.",
+      "speaker": "Bruce Bochy",
+      "context": "San Francisco Chronicle profile by John Shea, published during the 2014 NLCS run, October 2014",
+      "real": false,
+      "fake_note": "I made this one up — Bochy is known for his even-keeled, psychologically savvy approach to managing veterans and he gives exactly this kind of counterintuitive managing insight in long-form press pieces. The giveaway is the clean contrast structure — his real quotes tend to be even less resolved, more trailing off."
+    },
+    {
+      "id": "q6",
+      "text": "You spend a good piece of your life gripping a baseball, and in the end, it turns out that it was the other way around all the time.",
+      "speaker": "Jim Bouton",
+      "context": "The celebrated closing line of his tell-all baseball memoir 'Ball Four,' as quoted in the book's Wikipedia entry.",
+      "real": true,
+      "source": {
+        "title": "Wikipedia — Ball Four",
+        "url": "https://en.wikipedia.org/wiki/Ball_Four",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}
