@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-04",
+  "edition": 20,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My kids found some footage of me from the early nineties the other day and they just — they wouldn't let it go. The hair, the outfits. My daughter goes, 'Dad, did anyone tell you?' and I said, 'Everyone told me. Nobody listened.'",
+      "speaker": "Dwayne Johnson",
+      "context": "Appearing on The Tonight Show Starring Jimmy Fallon, NBC, September 2022, during a promotional appearance for Black Adam",
+      "real": false,
+      "fake_note": "I made this one up — Johnson's self-deprecating dad humor about his '90s WWF era is completely on-brand, and the two-line exchange mimics how he tells stories in late-night appearances. The giveaway is the punchline is slightly too tight; his real anecdotes usually meander a bit more before landing."
+    },
+    {
+      "id": "q2",
+      "text": "I got to the Met Gala one year and just stood in the entrance for a second and thought — this is genuinely insane, right? Like, we all just agreed this is normal? Everyone was in on it and nobody said anything and I found that kind of beautiful, actually.",
+      "speaker": "Billie Eilish",
+      "context": "Interview with Dazed magazine, Summer 2022 issue, ahead of her Happier Than Ever world tour finale",
+      "real": false,
+      "fake_note": "I made this one up — Eilish's detached, slightly anthropological take on celebrity spectacle is well-documented, and this mildly surrealist observation fits her real voice perfectly. The giveaway is she typically punctuates this kind of observation with more explicit discomfort rather than landing on 'beautiful.'"
+    },
+    {
+      "id": "q3",
+      "text": "Nothing so dates a man as to decry the younger generation.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The Democratic statesman, in a speech at the University of Wisconsin, Madison (8 October 1952) - a dry, self-aware needle at those who complain about the young.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "In 2008 my slogan was, \"Yes We Can.\" In 2013 my slogan was, \"Control-Alt-Delete.\"",
+      "speaker": "Barack Obama",
+      "context": "Joking about the rocky HealthCare.gov rollout at the 2014 White House Correspondents' Dinner",
+      "real": true,
+      "source": {
+        "title": "The Obama White House Archives — Remarks by the President at the White House Correspondents' Dinner (2014)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I think everybody pees in the pool.",
+      "speaker": "Michael Phelps",
+      "context": "Swimmer answering a Wall Street Journal interview question about pool etiquette, as quoted by CBS News",
+      "real": true,
+      "source": {
+        "title": "Michael Phelps on peeing in the pool: Everybody does it",
+        "url": "https://www.cbsnews.com/news/michael-phelps-on-peeing-in-the-pool-everybody-does-it/",
+        "date": "2012-08-10"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I remember the first time I played Carnegie Hall I was so nervous I actually practiced the walk from the wings to the bench. Like, just the walk. I didn't want to trip over my own feet before I even touched the keys.",
+      "speaker": "Lang Lang",
+      "context": "Masterclass lecture series recorded at the Juilliard School, New York, published on YouTube, November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Lang Lang has spoken openly about performance anxiety and his almost obsessive preparation rituals, so this fits perfectly. The giveaway is that he typically names specific pieces or conductors when telling performance stories rather than focusing on the physical choreography of walking onstage."
+    }
+  ]
+}

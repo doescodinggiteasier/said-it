@@ -1,0 +1,65 @@
+{
+  "date": "2026-07-04",
+  "edition": 17,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't want to be a product of my environment. I want my environment to be a product of me.",
+      "speaker": "The Departed (2006)",
+      "context": "Frank Costello (Jack Nicholson) in the film's opening voiceover, laying out his philosophy of power in South Boston.",
+      "real": true,
+      "source": {
+        "title": "The Departed - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Departed",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "She's not lost, she's just somewhere I haven't looked yet.",
+      "speaker": "Taken (2008)",
+      "context": "Bryan Mills, on the phone, refusing to accept the worst from a French detective",
+      "real": false,
+      "fake_note": "I made this one up — it matches Bryan's clipped, obsessive refusal to yield, and the film is built entirely on that single-minded certainty. The subtle giveaway is it leans just a hair too close to a reassuring sentiment; Bryan's real lines are usually more operational and cold."
+    },
+    {
+      "id": "q3",
+      "text": "I've done this route fourteen times, Captain. I know where the rocks are.",
+      "speaker": "The Hunt for Red October (1990)",
+      "context": "Ramius, quietly asserting authority to a skeptical officer before a tense maneuver",
+      "real": false,
+      "fake_note": "I made this one up — Ramius speaks in exactly this calm, declarative way, and submarine navigation under pressure is the film's whole texture. The giveaway is that the number 'fourteen' feels arbitrarily specific in a way Ramius's actual lines tend to avoid."
+    },
+    {
+      "id": "q4",
+      "text": "I drink your milkshake! I drink it up!",
+      "speaker": "There Will Be Blood (2007)",
+      "context": "Daniel Plainview (Daniel Day-Lewis) berating Eli Sunday in the bowling-alley confrontation",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Every man on this floor was somebody's reason to come home. You remember that.",
+      "speaker": "Black Hawk Down (2001)",
+      "context": "A sergeant addressing his squad before the mission briefing",
+      "real": false,
+      "fake_note": "I made this one up — the film is full of this tight-jawed unit-loyalty language and it fits the ensemble's pre-mission texture. The giveaway is it's slightly more sentimental than the film's typically terse, procedural dialogue tends to be."
+    },
+    {
+      "id": "q6",
+      "text": "I specifically reminded her; bedside table. On the kangaroo.",
+      "speaker": "Pulp Fiction (1994)",
+      "context": "Boxer Butch Coolidge (Bruce Willis) fuming that his girlfriend Fabienne forgot his late father's gold watch.",
+      "real": true,
+      "source": {
+        "title": "Pulp Fiction - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Pulp_Fiction",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

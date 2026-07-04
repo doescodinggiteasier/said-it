@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-04",
+  "edition": 9,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My rookie year in Green Bay, the veterans told me I had to carry everyone's pads after practice. I did it for three weeks before somebody admitted they made the whole thing up. I didn't even care. I just wanted them to know I'd do it.",
+      "speaker": "Aaron Rodgers",
+      "context": "The Pat McAfee Show, ESPN, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Rodgers has talked at length about his rocky early relationship with the Packers locker room and his desire to prove himself, so the emotional beat here rings completely true. The tell is that Rodgers has never specifically described a hazing tradition; he tends to frame those early years in broader strokes rather than a single anecdote like this."
+    },
+    {
+      "id": "q2",
+      "text": "But I also know, if I was healthy, with good hips right now, I'd be the fastest 45-year-old in the country, or in the world.",
+      "speaker": "Bo Jackson",
+      "context": "Reflecting in retirement, years after his hip injury, in ESPN's long-form 'Bo Knows Best' feature.",
+      "real": true,
+      "source": {
+        "title": "ESPN E-ticket — Bo Knows Best",
+        "url": "http://www.espn.com/espn/eticket/story?page=bojackson",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Because I'm the undertaker. I've come to bury these people!",
+      "speaker": "Bill Russell",
+      "context": "Explaining to teammate Sam Jones why he wore a black suit to every Game 7, in his Academy of Achievement interview.",
+      "real": true,
+      "source": {
+        "title": "Academy of Achievement — Bill Russell Interview",
+        "url": "https://achievement.org/achiever/bill-russell/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People keep asking me what I was thinking on that last drive. Honestly? I was thinking about whether I'd left my parking spot in a tow-away zone. That's the truth. My caddie had to remind me what hole we were on.",
+      "speaker": "Phil Mickelson",
+      "context": "Golf Channel's 'Morning Drive,' post-round interview at the 2019 Waste Management Phoenix Open",
+      "real": false,
+      "fake_note": "I made this one up — Phil's self-deprecating humor and tendency to go off on mundane tangents is well-documented, and parking lots are exactly his kind of absurd deflection. The subtle giveaway is that Phil would more likely remember every shot in forensic detail; his distraction mid-round is the planted crack."
+    },
+    {
+      "id": "q5",
+      "text": "Because there is always some kid who may be seeing me for the first time. I owe him my best.",
+      "speaker": "Joe DiMaggio",
+      "context": "Explaining why he always played so hard, even in meaningless late-season games, on the PBS American Experience profile.",
+      "real": true,
+      "source": {
+        "title": "PBS American Experience — Joe DiMaggio",
+        "url": "https://www.pbs.org/wgbh/americanexperience/features/dimaggio-joe-dimaggio/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "When I was coming up, my coach used to make us do this drill where you had to call out the play the offense was running before the snap. Didn't matter if you were right. He wanted you to be committed. He said the worst thing you could be was quiet and wrong.",
+      "speaker": "Dick Vitale",
+      "context": "ESPN's '30 for 30 Podcast,' recorded segment aired March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Dickie V grew up as a coach before becoming a broadcaster and constantly references his coaching days; the emphasis on decisiveness over correctness is pitch-perfect for his personality. The subtle tell is that Vitale normally names the coach in question and gets more emotionally effusive; this version is slightly too composed for him."
+    }
+  ]
+}

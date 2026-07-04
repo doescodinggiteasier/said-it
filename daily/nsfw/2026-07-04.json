@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-04",
+  "edition": 14,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone in Cleveland left a entire bucket of fried chicken in my dressing room as, like, a joke? I ate every piece and then did the show and I will not apologize for any of it. The encore was incredible.",
+      "speaker": "James Brown",
+      "context": "Backstage interview recorded by promoter Joe Medwick for a tour documentary, Richfield Coliseum, Cleveland, October 1986",
+      "real": false,
+      "fake_note": "I made this one up — Brown's ferocious professionalism combined with his well-documented love of food and completely unapologetic self-regard makes this feel lived-in. The giveaway is 'Joe Medwick' as the named promoter — that's a baseball Hall of Famer's name, not a music industry figure, which is a little too convenient."
+    },
+    {
+      "id": "q2",
+      "text": "Cheating is a man, he sneaks out of his own house to go, like, find some happiness behind your back so your feelings aren't hurt. Cheating is for you.",
+      "speaker": "Patrice O'Neal",
+      "context": "From the late, notoriously unfiltered comedian Patrice O'Neal's Comedy Central special 'Elephant in the Room' (2011) — his provocative, deadpan bit reframing male infidelity as an act of consideration.",
+      "real": true,
+      "source": {
+        "title": "Patrice O'Neal: Elephant in the Room (2011) — Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/patrice-oneal-elephant-in-the-room-2011-full-transcript/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Whiskey is a great drink. Now whiskey's very classy and adult, till you shit your pants. But other than that, it is great.",
+      "speaker": "Dave Attell",
+      "context": "From filthy, drink-soaked comedian Dave Attell's stand-up special 'Road Work' (2014) — Attell (the 'Insomniac' host) riffing on booze in his trademark crude style.",
+      "real": true,
+      "source": {
+        "title": "Dave Attell: Road Work (2014) — Full Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/dave-attell-road-work-transcript/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "He told me if I carried on at the same pace I'd start bleeding out of my dick, my asshole, my eyes, my nose – fucking everywhere, man. Just bleeding out of every orifice and never stopping.",
+      "speaker": "Zakk Wylde",
+      "context": "Black Label Society / Ozzy guitarist Zakk Wylde, laughing as he recounts his doctor's blunt warning about his extreme drinking while on blood thinners, in a 2013 Louder/Metal Hammer interview.",
+      "real": true,
+      "source": {
+        "title": "Black Label Society's Zakk Wylde interview: alcohol, acoustic albums and prison gigs with Ozzy Osbourne (Louder)",
+        "url": "https://www.loudersound.com/features/zakk-wylde-black-label-society-interview-2013",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Somebody asked me what the secret to a long relationship is and I said, baby, separate bathrooms and a bar cart you both pretend the other one is responsible for emptying. That's it. Thirty years. Write it down.",
+      "speaker": "Phyllis Diller",
+      "context": "Panel conversation at the Hollywood Press Club Women in Comedy luncheon, Beverly Hills, March 1994",
+      "real": false,
+      "fake_note": "I made this one up — Diller's entire act was built on domestic chaos and her fictionalised awful husband Fang, so the relationship grumbling is textbook her. The tiny giveaway is the cadence: 'Write it down' is too TED-Talk-tidy for Phyllis, who'd have trailed off into a cackle instead."
+    },
+    {
+      "id": "q6",
+      "text": "I woke up in a hotel in Nashville with a harmonica I do not own, wearing one boot, and a note on the pillow that just said 'sorry about the chandelier.' And I thought — that's the most country song that's never been written.",
+      "speaker": "Waylon Jennings",
+      "context": "Radio interview on WSM Nashville's morning show with host Ralph Emery, recorded live on-air, February 1983",
+      "real": false,
+      "fake_note": "I made this one up — Waylon's outlaw mythology, his self-aware humour about his own chaos, and the perfect country-song meta-joke are all completely in character. The giveaway is the punchline structure — 'that's the most country song that's never been written' is a little too polished and self-consciously literary for off-the-cuff Waylon."
+    }
+  ]
+}

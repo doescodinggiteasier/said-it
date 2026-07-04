@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-04",
+  "edition": 12,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember playing a show in Akron — I think it was like a Tuesday, maybe two hundred people — and the monitor mix was so bad I genuinely could not hear myself. And I sang better that night than I had in months, because I stopped thinking and just kind of... pushed into the room. I've chased that feeling in studios ever since and almost never found it.",
+      "speaker": "Sheryl Crow",
+      "context": "Interview with American Songwriter, March 2019 issue",
+      "real": false,
+      "fake_note": "I made this one up — Sheryl talks openly about the gap between live energy and studio control, and the Akron detail sounds exactly like the kind of unglamorous mid-career road story she actually tells. The subtle giveaway is 'pushed into the room,' which is just poetic enough to be a writer's invention rather than a musician's off-hand remark."
+    },
+    {
+      "id": "q2",
+      "text": "There was a point — I want to say it was during the Folklore mixes — where I walked into a room and Taylor had a legal pad with like forty alternate bridge options written out by hand. Not typed. By hand. And I thought, okay, this is a different kind of songwriter than I've worked with before.",
+      "speaker": "Jack Antonoff",
+      "context": "Zane Lowe interview on Apple Music 1, August 2020",
+      "real": false,
+      "fake_note": "I made this one up — Jack talks frequently and warmly about Taylor's work ethic and their creative dynamic, and the legal-pad detail lands inside his known storytelling style. The giveaway is the hedge 'I want to say it was during the Folklore mixes,' which sounds natural but is exactly the kind of planted plausibility a fabricator would reach for."
+    },
+    {
+      "id": "q3",
+      "text": "Reggae is the only music I know where the feeling of patience is actually built into the structure. The drop comes late, or it doesn't come at all, and somehow that's the point. I spent years trying to understand that and eventually just accepted I was approaching it from the wrong direction entirely.",
+      "speaker": "Elvis Costello",
+      "context": "The Guardian music supplement long-read, October 2015",
+      "real": false,
+      "fake_note": "I made this one up — Elvis has documented deep admiration for reggae going back to his Attractions-era work and speaks about music in exactly this analytical-but-humble register. The giveaway is the slightly academic framing ('built into the structure'), which nudges just past his more blunt, colloquial style."
+    },
+    {
+      "id": "q4",
+      "text": "It will feed so many families, and what a way to start a marriage",
+      "speaker": "Brad Paisley",
+      "context": "Social media post thanking Taylor Swift and Travis Kelce for a donation",
+      "real": true,
+      "source": {
+        "title": "Music — Brad Paisley, Kimberly Williams-Paisley Thank Taylor Swift and Travis Kelce for ",
+        "url": "https://www.rollingstone.com/music/music-news/brad-paisley-taylor-swift-travis-kelce-donation-wedding-1235588953/",
+        "date": "2026-07-04"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The music always precedes the words. The words often come from the sound of the music and eventually evolve into coherent thoughts. Or incoherent thoughts.",
+      "speaker": "Paul Simon",
+      "context": "Describing his music-first songwriting process in an American Songwriter interview tied to his Songwriter collection.",
+      "real": true,
+      "source": {
+        "title": "American Songwriter — Interview: Paul Simon Discusses Songwriter And Songwriting",
+        "url": "https://americansongwriter.com/interview-paul-simon-discusses-songwriter-and-songwriting/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Strings are the most dangerous thing you can add to a track because they tell the listener how to feel so directly. You put violins in and suddenly the audience thinks they're being manipulated — and they're right, but you've lost them the moment they notice. So either you commit fully or you leave them out entirely. There's no tasteful amount of strings.",
+      "speaker": "Mark Ronson",
+      "context": "Masterclass promotional interview with GQ UK, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Mark is extremely articulate about arrangement choices and the psychology of production, and this sounds like the kind of confident declarative take he gives in long-form interviews. The giveaway is 'there's no tasteful amount of strings,' which is a little too epigram-neat for his usual cadence."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-04",
+  "edition": 8,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Margaret used to say I had two volumes: off and too loud. She wasn't referring to my speeches. She meant at breakfast.",
+      "speaker": "John Major",
+      "context": "After-dinner remarks at the Carlton Club Political Luncheon, London, June 2012",
+      "real": false,
+      "fake_note": "I made this one up — Major's self-deprecating domestic humor is a well-established feature of his post-Downing Street public persona, and the specificity of 'at breakfast' is exactly the kind of grounding detail he uses to undercut any grandeur. The subtle tell is that he'd typically frame references to Norma rather than Margaret Thatcher in this kind of domestic context — the name 'Margaret' here creates a pleasing ambiguity that real speakers occasionally exploit."
+    },
+    {
+      "id": "q2",
+      "text": "Someone on my team told me I need to be more relatable on social media. So now I post pictures of myself eating things. It's working, I think. People seem very interested in what I'm eating.",
+      "speaker": "Nikki Haley",
+      "context": "Speech at the Republican Jewish Coalition Annual Leadership Meeting, Las Vegas, November 2023",
+      "real": false,
+      "fake_note": "I made this one up — Haley has a practiced, lightly self-mocking speechmaking style and regularly riffs on the absurdities of modern campaigning, and the understatement of 'people seem very interested in what I'm eating' fits her cadence well. The giveaway is she'd more likely name the specific platform rather than just saying 'social media.'"
+    },
+    {
+      "id": "q3",
+      "text": "I admit it -- last year was rough.",
+      "speaker": "Barack Obama",
+      "context": "At the 2014 White House Correspondents' Dinner, Obama opened his self-deprecating riff by candidly conceding his difficult 2013.",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at White House Correspondents' Dinner (May 3, 2014) | whitehouse.gov archives",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I don't think there's an appearance problem",
+      "speaker": "Scott Bessent",
+      "context": "CBS News interview, responding to questions about Trump's crypto profits",
+      "real": true,
+      "source": {
+        "title": "Politics — Bessent brushes off critics of Trump's crypto haul",
+        "url": "https://thehill.com/homenews/administration/5953033-treasury-secretary-defends-trump-crypto/",
+        "date": "2026-07-04"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People always ask me what it's like being a woman in the Senate. I tell them it's a lot like being a man in the Senate, except you have to repeat yourself about four more times before anyone writes it down.",
+      "speaker": "Amy Klobuchar",
+      "context": "Remarks at the EMILY's List Annual Gala, Washington D.C., May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar regularly works this exact frustration into her stump humor with a Midwestern matter-of-factness, and the phrasing 'before anyone writes it down' is the kind of specific, undramatic detail she reaches for. The tell is that her real versions of this joke usually name a specific colleague or moment rather than staying general."
+    },
+    {
+      "id": "q6",
+      "text": "I've read every page of the tax code. Well — I've had staff read every page of the tax code, and they brief me on it, which I think is honestly a better system for everyone involved, including the tax code.",
+      "speaker": "Mitch McConnell",
+      "context": "Interview with Hugh Hewitt on The Hugh Hewitt Show, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's dry, self-aware humor about delegation is well-documented, and the self-deprecating pivot to 'including the tax code' sounds exactly like his understated wit. The subtle giveaway is that he rarely volunteers self-deprecation this openly in interviews; he usually lets the humor land more obliquely."
+    }
+  ]
+}
