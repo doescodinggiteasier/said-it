@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-05",
+  "edition": 21,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "They cried, and they laughed, and they danced, and they hugged, and they kissed.",
+      "speaker": "Robin Gentry",
+      "context": "Taylor Swift and Travis Kelce's wedding ceremony, as shared to media",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Taylor Swift-Travis Kelce Wedding Details Emerge: An Original Adam Sandler Song,",
+        "url": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/taylor-swift-travis-kelce-wedding-blank-space-hankies-1236637926/",
+        "date": "2026-07-05"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My mother used to say that Japanese food is not about the ingredient, it is about the relationship between you and the ingredient over time. I thought she was being poetic. Turns out she was just right.",
+      "speaker": "Nobu Matsuhisa",
+      "context": "Keynote address at the Madrid Fusion culinary summit, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Nobu frequently invokes his mother and the philosophy of long relationships with ingredients, so this is tonally pitch-perfect. The giveaway is the structure: 'I thought she was being poetic, turns out she was right' is a little too neat and anecdote-shaped for his usual interview style."
+    },
+    {
+      "id": "q3",
+      "text": "The thing about playing a villain — and I've played a few — is that you have to find the exact moment where their logic makes complete sense. Not to the audience. To them. Once you find that, the rest is just costume.",
+      "speaker": "Anthony Hopkins",
+      "context": "Masterclass session at the BFI London Film Festival, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Hopkins has spoken extensively about character interiority and the internal logic of his darker roles, so this maps naturally onto his documented philosophy. The giveaway is 'the rest is just costume' — too epigrammatic for how he actually finishes thoughts in real interviews."
+    },
+    {
+      "id": "q4",
+      "text": "The only stressful weddings are the ones where you have a small amount [of guests] and people are on the bubble",
+      "speaker": "Taylor Swift",
+      "context": "Taylor Swift explaining why she invited 1,000 guests to her wedding",
+      "real": true,
+      "source": {
+        "title": "Music — Why Taylor Swift Invited 1,000 Guests to Her Wedding: ‘Everyone I’ve Ever Talked",
+        "url": "https://www.rollingstone.com/music/music-news/taylor-swift-wedding-guests-travis-kelce-interview-1235589192/",
+        "date": "2026-07-05"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "When I was at CERN we'd argue for an hour about what to call something, and I always thought that was a waste of time. Now I think that was actually the most important hour of the week. The name is where you find out if you understand the thing.",
+      "speaker": "Brian Cox",
+      "context": "Royal Institution Friday Evening Discourse, 'The Language of Physics,' London, November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Cox often reflects on his particle physics days and has a recurring theme about the relationship between language and understanding in science. The subtle giveaway is that this is slightly too conclusive and polished; his real reflections tend to meander more before landing."
+    },
+    {
+      "id": "q6",
+      "text": "I had about two bites because it was straight up chocolate cake, and I can't do that for breakfast.",
+      "speaker": "Katie Ledecky",
+      "context": "Swimmer describing trying the 'infamous' chocolate muffins in the 2024 Paris Olympic Village, as quoted by AOL/People",
+      "real": true,
+      "source": {
+        "title": "Katie Ledecky Says She Tried the 'Infamous' Chocolate Muffins at 2024 Olympics: 'I Can't Do That for Breakfast'",
+        "url": "https://www.aol.com/katie-ledecky-says-she-tried-140000011.html",
+        "date": "2024-08-08"
+      }
+    }
+  ]
+}

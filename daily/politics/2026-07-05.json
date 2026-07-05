@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-05",
+  "edition": 9,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've read every page of this bill. Well — every page that wasn't a cross-reference to another bill, which, if you followed it all the way down, basically just told you to read the first bill again.",
+      "speaker": "Bernie Sanders",
+      "context": "Town hall at the University of Vermont, Burlington, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Bernie's exasperated-professor tone and his genuine obsession with legislative fine print make this land perfectly. The subtle giveaway is that Bernie almost never makes self-deprecating process jokes; he usually just barrels into the substance."
+    },
+    {
+      "id": "q2",
+      "text": "My mother called me after the debate. She said I did well. Then she said my tie was wrong. Then she talked about the tie for eleven minutes. My poll numbers she mentioned once.",
+      "speaker": "Marco Rubio",
+      "context": "Interview on The Hugh Hewitt Show, nationally syndicated, October 2015",
+      "real": false,
+      "fake_note": "I made this one up — Rubio regularly invokes his Cuban-American family in grounded, warm anecdotes, and the specific maternal-criticism-over-substance angle fits his self-deprecating style. The very specific 'eleven minutes' is the tell — real anecdotes almost never come with that kind of precision."
+    },
+    {
+      "id": "q3",
+      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
+      "speaker": "Ted Stevens",
+      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality.",
+      "real": true,
+      "source": {
+        "title": "Series of tubes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
+        "date": "2006-06-28"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I've been called a lot of things over the years. Some of them required me to look up words I didn't know. A few of them I thought were actually pretty good.",
+      "speaker": "Dick Cheney",
+      "context": "Address at the Gerald R. Ford School of Public Policy, University of Michigan, Ann Arbor, September 2011",
+      "real": false,
+      "fake_note": "I made this one up — Cheney's humor, when it exists, is bone-dry and self-aware about his polarizing image, and he genuinely has used that self-awareness in post-vice-presidency speeches. The giveaway is the final clause; Cheney would almost certainly not admit, even jokingly, that an insult landed well."
+    },
+    {
+      "id": "q5",
+      "text": "Tonight we come together for one of the most joyous and glorious milestones of all time,",
+      "speaker": "Donald Trump",
+      "context": "Trump's late-night speech marking America's 250th anniversary, July 4th celebrations",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump celebrates America’s 250th anniversary in weather-delayed, sometimes parti",
+        "url": "https://thehill.com/homenews/administration/5953811-trump-celebrates-americas-250th-birthday/",
+        "date": "2026-07-05"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "His famous comeback at the 1984 debate against Walter Mondale",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    }
+  ]
+}

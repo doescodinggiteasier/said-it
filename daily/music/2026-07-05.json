@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-05",
+  "edition": 13,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Jazz musicians used to scare me a little bit, honestly. Because they could hear everything you hadn't learned yet. You'd play a chord and they'd just — they'd clock it. And there was no malice in it, which somehow made it worse.",
+      "speaker": "Diana Krall",
+      "context": "Interview on CBC Music's Shifting Gears with Tom Power, broadcast November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Diana has spoken in the past about being intimidated early in her career by seasoned jazz players and working hard to earn their respect, so this specific brand of self-deprecating professional anxiety fits her perfectly. The give is that she'd likely name someone specific rather than keeping it generic."
+    },
+    {
+      "id": "q2",
+      "text": "I had this moment in the studio with Quincy where he just looked at me and didn't say anything for probably forty-five seconds. And I knew — I knew that take was the one, because Quincy's silence meant he was somewhere else entirely, which is exactly where you want people to be.",
+      "speaker": "Siedah Garrett",
+      "context": "Panel discussion at the Clive Davis Institute of Recorded Music, NYU, April 2019",
+      "real": false,
+      "fake_note": "I made this one up — Siedah collaborated closely with Quincy Jones on the Bad album and speaks warmly about him in interviews, so a reverent Quincy anecdote is completely in her register. The giveaway for sharp players is that 'forty-five seconds' is oddly timed for what is otherwise an impressionistic memory."
+    },
+    {
+      "id": "q3",
+      "text": "Keep your mind on the music. I never thought of myself as a 'woman' musician at all, but a guitarist and then a bass player",
+      "speaker": "Carol Kaye",
+      "context": "The legendary session bassist (Pet Sounds, countless hits) on identity versus playing, in a Guitar World interview.",
+      "real": true,
+      "source": {
+        "title": "Guitar World — Studio bass icon Carol Kaye on why it is not about who you are, but how and what you play",
+        "url": "https://www.guitarworld.com/artists/bassists/carol-kaye-on-teaching-women",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I really feel like some angels have been carrying me around.",
+      "speaker": "Bonnie Raitt",
+      "context": "On feeling happier than ever after getting sober, in her Rolling Stone interview following her Grammy sweep for 'Nick of Time.'",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Bonnie Raitt: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-features/bonnie-raitt-the-rolling-stone-interview-236846/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My mum used to clean houses on the weekends so I could have guitar lessons. I think about that every single time I walk onstage. Not in a heavy way, just — I know what the ticket cost.",
+      "speaker": "Ed Sheeran",
+      "context": "Cover interview with Rolling Stone UK, issue dated March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Ed openly discusses his working-class background and his parents' sacrifices in multiple interviews, and the plainspoken, unsentimental tone here is very much his. The tell is 'I know what the ticket cost,' which edges just slightly toward aphorism for someone who usually stays in the specific."
+    },
+    {
+      "id": "q6",
+      "text": "You might be ingraining into your practise something that is counter productive and you'd have no way of knowing it.",
+      "speaker": "Steve Albini",
+      "context": "Warning aspiring engineers why doing 'whatever random crap you can find' is a trap, in an Audio Media International interview on how to be a better producer.",
+      "real": true,
+      "source": {
+        "title": "Audio Media International — 'You might be doing a bad job and not know it': Steve Albini on how to be a better producer",
+        "url": "https://audiomediainternational.com/you-might-be-doing-a-bad-job-and-not-know-it-steve-albini-on-how-to-be-a-better-producer/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "date": "2026-07-05",
+  "edition": 18,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I keep thinking I left something behind, but then I check my pockets and everything's there.",
+      "speaker": "Eternal Sunshine of the Spotless Mind (2004)",
+      "context": "Joel, speaking quietly to himself or to Clementine early in their second meeting",
+      "real": false,
+      "fake_note": "I made this one up — Joel's introverted, vaguely dissociated way of speaking is all over Kaufman's script, and the line fits the film's themes without spelling them out. The giveaway is it leans ever so slightly too poetic for Joel's usual mumbled self-deprecation."
+    },
+    {
+      "id": "q2",
+      "text": "Is this testing whether I'm a Replicant or a lesbian, Mr. Deckard?",
+      "speaker": "Blade Runner (1982)",
+      "context": "Rachael (Sean Young) to Rick Deckard (Harrison Ford) during her Voight-Kampff test at the Tyrell Corporation, early in the film.",
+      "real": true,
+      "source": {
+        "title": "Blade Runner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Blade_Runner",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "This? Why, I could make a hat, or a brooch, or a pterodactyl.",
+      "speaker": "Airplane! (1980)",
+      "context": "Johnny (Stephen Stucker), the air traffic control clown, riffs when asked what he can make of the situation.",
+      "real": true,
+      "source": {
+        "title": "Airplane! - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Airplane!",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I feel the need... the need for speed!",
+      "speaker": "Top Gun (1986)",
+      "context": "Maverick (Tom Cruise) and Goose (Anthony Edwards) say it together, high-fiving as they get pumped up to fly.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "You want to know what's funny? I don't even remember which one of us started it.",
+      "speaker": "Goodfellas (1990)",
+      "context": "Henry Hill, narrating over a scene of casual violence with Jimmy and Tommy",
+      "real": false,
+      "fake_note": "I made this one up — Henry's breezy, self-incriminating narration style is all over Goodfellas, so this slides right in. The subtle giveaway is that it's just a hair too reflective and balanced for Henry, who usually pins things on others rather than sharing blame."
+    },
+    {
+      "id": "q6",
+      "text": "Don't wave that thing around like it means something — it doesn't mean anything out here.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Sheriff Bell, warning a deputy who's brandishing his badge",
+      "real": false,
+      "fake_note": "I made this one up — Bell's weary, plainspoken fatalism matches the Coen Brothers' dialogue perfectly, and the line fits his running theme of symbols losing their power. The slight giveaway is 'wave that thing around,' which is marginally too folksy even for Bell."
+    }
+  ]
+}

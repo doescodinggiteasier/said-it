@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-05",
+  "edition": 10,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I got to Anfield early one morning — this was before a Europa game, nobody else around — and I just stood in the center circle for a while. I know that sounds strange. But you need to hear what the place sounds like when it's empty before you can understand what it sounds like when it isn't.",
+      "speaker": "Jürgen Klopp",
+      "context": "Feature interview with The Athletic, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Klopp is well-documented for his emotional relationship with Anfield and frequently articulates what the stadium means to him in exactly this kind of vivid, slightly philosophical personal anecdote. The giveaway is that real Klopp stories tend to involve other people; he rarely puts himself alone on stage like this."
+    },
+    {
+      "id": "q2",
+      "text": "The thing about Federer that nobody really talks about is how still his head is. You're watching someone move like that, covering that much court, and his eyes never shake. I used to stand at the baseline and just try to pick up that stillness. Took me probably two years before I even got close.",
+      "speaker": "Rafael Nadal",
+      "context": "Press conference following his semifinal exit at the 2022 Australian Open, January 2022",
+      "real": false,
+      "fake_note": "I made this one up — Nadal genuinely speaks about Federer with deep admiration and often discusses the technical details of his game, so this reads like a totally credible Rafa observation. The giveaway is that Nadal's English, while excellent, tends to be slightly choppier and more hesitant; this flows a touch too smoothly."
+    },
+    {
+      "id": "q3",
+      "text": "Here to write our own chapters",
+      "speaker": "Thomas Tuchel",
+      "context": "England press conference ahead of World Cup last-16 match vs Mexico at Estadio Azteca, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘Here to write our own chapters’: England not daunted by unique occasion of Mexi",
+        "url": "https://www.theguardian.com/football/2026/jul/05/world-cup-last-16-england-thomas-tuchel-mexico-city-azteca",
+        "date": "2026-07-05"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I play tennis for a living, even though I hate tennis, hate it with a dark and secret passion, and always have.",
+      "speaker": "Andre Agassi",
+      "context": "The startling opening confession of his memoir 'Open,' quoted in Sports Illustrated's coverage of the book.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — 'I Hate Tennis'",
+        "url": "https://www.si.com/more-sports/2009/10/30/andre-agassi-0",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The worst I ever felt on a football pitch was a game we won. We were completely second-best for about seventy minutes, rode our luck, and then nicked it at the end. I walked off and I couldn't even celebrate with the lads because I knew we hadn't earned it. That feeling is almost worse than losing, because you don't even get to be properly angry.",
+      "speaker": "Wayne Rooney",
+      "context": "Interview on The Football Show, Sky Sports, January 2022",
+      "real": false,
+      "fake_note": "I made this one up — Rooney is known for being unusually candid and self-critical in retirement, and this kind of honest reflection on the hollow feeling of an unearned win is completely consistent with his media persona. The subtle giveaway is 'couldn't even celebrate with the lads' — a real Rooney quote in this vein would probably name the specific match."
+    },
+    {
+      "id": "q6",
+      "text": "I think I've heard somebody say that I was a well-dressed golfer. I guess that has something to do with the fact that a lot of people who play golf don't dress very well.",
+      "speaker": "Arnold Palmer",
+      "context": "A dry, self-effacing aside about his reputation as a sharp dresser, collected among Golf Monthly's best Palmer quotes.",
+      "real": true,
+      "source": {
+        "title": "Golf Monthly — 10 Of The Best Arnold Palmer Quotes",
+        "url": "https://www.golfmonthly.com/features/the-game/10-best-arnold-palmer-quotes-152590",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}
