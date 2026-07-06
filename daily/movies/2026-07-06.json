@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-06",
+  "edition": 19,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Forty-eight hours on this lot and you already think you know how pictures get made.",
+      "speaker": "Sunset Boulevard (1950)",
+      "context": "Norma Desmond dismissing Joe Gillis's opinion about her script",
+      "real": false,
+      "fake_note": "I made this one up — the condescension and the show-business specificity sound exactly like Norma's imperious register. The giveaway is that Norma rarely references time so precisely; she tends to speak in grand, timeless terms rather than counting hours."
+    },
+    {
+      "id": "q2",
+      "text": "I've been standing outside that door for twenty minutes. You knew I was there.",
+      "speaker": "Rear Window (1954)",
+      "context": "Lisa confronting Jefferies about his obsessive watch on the courtyard",
+      "real": false,
+      "fake_note": "I made this one up — the tense domestic rhythm and Lisa's clipped frustration fit Grace Kelly's delivery perfectly. The subtle giveaway is that Lisa tends to be more playful and indirect in her real confrontations; this is a shade too blunt for her early scenes."
+    },
+    {
+      "id": "q3",
+      "text": "This town deserves a better class of criminal, and I'm gonna give it to 'em.",
+      "speaker": "The Dark Knight (2008)",
+      "context": "The Joker (Heath Ledger) addressing Gotham's mob bosses during his hostile takeover of their operation.",
+      "real": true,
+      "source": {
+        "title": "The Dark Knight (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Dark_Knight_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Don't ever let yourself get attached to anything you are not willing to walk out on in 30 seconds flat if you feel the heat around the corner.",
+      "speaker": "Heat (1995)",
+      "context": "Master thief Neil McCauley (Robert De Niro) explaining his creed to detective Vincent Hanna across a diner table.",
+      "real": true,
+      "source": {
+        "title": "Heat (1995 film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Heat_(1995_film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "You're an errand boy sent by grocery clerks to collect a bill.",
+      "speaker": "Apocalypse Now (1979)",
+      "context": "Colonel Kurtz (Marlon Brando) to Captain Willard (Martin Sheen) at his compound, dismissing Willard's mission.",
+      "real": true,
+      "source": {
+        "title": "Apocalypse Now - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Apocalypse_Now",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I don't need you to believe me. I just need you to stay out of the way.",
+      "speaker": "Silence of the Lambs (1991)",
+      "context": "Clarice to a skeptical local sheriff at a crime scene",
+      "real": false,
+      "fake_note": "I made this one up — Clarice frequently has to assert herself against dismissive authority figures, and this terse, controlled delivery fits her perfectly. The giveaway is it's slightly too confident for early Clarice, who tends to assert herself more carefully and with less edge."
+    }
+  ]
+}

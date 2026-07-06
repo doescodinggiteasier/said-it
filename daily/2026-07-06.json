@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-06",
+  "edition": 22,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what the hardest part of directing is, and honestly? It's the lunch. You've got forty people with dietary restrictions, you're behind schedule, the light is dying, and someone needs to find a gluten-free option for the lead. That's the real drama.",
+      "speaker": "Ron Howard",
+      "context": "Directors Guild of America panel discussion at the DGA Theater, Los Angeles, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Ron Howard is well-known for his grounded, self-deprecating takes on the unglamorous logistics of filmmaking, so this rings completely true. The subtle giveaway is that he'd more likely name the specific film or shoot rather than speak this generally about 'the lead.'"
+    },
+    {
+      "id": "q2",
+      "text": "My favorite was The Scrunchie Chronicles: 112 Countries and It's Still All about My Hair",
+      "speaker": "Hillary Clinton",
+      "context": "Joking about a rejected memoir title, poking fun at coverage of her hair, in 2014",
+      "real": true,
+      "source": {
+        "title": "The Week — Hillary Clinton jokes she considered calling her memoir The Scrunchie Chronicles",
+        "url": "https://theweek.com/speedreads/452686/hillary-clinton-jokes-considered-calling-memoir-scrunchie-chronicles",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've broken bones playing rugby, I've had a ski accident that laid me out for six weeks, and none of it prepared me for learning to tango. That was the most physically humbling thing I've ever done.",
+      "speaker": "Daniel Craig",
+      "context": "The Jonathan Ross Show, ITV, Series 17, Episode 4, original broadcast October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Craig is well-documented as physically tough and stoic, and self-deprecating humor about his own limits fits his dry persona perfectly. The tango detail is the planted hook — plausible but unverifiable, which is exactly what makes it land."
+    },
+    {
+      "id": "q4",
+      "text": "People think fashion is about the clothes and I used to think that too, which is embarrassing to admit. It's actually about the ten seconds before anyone sees you — that decision, that commitment.",
+      "speaker": "Anna Wintour",
+      "context": "MasterClass promotional interview filmed for behind-the-scenes content, released via Vogue's YouTube channel, October 2020",
+      "real": false,
+      "fake_note": "I made this one up — Wintour rarely admits to anything being 'embarrassing,' and that self-deprecating hook is the subtle crack in her otherwise characteristic voice. The quote does match her tendency to speak about the psychology beneath the surface of fashion, which is why it holds up."
+    },
+    {
+      "id": "q5",
+      "text": "It's a good thing to be laughed at. It's better than to be ignored.",
+      "speaker": "Harold Macmillan",
+      "context": "The British Prime Minister, in a handwritten note to the Postmaster General who wanted to take action against the satirical TV program 'That Was The Week That Was' - a disarmingly self-deprecating shrug at being mocked.",
+      "real": true,
+      "source": {
+        "title": "Harold Macmillan - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harold_Macmillan",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "How can you govern a country that has two hundred and forty-six varieties of cheese?",
+      "speaker": "Charles de Gaulle",
+      "context": "The French president and WWII Free France leader, expressing wry exasperation at the ungovernability of France; recorded in Ernest Mignon's 1962 collection Les Mots du General.",
+      "real": true,
+      "source": {
+        "title": "Charles de Gaulle - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Charles_de_Gaulle",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

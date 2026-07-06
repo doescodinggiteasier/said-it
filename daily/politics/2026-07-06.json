@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-06",
+  "edition": 10,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I will tell you, nobody warned me that a significant portion of the job is just reading documents that could have been emails. Long documents. Documents with appendices. I once found a footnote that had its own footnote, and I thought, this is either very thorough or someone is having a laugh at my expense.",
+      "speaker": "Pete Buttigieg",
+      "context": "Appearing on Pod Save America, recorded live at the Anthem in Washington, D.C., October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Pete's dry, self-deprecating bureaucratic humor and his habit of acknowledging the unglamorous machinery of government make this feel very much like him. The subtle giveaway is that 'footnote with its own footnote' is just a touch too perfectly constructed for genuine off-the-cuff speech."
+    },
+    {
+      "id": "q2",
+      "text": "He said he felt like a little boy who had stubbed his toe in the dark. That he was too old to cry, but it hurt too much to laugh.",
+      "speaker": "Adlai Stevenson",
+      "context": "Quoting a Lincoln anecdote to describe how he felt conceding the 1952 presidential election, Springfield, Illinois, Nov. 5, 1952.",
+      "real": true,
+      "source": {
+        "title": "The American Presidency Project: Remarks Conceding the Presidential Election in Springfield, Illinois",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-conceding-the-presidential-election-springfield-illinois",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The frustrating thing about infrastructure is that when you do it right, nobody notices. The bridge doesn't fall down. The water is clean. There's no ribbon cutting for 'the pipe that held.' I have attended a lot of ribbon cuttings for pipes that were supposed to hold and didn't, which is a different feeling entirely.",
+      "speaker": "Jennifer Granholm",
+      "context": "Interview with E&E News at the CERAWeek energy conference, Houston, Texas, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Granholm's enthusiastic wonkery about infrastructure, her time as Michigan governor dealing with exactly these problems, and her habit of pivoting from policy abstraction to concrete imagery make this feel genuine. The slight tell is the rhythm — 'the pipe that held' is a little too quotable for a spontaneous aside."
+    },
+    {
+      "id": "q4",
+      "text": "I will do it myself where does he live?",
+      "speaker": "Cory Booker",
+      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes.",
+      "real": true,
+      "source": {
+        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
+        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
+        "date": "2010-12-27"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Few thought he was even a starter / There were many who thought themselves smarter / But he ended PM / CH and OM / An earl and a knight of the garter.",
+      "speaker": "Clement Attlee",
+      "context": "A self-mocking limerick the former British PM wrote about himself in a letter to his brother Tom Attlee, April 8, 1956.",
+      "real": true,
+      "source": {
+        "title": "Lib Quotes: Clement Attlee (self-description limerick)",
+        "url": "https://libquotes.com/clement-attlee",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Someone asked me last week whether I'd rather be right or be effective, and I said, 'Well, in thirty years I've mostly managed to be neither, so let's not get too attached to the premise of the question.'",
+      "speaker": "Bernie Sanders",
+      "context": "Interview with Rolling Stone magazine, published in the November 2022 issue ahead of the midterm elections",
+      "real": false,
+      "fake_note": "I made this one up — Bernie's gruff, self-aware fatalism and his willingness to poke fun at his own record of legislative futility make this entirely plausible. The giveaway is that it's a shade too elegantly structured for Bernie, who tends to barrel forward rather than pause for a punchline."
+    }
+  ]
+}

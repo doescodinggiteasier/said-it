@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-06",
+  "edition": 11,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People assume sprinters hate the rain. I actually love competing in the rain because nobody's talking about times anymore. It becomes purely about who actually wants to be there, and that's always been a shorter list than people think.",
+      "speaker": "Usain Bolt",
+      "context": "BBC Sport documentary 'Bolt: The Final,' broadcast August 2017",
+      "real": false,
+      "fake_note": "I made this one up — Bolt has a well-documented habit of turning competitive situations into tests of will rather than pure performance metrics, and his interviews carry exactly this kind of relaxed philosophical edge. The giveaway is how cleanly the observation lands; Bolt's real off-the-cuff remarks tend to be funnier and less structured than this."
+    },
+    {
+      "id": "q2",
+      "text": "For me the best team, the best midfield is ours",
+      "speaker": "Rodri",
+      "context": "Rodri backing Spain ahead of their last-16 World Cup clash with Portugal, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — “For me the best team, the best midfield is ours”: Rodri fires up Spain before l",
+        "url": "https://sports.yahoo.com/articles/best-team-best-midfield-ours-111000581.html",
+        "date": "2026-07-06"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Pressure is a privilege and champions adjust.",
+      "speaker": "Billie Jean King",
+      "context": "The line she says spontaneously came out of her mouth while motivating Lindsay Davenport as U.S. Fed Cup captain, recounted at Tennis.com.",
+      "real": true,
+      "source": {
+        "title": "Tennis.com — Billie Jean King shares origins of 'Pressure is a privilege'",
+        "url": "https://www.tennis.com/baseline/articles/billie-jean-king-shares-origins-of-favorite-famous-quote-pressure-is-a-privilege",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Somebody told me once that a great defensive lineman has to be comfortable being uncomfortable for about three seconds, over and over, sixty times a game. I wrote that on my wristband my senior year. I didn't fully believe it yet but I wanted my hands to see it.",
+      "speaker": "J.J. Watt",
+      "context": "ESPN's 'E:60,' episode profiling Watt's return from injury, aired November 2018",
+      "real": false,
+      "fake_note": "I made this one up — Watt frequently discusses the philosophical and physical discipline of playing defensive line, and the detail about writing something on a wristband is consistent with his documented habit of using physical cues to reinforce mental focus. The giveaway is 'I wanted my hands to see it' — that's slightly more poetic than Watt's usual blunt delivery."
+    },
+    {
+      "id": "q5",
+      "text": "I've cried twice on a football pitch. Once when we won the league in 2012 and once in a reserve game when I was seventeen because I was absolutely certain I was never going to be good enough. The second one was more useful, if I'm being honest.",
+      "speaker": "Vincent Kompany",
+      "context": "Interview with The Guardian's Barney Ronay, published August 2023",
+      "real": false,
+      "fake_note": "I made this one up — Kompany is exactly the kind of thoughtful, self-aware footballer who gives interviews like this, and The Guardian's long-form style suits his reflective voice perfectly. The giveaway is the almost too-tidy emotional contrast between the two crying incidents; real Kompany anecdotes tend to be less symmetrically structured."
+    },
+    {
+      "id": "q6",
+      "text": "Coach Belichick called me into his office before the trade and I genuinely thought I was getting cut. I sat down and he slid a piece of paper across the desk. No eye contact, nothing. I read it, looked up, and he was already looking at something else. That was the whole meeting. I think I said 'okay' and left.",
+      "speaker": "Randy Moss",
+      "context": "NFL Network's 'A Football Life: Randy Moss,' episode aired October 2018",
+      "real": false,
+      "fake_note": "I made this one up — Moss has been very open about his complicated relationship with Belichick and the Patriots culture, and the deadpan Belichick-in-a-meeting story is a genre unto itself that Moss would find hilarious. The giveaway is the theatrical silence; Belichick meetings in real accounts are terse but rarely quite this mime-show-esque."
+    }
+  ]
+}

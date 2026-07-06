@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-06",
+  "edition": 16,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Look, I have been hungover on every continent except Antarctica, and frankly that's just an incomplete bucket list. Don't applaud that. Or do. I don't care — you all came here voluntarily.",
+      "speaker": "Christopher Hitchens",
+      "context": "Audience Q&A session following his lecture 'Cheap Thrills and Expensive Regrets' at the 92nd Street Y, New York City, October 2007",
+      "real": false,
+      "fake_note": "I made this one up — Hitchens openly celebrated drinking, traveled obsessively, and had a razor-dry audience rapport that made self-implicating asides feel like scholarship. The giveaway is the slightly too-tidy 'incomplete bucket list' framing — Hitchens would've gone messier and more specific."
+    },
+    {
+      "id": "q2",
+      "text": "I've read every bad review I've ever gotten. Every single one. Twice. And then I went and did the show anyway and the crowd lost their shit, so what does that tell you about critics? They're just sad people who can't afford good seats.",
+      "speaker": "Don Rickles",
+      "context": "Pre-show press gaggle at the Sands Hotel & Casino, Las Vegas, recorded for a segment on 'The Tonight Show with Johnny Carson,' aired November 1978",
+      "real": false,
+      "fake_note": "I made this one up — Rickles built his entire persona on cheerfully contemptuous put-downs, and taking shots at critics while bragging about crowd reaction is completely on-brand. The giveaway is it's a bit too structurally clean — Rickles would've interrupted himself with a tangential insult."
+    },
+    {
+      "id": "q3",
+      "text": "The night I won the Grammy I went back to my hotel room, ordered room service at two in the morning — just a massive plate of fries and a bottle of something I can't spell — and sat there in my good dress eating with my hands. That was the real celebration. The after-party was full of assholes.",
+      "speaker": "Amy Winehouse",
+      "context": "Candid interview with NME journalist Paul Stokes conducted at the Chateau Marmont, Los Angeles, February 2008",
+      "real": false,
+      "fake_note": "I made this one up — the down-to-earth, anti-glamour deflation fits Winehouse's personality perfectly, as does the specific sensory detail and the blunt 'full of assholes' kicker. The giveaway is it's almost *too* charming and self-aware — a cleaned-up version of how she actually rambled."
+    },
+    {
+      "id": "q4",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore. I just want to cut to the chase.",
+      "speaker": "Bob Saget",
+      "context": "In a Rolling Stone interview (republished from the vault), the 'America's Dad' comedian on his post-Full House, R-rated stand-up mindset.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There are 400,000 words in the English language, and there are seven of them that you can't say on television. What a ratio that is. 399,993 to seven. They must really be bad.",
+      "speaker": "George Carlin",
+      "context": "Carlin's landmark \"Seven Words You Can Never Say on Television\" routine from his 1972 album Class Clown, listing the broadcast-banned words verbatim and reveling in saying them all out loud.",
+      "real": true,
+      "source": {
+        "title": "The Big Seven Words — George Carlin",
+        "url": "https://www.erenkrantz.com/Humor/SevenDirtyWords.shtml",
+        "date": "1972"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "And cigarettes gave me the patience to sit and write those thoughts down in a comedy-friendly format that you could understand. And alcohol gives me the courage to stand up here in front of you judgmental pricks and do it with a quarter million dollars worth of cameras in your face.",
+      "speaker": "Doug Stanhope",
+      "context": "From Doug Stanhope's 2007 stand-up special \"No Refunds\" — his defiant, self-celebrating defense of lifelong drug, cigarette, and alcohol use as the engine of his comedy.",
+      "real": true,
+      "source": {
+        "title": "Doug Stanhope: No Refunds (2007) — Full Transcript",
+        "url": "https://scrapsfromtheloft.com/comedy/doug-stanhope-no-refunds-transcript/",
+        "date": "2007"
+      }
+    }
+  ]
+}
