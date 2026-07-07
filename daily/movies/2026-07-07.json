@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-07",
+  "edition": 20,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'm not asking you to like it. I'm asking you to sign it.",
+      "speaker": "A Few Good Men (1992)",
+      "context": "Lt. Kaffee pressuring a witness to verify a statement before a deposition",
+      "real": false,
+      "fake_note": "I made this one up — the courtroom-pressure dialogue in this film runs on exactly this kind of short, clipped legal leverage. The giveaway is that the real film tends to give Kaffee slightly more sarcastic color even in terse moments."
+    },
+    {
+      "id": "q2",
+      "text": "The Germans don't care what you believe. They only care what you do.",
+      "speaker": "Schindler's List (1993)",
+      "context": "Itzhak Stern warning a Jewish worker about drawing attention to himself",
+      "real": false,
+      "fake_note": "I made this one up — Stern's careful, understated pragmatism under occupation is well established, and the line fits the film's moral texture. The giveaway is that it edges toward a general statement where Stern typically keeps his warnings hyper-specific and immediate."
+    },
+    {
+      "id": "q3",
+      "text": "Some places are like people. Some shine and some don't.",
+      "speaker": "The Shining (1980)",
+      "context": "Head chef Dick Hallorann (Scatman Crothers) explaining 'the shining' to young Danny Torrance (Danny Lloyd) at the Overlook Hotel.",
+      "real": true,
+      "source": {
+        "title": "The Shining (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Shining_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Each and every man under my command owes me one hundred Nazi scalps.",
+      "speaker": "Inglourious Basterds (2009)",
+      "context": "Lt. Aldo Raine (Brad Pitt) rallying his squad of Jewish-American soldiers in his opening address.",
+      "real": true,
+      "source": {
+        "title": "Inglourious Basterds - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Inglourious_Basterds",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Fourteen months I waited for a table at that place. Fourteen months.",
+      "speaker": "Annie Hall (1977)",
+      "context": "Alvy Singer complaining to Annie about a restaurant reservation mix-up",
+      "real": false,
+      "fake_note": "I made this one up — the petty neurotic grievance and the repeated number are pure Alvy, and Woody Allen's comedy is full of lines exactly this mundane. The giveaway is the repetition device, which is a bit too cleanly comedic for improvised-feeling Allen dialogue."
+    },
+    {
+      "id": "q6",
+      "text": "Rudeness is merely an expression of fear. People fear they won't get what they want. The most dreadful and unattractive person only needs to be loved, and they will open up like a flower.",
+      "speaker": "The Grand Budapest Hotel (2014)",
+      "context": "M. Gustave (Ralph Fiennes), the fastidious concierge, instructs his lobby boy Zero on his philosophy of service.",
+      "real": true,
+      "source": {
+        "title": "The Grand Budapest Hotel - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Grand_Budapest_Hotel",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-07",
+  "edition": 15,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I was doing session work for almost four years before anyone in the room knew my name. I think that actually helped. I wasn't trying to impress the song.",
+      "speaker": "H.E.R.",
+      "context": "Interview with Zane Lowe on Apple Music 1, broadcast in conjunction with the Back of My Mind album release, June 2021",
+      "real": false,
+      "fake_note": "I made this one up — H.E.R. has spoken extensively about her years doing anonymous session and demo work before her identity became public, so this fits her documented biography exactly. The giveaway is the last line — 'I wasn't trying to impress the song' edges toward the kind of polished insight that feels slightly more rehearsed than real off-the-cuff speech."
+    },
+    {
+      "id": "q2",
+      "text": "I don't really listen back to records I've made. Maybe once, just to make sure the thing got out of the studio in one piece, and then that's it — it belongs to whoever's putting it on.",
+      "speaker": "Jack White",
+      "context": "Interview with Rolling Stone, published in the magazine's October 2022 print edition ahead of the Entering Heaven Alive release",
+      "real": false,
+      "fake_note": "I made this one up — Jack genuinely talks about detachment from finished work and his almost anti-nostalgic relationship with his own catalog, so this slots right in. The subtle giveaway is the phrase 'got out of the studio in one piece,' which is a little too tidy even for him."
+    },
+    {
+      "id": "q3",
+      "text": "My grandmother had a record player that sat on top of the refrigerator, and I remember standing on a step stool just to watch the needle. I thought something was alive in there. I still sort of think that.",
+      "speaker": "Alicia Keys",
+      "context": "Conversation with Oprah Winfrey on the Oprah's SuperSoul podcast, episode released March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Alicia talks often about her early musical memories and her grandmother's influence, which makes this feel completely at home. The giveaway is that the image is a touch too cinematic — the step stool detail is just a hair too composed for real off-the-cuff memory."
+    },
+    {
+      "id": "q4",
+      "text": "I've been told my whole career that the bass is supposed to support. Support what? Support who? I want the bass to be the thing people are trying to survive.",
+      "speaker": "Thundercat",
+      "context": "Feature interview with Pitchfork, published online ahead of the It Is What It Is album release, April 2020",
+      "real": false,
+      "fake_note": "I made this one up — Thundercat talks constantly about reframing the bass guitar as a lead instrument and pushing back on conventional low-end thinking, so this fits his documented philosophy perfectly. The tiny giveaway is 'trying to survive,' which is just slightly more confrontational than his usual warm, slightly absurdist phrasing."
+    },
+    {
+      "id": "q5",
+      "text": "I've probably listened to it 10,000 times, and I still love it",
+      "speaker": "Dave Grohl",
+      "context": "Dave Grohl describing what he considers the perfect record",
+      "real": true,
+      "source": {
+        "title": "Music — Dave Grohl reveals what he believes to be the “perfect record”",
+        "url": "https://www.nme.com/news/music/dave-grohl-reveals-what-he-believes-to-be-the-perfect-record-3955443?utm_source=rss&utm_medium=rss&utm_campaign=dave-grohl-reveals-what-he-believes-to-be-the-perfect-record",
+        "date": "2026-07-07"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "He had the right attitude. He chewed gum, looked arrogant and flipped the bird to the guards – he did everything the prisoners wanted to do. He was a mean mother from the South who was there because he loved us. When he walked away, everyone in that place had become a Johnny Cash fan.",
+      "speaker": "Merle Haggard",
+      "context": "Recalling watching Johnny Cash perform at San Quentin prison on New Year's Day while Haggard was an inmate there.",
+      "real": true,
+      "source": {
+        "title": "Louder — Johnny Cash, Merle Haggard, and the true story that's almost too good to be true",
+        "url": "https://www.loudersound.com/features/johnny-cash-merle-haggard-and-the-true-story-thats-almost-too-good-to-be-true",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

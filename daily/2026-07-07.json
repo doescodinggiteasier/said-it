@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-07",
+  "edition": 23,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Gravity is not subtle and it is not forgiving, and yet every generation of physicists acts slightly surprised when it refuses to cooperate with the other forces. It's like being astonished that your cat ignores you. The cat has always ignored you.",
+      "speaker": "Neil deGrasse Tyson",
+      "context": "Panel discussion at the World Science Festival, Lincoln Center, New York, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Tyson loves using a mundane domestic comparison to make a physics concept feel both humbling and comic, and the slightly exasperated professorial tone is very him. The giveaway is the cat metaphor specifically — Tyson tends toward dogs when he reaches for pet analogies."
+    },
+    {
+      "id": "q2",
+      "text": "Current observations hint that our standard model of the universe is incorrect.",
+      "speaker": "Julie McEnery",
+      "context": "Roman Space Telescope senior project scientist, NASA",
+      "real": true,
+      "source": {
+        "title": "Scientific American — Roman Space Telescope",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "What would take Hubble 2,000 years to process, Roman can do in a year.",
+      "speaker": "Jared Isaacman",
+      "context": "NASA Administrator, on the Nancy Grace Roman Space Telescope",
+      "real": true,
+      "source": {
+        "title": "Scientific American — Roman Space Telescope",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Humanity is about to be handed almost unimaginable power, and it is deeply unclear whether our social, political, and technological systems possess the maturity to wield it.",
+      "speaker": "Dario Amodei",
+      "context": "Anthropic CEO, on the arrival of transformative AI",
+      "real": true,
+      "source": {
+        "title": "TechRadar — Quote of the day: Dario Amodei on AI",
+        "url": "https://www.techradar.com/pro/quote-of-the-day-by-anthropic-ceo-dario-amodei-humanity-is-about-to-be-handed-almost-unimaginable-power-and-it-is-deeply-unclear-whether-we-possess-the-maturity-to-wield-it-warnings-on-the-looming-threat-of-beyond-human-ai",
+        "date": "2026-06-03"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I wore the same leather jacket to every audition for about three years. I was convinced it was doing something. My agent finally told me she hated it and had hated it from the beginning, which I found weirdly comforting.",
+      "speaker": "Meryl Streep",
+      "context": "Acceptance remarks at the American Film Institute Life Achievement Award ceremony, Los Angeles, June 2017",
+      "real": false,
+      "fake_note": "I made this one up — Streep often deflates her own mythology in acceptance speeches with small, self-mocking details from early in her career, and this has exactly the dry, slightly surprised quality she brings to those moments. The giveaway is the jacket as a talisman — Streep's real early-career superstitions, as documented, ran more toward preparation rituals than lucky clothing."
+    },
+    {
+      "id": "q6",
+      "text": "I tasted a tomato in a garden in Liguria once — just pulled it off the vine, still warm — and I remember thinking, everything I have ever put on a menu is an apology for not having this. That was maybe 1987. I've been chasing it since.",
+      "speaker": "Anthony Bourdain",
+      "context": "Recorded conversation with Eric Ripert released as a bonus episode of the Parts Unknown podcast, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Bourdain constantly returned to the idea of a single transcendent ingredient undoing all professional pretension, and his voice is full of self-deprecating hyperbole grounded in a specific place and moment. The giveaway is the exact year — Bourdain in print rarely pinned a formative food memory to a precise date like that."
+    }
+  ]
+}

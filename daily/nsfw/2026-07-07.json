@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-07",
+  "edition": 17,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I once asked a Jesuit priest what was the best short prayer he knew. He said, \"Fuck it,\" as in \"Fuck it; it's in God's hands.\"",
+      "speaker": "Anthony Hopkins",
+      "context": "Anthony Hopkins recounting a Jesuit priest's answer when he asked for the best short prayer — an anecdote he has told publicly, including on Inside the Actors Studio.",
+      "real": true,
+      "source": {
+        "title": "Inside the Actors Studio (IMDb quotes)",
+        "url": "https://www.imdb.com/name/nm0000164/quotes/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I used to have a drug problem, now I make enough money.",
+      "speaker": "David Lee Roth",
+      "context": "Van Halen frontman David Lee Roth's famously flip one-liner about wealth and excess, quoted in American Songwriter's roundup of his best quotes.",
+      "real": true,
+      "source": {
+        "title": "15 of the Best Quotes from Van Halen's David Lee Roth (American Songwriter)",
+        "url": "https://americansongwriter.com/15-of-the-best-quotes-from-van-halens-david-lee-roth/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Some woman in Cincinnati wrote me a letter saying my act was obscene. I wrote back: 'Lady, I had to live it. The least you can do is sit through forty minutes of it.'",
+      "speaker": "Richard Pryor",
+      "context": "Live Q&A session at the Improv Comedy Club, Hollywood, recorded for the 1979 special 'An Evening with Richard Pryor'",
+      "real": false,
+      "fake_note": "I made this one up — Pryor regularly broke the fourth wall between his life and his art, and clapping back at pearl-clutching fans was absolutely his style. The subtle giveaway is 'obscene' — Pryor usually had more colourful, specific language for that concept than that single clean word."
+    },
+    {
+      "id": "q4",
+      "text": "Marriage is wonderful. I recommend it to anyone who enjoys paperwork, arguments about where to put the couch, and occasionally wanting to drive into the ocean. Tremendous institution.",
+      "speaker": "Phyllis Diller",
+      "context": "Live set recorded at Harrah's Lake Tahoe showroom, July 1974, later included in the compilation 'Diller: Uncut and Unrepeatable'",
+      "real": false,
+      "fake_note": "I made this one up — Diller built her entire career lampooning domestic life with cheerful venom, and 'drive into the ocean' is the kind of absurdist escalation she loved. The giveaway is 'Tremendous institution' at the end — it's slightly too Trumpian-ironic for Diller's era; she would have landed the closer with something more slapstick."
+    },
+    {
+      "id": "q5",
+      "text": "You want profound? Here's profound: never eat gas station sushi, never argue with a drummer, and always, always get the upgrade. That's everything I've learned in sixty years. You're welcome.",
+      "speaker": "George Carlin",
+      "context": "Backstage press availability at the Beacon Theatre, New York, following the taping of 'Life Is Worth Losing', November 2005",
+      "real": false,
+      "fake_note": "I made this one up — Carlin loved packaging absurdist non-wisdom as deadpan life advice, and the anti-drummer joke fits his contempt for sacred cows. The giveaway is this is slightly warmer and goofier than late-period Carlin, who by 2005 was considerably darker and more misanthropic in his off-the-cuff remarks."
+    },
+    {
+      "id": "q6",
+      "text": "I think weed is the best drug on earth. One time I smoked a joint with peyote in it, and I saw a wolf howling at the moon. Hollywood is a coke town, but weed is so much better. And molly, too. Those are happy drugs – social drugs. They make you want to be with friends. You're out in the open. You're not in a bathroom. I really don't like coke. It's so gross and so dark. It's like what are you, from the Nineties? Ew.",
+      "speaker": "Miley Cyrus",
+      "context": "Miley Cyrus ranking her drug preferences in her September 2013 Rolling Stone cover story, calling weed and molly 'happy drugs' and dismissing cocaine as dated.",
+      "real": true,
+      "source": {
+        "title": "Miley Cyrus: 'Weed Is the Best Drug on Earth' (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

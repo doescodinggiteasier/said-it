@@ -288,5 +288,16 @@
       "url": "https://www.liverpoolfc.com/news/first-team/111453-bill-shankly-in-his-own-words",
       "date": "2026-06-30"
     }
+  },
+  {
+    "text": "I go with a clear conscience",
+    "speaker": "Cristiano Ronaldo",
+    "context": "After Portugal's World Cup exit vs Spain, 2026",
+    "real": true,
+    "source": {
+      "title": "Sports — ‘I go with a clear conscience’: Cristiano Ronaldo confirms he has played his las",
+      "url": "https://www.theguardian.com/football/2026/jul/07/cristiano-ronaldo-portugal-roberto-martinez-world-cup-2026-spain",
+      "date": "2026-07-07"
+    }
   }
 ]

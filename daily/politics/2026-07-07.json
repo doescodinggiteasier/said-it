@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-07",
+  "edition": 11,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I thought I looked real cute in my uniform, and then I heard a boy yell from the bleachers, 'Make that basket, bird legs.' And my greatest fear is that same guy is somewhere out there in the audience tonight, and he's going to cut me down to size.",
+      "speaker": "Ann Richards",
+      "context": "The Texas governor opening her celebrated 1988 Democratic National Convention keynote with a self-deprecating story about her eighth-grade basketball days.",
+      "real": true,
+      "source": {
+        "title": "Ann Richards, DNC keynote address, 1988 - Speakola",
+        "url": "https://speakola.com/political/ann-richards-dnc-keynote-1988",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My mother told me early on that the most dangerous thing in politics is a man who genuinely believes he's the only one who understands the problem. I've been in rooms with several of those men. She was right.",
+      "speaker": "Madeleine Albright",
+      "context": "Keynote address at the Women's Foreign Policy Group annual gala, Washington D.C., November 2016",
+      "real": false,
+      "fake_note": "I made this one up — Albright frequently invoked her mother and her Eastern European immigrant experience to frame political observations, giving this a real biographical texture. The tell is the slight over-neatness of the three-sentence structure; her real anecdotes tended to be a bit longer and more digressive."
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what the hardest part of the job is, and I always say it's the part where you have to sit through a ninety-minute briefing on agricultural subsidy formulae and then walk out and answer questions about it like you've been thinking about nothing else for three years. Which, in fairness, some of my staff have.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic Governors Association dinner, Washington D.C., March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-deprecating, rambling style and his habit of gesturing at the grind of governance make this feel completely lived-in. The subtle tell is that the punchline is a little too cleanly constructed for his usual drift."
+    },
+    {
+      "id": "q4",
+      "text": "Somebody asked me the other day if I miss campaigning and I said, genuinely, that I miss certain parts of it — the diners, meeting people, even the bus. But I do not miss standing in a parking lot in January in New Hampshire while a local news camera records me eating a corn dog. That part I have made peace with losing.",
+      "speaker": "John Kasich",
+      "context": "Guest appearance on the Axe Files podcast with David Axelrod, CNN Audio, September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Kasich's folksy, slightly aggrieved nostalgia for retail politics and his deadpan delivery fit this perfectly, and New Hampshire is a real venue of his 2016 campaign. The corn dog is doing a little too much specific work — that's the tell."
+    },
+    {
+      "id": "q5",
+      "text": "Worst damnfool mistake I ever made was letting myself be elected Vice President of the United States. Should have stuck with my old chores as Speaker of the House. I gave up the second most important job in the Government for one that didn't amount to a hill of beans. I spent eight long years as Mr. Roosevelt's spare tire.",
+      "speaker": "John Nance Garner",
+      "context": "FDR's first vice president (\"Cactus Jack\"), ruefully mocking his own decision to take the job and his powerlessness in it, after leaving office.",
+      "real": true,
+      "source": {
+        "title": "John Nance Garner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Nance_Garner",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I have now come to the conclusion never again to think of marrying, and for this reason; I can never be satisfied with anyone who would be blockhead enough to have me.",
+      "speaker": "Abraham Lincoln",
+      "context": "A candidly self-mocking line from a young Lincoln's letter, poking fun at his own eligibility as a suitor.",
+      "real": true,
+      "source": {
+        "title": "Abraham Lincoln - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Abraham_Lincoln",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

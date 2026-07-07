@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-07",
+  "edition": 12,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I used to think closing was about not being afraid. It took me a long time to figure out it's more about not remembering. You blow one, you genuinely cannot carry it into the next day, or you're done. I've seen guys try to carry it and I've watched their careers just — evaporate.",
+      "speaker": "Mariano Rivera",
+      "context": "Interview with Bob Costas for NBC Sports Network's 'The Closer: Mariano Rivera,' aired March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Rivera talks about faith and mental composure constantly, so this memory-management idea slots right into his worldview. The giveaway is 'evaporate,' which is a little too literary for Rivera, who tends toward simpler, more direct word choices."
+    },
+    {
+      "id": "q2",
+      "text": "Every team I've ever been on, there's always one guy who just does not get tired. Like, not even during two-a-days. You start to think there's something wrong with him. And then you realize that guy is either gonna make the Pro Bowl or he's gonna blow out his knee in week two — there's no in between.",
+      "speaker": "Peyton Manning",
+      "context": "Omaha Productions' 'Detail' episode breakdown, ESPN+, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Manning's football-nerd tendency to turn locker room observation into almost clinical analysis is dead-on here, and 'Omaha Productions' is his own company, so the sourcing feels airtight. The giveaway is the punchline structure; Manning is funny but his humor usually lands on scheme, not physical fate."
+    },
+    {
+      "id": "q3",
+      "text": "Serena could be down a set and a break and you'd still have to play every single point like it's match point. Because it was. That was the thing people on the outside didn't understand — the score didn't mean what the score normally means.",
+      "speaker": "Kim Clijsters",
+      "context": "WTA Insider podcast, episode recorded during the 2022 Australian Open fortnight",
+      "real": false,
+      "fake_note": "I made this one up — Clijsters faced Serena repeatedly and always spoke about her with this kind of precise, earned respect rather than awe. The giveaway is that the quote, while plausible, is slightly too neatly framed for Clijsters, who tends to be a bit more conversational and self-deprecating."
+    },
+    {
+      "id": "q4",
+      "text": "People ask me what I was thinking on that putt and honestly I wasn't thinking about anything. My caddie said something to me right before I stepped up and I had to ask him to repeat it twice because I just — I wasn't there. And it went in. So I don't know what that tells you.",
+      "speaker": "Jordan Spieth",
+      "context": "Golf Channel's 'Live From the Masters,' Augusta, April 2023",
+      "real": false,
+      "fake_note": "I made this one up — Spieth's reputation for narrating his own mental chaos on the course makes this feel ripped from any of his mid-round monologues. The subtle giveaway is the slightly too-perfect 'I wasn't there' phrasing; Spieth is scattered but he usually names the specific putt."
+    },
+    {
+      "id": "q5",
+      "text": "I spoke to the head coach [De Zerbi] for close to two hours about the club, the fans, the",
+      "speaker": "Sandro Tonali",
+      "context": "Tonali discussing his transfer to Tottenham",
+      "real": true,
+      "source": {
+        "title": "Sports — Sandro Tonali seals £92.5m move to Tottenham on back of ‘magic’ sales pitch",
+        "url": "https://www.theguardian.com/football/2026/jul/06/sandro-tonali-seals-move-to-tottenham-newcastle-transfer-window",
+        "date": "2026-07-07"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "When you need a goal, you cannot take him off",
+      "speaker": "Martínez",
+      "context": "Roberto Martínez on Ronaldo during Portugal's World Cup last-16 defeat",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘I go with a clear conscience’: Cristiano Ronaldo confirms he has played his las",
+        "url": "https://www.theguardian.com/football/2026/jul/07/cristiano-ronaldo-portugal-roberto-martinez-world-cup-2026-spain",
+        "date": "2026-07-07"
+      }
+    }
+  ]
+}
