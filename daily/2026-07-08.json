@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-08",
+  "edition": 24,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I spent a whole afternoon once trying to explain to my mother what I actually do. Not the cooking, the other part — the production, the sourcing. And she kept nodding and then at the end she said 'so you go to the market' and I said yes, Mom, essentially I go to the market.",
+      "speaker": "José Andrés",
+      "context": "Keynote conversation at the Madrid Fusión culinary summit, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Andrés consistently uses warm, funny family anecdotes to puncture the pretension of haute cuisine discourse, and the immigrant-parent dynamic here feels authentic to his public storytelling. The subtle tell is that the punchline is a little too perfectly circular — real anecdotes rarely resolve quite this cleanly."
+    },
+    {
+      "id": "q2",
+      "text": "People ask me what I listen to before a match and I always disappoint them. It's not some big pump-up playlist. Honestly, lately it's been a podcast about the Roman aqueduct system. I find it genuinely calming.",
+      "speaker": "Serena Williams",
+      "context": "Interview with Gayle King on CBS Mornings, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Serena has spoken often about her eclectic intellectual interests and deliberately deflating the 'athlete mystique,' so the self-aware disappointment of the answer feels completely her. The subtle giveaway is the oddly specific 'Roman aqueduct system,' which is just a touch too particular to be real."
+    },
+    {
+      "id": "q3",
+      "text": "You love to hate and trash me",
+      "speaker": "Uwe Boll",
+      "context": "Filmmaker responding to critics of his work on the Armie Hammer movie 'Citizen Vigilante'",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Uwe Boll Rips His Critics While Defending Armie Hammer Movie: “Open Your Eyes”",
+        "url": "https://www.hollywoodreporter.com/movies/movie-news/uwe-boll-rips-citizen-vigilante-critics-armie-hammer-1236640602/",
+        "date": "2026-07-08"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I'm tired of hearing about money, money, money, money, money. I just want to play the game, drink Pepsi, wear Reebok.",
+      "speaker": "Shaquille O'Neal",
+      "context": "NBA center, in July 1996 after leaving the Orlando Magic for the Lakers, when asked about contract money",
+      "real": true,
+      "source": {
+        "title": "'I Just Want To Play The Game, Drink Pepsi, Wear Reebok': Remembering The Time Shaquille O'Neal Dropped Random Knowledge",
+        "url": "https://clutchpoints.com/i-just-want-to-play-the-game-drink-pepsi-wear-reebok-remembering-the-time-shaq-dropped-random-knowledge",
+        "date": "2022-07-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "You shouldn't let poets lie to you",
+      "speaker": "Björk",
+      "context": "In a 1988 TV interview, after taking apart a television to explain how it works and recounting how an Icelandic poet's spooky description had once scared her.",
+      "real": true,
+      "source": {
+        "title": "Commentary on Björk's 1988 \"Wonder of Television\" interview",
+        "url": "https://peopleoftheurban.wordpress.com/2015/08/31/commentary-on-bjork-on-the-wonder-of-television-1988/",
+        "date": "1988-01-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Someone sent me a review once that said my technique was 'technically proficient but emotionally opaque' and I've been thinking about that for about six years. Not because I disagree. I just keep wondering what the opposite would actually sound like.",
+      "speaker": "Yo-Yo Ma",
+      "context": "Feature profile in The New Yorker, 'The Instrument,' published April 2019",
+      "real": false,
+      "fake_note": "I made this one up — Yo-Yo Ma is known for deeply philosophical, slightly meandering self-reflection on performance and meaning, and returning to a critic's phrase for years is entirely consistent with his intellectual character. The giveaway is the wry final line, which is a hair too aphorism-adjacent for his usual rambling thoughtfulness."
+    }
+  ]
+}

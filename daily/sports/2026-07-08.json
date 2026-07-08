@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-08",
+  "edition": 13,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what I was thinking on that last lap and honestly I wasn't thinking anything coherent. It's more like your hands are just ahead of your brain the whole time, and you only catch up after you've already won or already crashed.",
+      "speaker": "Lewis Hamilton",
+      "context": "Interview with BBC Sport following the 2019 British Grand Prix at Silverstone",
+      "real": false,
+      "fake_note": "I made this one up — Hamilton really does talk about the dissociation between instinct and conscious thought in racing, and the phrasing sounds like his reflective post-race tone. The subtle giveaway is that 'already won or already crashed' is just a touch too balanced and quotable for genuinely off-the-cuff speech."
+    },
+    {
+      "id": "q2",
+      "text": "Baseball has been good to me since I quit trying to play it.",
+      "speaker": "Whitey Herzog",
+      "context": "The Hall of Fame manager reflecting on his so-so playing career versus his success as a skipper.",
+      "real": true,
+      "source": {
+        "title": "ESPN Page 2 — My 5 top quotes by Hall of Famer Whitey Herzog",
+        "url": "https://www.espn.ph/espn/page2/index?id=5408431",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Kobe used to call me at hours of the night that I can't repeat in polite company, just to argue about footwork. Not ask about it — argue. He had already decided he was right. The call was a formality.",
+      "speaker": "Pau Gasol",
+      "context": "Segment on ESPN's 'The Jump' with Rachel Nichols, aired February 2020 as part of the network's Kobe Bryant tribute coverage",
+      "real": false,
+      "fake_note": "I made this one up — Gasol has shared many warm, textured anecdotes about Kobe's obsessive competitiveness and their close friendship, so this sits entirely within the plausible range. The tell is 'The call was a formality,' which is a little too epigrammatic for someone speaking in their second language."
+    },
+    {
+      "id": "q4",
+      "text": "I've been asked to describe what it feels like to bowl a perfect game and the honest answer is that around the seventh or eighth frame you stop being a person and become something closer to a very focused machine, and then right after the tenth frame you become a person again and you're starving.",
+      "speaker": "Pete Weber",
+      "context": "Interview on the PBA Tour's official podcast 'Bowling This Week,' recorded ahead of the 2015 US Open",
+      "real": false,
+      "fake_note": "I made this one up — Weber is famously emotional and self-aware in interviews, and this blend of intense athletic description followed by a mundane physical detail is very true to his personality. The subtle giveaway is that the 'starving' punchline is a touch too deliberate — real bowlers in the moment rarely land the joke that cleanly."
+    },
+    {
+      "id": "q5",
+      "text": "They want Messi to stay in the tournament",
+      "speaker": "Hossam Hassan",
+      "context": "Egypt manager after his side's dramatic World Cup loss to Argentina",
+      "real": true,
+      "source": {
+        "title": "Sports — Egypt manager Hassan to switch off World Cup after Argentina ‘injustice’",
+        "url": "https://www.theguardian.com/football/2026/jul/07/egypt-manager-hassan-to-switch-off-world-cup-after-argentina-injustice",
+        "date": "2026-07-08"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "LeBron watched more film than anybody I ever coached, and I mean that as a pure statement of fact, not a compliment, because he would come in the next day and correct ME on something I missed. That stopped being flattering around game three.",
+      "speaker": "Tyronn Lue",
+      "context": "The Athletic podcast 'The Lowe Post' with Zach Lowe, recorded during the 2020 NBA Finals bubble",
+      "real": false,
+      "fake_note": "I made this one up — Lue has spoken openly about LeBron's film obsession and their candid coaching relationship, so this lands in familiar territory. The subtle tell is the turn at the end: 'That stopped being flattering around game three' is a little too well-timed to be spontaneous."
+    }
+  ]
+}

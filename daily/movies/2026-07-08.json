@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-08",
+  "edition": 21,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You're not scared of me. That's going to be a problem for both of us.",
+      "speaker": "The Silence of the Lambs (1991)",
+      "context": "Hannibal Lecter, studying Clarice during one of their early sessions",
+      "real": false,
+      "fake_note": "I made this one up — the calm inversion of threat, casting the victim's courage as their liability, is very Lecter in rhythm and attitude. The giveaway is the phrase 'for both of us,' which implies a partnership Lecter would be too controlled to offer this early in their relationship."
+    },
+    {
+      "id": "q2",
+      "text": "I promised my father I'd stay out of trouble. I never said anything about staying out of fights.",
+      "speaker": "Butch Cassidy and the Sundance Kid (1969)",
+      "context": "Butch Cassidy, grinning before a brawl",
+      "real": false,
+      "fake_note": "I made this one up — William Goldman's script loves exactly this kind of quick, self-delighting wordplay from Butch, and the casual daddy-reference fits the tone. The subtle giveaway is the two-part structure; it's a touch more constructed than Goldman's best throwaway lines, which feel more accidental."
+    },
+    {
+      "id": "q3",
+      "text": "Get your stuff. We're not sleeping in a car that smells like this.",
+      "speaker": "Planes, Trains and Automobiles (1987)",
+      "context": "Neal Page, exasperated after another of Del's mishaps",
+      "real": false,
+      "fake_note": "I made this one up — Neal's clipped, barely-contained irritation at Del's chaos is exactly the register Steve Martin plays throughout the film. The subtle giveaway is 'stuff'; Neal speaks just a touch more precisely than that, even when he's furious."
+    },
+    {
+      "id": "q4",
+      "text": "Back off, man. I'm a scientist.",
+      "speaker": "Ghostbusters (1984)",
+      "context": "Dr. Peter Venkman (Bill Murray) defends his research methods to a skeptical librarian.",
+      "real": true,
+      "source": {
+        "title": "Ghostbusters - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Ghostbusters",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The name on the building doesn't mean anybody inside it is honest.",
+      "speaker": "The Maltese Falcon (1941)",
+      "context": "Sam Spade, warning a client early in the picture",
+      "real": false,
+      "fake_note": "I made this one up — Spade's blunt street-philosophy and the clipped Hammett syntax feel authentic to Huston's script. The subtle giveaway is that it reads a hair too aphoristic and self-contained; real Spade lines are usually aimed at a specific person's specific lie rather than delivered as general wisdom."
+    },
+    {
+      "id": "q6",
+      "text": "Funny business, a woman's career. The things you drop on your way up the ladder so you can move faster. You forget you'll need them again when you get back to being a woman.",
+      "speaker": "All About Eve (1950)",
+      "context": "Aging Broadway star Margo Channing (Bette Davis) reflecting on the costs of ambition.",
+      "real": true,
+      "source": {
+        "title": "All About Eve - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/All_About_Eve",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-08",
+  "edition": 16,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember the first time I heard a Rhodes piano through a Leslie cabinet — I was maybe nineteen, sitting on the floor of this tiny studio in Muscle Shoals, and I just started crying. Not sad crying. The other kind. I didn't know a machine could breathe like that.",
+      "speaker": "Bonnie Raitt",
+      "context": "Interview with American Songwriter magazine, published in their March/April 2019 print edition",
+      "real": false,
+      "fake_note": "I made this one up — Bonnie's deep reverence for the instruments and studios of that era is completely documented, and the emotional specificity reads like her. The subtle giveaway is 'I didn't know a machine could breathe like that,' which is just a hair too poetic for off-the-cuff speech."
+    },
+    {
+      "id": "q2",
+      "text": "Gluttony and lust – y'know, Caligula vibes! What else is there? I've been slothful, definitely. I've ticked the wrath, greed and heresy boxes too.",
+      "speaker": "Hozier",
+      "context": "In a Hotpress interview about his concept album Unreal Unearth, asked which of the seven deadly sins were the most fun to commit.",
+      "real": true,
+      "source": {
+        "title": "Hotpress — 12 Interviews of Xmas: Hozier on Irishness, Deadly Sins, Joni Mitchell and Unreal Unearth",
+        "url": "https://www.hotpress.com/music/12-interviews-of-xmas-hozier-on-irishness-deadly-sins-joni-mitchell-and-unreal-unearth-22999788",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "This whole past year has been some of the worst moments of my life, but also some moments of transcendental beauty and gratitude for the blessings I have in my life",
+      "speaker": "James Ford",
+      "context": "Discussing writing his new album while receiving treatment for leukemia",
+      "real": true,
+      "source": {
+        "title": "Music — James Ford tells us about writing new album ‘Lost In Another World’ while in hos",
+        "url": "https://www.nme.com/news/music/james-ford-interview-lost-in-another-world-new-album-cancer-treatment-3955371?utm_source=rss&utm_medium=rss&utm_campaign=james-ford-interview-lost-in-another-world-new-album-cancer-treatment",
+        "date": "2026-07-08"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "There's a reason every great soul record has a moment where the arrangement drops out and it's just the voice and maybe a kick drum. It's not a production trick. Somebody along the way just understood that sometimes you have to clear the room so the feeling has somewhere to go.",
+      "speaker": "D'Angelo",
+      "context": "Rare extended interview with MOJO magazine, published in their collector's edition soul special, February 2016",
+      "real": false,
+      "fake_note": "I made this one up — D'Angelo's intense focus on the interplay between space and emotion in soul production is thoroughly documented, and the specific detail about the kick drum gives it the feel of a producer thinking out loud. The tell is that the idea is expressed slightly too fluently for a notoriously guarded interviewee."
+    },
+    {
+      "id": "q5",
+      "text": "People keep asking if I'm worried about the album leaking and honestly — yeah, a little, but mostly I'm terrified someone's gonna hear the demo vocals I left on track seven by accident and think that's intentional.",
+      "speaker": "Jack Antonoff",
+      "context": "Appearance on the Switched on Pop podcast, episode released October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Jack talks constantly about the chaos and self-exposure of the production process, and the anxious, self-deprecating humor matches his documented interview persona perfectly. The giveaway is the oddly specific 'track seven,' which is the kind of concrete detail a real speaker would leave vague."
+    },
+    {
+      "id": "q6",
+      "text": "I think, actually, I'd be more successful if I was OK wearing a muzzle.",
+      "speaker": "Chappell Roan",
+      "context": "In a January 2025 BBC interview after being named BBC Sound of 2025, on how her outspokenness affects her career.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter — Chappell Roan: \"I'd Be More Successful If I Was OK Wearing a Muzzle\"",
+        "url": "https://www.hollywoodreporter.com/music/music-news/chappell-roan-muzzle-diva-music-grammys-bbc-interview-1236112948/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

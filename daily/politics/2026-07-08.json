@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-08",
+  "edition": 12,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've read every page of this bill. Well — I've read summaries of every page. Which is essentially the same thing, except it's not, and my staff would like me to clarify that.",
+      "speaker": "Chuck Schumer",
+      "context": "Remarks at a Senate Democratic Caucus press availability, C-SPAN, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Schumer's self-correcting, slightly defensive humor is pitch-perfect here, and he really does talk about bill details constantly. The giveaway is that he'd rarely undercut his own authority quite this cheerfully on camera."
+    },
+    {
+      "id": "q2",
+      "text": "It's hard to lead a cavalry charge if you think you look funny on a horse.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The two-time Democratic presidential nominee and UN ambassador, known for his wit; a characteristically self-deprecating line about self-confidence and self-image.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People ask me how I stay calm during a filibuster. I'll be honest — around hour nine, I start mentally redecorating my office. I've changed the drapes four times.",
+      "speaker": "Mitch McConnell",
+      "context": "Interview with Hugh Hewitt on The Hugh Hewitt Show, radio broadcast, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's dry, almost expressionless humor makes this feel exactly right, and he's known for projecting unflappable patience. The subtle tell is that he almost never volunteers personal mental-state details, even funny ones."
+    },
+    {
+      "id": "q4",
+      "text": "The disappointment of manhood succeeds to the delusion of youth: let us hope that the heritage of old age is not despair.",
+      "speaker": "Benjamin Disraeli",
+      "context": "The British Prime Minister and novelist, in a candidly reflective aside on the disappointments of the ages of life (from his fiction, Book VIII, Chapter 4).",
+      "real": true,
+      "source": {
+        "title": "Benjamin Disraeli - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The number of times I've nodded along in a briefing like I was completely following the derivatives exposure charts — and then quietly asked my chief of staff to explain derivatives — is a number I'm not prepared to share.",
+      "speaker": "John Boehner",
+      "context": "Talk at the Economic Club of Washington, D.C., moderated by David Rubenstein, November 2017",
+      "real": false,
+      "fake_note": "I made this one up — Boehner's post-office candor and self-deprecating frankness are well documented, and he's genuinely talked about the learning curve of financial policy in his memoir. The tell is he was actually fairly well versed in budget mechanics, so this slight undersell would be a stretch."
+    },
+    {
+      "id": "q6",
+      "text": "An old friend of mine once told me, you know, just be yourself - unless you suck.",
+      "speaker": "John Kennedy",
+      "context": "Republican U.S. Senator from Louisiana, known for his folksy one-liners, sharing a piece of self-deprecating advice. He used the line in a Jan. 25, 2018 Fox News interview. Innocuous and funny, with no target or policy edge.",
+      "real": true,
+      "source": {
+        "title": "15 times Sen. John Kennedy got folksy, snarky or both | nola.com",
+        "url": "https://www.nola.com/news/15-times-sen-john-kennedy-got-folksy-snarky-or-both/article_7fb01151-5776-54f2-a04f-49ffeb4d0447.html",
+        "date": "2018-01-25"
+      }
+    }
+  ]
+}
