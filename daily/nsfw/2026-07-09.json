@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-09",
+  "edition": 18,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It's quite valuable to have the courage and the confidence to say, 'No, fuck off, leave me alone, thank you very much.'",
+      "speaker": "Helen Mirren",
+      "context": "In a 2013 Daily Mail interview, the Oscar-winning actress said that if she'd had a daughter, \"fuck off\" is the first phrase she would have taught her, to give her the confidence to set boundaries.",
+      "real": true,
+      "source": {
+        "title": "Daily Mail interview (Christian Today report)",
+        "url": "https://www.christiantoday.com/news/helen-mirren-advice-to-daughter-unconventional-brutally-honest",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People ask why I always wore the sunglasses indoors. Honestly? Half the time it was because the lights were too bright. The other half it was so nobody could tell I was checking out whoever just walked through the door. I'm a gentleman, not a saint.",
+      "speaker": "Dean Martin",
+      "context": "Behind-the-scenes footage from the taping of 'The Dean Martin Show', NBC Studios, Burbank, California, Season 6, 1971, later included in the 2009 archive documentary reel",
+      "real": false,
+      "fake_note": "I made this one up — the smooth deflection into a joke at his own expense is very Dino, and the 'gentleman, not a saint' line lands in his cadence. The giveaway is that Martin almost never explained himself even in jest; his whole persona was studied nonchalance, not this degree of self-commentary."
+    },
+    {
+      "id": "q3",
+      "text": "The rider said no brown M&Ms, which everyone takes the piss out of, but let me tell you something — the one time the caterers actually read the whole rider, everything else was perfect too. The one time they didn't? Freddie nearly went through a stage riser that wasn't bolted down. So yeah. Brown M&Ms.",
+      "speaker": "Freddie Mercury",
+      "context": "Backstage interview recorded for the BBC2 music documentary 'Rock Around the Clock', filmed at Wembley Arena, London, December 1981",
+      "real": false,
+      "fake_note": "I made this one up — the M&M rider anecdote is famously associated with Van Halen, not Queen, which is exactly why attributing a version of it to Freddie is a clever misdirect. The giveaway is that detail-obsessed equipment safety reasoning, which sounds more like a tour manager talking than Mercury's more theatrical interview style."
+    },
+    {
+      "id": "q4",
+      "text": "Look, I've played arenas, stadiums, a shed in fucking Wolverhampton that smelled like wet dog and chips — and I will tell you right now, the shed was the best gig. Place was on fire. I nearly lost a finger in the barrier. Brilliant.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Interview with Kerrang! magazine, published in the April 2008 issue, conducted backstage at the Brixton Academy, London",
+      "real": false,
+      "fake_note": "I made this one up — the Wolverhampton specificity and the chips detail are pure Lemmy: equal reverence for the grimy small venue as the arena, plus cheerful near-injury. The subtle giveaway is 'I nearly lost a finger in the barrier,' which is a little too anecdote-complete to be spontaneous."
+    },
+    {
+      "id": "q5",
+      "text": "A couple nights ago, I was licking jelly off my boyfriend's penis. And I thought, \"Oh my God — I'm turning into my mother!\"",
+      "speaker": "Sarah Silverman",
+      "context": "From her 2005 stand-up special \"Sarah Silverman: Jesus Is Magic.\" Her signature sweet-faced delivery lands a graphic sex image as the setup, with the punchline being the realization she's inheriting her mother's habits.",
+      "real": true,
+      "source": {
+        "title": "'Jesus Is Magic' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0422528/quotes/",
+        "date": "2005"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Over the past forty years I've been loaded on booze, coke, acid, Quaaludes, glue, cough mixture, heroin, Rohypnol, Klonopin, Vicodin, and too many other heavy-duty substances to list in this footnote. On more than a few occasions I was on all of these at the same time.",
+      "speaker": "Ozzy Osbourne",
+      "context": "From a footnote in his 2010 autobiography 'I Am Ozzy' (with Chris Ayres), cataloguing four decades of his own substance abuse.",
+      "real": true,
+      "source": {
+        "title": "Memoir 'I Am Ozzy' (LA Weekly excerpt)",
+        "url": "https://www.laweekly.com/i-am-ozzy-soon-to-be-classic-quotes-from-ozzy-osbournes-upcoming-autobiography/",
+        "date": "2010"
+      }
+    }
+  ]
+}

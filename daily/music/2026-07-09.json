@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-09",
+  "edition": 17,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The first time I heard my voice back on tape I genuinely thought the machine was broken. I called the engineer over twice. He was very patient with me about it.",
+      "speaker": "Adele",
+      "context": "The Jonathan Ross Show, ITV, Series 20, broadcast November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Adele's self-deprecating, conversational humor about her own career and voice is one of her most recognizable public traits, and this fits her chat-show register precisely. The sneaky part is that she's told a version of a 'first time hearing my voice back' story before, just not quite like this — the detail about calling the engineer over is what I invented."
+    },
+    {
+      "id": "q2",
+      "text": "We only had three meetings as a group and I called two of them",
+      "speaker": "Syd",
+      "context": "R&B singer, reflecting on her time as a member of Odd Future",
+      "real": true,
+      "source": {
+        "title": "Music — R&B star Syd on the return of the Internet and falling out with Odd Future: ‘We ",
+        "url": "https://www.theguardian.com/music/2026/jul/09/syd-odd-future-internet-music-interview-beard-broken-hearts-club",
+        "date": "2026-07-09"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Jazz musicians have this thing where we don't really clap for each other after solos — we nod. A nod from the right person in the right room means more than a standing ovation from a crowd that doesn't know what just happened.",
+      "speaker": "Wynton Marsalis",
+      "context": "Masterclass Q&A session at Juilliard School, New York, transcribed in DownBeat magazine, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Wynton has spoken extensively about jazz culture, musician etiquette, and insider standards of excellence. The giveaway is the slight edge of elitism in the last clause, which is a touch sharper than Wynton's usual pedagogical warmth — he tends to be more generous about general audiences in documented quotes."
+    },
+    {
+      "id": "q4",
+      "text": "But he might struggle with my accent!",
+      "speaker": "Brian Molko",
+      "context": "Placebo frontman, on wanting Yungblud to play him in a biopic",
+      "real": true,
+      "source": {
+        "title": "Music — Brian Molko would want Yungblud to play him in a Placebo biopic: “But he might s",
+        "url": "https://www.nme.com/news/music/brian-molko-wants-yungblud-to-play-him-in-a-placebo-biopic-but-he-might-struggle-with-my-accent-3955734?utm_source=rss&utm_medium=rss&utm_campaign=brian-molko-wants-yungblud-to-play-him-in-a-placebo-biopic-but-he-might-struggle-with-my-accent",
+        "date": "2026-07-09"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I don't hear samples the way other producers hear them. I hear the hole that's left in the original record — the space the producer didn't use. That's what I'm going after. What got left on the floor.",
+      "speaker": "J Dilla",
+      "context": "Interview with Brian Coleman published in Wax Poetics, Issue 14, 2005",
+      "real": false,
+      "fake_note": "I made this one up — Dilla's documented philosophy around sampling and negative space in music makes this entirely consistent with how producers who knew him described his process. The giveaway for true heads: Dilla rarely gave long press interviews in this format; Wax Poetics coverage of him was mostly posthumous."
+    },
+    {
+      "id": "q6",
+      "text": "It's a lot like being a chef, in a way. You're trying to create food that satisfies your taste, but with a good awareness that there are people whose tastes are for more salt, or more spice — or for less.",
+      "speaker": "Susan Rogers",
+      "context": "Prince's former recording engineer describing the producer's balancing act, in a Grammy.com interview about her career and her book.",
+      "real": true,
+      "source": {
+        "title": "Grammy.com — Producer & Engineer Susan Rogers Worked With Prince And Barenaked Ladies",
+        "url": "https://www.grammy.com/news/susan-rogers-producers-engineers-wing-interview-prince-barenaked-ladies-berklee-college-of-music/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-09",
+  "edition": 14,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He had that one coming for telling everybody I didn't know where Brazil was on the map.",
+      "speaker": "Travis Kelce",
+      "context": "The Chiefs tight end at a São Paulo press conference in September 2025, after doing an impression of teammate Patrick Mahomes as payback.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Travis Kelce gets playful payback on Patrick Mahomes with spot-on impersonation",
+        "url": "https://www.foxnews.com/sports/travis-kelce-gets-playful-payback-patrick-mahomes-spot-on-impersonation-brazil-press-conference",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People always want to know what I'm thinking before a free throw, and honestly sometimes it's just — I need to get a haircut. Like, I'll be standing there at the line in Game 6 and that's genuinely where my brain went. And I made both of them, so I don't know what that tells you.",
+      "speaker": "Shaquille O'Neal",
+      "context": "Interview on The Big Podcast with Shaq, Episode 214, March 2024",
+      "real": false,
+      "fake_note": "I made this one up — Shaq's self-deprecating humor about free throws is legendary and totally in character, and the haircut detail feels exactly like his wandering, funny tangents. The subtle giveaway is 'Game 6,' which is just specific enough to sound real but generic enough that nobody can verify it."
+    },
+    {
+      "id": "q3",
+      "text": "Resignations are for prime ministers and those caught with their trousers down, not for me",
+      "speaker": "Brian Clough",
+      "context": "The legendary English football manager on his refusal to quit, in a collection of his most memorable one-liners.",
+      "real": true,
+      "source": {
+        "title": "Sky Sports — Brian Clough in quotes: Fifteen of the legendary manager's most memorable one-liners",
+        "url": "https://www.skysports.com/football/news/11689/9642762/brian-clough-fifteen-of-the-legendary-managers-most-memorable-one-liners",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I'm still not really into it.",
+      "speaker": "Anthony Edwards",
+      "context": "The future No. 1 NBA draft pick in a 2020 ESPN feature, admitting he does not enjoy watching basketball (\"To be honest, I can't watch basketball\").",
+      "real": true,
+      "source": {
+        "title": "ESPN — The pain and promise of top NBA draft prospect Anthony Edwards",
+        "url": "https://www.espn.com/nba/story/_/id/30321844/the-pain-promise-top-nba-draft-prospect-anthony-edwards",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I don't read the broadcast notes they hand out before games anymore. I did for the first couple years because I thought I was supposed to, and then I realized I was using someone else's words to describe something I'd watched with my own eyes my entire life.",
+      "speaker": "Tony Hawk",
+      "context": "Remarks during a panel at the X Games 25 Anniversary retrospective, ESPN Studios, July 2020",
+      "real": false,
+      "fake_note": "I made this one up — wait, Hawk isn't a broadcaster, so I gave this a competitive/commentary angle that fits his media crossover. The quote captures his low-key confidence and slight impatience with industry convention. The giveaway is 'broadcast notes,' which is slightly inside-baseball for a public quote."
+    },
+    {
+      "id": "q6",
+      "text": "I've played in stadiums where I couldn't hear myself think, I've played in stadiums where I could hear a guy three rows up unwrapping a candy bar. The candy bar one is actually harder. You notice everything.",
+      "speaker": "Serena Williams",
+      "context": "Collected remarks during the WTA Insider Podcast, recorded at the 2019 US Open player week",
+      "real": false,
+      "fake_note": "I made this one up — Serena has spoken at length about crowd noise and mental focus, and the candy bar image has exactly the kind of specific, slightly absurdist sensory detail she uses when she's being candid. The giveaway is that she'd more likely name a specific venue than leave it vague."
+    }
+  ]
+}

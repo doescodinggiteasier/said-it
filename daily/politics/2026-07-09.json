@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-09",
+  "edition": 13,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "In Texas we have a saying: if it ain't broke, don't fix it. In Washington they have a different saying, which is: it's not broke yet, but give us a few weeks.",
+      "speaker": "Rick Perry",
+      "context": "Remarks at the Republican Governors Association Annual Conference, Las Vegas, Nevada, November 2011",
+      "real": false,
+      "fake_note": "I made this one up — Perry's Texas-pride, anti-Washington rhetorical formula and his folksy two-part setup are his real comedic stock-in-trade from that era of his career. The giveaway is that the second half is a bit too structurally neat; Perry's ad-libs usually have more rough edges."
+    },
+    {
+      "id": "q2",
+      "text": "People keep asking me if I miss the White House. I tell them I miss the kitchen. Twenty-four-hour access to a full kitchen staff and I spent four years eating salads at my desk. That's on me.",
+      "speaker": "George W. Bush",
+      "context": "Conversation with Jay Leno at the Bush Center Forum on Leadership, Dallas, April 2014",
+      "real": false,
+      "fake_note": "I made this one up — Bush's folksy, self-deprecating humor about his own failings is his signature comedic mode, and the detail about the kitchen is exactly the kind of mundane, slightly absurd regret he'd voice. The giveaway is that the self-mockery is just a shade too tidy and punchy for his usual rambling delivery."
+    },
+    {
+      "id": "q3",
+      "text": "I don't think there's a senator alive who genuinely enjoys the filibuster. We just deeply distrust what the other side would do without it. That's basically the whole argument.",
+      "speaker": "Susan Collins",
+      "context": "Interview with Susan Page on Washington Week, PBS, February 2021",
+      "real": false,
+      "fake_note": "I made this one up — Collins's moderate institutionalist framing and her habit of articulating bipartisan procedural logic plainly are well-established, and the Senate rules debate is her natural territory. The giveaway is the almost too-neat compression of the argument; her real explanations tend to be longer and more qualified."
+    },
+    {
+      "id": "q4",
+      "text": "Where my reason, imagination or interest were not engaged, I would not or I could not learn.",
+      "speaker": "Winston Churchill",
+      "context": "From Churchill's own autobiography 'My Early Life: A Roving Commission' (1930), in the chapter recalling his schooldays at Harrow where he was placed in the lowest form.",
+      "real": true,
+      "source": {
+        "title": "My Early Life, by Winston S. Churchill (Project Gutenberg Canada full text)",
+        "url": "https://gutenberg.ca/ebooks/churchillws-myearlylife/churchillws-myearlylife-00-h-dir/churchillws-myearlylife-00-h.html",
+        "date": "1930-01-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "In 2008 my slogan was, \"Yes We Can.\" In 2013 my slogan was, \"Control-Alt-Delete.\"",
+      "speaker": "Barack Obama",
+      "context": "Joking about the rocky HealthCare.gov rollout at the 2014 White House Correspondents' Dinner",
+      "real": true,
+      "source": {
+        "title": "The Obama White House Archives — Remarks by the President at the White House Correspondents' Dinner (2014)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I am a Ford, not a Lincoln. My addresses will never be as eloquent as Mr. Lincoln's. But I will do my very best to equal his brevity and his plain speaking.",
+      "speaker": "Gerald Ford",
+      "context": "Self-deprecating remark Ford made on December 6, 1973, immediately after taking the oath of office as the 40th Vice President (following Spiro Agnew's resignation).",
+      "real": true,
+      "source": {
+        "title": "Gerald Ford - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Gerald_Ford",
+        "date": "1973-12-06"
+      }
+    }
+  ]
+}

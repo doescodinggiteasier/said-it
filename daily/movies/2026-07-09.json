@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-09",
+  "edition": 22,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When you're out there, nobody cares how it felt. They only care what you did.",
+      "speaker": "Rocky (1976)",
+      "context": "Mickey talking to Rocky during a training session",
+      "real": false,
+      "fake_note": "I made this one up — Mickey's gruff, unsentimental coaching voice is well-matched here, and the sentiment fits his no-excuses philosophy. The subtle giveaway is it leans slightly aphoristic; Mickey's real lines are usually more insult-forward and specific to Rocky's failings."
+    },
+    {
+      "id": "q2",
+      "text": "Every man on this beach is somebody's son. You'd do well to remember that.",
+      "speaker": "Saving Private Ryan (1998)",
+      "context": "A sergeant addressing younger soldiers after the Normandy landing",
+      "real": false,
+      "fake_note": "I made this one up — the moral weight and clipped soldier-speak fit Spielberg's film perfectly, and that kind of reminder-of-humanity line recurs in war pictures. The giveaway is that it's a little more rhetorically shaped than the film's ragged, exhausted dialogue usually allows."
+    },
+    {
+      "id": "q3",
+      "text": "It appears my hypocrisy knows no bounds.",
+      "speaker": "Tombstone (1993)",
+      "context": "Doc Holliday (Val Kilmer), the consumptive gambler-gunslinger, wryly acknowledging his own contradictions.",
+      "real": true,
+      "source": {
+        "title": "Tombstone (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Tombstone_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "You want to know what I think? I think you already knew the answer before you walked in here.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes, pressing a client who is holding something back",
+      "real": false,
+      "fake_note": "I made this one up — Gittes is exactly this kind of weary, cornering talker, and the line fits his interrogation style cold. The subtle giveaway is that it's a touch too tidy a reversal; Towne's real dialogue tends to bury the insight in more clutter."
+    },
+    {
+      "id": "q5",
+      "text": "He hasn't been right since Korea. Maybe before that.",
+      "speaker": "The Deer Hunter (1978)",
+      "context": "A character in Clairton making an aside about a troubled older man",
+      "real": false,
+      "fake_note": "I made this one up — the film is saturated with this kind of low-key, community-gossip observation about men damaged by war, and the cadence is exactly right for its western Pennsylvania working-class world. The giveaway is that nobody in the film actually references Korea; Vietnam is the wound."
+    },
+    {
+      "id": "q6",
+      "text": "Strange women lying in ponds distributing swords is no basis for a system of government.",
+      "speaker": "Monty Python and the Holy Grail (1975)",
+      "context": "Dennis the peasant (Michael Palin) argues political theory with King Arthur about the Lady of the Lake.",
+      "real": true,
+      "source": {
+        "title": "Monty Python and the Holy Grail - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Monty_Python_and_the_Holy_Grail",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

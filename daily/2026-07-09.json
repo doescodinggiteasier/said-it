@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-09",
+  "edition": 25,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'll be honest with you — there was a stretch in my thirties where I genuinely thought the best basketball I had was already behind me. And then you have one practice, one game, where nothing hurts and everything clicks, and you feel like an idiot for ever thinking that.",
+      "speaker": "LeBron James",
+      "context": "The Shop: Uninterrupted, Season 5, Episode 3, HBO, 2022",
+      "real": false,
+      "fake_note": "I made this one up — LeBron has spoken openly about longevity and self-doubt in almost exactly this register on The Shop. The giveaway is the vague 'stretch in my thirties' — he'd almost certainly drop a specific season or injury to make it concrete."
+    },
+    {
+      "id": "q2",
+      "text": "People always ask me what the hardest part of writing a song is, and I never have a clean answer. Sometimes the verse writes itself in the shower and then I sit at the piano for three weeks unable to figure out how to end it. That's not mystical, that's just annoying.",
+      "speaker": "Taylor Swift",
+      "context": "Rolling Stone's Musicians on Musicians issue, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Swift routinely discusses her process in self-deprecating, practical terms, and the shower-to-piano detail sounds exactly like her. The subtle giveaway is that she'd more likely name a specific song to ground the anecdote rather than keep it this generically relatable."
+    },
+    {
+      "id": "q3",
+      "text": "When we recorded that album there were legitimately days where nobody in the room could tell if what we were making was genius or complete garbage. I think in the end it was a little of both, which is probably the most honest thing I've ever said about my own work.",
+      "speaker": "Thom Yorke",
+      "context": "Mojo magazine, feature interview, 'The Making of Kid A at 20,' October 2020",
+      "real": false,
+      "fake_note": "I made this one up — Yorke has spoken about Kid A's recording process in exactly this uncertain, self-questioning tone in multiple anniversary retrospectives. The giveaway is anchoring it to that album specifically makes it almost too on-the-nose — the real quote would be more oblique about which record he meant."
+    },
+    {
+      "id": "q4",
+      "text": "Someone asked me recently if I ever worry that the robots are coming for my job. I said, look, if a machine can do what I do, then what I was doing probably wasn't that interesting to begin with. That shut the conversation down pretty quickly.",
+      "speaker": "Conan O'Brien",
+      "context": "Conan O'Brien Needs a Friend podcast, episode 'The Future of Comedy,' January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Conan has riffed on his own obsolescence and irrelevance so often that this reads as completely native. The tell is the final 'that shut the conversation down' — Conan would extend the bit rather than land so cleanly."
+    },
+    {
+      "id": "q5",
+      "text": "I've now been in 57 states? I think one left to go.",
+      "speaker": "Barack Obama",
+      "context": "Then a Democratic U.S. Senator from Illinois campaigning for president, Obama misspoke at a May 9, 2008 event in Beaverton, Oregon, after a long stretch of travel (he meant 47).",
+      "real": true,
+      "source": {
+        "title": "Obama's 'Bumbles' - FactCheck.org",
+        "url": "https://www.factcheck.org/2011/06/obamas-bumbles/",
+        "date": "2008-05-09"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Your body is not a temple, it's an amusement park. Enjoy the ride.",
+      "speaker": "Anthony Bourdain",
+      "context": "From his memoir Kitchen Confidential, on his attitude toward eating",
+      "real": true,
+      "source": {
+        "title": "Quote by Anthony Bourdain: \"your body is not a temple, it's an amusement pa...\"",
+        "url": "https://www.goodreads.com/quotes/271353-your-body-is-not-a-temple-it-s-an-amusement-park",
+        "date": "2000-01-01"
+      }
+    }
+  ]
+}
