@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-10",
+  "edition": 19,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't do warm-up acts. I AM the warm-up act. I come out, I confuse the hell out of everyone for forty minutes, and by the time the show actually starts they're so relieved that anything seems funny. It's a system.",
+      "speaker": "Andy Kaufman",
+      "context": "Interview recorded for The Tomorrow Show with Tom Snyder, NBC Studios, Burbank, California, aired January 1980",
+      "real": false,
+      "fake_note": "I made this one up — Kaufman's meta-comedy about performance itself and his known habit of deliberately alienating audiences make this entirely in character. The giveaway is that it's too self-aware and explanatory — real Kaufman would have denied it was a system or deflected entirely rather than admitting the mechanics."
+    },
+    {
+      "id": "q2",
+      "text": "Vegas, man. Vegas is the only city where you can lose four grand, eat a steak at 6 a.m. in a bathrobe, and nobody — NOBODY — looks at you weird. In fact the waiter's wearing the same bathrobe. It's beautiful.",
+      "speaker": "Sam Kinison",
+      "context": "Howard Stern Show, WXRK New York, live broadcast segment, October 1989",
+      "real": false,
+      "fake_note": "I made this one up — Kinison's unhinged Vegas lifestyle and his frequent Howard Stern appearances make this completely plausible, and the screaming energy translates well to the subject matter. The giveaway is the relatively measured, almost wistful delivery — Kinison's real Stern moments were considerably louder and less coherent."
+    },
+    {
+      "id": "q3",
+      "text": "People keep asking me how I stay so funny. Honestly? I had a terrible marriage, I eat bad Chinese food alone at midnight, and my therapist fired me. That's not a setup — that's just my goddamn week.",
+      "speaker": "Rodney Dangerfield",
+      "context": "Comedy Central's Stand-Up Stand-Up taping at Dangerfield's Club, New York City, recorded for broadcast November 1991",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield built his entire persona on self-deprecating misery about marriage and social rejection, so the voice is pitch-perfect. The giveaway is that Comedy Central's Stand-Up Stand-Up didn't launch until 1995, making the 1991 taping date impossible."
+    },
+    {
+      "id": "q4",
+      "text": "Do I think about my dick? Oh, yeah, all the time. If I think about it all the time, I got a right to sing about it. If I wasn't thinking about it all the time but thought, \"It's time to write a rock song, I'd better mention my dick,\" then I wouldn't even be able to say \"dick\" right.",
+      "speaker": "Iggy Pop",
+      "context": "Defending the sexual content of his lyrics (the song \"Trollin'\" from The Weirdness) in his 2007 Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "Iggy Pop: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/iggy-pop-the-rolling-stone-interview-2-78680/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I blew $20 million. I snorted my Porsche. I snorted my plane. I snorted my house in that din of drugs and booze and being lost.",
+      "speaker": "Steven Tyler",
+      "context": "Tallying up what his cocaine habit cost him, in his 2011 rock memoir \"Does the Noise in My Head Bother You?\"",
+      "real": true,
+      "source": {
+        "title": "Memoir 'Does the Noise in My Head Bother You?' (NME report)",
+        "url": "https://www.nme.com/news/music/aerosmith-49-1294445",
+        "date": "2011"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I left the Rocking Vicars, thinking I was going to be a star in my own right immediately. Everything was going to be wonderful and huge women would get a hold of me and do things to me with raw carrots — you know, shit like that.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Recalling his youthful rock-star fantasies after leaving an early band (the Rockin' Vickers), in his memoir White Line Fever: The Autobiography (2002).",
+      "real": true,
+      "source": {
+        "title": "Goodreads — quotes from White Line Fever: The Autobiography",
+        "url": "https://www.goodreads.com/work/quotes/310228-white-line-fever-the-autobiography",
+        "date": "2002"
+      }
+    }
+  ]
+}

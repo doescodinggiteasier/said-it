@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-10",
+  "edition": 14,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Unfortunately, I do think he has a real chance",
+      "speaker": "Ted Cruz",
+      "context": "GOP Sen. Ted Cruz speaking on Sean Hannity's radio show about Democrat James Talarico's chances in the Texas Senate race",
+      "real": true,
+      "source": {
+        "title": "Politics — Cruz: Talarico has ‘real chance’ to beat Paxton in Senate race",
+        "url": "https://thehill.com/homenews/5961813-talarico-paxton-texas-senate-race/",
+        "date": "2026-07-10"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I basically think people who are 80 and above really should not be running the world or running the country",
+      "speaker": "Mitt Romney",
+      "context": "Former Sen. Mitt Romney in an interview with Deseret News, commenting on age and leadership",
+      "real": true,
+      "source": {
+        "title": "Politics — Romney on running in 2028: 80-year-olds 'shouldn't be running the world'",
+        "url": "https://thehill.com/homenews/campaign/5961824-mitt-romney-political-leaders-age/",
+        "date": "2026-07-10"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "There's a version of trade policy that I can explain to my constituents in about forty-five seconds, and then there's the actual version. My job is mostly figuring out which one I'm allowed to use on a given Tuesday.",
+      "speaker": "Rob Portman",
+      "context": "Q&A session at the Brookings Institution, Washington D.C., February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Portman was one of the Senate's genuine trade-policy wonks and spoke often about the communication gap between policy complexity and public messaging. The giveaway is 'a given Tuesday,' which is a smidge too wry for his usually more earnest delivery."
+    },
+    {
+      "id": "q4",
+      "text": "People ask me, 'Mitch, how do you stay so calm up there?' And I tell them the same thing every time: 'I'm not calm. I've just been doing this so long my face forgot the other settings.'",
+      "speaker": "Mitch McConnell",
+      "context": "Interview with Hugh Hewitt on The Hugh Hewitt Show, broadcast March 2019",
+      "real": false,
+      "fake_note": "I made this one up — McConnell has made dry, self-aware jokes about his famously impassive demeanor in real interviews, so this lands squarely in character. The tell is that the punchline is a little too well-constructed for a man who usually delivers his humor even more flatly."
+    },
+    {
+      "id": "q5",
+      "text": "I'll be honest with you — I read the whole infrastructure bill. All of it. And somewhere around page four hundred and twelve I genuinely forgot what a road was. Like, conceptually. Just gone.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic National Committee fundraising dinner in Philadelphia, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Biden really did champion that infrastructure bill and his self-deprecating rambling style makes this feel completely at home. The subtle giveaway is that 'page four hundred and twelve' is just slightly too precise and cinematic for genuine off-the-cuff speech."
+    },
+    {
+      "id": "q6",
+      "text": "Alaska has more coastline than the entire rest of the country combined, and I've been hearing about that fact my entire career, usually right before someone asks me to cut the Coast Guard budget.",
+      "speaker": "Lisa Murkowski",
+      "context": "Remarks to the Alaska Federation of Natives Annual Convention, Fairbanks, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — the Alaska coastline statistic is one Murkowski genuinely invokes, and her dry, constituent-focused humor translates naturally here. The subtle tell is the budget kicker, which is a bit too tidy a callback for her usual straightforward style."
+    }
+  ]
+}

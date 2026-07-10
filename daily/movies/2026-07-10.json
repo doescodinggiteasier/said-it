@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-10",
+  "edition": 23,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You want loyalty? Buy a dog.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes, dismissing a client who questions his motives",
+      "real": false,
+      "fake_note": "I made this one up — Gittes talks in this clipped, world-weary PI rhythm and the line fits his cynical persona perfectly. The subtle giveaway is it's just a touch too aphoristic and clean; real Gittes lines are messier and tied to the specific scene."
+    },
+    {
+      "id": "q2",
+      "text": "How could I have known that murder can sometimes smell like honeysuckle?",
+      "speaker": "Double Indemnity (1944)",
+      "context": "Insurance salesman Walter Neff (Fred MacMurray) narrating his dictaphone confession about the affair and murder plot with Phyllis Dietrichson.",
+      "real": true,
+      "source": {
+        "title": "Double Indemnity - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Double_Indemnity",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "You don't build something like this without making enemies.",
+      "speaker": "Citizen Kane (1941)",
+      "context": "A colleague reflecting on Kane's rise",
+      "real": false,
+      "fake_note": "I made this one up — the film's interview-style structure means lines like this get spoken in retrospect, and the cadence matches the period. The giveaway is it's a little too on-the-nose thematically; Welles's script tends to approach Kane's flaws more obliquely."
+    },
+    {
+      "id": "q4",
+      "text": "Death's at the bottom of everything, Martins. Leave death to the professionals.",
+      "speaker": "The Third Man (1949)",
+      "context": "Major Calloway (Trevor Howard) to pulp novelist Holly Martins (Joseph Cotten), warning him off his amateur investigation in postwar Vienna.",
+      "real": true,
+      "source": {
+        "title": "The Third Man - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Third_Man",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I'm not the guy you kill, I'm the guy you buy!",
+      "speaker": "Michael Clayton (2007)",
+      "context": "Michael Clayton (George Clooney) shouting at Karen Crowder near the film's climax, after realizing the conspiracy against him.",
+      "real": true,
+      "source": {
+        "title": "Michael Clayton - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Michael_Clayton",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I used to think the desert was empty. Turns out it's just patient.",
+      "speaker": "Lawrence of Arabia (1962)",
+      "context": "Lawrence speaking to a British officer after returning from the Nefud",
+      "real": false,
+      "fake_note": "I made this one up — Lawrence's lines often have this quasi-mystical, landscape-obsessed quality and the desert setting is obviously right. The giveaway is 'just patient' personifies the desert a little too neatly; Bolt's script is more oblique about Lawrence's inner states."
+    }
+  ]
+}

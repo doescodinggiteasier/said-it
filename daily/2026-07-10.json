@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-10",
+  "edition": 26,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Were the Most Prolific Songwriters of That Time",
+      "speaker": "Mick Jagger",
+      "context": "Mick Jagger commenting on the Beatles, ahead of the Rolling Stones' upcoming album 'Foreign Tongues'",
+      "real": true,
+      "source": {
+        "title": "Music — Mick Jagger Says the Beatles ‘Were the Most Prolific Songwriters of That Time’",
+        "url": "https://www.rollingstone.com/music/music-news/rolling-stones-mick-jagger-beatles-songwriters-1235591589/",
+        "date": "2026-07-10"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People keep asking me what the iPhone moment for AI is going to be, and honestly I think it already happened and most of us just weren't paying attention when it did.",
+      "speaker": "Elon Musk",
+      "context": "Remarks at the Wall Street Journal CEO Council Summit, Washington D.C., December 2023",
+      "real": false,
+      "fake_note": "I made this one up — Musk regularly makes sweeping pronouncements about missed historical inflection points and loves the rhetorical move of claiming the big moment is already behind us. The giveaway is the slight vagueness: he'd almost certainly name what he thinks the moment was."
+    },
+    {
+      "id": "q3",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "His famous comeback at the 1984 debate against Walter Mondale",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I am a Ford, not a Lincoln. My addresses will never be as eloquent as Mr. Lincoln's. But I will do my very best to equal his brevity and his plain speaking.",
+      "speaker": "Gerald Ford",
+      "context": "Self-deprecating remark Ford made on December 6, 1973, immediately after taking the oath of office as the 40th Vice President (following Spiro Agnew's resignation).",
+      "real": true,
+      "source": {
+        "title": "Gerald Ford - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Gerald_Ford",
+        "date": "1973-12-06"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My mother used to say I had two speeds — asleep and inconvenient. I think that's still basically accurate.",
+      "speaker": "Serena Williams",
+      "context": "Conversation with Gayle King on CBS Mornings, September 2022, promoting her Vogue retirement essay",
+      "real": false,
+      "fake_note": "I made this one up — Williams frequently invokes her mother in warm, self-deprecating reflections, and this kind of deadpan self-appraisal fits her tone with Gayle King perfectly. The tell is the phrase 'inconvenient' — it's slightly too tidy a word choice for genuine off-the-cuff speech."
+    },
+    {
+      "id": "q6",
+      "text": "I've had chefs come into my kitchen and just stand there — arms crossed, very serious — and I think, mate, this is a restaurant, not a tribunal. Loosen up. The food suffers when you're rigid.",
+      "speaker": "Gordon Ramsay",
+      "context": "Interview with Jay Rayner for The Observer Food Monthly, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Ramsay constantly talks about kitchen atmosphere and chef psychology in exactly this register, and 'tribunal' is the kind of dry British word he reaches for. The subtle giveaway is that he'd more likely name the specific restaurant or chef type rather than keep it this anonymous."
+    }
+  ]
+}

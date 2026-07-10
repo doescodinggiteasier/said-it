@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-10",
+  "edition": 18,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Y'all can't read this, can you?",
+      "speaker": "Stevie Wonder",
+      "context": "Presenting Song of the Year at the 2016 Grammy Awards (alongside Pentatonix), the blind musician held up the winner's envelope, which was written in Braille, and playfully teased his fellow presenters and the audience.",
+      "real": true,
+      "source": {
+        "title": "Stevie Wonder Charms GRAMMYs Audience With Braille Joke, Important Message",
+        "url": "https://www.etonline.com/awards/grammys/182416_stevie_wonder_charms_grammys_audience_with_braille_joke_important_message",
+        "date": "2016-02-15"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I already know the boys will make England proud, it's coming home",
+      "speaker": "Ellie Goulding",
+      "context": "Statement about performing at England vs Norway World Cup quarter-final halftime show",
+      "real": true,
+      "source": {
+        "title": "Music — Ellie Goulding to perform at half-time of England vs Norway World Cup quarter-fi",
+        "url": "https://www.nme.com/news/music/ellie-goulding-to-perform-at-half-time-of-england-vs-norway-world-cup-quarter-final-anything-could-happen-3956145?utm_source=rss&utm_medium=rss&utm_campaign=ellie-goulding-to-perform-at-half-time-of-england-vs-norway-world-cup-quarter-final-anything-could-happen",
+        "date": "2026-07-10"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Writing a song with somebody you've just met is the strangest form of intimacy. You're supposed to tell them your worst memories and your embarrassing thoughts and then go have lunch together like you didn't just do that.",
+      "speaker": "Taylor Swift",
+      "context": "Acceptance speech for the Songwriter-Artist of the Decade Award at the Nashville Songwriters Association International gala, Nashville, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Taylor has spoken extensively and specifically about the co-writing process and uses this kind of observational, slightly self-conscious humor in her public speaking. The tell is the 'go have lunch together' detail, which is almost too perfectly mundane to be spontaneous."
+    },
+    {
+      "id": "q4",
+      "text": "Jazz musicians have this thing where they'll compliment you by barely acknowledging what you played. You finish a solo and the guy next to you just goes 'mm.' That 'mm' is a standing ovation. I chased that 'mm' for fifteen years.",
+      "speaker": "Herbie Hancock",
+      "context": "Masterclass lecture at the Berklee College of Music commencement weekend, Boston, May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Herbie Hancock is a legendary jazz communicator who teaches constantly and uses this kind of insider cultural observation naturally. The giveaway is 'fifteen years' — it's a suspiciously round number for something this anecdotal."
+    },
+    {
+      "id": "q5",
+      "text": "Nashville kept telling me my voice was too big for country radio. And I thought, well, what does that even mean? You're saying my voice doesn't fit in a box, and I should make it smaller? I went home and turned the reverb up.",
+      "speaker": "Carrie Underwood",
+      "context": "Cover profile in Billboard magazine's Women in Music issue, December 2019",
+      "real": false,
+      "fake_note": "I made this one up — Carrie has spoken publicly about industry skepticism around her powerful voice, and her competitive, quietly defiant personality makes this completely plausible. The giveaway is 'I went home and turned the reverb up' — a little too neat a kicker for something spontaneous."
+    },
+    {
+      "id": "q6",
+      "text": "A great song can make the worst singer in the world a star. And a bad song can't be saved the three greatest singers in the world.",
+      "speaker": "Quincy Jones",
+      "context": "Reflecting on the primacy of the song itself, in a Rolling Stone interview about producing Michael Jackson's album Bad.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Quincy Jones Looks Back on the Making of Michael Jackson's 'Bad'",
+        "url": "https://www.rollingstone.com/music/music-features/quincy-jones-looks-back-on-the-making-of-michael-jacksons-bad-117216/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

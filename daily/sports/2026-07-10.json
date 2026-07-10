@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-10",
+  "edition": 15,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I got to the NBA I thought, okay, these guys are fast. Then I played my first practice and I realized fast doesn't cover it. It's more like — you're watching the same play you've run a thousand times but someone's turned the speed up just slightly enough that every decision you practiced is now wrong.",
+      "speaker": "Jayson Tatum",
+      "context": "Boardroom's 'Athlete to Athlete' series, interview with Kevin Durant, posted October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Tatum has talked about the adjustment to NBA pace in real interviews, and this has his measured, thoughtful delivery. The giveaway is the 'someone's turned the speed up' metaphor — vivid and specific in a way that's slightly more articulate than his usual off-the-cuff style."
+    },
+    {
+      "id": "q2",
+      "text": "It's like going to a bar and falling in love every year. That's what it is. You fall in love and get your heart broken, fall in love, get your heart broken.",
+      "speaker": "Doc Rivers",
+      "context": "The veteran NBA head coach on the recurring emotional toll of chasing a championship each season.",
+      "real": true,
+      "source": {
+        "title": "Andscape — Doc Rivers and the heartbreak of being an NBA head coach",
+        "url": "https://andscape.com/features/doc-rivers-and-the-heartbreak-of-being-an-nba-head-coach/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The one thing I will say is that practice in February in Green Bay is its own punishment. You're not building character out there. You're just surviving. And whoever is surviving best is probably your starter.",
+      "speaker": "Mike McCarthy",
+      "context": "NFL Network's Path to the Draft special, taped at Lambeau Field, February 2019",
+      "real": false,
+      "fake_note": "I made this one up — McCarthy is known for dry, practical takes on cold-weather conditioning and playing through adversity at Lambeau, and this sounds like his matter-of-fact style. The slight tell is 'its own punishment,' which is a little more wry and self-aware than McCarthy usually allows himself to be on camera."
+    },
+    {
+      "id": "q4",
+      "text": "Somebody asked me once what the best stadium I've ever played in was and I said San Siro and they looked at me like I'd insulted them personally. I meant it as a compliment. The place is falling apart and it's still the most intimidating building I've ever walked into in my life.",
+      "speaker": "Lionel Messi",
+      "context": "Interview with ESPN FC's Alejandro Fantino, Buenos Aires, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Messi does occasionally open up about opposing venues and atmospheres, and his admiration for classic European grounds is documented. The tell is the wry 'they looked at me like I'd insulted them' — a socially observant, lightly comedic register that's just a touch more outgoing than Messi typically is."
+    },
+    {
+      "id": "q5",
+      "text": "I've watched film on myself where I genuinely did not recognize what I was doing out there. Not in a bad way — just, that doesn't look like anything I practiced. And sometimes that's the play that works. That used to bother me. Now I kind of leave it alone.",
+      "speaker": "Stephen Curry",
+      "context": "The Ringer's Real Ones podcast, interview with Logan Murdock, February 2024",
+      "real": false,
+      "fake_note": "I made this one up — Steph talks openly about improvisation and the gap between practice and game instincts, and this has his characteristic reflective, low-key philosophical tone. The sneaky part is how restrained it is; the subtle giveaway is 'leave it alone,' which is slightly more zen than his usual framing."
+    },
+    {
+      "id": "q6",
+      "text": "It's really, really hard to get into a flow",
+      "speaker": "Caitlin Clark",
+      "context": "After the Indiana Fever's 106-92 loss to the Los Angeles Sparks, on returning from a back injury",
+      "real": true,
+      "source": {
+        "title": "Sports — Caitlin Clark struggles in return from back injury, calls out Fever's short subs",
+        "url": "https://www.cbssports.com/wnba/news/caitlin-clark-return-back-injury-calls-out-fever/",
+        "date": "2026-07-10"
+      }
+    }
+  ]
+}
