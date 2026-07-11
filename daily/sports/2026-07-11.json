@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-11",
+  "edition": 16,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You want to know the difference between a good offensive lineman and a great one? The great one makes you feel like you did it yourself. You cross the line of scrimmage thinking you just beat somebody, and then you watch the film and you realize you never had a chance.",
+      "speaker": "John Madden",
+      "context": "Pre-game broadcast commentary, CBS Sports NFL coverage, NFC Championship Game broadcast, January 2001",
+      "real": false,
+      "fake_note": "I made this one up — Madden was famous for championing linemen when nobody else would, and his film-room framing is dead-on for him. The giveaway is it's slightly too clean for Madden; a real Madden riff would have at least one repeated word and a 'BOOM' somewhere in there."
+    },
+    {
+      "id": "q2",
+      "text": "I called Pop after my first game back from injury and I just said, 'I don't know how to explain it but my legs feel like they belong to someone else.' He said, 'That sounds about right. Keep playing.' That's pretty much the most I've ever gotten out of him on the phone.",
+      "speaker": "Tim Duncan",
+      "context": "Feature interview, The Undefeated, ESPN, published March 2017",
+      "real": false,
+      "fake_note": "I made this one up — the Gregg Popovich dynamic is real and well-documented, and Duncan's dry, understated delivery is pitch-perfect here. The subtle tell is that Duncan very rarely shares conversational anecdotes this specific in public; he's even more guarded than this quote suggests."
+    },
+    {
+      "id": "q3",
+      "text": "What Carew does with a football, I can do with an orange.",
+      "speaker": "Zlatan Ibrahimovic",
+      "context": "Swedish soccer star's cocky teenage retort to fellow striker John Carew, who had dismissed Zlatan's tricks and flicks as pointless. Said in the Norwegian tabloid VG in April 2002. A classic surprising, deadpan brag.",
+      "real": true,
+      "source": {
+        "title": "Zlatan Ibrahimovic - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Zlatan_Ibrahimovi%C4%87",
+        "date": "2002-04-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I go with a clear conscience",
+      "speaker": "Cristiano Ronaldo",
+      "context": "After Portugal's World Cup exit vs Spain, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘I go with a clear conscience’: Cristiano Ronaldo confirms he has played his las",
+        "url": "https://www.theguardian.com/football/2026/jul/07/cristiano-ronaldo-portugal-roberto-martinez-world-cup-2026-spain",
+        "date": "2026-07-07"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I don't think I'll be legally able to drive.",
+      "speaker": "Robert MacIntyre",
+      "context": "Scottish golfer MacIntyre, joking with reporters right after winning the 2024 Genesis Scottish Open, explaining he planned to celebrate so hard he might not make his next-day press conference at Royal Troon ahead of the Open Championship.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — Robert MacIntyre rallies for historic win at Scottish Open",
+        "url": "https://sports.yahoo.com/robert-macintyre-rallies-for-historic-win-at-scottish-open-the-home-event-hes-cared-about-most-013046981.html",
+        "date": "2024-07-16"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Fast is not the same as quick. I spent probably two years confusing those two things, which is embarrassing to admit. Fast is getting somewhere. Quick is already being there. Once that clicked for me, a lot of other stuff clicked too.",
+      "speaker": "Jerry Rice",
+      "context": "Keynote appearance, NFL Players Association Business Forum, Atlanta, March 2015",
+      "real": false,
+      "fake_note": "I made this one up — Rice has talked extensively about route running and the intellectual side of being a receiver, and this distinction is exactly the kind of thing he'd have landed on after years of reflection. The giveaway is it edges toward the tidy aphorism territory; Rice's real explanations tend to go longer and get more technical."
+    }
+  ]
+}

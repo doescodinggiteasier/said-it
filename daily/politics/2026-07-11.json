@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-11",
+  "edition": 15,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You want to know the hardest part of a trade negotiation? Sitting across from someone who smiles the entire time they're saying no. I've seen used-car dealers with more tells.",
+      "speaker": "Mike Pompeo",
+      "context": "Keynote address at the Hudson Institute Annual Dinner, Washington D.C., November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Pompeo's Kansas plain-speaking and his fondness for punchy, slightly boastful storytelling from his diplomatic days make this very plausible. The giveaway is the used-car-dealer line; his real analogies tend to stay closer to military or business imagery."
+    },
+    {
+      "id": "q2",
+      "text": "I am extraordinarily patient, provided I get my own way in the end.",
+      "speaker": "Margaret Thatcher",
+      "context": "Self-aware, tongue-in-cheek remark by the British Prime Minister in an interview published in The Observer, 4 April 1989 (as catalogued by the Margaret Thatcher Centre's quotes page). Speaker was a UK Conservative Prime Minister.",
+      "real": true,
+      "source": {
+        "title": "Quotes - The Margaret Thatcher Centre",
+        "url": "https://www.thatchercentre.com/quotes/",
+        "date": "1989-04-04"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've been on their list for a long time. That's what we're dealing with.",
+      "speaker": "Donald Trump",
+      "context": "Trump speaking to the New York Post about Iran assassination threats",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump 'left instructions' to bomb Iran 'at levels that they've never seen' if he",
+        "url": "https://thehill.com/homenews/administration/5963258-trump-iran-assassination-military-action/",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Somebody once told me I should smile more in debates. I thought about it for a second and decided that was probably advice I could live without.",
+      "speaker": "Kamala Harris",
+      "context": "Remarks at Emily's List National Gala, Washington D.C., May 2019",
+      "real": false,
+      "fake_note": "I made this one up — Harris's tendency to call out double standards with a light touch rather than a lecture, and her signature pause before the punchline, feel very true to form. The tell is that in real life she'd be more likely to tie the moment to a broader point about women in politics rather than leaving it hanging as pure wit."
+    },
+    {
+      "id": "q5",
+      "text": "I've been in enough committee hearings to know that the person talking the longest is almost never the person who read the document.",
+      "speaker": "Elizabeth Warren",
+      "context": "Interview on The Axe Files with David Axelrod, podcast episode released October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Warren's professorial directness and her genuine frustration with Senate theater make this feel completely plausible. The subtle tell is that her real humor tends to come wrapped in a specific anecdote or a constituent's name rather than as a free-standing observation."
+    },
+    {
+      "id": "q6",
+      "text": "I am Al Gore, I used to be the next president of the United States",
+      "speaker": "Al Gore",
+      "context": "His self-deprecating opening line at a Harvard Kennedy School lecture, October 4, 2001, after losing the 2000 election",
+      "real": true,
+      "source": {
+        "title": "Harvard Gazette — Gore calls for unity",
+        "url": "https://news.harvard.edu/gazette/story/2001/10/gore-calls-for-unity/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

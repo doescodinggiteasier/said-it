@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-11",
+  "edition": 24,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Smokey, this is not 'Nam. This is bowling. There are rules.",
+      "speaker": "The Big Lebowski (1998)",
+      "context": "Walter Sobchak (John Goodman) pulling a gun over a foot-fault dispute during league bowling, to opponent Smokey.",
+      "real": true,
+      "source": {
+        "title": "The Big Lebowski - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Big_Lebowski",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Don't thank me. Thank whoever taught you to run.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Anton Chigurh, unhurried, after letting someone go",
+      "real": false,
+      "fake_note": "I made this one up — Chigurh's lines are oblique and fatalistic, and this lands in that register. The giveaway is a faint hint of dark humor; Chigurh in the film is almost never sardonic, only philosophical."
+    },
+    {
+      "id": "q3",
+      "text": "Rough business, this movie business. I may have to go back to loan sharking for a rest.",
+      "speaker": "Get Shorty (1995)",
+      "context": "Chili Palmer (John Travolta), the Miami loan shark turned Hollywood player, at the film's close.",
+      "real": true,
+      "source": {
+        "title": "Get Shorty - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Get_Shorty",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Every time I get my hands clean, somebody comes along and shakes them.",
+      "speaker": "The Godfather Part II (1974)",
+      "context": "Michael Corleone, quietly, to Tom Hagen",
+      "real": false,
+      "fake_note": "I made this one up — Michael's lines in Part II are weary and self-justifying, and this fits his mode of seeing himself as the victim of circumstance. The giveaway is the idiom feels one beat too folksy for Michael, who by this film is utterly stripped of warmth."
+    },
+    {
+      "id": "q5",
+      "text": "You keep calling it a plan. A plan has steps.",
+      "speaker": "Ocean's Eleven (2001)",
+      "context": "Rusty or Linus pushing back on Danny mid-briefing",
+      "real": false,
+      "fake_note": "I made this one up — it fits the film's dry, overlapping banter between thieves who needle each other constantly. The subtle giveaway is that it's slightly too tidy a comeback; real lines in this film tend to be half-swallowed and weirder."
+    },
+    {
+      "id": "q6",
+      "text": "That's the way it crumbles, cookie-wise.",
+      "speaker": "The Apartment (1960)",
+      "context": "C.C. 'Bud' Baxter (Jack Lemmon) parroting his boss Sheldrake's glib corporate-speak philosophy back to him.",
+      "real": true,
+      "source": {
+        "title": "The Apartment - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Apartment",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

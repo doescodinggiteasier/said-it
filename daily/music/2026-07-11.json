@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-11",
+  "edition": 19,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I was young I studied classical music and Giuseppe Verdi has this wonderful quote: 'Good composers borrow, great composers steal.'",
+      "speaker": "Nile Rodgers",
+      "context": "The Chic guitarist and producer on how he views artists who borrow from his work, in an interview with The National.",
+      "real": true,
+      "source": {
+        "title": "The National — With Nile Rodgers, it is always bound to be Good Times",
+        "url": "https://www.thenationalnews.com/arts/with-nile-rodgers-it-is-always-bound-to-be-good-times-1.593775",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My father listened to nothing but James Brown and Coltrane, and those two things seem like they shouldn't add up, but they absolutely do — they're both just somebody refusing to be finished. Like the song is never actually resolved, it's always reaching for something else.",
+      "speaker": "Questlove",
+      "context": "Fresh Air with Terry Gross, NPR, January 2022",
+      "real": false,
+      "fake_note": "I made this one up — Questlove constantly references both his Philadelphia upbringing and his encyclopedic musical inheritance from his father, and the James Brown–Coltrane pairing is exactly the kind of cross-genre observation he loves. The subtle tell is 'refusing to be finished,' which is a little too neatly coined for genuine off-the-cuff radio conversation."
+    },
+    {
+      "id": "q3",
+      "text": "People think being from Barbados is this postcard thing, like I stepped off a beach straight into a recording studio. Growing up there, music was so tied to like — shame and pride at the same time. You'd hear something and it'd make your body move before your brain had any opinion about it at all.",
+      "speaker": "Rihanna",
+      "context": "Vogue US cover story interview, September 2019 issue",
+      "real": false,
+      "fake_note": "I made this one up — Rihanna has spoken genuinely about her Barbadian upbringing and the physical, preverbal quality of music she connects with, so this lands right in her wheelhouse. The giveaway is the construction 'shame and pride at the same time,' which is slightly more articulate and balanced than her usual candid, fragmentary interview style."
+    },
+    {
+      "id": "q4",
+      "text": "I've never once sat down and thought, okay, what does a hit sound like today. I just can't work that way. I've tried — I literally tried it for about two weeks in 2008 or whenever it was, just monitoring the charts and reverse-engineering — and every single thing I made during that period was completely lifeless. Like, technically fine, but nobody was home.",
+      "speaker": "Rick Rubin",
+      "context": "Broken Record podcast with Malcolm Gladwell, episode published February 2019",
+      "real": false,
+      "fake_note": "I made this one up — Rubin constantly talks about intuition over calculation, so this reads exactly like him, and the self-deprecating 'technically fine, but nobody was home' is pure Rubin cadence. The subtle giveaway is the oddly pinned year '2008 or whenever it was,' which is just specific enough to feel invented."
+    },
+    {
+      "id": "q5",
+      "text": "Quincy called me maybe three days after the session and just said, 'that low note you sang on the bridge — don't ever let anyone take that away from you.' I didn't even know which note he meant. I still don't, really. But I've thought about it probably every week since.",
+      "speaker": "Patti LaBelle",
+      "context": "The Late Show with Stephen Colbert, guest appearance, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — LaBelle has spoken warmly and specifically about Quincy Jones many times, and her interview style is full of vivid, almost mythological personal memories. The tell is that the anecdote is a little too perfectly shaped — the unresolved mystery of which note — which feels constructed rather than genuinely recalled."
+    },
+    {
+      "id": "q6",
+      "text": "I just didn't want you to think that I was turning a blind eye or that I didn't care",
+      "speaker": "Fiona Apple",
+      "context": "Rare public update from the singer-songwriter",
+      "real": true,
+      "source": {
+        "title": "Music — Fiona Apple Wants to Write About the ‘Endless Barrage of Horrors’ in Today’s Wor",
+        "url": "https://www.rollingstone.com/music/music-news/fiona-apple-new-music-video-update-1235592093/",
+        "date": "2026-07-11"
+      }
+    }
+  ]
+}

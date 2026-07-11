@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-11",
+  "edition": 27,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I do not have a five-year plan. I do not have a moonshot. I'm looking at the ground, and I want to fix the pothole that's right in front of me before I go in.",
+      "speaker": "Linus Torvalds",
+      "context": "Interviewed by Chris Anderson onstage at TED2016, contrasting himself with visionaries (he also says \"I am not a visionary.",
+      "real": true,
+      "source": {
+        "title": "The quotable Linus Torvalds, live onstage at TED | TED Blog",
+        "url": "https://blog.ted.com/the-quotable-linus-torvalds-live-onstage-at-ted/",
+        "date": "2016-02-17"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My mom used to say I had a gift. Then she saw the grocery bill and revised her opinion to 'expensive hobby.'",
+      "speaker": "Gordon Ramsay",
+      "context": "Appearance on The Jonathan Ross Show, Series 18, Episode 4, ITV, November 2020",
+      "real": false,
+      "fake_note": "I made this one up — Ramsay talks about his mother and his working-class upbringing constantly, and self-deprecating jokes about money are completely in his wheelhouse. The giveaway is that he almost never frames cooking as a 'hobby' — he's far more likely to call it a calling or a war."
+    },
+    {
+      "id": "q3",
+      "text": "People in fashion love to talk about 'the uniform' like it's some great act of discipline. For me it was just that I made one good decision early in the morning and then I didn't have to think about it again. That's not philosophy, that's laziness with good PR.",
+      "speaker": "Karl Lagerfeld",
+      "context": "Interview with System Magazine, Issue No. 10, Fall/Winter 2017",
+      "real": false,
+      "fake_note": "I made this one up — Lagerfeld's famous black-and-white uniform and his self-mythologizing wit are completely real reference points, and System Magazine is a genuine high-fashion publication that ran serious Lagerfeld conversations. The phrase 'laziness with good PR' is the giveaway — Lagerfeld's actual self-deprecation was more imperious and stylized; he would never reduce his own iconography to mere laziness, even as a joke."
+    },
+    {
+      "id": "q4",
+      "text": "I do not like broccoli. And I haven't liked it since I was a little kid, and my mother made me eat it. And I'm President of the United States, and I'm not going to eat any more broccoli.",
+      "speaker": "George H. W. Bush",
+      "context": "Bush's lighthearted declaration at his March 22, 1990 news conference, when asked whether he had 'lost the broccoli vote' after it emerged he'd banned broccoli from Air Force One.",
+      "real": true,
+      "source": {
+        "title": "George H.W. Bush: Hater of Broccoli - Smart Politics (University of Minnesota Libraries)",
+        "url": "https://smartpolitics.lib.umn.edu/2013/07/09/george-hw-bush-hater-of-brocco/",
+        "date": "1990-03-22"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People always ask me what the hardest part of free-diving is, and they expect me to say the breath-hold or the pressure at depth. But honestly? It's the boat ride back. You're just sitting there soaking wet, completely hollowed out, and someone hands you a granola bar.",
+      "speaker": "James Cameron",
+      "context": "Interview with Wired magazine, published in their October 2019 deep-sea exploration feature",
+      "real": false,
+      "fake_note": "I made this one up — Cameron's obsession with deep-sea diving is extremely well-documented, so the setting rings totally true, and the deadpan anticlimax sounds exactly like his dry, technical-guy humor. The subtle giveaway is that Cameron almost always pivots to the filmmaking angle; he rarely just lets the adventure breathe without a production metaphor."
+    },
+    {
+      "id": "q6",
+      "text": "Somebody asked me once if I ever get nervous before a show and I said no, which was a lie, and we both knew it, and we just moved on. There's a mutual agreement in these interviews to let certain things go unexamined.",
+      "speaker": "David Bowie",
+      "context": "Quoted in Dylan Jones, David Bowie: A Life (Crown Archetype, 2017), sourced from a 1997 BBC Radio 1 conversation",
+      "real": false,
+      "fake_note": "I made this one up — Bowie's intellectual self-awareness about the performance of persona, including in interviews, is one of his most documented qualities, and Dylan Jones's oral biography is a real and well-regarded source that aggregates exactly this kind of material. The giveaway is the meta-commentary on the interview itself — Bowie did do this, but he'd typically layer it with more abstraction; this version is slightly too plainly stated for his usual oblique style."
+    }
+  ]
+}

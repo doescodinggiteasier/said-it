@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-11",
+  "edition": 20,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Little Miss Muffet sat on a tuffet, eating her curds and whey. Along came a spider, he sat down beside her, he said, \"Hey, what's in the bowl, bitch?\"",
+      "speaker": "Andrew Dice Clay",
+      "context": "A signature filthy nursery-rhyme parody from his late-'80s/early-'90s arena act; crowds would shout the punchlines back. Popularized on his stand-up specials and documented in VICE's piece on his nursery rhymes.",
+      "real": true,
+      "source": {
+        "title": "Stand-up act (Vice feature)",
+        "url": "https://www.vice.com/en/article/did-andrew-dice-clay-steal-his-iconic-nursery-rhymes-from-other-successful-entertainers/",
+        "date": "2018"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My publicist called me at six in the morning after the Billboard Awards and said the headlines were 'unflattering.' I said, honey, if a headline after an awards show is the worst thing that happened to me this week, somebody up there likes me. She said that wasn't the point. I said it was exactly the point and went back to sleep.",
+      "speaker": "Ike Turner",
+      "context": "Jet Magazine profile interview, Chicago, Illinois, conducted September 2006, published in the October 16, 2006 issue",
+      "real": false,
+      "fake_note": "I made this one up — the defensive-but-breezy deflection and the publicist framing fit the late-career Ike who was very media-aware. The tell is the 'somebody up there likes me' phrasing, which is a touch too gentle for his documented interview style."
+    },
+    {
+      "id": "q3",
+      "text": "The strangest thing I've tried to snort? My father. I snorted my father. He was cremated and I couldn't resist grinding him up with a little bit of blow. My dad wouldn't have cared, he didn't give a shit. It went down pretty well, and I'm still alive.",
+      "speaker": "Keith Richards",
+      "context": "Rolling Stones guitarist Keith Richards, in an April 2007 NME interview, describing the strangest thing he had snorted — his late father's cremated ashes ground up with cocaine. Reported by NME, The Hollywood Reporter, VOA, and others. Richards' manager later told NME the remark was made in jest, and Richards offered a softened account in his 2010 memoir, but he is documented giving this quote in the interview.",
+      "real": true,
+      "source": {
+        "title": "NME interview (later called a joke)",
+        "url": "https://www.nme.com/news/music/the-rolling-stones-433-1341398",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "A woman in Cincinnati threw her bra at me during 'Purple Rain' and it hit the keyboard player square in the face. He kept playing. That's a professional. I sent him flowers the next day and a note that said 'you're welcome.' He did not respond. Some people have no sense of occasion.",
+      "speaker": "Prince",
+      "context": "Rolling Stone interview conducted at Paisley Park Studios, Chanhassen, Minnesota, November 1988, published in the January 26, 1989 issue",
+      "real": false,
+      "fake_note": "I made this one up — the regal, slightly imperious humor and the specific geographical detail are very plausible Prince. The giveaway is that Prince famously gave almost no interviews in 1988-89 and Rolling Stone had famously difficult access to him during that period."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me what my rider says. It's one page. Bourbon, a fruit plate I won't touch, and nobody — nobody — from legal. That's the whole document. My manager tried to add a paragraph once and I fired him on the spot and then hired him back because honestly who else is going to deal with my bullshit.",
+      "speaker": "Frank Zappa",
+      "context": "Musician's Only Symposium panel, Roxy Theatre, Los Angeles, September 1984, transcribed in Guitar World's January 1985 issue",
+      "real": false,
+      "fake_note": "I made this one up — Zappa's rider demands were famously eccentric and his contempt for corporate interference was well documented. The tell is that Zappa usually went far more technical and abstract; he wouldn't reduce himself to a bourbon punchline this cleanly."
+    },
+    {
+      "id": "q6",
+      "text": "Look, I showed up to the Grammys in '77 absolutely sideways — somebody handed me something in a paper cup backstage and I just thought, well, it'd be rude not to. Halfway through the presentation I called the winner by the wrong name twice and shook my own hand. Nobody said a damn word. That's how you know you've made it.",
+      "speaker": "John Belushi",
+      "context": "National Lampoon Radio Hour archive interview, recorded November 1977, later excerpted in the 1983 retrospective broadcast 'Comedy's Wild Decade'",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's chaotic energy, self-deprecating braggadocio, and that specific Grammy detail all land squarely in his wheelhouse. The sneaky bit is the invented '77 Grammys cameo; he wasn't actually a presenter that year."
+    }
+  ]
+}
