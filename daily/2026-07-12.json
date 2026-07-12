@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-12",
+  "edition": 28,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember the first time I cooked for a Michelin inspector — or who I was told was a Michelin inspector. Turned out he was a journalist from a regional paper in Dorset who'd just had a very confident walk. Still, I plated everything like my life depended on it.",
+      "speaker": "Gordon Ramsay",
+      "context": "Interview on The Jonathan Ross Show, ITV, recorded October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Gordon absolutely tells self-deprecating war stories about his kitchens and the Michelin obsession is dead-on for him. The subtle giveaway is that 'a journalist from a regional paper in Dorset' is slightly too tidy a punchline; his real stories tend to unravel a bit messier than that."
+    },
+    {
+      "id": "q2",
+      "text": "I admit it -- last year was rough.",
+      "speaker": "Barack Obama",
+      "context": "At the 2014 White House Correspondents' Dinner, Obama opened his self-deprecating riff by candidly conceding his difficult 2013.",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at White House Correspondents' Dinner (May 3, 2014) | whitehouse.gov archives",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what I listen to before a match and they always want it to be something intense, like heavy metal or whatever. It's usually just a podcast about birds. I find it genuinely calming. My dad thinks that's the saddest thing he's ever heard.",
+      "speaker": "Serena Williams",
+      "context": "Appearance on Armchair Expert with Dax Shepard, published June 2021",
+      "real": false,
+      "fake_note": "I made this one up — Serena has spoken candidly about her pre-match rituals and family dynamics with her father, and the self-aware humor here is completely in her register. The giveaway is 'a podcast about birds' — specific enough to feel real, but just quirky enough to be the kind of detail a fabricator would reach for."
+    },
+    {
+      "id": "q4",
+      "text": "I spent probably two years thinking the reason my sourdough wasn't working was technique. It was not technique. It was that I was keeping my starter next to the dishwasher and the heat cycle was killing it every single day. Two years.",
+      "speaker": "Questlove",
+      "context": "Guest appearance on Milk Street Radio, NPR, March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Questlove is well-documented as a serious home cook and food obsessive, and his self-deprecating, detail-forward storytelling voice is captured here. The giveaway is that the dishwasher detail is almost too perfectly illustrative — real anecdotes are rarely that neat."
+    },
+    {
+      "id": "q5",
+      "text": "I think this is the most extraordinary collection of talent, of human knowledge, that has ever been gathered together at the White House, with the possible exception of when Thomas Jefferson dined alone.",
+      "speaker": "John F. Kennedy",
+      "context": "Opening of President Kennedy's toast at a dinner honoring Western Hemisphere Nobel Prize winners, April 29, 1962 — a famously gracious, witty compliment to the assembled laureates by invoking Jefferson's solitary genius.",
+      "real": true,
+      "source": {
+        "title": "Remarks at a Dinner Honoring Nobel Prize Winners of the Western Hemisphere | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-dinner-honoring-nobel-prize-winners-the-western-hemisphere",
+        "date": "1962-04-29"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Acting in a Coen Brothers film is — you get the script and you think you understand what's happening, and then you're on set and you realize the script was sort of a polite suggestion. Not in a chaotic way. In a way that feels very deliberate and also completely inexplicable.",
+      "speaker": "Frances McDormand",
+      "context": "Acceptance speech Q&A session following the BAFTA Fellowship Award dinner, London, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Frances has spoken warmly and with wry humor about working with her husband Joel Coen for decades, and this pitch-perfect ambiguity about their process is very her. The tell is 'a polite suggestion,' which is a slightly too-crafted turn of phrase for extemporaneous speech."
+    }
+  ]
+}

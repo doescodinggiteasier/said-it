@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-12",
+  "edition": 25,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Houston, we have a problem.",
+      "speaker": "Apollo 13 (1995)",
+      "context": "Aboard the damaged spacecraft, the crew reports the malfunction to mission control. The line is spoken by Jim Lovell (Tom Hanks), echoing Jack Swigert; the film's \"we have a problem\" differs from the real transmission's \"we've had a problem.\"",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "She hasn't eaten since Tuesday. I'm not asking you to like her — I'm asking you to feed her.",
+      "speaker": "One Flew Over the Cuckoo's Nest (1975)",
+      "context": "McMurphy appealing to a ward orderly on behalf of a withdrawn patient",
+      "real": false,
+      "fake_note": "I made this one up — McMurphy's mix of rough charm and genuine advocacy for the patients fits his character perfectly, and the blunt framing sounds like his voice. The giveaway is the slightly too-clean moral clarity; his real appeals tend to have a self-serving edge."
+    },
+    {
+      "id": "q3",
+      "text": "You think I don't know what you said to him? I was standing right there, Al.",
+      "speaker": "Annie Hall (1977)",
+      "context": "Annie confronting Alvy during one of their recurring domestic arguments",
+      "real": false,
+      "fake_note": "I made this one up — the weary, slightly exasperated directness is pure Annie, and calling him 'Al' instead of 'Alvy' gives it that naturalistic, slightly off-script feel the film loves. The giveaway is that Annie usually deflects rather than confronts this squarely."
+    },
+    {
+      "id": "q4",
+      "text": "I had the window seat on the way out. Seemed only fair she got it coming back.",
+      "speaker": "It Happened One Night (1934)",
+      "context": "Peter Warne explaining a small gallantry to a nosy fellow passenger",
+      "real": false,
+      "fake_note": "I made this one up — the throwaway, mock-reasonable logic is pure screwball and Peter's voice exactly: reasonable-sounding cover for something slightly chivalrous he won't admit to. The giveaway is that Peter tends to be wisecracking directly at Ellie, not explaining himself to strangers."
+    },
+    {
+      "id": "q5",
+      "text": "You want my honest opinion? The roof alone is gonna cost you more than the whole building's worth.",
+      "speaker": "Fargo (1996)",
+      "context": "Marge Gunderson making small talk with a local contractor while following a lead",
+      "real": false,
+      "fake_note": "I made this one up — Marge's flat, practical Midwestern voice and her habit of wandering into mundane observations between scenes makes this feel right at home. The subtle giveaway is that Marge rarely initiates small talk this casually on the job; she stays focused when she's working."
+    },
+    {
+      "id": "q6",
+      "text": "I have a competition in me. I want no one else to succeed. I hate most people.",
+      "speaker": "There Will Be Blood (2007)",
+      "context": "Daniel Plainview (Daniel Day-Lewis) confessing his misanthropy to the man claiming to be his half-brother Henry.",
+      "real": true,
+      "source": {
+        "title": "There Will Be Blood - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/There_Will_Be_Blood",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

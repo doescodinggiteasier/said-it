@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-12",
+  "edition": 21,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I told the promoter, 'I need a case of Jack, two bottles of Cristal, and a bowl of M&Ms with every brown one picked out.' He goes, 'Why no brown ones?' I said, 'Because I'm the one getting paid a million dollars to be an asshole, that's why.'",
+      "speaker": "John Belushi",
+      "context": "Recounted during a Q&A session at the National Lampoon Radio Hour taping, New York, 1973",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's rider demands and asshole-rock-star braggadocio are well-documented, so the premise fits perfectly. The subtle giveaway is that the M&M rider was actually Van Halen's famous clause, not Belushi's."
+    },
+    {
+      "id": "q2",
+      "text": "People keep asking me, 'Freddie, how do you stay so thin?' Darling, I spend half my life sweating under stage lights and the other half forgetting to eat because I'm too busy having the time of my fucking life. That's the diet. You're welcome.",
+      "speaker": "Freddie Mercury",
+      "context": "Backstage press scrum after a Queen concert at Wembley Arena, London, June 1982",
+      "real": false,
+      "fake_note": "I made this one up — Freddie's camp, theatrical self-confidence and use of 'darling' are completely in character. The giveaway is the slightly too-polished delivery; Freddie's real interviews were more spontaneous and less neatly structured."
+    },
+    {
+      "id": "q3",
+      "text": "My sex life is so bad, my G-spot has been declared a historical landmark.",
+      "speaker": "Joan Rivers",
+      "context": "Rivers being characteristically filthy and self-deprecating about her own dried-up sex life.",
+      "real": true,
+      "source": {
+        "title": "Stand-up one-liner (CNN roundup)",
+        "url": "https://www.cnn.com/2014/09/05/showbiz/celebrity-news-gossip/joan-rivers-jokes/index.html",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Last year I was really into the word cocksucker. I thought it sounded so mean!",
+      "speaker": "Danny McBride",
+      "context": "Answering a rapid-fire 'favorite curse word' question in a Maxim interview promoting 'Eastbound & Down.'",
+      "real": true,
+      "source": {
+        "title": "Maxim interview",
+        "url": "https://www.maxim.com/entertainment/interview-danny-mcbride-eastbound-and-down/",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "You wanna know the difference between a standing ovation and a blowjob? I've gotten a standing ovation from people who genuinely hated me. Never had the other problem.",
+      "speaker": "Don Rickles",
+      "context": "Roast warm-up banter recorded before The Dean Martin Celebrity Roast taping, NBC Studios, Burbank, 1974",
+      "real": false,
+      "fake_note": "I made this one up — Rickles built his whole career on this exact brand of raunchy, self-deprecating misdirect, so the cadence is spot-on. The giveaway is that the punchline is a touch too clean and rehearsed for genuine backstage banter."
+    },
+    {
+      "id": "q6",
+      "text": "The ice cream man always drove an extra block away. I know he's seen us, but I think he just be in the car with his friends saying, 'Watch me how fast I make these motherfuckers run.'",
+      "speaker": "Eddie Murphy",
+      "context": "From Eddie Murphy's 1983 HBO stand-up special 'Delirious' (filmed at DAR Constitution Hall) — his childhood ice-cream-truck bit, where the vendor cruelly speeds off to watch the neighborhood kids chase him.",
+      "real": true,
+      "source": {
+        "title": "'Delirious' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0085474/quotes/",
+        "date": "1983"
+      }
+    }
+  ]
+}

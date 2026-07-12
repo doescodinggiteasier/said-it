@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-12",
+  "edition": 17,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what I was thinking on that last drive and honestly I wasn't thinking anything. My brain was just — it was quiet. Which is weird because my brain is never quiet. Ask my wife.",
+      "speaker": "Patrick Mahomes",
+      "context": "The Pat McAfee Show, ESPN, January 2024",
+      "real": false,
+      "fake_note": "I made this one up — Mahomes constantly credits instinct over process, and the self-deprecating aside to his wife sounds exactly like his loose, candid radio-show mode. The subtle giveaway is that 'ask my wife' is a little too perfectly timed to be real off-the-cuff speech."
+    },
+    {
+      "id": "q2",
+      "text": "If you don't want me to watch the ball, you can get it out of the ocean.",
+      "speaker": "Max Muncy",
+      "context": "Dodgers infielder Max Muncy on what he told Giants pitcher Madison Bumgarner, who had angrily yelled at him to stop watching his home run and run the bases. Muncy's solo homer was the only run in a 1-0 Dodgers win in San Francisco.",
+      "real": true,
+      "source": {
+        "title": "Max Muncy beats Madison Bumgarner at the plate and in his post-game quotes",
+        "url": "https://www.cbssports.com/mlb/news/max-muncy-beats-madison-bumgarner-at-the-plate-and-in-his-post-game-quotes/",
+        "date": "2019-06-09"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "When I'm in the water I don't think about records at all. I think about the wall. Just get to the wall. Everything else is something other people invented.",
+      "speaker": "Katie Ledecky",
+      "context": "Interview with Sports Illustrated, ahead of the 2024 Paris Olympics, published July 2024",
+      "real": false,
+      "fake_note": "I made this one up — Ledecky consistently deflects records talk and describes her focus in very physical, concrete terms, which fits her documented interview style perfectly. The tell is that 'everything else is something other people invented' is slightly more epigrammatic than her actual phrasing tends to be."
+    },
+    {
+      "id": "q4",
+      "text": "Happy? Happy is not a word that we think about in the game. You gotta think of something different. Happy, I don't know how to judge happy. We're in the middle of a contest. Nobody's happy.",
+      "speaker": "Gregg Popovich",
+      "context": "San Antonio Spurs head coach Gregg Popovich's deadpan reply during a mid-game sideline interview when TNT's David Aldridge asked whether he was happy with his team's shot selection against the Thunder.",
+      "real": true,
+      "source": {
+        "title": "Gregg Popovich rips reporter for asking if he's 'happy' about shot selection (Video)",
+        "url": "https://larrybrownsports.com/basketball/gregg-popovich-rips-reporter-happy/160946",
+        "date": "2012-11-02"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My first spring training I showed up and Johnny Bench was just — standing there. And I thought, okay, I should probably go stand somewhere else and not embarrass myself before noon.",
+      "speaker": "Vin Scully",
+      "context": "A Conversation with Vin Scully, Dodger Stadium pregame broadcast, MLB Network, April 2016",
+      "real": false,
+      "fake_note": "I made this one up — Scully loved telling gentle self-deprecating stories about encountering legends early in his career, and the specific hour of the day is exactly the kind of odd little detail he'd reach for. The giveaway is the phrasing is just slightly too constructed for pure reminiscence."
+    },
+    {
+      "id": "q6",
+      "text": "Chemistry is something that you don't just throw in the frying pan and mix it up with another something and then throw it on top of something, then fry it up and put it in a tortilla put in a microwave, heat it up and it give it to you and expect it to taste good.",
+      "speaker": "Kevin Garnett",
+      "context": "Boston Celtics forward Kevin Garnett delivered this elaborate cooking metaphor while expressing frustration about the lack of preparation time following the 2011 NBA lockout, explaining why team chemistry can't be rushed.",
+      "real": true,
+      "source": {
+        "title": "Kevin Garnett's words were as entertaining as his play - ESPN Boston Celtics Blog",
+        "url": "https://www.espn.com/blog/boston/celtics/post/_/id/4724028/kevin-garnetts-words-were-as-entertaining-as-his-play",
+        "date": "2011-12-13"
+      }
+    }
+  ]
+}

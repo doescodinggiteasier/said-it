@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-12",
+  "edition": 20,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I played the same forty-five-minute set in a half-empty bar in Tupelo and then two nights later at a festival with eighty thousand people and honestly the bar was harder. Eighty thousand people, you can hide a little. Forty people staring at you, there's nowhere to go.",
+      "speaker": "Gary Clark Jr.",
+      "context": "Segment on Austin City Limits: The Next Generation special, PBS broadcast, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Clark talks regularly about the intimacy of small-venue blues performance versus festival stages, and referencing Tupelo gives it a plausible Southern roots resonance. The giveaway is the phrase 'you can hide a little' — Clark usually speaks in more physical, guitar-centric metaphors rather than spatial ones."
+    },
+    {
+      "id": "q2",
+      "text": "Unchained Melody makes me want to live out my Swayze fantasies",
+      "speaker": "Gary Jarman",
+      "context": "Gary Jarman's honest playlist feature",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Unchained Melody makes me want to live out my Swayze fantasies’: Gary Jarman’s ",
+        "url": "https://www.theguardian.com/music/2026/jul/12/gary-jarman-honest-playlist-bee-gees-jennifer-rush-righteous-brothers",
+        "date": "2026-07-12"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The song is the power; the singer is the messenger. The greatest singer in the world cannot save a bad song.",
+      "speaker": "Quincy Jones",
+      "context": "On what he considers the most important lesson he learned as a producer, in his widely-shared 2018 Vulture interview.",
+      "real": true,
+      "source": {
+        "title": "The Atlanta Journal-Constitution — 9 of the best quotes from Quincy Jones' sweeping Vulture interview",
+        "url": "https://www.ajc.com/entertainment/the-best-quotes-from-quincy-jones-sweeping-vulture-interview/1rIyLBqVGNd8I5eb7JUK4H/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I've been asked if sampling is stealing so many times I've started asking people back: is a jazz musician stealing when they quote a melody? Nobody ever has a clean answer to that, which is kind of the point.",
+      "speaker": "DJ Premier",
+      "context": "Panel discussion at Red Bull Music Academy, New York, October 2013",
+      "real": false,
+      "fake_note": "I made this one up — Premier has engaged seriously and defensively with the sampling-as-theft argument throughout his career, and connecting it to jazz vocabulary is exactly how he frames his craft in real interviews. The giveaway is that he would typically name a specific sample or track to make the argument concrete rather than staying in the abstract."
+    },
+    {
+      "id": "q5",
+      "text": "To be able to pursue my dream and be on the stage like this, represent with all the baldies around the world, this is priceless",
+      "speaker": "Pitbull",
+      "context": "Pitbull at BST Hyde Park concert after fans set Guinness World Record",
+      "real": true,
+      "source": {
+        "title": "Music — Pitbull fans set Guinness World Record at BST Hyde Park concert",
+        "url": "https://www.nme.com/news/music/pitbull-fans-set-guinness-world-record-at-bst-hyde-park-concert-3956336?utm_source=rss&utm_medium=rss&utm_campaign=pitbull-fans-set-guinness-world-record-at-bst-hyde-park-concert",
+        "date": "2026-07-12"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Joni once played me something she'd recorded on a cassette in her kitchen — just voice and guitar — and I genuinely didn't know what to do with myself afterward. I think I just walked around the block twice before I could talk to anyone.",
+      "speaker": "David Crosby",
+      "context": "Spoken during a Q&A session at the Americana Music Association Conference, Nashville, September 2016",
+      "real": false,
+      "fake_note": "I made this one up — Crosby was a close collaborator of Joni Mitchell's and spoke about her with reverence throughout his life, so a quiet private-listening anecdote is completely in character. The giveaway is the two-laps-around-the-block detail, which is just specific enough to feel invented."
+    }
+  ]
+}

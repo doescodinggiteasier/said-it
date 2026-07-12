@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-12",
+  "edition": 16,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I was criticized for being too much concerned with the average Canadians. I can't help that; I am one of them!",
+      "speaker": "John Diefenbaker",
+      "context": "Canada's 13th prime minister, disarmingly turning a criticism into a humble admission about his own ordinariness.",
+      "real": true,
+      "source": {
+        "title": "John Diefenbaker - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Diefenbaker",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've been in rooms where everybody agreed with everybody else the whole meeting, and I walked out thinking that was the most dangerous two hours I've ever spent in government.",
+      "speaker": "Janet Yellen",
+      "context": "Moderated conversation at the Brookings Institution, Washington D.C., September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Yellen has spoken publicly about the risks of groupthink in economic policymaking, and her dry, understated delivery makes this feel at home in her voice. The subtle tell is that she tends to anchor these observations to a specific institutional failure rather than a vague room."
+    },
+    {
+      "id": "q3",
+      "text": "Why are we spending hundreds of billions of dollars, and they're not there for us?",
+      "speaker": "Donald Trump",
+      "context": "NATO summit in Ankara",
+      "real": true,
+      "source": {
+        "title": "Politics — The Nato summit exposed the real source of Trump’s power | Robert Reich",
+        "url": "https://www.theguardian.com/commentisfree/2026/jul/10/nato-summit-trump-power",
+        "date": "2026-07-12"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People ask me what the hardest part of the job was. Honestly? The parking. Nobody warns you about the parking situation when you take a cabinet post.",
+      "speaker": "Rex Tillerson",
+      "context": "Q&A session at the Baker Institute for Public Policy, Houston, Texas, October 2018",
+      "real": false,
+      "fake_note": "I made this one up — Tillerson has made occasional dry, businessman-inflected remarks about the operational absurdities of Washington since his tenure ended, and this fits the 'I came from a functional organization' energy he's projected in post-cabinet appearances. The tell is that it's almost too clean a deflection — Tillerson's real answers tend to drift into procedural specifics."
+    },
+    {
+      "id": "q5",
+      "text": "Nothing so dates a man as to decry the younger generation.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The Democratic statesman, in a speech at the University of Wisconsin, Madison (8 October 1952) - a dry, self-aware needle at those who complain about the young.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The first time I testified before the Senate, I wore a tie my son picked out. It had little fish on it. A senator leaned over and said, 'Nice tie, General.' I never figured out if that was a compliment.",
+      "speaker": "Colin Powell",
+      "context": "Remarks at the National Constitution Center Annual Gala, Philadelphia, October 2009",
+      "real": false,
+      "fake_note": "I made this one up — Powell was famous for warm, gently self-effacing anecdotes about military and civilian life rubbing together, and his son's role in his personal life was something he referenced publicly. The fish-tie detail feels just specific enough; the tell is that Powell usually named the senator."
+    }
+  ]
+}
