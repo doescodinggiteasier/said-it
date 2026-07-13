@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-13",
+  "edition": 22,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me, 'Rodney, how do you deal with the rejection?' I say, the trick is you gotta be drunk enough that you think it went well. I drove home from a date once singing to myself. Found out later she'd gotten out at a red light.",
+      "speaker": "Rodney Dangerfield",
+      "context": "The Tonight Show Starring Johnny Carson, NBC, October 1981 — pre-show green room, caught on a warm-up mic",
+      "real": false,
+      "fake_note": "I made this one up — Rodney's no-respect persona and self-loathing relationship humor is exactly this shape, and the 'red light' punchline is perfectly timed. The tell is the driving detail; Rodney almost never set his jokes in a car, he preferred the home or the bedroom as his theatre of humiliation."
+    },
+    {
+      "id": "q2",
+      "text": "My rider says two bottles of red, room temperature, and a cheese plate. You know what I got last night? A bucket of ice, one bottle of something pink with a screw-top, and what I can only describe as a plate of regret. I ate it. I'm not proud. It was that or the minibar.",
+      "speaker": "John Candy",
+      "context": "SCTV cast reunion panel, Just for Laughs Festival, Montreal, July 1991",
+      "real": false,
+      "fake_note": "I made this one up — John Candy's self-deprecating food-and-comfort humor is exactly this shape, and 'a plate of regret' sounds like something he'd say. The giveaway is the rider-complaint framing — Candy was famously easygoing on set and rarely complained publicly about logistics, which makes the diva-rider setup slightly off for him."
+    },
+    {
+      "id": "q3",
+      "text": "People always say, 'How did you keep the audience for four hours?' I say, because I didn't let them leave. You take the intermission away, you control the bladder, you control the room. That's power. Also I had a very good second act. But mostly the bladder thing.",
+      "speaker": "Sam Kinison",
+      "context": "Penthouse magazine feature interview conducted at the Comedy Store, Los Angeles, published November 1988",
+      "real": false,
+      "fake_note": "I made this one up — Kinison's bombastic, confrontational stage-control philosophy and his way of mixing genuine craft insight with absurdist aggression is captured here. The giveaway is the 'bladder thing' — it's a slightly too-polished callback; Kinison's real punchlines were louder and more chaotic, not this neatly structured."
+    },
+    {
+      "id": "q4",
+      "text": "You've baked a really lovely cake, but then you've used dog shit for frosting.",
+      "speaker": "Steve Jobs",
+      "context": "Critiquing a NeXT programmer's work during a project review",
+      "real": true,
+      "source": {
+        "title": "Book 'The Second Coming of Steve Jobs' (Cult of Mac)",
+        "url": "https://www.cultofmac.com/news/eleven-cutting-steve-jobs-quotes",
+        "date": "2000"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I was doing a little over $1,000 a day in heroin, and then probably the same in cocaine and alcohol.",
+      "speaker": "Nikki Sixx",
+      "context": "Mötley Crüe bassist describing the scale of his addiction at his worst, around the period of his December 1987 heroin overdose; said in 2019 press for the Netflix film 'The Dirt'.",
+      "real": true,
+      "source": {
+        "title": "'The Dirt' press (Chicago Sun-Times)",
+        "url": "https://chicago.suntimes.com/entertainment/motley-crue-biopic-netflix-nikki-six-doing-1000-dollars-a-day-in-heroin/",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Why me? Ten million motherfuckers freebasing, and I'm the one who blows up!",
+      "speaker": "Richard Pryor",
+      "context": "Pryor's frank, self-lacerating bit about the 1980 freebasing accident in which he set himself on fire, from his stand-up film 'Richard Pryor: Live on the Sunset Strip' (1982).",
+      "real": true,
+      "source": {
+        "title": "Richard Pryor - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Richard_Pryor",
+        "date": "1982"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-13",
+  "edition": 17,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The last time I was this high, I was trying to decide on my major.",
+      "speaker": "Barack Obama",
+      "context": "Self-deprecating joke at his final White House Correspondents' Dinner on April 30, 2016, riffing on how his approval ratings kept climbing in his last year in office ('in my final year, my approval ratings keep going up').",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at the White House Correspondents' Dinner | whitehouse.gov (Obama White House Archives)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2016/05/01/remarks-president-white-house-correspondents-dinner/",
+        "date": "2016-04-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My grandfather used to say that a politician who claims they saw it coming is either lying or they weren't paying close enough attention to realize how lucky they are. I think about that every budget cycle.",
+      "speaker": "Justin Trudeau",
+      "context": "Keynote conversation at the Ottawa Writers Festival, Ottawa, Ontario, April 2017",
+      "real": false,
+      "fake_note": "I made this one up — Trudeau's habit of anchoring points in a personal family anecdote and then pivoting to policy is a genuine rhetorical tic. The tell is that this grandfather quote is a little too perfectly constructed to have survived actual oral tradition."
+    },
+    {
+      "id": "q3",
+      "text": "I do not like broccoli. And I haven't liked it since I was a little kid, and my mother made me eat it. And I'm President of the United States, and I'm not going to eat any more broccoli.",
+      "speaker": "George H. W. Bush",
+      "context": "Bush's lighthearted declaration at his March 22, 1990 news conference, when asked whether he had 'lost the broccoli vote' after it emerged he'd banned broccoli from Air Force One.",
+      "real": true,
+      "source": {
+        "title": "George H.W. Bush: Hater of Broccoli - Smart Politics (University of Minnesota Libraries)",
+        "url": "https://smartpolitics.lib.umn.edu/2013/07/09/george-hw-bush-hater-of-brocco/",
+        "date": "1990-03-22"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People ask what I miss about being in the Senate. The coffee is actually better there. I don't know why nobody talks about that.",
+      "speaker": "Joe Biden",
+      "context": "Informal exchange with reporters on the South Lawn of the White House following a Marine One departure, April 2022",
+      "real": false,
+      "fake_note": "I made this one up — Biden's nostalgic warmth for the Senate and his tendency to wander into oddly specific domestic details are both very real. The giveaway is that the Senate's coffee is famously unremarkable, which is exactly the kind of wrong-footing detail that makes it fun."
+    },
+    {
+      "id": "q5",
+      "text": "Someone asked me last week if I ever get tired of talking about infrastructure. And I had to be honest with them — I genuinely do not. My family finds this concerning.",
+      "speaker": "Pete Buttigieg",
+      "context": "Remarks at the U.S. Conference of Mayors winter meeting, Washington D.C., January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Buttigieg's wonky enthusiasm for transportation policy is well-documented, and the self-aware family dig fits his dry, candid delivery perfectly. The tell is that he tends to keep his husband out of gentle punchlines like this in formal settings."
+    },
+    {
+      "id": "q6",
+      "text": "When I was governor, I once sat through a three-hour briefing on aquifer depletion rates. Three hours. I came in knowing nothing about aquifers and I left knowing one thing: that was three hours.",
+      "speaker": "Jeb Bush",
+      "context": "Panel discussion at the George W. Bush Institute's Forum on Leadership, Dallas, Texas, April 2015",
+      "real": false,
+      "fake_note": "I made this one up — Bush's wonkish Florida environmental record and his self-deprecating, slightly hapless humor in casual settings both ring true here. The giveaway is that the joke is a bit too tight — real Jeb asides tend to trail off rather than land cleanly."
+    }
+  ]
+}

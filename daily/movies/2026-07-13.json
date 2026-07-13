@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-13",
+  "edition": 26,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'm not sure that I agree with you a hundred percent on your policework there, Lou.",
+      "speaker": "Fargo (1996)",
+      "context": "Marge Gunderson (Frances McDormand), the pregnant police chief, gently correcting her deputy Lou's flawed reasoning at a crime scene.",
+      "real": true,
+      "source": {
+        "title": "Fargo (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Fargo_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Mr. Vaughn, what we are dealing with here is a perfect engine, an eating machine.",
+      "speaker": "Jaws (1975)",
+      "context": "Marine biologist Matt Hooper (Richard Dreyfuss) warning Mayor Vaughn (Murray Hamilton) about the shark.",
+      "real": true,
+      "source": {
+        "title": "Jaws (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Jaws_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Nobody ever drowned in their own sweat, kid.",
+      "speaker": "Rocky (1976)",
+      "context": "Mickey, pushing Rocky through a grinding training session",
+      "real": false,
+      "fake_note": "I made this one up — it sounds exactly like Mickey's gruff, blunt coaching voice, which uses working-class idiom and mild contempt as motivation. The giveaway is it's almost too tidy an aphorism; Mickey's real lines are usually more rambling and specific to the moment."
+    },
+    {
+      "id": "q4",
+      "text": "You fire one of mine, I fire two of yours. That's not revenge, that's arithmetic.",
+      "speaker": "The Untouchables (1987)",
+      "context": "Eliot Ness, confronting a Capone lieutenant",
+      "real": false,
+      "fake_note": "I made this one up — the hard-boiled moral arithmetic matches the film's operatic tough-guy register and Ness's crusader voice. The giveaway is the word 'arithmetic,' which is slightly too self-satisfied; the real film's lines lean on blunter Anglo-Saxon vocabulary."
+    },
+    {
+      "id": "q5",
+      "text": "You want to know what I learned in four years? How to wait.",
+      "speaker": "The Shawshank Redemption (1994)",
+      "context": "Red, talking to a newly arrived inmate in the yard",
+      "real": false,
+      "fake_note": "I made this one up — the weary wisdom and the yard-conversation context are completely in Red's wheelhouse, and Morgan Freeman's cadence is easy to hear in it. The giveaway is it nearly crosses into the detachable-maxim territory the real film sometimes flirts with but usually earns more organically."
+    },
+    {
+      "id": "q6",
+      "text": "You need to call it. I can't call it for you. It wouldn't be fair.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Anton Chigurh (Javier Bardem) to the gas station proprietor during the coin-toss scene, pressing him to call heads or tails for his life.",
+      "real": true,
+      "source": {
+        "title": "No Country for Old Men (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/No_Country_for_Old_Men_(film)",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

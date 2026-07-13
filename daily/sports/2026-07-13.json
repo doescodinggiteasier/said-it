@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-13",
+  "edition": 18,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I had a cheeseburger and went to bed.",
+      "speaker": "Andy Reid",
+      "context": "Kansas City Chiefs head coach Andy Reid's reply, with a smile, when asked at his press conference how he celebrated the Chiefs' 35-24 AFC Championship win over the Tennessee Titans that sent them to Super Bowl LIV.",
+      "real": true,
+      "source": {
+        "title": "Andy Reid on how he celebrated Chiefs win: 'I had a cheeseburger and went to bed'",
+        "url": "https://www.nfl.com/videos/andy-reid-on-how-he-celebrated-chiefs-win-i-had-a-cheeseburger-and-went-to-bed",
+        "date": "2020-01-20"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Shaq used to come into the locker room before big games and just start laughing. Not at anything. Just laughing. And somehow that was the best thing for us. You couldn't stay tight around that man.",
+      "speaker": "Kobe Bryant",
+      "context": "GQ Men of the Year interview, November 2015",
+      "real": false,
+      "fake_note": "I made this one up — Kobe spoke candidly about his relationship with Shaq in his later years, and in his more reflective interviews he was genuinely warm and specific about what made their partnership work. The giveaway is the tenderness here; Kobe usually paired these compliments with a competitive qualifier."
+    },
+    {
+      "id": "q3",
+      "text": "I didn't have any plates or silverware or anything, and I just started eating it with my hands.",
+      "speaker": "John Madden",
+      "context": "Beloved NFL coach-turned-broadcaster John Madden recounting his very first encounter with a turducken (a chicken inside a duck inside a turkey), brought to his broadcast booth during a Saints game.",
+      "real": true,
+      "source": {
+        "title": "John Madden made turducken a Thanksgiving football tradition (NOLA.com / The Times-Picayune)",
+        "url": "https://www.nola.com/entertainment_life/eat-drink/john-madden-made-turducken-a-thanksgiving-football-tradition/article_ae8ca8ac-ab55-11ef-8fb0-135b1f214168.html",
+        "date": "2024-11-27"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Avoid fried meats which angry up the blood. If your stomach disputes you, lie down and pacify it with cool thoughts.",
+      "speaker": "Satchel Paige",
+      "context": "From legendary pitcher Satchel Paige's famous 'How to Stay Young' rules, published in Collier's magazine in 1953.",
+      "real": true,
+      "source": {
+        "title": "Satchel Paige — Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Satchel_Paige",
+        "date": "1953-06-13"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "When I was at Alabama the thing Coach Saban drilled into us wasn't discipline, not exactly. It was that panic was optional. Like, panic is a choice you make when you stop trusting your preparation. He'd say it so matter-of-factly that you'd feel almost embarrassed for having ever panicked.",
+      "speaker": "Dont'a Hightower",
+      "context": "WEEI's Greg Hill Morning Show, Boston, September 2017",
+      "real": false,
+      "fake_note": "I made this one up — Hightower has spoken at length about Saban's influence and his voice is unguarded and specific, exactly like this. The giveaway is attributing the 'panic is a choice' framing directly to Saban — Saban's documented mantras run differently and he's unlikely to have used that phrasing."
+    },
+    {
+      "id": "q6",
+      "text": "Every team I've played on, the guys who complain the most about practice are also the guys who want the ball the most in the fourth quarter. I've never figured that one out. I've just learned to sit far away from them on the bus.",
+      "speaker": "Dwyane Wade",
+      "context": "The Dan Patrick Show, ESPN Radio, February 2018",
+      "real": false,
+      "fake_note": "I made this one up — Wade's public voice is warm, dry, and subtly sharp, and this lands right in that register. The giveaway is the 'sit far away from them on the bus' closer — funny and specific enough that most fans would assume it's a real anecdote he's referencing."
+    }
+  ]
+}

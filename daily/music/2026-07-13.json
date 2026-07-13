@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-13",
+  "edition": 21,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People hear the accent and they think country, and that's fine, I am country. But I also grew up listening to Led Zeppelin in my daddy's truck, and nobody ever wants to put that in the bio.",
+      "speaker": "Dolly Parton",
+      "context": "Interview on NPR's Fresh Air with Terry Gross, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Dolly has genuinely talked about her diverse musical influences and the way her image gets flattened, and the 'daddy's truck' detail is exactly her register. The tiny tell is that she'd more likely name a specific Zeppelin song she loved rather than the band wholesale."
+    },
+    {
+      "id": "q2",
+      "text": "I remember finishing 'Thriller' and Michael just stood there in the control room not saying anything for probably two minutes. And I'd learned by then that silence from him wasn't a bad sign — it was actually the best sign. He was somewhere else already, working out the next thing in his head.",
+      "speaker": "Quincy Jones",
+      "context": "Interview with Rolling Stone, published in their 50th Anniversary Special Edition, November 2017",
+      "real": false,
+      "fake_note": "I made this one up — Quincy loved telling Thriller-era stories in exactly this reflective, insider tone, and the detail about Michael's silence is the kind of thing a collaborator genuinely notices. The subtle giveaway is that Quincy usually named the specific song or moment more precisely rather than gesturing at the whole album."
+    },
+    {
+      "id": "q3",
+      "text": "The hardest part of producing somebody else is keeping your own instincts out of it. Like, I'll hear a chord change and immediately I know what I would do, and that's completely useless information in that moment.",
+      "speaker": "Rick Rubin",
+      "context": "Conversation with Malcolm Gladwell at the 2018 New Yorker Festival, October 2018",
+      "real": false,
+      "fake_note": "I made this one up — Rick talks constantly about ego-removal in production and his job being about listening rather than imposing, so the sentiment is bang-on. The giveaway is that he tends to be even more abstract and less technically specific than 'chord change' — he'd probably say 'a moment' or 'a direction.'"
+    },
+    {
+      "id": "q4",
+      "text": "Ramones had leather jackets when they got spat on. We didn't!",
+      "speaker": "David Byrne",
+      "context": "David Byrne answering fan questions about touring with Talking Heads during the punk explosion",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Ramones had leather jackets when they got spat on. We didn’t!’ David Byrne on t",
+        "url": "https://www.theguardian.com/music/2026/jul/09/david-byrne-reader-interview-touring-talking-heads-ramones-lou-reed",
+        "date": "2026-07-13"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My manager at the time told me nobody wanted a three-minute guitar solo in the middle of a pop song. So naturally that's the version I turned in.",
+      "speaker": "Carlos Santana",
+      "context": "Q&A session following his Guitar Center Session taping, Hollywood, California, October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Carlos has a long public history of resisting commercial pressure while telling it with a kind of gentle, amused defiance, and the self-deprecating humor about ignoring advice is very consistent with his interviews. The tell is that he'd likely have made it more philosophical, connecting it to spirit or feeling rather than just stubbornness."
+    },
+    {
+      "id": "q6",
+      "text": "When I was really bad, I was not all bad. When I was really trying to be good, I could never be all good. There would be that black streak going through.",
+      "speaker": "Johnny Cash",
+      "context": "Reflecting at the close of his 1994 Rolling Stone interview on the two dogs (named Sin and Redemption) on his American Recordings album cover, and his own inner duality.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Johnny Cash: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/johnny-cash-the-rolling-stone-interview-54538/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-13",
+  "edition": 29,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's a version of every song I've ever released where I'm standing in a parking garage at two in the morning singing into my phone, and honestly that version is usually better. Something about the acoustics and also the sheer desperation of not wanting to forget it.",
+      "speaker": "Taylor Swift",
+      "context": "Rolling Stone cover feature, October 2022, conducted at her Nashville studio complex",
+      "real": false,
+      "fake_note": "I made this one up — Swift talks openly about capturing song ideas at odd hours and has described voice-memo demos with real affection in multiple interviews. The tell is 'parking garage' — she more typically describes home studios or tour buses as her spontaneous recording spots."
+    },
+    {
+      "id": "q2",
+      "text": "I went through a phase where I was convinced the key to everything was getting up at four-thirty in the morning, and I did it, and what I learned is that four-thirty in the morning is genuinely terrible and no amount of productivity justifies it. I now get up at six like a normal human being.",
+      "speaker": "Brené Brown",
+      "context": "Dare to Lead podcast, Episode 118, released January 2021",
+      "real": false,
+      "fake_note": "I made this one up — Brown has discussed morning routines and the mythology around high-performer habits with exactly this kind of wry self-correction. The tell is she's actually spoken positively in real interviews about early rising, so the full reversal here is the fabricated part."
+    },
+    {
+      "id": "q3",
+      "text": "What people see is two seconds of insanity of me arching me to the lords",
+      "speaker": "Britney Spears",
+      "context": "Britney Spears dismissing reports about her odd behavior on an L.A. highway",
+      "real": true,
+      "source": {
+        "title": "Music — Britney Spears Dismisses Odd Behavior on L.A. Highway: ‘Nothing Is What It Seems",
+        "url": "https://www.rollingstone.com/music/music-news/britney-spears-dismisses-odd-behavior-la-highway-1235592451/",
+        "date": "2026-07-13"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People ask me what I eat before a big match and honestly it's embarrassing — it's usually whatever's left in the hotel minibar that isn't chocolate. I had a bag of pretzels and some kind of nut mix before Wimbledon one year and played some of the best tennis of my life, so now I'm sort of afraid to change it.",
+      "speaker": "Roger Federer",
+      "context": "Interview with Graham Bensinger, In Depth with Graham Bensinger, ESPN+, August 2019",
+      "real": false,
+      "fake_note": "I made this one up — Federer genuinely discusses rituals and pre-match routines in a self-deprecating way, and his relaxed Swiss humour makes the minibar detail feel lived-in. The subtle giveaway is that he's famously meticulous about preparation, so 'afraid to change it' slightly undersells how systematic he actually is."
+    },
+    {
+      "id": "q5",
+      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
+      "speaker": "Ted Stevens",
+      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality.",
+      "real": true,
+      "source": {
+        "title": "Series of tubes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
+        "date": "2006-06-28"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Honestly, I ate nothing else in all my time out in China except chicken nuggets. They were the only food I could properly trust which wouldn't affect my stomach.",
+      "speaker": "Usain Bolt",
+      "context": "Sprinter recalling his diet during the 2008 Beijing Olympics, in his autobiography, as quoted by NBC Sports",
+      "real": true,
+      "source": {
+        "title": "Sports — Usain Bolt on his 2008 Beijing Olympics diet",
+        "url": "https://www.yahoo.com/lifestyle/last-time-olympics-were-beijing-182154809.html",
+        "date": "2024-07-23"
+      }
+    }
+  ]
+}
