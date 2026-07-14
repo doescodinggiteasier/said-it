@@ -1,0 +1,65 @@
+{
+  "date": "2026-07-14",
+  "edition": 27,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The cheaper the crook, the gaudier the patter.",
+      "speaker": "The Maltese Falcon (1941)",
+      "context": "Private detective Sam Spade (Humphrey Bogart) sizing up the small-time gunman Wilmer.",
+      "real": true,
+      "source": {
+        "title": "The Maltese Falcon (1941 film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Maltese_Falcon_(1941_film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Yo, Adrian!",
+      "speaker": "Rocky (1976)",
+      "context": "Rocky Balboa addressing Adrian; \"Yo, Adrian! It's me, Rocky.\" The phrase appears in the 1976 film.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "That's the third time this week someone's pointed a gun at me. I'm starting to think it's personal.",
+      "speaker": "Die Hard (1988)",
+      "context": "John McClane, muttering to himself after another close call in Nakatomi Plaza",
+      "real": false,
+      "fake_note": "I made this one up — McClane's self-deprecating muttering under pressure is the engine of the whole film, and the counting detail feels authentic. The giveaway is the punchline is a hair too tidy; his real quips tend to trail off more exhaustedly."
+    },
+    {
+      "id": "q4",
+      "text": "You want gratitude, go rescue a puppy.",
+      "speaker": "Aliens (1986)",
+      "context": "Ripley, sharp and impatient, shutting down a soldier's complaint",
+      "real": false,
+      "fake_note": "I made this one up — Ripley in this sequel is clipped, practical, and has zero tolerance for self-pity, making this fit her register perfectly. The giveaway is it's a fraction too witty; her real put-downs land harder because they're angrier and less playful."
+    },
+    {
+      "id": "q5",
+      "text": "I hate that word. It's a return, a return to the millions of people who have never forgiven me for deserting the screen.",
+      "speaker": "Sunset Boulevard (1950)",
+      "context": "Faded silent star Norma Desmond (Gloria Swanson) correcting screenwriter Joe Gillis (William Holden) when he calls her planned return a 'comeback.'",
+      "real": true,
+      "source": {
+        "title": "Sunset Boulevard - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Sunset_Boulevard",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You keep calling it a plan. I'd call it a prayer.",
+      "speaker": "The Sting (1973)",
+      "context": "Henry Gondorff pushing back on Hooker's overconfidence before the big con",
+      "real": false,
+      "fake_note": "I made this one up — the banter between Gondorff and Hooker runs exactly this dry and skeptical, so it slots right in. The subtle giveaway is that it's a touch too neatly balanced as a comeback; their real exchanges are a little more ragged."
+    }
+  ]
+}

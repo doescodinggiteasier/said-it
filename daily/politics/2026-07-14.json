@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-14",
+  "edition": 18,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me why I got into local politics. Honestly? I went to one too many city council meetings as a private citizen and just — I couldn't take watching it anymore. At some point you either leave or you run.",
+      "speaker": "Pete Buttigieg",
+      "context": "Remarks at a Q&A with students at the Harvard Institute of Politics, Cambridge, Massachusetts, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Buttigieg really does frame his political origin story in terms of civic frustration, and the self-aware, slightly dry delivery matches his documented style. The giveaway is that he usually credits his South Bend mentors rather than personal exasperation."
+    },
+    {
+      "id": "q2",
+      "text": "I've read the Constitution front to back more times than I can count, and I'll be honest — there are a few passages where even I have had to read it twice and say, 'Okay, what did they actually mean here?' Originalism would be a lot simpler if the Founders had used subheadings.",
+      "speaker": "Antonin Scalia",
+      "context": "Lecture at the University of Chicago Law School, Chicago, Illinois, February 2006",
+      "real": false,
+      "fake_note": "I made this one up — Scalia was famous for lecturing at law schools with a mixture of rigorous argument and genuine wit, and self-deprecating jokes about the difficulty of constitutional interpretation are well within his documented wheelhouse. The giveaway is 'subheadings' — too modern-document-management for Scalia, who usually reached for classical or historical analogies."
+    },
+    {
+      "id": "q3",
+      "text": "I've just heard from some other sources that was an older photo. So I really don't know",
+      "speaker": "Ron Johnson",
+      "context": "Real America's Voice's Bolling!, casting doubt on recency of McConnell hospital photo",
+      "real": true,
+      "source": {
+        "title": "Politics — GOP Sen. Ron Johnson says he's not sure McConnell photo with Chao is new",
+        "url": "https://thehill.com/homenews/senate/5966795-ron-johnson-mitch-mcconnell-photo/",
+        "date": "2026-07-14"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "We're actually giving more than we did the first time back to the people of Utah",
+      "speaker": "Donald Trump",
+      "context": "Oval Office signing of executive orders shrinking national monuments in Utah",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump shrinks Bears Ears, Grand Staircase-Escalante national monuments in Utah",
+        "url": "https://thehill.com/policy/energy-environment/5966604-trump-shrinks-utah-monuments/",
+        "date": "2026-07-14"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I had a staffer hand me a one-pager on the farm bill once — it was forty-three pages. I said, 'Son, in my district, a one-pager is one page.' He looked at me like I'd asked him to rope a cloud.",
+      "speaker": "John Boehner",
+      "context": "Interviewed by Politico Magazine for their 'Life After the Hill' profile, published March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Boehner's exasperated, self-deprecating humor about Washington absurdity is pitch-perfect, and the 'rope a cloud' folksy flourish sounds exactly like him. The subtle giveaway is that Boehner rarely used that kind of rural metaphor; he was more of a golf-and-cigarettes Ohio guy."
+    },
+    {
+      "id": "q6",
+      "text": "I think this is the most extraordinary collection of talent, of human knowledge, that has ever been gathered together at the White House, with the possible exception of when Thomas Jefferson dined alone.",
+      "speaker": "John F. Kennedy",
+      "context": "Opening of President Kennedy's toast at a dinner honoring Western Hemisphere Nobel Prize winners, April 29, 1962 — a famously gracious, witty compliment to the assembled laureates by invoking Jefferson's solitary genius.",
+      "real": true,
+      "source": {
+        "title": "Remarks at a Dinner Honoring Nobel Prize Winners of the Western Hemisphere | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-dinner-honoring-nobel-prize-winners-the-western-hemisphere",
+        "date": "1962-04-29"
+      }
+    }
+  ]
+}

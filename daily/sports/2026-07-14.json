@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-14",
+  "edition": 19,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Some mornings I'd get to the rink before the Zamboni was done and just stand there waiting. I couldn't even tell you why. I just didn't want anyone else on the ice before me.",
+      "speaker": "Wayne Gretzky",
+      "context": "Interview with Steve Dangle on The Steve Dangle Podcast, recorded at the Hockey Hall of Fame, Toronto, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Gretzky has talked extensively about his obsessive early-morning rink habits, so the image rings true. The tell is that Gretzky's actual reminiscences tend to credit his father Walter, not solitary ritual."
+    },
+    {
+      "id": "q2",
+      "text": "Basketball is something that I'm just good at. But horses is something that I feel the most happiness and sadness.",
+      "speaker": "Nikola Jokic",
+      "context": "The Denver Nuggets center, speaking during a 2025 promotional tour at a horse ranch in Beijing, on where his real emotional highs and lows come from.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — \"Basketball is just something I'm good at\": Jokic's admission",
+        "url": "https://sports.yahoo.com/article/basketball-just-something-im-good-103300970.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I have always felt that I needed you more than you needed me and that holds true to this very day.",
+      "speaker": "Vin Scully",
+      "context": "Legendary Dodgers broadcaster Vin Scully wrote a farewell letter to fans ahead of his final home series in September 2016, after 67 years calling Dodgers games.",
+      "real": true,
+      "source": {
+        "title": "Vin Scully writes farewell letter to fans before final Dodgers homestand (Sports Illustrated)",
+        "url": "https://www.si.com/mlb/2016/09/24/vin-scully-farewell-letter-los-angeles-dodgers-fans",
+        "date": "2016-09-24"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Nobody told me the marathon actually gets harder after you stop running it. I was more broken down at day four than at the finish line.",
+      "speaker": "Eliud Kipchoge",
+      "context": "Press conference at the Abbott World Marathon Majors symposium, Chicago, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Kipchoge's public persona is serene and philosophical, so a dry, slightly wry observation about physical recovery feels like a believable rare glimpse of humour. The giveaway is that Kipchoge almost never foregrounds his own suffering; he redirects praise to his team."
+    },
+    {
+      "id": "q5",
+      "text": "If everyone likes me, they're watching, so there has to be something there.",
+      "speaker": "Tony Romo",
+      "context": "The CBS lead NFL analyst, on Pat McAfee's show in January 2026, responding to criticism of his polarizing broadcasting style.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Tony Romo addresses criticism after another up-and-down year in CBS booth",
+        "url": "https://www.foxnews.com/sports/tony-romo-opens-up-about-commentating-criticism-he-chooses-ignore-theyre-watching",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I remember the referee's face more than anything from that final. Not the crowd, not the trophy. Just him looking at me like he was waiting for me to do something wrong.",
+      "speaker": "Didier Drogba",
+      "context": "Players' Tribune oral history feature, published online, May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Drogba has a genuine flair for dramatic, emotionally precise storytelling in long-form pieces, and his complicated relationship with referees over his career makes this feel lived-in. The subtle giveaway is that Drogba's actual Players' Tribune pieces tend to anchor specific memories to specific opponents, not officials."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-14",
+  "edition": 22,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I do feel like we're making the best music we've ever made. If anything, it's definitely the most inspired",
+      "speaker": "Cage The Elephant",
+      "context": "Statement accompanying release of new single 'Beaches in Tennessee'",
+      "real": true,
+      "source": {
+        "title": "Music — Cage The Elephant kick off “new chapter” with ‘Beaches in Tennessee’, their firs",
+        "url": "https://www.nme.com/news/music/cage-the-elephant-kick-off-new-chapter-with-beaches-in-tennessee-their-first-new-music-in-two-years-we-realised-theres-still-room-to-evolve-and-3956742?utm_source=rss&utm_medium=rss&utm_campaign=cage-the-elephant-kick-off-new-chapter-with-beaches-in-tennessee-their-first-new-music-in-two-years-we-realised-theres-still-room-to-evolve-and",
+        "date": "2026-07-14"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Honestly, the first time I heard the playback of 'Crazy' I turned to the guys and said, 'That's not a single, that's too weird.' I was completely wrong, obviously. I've been wrong about my own music enough times now that I've just stopped having opinions about it until other people tell me first.",
+      "speaker": "CeeLo Green",
+      "context": "Interview on VH1's Behind the Music: Gnarls Barkley, aired February 2009",
+      "real": false,
+      "fake_note": "I made this one up — CeeLo has discussed his initial surprise at 'Crazy' becoming a phenomenon in real interviews, and this self-deprecating, slightly chaotic admission is true to how he actually talks. The subtle tell is that a Behind the Music episode focused on Gnarls Barkley at that level of detail didn't air in 2009."
+    },
+    {
+      "id": "q3",
+      "text": "People hear 'electronic music' and they think nobody's really doing anything, like it's all automatic. I'm making decisions every four bars that a guitarist makes once a song. It's just that my instrument looks like a laptop, so somehow that doesn't count.",
+      "speaker": "Aphex Twin",
+      "context": "Interview with The Wire magazine, issue 238, published December 2003",
+      "real": false,
+      "fake_note": "I made this one up — Richard James has made almost exactly this defensive-but-dismissive case for electronic composition in real interviews, and the grumbling specificity about guitarists is very him. The tell is 'every four bars,' which is slightly too precise and explanatory for someone who usually refuses to over-explain his process."
+    },
+    {
+      "id": "q4",
+      "text": "Country radio took about six years to forgive me for 'Wide Open Spaces' doing what it did. There's a resentment that builds when something gets too big too fast, and we felt that. You walk into a room and you can tell whether people are happy for you or not. We were not always in rooms where people were happy for us.",
+      "speaker": "Natalie Maines",
+      "context": "Interview with Texas Monthly, published in the magazine's Music Issue, October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Natalie has been remarkably candid about the Chicks' complicated relationship with the country establishment even before the 2003 controversy, and this kind of sharp, unguarded social observation is exactly how she speaks. The tell is 'six years,' which is suspiciously tidy, and the timeline doesn't quite map cleanly onto the actual chart history."
+    },
+    {
+      "id": "q5",
+      "text": "I'm a fat, black, happy girl – they were always going to try to tear me down",
+      "speaker": "Lizzo",
+      "context": "Interview reflecting on accusations from former dancers",
+      "real": true,
+      "source": {
+        "title": "Music — Lizzo answers her critics: ‘I’m a fat, black, happy girl – they were always goin",
+        "url": "https://www.theguardian.com/music/2026/jul/11/lizzo-interview-answers-critics-accusations-fat-black-happy-girl-tear-me-down",
+        "date": "2026-07-14"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Words Cannot Express How Grateful and Surprised I Am",
+      "speaker": "Madonna",
+      "context": "Responding to 'Confessions II' debuting at Number One on the Billboard 200",
+      "real": true,
+      "source": {
+        "title": "Music — Madonna Reflects on ‘Confessions II’ Success: ‘Words Cannot Express How Grateful",
+        "url": "https://www.rollingstone.com/music/music-news/madonna-confessions-ii-number-one-charts-message-to-fans-1235593057/",
+        "date": "2026-07-14"
+      }
+    }
+  ]
+}

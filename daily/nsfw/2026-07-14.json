@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-14",
+  "edition": 23,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'd sit there and smoke crack while I listened to the play. It made me fucking crazy.",
+      "speaker": "Samuel L. Jackson",
+      "context": "Reflecting on his 1980s/early-90s crack-cocaine addiction during his time as an understudy on Broadway's 'The Piano Lesson' (shadowing Charles Dutton), before he got sober in 1991. From a 2019 The Hollywood Reporter interview, widely reported (Entertainment Tonight, Today, People), Jan 2019.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter interview (TODAY report)",
+        "url": "https://www.today.com/health/health/samuel-l-jackson-opens-drug-addiction-early-career-rcna20476",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "After the gig in Hamburg — the second or third night, I can't remember, it was a blur of beer and screaming — Ringo looked at us and said, 'Lads, I think we might actually be alright.' And we all burst out laughing because we were absolutely knackered and soaked in somebody else's beer and he was completely right.",
+      "speaker": "George Harrison",
+      "context": "Musician Magazine, extended oral history feature 'The Long Road to Please Please Me', published in the November 1987 issue",
+      "real": false,
+      "fake_note": "I made this one up — the Hamburg era nostalgia, the self-deprecating 'knackered and soaked' detail, and Ringo as the voice of reason all feel authentically Beatle-ish. The giveaway is Harrison is too warm and anecdote-tidy here; his real interviews had more dry deflection and less clean storytelling."
+    },
+    {
+      "id": "q3",
+      "text": "I don't understand comedians who are scared to bomb. Bombing is just the universe telling you to try something filthier. I bombed at a corporate gig in Cleveland in 1979 and came back the next year with new material and made three people cry laughing and one person genuinely angry. Perfect night.",
+      "speaker": "Sam Kinison",
+      "context": "Comedy and Everything Else podcast predecessor — 'Louder Than Hell: A Comedy Roundtable', recorded at The Comedy Store, Los Angeles, aired on KROQ-FM, April 1988",
+      "real": false,
+      "fake_note": "I made this one up — Kinison's philosophy that extremity was the point and that offence was a goal rather than a side effect fits perfectly, and the specific Cleveland detail adds texture. The giveaway is Kinison was less analytical about craft in real interviews — he performed rather than explained, so this reflective mode is slightly off."
+    },
+    {
+      "id": "q4",
+      "text": "It's cold outside, but I'm still looking like a thotty, because a hoe never gets cold.",
+      "speaker": "Cardi B",
+      "context": "From a now-iconic 2014 viral Instagram/Vine clip from her pre-fame days, strutting in a bra top and skirt and explaining why she's barely dressed in winter.",
+      "real": true,
+      "source": {
+        "title": "Nylon — Cardi B was right: hot girls don't get cold",
+        "url": "https://www.nylon.com/life/cardi-b-was-right-hot-girls-dont-get-cold-science-confirms",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Somebody once told me I was difficult to work with. I said, 'Honey, I'm impossible to work with. There's a difference. Difficult means you complain. Impossible means you're right and they know it and that scares the hell out of them.'",
+      "speaker": "Eartha Kitt",
+      "context": "Interview published in Interview Magazine, conducted by Glenn O'Brien, June 1991 issue",
+      "real": false,
+      "fake_note": "I made this one up — Kitt's ferocious self-possession and her pleasure in being feared by industry people is absolutely in her wheelhouse. The giveaway is the impossible/difficult distinction is a bit too polished and aphoristic — Kitt was sharp but her real quotes were more visceral and less constructed."
+    },
+    {
+      "id": "q6",
+      "text": "Look, I wore the feather boa to the Grammy thing because my actual award outfit was covered in red wine from the after-party the night before, and I wasn't about to explain that to anyone, so I just committed to the bit. Fashion is mostly just successfully committing to the bit.",
+      "speaker": "Freddie Mercury",
+      "context": "NME cover interview conducted by Nick Kent, published 14 February 1981, discussing the Grammy Trustees Award and the band's American touring schedule",
+      "real": false,
+      "fake_note": "I made this one up — Mercury's theatrical shamelessness and his ability to reframe a mess as a deliberate choice is deeply in character. The giveaway is the timeline: the Grammy Trustees context doesn't align with Mercury's actual Grammy history, and NME's relationship with Queen in 1981 was more adversarial than this cozy anecdote implies."
+    }
+  ]
+}

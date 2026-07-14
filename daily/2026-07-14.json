@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-14",
+  "edition": 30,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I will do it myself where does he live?",
+      "speaker": "Cory Booker",
+      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes.",
+      "real": true,
+      "source": {
+        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
+        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
+        "date": "2010-12-27"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My daughters will never let me live down the fact that I once described a song as having 'good vibes.' They did an impression of me saying it for about three months. I've since retired that phrase entirely.",
+      "speaker": "Bruce Springsteen",
+      "context": "Q&A session following a screening of Western Stars at the Toronto International Film Festival, September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Bruce talks warmly about his kids and his own occasional awkwardness with contemporary language, which fits his documented public persona. The giveaway is mild: he's spoken publicly about his daughters but rarely in this kind of light comic frame, and 'retired that phrase' sounds just a touch too self-aware."
+    },
+    {
+      "id": "q3",
+      "text": "People always ask me what the hardest part of free solo climbing is and they expect me to say the exposure, or the height, but honestly it's the weeks before, when you're just in a hotel room eating bad pasta and running the route in your head over and over until you're not sure what's real memory and what's imagined.",
+      "speaker": "Alex Honnold",
+      "context": "Interview with Outside Magazine during the 2019 Banff Mountain Film and Book Festival, Banff, Alberta",
+      "real": false,
+      "fake_note": "I made this one up — Alex genuinely talks about mental preparation and mundane logistics in exactly this flat, unemotional way, which is his whole brand. The subtle tell is 'bad pasta'; his actual pre-climb diet habits are documented but specific, and he'd likely name something more particular than generic pasta."
+    },
+    {
+      "id": "q4",
+      "text": "I make up different names for my cat all the time—Flapjack, Bowtie, Popcorn. But he's really, 'Hey you, cat.'",
+      "speaker": "Christopher Walken",
+      "context": "The actor on his pet cat in an Interview Magazine feature",
+      "real": true,
+      "source": {
+        "title": "Christopher Walken on Cats, Characters, and Career Highlights - Interview Magazine",
+        "url": "https://www.interviewmagazine.com/film/christopher-walken",
+        "date": "2012-01-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I am extraordinarily patient, provided I get my own way in the end.",
+      "speaker": "Margaret Thatcher",
+      "context": "Self-aware, tongue-in-cheek remark by the British Prime Minister in an interview published in The Observer, 4 April 1989 (as catalogued by the Margaret Thatcher Centre's quotes page). Speaker was a UK Conservative Prime Minister.",
+      "real": true,
+      "source": {
+        "title": "Quotes - The Margaret Thatcher Centre",
+        "url": "https://www.thatchercentre.com/quotes/",
+        "date": "1989-04-04"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I remember when we were mixing 'Thriller' and Quincy just stops the tape, looks at me, and goes, 'More cowbell.' I'm not even joking. I have no idea if he was serious. We stood there for probably forty-five seconds in complete silence before he laughed.",
+      "speaker": "Quincy Jones",
+      "context": "Rolling Stone's oral history special on the making of 'Thriller,' published in the magazine's November 2013 issue",
+      "real": false,
+      "fake_note": "I made this one up — Quincy really did tell wild studio stories in his own voice, and the 'more cowbell' gag lands perfectly in his deadpan register. The giveaway is that 'more cowbell' is a late-night TV catchphrase from 2000; Quincy would almost certainly never have used it, even as a joke."
+    }
+  ]
+}
