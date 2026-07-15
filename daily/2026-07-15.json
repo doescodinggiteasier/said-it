@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-15",
+  "edition": 31,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Where my reason, imagination or interest were not engaged, I would not or I could not learn.",
+      "speaker": "Winston Churchill",
+      "context": "From Churchill's own autobiography 'My Early Life: A Roving Commission' (1930), in the chapter recalling his schooldays at Harrow where he was placed in the lowest form.",
+      "real": true,
+      "source": {
+        "title": "My Early Life, by Winston S. Churchill (Project Gutenberg Canada full text)",
+        "url": "https://gutenberg.ca/ebooks/churchillws-myearlylife/churchillws-myearlylife-00-h-dir/churchillws-myearlylife-00-h.html",
+        "date": "1930-01-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "The best description I can come up with is metallic; a rather pleasant sweet metallic sensation. It reminded me of my college summers where I labored for many hours with an arc welding torch repairing heavy equipment for a small logging outfit. It reminded me of pleasant sweet-smelling welding fumes. That is the smell of space.",
+      "speaker": "Don Pettit",
+      "context": "Astronaut and ISS Science Officer, describing what space smells like (NASA blog, quoted on NASA.gov)",
+      "real": true,
+      "source": {
+        "title": "December 2021: What does space smell like? - NASA",
+        "url": "https://www.nasa.gov/space-science-and-astrobiology-at-ames/interesting-fact-of-the-month-current/interesting-fact-of-the-month-2021/",
+        "date": "2021-12-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I remember the first time I heard my voice played back to me on a proper studio monitor — not headphones, not a laptop speaker — and I just thought, that's not me. That cannot be me. I went home and didn't sing for about three days. And then I came back and it was fine, mostly.",
+      "speaker": "Adele",
+      "context": "Interview with Zane Lowe for Apple Music, broadcast October 2021, ahead of the 30 album release",
+      "real": false,
+      "fake_note": "I made this one up — Adele really does talk about her complicated relationship with her own recorded voice and her self-deprecating humour is dead-on. The subtle giveaway is 'mostly': she tends to resolve these anecdotes with more warmth and a bigger laugh."
+    },
+    {
+      "id": "q4",
+      "text": "The thing people don't tell you about swimming ten thousand metres a day is that you run out of thoughts around kilometre four and then you just start narrating your own stroke like a documentary voiceover. Very weird headspace. I got quite good at it.",
+      "speaker": "Michael Phelps",
+      "context": "Appearance on The Tim Ferriss Show, episode released March 2018, discussing training routines",
+      "real": false,
+      "fake_note": "I made this one up — Phelps has described the meditative monotony of high-volume training many times, and the self-aware humour matches his post-retirement candour. The giveaway is 'documentary voiceover,' a slightly too-vivid metaphor for how he usually talks about it."
+    },
+    {
+      "id": "q5",
+      "text": "I'm not an animal lover if that means you think things are nice if you can pet them, but I am intoxicated by animals.",
+      "speaker": "David Attenborough",
+      "context": "Naturalist and broadcaster, in a 2013 Metro interview, on his relationship with wildlife",
+      "real": true,
+      "source": {
+        "title": "David Attenborough - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/David_Attenborough",
+        "date": "2013-01-29"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Genetics is genuinely wild to me still, even now. You can look at a stretch of code that hasn't changed in four hundred million years and it's doing exactly the same job in a zebrafish as it is in you. I find that more startling every time, not less.",
+      "speaker": "Richard Dawkins",
+      "context": "Recorded lecture at the Cheltenham Science Festival, June 2014, later released on the festival's podcast feed",
+      "real": false,
+      "fake_note": "I made this one up — Dawkins habitually uses the 'code' metaphor for DNA and his genuine sense of renewed wonder at evolutionary conservation is well documented. The zebrafish detail is plausible but slightly too casually chosen; he'd more likely say 'fruit fly.'"
+    }
+  ]
+}

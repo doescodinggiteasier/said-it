@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-15",
+  "edition": 20,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Juventus, Manchester United, Real Madrid — those clubs carry a weight that other clubs don't. You walk in and the building itself is telling you something. It took me a full pre-season just to understand what the building was saying.",
+      "speaker": "Zlatan Ibrahimović",
+      "context": "Canal+ France documentary Ibra, broadcast October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Zlatan's grandiose but weirdly sincere way of describing his own experiences is extremely well documented, and personifying a stadium fits his voice perfectly. The giveaway is the doubled metaphor about the building 'saying something,' which is one layer more poetic than even Zlatan usually goes."
+    },
+    {
+      "id": "q2",
+      "text": "This ain't a football game, we do this every day.",
+      "speaker": "Earl Weaver",
+      "context": "The Baltimore Orioles manager on the day-in, day-out grind that makes baseball unlike other sports.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Eye on Quotes: The pithy brilliance of Earl Weaver",
+        "url": "https://www.cbssports.com/mlb/news/eye-on-quotes-the-pithy-brilliance-of-earl-weaver/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "When I was coming up, nobody told me the hardest part of the tour wasn't the majors. It was Thursday mornings at a tournament nobody cares about, in wind, when you've missed the cut twice in a row and you still have to go out there and figure out your swing on the range like it matters.",
+      "speaker": "Rory McIlroy",
+      "context": "Golf Digest long-form feature 'The Weight of a Number One Ranking,' published March 2020",
+      "real": false,
+      "fake_note": "I made this one up — McIlroy has spoken candidly about the grind of touring and the mental valleys between majors, and this matches his reflective, slightly vulnerable public voice. The giveaway is the layered specificity, which is almost too perfectly structured to have come out unprompted in a single breath."
+    },
+    {
+      "id": "q4",
+      "text": "He can take his'n and beat your'n and take your'n and beat his'n.",
+      "speaker": "Bum Phillips",
+      "context": "The Houston Oilers head coach paying tribute to rival coach Don Shula's ability with any roster.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — Remembering Bum Phillips, the unsung defensive innovator",
+        "url": "https://www.si.com/nfl/2013/10/19/remembering-bum-phillips-the-unsung-defensive-innovator",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I don't really watch tape on hitters the night before. I watch it right after, when I can still feel what I threw and why. The next-day stuff, that's more for my ego than my preparation.",
+      "speaker": "Clayton Kershaw",
+      "context": "The Athletic feature on Kershaw's preparation routines, published June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Kershaw is famous for being cerebral and self-critical, and he genuinely has spoken about film study and routine. The tell is the confession that night-before tape is 'for my ego,' which is a bit too self-aware and quotable for purely candid remarks."
+    },
+    {
+      "id": "q6",
+      "text": "Every team I've been on, there's always one guy who nobody talks about in the press but who basically controls the temperature of the whole locker room. At Golden State it was Shaun Livingston. Guys like that are worth three wins a year, easy.",
+      "speaker": "Andre Iguodala",
+      "context": "All the Smoke podcast with Matt Barnes and Stephen Jackson, recorded November 2020",
+      "real": false,
+      "fake_note": "I made this one up — Iguodala is known for his thoughtful, analytical takes on team culture and routinely credits unsung teammates. The giveaway is the 'three wins a year' quantification, which sounds a bit too tidy for genuine off-the-cuff conversation even from a smart player."
+    }
+  ]
+}

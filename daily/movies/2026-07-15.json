@@ -1,0 +1,65 @@
+{
+  "date": "2026-07-15",
+  "edition": 28,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People think courage is about not being afraid. It's about being afraid and showing up anyway.",
+      "speaker": "Braveheart (1995)",
+      "context": "William Wallace speaking quietly to a young soldier the night before battle",
+      "real": false,
+      "fake_note": "I made this one up — Wallace delivers motivational pre-battle sentiments throughout the film so this fits the setting well. The giveaway is it sounds like a bumper sticker; real Wallace lines in that film are angrier and more personal."
+    },
+    {
+      "id": "q2",
+      "text": "You keep talking about that summer like it still owes you something.",
+      "speaker": "Stand by Me (1986)",
+      "context": "Chris Chambers to Gordie Lachance during a quiet moment on the railroad tracks",
+      "real": false,
+      "fake_note": "I made this one up — Chris's role is to puncture Gordie's self-pity with blunt, loyal honesty, and this fits that dynamic. The giveaway is it's a little too retrospective in feeling for boys who are living the story in the present tense."
+    },
+    {
+      "id": "q3",
+      "text": "I came to Casablanca for the waters.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick Blaine (Humphrey Bogart) deflecting Captain Renault's (Claude Rains) question about why he came to Casablanca; Renault replies there are no waters in the desert, and Rick says he was misinformed.",
+      "real": true,
+      "source": {
+        "title": "Casablanca (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Casablanca_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Say 'what' again. I dare you, I double dare you.",
+      "speaker": "Pulp Fiction (1994)",
+      "context": "Jules (Samuel L. Jackson) menaces Brett, a terrified young man, during the apartment confrontation.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "You keep pushing this thing and one day there won't be anybody left to pull you back.",
+      "speaker": "Chinatown (1974)",
+      "context": "Evelyn Mulwray warning Jake Gittes after he presses her for the truth",
+      "real": false,
+      "fake_note": "I made this one up — Chinatown is full of terse, world-weary warnings between these two characters, so the register fits perfectly. The subtle giveaway is that it's slightly too symmetrical and balanced for the rough, clipped way Polanski's dialogue actually moves."
+    },
+    {
+      "id": "q6",
+      "text": "Looks like I picked the wrong week to quit smoking.",
+      "speaker": "Airplane! (1980)",
+      "context": "Steve McCroskey (Lloyd Bridges), the harried air traffic supervisor, laments amid the crisis (the first of his escalating vices).",
+      "real": true,
+      "source": {
+        "title": "Airplane! - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Airplane!",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

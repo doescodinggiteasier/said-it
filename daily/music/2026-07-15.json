@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-15",
+  "edition": 23,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I do not understand artists who say they hate listening to their own records. I listen to mine obsessively. I'm looking for the error. There's always an error and it's always in a different place than where I thought it was.",
+      "speaker": "Björk",
+      "context": "Interview with The Wire magazine, published in their annual retrospective issue, December 2017",
+      "real": false,
+      "fake_note": "I made this one up — Björk's interview language has this precise, slightly stern quality when she's discussing process, and compulsive self-scrutiny is completely authentic to her documented personality. The giveaway is the final clause, which is unusually neat for her idiosyncratic syntax."
+    },
+    {
+      "id": "q2",
+      "text": "My dad thought I was throwing my life away until the second time I went gold, and then suddenly he'd always believed in me. I have witnesses. My mother is one of them and she will confirm.",
+      "speaker": "Bruno Mars",
+      "context": "Acceptance speech remarks, backstage press room at the Grammy Awards, February 2018",
+      "real": false,
+      "fake_note": "I made this one up — Mars is known for warm, quick-witted humor about his family and his come-up, and the 'I have witnesses' escalation sounds exactly like his comedic timing. The giveaway is how perfectly the punchline lands — real speeches are messier."
+    },
+    {
+      "id": "q3",
+      "text": "My grandmother used to say I was singing before I was talking, and honestly I believe her because I still find words a lot harder than notes. Like, ask me to explain something and I'll probably just start humming it at you.",
+      "speaker": "Alicia Keys",
+      "context": "NPR's Fresh Air with Terry Gross, aired February 2022, in conversation about her memoir 'More Myself'",
+      "real": false,
+      "fake_note": "I made this one up — Keys frequently credits her grandmother and frames music as her primary language in interviews. The giveaway is that the humming punchline is a touch too tidy for genuine off-the-cuff speech."
+    },
+    {
+      "id": "q4",
+      "text": "I'm as excited about Reading & Leeds as I've ever been",
+      "speaker": "Melvin Benn",
+      "context": "NME interview with Reading & Leeds festival boss, 2026",
+      "real": true,
+      "source": {
+        "title": "Music — Reading & Leeds boss talks biggest-ever arena overhaul and “strength of UK and I",
+        "url": "https://www.nme.com/news/music/reading-leeds-boss-talks-biggest-ever-arena-overhaul-and-strength-of-uk-and-irish-music-on-line-up-were-buzzing-with-ideas-for-the-future-3955730?utm_source=rss&utm_medium=rss&utm_campaign=reading-leeds-boss-talks-biggest-ever-arena-overhaul-and-strength-of-uk-and-irish-music-on-line-up-were-buzzing-with-ideas-for-the-future",
+        "date": "2026-07-15"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There's a version of that record where the snare sits about three inches further back in the room, and I still think about it. Not with regret exactly, just — you know how you can hear a decision you made six years ago and it's like a splinter you forgot was there?",
+      "speaker": "Trent Reznor",
+      "context": "Interview with Sound on Sound magazine, October 2019 issue, discussing the production of 'With Teeth'",
+      "real": false,
+      "fake_note": "I made this one up — Reznor genuinely obsesses over sonic minutiae and uses this kind of worn, self-interrogating language about his own work. The subtle giveaway is the 'three inches' spatial detail, which is just specific enough to feel engineered."
+    },
+    {
+      "id": "q6",
+      "text": "A rhinestone shines just as good as a diamond.",
+      "speaker": "Dolly Parton",
+      "context": "On being 'totally artificial' in appearance yet 'totally real' as an artist and person, in her November 2019 ELLE interview.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Lifestyle — 20 Refreshingly Honest Dolly Parton Quotes",
+        "url": "https://www.yahoo.com/lifestyle/20-refreshingly-honest-dolly-parton-164600374.html",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

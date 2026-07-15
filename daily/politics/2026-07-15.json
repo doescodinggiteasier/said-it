@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-15",
+  "edition": 19,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My staff keeps telling me to get on TikTok. I said, listen, I can barely operate the thermostat in my own office. Let's not get ahead of ourselves.",
+      "speaker": "Mitch McConnell",
+      "context": "Interview with Hugh Hewitt on The Hugh Hewitt Show, iHeartRadio, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — McConnell has made dry, self-aware remarks about technology and generational gaps in real interviews, so this fits his deadpan economy of words. The giveaway is the thermostat detail, which is just a touch too tidy for his normally more guarded off-the-cuff style."
+    },
+    {
+      "id": "q2",
+      "text": "Alberta is a big province with a lot of opinions, and I say that with full affection, as someone who has spent a career trying to get Alberta and Ottawa in the same room without someone flipping a table.",
+      "speaker": "Jean Chrétien",
+      "context": "In-conversation event at the University of Calgary School of Public Policy, Calgary, October 2018",
+      "real": false,
+      "fake_note": "I made this one up — Chrétien's long-running friction with Western alienation is well-documented and he's spoken about it with exactly this kind of gruff affection in his post-political career. The giveaway is 'flipping a table,' which is a touch too colloquial for even his folksy style."
+    },
+    {
+      "id": "q3",
+      "text": "My favorite was The Scrunchie Chronicles: 112 Countries and It's Still All about My Hair",
+      "speaker": "Hillary Clinton",
+      "context": "Joking about a rejected memoir title, poking fun at coverage of her hair, in 2014",
+      "real": true,
+      "source": {
+        "title": "The Week — Hillary Clinton jokes she considered calling her memoir The Scrunchie Chronicles",
+        "url": "https://theweek.com/speedreads/452686/hillary-clinton-jokes-considered-calling-memoir-scrunchie-chronicles",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I am the man who accompanied Jacqueline Kennedy to Paris, and I have enjoyed it.",
+      "speaker": "John F. Kennedy",
+      "context": "Self-deprecating opening line at a press luncheon at the Palais de Chaillot in Paris on June 2, 1961, during a state visit to France.",
+      "real": true,
+      "source": {
+        "title": "Remarks and Question and Answer Period at the Press Luncheon in Paris | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-and-question-and-answer-period-the-press-luncheon-paris",
+        "date": "1961-06-02"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've read every page of that bill. Well — I've read every page of the summary of that bill, which is itself forty pages, so I feel like that counts.",
+      "speaker": "Nancy Pelosi",
+      "context": "Remarks at a House Democratic Caucus retreat dinner, C-SPAN footage, January 2019",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi is genuinely known for mastering legislative detail and has joked self-deprecatingly about the sheer volume of paperwork, so this lands perfectly in her wheelhouse. The subtle giveaway is that she'd almost certainly name the specific bill rather than leave it vague."
+    },
+    {
+      "id": "q6",
+      "text": "I've now been in 57 states? I think one left to go.",
+      "speaker": "Barack Obama",
+      "context": "Then a Democratic U.S. Senator from Illinois campaigning for president, Obama misspoke at a May 9, 2008 event in Beaverton, Oregon, after a long stretch of travel (he meant 47).",
+      "real": true,
+      "source": {
+        "title": "Obama's 'Bumbles' - FactCheck.org",
+        "url": "https://www.factcheck.org/2011/06/obamas-bumbles/",
+        "date": "2008-05-09"
+      }
+    }
+  ]
+}
