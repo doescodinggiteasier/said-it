@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-16",
+  "edition": 20,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've given the same answer about infrastructure funding so many times that I once gave it to my husband at dinner by accident and he just nodded and passed the salt.",
+      "speaker": "Gretchen Whitmer",
+      "context": "Keynote remarks at the National Governors Association winter meeting, Washington D.C., February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Whitmer has built her brand almost entirely on infrastructure and roads, to the point of self-parody, and she's shown she can laugh about it. The giveaway is the husband detail — she's warm but tends not to pull family into jokes at public events."
+    },
+    {
+      "id": "q2",
+      "text": "It's a good thing to be laughed at. It's better than to be ignored.",
+      "speaker": "Harold Macmillan",
+      "context": "The British Prime Minister, in a handwritten note to the Postmaster General who wanted to take action against the satirical TV program 'That Was The Week That Was' - a disarmingly self-deprecating shrug at being mocked.",
+      "real": true,
+      "source": {
+        "title": "Harold Macmillan - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harold_Macmillan",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've read every page of the tax code. Well — I've had staff read every page of the tax code, and they've summarized it for me, and I've read the summaries. That still counts.",
+      "speaker": "Bernie Sanders",
+      "context": "Interview with Ezra Klein on The Ezra Klein Show, released February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Bernie's self-deprecating honesty about the machinery of legislating is completely in character, and the escalating walk-back sounds exactly like his blunt, unpolished candor. The subtle giveaway is that Bernie rarely jokes about his own process; he's more likely to stay on message about the billionaires."
+    },
+    {
+      "id": "q4",
+      "text": "I had hoped to be back here this week under different circumstances, running for re-election. But you know the old saying: you win some, you lose some. And then there's that little-known third category.",
+      "speaker": "Al Gore",
+      "context": "Opening his 2004 Democratic National Convention address with a self-deprecating joke about his contested 2000 presidential loss.",
+      "real": true,
+      "source": {
+        "title": "Al Gore - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Al_Gore",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "How can you govern a country that has two hundred and forty-six varieties of cheese?",
+      "speaker": "Charles de Gaulle",
+      "context": "The French president and WWII Free France leader, expressing wry exasperation at the ungovernability of France; recorded in Ernest Mignon's 1962 collection Les Mots du General.",
+      "real": true,
+      "source": {
+        "title": "Charles de Gaulle - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Charles_de_Gaulle",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Someone on my team put 'synergy' in a draft and I crossed it out so hard I went through two pages. We don't say that word.",
+      "speaker": "Elizabeth Warren",
+      "context": "Remarks to Harvard Law students during a Q&A session on regulatory policy, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Warren genuinely disdains corporate jargon and has spent her career translating financial complexity into plain English, so policing her own team's language fits perfectly. The giveaway is the physical detail of crossing through two pages, which is a little too vivid and specific for an off-the-cuff remark."
+    }
+  ]
+}

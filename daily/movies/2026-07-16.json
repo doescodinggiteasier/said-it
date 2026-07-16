@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-16",
+  "edition": 29,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "She smiled at me once, the whole time I knew her. I kept that.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes, quietly, to Evelyn Mulwray — reflecting on someone from his past",
+      "real": false,
+      "fake_note": "I made this one up — the clipped, world-weary cadence matches Gittes perfectly, and the emotional restraint fits Polanski's noir tone. The giveaway is it edges just slightly too close to a detachable sentiment, whereas Gittes is usually more guarded and reactive than reflective."
+    },
+    {
+      "id": "q2",
+      "text": "Did we just become best friends?",
+      "speaker": "Step Brothers (2008)",
+      "context": "Brennan (Will Ferrell) to Dale (John C. Reilly) after they bond over shared interests; Dale replies \"Yup!\"",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "I told him not to park there. See, nobody ever listens to me.",
+      "speaker": "Ferris Bueller's Day Off (1986)",
+      "context": "Cameron, dry and resigned, after something inevitably goes wrong",
+      "real": false,
+      "fake_note": "I made this one up — Cameron's constant low-grade dread and passive exasperation are the emotional engine of the film, and this fits his voice well. The giveaway is it's perhaps a beat too self-aware and tidy; Cameron's complaints usually spill out with more genuine anxiety underneath."
+    },
+    {
+      "id": "q4",
+      "text": "You want to talk about loyalty? My father built this neighborhood with his bare hands, and you can't even look me in the eye.",
+      "speaker": "The Godfather (1972)",
+      "context": "Sonny Corleone confronting a family associate during a tense backroom meeting",
+      "real": false,
+      "fake_note": "I made this one up — Sonny's hot temper and family pride make this feel completely at home in the film's world. The subtle giveaway is that Sonny would more likely explode than deliver something this measured and rhetorical."
+    },
+    {
+      "id": "q5",
+      "text": "You're gonna need a bigger boat.",
+      "speaker": "Jaws (1975)",
+      "context": "Chief Brody, after seeing the shark's full size while chumming, backs into the cabin and says this to Quint.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "I'm kind of a big deal.",
+      "speaker": "Anchorman: The Legend of Ron Burgundy (2004)",
+      "context": "Ron Burgundy (Will Ferrell) boasting to Veronica Corningstone about his fame",
+      "real": true
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-16",
+  "edition": 32,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I grew up thinking that space was this pristine silence and then you get up there and you realize your own body is the loudest thing around — the suit, your breathing, your heartbeat. It's sort of clarifying in a way I didn't expect.",
+      "speaker": "Chris Hadfield",
+      "context": "Conversation on Lex Fridman Podcast, episode recorded and released in November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Hadfield routinely describes sensory surprises of spaceflight with exactly this kind of reflective, non-flashy language. The subtle tell is that he'd almost certainly name the specific mission or EVA moment rather than speaking in the general."
+    },
+    {
+      "id": "q2",
+      "text": "I had hoped to be back here this week under different circumstances, running for re-election. But you know the old saying: you win some, you lose some. And then there's that little-known third category.",
+      "speaker": "Al Gore",
+      "context": "Opening his 2004 Democratic National Convention address with a self-deprecating joke about his contested 2000 presidential loss.",
+      "real": true,
+      "source": {
+        "title": "Al Gore - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Al_Gore",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I'm ready to drink tonight, until next morning. Thank you.",
+      "speaker": "Bong Joon-ho",
+      "context": "The director, through his interpreter, accepting the Best International Feature Film Oscar for Parasite at the 2020 Academy Awards",
+      "real": true,
+      "source": {
+        "title": "Bong Joon-ho Oscar Acceptance Speech Transcripts: Parasite Wins Big at the Academy Awards - Rev",
+        "url": "https://www.rev.com/transcripts/bong-joon-ho-oscar-acceptance-speech-transcripts-parasite-wins-big-at-the-academy-awards",
+        "date": "2020-02-09"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Freedom is the right to be wrong, not the right to do wrong.",
+      "speaker": "John Diefenbaker",
+      "context": "The Canadian Prime Minister, in a candid, aphoristic reflection on liberty (11 March 1958).",
+      "real": true,
+      "source": {
+        "title": "John Diefenbaker - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Diefenbaker",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I remember the first time I watched playback of myself conducting — I was maybe thirty-two, in Berlin — and I genuinely thought, who is that person flailing around up there? I turned to the assistant and said, is it always that bad? And she said, only when you're enjoying yourself.",
+      "speaker": "Gustavo Dudamel",
+      "context": "Interview with The New Yorker's music correspondent, published in the February 2023 profile 'The Conductor's Ear'",
+      "real": false,
+      "fake_note": "I made this one up — Dudamel really does talk about his own physicality on the podium and has mentioned watching himself on video with dismay, so this lands perfectly in his register. The subtle giveaway is that the punchline is a little too neatly constructed for genuine off-the-cuff recall."
+    },
+    {
+      "id": "q6",
+      "text": "There's a particular kind of loneliness on a film set when things are going badly — not interpersonal loneliness, more like weather. You can feel everyone deciding whether to believe in the day or not, and your job is just to keep pretending the answer is yes.",
+      "speaker": "Cate Blanchett",
+      "context": "Desert Island Discs, BBC Radio 4, broadcast March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Blanchett regularly gives atmospheric, interior answers about the creative process that sound almost novelistic, which is exactly what I've captured here. The giveaway for the sharpest players: she usually grounds these reflections in a specific film or director rather than keeping it abstract."
+    }
+  ]
+}

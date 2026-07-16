@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-16",
+  "edition": 24,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't write on the road. I can't. Some people find the motion useful, the trains and the hotel rooms, and I understand the romance of it, but for me the songs only come when I'm somewhere boring and stationary. Usually my kitchen. There's something about a very ordinary room that has no expectations of you.",
+      "speaker": "St. Vincent",
+      "context": "Interview with Pitchfork's Jill Mapes for the Daddy's Home album feature, published April 2021",
+      "real": false,
+      "fake_note": "I made this one up — Annie Clark has spoken in several interviews about her disciplined, almost clinical songwriting process and her complicated relationship with life on tour, so the sentiment is well within her known territory. The line about 'a room with no expectations' is the one to watch — it's slightly more tender than her usual cool, witty interview persona."
+    },
+    {
+      "id": "q2",
+      "text": "We'd like to do something outrageous",
+      "speaker": "Overpass",
+      "context": "Birmingham band discussing covering Harry Styles and new music at Mad Cool festival",
+      "real": true,
+      "source": {
+        "title": "Music — Overpass say covering Harry Styles is shaping their new music: “We’d like to do ",
+        "url": "https://www.nme.com/news/music/overpass-interview-covering-harry-styles-new-music-mad-cool-2026-3957002?utm_source=rss&utm_medium=rss&utm_campaign=overpass-interview-covering-harry-styles-new-music-mad-cool-2026",
+        "date": "2026-07-16"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The most important part of the word 'fanzine' is 'fan'",
+      "speaker": "Jon Marsh",
+      "context": "London-based zine-maker speaking about UK fanzine resurgence",
+      "real": true,
+      "source": {
+        "title": "Music — ‘More real than anything you’ll see scrolling’: the radical resurgence of UK fan",
+        "url": "https://www.theguardian.com/music/2026/jul/15/uk-fanzines-zine-radical-resurgence",
+        "date": "2026-07-16"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Growing up in Compton, the music was never separate from everything else going on. It wasn't like, oh, this is art over here and life is over there. It was all the same thing. That's why I can't write a song that doesn't mean something to me personally — I physically don't know how to do that. I've tried and it just sounds like furniture.",
+      "speaker": "Kendrick Lamar",
+      "context": "Interview with Zane Lowe on Apple Music 1, conducted ahead of the Mr. Morale & The Big Steppers release, May 2022",
+      "real": false,
+      "fake_note": "I made this one up — Kendrick rarely gives long interviews but when he does he talks exactly this way: autobiographical, philosophically grounded, and disdainful of music that lacks personal stakes. The giveaway is 'it just sounds like furniture' — vivid, yes, but almost too quotable for someone who famously resists being quotable."
+    },
+    {
+      "id": "q5",
+      "text": "It just happened to be at Madison Square Garden with security making sure everybody was safe and good and they could just have a night for themselves",
+      "speaker": "Eric Stonestreet",
+      "context": "Commenting on Taylor Swift and Travis Kelce's wedding",
+      "real": true,
+      "source": {
+        "title": "Music — Eric Stonestreet Says Taylor Swift and Travis Kelce Created the ‘Normalcy They D",
+        "url": "https://www.rollingstone.com/music/music-news/eric-stonestreet-taylor-swift-travis-kelce-wedding-1235594450/",
+        "date": "2026-07-16"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Quincy called me once — this was maybe two in the afternoon his time — and he just started the conversation in the middle of a thought. No hello, nothing. He said, 'the bridge needs one more voice, a low voice, something that sounds like it's already tired.' And I knew exactly what he meant. That's not a thing you can explain to someone. You either hear it or you don't.",
+      "speaker": "Patti Austin",
+      "context": "Panel discussion at the Grammy Museum, Los Angeles, as part of their Quincy Jones tribute series, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Patti Austin collaborated with Quincy Jones for decades and has told many warm, specific stories about his idiosyncratic working style in interviews and public appearances, so this fits her documented relationship with him. The detail about 'no hello, nothing' is the kind of character-painting anecdote that sounds recalled rather than invented, which is what makes it slippery."
+    }
+  ]
+}

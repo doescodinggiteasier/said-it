@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-16",
+  "edition": 24,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I never took heroin, really because I'm too lazy.",
+      "speaker": "Grace Slick",
+      "context": "The Jefferson Airplane singer, in a Forbes interview, on why heroin never appealed to her despite her heavy drug era.",
+      "real": true,
+      "source": {
+        "title": "Forbes — Grace Slick Part II: 'I Never Took Heroin, Really Because I'm Too Lazy'",
+        "url": "https://www.forbes.com/sites/jimclash/2015/12/12/grace-slick-part-ii-i-never-took-heroin-really-because-im-too-lazy/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "The afterparty for the Stones in '72 — look, I'm not going to tell you what happened because I genuinely cannot confirm it. What I CAN tell you is that somebody ordered seventeen club sandwiches and nobody ate a single one. Seventeen. That's a crime against sandwiches.",
+      "speaker": "Keith Moon",
+      "context": "Spoken during a roundtable recorded for NME's 'Road Stories' feature, published September 1975",
+      "real": false,
+      "fake_note": "I made this one up — Moon's chaotic afterparty legend and his tendency to deflect into absurdist specifics (the seventeen sandwiches) fit his documented interview style nicely. The subtle tell is that Moon usually named names and got louder; this version is oddly restrained by his standards."
+    },
+    {
+      "id": "q3",
+      "text": "People ask how I stay so thin. Darling, I've been running from compliments since 1974. It's cardio. Very specific, very exhausting cardio.",
+      "speaker": "Bette Davis",
+      "context": "Remarks made during a luncheon interview with Rex Reed for Interview magazine, published February 1977",
+      "real": false,
+      "fake_note": "I made this one up — Davis's brittle wit and her documented disdain for flattery make the 'running from compliments' construction feel genuinely in character, and pairing it with a mundane fitness metaphor is exactly the kind of comedic subversion she favoured. The giveaway is that her real deflections were usually darker and more vicious — this is almost warm by comparison."
+    },
+    {
+      "id": "q4",
+      "text": "Look at your mushrooms - they look like fucking tadpoles on Viagra.",
+      "speaker": "Gordon Ramsay",
+      "context": "Chef Gordon Ramsay critiquing a kitchen's mushroom side dish on the \"Rococo\" episode of Ramsay's Kitchen Nightmares (King's Lynn restaurant), UK Channel 4, 2006.",
+      "real": true,
+      "source": {
+        "title": "'Ramsay's Kitchen Nightmares' — Rococo (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt1058681/",
+        "date": "2006"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Marriage is a beautiful thing. I've done it enough times to know exactly how beautiful the ENDING is. The beginning's fine. It's the middle that'll kill you — that's where you discover she hates the way you chew.",
+      "speaker": "Frank Sinatra",
+      "context": "Candid remarks to journalists in the Sands Hotel lounge, Las Vegas, as recorded in a sidebar for Life magazine's profile, October 1963",
+      "real": false,
+      "fake_note": "I made this one up — Sinatra's multiple marriages and his sharp, sardonic wit about relationships were genuinely documented, and 'the way you chew' has a specific enough domestic meanness to feel real. The giveaway is mild: Sinatra's actual acerbic lines tended to punch at other people rather than himself."
+    },
+    {
+      "id": "q6",
+      "text": "I think that weed kept me from wanting to kill people. And probably kept a lot of people from wanting to kill me, too — out there drunk, running around.",
+      "speaker": "Willie Nelson",
+      "context": "In Rolling Stone's 2019 Weed Issue cover interview, explaining how marijuana replaced his heavy drinking.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Willie Nelson: 'Marijuana Saved My Life'",
+        "url": "https://www.rollingstone.com/music/music-features/willie-nelson-weed-issue-826290/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

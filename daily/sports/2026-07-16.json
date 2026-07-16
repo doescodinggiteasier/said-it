@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-16",
+  "edition": 21,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I told my assistant coaches before we even started training camp — don't show me analytics that tell me what I already see with my eyes. If the numbers say something I can't watch on tape, I don't trust the numbers.",
+      "speaker": "Nick Saban",
+      "context": "SEC Media Days press availability, Hoover, Alabama, July 2019, as quoted by AL.com",
+      "real": false,
+      "fake_note": "I made this one up — Saban's complicated but well-documented skepticism toward metrics that contradict his process-driven philosophy makes this entirely plausible. The giveaway for sharp players is that Saban, by 2019, had actually embraced analytics staff more openly than this quote implies."
+    },
+    {
+      "id": "q2",
+      "text": "People always ask me what I was thinking on that last drive, and honestly I wasn't thinking anything coherent. My left wrist was bothering me, I remember that. I kept wiggling it between plays like an idiot.",
+      "speaker": "Peyton Manning",
+      "context": "Omaha Productions podcast, 'Peyton's Places Uncut,' Episode 12, released February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Manning's self-deprecating, hyper-physical recall of game moments is completely in character, and the wrist detail feels like exactly the kind of throwaway he'd volunteer. The subtle giveaway is that the wrist issue is unverifiable and slightly too convenient as a color detail."
+    },
+    {
+      "id": "q3",
+      "text": "My mother used to watch every match from behind a pillow. She told me she prayed the whole time, not that I'd win, just that I wouldn't get hurt. I only found that out years later and it kind of wrecked me a little.",
+      "speaker": "Serena Williams",
+      "context": "Interview with Gayle King on CBS Mornings, September 2022, during her retirement farewell media tour",
+      "real": false,
+      "fake_note": "I made this one up — Serena frequently credits her family in deeply personal terms and this maternal detail fits her documented warmth about her upbringing. The giveaway is the phrase 'wrecked me a little,' which is slightly more understated and self-aware than her typical public voice."
+    },
+    {
+      "id": "q4",
+      "text": "I've been guarding great players my whole career and none of them ever scared me, but there was one night in Cleveland — I won't say who — where I genuinely thought, this man is going to score a hundred points if I don't figure something out in the next two minutes.",
+      "speaker": "Draymond Green",
+      "context": "The Draymond Green Show, Episode 88, Bleacher Report, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Draymond's combative, storytelling podcast voice and his habit of teasing names without dropping them is perfectly captured here. The tell is the vagueness of 'I won't say who,' which Draymond would usually be far too willing to just say outright."
+    },
+    {
+      "id": "q5",
+      "text": "Coaching is a great thing, because you're working for four months then you go fish for eight.",
+      "speaker": "Bob Knight",
+      "context": "The Indiana basketball coach joking about the perks of the coaching profession, in a roundup of his memorable lines.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Bob Knight quotes: Top 10 memorable lines from Indiana's legendary but controversial coach",
+        "url": "https://www.cbssports.com/college-basketball/news/bob-knight-quotes-top-10-memorable-lines-from-indianas-legendary-but-controversial-coach/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I always look in the Sunday paper to see where Everton are in the league - starting, of course, from the bottom up.",
+      "speaker": "Bill Shankly",
+      "context": "The Liverpool manager needling city rivals Everton, in the club's official collection of his sayings.",
+      "real": true,
+      "source": {
+        "title": "Liverpool FC — Bill Shankly in his own words",
+        "url": "https://www.liverpoolfc.com/news/first-team/111453-bill-shankly-in-his-own-words",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}
