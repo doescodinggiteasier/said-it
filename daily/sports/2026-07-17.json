@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-17",
+  "edition": 22,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My kids asked me once why I never quit tennis when I was losing badly as a junior. I told them I couldn't afford the flight home early. That was basically the whole reason.",
+      "speaker": "Roger Federer",
+      "context": "Interview with NZZ am Sonntag, translated excerpt reprinted in The Guardian, August 2019",
+      "real": false,
+      "fake_note": "I made this one up — Federer often tells self-deprecating origin stories and mentions his early Swiss junior career, and the deadpan pragmatism here fits his public charm perfectly. The giveaway is the punchline is just a touch too clean; Federer's real anecdotes tend to meander a bit more before landing."
+    },
+    {
+      "id": "q2",
+      "text": "Nick came in at halftime and didn't say one word about the score. He just talked about a third-down conversion we'd run in week three against Carolina, said we'd been setting that play up for forty minutes and it was time. We scored on the next possession. I still don't fully understand how he saw that.",
+      "speaker": "Jason Kelce",
+      "context": "New Heights with Jason and Travis Kelce, Episode 68, 'Super Bowl Debrief', March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Jason Kelce has spoken admiringly and in granular football terms about Nick Sirianni's in-game adjustments, and citing a specific earlier-season play as strategic setup is exactly the kind of coaching detail he references with genuine awe. The giveaway is that this is just specific enough to sound real but doesn't name the actual play or formation the way Jason usually would."
+    },
+    {
+      "id": "q3",
+      "text": "There is enough to improve and I am happy to do that",
+      "speaker": "Thomas Tuchel",
+      "context": "After England's 2-1 semi-final defeat to Argentina at the 2026 World Cup",
+      "real": true,
+      "source": {
+        "title": "Sports — Tuchel ‘100%’ invested in leading England at Euro 2028 despite semi-final failur",
+        "url": "https://www.theguardian.com/football/2026/jul/16/thomas-tuchel-england-2026-world-cup-semi-final-argentina-euro-2028",
+        "date": "2026-07-17"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Some of the best catchers I ever pitched to called games I completely disagreed with in the moment, and they were right and I was wrong probably sixty percent of the time. You learn pretty quickly that shaking off a guy who's been behind the plate for twelve years is an act of faith in yourself that you'd better be able to back up.",
+      "speaker": "Greg Maddux",
+      "context": "Baseball America oral history on the 1990s Braves rotation, published online January 2017",
+      "real": false,
+      "fake_note": "I made this one up — Maddux is famous for discussing the pitcher-catcher relationship with unusual candor and humility, and the grudging admission that the catcher was usually right sounds exactly like him. The tell is the rough percentage; Maddux was analytically precise but rarely quantified things this casually in the way a rehearsed speaker might."
+    },
+    {
+      "id": "q5",
+      "text": "Leave me alone, I know what I'm doing!",
+      "speaker": "Kimi Raikkonen",
+      "context": "Formula 1 driver's deadpan team-radio reply to his Lotus race engineer Simon Rennie, who kept feeding him instructions during the 2012 Abu Dhabi Grand Prix (which Raikkonen went on to win).",
+      "real": true,
+      "source": {
+        "title": "F1.com — Leave me alone, I know what I'm doing: the best of Räikkönen on race radio",
+        "url": "https://www.formula1.com/en/latest/article/leave-me-alone-i-know-what-doing-best-of-raikkonen-race-radio.rCKOidDkwt70dZdOENU3e",
+        "date": "2022-11-04"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Speed is always the first thing to go, everyone knows that. But what I didn't expect was how much more I saw once I stopped relying on it. You slow down and suddenly you're reading the game two seconds ahead of where you used to be. It's an odd trade.",
+      "speaker": "Mia Hamm",
+      "context": "Keynote address at the U.S. Soccer Federation annual coaching symposium, Dallas, October 2015",
+      "real": false,
+      "fake_note": "I made this one up — Hamm has discussed the cognitive evolution that comes with athletic aging in several interviews, and 'an odd trade' sounds like her characteristically understated way of framing something that's actually quite profound. The giveaway is the cadence is a touch more polished than her typical off-the-cuff remarks, which are usually a bit choppier."
+    }
+  ]
+}

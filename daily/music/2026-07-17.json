@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-17",
+  "edition": 25,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There was a period where I was doing two sessions a day, back to back, different artists, and I had to just completely empty myself out between rooms. Walk outside, stand in a parking lot for ten minutes, come back a different person. I got very good at parking lots.",
+      "speaker": "Max Martin",
+      "context": "Acceptance speech remarks, reported by Billboard following the ASCAP Pop Music Awards, Los Angeles, May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Max Martin's rare public comments consistently revolve around the craft grind rather than fame, and the self-deprecating closer sounds like him. The giveaway is 'I got very good at parking lots' — it's slightly too quotable and tidy for someone who normally speaks through translators or award-show autocue."
+    },
+    {
+      "id": "q2",
+      "text": "Thank you for waiting. It certainly is two of my most beautiful pieces of work.",
+      "speaker": "Lana Del Rey",
+      "context": "Announcing companion album Spyda",
+      "real": true,
+      "source": {
+        "title": "Music — Lana Del Rey Announces Stove Companion Album Spyda",
+        "url": "https://consequence.net/2026/07/lana-del-rey-stove-companion-album-spyda/",
+        "date": "2026-07-16"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I wore a bin bag to rehearsal once. Not as a statement or anything. I just genuinely thought it looked good. My dancers were too scared to tell me it didn't. That's the problem with being the boss — no one's going to go, 'Robbie, mate, that's a bin bag.'",
+      "speaker": "Robbie Williams",
+      "context": "Interview on The Jonathan Ross Show, ITV, Series 17, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Robbie mines his own ego and delusion for laughs constantly, and the 'no one tells the boss the truth' observation is exactly the kind of self-aware but still self-aggrandizing note he hits. The giveaway is it's slightly too neat a point for his usual rambling style; he'd normally circle back and add three more unnecessary sentences."
+    },
+    {
+      "id": "q4",
+      "text": "My mom heard 'WAP' for the first time on the radio in her car. She called me and she was like, 'Belcalis.' Just my name. That's it. Just said my name and hung up.",
+      "speaker": "Cardi B",
+      "context": "Appearance on Hot 97's Ebro in the Morning, New York, September 2020",
+      "real": false,
+      "fake_note": "I made this one up — Cardi talks about her mom's reactions to her music constantly, and the comedic timing of the one-word-then-hang-up format is exactly her storytelling rhythm. The giveaway is using 'Belcalis' — she does drop her real name occasionally, but usually in more serious contexts, not punchline setups."
+    },
+    {
+      "id": "q5",
+      "text": "I'm literally losing my mind – and I don't stop",
+      "speaker": "CMAT",
+      "context": "CMAT announcing she will not be playing live in 2027",
+      "real": true,
+      "source": {
+        "title": "Music — CMAT will not be playing live in 2027",
+        "url": "https://www.nme.com/news/music/cmat-will-not-be-playing-live-in-2027-3957421?utm_source=rss&utm_medium=rss&utm_campaign=cmat-will-not-be-playing-live-in-2027",
+        "date": "2026-07-17"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Not only is this inaccurate, but reducing a song to an AI generated meaning right at the source feels like it limits free interpretation",
+      "speaker": "Lorde",
+      "context": "Lorde commenting on Spotify's AI-generated song descriptions",
+      "real": true,
+      "source": {
+        "title": "Music — Lorde hits out at AI-generated Spotify feature: “We don’t want this”",
+        "url": "https://www.nme.com/news/music/lorde-hits-out-at-ai-generated-spotify-feature-we-dont-want-this-3957437?utm_source=rss&utm_medium=rss&utm_campaign=lorde-hits-out-at-ai-generated-spotify-feature-we-dont-want-this",
+        "date": "2026-07-17"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-17",
+  "edition": 25,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I used to have a drug problem, but now I make enough money.",
+      "speaker": "David Lee Roth",
+      "context": "The Van Halen frontman quipping about his lifestyle, quoted in a Louder roundup of his wit (originally on Nightwatch With Charlie Rose, 1986).",
+      "real": true,
+      "source": {
+        "title": "Louder — The wit and wisdom of David Lee Roth",
+        "url": "https://www.loudersound.com/features/all-i-ever-really-needed-to-know-i-learned-from-david-lee-roth",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Hollywood is a coke town, but weed is so much better.",
+      "speaker": "Miley Cyrus",
+      "context": "In a 2013 Rolling Stone cover interview, contrasting cocaine with the 'happy drugs' she prefers.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Miley Cyrus on Why She Loves Weed, Went Wild at the VMAs and Much More",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "We played Rotterdam on a Tuesday, I ended up on a boat, woke up Wednesday on a different boat, entirely different country — nobody in the band noticed I was gone because, and I quote the tour manager, 'You looked exactly as bad as usual, so we assumed you were fine.'",
+      "speaker": "Lemmy Kilmister",
+      "context": "Motörhead fan-club Q&A session, Hammersmith Odeon backstage, London, October 1983",
+      "real": false,
+      "fake_note": "I made this one up — Lemmy's touring chaos and the Rotterdam detail gives it that very specific European-squalor texture he loved to inhabit in interviews. The giveaway is the quote-within-a-quote structure — Lemmy told stories in a rolling, unbroken run-on rather than setting up a tidy attributed punchline."
+    },
+    {
+      "id": "q4",
+      "text": "I fired my publicist. She kept describing me as 'enigmatic.' I'm not enigmatic, I'm just rude and I haven't finished my drink yet — those are two completely different things and I resent the glamorisation.",
+      "speaker": "Gore Vidal",
+      "context": "Charlie Rose Show, PBS, taped interview, New York, November 2001",
+      "real": false,
+      "fake_note": "I made this one up — Vidal's contempt for the PR apparatus around celebrity and his love of reducing grand descriptors to something petty and physical are genuine hallmarks of his interview style. The giveaway is 'glamorisation' — Vidal would have named the publicist and then explained her entire genealogy of bad taste before arriving at any punchline."
+    },
+    {
+      "id": "q5",
+      "text": "People always ask what Keith and I fought about most on the road. It wasn't women, it wasn't money — it was who had to go deal with the promoter, because the promoter is always some miserable bastard in a fleece who wants to talk about parking.",
+      "speaker": "Charlie Watts",
+      "context": "Interview with Nick Kent, NME, published April 1979",
+      "real": false,
+      "fake_note": "I made this one up — Watts's bone-dry contempt for industry logistics and his very specific, mundane grievances (fleece, parking) are perfectly in his register, and the NME / Nick Kent pairing is era-authentic. The giveaway is naming Keith directly — Watts tended to be evasively affectionate about bandmates in print rather than naming the dynamic so cleanly."
+    },
+    {
+      "id": "q6",
+      "text": "And if you can write an hour of great stuff, you're like fucking Tolstoy.",
+      "speaker": "Norm Macdonald",
+      "context": "In a 2011 A.V. Club interview, arguing that stand-up is the hardest writing there is.",
+      "real": true,
+      "source": {
+        "title": "The A.V. Club — Interview: Norm Macdonald",
+        "url": "https://www.avclub.com/norm-macdonald-1798225024",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

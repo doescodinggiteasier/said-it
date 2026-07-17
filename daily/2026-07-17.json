@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-17",
+  "edition": 33,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When we were in the Transvaal doing the drought survey in '97, we ran out of clean containers on day four, so we started filtering through a old cotton shirt that one of the guys had. And you know, the data we collected that week was actually some of the best we ever got. I don't know what to do with that.",
+      "speaker": "Jane Goodall",
+      "context": "Conversation with David Attenborough recorded for the BBC Natural World series retrospective documentary, aired March 2004",
+      "real": false,
+      "fake_note": "I made this one up — Goodall's field-work storytelling is deeply specific, often funny and always slightly rueful about the gap between conditions and results, and this fits her register almost exactly. The sneaky tell is the shirt-as-filter detail, which is vivid enough to feel documented but just specific enough to be invented."
+    },
+    {
+      "id": "q2",
+      "text": "We tested that thing on a Tuesday and by Thursday we were already arguing about what to call it, which is honestly the most Silicon Valley sentence I have ever heard come out of my own mouth.",
+      "speaker": "Reid Hoffman",
+      "context": "Onstage conversation with Kara Swisher at the 2019 Code Conference, Scottsdale, Arizona",
+      "real": false,
+      "fake_note": "I made this one up — Hoffman is known for this exact brand of self-aware, slightly sardonic commentary about tech culture, having lived inside it long enough to mock it fluently. The tell is 'most Silicon Valley sentence I have ever heard come out of my own mouth' — it's a fraction too self-consciously quotable for his usual off-the-cuff style."
+    },
+    {
+      "id": "q3",
+      "text": "You better cut the pizza in four pieces because I'm not hungry enough to eat six.",
+      "speaker": "Yogi Berra",
+      "context": "Hall of Fame baseball catcher and manager, one of his famous 'Yogi-isms'",
+      "real": true,
+      "source": {
+        "title": "Famous 'Yogi-isms'",
+        "url": "https://www.cbsnews.com/news/famous-yogi-isms",
+        "date": "2002-03-06"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I don't know if those are B's. They might be Cardi D's. I'm pretty sure those aren't B's. She's got the wrong initials.",
+      "speaker": "Charles Barkley",
+      "context": "on the TNT desk during Cardi B's NBA Finals halftime show",
+      "real": true,
+      "source": {
+        "title": "Larry Brown Sports — Charles Barkley's Cardi B quote",
+        "url": "https://larrybrownsports.com/basketball/charles-barkley-wildest-quote-cardi-b-nba-finals/757513",
+        "date": "2026-06-09"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The only time to eat diet food is while you're waiting for the steak to cook.",
+      "speaker": "Julia Child",
+      "context": "Famous saying by the chef and TV cook, listed among quotes she actually said",
+      "real": true,
+      "source": {
+        "title": "17 Quotes From Julia Child, Which She Actually Said | GBH",
+        "url": "https://www.wgbh.org/lifestyle/food/food-stories/2019-01-28/17-quotes-from-julia-child-which-she-actually-said",
+        "date": "2019-01-28"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've been cooking since I was small enough that I had to stand on a step to reach the stove, and the one thing I can tell you is that people are always trying to improve things that were already correct. A soffritto does not need to be reimagined. It needs to be respected.",
+      "speaker": "Lidia Bastianich",
+      "context": "Panel discussion at the Food Network New York City Wine & Food Festival, Grand Tasting, October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Bastianich routinely defends classical Italian technique against modern tinkering in exactly this register, and the childhood kitchen memory is straight from her documented autobiography. The giveaway is 'reimagined' — it's a contemporary food-media word she'd more likely say 'reinvented' or simply 'fussed with.'"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-17",
+  "edition": 21,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'll be honest with you — I had a staffer explain to me what a 'pivot table' was three separate times, and each time I walked away feeling worse about myself than the time before.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic Governors Association technology briefing, Washington D.C., March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-deprecating humor about being behind the technological curve is well-documented, and this fits his pattern of candid, slightly rambling admissions about feeling outpaced. The subtle giveaway is that 'pivot table' is just specific enough to feel planted."
+    },
+    {
+      "id": "q2",
+      "text": "I tuned into Joe Rogan yesterday and heard Bernie Sanders' economics, Barack Obama's foreign policy, and Ro Khanna's conspiracy theories. And then I realized JD Vance was talking.",
+      "speaker": "Ben Shapiro",
+      "context": "Conservative pundit commenting on JD Vance's appearance on Joe Rogan's podcast",
+      "real": true,
+      "source": {
+        "title": "Politics — Ben Shapiro says Vance sounded like a Democrat on Rogan's podcast",
+        "url": "https://thehill.com/homenews/media/5973141-shapiro-criticizes-vance-rogan-interview/",
+        "date": "2026-07-17"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Freedom is the right to be wrong, not the right to do wrong.",
+      "speaker": "John Diefenbaker",
+      "context": "The Canadian Prime Minister, in a candid, aphoristic reflection on liberty (11 March 1958).",
+      "real": true,
+      "source": {
+        "title": "John Diefenbaker - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Diefenbaker",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Someone on my team put together a forty-page briefing document on proposed changes to agricultural subsidy classifications. I read every page. I'm not sure that's normal. My wife is certain it isn't.",
+      "speaker": "Mike Pence",
+      "context": "Remarks at the Indiana State Fair Agriculture Roundtable, Indianapolis, Indiana, August 2015",
+      "real": false,
+      "fake_note": "I made this one up — Pence cultivated a reputation as an earnest, detail-oriented Midwesterner, and a self-aware joke about his own diligence reads true to that persona. The slight tell is the wife punchline, which wraps it a shade too neatly."
+    },
+    {
+      "id": "q5",
+      "text": "The thing about a filibuster that they don't put in the textbooks is what it smells like in there after hour nine. That's the real test of conviction.",
+      "speaker": "Rand Paul",
+      "context": "Interview on The Hugh Hewitt Show, nationally syndicated radio, March 2015",
+      "real": false,
+      "fake_note": "I made this one up — Paul has spoken publicly about his 2013 filibuster with a mix of pride and dark humor, and a sensory, unglamorous detail like this matches his libertarian-maverick tendency to puncture institutional solemnity. The giveaway is 'hour nine,' which is specific in a way that invites fact-checking."
+    },
+    {
+      "id": "q6",
+      "text": "You have to be a special kind of stupid to believe this bull----",
+      "speaker": "Jim McGovern",
+      "context": "Rep. Jim McGovern (D-Mass.) reacting to Trump's primetime address on election claims",
+      "real": true,
+      "source": {
+        "title": "Politics — Democrats call 'bull----' on Trump's election interference claims",
+        "url": "https://thehill.com/homenews/administration/5973430-democrats-alarm-trump-election-fraud-claims/",
+        "date": "2026-07-17"
+      }
+    }
+  ]
+}

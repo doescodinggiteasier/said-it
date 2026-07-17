@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-17",
+  "edition": 30,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My mama always said life was like a box of chocolates. You never know what you're gonna get.",
+      "speaker": "Forrest Gump (1994)",
+      "context": "Forrest (Tom Hanks) sits on a bus-stop bench recounting his mother's favorite saying.",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "Be the ball.",
+      "speaker": "Caddyshack (1980)",
+      "context": "Ty Webb (Chevy Chase) giving zen golf advice to caddy Danny Noonan during their night-golf lesson",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "You keep touching that wound, it's never going to close.",
+      "speaker": "Chinatown (1974)",
+      "context": "Evelyn Mulwray warning Jake Gittes, speaking both literally and with an edge of weariness",
+      "real": false,
+      "fake_note": "I made this one up — the double-meaning delivery and clipped fatalism fit Chinatown's noir register perfectly, and Evelyn does tend to Gittes's injuries in the film. The subtle giveaway is that it leans just a hair too metaphorical for her usual guarded, practical speech."
+    },
+    {
+      "id": "q4",
+      "text": "Don't look at me like that. Everybody in this family keeps secrets.",
+      "speaker": "The Royal Tenenbaums (2001)",
+      "context": "Margot Tenenbaum snapping at Richie after he discovers something she'd hidden",
+      "real": false,
+      "fake_note": "I made this one up — Margot's flat, defensive delivery and the film's whole architecture of family concealment make this entirely plausible. The subtle giveaway is that she's usually even more withholding than this; outright acknowledging secrets is slightly too self-aware for her."
+    },
+    {
+      "id": "q5",
+      "text": "One does not simply walk into Mordor.",
+      "speaker": "The Lord of the Rings: The Fellowship of the Ring (2001)",
+      "context": "Boromir (Sean Bean) arguing against the plan to destroy the Ring",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Nobody orders the fish on a Monday, counselor. Nobody.",
+      "speaker": "The Silence of the Lambs (1991)",
+      "context": "Hannibal Lecter offering unsolicited, ominous advice to Clarice Starling through the cell glass",
+      "real": false,
+      "fake_note": "I made this one up — Lecter's habit of dispensing precise, condescending little rules in a conversational tone is all over the film, so this lands naturally. The giveaway is that 'counselor' isn't quite his address of choice for Clarice; he prefers her name."
+    }
+  ]
+}
