@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-18",
+  "edition": 31,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've done terrible things for this family, Fredo. Don't you ever forget that.",
+      "speaker": "The Godfather Part II (1974)",
+      "context": "Michael Corleone, confronting Fredo after the betrayal comes to light",
+      "real": false,
+      "fake_note": "I made this one up — Michael's cold, controlled menace and the Fredo tension are absolutely central to this film, so the line slots right in. The giveaway is that the real Michael would never explicitly remind Fredo of his sacrifices; his power comes from saying less, not more."
+    },
+    {
+      "id": "q2",
+      "text": "Ogres are like onions.",
+      "speaker": "Shrek (2001)",
+      "context": "Shrek explains to Donkey that ogres have layers",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "Just keep swimming.",
+      "speaker": "Finding Nemo (2003)",
+      "context": "Dory's optimistic mantra, which she sings to Marlin to keep him going during the search for Nemo.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "I'm not afraid of you. I'm afraid of what I'll do if you push me again.",
+      "speaker": "Taxi Driver (1976)",
+      "context": "Travis Bickle, after a tense confrontation near his cab",
+      "real": false,
+      "fake_note": "I made this one up — Travis's brooding self-awareness and barely-contained violence are all over this film, and the cadence matches his voiceover style turned outward. The subtle giveaway is that Travis rarely threatens directly in dialogue; his menace in the film is mostly internal or eruptive, not this measured."
+    },
+    {
+      "id": "q5",
+      "text": "I keep thinking there's something I missed. Something small. There always is.",
+      "speaker": "Zodiac (2007)",
+      "context": "Robert Graysmith, late in the film, poring over case files alone",
+      "real": false,
+      "fake_note": "I made this one up — Graysmith's compulsive, hollowed-out obsession is the whole engine of this film, and Fincher's dialogue tends toward this kind of flat, procedural dread. The subtle giveaway is Graysmith in the film expresses his fixation more through behavior than confession; he wouldn't quite say this aloud."
+    },
+    {
+      "id": "q6",
+      "text": "The first rule of Fight Club is: you do not talk about Fight Club.",
+      "speaker": "Fight Club (1999)",
+      "context": "Tyler Durden (Brad Pitt) laying down the rules to the members of Fight Club.",
+      "real": true
+    }
+  ]
+}

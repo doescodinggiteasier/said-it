@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-18",
+  "edition": 34,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I tried meditating for about six weeks. I was very committed to it. I had the app, I had the cushion, I even told people I was doing it, which was a mistake because then I had to keep doing it. Eventually I just admitted I'd rather go for a run and feel equally empty but also slightly out of breath.",
+      "speaker": "Mindy Kaling",
+      "context": "Interview with Jameela Jamil on the 'I Weigh' podcast, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Kaling has spoken publicly about wellness trends and self-improvement attempts in exactly this self-aware, gently mocking tone. The subtle tell is 'equally empty' — it's a beat too darkly comic for Kaling, who usually keeps her self-deprecation warmer."
+    },
+    {
+      "id": "q2",
+      "text": "I've read maybe three books in my entire life that I didn't immediately want to turn into something else. The rest I just sort of absorb and then my brain does whatever it wants with them while I'm asleep. It's an annoying way to work but it's the only way I know.",
+      "speaker": "Guillermo del Toro",
+      "context": "Q&A session following a Directors Guild of America screening of 'Nightmare Alley', Los Angeles, January 2022",
+      "real": false,
+      "fake_note": "I made this one up — del Toro is a famous bibliophile who has spoken extensively about books feeding his imagination, so the sentiment is completely believable. The giveaway for sharp players is that del Toro typically rattles off specific titles and authors; this quote is conspicuously title-free."
+    },
+    {
+      "id": "q3",
+      "text": "I always thought that, uh, quicksand was gonna be a much bigger problem than it turned out to be.",
+      "speaker": "John Mulaney",
+      "context": "From his stand-up special 'New in Town' (2012), riffing on childhood fears from cartoons",
+      "real": true,
+      "source": {
+        "title": "John Mulaney: New In Town (2012) - Full Transcript - Scraps from the Loft",
+        "url": "https://scrapsfromtheloft.com/comedy/john-mulaney-new-in-town-2012-full-transcript/",
+        "date": "2012-01-13"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I like the escalator, man, 'cause the escalator can never break. It can only become stairs. There would never be an 'Escalator Temporarily Out of Order' sign, only an 'Escalator Temporarily Stairs - Sorry for the Convenience.'",
+      "speaker": "Mitch Hedberg",
+      "context": "From his Comedy Central Presents stand-up set, a signature observational one-liner",
+      "real": true,
+      "source": {
+        "title": "Mitch Hedberg quote on Quotes.net (Comedy Central Presents)",
+        "url": "https://www.quotes.net/mquote/706033",
+        "date": "1998-01-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I'm just here so I won't get fined, boss. That's the only reason why.",
+      "speaker": "Marshawn Lynch",
+      "context": "Seattle Seahawks running back, repeated this line at Super Bowl XLIX Media Day in January 2015 after being fined for not speaking to reporters",
+      "real": true,
+      "source": {
+        "title": "Marshawn Lynch: 'I'm just here so I won't get fined'",
+        "url": "https://www.nfl.com/news/marshawn-lynch-i-m-just-here-so-i-won-t-get-fined-0ap2000000319691",
+        "date": "2015-01-27"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I genuinely cannot watch myself in things. My wife thinks it's false modesty but it's not — it's more that I can remember the whole day of filming and all I see is the day, not the scene. It ruins it completely. I've probably seen about forty minutes of my own career.",
+      "speaker": "Tom Hanks",
+      "context": "Appearance on 'The Late Show with Stephen Colbert', CBS, promoting 'Pinocchio', September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Hanks has said versions of this sentiment about not watching his own films in multiple interviews, making it highly plausible. The giveaway is 'about forty minutes' — it's the kind of oddly specific comic exaggeration that's almost too perfectly calibrated to be off-the-cuff."
+    }
+  ]
+}

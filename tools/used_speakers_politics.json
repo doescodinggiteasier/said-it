@@ -3,7 +3,7 @@
 "george h  w  bush": "2026-06-17",
 "winston churchill": "2026-07-09",
 "gerald ford": "2026-07-09",
-"barack obama": "2026-07-15",
+"barack obama": "2026-07-18",
 "bernie sanders": "2026-07-16",
 "kamala harris": "2026-07-11",
 "john kennedy": "2026-07-15",
@@ -25,7 +25,7 @@
 "bob dole": "2026-07-01",
 "tim walz": "2026-07-01",
 "harold macmillan": "2026-07-16",
-"paul ryan": "2026-07-02",
+"paul ryan": "2026-07-18",
 "amy klobuchar": "2026-07-04",
 "charles gaulle": "2026-07-16",
 "john kerry": "2026-07-02",
@@ -38,9 +38,9 @@
 "nikki haley": "2026-07-04",
 "scott bessent": "2026-07-04",
 "marco rubio": "2026-07-05",
-"ted stevens": "2026-07-05",
+"ted stevens": "2026-07-18",
 "dick cheney": "2026-07-05",
-"ronald reagan": "2026-07-05",
+"ronald reagan": "2026-07-18",
 "adlai stevenson": "2026-07-06",
 "jennifer granholm": "2026-07-06",
 "cory booker": "2026-07-06",
@@ -73,5 +73,7 @@
 "ben shapiro": "2026-07-17",
 "mike pence": "2026-07-17",
 "rand paul": "2026-07-17",
-"jim mcgovern": "2026-07-17"
+"jim mcgovern": "2026-07-17",
+"michael bloomberg": "2026-07-18",
+"al franken": "2026-07-18"
 }

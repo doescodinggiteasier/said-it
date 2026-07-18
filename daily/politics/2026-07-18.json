@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-18",
+  "edition": 22,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone on my team once described our communications strategy as 'controlled chaos.' I said — which part is controlled? Nobody laughed. That told me a lot.",
+      "speaker": "Michael Bloomberg",
+      "context": "Remarks at the U.S. Conference of Mayors Winter Meeting, Washington D.C., January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Bloomberg's humor is dry, managerial and slightly impatient, and this kind of boardroom-inflected self-analysis fits his actual speaking style. The tell is that the 'nobody laughed' beat is a comedy technique slightly too deliberate for Bloomberg's typically clipped delivery."
+    },
+    {
+      "id": "q2",
+      "text": "There's a version of tax policy that I genuinely find fascinating, and then there's the version I have to explain at a town hall at seven in the morning, and those are very different conversations.",
+      "speaker": "Paul Ryan",
+      "context": "Remarks during a Q&A session at the Ripon Society annual dinner, Washington D.C., February 2017",
+      "real": false,
+      "fake_note": "I made this one up — Ryan was famous for his earnest budget-wonk enthusiasm and this captures that slight weariness between his intellectual passion and political reality. The tell is that Ryan would almost certainly have named a specific provision rather than just saying 'tax policy' generally."
+    },
+    {
+      "id": "q3",
+      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
+      "speaker": "Ted Stevens",
+      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality.",
+      "real": true,
+      "source": {
+        "title": "Series of tubes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
+        "date": "2006-06-28"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I admit it -- last year was rough.",
+      "speaker": "Barack Obama",
+      "context": "At the 2014 White House Correspondents' Dinner, Obama opened his self-deprecating riff by candidly conceding his difficult 2013.",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at White House Correspondents' Dinner (May 3, 2014) | whitehouse.gov archives",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "His famous comeback at the 1984 debate against Walter Mondale",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People keep asking me if I miss being in the Senate. And I tell them — yes, genuinely, I do. Then I remember the parking situation and I feel much better.",
+      "speaker": "Al Franken",
+      "context": "Interview with Marc Maron on WTF with Marc Maron, podcast episode released June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Franken's comedy background means he naturally structures observations as little setups and payoffs, and griping about a mundane logistical annoyance is exactly his register. The giveaway is that real Franken tends to go slightly more specific and self-lacerating before landing."
+    }
+  ]
+}

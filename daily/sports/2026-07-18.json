@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-18",
+  "edition": 23,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I had one coach — this is way back, I was maybe nineteen — who told me my release was broken and needed to be rebuilt from scratch. I went home and practiced for three hours that night, came back the next morning and just said, 'Watch.' Never spoke about it after that.",
+      "speaker": "Steph Curry",
+      "context": "Bleacher Report 'Untold' interview series, published October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Curry has repeatedly referenced early skepticism about his game and his quiet, action-oriented response to critics, which is completely on-brand. The subtle giveaway is 'Watch' as a mic-drop closer; Curry's real anecdotes tend to end with a laugh or a self-deprecating aside rather than that kind of swagger."
+    },
+    {
+      "id": "q2",
+      "text": "Maybe Lionel Messi has picked up lots of babies, maybe it's chance, but for those of us who have faith, who believe in something beyond, 'chance' is God's pseudonym when he doesn't want to sign his name",
+      "speaker": "Luis de la Fuente",
+      "context": "Ahead of the 2026 World Cup final, reflecting on the famous photo of Messi and Yamal",
+      "real": true,
+      "source": {
+        "title": "Sports — God’s will? Destiny? Lionel Messi, Lamine Yamal, that photo and the World Cup fi",
+        "url": "https://www.theguardian.com/football/2026/jul/17/gods-will-destiny-lionel-messi-lamine-yamal-that-photo-and-the-world-cup-final",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People think managing a bullpen is chess. It's not chess. It's more like you're playing chess but someone keeps bumping the table and you're trying to remember where all the pieces were.",
+      "speaker": "Terry Francona",
+      "context": "MLB Network's 'Intentional Talk' with Kevin Millar, recorded during spring training, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Francona is one of the game's great dry wits and this bumped-chessboard image is precisely the kind of self-aware, slightly exasperated metaphor he traffics in. The tell is that the analogy is just a touch more structured than Francona's real speech, where he'd usually trail off or laugh before finishing a thought."
+    },
+    {
+      "id": "q4",
+      "text": "Serena would hit a ball in practice that I have genuinely never seen a human being hit, and then she'd walk over and eat a handful of gummy bears and say nothing. That was just Tuesday for her.",
+      "speaker": "Patrick Mouratoglou",
+      "context": "Tennis Channel documentary 'Serena: The Untold Story,' aired June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Mouratoglou has talked extensively about Serena's otherworldly talent in this exact admiring, anecdote-first style, and the gummy bears detail sounds precisely like the throwaway specificity he uses. The giveaway is the documentary title, which doesn't exist under that name."
+    },
+    {
+      "id": "q5",
+      "text": "I don't agree with it, but it is what it is",
+      "speaker": "Bryson DeChambeau",
+      "context": "After receiving a two-stroke penalty at the Open Championship, Royal Birkdale",
+      "real": true,
+      "source": {
+        "title": "Sports — DeChambeau will play on at the Open despite anger over two-stroke penalty",
+        "url": "https://www.theguardian.com/sport/2026/jul/17/bryson-dechambeau-the-open-participation-in-doubt-two-stroke-penalty-golf",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You spend a good piece of your life gripping a baseball, and in the end, it turns out that it was the other way around all the time.",
+      "speaker": "Jim Bouton",
+      "context": "The celebrated closing line of his tell-all baseball memoir 'Ball Four,' as quoted in the book's Wikipedia entry.",
+      "real": true,
+      "source": {
+        "title": "Wikipedia — Ball Four",
+        "url": "https://en.wikipedia.org/wiki/Ball_Four",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

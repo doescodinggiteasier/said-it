@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-18",
+  "edition": 26,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I told the label, 'I need three things on this tour: a tuner, a spare guitar, and a woman who finds feedback erotic.' They gave me a tuner. One out of three is a very corporate answer.",
+      "speaker": "Jimi Hendrix",
+      "context": "Press roundtable, Melody Maker offices, London, September 1968 — cited in Charles Shaar Murray's 'Crosstown Traffic' (1989)",
+      "real": false,
+      "fake_note": "I made this one up — Hendrix did talk about his guitar in frankly sensual terms and had a wry, deadpan wit that's often overlooked, so the setup rings true. The giveaway is 'very corporate answer' — that's MBA-era vocabulary, not 1968 Hendrix."
+    },
+    {
+      "id": "q2",
+      "text": "People say you shouldn't eat a full rack of ribs before a two-hour show. Those people are not comedians. Those people are cowards. The belch alone cleared the front row and they laughed harder than anyone.",
+      "speaker": "Sam Kinison",
+      "context": "Q&A session following a warm-up set at the Comedy Store, Sunset Strip, Los Angeles, recorded for a 1988 Showtime special behind-the-scenes reel",
+      "real": false,
+      "fake_note": "I made this one up — Kinison's entire brand was gleeful, physical transgression, and the audience-as-collateral-damage framing is very him. The giveaway is 'Those people are cowards' — that specific construction was more an '80s action-movie line than Kinison's actual vocabulary, which ran more biblical."
+    },
+    {
+      "id": "q3",
+      "text": "Health nuts are going to feel stupid someday, lying in hospitals dying of nothing.",
+      "speaker": "Redd Foxx",
+      "context": "A signature dark one-liner from the pioneering, famously raunchy stand-up comedian (star of 'Sanford and Son'), mocking clean-living health fanatics. Foxx's party-hard, cigarette-and-booze persona was legendary.",
+      "real": true,
+      "source": {
+        "title": "Quote Details: Redd Foxx (The Quotations Page)",
+        "url": "https://www.quotationspage.com/quote/699.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My rider said two bottles of Bordeaux in the dressing room. They sent up Beaujolais. I didn't throw the TV out the window — I threw the Beaujolais out the window and drank the TV. I don't know what that means. I was very angry.",
+      "speaker": "Oliver Reed",
+      "context": "The Russell Harty Show, ITV, recorded March 1974 — quoted in Robert Sellers' biography 'Hellraisers' (2008)",
+      "real": false,
+      "fake_note": "I made this one up — Reed's chat-show chaos is the stuff of legend and the non-sequitur 'drank the TV' pivot is exactly his drunk-surrealist logic. The subtle giveaway is the self-aware 'I don't know what that means' — Reed was usually too committed to the bit to break the fourth wall like that."
+    },
+    {
+      "id": "q5",
+      "text": "I don't go on stage high but I'll take an edible after I get off stage and chill out. I do write a lot of jokes while high though, and then the next day I'll look at them and go, 'Well that's not that funny.'",
+      "speaker": "Jim Jefferies",
+      "context": "Crude Australian comedian Jim Jefferies — who built his name on drinking, drugs, and porn material — talking candidly about weed and his creative process, in a High Times interview (Aug 2023).",
+      "real": true,
+      "source": {
+        "title": "Jim Jefferies Is Living His Best Life (High Times)",
+        "url": "https://hightimes.com/culture/jim-jefferies-is-living-his-best-life/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Alcohol was my poison. I drank Seagrams VO, a Canadian rye, with Coca-Cola. And beer. For me, beer was like air. I'd have a six-pack before noon.",
+      "speaker": "Alice Cooper",
+      "context": "Shock-rock legend Alice Cooper describing his heavy daily drinking before he got sober, in a Louder/Classic Rock feature on going cold turkey.",
+      "real": true,
+      "source": {
+        "title": "How Alice Cooper went cold turkey and made his most personal album (Louder)",
+        "url": "https://www.loudersound.com/features/how-alice-cooper-went-cold-turkey-and-made-his-most-personal-album",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-18",
+  "edition": 26,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I used to do acid on a Wednesday. I don't have time for that now",
+      "speaker": "Steve Lacy",
+      "context": "Steve Lacy in an interview discussing his life after his hit 'Bad Habit'",
+      "real": true,
+      "source": {
+        "title": "Music — ‘I used to do acid on a Wednesday. I don’t have time for that now’: alt-pop star",
+        "url": "https://www.theguardian.com/music/2026/jul/17/i-used-to-do-acid-on-a-wednesday-i-dont-have-time-for-that-now-alt-pop-star-steve-lacy-on-his-struggle-to-follow-huge-hit-bad-habit",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I'm playing the same flute, but every nationality of driver will turn around and tell me it reminds them of their country.",
+      "speaker": "André 3000",
+      "context": "The Outkast rapper, on Questlove's 'Questlove Supreme' podcast, describing how he'd play his flute in the back of Ubers and how drivers of every nationality told him it reminded them of their home country",
+      "real": true,
+      "source": {
+        "title": "How Did André 3000 Learn To Play Flute?",
+        "url": "https://thebeatofthecapital.com/2023/12/13/how-did-andre-3000-learn-to-play-flute/",
+        "date": "2023-12-13"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People think the loud stuff is the hard part. It's not. Anybody can make a big noise. Leaving space — deciding what not to play — that's where most producers fall apart, including me for the first few years.",
+      "speaker": "Rick Rubin",
+      "context": "Conversation with producer Questlove on the WNYC Studios podcast 'Questlove Supreme,' recorded in Los Angeles, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Rick Rubin's whole philosophy of stripping music back to its essence is central to his public persona, and his willingness to include himself in the criticism ('including me') matches his documented humility. The giveaway is that his real speech tends to be even more abstract and less process-specific than this."
+    },
+    {
+      "id": "q4",
+      "text": "I don't really think of myself as someone who writes songs. I think of myself as someone who finds them. Like they're already there and I'm just — I don't know — wandering around in the dark with my hands out.",
+      "speaker": "Phoebe Bridgers",
+      "context": "Live interview at the Pitchfork Music Festival, Grant Park, Chicago, July 2022",
+      "real": false,
+      "fake_note": "I made this one up — Phoebe's understated, slightly self-deprecating way of discussing her creative process is very consistent with her documented interviews, and the imagery is appropriately bleak and personal. The subtle giveaway is the trailing-off 'I don't know' construction, which sounds authentic but is deployed a little too cleanly here."
+    },
+    {
+      "id": "q5",
+      "text": "I've probably rewritten the bridge on 'Superstition' in my head a hundred times since we cut it. Not because I think it's wrong — it's just what I do. My brain doesn't really have an off switch for that stuff.",
+      "speaker": "Stevie Wonder",
+      "context": "Interview with Rolling Stone, conducted backstage at the Kennedy Center Honors, December 2015",
+      "real": false,
+      "fake_note": "I made this one up — Stevie endlessly revisiting his own classics in his head is completely on-brand, and his self-deprecating candor about his creative obsessiveness is well-documented. The subtle giveaway is that he'd more likely talk about a newer track than reach back to name a signature hit so specifically."
+    },
+    {
+      "id": "q6",
+      "text": "My topic is the shift from 'architect' to 'gardener', where 'architect' stands for 'someone who carries a full picture of the work before it is made', to 'gardener' standing for 'someone who plants seeds and waits to see exactly what will come up'.",
+      "speaker": "Brian Eno",
+      "context": "Composer/producer Brian Eno (Roxy Music, ambient music pioneer, producer for Bowie, Talking Heads, U2) framing how he thinks about making music — not as an architect with the finished work in his head, but as a gardener who plants seeds",
+      "real": true,
+      "source": {
+        "title": "Composers as Gardeners — Brian Eno, Edge.org",
+        "url": "https://www.edge.org/conversation/brian_eno-composers-as-gardeners",
+        "date": "2011-11-10"
+      }
+    }
+  ]
+}
