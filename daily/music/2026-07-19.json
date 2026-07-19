@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-19",
+  "edition": 27,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He built this entire empire based on what he thought would turn the world on. That was his superpower",
+      "speaker": "Rob Thomas",
+      "context": "Remembering Clive Davis",
+      "real": true,
+      "source": {
+        "title": "Music — Rob Thomas Remembers Clive Davis: ‘Losing Clive Is the End of an Era’",
+        "url": "https://www.rollingstone.com/music/music-features/rob-thomas-clive-davis-tribute-essay-1235582736/",
+        "date": "2026-06-24"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People act like Auto-Tune ruined singing, but honestly it just revealed who was already faking it. The technology didn't change the problem, it just turned the lights on.",
+      "speaker": "T-Pain",
+      "context": "Reddit AMA conducted on r/Music, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — T-Pain has spoken extensively and candidly about the Auto-Tune discourse, and this kind of dry, self-aware reframe is exactly his mode. The tell is the slightly too-tidy 'turned the lights on' closer — his actual metaphors tend to be a lot goofier."
+    },
+    {
+      "id": "q3",
+      "text": "Nobody touches the shepherd's pie till I've been in there. Don't bust my crust, baby.",
+      "speaker": "Keith Richards",
+      "context": "The Rolling Stones guitarist explaining his strict on-the-road rule about his pre-show shepherd's pie, written in his autobiography 'Life'. Oddly specific and very funny rock-star demand.",
+      "real": true,
+      "source": {
+        "title": "Don't mess with Keith Richards' pre-show shepherd's pie ritual, or he might threaten to cut you up and bake you into one",
+        "url": "https://www.loudersound.com/features/dont-mess-with-keith-richards-pre-show-shepherds-pie-ritual-or-he-might-threaten-to-cut-you-up-and-bake-you-into-one",
+        "date": "2023-03-23"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I did a session once where the artist wanted to re-record a vocal seventeen times and I let it happen, and the first take was the one we used. I don't regret it because she needed to go through all seventeen to believe in the first one. But I did look at the clock a lot.",
+      "speaker": "Linda Perry",
+      "context": "Keynote Q&A at the She Is the Music Summit, Los Angeles, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Linda Perry has been very candid in interviews about her blunt, producer-knows-best philosophy in the studio, and this kind of rueful, practical anecdote is perfectly in her wheelhouse. The giveaway is the slight warmth in 'she needed to go through all seventeen' — Perry usually tells this type of story with a sharper edge."
+    },
+    {
+      "id": "q5",
+      "text": "A genius is the one most like himself.",
+      "speaker": "Thelonious Monk",
+      "context": "One line from 'T. Monk's Advice' — a set of pointers the jazz pianist Thelonious Monk gave saxophonist Steve Lacy, who wrote them down while playing in Monk's band in 1960.",
+      "real": true,
+      "source": {
+        "title": "Thelonious Monk’s Advice — Howard Rees’ Jazz Workshops (transcribed by Steve Lacy, 1960)",
+        "url": "https://jazzworkshops.com/thelonious-monks-advice/",
+        "date": "1960-01-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The first time I heard 'Superstition' on a proper sound system — not a car stereo, not headphones, a real system — I understood why people used to build churches. You want something that does that to a room.",
+      "speaker": "Daft Punk",
+      "context": "Thomas Bangalter, speaking in a rare joint interview with Guy-Manuel de Homem-Christo for Les Inrockuptibles magazine, Paris, April 2013",
+      "real": false,
+      "fake_note": "I made this one up — Daft Punk's documented reverence for Stevie Wonder and Motown-era production is real, and Bangalter in particular has talked about the physical, architectural experience of sound. The church metaphor is a touch grander than his typically technical vocabulary, which is the hairline crack."
+    }
+  ]
+}

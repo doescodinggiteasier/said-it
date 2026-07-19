@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-19",
+  "edition": 23,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone in the back row just asked me a question and I genuinely could not hear it. I said 'absolutely' and I'm still not sure what I agreed to.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic National Committee fundraiser, Philadelphia, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-aware asides at fundraisers are well documented and he often riffs on the chaotic logistics of political events. The subtle tell is that this kind of punch lands better as an off-the-cuff aside than something he'd actually voice; he usually pivots toward the crowd rather than himself."
+    },
+    {
+      "id": "q2",
+      "text": "We're trying to get through this",
+      "speaker": "Doug Ford",
+      "context": "Ontario Premier at press conference in Thunder Bay, blasting Trump administration criticism of Canada's wildfire response",
+      "real": true,
+      "source": {
+        "title": "Politics — Ontario premier slams Trump wildfires criticism: ‘Absolutely unacceptable’",
+        "url": "https://thehill.com/homenews/5976412-ford-blasts-trump-wildfire-criticism/",
+        "date": "2026-07-19"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've given this speech enough times that I can tell within the first thirty seconds whether the room is with me. Tonight I waited about forty-five.",
+      "speaker": "Newt Gingrich",
+      "context": "Reagan Library Distinguished Speakers Series, Simi Valley, California, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Gingrich is a fixture on the Republican speaking circuit and projects confident self-awareness about his rhetorical skills. The tell is the implicit suggestion the room was slow to warm, which is a vulnerability he'd rarely concede even lightly."
+    },
+    {
+      "id": "q4",
+      "text": "I've read every page of this bill. Well — I've read every page of the summary. Which, honestly, at 300 pages, is its own achievement.",
+      "speaker": "Chuck Schumer",
+      "context": "Remarks at a Senate Democratic Caucus press briefing, Capitol Hill, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Schumer frequently cites his thoroughness on legislation and has a dry, self-deprecating streak that makes this feel completely in character. The subtle giveaway is that he'd almost never publicly admit to skipping the full text, even as a joke."
+    },
+    {
+      "id": "q5",
+      "text": "My staff keeps telling me I need to be on TikTok. I told them I'm already doing short-form content — it's called a press release, and nobody watches that either.",
+      "speaker": "Mitch McConnell",
+      "context": "Kentucky Farm Bureau Country Ham Breakfast, Louisville, August 2022",
+      "real": false,
+      "fake_note": "I made this one up — McConnell has shown dry, deadpan humor at Kentucky events before, and his acknowledged stiffness with media is well documented. The tell is that he rarely jokes about his own communications operation even in friendly rooms."
+    },
+    {
+      "id": "q6",
+      "text": "I will do it myself where does he live?",
+      "speaker": "Cory Booker",
+      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes.",
+      "real": true,
+      "source": {
+        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
+        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
+        "date": "2010-12-27"
+      }
+    }
+  ]
+}

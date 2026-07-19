@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-19",
+  "edition": 27,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I used to do drugs. I still do, but I used to, too.",
+      "speaker": "Mitch Hedberg",
+      "context": "One of late absurdist comedian Mitch Hedberg's most iconic one-liners, a paradoxical drug-use confession from his album 'Strategic Grill Locations' (1999). Hedberg's easygoing stoner persona and drug jokes were central to his act.",
+      "real": true,
+      "source": {
+        "title": "Mitch Hedberg — Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Mitch_Hedberg",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Maybe it was because we did it unabashedly out in the open. We didn't know it was shocking. Perhaps we were just too fucking frank.",
+      "speaker": "Slash",
+      "context": "The Guns N' Roses guitarist, in a Classic Rock/Louder interview, explaining why his band got a wilder reputation than peers who did 'the same shit'.",
+      "real": true,
+      "source": {
+        "title": "Louder (Classic Rock) — Six Pack: Slash on drugs, dying and Axl Rose",
+        "url": "https://www.loudersound.com/features/six-pack-slash-on-drugs-dying-and-axl-rose",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Somebody asked me once what the secret to a long marriage was. I said, 'Separate bathrooms and a very short memory.' They laughed. I wasn't joking, you nosy son of a bitch.",
+      "speaker": "Rodney Dangerfield",
+      "context": "The Tonight Show with Johnny Carson, NBC, taped October 1981, during a between-jokes chat segment",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield's self-deprecating marriage material and his habit of pivoting the punchline onto the questioner are pitch-perfect to his style. The giveaway is 'you nosy son of a bitch' breaking the fourth wall directly at Carson, which he'd typically redirect inward instead."
+    },
+    {
+      "id": "q4",
+      "text": "Look, I don't recommend my twenties to anyone. It was basically four years of bad decisions wearing a leather jacket and calling it art. But Christ, it was a good leather jacket.",
+      "speaker": "John Belushi",
+      "context": "Playboy magazine interview, September 1980 issue, conducted by Lawrence Linderman",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's self-aware, mock-philosophical deflection into a physical punchline is very consistent with how he talked in long-form interviews. The giveaway is the slight over-tidiness of the final line — Belushi was funnier when messier."
+    },
+    {
+      "id": "q5",
+      "text": "We finished the show in Detroit, right, and the promoter's got a cooler of Budweiser and a plate of cold cuts backstage. Cold cuts! I told him, 'Man, I just played two and a half hours — I want a hot meal and a bottle of Jack, not a goddamn deli tray.'",
+      "speaker": "Freddie Mercury",
+      "context": "Interview with Nick Kent for NME, published July 1977, during the News of the World tour press cycle",
+      "real": false,
+      "fake_note": "I made this one up — Mercury was famously vocal about backstage riders and theatrical in his complaints, so the indignant tone rings true. The giveaway is the Jack Daniel's reference; Mercury's drink was more typically vodka and tonic, not Tennessee whiskey."
+    },
+    {
+      "id": "q6",
+      "text": "I showed up to the Grammy after-party still wearing my jumpsuit from the show, smelled like a goddamn brewery, and some record exec hands me a flute of champagne like I'm the Queen of fucking England. I drank it, then I drank his.",
+      "speaker": "James Brown",
+      "context": "Ebony magazine profile, February 1985 issue, during a roundtable on awards show culture",
+      "real": false,
+      "fake_note": "I made this one up — Brown's braggadocious, self-mythologising voice and his Grammy history make this feel totally real. The giveaway is that 'Queen of fucking England' is a slightly too British simile for Brown's usual Southern-fried bravado."
+    }
+  ]
+}

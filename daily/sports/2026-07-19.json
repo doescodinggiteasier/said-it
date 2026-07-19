@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-19",
+  "edition": 24,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone told me early on that the wicket never lies to you. The ball does, the conditions do, your own mind absolutely does — but stand there long enough and the pitch will show you exactly what it is. I've thought about that probably more than anything else a coach ever said to me.",
+      "speaker": "Ricky Ponting",
+      "context": "ABC Grandstand Cricket interview during the 2013 Ashes series, Brisbane Test broadcast, November 2013",
+      "real": false,
+      "fake_note": "I made this one up — Ponting is known for deeply technical, experience-rooted observations about batting and conditions, and this kind of mentor-memory quote is precisely his register. The tell is that the advice is just a touch more poetic than Ponting's usual blunt, tactical phrasing."
+    },
+    {
+      "id": "q2",
+      "text": "The match shouldn't have been played",
+      "speaker": "Jules Kounde",
+      "context": "Barcelona defender on the World Cup third-place play-off, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — Barcelona star Jules Kounde questions need for World Cup third-place play-off: ‘",
+        "url": "https://sports.yahoo.com/articles/barcelona-star-jules-kounde-questions-081000227.html",
+        "date": "2026-07-19"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "There was a stretch in my career — I want to say my second or third year in the league — where I was genuinely convinced every morning when I woke up that I was the best point guard alive. Not cocky, just certain. I don't know if I've ever had that feeling again quite the same way.",
+      "speaker": "Steve Nash",
+      "context": "The Ringer NBA Show podcast, interview with Kevin O'Connor, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Nash frequently reflects on the mental side of his peak years with a kind of wistful, analytical honesty that matches this perfectly. The giveaway is the slight contradiction ('not cocky, just certain'), which is almost too neatly self-aware even for Nash."
+    },
+    {
+      "id": "q4",
+      "text": "But I also know, if I was healthy, with good hips right now, I'd be the fastest 45-year-old in the country, or in the world.",
+      "speaker": "Bo Jackson",
+      "context": "Reflecting in retirement, years after his hip injury, in ESPN's long-form 'Bo Knows Best' feature.",
+      "real": true,
+      "source": {
+        "title": "ESPN E-ticket — Bo Knows Best",
+        "url": "http://www.espn.com/espn/eticket/story?page=bojackson",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've played in front of sixty thousand people and I've played in front of nobody on a Tuesday in January at a half-frozen training ground and I genuinely could not tell you which one I prefer. The ball doesn't care either way.",
+      "speaker": "Megan Rapinoe",
+      "context": "Players' Tribune feature piece, 'What I Know Now,' published September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Rapinoe's reflective public voice and her tendency to find meaning in unglamorous moments fit this well. The tell is 'the ball doesn't care either way,' which edges toward the aphorism trap and is slightly too zen for her usually warmer, more specific phrasing."
+    },
+    {
+      "id": "q6",
+      "text": "Because there is always some kid who may be seeing me for the first time. I owe him my best.",
+      "speaker": "Joe DiMaggio",
+      "context": "Explaining why he always played so hard, even in meaningless late-season games, on the PBS American Experience profile.",
+      "real": true,
+      "source": {
+        "title": "PBS American Experience — Joe DiMaggio",
+        "url": "https://www.pbs.org/wgbh/americanexperience/features/dimaggio-joe-dimaggio/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

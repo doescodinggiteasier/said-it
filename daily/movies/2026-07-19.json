@@ -1,0 +1,56 @@
+{
+  "date": "2026-07-19",
+  "edition": 32,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You're not scared of dying. You're scared nobody'll notice.",
+      "speaker": "Apocalypse Now (1979)",
+      "context": "Kurtz addressing Willard in the compound during one of their late conversations",
+      "real": false,
+      "fake_note": "I made this one up — Kurtz speaks in exactly this kind of stripped, accusatory insight in the film, so the register is right. The tell is it's a fraction too direct; Kurtz's actual lines circle their point rather than landing it this cleanly."
+    },
+    {
+      "id": "q2",
+      "text": "You want to know what I think? I think you've never had anything worth losing.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes pressing a reluctant witness in a tense interrogation",
+      "real": false,
+      "fake_note": "I made this one up — Gittes talks tough and personal like this throughout the film, so it fits his voice cold. The giveaway is it's slightly too tidy a psychological thrust; his real jabs tend to be more specific to the person in front of him."
+    },
+    {
+      "id": "q3",
+      "text": "I've done worse things for worse people and slept just fine.",
+      "speaker": "The Maltese Falcon (1941)",
+      "context": "Sam Spade explaining himself to a skeptical Brigid O'Shaughnessy",
+      "real": false,
+      "fake_note": "I made this one up — Spade's fatalistic, self-aware cynicism runs throughout, and Bogart's clipped cadence matches this exactly. The soft tell is Spade's real lines tend to be more reactive and case-specific rather than this self-summarizing."
+    },
+    {
+      "id": "q4",
+      "text": "On Wednesdays we wear pink.",
+      "speaker": "Mean Girls (2004)",
+      "context": "Karen Smith explaining the Plastics' dress code rule to Cady",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Don't shake it — you'll bruise the gin.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick Blaine correcting a bartender during a quiet night at the café",
+      "real": false,
+      "fake_note": "I made this one up — Rick's dry authority over his own establishment makes this feel natural, and gin cocktail culture fits the era perfectly. The giveaway is that Rick's real quips tend to carry more emotional subtext; this one's purely aesthetic."
+    },
+    {
+      "id": "q6",
+      "text": "As you wish.",
+      "speaker": "The Princess Bride (1987)",
+      "context": "Westley the farmhand says this to Buttercup; it's revealed to be his way of saying \"I love you,\" and recurs throughout the film.",
+      "real": true
+    }
+  ]
+}

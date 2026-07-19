@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-19",
+  "edition": 35,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I like to say not only was that the first human on the moon, but the first software to run on the moon.",
+      "speaker": "Margaret Hamilton",
+      "context": "The Apollo flight-software lead (who popularized the term \"software engineering\") in a CBS Boston interview, on her code's role in the moon landing",
+      "real": true,
+      "source": {
+        "title": "Margaret Hamilton: MIT Software Pioneer Who Helped Save Apollo 11 Moon Mission - CBS Boston",
+        "url": "https://www.cbsnews.com/boston/news/margaret-hamilton-apollo-11-software-pioneer-interview/",
+        "date": "2019-07-15"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Everybody assumes the Super Bowl halftime show is this enormous creative conversation between you and your team. And it is, eventually. But the first three weeks are mostly arguments about the stage floor and whether the cameras can see your shoes.",
+      "speaker": "Beyoncé",
+      "context": "Quoted in Vogue's annual music issue, September 2023, in a profile by Abby Aguirre",
+      "real": false,
+      "fake_note": "I made this one up — Beyoncé has spoken in interviews about the granular logistics of her live productions, and the dry, grounded specificity here matches her rare candid register. The subtle giveaway is that Beyoncé has actually spoken very little on the record about her 2013 Super Bowl show specifically, so a newly surfaced detail like this would be surprising — which is exactly what makes it tempting to believe."
+    },
+    {
+      "id": "q3",
+      "text": "Someone handed me a script once where my character had to explain cryptocurrency to a golden retriever. And I thought — this is either the worst thing I'll ever do or the smartest comment on the whole industry. I did it. I'm still not sure which one it was.",
+      "speaker": "Ryan Reynolds",
+      "context": "Interview with Conan O'Brien on Conan O'Brien Needs a Friend podcast, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Reynolds's humor is famously self-deprecating and slightly absurdist, and his known involvement with various startup investments makes crypto a plausible topic. The tell is the script anecdote: Reynolds usually pivots absurd premises toward a real project he's promoting, and here there's no landing — it stays deliberately unresolved, which is just slightly off his usual comedic rhythm."
+    },
+    {
+      "id": "q4",
+      "text": "I built my first real app in a coffee shop in Palo Alto and the wifi kept dropping, which in retrospect was the universe telling me something about infrastructure that I only understood about four years later when it became an actual company problem.",
+      "speaker": "Jack Dorsey",
+      "context": "Keynote conversation with Steven Levy at WIRED's annual summit, San Francisco, November 2019",
+      "real": false,
+      "fake_note": "I made this one up — Dorsey often tells origin-story anecdotes that tie early constraints to later lessons, and the reflective, slightly elliptical phrasing is very him. The tell is that Dorsey's real founding stories center on Twitter specifically and Saint Louis, not a Palo Alto coffee shop — a careful listener would notice the geography is slightly off."
+    },
+    {
+      "id": "q5",
+      "text": "Ah -- playoffs? Don't talk about -- playoffs? You kidding me? Playoffs? I just hope we can win a game!",
+      "speaker": "Jim Mora",
+      "context": "Indianapolis Colts head coach, at a November 2001 press conference when a reporter asked about the team's playoff chances after a loss",
+      "real": true,
+      "source": {
+        "title": "Garber: Mora reflects on \"Playoffs?\" moment",
+        "url": "https://www.espn.com/nfl/story/_/id/7302157/jim-mora-reflects-playoffs-moment",
+        "date": "2012-01-12"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what it was like playing opposite Brando and honestly the truest answer is: confusing. You'd be in the middle of a scene and he'd just — stop. Not forget the line, just stop, and look at you like you were the one doing something wrong. And somehow it worked every time.",
+      "speaker": "Al Pacino",
+      "context": "Interview with Marc Maron on WTF with Marc Maron, Episode 1,389, recorded in Los Angeles, 2023",
+      "real": false,
+      "fake_note": "I made this one up — Pacino has spoken warmly and candidly about Brando many times, so this anecdote fits his reflective, slightly bewildered tone perfectly. The subtle tell is that Brando and Pacino's most famous shared scenes are in The Godfather, where Brando actually did famously improvise — which makes the story feel just a touch too neat."
+    }
+  ]
+}
