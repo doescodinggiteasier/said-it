@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-20",
+  "edition": 36,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I tested a recipe for preserved lemon pasta about eleven times before I put it in the book. My husband was eating it for what felt like three weeks straight and he never once complained, which is either very loving or very concerning.",
+      "speaker": "Ina Garten",
+      "context": "Appearance on The Today Show with Hoda Kotb, discussing Go-To Dinners, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Ina frequently tells warm, wry little stories about Jeffrey's patience with her recipe testing, so this reads completely naturally. The subtle giveaway is the slight edge of the \"very loving or very concerning\" line; her actual humor about Jeffrey runs a little gentler and more adoring than that."
+    },
+    {
+      "id": "q2",
+      "text": "They say that I have no hits, and I'm difficult to work with. And they say that like it's a bad thing.",
+      "speaker": "Tom Waits",
+      "context": "Speaking at his Rock and Roll Hall of Fame induction, March 14, 2001",
+      "real": true,
+      "source": {
+        "title": "Tom Waits - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Tom_Waits",
+        "date": "2001-03-14"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The Grammys, man. I love the Grammys. You spend two years in a studio not sleeping, eating terrible food, having the same argument with your engineer at three in the morning — and then someone hands you a little gold gramophone and somehow it all makes sense. Terrible logic, but there it is.",
+      "speaker": "Kendrick Lamar",
+      "context": "Interview with Zane Lowe on Apple Music 1, following the release of Mr. Morale & The Big Steppers, May 2022",
+      "real": false,
+      "fake_note": "I made this one up — Kendrick really does discuss the exhausting, almost absurd grind of making albums, and his dry, understated humor matches this cadence well. The giveaway is the warmth toward the Grammys; Kendrick has historically been ambivalent about award shows rather than openly sentimental."
+    },
+    {
+      "id": "q4",
+      "text": "You could probably get through life without knowing how to roast a chicken, but the question is, would you want to?",
+      "speaker": "Nigella Lawson",
+      "context": "Quote attributed to her book Eating (Vintage Minis), on home cooking",
+      "real": true,
+      "source": {
+        "title": "TOP 25 QUOTES BY NIGELLA LAWSON | A-Z Quotes",
+        "url": "https://www.azquotes.com/author/8589-Nigella_Lawson",
+        "date": "2017-01-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Quantum computing is genuinely one of those fields where the more you understand it, the less confident you feel explaining it at a dinner party. Which I think is actually a healthy sign.",
+      "speaker": "Michio Kaku",
+      "context": "Keynote address at the World Science Festival, New York City, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Kaku regularly uses casual social scenarios to illustrate scientific concepts, and his mix of accessibility and intellectual humility fits perfectly. The giveaway is that Kaku is usually far more eager to *attempt* the dinner-party explanation than to step back from it."
+    },
+    {
+      "id": "q6",
+      "text": "I appreciate that many of us grew up and enjoyed science fiction, but it's not helpful.",
+      "speaker": "Jensen Huang",
+      "context": "Nvidia CEO, on quantifying the existential risk of",
+      "real": true,
+      "source": {
+        "title": "TechRadar — Quote of the day: Jensen Huang on AI risk",
+        "url": "https://www.techradar.com/pro/quote-of-the-day-by-nvidia-ceo-jensen-huang-i-appreciate-that-many-of-us-grew-up-and-enjoyed-science-fiction-but-its-not-helpful-on-quantifying-the-existential-risks-posed-by-ai",
+        "date": "2026-06-06"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-20",
+  "edition": 24,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He said he felt like a little boy who had stubbed his toe in the dark. That he was too old to cry, but it hurt too much to laugh.",
+      "speaker": "Adlai Stevenson",
+      "context": "Quoting a Lincoln anecdote to describe how he felt conceding the 1952 presidential election, Springfield, Illinois, Nov. 5, 1952.",
+      "real": true,
+      "source": {
+        "title": "The American Presidency Project: Remarks Conceding the Presidential Election in Springfield, Illinois",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-conceding-the-presidential-election-springfield-illinois",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "In Texas we have a saying: the first time something goes wrong it's a surprise, the second time it's a coincidence, and the third time you'd better have already written the press release.",
+      "speaker": "Kay Bailey Hutchison",
+      "context": "Panel discussion at the George W. Bush Presidential Center Forum on Leadership, Dallas, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Hutchison favored folksy Texas framing when addressing non-partisan policy audiences, and crisis-communication humor is exactly the kind of thing a senior statesperson trots out for a think-tank crowd. The tell is that the 'saying' she attributes to Texas is not actually a Texas saying — I invented it."
+    },
+    {
+      "id": "q3",
+      "text": "My staff has a running bet on how many times I say 'frankly' in any given press conference. I'm told the over-under last Tuesday was eleven. I don't know what I actually hit, and I'm not sure I want to.",
+      "speaker": "Mitch McConnell",
+      "context": "Kentucky Farm Bureau Country Ham Breakfast, Louisville, August 2019",
+      "real": false,
+      "fake_note": "I made this one up — McConnell occasionally deploys dry, almost reluctant self-awareness for home-state audiences, and poking fun at his own verbal tic is exactly the kind of safe, crowd-pleasing material he'd reach for. The tell is that McConnell almost never volunteers self-criticism in public, even this mild."
+    },
+    {
+      "id": "q4",
+      "text": "I will say, nobody warned me that roughly forty percent of the job is just explaining to people that you cannot, in fact, personally fix their neighbor's fence because it's on a flood-plain easement. That's a real constituency issue right there.",
+      "speaker": "Pete Buttigieg",
+      "context": "Appearance on Pod Save America, recorded in Washington D.C., released March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Pete's known for mixing wonky specificity with self-deprecating humor about the gap between governing and constituent expectations, so this lands squarely in his wheelhouse. The subtle giveaway is 'flood-plain easement': just technical enough that a real staffer would have stopped him before he said it publicly."
+    },
+    {
+      "id": "q5",
+      "text": "Few thought he was even a starter / There were many who thought themselves smarter / But he ended PM / CH and OM / An earl and a knight of the garter.",
+      "speaker": "Clement Attlee",
+      "context": "A self-mocking limerick the former British PM wrote about himself in a letter to his brother Tom Attlee, April 8, 1956.",
+      "real": true,
+      "source": {
+        "title": "Lib Quotes: Clement Attlee (self-description limerick)",
+        "url": "https://libquotes.com/clement-attlee",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "There are so many absurdities and falsehoods in Trump's Thursday night speech, and I'm glad that most media treated it not as serious news.",
+      "speaker": "Mark Warner",
+      "context": "Sen. Mark Warner criticizing CBS for airing Trump's election security speech, Sunday",
+      "real": true,
+      "source": {
+        "title": "Politics — Warner tells Margaret Brennan he was 'disappointed' with CBS for covering Trump'",
+        "url": "https://thehill.com/homenews/media/5977037-sen-mark-warner-cbs-election-speech/",
+        "date": "2026-07-20"
+      }
+    }
+  ]
+}

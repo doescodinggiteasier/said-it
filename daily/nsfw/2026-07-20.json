@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-20",
+  "edition": 28,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He told me if I carried on at the same pace I'd start bleeding out of my dick, my asshole, my eyes, my nose – fucking everywhere, man. Just bleeding out of every orifice and never stopping.",
+      "speaker": "Zakk Wylde",
+      "context": "Black Label Society / Ozzy guitarist Zakk Wylde, laughing as he recounts his doctor's blunt warning about his extreme drinking while on blood thinners, in a 2013 Louder/Metal Hammer interview.",
+      "real": true,
+      "source": {
+        "title": "Black Label Society's Zakk Wylde interview: alcohol, acoustic albums and prison gigs with Ozzy Osbourne (Louder)",
+        "url": "https://www.loudersound.com/features/zakk-wylde-black-label-society-interview-2013",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "The reason we first started strumming guitars was because we wanted women and lots of them. And their daughters.",
+      "speaker": "Gene Simmons",
+      "context": "KISS bassist Gene Simmons, on The Oprah Winfrey Show in 1988, dismissing the idea that rock stars pick up guitars for lofty reasons — it was about groupies.",
+      "real": true,
+      "source": {
+        "title": "Gene Simmons Called KISS Groupie Hookups 'More Honest' Than Real Relationships (Best Life)",
+        "url": "https://bestlifeonline.com/gene-simmons-kiss-groupies/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "You want to know the secret to a long marriage? Separate bathrooms. Separate televisions. And every now and then you look at each other across the room and go, 'Still here, you bastard,' and somehow that's romantic.",
+      "speaker": "George Burns",
+      "context": "An Evening with George Burns, live Q&A at the Shubert Theatre, Chicago, October 1985, responding to an audience question about his marriage to Gracie Allen",
+      "real": false,
+      "fake_note": "I made this one up — George's dry, loving-but-acerbic framing of marriage, especially around Gracie, is completely plausible and he gave dozens of similar riffs. The giveaway is 'Still here, you bastard' directed at Gracie — Burns was famously reverential about her memory after her death in 1964, and even in comedy mode he rarely if ever used a harsh term about her directly."
+    },
+    {
+      "id": "q4",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore.",
+      "speaker": "Bob Saget",
+      "context": "Bob Saget — the wholesome 'Full House' dad whose real-life stand-up was famously filthy — on fully embracing his profane comedy persona, in a Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I walked offstage at Caesar's one night, soaked in sweat, and some guy in a suit goes, 'Rodney, that was transcendent.' I said, 'Pal, I just told forty minutes of dick jokes to a room that smelled like cigarettes and divorce. Transcendent my ass, get me a Scotch.'",
+      "speaker": "Rodney Dangerfield",
+      "context": "The Tonight Show Starring Johnny Carson, November 1981, backstage greenroom conversation recalled in a 1994 Comedy Central retrospective taping",
+      "real": false,
+      "fake_note": "I made this one up — Rodney's self-deprecating no-respect cadence and the specific 'Caesar's / suited guy / Scotch' texture makes it feel like a real Dangerfield ramble. The giveaway is the phrase 'smelled like cigarettes and divorce' — a little too polished and quotable for his loose, stumbling style."
+    },
+    {
+      "id": "q6",
+      "text": "Darling, I've had three husbands and one of them was actually useful. You can figure out which one because he's the one I don't talk about at parties.",
+      "speaker": "Tallulah Bankhead",
+      "context": "The Tonight Show with Jack Paar, NBC, recorded live, January 1960, during a segment on Bankhead's Broadway return",
+      "real": false,
+      "fake_note": "I made this one up — Bankhead's notorious serial-marriage history and her theatrical viciousness toward her own romantic life make this completely plausible. The giveaway is the construction 'the one I don't talk about at parties,' which is a little too winkingly clever; her real insults tended to be louder and more nakedly savage."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-20",
+  "edition": 33,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Technically speaking, the building is still standing.",
+      "speaker": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)",
+      "context": "A Pentagon aide, deadpan, trying to soften catastrophically bad news for the generals",
+      "real": false,
+      "fake_note": "I made this one up — Kubrick's film is wall-to-wall bureaucratic understatement played for dark comedy, and this kind of hair-splitting damage control fits the War Room scenes precisely. The giveaway is it's almost too clean a punchline; the real film's humor tends to come from longer, more convoluted official-speak rather than a single crisp sentence."
+    },
+    {
+      "id": "q2",
+      "text": "I guess we learned not to do it again.",
+      "speaker": "Burn After Reading (2008)",
+      "context": "The CIA Superior (J.K. Simmons) in the final debrief scene, summarizing the botched operation to Officer Palmer.",
+      "real": true,
+      "source": {
+        "title": "Burn After Reading - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Burn_After_Reading",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The best way to spread Christmas cheer is singing loud for all to hear.",
+      "speaker": "Elf (2003)",
+      "context": "Buddy the Elf sharing his philosophy on holiday spirit",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "Life finds a way.",
+      "speaker": "Jurassic Park (1993)",
+      "context": "Dr. Ian Malcolm (Jeff Goldblum) argues that the park's all-female engineered dinosaurs cannot truly be prevented from breeding or controlled.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Every time I get the engine running smooth, somebody throws sand in it.",
+      "speaker": "Cool Hand Luke (1967)",
+      "context": "Luke, half to himself, after another setback in the prison yard",
+      "real": false,
+      "fake_note": "I made this one up — Luke's voice mixes Southern fatalism with dry humor, and mechanical metaphors fit the film's working-class world. The giveaway is it's a touch too tidy as a complaint; Luke's real lines tend to be even more laconic or directed at a specific person rather than muttered philosophically."
+    },
+    {
+      "id": "q6",
+      "text": "You play the same four notes every night and somehow it still sounds like the first time.",
+      "speaker": "Whiplash (2014)",
+      "context": "Fletcher, deceptively calm, addressing the band before suddenly pivoting to a tirade",
+      "real": false,
+      "fake_note": "I made this one up — Fletcher's compliments are always traps, and this backhanded observation before a blow-up is exactly his pattern of false warmth followed by demolition. The giveaway is 'four notes' is a specific detail Fletcher might actually dispute or weaponize differently; a fan might sense the number feels slightly too precise to be a real Fletcher setup."
+    }
+  ]
+}

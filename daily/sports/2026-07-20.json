@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-20",
+  "edition": 25,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My rookie year I got crossed up so bad by Allen Iverson that I literally looked at my shoes afterward to see if they were still on. I thought maybe they'd just flown off. Turned out they were fine. I was not.",
+      "speaker": "Chauncey Billups",
+      "context": "ESPN's 'The Lowe Post' podcast, February 2022 episode with Zach Lowe",
+      "real": false,
+      "fake_note": "I made this one up — Billups has talked openly about how humbling early NBA years were, and he's always had a dry, self-deprecating sense of humor on podcasts. The giveaway is the shoe detail — too visually neat for a real memory, which tends to be blurrier."
+    },
+    {
+      "id": "q2",
+      "text": "Because I'm the undertaker. I've come to bury these people!",
+      "speaker": "Bill Russell",
+      "context": "Explaining to teammate Sam Jones why he wore a black suit to every Game 7, in his Academy of Achievement interview.",
+      "real": true,
+      "source": {
+        "title": "Academy of Achievement — Bill Russell Interview",
+        "url": "https://achievement.org/achiever/bill-russell/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The hardest fight I ever had wasn't the one I lost. It was the one right after, because you've got the loss sitting on your shoulder the whole time and you're trying to pretend it's not there, and it is absolutely there, trust me.",
+      "speaker": "Oscar De La Hoya",
+      "context": "Showtime Sports 'Inside Boxing' special, recorded in Los Angeles, aired March 2007",
+      "real": false,
+      "fake_note": "I made this one up — De La Hoya has spoken extensively about the psychological weight of defeat and comeback fights across multiple media appearances, so this lands squarely in his documented emotional register. The subtle giveaway is 'sitting on your shoulder' — it's a vivid image he'd use, but he tends to be slightly more theatrical about it."
+    },
+    {
+      "id": "q4",
+      "text": "We had a date with destiny",
+      "speaker": "Luis de la Fuente",
+      "context": "Spain manager after winning the 2026 World Cup final against Argentina",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘We had a date with destiny’: De la Fuente lauds Spain players after World Cup v",
+        "url": "https://www.theguardian.com/football/2026/jul/20/luis-de-la-fuente-spain-manager-coach-world-cup-win",
+        "date": "2026-07-20"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My hands were all over the place for 'surreal' Open-winning putt",
+      "speaker": "Ryan Fox",
+      "context": "After winning the 154th Open Championship with a birdie putt on the 18th hole",
+      "real": true,
+      "source": {
+        "title": "Sports — My hands were all over the place for ‘surreal’ Open-winning putt, says Ryan Fox",
+        "url": "https://www.theguardian.com/sport/2026/jul/19/ryan-fox-the-open-championship-2026-golf-new-zealand",
+        "date": "2026-07-20"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People love to say a team 'wants it more,' but what they're usually describing is a team that's in better shape in the fourth quarter. Wanting something is fine. Being able to execute when your legs are gone is a different conversation entirely.",
+      "speaker": "Pat Riley",
+      "context": "South Florida Sun Sentinel print interview, published February 2013 ahead of Miami Heat's playoff push",
+      "real": false,
+      "fake_note": "I made this one up — Riley is famous for his conditioning-obsessed philosophy and his habit of reframing clichés in harder, more physical terms, so this sounds very much like him. The giveaway is 'a different conversation entirely' — Riley typically closes with something declarative and blunt, not with an open-ended pivot."
+    }
+  ]
+}

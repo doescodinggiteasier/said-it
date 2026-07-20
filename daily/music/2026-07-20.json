@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-20",
+  "edition": 28,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Latin music never needed validation from the mainstream. We were filling stadiums in places people in this industry had never heard of, and that was fine. What changed isn't that we got better — we were always this good. What changed is that people up here finally started paying attention.",
+      "speaker": "Bad Bunny",
+      "context": "Time magazine, Time100 profile interview, April 2023",
+      "real": false,
+      "fake_note": "I made this one up — Bad Bunny has consistently pushed back against narratives of Latin music 'breaking through,' framing it instead as industry blindness correcting itself. This matches his proud, unapologetic public voice. The giveaway is 'up here,' a spatial metaphor that's a touch too deliberate for someone who usually speaks more plainly through translators."
+    },
+    {
+      "id": "q2",
+      "text": "I can't possibly accept this award.",
+      "speaker": "Adele",
+      "context": "Accepting Album of the Year for '25' at the 2017 Grammy Awards, Adele stunned the room by opening her acceptance speech declaring she couldn't accept the award, then turning to praise Beyonce — whose 'Lemonade' she felt should have won.",
+      "real": true,
+      "source": {
+        "title": "GRAMMY Rewind: Adele Urges That Beyonce's 'Monumental' 'Lemonade' Should've Won Album Of The Year In 2017",
+        "url": "https://www.grammy.com/news/adele-25-beyonce-lemonade-grammys-2017-album-of-the-year-win-acceptance-speech-video-rewind",
+        "date": "2017-02-12"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "We got a guy whose pedigree is metal",
+      "speaker": "Jay Jay French",
+      "context": "Jay Jay French on Sebastian Bach joining Twisted Sister as new vocalist",
+      "real": true,
+      "source": {
+        "title": "Music — Jay Jay French says fans will “ultimately decide” verdict on Sebastian Bach as T",
+        "url": "https://www.nme.com/news/music/jay-jay-french-says-fans-will-ultimately-decide-verdict-on-sebastian-bach-as-twisted-sisters-new-vocalist-3957868?utm_source=rss&utm_medium=rss&utm_campaign=jay-jay-french-says-fans-will-ultimately-decide-verdict-on-sebastian-bach-as-twisted-sisters-new-vocalist",
+        "date": "2026-07-20"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I was going out with this Jamaican girl when we were about 15, and would listen to Night Nurse by Gregory Isaacs all the time. We had a daughter together when we were 17 – she's 35 now and works as a social worker",
+      "speaker": "Tricky",
+      "context": "Tricky's honest playlist feature, music publication",
+      "real": true,
+      "source": {
+        "title": "Music — ‘People say they’ve conceived to my music’: Tricky’s honest playlist",
+        "url": "https://www.theguardian.com/music/2026/jul/19/tricky-honest-playlist-specials-eric-b-rakim-sia-astral-weeks",
+        "date": "2026-07-20"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People ask me how I write so fast and I genuinely don't have an answer that sounds sane. Sometimes I'll wake up at like two in the morning and there's already a chorus in my head, fully formed, and if I don't get it down in the next ten minutes it's just gone. It doesn't come from me sitting down and deciding to write. It's more like catching something before it flies away.",
+      "speaker": "Taylor Swift",
+      "context": "Rolling Stone's Musicians on Music issue, November 2019",
+      "real": false,
+      "fake_note": "I made this one up — it nails Taylor's well-documented 'songs arrive fully formed' mythology and her habit of describing creativity in urgent, almost anxious terms. The subtle giveaway is 'sounds sane,' a self-deprecating hedge she reaches for often but slightly too neatly here."
+    },
+    {
+      "id": "q6",
+      "text": "Hip-hop has always been about what you don't say as much as what you do. The space between the words is where the attitude lives. I learned that from listening to records really loud in a small room when I was like fourteen, and I've never unlearned it.",
+      "speaker": "Jay-Z",
+      "context": "Harvard Business School iLab Speaker Series, November 2013",
+      "real": false,
+      "fake_note": "I made this one up — Jay has spoken at Harvard and regularly frames rap craft in terms of space, silence, and implication. The detail about 'listening to records loud in a small room at fourteen' is the kind of specific personal memory he drops to ground abstract ideas. The giveaway is that the whole thing flows slightly too smoothly, like a prepared remark passed off as off-the-cuff."
+    }
+  ]
+}
