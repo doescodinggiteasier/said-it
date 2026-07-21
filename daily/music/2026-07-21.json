@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-21",
+  "edition": 29,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I have a credit on the back of the album that says, 'Nails by Dolly!'",
+      "speaker": "Dolly Parton",
+      "context": "Dolly Parton explaining that she composed and partly performed the percussive 'typewriter' rhythm of '9 to 5' by clacking her long acrylic fingernails together — and that the album '9 to 5 and Odd Jobs' literally credits 'Nails by Dolly.'",
+      "real": true,
+      "source": {
+        "title": "“I have a credit on the back of the album that says, ‘Nails by Dolly!’” Dolly Parton on the hit song she wrote without a",
+        "url": "https://www.guitarplayer.com/music/albums-singles/i-have-a-credit-on-the-back-of-the-album-that-says-nails-by-dolly-dolly-parton-on-the-award-winning-hit-song-she-wrote-without-a-guitar-using-only-her-fingernails",
+        "date": "2024-01-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "No. I have no technical ability. And I know nothing about music.",
+      "speaker": "Rick Rubin",
+      "context": "Super-producer Rick Rubin (Def Jam co-founder; produced Johnny Cash, Beastie Boys, Red Hot Chili Peppers, Adele, Jay-Z) when Anderson Cooper asked on 60 Minutes whether he knew how to work a soundboard.",
+      "real": true,
+      "source": {
+        "title": "Rick Rubin: The 60 Minutes Interview (transcript) — interview by Anderson Cooper, CBS 60 Minutes",
+        "url": "https://www.rev.com/transcripts/rick-rubin-the-60-minutes-interview-transcript",
+        "date": "2023-01-15"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I remember finishing the mix on 'Thriller' at like four in the morning, and Michael just stood there in the control room with his eyes closed for maybe two full minutes. Nobody said anything. Then he goes, 'Play it again.' That was the whole review.",
+      "speaker": "Quincy Jones",
+      "context": "Rolling Stone oral history on the making of 'Thriller,' published in the magazine's 25th-anniversary retrospective, November 2007",
+      "real": false,
+      "fake_note": "I made this one up — Quincy is famous for 'Thriller' behind-the-scenes stories, and this matches his relaxed, anecdotal storytelling style perfectly. The subtle giveaway is that the specific 'two full minutes of silence' detail is almost too cinematic, like a scene he'd have polished for retelling."
+    },
+    {
+      "id": "q4",
+      "text": "Nashville wanted me to cut about eight bars out of 'He Stopped Loving Her Today.' Said it was too long, radio wouldn't touch it. I told them I'd rather it never get played than cut it. That's the whole reason the song works — you have to live in it for a minute.",
+      "speaker": "George Jones",
+      "context": "Interview on The Ralph Emery Show, Nashville Now, 1983 season",
+      "real": false,
+      "fake_note": "I made this one up — George Jones discussed the making of that song many times and always emphasized resisting label pressure. The plausible detail is radio-edit pushback; the giveaway is the specific 'eight bars,' which is more precise than Jones typically got in interviews."
+    },
+    {
+      "id": "q5",
+      "text": "I slept on the studio couch for three nights working on that bass line and when I finally had it I called Sly from a payphone across the street because I was afraid if I walked back in I'd change my mind.",
+      "speaker": "Larry Graham",
+      "context": "Interview with Bass Player magazine, June 2003 issue, on the recording sessions for Stand!",
+      "real": false,
+      "fake_note": "I made this one up — Larry Graham is known for stories about the creative intensity of those Sly & the Family Stone sessions. The payphone detail gives it a vivid period feel, but the fear-of-changing-your-mind motivation is a little too neatly psychological for a working-musician anecdote."
+    },
+    {
+      "id": "q6",
+      "text": "People say they've conceived to my music",
+      "speaker": "Tricky",
+      "context": "Trip-hop star's honest playlist feature",
+      "real": true,
+      "source": {
+        "title": "Music — ‘People say they’ve conceived to my music’: Tricky’s honest playlist",
+        "url": "https://www.theguardian.com/music/2026/jul/19/tricky-honest-playlist-specials-eric-b-rakim-sia-astral-weeks",
+        "date": "2026-07-21"
+      }
+    }
+  ]
+}

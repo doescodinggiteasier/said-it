@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-21",
+  "edition": 37,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone on my team once showed me a productivity framework — color-coded, laminated, the whole thing — and I looked at it and thought, this is a document made by someone who has never had an actual deadline. I use a legal pad. I have always used a legal pad.",
+      "speaker": "Oprah Winfrey",
+      "context": "On-stage conversation with Arianna Huffington at the Thrive Global Summit, Los Angeles, November 2023",
+      "real": false,
+      "fake_note": "I made this one up — Oprah's slightly skeptical-of-over-engineered-systems side is well documented, and her legal-pad preference is something she's touched on publicly. The giveaway is the phrase 'this is a document made by someone who has never had an actual deadline,' which has a dry crispness that's a register sharper than her usual generous, expansive tone."
+    },
+    {
+      "id": "q2",
+      "text": "There's a scene in the first act that I must have watched back — I don't know, fifteen, twenty times — not because anything was technically wrong with it, but because I kept feeling like the character knew too much too early, and I couldn't figure out whose fault that was. Mine, probably.",
+      "speaker": "Christopher Nolan",
+      "context": "Extended interview with film critic Mark Kermode for the BBC Radio 6 Music 'Kermode on Film' podcast, December 2023",
+      "real": false,
+      "fake_note": "I made this one up — Nolan is famously obsessive about narrative information and the pacing of audience knowledge, and his self-critical mode in interviews is well established. The subtle tell is that he lands on 'mine, probably' — a rare moment of casual self-blame that's slightly softer than his characteristically deliberate, defended public persona."
+    },
+    {
+      "id": "q3",
+      "text": "We shipped a version of that feature internally for something like nine months before it touched a product. There were people who thought I was burying it. I wasn't — I just couldn't find the moment where it felt honest. When something feels like a trick, I'd rather wait.",
+      "speaker": "Jony Ive",
+      "context": "In conversation with journalist Steven Levy at the 2024 SXSW Design track keynote, Austin, March 2024",
+      "real": false,
+      "fake_note": "I made this one up — Jony Ive is well known for extended internal incubation periods and his language around design 'honesty' is thoroughly documented. The tell is 'feels like a trick,' which is slightly more colloquial and blunt than his typically careful, almost liturgical vocabulary around authenticity."
+    },
+    {
+      "id": "q4",
+      "text": "I never lie, even to this day. Not even a little. Unless you count playing pranks on people, which I don't. That's comedy. Entertainment doesn't count. A joke is different from a lie, even if the difference is kind of subtle.",
+      "speaker": "Steve Wozniak",
+      "context": "From his memoir iWoz (2006), the Apple co-founder on his lifelong commitment to honesty and his exception for pranks",
+      "real": true,
+      "source": {
+        "title": "Steve Wozniak (10+ Sourced Quotes) - Lib Quotes",
+        "url": "https://libquotes.com/steve-wozniak",
+        "date": "2006-09-17"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I know acting is a childlike endeavour but it's no license to be childish.",
+      "speaker": "Jeff Goldblum",
+      "context": "The actor reflecting on his craft in a Time Out interview",
+      "real": true,
+      "source": {
+        "title": "Jeff Goldblum: 'What do people quote at me? That is one big pile of shit' - Time Out",
+        "url": "https://www.timeout.com/film/jeff-goldblum-what-do-people-quote-at-me-that-is-one-big-pile-of-shit",
+        "date": "2017-01-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The speed of light is never going to go out of style. Gravity, lint, signs, time itself, is not going to go out of style.",
+      "speaker": "Steven Wright",
+      "context": "In a Salon Talks interview, explaining why he avoids topical jokes so his material stays timeless",
+      "real": true,
+      "source": {
+        "title": "\"Gravity is never going to go out of style\": Steven Wright on the secret to comedy longevity - Salon.com",
+        "url": "https://www.salon.com/2024/05/22/steven-wright-harold-salon-talks/",
+        "date": "2024-05-22"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-21",
+  "edition": 29,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Some journalist once described my stage presence as 'threatening.' Mate, I'm five foot six and I came out wearing a feather boa and a borrowed tambourine. The most threatening thing about me that night was the rider — and that was mostly because we'd asked for red wine and they gave us rosé. Unforgivable.",
+      "speaker": "Freddie Mercury",
+      "context": "Rockline radio broadcast, syndicated US, 23 August 1982, during a call-in segment ahead of the Hot Space North American tour",
+      "real": false,
+      "fake_note": "I made this one up — Mercury was brilliantly self-aware about his own theatricality and had a biting, camp wit about press coverage. The giveaway is the 'borrowed tambourine' — Mercury was meticulous about stagecraft and would never describe his own instruments as borrowed; he'd have been more grandly self-mythologising."
+    },
+    {
+      "id": "q2",
+      "text": "After I stopped doing drugs I started to fuck like a bunny!",
+      "speaker": "Courtney Love",
+      "context": "On how getting sober changed her sex drive, in an interview with The Fix.",
+      "real": true,
+      "source": {
+        "title": "The Fix interview",
+        "url": "https://www.thefix.com/courtney-love-interview/",
+        "date": "2011"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Whiskey is a great drink. Now whiskey's very classy and adult, till you shit your pants. But other than that, it is great.",
+      "speaker": "Dave Attell",
+      "context": "From filthy, drink-soaked comedian Dave Attell's stand-up special 'Road Work' (2014) — Attell (the 'Insomniac' host) riffing on booze in his trademark crude style.",
+      "real": true,
+      "source": {
+        "title": "Dave Attell: Road Work (2014) — Full Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/dave-attell-road-work-transcript/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Someone in the front row last night held up a sign. A sign! Like I'm a bloody football match. It said 'You Changed My Life.' I pointed at him and I said, 'mate, that is a tremendous amount of pressure to put on a fat man in leather trousers at eleven o'clock on a Tuesday.'",
+      "speaker": "Meat Loaf",
+      "context": "Triple M Sydney interview with Eddie McGuire, broadcast live 14 September 1994, during the Bat Out of Hell II promotional tour Australian leg",
+      "real": false,
+      "fake_note": "I made this one up — Meat Loaf was brilliantly self-deprecating about his size and his theatrical excess and had a warm, slightly incredulous relationship with his fans' intensity. The giveaway is 'eleven o'clock on a Tuesday' — his stadium shows almost never ran that late on weeknights; the specific day undercuts the plausibility slightly."
+    },
+    {
+      "id": "q5",
+      "text": "Look, I've been married. I've been divorced. I've been the one crying and I've been the one who caused the crying, and honestly both of those are terrible in completely different ways and I recommend neither. Get a dog. A dog has never served me with papers.",
+      "speaker": "Nora Ephron",
+      "context": "92nd Street Y interview with Frank Rich, New York City, recorded 12 October 2009, during the audience Q&A portion on relationships and writing",
+      "real": false,
+      "fake_note": "I made this one up — Ephron mined her marriages for material constantly and had this exact dry, bruised-funny register. The tell is she'd almost certainly have made the punchline more specifically savage about the men, not a sweet retreat to dogs."
+    },
+    {
+      "id": "q6",
+      "text": "Cheating is a man, he sneaks out of his own house to go, like, find some happiness behind your back so your feelings aren't hurt. Cheating is for you.",
+      "speaker": "Patrice O'Neal",
+      "context": "From the late, notoriously unfiltered comedian Patrice O'Neal's Comedy Central special 'Elephant in the Room' (2011) — his provocative, deadpan bit reframing male infidelity as an act of consideration.",
+      "real": true,
+      "source": {
+        "title": "Patrice O'Neal: Elephant in the Room (2011) — Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/patrice-oneal-elephant-in-the-room-2011-full-transcript/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

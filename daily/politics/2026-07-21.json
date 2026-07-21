@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-21",
+  "edition": 25,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I actually enjoy a budget hearing. I know that makes me a strange person. My wife has confirmed this on multiple occasions.",
+      "speaker": "Paul Ryan",
+      "context": "Interview with Wisconsin Public Radio during a tour of his Janesville district office, August 2015",
+      "real": false,
+      "fake_note": "I made this one up — Ryan's wonky enthusiasm for budget math is completely documented and he often leavened it with self-aware domesticity. The slight tell is the spousal punchline, which is a little too sitcom-tidy for his usual delivery."
+    },
+    {
+      "id": "q2",
+      "text": "They are determined to get back in the fight",
+      "speaker": "Sean Parnell",
+      "context": "Pentagon spokesperson statement on injured service members after Iran strikes",
+      "real": true,
+      "source": {
+        "title": "Politics — Pentagon confirms nearly 100 service members injured since Iran strikes resumed ",
+        "url": "https://thehill.com/policy/defense/5979242-pentagon-updates-service-member-casualties-iran/",
+        "date": "2026-07-21"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Worst damnfool mistake I ever made was letting myself be elected Vice President of the United States. Should have stuck with my old chores as Speaker of the House. I gave up the second most important job in the Government for one that didn't amount to a hill of beans. I spent eight long years as Mr. Roosevelt's spare tire.",
+      "speaker": "John Nance Garner",
+      "context": "FDR's first vice president (\"Cactus Jack\"), ruefully mocking his own decision to take the job and his powerlessness in it, after leaving office.",
+      "real": true,
+      "source": {
+        "title": "John Nance Garner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Nance_Garner",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I spent years thinking the key to bipartisanship was finding the right policy. Turns out it's more about finding a Tuesday when nobody has a fundraiser.",
+      "speaker": "Olympia Snowe",
+      "context": "Keynote address at the Bipartisan Policy Center annual conference, Washington D.C., September 2013",
+      "real": false,
+      "fake_note": "I made this one up — Snowe's entire post-Senate career has been devoted to diagnosing congressional dysfunction and she speaks at exactly these kinds of centrist forums. The giveaway is the punchline is a fraction too polished for unrehearsed remarks; it sounds like something she might have written rather than said."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me what I miss about the Senate and I always say the same thing: the parking. The Senate parking was genuinely excellent.",
+      "speaker": "Joe Biden",
+      "context": "Remarks during a virtual fundraiser for the Delaware Democratic Party, March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Biden loves nostalgic Senate callbacks and deploys self-aware humor about trivial perks all the time. The giveaway is the punchline is *too* perfectly structured; his real riffs usually meander a bit more before landing."
+    },
+    {
+      "id": "q6",
+      "text": "Someone handed me a binder of talking points before a town hall once. I set it down, went out there, answered questions for ninety minutes, came back in, and the binder was exactly where I left it. I thought, well, that worked out.",
+      "speaker": "John McCain",
+      "context": "Conversation with reporters on the Straight Talk Express bus during the 2008 Republican primary campaign, as recounted in a March 2008 New York Times Magazine profile",
+      "real": false,
+      "fake_note": "I made this one up — McCain's disdain for pre-packaged messaging and love of unscripted town halls is legendary, and the Straight Talk Express setting is pitch-perfect. The tell is the story is a little *too* neat as a parable; his real anecdotes usually had a rougher edge."
+    }
+  ]
+}

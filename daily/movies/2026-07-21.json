@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-21",
+  "edition": 34,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "May the Force be with you.",
+      "speaker": "Star Wars (1977)",
+      "context": "Said during the Rebel briefing before the assault on the Death Star (and by Han to Luke).",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "There's something about this that's so black, it's like how much more black could this be? And the answer is none. None more black.",
+      "speaker": "This Is Spinal Tap (1984)",
+      "context": "Nigel Tufnel (Christopher Guest) shows off a new album cover; his deadpan musing on its blackness.",
+      "real": true,
+      "source": {
+        "title": "This Is Spinal Tap - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/This_Is_Spinal_Tap",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "You can set your watch by how wrong he is.",
+      "speaker": "His Girl Friday (1940)",
+      "context": "Hildy Johnson venting about her editor Walter Burns to a colleague",
+      "real": false,
+      "fake_note": "I made this one up — the rapid-fire, wisecracking exasperation is exactly the register Hildy uses when talking about Walter, and the clock metaphor suits the film's newsroom obsession with deadlines. The giveaway is it's a touch too polished; Hawksian screwball dialogue is usually messier and more overlapping."
+    },
+    {
+      "id": "q4",
+      "text": "Don't thank me yet. I haven't decided if I like you.",
+      "speaker": "Midnight Cowboy (1969)",
+      "context": "Ratso Rizzo to Joe Buck after steering him away from a scam",
+      "real": false,
+      "fake_note": "I made this one up — Ratso's prickly, self-protective generosity toward Joe is the emotional core of the film, and this captures his voice well. The tell is it's slightly too pithy; Hoffman's Ratso tends to ramble and mutter rather than land clean one-liners."
+    },
+    {
+      "id": "q5",
+      "text": "You want me to feel sorry for you? Stand in line.",
+      "speaker": "All About Eve (1950)",
+      "context": "Margo Channing dismissing a rival's complaint backstage",
+      "real": false,
+      "fake_note": "I made this one up — Margo's sharp, theatrical cruelty makes this feel right at home, and the rhythm echoes her real dialogue. The subtle tell is that 'stand in line' is a touch too breezy; her actual put-downs tend to be longer and more theatrical."
+    },
+    {
+      "id": "q6",
+      "text": "Every man in that room wanted to be him, and he knew it, which was exactly the problem.",
+      "speaker": "Amadeus (1984)",
+      "context": "Salieri narrating about Mozart's entrance at a formal gathering",
+      "real": false,
+      "fake_note": "I made this one up — Salieri's envious, confessional narration runs throughout the film in exactly this reflective register. The giveaway is the line is a fraction too neat and analytical; his real narration tends to be more emotionally raw and self-lacerating."
+    }
+  ]
+}

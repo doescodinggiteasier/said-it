@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-21",
+  "edition": 26,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "We're both trying to be the best version of ourselves",
+      "speaker": "Shedeur Sanders",
+      "context": "On QB battle with Deshaun Watson",
+      "real": true,
+      "source": {
+        "title": "Sports — Shedeur Sanders on QB battle with Deshaun Watson: 'We're both trying to be the b",
+        "url": "https://www.cbssports.com/nfl/news/shedeur-sanders-speaks-qb-battle-deshaun-watson/",
+        "date": "2026-07-21"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Serena would get so annoyed at me during practice because I'd stop in the middle of a rally to fix my strings. Every single time. She's like, Venus, nobody is watching you right now. I said, I'm watching me.",
+      "speaker": "Venus Williams",
+      "context": "CBS Sports HQ interview ahead of the 2019 US Open, New York",
+      "real": false,
+      "fake_note": "I made this one up — Venus's humor tends to be dry and self-contained, and sibling banter with Serena is well-documented territory for her in interviews. The giveaway is the punchline lands a little too cleanly; Venus is funny but usually trails off rather than sticking the landing that neatly."
+    },
+    {
+      "id": "q3",
+      "text": "I play tennis for a living, even though I hate tennis, hate it with a dark and secret passion, and always have.",
+      "speaker": "Andre Agassi",
+      "context": "The startling opening confession of his memoir 'Open,' quoted in Sports Illustrated's coverage of the book.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — 'I Hate Tennis'",
+        "url": "https://www.si.com/more-sports/2009/10/30/andre-agassi-0",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "When I got to Barcelona the first preseason I thought, okay, these guys train hard. Third day I called my mother and told her I had made a mistake. She laughed. She always laughs.",
+      "speaker": "Thierry Henry",
+      "context": "Sky Sports Football podcast, episode recorded in London, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Henry has spoken warmly and specifically about his early Barcelona days and his relationship with his mother in multiple long-form interviews, so both threads feel genuine. The tell is the ending: Henry's real anecdotes tend to have more technical detail mixed in; this one is unusually clean and personal without any football substance."
+    },
+    {
+      "id": "q5",
+      "text": "I think I've heard somebody say that I was a well-dressed golfer. I guess that has something to do with the fact that a lot of people who play golf don't dress very well.",
+      "speaker": "Arnold Palmer",
+      "context": "A dry, self-effacing aside about his reputation as a sharp dresser, collected among Golf Monthly's best Palmer quotes.",
+      "real": true,
+      "source": {
+        "title": "Golf Monthly — 10 Of The Best Arnold Palmer Quotes",
+        "url": "https://www.golfmonthly.com/features/the-game/10-best-arnold-palmer-quotes-152590",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I used to think the mental side was something coaches said when they ran out of technical things to fix. Then I had a year where technically I was the best I'd ever been and I couldn't finish anything. So. Yeah.",
+      "speaker": "Simone Biles",
+      "context": "Time magazine's Athletes of the Year extended interview, published December 2021",
+      "real": false,
+      "fake_note": "I made this one up — Biles has been extraordinarily candid about the relationship between technical mastery and mental readiness since Tokyo, and this framing fits her thoughtful, slightly reluctant way of processing that experience in interviews. The giveaway is the trailing 'So. Yeah.' — her actual speech tends to be more complete even when she's being vulnerable; this truncation is a little too artfully constructed."
+    }
+  ]
+}
