@@ -299,5 +299,16 @@
       "url": "https://www.theguardian.com/football/2026/jul/07/cristiano-ronaldo-portugal-roberto-martinez-world-cup-2026-spain",
       "date": "2026-07-07"
     }
+  },
+  {
+    "text": "Has anyone else 'completed football' like this?",
+    "speaker": "Owen Bagnall",
+    "context": "The Knowledge column, asking about Rodri completing every major honour",
+    "real": true,
+    "source": {
+      "title": "Sports — World Cup, Ballon d’Or, Champions League, Euros … has Rodri completed football? ",
+      "url": "https://www.theguardian.com/football/2026/jul/22/world-cup-champions-league-ballon-dor-euros-has-rodri-completed-football",
+      "date": "2026-07-22"
+    }
   }
 ]

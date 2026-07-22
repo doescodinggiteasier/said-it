@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-22",
+  "edition": 38,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember the first time I cooked for an actual critic — not a food writer, a real Michelin guy — and I completely blanked on salt. The whole dish. I just forgot. Served it, stood there, waited. He ate it and said nothing, which is somehow worse than any word he could have used.",
+      "speaker": "Gordon Ramsay",
+      "context": "Interview with Chris Evans on BBC Radio 2, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Ramsay constantly tells self-deprecating kitchen disaster stories, so this lands perfectly in his wheelhouse. The subtle giveaway is that a real Michelin inspector would never be at a service Ramsay was personally cooking, given his fame by that point."
+    },
+    {
+      "id": "q2",
+      "text": "I wore the same brand of jeans for about twelve years because I genuinely could not be bothered to figure out if there was a better option. And then someone on my team mentioned it and I felt briefly judged and then immediately forgot and went back to buying the same jeans.",
+      "speaker": "Bill Gates",
+      "context": "Unconfirmed segment from a recorded Reddit AMA transcript, r/IAmA, February 2019",
+      "real": false,
+      "fake_note": "I made this one up — Gates is well known for his indifference to personal style and has joked about wearing simple, repetitive clothing for decades. The giveaway is the phrase 'someone on my team mentioned it,' which sounds slightly more corporate-voice than Gates' actual casual AMA tone."
+    },
+    {
+      "id": "q3",
+      "text": "Not everyone can be a truffle. Most of us are potatoes. And a potato is a very good thing to be.",
+      "speaker": "Massimo Bottura",
+      "context": "Quote by the Italian chef of Osteria Francescana, on humility",
+      "real": true,
+      "source": {
+        "title": "Massimo Bottura Quotes (Author of Never Trust A Skinny Italian Chef)",
+        "url": "https://www.goodreads.com/author/quotes/406174.Massimo_Bottura",
+        "date": "2021-01-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Somebody asked me once what I thought the universe smelled like and I said I'd actually looked into that, and they assumed I was joking. I was not joking. There are papers on this. It's mostly polycyclic aromatic hydrocarbons, which, if you're curious, is something like a campfire mixed with diesel, and I find that oddly comforting.",
+      "speaker": "Mae Jemison",
+      "context": "Keynote address at the World Science Festival, New York City, June 2018",
+      "real": false,
+      "fake_note": "I made this one up — Jemison is known for her enthusiasm for bridging scientific curiosity with humanistic wonder, and she genuinely does discuss the sensory details of space. The giveaway is that the 'smell of space' anecdote is more commonly associated with other astronauts like Don Pettit, making attribution to Jemison flattering but slightly misplaced."
+    },
+    {
+      "id": "q5",
+      "text": "He said he felt like a little boy who had stubbed his toe in the dark. That he was too old to cry, but it hurt too much to laugh.",
+      "speaker": "Adlai Stevenson",
+      "context": "Quoting a Lincoln anecdote to describe how he felt conceding the 1952 presidential election, Springfield, Illinois, Nov. 5, 1952.",
+      "real": true,
+      "source": {
+        "title": "The American Presidency Project: Remarks Conceding the Presidential Election in Springfield, Illinois",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-conceding-the-presidential-election-springfield-illinois",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Few thought he was even a starter / There were many who thought themselves smarter / But he ended PM / CH and OM / An earl and a knight of the garter.",
+      "speaker": "Clement Attlee",
+      "context": "A self-mocking limerick the former British PM wrote about himself in a letter to his brother Tom Attlee, April 8, 1956.",
+      "real": true,
+      "source": {
+        "title": "Lib Quotes: Clement Attlee (self-description limerick)",
+        "url": "https://libquotes.com/clement-attlee",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

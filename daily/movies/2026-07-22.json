@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-22",
+  "edition": 35,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You're not angry, George. You're just bored, and you've confused the two your whole life.",
+      "speaker": "Who's Afraid of Virginia Woolf? (1966)",
+      "context": "Martha turning one of George's accusations back on him during a late-night argument",
+      "real": false,
+      "fake_note": "I made this one up — Martha's psychological knife-work on George is the engine of the whole film, and this kind of reframing jab is exactly her style. The giveaway is that it's slightly too clean and diagnostic; Martha's real lines are messier and more personally wounded."
+    },
+    {
+      "id": "q2",
+      "text": "A man who won't tell you what he's after has already decided you're in the way.",
+      "speaker": "Unforgiven (1992)",
+      "context": "William Munny warning the Schofield Kid before they ride out",
+      "real": false,
+      "fake_note": "I made this one up — the film's dialogue has this exact flavor of hard-earned, low-key fatalism, and Munny does occasionally speak in blunt moral observations. The giveaway is the almost epigrammatic structure; Munny's real lines are shorter and rougher, less composed."
+    },
+    {
+      "id": "q3",
+      "text": "Are you not entertained?",
+      "speaker": "Gladiator (2000)",
+      "context": "Maximus (Russell Crowe) shouts at the Zucchabar arena crowd after killing his opponents in a brutal fight.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "Hakuna matata.",
+      "speaker": "The Lion King (1994)",
+      "context": "Timon and Pumbaa teach Simba their carefree \"no worries\" philosophy, both as spoken dialogue and as the title song.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "I'll be back.",
+      "speaker": "The Terminator (1984)",
+      "context": "The Terminator (Arnold Schwarzenegger) tells the police desk sergeant he'll be back, then drives a car through the front of the station.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Honey, the only thing between us and a good time is your common sense.",
+      "speaker": "Some Like It Hot (1959)",
+      "context": "Jerry (as Daphne) flirting outrageously with Sugar",
+      "real": false,
+      "fake_note": "I made this one up — the film's breezy, double-edged innuendo is all over the script, and this line fits Jerry's reckless, feminine-costumed flirtation perfectly. The giveaway is that it's a touch too suave; Jerry's actual humor comes from flustered desperation rather than smooth delivery."
+    }
+  ]
+}

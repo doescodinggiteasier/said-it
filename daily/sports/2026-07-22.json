@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-22",
+  "edition": 27,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I want to make the fans happy",
+      "speaker": "Alba Redondo",
+      "context": "Alba Redondo speaking after signing for Juventus",
+      "real": true,
+      "source": {
+        "title": "Sports — Redondo: I want to make the fans happy",
+        "url": "https://sports.yahoo.com/articles/redondo-want-fans-happy-090000761.html",
+        "date": "2026-07-22"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People forget I was cut. Twice. So whenever someone starts telling me about how hard the road is, I just kind of nod, because yeah, I know a little something about that.",
+      "speaker": "Kurt Warner",
+      "context": "Interview on 'The Dan Patrick Show,' ESPN Radio, August 2010",
+      "real": false,
+      "fake_note": "I made this one up — Warner's journey through arena football and grocery stocking is one of the most cited underdog stories in NFL history, and he referenced it regularly in interviews with this exact understated tone. The giveaway is how gently he implies comparison without fully making the point — the real Warner was usually slightly more direct and faith-forward in these moments."
+    },
+    {
+      "id": "q3",
+      "text": "I've played with guys who practice harder than they play, and I've played with guys who play harder than they ever practice, and I'll take the second group every single time. Every time. Practice is practice, man.",
+      "speaker": "Shaquille O'Neal",
+      "context": "Interview on 'The Big Podcast with Shaq,' Episode 112, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Shaq's well-known complicated relationship with practice (his famous 'I'm not your coach, I'm your teammate' energy) makes this completely plausible. The giveaway is the slight repetition of 'every time' — Shaq usually pivots to a specific player anecdote rather than leaving it as a general statement."
+    },
+    {
+      "id": "q4",
+      "text": "Adding the World Cup to his résumé means Rodri has now won the World Cup, the European Championship, the Champions League, and the Ballon d'Or",
+      "speaker": "Owen Bagnall",
+      "context": "The Knowledge column, reflecting on Rodri's trophy haul",
+      "real": true,
+      "source": {
+        "title": "Sports — World Cup, Ballon d’Or, Champions League, Euros … has Rodri completed football? ",
+        "url": "https://www.theguardian.com/football/2026/jul/22/world-cup-champions-league-ballon-dor-euros-has-rodri-completed-football",
+        "date": "2026-07-22"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I got to a point in my career where losing actually felt worse than winning felt good. And I don't know if that's healthy or not but it's what happened, and I think it's what made me keep going as long as I did.",
+      "speaker": "Martina Navratilova",
+      "context": "BBC Sport interview during Wimbledon fortnight coverage, June 2018",
+      "real": false,
+      "fake_note": "I made this one up — Navratilova spoke extensively throughout her career about her psychological relationship with competition, and this asymmetry between losing and winning is a theme she touched on in real interviews. The subtle tell is the casual 'I don't know if that's healthy' hedge — her actual comments on this subject were typically more definitive."
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what I was thinking on that last set and honestly I wasn't thinking anything. My brain had completely checked out. My body just kind of knew what to do at that point, which is either a really good sign or a sign that I'd been out there way too long.",
+      "speaker": "Serena Williams",
+      "context": "ESPN's 'SportsCenter' post-match interview following the 2016 Wimbledon final, July 2016",
+      "real": false,
+      "fake_note": "I made this one up — Serena frequently talked about instinct versus overthinking in big moments, and her self-deprecating humor about her own exhaustion is well-documented. The subtle giveaway is that she usually credits her preparation more specifically rather than letting her brain fully 'check out.'"
+    }
+  ]
+}

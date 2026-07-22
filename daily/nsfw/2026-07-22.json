@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-22",
+  "edition": 30,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I sort of fucking woke up one day and was like, 'You're an asshole. You're not an artist,'",
+      "speaker": "Lady Gaga",
+      "context": "Lady Gaga recounting the self-lacerating moment she decided to quit cocaine, in a Lifetime interview ('The Conversation with Amanda de Cadenet') reported by Rolling Stone; she went on to call cocaine 'the white devil.'",
+      "real": true,
+      "source": {
+        "title": "Lady Gaga Reflects on Past Cocaine Use (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/lady-gaga-reflects-on-past-cocaine-use-188696/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "We get to the hotel and there's a fruit basket in the room. A fruit basket. I looked at Keith and he looked at me and we both just laughed for about four minutes. Then we threw it out the window. Nobody wants a fruit basket at two in the morning after a show. Nobody.",
+      "speaker": "Brian Jones",
+      "context": "Melody Maker interview, conducted in a Zurich hotel room, June 1967, during the Rolling Stones' European tour stopover",
+      "real": false,
+      "fake_note": "I made this one up — the dry communal mischief and the specific mundane grievance (fruit basket) sounds exactly like the laconic wit in early Jones interviews. The giveaway is the 'four minutes' specificity — that kind of precise comic timing reads more scripted than spontaneous."
+    },
+    {
+      "id": "q3",
+      "text": "There are 400,000 words in the English language, and there are seven of them that you can't say on television. What a ratio that is. 399,993 to seven. They must really be bad.",
+      "speaker": "George Carlin",
+      "context": "Carlin's landmark \"Seven Words You Can Never Say on Television\" routine from his 1972 album Class Clown, listing the broadcast-banned words verbatim and reveling in saying them all out loud.",
+      "real": true,
+      "source": {
+        "title": "The Big Seven Words — George Carlin",
+        "url": "https://www.erenkrantz.com/Humor/SevenDirtyWords.shtml",
+        "date": "1972"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People ask me what my skincare routine is. I tell 'em: sweat out whatever you drank the night before, rinse it off, get back onstage. That's it. That's the whole goddamn routine. My dermatologist actually cried when I told him that.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Kerrang! magazine cover interview, London, September 2008, conducted backstage at the Astoria two nights before the Motörhead European tour kickoff",
+      "real": false,
+      "fake_note": "I made this one up — Lemmy's blunt anti-vanity attitude and contempt for self-care is entirely on-brand, and the dermatologist detail lands like his real dry-deadpan delivery. The giveaway is 'actually cried' — Lemmy tended to underplay punchlines rather than dramatise them."
+    },
+    {
+      "id": "q5",
+      "text": "I walked into the afterparty and somebody shoved a drink in my hand before I even had my coat off. That's how you know it's a real party. You don't even get the courtesy of a goddamn coat hook. Just: here's a drink, good luck, the bathroom's occupied, has been for an hour.",
+      "speaker": "Carrie Fisher",
+      "context": "Live recording of her one-woman show Wishful Drinking, Berkeley Repertory Theatre, October 2006, pre-Broadway tryout run",
+      "real": false,
+      "fake_note": "I made this one up — Fisher's caustic party-observation humor and the run-on clause structure ('here's a drink, good luck…') mirrors her real stand-up cadence from Wishful Drinking. The giveaway is it lacks the specific autobiographical detail she almost always anchored her bits with."
+    },
+    {
+      "id": "q6",
+      "text": "And cigarettes gave me the patience to sit and write those thoughts down in a comedy-friendly format that you could understand. And alcohol gives me the courage to stand up here in front of you judgmental pricks and do it with a quarter million dollars worth of cameras in your face.",
+      "speaker": "Doug Stanhope",
+      "context": "From Doug Stanhope's 2007 stand-up special \"No Refunds\" — his defiant, self-celebrating defense of lifelong drug, cigarette, and alcohol use as the engine of his comedy.",
+      "real": true,
+      "source": {
+        "title": "Doug Stanhope: No Refunds (2007) — Full Transcript",
+        "url": "https://scrapsfromtheloft.com/comedy/doug-stanhope-no-refunds-transcript/",
+        "date": "2007"
+      }
+    }
+  ]
+}

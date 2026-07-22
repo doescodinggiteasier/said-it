@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-22",
+  "edition": 26,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've been in rooms where people spent two hours debating the exact wording of a press release about a meeting that hadn't happened yet. Washington is a very special place.",
+      "speaker": "Bob Gates",
+      "context": "Interview with Judy Woodruff on PBS NewsHour, aired November 14, 2014",
+      "real": false,
+      "fake_note": "I made this one up — Gates's memoirs and interviews are full of dry, exasperated insider observations about Washington process, and this lands squarely in his documented register of weary institutional humor. The tell is the closing 'Washington is a very special place,' which is a touch more sarcastic than Gates typically allows himself in broadcast interviews."
+    },
+    {
+      "id": "q2",
+      "text": "You want to know what bipartisan means in practice? It means both sides are equally annoyed with the final bill.",
+      "speaker": "Lamar Alexander",
+      "context": "Farewell address remarks to Senate staff and colleagues, Russell Senate Office Building, Washington D.C., December 2020",
+      "real": false,
+      "fake_note": "I made this one up — Alexander spent his Senate career as a genuine institutionalist who spoke often about the mechanics of compromise, and this kind of rueful insider observation fits his documented tone exactly. The tell is that it's slightly too aphoristic for a man who usually grounded his humor in a specific bill or negotiation he could name."
+    },
+    {
+      "id": "q3",
+      "text": "When I was attorney general, I had a very firm rule: if you couldn't explain it to me in the elevator, it probably needed more work.",
+      "speaker": "Janet Reno",
+      "context": "Lecture at Yale Law School, New Haven, Connecticut, as cited in the Yale Law Report, Spring 2000",
+      "real": false,
+      "fake_note": "I made this one up — Reno was known for her blunt, no-nonsense administrative style and her emphasis on plain-language communication, and the elevator-pitch test fits her documented management philosophy. The giveaway is that this particular formulation is a fairly common management cliché that Reno, who preferred concrete anecdotes, would likely have illustrated with a specific case."
+    },
+    {
+      "id": "q4",
+      "text": "The problem with writing a budget is that eventually you have to show it to someone who can do arithmetic.",
+      "speaker": "Mitch Daniels",
+      "context": "Remarks at the Indiana Fiscal Policy Institute annual conference, Indianapolis, September 2011",
+      "real": false,
+      "fake_note": "I made this one up — Daniels, as both Indiana governor and former OMB director under George W. Bush, built his entire public identity around fiscal seriousness and budget humor, and self-deprecating cracks about budget math are entirely in character. The tell is that the joke lands a little too cleanly — Daniels's real remarks in this vein tend to involve a specific number or a named program to give the joke ballast."
+    },
+    {
+      "id": "q5",
+      "text": "Prediction markets don't care about spin o",
+      "speaker": "Kalshi",
+      "context": "Kalshi platform launch statement — REJECTED: no named human speaker",
+      "real": true,
+      "source": {
+        "title": "Politics — Kalshi launches midterm election forecasting hub",
+        "url": "https://thehill.com/policy/technology/5982378-kalshi-midterm-election-hub/",
+        "date": "2026-07-22"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You said, 'Operation Epic Fury was a historic and overwhelming victory.' You said Iran's military had been rendered, 'combat ineffective for years to come,'",
+      "speaker": "Jon Ossoff",
+      "context": "Sen. Ossoff quoting Defense Secretary Hegseth during a Senate hearing on the Iran military operation",
+      "real": true,
+      "source": {
+        "title": "Politics — Ossoff spars with Hegseth over claims of 'overwhelming victory' in Iran",
+        "url": "https://thehill.com/policy/defense/5982366-ossoff-hegseth-iran-victory-debate/",
+        "date": "2026-07-22"
+      }
+    }
+  ]
+}

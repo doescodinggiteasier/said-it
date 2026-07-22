@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-22",
+  "edition": 30,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I can out-dance Bowie and Jagger!",
+      "speaker": "Martha Reeves",
+      "context": "An interview about her career and Motown",
+      "real": true,
+      "source": {
+        "title": "Music — ‘I can out-dance Bowie and Jagger!’ Martha Reeves on Motown, Dancing in the Stre",
+        "url": "https://www.theguardian.com/music/2026/jun/26/reader-interview-martha-reeves-motown",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I remember finishing the mix on 'Thriller' at like three in the morning and Michael just stood there in the doorway not saying anything for maybe two full minutes. I didn't know if I was about to get fired or what. Then he goes, 'Again.' That's all. 'Again.' So we played the whole thing again.",
+      "speaker": "Bruce Swedien",
+      "context": "Speaking to students at the Berklee College of Music during a guest lecture series, recorded and archived on the college's YouTube channel, 2011",
+      "real": false,
+      "fake_note": "I made this one up — Swedien told dozens of late-night studio stories about Michael's perfectionism, so the texture feels completely real. The subtle giveaway is that 'Thriller' was mostly finished during daytime sessions, and Swedien's documented accounts of that specific mix don't include a silent listen-back moment like this."
+    },
+    {
+      "id": "q3",
+      "text": "Why am I crying on Oprah?",
+      "speaker": "Pharrell Williams",
+      "context": "On Oprah Winfrey's talk show 'Oprah Prime' (April 2014), Oprah surprised Pharrell by playing a montage of fan videos of people around the world dancing to his hit song 'Happy.'",
+      "real": true,
+      "source": {
+        "title": "Watch Pharrell Cry Over 'Happy' Inspiration During Interview with Oprah Winfrey",
+        "url": "https://www.rollingstone.com/music/music-news/watch-pharrell-cry-over-happy-inspiration-231769/",
+        "date": "2014-04-14"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "There's a version of me that stayed in Detroit and played bars forever and was completely happy. I think about that guy a lot. I'm not sure he made the wrong choice.",
+      "speaker": "Eminem",
+      "context": "Rare extended sit-down with Rolling Stone, published in the magazine's 'Legends' issue, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Eminem rarely gives long interviews but when he does he speaks with exactly this kind of quiet, parallel-life wondering about his roots. The giveaway is the reflective warmth; his documented voice is usually sharper and more guarded even in candid moments."
+    },
+    {
+      "id": "q5",
+      "text": "She was flamboyant. She had bright red lipstick, long red fingernails. She had high-heeled shoes, little floating plastic goldfish in the heels of them, short skirts, low-cut tops, and I just thought she was beautiful.",
+      "speaker": "Dolly Parton",
+      "context": "In a Guardian interview (quoted by HuffPost), Dolly Parton describes the local 'town tramp' whose flashy style inspired her own signature look as a child.",
+      "real": true,
+      "source": {
+        "title": "Salon — Dolly Parton's famed \"town tramp\" style inspiration",
+        "url": "https://www.salon.com/2023/10/19/behind-the-seams-6-major-revelations-about-dolly-partons-famed-town-tramp-sense-of-style/",
+        "date": "2023-10-11"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Country music taught me that a song doesn't have to be complicated to be devastating. Two chords and something true will outlast almost anything clever.",
+      "speaker": "Kacey Musgraves",
+      "context": "Profile interview with The Guardian Weekend Magazine, published ahead of her 'Deeper Well' album release, March 2024",
+      "real": false,
+      "fake_note": "I made this one up — Kacey talks about songwriting simplicity and emotional directness constantly, so this reads naturally for her. The tell is that it leans a little too much like a finished thought; her real quotes tend to trail off or correct themselves mid-sentence."
+    }
+  ]
+}
