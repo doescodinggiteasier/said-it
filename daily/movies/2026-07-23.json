@@ -1,0 +1,56 @@
+{
+  "date": "2026-07-23",
+  "edition": 36,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I asked for a car, not a conversation.",
+      "speaker": "Ferris Bueller's Day Off (1986)",
+      "context": "Ferris, breezy and impatient, brushing off the parking attendant",
+      "real": false,
+      "fake_note": "I made this one up — Ferris's cheerful entitlement and quick comic rhythm make this feel totally in character, and the line has that punchy, quotable shape the film loves. The giveaway is it's slightly more cutting than Ferris usually is; he tends to charm rather than dismiss."
+    },
+    {
+      "id": "q2",
+      "text": "Get your hand off my brother's jacket before I make this a very short meeting.",
+      "speaker": "Goodfellas (1990)",
+      "context": "Tommy DeVito, instant fury flaring during a sit-down over a minor slight",
+      "real": false,
+      "fake_note": "I made this one up — Tommy's explosive, zero-to-violent temper and his specific, possessive loyalty to the crew make this feel completely natural. The giveaway is 'short meeting' is a fraction too witty; Tommy's real threats tend to be messier and less composed."
+    },
+    {
+      "id": "q3",
+      "text": "Nobody freezes in this town, Mr. Gittes. They just slow down.",
+      "speaker": "Chinatown (1974)",
+      "context": "Noah Cross, pleasantly menacing, during his lunch meeting with Jake Gittes",
+      "real": false,
+      "fake_note": "I made this one up — Cross has that precise, almost courtly way of saying threatening things that sound like small talk, which fits perfectly. The subtle giveaway is that the line is slightly too epigrammatic; Cross usually wraps his menace in longer, more rambling sentences."
+    },
+    {
+      "id": "q4",
+      "text": "I'm the king of the world!",
+      "speaker": "Titanic (1997)",
+      "context": "Jack (Leonardo DiCaprio) shouts triumphantly from the bow of the ship, arms outstretched.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "I am Iron Man.",
+      "speaker": "Iron Man (2008)",
+      "context": "Tony Stark (Robert Downey Jr.) goes off-script and reveals his identity to the press at the very end of the film.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "I don't dance with anybody who counts the steps.",
+      "speaker": "Some Like It Hot (1959)",
+      "context": "Sugar Kane, breezy and a little wounded, deflecting Jerry's clumsy flirting",
+      "real": false,
+      "fake_note": "I made this one up — Sugar's cheerful, slightly melancholy way of brushing off men while revealing her own longing is exactly the film's register. The subtle giveaway is it's a touch more self-aware than Sugar usually allows herself to be; she tends to stumble into insight rather than arrive at it this neatly."
+    }
+  ]
+}

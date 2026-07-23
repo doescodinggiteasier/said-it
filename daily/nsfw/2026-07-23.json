@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-23",
+  "edition": 31,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People keep asking if I'm a feminist. Honey, I wore a sequinned jumpsuit to a truckers' convention in 1974 and told the MC to go fuck himself on a live microphone. You do the math.",
+      "speaker": "Eartha Kitt",
+      "context": "Panel discussion at the 1993 National Women's Music Festival, Bloomington, Indiana, recorded for the festival's audio archive",
+      "real": false,
+      "fake_note": "I made this one up — Kitt's imperious wit and her real history of outspoken defiance make the attitude feel right. The giveaway is the specific 1974 truckers' convention detail, which is entirely invented and doesn't correspond to any documented Kitt appearance."
+    },
+    {
+      "id": "q2",
+      "text": "I have been naked in stranger situations than most people will ever be clothed in. And I'm not bragging. Well — I'm a little bit bragging.",
+      "speaker": "Freddie Mercury",
+      "context": "Offstage audio clip captured during the post-show press huddle at Hammersmith Odeon, London, December 1979, later aired on BBC Radio 1's retrospective series",
+      "real": false,
+      "fake_note": "I made this one up — Mercury's theatrical self-confidence and his genuine love of outrageous performance make this feel plausible in cadence and subject. The giveaway is the pause-and-reversal structure, which is more stand-up comedian than Mercury, whose real wit tended to be more sweeping and less self-aware."
+    },
+    {
+      "id": "q3",
+      "text": "Someone reviews the show and says I was 'aggressive.' Yeah, dipshit, it's called rock and roll, not a fucking book club. Though honestly a book club sounds amazing right now, I need a drink and a sit-down.",
+      "speaker": "Bon Scott",
+      "context": "Dressing-room tape recorded by road manager Ian Jeffery after the AC/DC performance at the Hammersmith Odeon, London, November 1979",
+      "real": false,
+      "fake_note": "I made this one up — Scott's larrikin charm, his habit of undercutting aggression with self-deprecating humour, and the specific touring context make this feel plausible. The giveaway is the book-club pivot, which is slightly too clever a comedic turn for Scott's more blunt, direct style."
+    },
+    {
+      "id": "q4",
+      "text": "I once asked a Jesuit priest what was the best short prayer he knew. He said, \"Fuck it,\" as in \"Fuck it; it's in God's hands.\"",
+      "speaker": "Anthony Hopkins",
+      "context": "Anthony Hopkins recounting a Jesuit priest's answer when he asked for the best short prayer — an anecdote he has told publicly, including on Inside the Actors Studio.",
+      "real": true,
+      "source": {
+        "title": "Inside the Actors Studio (IMDb quotes)",
+        "url": "https://www.imdb.com/name/nm0000164/quotes/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I used to have a drug problem, now I make enough money.",
+      "speaker": "David Lee Roth",
+      "context": "Van Halen frontman David Lee Roth's famously flip one-liner about wealth and excess, quoted in American Songwriter's roundup of his best quotes.",
+      "real": true,
+      "source": {
+        "title": "15 of the Best Quotes from Van Halen's David Lee Roth (American Songwriter)",
+        "url": "https://americansongwriter.com/15-of-the-best-quotes-from-van-halens-david-lee-roth/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore. I just want to cut to the chase.",
+      "speaker": "Bob Saget",
+      "context": "In a Rolling Stone interview (republished from the vault), the 'America's Dad' comedian on his post-Full House, R-rated stand-up mindset.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-23",
+  "edition": 28,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's a version of me that retires at twenty-eight and opens a restaurant in Biarritz and I think about that guy sometimes. He looks very relaxed.",
+      "speaker": "Zinedine Zidane",
+      "context": "France Football magazine long-form career retrospective interview, published December 2021",
+      "real": false,
+      "fake_note": "I made this one up — Zidane has spoken warmly about the French Basque coast and food, and his interviews have this gentle, slightly melancholic humor about roads not taken. The tell is the specific age — he'd more likely leave it vague."
+    },
+    {
+      "id": "q2",
+      "text": "Baseball has been good to me since I quit trying to play it.",
+      "speaker": "Whitey Herzog",
+      "context": "The Hall of Fame manager reflecting on his so-so playing career versus his success as a skipper.",
+      "real": true,
+      "source": {
+        "title": "ESPN Page 2 — My 5 top quotes by Hall of Famer Whitey Herzog",
+        "url": "https://www.espn.ph/espn/page2/index?id=5408431",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Has anyone else 'completed football' like this?",
+      "speaker": "Owen Bagnall",
+      "context": "The Knowledge column, asking about Rodri completing every major honour",
+      "real": true,
+      "source": {
+        "title": "Sports — World Cup, Ballon d’Or, Champions League, Euros … has Rodri completed football? ",
+        "url": "https://www.theguardian.com/football/2026/jul/22/world-cup-champions-league-ballon-dor-euros-has-rodri-completed-football",
+        "date": "2026-07-22"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Pressure is a privilege and champions adjust.",
+      "speaker": "Billie Jean King",
+      "context": "The line she says spontaneously came out of her mouth while motivating Lindsay Davenport as U.S. Fed Cup captain, recounted at Tennis.com.",
+      "real": true,
+      "source": {
+        "title": "Tennis.com — Billie Jean King shares origins of 'Pressure is a privilege'",
+        "url": "https://www.tennis.com/baseline/articles/billie-jean-king-shares-origins-of-favorite-famous-quote-pressure-is-a-privilege",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "A fast bowler who tells you he never wants to hurt the batsman is lying to you, or he's in the wrong job. You want to see a flicker. You're not trying to hospitalise anyone, but you need that flicker.",
+      "speaker": "Shane Warne",
+      "context": "Sky Sports Cricket Podcast, recorded in Melbourne during Australia's summer Test series, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Warne was famous for frank, slightly provocative takes on cricket's competitive psychology, and this is precisely the kind of thing that would spark a news cycle the next day. The tell is Warne was a spinner who'd typically couch fast-bowling psychology from the outside, not with this ownership."
+    },
+    {
+      "id": "q6",
+      "text": "My hamstring told me it was done before my brain did. I was mid-stride and I remember thinking, that's not fatigue, that's goodbye. I finished the rep anyway. Stupid, probably.",
+      "speaker": "Usain Bolt",
+      "context": "BBC Sport documentary 'Bolt', filmed in Kingston ahead of the 2017 World Athletics Championships in London",
+      "real": false,
+      "fake_note": "I made this one up — Bolt's real interviews have exactly this mix of self-deprecating humor and casual confidence about his body. The tell is that his actual injury talk from 2017 is more emotional and less wry."
+    }
+  ]
+}

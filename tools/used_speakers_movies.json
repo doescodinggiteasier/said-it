@@ -70,7 +70,7 @@
 "the apartment  1960": "2026-07-01",
 "this is spinal tap  1984": "2026-07-01",
 "star wars  episode v   the empire strikes back  1980": "2026-07-01",
-"chinatown 1974": "2026-07-19",
+"chinatown 1974": "2026-07-23",
 "kramer vs kramer 1979": "2026-07-02",
 "the godfather 1972": "2026-07-16",
 "casablanca 1942": "2026-07-19",
@@ -92,7 +92,7 @@
 "blade runner 1982": "2026-07-05",
 "airplane 1980": "2026-07-15",
 "top gun 1986": "2026-07-05",
-"goodfellas 1990": "2026-07-05",
+"goodfellas 1990": "2026-07-23",
 "no country for old men 2007": "2026-07-13",
 "sunset boulevard 1950": "2026-07-14",
 "rear window 1954": "2026-07-06",
@@ -138,7 +138,7 @@
 "braveheart 1995": "2026-07-15",
 "stand by me 1986": "2026-07-15",
 "step brothers 2008": "2026-07-16",
-"ferris bueller s day off 1986": "2026-07-16",
+"ferris bueller s day off 1986": "2026-07-23",
 "anchorman the legend of ron burgundy 2004": "2026-07-16",
 "forrest gump 1994": "2026-07-17",
 "caddyshack 1980": "2026-07-17",
@@ -166,5 +166,7 @@
 "gladiator 2000": "2026-07-22",
 "the lion king 1994": "2026-07-22",
 "the terminator 1984": "2026-07-22",
-"some like it hot 1959": "2026-07-22"
+"some like it hot 1959": "2026-07-23",
+"titanic 1997": "2026-07-23",
+"iron man 2008": "2026-07-23"
 }

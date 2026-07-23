@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-23",
+  "edition": 31,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "'Bull riding and boobies' — that is potentially the greatest lyric in any song ever.",
+      "speaker": "Harry Styles",
+      "context": "In his 2019 Rolling Stone cover interview, riffing on a line from Lil Nas X's 'Old Town Road.'",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — The Eternal Sunshine of Harry Styles",
+        "url": "https://www.rollingstone.com/music/music-features/harry-styles-cover-interview-album-871568/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My mom used to turn the radio off when certain songs came on, like she was protecting me from something. I think about that every time I make a song that I know some parent somewhere is going to turn off. I take it as a compliment.",
+      "speaker": "Billie Eilish",
+      "context": "Apple Music's Artist Spotlight interview with Zane Lowe, aired November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Billie Eilish frequently references her upbringing and family in interviews, and her slightly wry relationship with the idea of being 'edgy' or unsettling to parents is well-documented. The personal, memory-based framing is very true to her style. The subtle tell is the final line — she's more likely to leave that kind of thought ambiguous than to explicitly call it a compliment."
+    },
+    {
+      "id": "q3",
+      "text": "You're about to play 'Shakedown Street,' and you just did a heroic dose of mushrooms. How do you even perform?",
+      "speaker": "Susan Tedeschi",
+      "context": "Recalling touring with Bob Weir and the Other Ones in 2002",
+      "real": true,
+      "source": {
+        "title": "Music — Susan Tedeschi Says Bob Weir Loved to Offer Her Mushrooms",
+        "url": "https://www.rollingstone.com/music/music-features/susan-tedeschi-bob-weir-mushrooms-tour-1235586087/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "When I toured that record in '94 the sound systems in half those venues were genuinely horrible. Like, embarrassingly bad. And somehow that forced me to perform louder internally, if that makes sense, because I knew the room wasn't going to do it for me.",
+      "speaker": "Tori Amos",
+      "context": "Interview with Mojo magazine, published in the April 2011 issue retrospective on Under the Pink",
+      "real": false,
+      "fake_note": "I made this one up — Tori Amos gives deeply personal, slightly abstract accounts of her touring experiences and has an extensive record of reflecting on the early-nineties tour years in exactly this kind of introspective way. 'Louder internally' is the kind of phrase she actually uses. The giveaway is that she would almost certainly name a specific city or venue rather than leaving the geography this vague."
+    },
+    {
+      "id": "q5",
+      "text": "I remember finishing the mix on that record at like four in the morning and just sitting in the parking lot eating a gas station sandwich, thinking, yeah, that's the one. Nobody else was awake. It didn't matter. I knew.",
+      "speaker": "Rick Rubin",
+      "context": "Broken Record podcast with Justin Richmond, episode released March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Rubin is famous for his intuitive, almost mystical descriptions of 'knowing' when a record is done, and the mundane detail of the gas station sandwich sounds exactly like his self-deprecating, earthbound storytelling. The subtle giveaway is that he almost never places himself this specifically in a physical location at a precise moment; he tends to speak in broader impressions."
+    },
+    {
+      "id": "q6",
+      "text": "The name the Designers Republic was a joke, because we weren't designers",
+      "speaker": "Ian Anderson",
+      "context": "Founder of Designers Republic reflecting on founding the company 40 years ago",
+      "real": true,
+      "source": {
+        "title": "Music — ‘We didn’t care what the client wanted!’: Sheffield’s Designers Republic on thei",
+        "url": "https://www.theguardian.com/artanddesign/2026/jul/23/sheffield-designers-republic-aphex-twin-pulp-pringles-ian-anderson",
+        "date": "2026-07-23"
+      }
+    }
+  ]
+}
