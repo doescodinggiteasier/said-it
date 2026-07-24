@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-24",
+  "edition": 37,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Never knew a prospector yet that died rich.",
+      "speaker": "The Treasure of the Sierra Madre (1948)",
+      "context": "Grizzled old prospector Howard (Walter Huston) offering hard-won wisdom about the gold-hunting life.",
+      "real": true,
+      "source": {
+        "title": "The Treasure of the Sierra Madre - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Treasure_of_the_Sierra_Madre",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "To infinity and beyond!",
+      "speaker": "Toy Story (1995)",
+      "context": "Buzz Lightyear's heroic catchphrase as he strikes a pose and 'flies'",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "He's not a bad kid. He's just been told he's nobody for so long he started believing it.",
+      "speaker": "Good Will Hunting (1997)",
+      "context": "Sean Maguire explaining Will to Lambeau during one of their faculty arguments",
+      "real": false,
+      "fake_note": "I made this one up — Sean's compassionate, plain-spoken defence of Will is central to Williams's performance, and this line fits his register. The subtle giveaway is that it leans slightly too close to a thesis statement about the film's theme rather than a reactive moment in conversation."
+    },
+    {
+      "id": "q4",
+      "text": "A million dollars isn't cool. You know what's cool? A billion dollars.",
+      "speaker": "The Social Network (2010)",
+      "context": "Sean Parker (Justin Timberlake) pitching ambition to Mark Zuckerberg and Eduardo Saverin at a restaurant; the punchline lands in an intercut deposition scene",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "You mess with the bull, sweetheart, you get the whole herd.",
+      "speaker": "The Breakfast Club (1985)",
+      "context": "Principal Vernon warning Claire in the hallway before detention begins",
+      "real": false,
+      "fake_note": "I made this one up — Vernon's pompous, half-formed toughness is all over the film, and 'you mess with the bull' is literally a real Vernon line, so extending it this way feels native. The giveaway is 'the whole herd' is a clumsy malapropism even for Vernon; the real film keeps his bluster simpler."
+    },
+    {
+      "id": "q6",
+      "text": "Same time tomorrow, Mr. Wonka? — I'm afraid not, Charlie. Tomorrow we do something completely different.",
+      "speaker": "Willy Wonka & the Chocolate Factory (1971)",
+      "context": "Charlie and Wonka at the factory gates after an early tour day",
+      "real": false,
+      "fake_note": "I made this one up — Wilder's Wonka pivots on a dime between warmth and cryptic deflection, and 'completely different' is perfectly Wonka-vague. The giveaway is the exchange is tidier than Wilder's actual non-sequitur delivery style; real Wonka lines tend to quote poetry or veer sideways."
+    }
+  ]
+}

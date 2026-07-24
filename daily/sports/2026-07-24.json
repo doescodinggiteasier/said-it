@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-24",
+  "edition": 29,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Golf is the only sport where you can be completely alone with a bad decision for a full minute before you have to live with it. Every other sport something happens and then it's over. Here you stand over it and it just sits there waiting.",
+      "speaker": "Tiger Woods",
+      "context": "Feature interview with Tom Rinaldi, Golf Digest, Masters preview issue, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Tiger talks about the mental architecture of golf in exactly this kind of deliberate, comparative way, particularly in longer sit-down features rather than post-round scrums. The giveaway is the almost-aphorism shape at the end — Tiger usually anchors these observations in a specific personal moment rather than leaving them abstract."
+    },
+    {
+      "id": "q2",
+      "text": "He had that one coming for telling everybody I didn't know where Brazil was on the map.",
+      "speaker": "Travis Kelce",
+      "context": "The Chiefs tight end at a São Paulo press conference in September 2025, after doing an impression of teammate Patrick Mahomes as payback.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Travis Kelce gets playful payback on Patrick Mahomes with spot-on impersonation",
+        "url": "https://www.foxnews.com/sports/travis-kelce-gets-playful-payback-patrick-mahomes-spot-on-impersonation-brazil-press-conference",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I'm glad we found it. Spa and Silverstone exposed issue",
+      "speaker": "George Russell",
+      "context": "George Russell commenting on Mercedes identifying his engine problem, July 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘Eyes forward now’: George Russell upbeat after Mercedes solve engine problem",
+        "url": "https://www.theguardian.com/sport/2026/jul/23/george-russell-mercedes-engine-problem-formula-one-hungarian-grand-prix",
+        "date": "2026-07-24"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I've coached linebackers, I've coached safeties, I've coached the whole back end, and I can tell you that none of that prepared me for offensive linemen. They have their own entire civilization back there. Their own jokes, their own rules. You almost need a translator.",
+      "speaker": "Bill Belichick",
+      "context": "NFL Films interview for America's Game: The Story of the 2003 New England Patriots, aired on NFL Network, 2004",
+      "real": false,
+      "fake_note": "I made this one up — Belichick is documented talking about position group cultures and has a dry observational humor that comes through in long-form interviews rather than press conferences. The giveaway is 'civilization' — it's a touch more whimsical than his usual clinical phrasing."
+    },
+    {
+      "id": "q5",
+      "text": "I'm still not really into it.",
+      "speaker": "Anthony Edwards",
+      "context": "The future No. 1 NBA draft pick in a 2020 ESPN feature, admitting he does not enjoy watching basketball (\"To be honest, I can't watch basketball\").",
+      "real": true,
+      "source": {
+        "title": "ESPN — The pain and promise of top NBA draft prospect Anthony Edwards",
+        "url": "https://www.espn.com/nba/story/_/id/30321844/the-pain-promise-top-nba-draft-prospect-anthony-edwards",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People in other sports hear 'training camp' and think it means something organized. In boxing you're basically just in a room with two or three people who love you enough to hit you every day for eight weeks. There's nothing like it and I say that in the most complicated possible way.",
+      "speaker": "Canelo Álvarez",
+      "context": "Interview with Isaac Chotiner, The New Yorker, published October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Canelo speaks about the insularity and intimacy of boxing training with real feeling in longer profile interviews, and 'the most complicated possible way' sounds exactly like how he qualifies something he genuinely means but can't fully explain. The tell is the slightly literary framing — his phrasing through translators is typically a little more direct."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-24",
+  "edition": 32,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "We are part of each other, you know. When one person is hurt, it hurts me, too. When I see their condition, I know what they feel, and I feel it. And it hurts.",
+      "speaker": "B.B. King",
+      "context": "Explaining why the blues transcends stereotypes and speaks to shared human suffering, in collected words of wisdom published by Guitar Player.",
+      "real": true,
+      "source": {
+        "title": "Guitar Player — Some Collected Words of Wisdom From B.B. King Himself",
+        "url": "https://www.guitarplayer.com/players/bb-king-quotes",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I don't think about legacy much, honestly. When I'm in the studio at two in the morning trying to get a hi-hat to sit right, legacy is not the thing that's in the room with me.",
+      "speaker": "Timbaland",
+      "context": "Variety Producers on Producing roundtable, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Timbaland is famously obsessive about percussion and rhythm detail and tends to deflect grand questions with pragmatic studio-floor answers, which is exactly what this does. The tell is that 'legacy is not the thing that's in the room with me' edges a little too close to a quotable line for his usual blunter style."
+    },
+    {
+      "id": "q3",
+      "text": "People hear 'Halo' and think it came together quickly. That song sat unfinished on my laptop for almost a year. I kept opening it and closing it. Some songs tell you when they're ready and that one took its time.",
+      "speaker": "Beyoncé",
+      "context": "Harper's Bazaar Icons issue interview, September 2018",
+      "real": false,
+      "fake_note": "I made this one up — Beyoncé has spoken about 'Halo' in multiple interviews and is known to discuss her perfectionism and patience in the studio, so a reflection on a song's slow development fits her documented creative process. The tell is that she has actually described 'Halo' as coming together relatively quickly in at least one real interview, which would trip up a sharp fan."
+    },
+    {
+      "id": "q4",
+      "text": "Don't throw away your ticket stubs, I'm gonna figure something out",
+      "speaker": "Bon Jovi",
+      "context": "Said from the stage at MSG after ending concert early due to sinus infection",
+      "real": true,
+      "source": {
+        "title": "Music — Bon Jovi Abruptly Ends MSG Concert Due to Sinus Infection",
+        "url": "https://www.rollingstone.com/music/music-news/bon-jovi-abruptly-ends-msg-concert-sinus-infection-1235598245/",
+        "date": "2026-07-24"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Nashville in the nineties had this unspoken rule that you could be sad, but not too sad, and you could be rowdy, but not too rowdy. Everything had a ceiling. I spent a good decade bumping my head on that ceiling before I stopped caring about it.",
+      "speaker": "Kris Kristofferson",
+      "context": "American Songwriter long-form profile, March 2016",
+      "real": false,
+      "fake_note": "I made this one up — Kristofferson has been outspoken for decades about the commercial and stylistic constraints of the Nashville machine and this mild, world-weary critique is completely consistent with his documented views and his unhurried, literary way of phrasing things. The tell is 'bumping my head on that ceiling,' a metaphor just slightly too vivid and self-contained for his more rambling, discursive interview style."
+    },
+    {
+      "id": "q6",
+      "text": "Gospel taught me that a note can mean two different things depending on when you release it. You can hold it a fraction too long and the whole congregation shifts. That's not an accident. The preachers knew that, the singers knew that, and eventually I figured out the producers had to know it too.",
+      "speaker": "Kenneth 'Babyface' Edmonds",
+      "context": "Interview in Wax Poetics, Issue 68, 2017",
+      "real": false,
+      "fake_note": "I made this one up — Babyface has consistently credited his gospel upbringing as the source of his feel for melodic timing and emotional dynamics, so the content is perfectly in character. The subtle tell is that the observation is slightly more analytical and tidy than his typically warm, anecdote-driven way of explaining his musical influences."
+    }
+  ]
+}

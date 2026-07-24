@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-24",
+  "edition": 28,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I will tell you, the first time I had to sit through a full Senate subcommittee hearing on aquifer depletion, I thought — this is it, this is how I die. And then somehow I went home and read more about aquifer depletion. I don't fully understand what happened to me.",
+      "speaker": "Amy Klobuchar",
+      "context": "Interview with Kara Swisher on the Pivot podcast, recorded in Washington D.C., October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar is well-known for her self-deprecating humor about being a policy grind, and the escalating structure here sounds just like her. The subtle tell is that no sitting senator would quite confess to being bored by their own subcommittee, even ironically."
+    },
+    {
+      "id": "q2",
+      "text": "The food supply remains the best, the safest, the most affordable in the world, and will continue to do so",
+      "speaker": "Brooke Rollins",
+      "context": "Agriculture Secretary speaking on Thursday about food safety amid outbreaks",
+      "real": true,
+      "source": {
+        "title": "Politics — USDA: Food supply is safe despite cyclospora, screwworm fights",
+        "url": "https://thehill.com/homenews/administration/5987541-rollins-defends-us-food-safety/",
+        "date": "2026-07-24"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Abdul is a fighter, and that's why I'm endorsing him to be the next United States Senator for Michigan",
+      "speaker": "Tina Smith",
+      "context": "Social media post endorsing Abdul El-Sayed in Michigan Senate race",
+      "real": true,
+      "source": {
+        "title": "Politics — Smith backs El-Sayed in Michigan Senate race",
+        "url": "https://thehill.com/homenews/campaign/5987252-smith-endorses-el-sayed-michigan/",
+        "date": "2026-07-24"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My staff has a rule now where they don't hand me anything that starts with the words 'preliminary findings' right before I go onstage. Which, honestly, is a reasonable rule. I have caused problems.",
+      "speaker": "Pete Buttigieg",
+      "context": "Appearance at the Aspen Ideas Festival, Aspen, Colorado, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Pete's dry, slightly self-incriminating humor about his own overprepared instincts is very on-brand. The giveaway is the phrase 'I have caused problems' — he'd more likely soften it into something slightly more bureaucratic."
+    },
+    {
+      "id": "q5",
+      "text": "I've been in Washington long enough to know that when everyone in a room agrees with you immediately, something has gone very wrong — either with the idea, or with the room.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks at the University of Louisville McConnell Center annual dinner, Louisville, Kentucky, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — McConnell rarely gives this kind of candid insider observation in public, but when he does get dry, it sounds a bit like this. The tell is that it's almost too self-aware; he typically keeps his strategic thinking much closer to the vest."
+    },
+    {
+      "id": "q6",
+      "text": "People ask me how you stay calm in a debate. Honestly? I grew up with five brothers. Nobody in that hall has ever told me that my macaroni casserole was, quote, an insult to Italian people, so I'm fine.",
+      "speaker": "Nikki Haley",
+      "context": "Q&A session following a speech at the Ronald Reagan Presidential Library, Simi Valley, California, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Nikki frequently invokes her family and upbringing in a warm, grounded way, and the sibling-rivalry framing fits her perfectly. The tell is the oddly specific 'macaroni casserole' detail, which is just a touch too vivid to be real."
+    }
+  ]
+}

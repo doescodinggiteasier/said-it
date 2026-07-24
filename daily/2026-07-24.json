@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-24",
+  "edition": 40,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what I was thinking on that last drive and honestly the most accurate answer is nothing. There's a version of you that takes over and it's not the version that reads the playbook.",
+      "speaker": "Tom Brady",
+      "context": "Interviewed by Jim Gray on the 'Let's Go!' podcast, episode released January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Brady frequently talks about mental states and clutch performance in almost mystical terms, and Jim Gray is his actual podcast co-host, so the sourcing feels airtight. The subtle giveaway is that Brady almost never says 'honestly' and tends to credit the team before going inward like this."
+    },
+    {
+      "id": "q2",
+      "text": "The last time I was this high, I was trying to decide on my major.",
+      "speaker": "Barack Obama",
+      "context": "Self-deprecating joke at his final White House Correspondents' Dinner on April 30, 2016, riffing on how his approval ratings kept climbing in his last year in office ('in my final year, my approval ratings keep going up').",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at the White House Correspondents' Dinner | whitehouse.gov (Obama White House Archives)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2016/05/01/remarks-president-white-house-correspondents-dinner/",
+        "date": "2016-04-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I think I was in my late thirties before I realized that most of the social rules I'd been following weren't actually rules. Someone had just been very confident when they said them.",
+      "speaker": "Tina Fey",
+      "context": "Featured interview in The New Yorker's culture issue, published September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Fey's memoir Bossypants is full of exactly this kind of observation: institutional skepticism wrapped in self-deprecation. The New Yorker profile context is plausible since she's been featured there. The giveaway is the rhythm — it's almost too aphoristic; Fey usually undercuts the insight with a specific and slightly embarrassing example."
+    },
+    {
+      "id": "q4",
+      "text": "Every surfboard I've shaped that I was really proud of, I've given away or lost, which probably means I should be proud of more of them so I can keep one.",
+      "speaker": "Kelly Slater",
+      "context": "Interview with Stab Magazine conducted ahead of the 2019 Pipe Masters, published December 2019",
+      "real": false,
+      "fake_note": "I made this one up — Slater has shaped boards and spoken extensively about his relationship to equipment and craft throughout his career, and Stab Magazine is a genuine outlet that profiles him regularly. The logic here is very Slater: meditative but practical. The tell is the self-deprecating punchline, which is a little too tidy for how he actually speaks about his gear."
+    },
+    {
+      "id": "q5",
+      "text": "The disappointment of manhood succeeds to the delusion of youth: let us hope that the heritage of old age is not despair.",
+      "speaker": "Benjamin Disraeli",
+      "context": "The British Prime Minister and novelist, in a candidly reflective aside on the disappointments of the ages of life (from his fiction, Book VIII, Chapter 4).",
+      "real": true,
+      "source": {
+        "title": "Benjamin Disraeli - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Worst damnfool mistake I ever made was letting myself be elected Vice President of the United States. Should have stuck with my old chores as Speaker of the House. I gave up the second most important job in the Government for one that didn't amount to a hill of beans. I spent eight long years as Mr. Roosevelt's spare tire.",
+      "speaker": "John Nance Garner",
+      "context": "FDR's first vice president (\"Cactus Jack\"), ruefully mocking his own decision to take the job and his powerlessness in it, after leaving office.",
+      "real": true,
+      "source": {
+        "title": "John Nance Garner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Nance_Garner",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

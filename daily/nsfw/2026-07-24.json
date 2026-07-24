@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-24",
+  "edition": 32,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I got so hammered at the Grammy afterparty in '68 that I argued with Aretha for forty-five minutes about whether chili dogs counted as a vegetable. I still think I made some valid points. She did not agree.",
+      "speaker": "Janis Joplin",
+      "context": "Oral history interview conducted by Rolling Stone contributing editor David Dalton, San Francisco, June 1970, published posthumously in the 1971 retrospective piece 'Full Tilt: The Last Year of Janis'",
+      "real": false,
+      "fake_note": "I made this one up — Janis's rowdy afterparty reputation and her warm, specific storytelling style make this feel real, and the Aretha name-drop grounds it in her actual world. The giveaway is the comedic punchline structure; Janis's real anecdotes tended to trail off rather than land cleanly."
+    },
+    {
+      "id": "q2",
+      "text": "Over the past forty years I've been loaded on booze, coke, acid, Quaaludes, glue, cough mixture, heroin, Rohypnol, Klonopin, Vicodin, and too many other heavy-duty substances to list in this footnote. On more than a few occasions I was on all of these at the same time.",
+      "speaker": "Ozzy Osbourne",
+      "context": "From a footnote in his 2010 autobiography 'I Am Ozzy' (with Chris Ayres), cataloguing four decades of his own substance abuse.",
+      "real": true,
+      "source": {
+        "title": "Memoir 'I Am Ozzy' (LA Weekly excerpt)",
+        "url": "https://www.laweekly.com/i-am-ozzy-soon-to-be-classic-quotes-from-ozzy-osbournes-upcoming-autobiography/",
+        "date": "2010"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I threw up on a promoter's shoes in Düsseldorf in '72 and the son of a bitch still booked us for the spring tour. That's either loyalty or he didn't look down. Either way, I respect the man.",
+      "speaker": "John Bonham",
+      "context": "Backstage interview with NME journalist Nick Kent at the Earl's Court Arena, London, May 1975",
+      "real": false,
+      "fake_note": "I made this one up — Bonham's infamous road-chaos reputation makes this completely plausible, and Kent did conduct real NME access pieces around that era. The giveaway is 'I respect the man' — Bonham's actual recorded speech was blunter and less wryly appreciative."
+    },
+    {
+      "id": "q4",
+      "text": "I think weed is the best drug on earth. One time I smoked a joint with peyote in it, and I saw a wolf howling at the moon. Hollywood is a coke town, but weed is so much better. And molly, too. Those are happy drugs – social drugs. They make you want to be with friends. You're out in the open. You're not in a bathroom. I really don't like coke. It's so gross and so dark. It's like what are you, from the Nineties? Ew.",
+      "speaker": "Miley Cyrus",
+      "context": "Miley Cyrus ranking her drug preferences in her September 2013 Rolling Stone cover story, calling weed and molly 'happy drugs' and dismissing cocaine as dated.",
+      "real": true,
+      "source": {
+        "title": "Miley Cyrus: 'Weed Is the Best Drug on Earth' (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "A couple nights ago, I was licking jelly off my boyfriend's penis. And I thought, \"Oh my God — I'm turning into my mother!\"",
+      "speaker": "Sarah Silverman",
+      "context": "From her 2005 stand-up special \"Sarah Silverman: Jesus Is Magic.\" Her signature sweet-faced delivery lands a graphic sex image as the setup, with the punchline being the realization she's inheriting her mother's habits.",
+      "real": true,
+      "source": {
+        "title": "'Jesus Is Magic' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0422528/quotes/",
+        "date": "2005"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Marriage is a wonderful institution. But who wants to live in an institution? I've said that. Everybody's said that. But I mean it in a dirtier way than most people do.",
+      "speaker": "Groucho Marx",
+      "context": "Appearance on The Dick Cavett Show, ABC Studios, New York, September 1969",
+      "real": false,
+      "fake_note": "I made this one up — the first two sentences are a well-known paraphrase floating around Groucho's era (often misattributed to him anyway), so grounding it with 'I've said that, everybody's said that' sounds exactly like his self-aware meta-humor. The giveaway is the last clause; Groucho's real innuendo was typically more elliptical and never announced itself as dirty."
+    }
+  ]
+}
