@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-26",
+  "edition": 41,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My kids found out I used to have hair and they looked at me like I'd been lying to them for years. Which, technically, I had — I just hadn't brought it up.",
+      "speaker": "Dwayne Johnson",
+      "context": "Appearance on The Ellen DeGeneres Show, Season 18, NBC, October 2020",
+      "real": false,
+      "fake_note": "I made this one up — Johnson leans into his baldness and his dad-life constantly on social media and talk shows, and self-deprecating family humor is basically his whole off-screen brand. This is almost too plausible, which is the point; the tell is the 'technically, I had' turn, which is a bit more verbally precise than his usual style."
+    },
+    {
+      "id": "q2",
+      "text": "The thing about pasta is that it has opinions. You think you're making it, but it's actually informing you about what's missing — more salt, more heat, more patience. I've been corrected by pasta more times than I can count, and I consider that a good life.",
+      "speaker": "Stanley Tucci",
+      "context": "Interview with Nigella Lawson for Waitrose Weekend magazine, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Tucci's entire public persona revolves around Italian food as a near-spiritual practice, and this kind of warm, slightly philosophical food-talk is exactly his register. Watch out though: 'I consider that a good life' nudges toward the tidy aphorism I tried to hide inside specific pasta detail."
+    },
+    {
+      "id": "q3",
+      "text": "It very much whets my appetite for more.",
+      "speaker": "Christopher Nolan",
+      "context": "Interview with The Hollywood Reporter about directing The Odyssey",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Christopher Nolan Says He Would Be “Terrified” to Direct a Romantic Comedy",
+        "url": "https://www.hollywoodreporter.com/movies/movie-news/christopher-nolan-terrified-direct-romantic-comedy-1236656583/",
+        "date": "2026-07-26"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Someone described one of my photos once as 'aggressively quiet' and I've been trying to decide for years whether that's an insult. I think I've landed on: no. I think I'll take it.",
+      "speaker": "Annie Leibovitz",
+      "context": "Lecture at the International Center of Photography, New York, April 2016",
+      "real": false,
+      "fake_note": "I made this one up — Leibovitz often reflects on how critics and subjects respond to her work, and her speaking style is measured and a little guarded, which makes the slow deliberation in this quote feel right. The giveaway is that 'aggressively quiet' is too perfect a phrase — it sounds coined for a quote."
+    },
+    {
+      "id": "q5",
+      "text": "It's hard to lead a cavalry charge if you think you look funny on a horse.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The two-time Democratic presidential nominee and UN ambassador, known for his wit; a characteristically self-deprecating line about self-confidence and self-image.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I thought I looked real cute in my uniform, and then I heard a boy yell from the bleachers, 'Make that basket, bird legs.' And my greatest fear is that same guy is somewhere out there in the audience tonight, and he's going to cut me down to size.",
+      "speaker": "Ann Richards",
+      "context": "The Texas governor opening her celebrated 1988 Democratic National Convention keynote with a self-deprecating story about her eighth-grade basketball days.",
+      "real": true,
+      "source": {
+        "title": "Ann Richards, DNC keynote address, 1988 - Speakola",
+        "url": "https://speakola.com/political/ann-richards-dnc-keynote-1988",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

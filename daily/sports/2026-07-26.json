@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-26",
+  "edition": 30,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The hardest thing about losing a game seven is that everyone wants a reason. And sometimes there isn't one. Sometimes you just played a team that was better that night and that's a thing people don't really want to hear.",
+      "speaker": "Scottie Pippen",
+      "context": "Postgame media availability following a Chicago Bulls alumni panel discussion, United Center, Chicago, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Pippen has spoken candidly about pressure and team dynamics throughout his career, and this resigned-but-lucid tone matches his post-playing interview persona well. The tell is the phrase 'that's a thing people don't really want to hear' — his real voice in this mode tends to be slightly more pointed, usually with a subject (fans, media) attached."
+    },
+    {
+      "id": "q2",
+      "text": "I've coached a lot of guys who were afraid of the ball at the end of games. Not afraid in a cowardly way — afraid the way you're afraid of something you want too badly. Kobe was never that. He wanted it so much it almost scared me sometimes.",
+      "speaker": "Phil Jackson",
+      "context": "Recorded conversation featured in the ESPN Films documentary series, August 2020",
+      "real": false,
+      "fake_note": "I made this one up — Jackson's real interviews are full of psychological framing around desire and fear, and his Kobe reflections are well-documented. The slight tell is 'it almost scared me' — Jackson's real voice is more oblique and would likely land this via a metaphor rather than a direct admission."
+    },
+    {
+      "id": "q3",
+      "text": "Resignations are for prime ministers and those caught with their trousers down, not for me",
+      "speaker": "Brian Clough",
+      "context": "The legendary English football manager on his refusal to quit, in a collection of his most memorable one-liners.",
+      "real": true,
+      "source": {
+        "title": "Sky Sports — Brian Clough in quotes: Fifteen of the legendary manager's most memorable one-liners",
+        "url": "https://www.skysports.com/football/news/11689/9642762/brian-clough-fifteen-of-the-legendary-managers-most-memorable-one-liners",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "It's like going to a bar and falling in love every year. That's what it is. You fall in love and get your heart broken, fall in love, get your heart broken.",
+      "speaker": "Doc Rivers",
+      "context": "The veteran NBA head coach on the recurring emotional toll of chasing a championship each season.",
+      "real": true,
+      "source": {
+        "title": "Andscape — Doc Rivers and the heartbreak of being an NBA head coach",
+        "url": "https://andscape.com/features/doc-rivers-and-the-heartbreak-of-being-an-nba-head-coach/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Serena used to do this thing in warmup where she'd hit everything at like sixty percent and look completely bored, and then you'd see her eyes kind of switch on and you knew. That was when I'd go talk to my coach, not because I had anything to say, just to not be looking at her.",
+      "speaker": "Caroline Wozniacki",
+      "context": "Interview with Chris Fowler on Tennis Channel's The Match Room, French Open broadcast week, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Wozniacki has spoken warmly and candidly about Serena for years and her interviews have this exact slightly wry, observational quality. The tell is the specificity of 'go talk to my coach' as a psychological dodge; it's plausible but just a hair too self-aware to have been said this neatly in real time."
+    },
+    {
+      "id": "q6",
+      "text": "It was an interesting game - two different halves",
+      "speaker": "Regis Le Bris",
+      "context": "Sunderland manager after 4-2 friendly loss to Liverpool, US tour pre-season",
+      "real": true,
+      "source": {
+        "title": "Sports — Le Bris happy with progress despite defeat to Liverpool",
+        "url": "https://sports.yahoo.com/articles/le-bris-happy-progress-despite-082945132.html",
+        "date": "2026-07-26"
+      }
+    }
+  ]
+}

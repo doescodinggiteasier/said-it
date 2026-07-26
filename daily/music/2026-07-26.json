@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-26",
+  "edition": 33,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's a version of 'Blue' that almost had fiddle on it. I fought against it — I think I actually used the word 'no' about eight times in a row, which is not really my way — and I still think about that whenever I hear the record. Just this ghost of a fiddle that nobody else can hear.",
+      "speaker": "Joni Mitchell",
+      "context": "Spoken during a Q&A session following a screening of Joni Mitchell: Both Sides Now at TIFF, Toronto, September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Joni's reflections on the making of Blue are well-documented and she famously had strong instincts about what didn't belong on that record. The giveaway is that there's no credible archival evidence of a fiddle arrangement being seriously considered; I invented the detail entirely."
+    },
+    {
+      "id": "q2",
+      "text": "I always said I was a genius, but nobody listened",
+      "speaker": "Morrissey",
+      "context": "Unseen teenage letters written by Morrissey, going up for auction",
+      "real": true,
+      "source": {
+        "title": "Music — Morrissey’s unseen teenage letters predicting he would become a “rock ’n’ roll s",
+        "url": "https://www.nme.com/news/music/morrisseys-unseen-teenage-letters-predicting-he-would-become-a-rock-n-roll-star-are-going-up-for-auction-3958971?utm_source=rss&utm_medium=rss&utm_campaign=morrisseys-unseen-teenage-letters-predicting-he-would-become-a-rock-n-roll-star-are-going-up-for-auction",
+        "date": "2026-07-26"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The music always precedes the words. The words often come from the sound of the music and eventually evolve into coherent thoughts. Or incoherent thoughts.",
+      "speaker": "Paul Simon",
+      "context": "Describing his music-first songwriting process in an American Songwriter interview tied to his Songwriter collection.",
+      "real": true,
+      "source": {
+        "title": "American Songwriter — Interview: Paul Simon Discusses Songwriter And Songwriting",
+        "url": "https://americansongwriter.com/interview-paul-simon-discusses-songwriter-and-songwriting/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My manager called me the morning 'Hotline Bling' charted and I genuinely thought he was messing with me. I made that song in like an afternoon. An afternoon! Some of the things I've agonized over for months haven't done a fraction of what that record did. I've made peace with it. Mostly.",
+      "speaker": "Drake",
+      "context": "Interview with Elliott Wilson for CRWN, recorded live at Brooklyn Steel, New York, October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Drake is famously candid about the unpredictability of which records connect, and the rueful self-awareness here matches his public tone exactly. The subtle giveaway is 'an afternoon,' which overstates the spontaneity; the track's production involved Noah '40' Shebib over a longer process."
+    },
+    {
+      "id": "q5",
+      "text": "I don't listen back to old albums as much as people assume. Every now and then one comes on somewhere — a shop, a car — and I'll catch myself going, oh that bit is actually decent, and then something else will happen in the song and I'll just leave the room. That's just how it works for me.",
+      "speaker": "Thom Yorke",
+      "context": "Interview with Elizabeth Sankey for Crack Magazine, Issue 113, published November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Thom's ambivalence about Radiohead's back catalog is well-established and he speaks about it in exactly this understated, half-resigned register. The subtle giveaway is the mildly warm 'oh that bit is actually decent,' which is slightly more generous than his usual self-assessment."
+    },
+    {
+      "id": "q6",
+      "text": "I remember sitting in the back of a tour bus somewhere between Tulsa and nowhere, and I had this little four-track recorder, and I just kept laying down the same bassline over and over because I thought — I genuinely thought — that if I got it wrong one more time, the whole song would just collapse. Like it was a living thing that could die.",
+      "speaker": "Stevie Wonder",
+      "context": "Interview with Questlove for the Red Bull Music Academy Lecture Series, Chicago, 2014",
+      "real": false,
+      "fake_note": "I made this one up — Stevie's well-documented love of obsessive studio process and his tactile, intuitive approach to composition make this feel completely at home. The subtle giveaway is that Stevie famously works in proper studios and has rarely used a four-track; the tour-bus detail is a little too lo-fi for his actual workflow."
+    }
+  ]
+}

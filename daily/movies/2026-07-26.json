@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-26",
+  "edition": 38,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You want to know what's funny? I don't even like boats.",
+      "speaker": "Jaws (1975)",
+      "context": "Quint, griping to Brody below deck before a night watch",
+      "real": false,
+      "fake_note": "I made this one up — it fits Quint's gruff, self-deprecating manner and the film's habit of deflating tension with dry character beats. The subtle giveaway is that it's a little too neatly ironic for Quint, who tends toward bravado rather than this kind of wry self-revelation."
+    },
+    {
+      "id": "q2",
+      "text": "Last time I checked, fair didn't pay the rent.",
+      "speaker": "The Departed (2006)",
+      "context": "Frank Costello, dismissing a complaint from one of his men",
+      "real": false,
+      "fake_note": "I made this one up — Costello speaks in these short, menacing little pronouncements, and Nicholson delivers them with that loose, amused contempt. The subtle giveaway is that it's slightly tidier and more general than Costello's actual lines, which usually have a stranger, more personal edge."
+    },
+    {
+      "id": "q3",
+      "text": "Toto, I've a feeling we're not in Kansas anymore.",
+      "speaker": "The Wizard of Oz (1939)",
+      "context": "Dorothy, having landed in the strange new world of Oz after the tornado, says this to her dog Toto.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "There is a point at which a question becomes an accusation, Mr. Anderson.",
+      "speaker": "The Matrix (1999)",
+      "context": "Agent Smith, leaning across a table during the interrogation sequence",
+      "real": false,
+      "fake_note": "I made this one up — Smith speaks in this formal, silky-menacing register and uses Neo's real name as a small power move. The giveaway is that Smith's actual lines in the interrogation are slightly stranger and more philosophical; this is plausible but a touch too procedurally threatening."
+    },
+    {
+      "id": "q5",
+      "text": "The world is a business, Mr. Beale. It has been since man crawled out of the slime.",
+      "speaker": "Network (1976)",
+      "context": "Corporate chairman Arthur Jensen (Ned Beatty) delivering his boardroom sermon to news anchor Howard Beale (Peter Finch).",
+      "real": true,
+      "source": {
+        "title": "Network (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Network_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've had the same dream three nights running and I still don't know what it means.",
+      "speaker": "Vertigo (1958)",
+      "context": "Scottie Ferguson, confiding in Midge in her apartment",
+      "real": false,
+      "fake_note": "I made this one up — it fits Scottie's brooding introspection and Hitchcock's recurring interest in dreams and obsession. The giveaway is that the film keeps Scottie's psychological state more visually implicit; he rarely narrates his inner life this directly."
+    }
+  ]
+}

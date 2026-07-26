@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-26",
+  "edition": 33,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't have a type. That's a lie people tell to sound unpredictable. Everybody has a type. My type is someone who doesn't ask me questions before nine AM. That's it. That's the whole list. If you can hold it until nine, we have a future.",
+      "speaker": "Humphrey Bogart",
+      "context": "Informal remarks recorded at the Rat Pack table, Villa Capri restaurant, Hollywood, transcribed in Sheilah Graham's syndicated column, November 1956",
+      "real": false,
+      "fake_note": "I made this one up — Bogart's clipped, put-upon romanticism and the Villa Capri as a known gathering spot for that crowd makes this feel plausible. The giveaway is the punchline structure 'we have a future' — Bogart's real wit was more fatalistic and less warmly comedic than this."
+    },
+    {
+      "id": "q2",
+      "text": "People think performing is the hard part. The hard part is the hour after. You come off stage and your entire body is convinced you are still the most important person on earth and then you're standing in a parking structure looking for a shuttle. That is a hard landing, my friend.",
+      "speaker": "Bill Hicks",
+      "context": "Post-show Q&A, Laff Stop, Austin, Texas, recorded for the archive later released as Dangerous: Live at the Laff Stop, 1990",
+      "real": false,
+      "fake_note": "I made this one up — Hicks's habit of undercutting his own grandiosity and his eye for the mundane humiliation inside showbiz are well-established. The giveaway is 'my friend' as a closer — Hicks addressed his audience more as 'people' or 'folks' and rarely used that direct intimate tag."
+    },
+    {
+      "id": "q3",
+      "text": "It's quite valuable to have the courage and the confidence to say, 'No, fuck off, leave me alone, thank you very much.'",
+      "speaker": "Helen Mirren",
+      "context": "In a 2013 Daily Mail interview, the Oscar-winning actress said that if she'd had a daughter, \"fuck off\" is the first phrase she would have taught her, to give her the confidence to set boundaries.",
+      "real": true,
+      "source": {
+        "title": "Daily Mail interview (Christian Today report)",
+        "url": "https://www.christiantoday.com/news/helen-mirren-advice-to-daughter-unconventional-brutally-honest",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Do I think about my dick? Oh, yeah, all the time. If I think about it all the time, I got a right to sing about it. If I wasn't thinking about it all the time but thought, \"It's time to write a rock song, I'd better mention my dick,\" then I wouldn't even be able to say \"dick\" right.",
+      "speaker": "Iggy Pop",
+      "context": "Defending the sexual content of his lyrics (the song \"Trollin'\" from The Weirdness) in his 2007 Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "Iggy Pop: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/iggy-pop-the-rolling-stone-interview-2-78680/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I left the Rocking Vicars, thinking I was going to be a star in my own right immediately. Everything was going to be wonderful and huge women would get a hold of me and do things to me with raw carrots — you know, shit like that.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Recalling his youthful rock-star fantasies after leaving an early band (the Rockin' Vickers), in his memoir White Line Fever: The Autobiography (2002).",
+      "real": true,
+      "source": {
+        "title": "Goodreads — quotes from White Line Fever: The Autobiography",
+        "url": "https://www.goodreads.com/work/quotes/310228-white-line-fever-the-autobiography",
+        "date": "2002"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Here's what Vegas is: it's the only city where you can lose three grand, eat a steak the size of your face at two in the morning, and still feel like you won something. That's engineering. Somebody sat down and engineered that feeling. I respect it. I hate it. I respect it.",
+      "speaker": "Sam Kinison",
+      "context": "Backstage recording prior to his performance at Bally's Las Vegas, transcribed for the Penthouse comedy supplement, March 1989",
+      "real": false,
+      "fake_note": "I made this one up — Kinison's love-hate relationship with excess and his signature doubling-back rhetorical structure ('I respect it. I hate it.') fit perfectly. The giveaway is it's slightly too self-aware; Sam tended to go louder and more unhinged rather than doing this wry engineering metaphor."
+    }
+  ]
+}

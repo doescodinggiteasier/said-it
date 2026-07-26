@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-26",
+  "edition": 29,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People always ask if I miss being governor. I tell them the truth: I miss the office. The actual office — big desk, good chair. The job itself I can take or leave.",
+      "speaker": "Chris Christie",
+      "context": "Remarks at a Politico Playbook breakfast event in Washington, D.C., October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Chris Christie's blunt, self-deprecating humor about his own political career is one of his most recognizable traits, and this lands right in that zone. The tell is he'd almost certainly name a specific thing about New Jersey governance he genuinely misses, rather than keeping it this vague and tidy."
+    },
+    {
+      "id": "q2",
+      "text": "I thought I looked real cute in my uniform, and then I heard a boy yell from the bleachers, 'Make that basket, bird legs.' And my greatest fear is that same guy is somewhere out there in the audience tonight, and he's going to cut me down to size.",
+      "speaker": "Ann Richards",
+      "context": "The Texas governor opening her celebrated 1988 Democratic National Convention keynote with a self-deprecating story about her eighth-grade basketball days.",
+      "real": true,
+      "source": {
+        "title": "Ann Richards, DNC keynote address, 1988 - Speakola",
+        "url": "https://speakola.com/political/ann-richards-dnc-keynote-1988",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I have been in rooms where very important decisions were being made, and I can tell you with complete confidence that the snack situation is never adequately planned for. Ever. Someone always runs out of water.",
+      "speaker": "Condoleezza Rice",
+      "context": "Conversation with David Axelrod on The Axe Files podcast, recorded at the University of Chicago Institute of Politics, February 2024",
+      "real": false,
+      "fake_note": "I made this one up — Condi has a well-known gift for disarming humor about the mundane logistics behind high-stakes diplomacy, and she's deployed this kind of dry observation in public before. The giveaway is she'd likely anchor it to a real room — the Situation Room, a particular summit — rather than leaving it floating and abstract."
+    },
+    {
+      "id": "q4",
+      "text": "An old friend of mine once told me, you know, just be yourself - unless you suck.",
+      "speaker": "John Kennedy",
+      "context": "Republican U.S. Senator from Louisiana, known for his folksy one-liners, sharing a piece of self-deprecating advice. He used the line in a Jan. 25, 2018 Fox News interview. Innocuous and funny, with no target or policy edge.",
+      "real": true,
+      "source": {
+        "title": "15 times Sen. John Kennedy got folksy, snarky or both | nola.com",
+        "url": "https://www.nola.com/news/15-times-sen-john-kennedy-got-folksy-snarky-or-both/article_7fb01151-5776-54f2-a04f-49ffeb4d0447.html",
+        "date": "2018-01-25"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've read every version of this bill. The original, the amendment, the amendment to the amendment — at some point I called my staff and said, look, just tell me what page the commas stopped making sense, and we'll start there.",
+      "speaker": "Bernie Sanders",
+      "context": "Interview with Vermont Public Radio, recorded during the Senate budget reconciliation debate, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Bernie's reputation for deep-diving into legislative text and his exasperated relationship with Senate procedure makes this feel completely natural. The subtle giveaway is that he'd more likely name the specific bill and why it's a disaster for working families, not just trail off into comma jokes."
+    },
+    {
+      "id": "q6",
+      "text": "My favorite part of any town hall is the moment someone asks a question that's really three questions, and they know it, and I know it, and we both just kind of nod and agree to pretend it was one.",
+      "speaker": "Pete Buttigieg",
+      "context": "Appearance on Pod Save America, recorded in Chicago ahead of a transportation infrastructure announcement, March 2024",
+      "real": false,
+      "fake_note": "I made this one up — Pete's wry, professorial humor about the mechanics of public engagement is well-documented, and this fits his cadence perfectly. The giveaway is he tends to pivot quickly back to policy specifics rather than letting the self-deprecating observation just sit there."
+    }
+  ]
+}
