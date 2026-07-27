@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-27",
+  "edition": 31,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't think I'll be legally able to drive.",
+      "speaker": "Robert MacIntyre",
+      "context": "Scottish golfer MacIntyre, joking with reporters right after winning the 2024 Genesis Scottish Open, explaining he planned to celebrate so hard he might not make his next-day press conference at Royal Troon ahead of the Open Championship.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — Robert MacIntyre rallies for historic win at Scottish Open",
+        "url": "https://sports.yahoo.com/robert-macintyre-rallies-for-historic-win-at-scottish-open-the-home-event-hes-cared-about-most-013046981.html",
+        "date": "2024-07-16"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "This is the only rule I'm going to have for yous all season: 'team first'",
+      "speaker": "Gary Caldwell",
+      "context": "Wigan Athletic pre-season team meeting at Christopher Park training ground",
+      "real": true,
+      "source": {
+        "title": "Sports — Teamwork, tactics and data: behind the scenes at Wigan’s pre-season training",
+        "url": "https://www.theguardian.com/football/2026/jul/26/teamwork-tactics-and-data-behind-the-scenes-at-wigans-pre-season-training",
+        "date": "2026-07-27"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what my pre-game meal is like, and honestly it changes every week. Last week I had a bowl of oatmeal and played terribly. Week before that I had a cheeseburger and threw for three-twenty. I've stopped trying to find the pattern.",
+      "speaker": "Aaron Rodgers",
+      "context": "The Pat McAfee Show, ESPN, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Rodgers genuinely talks about nutrition and rituals with this kind of wry self-awareness, and the cheeseburger detail sounds exactly like his deadpan humor. The giveaway is that he'd almost certainly still credit some metaphysical framework for his preparation rather than shrugging it off entirely."
+    },
+    {
+      "id": "q4",
+      "text": "My English when I first came to Manchester — I understood more than people thought I did. That was useful. You learn a lot when everyone assumes you can't follow the conversation.",
+      "speaker": "Eric Cantona",
+      "context": "The Guardian Football Weekly podcast, November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Cantona's reflective, slightly cryptic self-mythology is exactly this: the outsider who observed more than he let on. It sounds entirely plausible given his documented intelligence and mystique. The giveaway is the podcast format — Cantona tends toward longer-form print interviews rather than audio sit-downs."
+    },
+    {
+      "id": "q5",
+      "text": "What Carew does with a football, I can do with an orange.",
+      "speaker": "Zlatan Ibrahimovic",
+      "context": "Swedish soccer star's cocky teenage retort to fellow striker John Carew, who had dismissed Zlatan's tricks and flicks as pointless. Said in the Norwegian tabloid VG in April 2002. A classic surprising, deadpan brag.",
+      "real": true,
+      "source": {
+        "title": "Zlatan Ibrahimovic - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Zlatan_Ibrahimovi%C4%87",
+        "date": "2002-04-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My dad used to say I had no business being in the water. Too skinny, too slow off the blocks. I think about that a lot during warm-ups, not in a bad way — more like, okay, let's go through this again.",
+      "speaker": "Michael Phelps",
+      "context": "Interview with Bob Costas for NBC Sports, ahead of the 2016 Rio Olympics",
+      "real": false,
+      "fake_note": "I made this one up — Phelps has spoken extensively about his father and family dynamics, and this has the reflective, slightly unresolved tone he tends to use in longer sit-downs. The subtle tell is that Phelps's father was largely absent from his life, so 'my dad at poolside' doesn't quite square with what he's actually described."
+    }
+  ]
+}

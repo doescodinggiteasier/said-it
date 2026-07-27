@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-27",
+  "edition": 34,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I blew $20 million. I snorted my Porsche. I snorted my plane. I snorted my house in that din of drugs and booze and being lost.",
+      "speaker": "Steven Tyler",
+      "context": "Tallying up what his cocaine habit cost him, in his 2011 rock memoir \"Does the Noise in My Head Bother You?\"",
+      "real": true,
+      "source": {
+        "title": "Memoir 'Does the Noise in My Head Bother You?' (NME report)",
+        "url": "https://www.nme.com/news/music/aerosmith-49-1294445",
+        "date": "2011"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "We checked into the hotel, and I told the front desk girl, 'I need a room, a bucket of ice, and an understanding that whatever you hear from the fourth floor is NOT for the police, it's for the autobiography.' She upgraded us for free.",
+      "speaker": "Hunter S. Thompson",
+      "context": "High Times Festival of Life panel, Felt Forum, New York City, October 1976",
+      "real": false,
+      "fake_note": "I made this one up — the hyperbolic escalation, the parenthetical aside, and the absurd payoff are straight Gonzo cadence; Thompson told a half-dozen structurally identical hotel-check-in stories across his career. The giveaway is the free upgrade punchline — too neat; real Thompson anecdotes usually ended in property damage or a lawsuit threat, not a reward."
+    },
+    {
+      "id": "q3",
+      "text": "Little Miss Muffet sat on a tuffet, eating her curds and whey. Along came a spider, he sat down beside her, he said, \"Hey, what's in the bowl, bitch?\"",
+      "speaker": "Andrew Dice Clay",
+      "context": "A signature filthy nursery-rhyme parody from his late-'80s/early-'90s arena act; crowds would shout the punchlines back. Popularized on his stand-up specials and documented in VICE's piece on his nursery rhymes.",
+      "real": true,
+      "source": {
+        "title": "Stand-up act (Vice feature)",
+        "url": "https://www.vice.com/en/article/did-andrew-dice-clay-steal-his-iconic-nursery-rhymes-from-other-successful-entertainers/",
+        "date": "2018"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "A guy came up to me in Nashville and said, 'Don't you ever get tired of being you?' I said, 'Son, I get tired of being me before breakfast. That's what the bus is for.'",
+      "speaker": "Waylon Jennings",
+      "context": "Austin City Limits Season 4 episode, KLRU-TV Studios, Austin, Texas, taped November 1979",
+      "real": false,
+      "fake_note": "I made this one up — Waylon's plainspoken existential weariness and the 'Son' address fit his interviews perfectly; he had real contempt for the Nashville machine that comes through here. The giveaway is the 'before breakfast' is a bit of a comic formula move, and Waylon's real answers were longer and more circuitously angry."
+    },
+    {
+      "id": "q5",
+      "text": "Someone asked me backstage, 'How do you wind down after a show?' Wind down? I just screamed for two hours at seventeen thousand people, honey. Winding down is not a thing I do. Winding sideways, maybe.",
+      "speaker": "Freddie Mercury",
+      "context": "Rockline radio broadcast, taped live at Capitol Records Studios, Hollywood, September 1982",
+      "real": false,
+      "fake_note": "I made this one up — the 'honey,' the theatricality, and the absurd pivot to 'winding sideways' all match Mercury's campy, quick wit in interviews. The giveaway is 'winding sideways' is almost too quotable; real Mercury went longer and wilder before landing a joke."
+    },
+    {
+      "id": "q6",
+      "text": "I once told a heckler, 'Sir, I have been thrown out of better places than this, and I am currently standing in one of them.' He bought me a drink after. That's how you win.",
+      "speaker": "Dean Martin",
+      "context": "The Tonight Show Starring Johnny Carson, NBC Studios, Burbank, broadcast March 3, 1966",
+      "real": false,
+      "fake_note": "I made this one up — the languid club-comic confidence and the specific 'he bought me a drink' coda are pure Dino persona. The giveaway is 'That's how you win' — Martin almost never explained his own jokes; real Dean just let the silence do the work."
+    }
+  ]
+}

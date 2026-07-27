@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-27",
+  "edition": 30,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Sometimes you have to kill a few chickens to scare the monkeys",
+      "speaker": "John Kennedy",
+      "context": "Sen. John Kennedy (R-La.) on Sunday discussing Trump's strikes on Iran",
+      "real": true,
+      "source": {
+        "title": "Politics — Sen. Kennedy says Trump likes daily strikes on Iran: 'Sometimes you have to kill",
+        "url": "https://thehill.com/homenews/administration/5991027-senator-kennedy-supports-iran-strikes/",
+        "date": "2026-07-27"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've given a lot of speeches in a lot of cold gymnasiums, and I will tell you — the folding chair is the great equalizer. Doesn't matter who you are. After forty minutes, everyone is shifting.",
+      "speaker": "Bernie Sanders",
+      "context": "Conversation with Ezra Klein on The Ezra Klein Show, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Sanders's campaign trail weariness and his habit of invoking ordinary, unglamorous physical details make this feel completely authentic. The giveaway is the gentle humor; Sanders rarely pauses for a punchline quite this specific and observational."
+    },
+    {
+      "id": "q3",
+      "text": "It's hard to lead a cavalry charge if you think you look funny on a horse.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The two-time Democratic presidential nominee and UN ambassador, known for his wit; a characteristically self-deprecating line about self-confidence and self-image.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People ask me what the hardest part of being Speaker is. I usually say 'counting.' And I mean that more literally than they realize.",
+      "speaker": "Nancy Pelosi",
+      "context": "Interview with Kara Swisher on the Sway podcast, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi is legendary for vote-counting and often references it with pride, so this lands squarely in her wheelhouse. The tell is the slight self-deprecating pivot; Pelosi in real interviews tends to be more declarative and less openly wry about the process."
+    },
+    {
+      "id": "q5",
+      "text": "I'll confess that the first time I testified before the Senate, I counted the ceiling tiles. There are a lot of them. It is a coping strategy I recommend.",
+      "speaker": "Ben Bernanke",
+      "context": "Remarks at the Brookings Institution event 'Ten Years After the Crisis,' Washington, D.C., September 2018",
+      "real": false,
+      "fake_note": "I made this one up — Bernanke is famously soft-spoken and has acknowledged the stress of Congressional testimony, so nervous deflection via deadpan detail fits him precisely. The giveaway is the self-deprecating punchline delivery; Bernanke's public humor is usually even more understated and embedded in data rather than physical comedy."
+    },
+    {
+      "id": "q6",
+      "text": "I'll be honest with you — I had three briefings on the debt ceiling last week, and by the third one I was genuinely unsure whether I was the one explaining it or having it explained to me.",
+      "speaker": "Janet Yellen",
+      "context": "Remarks at the Economic Club of Washington, D.C., April 2023",
+      "real": false,
+      "fake_note": "I made this one up — Yellen is famous for her dry, self-deprecating humor about the complexity of fiscal mechanics, and this fits her 'professorial but humble' register perfectly. The subtle giveaway is that she'd almost never volunteer that kind of public uncertainty about her own grasp of a process she literally oversaw."
+    }
+  ]
+}

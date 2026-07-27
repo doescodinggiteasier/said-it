@@ -1,0 +1,65 @@
+{
+  "date": "2026-07-27",
+  "edition": 39,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Is this testing whether I'm a Replicant or a lesbian, Mr. Deckard?",
+      "speaker": "Blade Runner (1982)",
+      "context": "Rachael (Sean Young) to Rick Deckard (Harrison Ford) during her Voight-Kampff test at the Tyrell Corporation, early in the film.",
+      "real": true,
+      "source": {
+        "title": "Blade Runner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Blade_Runner",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I never said it was yours. I said it was in your house.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes deflecting during a tense confrontation over evidence",
+      "real": false,
+      "fake_note": "I made this one up — the hair-splitting legalism is pure Gittes, a man who survives on technical distinctions, and the clipped rhythm matches Roman Polanski's neo-noir economy. The giveaway is that the line resolves its own tension a little too cleanly; real Chinatown dialogue usually leaves things more uncomfortably open."
+    },
+    {
+      "id": "q3",
+      "text": "I've seen men beg for less than what you're asking me to forget.",
+      "speaker": "LA Confidential (1997)",
+      "context": "Captain Dudley Smith quietly warning Bud White to drop an inquiry",
+      "real": false,
+      "fake_note": "I made this one up — Dudley Smith's velvety menace and the implication of violence behind polished syntax is dead-on for James Cromwell's performance, and the line sits perfectly in the film's corrupt-institution atmosphere. The giveaway is the word 'forget,' which tips the hand slightly; Smith in the film tends to reframe demands as favors rather than admitting there's anything to suppress."
+    },
+    {
+      "id": "q4",
+      "text": "Have you a valediction, boyo?",
+      "speaker": "L.A. Confidential (1997)",
+      "context": "Captain Dudley Smith (James Cromwell) to Jack Vincennes (Kevin Spacey), moments before shooting him.",
+      "real": true,
+      "source": {
+        "title": "L.A. Confidential (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/L.A._Confidential_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "You know what the worst part is? I actually liked him.",
+      "speaker": "The Usual Suspects (1995)",
+      "context": "Kujan muttering after a realization, possibly to himself or a colleague",
+      "real": false,
+      "fake_note": "I made this one up — the deflated, almost embarrassed admission fits the film's sustained atmosphere of misplaced trust, and Kujan's voice in particular is built around overconfident certainty crumbling. The giveaway is timing: the film delivers its gut-punch visually at the end, so a line like this would diminish the impact the screenplay carefully protects."
+    },
+    {
+      "id": "q6",
+      "text": "I feel the need... the need for speed!",
+      "speaker": "Top Gun (1986)",
+      "context": "Maverick (Tom Cruise) and Goose (Anthony Edwards) say it together, high-fiving as they get pumped up to fly.",
+      "real": true
+    }
+  ]
+}

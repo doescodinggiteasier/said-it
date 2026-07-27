@@ -70,7 +70,7 @@
 "the apartment  1960": "2026-07-01",
 "this is spinal tap  1984": "2026-07-01",
 "star wars  episode v   the empire strikes back  1980": "2026-07-01",
-"chinatown 1974": "2026-07-23",
+"chinatown 1974": "2026-07-27",
 "kramer vs kramer 1979": "2026-07-02",
 "the godfather 1972": "2026-07-16",
 "casablanca 1942": "2026-07-19",
@@ -80,7 +80,7 @@
 "the social network 2010": "2026-07-24",
 "fargo 1996": "2026-07-13",
 "jaws 1975": "2026-07-26",
-"l a confidential 1997": "2026-07-03",
+"l a confidential 1997": "2026-07-27",
 "network 1976": "2026-07-26",
 "the departed 2006": "2026-07-26",
 "taken 2008": "2026-07-04",
@@ -89,9 +89,9 @@
 "black hawk down 2001": "2026-07-04",
 "pulp fiction 1994": "2026-07-15",
 "eternal sunshine of the spotless mind 2004": "2026-07-05",
-"blade runner 1982": "2026-07-05",
+"blade runner 1982": "2026-07-27",
 "airplane 1980": "2026-07-15",
-"top gun 1986": "2026-07-05",
+"top gun 1986": "2026-07-27",
 "goodfellas 1990": "2026-07-23",
 "no country for old men 2007": "2026-07-13",
 "sunset boulevard 1950": "2026-07-14",
@@ -174,5 +174,7 @@
 "the breakfast club 1985": "2026-07-24",
 "willy wonka the chocolate factory 1971": "2026-07-24",
 "the matrix 1999": "2026-07-26",
-"vertigo 1958": "2026-07-26"
+"vertigo 1958": "2026-07-26",
+"la confidential 1997": "2026-07-27",
+"the usual suspects 1995": "2026-07-27"
 }

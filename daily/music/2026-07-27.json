@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-27",
+  "edition": 34,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Country radio in the nineties would play you if you sounded like the guy before you. And that was fine until it wasn't, until you'd been the guy before you so many times you couldn't remember what your own voice sounded like without the reverb they put on it.",
+      "speaker": "Garth Brooks",
+      "context": "Interview with Dan Rather on The Big Interview, AXS TV, Season 4, 2017",
+      "real": false,
+      "fake_note": "I made this one up — Garth has talked candidly about the pressures of mainstream country formatting and his eventual retreat from the industry in the late nineties, and this captures his reflective, slightly wistful register perfectly. The giveaway is the repeated 'before you' construction, which is a little too rhetorically deliberate for natural speech."
+    },
+    {
+      "id": "q2",
+      "text": "You can call me a hypocrite, I don't mind",
+      "speaker": "Charli XCX",
+      "context": "Releasing B-sides on iTunes after saying she wouldn't put them on streaming",
+      "real": true,
+      "source": {
+        "title": "Music — Charli XCX “begrudgingly” releases ‘Music, Fashion, Film’ B-Sides on iTunes",
+        "url": "https://www.nme.com/news/music/charli-xcx-begrudgingly-releases-music-fashion-film-b-sides-edition-on-itunes-3959109?utm_source=rss&utm_medium=rss&utm_campaign=charli-xcx-begrudgingly-releases-music-fashion-film-b-sides-edition-on-itunes",
+        "date": "2026-07-27"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've been in rooms where there's a piano and a genius and somehow the genius is the problem. The piano's just sitting there waiting to do its job, completely patient, and this person is throwing cigarettes at it. I have been that person.",
+      "speaker": "Elton John",
+      "context": "Live on-stage conversation with Brandi Carlile at the 2022 Joni Mitchell MusiCares Person of the Year tribute, Los Angeles",
+      "real": false,
+      "fake_note": "I made this one up — Elton's self-roasting candor about his difficult studio years is well-documented, and this has his exact rhythm of building to a self-implicating punchline. The cigarettes detail is plausible but just slightly too theatrical to be verbatim."
+    },
+    {
+      "id": "q4",
+      "text": "When I started nobody was checking for a woman who played her own instruments and wrote about actual things that happened to her. They wanted a vibe. A look. I just kept showing up with songs until that became the look.",
+      "speaker": "Sheryl Crow",
+      "context": "Interview with Zane Lowe on Apple Music 1, September 2022, promoting the documentary 'Sheryl'",
+      "real": false,
+      "fake_note": "I made this one up — Sheryl has spoken often about fighting to be taken seriously as a songwriter in the early nineties, and this phrasing captures her dry, understated toughness. The slight giveaway is 'until that became the look,' which is a bit more polished and quotable than her typically looser conversational style."
+    },
+    {
+      "id": "q5",
+      "text": "There's a version of 'Purple Rain' where the guitar solo is about forty seconds shorter and I used to have the tape somewhere. Every time I thought about releasing it I'd listen back and think, no, the song knows something I don't.",
+      "speaker": "Prince",
+      "context": "Interview with Tavis Smiley, PBS, originally broadcast April 2014",
+      "real": false,
+      "fake_note": "I made this one up — Prince gave rare, cryptic insights into his vast unreleased vault in his PBS interviews, and the idea of the song having its own knowledge is exactly the kind of mystical but undefended claim he would make without elaborating. The tell is 'the song knows something I don't,' which is almost too perfectly Prince-like to be accidental."
+    },
+    {
+      "id": "q6",
+      "text": "You might be ingraining into your practise something that is counter productive and you'd have no way of knowing it.",
+      "speaker": "Steve Albini",
+      "context": "Warning aspiring engineers why doing 'whatever random crap you can find' is a trap, in an Audio Media International interview on how to be a better producer.",
+      "real": true,
+      "source": {
+        "title": "Audio Media International — 'You might be doing a bad job and not know it': Steve Albini on how to be a better producer",
+        "url": "https://audiomediainternational.com/you-might-be-doing-a-bad-job-and-not-know-it-steve-albini-on-how-to-be-a-better-producer/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

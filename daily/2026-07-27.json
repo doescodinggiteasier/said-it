@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-27",
+  "edition": 42,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've been wearing the same brand of socks for probably fifteen years. My wife tried to replace them once — bought me a nicer pair, like a gift — and I just quietly put them in the drawer and never touched them. She knows now. You don't mess with the socks.",
+      "speaker": "Tom Hanks",
+      "context": "Interview with Graham Norton on The Graham Norton Show, BBC One, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Hanks has a well-documented habit of talking about mundane personal rituals with this exact self-deprecating warmth, and the domestic detail feels totally lived-in. The subtle giveaway is that the 'wife' story is just a touch too neatly shaped, ending with a punchline beat that real casual anecdotes rarely land so cleanly."
+    },
+    {
+      "id": "q2",
+      "text": "Someone asked me at a conference once what the internet would look like in twenty years and I said I genuinely have no idea, and they looked at me like I'd walked in wearing a trash bag. I think they wanted me to have a slide for it.",
+      "speaker": "Tim Berners-Lee",
+      "context": "Keynote Q&A session at Web Summit, Lisbon, November 2019",
+      "real": false,
+      "fake_note": "I made this one up — Berners-Lee is famously measured and self-effacing about predictions, and he frequently pokes gentle fun at the tech industry's appetite for grand futurism. The tell is 'wearing a trash bag' — it's a slightly too vivid comic image for his typically understated British dry wit, which tends to land softer than that."
+    },
+    {
+      "id": "q3",
+      "text": "The thing nobody tells you about a really long serve streak is that somewhere around day sixty you stop thinking about tennis and start thinking about, like, whether you remembered to call your mother. Your brain just goes somewhere else and your arm keeps doing the job.",
+      "speaker": "Serena Williams",
+      "context": "Conversation with Oprah Winfrey on The Oprah Conversation, Apple TV+, 2021",
+      "real": false,
+      "fake_note": "I made this one up — Serena has spoken extensively about the mental side of her game and the relationship between focus and routine, and this kind of candid, slightly wandering observation fits her interview voice precisely. The giveaway is 'call your mother' — it's a little too universally relatable, where Serena's real specifics tend to be more particular to her own family dynamic."
+    },
+    {
+      "id": "q4",
+      "text": "There's a ramen place near where I grew up in Osaka that I've been eating at since I was probably eight or nine. Every time I go back I order the same bowl and I sit at the same counter seat if it's open and I think — this is why I do what I do. Not a metaphor. I actually just want to eat that bowl of ramen and feel like that kid again.",
+      "speaker": "Hayao Miyazaki",
+      "context": "Translated profile in The New Yorker, published January 13, 2014",
+      "real": false,
+      "fake_note": "I made this one up — Miyazaki has spoken often and specifically about Japanese food, childhood memory, and the sensory roots of his creative drive, and this combines all three in his characteristic concrete, non-mystical way. The tell is 'not a metaphor' — it's doing a little too much work flagging his sincerity, whereas Miyazaki's real quotes tend to simply be literal without announcing it."
+    },
+    {
+      "id": "q5",
+      "text": "I had about two bites because it was straight up chocolate cake, and I can't do that for breakfast.",
+      "speaker": "Katie Ledecky",
+      "context": "Swimmer describing trying the 'infamous' chocolate muffins in the 2024 Paris Olympic Village, as quoted by AOL/People",
+      "real": true,
+      "source": {
+        "title": "Katie Ledecky Says She Tried the 'Infamous' Chocolate Muffins at 2024 Olympics: 'I Can't Do That for Breakfast'",
+        "url": "https://www.aol.com/katie-ledecky-says-she-tried-140000011.html",
+        "date": "2024-08-08"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "An old friend of mine once told me, you know, just be yourself - unless you suck.",
+      "speaker": "John Kennedy",
+      "context": "Republican U.S. Senator from Louisiana, known for his folksy one-liners, sharing a piece of self-deprecating advice. He used the line in a Jan. 25, 2018 Fox News interview. Innocuous and funny, with no target or policy edge.",
+      "real": true,
+      "source": {
+        "title": "15 times Sen. John Kennedy got folksy, snarky or both | nola.com",
+        "url": "https://www.nola.com/news/15-times-sen-john-kennedy-got-folksy-snarky-or-both/article_7fb01151-5776-54f2-a04f-49ffeb4d0447.html",
+        "date": "2018-01-25"
+      }
+    }
+  ]
+}
