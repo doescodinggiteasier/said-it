@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-28",
+  "edition": 35,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember finishing the mix on 'Thriller' at like four in the morning and Michael just sat there in the dark for a minute. Didn't say anything. Then he goes, 'Play it again.' That's when I knew we had something that was going to outlive all of us.",
+      "speaker": "Quincy Jones",
+      "context": "Rolling Stone, 'The Producer: Quincy Jones at 80,' November 2013",
+      "real": false,
+      "fake_note": "I made this one up — Quincy told Thriller stories constantly, and the detail about Michael sitting in silence before asking for a replay sounds exactly like his style of intimate, cinematic recollection. The subtle giveaway: 'outlive all of us' edges toward the tidy aphorism he occasionally fell into, and the specific studio-darkness staging is just a hair too movie-ready."
+    },
+    {
+      "id": "q2",
+      "text": "People ask me why I keep touring and I genuinely don't have a clean answer. I tried staying home for a few months once and I started reorganizing my guitars by neck radius, which tells you everything about my mental state when I'm not on the road.",
+      "speaker": "John Mayer",
+      "context": "Broken Record Podcast with Rick Rubin, Episode 212, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — John Mayer is famous for his guitar-nerd specificity and self-deprecating humor about his own obsessive tendencies, and 'neck radius' is exactly the kind of hyper-specific luthier detail he'd drop. The giveaway is that the anecdote is almost too perfectly shaped to illustrate his public persona."
+    },
+    {
+      "id": "q3",
+      "text": "Stevie would call me — not text, call — at two in the afternoon like it was two in the morning, completely in his own time zone, and just start humming a melody into the phone. No hello, nothing. I learned to keep a notepad by the receiver because if you didn't catch it, it was gone forever.",
+      "speaker": "Smokey Robinson",
+      "context": "Interview with David Ritz, published in Uncut Magazine's Motown retrospective issue, September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Smokey has told dozens of Stevie Wonder collaboration stories with that same warm, affectionate exasperation, and the 'call not text' generational detail feels very him. The giveaway is that 'his own time zone' is slightly too polished a turn of phrase for truly off-the-cuff Smokey."
+    },
+    {
+      "id": "q4",
+      "text": "My life's work was being delightful. That really hurt me",
+      "speaker": "Brennan Wedl",
+      "context": "Interview about her new Waxahatchee-produced album",
+      "real": true,
+      "source": {
+        "title": "Music — ‘My life’s work was being delightful. That really hurt me’: breakout Americana s",
+        "url": "https://www.theguardian.com/music/2026/jul/23/brennan-wedl-on-freeing-herself-through-song",
+        "date": "2026-07-28"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've played shows where everything went wrong — monitor blew, I couldn't hear myself, the set list fell off the wedge — and those are sometimes the nights people come up to you after and say it was the best show they ever saw. I genuinely cannot explain it and I've stopped trying.",
+      "speaker": "Bruce Springsteen",
+      "context": "The New Yorker Festival, live on-stage conversation with David Remnick, October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Bruce has talked at length about the alchemy of live performance and the disconnect between his own internal experience onstage and the audience's, which is documented across dozens of interviews. The tell is that the examples he lists (monitor, set list) are plausible but slightly too neatly enumerated; his real storytelling usually spirals outward from one specific night."
+    },
+    {
+      "id": "q6",
+      "text": "A Reflection of Where I Am in My Life",
+      "speaker": "Miley Cyrus",
+      "context": "Describing her upcoming 10th album",
+      "real": true,
+      "source": {
+        "title": "Music — Miley Cyrus Says Upcoming 10th Album Is “A Reflection of Where I Am in My Life”",
+        "url": "https://consequence.net/2026/07/miley-cyrus-new-album-details-atlantic-records/",
+        "date": "2026-07-28"
+      }
+    }
+  ]
+}

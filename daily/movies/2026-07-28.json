@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-28",
+  "edition": 40,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You're not scared of the dark, are you? Good. Neither is what's out there.",
+      "speaker": "Alien (1979)",
+      "context": "Dallas or another crew member briefing the team before entering the derelict ship",
+      "real": false,
+      "fake_note": "I made this one up — the deadpan dread and blue-collar spacer voice match the film's workmanlike horror tone. The giveaway is the slight theatricality; the Nostromo crew typically underplay their fear rather than commenting on it so pointedly."
+    },
+    {
+      "id": "q2",
+      "text": "I've seen men drown in six inches of mud. Don't tell me about sacrifice.",
+      "speaker": "Platoon (1986)",
+      "context": "Sergeant Barnes, shutting down a younger soldier's complaint",
+      "real": false,
+      "fake_note": "I made this one up — Barnes's contemptuous, combat-hardened brutality is all over this line, and the Vietnam setting makes the image viscerally credible. The giveaway is that it's slightly more articulate than Barnes usually is; he tends toward shorter, more violent declarations."
+    },
+    {
+      "id": "q3",
+      "text": "You keep talking about justice like it's something you can hold in your hands.",
+      "speaker": "To Kill a Mockingbird (1962)",
+      "context": "Atticus Finch, likely addressing Scout or a colleague after a frustrating day in court",
+      "real": false,
+      "fake_note": "I made this one up — Atticus speaks in measured, plain-spoken moral language throughout the film, so this reads naturally in his voice. The subtle giveaway is that it leans just slightly too abstract for his usual concrete, situation-specific dialogue."
+    },
+    {
+      "id": "q4",
+      "text": "The thing about a con is, you have to believe it yourself first.",
+      "speaker": "The Talented Mr. Ripley (1999)",
+      "context": "Tom Ripley, reflecting quietly — possibly in voiceover or to Marge",
+      "real": false,
+      "fake_note": "I made this one up — the introspective self-analysis fits Ripley's unsettling habit of narrating his own psychology. The giveaway is that the film's Ripley tends to perform confidence rather than articulate its mechanics this neatly."
+    },
+    {
+      "id": "q5",
+      "text": "This town deserves a better class of criminal, and I'm gonna give it to 'em.",
+      "speaker": "The Dark Knight (2008)",
+      "context": "The Joker (Heath Ledger) addressing Gotham's mob bosses during his hostile takeover of their operation.",
+      "real": true,
+      "source": {
+        "title": "The Dark Knight (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Dark_Knight_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Don't ever let yourself get attached to anything you are not willing to walk out on in 30 seconds flat if you feel the heat around the corner.",
+      "speaker": "Heat (1995)",
+      "context": "Master thief Neil McCauley (Robert De Niro) explaining his creed to detective Vincent Hanna across a diner table.",
+      "real": true,
+      "source": {
+        "title": "Heat (1995 film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Heat_(1995_film)",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

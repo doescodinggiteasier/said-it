@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-28",
+  "edition": 31,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The disappointment of manhood succeeds to the delusion of youth: let us hope that the heritage of old age is not despair.",
+      "speaker": "Benjamin Disraeli",
+      "context": "The British Prime Minister and novelist, in a candidly reflective aside on the disappointments of the ages of life (from his fiction, Book VIII, Chapter 4).",
+      "real": true,
+      "source": {
+        "title": "Benjamin Disraeli - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "When I was mayor, a constituent once stopped me at the grocery store to complain about a pothole and also to ask if I'd tried the new rotisserie chicken. I had. It was very good. We fixed the pothole.",
+      "speaker": "Rahm Emanuel",
+      "context": "Conversation at the Aspen Ideas Festival, Aspen, Colorado, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Emanuel regularly tells constituent-level anecdotes when speaking about urban governance, and his Chicago-mayor persona is built on exactly this blend of grit and mundane practicality. The giveaway is the chicken — the joke resolves too cleanly for his usually more combative storytelling."
+    },
+    {
+      "id": "q3",
+      "text": "I've read that voters want authenticity. And then you watch a focus group react to someone being authentic, and you think — well, authenticity has a pretty narrow band, it turns out.",
+      "speaker": "David Axelrod",
+      "context": "Panel discussion at the University of Chicago Institute of Politics, Chicago, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Axelrod regularly reflects on the gap between political theory and voter behavior in exactly this wry, slightly weary tone on his podcast and in public lectures. The tell is that it's a touch too neatly observed for off-the-cuff remarks."
+    },
+    {
+      "id": "q4",
+      "text": "I think we ought to continue the blockade and starve them out. I think we ought to bomb Pickaxe Mountain and try to reach what's underneath it",
+      "speaker": "John Kennedy",
+      "context": "Sen. John Kennedy (R-La.) on Sunday discussing Iran strikes",
+      "real": true,
+      "source": {
+        "title": "Politics — Live updates: Sen. John Kennedy says US should not 'cut and run' from Iran; Cycl",
+        "url": "https://thehill.com/homenews/5990529-live-updates-midterms-jackson-collins-cyclospora-trump/",
+        "date": "2026-07-27"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I am a Ford, not a Lincoln. My addresses will never be as eloquent as Mr. Lincoln's. But I will do my very best to equal his brevity and his plain speaking.",
+      "speaker": "Gerald Ford",
+      "context": "Self-deprecating remark Ford made on December 6, 1973, immediately after taking the oath of office as the 40th Vice President (following Spiro Agnew's resignation).",
+      "real": true,
+      "source": {
+        "title": "Gerald Ford - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Gerald_Ford",
+        "date": "1973-12-06"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Look, I've held a lot of titles. Congressman, Secretary, candidate. My mother still introduces me to her friends as 'the one who was almost president.' Almost. She says it every time.",
+      "speaker": "Jack Kemp",
+      "context": "Remarks at the American Enterprise Institute annual dinner, Washington D.C., November 2007",
+      "real": false,
+      "fake_note": "I made this one up — Kemp had a well-documented self-deprecating streak about his 1988 and 1996 presidential runs, and this kind of family-centered humor appeared in his later public speeches. The giveaway is the punchline structure — Kemp's actual humor was warmer and less rhythmically precise than this."
+    }
+  ]
+}

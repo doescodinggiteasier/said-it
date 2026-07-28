@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-28",
+  "edition": 32,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've coached guys who could do things with a basketball that I genuinely cannot explain. Like, biomechanically, it should not work. And then I'd watch film for two hours trying to figure out how to teach it to someone else and eventually I'd just write 'Steph does this thing — don't try to teach it.'",
+      "speaker": "Steve Kerr",
+      "context": "Appearance on Bill Simmons's The Bill Simmons Podcast, recorded during All-Star weekend, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Kerr frequently talks about Curry's game with this mix of genuine bewilderment and coaching-nerd self-awareness, and the imagined film-session detail feels very true to how he describes his process. The give away is the note-to-self punchline; it's a little too neat for how Kerr actually trails off in interviews."
+    },
+    {
+      "id": "q2",
+      "text": "Within six months of being the captain at West Ham and playing in the Youth Cup, I was delivery driving at Domino's",
+      "speaker": "Iyiola Adebayo",
+      "context": "Former West Ham academy player describing his career transition, Premier League Futures feature",
+      "real": true,
+      "source": {
+        "title": "Sports — How Premier League Futures programme is helping former academy prospects",
+        "url": "https://www.theguardian.com/football/2026/jul/28/how-premier-league-futures-programme-is-helping-former-academy-prospects",
+        "date": "2026-07-28"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The ice doesn't change. The rink in Nagano looked the same as the rink in my hometown. That helped me, actually — when everything outside was insane, I just looked down and it was the same ice I'd always skated on.",
+      "speaker": "Michelle Kwan",
+      "context": "Oral history feature in ESPN The Magazine's Winter Olympics retrospective, February 2018",
+      "real": false,
+      "fake_note": "I made this one up — Kwan speaks frequently about the mental side of skating and often grounds her reflections in specific venues or competitions, which gives this its ring of truth. The giveaway is the almost meditative quality; her real interviews are a touch more practical and less poetic."
+    },
+    {
+      "id": "q4",
+      "text": "I go with a clear conscience",
+      "speaker": "Cristiano Ronaldo",
+      "context": "After Portugal's World Cup exit vs Spain, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘I go with a clear conscience’: Cristiano Ronaldo confirms he has played his las",
+        "url": "https://www.theguardian.com/football/2026/jul/07/cristiano-ronaldo-portugal-roberto-martinez-world-cup-2026-spain",
+        "date": "2026-07-07"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I remember my first training camp with the Cowboys, I walked in and there were four other running backs who were all faster than me. I went home that night and I called my mom and I said, 'Mama, I don't think speed is going to be my thing.' She said, 'Good. Figure out what is.' I've been thinking about that conversation for thirty years.",
+      "speaker": "Emmitt Smith",
+      "context": "Keynote remarks at the University of Florida Athletic Leadership Forum, Gainesville, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Emmitt regularly credits his mother and grounds his storytelling in very specific personal memories, so this has his real texture. The tell is that the anecdote is almost too perfectly structured; his actual stories tend to meander a bit more before landing."
+    },
+    {
+      "id": "q6",
+      "text": "People keep asking me what the turning point was, like there's always one moment. But honestly, I played bad for about three months and then one day I just stopped being so dramatic about it and started hitting the ball again. That was it.",
+      "speaker": "Roger Federer",
+      "context": "Interview with Simon Briggs, The Daily Telegraph, Wimbledon fortnight, June 2017",
+      "real": false,
+      "fake_note": "I made this one up — Federer often self-deprecates about mental slumps in this exact breezy, slightly dismissive tone, and the casual 'stopped being so dramatic' sounds exactly like his press-conference voice. The subtle giveaway is that he's almost never this bluntly self-critical in public; he usually softens the narrative."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-28",
+  "edition": 43,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I grew up watching nature documentaries and thinking, whoever that voice belongs to has the best job that has ever existed. And then I got older and I thought, no, actually he's probably standing in a field in the rain for nine hours describing a beetle. Which, to be clear, still sounds great.",
+      "speaker": "Brian Cox",
+      "context": "Wonders of the Universe DVD bonus interview, BBC Studios, 2011",
+      "real": false,
+      "fake_note": "I made this one up — Cox frequently cites Attenborough as a formative influence and makes exactly these kinds of warmly self-aware observations about the reality behind scientific broadcasting. The tell is the structure; Cox's real tributes to Attenborough tend to be more straightforwardly admiring rather than gently deflating."
+    },
+    {
+      "id": "q2",
+      "text": "People keep asking me what it feels like to hold an Oscar and honestly, it's heavier than you'd think. Not metaphorically — I mean physically. I nearly dropped it on my foot at the afterparty and I thought, that would have been a headline I'd never live down.",
+      "speaker": "Cate Blanchett",
+      "context": "Interview with The Guardian's Weekend Magazine, published February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Blanchett is known for her dry, self-deprecating wit and she genuinely talks about the physical reality of award ceremonies rather than their grandeur. The subtle giveaway is that she'd more likely make this observation in print than out loud at a podium, and 'afterparty' is just slightly too casual for her usual register."
+    },
+    {
+      "id": "q3",
+      "text": "When we launched I think we had maybe eleven employees and we were working out of a space that smelled aggressively of someone else's lunch every single afternoon. I don't know who it was. I never found out. It's one of the genuine mysteries of that period.",
+      "speaker": "Jeff Bezos",
+      "context": "Delivered during a fireside chat at the George W. Bush Presidential Center Forum on Leadership, Dallas, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Bezos has told early Amazon origin stories many times in this exact register: specific, slightly comic, detail-oriented. The 'genuine mystery' framing sounds plausibly Bezos. The giveaway is that his real early-days stories tend to anchor on a specific detail he resolves, not one he leaves open."
+    },
+    {
+      "id": "q4",
+      "text": "My mum still calls it 'the computer thing' — she's been calling it that since 2004. I've stopped correcting her. At this point it would feel like correcting someone who's been calling you by a nickname for twenty years.",
+      "speaker": "Elon Musk",
+      "context": "Lex Fridman Podcast, episode 400, recorded January 2024",
+      "real": false,
+      "fake_note": "I made this one up — Musk frequently references his family and childhood in interviews with Fridman, and the self-aware, slightly wry humor fits his documented podcast persona. The tell is that Musk's real anecdotes about his mother tend to be more reverential; this one leans a touch too warm and understated for him."
+    },
+    {
+      "id": "q5",
+      "text": "I think we ought to continue the blockade and starve them out. I think we ought to bomb Pickaxe Mountain and try to reach what's underneath it",
+      "speaker": "John Kennedy",
+      "context": "Sen. John Kennedy (R-La.) on Sunday discussing Iran strikes",
+      "real": true,
+      "source": {
+        "title": "Politics — Live updates: Sen. John Kennedy says US should not 'cut and run' from Iran; Cycl",
+        "url": "https://thehill.com/homenews/5990529-live-updates-midterms-jackson-collins-cyclospora-trump/",
+        "date": "2026-07-27"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My favorite was The Scrunchie Chronicles: 112 Countries and It's Still All about My Hair",
+      "speaker": "Hillary Clinton",
+      "context": "Joking about a rejected memoir title, poking fun at coverage of her hair, in 2014",
+      "real": true,
+      "source": {
+        "title": "The Week — Hillary Clinton jokes she considered calling her memoir The Scrunchie Chronicles",
+        "url": "https://theweek.com/speedreads/452686/hillary-clinton-jokes-considered-calling-memoir-scrunchie-chronicles",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

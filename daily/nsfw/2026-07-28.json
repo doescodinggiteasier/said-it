@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-28",
+  "edition": 35,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My second wife told me I had the emotional range of a parking cone. I said baby, a parking cone is bright orange, highly visible, and keeps idiots from crashing into things they don't own. I took that as a compliment and ordered another round.",
+      "speaker": "Dean Martin",
+      "context": "The Dean Martin Celebrity Roast of Frank Sinatra, NBC broadcast, February 1978, off-script remarks during a commercial break read-back",
+      "real": false,
+      "fake_note": "I made this one up — the lazy-genius reframe and the booze tag are classic Dino persona. The giveaway is 'second wife'; Martin's public persona mostly played up the one-wife-one-drink-one-cigarette lounge lizard image rather than counting marriages."
+    },
+    {
+      "id": "q2",
+      "text": "My sex life is so bad, my G-spot has been declared a historical landmark.",
+      "speaker": "Joan Rivers",
+      "context": "Rivers being characteristically filthy and self-deprecating about her own dried-up sex life.",
+      "real": true,
+      "source": {
+        "title": "Stand-up one-liner (CNN roundup)",
+        "url": "https://www.cnn.com/2014/09/05/showbiz/celebrity-news-gossip/joan-rivers-jokes/index.html",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The ice cream man always drove an extra block away. I know he's seen us, but I think he just be in the car with his friends saying, 'Watch me how fast I make these motherfuckers run.'",
+      "speaker": "Eddie Murphy",
+      "context": "From Eddie Murphy's 1983 HBO stand-up special 'Delirious' (filmed at DAR Constitution Hall) — his childhood ice-cream-truck bit, where the vendor cruelly speeds off to watch the neighborhood kids chase him.",
+      "real": true,
+      "source": {
+        "title": "'Delirious' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0085474/quotes/",
+        "date": "1983"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I walked offstage at Caesar's and this broad hands me a drink, right, and I go — 'sweetheart, I appreciate the gesture but this smells like something I already threw up once tonight.' She married me six months later. True story. Mostly.",
+      "speaker": "Rodney Dangerfield",
+      "context": "The Tonight Show Starring Johnny Carson, March 1981, during a post-monologue couch segment",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield's self-deprecating rhythm and the marriage punchline landing after the gross-out is dead-on his cadence. The giveaway is 'mostly' tacked on at the end; his real closers were cleaner and didn't hedge."
+    },
+    {
+      "id": "q5",
+      "text": "The strangest thing I've tried to snort? My father. I snorted my father. He was cremated and I couldn't resist grinding him up with a little bit of blow. My dad wouldn't have cared, he didn't give a shit. It went down pretty well, and I'm still alive.",
+      "speaker": "Keith Richards",
+      "context": "Rolling Stones guitarist Keith Richards, in an April 2007 NME interview, describing the strangest thing he had snorted — his late father's cremated ashes ground up with cocaine. Reported by NME, The Hollywood Reporter, VOA, and others. Richards' manager later told NME the remark was made in jest, and Richards offered a softened account in his 2010 memoir, but he is documented giving this quote in the interview.",
+      "real": true,
+      "source": {
+        "title": "NME interview (later called a joke)",
+        "url": "https://www.nme.com/news/music/the-rolling-stones-433-1341398",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Keith comes up to me after soundcheck in Rotterdam and goes, 'Charlie, I lost my trousers.' Not 'where are they' — lost them. Like a set of keys. I said Keith, you were wearing them an hour ago. He goes, 'Yeah, that's when I had them.' I poured myself a very large Scotch and went to bed.",
+      "speaker": "Charlie Watts",
+      "context": "Uncut Magazine, issue 94, March 2005, in conversation with interviewer Allan Jones during the Bigger Bang Tour rehearsals",
+      "real": false,
+      "fake_note": "I made this one up — Charlie's dry, understated delivery and his role as the straight man to Keith's chaos is pitch-perfect. The giveaway is the specificity of 'Rotterdam'; Charlie gave very few press interviews and rarely told road stories this vividly."
+    }
+  ]
+}
