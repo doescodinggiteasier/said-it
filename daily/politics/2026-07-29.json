@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-29",
+  "edition": 32,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Where my reason, imagination or interest were not engaged, I would not or I could not learn.",
+      "speaker": "Winston Churchill",
+      "context": "From Churchill's own autobiography 'My Early Life: A Roving Commission' (1930), in the chapter recalling his schooldays at Harrow where he was placed in the lowest form.",
+      "real": true,
+      "source": {
+        "title": "My Early Life, by Winston S. Churchill (Project Gutenberg Canada full text)",
+        "url": "https://gutenberg.ca/ebooks/churchillws-myearlylife/churchillws-myearlylife-00-h-dir/churchillws-myearlylife-00-h.html",
+        "date": "1930-01-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I will say this about C-SPAN: it is the only place on television where falling asleep is essentially a five-star review.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks at the Gridiron Club Dinner, Washington D.C., March 2018",
+      "real": false,
+      "fake_note": "I made this one up — McConnell has shown a dry, sardonic wit at events like the Gridiron Dinner, and self-aware jokes about his own soporific reputation are exactly the kind of thing he deploys in those settings. The tell is that his real humor tends to be even more oblique and less punchy than this."
+    },
+    {
+      "id": "q3",
+      "text": "I'd like to see honesty and transparency and I'd like Tony to come clean with all the things that he's really been caught in contradictions",
+      "speaker": "Brett Giroir",
+      "context": "Former Trump health official commenting on Fauci's released diary entries",
+      "real": true,
+      "source": {
+        "title": "Politics — Ex-Trump health official shocked by Fauci's 'unabashed narcissism' from diaries",
+        "url": "https://thehill.com/policy/healthcare/5995694-giroir-slams-fauci-diary/",
+        "date": "2026-07-29"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "It is welcome news that following our recent outreach, the State Department has committed to contributing the full $600 million for GAVI, the Vaccine Alliance",
+      "speaker": "Susan Collins",
+      "context": "Sen. Susan Collins (R-Maine) statement on State Department reinstating GAVI funding",
+      "real": true,
+      "source": {
+        "title": "Politics — Collins says State Department will reinstate funding for global humanitarian vac",
+        "url": "https://thehill.com/policy/healthcare/5995754-collins-says-gavi-funding-reinstated/",
+        "date": "2026-07-29"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've read every page of that bill. Well — my staff has read every page of that bill, and they gave me a very thorough summary, which I read most of.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic Governors Association roundtable, reported by Politico, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-deprecating humor about his own work habits and his reliance on staff briefings is well-documented, and this lands right in his wheelhouse. The subtle giveaway is the escalating backpedal, which is almost too perfectly structured for an off-the-cuff remark."
+    },
+    {
+      "id": "q6",
+      "text": "People keep asking me what the Senate is really like. I tell them: imagine a faculty meeting, but the faculty has subpoena power and absolutely nothing gets cancelled.",
+      "speaker": "Amy Klobuchar",
+      "context": "Keynote address at the University of Minnesota Law School commencement, May 2019",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar frequently uses dry Midwestern humor and academic comparisons, and her Senate floor observations are a staple of her public persona. The giveaway is that the punchline is just a touch too tidy for her usual slightly rambling delivery."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-29",
+  "edition": 33,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People always come up to me like, 'You must hate playing in the rain.' Nah. I love it. Nobody's comfortable, the ball is slipping for both teams, the crowd's miserable. When everyone hates the conditions equally, I actually think that levels things toward the better team. So yeah, give me rain.",
+      "speaker": "Alex Morgan",
+      "context": "Unrivaled podcast hosted by Brandi Chastain, Episode 38, April 2022",
+      "real": false,
+      "fake_note": "I made this one up — Morgan's competitive intelligence and her tendency to find tactical angles that others overlook is well documented, and she's spoken about weather and field conditions in interviews before. The giveaway is the logic of 'levels things toward the better team' — it's a clean, confident argument that sounds more like a prepared talking point than genuinely off-the-cuff reasoning."
+    },
+    {
+      "id": "q2",
+      "text": "There will be a lot of transfer links, a lot of rumours",
+      "speaker": "Xabi Alonso",
+      "context": "After Chelsea's 6-4 pre-season win vs Western Sydney Wanderers",
+      "real": true,
+      "source": {
+        "title": "Sports — Xabi Alonso plays down Welbeck and Henderson moves after Chelsea win",
+        "url": "https://www.theguardian.com/football/2026/jul/28/xabi-alonso-danny-welbeck-jordan-henderson-chelsea-western-sydney-wanderers",
+        "date": "2026-07-29"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "There were nights in Cleveland where I'd go back to my hotel room and just sit there with the lights off for like twenty minutes before I could even turn on the TV. Not sad, not angry, just — processing. You're carrying a whole city and nobody really prepares you for what that actually feels like on a Tuesday in February.",
+      "speaker": "LeBron James",
+      "context": "The Shop: Uninterrupted, Season 3, Episode 4, HBO, 2019",
+      "real": false,
+      "fake_note": "I made this one up — LeBron has spoken openly about the emotional weight of his Cleveland tenure and the specific loneliness of being the franchise savior, and 'Tuesday in February' is exactly the kind of concrete, deflating detail he uses. The giveaway is subtle: the image of sitting in a dark hotel room is slightly more cinematic than his usual storytelling register."
+    },
+    {
+      "id": "q4",
+      "text": "Happy? Happy is not a word that we think about in the game. You gotta think of something different. Happy, I don't know how to judge happy. We're in the middle of a contest. Nobody's happy.",
+      "speaker": "Gregg Popovich",
+      "context": "San Antonio Spurs head coach Gregg Popovich's deadpan reply during a mid-game sideline interview when TNT's David Aldridge asked whether he was happy with his team's shot selection against the Thunder.",
+      "real": true,
+      "source": {
+        "title": "Gregg Popovich rips reporter for asking if he's 'happy' about shot selection (Video)",
+        "url": "https://larrybrownsports.com/basketball/gregg-popovich-rips-reporter-happy/160946",
+        "date": "2012-11-02"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People ask me what I was thinking on that last drive and honestly I wasn't thinking anything. My brain was just — gone. My wife asked me the same thing after and I couldn't even explain it to her. You practice so many thousands of times that when it actually matters your body just takes over and your mind goes somewhere else entirely. I don't know where it goes. Somewhere quiet, I guess.",
+      "speaker": "Tom Brady",
+      "context": "Interview with Jim Gray on Westwood One Radio following Super Bowl LIII, February 2019",
+      "real": false,
+      "fake_note": "I made this one up — Brady really does talk about the mental blankness of clutch moments and references his wife Gisele naturally in interviews, which makes this feel lived-in and real. The subtle giveaway is 'somewhere quiet' — it edges just slightly toward poetic tidiness, which Brady almost never does; he usually trails off with something more mundane."
+    },
+    {
+      "id": "q6",
+      "text": "If you don't want me to watch the ball, you can get it out of the ocean.",
+      "speaker": "Max Muncy",
+      "context": "Dodgers infielder Max Muncy on what he told Giants pitcher Madison Bumgarner, who had angrily yelled at him to stop watching his home run and run the bases. Muncy's solo homer was the only run in a 1-0 Dodgers win in San Francisco.",
+      "real": true,
+      "source": {
+        "title": "Max Muncy beats Madison Bumgarner at the plate and in his post-game quotes",
+        "url": "https://www.cbssports.com/mlb/news/max-muncy-beats-madison-bumgarner-at-the-plate-and-in-his-post-game-quotes/",
+        "date": "2019-06-09"
+      }
+    }
+  ]
+}

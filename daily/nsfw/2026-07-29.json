@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-29",
+  "edition": 36,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Why me? Ten million motherfuckers freebasing, and I'm the one who blows up!",
+      "speaker": "Richard Pryor",
+      "context": "Pryor's frank, self-lacerating bit about the 1980 freebasing accident in which he set himself on fire, from his stand-up film 'Richard Pryor: Live on the Sunset Strip' (1982).",
+      "real": true,
+      "source": {
+        "title": "Richard Pryor - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Richard_Pryor",
+        "date": "1982"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Last year I was really into the word cocksucker. I thought it sounded so mean!",
+      "speaker": "Danny McBride",
+      "context": "Answering a rapid-fire 'favorite curse word' question in a Maxim interview promoting 'Eastbound & Down.'",
+      "real": true,
+      "source": {
+        "title": "Maxim interview",
+        "url": "https://www.maxim.com/entertainment/interview-danny-mcbride-eastbound-and-down/",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I don't understand the concept of a 'quiet wedding.' If I wanted quiet I'd stay home and argue with myself, which — fair enough — I have done. But you're celebrating, for Christ's sake. Get the band louder, open the bar before the ceremony, and for the love of God stop seating people by 'table themes.' What the fuck is a table theme?",
+      "speaker": "Rodney Dangerfield",
+      "context": "The Tonight Show with Jay Leno, NBC Studios, Burbank, California, November 1993",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield's marriage material was his bread and butter and the escalating specificity of 'table themes' sounds like a real setup. The give away is the swearing; Leno's Tonight Show kept guests fairly clean even when they were famously blue."
+    },
+    {
+      "id": "q4",
+      "text": "Cannes is just Glastonbury for people who are afraid of mud and still want to feel like they're suffering for art. I wore the same tuxedo jacket four nights running. Nobody noticed. That's how you know it's all bollocks.",
+      "speaker": "Peter Sellers",
+      "context": "Desert Island Discs, BBC Radio 4, recorded at Broadcasting House, London, June 1977",
+      "real": false,
+      "fake_note": "I made this one up — Sellers' deadpan cynicism about the film world and his genuine disdain for ceremony make this plausible. The giveaway is Desert Island Discs rarely got this acerbic from guests; it was a more restrained format."
+    },
+    {
+      "id": "q5",
+      "text": "I turned sixty and I thought — right, this is it, this is where I start wearing sensible shoes and caring about fibre. You know what I did instead? Rented a boat. Invited eight people I barely liked. Lost a hat that cost more than my first car. Ten out of ten, would do again.",
+      "speaker": "Katharine Hepburn",
+      "context": "Paris Review, The Art of Theater interview series, conducted at Hepburn's Manhattan townhouse, published Spring 1991",
+      "real": false,
+      "fake_note": "I made this one up — Hepburn's anti-conformist bravado and clipped, amused tone make this fit her late-career interview persona well. The giveaway is the joke structure is a little too modern-casual for how guarded she actually was in print interviews."
+    },
+    {
+      "id": "q6",
+      "text": "I was doing a little over $1,000 a day in heroin, and then probably the same in cocaine and alcohol.",
+      "speaker": "Nikki Sixx",
+      "context": "Mötley Crüe bassist describing the scale of his addiction at his worst, around the period of his December 1987 heroin overdose; said in 2019 press for the Netflix film 'The Dirt'.",
+      "real": true,
+      "source": {
+        "title": "'The Dirt' press (Chicago Sun-Times)",
+        "url": "https://chicago.suntimes.com/entertainment/motley-crue-biopic-netflix-nikki-six-doing-1000-dollars-a-day-in-heroin/",
+        "date": "2019"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-29",
+  "edition": 44,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When you've spent twenty years studying a glacier and then you go back and it's just — gone, it's not abstract anymore. You don't reach for statistics. You just stand there for a while.",
+      "speaker": "Sylvia Earle",
+      "context": "Filmed interview for National Geographic's 'Earth Day Live' broadcast, April 2022",
+      "real": false,
+      "fake_note": "I made this one up — Earle is one of the most prominent ocean and climate scientists who regularly translates data into personal, experiential terms for public audiences, and this restraint-over-alarm register is characteristic of her documented speaking style. The giveaway is that Earle's expertise is specifically marine, not glaciology, so a sharp player might catch the slight terrain mismatch."
+    },
+    {
+      "id": "q2",
+      "text": "It's a good thing to be laughed at. It's better than to be ignored.",
+      "speaker": "Harold Macmillan",
+      "context": "The British Prime Minister, in a handwritten note to the Postmaster General who wanted to take action against the satirical TV program 'That Was The Week That Was' - a disarmingly self-deprecating shrug at being mocked.",
+      "real": true,
+      "source": {
+        "title": "Harold Macmillan - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harold_Macmillan",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Humanity is about to be handed almost unimaginable power, and it is deeply unclear whether our social, political, and technological systems possess the maturity to wield it.",
+      "speaker": "Dario Amodei",
+      "context": "Anthropic CEO, on the arrival of transformative AI",
+      "real": true,
+      "source": {
+        "title": "TechRadar — Quote of the day: Dario Amodei on AI",
+        "url": "https://www.techradar.com/pro/quote-of-the-day-by-anthropic-ceo-dario-amodei-humanity-is-about-to-be-handed-almost-unimaginable-power-and-it-is-deeply-unclear-whether-we-possess-the-maturity-to-wield-it-warnings-on-the-looming-threat-of-beyond-human-ai",
+        "date": "2026-06-03"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I genuinely don't know how many albums I've made. That's not a bit. I'd have to look it up, and even then I'd probably argue with whatever number came up because I don't count the same things as the people counting.",
+      "speaker": "Elvis Costello",
+      "context": "The Guardian Long Read interview, conducted at his home studio in Nashville, published February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Costello has a well-established reputation for prolificacy and for being contrarian about his own catalogue in interviews; this dismissive-but-affectionate attitude toward his own output is completely consistent with his documented voice. The giveaway is the last clause — slightly too recursively clever for off-the-cuff speech."
+    },
+    {
+      "id": "q5",
+      "text": "There's a version of machine learning that I think most people outside the field genuinely don't picture, which is just — a graduate student at two in the morning, very confused, staring at a loss curve that's doing something nobody expected.",
+      "speaker": "Yann LeCun",
+      "context": "Lex Fridman Podcast, episode 416, recorded at Meta AI headquarters, March 2024",
+      "real": false,
+      "fake_note": "I made this one up — LeCun regularly demystifies AI for general audiences with exactly this kind of grounding, concrete-lab-reality framing, and the slightly weary academic humor matches his documented interview style. The giveaway is that 'a loss curve that's doing something nobody expected' is vague where LeCun would typically get technically specific."
+    },
+    {
+      "id": "q6",
+      "text": "How can you govern a country that has two hundred and forty-six varieties of cheese?",
+      "speaker": "Charles de Gaulle",
+      "context": "The French president and WWII Free France leader, expressing wry exasperation at the ungovernability of France; recorded in Ernest Mignon's 1962 collection Les Mots du General.",
+      "real": true,
+      "source": {
+        "title": "Charles de Gaulle - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Charles_de_Gaulle",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

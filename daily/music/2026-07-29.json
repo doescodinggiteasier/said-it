@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-29",
+  "edition": 36,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've produced records where I knew by the second day we were going to be okay, and records where we got to the last week and I still had no idea what we were making. The second kind always takes longer to love but it's usually the one you end up defending.",
+      "speaker": "Daniel Lanois",
+      "context": "Interview with Greg Milner for Sound on Sound magazine, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Lanois talks regularly about the mysterious, iterative nature of production and has discussed his work with U2 and Emmylou Harris in exactly these uncertain terms. The gentle tell is 'defending' — his real language around records he loves tends toward words like 'protecting' or 'carrying.'"
+    },
+    {
+      "id": "q2",
+      "text": "Keep your mind on the music. I never thought of myself as a 'woman' musician at all, but a guitarist and then a bass player",
+      "speaker": "Carol Kaye",
+      "context": "The legendary session bassist (Pet Sounds, countless hits) on identity versus playing, in a Guitar World interview.",
+      "real": true,
+      "source": {
+        "title": "Guitar World — Studio bass icon Carol Kaye on why it is not about who you are, but how and what you play",
+        "url": "https://www.guitarworld.com/artists/bassists/carol-kaye-on-teaching-women",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "If Dancing Queen comes on, you rush out",
+      "speaker": "Shania Twain",
+      "context": "Shania Twain's honest playlist feature",
+      "real": true,
+      "source": {
+        "title": "Music — Shania Twain’s honest playlist: ‘If Dancing Queen comes on, you rush out’",
+        "url": "https://www.theguardian.com/music/2026/jul/26/shania-twain-honest-playlist-abba-harry-styles-phantom-opera",
+        "date": "2026-07-29"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "When we were recording in Muscle Shoals the tape op was maybe nineteen years old and he'd never heard any of the songs we were cutting. I watched his face the whole session. If he stopped moving his head, we did it again.",
+      "speaker": "Boz Scaggs",
+      "context": "Oral history interview for the GRAMMY Museum's Living Histories archive, recorded Los Angeles, June 2017",
+      "real": false,
+      "fake_note": "I made this one up — Scaggs really did record in Muscle Shoals and has spoken warmly about those sessions, and his storytelling style is exactly this kind of quiet, scene-specific detail. The subtle giveaway is the 'stopped moving his head' test — it's a great detail but slightly too cinematic; his real anecdotes tend to credit the musicians by name before anything else."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me how I know when a beat is finished and I honestly can't tell you. It's more like — at some point it stops asking me for anything. It just sits there quiet and I leave it alone.",
+      "speaker": "Pharrell Williams",
+      "context": "Masterclass session at the Red Bull Music Academy, New York, October 2013",
+      "real": false,
+      "fake_note": "I made this one up — Pharrell frequently uses near-spiritual, intuitive language about production and talks about beats as living things. The giveaway is the phrase 'sits there quiet'; his real vocabulary leans more toward texture and frequency, words like 'still' or 'locked in.'"
+    },
+    {
+      "id": "q6",
+      "text": "I remember finishing the mix on that record at like four in the morning and just sitting there in the dark thinking, I don't know if this is brilliant or if I've completely lost the plot. Turns out it was a little of both, which is probably the right place to land.",
+      "speaker": "Rick Rubin",
+      "context": "Interview with Malcolm Gladwell for the Broken Record podcast, February 2022",
+      "real": false,
+      "fake_note": "I made this one up — Rubin constantly talks about the disorientation of finishing a record and his late-night studio sessions, so this lands right in his wheelhouse. The subtle giveaway is that 'lost the plot' is slightly more British-casual than his usual phrasing; he tends to say 'lost perspective' or 'gone too far inside it.'"
+    }
+  ]
+}
