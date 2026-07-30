@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-30",
+  "edition": 42,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Back off, man. I'm a scientist.",
+      "speaker": "Ghostbusters (1984)",
+      "context": "Dr. Peter Venkman (Bill Murray) defends his research methods to a skeptical librarian.",
+      "real": true,
+      "source": {
+        "title": "Ghostbusters - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Ghostbusters",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I'm not asking you to like me, Clarice. I'm asking you to listen.",
+      "speaker": "The Silence of the Lambs (1991)",
+      "context": "Hannibal Lecter, correcting Clarice's posture during a cell visit",
+      "real": false,
+      "fake_note": "I made this one up — Lecter's precise, condescending courtesy is spot-on, and the use of her first name mirrors the real film's dynamic. The giveaway is that the real Lecter would never be this direct about wanting her attention; he'd bury the demand inside a compliment."
+    },
+    {
+      "id": "q3",
+      "text": "You squared the deal, Mr. Blondie. I just came to collect my half.",
+      "speaker": "The Good, the Bad and the Ugly (1966)",
+      "context": "Tuco, confronting Blondie after being left in the desert",
+      "real": false,
+      "fake_note": "I made this one up — Tuco's aggrieved bluster and the transactional language fit perfectly with how he talks throughout the film. The giveaway is 'squared the deal,' a phrasing slightly too clean for Tuco, whose real dialogue is more rambling and self-interrupting."
+    },
+    {
+      "id": "q4",
+      "text": "As far back as I can remember, I always wanted to be a gangster.",
+      "speaker": "Goodfellas (1990)",
+      "context": "Henry Hill's (Ray Liotta) opening voiceover narration",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "The Dude abides.",
+      "speaker": "The Big Lebowski (1998)",
+      "context": "The Dude (Jeff Bridges) to The Stranger (Sam Elliott) at the bar near the film's end, summing up his laid-back philosophy.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Every man on this ship knows his job. The shark doesn't.",
+      "speaker": "Jaws (1975)",
+      "context": "Quint, addressing Brody and Hooper before the final night at sea",
+      "real": false,
+      "fake_note": "I made this one up — Quint's flat, fatalistic delivery and the way he frames the shark as an unknowing adversary fits his worldview after the Indianapolis speech. The subtle giveaway is that Quint would be more colorful and personal; he'd never sound quite this like a motivational poster."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-30",
+  "edition": 33,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Does anybody have any idea how much Money and Prestige the United States Supreme Court has cost our Nation with their negative Rulings",
+      "speaker": "Donald Trump",
+      "context": "Trump posted on Truth Social about SCOTUS rulings on tariffs and birthright citizenship",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump says SCOTUS ruling on tariffs and birthright citizenship costing country '",
+        "url": "https://thehill.com/homenews/administration/5998515-trump-supreme-court-tariffs/",
+        "date": "2026-07-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People ask me, 'Bernie, how do you stay so energetic?' I tell them it's the righteous indignation. It's — it's basically free energy. We should look into that.",
+      "speaker": "Bernie Sanders",
+      "context": "Remarks at a town hall hosted by The Young Turks, recorded in Burlington, Vermont, March 2024",
+      "real": false,
+      "fake_note": "I made this one up — the self-referential riff on his own intensity is pitch-perfect Sanders, and the absurdist pivot to treating anger as a renewable resource sounds like his dry platform-meeting-stand-up style. The tell is that real Bernie rarely turns the joke back on himself quite this neatly."
+    },
+    {
+      "id": "q3",
+      "text": "Someone on my team once put 'passionate about fiscal responsibility' in my dating profile — as a joke, they said. I still won the primary, so I don't know what that tells you about Illinois.",
+      "speaker": "Dick Durbin",
+      "context": "Remarks at the Illinois Democratic Party spring fundraiser, Chicago, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Durbin has a relaxed, self-deprecating quality at party fundraisers that doesn't always make television, and the joke works because it's mundane enough to be plausible from a long-serving senator doing crowd warmup. The giveaway is the dating-profile framing, which is slightly too millennial-adjacent for Durbin's usual comedic vocabulary."
+    },
+    {
+      "id": "q4",
+      "text": "Fauci's lack of candor to Congress is unbelievable",
+      "speaker": "James Uthmeier",
+      "context": "Florida AG posted on social media after Fauci's Senate hearing",
+      "real": true,
+      "source": {
+        "title": "Politics — Florida AG launching investigation into Fauci after Senate hearing",
+        "url": "https://thehill.com/homenews/state-watch/5998421-florida-ag-investigates-fauci-senate-hearing/",
+        "date": "2026-07-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I once spent the better part of a flight from Heathrow reading the UK's agricultural subsidy framework and honestly — honestly — I think the in-flight magazine would have been more illuminating.",
+      "speaker": "Rishi Sunak",
+      "context": "Q&A session at the Confederation of British Industry annual conference, November 2023",
+      "real": false,
+      "fake_note": "I made this one up — Sunak's mild, self-deprecating technocrat humor is well-documented, and poking fun at bureaucratic tedium fits his banker-turned-politician persona perfectly. The subtle giveaway is that 'Heathrow' is a tiny bit too neat a detail for genuine off-the-cuff speech."
+    },
+    {
+      "id": "q6",
+      "text": "It's that time of year again: here are some of the books I've enjoyed this summer. If you've read any good ones, let me know!",
+      "speaker": "Barack Obama",
+      "context": "Former President Obama posted his summer reading list on social media",
+      "real": true,
+      "source": {
+        "title": "Politics — Obama offers his summer reading suggestions",
+        "url": "https://thehill.com/blogs/in-the-know/5998339-obama-summer-reading-list/",
+        "date": "2026-07-30"
+      }
+    }
+  ]
+}

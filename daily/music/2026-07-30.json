@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-30",
+  "edition": 37,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My mother used to say I was born making noise. Not crying — noise. Like I had something specific to complain about from the very first minute. I don't think that's changed honestly.",
+      "speaker": "Patti Smith",
+      "context": "Fresh Air with Terry Gross, NPR, taped interview aired September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Patti frequently draws lines between her childhood and her artistic temperament, and her self-portraits have this dry, slightly mythologizing quality. The giveaway is the word 'honestly' at the end, which is a bit too casual and contemporary for her usual register."
+    },
+    {
+      "id": "q2",
+      "text": "There's many critical songs on The Mission soundtrack, but Gabriel's Oboe [by Ennio Morricone] hit me hard. I had to pull off the road, I cried like a baby. I didn't realise how powerful music could be until that mom",
+      "speaker": "Shania Twain",
+      "context": "Shania Twain's honest playlist feature, discussing a song that changed her life",
+      "real": true,
+      "source": {
+        "title": "Music — Shania Twain’s honest playlist: ‘If Dancing Queen comes on, you rush out’",
+        "url": "https://www.theguardian.com/music/2026/jul/26/shania-twain-honest-playlist-abba-harry-styles-phantom-opera",
+        "date": "2026-07-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I really feel like some angels have been carrying me around.",
+      "speaker": "Bonnie Raitt",
+      "context": "On feeling happier than ever after getting sober, in her Rolling Stone interview following her Grammy sweep for 'Nick of Time.'",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Bonnie Raitt: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-features/bonnie-raitt-the-rolling-stone-interview-236846/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "There was a point where I was writing for everybody — other artists, commercials, whatever came through — and it genuinely made me a better songwriter for myself. You can't be precious when someone's waiting on the other end of a phone call. You just have to deliver, and sometimes what you deliver surprises you.",
+      "speaker": "Diane Warren",
+      "context": "The Hollywood Reporter, Songwriter Issue feature interview, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Diane talks all the time about the discipline of professional songwriting and how volume of output sharpens instinct. The subtle giveaway is the warmth of the reflection; she's usually a bit more blunt and self-deprecating about the transactional side of the work."
+    },
+    {
+      "id": "q5",
+      "text": "The last thing we need is a loud, water thieving, light polluting, data center, anywhere near our town (or any others for that matter).",
+      "speaker": "Willie Nelson",
+      "context": "Willie Nelson speaking out against data centers near his town",
+      "real": true,
+      "source": {
+        "title": "Music — Willie Nelson: Data Centers Suck",
+        "url": "https://pitchfork.com/story/willie-nelson-data-centers-suck/",
+        "date": "2026-07-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what tuning I'm in and I never know what to tell them. It's not like I sat down and decided. I was just moving the pegs around until the guitar stopped fighting me and started agreeing with me, and then I wrote the song before I could figure out what I'd done.",
+      "speaker": "Jack White",
+      "context": "Guitar World magazine, cover interview, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Jack has talked extensively about intuitive, almost accidental guitar technique and his disdain for overthinking the craft. The giveaway is the phrase 'stopped fighting me and started agreeing with me,' which is slightly more harmonious language than Jack usually reaches for."
+    }
+  ]
+}

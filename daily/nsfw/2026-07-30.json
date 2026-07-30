@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-30",
+  "edition": 37,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've written songs about heartbreak, songs about God, songs about America, and at least two songs about trucks that I will not be taking questions on. A man has his regrets. We don't all have to discuss them.",
+      "speaker": "Johnny Cash",
+      "context": "Q&A session following a taping of CMT Americana at the Ryman Auditorium, Nashville, Tennessee, April 1999",
+      "real": false,
+      "fake_note": "I made this one up — Cash's mix of gravitas and wry self-deprecation, particularly around his commercial country period, is entirely believable, and the Ryman is the right venue. The giveaway is 'we don't all have to discuss them' — it's almost too well-constructed a closing line; Cash's ad-libs were usually rougher and more plainspoken."
+    },
+    {
+      "id": "q2",
+      "text": "I'd sit there and smoke crack while I listened to the play. It made me fucking crazy.",
+      "speaker": "Samuel L. Jackson",
+      "context": "Reflecting on his 1980s/early-90s crack-cocaine addiction during his time as an understudy on Broadway's 'The Piano Lesson' (shadowing Charles Dutton), before he got sober in 1991. From a 2019 The Hollywood Reporter interview, widely reported (Entertainment Tonight, Today, People), Jan 2019.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter interview (TODAY report)",
+        "url": "https://www.today.com/health/health/samuel-l-jackson-opens-drug-addiction-early-career-rcna20476",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I told the label guys, listen, I don't need your notes, I don't need your fucking fruit basket in the green room, what I need is for you to stay out of the studio and let me finish this record. Then one of them goes, 'but John, the chorus on track three—' and I just walked out. Left my beer on the piano. Didn't even finish it. That's how serious I was.",
+      "speaker": "John Lennon",
+      "context": "Playboy magazine interview with David Sheff, September 1980, discussing the recording sessions for Double Fantasy",
+      "real": false,
+      "fake_note": "I made this one up — Lennon's prickly contempt for label interference is totally on-brand, and the deflating detail about the unfinished beer sounds like his dry wit. The giveaway is the phrase 'that's how serious I was' — Lennon would more likely have undercut himself with actual sarcasm rather than a straight punchline."
+    },
+    {
+      "id": "q4",
+      "text": "I remember Keith Moon showing up to soundcheck in a bathrobe and roller skates, and I thought, that's either the most rock and roll thing I've ever seen or I've had a stroke. Turned out it was both.",
+      "speaker": "Harry Nilsson",
+      "context": "Interview recorded for the BBC documentary Harry Nilsson: Who Is Harry Nilsson (And Why Is Everybody Talkin' About Him?), 2010, using archival audio from a 1977 session",
+      "real": false,
+      "fake_note": "I made this one up — Nilsson and Moon were genuine close friends during the infamous 'Lost Weekend' LA period so the setting is plausible, and Nilsson's dry, absurdist humour fits the punchline perfectly. The giveaway is the timeline: the 2010 BBC documentary is real but uses archival footage, not a 1977 interview of this casual nature — the citation is plausible enough to be sneaky but slightly too neat."
+    },
+    {
+      "id": "q5",
+      "text": "It's cold outside, but I'm still looking like a thotty, because a hoe never gets cold.",
+      "speaker": "Cardi B",
+      "context": "From a now-iconic 2014 viral Instagram/Vine clip from her pre-fame days, strutting in a bra top and skirt and explaining why she's barely dressed in winter.",
+      "real": true,
+      "source": {
+        "title": "Nylon — Cardi B was right: hot girls don't get cold",
+        "url": "https://www.nylon.com/life/cardi-b-was-right-hot-girls-dont-get-cold-science-confirms",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You've baked a really lovely cake, but then you've used dog shit for frosting.",
+      "speaker": "Steve Jobs",
+      "context": "Critiquing a NeXT programmer's work during a project review",
+      "real": true,
+      "source": {
+        "title": "Book 'The Second Coming of Steve Jobs' (Cult of Mac)",
+        "url": "https://www.cultofmac.com/news/eleven-cutting-steve-jobs-quotes",
+        "date": "2000"
+      }
+    }
+  ]
+}

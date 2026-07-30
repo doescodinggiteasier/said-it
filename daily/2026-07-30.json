@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-30",
+  "edition": 45,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "What would take Hubble 2,000 years to process, Roman can do in a year.",
+      "speaker": "Jared Isaacman",
+      "context": "NASA Administrator, on the Nancy Grace Roman Space Telescope",
+      "real": true,
+      "source": {
+        "title": "Scientific American — Roman Space Telescope",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Rather than disagreeing with interpretations of Homer in a collegial manner, this person, who has benefited enormously from Nolan's film, speaks in the crude language of MAGA folks attacking someone with",
+      "speaker": "Joyce Carol Oates",
+      "context": "Joyce Carol Oates defending Christopher Nolan's 'The Odyssey' against translator Emily Wilson's viral review",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Joyce Carol Oates Defends ‘The Odyssey’ and Slams Translator for Scathing Review",
+        "url": "https://variety.com/2026/film/news/joyce-carol-oates-the-odyssey-slams-translator-review-1236823922/",
+        "date": "2026-07-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Current observations hint that our standard model of the universe is incorrect.",
+      "speaker": "Julie McEnery",
+      "context": "Roman Space Telescope senior project scientist, NASA",
+      "real": true,
+      "source": {
+        "title": "Scientific American — Roman Space Telescope",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The honest answer is I never actually liked the word 'disruptive.' It got picked up and turned into a brand promise, which is the opposite of what it was supposed to mean. You don't announce disruption. You look up six months later and realize the old thing quietly stopped working.",
+      "speaker": "Reed Hastings",
+      "context": "Stanford Graduate School of Business View From The Top interview series, recorded May 2022",
+      "real": false,
+      "fake_note": "I made this one up — Reed has genuinely pushed back on Silicon Valley buzzwords in real interviews, and his delivery tends to be dry and contrarian in exactly this way. The giveaway is the tidiness of the final clause — real Hastings tends to use product-specific examples rather than clean rhetorical reversals."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me what it's like watching a game from the booth versus being on the field, and honestly the weirdest part is that from up there you can actually see the play developing — like, you *know* what's about to go wrong before the guy with the ball does. It's a little uncomfortable, to be honest.",
+      "speaker": "Peyton Manning",
+      "context": "Omaha Productions podcast, 'Quarterback Sessions,' Episode 34, March 2024",
+      "real": false,
+      "fake_note": "I made this one up — Peyton regularly riffs on the gap between playing and broadcasting in that self-deprecating, football-obsessive way. The subtle giveaway is that real Peyton tends to pepper in specific player names or play calls; this stays too generically philosophical for his usual level of detail."
+    },
+    {
+      "id": "q6",
+      "text": "Someone sent me a clip recently of a performance I did in, I want to say, 2009, and I genuinely had no memory of the arrangement we'd used. I must have been living inside that tour so completely that the details just didn't register as things worth storing. I had to text my guitarist and ask if that was even the same song.",
+      "speaker": "Alicia Keys",
+      "context": "Interview with NPR Music ahead of the Keys album release, January 2022",
+      "real": false,
+      "fake_note": "I made this one up — Alicia has spoken in real interviews about the blur of touring and how differently she experiences music in retrospect, and the detail of texting a bandmate adds authentic texture. The subtle giveaway is 'I want to say, 2009' — real Alicia tends to be more precise about her own timeline because her albums are such personal landmarks for her."
+    }
+  ]
+}
