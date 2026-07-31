@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-31",
+  "edition": 38,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Look at your mushrooms - they look like fucking tadpoles on Viagra.",
+      "speaker": "Gordon Ramsay",
+      "context": "Chef Gordon Ramsay critiquing a kitchen's mushroom side dish on the \"Rococo\" episode of Ramsay's Kitchen Nightmares (King's Lynn restaurant), UK Channel 4, 2006.",
+      "real": true,
+      "source": {
+        "title": "'Ramsay's Kitchen Nightmares' — Rococo (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt1058681/",
+        "date": "2006"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I think that weed kept me from wanting to kill people. And probably kept a lot of people from wanting to kill me, too — out there drunk, running around.",
+      "speaker": "Willie Nelson",
+      "context": "In Rolling Stone's 2019 Weed Issue cover interview, explaining how marijuana replaced his heavy drinking.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Willie Nelson: 'Marijuana Saved My Life'",
+        "url": "https://www.rollingstone.com/music/music-features/willie-nelson-weed-issue-826290/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I never took heroin, really because I'm too lazy.",
+      "speaker": "Grace Slick",
+      "context": "The Jefferson Airplane singer, in a Forbes interview, on why heroin never appealed to her despite her heavy drug era.",
+      "real": true,
+      "source": {
+        "title": "Forbes — Grace Slick Part II: 'I Never Took Heroin, Really Because I'm Too Lazy'",
+        "url": "https://www.forbes.com/sites/jimclash/2015/12/12/grace-slick-part-ii-i-never-took-heroin-really-because-im-too-lazy/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I did a gig in Phoenix once, it was a hundred and twelve degrees, the crowd smelled like a men's locker room full of beef jerky, and I still had a better time than I ever did at any black-tie dinner in New York. At least in Phoenix they're honest about being animals.",
+      "speaker": "Bill Hicks",
+      "context": "Recorded interview with Sputnik magazine, Austin, Texas, November 1992, published in their January 1993 issue ahead of his Revelations tour",
+      "real": false,
+      "fake_note": "I made this one up — Hicks's contempt for polite society vs. his genuine love of rowdy crowds is perfectly in character, and Phoenix as a punchline target feels right. The giveaway is 'beef jerky' — slightly too absurdist-food-metaphor even for Hicks, who tended toward sharper political imagery."
+    },
+    {
+      "id": "q5",
+      "text": "Someone told me my stand-up was too filthy for television. I said fine, tell television to go fuck itself, I'll do theaters. You can say 'cock' in a theater. That's called culture.",
+      "speaker": "Sam Kinison",
+      "context": "Interview with Jim Sullivan, Boston Globe, November 3, 1988, conducted at the Park Plaza Hotel during his Back from Hell tour stop in Boston",
+      "real": false,
+      "fake_note": "I made this one up — Kinison's aggressive defiance of broadcast standards and the mock-elevated 'that's called culture' punchline is exactly his confrontational comedian persona. The giveaway is the delivery is slightly too concise; Kinison's real rants tended to spiral outward with much more screaming before landing."
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what my creative process is. I'll tell you: it's two in the morning, I'm in my underwear, I smell like yesterday's bourbon, and I'm arguing with a rhyming dictionary. That's the whole damn process. You're welcome, Nashville.",
+      "speaker": "Merle Haggard",
+      "context": "Interview with Alanna Nash for Entertainment Weekly, published March 1996, conducted at his ranch in Palo Cedro, California",
+      "real": false,
+      "fake_note": "I made this one up — Haggard's wry, plainspoken anti-Nashville wit makes this feel very plausible, and the underwear-and-rhyming-dictionary image is exactly his self-mythologising blue-collar style. The giveaway is 'you're welcome, Nashville' — slightly too Twitter-era sarcastic for his actual voice."
+    }
+  ]
+}

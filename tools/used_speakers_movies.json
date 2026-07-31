@@ -73,7 +73,7 @@
 "chinatown 1974": "2026-07-27",
 "kramer vs kramer 1979": "2026-07-02",
 "the godfather 1972": "2026-07-29",
-"casablanca 1942": "2026-07-19",
+"casablanca 1942": "2026-07-31",
 "taxi driver 1976": "2026-07-18",
 "the treasure of the sierra madre 1948": "2026-07-24",
 "the wizard of oz 1939": "2026-07-26",
@@ -93,7 +93,7 @@
 "airplane 1980": "2026-07-15",
 "top gun 1986": "2026-07-27",
 "goodfellas 1990": "2026-07-30",
-"no country for old men 2007": "2026-07-13",
+"no country for old men 2007": "2026-07-31",
 "sunset boulevard 1950": "2026-07-14",
 "rear window 1954": "2026-07-06",
 "the dark knight 2008": "2026-07-28",
@@ -114,9 +114,9 @@
 "all about eve 1950": "2026-07-21",
 "rocky 1976": "2026-07-14",
 "saving private ryan 1998": "2026-07-09",
-"tombstone 1993": "2026-07-09",
+"tombstone 1993": "2026-07-31",
 "the deer hunter 1978": "2026-07-09",
-"monty python and the holy grail 1975": "2026-07-09",
+"monty python and the holy grail 1975": "2026-07-31",
 "double indemnity 1944": "2026-07-10",
 "citizen kane 1941": "2026-07-10",
 "the third man 1949": "2026-07-10",
@@ -182,5 +182,7 @@
 "to kill a mockingbird 1962": "2026-07-28",
 "the talented mr ripley 1999": "2026-07-28",
 "north by northwest 1959": "2026-07-29",
-"the good the bad and the ugly 1966": "2026-07-30"
+"the good the bad and the ugly 1966": "2026-07-30",
+"catch me if you can 2002": "2026-07-31",
+"jerry maguire 1996": "2026-07-31"
 }

@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-31",
+  "edition": 46,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Your body is not a temple, it's an amusement park. Enjoy the ride.",
+      "speaker": "Anthony Bourdain",
+      "context": "From his memoir Kitchen Confidential, on his attitude toward eating",
+      "real": true,
+      "source": {
+        "title": "Quote by Anthony Bourdain: \"your body is not a temple, it's an amusement pa...\"",
+        "url": "https://www.goodreads.com/quotes/271353-your-body-is-not-a-temple-it-s-an-amusement-park",
+        "date": "2000-01-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I'm tired of hearing about money, money, money, money, money. I just want to play the game, drink Pepsi, wear Reebok.",
+      "speaker": "Shaquille O'Neal",
+      "context": "NBA center, in July 1996 after leaving the Orlando Magic for the Lakers, when asked about contract money",
+      "real": true,
+      "source": {
+        "title": "'I Just Want To Play The Game, Drink Pepsi, Wear Reebok': Remembering The Time Shaquille O'Neal Dropped Random Knowledge",
+        "url": "https://clutchpoints.com/i-just-want-to-play-the-game-drink-pepsi-wear-reebok-remembering-the-time-shaq-dropped-random-knowledge",
+        "date": "2022-07-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The first time I played Madison Square Garden I genuinely thought I'd miscounted the seats or something. Like, I did the walk-out and just thought — no, this is a mistake, someone's going to come tell me the real show is in a smaller room down the street.",
+      "speaker": "Billie Eilish",
+      "context": "Cover profile in Rolling Stone, October 2022 issue",
+      "real": false,
+      "fake_note": "I made this one up — Eilish regularly describes early-career moments of imposter syndrome in this exact self-deprecating, slightly comic register. The giveaway is she almost always names a specific person she turned to in those moments; here she's alone with the feeling, which is a hair cleaner than her real anecdotes tend to be."
+    },
+    {
+      "id": "q4",
+      "text": "I'm aware there are people who think a three-hour film is some kind of imposition, and I find that slightly heartbreaking — not because they're wrong about their own time, but because the first forty minutes of certain films are just the engine warming up. You're not watching a movie yet. You're becoming capable of watching it.",
+      "speaker": "Martin Scorsese",
+      "context": "Conversation with critic David Edelstein at the New York Film Festival press roundtable, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Scorsese has made genuine public statements about cinema requiring a different kind of attention than streaming content, and this 'engine warming up' metaphor fits his mechanical-cinephile register. The giveaway is he almost always name-checks a specific film to illustrate the point; leaving it abstract is where I cheated slightly."
+    },
+    {
+      "id": "q5",
+      "text": "You shouldn't let poets lie to you",
+      "speaker": "Björk",
+      "context": "In a 1988 TV interview, after taking apart a television to explain how it works and recounting how an Icelandic poet's spooky description had once scared her.",
+      "real": true,
+      "source": {
+        "title": "Commentary on Björk's 1988 \"Wonder of Television\" interview",
+        "url": "https://peopleoftheurban.wordpress.com/2015/08/31/commentary-on-bjork-on-the-wonder-of-television-1988/",
+        "date": "1988-01-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People keep asking me what the hardest part of free-diving is, and they expect me to say the breath-hold or the pressure or whatever. But honestly? It's the moment right before you go under, when your brain is still doing its whole threat-assessment thing and you have to just — decide to ignore it. That negotiation never fully goes away.",
+      "speaker": "David Blaine",
+      "context": "Interview with Joe Rogan on The Joe Rogan Experience, episode released March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Blaine genuinely talks about the psychological side of endurance in exactly this register, and the detail about pre-dive cognition sounds like something he'd have workshopped a hundred times. The subtle giveaway is that he usually anchors these stories to a specific stunt or location; leaving it abstract is just slightly too tidy for him."
+    }
+  ]
+}

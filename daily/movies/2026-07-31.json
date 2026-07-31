@@ -1,0 +1,65 @@
+{
+  "date": "2026-07-31",
+  "edition": 43,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You keep saying that word like it changes something. It doesn't.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Anton Chigurh, coldly dismissing a desperate plea mid-confrontation",
+      "real": false,
+      "fake_note": "I made this one up — Chigurh speaks in flat, philosophical dismissals exactly like this, and the rhythm matches his cadence perfectly. The subtle giveaway is that it's slightly too reactive; Chigurh tends to steer conversations rather than respond to them."
+    },
+    {
+      "id": "q2",
+      "text": "Here's looking at you, kid.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick Blaine (Humphrey Bogart) says this to Ilsa (Ingrid Bergman) as a recurring toast, most memorably at the airport farewell.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "I flew into seventeen countries on that passport. Seventeen.",
+      "speaker": "Catch Me If You Can (2002)",
+      "context": "Frank Abagnale Jr. boasting casually to an FBI agent during interrogation",
+      "real": false,
+      "fake_note": "I made this one up — Frank's breezy self-congratulation is all over this film, and a specific number like seventeen gives it that grounded, anecdote-feel Spielberg loved for this character. The giveaway is the slight over-specificity; real Abagnale lines in the film lean vaguer and more charming."
+    },
+    {
+      "id": "q4",
+      "text": "It's not the money, Lloyd. It's never been the money.",
+      "speaker": "Jerry Maguire (1996)",
+      "context": "Jerry, frustrated, talking to his only remaining client Rod Tidwell's brother",
+      "real": false,
+      "fake_note": "I made this one up — the film is obsessed with the money-versus-integrity tension and Jerry says variations of this sentiment throughout. The giveaway is naming 'Lloyd,' a peripheral character; Jerry's emotional declarations are almost always aimed at Rod or Dorothy."
+    },
+    {
+      "id": "q5",
+      "text": "Strange women lying in ponds distributing swords is no basis for a system of government.",
+      "speaker": "Monty Python and the Holy Grail (1975)",
+      "context": "Dennis the peasant (Michael Palin) argues political theory with King Arthur about the Lady of the Lake.",
+      "real": true,
+      "source": {
+        "title": "Monty Python and the Holy Grail - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Monty_Python_and_the_Holy_Grail",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "It appears my hypocrisy knows no bounds.",
+      "speaker": "Tombstone (1993)",
+      "context": "Doc Holliday (Val Kilmer), the consumptive gambler-gunslinger, wryly acknowledging his own contradictions.",
+      "real": true,
+      "source": {
+        "title": "Tombstone (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Tombstone_(film)",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

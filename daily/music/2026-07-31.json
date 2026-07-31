@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-31",
+  "edition": 38,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Quincy told me once — and I'm paraphrasing because I was probably too nervous to remember exactly — that the arrangement is where you find out whether you actually believed in the song in the first place. I've been chewing on that for thirty years.",
+      "speaker": "Stevie Wonder",
+      "context": "CBS Sunday Morning tribute segment on Quincy Jones, November 2023",
+      "real": false,
+      "fake_note": "I made this one up — Stevie invoking Quincy in a reverential, slightly fumbling way is completely in character, and the specific framing of 'I was probably too nervous' adds the right layer of humility. The tell is that 'thirty years' is just round enough to read as fabricated rather than lived-in."
+    },
+    {
+      "id": "q2",
+      "text": "I don't really listen back to old records for pleasure. It's more like reading your old diary — you remember exactly what was going on, and some of it's genuinely embarrassing, and you can't unknow it.",
+      "speaker": "Paul McCartney",
+      "context": "Interview with Rick Rubin for the documentary McCartney 3,2,1, Hulu, 2021",
+      "real": false,
+      "fake_note": "I made this one up — Paul has spoken in various documented interviews about the strange experience of hearing old Beatles recordings with fresh ears, and the diary metaphor fits his thoughtful, plainspoken interview style. The tell is 'you can't unknow it': it's a shade too aphoristic for McCartney's usual rambling conversational warmth."
+    },
+    {
+      "id": "q3",
+      "text": "People always want to know my 'process' and I never know what to tell them. Half the time I'm just walking around my kitchen at two in the afternoon listening to the same eight bars on a Bluetooth speaker until my downstairs neighbor bangs on the ceiling.",
+      "speaker": "Billie Eilish",
+      "context": "Apple Music's interview series with Zane Lowe, February 2024",
+      "real": false,
+      "fake_note": "I made this one up — Billie has spoken extensively about making music at home in domestic, unglamorous settings, and her self-deprecating, run-on conversational style is spot on here. The giveaway is 'bangs on the ceiling' — it's one concrete detail too vivid to have actually come from a published sit-down."
+    },
+    {
+      "id": "q4",
+      "text": "I am one of the funniest people alive, people have to understand that",
+      "speaker": "Vince Staples",
+      "context": "In a 2015 Howl & Echoes interview, responding to praise about his deadpan tweets.",
+      "real": true,
+      "source": {
+        "title": "Howl & Echoes — INTERVIEW: Vince Staples - \"I am one of the funniest people alive, people have to understand that\"",
+        "url": "https://howlandechoes.com/2015/12/interview-vince-staples-one-funniest-people-alive-people-understand/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I think, actually, I'd be more successful if I was OK wearing a muzzle.",
+      "speaker": "Chappell Roan",
+      "context": "In a January 2025 BBC interview after being named BBC Sound of 2025, on how her outspokenness affects her career.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter — Chappell Roan: \"I'd Be More Successful If I Was OK Wearing a Muzzle\"",
+        "url": "https://www.hollywoodreporter.com/music/music-news/chappell-roan-muzzle-diva-music-grammys-bbc-interview-1236112948/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "He had the right attitude. He chewed gum, looked arrogant and flipped the bird to the guards – he did everything the prisoners wanted to do. He was a mean mother from the South who was there because he loved us. When he walked away, everyone in that place had become a Johnny Cash fan.",
+      "speaker": "Merle Haggard",
+      "context": "Recalling watching Johnny Cash perform at San Quentin prison on New Year's Day while Haggard was an inmate there.",
+      "real": true,
+      "source": {
+        "title": "Louder — Johnny Cash, Merle Haggard, and the true story that's almost too good to be true",
+        "url": "https://www.loudersound.com/features/johnny-cash-merle-haggard-and-the-true-story-thats-almost-too-good-to-be-true",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

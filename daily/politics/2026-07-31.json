@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-31",
+  "edition": 34,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I will say, after thirty years in the Senate, I have become an expert in exactly one thing: knowing which committee hearings are going to run long enough that I should have eaten a bigger lunch.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks at the University of Louisville McConnell Center annual dinner, Louisville, Kentucky, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — McConnell rarely does self-deprecating humor publicly, but when he does it's dry and procedural exactly like this, which makes it land. The subtle giveaway is that he'd almost certainly not volunteer even this much warmth at a named event."
+    },
+    {
+      "id": "q2",
+      "text": "I'm gonna be like Fauci and just take the Fifth Amendment on all questions",
+      "speaker": "Vic Fangio",
+      "context": "Philadelphia Eagles defensive coordinator, speaking to reporters",
+      "real": true,
+      "source": {
+        "title": "Politics — NFL coach jabs at Fauci while taking questions from reporters",
+        "url": "https://thehill.com/policy/sports-gaming/6000909-vic-fangio-mocks-anthony-fauci-fifth-amendment/",
+        "date": "2026-07-31"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "In 2008 my slogan was, \"Yes We Can.\" In 2013 my slogan was, \"Control-Alt-Delete.\"",
+      "speaker": "Barack Obama",
+      "context": "Joking about the rocky HealthCare.gov rollout at the 2014 White House Correspondents' Dinner",
+      "real": true,
+      "source": {
+        "title": "The Obama White House Archives — Remarks by the President at the White House Correspondents' Dinner (2014)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Someone on my staff once printed out my Twitter mentions and left them on my desk. I assume that was a resignation letter.",
+      "speaker": "Nancy Pelosi",
+      "context": "Interview with Politico Magazine, published March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi has a sharp, composed wit and has referenced the chaos of social media in real interviews, so this fits her cadence perfectly. The tell is that she's historically guarded about staff dynamics, even in jest."
+    },
+    {
+      "id": "q5",
+      "text": "The thing nobody tells you about running for president is how much time you spend in rental cars. I feel like I have a deeper relationship with the Hertz counter at Des Moines Airport than with most of my colleagues.",
+      "speaker": "John Kasich",
+      "context": "Conversation with Hugh Hewitt on The Hugh Hewitt Show, recorded January 2016",
+      "real": false,
+      "fake_note": "I made this one up — Kasich spent enormous time in Iowa during his 2016 campaign and frequently talked about the grind of retail politics in exactly this rambling, specific way. The tell is that Hertz is slightly too brand-specific for an off-the-cuff radio remark."
+    },
+    {
+      "id": "q6",
+      "text": "I am extraordinarily patient, provided I get my own way in the end.",
+      "speaker": "Margaret Thatcher",
+      "context": "Self-aware, tongue-in-cheek remark by the British Prime Minister in an interview published in The Observer, 4 April 1989 (as catalogued by the Margaret Thatcher Centre's quotes page). Speaker was a UK Conservative Prime Minister.",
+      "real": true,
+      "source": {
+        "title": "Quotes - The Margaret Thatcher Centre",
+        "url": "https://www.thatchercentre.com/quotes/",
+        "date": "1989-04-04"
+      }
+    }
+  ]
+}
