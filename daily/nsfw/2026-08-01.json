@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-01",
+  "edition": 39,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've been married three times and every single one of those women was smarter than me. That's not romantic, that's a fucking cautionary tale. Write it down.",
+      "speaker": "Richard Pryor",
+      "context": "Live Q&A at The Comedy Store, Los Angeles, recorded for a Playboy magazine profile, February 1979",
+      "real": false,
+      "fake_note": "I made this one up — Pryor was brutally candid about his marriages and his own self-destructiveness, so this self-lacerating take fits his confessional stand-up cadence. The giveaway is 'Write it down' — a little too performed for his usual raw, stream-of-consciousness style."
+    },
+    {
+      "id": "q2",
+      "text": "I showed up to the Grammys pre-party so hammered I signed a roadie's ass cheek thinking it was a napkin. The man framed it. Sends me a Christmas card every year.",
+      "speaker": "John Belushi",
+      "context": "National Lampoon Radio Hour recording session outtakes, Studio City, CA, November 1973",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's reputation for anarchic party chaos makes this land perfectly in his wheelhouse, and the framed-ass-cheek punchline sounds like exactly his absurdist escalation. The subtle giveaway is that the Grammy pre-party timeline and the roadie detail are oddly tidy for genuine outtake chaos."
+    },
+    {
+      "id": "q3",
+      "text": "And if you can write an hour of great stuff, you're like fucking Tolstoy.",
+      "speaker": "Norm Macdonald",
+      "context": "In a 2011 A.V. Club interview, arguing that stand-up is the hardest writing there is.",
+      "real": true,
+      "source": {
+        "title": "The A.V. Club — Interview: Norm Macdonald",
+        "url": "https://www.avclub.com/norm-macdonald-1798225024",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Hollywood is a coke town, but weed is so much better.",
+      "speaker": "Miley Cyrus",
+      "context": "In a 2013 Rolling Stone cover interview, contrasting cocaine with the 'happy drugs' she prefers.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Miley Cyrus on Why She Loves Weed, Went Wild at the VMAs and Much More",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People ask me, 'Dean, how do you stay so calm on stage?' Pal, I'm not calm. I've had four scotches. There's a difference.",
+      "speaker": "Dean Martin",
+      "context": "Backstage interview at the Sands Hotel, Las Vegas, recorded for The Dean Martin Show production files, September 1965",
+      "real": false,
+      "fake_note": "I made this one up — Dean's whole persona was built on the martini-in-hand nonchalance, and this sounds pitch-perfect for his lazy, self-deprecating wit. The giveaway is that it's a shade too structurally clean — his real ad-libs were messier and trailed off into a song lyric."
+    },
+    {
+      "id": "q6",
+      "text": "I used to have a drug problem, but now I make enough money.",
+      "speaker": "David Lee Roth",
+      "context": "The Van Halen frontman quipping about his lifestyle, quoted in a Louder roundup of his wit (originally on Nightwatch With Charlie Rose, 1986).",
+      "real": true,
+      "source": {
+        "title": "Louder — The wit and wisdom of David Lee Roth",
+        "url": "https://www.loudersound.com/features/all-i-ever-really-needed-to-know-i-learned-from-david-lee-roth",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

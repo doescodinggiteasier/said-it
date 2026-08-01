@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-01",
+  "edition": 39,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My dad used to say you can tell everything about a man by whether he claps on the one or the two. And I thought that was the most ridiculous thing I'd ever heard until I started paying attention and realized he was completely right.",
+      "speaker": "Dave Grohl",
+      "context": "Keynote conversation at SXSW, Austin, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Dave constantly invokes his dad and working-class wisdom in interviews, and the rhythm-as-character-test idea fits his everyman philosophy perfectly. The giveaway is attributing a fully formed musical theory to his father; Dave's real dad anecdotes are usually warmer and less tidy."
+    },
+    {
+      "id": "q2",
+      "text": "Time gave us the chance to grow up, become fathers and understand what really matters. We never stopped being brothers",
+      "speaker": "SOBxRBE",
+      "context": "Statement accompanying their first song in seven years",
+      "real": true,
+      "source": {
+        "title": "Music — Listen to SOBxRBE’s First Song in Seven Years",
+        "url": "https://pitchfork.com/story/listen-to-sobxrbes-first-song-in-seven-years/",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Gluttony and lust – y'know, Caligula vibes! What else is there? I've been slothful, definitely. I've ticked the wrath, greed and heresy boxes too.",
+      "speaker": "Hozier",
+      "context": "In a Hotpress interview about his concept album Unreal Unearth, asked which of the seven deadly sins were the most fun to commit.",
+      "real": true,
+      "source": {
+        "title": "Hotpress — 12 Interviews of Xmas: Hozier on Irishness, Deadly Sins, Joni Mitchell and Unreal Unearth",
+        "url": "https://www.hotpress.com/music/12-interviews-of-xmas-hozier-on-irishness-deadly-sins-joni-mitchell-and-unreal-unearth-22999788",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I once turned down a song that went on to sell something like twelve million copies. I don't regret it. I mean, I do, a little. Every January I regret it. But the version in my head of what I would have done with it was better, so I'm keeping that.",
+      "speaker": "Diana Ross",
+      "context": "The Tonight Show Starring Jimmy Fallon, NBC, taped January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Diana has been publicly candid about A&R regrets and industry decisions over her long career, and this mix of dignified self-assurance with a wry admission is characteristic of her late-career interview presence. The tell is 'every January,' which is a specificity too cute for her usual more imperious phrasing."
+    },
+    {
+      "id": "q5",
+      "text": "The normal thing would be to put in some chairs, a table",
+      "speaker": "Mad Professor",
+      "context": "Neil Fraser (Mad Professor) describing moving into his Croydon house in the late 1970s, in a podcast",
+      "real": true,
+      "source": {
+        "title": "Music — Melodies International presents Ariwa Sounds review – head-spinning classics fro",
+        "url": "https://www.theguardian.com/music/2026/jul/31/melodies-international-presents-ariwa-sounds-review-mad-professor",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've had people come up to me at the grocery store and start crying over a song, and I never know what to do with my hands. You want to hug them but you also have frozen peas and you're blocking the aisle.",
+      "speaker": "Brandi Carlile",
+      "context": "Armchair Expert with Dax Shepard, podcast episode released February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Brandi frequently talks about the physical awkwardness of emotional fan moments in exactly this grounded, self-deprecating register. The frozen peas are the kind of domestic detail she loves. The tell is that she usually leans into the hug rather than deflecting it with comedy."
+    }
+  ]
+}

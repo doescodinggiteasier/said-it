@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-01",
+  "edition": 36,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone sent me a clip of myself from 2009 the other day and I watched maybe eight seconds of it before I had to turn it off. Not because it was bad — it was fine — I just can't. I don't know how people watch themselves back and feel good about it.",
+      "speaker": "Rafael Nadal",
+      "context": "Press conference at Roland Garros, Paris, May 31, 2022",
+      "real": false,
+      "fake_note": "I made this one up — Nadal has a well-documented discomfort with self-promotion and past-tense reflection, and his press conference tone has always been refreshingly unvarnished, which makes the eight-second detail feel very lived-in. The giveaway is 'feel good about it' — his English phrasing tends to be a bit more literal and halting than that."
+    },
+    {
+      "id": "q2",
+      "text": "The thing about managing a bullpen in October is that every decision looks genius or catastrophic and there's essentially nothing in between. There's no such thing as a fine job. You either look like you knew something or you look like an idiot, and sometimes it's the exact same move.",
+      "speaker": "Tony La Russa",
+      "context": "Interview on The Athletic Baseball Show podcast, recorded October 2021 during the ALCS",
+      "real": false,
+      "fake_note": "I made this one up — La Russa has always been candid and slightly philosophical about the arbitrary optics of managerial decisions, and this kind of wry self-awareness is very consistent with his public persona. The tell is the word 'essentially,' which is just a touch too polished for true off-the-cuff La Russa."
+    },
+    {
+      "id": "q3",
+      "text": "My dad used to say I had a gift. I used to think he was just being a dad about it, you know, doing his job. Then one day a coach I really respected pulled me aside and said the exact same thing, almost word for word, and I thought — okay, maybe I should stop arguing with these people.",
+      "speaker": "Serena Williams",
+      "context": "Interview with Gayle King on CBS Mornings, September 2022, ahead of her final US Open",
+      "real": false,
+      "fake_note": "I made this one up — Serena has spoken often about her father Richard's belief in her and the role of outside validation in her self-acceptance, so the emotional arc here is very on-brand. The giveaway is the vagueness of 'a coach I really respected' — she'd almost certainly name them."
+    },
+    {
+      "id": "q4",
+      "text": "Basketball is something that I'm just good at. But horses is something that I feel the most happiness and sadness.",
+      "speaker": "Nikola Jokic",
+      "context": "The Denver Nuggets center, speaking during a 2025 promotional tour at a horse ranch in Beijing, on where his real emotional highs and lows come from.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — \"Basketball is just something I'm good at\": Jokic's admission",
+        "url": "https://sports.yahoo.com/article/basketball-just-something-im-good-103300970.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "If everyone likes me, they're watching, so there has to be something there.",
+      "speaker": "Tony Romo",
+      "context": "The CBS lead NFL analyst, on Pat McAfee's show in January 2026, responding to criticism of his polarizing broadcasting style.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Tony Romo addresses criticism after another up-and-down year in CBS booth",
+        "url": "https://www.foxnews.com/sports/tony-romo-opens-up-about-commentating-criticism-he-chooses-ignore-theyre-watching",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "When I first started calling games I was so worried about getting the names right that I missed the actual play happening in front of me. Twice. I think about those two moments more than most things in my career, which probably says something about me.",
+      "speaker": "Mike Breen",
+      "context": "Interview with Richard Deitsch on the Sports Media Podcast, The Athletic, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Breen has given candid interviews about his early broadcasting nerves and the craft of play-by-play, and the self-critical specificity here ('twice') is exactly the kind of detail a veteran broadcaster would carry with them. The giveaway is the final clause — 'which probably says something about me' is a bit too reflective and composed for unscripted Breen."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-01",
+  "edition": 35,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I will tell you, the first time I read a piece of legislation that was four hundred pages long, I thought — somebody is being paid by the word. And it turns out, several somebodies were.",
+      "speaker": "Bernie Sanders",
+      "context": "Interview with David Letterman on My Next Guest Needs No Introduction, Netflix, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Bernie's exasperation with bloated legislative process is completely on-brand, and the dry 'several somebodies' kicker sounds like his unscripted grumbling. The subtle giveaway: he almost never lands a self-contained joke that cleanly; his real riffs tend to loop back to income inequality before they resolve."
+    },
+    {
+      "id": "q2",
+      "text": "Someone asked me before the summit if I was nervous, and I said no. And then I sat down and realized that I had rehearsed one question that did not come up and had not rehearsed the one that did.",
+      "speaker": "John Kerry",
+      "context": "Remarks at the Council on Foreign Relations Corporate Conference, New York, March 2016",
+      "real": false,
+      "fake_note": "I made this one up — Kerry's verbose self-reflection and willingness to describe his own preparation stumbles in hindsight is completely characteristic, especially in think-tank settings. The subtle tell is that his real stories of diplomatic encounters tend to name the other party and the location specifically; I left both conveniently vague."
+    },
+    {
+      "id": "q3",
+      "text": "I was criticized for being too much concerned with the average Canadians. I can't help that; I am one of them!",
+      "speaker": "John Diefenbaker",
+      "context": "Canada's 13th prime minister, disarmingly turning a criticism into a humble admission about his own ordinariness.",
+      "real": true,
+      "source": {
+        "title": "John Diefenbaker - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Diefenbaker",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My staff keeps a running list of things I have promised to do by the end of the week. I have seen that list. It is not a short list.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at the National League of Cities Congressional City Conference, Washington D.C., March 2022",
+      "real": false,
+      "fake_note": "I made this one up — the self-deprecating admission about over-promising and the slightly looping sentence structure both sound authentically Biden. The tell is that it's a touch too tidy; his real asides usually involve a named person from Scranton or a digression about his dad before they get anywhere."
+    },
+    {
+      "id": "q5",
+      "text": "JK Rowling, Republicans, establishment Democrats, the British, the Irish and Zionists",
+      "speaker": "Mary Beth Barone",
+      "context": "Comedian listing who will be offended by her new Netflix special",
+      "real": true,
+      "source": {
+        "title": "Politics — Mary Beth Barone on provocative jokes, Palestine and manosphere misogyny: ‘It’s ",
+        "url": "https://www.theguardian.com/tv-and-radio/2026/jul/28/mary-beth-barone-netflix-special-interview",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I am Al Gore, I used to be the next president of the United States",
+      "speaker": "Al Gore",
+      "context": "His self-deprecating opening line at a Harvard Kennedy School lecture, October 4, 2001, after losing the 2000 election",
+      "real": true,
+      "source": {
+        "title": "Harvard Gazette — Gore calls for unity",
+        "url": "https://news.harvard.edu/gazette/story/2001/10/gore-calls-for-unity/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

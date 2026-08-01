@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-01",
+  "edition": 44,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "She used to leave the porch light on. Even when she knew I wasn't coming back.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes, quietly, about a woman from his past",
+      "real": false,
+      "fake_note": "I made this one up — the noir melancholy and Gittes's clipped, unsentimental delivery make this feel completely at home in Polanski's Los Angeles. The giveaway is that it's slightly too elegiac; Gittes usually buries his grief under a wisecrack."
+    },
+    {
+      "id": "q2",
+      "text": "I've driven worse roads in the rain. This is just a bad road in the dark.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Llewelyn Moss muttering to himself while navigating a back highway",
+      "real": false,
+      "fake_note": "I made this one up — the flat, laconic self-reassurance fits Moss's working-class stoicism and the Coens' West Texas vernacular perfectly. The giveaway is that it's slightly too tidy as a character beat; the Coens tend to let silences do that work instead."
+    },
+    {
+      "id": "q3",
+      "text": "Every time I think I've got the measure of this place, it does something new to disappoint me.",
+      "speaker": "Lawrence of Arabia (1962)",
+      "context": "T.E. Lawrence to General Allenby, wearily, after a failed tribal council",
+      "real": false,
+      "fake_note": "I made this one up — the exhausted idealism and formal British cadence match O'Toole's Lawrence, who oscillates between grandiosity and disillusionment throughout the film. The giveaway is the word 'disappoint,' which is slightly too domestic and understated for the film's epic register."
+    },
+    {
+      "id": "q4",
+      "text": "Death's at the bottom of everything, Martins. Leave death to the professionals.",
+      "speaker": "The Third Man (1949)",
+      "context": "Major Calloway (Trevor Howard) to pulp novelist Holly Martins (Joseph Cotten), warning him off his amateur investigation in postwar Vienna.",
+      "real": true,
+      "source": {
+        "title": "The Third Man - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Third_Man",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "How could I have known that murder can sometimes smell like honeysuckle?",
+      "speaker": "Double Indemnity (1944)",
+      "context": "Insurance salesman Walter Neff (Fred MacMurray) narrating his dictaphone confession about the affair and murder plot with Phyllis Dietrichson.",
+      "real": true,
+      "source": {
+        "title": "Double Indemnity - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Double_Indemnity",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I'm not the guy you kill, I'm the guy you buy!",
+      "speaker": "Michael Clayton (2007)",
+      "context": "Michael Clayton (George Clooney) shouting at Karen Crowder near the film's climax, after realizing the conspiracy against him.",
+      "real": true,
+      "source": {
+        "title": "Michael Clayton - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Michael_Clayton",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

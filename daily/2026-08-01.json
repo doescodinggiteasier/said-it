@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-01",
+  "edition": 47,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't think I've ever walked into a stadium and not felt a little bit like I was trespassing. Like, someone's going to figure out I don't really belong here and very politely ask me to leave. I've been doing this for twenty years. That feeling has not gone anywhere.",
+      "speaker": "LeBron James",
+      "context": "Uninterrupted 'Kneading Dough' podcast episode featuring LeBron, recorded 2021",
+      "real": false,
+      "fake_note": "I made this one up — LeBron has spoken in adjacent terms about imposter feelings and proving himself, which makes this emotionally consistent with his documented introspective mode. The tell is 'very politely ask me to leave' — it's a slightly too-gentle phrasing for LeBron's more direct, declarative speech patterns; he tends to frame doubt as fuel rather than as quiet social anxiety."
+    },
+    {
+      "id": "q2",
+      "text": "The thing nobody tells you about shipping a product is that the version you're most proud of is almost never the one people fall in love with. They fall in love with some feature you almost cut because you thought it was too simple.",
+      "speaker": "Tim Cook",
+      "context": "Stanford Graduate School of Business View from the Top interview, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Cook regularly speaks about product development philosophy and the gap between internal priorities and user response, and this fits his measured, process-focused voice. The tell is the tidy observation about simplicity; Cook's real remarks on this topic tend to be anchored in a specific product story rather than stated as a general principle."
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what I think about when I'm up there, and honestly, sometimes it's genuinely profound — you're looking at a coastline you've flown over a hundred times and suddenly it has weather on it, and you think, oh, right, that's a real place. And then Houston asks you something mundane about a valve and you come right back.",
+      "speaker": "Chris Hadfield",
+      "context": "Appearance on The Late Show with Stephen Colbert, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Hadfield is famous for describing the emotional texture of spaceflight in exactly this grounded, oscillating way, so readers will recognize the rhythm instantly. The giveaway for sharp players is 'Houston asks you something mundane about a valve' — he usually names a specific mission or module rather than leaving technical detail that vague."
+    },
+    {
+      "id": "q4",
+      "text": "I am a Ford, not a Lincoln. My addresses will never be as eloquent as Mr. Lincoln's. But I will do my very best to equal his brevity and his plain speaking.",
+      "speaker": "Gerald Ford",
+      "context": "Self-deprecating remark Ford made on December 6, 1973, immediately after taking the oath of office as the 40th Vice President (following Spiro Agnew's resignation).",
+      "real": true,
+      "source": {
+        "title": "Gerald Ford - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Gerald_Ford",
+        "date": "1973-12-06"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My grandmother used to make a rice pudding that I have spent probably thirty years trying to get right. I've asked food scientists, I've asked other chefs, I've called relatives who barely remember her. I can get close. I cannot get there.",
+      "speaker": "Yotam Ottolenghi",
+      "context": "Feature interview with The Guardian Weekend magazine, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Ottolenghi frequently discusses the emotional and familial roots of his cooking, and the image of chasing a grandmother's recipe is entirely consistent with his public persona and the nostalgic thread that runs through his writing. The giveaway is the vagueness about *which* grandmother and *where*; his real anecdotes almost always specify a country, a city, or a family name."
+    },
+    {
+      "id": "q6",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "His famous comeback at the 1984 debate against Walter Mondale",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    }
+  ]
+}
