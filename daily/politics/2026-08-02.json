@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-02",
+  "edition": 36,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "They're not trying to hide it",
+      "speaker": "Bill Maher",
+      "context": "Bill Maher on HBO's Real Time, attacking democratic socialists",
+      "real": true,
+      "source": {
+        "title": "Politics — Maher knocks democratic socialists as communists: 'They’re not trying to hide it",
+        "url": "https://thehill.com/homenews/campaign/6003816-maher-knocks-democratic-socialists-as-communists-theyre-not-trying-to-hide-it/",
+        "date": "2026-08-02"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Texas has more wind energy capacity than the next three states combined. I don't lead with that at rallies because I've tried it and the crowd response is — it's fine. It's a fine response.",
+      "speaker": "Ted Cruz",
+      "context": "Remarks at the Texas Public Policy Foundation's Policy Orientation, Austin, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Cruz does occasionally tout Texas energy statistics with genuine pride, and the self-aware commentary on crowd dynamics fits his habit of meta-commentary about his own political performance. The tell is the trailing-off repetition of 'fine,' which is funnier and more self-deprecating than Cruz typically allows himself to be."
+    },
+    {
+      "id": "q3",
+      "text": "Nothing so dates a man as to decry the younger generation.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The Democratic statesman, in a speech at the University of Wisconsin, Madison (8 October 1952) - a dry, self-aware needle at those who complain about the young.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I grew up watching my father campaign, which means I grew up watching a man shake hands with strangers for fourteen hours and then come home and fall asleep at the dinner table. I thought that was just what dads did.",
+      "speaker": "Gavin Newsom",
+      "context": "Interview with Ezra Klein for The Ezra Klein Show, New York Times Audio, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Newsom has spoken warmly and specifically about his father's political career on multiple occasions, and the childhood-observation framing matches his tendency to humanize policy arguments through personal narrative. The subtle tell is the 'fourteen hours' detail; Newsom usually keeps his personal anecdotes slightly less precise."
+    },
+    {
+      "id": "q5",
+      "text": "My first week in Congress I introduced a bill, co-sponsored a bill, and accidentally voted against my own bill. Three separate occasions. I've improved since then — it's now two separate occasions.",
+      "speaker": "Alexandria Ocasio-Cortez",
+      "context": "Panel discussion at SXSW, Austin, Texas, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — AOC has been openly candid about the steep learning curve of her first term, and self-deprecating legislative humor fits her brand of radical transparency perfectly. The tell is the callback structure of the punchline, which is slightly more rehearsed than her usual stream-of-consciousness style."
+    },
+    {
+      "id": "q6",
+      "text": "Overnight, people realized how essential it was",
+      "speaker": "Francesca Hong",
+      "context": "Wisconsin gubernatorial candidate Francesca Hong on free childcare as a political issue",
+      "real": true,
+      "source": {
+        "title": "Politics — How free childcare started winning US elections: ‘Overnight, people realized how",
+        "url": "https://www.theguardian.com/us-news/2026/jul/29/free-childcare-wins-midterm-election-votes",
+        "date": "2026-08-02"
+      }
+    }
+  ]
+}

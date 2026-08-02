@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-02",
+  "edition": 37,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "This ain't a football game, we do this every day.",
+      "speaker": "Earl Weaver",
+      "context": "The Baltimore Orioles manager on the day-in, day-out grind that makes baseball unlike other sports.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Eye on Quotes: The pithy brilliance of Earl Weaver",
+        "url": "https://www.cbssports.com/mlb/news/eye-on-quotes-the-pithy-brilliance-of-earl-weaver/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "When Demi attacked, I knew I had to follow.",
+      "speaker": "Lorena Wiebes",
+      "context": "After winning the opening stage of the 2026 Tour de France Femmes",
+      "real": true,
+      "source": {
+        "title": "Sports — Wiebes outsprints Le Court and Vollering to win Tour de France Femmes opening st",
+        "url": "https://www.theguardian.com/sport/2026/aug/01/lorena-wiebes-tour-de-france-femmes-2026-cycling-demi-vollering-kim-le-court",
+        "date": "2026-08-02"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "He can take his'n and beat your'n and take your'n and beat his'n.",
+      "speaker": "Bum Phillips",
+      "context": "The Houston Oilers head coach paying tribute to rival coach Don Shula's ability with any roster.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — Remembering Bum Phillips, the unsung defensive innovator",
+        "url": "https://www.si.com/nfl/2013/10/19/remembering-bum-phillips-the-unsung-defensive-innovator",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "When I face a new batter I don't know, I watch his feet first. Everybody watches the hands. The feet tell you if he's already decided where he wants the pitch to be.",
+      "speaker": "Pedro Martínez",
+      "context": "Pitching clinic Q&A session at the Baseball Hall of Fame, Cooperstown, July 2018",
+      "real": false,
+      "fake_note": "I made this one up — Pedro is famous for his intellectual approach to pitching and loves talking craft in exactly this contrarian, slightly instructional tone. The giveaway is that while Pedro does read hitters, he more characteristically talks about grips, movement, and embarrassing hitters mentally rather than this foot-reading detail."
+    },
+    {
+      "id": "q5",
+      "text": "People underestimate how much of managing a bullpen is just knowing who cannot handle a conversation right before they go in. Some guys you talk to them, they're fine. Others you talk to them and you've ruined them for the next forty-five minutes.",
+      "speaker": "Joe Maddon",
+      "context": "Interview on The Athletic's baseball podcast Throwing Bullets, recorded during 2021 spring training",
+      "real": false,
+      "fake_note": "I made this one up — Maddon built his entire managerial identity around unconventional player psychology and openly discusses reading personalities as a tactical tool, so this kind of observation is completely in character. The subtle giveaway is the oddly precise 'forty-five minutes,' which is just specific enough to feel real but is my invention."
+    },
+    {
+      "id": "q6",
+      "text": "I used to think I needed to be angry to compete. Took me a long time to figure out that I was already angry, I just didn't know what to do with it until there was a scoreboard involved.",
+      "speaker": "Ronda Rousey",
+      "context": "Conversation with Maria Shriver for the Los Angeles Times, May 2015",
+      "real": false,
+      "fake_note": "I made this one up — Rousey has been candid in numerous interviews about channeling personal turbulence into competition, and this kind of blunt retrospective self-analysis is squarely in her wheelhouse. The giveaway is the mild psychological tidiness of the self-discovery arc; her real versions of this story are usually angrier and more specific about what the anger was actually about."
+    }
+  ]
+}

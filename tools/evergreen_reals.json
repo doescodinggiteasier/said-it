@@ -318,5 +318,16 @@
       "url": "https://www.cbsnews.com/news/michael-phelps-on-peeing-in-the-pool-everybody-does-it/",
       "date": "2012-08-10"
     }
+  },
+  {
+    "text": "Good afternoon. God that sounds strange. I just got up",
+    "speaker": "Elvis Presley",
+    "context": "Elvis addressing the afternoon crowd at Hampton Coliseum, 50 years ago",
+    "real": true,
+    "source": {
+      "title": "Music — 50 Years Ago Today: An Exhausted Elvis Presley Plays a Lackluster Matinee in Vir",
+      "url": "https://www.rollingstone.com/music/music-features/50-years-ago-today-elvis-presley-virginia-1235600565/",
+      "date": "2026-08-02"
+    }
   }
 ]

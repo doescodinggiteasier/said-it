@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-02",
+  "edition": 45,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Rough business, this movie business. I may have to go back to loan sharking for a rest.",
+      "speaker": "Get Shorty (1995)",
+      "context": "Chili Palmer (John Travolta), the Miami loan shark turned Hollywood player, at the film's close.",
+      "real": true,
+      "source": {
+        "title": "Get Shorty - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Get_Shorty",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Every time I walk out of here I feel like I owe somebody an apology.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes (Nicholson) muttering to himself after a meeting with Evelyn Mulwray",
+      "real": false,
+      "fake_note": "I made this one up — Gittes has exactly this brand of self-deprecating noir cynicism and the line fits the film's atmosphere of moral unease. The tiny giveaway is the slight over-interiority; Gittes usually aims his sardonic remarks outward at other people."
+    },
+    {
+      "id": "q3",
+      "text": "Don't tell me about the cold. I grew up in a house with no roof.",
+      "speaker": "Schindler's List (1993)",
+      "context": "Stern deflecting a complaint from a factory worker early in the Kraków scenes",
+      "real": false,
+      "fake_note": "I made this one up — Stern's dry, weary pragmatism is well established and this sounds exactly like his understated self-sufficiency. The giveaway is that Stern almost never speaks about his own past; Spielberg keeps him opaque."
+    },
+    {
+      "id": "q4",
+      "text": "She wasn't lost. She just didn't want to be found by you.",
+      "speaker": "Vertigo (1958)",
+      "context": "Midge responding to Scottie's obsessive retelling of events",
+      "real": false,
+      "fake_note": "I made this one up — Midge's warm but pointed honesty toward Scottie is a real quality of her character, and the rhythm has that clean '50s studio-picture crispness. The giveaway is that by this point in the film Midge is largely sidelined and wouldn't deliver such a precise summary line."
+    },
+    {
+      "id": "q5",
+      "text": "That's the way it crumbles, cookie-wise.",
+      "speaker": "The Apartment (1960)",
+      "context": "C.C. 'Bud' Baxter (Jack Lemmon) parroting his boss Sheldrake's glib corporate-speak philosophy back to him.",
+      "real": true,
+      "source": {
+        "title": "The Apartment - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Apartment",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You smile at me like that again and I'm going to start believing you.",
+      "speaker": "Roman Holiday (1953)",
+      "context": "Joe Bradley (Peck) to Princess Ann as their day together winds down",
+      "real": false,
+      "fake_note": "I made this one up — the gentle, slightly rueful flirtation matches the film's bittersweet register and Peck's understated delivery style. The giveaway is a touch of modern romantic-comedy self-awareness that the studio-era script would have expressed more obliquely."
+    }
+  ]
+}

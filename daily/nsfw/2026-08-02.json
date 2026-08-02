@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-02",
+  "edition": 40,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Health nuts are going to feel stupid someday, lying in hospitals dying of nothing.",
+      "speaker": "Redd Foxx",
+      "context": "A signature dark one-liner from the pioneering, famously raunchy stand-up comedian (star of 'Sanford and Son'), mocking clean-living health fanatics. Foxx's party-hard, cigarette-and-booze persona was legendary.",
+      "real": true,
+      "source": {
+        "title": "Quote Details: Redd Foxx (The Quotations Page)",
+        "url": "https://www.quotationspage.com/quote/699.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I threw a television out of a hotel window in Cincinnati once and you know what my biggest regret is? It wasn't plugged in. Didn't make a goddamn sound. Just a quiet little thud. Completely unsatisfying. We went and found another one.",
+      "speaker": "Keith Moon",
+      "context": "Spoken to journalist Chris Charlesworth during a Melody Maker feature interview conducted at the Navarro Hotel, Los Angeles, August 1975",
+      "real": false,
+      "fake_note": "I made this one up — Moon's hotel destruction antics are thoroughly documented and this fits his absurdist, almost disappointed comedic voice perfectly. The subtle giveaway is 'Navarro Hotel' — Moon typically stayed at the Hyatt on Sunset, known as the 'Riot House,' during that period."
+    },
+    {
+      "id": "q3",
+      "text": "Someone asked me backstage, 'Rodney, what's your secret to a long marriage?' I said, 'Separate bathrooms, separate beds, and a very understanding girlfriend.' They didn't laugh. Neither did my wife when she found out.",
+      "speaker": "Rodney Dangerfield",
+      "context": "Backstage interview with Pat Sajak for The Late Show with Pat Sajak, recorded December 1989, before Dangerfield's second appearance that season",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield's whole brand was self-deprecating marriage jokes and the girlfriend punchline is dead in his wheelhouse. The giveaway is the rhythm is slightly too clean and structured for his usual rambling, interruptive delivery."
+    },
+    {
+      "id": "q4",
+      "text": "Alcohol was my poison. I drank Seagrams VO, a Canadian rye, with Coca-Cola. And beer. For me, beer was like air. I'd have a six-pack before noon.",
+      "speaker": "Alice Cooper",
+      "context": "Shock-rock legend Alice Cooper describing his heavy daily drinking before he got sober, in a Louder/Classic Rock feature on going cold turkey.",
+      "real": true,
+      "source": {
+        "title": "How Alice Cooper went cold turkey and made his most personal album (Louder)",
+        "url": "https://www.loudersound.com/features/how-alice-cooper-went-cold-turkey-and-made-his-most-personal-album",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I don't go on stage high but I'll take an edible after I get off stage and chill out. I do write a lot of jokes while high though, and then the next day I'll look at them and go, 'Well that's not that funny.'",
+      "speaker": "Jim Jefferies",
+      "context": "Crude Australian comedian Jim Jefferies — who built his name on drinking, drugs, and porn material — talking candidly about weed and his creative process, in a High Times interview (Aug 2023).",
+      "real": true,
+      "source": {
+        "title": "Jim Jefferies Is Living His Best Life (High Times)",
+        "url": "https://hightimes.com/culture/jim-jefferies-is-living-his-best-life/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My doctor tells me my cholesterol is high and I need to watch what I eat. I said, Doc, I'm watching every bite — I watch it go from the plate right into my mouth. I'm very attentive. He didn't find that funny. Doctors are a tough room.",
+      "speaker": "Dom DeLuise",
+      "context": "Stand-up warm-up remarks before a taping of The Tonight Show Starring Johnny Carson, Burbank, California, recorded March 1983 and later recounted in a cast memoir",
+      "real": false,
+      "fake_note": "I made this one up — DeLuise's cheerful, food-obsessed self-deprecation and his ability to riff on his own physical appearance without malice is perfectly in character. The giveaway is 'cast memoir' — DeLuise wasn't part of a regular Carson repertory company that would produce such a memoir."
+    }
+  ]
+}

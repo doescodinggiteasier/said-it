@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-02",
+  "edition": 48,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I do not like broccoli. And I haven't liked it since I was a little kid, and my mother made me eat it. And I'm President of the United States, and I'm not going to eat any more broccoli.",
+      "speaker": "George H. W. Bush",
+      "context": "Bush's lighthearted declaration at his March 22, 1990 news conference, when asked whether he had 'lost the broccoli vote' after it emerged he'd banned broccoli from Air Force One.",
+      "real": true,
+      "source": {
+        "title": "George H.W. Bush: Hater of Broccoli - Smart Politics (University of Minnesota Libraries)",
+        "url": "https://smartpolitics.lib.umn.edu/2013/07/09/george-hw-bush-hater-of-brocco/",
+        "date": "1990-03-22"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My dad used to say I'd get lost in a parking lot, and he wasn't wrong, I just think he underestimated how interesting parking lots are if you're willing to really look at them. There's a whole sociology happening out there between spaces C-7 and C-12.",
+      "speaker": "Malcolm Gladwell",
+      "context": "Revisionist History podcast, Season 7, Episode 'Lost and Found,' listener Q&A segment, August 2022",
+      "real": false,
+      "fake_note": "I made this one up — Gladwell is famous for finding profound sociological meaning in mundane environments, and his warm, gently self-mocking tone with family anecdotes is consistent across his podcast and interviews. The tell is the specific parking space numbers, which are the kind of oddly concrete detail I added to simulate authenticity but which slightly oversell it."
+    },
+    {
+      "id": "q3",
+      "text": "I do not have a five-year plan. I do not have a moonshot. I'm looking at the ground, and I want to fix the pothole that's right in front of me before I go in.",
+      "speaker": "Linus Torvalds",
+      "context": "Interviewed by Chris Anderson onstage at TED2016, contrasting himself with visionaries (he also says \"I am not a visionary.",
+      "real": true,
+      "source": {
+        "title": "The quotable Linus Torvalds, live onstage at TED | TED Blog",
+        "url": "https://blog.ted.com/the-quotable-linus-torvalds-live-onstage-at-ted/",
+        "date": "2016-02-17"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Federer made me rethink my backhand twice. Both times I watched footage of him and then went out and practiced for a week and came back marginally worse, which tells you something about the gap, I think.",
+      "speaker": "Andy Murray",
+      "context": "Desert Island Discs, BBC Radio 4, first broadcast January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Murray has publicly admired Federer and is known for forensic self-analysis combined with a quietly sardonic sense of humor, making this blend of reverence and dry self-deprecation entirely plausible. The subtle tell is that Murray would more likely give a technically specific detail about which part of the backhand rather than keeping it general."
+    },
+    {
+      "id": "q5",
+      "text": "We had a late show last night, and I only got two hours sleep.",
+      "speaker": "Elvis Presley",
+      "context": "Elvis addressing the crowd at Hampton Coliseum, 50 years ago",
+      "real": true,
+      "source": {
+        "title": "Music — 50 Years Ago Today: An Exhausted Elvis Presley Plays a Lackluster Matinee in Vir",
+        "url": "https://www.rollingstone.com/music/music-features/50-years-ago-today-elvis-presley-virginia-1235600565/",
+        "date": "2026-08-02"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've read maybe four books about quantum entanglement written for general audiences and they all reassured me at the beginning that I didn't need to be a physicist, and by chapter three I absolutely needed to be a physicist.",
+      "speaker": "Neil deGrasse Tyson",
+      "context": "StarTalk Radio, Episode 'Cosmic Queries: Quantum Edition,' recorded live at the American Museum of Natural History, New York, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Tyson regularly pokes fun at pop-science oversimplification, which is squarely in his wheelhouse, and his self-referential humor is well-documented. The giveaway is the slightly too-polished comedic structure; his real asides tend to meander a bit more before landing."
+    }
+  ]
+}

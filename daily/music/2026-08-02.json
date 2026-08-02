@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-02",
+  "edition": 40,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've sat in rooms with executives who genuinely could not hear what was wrong with something. Not wouldn't — couldn't. And you realize the conversation was never going to happen the way you imagined it.",
+      "speaker": "Janelle Monáe",
+      "context": "Panel discussion at SXSW Music Conference, Austin, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Janelle has spoken candidly about creative friction with label structures without being inflammatory, and the distinction between 'wouldn't' and 'couldn't' is exactly the kind of careful verbal precision she uses. The giveaway is that she usually pivots toward hope or agency after a critique like this, and here she just lets it land."
+    },
+    {
+      "id": "q2",
+      "text": "I've probably rewritten the bridge on that song thirty times. Not exaggerating. At some point my engineer just stopped printing new versions because he knew I'd hate the next one too.",
+      "speaker": "Taylor Swift",
+      "context": "Interview with Rolling Stone, October 2023, discussing the production of 'The Tortured Poets Department'",
+      "real": false,
+      "fake_note": "I made this one up — Taylor's obsessive rewriting process is well-documented, and the detail about the engineer quietly giving up feels exactly like the self-deprecating specificity she uses. The subtle giveaway is that she almost never throws an engineer under the bus, even gently, in print."
+    },
+    {
+      "id": "q3",
+      "text": "It's a lot like being a chef, in a way. You're trying to create food that satisfies your taste, but with a good awareness that there are people whose tastes are for more salt, or more spice — or for less.",
+      "speaker": "Susan Rogers",
+      "context": "Prince's former recording engineer describing the producer's balancing act, in a Grammy.com interview about her career and her book.",
+      "real": true,
+      "source": {
+        "title": "Grammy.com — Producer & Engineer Susan Rogers Worked With Prince And Barenaked Ladies",
+        "url": "https://www.grammy.com/news/susan-rogers-producers-engineers-wing-interview-prince-barenaked-ladies-berklee-college-of-music/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "When I was young I studied classical music and Giuseppe Verdi has this wonderful quote: 'Good composers borrow, great composers steal.'",
+      "speaker": "Nile Rodgers",
+      "context": "The Chic guitarist and producer on how he views artists who borrow from his work, in an interview with The National.",
+      "real": true,
+      "source": {
+        "title": "The National — With Nile Rodgers, it is always bound to be Good Times",
+        "url": "https://www.thenationalnews.com/arts/with-nile-rodgers-it-is-always-bound-to-be-good-times-1.593775",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I remember finishing 'OK Computer' and thinking it was probably too long. Not in a self-deprecating way — genuinely, I thought we'd made something that people would turn off after track five. Thom thought differently. Thom is usually right, which is deeply annoying.",
+      "speaker": "Colin Greenwood",
+      "context": "Interview with Mojo Magazine, Issue 342, May 2022, on the 25th anniversary of 'OK Computer'",
+      "real": false,
+      "fake_note": "I made this one up — Colin Greenwood is the rare Radiohead member who speaks with dry, self-aware humor about the band dynamic, and the affectionate jab at Thom is completely in character. The giveaway is the specific claim about 'track five,' which is a little too neat to be spontaneous recall."
+    },
+    {
+      "id": "q6",
+      "text": "I had to pull off the road, I cried like a baby. I didn't realise how powerful music could be until that mom",
+      "speaker": "Shania Twain",
+      "context": "Shania Twain describing hearing Gabriel's Oboe by Ennio Morricone",
+      "real": true,
+      "source": {
+        "title": "Music — Shania Twain’s honest playlist: ‘If Dancing Queen comes on, you rush out’",
+        "url": "https://www.theguardian.com/music/2026/jul/26/shania-twain-honest-playlist-abba-harry-styles-phantom-opera",
+        "date": "2026-07-29"
+      }
+    }
+  ]
+}
