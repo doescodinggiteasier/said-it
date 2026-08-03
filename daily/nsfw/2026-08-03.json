@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-03",
+  "edition": 41,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My rider said 'no carnations.' Very specifically, no carnations. I showed up and the whole backstage smelled like a bloody funeral home. I said this is not a funeral, although by the time I'm done with the hotel minibar it might look like one.",
+      "speaker": "Dusty Springfield",
+      "context": "Backstage conversation recorded by tour manager Tom Vinelli during the It Begins Again UK tour, Manchester Apollo, October 1978",
+      "real": false,
+      "fake_note": "I made this one up — Springfield was genuinely notorious for diva-level tour riders and the timing fits her late-'70s comeback period. The giveaway is the minibar line — it's a slightly too-modern reference; 'minibar' as a concept was barely in hotels in 1978 and she probably wouldn't have used the term."
+    },
+    {
+      "id": "q2",
+      "text": "Maybe it was because we did it unabashedly out in the open. We didn't know it was shocking. Perhaps we were just too fucking frank.",
+      "speaker": "Slash",
+      "context": "The Guns N' Roses guitarist, in a Classic Rock/Louder interview, explaining why his band got a wilder reputation than peers who did 'the same shit'.",
+      "real": true,
+      "source": {
+        "title": "Louder (Classic Rock) — Six Pack: Slash on drugs, dying and Axl Rose",
+        "url": "https://www.loudersound.com/features/six-pack-slash-on-drugs-dying-and-axl-rose",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I threw a birthday party for myself in '78, rented the whole top floor of a hotel in Chicago, told everyone black tie. Nobody wore a tie. I wore a feather boa and nothing else from the waist up and we drank champagne until the sun came up and the hotel manager cried. That was forty-five. Forty-five was a great year.",
+      "speaker": "Divine",
+      "context": "Interview with Michael Musto, The Village Voice, December 1980",
+      "real": false,
+      "fake_note": "I made this one up — Divine's persona was full-throttle outrageousness and Musto's Village Voice column was a natural home for exactly this kind of anecdote. The giveaway is the age — Divine would have been roughly 33 in 1978, not 45, which a careful listener might clock."
+    },
+    {
+      "id": "q4",
+      "text": "I used to do drugs. I still do, but I used to, too.",
+      "speaker": "Mitch Hedberg",
+      "context": "One of late absurdist comedian Mitch Hedberg's most iconic one-liners, a paradoxical drug-use confession from his album 'Strategic Grill Locations' (1999). Hedberg's easygoing stoner persona and drug jokes were central to his act.",
+      "real": true,
+      "source": {
+        "title": "Mitch Hedberg — Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Mitch_Hedberg",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I did a show in Tulsa once where the dressing room smelled like a urinal and the rider had warm Schlitz and one bag of pork rinds. I ate the pork rinds, drank the Schlitz, went out and destroyed that crowd. Then I threw up in a trash can behind the stage. Greatest Tuesday of my life.",
+      "speaker": "Sam Kinison",
+      "context": "The Howard Stern Show, WXRK New York, October 1989",
+      "real": false,
+      "fake_note": "I made this one up — Kinison was notorious for grimy venue stories and genuinely did Stern multiple times in that era, so the setting lands. The giveaway is 'Greatest Tuesday of my life' — a little too tidy and self-aware for how chaotically he actually rambled."
+    },
+    {
+      "id": "q6",
+      "text": "He told me if I carried on at the same pace I'd start bleeding out of my dick, my asshole, my eyes, my nose – fucking everywhere, man. Just bleeding out of every orifice and never stopping.",
+      "speaker": "Zakk Wylde",
+      "context": "Black Label Society / Ozzy guitarist Zakk Wylde, laughing as he recounts his doctor's blunt warning about his extreme drinking while on blood thinners, in a 2013 Louder/Metal Hammer interview.",
+      "real": true,
+      "source": {
+        "title": "Black Label Society's Zakk Wylde interview: alcohol, acoustic albums and prison gigs with Ozzy Osbourne (Louder)",
+        "url": "https://www.loudersound.com/features/zakk-wylde-black-label-society-interview-2013",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

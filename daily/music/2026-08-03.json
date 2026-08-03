@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-03",
+  "edition": 41,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The bass is the conversation the song is having with itself. Everything else is what it decides to say out loud.",
+      "speaker": "Bootsy Collins",
+      "context": "Bass Player Magazine, 40th Anniversary Issue interview, November 2015",
+      "real": false,
+      "fake_note": "I made this one up — Bootsy is famous for his mystical, playful pronouncements about the philosophical primacy of bass, so this slots directly into his documented worldview. The subtle giveaway is it's slightly too tidy for Bootsy, who usually adds more cosmic flourish and funkiness before landing the point."
+    },
+    {
+      "id": "q2",
+      "text": "Trumpeters? We think we're the kings of the orchestra",
+      "speaker": "Wynton Marsalis",
+      "context": "Interview ahead of Edinburgh festival performance",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Trumpeters? We think we’re the kings of the orchestra’: Wynton Marsalis prepare",
+        "url": "https://www.theguardian.com/music/2026/aug/03/trumpeters-wynton-marsalis-edinburgh-festival-all-rise",
+        "date": "2026-08-03"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Y'all can't read this, can you?",
+      "speaker": "Stevie Wonder",
+      "context": "Presenting Song of the Year at the 2016 Grammy Awards (alongside Pentatonix), the blind musician held up the winner's envelope, which was written in Braille, and playfully teased his fellow presenters and the audience.",
+      "real": true,
+      "source": {
+        "title": "Stevie Wonder Charms GRAMMYs Audience With Braille Joke, Important Message",
+        "url": "https://www.etonline.com/awards/grammys/182416_stevie_wonder_charms_grammys_audience_with_braille_joke_important_message",
+        "date": "2016-02-15"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My mother used to say, boy, you play like you're arguing with somebody. And I thought about that for years before I realized she was right. I am always arguing with somebody. Just not out loud.",
+      "speaker": "Herbie Hancock",
+      "context": "NPR Music's Jazz Night in America podcast, recorded live at the Village Vanguard, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Herbie frequently discusses his mother's influence and the inner intellectual tension in improvisation, so it slots right into his documented themes. The tell is that the punchline lands a little too cleanly for off-the-cuff speech."
+    },
+    {
+      "id": "q5",
+      "text": "I've never once sat down and thought, okay, what do people want to hear right now. I wouldn't even know how to start that conversation with myself. I just go in there and whatever's been sitting on my chest for the last six months, that's what comes out. Sometimes it's embarrassing how obvious it is.",
+      "speaker": "Taylor Swift",
+      "context": "Rolling Stone, October 2023 cover story interview",
+      "real": false,
+      "fake_note": "I made this one up — Taylor routinely talks about writing from personal emotional truth rather than market calculation, so this sounds exactly like her. The subtle giveaway is 'sitting on my chest' — vivid but slightly more confessional-casual than her usual precise word choices."
+    },
+    {
+      "id": "q6",
+      "text": "A great song can make the worst singer in the world a star. And a bad song can't be saved the three greatest singers in the world.",
+      "speaker": "Quincy Jones",
+      "context": "Reflecting on the primacy of the song itself, in a Rolling Stone interview about producing Michael Jackson's album Bad.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Quincy Jones Looks Back on the Making of Michael Jackson's 'Bad'",
+        "url": "https://www.rollingstone.com/music/music-features/quincy-jones-looks-back-on-the-making-of-michael-jacksons-bad-117216/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

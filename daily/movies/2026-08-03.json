@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-03",
+  "edition": 46,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You want me to hold that for you, or are you gonna throw it again?",
+      "speaker": "Raiders of the Lost Ark (1981)",
+      "context": "Sallah, grinning at Indy after a close call with the whip",
+      "real": false,
+      "fake_note": "I made this one up — the warm, teasing rapport between Sallah and Indy is exactly this register, light and adventure-serial playful. The giveaway is Sallah's humor in the actual film is a bit more broadly exuberant; this line is a touch too dry for him."
+    },
+    {
+      "id": "q2",
+      "text": "Houston, we have a problem.",
+      "speaker": "Apollo 13 (1995)",
+      "context": "Aboard the damaged spacecraft, the crew reports the malfunction to mission control. The line is spoken by Jim Lovell (Tom Hanks), echoing Jack Swigert; the film's \"we have a problem\" differs from the real transmission's \"we've had a problem.\"",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "Loneliness has followed me my whole life. Everywhere.",
+      "speaker": "Taxi Driver (1976)",
+      "context": "Travis Bickle (Robert De Niro) in voice-over narration from his diary.",
+      "real": true,
+      "source": {
+        "title": "Taxi Driver - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Taxi_Driver",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I filed the report. Whether anybody reads it is a different conversation.",
+      "speaker": "Spotlight (2015)",
+      "context": "A Globe editor or reporter, flat and tired, after hitting another institutional wall",
+      "real": false,
+      "fake_note": "I made this one up — the bureaucratic exhaustion and dry resignation match the film's procedural tone and the reporters' weary professionalism. The subtle giveaway is it sounds slightly more TV-drama clipped than Spotlight's longer, overlapping dialogue rhythms."
+    },
+    {
+      "id": "q5",
+      "text": "We practice two nights a week, Carl. Two nights.",
+      "speaker": "Rudy (1993)",
+      "context": "A Notre Dame player grumbling to a teammate about Rudy's pestering dedication",
+      "real": false,
+      "fake_note": "I made this one up — the exasperated, mundane specificity fits the locker-room texture of the film exactly. The giveaway is the name 'Carl,' which I invented; real characters nearby Rudy have different names."
+    },
+    {
+      "id": "q6",
+      "text": "I drink your milkshake! I drink it up!",
+      "speaker": "There Will Be Blood (2007)",
+      "context": "Daniel Plainview (Daniel Day-Lewis) berating Eli Sunday in the bowling-alley confrontation",
+      "real": true
+    }
+  ]
+}

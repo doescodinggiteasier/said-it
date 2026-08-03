@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-03",
+  "edition": 37,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've read every page of the tax code. Well — I've read summaries of every page of the tax code. Well — I've had staffers read summaries of every page of the tax code and they brief me on the interesting parts. There are no interesting parts.",
+      "speaker": "Mitt Romney",
+      "context": "Remarks at the Gridiron Club dinner, Washington D.C., March 2013",
+      "real": false,
+      "fake_note": "I made this one up — Romney's self-deprecating, slightly stiff humor about wonky policy details is pitch-perfect for him, and the escalating walk-back is exactly how he deflates a boast. The subtle giveaway is that the punchline lands a beat too cleanly for real off-the-cuff speech."
+    },
+    {
+      "id": "q2",
+      "text": "The last time I was this high, I was trying to decide on my major.",
+      "speaker": "Barack Obama",
+      "context": "Self-deprecating joke at his final White House Correspondents' Dinner on April 30, 2016, riffing on how his approval ratings kept climbing in his last year in office ('in my final year, my approval ratings keep going up').",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at the White House Correspondents' Dinner | whitehouse.gov (Obama White House Archives)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2016/05/01/remarks-president-white-house-correspondents-dinner/",
+        "date": "2016-04-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I do not like broccoli. And I haven't liked it since I was a little kid, and my mother made me eat it. And I'm President of the United States, and I'm not going to eat any more broccoli.",
+      "speaker": "George H. W. Bush",
+      "context": "Bush's lighthearted declaration at his March 22, 1990 news conference, when asked whether he had 'lost the broccoli vote' after it emerged he'd banned broccoli from Air Force One.",
+      "real": true,
+      "source": {
+        "title": "George H.W. Bush: Hater of Broccoli - Smart Politics (University of Minnesota Libraries)",
+        "url": "https://smartpolitics.lib.umn.edu/2013/07/09/george-hw-bush-hater-of-brocco/",
+        "date": "1990-03-22"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My first year in the Senate I thought I'd read every bill before I voted on it. By the end of the first month I'd revised that to 'read the summary.' By February I was working on the assumption that someone had read it.",
+      "speaker": "Claire McCaskill",
+      "context": "Live taping of Talking Feds podcast with Harry Litman, recorded in Washington D.C., November 2019",
+      "real": false,
+      "fake_note": "I made this one up — McCaskill's frank, slightly self-deprecating candor about legislative reality is exactly her brand on political podcasts, and the month-by-month collapse of ambition is the kind of specific comic structure she actually uses. The subtle tell is she'd probably name the bill or the issue rather than keep it abstract."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me what I do to unwind and I tell them I reread legislation. They think I'm joking. I'm not joking. My wife thinks I need help.",
+      "speaker": "Al Gore",
+      "context": "Interview with Charlie Rose, PBS, October 2006",
+      "real": false,
+      "fake_note": "I made this one up — Gore's reputation as a policy obsessive and his dry, slightly awkward self-awareness make this completely plausible, and the wife detail adds the human texture he actually used in interviews. The giveaway is that Gore rarely volunteered domestic color this casually."
+    },
+    {
+      "id": "q6",
+      "text": "I'm not looking to kill people",
+      "speaker": "Donald Trump",
+      "context": "Trump speaking to reporters on Air Force One about seeking a deal with Iran",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump on making a deal with Iran: 'I'm not looking to kill people'",
+        "url": "https://thehill.com/homenews/administration/6004829-trump-iran-deal-negotiations/",
+        "date": "2026-08-03"
+      }
+    }
+  ]
+}
