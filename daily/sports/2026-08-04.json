@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-04",
+  "edition": 39,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I never thought it was possible",
+      "speaker": "Sigrid Haugset",
+      "context": "After winning stage three of Tour de France Femmes and taking overall lead",
+      "real": true,
+      "source": {
+        "title": "Sports — Sigrid Haugset stuns Tour de France Femmes favourites by storming to stage win",
+        "url": "https://www.theguardian.com/sport/2026/aug/03/sigrid-haugset-tour-de-france-femmes-stage-three-cycling",
+        "date": "2026-08-04"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "You spend a good piece of your life gripping a baseball, and in the end, it turns out that it was the other way around all the time.",
+      "speaker": "Jim Bouton",
+      "context": "The celebrated closing line of his tell-all baseball memoir 'Ball Four,' as quoted in the book's Wikipedia entry.",
+      "real": true,
+      "source": {
+        "title": "Wikipedia — Ball Four",
+        "url": "https://en.wikipedia.org/wiki/Ball_Four",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My mom still calls me after every game and tells me what I did wrong. Doesn't matter if we won by thirty. She'll find something. I've stopped trying to argue because she's usually right, and that's the most annoying part.",
+      "speaker": "Coco Gauff",
+      "context": "Appearance on The Tonight Show Starring Jimmy Fallon, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Gauff's relationship with her parents, especially her mother, is well documented and warmly discussed in real interviews. The detail about not arguing because mom is right lands in her genuine self-aware, slightly wry register. The subtle tell is the rhythm feels just a hair too rehearsed for how she actually rambles."
+    },
+    {
+      "id": "q4",
+      "text": "When I first got to the league I thought veterans were being helpful when they talked to me. Took me probably two years to figure out half of them were just trying to get in my head. That was a good lesson.",
+      "speaker": "Jayson Tatum",
+      "context": "Players Tribune feature, 'Things I Wish I Knew,' published February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Tatum regularly discusses his early-career education and the mental side of the NBA, and this observation tracks with his thoughtful, unhurried interview persona. The giveaway is the phrase 'that was a good lesson' — it's slightly more conclusive than how he usually lets a story breathe."
+    },
+    {
+      "id": "q5",
+      "text": "Leave me alone, I know what I'm doing!",
+      "speaker": "Kimi Raikkonen",
+      "context": "Formula 1 driver's deadpan team-radio reply to his Lotus race engineer Simon Rennie, who kept feeding him instructions during the 2012 Abu Dhabi Grand Prix (which Raikkonen went on to win).",
+      "real": true,
+      "source": {
+        "title": "F1.com — Leave me alone, I know what I'm doing: the best of Räikkönen on race radio",
+        "url": "https://www.formula1.com/en/latest/article/leave-me-alone-i-know-what-doing-best-of-raikkonen-race-radio.rCKOidDkwt70dZdOENU3e",
+        "date": "2022-11-04"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Shaq used to bump me before tip-off — not hard, just enough. And he'd look at me like, 'you sure?' Every game. Every single game. I started looking forward to it because at least I knew where I stood.",
+      "speaker": "Dikembe Mutombo",
+      "context": "Naismith Basketball Hall of Fame enshrinement weekend panel discussion, Springfield, Massachusetts, September 2015",
+      "real": false,
+      "fake_note": "I made this one up — Mutombo and O'Neal's physical battles are well documented and Mutombo's warm, storytelling interview style makes this kind of specific pre-game ritual anecdote very plausible. The gentle tell is the slightly too-neat emotional payoff at the end, which is a beat more literary than his actual exuberant cadence."
+    }
+  ]
+}

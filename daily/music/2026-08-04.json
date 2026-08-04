@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-04",
+  "edition": 42,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember finishing the mix on that record at like four in the morning and just sitting in the car in the parking garage for twenty minutes because I didn't want to go back inside and change anything. That was the first time I ever trusted myself that way.",
+      "speaker": "Questlove",
+      "context": "Red Bull Music Academy lecture series, New York, October 2018",
+      "real": false,
+      "fake_note": "I made this one up — Questlove regularly tells studio war stories in exactly this reflective, self-analytical register, and the parking-garage detail feels like real Ahmir Thompson specificity. The giveaway is that he almost always names the album or the engineer; leaving both vague is a tiny structural tell."
+    },
+    {
+      "id": "q2",
+      "text": "I think of Mick Jagger and ask myself: What keeps him getting up on that stage?",
+      "speaker": "Brandon Flowers",
+      "context": "Interview about considering quitting music, 2026",
+      "real": true,
+      "source": {
+        "title": "Music — Brandon Flowers Says He’s Considered Quitting Music: ‘How Much Longer do I Want ",
+        "url": "https://www.rollingstone.com/music/music-news/brandon-flowers-considering-quitting-music-interview-1235603183/",
+        "date": "2026-08-04"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "We did not imagine that merely holding up the flag of a sovereign state recognized by 157 countries (Palestine) would violate any law",
+      "speaker": "Massive Attack",
+      "context": "Statement after being banned from Singapore, 2026",
+      "real": true,
+      "source": {
+        "title": "Music — Massive Attack Banned From Singapore After Displaying Palestine Flag Onstage",
+        "url": "https://pitchfork.com/story/massive-attack-banned-from-singapore-after-displaying-palestine-flag-onstage/",
+        "date": "2026-08-04"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I was playing a show in Osaka and the whole front row just stood completely still with their eyes closed the whole set. Didn't clap, didn't move. I almost stopped to check if something was wrong and then I realized that was the highest compliment I'd ever been paid.",
+      "speaker": "Bon Iver",
+      "context": "Interview with Pitchfork ahead of the Eaux Claires festival, June 2016",
+      "real": false,
+      "fake_note": "I made this one up — Justin Vernon frequently talks about audience stillness as a goal and has discussed Japanese audiences specifically in interviews. The self-doubt followed by reframing is a very Bon Iver narrative arc. The tell is that he usually gets more granular about the specific venue or the song that was playing."
+    },
+    {
+      "id": "q5",
+      "text": "Honestly the hardest part of making a sample-based record isn't the clearances — you just make peace with that cost early on. The hard part is when you find something so perfect that using it would feel like stealing something private from a stranger.",
+      "speaker": "Danger Mouse",
+      "context": "Red Bull Music Academy radio interview, Rome, 2007",
+      "real": false,
+      "fake_note": "I made this one up — Brian Burton has spoken extensively about the ethics and craft of sampling, and the idea that emotional theft is harder than legal clearance is exactly the kind of distinction he draws. The tell is that he's usually more guarded in interviews and less likely to frame something this openly philosophical without circling back with a technical qualifier."
+    },
+    {
+      "id": "q6",
+      "text": "When I was really bad, I was not all bad. When I was really trying to be good, I could never be all good. There would be that black streak going through.",
+      "speaker": "Johnny Cash",
+      "context": "Reflecting at the close of his 1994 Rolling Stone interview on the two dogs (named Sin and Redemption) on his American Recordings album cover, and his own inner duality.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Johnny Cash: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/johnny-cash-the-rolling-stone-interview-54538/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-04",
+  "edition": 42,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Everyone thinks rock and roll is sex and danger. Most of it is standing in a parking lot in Dusseldorf at 2 a.m. arguing about whether the per diem covers bratwurst. It does not. The per diem never covers the bratwurst. This is the great lie of the rock and roll life.",
+      "speaker": "Frank Zappa",
+      "context": "Interview with Creem Magazine, published in the February 1982 issue, conducted during the You Are What You Is tour",
+      "real": false,
+      "fake_note": "I made this one up — Zappa's methodical deflation of rock mythology through a specific bureaucratic grievance is perfectly him; he loved exposing the machinery behind the mystique. The giveaway is the comedic repetition of \"bratwurst,\" which is funnier and more performative than Zappa's real prose interviews tended to get."
+    },
+    {
+      "id": "q2",
+      "text": "The reason we first started strumming guitars was because we wanted women and lots of them. And their daughters.",
+      "speaker": "Gene Simmons",
+      "context": "KISS bassist Gene Simmons, on The Oprah Winfrey Show in 1988, dismissing the idea that rock stars pick up guitars for lofty reasons — it was about groupies.",
+      "real": true,
+      "source": {
+        "title": "Gene Simmons Called KISS Groupie Hookups 'More Honest' Than Real Relationships (Best Life)",
+        "url": "https://bestlifeonline.com/gene-simmons-kiss-groupies/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I showed up to the Grammy after-party in '77 with a bottle of Jack and a grudge, and I left with neither. Some roadie drank my whiskey and some woman took my grudge and made it look like her idea. I don't even remember being mad, which means it was a good fuckin' night.",
+      "speaker": "John Belushi",
+      "context": "Recorded Q&A session at the National Lampoon 10th Anniversary Dinner, New York City, 1980",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's chaotic, self-deprecating party-wreck voice is pitch-perfect here, and the 1977 Grammy detail sits right in his timeline. The giveaway is the suspiciously tidy comedic arc; Belushi's real stories tended to unravel sloppier than this."
+    },
+    {
+      "id": "q4",
+      "text": "We played Rotterdam on no sleep and one between us, and I swear to Christ the crowd was angrier than we were. I thought, good. That's the relationship. We're a mess up here and you hate us for it. Now we're communicating.",
+      "speaker": "Joe Strummer",
+      "context": "Backstage interview for the Dutch music program VPRO Vinyl, Rotterdam Ahoy, June 1980",
+      "real": false,
+      "fake_note": "I made this one up — Strummer's combative, almost-philosophical take on performance friction is deeply in character, and his VPRO appearances were genuinely notoriously chaotic. The giveaway is \"one between us,\" which is vague in a way that Strummer's actual recollections tended not to be; he named things."
+    },
+    {
+      "id": "q5",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore.",
+      "speaker": "Bob Saget",
+      "context": "Bob Saget — the wholesome 'Full House' dad whose real-life stand-up was famously filthy — on fully embracing his profane comedy persona, in a Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "After I stopped doing drugs I started to fuck like a bunny!",
+      "speaker": "Courtney Love",
+      "context": "On how getting sober changed her sex drive, in an interview with The Fix.",
+      "real": true,
+      "source": {
+        "title": "The Fix interview",
+        "url": "https://www.thefix.com/courtney-love-interview/",
+        "date": "2011"
+      }
+    }
+  ]
+}

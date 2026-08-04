@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-04",
+  "edition": 50,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's a version of French cooking that is essentially just reminding you that you're not French and never will be. That's not what I'm interested in. I want you to feel like you belong at the table.",
+      "speaker": "Daniel Humm",
+      "context": "Chef's Table podcast with Andrew Talks to Chefs, episode released February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Humm talks extensively about hospitality as inclusion and his philosophy of making Eleven Madison Park feel democratic despite its price point, so the framing is very him. The giveaway is the slight dig at traditional French cooking, which Humm typically avoids; he's more likely to praise a tradition before subverting it."
+    },
+    {
+      "id": "q2",
+      "text": "I went back and watched the first season recently and I genuinely could not tell you what I was doing. Not in a false-modesty way — I actually don't know what choices I was making. Sometimes that's fine. Sometimes you're just operating on instinct and the instinct happens to be okay.",
+      "speaker": "Bryan Cranston",
+      "context": "Interview with Terry Gross on NPR's Fresh Air, broadcast September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Cranston is extensively documented reflecting on his Breaking Bad performance with exactly this combination of analytical curiosity and bemused honesty about his own process. The giveaway is 'the instinct happens to be okay' — Cranston tends to be more specifically affirming about instinct-driven performance; he wouldn't usually leave it that tepid."
+    },
+    {
+      "id": "q3",
+      "text": "The ocean swimming I can handle. The jellyfish I cannot. I know logically they're not targeting me specifically but they have absolutely no face and that is the issue.",
+      "speaker": "Alistair Brownlee",
+      "context": "BBC Sport feature interview published ahead of the Tokyo 2020 Olympic triathlon, July 2021",
+      "real": false,
+      "fake_note": "I made this one up — Brownlee is famously dry and self-aware in interviews and has discussed open-water discomforts before, which makes this feel very natural coming from him. The giveaway is the slight comic escalation at the end; Brownlee is funny but rarely builds a joke that neatly in real conversation."
+    },
+    {
+      "id": "q4",
+      "text": "I think everybody pees in the pool.",
+      "speaker": "Michael Phelps",
+      "context": "Swimmer answering a Wall Street Journal interview question about pool etiquette, as quoted by CBS News",
+      "real": true,
+      "source": {
+        "title": "Michael Phelps on peeing in the pool: Everybody does it",
+        "url": "https://www.cbsnews.com/news/michael-phelps-on-peeing-in-the-pool-everybody-does-it/",
+        "date": "2012-08-10"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
+      "speaker": "Ted Stevens",
+      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality.",
+      "real": true,
+      "source": {
+        "title": "Series of tubes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
+        "date": "2006-06-28"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Honestly, I ate nothing else in all my time out in China except chicken nuggets. They were the only food I could properly trust which wouldn't affect my stomach.",
+      "speaker": "Usain Bolt",
+      "context": "Sprinter recalling his diet during the 2008 Beijing Olympics, in his autobiography, as quoted by NBC Sports",
+      "real": true,
+      "source": {
+        "title": "Sports — Usain Bolt on his 2008 Beijing Olympics diet",
+        "url": "https://www.yahoo.com/lifestyle/last-time-olympics-were-beijing-182154809.html",
+        "date": "2024-07-23"
+      }
+    }
+  ]
+}

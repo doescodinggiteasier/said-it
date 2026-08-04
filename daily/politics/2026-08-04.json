@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-04",
+  "edition": 38,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's a reporter somewhere writing a piece right now about how I'm too calm. I've seen three of those pieces. I genuinely do not know what the alternative is supposed to look like.",
+      "speaker": "Mitt Romney",
+      "context": "Conversation with Bob Schieffer recorded for a Face the Nation retrospective special, CBS News, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Romney's slightly exasperated, understated self-awareness about his own perceived affect is very much on brand. The giveaway is 'I've seen three of those pieces' — too precise a number to be truly off-the-cuff."
+    },
+    {
+      "id": "q2",
+      "text": "I've been doing this long enough that when someone tells me a vote will be close, what I hear is: go find out what 'close' means to the person talking.",
+      "speaker": "Nancy Pelosi",
+      "context": "Interview with Judy Woodruff on PBS NewsHour, March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi's reputation for whip-count precision and her habit of treating vote arithmetic as a kind of tradecraft she won't fully explain is exactly right. The giveaway is that it borders on an aphorism; her real remarks tend to be more granular."
+    },
+    {
+      "id": "q3",
+      "text": "I think this is the most extraordinary collection of talent, of human knowledge, that has ever been gathered together at the White House, with the possible exception of when Thomas Jefferson dined alone.",
+      "speaker": "John F. Kennedy",
+      "context": "Opening of President Kennedy's toast at a dinner honoring Western Hemisphere Nobel Prize winners, April 29, 1962 — a famously gracious, witty compliment to the assembled laureates by invoking Jefferson's solitary genius.",
+      "real": true,
+      "source": {
+        "title": "Remarks at a Dinner Honoring Nobel Prize Winners of the Western Hemisphere | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-dinner-honoring-nobel-prize-winners-the-western-hemisphere",
+        "date": "1962-04-29"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My first week in the Senate I asked a colleague how long it takes to really understand the appropriations process. He looked at me and said, 'Oh, you never do.' Twenty years later I think he was being optimistic.",
+      "speaker": "Chuck Schumer",
+      "context": "Address to incoming Senate Democratic freshmen, published in The Hill, January 2019",
+      "real": false,
+      "fake_note": "I made this one up — Schumer loves procedural war stories and often frames his longevity as a running joke at the institution's expense. The subtle giveaway is that the punchline is a little too polished for genuine off-the-cuff Schumer."
+    },
+    {
+      "id": "q5",
+      "text": "I have been to more Iowa county fairs than I can count, and I want to be clear: the butter cow is extraordinary every single time. That is not a political statement. That is just the truth.",
+      "speaker": "Pete Buttigieg",
+      "context": "Appearance on The Axe Files podcast with David Axelrod, University of Chicago Institute of Politics, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Buttigieg genuinely campaigned exhaustively in Iowa and has a running habit of disarming audiences with unexpectedly sincere small observations. The tell is the phrase 'that is just the truth' — slightly too practiced for the spontaneous aside it's pretending to be."
+    },
+    {
+      "id": "q6",
+      "text": "I've now been in 57 states? I think one left to go.",
+      "speaker": "Barack Obama",
+      "context": "Then a Democratic U.S. Senator from Illinois campaigning for president, Obama misspoke at a May 9, 2008 event in Beaverton, Oregon, after a long stretch of travel (he meant 47).",
+      "real": true,
+      "source": {
+        "title": "Obama's 'Bumbles' - FactCheck.org",
+        "url": "https://www.factcheck.org/2011/06/obamas-bumbles/",
+        "date": "2008-05-09"
+      }
+    }
+  ]
+}
