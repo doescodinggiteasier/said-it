@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-05",
+  "edition": 43,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Quincy called me about three weeks into the Off the Wall sessions and said something like, 'I need you to hear what Michael did last night.' Not a rough cut, not a demo — he just played it down the phone. That was the moment I understood what we were dealing with. I drove to the studio the next morning and I didn't say a word. I just sat down and started working.",
+      "speaker": "Rod Temperton",
+      "context": "Archival interview recorded for the BBC documentary 'The Invisible Man: The Rod Temperton Story', originally broadcast January 2017",
+      "real": false,
+      "fake_note": "I made this one up — Rod Temperton was genuinely self-effacing and spoke about Michael and Quincy in exactly this kind of deferential, story-first way. The detail of a phone playback feels plausibly vintage. The giveaway for sharp players is that Rod passed away in 2016, before the documentary that would have housed this quote aired."
+    },
+    {
+      "id": "q2",
+      "text": "When I mix, I'm not thinking about what the track needs. I'm thinking about what the room is going to do to it. Because the room always wins. You can put something in that sounds perfect in the control room and it turns into soup the moment someone plays it somewhere with a low ceiling. So I'm always mixing for the room I haven't heard yet.",
+      "speaker": "Sylvia Massy",
+      "context": "Panel discussion at the AES Convention, New York, October 2019, following a presentation on her recording methodology",
+      "real": false,
+      "fake_note": "I made this one up — Sylvia is known for practical, technical, and slightly philosophical takes on the recording process, and she regularly speaks at AES events. The language here fits her straightforward, experienced engineer's voice. The subtle giveaway is the phrase 'turns into soup,' which is vivid but slightly more casual than her usual technical precision."
+    },
+    {
+      "id": "q3",
+      "text": "I thought the whole idea of celebrating a 50th Anniversary was preposterous",
+      "speaker": "Elvis Costello",
+      "context": "Announcing the 49th Anniversary box set of My Aim Is True",
+      "real": true,
+      "source": {
+        "title": "Music — Elvis Costello Announces My Aim Is True 49th Anniversary Box Set",
+        "url": "https://pitchfork.com/story/elvis-costello-announces-my-aim-is-true-49th-anniversary-box-set/",
+        "date": "2026-08-05"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The song is the power; the singer is the messenger. The greatest singer in the world cannot save a bad song.",
+      "speaker": "Quincy Jones",
+      "context": "On what he considers the most important lesson he learned as a producer, in his widely-shared 2018 Vulture interview.",
+      "real": true,
+      "source": {
+        "title": "The Atlanta Journal-Constitution — 9 of the best quotes from Quincy Jones' sweeping Vulture interview",
+        "url": "https://www.ajc.com/entertainment/the-best-quotes-from-quincy-jones-sweeping-vulture-interview/1rIyLBqVGNd8I5eb7JUK4H/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "A rhinestone shines just as good as a diamond.",
+      "speaker": "Dolly Parton",
+      "context": "On being 'totally artificial' in appearance yet 'totally real' as an artist and person, in her November 2019 ELLE interview.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Lifestyle — 20 Refreshingly Honest Dolly Parton Quotes",
+        "url": "https://www.yahoo.com/lifestyle/20-refreshingly-honest-dolly-parton-164600374.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I do think there's something that happens when you've been singing the same song for twenty-five years. You start hearing what was wrong with it. Not wrong-wrong — you don't want to fix it — but you can hear yourself at twenty-two deciding something, and it's like watching a kid try to parallel park. There's love in it, but there's also a lot of steering wheel.",
+      "speaker": "Alanis Morissette",
+      "context": "Q&A session following an acoustic performance at the Massey Hall, Toronto, June 2023, during the 'Jagged Little Pill' anniversary tour",
+      "real": false,
+      "fake_note": "I made this one up — Alanis genuinely reflects on her younger self with this exact mix of tenderness and critical distance, and she loves personal, slightly awkward analogies. The parallel parking image is the kind of thing she'd reach for. The giveaway is that she tends to go a beat further emotionally, usually circling back to gratitude, which this quote skips."
+    }
+  ]
+}

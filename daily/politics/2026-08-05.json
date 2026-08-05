@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-05",
+  "edition": 39,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "For many years, the vast Majority of Americans have asked to make Daylight Saving Time permanent, but no Administration has been able to get it done, until now,",
+      "speaker": "Donald Trump",
+      "context": "Trump statement on daylight saving time bill",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump backs House-passed bill to make daylight savings time permanent",
+        "url": "https://thehill.com/homenews/administration/6009651-trump-backs-house-passed-bill-to-make-daylight-savings-time-permanent/",
+        "date": "2026-08-05"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I have read every page of this bill. Every single page. And I will tell you honestly, somewhere around page four hundred I started wondering if anyone had ever read every page of any bill, ever, in the history of this institution.",
+      "speaker": "Bernie Sanders",
+      "context": "Remarks to reporters in the Senate hallway following a Budget Committee markup session, captured by C-SPAN cameras, February 2019",
+      "real": false,
+      "fake_note": "I made this one up — Bernie's exasperated, self-aware stamina on legislation is completely in character, and the escalating self-doubt sounds exactly like his unscripted asides. The subtle giveaway is that Bernie would almost certainly pivot immediately to a policy grievance rather than leaving the punchline hanging."
+    },
+    {
+      "id": "q3",
+      "text": "Canada has the longest undefended border in the world, which I have always thought was less a point of pride and more a very polite warning.",
+      "speaker": "Justin Trudeau",
+      "context": "Address to the Woodrow Wilson Center for International Scholars in Washington, D.C., February 2017",
+      "real": false,
+      "fake_note": "I made this one up — Trudeau regularly invokes the Canada-U.S. relationship with exactly this mixture of warmth and gentle irony, and the border fact is one he genuinely references. The giveaway is Trudeau's real rhetorical style leans more earnest than dry; the 'polite warning' twist is a bit too self-consciously clever for his usual delivery."
+    },
+    {
+      "id": "q4",
+      "text": "Charlie Hatcher and I have been friends for 25 years,",
+      "speaker": "Bill Lee",
+      "context": "Tennessee Governor endorsing Charlie Hatcher in GOP primary video",
+      "real": true,
+      "source": {
+        "title": "Politics — Tennessee governor bucks Trump, endorses against Ogles in primary",
+        "url": "https://thehill.com/homenews/house/6009695-lee-bucks-trump-hatcher-endorsement/",
+        "date": "2026-08-05"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People ask me what the hardest part of being Speaker was. Honestly? Counting. You think you have the votes. You are absolutely certain you have the votes. And then you find out what 'having the votes' actually means.",
+      "speaker": "Nancy Pelosi",
+      "context": "Interview with Kara Swisher on the Sway podcast, New York Times Opinion, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi's reputation as a vote-counter is so foundational that a wry joke undermining the certainty of vote-counting feels totally plausible from her. The giveaway is she tends to be more declarative and less self-deprecating in recorded interviews; she'd more likely credit her caucus than admit to miscounting."
+    },
+    {
+      "id": "q6",
+      "text": "When I was attorney general, my staff would send me briefing memos that were color-coded. I eventually learned the colors were not a ranking system. They were just someone's favorite colors. Didn't change the policy outcomes at all, I have to say.",
+      "speaker": "Kamala Harris",
+      "context": "Keynote address at the American Bar Association Annual Meeting in Chicago, August 2018",
+      "real": false,
+      "fake_note": "I made this one up — Harris frequently draws on her AG tenure for anecdotes and has a well-documented style of building up a mundane observation into a longer laugh. The giveaway is real Harris stories about her AG days tend to be more purposefully directed toward a serious point; this one trails off without a lesson, which isn't quite her rhythm."
+    }
+  ]
+}

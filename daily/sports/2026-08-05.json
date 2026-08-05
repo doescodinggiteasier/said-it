@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-05",
+  "edition": 40,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The ice doesn't care how tired you are. You can be absolutely done, legs gone, and it will still hold you up. I always found that funny for some reason. Comforting, almost.",
+      "speaker": "Wayne Gretzky",
+      "context": "Sportsnet Magazine, longform profile, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Gretzky's reflective, almost poetic relationship with the ice is well-documented and this fits his meditative public voice. Sharp players might flag 'the ice doesn't care' as sliding toward a maxim, which is exactly the trap I set."
+    },
+    {
+      "id": "q2",
+      "text": "But I also know, if I was healthy, with good hips right now, I'd be the fastest 45-year-old in the country, or in the world.",
+      "speaker": "Bo Jackson",
+      "context": "Reflecting in retirement, years after his hip injury, in ESPN's long-form 'Bo Knows Best' feature.",
+      "real": true,
+      "source": {
+        "title": "ESPN E-ticket — Bo Knows Best",
+        "url": "http://www.espn.com/espn/eticket/story?page=bojackson",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I mean, if it was the only option, I think that's where everyone would want to ⁠be for sure, 100%",
+      "speaker": "Cameron Smith",
+      "context": "Australian golfer on potentially returning to PGA Tour if LIV Golf folds, ahead of LIV event",
+      "real": true,
+      "source": {
+        "title": "Sports — Cam Smith wants LIV Golf to live on but ‘100%’ would return to PGA Tour",
+        "url": "https://www.theguardian.com/sport/2026/aug/05/cam-smith-liv-golf-pga-tour-return",
+        "date": "2026-08-05"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Some guys need music, need noise, need something going in the background to get loose. I need about ten minutes in a completely quiet room. Nobody talks to me, nobody looks at me. My whole career people thought I was being rude. I was just getting ready.",
+      "speaker": "Kobe Bryant",
+      "context": "GQ Men of the Year cover profile, November 2015",
+      "real": false,
+      "fake_note": "I made this one up — Kobe's well-documented intensity and pre-game isolation make this utterly plausible, and GQ gave him exactly this kind of long-form space. The slight tell is 'nobody looks at me,' which is a touch more dramatic than his typical measured phrasing."
+    },
+    {
+      "id": "q5",
+      "text": "Because there is always some kid who may be seeing me for the first time. I owe him my best.",
+      "speaker": "Joe DiMaggio",
+      "context": "Explaining why he always played so hard, even in meaningless late-season games, on the PBS American Experience profile.",
+      "real": true,
+      "source": {
+        "title": "PBS American Experience — Joe DiMaggio",
+        "url": "https://www.pbs.org/wgbh/americanexperience/features/dimaggio-joe-dimaggio/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My back was bad enough that getting out of the car some mornings took, like, a genuine effort. A real effort. And then you go out there and someone hits you and you think, okay, at least now I'm warm.",
+      "speaker": "Shaquille O'Neal",
+      "context": "Inside the NBA, TNT, pregame interview segment, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Shaq's humor always comes from this kind of physical self-awareness, the big man complaining about his body in a way that's charming rather than whiny. The giveaway is the slightly odd logic of 'at least I'm warm,' which sounds improvised but is just a touch too neat."
+    }
+  ]
+}

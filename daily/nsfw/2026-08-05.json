@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-05",
+  "edition": 43,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Cheating is a man, he sneaks out of his own house to go, like, find some happiness behind your back so your feelings aren't hurt. Cheating is for you.",
+      "speaker": "Patrice O'Neal",
+      "context": "From the late, notoriously unfiltered comedian Patrice O'Neal's Comedy Central special 'Elephant in the Room' (2011) — his provocative, deadpan bit reframing male infidelity as an act of consideration.",
+      "real": true,
+      "source": {
+        "title": "Patrice O'Neal: Elephant in the Room (2011) — Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/patrice-oneal-elephant-in-the-room-2011-full-transcript/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Whiskey is a great drink. Now whiskey's very classy and adult, till you shit your pants. But other than that, it is great.",
+      "speaker": "Dave Attell",
+      "context": "From filthy, drink-soaked comedian Dave Attell's stand-up special 'Road Work' (2014) — Attell (the 'Insomniac' host) riffing on booze in his trademark crude style.",
+      "real": true,
+      "source": {
+        "title": "Dave Attell: Road Work (2014) — Full Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/dave-attell-road-work-transcript/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Vegas is the only place where you can lose forty grand, eat a shrimp cocktail the size of your head, and still feel like you're winning. I don't understand it but I am absolutely in favor of it.",
+      "speaker": "Dean Martin",
+      "context": "Between-set banter captured on a live recording reel at the Sands Hotel Copa Room, Las Vegas, February 1965",
+      "real": false,
+      "fake_note": "I made this one up — Dino's easy, slightly booze-glazed Vegas charm is all over this, and the Sands Copa Room is exactly his turf. The subtle giveaway is the phrase 'I am absolutely in favor of it' — slightly too self-aware and ironic for Martin's usual looser, more offhand delivery."
+    },
+    {
+      "id": "q4",
+      "text": "People ask me what my skincare routine is. Bourbon and spite, sweetheart. I haven't used moisturizer since 1987 and I look fucking fantastic.",
+      "speaker": "Joan Rivers",
+      "context": "Audience warm-up remarks before a taping of Fashion Police, E! Studios, Los Angeles, March 2012",
+      "real": false,
+      "fake_note": "I made this one up — Rivers made her own plastic surgery the centerpiece of her comedy, so a booze-and-spite skincare gag is exactly her self-deprecating lane. The giveaway is the contradiction: Rivers was famously obsessive about her actual appearance routines and would never claim to skip moisturizer."
+    },
+    {
+      "id": "q5",
+      "text": "Man, some chick threw her bra on stage in Tulsa and it hit me right in the eye. I'm standing there, half-blind, trying to play 'Johnny B. Goode,' and the whole crowd thinks it's part of the show. Best night of the goddamn tour.",
+      "speaker": "Chuck Berry",
+      "context": "Spoken during a Q&A session at the Chicago Blues Festival press luncheon, Grant Park, June 1987",
+      "real": false,
+      "fake_note": "I made this one up — Berry's deadpan storytelling and his history of rowdy touring makes this totally believable in his cadence. The giveaway is that Berry was famously tight-lipped at public press events — he wouldn't have riffed this openly at a luncheon."
+    },
+    {
+      "id": "q6",
+      "text": "There are 400,000 words in the English language, and there are seven of them that you can't say on television. What a ratio that is. 399,993 to seven. They must really be bad.",
+      "speaker": "George Carlin",
+      "context": "Carlin's landmark \"Seven Words You Can Never Say on Television\" routine from his 1972 album Class Clown, listing the broadcast-banned words verbatim and reveling in saying them all out loud.",
+      "real": true,
+      "source": {
+        "title": "The Big Seven Words — George Carlin",
+        "url": "https://www.erenkrantz.com/Humor/SevenDirtyWords.shtml",
+        "date": "1972"
+      }
+    }
+  ]
+}

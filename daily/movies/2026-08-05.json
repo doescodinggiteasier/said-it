@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-05",
+  "edition": 48,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I hate that word. It's a return, a return to the millions of people who have never forgiven me for deserting the screen.",
+      "speaker": "Sunset Boulevard (1950)",
+      "context": "Faded silent star Norma Desmond (Gloria Swanson) correcting screenwriter Joe Gillis (William Holden) when he calls her planned return a 'comeback.'",
+      "real": true,
+      "source": {
+        "title": "Sunset Boulevard - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Sunset_Boulevard",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I used to think the worst thing in the world was dying alone. Then I met some people.",
+      "speaker": "As Good as It Gets (1997)",
+      "context": "Melvin Udall, deadpan, to his neighbor Carol at the diner",
+      "real": false,
+      "fake_note": "I made this one up — Melvin's voice is self-satisfied misanthropy delivered with perfect timing, and this matches his rhythm exactly. The giveaway is it's structured almost too much like a stand-up punchline; Brooks's script usually lets Melvin's cruelty land a little more accidentally."
+    },
+    {
+      "id": "q3",
+      "text": "She's not missing. She left. There's a difference, and I suggest you learn it.",
+      "speaker": "Gone Girl (2014)",
+      "context": "Detective Boney, flat and pointed, cutting off Nick Dunne during questioning",
+      "real": false,
+      "fake_note": "I made this one up — Boney's procedural cool and Fincher's clipped dialogue style make this feel right at home. The giveaway is the line is a fraction too rhetorically tidy; Fincher's detectives usually land their digs more sideways."
+    },
+    {
+      "id": "q4",
+      "text": "I don't negotiate with the weather, and I don't negotiate with you.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Anton Chigurh, eerily calm, to a motel clerk who asks him to move his car",
+      "real": false,
+      "fake_note": "I made this one up — Chigurh's terrifying philosophical composure is real, and his habit of drawing cosmic comparisons fits perfectly. The giveaway is the parallel construction is a shade too theatrical; the Coens write Chigurh as genuinely curious rather than performatively quotable."
+    },
+    {
+      "id": "q5",
+      "text": "The Empire doesn't leave forwarding addresses.",
+      "speaker": "Star Wars: A New Hope (1977)",
+      "context": "Han Solo, shrugging off a question about Imperial troop movements",
+      "real": false,
+      "fake_note": "I made this one up — Han's whole register is world-weary smuggler shorthand and this has that exact flavor of casual cynicism. The subtle giveaway is 'forwarding addresses' is one beat too modern-bureaucratic; Han's slang usually feels more spacer-practical than office-world."
+    },
+    {
+      "id": "q6",
+      "text": "Yo, Adrian!",
+      "speaker": "Rocky (1976)",
+      "context": "Rocky Balboa addressing Adrian; \"Yo, Adrian! It's me, Rocky.\" The phrase appears in the 1976 film.",
+      "real": true
+    }
+  ]
+}

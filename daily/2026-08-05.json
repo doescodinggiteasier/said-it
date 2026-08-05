@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-05",
+  "edition": 51,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Making my first record seemed like the beginning of something that I'd imagined for a long time, before I had any sense of a potential audience",
+      "speaker": "Elvis Costello",
+      "context": "Liner notes for the 49th anniversary box set of 'My Aim Is True'",
+      "real": true,
+      "source": {
+        "title": "Music — Elvis Costello to Celebrate 49th Anniversary of ‘My Aim Is True’ With Five-Disc ",
+        "url": "https://www.rollingstone.com/music/music-news/elvis-costello-my-aim-is-true-49th-anniversary-box-set-1235603330/",
+        "date": "2026-08-05"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I make up different names for my cat all the time—Flapjack, Bowtie, Popcorn. But he's really, 'Hey you, cat.'",
+      "speaker": "Christopher Walken",
+      "context": "The actor on his pet cat in an Interview Magazine feature",
+      "real": true,
+      "source": {
+        "title": "Christopher Walken on Cats, Characters, and Career Highlights - Interview Magazine",
+        "url": "https://www.interviewmagazine.com/film/christopher-walken",
+        "date": "2012-01-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I was never the fastest runner or the highest jumper. I was always just the last one to give up on a ball that everyone else had written off, and at some point that started to look like skill, so I let people believe it.",
+      "speaker": "Novak Djokovic",
+      "context": "Feature interview with L'Équipe Magazine, Paris, during the Roland-Garros fortnight, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Djokovic repeatedly describes his game in terms of relentlessness and retrieval rather than raw physical gifts, and his interviews with European press tend toward this reflective register. The tell is the slight false modesty, which is sharper than his usual framing of his work ethic as a genuine source of pride."
+    },
+    {
+      "id": "q4",
+      "text": "When Nevermind came out I genuinely thought it would be gone in six months. Not because I didn't believe in it — I just didn't trust that the world would sit still long enough to let it matter. I was wrong about that, clearly.",
+      "speaker": "Krist Novoselic",
+      "context": "Extended interview with MOJO Magazine for the 30th anniversary of Nevermind, Issue 334, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Novoselic has given dozens of anniversary retrospectives on Nevermind and consistently frames the band's success as something that surprised him, so this sits squarely in his documented narrative. The tell is 'sit still long enough,' which is a slightly too-poetic construction for his typically blunter interview voice."
+    },
+    {
+      "id": "q5",
+      "text": "I wrote the chorus to that song in a gas station parking lot in Muscle Shoals at two in the morning. I had a receipt from the pump and I wrote it on the back. I still have it somewhere in a box. At least I hope I do.",
+      "speaker": "Taylor Swift",
+      "context": "Rolling Stone cover profile, 'The Mastermind Returns,' November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Swift is well documented telling ultra-specific origin stories about her songwriting, down to exact locations and physical objects, so this matches her style almost exactly. The tell is Muscle Shoals, which is an Americana recording touchstone she hasn't publicly connected to her work."
+    },
+    {
+      "id": "q6",
+      "text": "I will do it myself where does he live?",
+      "speaker": "Cory Booker",
+      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes.",
+      "real": true,
+      "source": {
+        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
+        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
+        "date": "2010-12-27"
+      }
+    }
+  ]
+}
