@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-06",
+  "edition": 44,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I sort of fucking woke up one day and was like, 'You're an asshole. You're not an artist,'",
+      "speaker": "Lady Gaga",
+      "context": "Lady Gaga recounting the self-lacerating moment she decided to quit cocaine, in a Lifetime interview ('The Conversation with Amanda de Cadenet') reported by Rolling Stone; she went on to call cocaine 'the white devil.'",
+      "real": true,
+      "source": {
+        "title": "Lady Gaga Reflects on Past Cocaine Use (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/lady-gaga-reflects-on-past-cocaine-use-188696/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "A journalist once wrote that I seemed 'uncomfortable in my own skin.' Honey, I invented uncomfortable. I patented it. I'm charging royalties. You're gonna get a bill.",
+      "speaker": "Andy Kaufman",
+      "context": "Recorded green-room conversation before a taping of 'Fridays', ABC Studios, Los Angeles, aired January 1981",
+      "real": false,
+      "fake_note": "I made this one up — the deadpan corporate-surrealist threat and the refusal to break character even when riffing is perfectly Kaufman. The giveaway is 'honey' — Kaufman's persona rarely used that kind of casual Southern intimacy; it's slightly off his registered frequency."
+    },
+    {
+      "id": "q3",
+      "text": "Someone asked me after the show, 'Richard, do you ever get tired of being outrageous?' I said, yeah, about as often as I get tired of being right. Then I ordered another bourbon and told 'em to get the fuck out of my dressing room.",
+      "speaker": "Richard Pryor",
+      "context": "Backstage interview with Rolling Stone magazine following his 'Live on the Sunset Strip' filming, Los Angeles, January 1982",
+      "real": false,
+      "fake_note": "I made this one up — Pryor absolutely had this combative, bourbon-referencing backstage energy and the cadence sounds dead-on. The giveaway is he rarely used 'outrageous' to describe himself; that was a word critics used, not him."
+    },
+    {
+      "id": "q4",
+      "text": "I once asked a Jesuit priest what was the best short prayer he knew. He said, \"Fuck it,\" as in \"Fuck it; it's in God's hands.\"",
+      "speaker": "Anthony Hopkins",
+      "context": "Anthony Hopkins recounting a Jesuit priest's answer when he asked for the best short prayer — an anecdote he has told publicly, including on Inside the Actors Studio.",
+      "real": true,
+      "source": {
+        "title": "Inside the Actors Studio (IMDb quotes)",
+        "url": "https://www.imdb.com/name/nm0000164/quotes/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Someone handed me a cocktail at the Grammys and I thought, well, at least one good thing is happening tonight. I didn't win anything. The drink was warm. I still say it was the best part of the evening.",
+      "speaker": "Townes Van Zandt",
+      "context": "Offhand remark quoted in a profile by journalist John Morthland, Texas Monthly, March 1978",
+      "real": false,
+      "fake_note": "I made this one up — Van Zandt's mournful, wry deadpan about losing delivered without self-pity is deeply in his register, and he genuinely attended and lost at various industry events. The giveaway is Van Zandt almost certainly never attended the Grammys; his world was too underground for that particular circus."
+    },
+    {
+      "id": "q6",
+      "text": "And cigarettes gave me the patience to sit and write those thoughts down in a comedy-friendly format that you could understand. And alcohol gives me the courage to stand up here in front of you judgmental pricks and do it with a quarter million dollars worth of cameras in your face.",
+      "speaker": "Doug Stanhope",
+      "context": "From Doug Stanhope's 2007 stand-up special \"No Refunds\" — his defiant, self-celebrating defense of lifelong drug, cigarette, and alcohol use as the engine of his comedy.",
+      "real": true,
+      "source": {
+        "title": "Doug Stanhope: No Refunds (2007) — Full Transcript",
+        "url": "https://scrapsfromtheloft.com/comedy/doug-stanhope-no-refunds-transcript/",
+        "date": "2007"
+      }
+    }
+  ]
+}

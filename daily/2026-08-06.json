@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-06",
+  "edition": 52,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'm not an animal lover if that means you think things are nice if you can pet them, but I am intoxicated by animals.",
+      "speaker": "David Attenborough",
+      "context": "Naturalist and broadcaster, in a 2013 Metro interview, on his relationship with wildlife",
+      "real": true,
+      "source": {
+        "title": "David Attenborough - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/David_Attenborough",
+        "date": "2013-01-29"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I tested a broth once — this was for the second book — where I reduced it for something like six hours and it tasted exactly like the thirty-minute version. I didn't tell anyone for about two years.",
+      "speaker": "Samin Nosrat",
+      "context": "Interview on Bon Appétit's podcast Tasting Notes, September 2019 episode",
+      "real": false,
+      "fake_note": "I made this one up — Nosrat is beloved for her honest, nerdy kitchen confessions and the salt-fat-acid-heat framework invites exactly this kind of methodological self-interrogation. The tell is that charming little delay — 'I didn't tell anyone for about two years' — which is almost too narratively tidy."
+    },
+    {
+      "id": "q3",
+      "text": "I wrote the first verse of 'Lose Yourself' in a McDonald's on a brown bag. People hear that and think it's mythology, but the truth is just that I didn't have paper and I was eating a Quarter Pounder and the song wasn't going to wait.",
+      "speaker": "Eminem",
+      "context": "8 Mile 20th Anniversary oral history, Rolling Stone, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — the 'Lose Yourself' napkin origin story is a well-known piece of Eminem lore (the real version involves a notepad on set), so this is a plausible but slightly revised echo of it. The tell is the Quarter Pounder detail, which feels like a deliberate authenticating flourish one step too far."
+    },
+    {
+      "id": "q4",
+      "text": "I genuinely did not understand what a 'metaverse' was the first four times someone explained it to me, and I work in the industry. At some point I just started nodding and hoping the PowerPoint would end.",
+      "speaker": "Sundar Pichai",
+      "context": "Appearance on the Lex Fridman Podcast, episode released in March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Pichai is known for self-deprecating, measured humor about tech hype, which makes this feel totally in character. The tell is that Pichai is characteristically more diplomatic in public; he'd likely soften 'hoping the PowerPoint would end' into something gentler."
+    },
+    {
+      "id": "q5",
+      "text": "I am extraordinarily patient, provided I get my own way in the end.",
+      "speaker": "Margaret Thatcher",
+      "context": "Self-aware, tongue-in-cheek remark by the British Prime Minister in an interview published in The Observer, 4 April 1989 (as catalogued by the Margaret Thatcher Centre's quotes page). Speaker was a UK Conservative Prime Minister.",
+      "real": true,
+      "source": {
+        "title": "Quotes - The Margaret Thatcher Centre",
+        "url": "https://www.thatchercentre.com/quotes/",
+        "date": "1989-04-04"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've sat in rooms where the consensus was completely wrong and everyone knew it and nobody said anything, including me. That's the thing they don't teach you in any leadership course — how to be the first one to break the silence.",
+      "speaker": "Indra Nooyi",
+      "context": "Keynote address at the Yale School of Management graduation ceremony, May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Nooyi is a frequent keynote speaker who reflects candidly on boardroom dynamics and organizational behavior, and this kind of honest institutional critique is very much her register. The slight tell is that it edges toward aphorism despite the concrete framing."
+    }
+  ]
+}

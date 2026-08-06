@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-06",
+  "edition": 41,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Everything we're doing is to be tough to defend, to gain advantages, to attack, to score points, to win",
+      "speaker": "Jason Beck",
+      "context": "Michigan football offensive coordinator on 2025 offense",
+      "real": true,
+      "source": {
+        "title": "Sports — Michigan football ready to pull out tricks, speed things up on offense",
+        "url": "https://sports.yahoo.com/articles/michigan-football-ready-pull-tricks-091126829.html",
+        "date": "2026-08-06"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I had the time of my life that",
+      "speaker": "Alessia Russo",
+      "context": "Interview about Arsenal trophy celebrations",
+      "real": true,
+      "source": {
+        "title": "Sports — Alessia Russo: ‘When you join the club, you take on a part of Arsenal and the lo",
+        "url": "https://www.theguardian.com/football/2026/aug/06/alessia-russo-arsenal-england-wsl-football-interview",
+        "date": "2026-08-06"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "He put on weight in the offseason. He's been able to maintain it. I think it'll help him.",
+      "speaker": "Andy Reid",
+      "context": "Press comments about Josh Simmons' offseason weight gain",
+      "real": true,
+      "source": {
+        "title": "Sports — Andy Reid: Josh Simmons has \"more lead in his pants\" after offseason weight gain",
+        "url": "https://sports.yahoo.com/articles/andy-reid-josh-simmons-more-091542078.html",
+        "date": "2026-08-06"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I've got, like, four or five different throwing motions depending on the situation and I don't think about any of them consciously anymore. You ask me to draw it on a board? I genuinely couldn't. My arm just knows.",
+      "speaker": "Patrick Mahomes",
+      "context": "Athletes Unlimited Podcast with Taylor Rooks, Episode 88, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Mahomes regularly discusses his improvised mechanics and has described his arm talent as something intuitive rather than taught, which makes this land perfectly. The tell is 'Athletes Unlimited Podcast with Taylor Rooks,' which conflates two real but separate media properties."
+    },
+    {
+      "id": "q5",
+      "text": "The weights room at the old stadium used to flood a little when it rained hard. Nobody fixed it for years. We'd just train in an inch of water like it was completely normal. I think about that every time I walk through our new facility.",
+      "speaker": "Alex Ferguson",
+      "context": "Manchester United official club documentary, 'The Class of '92: 25 Years On,' Sky Sports, 2017",
+      "real": false,
+      "fake_note": "I made this one up — Ferguson's nostalgic references to the gritty infrastructure of early Manchester United and his contrast of old versus new are thoroughly documented in his memoirs and interviews, and the matter-of-fact 'like it was completely normal' is pure Fergie deadpan. The giveaway is that 'The Class of '92: 25 Years On' is a real documentary but Ferguson's role in it was limited to a brief tribute segment."
+    },
+    {
+      "id": "q6",
+      "text": "My grandmother used to watch every game, and she did not care about statistics. She would call me after a loss and say, 'You were standing too far from the basket in the third quarter.' Eighty-one years old. She was usually right.",
+      "speaker": "Dirk Nowitzki",
+      "context": "Der Spiegel long-form retirement profile, June 2019, translated excerpt republished by The Athletic",
+      "real": false,
+      "fake_note": "I made this one up — Dirk has often credited family members and spoken warmly about his roots in Germany, and the gentle self-deprecating humor here is very consistent with his public persona. The sneaky part is that the grandmother detail feels so specific and warm that you want it to be real."
+    }
+  ]
+}

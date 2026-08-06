@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-06",
+  "edition": 49,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "She wasn't afraid of anything except being ordinary.",
+      "speaker": "Breakfast at Tiffany's (1961)",
+      "context": "Paul, narrating his impression of Holly Golightly",
+      "real": false,
+      "fake_note": "I made this one up — Paul's wry narrator voice and the bittersweet framing of Holly fit the film's tone. The giveaway is that it slides dangerously close to a detachable aphorism, whereas the real script keeps observations more grounded in specific moments."
+    },
+    {
+      "id": "q2",
+      "text": "Don't thank me yet. We still have to get off this rock.",
+      "speaker": "Aliens (1986)",
+      "context": "Ripley, to a rescued survivor during the evacuation sequence",
+      "real": false,
+      "fake_note": "I made this one up — 'this rock' is exactly the grunt vernacular of the film's marines, and Ripley's cautious pragmatism rings true. The giveaway is the slight heroic-movie rhythm; Ripley's real lines are usually more reactive and less neatly structured."
+    },
+    {
+      "id": "q3",
+      "text": "Every con has a door you leave open on purpose.",
+      "speaker": "The Sting (1973)",
+      "context": "Henry Gondorff explaining the mechanics of the long con to Hooker",
+      "real": false,
+      "fake_note": "I made this one up — Gondorff's tutorial scenes have exactly this kind of casual, insider-vocabulary instruction. The giveaway is that the real Gondorff explains by doing, not by aphorism; he'd attach this to a specific step in the plan rather than state it abstractly."
+    },
+    {
+      "id": "q4",
+      "text": "This? Why, I could make a hat, or a brooch, or a pterodactyl.",
+      "speaker": "Airplane! (1980)",
+      "context": "Johnny (Stephen Stucker), the air traffic control clown, riffs when asked what he can make of the situation.",
+      "real": true,
+      "source": {
+        "title": "Airplane! - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Airplane!",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Funny business, a woman's career. The things you drop on your way up the ladder so you can move faster. You forget you'll need them again when you get back to being a woman.",
+      "speaker": "All About Eve (1950)",
+      "context": "Aging Broadway star Margo Channing (Bette Davis) reflecting on the costs of ambition.",
+      "real": true,
+      "source": {
+        "title": "All About Eve - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/All_About_Eve",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You're an errand boy sent by grocery clerks to collect a bill.",
+      "speaker": "Apocalypse Now (1979)",
+      "context": "Colonel Kurtz (Marlon Brando) to Captain Willard (Martin Sheen) at his compound, dismissing Willard's mission.",
+      "real": true,
+      "source": {
+        "title": "Apocalypse Now - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Apocalypse_Now",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

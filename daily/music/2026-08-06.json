@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-06",
+  "edition": 44,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'm playing the same flute, but every nationality of driver will turn around and tell me it reminds them of their country.",
+      "speaker": "André 3000",
+      "context": "The Outkast rapper, on Questlove's 'Questlove Supreme' podcast, describing how he'd play his flute in the back of Ubers and how drivers of every nationality told him it reminded them of their home country",
+      "real": true,
+      "source": {
+        "title": "How Did André 3000 Learn To Play Flute?",
+        "url": "https://thebeatofthecapital.com/2023/12/13/how-did-andre-3000-learn-to-play-flute/",
+        "date": "2023-12-13"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I turned down a residency once — this was Vegas, good money, genuinely good money — and my manager didn't speak to me for three weeks. I still think I was right. I just don't know if I was right for the right reasons.",
+      "speaker": "Beck",
+      "context": "The Guardian Weekend Magazine profile, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Beck has this exact self-interrogating, drily honest quality in interviews where he'll admit to a decision and then immediately second-guess his own motives. A Vegas residency refusal fits his anti-mainstream career choices perfectly. The tell is that he'd probably be a little more specific about what was actually happening in his life at the time."
+    },
+    {
+      "id": "q3",
+      "text": "There was a whole album. Not demos — finished, sequenced, mastered. I listened to it again last year and I still don't fully know why I didn't put it out. Something about it felt like handing over something I hadn't finished needing yet.",
+      "speaker": "Frank Ocean",
+      "context": "Interview with Gayletter magazine, Issue 10, 2018",
+      "real": false,
+      "fake_note": "I made this one up — Frank Ocean's famously long gaps between releases and his documented history of sitting on finished material make this entirely believable, and the phrasing 'hadn't finished needing yet' sounds very consistent with his introspective, slightly opaque interview voice. The tell is that Frank Ocean almost never does press, and when he does he's typically even more evasive than this about unreleased material."
+    },
+    {
+      "id": "q4",
+      "text": "Thank you for waiting. It certainly is two of my most beautiful pieces of work.",
+      "speaker": "Lana Del Rey",
+      "context": "Announcing companion album Spyda",
+      "real": true,
+      "source": {
+        "title": "Music — Lana Del Rey Announces Stove Companion Album Spyda",
+        "url": "https://consequence.net/2026/07/lana-del-rey-stove-companion-album-spyda/",
+        "date": "2026-07-16"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People hear 'Crazy' and they want to talk about Gnarls Barkley, which is fine, but that record was really just me and Thomas in a room trying to figure out how far we could push something before it broke. It came very close to being completely unlistenable. I mean that as a compliment to us.",
+      "speaker": "CeeLo Green",
+      "context": "Rolling Stone oral history of 'St. Elsewhere,' published June 2016",
+      "real": false,
+      "fake_note": "I made this one up — CeeLo has exactly this grandiose but self-aware way of discussing his own creative process, and referencing Danger Mouse as 'Thomas' (his real name) is the kind of insider detail that makes it feel authentic. The tell is the phrase 'I mean that as a compliment to us' — a real CeeLo quote would be slightly more baroque and less neatly reflexive."
+    },
+    {
+      "id": "q6",
+      "text": "Imma get in trouble for this",
+      "speaker": "A$AP Rocky",
+      "context": "A$AP Rocky revealing Rihanna is in the studio",
+      "real": true,
+      "source": {
+        "title": "Music — Rihanna is in the studio, according to A$AP Rocky",
+        "url": "https://www.nme.com/news/music/rihanna-is-in-the-studio-according-to-aap-rocky-3961096?utm_source=rss&utm_medium=rss&utm_campaign=rihanna-is-in-the-studio-according-to-aap-rocky",
+        "date": "2026-08-06"
+      }
+    }
+  ]
+}
