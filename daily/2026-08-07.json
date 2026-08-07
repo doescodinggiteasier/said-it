@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-07",
+  "edition": 53,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what it was like filming the interrogation scenes in Silence of the Lambs and honestly the hardest part wasn't the intensity of it — it was the lighting. You're sitting there trying to access something genuinely unsettling and there's a guy three feet away adjusting a reflector. You just have to laugh and then get back to it.",
+      "speaker": "Jodie Foster",
+      "context": "Interview with Dax Shepard on the Armchair Expert podcast, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Jodie Foster really does discuss craft in this grounded, slightly self-deprecating way, and Silence of the Lambs is her most iconic role, so it feels completely natural. The subtle giveaway is that she'd more likely zero in on something emotional or psychological rather than a technical detail like lighting."
+    },
+    {
+      "id": "q2",
+      "text": "I've been asked a thousand times what Bowie was like in the studio and every time I give a different answer because every session was a different person walking in. He'd arrive having clearly been somewhere in his head overnight that none of us had access to. You just tried to keep up.",
+      "speaker": "Nile Rodgers",
+      "context": "Keynote conversation at the SXSW Music Conference, Austin, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Nile Rodgers co-produced Bowie's Let's Dance and has discussed their collaboration warmly in multiple interviews, so this fits perfectly. The giveaway is the phrase 'somewhere in his head overnight,' which is evocative but slightly more poetic than Rodgers' typical punchy, musician-specific storytelling."
+    },
+    {
+      "id": "q3",
+      "text": "Where my reason, imagination or interest were not engaged, I would not or I could not learn.",
+      "speaker": "Winston Churchill",
+      "context": "From Churchill's own autobiography 'My Early Life: A Roving Commission' (1930), in the chapter recalling his schooldays at Harrow where he was placed in the lowest form.",
+      "real": true,
+      "source": {
+        "title": "My Early Life, by Winston S. Churchill (Project Gutenberg Canada full text)",
+        "url": "https://gutenberg.ca/ebooks/churchillws-myearlylife/churchillws-myearlylife-00-h-dir/churchillws-myearlylife-00-h.html",
+        "date": "1930-01-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The hardest record to make is always the second one, and anyone who says otherwise either had an easy second record or they're being revisionist. You're doing the whole thing again but now there are people watching to see if the first one was a fluke.",
+      "speaker": "Adele",
+      "context": "Cover story interview with Rolling Stone UK, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Adele has discussed the pressure of follow-up albums candidly in interviews and uses direct, occasionally blunt phrasing like this. The giveaway is that it borders on a universal declaration about music-making rather than a specific memory, which is slightly more generalized than her usual very personal mode of talking."
+    },
+    {
+      "id": "q5",
+      "text": "It sounds gross, but not all bacteria are bad; most of them are good. The trouble starts when the bad bacteria learn how to outsmart antibiotics.",
+      "speaker": "Vijay Parashar",
+      "context": "University of Delaware professor commenting on bacteria in human bodies",
+      "real": true,
+      "source": {
+        "title": "Science — Bacterial enzyme switch could weaken antibiotic defenses in MRSA and other patho",
+        "url": "https://phys.org/news/2026-08-bacterial-enzyme-weaken-antibiotic-defenses.html",
+        "date": "2026-08-07"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The best description I can come up with is metallic; a rather pleasant sweet metallic sensation. It reminded me of my college summers where I labored for many hours with an arc welding torch repairing heavy equipment for a small logging outfit. It reminded me of pleasant sweet-smelling welding fumes. That is the smell of space.",
+      "speaker": "Don Pettit",
+      "context": "Astronaut and ISS Science Officer, describing what space smells like (NASA blog, quoted on NASA.gov)",
+      "real": true,
+      "source": {
+        "title": "December 2021: What does space smell like? - NASA",
+        "url": "https://www.nasa.gov/space-science-and-astrobiology-at-ames/interesting-fact-of-the-month-current/interesting-fact-of-the-month-2021/",
+        "date": "2021-12-01"
+      }
+    }
+  ]
+}

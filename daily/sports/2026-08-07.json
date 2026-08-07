@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-07",
+  "edition": 42,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I had a defensive coordinator in college who used to say my name like it was already a mistake. Just — 'Peyton' — and you knew. I probably owe half my preparation to that man.",
+      "speaker": "Peyton Manning",
+      "context": "Peyton's Places, Season 1, ESPN+, episode featuring his college years at the University of Tennessee, 2019",
+      "real": false,
+      "fake_note": "I made this one up — Manning has extensively credited tough coaches for his obsessive preparation habits and routinely tells self-deprecating stories about being corrected; the tone and the anecdote structure are classic Manning. The subtle giveaway is that no specific coordinator is named, which Manning, being a detail person, almost certainly would do if this were real."
+    },
+    {
+      "id": "q2",
+      "text": "I think I've heard somebody say that I was a well-dressed golfer. I guess that has something to do with the fact that a lot of people who play golf don't dress very well.",
+      "speaker": "Arnold Palmer",
+      "context": "A dry, self-effacing aside about his reputation as a sharp dresser, collected among Golf Monthly's best Palmer quotes.",
+      "real": true,
+      "source": {
+        "title": "Golf Monthly — 10 Of The Best Arnold Palmer Quotes",
+        "url": "https://www.golfmonthly.com/features/the-game/10-best-arnold-palmer-quotes-152590",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "It's the same thing I'm seeing in practice",
+      "speaker": "Mike LaFleur",
+      "context": "Cardinals head coach commenting on Carson Beck's Hall of Fame Game debut",
+      "real": true,
+      "source": {
+        "title": "Sports — Cardinals Head Coach Mike LaFleur Praises Rookie’s Performance vs. Panthers in H",
+        "url": "https://sports.yahoo.com/articles/cardinals-head-coach-mike-lafleur-072830142.html",
+        "date": "2026-08-07"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I was so nervous before my first Ashes Test that I put my left pad on twice. Stood there for a full minute before my roommate said something. I thought he was taking the mickey but he was genuinely concerned.",
+      "speaker": "Ian Botham",
+      "context": "Sky Sports Cricket podcast, The Botham and Hussain Show, episode released during the 2021 Ashes series build-up",
+      "real": false,
+      "fake_note": "I made this one up — Botham has a long tradition of self-mythologizing anecdotes that mix bravado with unexpected vulnerability, and this story plays perfectly against his tough-guy image while remaining totally harmless. The tell is 'genuinely concerned' — it's a shade too considerate a detail for Botham, who usually keeps his stories moving faster."
+    },
+    {
+      "id": "q5",
+      "text": "Golf doesn't care that you had a good week. That's the thing I keep forgetting. You get up Thursday feeling sorted and the first fairway just looks at you like, no, actually.",
+      "speaker": "Rory McIlroy",
+      "context": "Press conference ahead of the 2022 BMW PGA Championship at Wentworth, Tuesday media availability",
+      "real": false,
+      "fake_note": "I made this one up — McIlroy has a dry, slightly exasperated humor about golf's unpredictability and his own mental battles with the game, and phrases like 'feeling sorted' and 'actually' are very much in his Irish-inflected casual register. The giveaway is 'looks at you like' — it's slightly more poetic an image than McIlroy's typical plainspoken press conference language."
+    },
+    {
+      "id": "q6",
+      "text": "Because I'm the undertaker. I've come to bury these people!",
+      "speaker": "Bill Russell",
+      "context": "Explaining to teammate Sam Jones why he wore a black suit to every Game 7, in his Academy of Achievement interview.",
+      "real": true,
+      "source": {
+        "title": "Academy of Achievement — Bill Russell Interview",
+        "url": "https://achievement.org/achiever/bill-russell/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

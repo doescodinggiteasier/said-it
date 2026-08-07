@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-07",
+  "edition": 41,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've been on the Armed Services Committee long enough that I can now identify a weapons system by its acronym alone. My wife is not impressed by this skill. At all.",
+      "speaker": "Jack Reed",
+      "context": "Remarks at the Association of the United States Army Annual Meeting, Washington D.C., October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Reed, the ranking member and later chair of Armed Services, has long been one of the Senate's most low-key, quietly self-deprecating voices on defense matters. The specificity of the acronym detail is perfectly in his wheelhouse; the tell is that Reed rarely name-checks his wife in public remarks."
+    },
+    {
+      "id": "q2",
+      "text": "My very first vote in Congress — I was so nervous I accidentally voted the wrong way on a procedural motion about dairy price supports. I had to go find the parliamentarian and whisper, 'Is there a do-over?' There is not a do-over.",
+      "speaker": "Nancy Pelosi",
+      "context": "Commencement address at Trinity Washington University, Washington D.C., May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi has told self-deprecating origin stories about her early days in the House before, and dairy legislation is genuinely parochial enough to feel real. The giveaway is that Pelosi has near-legendary floor discipline and probably wouldn't frame herself as confused on procedure, even in jest."
+    },
+    {
+      "id": "q3",
+      "text": "How can you govern a country that has two hundred and forty-six varieties of cheese?",
+      "speaker": "Charles de Gaulle",
+      "context": "The French president and WWII Free France leader, expressing wry exasperation at the ungovernability of France; recorded in Ernest Mignon's 1962 collection Les Mots du General.",
+      "real": true,
+      "source": {
+        "title": "Charles de Gaulle - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Charles_de_Gaulle",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Freedom is the right to be wrong, not the right to do wrong.",
+      "speaker": "John Diefenbaker",
+      "context": "The Canadian Prime Minister, in a candid, aphoristic reflection on liberty (11 March 1958).",
+      "real": true,
+      "source": {
+        "title": "John Diefenbaker - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Diefenbaker",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "It's a good thing to be laughed at. It's better than to be ignored.",
+      "speaker": "Harold Macmillan",
+      "context": "The British Prime Minister, in a handwritten note to the Postmaster General who wanted to take action against the satirical TV program 'That Was The Week That Was' - a disarmingly self-deprecating shrug at being mocked.",
+      "real": true,
+      "source": {
+        "title": "Harold Macmillan - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harold_Macmillan",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what I miss most about being a governor. Honestly? Nobody in a governor's race spends forty-five minutes arguing about the filibuster. You just — you fix the pothole and everybody goes home happy.",
+      "speaker": "Mitt Romney",
+      "context": "Interview with Bloomberg's Balance of Power, recorded in Washington D.C., March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Romney genuinely romanticized executive governance over Senate gridlock in his final years, and the pothole line sounds exactly like his wry, practical humor. The tell is that Romney was careful not to complain too specifically about Senate procedure on the record."
+    }
+  ]
+}

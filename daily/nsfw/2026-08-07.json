@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-07",
+  "edition": 45,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I used to have a drug problem, now I make enough money.",
+      "speaker": "David Lee Roth",
+      "context": "Van Halen frontman David Lee Roth's famously flip one-liner about wealth and excess, quoted in American Songwriter's roundup of his best quotes.",
+      "real": true,
+      "source": {
+        "title": "15 of the Best Quotes from Van Halen's David Lee Roth (American Songwriter)",
+        "url": "https://americansongwriter.com/15-of-the-best-quotes-from-van-halens-david-lee-roth/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I'll tell you what I told my second wife on our wedding night — 'Sweetheart, lower your expectations and we're gonna have a hell of a time.' She laughed. Then she didn't. Then she got a lawyer. So, y'know, mixed results.",
+      "speaker": "Rodney Dangerfield",
+      "context": "The Tonight Show Starring Johnny Carson, October 1984, during his third appearance that calendar year",
+      "real": false,
+      "fake_note": "I made this one up — Rodney's self-deprecating marriage-disaster shtick and the 'mixed results' kicker are dead-on his rhythm and cadence. The giveaway is that the punchline lands a little too neatly in three beats; Rodney's real stuff was messier and faster."
+    },
+    {
+      "id": "q3",
+      "text": "My publicist called me at seven in the morning to tell me I'd been described as 'difficult.' I said, 'Honey, it is seven in the goddamn morning and you are proving her point.'",
+      "speaker": "Bette Davis",
+      "context": "Recorded Q&A session at the American Film Institute Life Achievement Award dinner, March 1977",
+      "real": false,
+      "fake_note": "I made this one up — the whip-crack comeback and the logical trap of the punchline are totally Davis-era wit. The giveaway is she would rarely use 'honey' that warmly even sarcastically; her real put-downs were colder and more formal."
+    },
+    {
+      "id": "q4",
+      "text": "People ask me what my rider says. It says: adequate bourbon, a clean toilet that isn't in a hallway, and nobody from the label standing near the stage making that face. That face, you know the one. Makes me want to tune down to open-D and just leave.",
+      "speaker": "Waylon Jennings",
+      "context": "Spoken-word interview segment on Austin City Limits, taped backstage before the Season 9 taping, 1984",
+      "real": false,
+      "fake_note": "I made this one up — the 'that face' bit and the very specific 'open-D and just leave' threat are plausibly Waylon's ornery, insider-musician humour. The subtle giveaway is 'tune down to open-D' is a little too on-the-nose as colour detail; real off-the-cuff Waylon was blunter."
+    },
+    {
+      "id": "q5",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore. I just want to cut to the chase.",
+      "speaker": "Bob Saget",
+      "context": "In a Rolling Stone interview (republished from the vault), the 'America's Dad' comedian on his post-Full House, R-rated stand-up mindset.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Over the past forty years I've been loaded on booze, coke, acid, Quaaludes, glue, cough mixture, heroin, Rohypnol, Klonopin, Vicodin, and too many other heavy-duty substances to list in this footnote. On more than a few occasions I was on all of these at the same time.",
+      "speaker": "Ozzy Osbourne",
+      "context": "From a footnote in his 2010 autobiography 'I Am Ozzy' (with Chris Ayres), cataloguing four decades of his own substance abuse.",
+      "real": true,
+      "source": {
+        "title": "Memoir 'I Am Ozzy' (LA Weekly excerpt)",
+        "url": "https://www.laweekly.com/i-am-ozzy-soon-to-be-classic-quotes-from-ozzy-osbournes-upcoming-autobiography/",
+        "date": "2010"
+      }
+    }
+  ]
+}

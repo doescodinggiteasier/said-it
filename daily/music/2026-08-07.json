@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-07",
+  "edition": 45,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Nobody touches the shepherd's pie till I've been in there. Don't bust my crust, baby.",
+      "speaker": "Keith Richards",
+      "context": "The Rolling Stones guitarist explaining his strict on-the-road rule about his pre-show shepherd's pie, written in his autobiography 'Life'. Oddly specific and very funny rock-star demand.",
+      "real": true,
+      "source": {
+        "title": "Don't mess with Keith Richards' pre-show shepherd's pie ritual, or he might threaten to cut you up and bake you into one",
+        "url": "https://www.loudersound.com/features/dont-mess-with-keith-richards-pre-show-shepherds-pie-ritual-or-he-might-threaten-to-cut-you-up-and-bake-you-into-one",
+        "date": "2023-03-23"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My dad had this rule that you could only listen to the car radio if nobody talked over it. So we'd drive for two hours in complete silence just absorbing whatever came on. Gospel, country, soul — you didn't get to choose. I think that's why I don't really have a genre.",
+      "speaker": "Lenny Kravitz",
+      "context": "Interview with David Marchese, The New York Times Magazine, September 2018",
+      "real": false,
+      "fake_note": "I made this one up — Lenny frequently attributes his genre-fluid style to a musically eclectic childhood and his parents' household, and he often gives credit to passive, accidental listening experiences. The detail about not talking over the radio is specific enough to feel like a genuine recalled memory, which is precisely the trap I set."
+    },
+    {
+      "id": "q3",
+      "text": "My topic is the shift from 'architect' to 'gardener', where 'architect' stands for 'someone who carries a full picture of the work before it is made', to 'gardener' standing for 'someone who plants seeds and waits to see exactly what will come up'.",
+      "speaker": "Brian Eno",
+      "context": "Composer/producer Brian Eno (Roxy Music, ambient music pioneer, producer for Bowie, Talking Heads, U2) framing how he thinks about making music — not as an architect with the finished work in his head, but as a gardener who plants seeds",
+      "real": true,
+      "source": {
+        "title": "Composers as Gardeners — Brian Eno, Edge.org",
+        "url": "https://www.edge.org/conversation/brian_eno-composers-as-gardeners",
+        "date": "2011-11-10"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People think being a producer means you have an opinion about everything. The skill is actually knowing when to have no opinion at all — just be a room that the artist can be loud in. Some days my whole job is keeping my mouth shut and ordering the right food.",
+      "speaker": "T Bone Burnett",
+      "context": "Panel discussion at the Recording Academy Producers & Engineers Wing Grammy Week event, Los Angeles, February 2016",
+      "real": false,
+      "fake_note": "I made this one up — T Bone has consistently described his production philosophy as serving the artist's vision rather than imposing his own, and he speaks in this dry, self-deflating register regularly. The 'ordering the right food' line is designed to sound like his particular brand of wry humor, but it's slightly too punchy and quotable for how he actually trails off."
+    },
+    {
+      "id": "q5",
+      "text": "There was a journalist who once told me my voice sounds like it came out of a different century, and I said thank you, and he looked genuinely uncertain whether he'd given me a compliment. I'm still not sure he had, but I took it.",
+      "speaker": "Norah Jones",
+      "context": "Interview on Fresh Air with Terry Gross, NPR, October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Norah has addressed the old-soul quality of her voice in interviews with quiet humor and a certain comfortable ambivalence about how she's categorized, which matches this perfectly. The reveal would be that she's rarely this anecdotal about a specific encounter with press — she tends to speak more generally about how her music is received."
+    },
+    {
+      "id": "q6",
+      "text": "I put a raging dent in Neil Young's forehead!",
+      "speaker": "Tim Pope",
+      "context": "Tim Pope reflecting on his wild music video directing career",
+      "real": true,
+      "source": {
+        "title": "Music — ‘I put a raging dent in Neil Young’s forehead!’ Tim Pope on his riotous videos f",
+        "url": "https://www.theguardian.com/music/2026/aug/05/tim-pope-music-video-director-mtv-the-cure-bowie-queen-soft-cell-neil-young",
+        "date": "2026-08-07"
+      }
+    }
+  ]
+}

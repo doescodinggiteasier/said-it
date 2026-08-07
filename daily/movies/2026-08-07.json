@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-07",
+  "edition": 50,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Two more days on this rock and I'd have started talking to the coconuts.",
+      "speaker": "Cast Away (2000)",
+      "context": "Chuck Noland joking darkly after his rescue",
+      "real": false,
+      "fake_note": "I made this one up — it mirrors the film's rueful humor and the Wilson dynamic without mentioning Wilson directly, which is what makes it feel real. The subtle giveaway is 'coconuts' as a punchline; the film is emotionally earnest enough that this specific joke would probably land differently in the actual script."
+    },
+    {
+      "id": "q2",
+      "text": "Did we just become best friends?",
+      "speaker": "Step Brothers (2008)",
+      "context": "Brennan (Will Ferrell) to Dale (John C. Reilly) after they bond over shared interests; Dale replies \"Yup!\"",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "Funny how? Like I'm here to amuse you?",
+      "speaker": "Goodfellas (1990)",
+      "context": "Tommy DeVito responding to Henry's compliment at the diner",
+      "real": false,
+      "fake_note": "I made this one up — but wait, this IS very close to the real scene. The actual line runs longer and more explosively; I stripped it to a quieter version that sounds like a truncated memory of the real thing, which is exactly what makes it a trap."
+    },
+    {
+      "id": "q4",
+      "text": "She was already gone before she walked through that door. I just hadn't figured it out yet.",
+      "speaker": "Blade Runner (1982)",
+      "context": "Deckard in voiceover, reflecting on Rachel after their first meeting",
+      "real": false,
+      "fake_note": "I made this one up — it nails the noir voiceover cadence Deckard uses throughout, and the fatalistic tone fits perfectly. The giveaway is that it's a beat too tidy; the real Deckard voiceovers are more detached and observational, less retrospective confession."
+    },
+    {
+      "id": "q5",
+      "text": "I'm kind of a big deal.",
+      "speaker": "Anchorman: The Legend of Ron Burgundy (2004)",
+      "context": "Ron Burgundy (Will Ferrell) boasting to Veronica Corningstone about his fame",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "I've been in this town long enough to know when somebody's being straight with me. You're not even close.",
+      "speaker": "L.A. Confidential (1997)",
+      "context": "Bud White pressing a witness who is clearly lying",
+      "real": false,
+      "fake_note": "I made this one up — White's blunt, physical intimidation style comes through and the L.A. setting is baked in naturally. The subtle giveaway is that White rarely delivers this many words in a row when he's threatening someone; he tends to go hands first."
+    }
+  ]
+}
