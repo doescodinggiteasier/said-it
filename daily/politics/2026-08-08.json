@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-08",
+  "edition": 42,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "His famous comeback at the 1984 debate against Walter Mondale",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've read every major infrastructure bill since 1987 and I will tell you, hand on heart, the most dangerous two words in any piece of legislation are 'as practicable.' Nobody ever agrees on when that is.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at the U.S. Conference of Mayors winter meeting, Washington D.C., February 2018",
+      "real": false,
+      "fake_note": "I made this one up — Biden's genuine love of infrastructure detail and his habit of citing specific years make this feel lived-in and real. The subtle giveaway is that 'as practicable' is a slightly too-perfect legislative bugbear, the kind of thing a speechwriter would dream up rather than a senator actually losing sleep over."
+    },
+    {
+      "id": "q3",
+      "text": "I admit it -- last year was rough.",
+      "speaker": "Barack Obama",
+      "context": "At the 2014 White House Correspondents' Dinner, Obama opened his self-deprecating riff by candidly conceding his difficult 2013.",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at White House Correspondents' Dinner (May 3, 2014) | whitehouse.gov archives",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I genuinely do not understand why every hearing room chair is designed to be slightly too far from the table. I've been in Congress twenty-two years and I still have to decide whether to scoot up and look undignified or sit back and look uninterested.",
+      "speaker": "Steny Hoyer",
+      "context": "Interview with Roll Call Magazine, Washington D.C., September 2016",
+      "real": false,
+      "fake_note": "I made this one up — Hoyer is a lifer who speaks with self-aware institutional humor about the procedural absurdities of the House, and this kind of mundane complaint fits his personality. The giveaway is the specificity of twenty-two years, which invites fact-checking that would quickly date it wrong."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me why I got into politics and I tell them the truth: I was too slow to be a detective and too honest to be a lawyer. That left one option.",
+      "speaker": "Bernie Sanders",
+      "context": "Interview with Vermont Public Radio, Burlington, March 2015",
+      "real": false,
+      "fake_note": "I made this one up — Sanders has a dry, self-deprecating streak that shows up in his longer interviews, and the punchline fits his lifelong outsider-in-institutions identity. The giveaway is the rhythm: it's just a touch too polished for his usual rambling cadence."
+    },
+    {
+      "id": "q6",
+      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
+      "speaker": "Ted Stevens",
+      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality.",
+      "real": true,
+      "source": {
+        "title": "Series of tubes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
+        "date": "2006-06-28"
+      }
+    }
+  ]
+}

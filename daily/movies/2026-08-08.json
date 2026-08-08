@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-08",
+  "edition": 51,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "One does not simply walk into Mordor.",
+      "speaker": "The Lord of the Rings: The Fellowship of the Ring (2001)",
+      "context": "Boromir (Sean Bean) arguing against the plan to destroy the Ring",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "My mama always said life was like a box of chocolates. You never know what you're gonna get.",
+      "speaker": "Forrest Gump (1994)",
+      "context": "Forrest (Tom Hanks) sits on a bus-stop bench recounting his mother's favorite saying.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "You keep talking about money like it means something out here.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Anton Chigurh to a cornered man during a tense confrontation",
+      "real": false,
+      "fake_note": "I made this one up — Chigurh's flat, philosophical menace is pitch-perfect for the film, and the line sounds like one of his deflecting non-answers. The subtle giveaway is that Chigurh rarely addresses his victims' practicalities; he tends to redirect to fate or principle, not geography."
+    },
+    {
+      "id": "q4",
+      "text": "I've had accounts at that bank for thirty years and they still spell my name wrong on the statements.",
+      "speaker": "Home Alone (1990)",
+      "context": "Peter McCallister grumbling to Kate while rushing through the airport",
+      "real": false,
+      "fake_note": "I made this one up — it captures the harried, middle-class dad energy of the McCallister parents' frantic airport scenes. The subtle giveaway is that the film keeps the parents' dialogue functional and brief; this line is slightly too developed for a throwaway travel moment."
+    },
+    {
+      "id": "q5",
+      "text": "You sure you want to know how it ends?",
+      "speaker": "Se7en (1995)",
+      "context": "John Doe taunting Somerset during the climactic desert sequence",
+      "real": false,
+      "fake_note": "I made this one up — the taunting, controlled cruelty fits Doe's theatrical menace and the line feels like something he'd say right before a revelation. The subtle giveaway is that it's almost too on-the-nose as a meta wink at the audience; Fincher's script is usually more oblique."
+    },
+    {
+      "id": "q6",
+      "text": "I used to think being invisible was the same as being free.",
+      "speaker": "Edward Scissorhands (1990)",
+      "context": "The elderly Kim narrating in the framing story",
+      "real": false,
+      "fake_note": "I made this one up — Kim's wistful framing narration at the film's bookends carries exactly this kind of quiet, fairytale melancholy. The giveaway is that it slides toward inspirational-quote territory, whereas Kim's actual narration stays grounded in specific sensory memory."
+    }
+  ]
+}

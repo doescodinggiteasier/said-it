@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-08",
+  "edition": 54,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My daughter asked me what I do for a living and I said I make people cry in the dark, and she went, 'like a dentist?' So that was humbling.",
+      "speaker": "Steven Spielberg",
+      "context": "Acceptance remarks at the AFI Life Achievement Award ceremony, Los Angeles, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Spielberg is a warm, self-deprecating speaker who loves anecdotes about his kids grounding him, and the 'make people cry in the dark' phrasing matches his romantic view of cinema. The tell is the punchline: it's a touch too clean and comedian-shaped for how Spielberg actually tells stories, which tend to meander more."
+    },
+    {
+      "id": "q2",
+      "text": "I don't know if those are B's. They might be Cardi D's. I'm pretty sure those aren't B's. She's got the wrong initials.",
+      "speaker": "Charles Barkley",
+      "context": "on the TNT desk during Cardi B's NBA Finals halftime show",
+      "real": true,
+      "source": {
+        "title": "Larry Brown Sports — Charles Barkley's Cardi B quote",
+        "url": "https://larrybrownsports.com/basketball/charles-barkley-wildest-quote-cardi-b-nba-finals/757513",
+        "date": "2026-06-09"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People keep asking me what the iPhone moment for AI is going to be, and I think that's actually the wrong question. The iPhone moment already happened three times and nobody agreed on which one it was until four years later.",
+      "speaker": "Reid Hoffman",
+      "context": "Lex Fridman Podcast, episode 399, recorded January 2024",
+      "real": false,
+      "fake_note": "I made this one up — Hoffman regularly reframes tech history questions with this kind of contrarian hindsight argument, and he's obsessed with AI inflection points. The tell is the confident vagueness of 'three times' — specific enough to sound knowing, but Hoffman would almost certainly name the actual moments."
+    },
+    {
+      "id": "q4",
+      "text": "I'm ready to drink tonight, until next morning. Thank you.",
+      "speaker": "Bong Joon-ho",
+      "context": "The director, through his interpreter, accepting the Best International Feature Film Oscar for Parasite at the 2020 Academy Awards",
+      "real": true,
+      "source": {
+        "title": "Bong Joon-ho Oscar Acceptance Speech Transcripts: Parasite Wins Big at the Academy Awards - Rev",
+        "url": "https://www.rev.com/transcripts/bong-joon-ho-oscar-acceptance-speech-transcripts-parasite-wins-big-at-the-academy-awards",
+        "date": "2020-02-09"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There's a note I hit in 'Bohemian Rhapsody' — the first take, the very first one — where I cracked slightly and Brian just looked at me and said don't fix it. That crack is on the record. I'm glad it is.",
+      "speaker": "Freddie Mercury",
+      "context": "Profile interview with Paul Gambaccini, BBC Radio 1, October 1977",
+      "real": false,
+      "fake_note": "I made this one up — Mercury was remarkably candid in period radio interviews about the recording of that song, and his fondness for happy accidents in the studio is well documented. The giveaway for sharp players: the specific conversational attribution to Brian May makes it feel sourced, but Mercury's actual documented quotes from that era are more flamboyant and less introspective in tone."
+    },
+    {
+      "id": "q6",
+      "text": "You better cut the pizza in four pieces because I'm not hungry enough to eat six.",
+      "speaker": "Yogi Berra",
+      "context": "Hall of Fame baseball catcher and manager, one of his famous 'Yogi-isms'",
+      "real": true,
+      "source": {
+        "title": "Famous 'Yogi-isms'",
+        "url": "https://www.cbsnews.com/news/famous-yogi-isms",
+        "date": "2002-03-06"
+      }
+    }
+  ]
+}

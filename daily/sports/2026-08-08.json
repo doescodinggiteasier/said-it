@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-08",
+  "edition": 43,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People forget I nearly quit at nineteen. Not because I wasn't good enough — I thought I was good enough, maybe too much — but because I looked at the life and I wasn't sure I wanted it. You give up a lot of normal. I had a coach sit me down in a café in Lyon and basically talk me back into it over two hours and a plate of food I couldn't finish because I was so nervous. I think about him every time things get hard.",
+      "speaker": "Didier Drogba",
+      "context": "High Performance podcast with Jake Humphrey and Damian Hughes, Episode 214, released February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Drogba has spoken publicly about his difficult early career in France and his late development as a professional, so a near-quit moment is entirely consistent with his documented biography. The High Performance podcast is a real show where elite athletes speak in exactly this reflective register. The tell: Drogba's early career struggles were in Le Mans and Guingamp, not Lyon, so the city is a quiet fabrication."
+    },
+    {
+      "id": "q2",
+      "text": "I've been in locker rooms where the best player on the team was also the quietest, and I've been in locker rooms where the best player never shut up. Both can work. What kills you is when that person stops caring what the other fourteen guys think of them.",
+      "speaker": "Gregg Popovich",
+      "context": "Roundtable discussion at the MIT Sloan Sports Analytics Conference, Boston, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Pop's voice is famously blunt, team-first, and just philosophical enough without going full motivational poster, which this hits. The giveaway for sharp fans: he tends to talk about his own Spurs squads specifically rather than abstract 'locker rooms,' so the generality is a slight tell."
+    },
+    {
+      "id": "q3",
+      "text": "Baseball has been good to me since I quit trying to play it.",
+      "speaker": "Whitey Herzog",
+      "context": "The Hall of Fame manager reflecting on his so-so playing career versus his success as a skipper.",
+      "real": true,
+      "source": {
+        "title": "ESPN Page 2 — My 5 top quotes by Hall of Famer Whitey Herzog",
+        "url": "https://www.espn.ph/espn/page2/index?id=5408431",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I've seen riders go into a mountain stage with a plan so detailed it covered every kilometer, every watt, every gel — and then a crosswind hits at the base and the whole thing is worthless. So I stopped making detailed plans. I make a disposition, I suppose you'd call it. A feeling for how I want to race, and then I just race.",
+      "speaker": "Chris Froome",
+      "context": "Cyclist magazine, UK edition, long-form feature interview, Issue 112, April 2019",
+      "real": false,
+      "fake_note": "I made this one up — Froome's measured, slightly formal British-international cadence and his known interest in the tactical and physiological aspects of racing make this entirely plausible. Cyclist magazine has published multiple long Froome features in this era. The tell: Froome has actually spoken about being a meticulous planner with Team Sky/Ineos, which slightly contradicts the 'stopped making detailed plans' pivot here."
+    },
+    {
+      "id": "q5",
+      "text": "I play tennis for a living, even though I hate tennis, hate it with a dark and secret passion, and always have.",
+      "speaker": "Andre Agassi",
+      "context": "The startling opening confession of his memoir 'Open,' quoted in Sports Illustrated's coverage of the book.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — 'I Hate Tennis'",
+        "url": "https://www.si.com/more-sports/2009/10/30/andre-agassi-0",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Pressure is a privilege and champions adjust.",
+      "speaker": "Billie Jean King",
+      "context": "The line she says spontaneously came out of her mouth while motivating Lindsay Davenport as U.S. Fed Cup captain, recounted at Tennis.com.",
+      "real": true,
+      "source": {
+        "title": "Tennis.com — Billie Jean King shares origins of 'Pressure is a privilege'",
+        "url": "https://www.tennis.com/baseline/articles/billie-jean-king-shares-origins-of-favorite-famous-quote-pressure-is-a-privilege",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

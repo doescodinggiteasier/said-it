@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-08",
+  "edition": 46,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone told me my new haircut made me look 'approachable.' That's the worst thing you can say to me. I don't want to be approachable. I want people to think twice. Then a third time. Then quietly leave.",
+      "speaker": "Andy Warhol",
+      "context": "Quoted in Glenn O'Brien's TV Party program, Season 2, Episode 4, aired on Manhattan Cable Television, 1979",
+      "real": false,
+      "fake_note": "I made this one up — Warhol's flat, unsettling social alienation delivered as dry comedy is very much his register, and TV Party was exactly the kind of loose cable-access setting where he'd say something like this. The giveaway is it's slightly too much of a joke-joke; Warhol's real quotes were weirder and more genuinely opaque."
+    },
+    {
+      "id": "q2",
+      "text": "I left the Rocking Vicars, thinking I was going to be a star in my own right immediately. Everything was going to be wonderful and huge women would get a hold of me and do things to me with raw carrots — you know, shit like that.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Recalling his youthful rock-star fantasies after leaving an early band (the Rockin' Vickers), in his memoir White Line Fever: The Autobiography (2002).",
+      "real": true,
+      "source": {
+        "title": "Goodreads — quotes from White Line Fever: The Autobiography",
+        "url": "https://www.goodreads.com/work/quotes/310228-white-line-fever-the-autobiography",
+        "date": "2002"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People say I was difficult to work with. Those people are correct. But they all cashed the cheque, didn't they? Nobody sent it back.",
+      "speaker": "Marlon Brando",
+      "context": "Conversation with Connie Chung for a 20/20 profile segment, ABC, broadcast February 1994, during publicity for Don Juan DeMarco",
+      "real": false,
+      "fake_note": "I made this one up — Brando's unapologetic, financially-grounded dismissal of his own reputation is entirely consistent with his late-career interviews where he openly mocked Hollywood's hypocrisy. The giveaway is timing: Don Juan DeMarco wasn't released until 1995, so a February 1994 publicity tie-in doesn't hold up."
+    },
+    {
+      "id": "q4",
+      "text": "People kept telling me, 'Keith, you need to slow down, you're gonna burn out.' I said, 'Darling, I burned out in 1973 and it's been bloody brilliant ever since. What are you so worried about?'",
+      "speaker": "Keith Moon",
+      "context": "Quoted in a 1977 Sounds magazine feature on The Who's touring excess, published in the March issue",
+      "real": false,
+      "fake_note": "I made this one up — Moon's self-deprecating bravado about his own chaos is completely on-brand, and the phrasing sounds like his actual interview voice. The subtle giveaway is 'it's been bloody brilliant ever since' — a touch too tidy a punchline for his genuinely rambling real-life delivery."
+    },
+    {
+      "id": "q5",
+      "text": "I think weed is the best drug on earth. One time I smoked a joint with peyote in it, and I saw a wolf howling at the moon. Hollywood is a coke town, but weed is so much better. And molly, too. Those are happy drugs – social drugs. They make you want to be with friends. You're out in the open. You're not in a bathroom. I really don't like coke. It's so gross and so dark. It's like what are you, from the Nineties? Ew.",
+      "speaker": "Miley Cyrus",
+      "context": "Miley Cyrus ranking her drug preferences in her September 2013 Rolling Stone cover story, calling weed and molly 'happy drugs' and dismissing cocaine as dated.",
+      "real": true,
+      "source": {
+        "title": "Miley Cyrus: 'Weed Is the Best Drug on Earth' (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "A couple nights ago, I was licking jelly off my boyfriend's penis. And I thought, \"Oh my God — I'm turning into my mother!\"",
+      "speaker": "Sarah Silverman",
+      "context": "From her 2005 stand-up special \"Sarah Silverman: Jesus Is Magic.\" Her signature sweet-faced delivery lands a graphic sex image as the setup, with the punchline being the realization she's inheriting her mother's habits.",
+      "real": true,
+      "source": {
+        "title": "'Jesus Is Magic' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0422528/quotes/",
+        "date": "2005"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-08",
+  "edition": 46,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I'm cutting a vocal and something real happens in the room — the engineer shifts in his chair, the assistant stops typing — that's the take. The take that makes people forget they're working.",
+      "speaker": "Alicia Keys",
+      "context": "MasterClass supplemental interview segment, 'Recording the Human Voice,' released January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Alicia Keys has spoken at length in her MasterClass and elsewhere about authenticity in performance, and this fits her documented introspective style about the recording process. The giveaway is that she tends to center the artist's internal state rather than other people's physical reactions; this is a small but real tonal shift."
+    },
+    {
+      "id": "q2",
+      "text": "I've had sessions where the demo was so good that every single thing we did to 'improve' it was actually making it worse, and nobody wanted to be the one to say that out loud. You end up spending three days polishing something back toward what it sounded like on a Tuesday afternoon voice memo.",
+      "speaker": "Max Martin",
+      "context": "Spotify: A Song for Every Moon documentary feature interview, published September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Max Martin rarely gives interviews, but when he does he speaks candidly about the production process with exactly this kind of wry, practical honesty. The giveaway is that he is notoriously press-shy and a long solo feature interview with Spotify would be unusual enough to flag for a sharp player."
+    },
+    {
+      "id": "q3",
+      "text": "The worst thing that ever happened to drummers is the click track becoming sacred. I'm not against a click — I've used one my whole career — but once you start editing the human being out of the pocket, you've got a very expensive way to make something nobody can move to.",
+      "speaker": "Steve Jordan",
+      "context": "Modern Drummer magazine cover interview, issue dated March/April 2019",
+      "real": false,
+      "fake_note": "I made this one up — Steve Jordan has been vocally passionate about groove, feel, and the organic quality of drumming throughout his career, and this criticism of over-quantization is squarely in his wheelhouse. The subtle giveaway is that he typically names specific records or collaborators to anchor a point like this, rather than speaking in the abstract."
+    },
+    {
+      "id": "q4",
+      "text": "I remember finishing 'Sign 'O' the Times' and just sitting there in the studio for probably twenty minutes not saying anything. Nobody said anything. And that's when you know — when nobody's got a word for it yet.",
+      "speaker": "Sheila E.",
+      "context": "Red Bull Music Academy lecture series, Los Angeles, April 2017",
+      "real": false,
+      "fake_note": "I made this one up — Sheila E. has spoken extensively about her Prince collaborations in exactly this reflective, unhurried tone, and the specific song is plausible given her documented presence during that era. The subtle giveaway is that 'Sign O' the Times' was largely a solo Prince effort recorded in isolation; her being in the room for the final playback is a stretch a real fan might catch."
+    },
+    {
+      "id": "q5",
+      "text": "It's all about the output. My creative process is absolutely not about the output",
+      "speaker": "Thomas Bangalter",
+      "context": "Daft Punk's Thomas Bangalter on AI and the creative process",
+      "real": true,
+      "source": {
+        "title": "Music — Daft Punk’s Thomas Bangalter slams using AI to create music is “a way to bypass ",
+        "url": "https://www.nme.com/news/music/daft-punks-thomas-bangalter-slams-using-ai-to-create-music-is-a-way-to-bypass-the-creative-process-3961385?utm_source=rss&utm_medium=rss&utm_campaign=daft-punks-thomas-bangalter-slams-using-ai-to-create-music-is-a-way-to-bypass-the-creative-process",
+        "date": "2026-08-08"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Stevie and I are talking all the time now",
+      "speaker": "Lindsey Buckingham",
+      "context": "Lindsey Buckingham teasing a project with Stevie Nicks",
+      "real": true,
+      "source": {
+        "title": "Music — Lindsey Buckingham Teases Project With Stevie Nicks: ‘Next Year Should Be Pretty",
+        "url": "https://www.rollingstone.com/music/music-news/lindsey-buckingham-stevie-nicks-tease-1235605228/",
+        "date": "2026-08-08"
+      }
+    }
+  ]
+}
