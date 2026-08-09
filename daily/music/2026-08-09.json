@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-09",
+  "edition": 47,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I kept the ring light off deliberately. People were sending me voice memos from their kitchens at two in the morning and I thought, I should probably match that energy.",
+      "speaker": "Phoebe Bridgers",
+      "context": "Cover story interview with The Guardian, March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Phoebe has spoken about recording Punisher partly during lockdown and about the lo-fi, intimate quality she was chasing, so this fits her aesthetic perfectly. The giveaway is 'ring light off deliberately'; it's a very specific visual detail that feels constructed rather than casually dropped."
+    },
+    {
+      "id": "q2",
+      "text": "I've had sessions where we didn't get one usable second of audio, just eight hours of me and the engineer staring at each other going, 'Is that it?' And then two days later you come back in and everything you needed was apparently just sitting there waiting.",
+      "speaker": "Jack Antonoff",
+      "context": "Interview with Zane Lowe on Apple Music 1, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Jack talks constantly about the unpredictable rhythm of studio sessions and the almost mystical quality of when inspiration arrives, so this lands perfectly in his wheelhouse. The subtle giveaway is the slightly too-neat 'sitting there waiting' payoff; he'd probably trail off more awkwardly in real life."
+    },
+    {
+      "id": "q3",
+      "text": "He built this entire empire based on what he thought would turn the world on. That was his superpower",
+      "speaker": "Rob Thomas",
+      "context": "Remembering Clive Davis",
+      "real": true,
+      "source": {
+        "title": "Music — Rob Thomas Remembers Clive Davis: ‘Losing Clive Is the End of an Era’",
+        "url": "https://www.rollingstone.com/music/music-features/rob-thomas-clive-davis-tribute-essay-1235582736/",
+        "date": "2026-06-24"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I can't possibly accept this award.",
+      "speaker": "Adele",
+      "context": "Accepting Album of the Year for '25' at the 2017 Grammy Awards, Adele stunned the room by opening her acceptance speech declaring she couldn't accept the award, then turning to praise Beyonce — whose 'Lemonade' she felt should have won.",
+      "real": true,
+      "source": {
+        "title": "GRAMMY Rewind: Adele Urges That Beyonce's 'Monumental' 'Lemonade' Should've Won Album Of The Year In 2017",
+        "url": "https://www.grammy.com/news/adele-25-beyonce-lemonade-grammys-2017-album-of-the-year-win-acceptance-speech-video-rewind",
+        "date": "2017-02-12"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "A genius is the one most like himself.",
+      "speaker": "Thelonious Monk",
+      "context": "One line from 'T. Monk's Advice' — a set of pointers the jazz pianist Thelonious Monk gave saxophonist Steve Lacy, who wrote them down while playing in Monk's band in 1960.",
+      "real": true,
+      "source": {
+        "title": "Thelonious Monk’s Advice — Howard Rees’ Jazz Workshops (transcribed by Steve Lacy, 1960)",
+        "url": "https://jazzworkshops.com/thelonious-monks-advice/",
+        "date": "1960-01-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My dad used to say the bass is the instrument nobody notices until it's gone, and I thought that was the most depressing thing I'd ever heard, and then I became a bassist.",
+      "speaker": "Flea",
+      "context": "Red Hot Chili Peppers fan Q&A session hosted by Spotify, Los Angeles, April 2022",
+      "real": false,
+      "fake_note": "I made this one up — Flea frequently credits his father and stepfather for shaping his musical worldview, and he's spoken extensively about the underappreciated role of bass. The tell is the comedic callback structure; Flea is funny but his humor runs more chaotic and physical than this tidy little loop."
+    }
+  ]
+}

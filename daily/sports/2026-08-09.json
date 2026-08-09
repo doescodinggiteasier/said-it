@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-09",
+  "edition": 44,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember before the final in Athens I slept maybe three hours and woke up and just started going through the routine in my head, not even fully awake. I'd done it so many times it didn't need me to be conscious. That's either very good training or a sign you need to get some hobbies. Probably both.",
+      "speaker": "Kelly Holmes",
+      "context": "Desert Island Discs, BBC Radio 4, episode broadcast January 2019",
+      "real": false,
+      "fake_note": "I made this one up — Holmes has spoken candidly about the mental and physical demands of her Athens double gold and her dry British self-awareness is well established in her media appearances. The giveaway is the 'get some hobbies' kicker; her real reflections on that period tend to be more emotionally weighted and less jokey."
+    },
+    {
+      "id": "q2",
+      "text": "I want to win trophies and I'm in the right place to do it",
+      "speaker": "Bruno Guimarães",
+      "context": "After signing four-year deal with Arsenal",
+      "real": true,
+      "source": {
+        "title": "Sports — Bruno Guimarães completes £75m Arsenal move: ‘I needed a new challenge’",
+        "url": "https://www.theguardian.com/football/2026/aug/08/arsenal-transfer-bruno-guimaraes-newcastle-football",
+        "date": "2026-08-09"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "There was a stretch in Cleveland where I was putting in maybe two, two and a half hours after shootaround every single day and nobody was making me. Nobody even knew I was there half the time. I'm not saying that to sound noble — I'm saying I genuinely had nowhere else I'd rather be, which is probably a weird thing to admit.",
+      "speaker": "LeBron James",
+      "context": "The Shop: Uninterrupted, HBO, Season 3, Episode 2, 2019",
+      "real": false,
+      "fake_note": "I made this one up — LeBron has talked extensively about his film-study and gym habits in Cleveland, so the setting and the self-aware qualifier both ring true. The give is that he rarely frames his work ethic as something he did in secret; he's more comfortable owning it outright."
+    },
+    {
+      "id": "q4",
+      "text": "Has anyone else 'completed football' like this?",
+      "speaker": "Owen Bagnall",
+      "context": "The Knowledge column, asking about Rodri completing every major honour",
+      "real": true,
+      "source": {
+        "title": "Sports — World Cup, Ballon d’Or, Champions League, Euros … has Rodri completed football? ",
+        "url": "https://www.theguardian.com/football/2026/jul/22/world-cup-champions-league-ballon-dor-euros-has-rodri-completed-football",
+        "date": "2026-07-22"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The thing about the 400 that nobody tells you is that you feel amazing for the first two hundred. You feel like you're flying, like the whole thing is going to be easy. And then somewhere around two-fifty your body just sends you a message, and the message is: you were wrong.",
+      "speaker": "Michael Johnson",
+      "context": "BBC Sport documentary, The Fastest Man on the Planet, broadcast August 2016",
+      "real": false,
+      "fake_note": "I made this one up — Johnson has described the specific physiology of the 400 metres in precise, almost pedagogical terms many times in his broadcasting career, and this matches his measured, educational on-air tone. The giveaway is the slight comedic personification at the end, which is a touch warmer than his usual clinical delivery."
+    },
+    {
+      "id": "q6",
+      "text": "I've been in locker rooms after games we should have won by twenty and didn't, and the silence in there — it's not like movie silence. It's loud. Everyone's tape is coming off and their cleats are loud and nobody's saying a word and somehow that's the loudest room I've ever been in.",
+      "speaker": "Peyton Manning",
+      "context": "Omaha Productions podcast, Peyton's Places, ESPN+, Season 2 production notes interview, 2021",
+      "real": false,
+      "fake_note": "I made this one up — Peyton is known for his detailed, almost cinematic recall of locker-room culture and he loves the kind of counter-intuitive observation that sounds like it took him a second to figure out. The tell is that he almost always names someone or names a specific game; the vagueness here is subtly unlike him."
+    }
+  ]
+}

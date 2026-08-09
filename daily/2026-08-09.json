@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-09",
+  "edition": 55,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Obviously films like this don't get made very often",
+      "speaker": "Gina Prince-Bythewood",
+      "context": "Opening night of the 24th annual Martha's Vineyard African American Film Festival, discussing Children of Blood and Bone",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Gina Prince-Bythewood Discusses the Worldbuilding of ‘Children of Blood and Bone",
+        "url": "https://variety.com/2026/film/news/gina-prince-bythewood-children-of-blood-and-bone-tomi-adeyemi-mvaaff-1236830592/",
+        "date": "2026-08-09"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Any time there is a consolidation, something shrinks, and right",
+      "speaker": "Sheryl Lee Ralph",
+      "context": "Abbott Elementary stars commenting on the Paramount-Warner Bros. merger",
+      "real": true,
+      "source": {
+        "title": "Entertainment — ‘Abbott Elementary’ Stars Sheryl Lee Ralph and Janelle James on the Paramount-Wa",
+        "url": "https://variety.com/2026/scene/news/abbott-elementary-sheryl-lee-ralph-janelle-james-paramount-1236830682/",
+        "date": "2026-08-09"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I don't watch my own fights. My brother does and he sends me a timestamp with a text that just says 'watch this part' and that's usually the only footage I ever see of myself.",
+      "speaker": "Canelo Álvarez",
+      "context": "ESPN Sport Science feature interview, August 2021",
+      "real": false,
+      "fake_note": "I made this one up — Canelo has mentioned discomfort with self-analysis in interviews before, and the detail of using a family member as a filter is the kind of specific, human workaround that sounds genuinely lived-in. The tell is that his actual admissions about avoiding self-critique tend to come through his trainer Eddy Reynoso as the filter, not a sibling."
+    },
+    {
+      "id": "q4",
+      "text": "There was a year where I think I played three hundred and something shows and I genuinely couldn't tell you what country I was in half the time. Not because of anything fun — just because a stage is a stage and you get on it.",
+      "speaker": "Bruce Springsteen",
+      "context": "Howard Stern Show, SiriusXM, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Springsteen's conversation with Stern genuinely did cover his touring life and work ethic, and he has a documented tendency to talk about performance as obligation and identity rather than glamour. The hedge 'not because of anything fun' is the crafted bit; Bruce would likely be more poetic and less defensive in the actual phrasing."
+    },
+    {
+      "id": "q5",
+      "text": "I've been to maybe four games this whole season and each time someone behind me is explaining the offsides rule incorrectly with total confidence. It's become my favorite part of going.",
+      "speaker": "John Oliver",
+      "context": "The Late Late Show with James Corden, CBS, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Oliver's English football devotion is well-documented and he frequently riffs on the gap between American sports fandom and actual knowledge, so this fits his register exactly. The giveaway is that he'd more likely escalate it into a full bit rather than leave it as a brief, warm observation."
+    },
+    {
+      "id": "q6",
+      "text": "I don't think I will do another show that is as important.",
+      "speaker": "Hamish Hamilton",
+      "context": "Discussing Bad Bunny's Super Bowl Halftime Show",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Hamish Hamilton’s Best Halftime Show Ever Was Also His Biggest Technical Gamble",
+        "url": "https://www.hollywoodreporter.com/music/music-features/hamish-hamilton-super-bowl-halftime-show-bad-bunny-1236668911/",
+        "date": "2026-08-09"
+      }
+    }
+  ]
+}

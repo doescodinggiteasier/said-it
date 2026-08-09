@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-09",
+  "edition": 47,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I blew $20 million. I snorted my Porsche. I snorted my plane. I snorted my house in that din of drugs and booze and being lost.",
+      "speaker": "Steven Tyler",
+      "context": "Tallying up what his cocaine habit cost him, in his 2011 rock memoir \"Does the Noise in My Head Bother You?\"",
+      "real": true,
+      "source": {
+        "title": "Memoir 'Does the Noise in My Head Bother You?' (NME report)",
+        "url": "https://www.nme.com/news/music/aerosmith-49-1294445",
+        "date": "2011"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Do I think about my dick? Oh, yeah, all the time. If I think about it all the time, I got a right to sing about it. If I wasn't thinking about it all the time but thought, \"It's time to write a rock song, I'd better mention my dick,\" then I wouldn't even be able to say \"dick\" right.",
+      "speaker": "Iggy Pop",
+      "context": "Defending the sexual content of his lyrics (the song \"Trollin'\" from The Weirdness) in his 2007 Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "Iggy Pop: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/iggy-pop-the-rolling-stone-interview-2-78680/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "There's two kinds of critics: ones who didn't get enough love as children and ones who did but turned out boring anyway. I've been reading my reviews for thirty years and I still can't tell which column's worse.",
+      "speaker": "Gore Vidal",
+      "context": "Paris Review dinner conversation transcript, printed in a 1987 supplementary issue following the annual Revel at Elaine's, New York",
+      "real": false,
+      "fake_note": "I made this one up — Vidal's withering categorisation of enemies was a genuine hobby and his contempt for critics was well documented and frequently profane in private. The tell is the fortune-cookie shape of the two-types setup — Vidal was more oblique and nastier than this in reality."
+    },
+    {
+      "id": "q4",
+      "text": "It's quite valuable to have the courage and the confidence to say, 'No, fuck off, leave me alone, thank you very much.'",
+      "speaker": "Helen Mirren",
+      "context": "In a 2013 Daily Mail interview, the Oscar-winning actress said that if she'd had a daughter, \"fuck off\" is the first phrase she would have taught her, to give her the confidence to set boundaries.",
+      "real": true,
+      "source": {
+        "title": "Daily Mail interview (Christian Today report)",
+        "url": "https://www.christiantoday.com/news/helen-mirren-advice-to-daughter-unconventional-brutally-honest",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Somebody at the afterparty told me I was the funniest woman alive and I said, honey, lower the bar a little, there's only been about eleven of us allowed in the room.",
+      "speaker": "Phyllis Diller",
+      "context": "Recorded conversation at the Academy of Television Arts & Sciences Hall of Fame induction reception, November 1999, cited in her 2005 memoir",
+      "real": false,
+      "fake_note": "I made this one up — Diller's entire comedy identity was built on the bitterness of being a woman in a man's industry and she absolutely talked like this in candid moments: sharp, sideways, with a sting in the tail. The tell is the memoir citation layered onto an already-specific reception — that's double-sourcing a fabricated moment."
+    },
+    {
+      "id": "q6",
+      "text": "We played Rotterdam in '72 and someone in the crowd threw a bottle of advocaat at the stage. Advocaat! Thick yellow egg liqueur, all over my bass. I've been angry about it for fifty years. Not the bottle — the choice of drink. Have some bloody standards.",
+      "speaker": "John Entwistle",
+      "context": "Interview with Mojo Magazine, conducted at his Quarwood estate, Gloucestershire, published in the November 1999 issue",
+      "real": false,
+      "fake_note": "I made this one up — Entwistle's dry, aggrieved wit and his deep attachment to his bass gear are well-documented character traits, and a fifty-year grudge about the wrong projectile is perfectly him. The slight tell is Rotterdam '72 — The Who were actually touring the UK heavily that year, not the Netherlands."
+    }
+  ]
+}

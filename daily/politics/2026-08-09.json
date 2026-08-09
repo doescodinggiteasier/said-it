@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-09",
+  "edition": 43,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Few thought he was even a starter / There were many who thought themselves smarter / But he ended PM / CH and OM / An earl and a knight of the garter.",
+      "speaker": "Clement Attlee",
+      "context": "A self-mocking limerick the former British PM wrote about himself in a letter to his brother Tom Attlee, April 8, 1956.",
+      "real": true,
+      "source": {
+        "title": "Lib Quotes: Clement Attlee (self-description limerick)",
+        "url": "https://libquotes.com/clement-attlee",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "He said he felt like a little boy who had stubbed his toe in the dark. That he was too old to cry, but it hurt too much to laugh.",
+      "speaker": "Adlai Stevenson",
+      "context": "Quoting a Lincoln anecdote to describe how he felt conceding the 1952 presidential election, Springfield, Illinois, Nov. 5, 1952.",
+      "real": true,
+      "source": {
+        "title": "The American Presidency Project: Remarks Conceding the Presidential Election in Springfield, Illinois",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-conceding-the-presidential-election-springfield-illinois",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I have staffers whose entire job is to tell me when I've already made a point. Twice now I've promoted them and then immediately proved them indispensable again.",
+      "speaker": "Bernie Sanders",
+      "context": "Interview with Vermont Public Radio, Burlington, Vermont, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Sanders is famously self-aware about his reputation for hammering the same themes repeatedly, and he's leaned into that in various interviews with genuine humor. The giveaway is the 'promoted them' detail, which is a bit too neat and structured for the way Sanders actually rambles into his jokes."
+    },
+    {
+      "id": "q4",
+      "text": "I will do it myself where does he live?",
+      "speaker": "Cory Booker",
+      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes.",
+      "real": true,
+      "source": {
+        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
+        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
+        "date": "2010-12-27"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Someone on my staff printed out the Wikipedia page on blockchain and left it on my desk with a Post-it that said 'urgent.' I read it twice. I'm still not sure what I'm supposed to feel.",
+      "speaker": "Nancy Pelosi",
+      "context": "Remarks at a Democratic caucus technology briefing, as recounted during an interview with The Atlantic, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi has openly discussed her learning curve on tech regulation, and this kind of bemused, slightly exasperated aside sounds exactly like her public candor on the subject. The tell is the Post-it detail, which is a little too perfectly illustrative."
+    },
+    {
+      "id": "q6",
+      "text": "California politics moves so fast that by the time you've finished explaining your position, the position has been protested, defended, walked back, and made into a podcast episode.",
+      "speaker": "Gavin Newsom",
+      "context": "Panel discussion at the Milken Institute Global Conference, Beverly Hills, California, May 2023",
+      "real": false,
+      "fake_note": "I made this one up — Newsom frequently makes self-aware observations about California's intense political media environment, often with this kind of quick, slightly performative wit. The giveaway is 'made into a podcast episode,' which is a touch too zeitgeist-y and calculated."
+    }
+  ]
+}

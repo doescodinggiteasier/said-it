@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-09",
+  "edition": 52,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Ogres are like onions.",
+      "speaker": "Shrek (2001)",
+      "context": "Shrek explains to Donkey that ogres have layers",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "Be the ball.",
+      "speaker": "Caddyshack (1980)",
+      "context": "Ty Webb (Chevy Chase) giving zen golf advice to caddy Danny Noonan during their night-golf lesson",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "You keep using that word 'reasonable.' I don't think it means what you think it means in this house.",
+      "speaker": "Kramer vs. Kramer (1979)",
+      "context": "Ted Kramer arguing with his lawyer about Joanna's demands",
+      "real": false,
+      "fake_note": "I made this one up — Ted's mounting frustration with legal language fits the film's theme of ordinary people crushed by formal systems, and Dustin Hoffman plays exactly this register of controlled outrage. The giveaway is it leans slightly too clever; Ted in that film is more ragged and less epigrammatic when he's angry."
+    },
+    {
+      "id": "q4",
+      "text": "Don't thank me yet. I still have to get us out of the parking lot.",
+      "speaker": "Die Hard (1988)",
+      "context": "McClane after a narrow escape, talking into the radio",
+      "real": false,
+      "fake_note": "I made this one up — the self-deprecating deflationary humor is classic McClane, and the mundane specificity of 'parking lot' is exactly the kind of detail the script loves. The giveaway is McClane's jokes tend to come at his own expense in a rawer, less punchy way — this one lands a little too cleanly."
+    },
+    {
+      "id": "q5",
+      "text": "She doesn't even know you exist, and frankly, I'm starting to understand why.",
+      "speaker": "Ferris Bueller's Day Off (1986)",
+      "context": "Ferris needling Cameron about his crush on a girl at school",
+      "real": false,
+      "fake_note": "I made this one up — the casual cruelty wrapped in Ferris's breezy confidence sounds exactly like his running commentary on Cameron's romantic failures. The giveaway is that Ferris tends to be more encouraging than cutting; real Ferris would pivot faster to a plan."
+    },
+    {
+      "id": "q6",
+      "text": "Every time I sit down at that table, I feel like I'm confessing to something I didn't do.",
+      "speaker": "The Shawshank Redemption (1994)",
+      "context": "Red reflecting on the parole board hearings, possibly in voiceover",
+      "real": false,
+      "fake_note": "I made this one up — Morgan Freeman's Red speaks in exactly this quiet, philosophical register, and parole hearings are a recurring motif that makes this feel grounded. The giveaway is the line is slightly too ironic and self-aware; Red's narration observes others more than it dissects his own discomfort so precisely."
+    }
+  ]
+}
