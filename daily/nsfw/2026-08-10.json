@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-10",
+  "edition": 48,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Little Miss Muffet sat on a tuffet, eating her curds and whey. Along came a spider, he sat down beside her, he said, \"Hey, what's in the bowl, bitch?\"",
+      "speaker": "Andrew Dice Clay",
+      "context": "A signature filthy nursery-rhyme parody from his late-'80s/early-'90s arena act; crowds would shout the punchlines back. Popularized on his stand-up specials and documented in VICE's piece on his nursery rhymes.",
+      "real": true,
+      "source": {
+        "title": "Stand-up act (Vice feature)",
+        "url": "https://www.vice.com/en/article/did-andrew-dice-clay-steal-his-iconic-nursery-rhymes-from-other-successful-entertainers/",
+        "date": "2018"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Vegas in 1974 smelled like cigars, desperation, and somebody's really good perfume — and I could not get enough of any of it. I'd do the second show, hit the casino, argue with a pit boss about semantics until 5 a.m. What a goddamn time to be alive.",
+      "speaker": "Richard Pryor",
+      "context": "Pryor's Place production notes, recorded interview segment, Sunset Gower Studios, Hollywood, August 1983",
+      "real": false,
+      "fake_note": "I made this one up — Pryor's specific, sensory-detail-packed nostalgic riffing and his tendency to end a riff with a sincere declaration of awe are well established in his real interviews. The giveaway is that the Pryor's Place production notes were internal network documents and no interview segments from those sessions have ever surfaced publicly."
+    },
+    {
+      "id": "q3",
+      "text": "My sex life is so bad, my G-spot has been declared a historical landmark.",
+      "speaker": "Joan Rivers",
+      "context": "Rivers being characteristically filthy and self-deprecating about her own dried-up sex life.",
+      "real": true,
+      "source": {
+        "title": "Stand-up one-liner (CNN roundup)",
+        "url": "https://www.cnn.com/2014/09/05/showbiz/celebrity-news-gossip/joan-rivers-jokes/index.html",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People ask if I ever get nervous before a show and honestly, no — but I did once walk out in front of eighty thousand people with my fly down, and I want you to know that the crowd was MORE into it. Draw your own conclusions.",
+      "speaker": "Freddie Mercury",
+      "context": "Interview with Dave Hill, Sounds Magazine, published April 3rd, 1982",
+      "real": false,
+      "fake_note": "I made this one up — Mercury's camp self-awareness and delight in his own physical showmanship make this totally plausible in his voice; the crowd-worship angle is dead-on. The tell is subtle: Dave Hill was a Sounds writer but his documented Mercury interviews were all in 1977 and 1980, not 1982."
+    },
+    {
+      "id": "q5",
+      "text": "The ice cream man always drove an extra block away. I know he's seen us, but I think he just be in the car with his friends saying, 'Watch me how fast I make these motherfuckers run.'",
+      "speaker": "Eddie Murphy",
+      "context": "From Eddie Murphy's 1983 HBO stand-up special 'Delirious' (filmed at DAR Constitution Hall) — his childhood ice-cream-truck bit, where the vendor cruelly speeds off to watch the neighborhood kids chase him.",
+      "real": true,
+      "source": {
+        "title": "'Delirious' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0085474/quotes/",
+        "date": "1983"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I told the label, I said, 'Listen, pal, I will absolutely record a Christmas album — right after you kiss my ass twice and buy me a steak.' They sent a fruit basket. I didn't call back.",
+      "speaker": "John Belushi",
+      "context": "National Lampoon Radio Hour recording session outtakes, NBC Studios, New York, 1974",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's contempt for corporate music-industry schmoozing is well-documented and the fruit-basket punchline fits his blunt absurdist rhythm perfectly. The giveaway is that no Lampoon radio outtakes from that session have ever been commercially released or transcribed."
+    }
+  ]
+}

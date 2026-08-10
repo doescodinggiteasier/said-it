@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-10",
+  "edition": 48,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "No. I have no technical ability. And I know nothing about music.",
+      "speaker": "Rick Rubin",
+      "context": "Super-producer Rick Rubin (Def Jam co-founder; produced Johnny Cash, Beastie Boys, Red Hot Chili Peppers, Adele, Jay-Z) when Anderson Cooper asked on 60 Minutes whether he knew how to work a soundboard.",
+      "real": true,
+      "source": {
+        "title": "Rick Rubin: The 60 Minutes Interview (transcript) — interview by Anderson Cooper, CBS 60 Minutes",
+        "url": "https://www.rev.com/transcripts/rick-rubin-the-60-minutes-interview-transcript",
+        "date": "2023-01-15"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People hear 'country' and they've already decided. They've got this whole movie playing in their head before the first note hits, and you're either confirming it or you're fighting it. I've mostly been fighting it.",
+      "speaker": "Kacey Musgraves",
+      "context": "Cover story interview with Rolling Stone, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Kacey has spoken repeatedly about challenging country music's boundaries and genre expectations, so the sentiment is pitch-perfect for her. The giveaway is that she'd probably name something more specific than 'this whole movie playing in their head' — she tends to reach for sharper, weirder imagery."
+    },
+    {
+      "id": "q3",
+      "text": "It's no different than when Auto-Tune came out",
+      "speaker": "Tyga",
+      "context": "Admitting to making new album $tarface with AI",
+      "real": true,
+      "source": {
+        "title": "Music — Tyga Admits to Making New Album $tarface With AI: “I Don’t Care”",
+        "url": "https://pitchfork.com/story/tyga-admits-to-making-new-album-dollartarface-with-ai-i-dont-care/",
+        "date": "2026-08-10"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I'll be honest, I've remixed tracks where I didn't even like the original and ended up loving what came out of it. There's something weirdly freeing about starting from a place of, like, mild hostility.",
+      "speaker": "Diplo",
+      "context": "Interview with DJ Mag, November 2022 issue",
+      "real": false,
+      "fake_note": "I made this one up — Diplo talks openly about his chaotic creative process and has a self-deprecating, irreverent humor that makes this totally plausible. The subtle giveaway is 'mild hostility' — it's just a touch too neatly phrased for genuine off-the-cuff speech."
+    },
+    {
+      "id": "q5",
+      "text": "I don't really warm up my voice in any systematic way and I know that's probably horrifying to a vocal coach. I just kind of trust that it's there. Which has gotten me in trouble, but not as much trouble as you'd expect.",
+      "speaker": "St. Vincent",
+      "context": "Roundtable interview with Pitchfork at Primavera Sound Barcelona, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Annie Clark has a well-documented, slightly arch sense of humor and often discusses the technical and physical side of performance with this kind of candid self-awareness. The giveaway is the qualifier 'but not as much trouble as you'd expect' — it's doing a little too much comedic work to be truly off-the-cuff."
+    },
+    {
+      "id": "q6",
+      "text": "My mom used to say I was practicing when I was just making noise. I think she was being generous. But then again, maybe she was right and I didn't know the difference yet either.",
+      "speaker": "H.E.R.",
+      "context": "Backstage interview with Beats 1 Radio following the 2021 Grammy Awards, March 2021",
+      "real": false,
+      "fake_note": "I made this one up — H.E.R. frequently references her childhood in Vallejo and her mother's role in her musical development, and she speaks in this warm, slightly wondering tone about her origins. The giveaway is that it's almost too neatly circular — real anecdotes tend to trail off rather than loop back."
+    }
+  ]
+}

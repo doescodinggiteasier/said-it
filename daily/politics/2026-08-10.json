@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-10",
+  "edition": 44,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I did seventeen town halls in one August. By the end, I could answer a question about pharmaceutical pricing in my sleep, and I'm fairly sure I did, once, in Scranton.",
+      "speaker": "Bob Casey Jr.",
+      "context": "Conversation with Pennsylvania reporters following the Senate recess, Pittsburgh Post-Gazette, September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Casey's plain-spoken, self-effacing Pennsylvania-specific humor fits perfectly, and Scranton is real Casey country. The slight tell is that 'seventeen' is suspiciously precise for off-the-cuff remarks; real Casey would probably say 'a lot of' town halls."
+    },
+    {
+      "id": "q2",
+      "text": "Wyoming has fewer people than most city council districts in Los Angeles. I used to think that was a disadvantage. Then I realized it means I've personally met a statistically significant portion of my constituents, which is something most senators cannot say.",
+      "speaker": "John Barrasso",
+      "context": "Keynote address at the Wyoming Stock Growers Association annual convention, Casper, Wyoming, June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Barrasso regularly makes this kind of Wyoming-pride point about small-state representation, and the dry statistical framing matches his physician-turned-politician precision. The tell is the 'statistically significant' phrasing; it's a touch more self-aware than his usual style."
+    },
+    {
+      "id": "q3",
+      "text": "I have now come to the conclusion never again to think of marrying, and for this reason; I can never be satisfied with anyone who would be blockhead enough to have me.",
+      "speaker": "Abraham Lincoln",
+      "context": "A candidly self-mocking line from a young Lincoln's letter, poking fun at his own eligibility as a suitor.",
+      "real": true,
+      "source": {
+        "title": "Abraham Lincoln - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Abraham_Lincoln",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Worst damnfool mistake I ever made was letting myself be elected Vice President of the United States. Should have stuck with my old chores as Speaker of the House. I gave up the second most important job in the Government for one that didn't amount to a hill of beans. I spent eight long years as Mr. Roosevelt's spare tire.",
+      "speaker": "John Nance Garner",
+      "context": "FDR's first vice president (\"Cactus Jack\"), ruefully mocking his own decision to take the job and his powerlessness in it, after leaving office.",
+      "real": true,
+      "source": {
+        "title": "John Nance Garner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Nance_Garner",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "This is a choice that I am ma",
+      "speaker": "Alexandria Ocasio-Cortez",
+      "context": "AOC announcing egg freezing decision via Instagram stories",
+      "real": true,
+      "source": {
+        "title": "Politics — Alexandria Ocasio-Cortez announces decision to freeze her eggs",
+        "url": "https://www.theguardian.com/us-news/2026/aug/09/alexandria-ocasio-cortez-eggs-fertility",
+        "date": "2026-08-10"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've read every page of that bill. Well — I've read summaries of every page of that bill, which is honestly more than most people can say, and I'm including the people who wrote it.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic caucus breakfast during Senate budget negotiations, C-SPAN coverage, March 2014",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-deprecating, rambling candor about legislative fine print is completely on-brand, and the self-correction mid-sentence sounds exactly like him. The subtle tell: he'd more likely name the bill specifically rather than leave it generic."
+    }
+  ]
+}

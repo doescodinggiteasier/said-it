@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-10",
+  "edition": 56,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Every ramen shop I've ever loved has about twelve seats and the owner is irritated that you showed up. That's the tell. If they seem happy to see you, something's off.",
+      "speaker": "David Chang",
+      "context": "Keynote address at the 2022 MAD Food Symposium, Copenhagen",
+      "real": false,
+      "fake_note": "I made this one up — Chang genuinely rhapsodizes about ramen culture and tends to frame restaurant quality through counterintuitive social cues like this. The giveaway is that the logic is a little too tightly packaged for pure off-the-cuff; it sounds like something he workshopped."
+    },
+    {
+      "id": "q2",
+      "text": "People ask me what I was thinking on that last lap. Honestly? I was thinking about whether I'd left my passport in the motorhome. Your brain does strange things under that kind of load.",
+      "speaker": "Lewis Hamilton",
+      "context": "Post-race press conference at the 2023 British Grand Prix, Silverstone, July 9",
+      "real": false,
+      "fake_note": "I made this one up — Hamilton often gives candid, slightly self-deprecating answers about his mental state mid-race, so this fits his register perfectly. The giveaway is the passport detail: vivid and specific, but just a touch too neat as a deflection."
+    },
+    {
+      "id": "q3",
+      "text": "The only time to eat diet food is while you're waiting for the steak to cook.",
+      "speaker": "Julia Child",
+      "context": "Famous saying by the chef and TV cook, listed among quotes she actually said",
+      "real": true,
+      "source": {
+        "title": "17 Quotes From Julia Child, Which She Actually Said | GBH",
+        "url": "https://www.wgbh.org/lifestyle/food/food-stories/2019-01-28/17-quotes-from-julia-child-which-she-actually-said",
+        "date": "2019-01-28"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I showed up to the wrong studio once — fully committed, headphones on, coffee in hand — and just sat there for twenty minutes before anyone said anything. We don't talk about what that says about the sessions at the right studio.",
+      "speaker": "Pharrell Williams",
+      "context": "GQ Men of the Year roundtable feature, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Pharrell is known for self-effacing storytelling in print interviews and that trailing, implicating final line is very much his rhythm. The subtle tell is the punch; Pharrell's real anecdotes tend to meander a little more before the point."
+    },
+    {
+      "id": "q5",
+      "text": "I'm just here so I won't get fined, boss. That's the only reason why.",
+      "speaker": "Marshawn Lynch",
+      "context": "Seattle Seahawks running back, repeated this line at Super Bowl XLIX Media Day in January 2015 after being fined for not speaking to reporters",
+      "real": true,
+      "source": {
+        "title": "Marshawn Lynch: 'I'm just here so I won't get fined'",
+        "url": "https://www.nfl.com/news/marshawn-lynch-i-m-just-here-so-i-won-t-get-fined-0ap2000000319691",
+        "date": "2015-01-27"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I like the escalator, man, 'cause the escalator can never break. It can only become stairs. There would never be an 'Escalator Temporarily Out of Order' sign, only an 'Escalator Temporarily Stairs - Sorry for the Convenience.'",
+      "speaker": "Mitch Hedberg",
+      "context": "From his Comedy Central Presents stand-up set, a signature observational one-liner",
+      "real": true,
+      "source": {
+        "title": "Mitch Hedberg quote on Quotes.net (Comedy Central Presents)",
+        "url": "https://www.quotes.net/mquote/706033",
+        "date": "1998-01-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-10",
+  "edition": 45,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Resignations are for prime ministers and those caught with their trousers down, not for me",
+      "speaker": "Brian Clough",
+      "context": "The legendary English football manager on his refusal to quit, in a collection of his most memorable one-liners.",
+      "real": true,
+      "source": {
+        "title": "Sky Sports — Brian Clough in quotes: Fifteen of the legendary manager's most memorable one-liners",
+        "url": "https://www.skysports.com/football/news/11689/9642762/brian-clough-fifteen-of-the-legendary-managers-most-memorable-one-liners",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I went to the free-throw line in that moment and I genuinely thought about my dog. Just — completely random. I don't know why. And then I made both of them. So now I think about my dog every time.",
+      "speaker": "Steph Curry",
+      "context": "Press conference following Golden State Warriors practice, Chase Center, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Curry's press-conference humor has this exact quality: a sincere, slightly absurdist observation delivered without a punchline announcement. He does actually have a well-documented love of animals. The giveaway is the conclusion ('So now I think about my dog every time') wraps up just a touch too neatly for genuine spontaneous speech."
+    },
+    {
+      "id": "q3",
+      "text": "In Compton we didn't have an ice rink anywhere close. My mom drove forty-five minutes each way, every morning, before school. She'd sit in the car and sleep while I practiced. I didn't find that out until I was twenty-three. She never once mentioned it.",
+      "speaker": "Surya Bonaly",
+      "context": "Interview with The Athletic, February 2022",
+      "real": false,
+      "fake_note": "I made this one up — Bonaly has spoken emotionally about her mother's sacrifices throughout her career, and this kind of specific, delayed revelation ('I didn't find that out until I was twenty-three') fits her reflective interview style perfectly. The giveaway is that Bonaly's real anecdotes about her mother tend to center on her father, René, not commute logistics."
+    },
+    {
+      "id": "q4",
+      "text": "I'm still not really into it.",
+      "speaker": "Anthony Edwards",
+      "context": "The future No. 1 NBA draft pick in a 2020 ESPN feature, admitting he does not enjoy watching basketball (\"To be honest, I can't watch basketball\").",
+      "real": true,
+      "source": {
+        "title": "ESPN — The pain and promise of top NBA draft prospect Anthony Edwards",
+        "url": "https://www.espn.com/nba/story/_/id/30321844/the-pain-promise-top-nba-draft-prospect-anthony-edwards",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Everybody wants to romanticize the early years, the bus rides, the per diem being whatever it was. But I also remember being twenty-two and genuinely not knowing if I'd get another start. That's not romantic. That's just a stomachache for three months.",
+      "speaker": "CC Sabathia",
+      "context": "R2C2 Podcast, Episode hosted by CC Sabathia and Ryan Ruocco, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Sabathia's podcast voice is direct, funny, and completely unsentimental about nostalgia, which this nails. 'A stomachache for three months' is the kind of blunt, physical metaphor he actually reaches for. The giveaway is he'd probably name a specific teammate or city rather than leave it this general."
+    },
+    {
+      "id": "q6",
+      "text": "He had that one coming for telling everybody I didn't know where Brazil was on the map.",
+      "speaker": "Travis Kelce",
+      "context": "The Chiefs tight end at a São Paulo press conference in September 2025, after doing an impression of teammate Patrick Mahomes as payback.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Travis Kelce gets playful payback on Patrick Mahomes with spot-on impersonation",
+        "url": "https://www.foxnews.com/sports/travis-kelce-gets-playful-payback-patrick-mahomes-spot-on-impersonation-brazil-press-conference",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-10",
+  "edition": 53,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You want a room with a view? Pay more.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick's terse reply to a complaining hotel guest at the café",
+      "real": false,
+      "fake_note": "I made this one up — the dry, dismissive wit matches Bogart's Rick perfectly and fits the film's Moroccan-hotel atmosphere. The giveaway is Rick rarely dealt with lodging complaints; the café's upstairs rooms aren't really a plot element."
+    },
+    {
+      "id": "q2",
+      "text": "You smile like a man who's already spent the money.",
+      "speaker": "Butch Cassidy and the Sundance Kid (1969)",
+      "context": "Sundance sizing up a shady contact or rival gang member before a deal goes wrong",
+      "real": false,
+      "fake_note": "I made this one up — the laconic, observational put-down suits Redford's Sundance and the film's laid-back Western wit. The subtle giveaway is Sundance was typically even quieter than this; Butch was the talker."
+    },
+    {
+      "id": "q3",
+      "text": "Just keep swimming.",
+      "speaker": "Finding Nemo (2003)",
+      "context": "Dory's optimistic mantra, which she sings to Marlin to keep him going during the search for Nemo.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "Don't touch the tree. I mean it, Griswald — not even to look at it.",
+      "speaker": "National Lampoon's Christmas Vacation (1989)",
+      "context": "Ellen or Clark's father issuing a futile domestic warning",
+      "real": false,
+      "fake_note": "I made this one up — the exhausted, pre-emptive resignation is spot-on for this film's family-chaos comedy. The tiny giveaway is that Griswold is misspelled here, which a careful fan would catch."
+    },
+    {
+      "id": "q5",
+      "text": "I've had a gun pointed at me by men who were shaking. You're not shaking.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Anton Chigurh sizing up a bounty hunter or local lawman",
+      "real": false,
+      "fake_note": "I made this one up — the calm, clinical observation is vintage Chigurh, and the Coens love this kind of oblique threat. The subtle giveaway is it's slightly too direct; Chigurh's real dialogue tends to stay more philosophical and avoids stating observations this plainly."
+    },
+    {
+      "id": "q6",
+      "text": "The cheaper the crook, the gaudier the patter.",
+      "speaker": "The Maltese Falcon (1941)",
+      "context": "Private detective Sam Spade (Humphrey Bogart) sizing up the small-time gunman Wilmer.",
+      "real": true,
+      "source": {
+        "title": "The Maltese Falcon (1941 film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Maltese_Falcon_(1941_film)",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}
