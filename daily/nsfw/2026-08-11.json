@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-11",
+  "edition": 49,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My rider — and I'm not ashamed, I stand behind every word — my rider specified Scotch, cashews, and that nobody in the building use the word 'funky' within my earshot. We pulled up to the venue in Cincinnati and the promoter, first thing out of his mouth, 'Man, it's gonna be a funky night.' I turned the bus around. We drove to a Denny's. I tipped extremely well.",
+      "speaker": "James Brown",
+      "context": "Howard Stern Show, WXRK New York, February 1997 — discussing tour demands and promoter mishaps",
+      "real": false,
+      "fake_note": "I made this one up — Brown was legendarily demanding about his riders and professional standards, and he appeared on Stern twice where this kind of braggadocio was exactly what Stern pulled out of him. The tell is that Brown's real anecdotes had more rhythm and self-mythologising bombast; this reads slightly too dry and deadpan for his actual voice."
+    },
+    {
+      "id": "q2",
+      "text": "People keep asking me, 'John, what's the secret to a long marriage?' I say, separate bathrooms and a willingness to pretend you didn't hear what you just heard. Phyllis could rip one at two in the morning that'd strip the wallpaper, and we'd both just lie there staring at the ceiling like nothing happened. Thirty-eight years, baby. That's the whole goddamn secret.",
+      "speaker": "John Candy",
+      "context": "The Late Show with David Letterman, March 1993 — during a segment on marriage and domesticity",
+      "real": false,
+      "fake_note": "I made this one up — Candy was famous for warm, self-deprecating domestic humour and genuinely talked about his marriage with affection, so this sits right in his wheelhouse. The giveaway is that Candy tended to keep things a bit cleaner on talk shows; this level of blunt bodily detail skews slightly more explicit than his usual televised bits."
+    },
+    {
+      "id": "q3",
+      "text": "Someone in Cleveland threw a full hot dog at me. Not — I want to be clear — not at the stage. At me. Personal. Like they'd thought about it. And honestly? I finished the set, I went backstage, and I thought, you know what, that man understood the assignment. That's a heckle with commitment. I respect it. I ate a different hot dog, but I respected his.",
+      "speaker": "Bill Hicks",
+      "context": "Recorded Q&A following a show at the Vic Theatre, Chicago, November 1992, released on a bootleg fan tape",
+      "real": false,
+      "fake_note": "I made this one up — Hicks genuinely had wild crowd confrontation stories from his Midwest tours and spoke about them with this exact mixture of mock-respect and studied cool. The giveaway is that Hicks' real heckler stories tend to turn more philosophical and cutting; this one stays too warm and ends without the sting he'd have actually landed."
+    },
+    {
+      "id": "q4",
+      "text": "The strangest thing I've tried to snort? My father. I snorted my father. He was cremated and I couldn't resist grinding him up with a little bit of blow. My dad wouldn't have cared, he didn't give a shit. It went down pretty well, and I'm still alive.",
+      "speaker": "Keith Richards",
+      "context": "Rolling Stones guitarist Keith Richards, in an April 2007 NME interview, describing the strangest thing he had snorted — his late father's cremated ashes ground up with cocaine. Reported by NME, The Hollywood Reporter, VOA, and others. Richards' manager later told NME the remark was made in jest, and Richards offered a softened account in his 2010 memoir, but he is documented giving this quote in the interview.",
+      "real": true,
+      "source": {
+        "title": "NME interview (later called a joke)",
+        "url": "https://www.nme.com/news/music/the-rolling-stones-433-1341398",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I was doing a little over $1,000 a day in heroin, and then probably the same in cocaine and alcohol.",
+      "speaker": "Nikki Sixx",
+      "context": "Mötley Crüe bassist describing the scale of his addiction at his worst, around the period of his December 1987 heroin overdose; said in 2019 press for the Netflix film 'The Dirt'.",
+      "real": true,
+      "source": {
+        "title": "'The Dirt' press (Chicago Sun-Times)",
+        "url": "https://chicago.suntimes.com/entertainment/motley-crue-biopic-netflix-nikki-six-doing-1000-dollars-a-day-in-heroin/",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Why me? Ten million motherfuckers freebasing, and I'm the one who blows up!",
+      "speaker": "Richard Pryor",
+      "context": "Pryor's frank, self-lacerating bit about the 1980 freebasing accident in which he set himself on fire, from his stand-up film 'Richard Pryor: Live on the Sunset Strip' (1982).",
+      "real": true,
+      "source": {
+        "title": "Richard Pryor - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Richard_Pryor",
+        "date": "1982"
+      }
+    }
+  ]
+}

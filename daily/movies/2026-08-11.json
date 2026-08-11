@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-11",
+  "edition": 54,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "On Wednesdays we wear pink.",
+      "speaker": "Mean Girls (2004)",
+      "context": "Karen Smith explaining the Plastics' dress code rule to Cady",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "I've been in this city long enough to know the difference between a secret and a lie, and you've been telling me the second one.",
+      "speaker": "L.A. Confidential (1997)",
+      "context": "Ed Exley confronting a fellow detective during the department corruption investigation",
+      "real": false,
+      "fake_note": "I made this one up — Exley's stiff, morally rigid voice and the film's noir atmosphere make this feel right at home. The giveaway is the sentence is a touch too constructed; Exley's real dialogue tends to be blunter and less rhetorically balanced."
+    },
+    {
+      "id": "q3",
+      "text": "Nobody asks a fish if it wants to be caught.",
+      "speaker": "Jaws (1975)",
+      "context": "Quint, dismissing Hooper's scientific approach during a lull on the Orca",
+      "real": false,
+      "fake_note": "I made this one up — Quint's salty, contemptuous voice toward Hooper is well-established, and a fishing metaphor from a shark hunter reads as totally natural. The giveaway is it tips just slightly into aphorism territory; Quint's real lines are usually more aggressive and specific."
+    },
+    {
+      "id": "q4",
+      "text": "The first rule of Fight Club is: you do not talk about Fight Club.",
+      "speaker": "Fight Club (1999)",
+      "context": "Tyler Durden (Brad Pitt) laying down the rules to the members of Fight Club.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "As you wish.",
+      "speaker": "The Princess Bride (1987)",
+      "context": "Westley the farmhand says this to Buttercup; it's revealed to be his way of saying \"I love you,\" and recurs throughout the film.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "You smell that? That's not jungle. That's something that wants us to know it's there.",
+      "speaker": "Predator (1987)",
+      "context": "Dutch's team moving cautiously through the jungle after discovering the first campsite",
+      "real": false,
+      "fake_note": "I made this one up — the terse, soldier-speak cadence and sensory detail match the film's macho-horror register, and the squad's growing dread is central to the story. The subtle giveaway is 'wants us to know it's there' attributes intention to the predator a little too early for where tension would naturally be at that point."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-11",
+  "edition": 49,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I had this Casio when I was a kid — a CT-410V — and the bossa nova preset on that thing genuinely changed my life more than any masterclass ever did. I'd sit in the kitchen and just play over it for hours. My mum thought I was broken.",
+      "speaker": "Jacob Collier",
+      "context": "Keynote conversation at SXSW Music, Austin, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Collier constantly traces his musicality back to childhood household objects and self-teaching, and the specific-keyboard-model detail is exactly his style of enthusiastic, nerdy recall. The Casio CT-410V is a real instrument, but I invented his ownership of it."
+    },
+    {
+      "id": "q2",
+      "text": "When we were making 'Random Access Memories,' there was a whole week where Thomas and I weren't speaking, not because of a fight, just because we both understood that if we talked about what we were doing, we'd jinx it. That sounds insane, I know.",
+      "speaker": "Guy-Manuel de Homem-Christo",
+      "context": "Rare joint interview with Thomas Bangalter in Les Inrockuptibles, translated excerpt reprinted in MOJO magazine, Issue 236, July 2013",
+      "real": false,
+      "fake_note": "I made this one up — Daft Punk's members are notoriously private and when they did open up around the RAM era, they described the creative process in exactly these superstitious, almost mystical terms about the partnership. The giveaway is that Guy-Man almost never gives solo-attributed quotes — Daft Punk always spoke as a unit."
+    },
+    {
+      "id": "q3",
+      "text": "We've got a special little guest; a big guest. Well, a superstar.",
+      "speaker": "Julian Casablancas",
+      "context": "The Strokes introducing Charli XCX at Outside Lands festival",
+      "real": true,
+      "source": {
+        "title": "Music — Watch Charli XCX Join the Strokes for “Take It or Leave It” at Outside Lands",
+        "url": "https://pitchfork.com/story/charli-xcx-the-strokes-outside-lands/",
+        "date": "2026-08-11"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I think the reason 'Work' connects the way it does is that nobody on that track was trying to be profound. We were just in the room, it was late, and that's the whole song — that's the whole feeling of it. Profundity is almost always accidental in my experience.",
+      "speaker": "Rihanna",
+      "context": "Interview with Garage magazine, Issue 11, published Spring 2017",
+      "real": false,
+      "fake_note": "I made this one up — Rihanna discusses her creative process in this breezy, slightly philosophical but never pretentious way, and she's spoken genuinely about 'Work' being a loose, spontaneous session. The tell: she rarely theorizes about her own songs in print with this much reflection, so the last sentence is the stretch."
+    },
+    {
+      "id": "q5",
+      "text": "Everyone was happy. It was one huge celebration",
+      "speaker": "Oasis fans",
+      "context": "Oasis fans reflecting on the 30th anniversary of the Knebworth concerts",
+      "real": true,
+      "source": {
+        "title": "Music — Oasis fans share footage and memories as band mark the 30th anniversary of Knebw",
+        "url": "https://www.nme.com/news/music/oasis-fans-share-footage-and-memories-as-the-band-mark-the-30th-anniversary-of-knebworth-everyone-was-happy-it-was-one-huge-celebration-3961758?utm_source=rss&utm_medium=rss&utm_campaign=oasis-fans-share-footage-and-memories-as-the-band-mark-the-30th-anniversary-of-knebworth-everyone-was-happy-it-was-one-huge-celebration",
+        "date": "2026-08-11"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I remember playing a show in Akron — maybe four hundred people, maybe less — and I genuinely could not tell if the sound guy hated me or hated himself. Probably both. But something about that night made me go back and rewrite the bridge on 'Holocene,' and I think it's the best thing on that record.",
+      "speaker": "Bon Iver (Justin Vernon)",
+      "context": "Interview with Pitchfork, conducted backstage at Eaux Claires Festival, August 2016",
+      "real": false,
+      "fake_note": "I made this one up — Vernon really does talk about scrappy early gigs and specific songs in this self-deprecating, detail-first way, and 'Holocene' is exactly the kind of track he'd circle back to. The subtle giveaway: 'Holocene' was essentially finished before that festival era, so the timeline is just slightly off for anyone who digs deep."
+    }
+  ]
+}

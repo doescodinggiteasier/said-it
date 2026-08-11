@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-11",
+  "edition": 57,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I burned a whole batch of croissants last spring — like, genuinely carbonized them — and my first instinct wasn't embarrassment, it was curiosity. I wanted to know exactly which step I'd gotten wrong and whether I could recreate the mistake on purpose. My team thought I'd lost it.",
+      "speaker": "Heston Blumenthal",
+      "context": "Recorded for the BBC Two documentary series Heston's Road to Perfection, behind-the-scenes featurette, 2011",
+      "real": false,
+      "fake_note": "I made this one up — Blumenthal's entire public persona is built around treating culinary failure as data, so this fits his documented voice precisely. The giveaway is 'recreate the mistake on purpose,' which is one degree too on-brand — real Heston anecdotes tend to spiral into the chemistry before they land a punchline."
+    },
+    {
+      "id": "q2",
+      "text": "I read somewhere that octopuses can open jars. And I just kept thinking about that for days. What are they trying to get into? What's in the jar that matters to an octopus? I find that more interesting than most conversations I have.",
+      "speaker": "Jane Goodall",
+      "context": "Q&A session following her keynote address at the Edinburgh International Science Festival, April 2016",
+      "real": false,
+      "fake_note": "I made this one up — Goodall is well documented expressing delight in animal cognition across species, not just primates, and her public speaking style is warm and gently funny in this way. The giveaway is the last line: 'more interesting than most conversations I have' is a shade too wry for Goodall, who tends to redirect that kind of observation back toward wonder rather than personal preference."
+    },
+    {
+      "id": "q3",
+      "text": "There's a version of coaching where you're basically a hype man, and there's a version where you're the guy who tells someone their footwork is a disaster at eleven o'clock on a Tuesday night. I've been both, and only one of them is actually useful.",
+      "speaker": "Gregg Popovich",
+      "context": "Feature interview with The Athletic, 'Pop at 70: Coaching, Culture and What Comes Next,' published January 2019",
+      "real": false,
+      "fake_note": "I made this one up — Popovich's documented interview voice is exactly this: blunt, structured around a binary, and dismissive of feel-good coaching mythology. The Athletic long-form profile is precisely his format. The giveaway is 'hype man,' which skews slightly too contemporary and casual for Pop, who tends toward more weathered vocabulary."
+    },
+    {
+      "id": "q4",
+      "text": "I like to say not only was that the first human on the moon, but the first software to run on the moon.",
+      "speaker": "Margaret Hamilton",
+      "context": "The Apollo flight-software lead (who popularized the term \"software engineering\") in a CBS Boston interview, on her code's role in the moon landing",
+      "real": true,
+      "source": {
+        "title": "Margaret Hamilton: MIT Software Pioneer Who Helped Save Apollo 11 Moon Mission - CBS Boston",
+        "url": "https://www.cbsnews.com/boston/news/margaret-hamilton-apollo-11-software-pioneer-interview/",
+        "date": "2019-07-15"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Ah -- playoffs? Don't talk about -- playoffs? You kidding me? Playoffs? I just hope we can win a game!",
+      "speaker": "Jim Mora",
+      "context": "Indianapolis Colts head coach, at a November 2001 press conference when a reporter asked about the team's playoff chances after a loss",
+      "real": true,
+      "source": {
+        "title": "Garber: Mora reflects on \"Playoffs?\" moment",
+        "url": "https://www.espn.com/nfl/story/_/id/7302157/jim-mora-reflects-playoffs-moment",
+        "date": "2012-01-12"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I always thought that, uh, quicksand was gonna be a much bigger problem than it turned out to be.",
+      "speaker": "John Mulaney",
+      "context": "From his stand-up special 'New in Town' (2012), riffing on childhood fears from cartoons",
+      "real": true,
+      "source": {
+        "title": "John Mulaney: New In Town (2012) - Full Transcript - Scraps from the Loft",
+        "url": "https://scrapsfromtheloft.com/comedy/john-mulaney-new-in-town-2012-full-transcript/",
+        "date": "2012-01-13"
+      }
+    }
+  ]
+}
