@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-12",
+  "edition": 47,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "What Carew does with a football, I can do with an orange.",
+      "speaker": "Zlatan Ibrahimovic",
+      "context": "Swedish soccer star's cocky teenage retort to fellow striker John Carew, who had dismissed Zlatan's tricks and flicks as pointless. Said in the Norwegian tabloid VG in April 2002. A classic surprising, deadpan brag.",
+      "real": true,
+      "source": {
+        "title": "Zlatan Ibrahimovic - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Zlatan_Ibrahimovi%C4%87",
+        "date": "2002-04-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I know I will get my game time",
+      "speaker": "Ørjan Nyland",
+      "context": "Interview about signing with RB Leipzig",
+      "real": true,
+      "source": {
+        "title": "Sports — INTERVIEW: “I know I will get my game time” – Ørjan Nyland confident in battle f",
+        "url": "https://sports.yahoo.com/articles/interview-know-game-time-rjan-080000071.html",
+        "date": "2026-08-12"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I go with a clear conscience",
+      "speaker": "Cristiano Ronaldo",
+      "context": "After Portugal's World Cup exit vs Spain, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘I go with a clear conscience’: Cristiano Ronaldo confirms he has played his las",
+        "url": "https://www.theguardian.com/football/2026/jul/07/cristiano-ronaldo-portugal-roberto-martinez-world-cup-2026-spain",
+        "date": "2026-07-07"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I told him if he didn't box out I was going to sit him, and he looked at me like I'd asked him to do something in a foreign language. That's when I knew we had some work to do.",
+      "speaker": "Gregg Popovich",
+      "context": "San Antonio Spurs media availability, training camp, October 2015",
+      "real": false,
+      "fake_note": "I made this one up — Pop's media sessions are full of exactly this low-boil exasperation delivered as dry comedy, and the 'foreign language' line sounds perfectly like him. The give is that he's being slightly more narrative and patient than he usually is with press; real Pop often just cuts the story shorter."
+    },
+    {
+      "id": "q5",
+      "text": "The ice doesn't care that you scored fifty goals last year. I think about that a lot in October. The puck drops and you're nobody again, which sounds bad but I actually find it kind of freeing.",
+      "speaker": "Alex Ovechkin",
+      "context": "Feature interview with Pierre LeBrun, The Athletic, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Ovechkin genuinely reflects on longevity and motivation in interviews, and his English phrasing has this earnest, slightly blunt quality that I've tried to capture. The giveaway is 'freeing' — it's a bit too introspective a word for how Ovi usually lands his thoughts in English."
+    },
+    {
+      "id": "q6",
+      "text": "My hamstring was basically filing a formal complaint for about three weeks. I kept telling the physio, look, I hear it, I just don't have time to respond to it right now.",
+      "speaker": "Serena Williams",
+      "context": "Press conference at the 2018 French Open, Paris, June 2018",
+      "real": false,
+      "fake_note": "I made this one up — Serena's press conference humor is exactly this dry and self-deprecating about her body holding up under pressure. The tiny giveaway is the bureaucratic metaphor; her real humor tends to be a touch more direct and less elaborate."
+    }
+  ]
+}

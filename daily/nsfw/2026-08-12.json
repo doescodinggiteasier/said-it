@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-12",
+  "edition": 50,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The afterparty at Cannes that year — Christ. I woke up in a suite that wasn't mine, wearing a tuxedo jacket that wasn't mine either, holding a Palme d'Or that was absolutely not mine, and a note that just said 'We're even.' Best morning of my life. I still don't know whose jacket it was.",
+      "speaker": "Oliver Reed",
+      "context": "Anecdote shared during a chat with Michael Parkinson on Parkinson, BBC1, recorded and broadcast in the autumn 1974 series",
+      "real": false,
+      "fake_note": "I made this one up — Reed's legendary carnage at European film festivals and his gleeful refusal to explain himself is thoroughly documented, making the vague Cannes chaos totally believable. The giveaway is the Palme d'Or — a prop too cinematic and convenient; the real Reed would have woken up with something much more mundane and inexplicable, like a traffic cone."
+    },
+    {
+      "id": "q2",
+      "text": "Last year I was really into the word cocksucker. I thought it sounded so mean!",
+      "speaker": "Danny McBride",
+      "context": "Answering a rapid-fire 'favorite curse word' question in a Maxim interview promoting 'Eastbound & Down.'",
+      "real": true,
+      "source": {
+        "title": "Maxim interview",
+        "url": "https://www.maxim.com/entertainment/interview-danny-mcbride-eastbound-and-down/",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "It's cold outside, but I'm still looking like a thotty, because a hoe never gets cold.",
+      "speaker": "Cardi B",
+      "context": "From a now-iconic 2014 viral Instagram/Vine clip from her pre-fame days, strutting in a bra top and skirt and explaining why she's barely dressed in winter.",
+      "real": true,
+      "source": {
+        "title": "Nylon — Cardi B was right: hot girls don't get cold",
+        "url": "https://www.nylon.com/life/cardi-b-was-right-hot-girls-dont-get-cold-science-confirms",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I'd sit there and smoke crack while I listened to the play. It made me fucking crazy.",
+      "speaker": "Samuel L. Jackson",
+      "context": "Reflecting on his 1980s/early-90s crack-cocaine addiction during his time as an understudy on Broadway's 'The Piano Lesson' (shadowing Charles Dutton), before he got sober in 1991. From a 2019 The Hollywood Reporter interview, widely reported (Entertainment Tonight, Today, People), Jan 2019.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter interview (TODAY report)",
+        "url": "https://www.today.com/health/health/samuel-l-jackson-opens-drug-addiction-early-career-rcna20476",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My liver and I have an understanding. It doesn't file a formal complaint, I don't ask it any direct questions. Thirty years of mutual non-disclosure. Beautiful arrangement. My lawyer wishes he had the same deal.",
+      "speaker": "Dean Martin",
+      "context": "Monologue delivered during a taping of The Dean Martin Show, NBC Studio 1, Burbank, recorded for the Season 7 premiere, September 1971",
+      "real": false,
+      "fake_note": "I made this one up — Martin's whole stage persona was built on genial booze self-deprecation, so this slides in seamlessly. The giveaway is 'non-disclosure,' a corporate-legal term that Martin's folksy Rat Pack cadence would never actually reach for."
+    },
+    {
+      "id": "q6",
+      "text": "I showed up to the Grammys one year — won't say which year — and I had lipstick on my collar, one earring missing, and a half-eaten hot dog in my jacket pocket. The publicist nearly had a stroke. I said, 'Honey, that IS the look. Write it down.'",
+      "speaker": "Freddie Mercury",
+      "context": "Spoken during a roundtable interview for Rolling Stone's 'The Year in Rock' feature, published in the January 1985 print edition",
+      "real": false,
+      "fake_note": "I made this one up — Mercury's theatrical self-mythologising and withering delivery toward publicists tracks beautifully with his documented personality. The giveaway is the hot dog, which is far too unglamorous and random for Mercury, who even in chaotic moments curated his excess."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-12",
+  "edition": 50,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There are records I still can't listen to all the way through. Not because they're bad — I think some of them are pretty good — but because I know exactly what was going on in the room when we cut each track, and some of those rooms weren't great places to be.",
+      "speaker": "Tom Petty",
+      "context": "Conversation with Cameron Crowe, published in Rolling Stone's special Tom Petty commemorative issue, November 2017",
+      "real": false,
+      "fake_note": "I made this one up — Tom spoke openly about turbulent periods in the Heartbreakers' history and his complicated relationship with certain albums. The slight tell is that he's just vague enough to sound real, but Petty in interviews usually named the albums directly rather than leaving them anonymous like this."
+    },
+    {
+      "id": "q2",
+      "text": "People assume the studio is where I feel most at home, but honestly I get a little anxious in there. The stage is easy — the stage is just adrenaline. The studio is where you have to actually be honest with yourself, which is harder.",
+      "speaker": "Beyoncé",
+      "context": "Cover profile, Vogue US, September 2018",
+      "real": false,
+      "fake_note": "I made this one up — Beyoncé has spoken about perfectionism and vulnerability in the creative process, so this fits her documented introspective mode. The tell is subtle: she rarely frames the stage as 'easy' — she consistently emphasizes the labor behind live performance."
+    },
+    {
+      "id": "q3",
+      "text": "I have a credit on the back of the album that says, 'Nails by Dolly!'",
+      "speaker": "Dolly Parton",
+      "context": "Dolly Parton explaining that she composed and partly performed the percussive 'typewriter' rhythm of '9 to 5' by clacking her long acrylic fingernails together — and that the album '9 to 5 and Odd Jobs' literally credits 'Nails by Dolly.'",
+      "real": true,
+      "source": {
+        "title": "“I have a credit on the back of the album that says, ‘Nails by Dolly!’” Dolly Parton on the hit song she wrote without a",
+        "url": "https://www.guitarplayer.com/music/albums-singles/i-have-a-credit-on-the-back-of-the-album-that-says-nails-by-dolly-dolly-parton-on-the-award-winning-hit-song-she-wrote-without-a-guitar-using-only-her-fingernails",
+        "date": "2024-01-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I remember finishing 'Superstition' and just sitting there at the keyboard going, okay, that's not mine to keep. That one belongs to whoever needs it. I don't know how else to explain it.",
+      "speaker": "Stevie Wonder",
+      "context": "Interview with David Fricke, Rolling Stone, October 2005",
+      "real": false,
+      "fake_note": "I made this one up — Stevie has talked extensively about songs feeling 'given' to him spiritually, so the sentiment fits perfectly. The subtle giveaway is that he named 'Superstition' specifically; he tends to speak about his catalog more generally rather than singling out individual songs this plainly."
+    },
+    {
+      "id": "q5",
+      "text": "My kids heard 'Bohemian Rhapsody' for the first time last year and my youngest just goes, 'Dad, why didn't you write anything like that?' And honestly I had to take a walk.",
+      "speaker": "Billy Joel",
+      "context": "Q&A session at the Songwriters Hall of Fame Gala, New York City, June 2018",
+      "real": false,
+      "fake_note": "I made this one up — Billy talks about his kids, about Freddie Mercury, and self-deprecating humor is absolutely his register. The giveaway is the framing: Billy Joel doesn't typically frame his own legacy as lesser-than in a direct comparison, even jokingly."
+    },
+    {
+      "id": "q6",
+      "text": "Why am I crying on Oprah?",
+      "speaker": "Pharrell Williams",
+      "context": "On Oprah Winfrey's talk show 'Oprah Prime' (April 2014), Oprah surprised Pharrell by playing a montage of fan videos of people around the world dancing to his hit song 'Happy.'",
+      "real": true,
+      "source": {
+        "title": "Watch Pharrell Cry Over 'Happy' Inspiration During Interview with Oprah Winfrey",
+        "url": "https://www.rollingstone.com/music/music-news/watch-pharrell-cry-over-happy-inspiration-231769/",
+        "date": "2014-04-14"
+      }
+    }
+  ]
+}

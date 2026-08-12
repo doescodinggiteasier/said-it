@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-12",
+  "edition": 55,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I guess we learned not to do it again.",
+      "speaker": "Burn After Reading (2008)",
+      "context": "The CIA Superior (J.K. Simmons) in the final debrief scene, summarizing the botched operation to Officer Palmer.",
+      "real": true,
+      "source": {
+        "title": "Burn After Reading - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Burn_After_Reading",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've seen men confess to things they didn't do just to get out of a room like this.",
+      "speaker": "12 Angry Men (1957)",
+      "context": "Juror Eight during a heated exchange about the reliability of the confession",
+      "real": false,
+      "fake_note": "I made this one up — Fonda's Juror Eight speaks in exactly this measured, evidence-grounded way, and the observation fits the film's scrutiny of the justice system. The giveaway is a slight over-tidiness; his real lines tend to be a bit more tentative and question-shaped."
+    },
+    {
+      "id": "q3",
+      "text": "He's not hiding from us. He's just not ready yet.",
+      "speaker": "E.T. the Extra-Terrestrial (1982)",
+      "context": "Elliot defending E.T. to his brother Michael when they can't find the alien in the house",
+      "real": false,
+      "fake_note": "I made this one up — Elliot's protective, quietly certain voice is exactly right here, and the line fits the early domestic scramble of hiding E.T. The giveaway is that it's a touch too calm; Elliot in those scenes is usually more breathless and urgent."
+    },
+    {
+      "id": "q4",
+      "text": "I remember every number I've ever seen. Prices, dates, distances. But I can't remember her face anymore.",
+      "speaker": "Rain Man (1988)",
+      "context": "Raymond speaking to Charlie during a quiet moment on their road trip",
+      "real": false,
+      "fake_note": "I made this one up — Raymond's savant detail is right, and the emotional undercurrent fits the film's gradual warmth. The giveaway is the introspective emotional admission; Raymond would more likely state a fact about memory than reflect on loss this cleanly."
+    },
+    {
+      "id": "q5",
+      "text": "Life finds a way.",
+      "speaker": "Jurassic Park (1993)",
+      "context": "Dr. Ian Malcolm (Jeff Goldblum) argues that the park's all-female engineered dinosaurs cannot truly be prevented from breeding or controlled.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "The best way to spread Christmas cheer is singing loud for all to hear.",
+      "speaker": "Elf (2003)",
+      "context": "Buddy the Elf sharing his philosophy on holiday spirit",
+      "real": true
+    }
+  ]
+}

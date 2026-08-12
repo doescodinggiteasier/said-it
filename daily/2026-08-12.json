@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-12",
+  "edition": 58,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've written songs in proper studios with grand pianos and engineers and all the rest of it, and I've written songs on a voice memo at a motorway service station. I genuinely cannot tell you which ones are which anymore.",
+      "speaker": "Ed Sheeran",
+      "context": "Interview with Zane Lowe for Apple Music 1, recorded ahead of the release of Subtract, May 2023",
+      "real": false,
+      "fake_note": "I made this one up — Sheeran's everyman, process-demystifying chattiness and his habit of referencing unglamorous British settings is totally true to his public voice. The giveaway: he typically specifies the songs he wrote quickly versus slowly — this vagueness about not being able to tell them apart is slightly uncharacteristic."
+    },
+    {
+      "id": "q2",
+      "text": "My mother called me the day after the Oscars and the first thing she said was, 'Your tie was crooked.' Not 'congratulations.' The tie.",
+      "speaker": "Cillian Murphy",
+      "context": "Appearing on The Late Late Show with Patrick Kielty, RTÉ One, broadcast March 2024",
+      "real": false,
+      "fake_note": "I made this one up — Murphy's dry, understated Irish humour and his habit of deflecting serious praise with a small domestic detail is completely consistent with his public persona. The giveaway: he's said warm things about his family publicly but has never specifically quoted his mother on fashion."
+    },
+    {
+      "id": "q3",
+      "text": "I'm already feeling better and very much on the mend",
+      "speaker": "Rod Stewart",
+      "context": "Statement after undergoing a coronary stent procedure, leading to cancellation of farewell tour dates",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Rod Stewart Cancels Farewell Tour Dates After Coronary Stent Procedure",
+        "url": "https://www.hollywoodreporter.com/music/music-news/rod-stewart-cancels-tour-dates-stent-procedure-1236671694/",
+        "date": "2026-08-12"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Neither Saber nor Unigine have replaced any writers with AI",
+      "speaker": "Matthew Karch",
+      "context": "Saber CEO responding to claims that writers were replaced with ChatGPT",
+      "real": true,
+      "source": {
+        "title": "Tech — Saber denies replacing Rideshare Stimulator’s writers with ChatGPT",
+        "url": "https://www.theverge.com/games/978558/rideshare-stimulator-writer-ai-saber-interactive",
+        "date": "2026-08-12"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I was lead writer on this one!",
+      "speaker": "Stella Sacco",
+      "context": "Former lead writer posting on Bluesky after being allegedly replaced by ChatGPT on the Rideshare Stimulator game",
+      "real": true,
+      "source": {
+        "title": "Tech — Saber denies replacing Rideshare Stimulator’s writers with ChatGPT",
+        "url": "https://www.theverge.com/games/978558/rideshare-stimulator-writer-ai-saber-interactive",
+        "date": "2026-08-12"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Somebody told me before we started filming that the suit would be comfortable. I want to find that person. I have questions.",
+      "speaker": "Robert Downey Jr.",
+      "context": "Behind-the-scenes featurette for Iron Man 3, included on the Blu-ray release, 2013",
+      "real": false,
+      "fake_note": "I made this one up — RDJ's sardonic, mock-aggrieved wit about the physical demands of the MCU is exactly his documented press junket register. The giveaway: he's given many interviews about the suit but has usually framed the discomfort in more colourful, less restrained terms."
+    }
+  ]
+}
