@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-13",
+  "edition": 56,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's something about this that's so black, it's like how much more black could this be? And the answer is none. None more black.",
+      "speaker": "This Is Spinal Tap (1984)",
+      "context": "Nigel Tufnel (Christopher Guest) shows off a new album cover; his deadpan musing on its blackness.",
+      "real": true,
+      "source": {
+        "title": "This Is Spinal Tap - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/This_Is_Spinal_Tap",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Get her out of the cold, and then we'll talk.",
+      "speaker": "Schindler's List (1993)",
+      "context": "Schindler to a subordinate, insisting on a worker's immediate welfare before any business discussion",
+      "real": false,
+      "fake_note": "I made this one up — it captures Schindler's brusque, practical manner of showing compassion without sentiment, which is exactly how the film portrays his evolving humanity. The giveaway is the slight modern terseness; Spielberg's dialogue in that film tends to run a half-beat more formal."
+    },
+    {
+      "id": "q3",
+      "text": "I'll be back.",
+      "speaker": "The Terminator (1984)",
+      "context": "The Terminator (Arnold Schwarzenegger) tells the police desk sergeant he'll be back, then drives a car through the front of the station.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "May the Force be with you.",
+      "speaker": "Star Wars (1977)",
+      "context": "Said during the Rebel briefing before the assault on the Death Star (and by Han to Luke).",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Nobody asks a man where he's been. They only ask where he's going.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes to a client or associate, deflecting a question about his past",
+      "real": false,
+      "fake_note": "I made this one up — it has the world-weary, laconic voice Jake Gittes uses throughout the film and fits the noir milieu exactly. The giveaway is that it leans slightly too philosophical for Jake, who tends to be more sardonically specific rather than broadly reflective."
+    },
+    {
+      "id": "q6",
+      "text": "You call it luck. I call it not flinching.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Anton Chigurh, responding to a character who suggests he narrowly avoided something",
+      "real": false,
+      "fake_note": "I made this one up — it matches Chigurh's habit of reframing chance as will, which is central to his character and fits the Coens' spare, declarative dialogue style. The giveaway is the slight motivational-poster ring to 'not flinching,' whereas Chigurh's real lines are more ruminative and strange."
+    }
+  ]
+}

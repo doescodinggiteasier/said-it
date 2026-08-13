@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-13",
+  "edition": 59,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The guitar I wrote 'Blackbird' on, I left it on a train once. In Scotland. Got it back, but there were about forty-five minutes where I had a very interesting relationship with the idea of loss.",
+      "speaker": "Paul McCartney",
+      "context": "In conversation with Rick Rubin for Broken Record podcast, Episode 198, released October 2022",
+      "real": false,
+      "fake_note": "I made this one up — McCartney has told dozens of stories about specific instruments and the memories attached to them, so the frame feels completely natural. The giveaway is 'a very interesting relationship with the idea of loss' — a little too wryly philosophical for pure anecdote."
+    },
+    {
+      "id": "q2",
+      "text": "I Have Not Played Rock Music in 25 Years",
+      "speaker": "Ritchie Blackmore",
+      "context": "Warning fans before performing with Deep Purple at Jones Beach, New York",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Ritchie Blackmore Performs With Deep Purple for First Time Since Acrimonious Spl",
+        "url": "https://variety.com/2026/music/news/ritchie-blackmore-deep-purple-performs-smoke-on-the-water-1236833509/",
+        "date": "2026-08-13"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "A soufflé is basically the universe telling you to be humble. You can do everything right and it will still just decide not to. I've made peace with that. Mostly. Not really.",
+      "speaker": "Gordon Ramsay",
+      "context": "Behind-the-scenes segment for MasterChef US Season 12, filmed at the MasterChef Kitchen Studio, Los Angeles, 2022",
+      "real": false,
+      "fake_note": "I made this one up — Ramsay has spoken publicly about soufflés being a benchmark of discipline and patience, and his humor often undercuts his own intensity. The giveaway is the triple-beat 'Mostly. Not really.' which is a touch too scripted a rhythm for genuine behind-the-scenes commentary."
+    },
+    {
+      "id": "q4",
+      "text": "I believe it's fair to correct a false narrative, especially after asking to not be misrepresented",
+      "speaker": "Neil Perry",
+      "context": "Neil Perry speaking to Rolling Stone about his departure from the Band Perry",
+      "real": true,
+      "source": {
+        "title": "Music — Neil Perry Claims He Was ‘Terminated’ From the Band Perry",
+        "url": "https://www.rollingstone.com/music/music-news/neil-perry-kimberly-band-fired-1235607600/",
+        "date": "2026-08-13"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There are books I have read where I genuinely don't know if I understood them or if I just convinced myself I did. Infinite Jest is one. Middlemarch is another. I have strong opinions about both and I'm not sure I'm qualified to have either of them.",
+      "speaker": "Emma Thompson",
+      "context": "The Guardian Weekend Magazine profile, published September 3, 2022",
+      "real": false,
+      "fake_note": "I made this one up — Thompson is famously bookish and self-deprecating about her own intellectual pretensions, a combination she's expressed in numerous interviews. The giveaway is the pairing of Infinite Jest with Middlemarch — a little too perfectly calibrated to signal literary range on both sides of the Atlantic."
+    },
+    {
+      "id": "q6",
+      "text": "My coach in high school told me I was a good runner but I'd never compete at the highest level because I thought too much. And I remember thinking — what does that even mean? How do you think too much? And then I ran the wrong heat at Junior Nationals and I understood exactly what he meant.",
+      "speaker": "Allyson Felix",
+      "context": "Appearance on The Rich Roll Podcast, Episode 631, released August 2021",
+      "real": false,
+      "fake_note": "I made this one up — Felix has spoken openly about coaches doubting her and about the mental side of track throughout her career, and the self-deprecating punchline about Junior Nationals is exactly her style. The giveaway is that the story has a suspiciously perfect three-act shape for something recalled casually in a podcast."
+    }
+  ]
+}

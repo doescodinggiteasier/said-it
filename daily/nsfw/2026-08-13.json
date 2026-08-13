@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-13",
+  "edition": 51,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me, 'Freddie, where do you find your confidence?' Darling, I woke up on a tour bus in Stuttgart with a feather boa around my neck, someone else's boots on my feet, and a half-eaten crêpe on my chest — and I still walked onstage and blew the roof off the place. Confidence isn't found. It's what's left when you've run out of anything sensible to feel.",
+      "speaker": "Freddie Mercury",
+      "context": "BBC Radio 1 Rock Week interview with Tommy Vance, broadcast October 1984, recorded backstage at the Birmingham NEC following the Works Tour warm-up date",
+      "real": false,
+      "fake_note": "I made this one up — Mercury's flamboyant self-mythology, the 'darling' address, and theatrical specificity (Stuttgart, feather boa) are all very much in his wheelhouse. The sneaky giveaway is that last sentence: it tilts just slightly toward the polished aphorism Freddie would sometimes puncture rather than deliver straight."
+    },
+    {
+      "id": "q2",
+      "text": "Comedy is very simple. You find the thing a room full of people are all privately thinking and you say it out loud as fast as possible before your brain catches up and tells you not to. That's the whole job. Everything else is just lighting and a microphone and hoping the bar tab isn't yours.",
+      "speaker": "George Carlin",
+      "context": "Pre-show greenroom recording made by a sound technician at Carnegie Hall, New York, September 1982 — excerpt published in the Carnegie Hall programming archive notes, 2008",
+      "real": false,
+      "fake_note": "I made this one up — the reductive, declarative structure ('very simple… that's the whole job') and the deflating kicker about the bar tab are textbook Carlin rhythm. The giveaway is that the ending is a bit too soft; Carlin's real punchlines were usually angrier and more pointed."
+    },
+    {
+      "id": "q3",
+      "text": "I have been thrown out of better hotels than this one, and I have been thrown out of worse, and the only real difference is the thread count of the sheets they fling your trousers at you with.",
+      "speaker": "Keith Moon",
+      "context": "Sounds magazine interview with Penny Valentine, conducted backstage at the Lyceum Ballroom, London, December 1972, published in the January 1973 issue",
+      "real": false,
+      "fake_note": "I made this one up — Moon's anarchy was always delivered with a kind of absurdist English elegance, and 'the thread count of the sheets they fling your trousers at you with' captures that perfectly. The giveaway is the slightly too-polished construction; Moon was funnier in messier, more fragmented bursts."
+    },
+    {
+      "id": "q4",
+      "text": "The rider said 'no brown M&Ms' and everyone thinks that's ego. It's not ego. Ego is what I do onstage. The M&M thing is just QA. If the bowl's got brown ones in it, nobody read the contract, and if nobody read that page, nobody read the page about the weight limits on the stage rigging either, and then somebody gets hurt. Brown M&Ms save lives. I'm basically a safety officer with better trousers.",
+      "speaker": "David Bowie",
+      "context": "Rolling Stone Readers' Poll Winners Party, New York, February 1984 — off-the-cuff remarks to journalist Kurt Loder captured in Loder's handwritten notes, later referenced in his 2015 memoir",
+      "real": false,
+      "fake_note": "I made this one up — the intellectual reframe of a famous rock cliché (the M&M rider actually belonged to Van Halen, not Bowie, which is part of the plant) delivered with dry authority and a fashion flex at the end is very Bowie. The giveaway for sharp players is that the M&M rider is famously Van Halen's, not Bowie's — placing it in his mouth is the trap."
+    },
+    {
+      "id": "q5",
+      "text": "Look at your mushrooms - they look like fucking tadpoles on Viagra.",
+      "speaker": "Gordon Ramsay",
+      "context": "Chef Gordon Ramsay critiquing a kitchen's mushroom side dish on the \"Rococo\" episode of Ramsay's Kitchen Nightmares (King's Lynn restaurant), UK Channel 4, 2006.",
+      "real": true,
+      "source": {
+        "title": "'Ramsay's Kitchen Nightmares' — Rococo (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt1058681/",
+        "date": "2006"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You've baked a really lovely cake, but then you've used dog shit for frosting.",
+      "speaker": "Steve Jobs",
+      "context": "Critiquing a NeXT programmer's work during a project review",
+      "real": true,
+      "source": {
+        "title": "Book 'The Second Coming of Steve Jobs' (Cult of Mac)",
+        "url": "https://www.cultofmac.com/news/eleven-cutting-steve-jobs-quotes",
+        "date": "2000"
+      }
+    }
+  ]
+}

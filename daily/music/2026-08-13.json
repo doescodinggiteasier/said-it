@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-13",
+  "edition": 51,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember playing 'Superstition' on the talkbox and Stevie just walked over, didn't say a word, took the thing out of my hands, and played it back note for note. Like he was returning a library book.",
+      "speaker": "Roger Troutman",
+      "context": "Interview with Musician magazine, published in the March 1983 issue",
+      "real": false,
+      "fake_note": "I made this one up — Roger genuinely talked about Stevie in reverential, slightly bemused terms, and the library-book image sounds exactly like his dry wit. The giveaway is that Troutman died in 1999, so very few fans can cross-check his interview archive closely enough to catch this."
+    },
+    {
+      "id": "q2",
+      "text": "She was flamboyant. She had bright red lipstick, long red fingernails. She had high-heeled shoes, little floating plastic goldfish in the heels of them, short skirts, low-cut tops, and I just thought she was beautiful.",
+      "speaker": "Dolly Parton",
+      "context": "In a Guardian interview (quoted by HuffPost), Dolly Parton describes the local 'town tramp' whose flashy style inspired her own signature look as a child.",
+      "real": true,
+      "source": {
+        "title": "Salon — Dolly Parton's famed \"town tramp\" style inspiration",
+        "url": "https://www.salon.com/2023/10/19/behind-the-seams-6-major-revelations-about-dolly-partons-famed-town-tramp-sense-of-style/",
+        "date": "2023-10-11"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People keep asking me what the 808 is supposed to sound like. It's not supposed to sound like anything. That's the whole point. You project onto it. It's basically a Rorschach test that costs less than a used car.",
+      "speaker": "Kanye West",
+      "context": "Q&A session following a listening event for 808s & Heartbreak at Electric Lady Studios, New York, November 2008",
+      "real": false,
+      "fake_note": "I made this one up — Kanye has spoken extensively about the 808 as an emotional canvas, and the Rorschach analogy fits his habit of reaching for visual-art comparisons. The subtle giveaway is the 'used car' punchline, which is just a hair too self-deprecating for peak-era Kanye."
+    },
+    {
+      "id": "q4",
+      "text": "I can out-dance Bowie and Jagger!",
+      "speaker": "Martha Reeves",
+      "context": "An interview about her career and Motown",
+      "real": true,
+      "source": {
+        "title": "Music — ‘I can out-dance Bowie and Jagger!’ Martha Reeves on Motown, Dancing in the Stre",
+        "url": "https://www.theguardian.com/music/2026/jun/26/reader-interview-martha-reeves-motown",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "It's a unique experience because you feel that you know where you are in space",
+      "speaker": "Brian May",
+      "context": "Astrophysicist and guitarist Brian May on viewing the solar eclipse",
+      "real": true,
+      "source": {
+        "title": "Music — Astrophysicist Brian May shares advice for viewing the solar eclipse",
+        "url": "https://www.nme.com/news/music/astrophysicist-brian-may-shares-advice-for-viewing-the-solar-eclipse-3962207?utm_source=rss&utm_medium=rss&utm_campaign=astrophysicist-brian-may-shares-advice-for-viewing-the-solar-eclipse",
+        "date": "2026-08-13"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My mother told me never to let anyone hear me warm up. She said, 'That's yours. Once you give it away in the hallway you've already done the concert.'",
+      "speaker": "Aretha Franklin",
+      "context": "Interview with David Ritz, conducted during the recording of One Lord, One Faith, One Baptism, 1987",
+      "real": false,
+      "fake_note": "I made this one up — Aretha spoke often about her mother's influence and was famously guarded about her process. The specific detail of 'in the hallway' sounds like genuine recalled speech. The subtle tell is that Aretha typically attributed protective wisdom to her father, Reverend Franklin, not her mother."
+    }
+  ]
+}

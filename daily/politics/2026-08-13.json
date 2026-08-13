@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-13",
+  "edition": 47,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Texas is a big state. I can't stress that enough. People from outside think they understand how big it is, and then they drive from El Paso to Houston and something changes in them permanently.",
+      "speaker": "Rick Perry",
+      "context": "Keynote address at the Texas Tribune Festival, Austin, Texas, September 2015",
+      "real": false,
+      "fake_note": "I made this one up — Perry's Texan boosterism was a defining feature of his public persona and he frequently riffed on the scale and uniqueness of the state, especially at Texas-centered events. The giveaway is 'something changes in them permanently,' which is slightly more lyrical than Perry's usual folksy, punchy delivery."
+    },
+    {
+      "id": "q2",
+      "text": "People ask me all the time, 'What's it like being Vice President?' And I say, well, you know, you're in the room. You're definitely in the room. Whether anyone looks up when you walk in is a separate question.",
+      "speaker": "Mike Pence",
+      "context": "Interview with Hugh Hewitt on The Hugh Hewitt Show, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Pence has a dry, understated delivery and occasionally poked gentle fun at the inherent awkwardness of the VP role, especially relative to Trump's outsized presence. The giveaway is that the self-deprecation is slightly too polished; Pence would more likely pivot to a substantive point rather than let the joke breathe this long."
+    },
+    {
+      "id": "q3",
+      "text": "Somebody on my staff once put together a briefing document that was, I think, sixty-three pages on water rights. Sixty-three. And I remember thinking: I was elected. I chose this.",
+      "speaker": "John Hickenlooper",
+      "context": "Interview with Colorado Public Radio host Ryan Warner, Denver, Colorado, March 2016",
+      "real": false,
+      "fake_note": "I made this one up — Hickenlooper's genial, self-deprecating humor and his deep engagement with Colorado-specific policy like water rights make this feel entirely natural, and CPR is a regular venue for that kind of candid gubernatorial conversation. The giveaway is the repeated 'Sixty-three' — a real speaker would more likely say 'I don't know, fifty pages, something like that' rather than confidently restating the exact number for comic effect."
+    },
+    {
+      "id": "q4",
+      "text": "The disappointment of manhood succeeds to the delusion of youth: let us hope that the heritage of old age is not despair.",
+      "speaker": "Benjamin Disraeli",
+      "context": "The British Prime Minister and novelist, in a candidly reflective aside on the disappointments of the ages of life (from his fiction, Book VIII, Chapter 4).",
+      "real": true,
+      "source": {
+        "title": "Benjamin Disraeli - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My mother used to say the Senate was like a slow cooker. You put good ingredients in, you wait, you don't lift the lid every five minutes. She was not a patient woman, by the way, so I always thought that was a little ironic.",
+      "speaker": "Mitch McConnell",
+      "context": "Commencement address at the University of Louisville Brandeis School of Law, May 2014",
+      "real": false,
+      "fake_note": "I made this one up — McConnell rarely cracks jokes but does occasionally reference his Kentucky roots and family in formal remarks, and his well-documented strategic patience made the slow-cooker framing feel authentic. The giveaway is the charming self-awareness in the kicker; McConnell's real humor tends to be drier and less personally revealing than this."
+    },
+    {
+      "id": "q6",
+      "text": "I am a Ford, not a Lincoln. My addresses will never be as eloquent as Mr. Lincoln's. But I will do my very best to equal his brevity and his plain speaking.",
+      "speaker": "Gerald Ford",
+      "context": "Self-deprecating remark Ford made on December 6, 1973, immediately after taking the oath of office as the 40th Vice President (following Spiro Agnew's resignation).",
+      "real": true,
+      "source": {
+        "title": "Gerald Ford - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Gerald_Ford",
+        "date": "1973-12-06"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-13",
+  "edition": 48,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "If you don't want me to watch the ball, you can get it out of the ocean.",
+      "speaker": "Max Muncy",
+      "context": "Dodgers infielder Max Muncy on what he told Giants pitcher Madison Bumgarner, who had angrily yelled at him to stop watching his home run and run the bases. Muncy's solo homer was the only run in a 1-0 Dodgers win in San Francisco.",
+      "real": true,
+      "source": {
+        "title": "Max Muncy beats Madison Bumgarner at the plate and in his post-game quotes",
+        "url": "https://www.cbssports.com/mlb/news/max-muncy-beats-madison-bumgarner-at-the-plate-and-in-his-post-game-quotes/",
+        "date": "2019-06-09"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Nobody is going to beat me on this track",
+      "speaker": "Matt Hudson-Smith",
+      "context": "After winning his third European Championship 400m title in Birmingham",
+      "real": true,
+      "source": {
+        "title": "Sports — Hudson-Smith dazzles home fans as he surges to golden European 400m hat-trick",
+        "url": "https://www.theguardian.com/sport/2026/aug/12/matt-hudson-smith-european-athletic-championship-2026-400m",
+        "date": "2026-08-13"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The thing about a slump is everyone around you starts walking differently when they come near you, like you've got something contagious. The coaches, the media guys, even the groundskeepers. You can feel it. That part is almost harder than the actual slump.",
+      "speaker": "Derek Jeter",
+      "context": "Conversation recorded for 'The Captain,' ESPN documentary series, July 2022",
+      "real": false,
+      "fake_note": "I made this one up — Jeter rarely opens up, but when he does it's in this observational, slightly detached mode, noticing other people's behavior rather than confessing his own feelings directly. The giveaway is the groundskeeper detail, which feels authentic but is just a touch too cinematic."
+    },
+    {
+      "id": "q4",
+      "text": "I actually had a coach in juniors who told my mum I'd never make it past the regional level. I don't think he meant it cruelly — I think he just genuinely believed it. I've thought about him a lot over the years, not in a bitter way, more like... he was useful.",
+      "speaker": "Serena Williams",
+      "context": "The Players' Tribune first-person essay, 'What I Kept,' published September 2018",
+      "real": false,
+      "fake_note": "I made this one up — Serena has a well-documented habit of crediting adversity and doubters as fuel, and this has her trademark mix of generosity and steel. The giveaway is the slight over-specificity about a junior coach her fans would have already heard named if it were real."
+    },
+    {
+      "id": "q5",
+      "text": "People think I'm out here trying to run a hundred miles an hour every carry. I'm really not. I'm looking for one crease, one moment where the whole defense sort of exhales, and that's when I go. Most of the time it happens before I've consciously decided anything.",
+      "speaker": "Barry Sanders",
+      "context": "Jim Rome Show, ESPN Radio, during a promotional appearance for his memoir, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Sanders is famously reticent and has always described his running instinctively rather than technically, which fits this voice perfectly. The giveaway is that the 'exhales' metaphor is a touch more articulate than his usual shrugs."
+    },
+    {
+      "id": "q6",
+      "text": "Happy? Happy is not a word that we think about in the game. You gotta think of something different. Happy, I don't know how to judge happy. We're in the middle of a contest. Nobody's happy.",
+      "speaker": "Gregg Popovich",
+      "context": "San Antonio Spurs head coach Gregg Popovich's deadpan reply during a mid-game sideline interview when TNT's David Aldridge asked whether he was happy with his team's shot selection against the Thunder.",
+      "real": true,
+      "source": {
+        "title": "Gregg Popovich rips reporter for asking if he's 'happy' about shot selection (Video)",
+        "url": "https://larrybrownsports.com/basketball/gregg-popovich-rips-reporter-happy/160946",
+        "date": "2012-11-02"
+      }
+    }
+  ]
+}
