@@ -325,5 +325,16 @@
       "url": "https://www.theguardian.com/music/2026/jul/26/shania-twain-honest-playlist-abba-harry-styles-phantom-opera",
       "date": "2026-07-29"
     }
+  },
+  {
+    "text": "It's a tornado that's always getting bigger and moving faster",
+    "speaker": "Sullivan Fortner",
+    "context": "Interview about his music and Hurricane Katrina",
+    "real": true,
+    "source": {
+      "title": "Music — ‘For this record, I took an edible and said, screw it’: jazz pianist Sullivan Fo",
+      "url": "https://www.theguardian.com/music/2026/aug/10/jazz-pianist-sullivan-fortner-leave-that-in-there-katrina-new-orleans",
+      "date": "2026-08-14"
+    }
   }
 ]

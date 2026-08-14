@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-14",
+  "edition": 60,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Directing and cooking are the same job, I'm completely serious. You have a hundred people who each think their part is the most important part, and they're all correct, and your job is to make sure no one figures out that you're just the one person who talked to everyone else. The dish doesn't know who plated it.",
+      "speaker": "Ina Garten",
+      "context": "Conversation with Dax Shepard on Armchair Expert, episode released March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Garten has appeared on unconventional interview shows and often draws parallels between cooking and other forms of production from her time as a White House budget analyst turned food entrepreneur. The giveaway is 'the dish doesn't know who plated it,' which slides into aphorism despite the warm setup."
+    },
+    {
+      "id": "q2",
+      "text": "I spent about three weeks trying to write a scene about grief and every version of it was — it was just people crying beautifully in good lighting. Which is not grief. Grief is forgetting why you walked into a room. Grief is laughing at something on TV and then feeling terrible that you laughed. I had to scrap the whole thing and start from something I was actually embarrassed to put on paper.",
+      "speaker": "Phoebe Waller-Bridge",
+      "context": "Masterclass Q&A session at the BFI London Film Festival, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Waller-Bridge is known for discussing the mechanics of emotional honesty in writing, and the BFI is exactly where she'd appear. The giveaway is that 'embarrassed to put on paper' is a slightly too-tidy creative maxim dressed in casual clothes."
+    },
+    {
+      "id": "q3",
+      "text": "They say that I have no hits, and I'm difficult to work with. And they say that like it's a bad thing.",
+      "speaker": "Tom Waits",
+      "context": "Speaking at his Rock and Roll Hall of Fame induction, March 14, 2001",
+      "real": true,
+      "source": {
+        "title": "Tom Waits - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Tom_Waits",
+        "date": "2001-03-14"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I've been asked if I regret not going to college about five hundred times, and the honest answer is: I regret specific things I didn't learn, not the decision. There's a difference. I hired people to teach me acoustics. You can't hire someone to have been twenty-two.",
+      "speaker": "Jay-Z",
+      "context": "Extended profile interview with Zach Baron for GQ, published November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Jay-Z has discussed self-education and autodidacticism in several long-form interviews, and GQ has profiled him at length. The acoustics detail is plausibly specific; the giveaway is the final sentence, which is sharper and more aphoristic than his typical spoken rhythm."
+    },
+    {
+      "id": "q5",
+      "text": "I appreciate that many of us grew up and enjoyed science fiction, but it's not helpful.",
+      "speaker": "Jensen Huang",
+      "context": "Nvidia CEO, on quantifying the existential risk of",
+      "real": true,
+      "source": {
+        "title": "TechRadar — Quote of the day: Jensen Huang on AI risk",
+        "url": "https://www.techradar.com/pro/quote-of-the-day-by-nvidia-ceo-jensen-huang-i-appreciate-that-many-of-us-grew-up-and-enjoyed-science-fiction-but-its-not-helpful-on-quantifying-the-existential-risks-posed-by-ai",
+        "date": "2026-06-06"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You could probably get through life without knowing how to roast a chicken, but the question is, would you want to?",
+      "speaker": "Nigella Lawson",
+      "context": "Quote attributed to her book Eating (Vintage Minis), on home cooking",
+      "real": true,
+      "source": {
+        "title": "TOP 25 QUOTES BY NIGELLA LAWSON | A-Z Quotes",
+        "url": "https://www.azquotes.com/author/8589-Nigella_Lawson",
+        "date": "2017-01-01"
+      }
+    }
+  ]
+}

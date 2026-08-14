@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-14",
+  "edition": 52,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My mother used to iron on Sunday mornings with the gospel station on, and that frequency — whatever that AM crackle does to a Hammond organ — I chased that sound for about fifteen years before I understood I was chasing a Sunday morning in 1987.",
+      "speaker": "Gary Clark Jr.",
+      "context": "Musician-to-musician conversation series for Fender's Tone Talk podcast, recorded March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Gary Clark Jr. consistently roots his musical origins in family, church sound, and Texas upbringing, so this lands squarely in his wheelhouse. The tell is the specific year '1987,' which gives it a false precision that real reminiscing rarely has."
+    },
+    {
+      "id": "q2",
+      "text": "Trap music gets called simple by people who've never tried to make a hi-hat pattern feel like it's breathing. That's not simple. That's a different kind of hard.",
+      "speaker": "Metro Boomin",
+      "context": "Interview with Zane Lowe on Apple Music 1, released June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Metro Boomin is known for defending the craft of production in exactly this direct, slightly defensive register. The subtle giveaway is 'feel like it's breathing,' a metaphor slightly too lyrical for his typically more technical self-description."
+    },
+    {
+      "id": "q3",
+      "text": "Black music is forward and upward in movement, you know? Never forward or upward",
+      "speaker": "Sullivan Fortner",
+      "context": "Interview about his music and Hurricane Katrina",
+      "real": true,
+      "source": {
+        "title": "Music — ‘For this record, I took an edible and said, screw it’: jazz pianist Sullivan Fo",
+        "url": "https://www.theguardian.com/music/2026/aug/10/jazz-pianist-sullivan-fortner-leave-that-in-there-katrina-new-orleans",
+        "date": "2026-08-14"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "You're about to play 'Shakedown Street,' and you just did a heroic dose of mushrooms. How do you even perform?",
+      "speaker": "Susan Tedeschi",
+      "context": "Recalling touring with Bob Weir and the Other Ones in 2002",
+      "real": true,
+      "source": {
+        "title": "Music — Susan Tedeschi Says Bob Weir Loved to Offer Her Mushrooms",
+        "url": "https://www.rollingstone.com/music/music-features/susan-tedeschi-bob-weir-mushrooms-tour-1235586087/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I will say this about working with Quincy: you walk in thinking you know what the song needs, and somewhere around hour three you realize you didn't even know what the song was yet. That happened to me more than once.",
+      "speaker": "Siedah Garrett",
+      "context": "Panel discussion at the Recording Academy's Grammy Week event, Los Angeles, February 2018",
+      "real": false,
+      "fake_note": "I made this one up — Siedah Garrett genuinely worked closely with Quincy Jones and speaks about the creative process with this kind of rueful specificity. The tell is 'hour three,' a suspiciously neat detail she wouldn't likely pin down so precisely."
+    },
+    {
+      "id": "q6",
+      "text": "'Bull riding and boobies' — that is potentially the greatest lyric in any song ever.",
+      "speaker": "Harry Styles",
+      "context": "In his 2019 Rolling Stone cover interview, riffing on a line from Lil Nas X's 'Old Town Road.'",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — The Eternal Sunshine of Harry Styles",
+        "url": "https://www.rollingstone.com/music/music-features/harry-styles-cover-interview-album-871568/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

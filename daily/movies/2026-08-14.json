@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-14",
+  "edition": 57,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Hakuna matata.",
+      "speaker": "The Lion King (1994)",
+      "context": "Timon and Pumbaa teach Simba their carefree \"no worries\" philosophy, both as spoken dialogue and as the title song.",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "I don't remember asking you what you thought of it.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Anton Chigurh to a motel clerk who offers an opinion",
+      "real": false,
+      "fake_note": "I made this one up — Chigurh's flat menace and his habit of turning ordinary exchanges into confrontations makes it sound authentic. The giveaway is a subtle one: his real lines usually carry a more philosophical undertow, whereas this is purely situational intimidation."
+    },
+    {
+      "id": "q3",
+      "text": "That river don't care who you were when you got in.",
+      "speaker": "Deliverance (1972)",
+      "context": "Lewis Medlock warning the group before they set out",
+      "real": false,
+      "fake_note": "I made this one up — Lewis's macho survivalist fatalism makes the sentiment fit, and the rural idiom grounds it in the film's Southern Gothic atmosphere. The giveaway is that it leans a hair too close to ominous foreshadowing; real Lewis lines are more about competence than dread."
+    },
+    {
+      "id": "q4",
+      "text": "Are you not entertained?",
+      "speaker": "Gladiator (2000)",
+      "context": "Maximus (Russell Crowe) shouts at the Zucchabar arena crowd after killing his opponents in a brutal fight.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "I'm the king of the world!",
+      "speaker": "Titanic (1997)",
+      "context": "Jack (Leonardo DiCaprio) shouts triumphantly from the bow of the ship, arms outstretched.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "When I want your opinion, I'll read it in the papers like everyone else.",
+      "speaker": "Citizen Kane (1941)",
+      "context": "Charles Foster Kane dismissing a senior staff member at the Inquirer",
+      "real": false,
+      "fake_note": "I made this one up — Kane's grandiose arrogance and his specific obsession with the press make this feel idiomatic to his character. The giveaway is that the line is a little too self-aware about his own media power; Kane's real arrogance tends to be more casually oblique."
+    }
+  ]
+}

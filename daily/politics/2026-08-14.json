@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-14",
+  "edition": 48,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The thing about a budget negotiation is everyone walks in saying they want the same thing, and everyone walks out disagreeing about what just happened. It's the most expensive game of telephone ever invented.",
+      "speaker": "Paul Ryan",
+      "context": "Keynote address at the Wisconsin Economic Summit, Milwaukee, September 2017",
+      "real": false,
+      "fake_note": "I made this one up — Ryan built his public identity around budget and fiscal policy wonkery, and this kind of rueful inside observation about the negotiating process fits his tone perfectly. The slight tell is 'game of telephone,' which is a touch more whimsical than Ryan's typical metaphor register."
+    },
+    {
+      "id": "q2",
+      "text": "They gave me the nickname 'the velvet hammer' sometime in my second term. I've never been entirely sure if that was meant as a compliment, and I've been too afraid to ask.",
+      "speaker": "Dianne Feinstein",
+      "context": "Remarks at the California Democratic Party convention, San Diego, May 2013",
+      "real": false,
+      "fake_note": "I made this one up — Feinstein genuinely did earn a reputation for tough but measured negotiating, and she occasionally referenced it with dry humor in late-career appearances. The tell is 'velvet hammer' — it's a real political nickname genre, but this particular one wasn't actually attached to Feinstein."
+    },
+    {
+      "id": "q3",
+      "text": "I've read every infrastructure bill that's come across my desk, and I'll tell you, somewhere around page four hundred you start genuinely rooting for the asphalt.",
+      "speaker": "Pete Buttigieg",
+      "context": "Remarks at the U.S. Conference of Mayors winter meeting, Washington D.C., January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Pete's well-known wonkish enthusiasm for infrastructure policy makes this completely plausible, and his self-deprecating humor about his own nerdiness is well-documented. The subtle giveaway: 'rooting for the asphalt' is just a touch too polished for truly spontaneous banter."
+    },
+    {
+      "id": "q4",
+      "text": "Someone on my staff told me I should be more relatable on social media. I posted about monetary policy and apparently that's not what they meant.",
+      "speaker": "Janet Yellen",
+      "context": "Interview with Marketplace Morning Report, NPR, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Yellen has a famously dry, understated wit and has openly acknowledged being somewhat out of step with modern communications culture. The subtle tell is that she'd more likely describe it as 'fiscal communication' than 'monetary policy' in a casual aside."
+    },
+    {
+      "id": "q5",
+      "text": "It's another device to help someone get compliant when they are not",
+      "speaker": "Tom Homan",
+      "context": "White House border czar defending ICE electric shock gloves on Thursday",
+      "real": true,
+      "source": {
+        "title": "Politics — Homan defends ICE electric shock gloves as alternative to lethal force",
+        "url": "https://thehill.com/homenews/6029034-homan-ice-electric-gloves-lethal-force-alternative/",
+        "date": "2026-08-14"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I think we ought to continue the blockade and starve them out. I think we ought to bomb Pickaxe Mountain and try to reach what's underneath it",
+      "speaker": "John Kennedy",
+      "context": "Sen. John Kennedy (R-La.) on Sunday discussing Iran strikes",
+      "real": true,
+      "source": {
+        "title": "Politics — Live updates: Sen. John Kennedy says US should not 'cut and run' from Iran; Cycl",
+        "url": "https://thehill.com/homenews/5990529-live-updates-midterms-jackson-collins-cyclospora-trump/",
+        "date": "2026-07-27"
+      }
+    }
+  ]
+}

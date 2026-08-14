@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-14",
+  "edition": 49,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Chemistry is something that you don't just throw in the frying pan and mix it up with another something and then throw it on top of something, then fry it up and put it in a tortilla put in a microwave, heat it up and it give it to you and expect it to taste good.",
+      "speaker": "Kevin Garnett",
+      "context": "Boston Celtics forward Kevin Garnett delivered this elaborate cooking metaphor while expressing frustration about the lack of preparation time following the 2011 NBA lockout, explaining why team chemistry can't be rushed.",
+      "real": true,
+      "source": {
+        "title": "Kevin Garnett's words were as entertaining as his play - ESPN Boston Celtics Blog",
+        "url": "https://www.espn.com/blog/boston/celtics/post/_/id/4724028/kevin-garnetts-words-were-as-entertaining-as-his-play",
+        "date": "2011-12-13"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "You want to know the hardest thing about managing a bullpen? It's not the matchups. It's calling down there and hearing a guy say he feels great when you already know from the way he threw Tuesday that he absolutely does not feel great.",
+      "speaker": "Bruce Bochy",
+      "context": "MLB Network's Studio 42 with Bob Costas, recorded June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Bochy's reputation for calm, experienced game management and his candid reflections on player communication make this completely plausible. The giveaway is the specificity of 'Tuesday,' which is a little too neat as a planted detail."
+    },
+    {
+      "id": "q3",
+      "text": "I had a cheeseburger and went to bed.",
+      "speaker": "Andy Reid",
+      "context": "Kansas City Chiefs head coach Andy Reid's reply, with a smile, when asked at his press conference how he celebrated the Chiefs' 35-24 AFC Championship win over the Tennessee Titans that sent them to Super Bowl LIV.",
+      "real": true,
+      "source": {
+        "title": "Andy Reid on how he celebrated Chiefs win: 'I had a cheeseburger and went to bed'",
+        "url": "https://www.nfl.com/videos/andy-reid-on-how-he-celebrated-chiefs-win-i-had-a-cheeseburger-and-went-to-bed",
+        "date": "2020-01-20"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Serena used to walk into the locker room before a final and I'd feel it before I even saw her. Not intimidation exactly — more like the air changed. I don't know how else to put it.",
+      "speaker": "Martina Navratilova",
+      "context": "Remarks at the Laureus World Sports Awards ceremony, Madrid, April 2023",
+      "real": false,
+      "fake_note": "I made this one up — Navratilova speaks about rivals with this mix of admiration and competitive sharpness, and the sensory framing feels authentic to her reflective interview style. The giveaway is 'the air changed,' which edges toward the kind of poetic register she usually stops just short of."
+    },
+    {
+      "id": "q5",
+      "text": "Avoid fried meats which angry up the blood. If your stomach disputes you, lie down and pacify it with cool thoughts.",
+      "speaker": "Satchel Paige",
+      "context": "From legendary pitcher Satchel Paige's famous 'How to Stay Young' rules, published in Collier's magazine in 1953.",
+      "real": true,
+      "source": {
+        "title": "Satchel Paige — Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Satchel_Paige",
+        "date": "1953-06-13"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I ate the same meal before every race for probably six years. Pasta, a little olive oil, nothing on it. And then one day in Barcelona I had a tomato sauce and ran a personal best. I was annoyed about that for months.",
+      "speaker": "Eliud Kipchoge",
+      "context": "Feature interview with Alex Hutchinson, Runner's World, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Kipchoge's well-known discipline and philosophical approach to routine make the setup perfect, and his gentle self-aware humor has appeared in real interviews. The giveaway is 'annoyed for months' — his actual public persona leans more serene than that."
+    }
+  ]
+}
