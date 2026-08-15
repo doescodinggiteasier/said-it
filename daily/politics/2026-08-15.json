@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-15",
+  "edition": 49,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I first got to Washington I thought the hardest part would be the votes. Turns out the hardest part is finding a parking space that doesn't cost seventeen dollars.",
+      "speaker": "Tim Kaine",
+      "context": "Town hall meeting at George Mason University, Fairfax, Virginia, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Kaine's everyman, slightly corny humor in constituent settings is well documented, and the parking complaint is exactly his register. The slight tell is the specific dollar amount, which feels one notch too rehearsed."
+    },
+    {
+      "id": "q2",
+      "text": "Pretty soon, I will be declaring the Hormuz Strait a territory of the United States",
+      "speaker": "Trump",
+      "context": "Remarks on Long Island, N.Y., Friday",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump says he will declare Strait of Hormuz a US territory",
+        "url": "https://thehill.com/homenews/administration/6030671-trump-says-strait-of-hormuz-us-territory/",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I have not endorsed Cory Mills, and I do not support Cory Mills",
+      "speaker": "Ron DeSantis",
+      "context": "Friday press conference, captured by C-SPAN",
+      "real": true,
+      "source": {
+        "title": "Politics — Gov. DeSantis latest to not support Rep. Mills ahead of Florida primary",
+        "url": "https://thehill.com/homenews/campaign/6030926-desantis-mills-denouncement-republican-primary-florida/",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Where my reason, imagination or interest were not engaged, I would not or I could not learn.",
+      "speaker": "Winston Churchill",
+      "context": "From Churchill's own autobiography 'My Early Life: A Roving Commission' (1930), in the chapter recalling his schooldays at Harrow where he was placed in the lowest form.",
+      "real": true,
+      "source": {
+        "title": "My Early Life, by Winston S. Churchill (Project Gutenberg Canada full text)",
+        "url": "https://gutenberg.ca/ebooks/churchillws-myearlylife/churchillws-myearlylife-00-h-dir/churchillws-myearlylife-00-h.html",
+        "date": "1930-01-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've read every farm bill since 1973. My wife thinks that's the strangest thing about me. She's probably right, but I'll tell you, the 1990 one had a subplot that was genuinely gripping.",
+      "speaker": "Chuck Grassley",
+      "context": "Interview with Agri-Pulse podcast, recorded during the 2023 Farm Bill debate",
+      "real": false,
+      "fake_note": "I made this one up — Grassley's Iowa agricultural focus and dry, understated humor make this feel completely at home. The tell is 'subplot' — it's a touch more literary than his usual plainspoken style."
+    },
+    {
+      "id": "q6",
+      "text": "I have been in rooms where everyone agrees on the problem and absolutely no one agrees on what room we should move to next. That is, I think, a working definition of Congress.",
+      "speaker": "Lisa Murkowski",
+      "context": "Remarks at the Bipartisan Policy Center leadership forum, Washington D.C., February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Murkowski's moderate, institutionalist persona and her frank frustration with congressional dysfunction make this entirely in character. The tell is the extended metaphor about rooms, which is slightly too constructed for off-the-cuff remarks."
+    }
+  ]
+}

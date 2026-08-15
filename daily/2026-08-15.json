@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-15",
+  "edition": 61,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "In 2008 my slogan was, \"Yes We Can.\" In 2013 my slogan was, \"Control-Alt-Delete.\"",
+      "speaker": "Barack Obama",
+      "context": "Joking about the rocky HealthCare.gov rollout at the 2014 White House Correspondents' Dinner",
+      "real": true,
+      "source": {
+        "title": "The Obama White House Archives — Remarks by the President at the White House Correspondents' Dinner (2014)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "There were days at Cambridge where I'd write maybe two sentences and then stare at the wall for forty minutes and then make tea. And I published. So I have no advice. I have nothing.",
+      "speaker": "Stephen Hawking",
+      "context": "BBC Radio 4 Desert Island Discs, broadcast January 2017",
+      "real": false,
+      "fake_note": "I made this one up — Hawking was known for dry, self-deprecating humor and appeared on Desert Island Discs in January 2017. The self-deprecation about productivity is very him, but the 'I have nothing' kicker is a little too comedy-club for how he actually delivered humor."
+    },
+    {
+      "id": "q3",
+      "text": "My daughter asked me what a fax machine was and I started to explain it and then halfway through I realized I was describing something genuinely insane to another human being.",
+      "speaker": "Conan O'Brien",
+      "context": "Conan O'Brien Needs a Friend podcast, episode aired March 2024",
+      "real": false,
+      "fake_note": "I made this one up — Conan frequently riffs on generational tech confusion and uses his kids as a straight man to his own bewilderment. The tell is the phrasing 'genuinely insane to another human being,' which is a touch more deliberate than his usual looser, more chaotic ad-libs."
+    },
+    {
+      "id": "q4",
+      "text": "I tested the first prototype on my kitchen counter and it immediately fell into the sink. Which, honestly, told me more about what we needed to fix than six months of internal review had.",
+      "speaker": "James Dyson",
+      "context": "Wired UK's annual innovation interview, published September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Dyson constantly talks about failure as the engine of his design process and frequently references kitchen-counter domestic testing. The subtle giveaway is the specific 'six months of internal review,' which sounds slightly more corporate than his usual framing."
+    },
+    {
+      "id": "q5",
+      "text": "The weird thing about recording in Nashville versus LA is that in Nashville somebody will literally bring you a casserole. Like, an actual casserole appears. In LA someone brings you a mood board.",
+      "speaker": "Taylor Swift",
+      "context": "Rolling Stone's Musicians on Musicians issue, November 2023",
+      "real": false,
+      "fake_note": "I made this one up — Taylor has talked openly about the Nashville-vs-LA cultural divide and her roots in country, so the observation lands perfectly in her voice. The giveaway is 'mood board,' which is a little too tidy a punchline for how she actually rambles in interviews."
+    },
+    {
+      "id": "q6",
+      "text": "I know acting is a childlike endeavour but it's no license to be childish.",
+      "speaker": "Jeff Goldblum",
+      "context": "The actor reflecting on his craft in a Time Out interview",
+      "real": true,
+      "source": {
+        "title": "Jeff Goldblum: 'What do people quote at me? That is one big pile of shit' - Time Out",
+        "url": "https://www.timeout.com/film/jeff-goldblum-what-do-people-quote-at-me-that-is-one-big-pile-of-shit",
+        "date": "2017-01-01"
+      }
+    }
+  ]
+}

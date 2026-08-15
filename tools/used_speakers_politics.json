@@ -1,7 +1,7 @@
 {
 "george w  bush": "2026-06-17",
 "george h  w  bush": "2026-06-17",
-"winston churchill": "2026-07-29",
+"winston churchill": "2026-08-15",
 "gerald ford": "2026-08-13",
 "barack obama": "2026-08-08",
 "bernie sanders": "2026-08-09",
@@ -58,7 +58,7 @@
 "susan collins": "2026-07-29",
 "ted cruz": "2026-08-02",
 "rob portman": "2026-07-10",
-"lisa murkowski": "2026-07-10",
+"lisa murkowski": "2026-08-15",
 "mike pompeo": "2026-07-11",
 "elizabeth warren": "2026-08-12",
 "janet yellen": "2026-08-14",
@@ -89,7 +89,7 @@
 "kalshi": "2026-07-22",
 "jon ossoff": "2026-07-22",
 "liz cheney": "2026-07-23",
-"tim kaine": "2026-07-23",
+"tim kaine": "2026-08-15",
 "patrick leahy": "2026-07-23",
 "zohran mamdani": "2026-08-11",
 "brooke rollins": "2026-07-24",
@@ -116,5 +116,8 @@
 "ron paul": "2026-08-11",
 "john hickenlooper": "2026-08-13",
 "dianne feinstein": "2026-08-14",
-"tom homan": "2026-08-14"
+"tom homan": "2026-08-14",
+"trump": "2026-08-15",
+"ron desantis": "2026-08-15",
+"chuck grassley": "2026-08-15"
 }

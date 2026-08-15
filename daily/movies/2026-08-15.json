@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-15",
+  "edition": 58,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "A million dollars isn't cool. You know what's cool? A billion dollars.",
+      "speaker": "The Social Network (2010)",
+      "context": "Sean Parker (Justin Timberlake) pitching ambition to Mark Zuckerberg and Eduardo Saverin at a restaurant; the punchline lands in an intercut deposition scene",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "You keep asking me where I was. I'm telling you where I wasn't.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes deflecting a detective's questions during an interrogation scene",
+      "real": false,
+      "fake_note": "I made this one up — Gittes' whole persona is built on evasion and wisecracks, so a line like this fits his voice perfectly. The subtle giveaway is that it's a touch too symmetrical and clever, almost like a comeback written in hindsight rather than in the moment."
+    },
+    {
+      "id": "q3",
+      "text": "We built this place board by board. You don't just hand that to a bank.",
+      "speaker": "Giant (1956)",
+      "context": "Bick Benedict arguing with his wife Leslie over a financial decision about Reata",
+      "real": false,
+      "fake_note": "I made this one up — Bick's fierce attachment to the ranch and his pride in its physical history is a recurring source of conflict with Leslie, and this line fits his stubborn, land-bound voice. The giveaway is that it's slightly too concise; Bick's arguments in the film tend to sprawl into bluster rather than resolve this cleanly."
+    },
+    {
+      "id": "q4",
+      "text": "Never knew a prospector yet that died rich.",
+      "speaker": "The Treasure of the Sierra Madre (1948)",
+      "context": "Grizzled old prospector Howard (Walter Huston) offering hard-won wisdom about the gold-hunting life.",
+      "real": true,
+      "source": {
+        "title": "The Treasure of the Sierra Madre - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Treasure_of_the_Sierra_Madre",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've crossed three state lines and I still can't outrun your cooking.",
+      "speaker": "Thelma & Louise (1991)",
+      "context": "Louise teasing Thelma in an early road-trip scene before things turn serious",
+      "real": false,
+      "fake_note": "I made this one up — the banter between the two women early in the film is warm and comedic, so a line like this sits naturally in that register. The giveaway is that the humor is a little too constructed, with the punchline landing too neatly."
+    },
+    {
+      "id": "q6",
+      "text": "She's not lost. She just doesn't want to be found by you.",
+      "speaker": "Rear Window (1954)",
+      "context": "Lisa Fremont pushing back at Jefferies during one of their arguments about his neighbor-watching",
+      "real": false,
+      "fake_note": "I made this one up — Lisa is sharp and combative with Jefferies throughout the film, and this kind of pointed retort matches her cadence. The giveaway is that it leans slightly too poetic for Hitchcock's typically clipped, functional dialogue."
+    }
+  ]
+}

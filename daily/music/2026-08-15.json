@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-15",
+  "edition": 53,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Country radio was not particularly interested in what I was doing for a long time, and you know what, that's fine. I kept writing anyway. There were truckstop jukeboxes that were very interested, and that kept the lights on.",
+      "speaker": "Kris Kristofferson",
+      "context": "Acceptance speech for the Willie Nelson Lifetime Achievement Award at the 2017 CMT Artists of the Year ceremony in Nashville",
+      "real": false,
+      "fake_note": "I made this one up — Kristofferson is known for his dry, self-deprecating wit and his complicated relationship with Nashville's commercial machinery. The truckstop jukebox detail sounds vintage him. The giveaway is that the phrasing is slightly too tidy for an off-the-cuff speech."
+    },
+    {
+      "id": "q2",
+      "text": "We are part of each other, you know. When one person is hurt, it hurts me, too. When I see their condition, I know what they feel, and I feel it. And it hurts.",
+      "speaker": "B.B. King",
+      "context": "Explaining why the blues transcends stereotypes and speaks to shared human suffering, in collected words of wisdom published by Guitar Player.",
+      "real": true,
+      "source": {
+        "title": "Guitar Player — Some Collected Words of Wisdom From B.B. King Himself",
+        "url": "https://www.guitarplayer.com/players/bb-king-quotes",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My mum genuinely thought I was going through a phase until I had a number one. And even then she called me and the first thing she said was, are you eating properly. That was the whole conversation.",
+      "speaker": "Dua Lipa",
+      "context": "Interview with Vogue UK, published in the February 2022 issue alongside the magazine's cover shoot",
+      "real": false,
+      "fake_note": "I made this one up — Dua talks openly and warmly about her family, especially her parents, and this kind of self-deprecating family-first anecdote is completely consistent with her public persona. The giveaway is that she'd likely have named her mum specifically by relationship, and the punchline lands almost too cleanly."
+    },
+    {
+      "id": "q4",
+      "text": "Someone described one of my albums as 'challenging' in a review and I framed it. My wife thought I was being ironic. I wasn't.",
+      "speaker": "Tom Waits",
+      "context": "Interview with Mick Brown, Telegraph Magazine, published in the UK edition, September 2011",
+      "real": false,
+      "fake_note": "I made this one up — Tom Waits wears hostile critical reception as a badge of honor and has a dry, deadpan wit in interviews. The wife detail adds warmth that's consistent with how he talks about her. The giveaway is it's almost too quotable for a man who usually buries his punchlines in longer digressions."
+    },
+    {
+      "id": "q5",
+      "text": "The music always precedes the words. The words often come from the sound of the music and eventually evolve into coherent thoughts. Or incoherent thoughts.",
+      "speaker": "Paul Simon",
+      "context": "Describing his music-first songwriting process in an American Songwriter interview tied to his Songwriter collection.",
+      "real": true,
+      "source": {
+        "title": "American Songwriter — Interview: Paul Simon Discusses Songwriter And Songwriting",
+        "url": "https://americansongwriter.com/interview-paul-simon-discusses-songwriter-and-songwriting/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "It's a tornado that's always getting bigger and moving faster",
+      "speaker": "Sullivan Fortner",
+      "context": "Interview about his music and Hurricane Katrina",
+      "real": true,
+      "source": {
+        "title": "Music — ‘For this record, I took an edible and said, screw it’: jazz pianist Sullivan Fo",
+        "url": "https://www.theguardian.com/music/2026/aug/10/jazz-pianist-sullivan-fortner-leave-that-in-there-katrina-new-orleans",
+        "date": "2026-08-14"
+      }
+    }
+  ]
+}

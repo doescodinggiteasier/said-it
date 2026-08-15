@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-15",
+  "edition": 50,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I used to watch film on receivers I'd never play against just to see what they were doing with their hands at the line. Some guys, it tells you everything about where they're going before they even take a step. I couldn't not watch it once I started.",
+      "speaker": "Darrelle Revis",
+      "context": "Segment on NFL Network's A Football Life, aired December 2021",
+      "real": false,
+      "fake_note": "I made this one up — Revis has been celebrated throughout his career and in retirement as one of the most studious, technically obsessive corners ever, and he's given interviews that touch on exactly this kind of film-room habit. The tell is the phrase 'couldn't not watch it' — it's a slightly too-neat way of describing an obsession, and Revis in real interviews tends to be a bit more blunt and less reflective about his process."
+    },
+    {
+      "id": "q2",
+      "text": "Honestly the hardest part of managing a bullpen is not the match-ups, it's convincing a guy he's a seventh-inning pitcher when he spent his whole life being a closer. That's an ego conversation you have over and over again and it never really gets easier.",
+      "speaker": "Dave Roberts",
+      "context": "Press conference at Dodger Stadium following the 2023 NLCS, Los Angeles",
+      "real": false,
+      "fake_note": "I made this one up — Roberts regularly speaks candidly about the human side of managing and bullpen management is the thing he gets questioned about most, so this is squarely in his wheelhouse. The subtle tell is that he usually frames these conversations more diplomatically; saying it 'never gets easier' is a hair more unguarded than his typical public manner."
+    },
+    {
+      "id": "q3",
+      "text": "I didn't have any plates or silverware or anything, and I just started eating it with my hands.",
+      "speaker": "John Madden",
+      "context": "Beloved NFL coach-turned-broadcaster John Madden recounting his very first encounter with a turducken (a chicken inside a duck inside a turkey), brought to his broadcast booth during a Saints game.",
+      "real": true,
+      "source": {
+        "title": "John Madden made turducken a Thanksgiving football tradition (NOLA.com / The Times-Picayune)",
+        "url": "https://www.nola.com/entertainment_life/eat-drink/john-madden-made-turducken-a-thanksgiving-football-tradition/article_ae8ca8ac-ab55-11ef-8fb0-135b1f214168.html",
+        "date": "2024-11-27"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I have always felt that I needed you more than you needed me and that holds true to this very day.",
+      "speaker": "Vin Scully",
+      "context": "Legendary Dodgers broadcaster Vin Scully wrote a farewell letter to fans ahead of his final home series in September 2016, after 67 years calling Dodgers games.",
+      "real": true,
+      "source": {
+        "title": "Vin Scully writes farewell letter to fans before final Dodgers homestand (Sports Illustrated)",
+        "url": "https://www.si.com/mlb/2016/09/24/vin-scully-farewell-letter-los-angeles-dodgers-fans",
+        "date": "2016-09-24"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There was a stretch in 2014 where every single Monday I woke up and before I even opened my eyes I was already calculating what I ate the day before. That is not a healthy way to live. It took me longer than it should have to understand the difference between discipline and just being afraid.",
+      "speaker": "Simone Biles",
+      "context": "Keynote conversation with Jemele Hill at the Aspen Ideas Festival, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Biles has been one of the most candid athletes in any sport about mental health, body image pressure, and the culture of gymnastics, so this level of reflection is entirely consistent with how she speaks publicly. The giveaway is the specificity of '2014,' which grounds it in a way that invites verification — a sharp player might wonder whether she's ever actually pinned it to that year."
+    },
+    {
+      "id": "q6",
+      "text": "I had a coach in juniors who used to say your serve is a weapon, your return is a chess piece. I thought that was the dumbest thing I'd ever heard until about 2010, and then I thought about it every single match for the next decade.",
+      "speaker": "Andy Roddick",
+      "context": "Appearance on Patrick McEnroe's Holding Court podcast, recorded August 2022",
+      "real": false,
+      "fake_note": "I made this one up — Roddick has been a candid and funny analyst of his own career since retiring, and he's spoken specifically about the evolution of his understanding of the return of serve, so this anecdote fits his retrospective, self-aware voice well. The tell is the invented coaching aphorism itself — it's just specific enough to feel real but a real Roddick deep-dive fan might notice he's never actually attributed a line like that to a juniors coach."
+    }
+  ]
+}

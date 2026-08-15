@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-15",
+  "edition": 53,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Keith called me from wherever the hell he was — could've been Tokyo, could've been his bathroom, genuinely no way to tell — and he says, 'Charlie, we go on in four hours.' I said, 'Keith, I've BEEN ready. I've been ready since Tuesday. What day is it?' He didn't know either. We had a great show.",
+      "speaker": "Charlie Watts",
+      "context": "Interview with Nick Kent for NME, published September 1981, conducted backstage at Wembley following the Rolling Stones Tattoo You Tour",
+      "real": false,
+      "fake_note": "I made this one up — Charlie's dry, underplayed wit and his well-documented exasperation-with-affection relationship with Keith Richards makes this feel instantly real. The giveaway is Charlie was typically even MORE terse than this — he wouldn't elaborate into a full anecdote this neatly."
+    },
+    {
+      "id": "q2",
+      "text": "I said to the label, I will record this album wherever I want to record it. They said 'within reason.' I said fine, New Orleans, August. They said that's not within reason, that's a punishment. I said correct. We recorded it in New Orleans in August and it sounds exactly like that and I am PROUD of it.",
+      "speaker": "Tom Petty",
+      "context": "Guitar World interview with Alan di Perna, published October 1994, conducted during the Wildflowers promotional cycle",
+      "real": false,
+      "fake_note": "I made this one up — Tom's label battles were legendary and his dry, defiant humour with a straight-faced punchline is completely in character; the Wildflowers period was indeed a contentious label moment. The tell is that Wildflowers was recorded in Los Angeles, not New Orleans, which a Petty fan would immediately flag."
+    },
+    {
+      "id": "q3",
+      "text": "And if you can write an hour of great stuff, you're like fucking Tolstoy.",
+      "speaker": "Norm Macdonald",
+      "context": "In a 2011 A.V. Club interview, arguing that stand-up is the hardest writing there is.",
+      "real": true,
+      "source": {
+        "title": "The A.V. Club — Interview: Norm Macdonald",
+        "url": "https://www.avclub.com/norm-macdonald-1798225024",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People ask me how I stay so sharp at my age. Spite. Pure, uncut spite. And I will not specify who it's directed at because my lawyers are expensive and I intend to keep using them.",
+      "speaker": "Don Rickles",
+      "context": "Friars Club Roast of Rob Reiner, New York City, taped for Comedy Central, March 2000",
+      "real": false,
+      "fake_note": "I made this one up — Rickles's voice is all short punchy clauses and a winking threat, and roast settings were exactly where he'd throw out a line like this. The tell is 'uncut' as an adjective — it's slightly too contemporary slang for how Rickles typically phrased things."
+    },
+    {
+      "id": "q5",
+      "text": "My mother used to say, 'Phyllis, a lady never discusses money or her figure.' My mother was broke and fat. I think we can dismiss her advice entirely.",
+      "speaker": "Phyllis Diller",
+      "context": "Monologue warm-up at The Tonight Show Starring Johnny Carson, NBC Studios, Burbank, October 1968",
+      "real": false,
+      "fake_note": "I made this one up — Phyllis's entire brand was self-deprecating family roasting with a sharp left-turn punchline, and this matches her rhythm almost exactly. The subtle tell is that she rarely doubled down with 'broke AND fat' — she'd usually pick one target."
+    },
+    {
+      "id": "q6",
+      "text": "Hollywood is a coke town, but weed is so much better.",
+      "speaker": "Miley Cyrus",
+      "context": "In a 2013 Rolling Stone cover interview, contrasting cocaine with the 'happy drugs' she prefers.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Miley Cyrus on Why She Loves Weed, Went Wild at the VMAs and Much More",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}
