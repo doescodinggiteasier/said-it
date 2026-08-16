@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-16",
+  "edition": 50,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I will tell you, the one thing nobody prepares you for in this job is the number of times you have to stand in a room and pretend you understand a pie chart. And I mean really pretend — like, nodding slowly, making a concerned face. I've gotten pretty good at the concerned face.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic National Committee fundraiser in Philadelphia, as quoted in Politico's 'Playbook PM' newsletter, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-deprecating, rambling humor about the performance of governing is totally on-brand, and the 'concerned face' bit sounds like something he'd ad-lib. The subtle giveaway is that he'd more likely pivot to a personal anecdote about someone else rather than staying on himself that long."
+    },
+    {
+      "id": "q2",
+      "text": "I am extraordinarily patient, provided I get my own way in the end.",
+      "speaker": "Margaret Thatcher",
+      "context": "Self-aware, tongue-in-cheek remark by the British Prime Minister in an interview published in The Observer, 4 April 1989 (as catalogued by the Margaret Thatcher Centre's quotes page). Speaker was a UK Conservative Prime Minister.",
+      "real": true,
+      "source": {
+        "title": "Quotes - The Margaret Thatcher Centre",
+        "url": "https://www.thatchercentre.com/quotes/",
+        "date": "1989-04-04"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "There is a version of comprehensive immigration reform that has passed this body before, and it is sitting somewhere in a filing cabinet, and I think about that filing cabinet more than is probably healthy for a grown adult.",
+      "speaker": "Marco Rubio",
+      "context": "Q&A session following remarks at the Ronald Reagan Presidential Library, Simi Valley, California, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Rubio's genuine frustration with Senate inaction on immigration, delivered with self-aware humor, is well within his documented public voice. The subtle tell is he usually avoids calling direct attention to his own 2013 Gang of Eight history, even obliquely like this."
+    },
+    {
+      "id": "q4",
+      "text": "In 2008 my slogan was, \"Yes We Can.\" In 2013 my slogan was, \"Control-Alt-Delete.\"",
+      "speaker": "Barack Obama",
+      "context": "Joking about the rocky HealthCare.gov rollout at the 2014 White House Correspondents' Dinner",
+      "real": true,
+      "source": {
+        "title": "The Obama White House Archives — Remarks by the President at the White House Correspondents' Dinner (2014)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People say Washington is broken. I've been here long enough to say — it's not broken, it's just very, very slow. Like, geologically slow. My grandchildren may see the farm bill I'm working on become law. I hope they enjoy it.",
+      "speaker": "Pat Roberts",
+      "context": "Remarks at the Kansas Farm Bureau annual dinner, Manhattan, Kansas, December 2018",
+      "real": false,
+      "fake_note": "I made this one up — Roberts's dry Kansas pragmatism about legislative timelines and his genuine obsession with the farm bill are both thoroughly documented parts of his public persona. The give away is that he'd more likely name a specific stalled provision than speak in these broader, almost philosophical terms."
+    },
+    {
+      "id": "q6",
+      "text": "It just makes my blood boil",
+      "speaker": "Bill Maher",
+      "context": "Bill Maher on Friday commenting on USS Abraham Lincoln conditions",
+      "real": true,
+      "source": {
+        "title": "Politics — Maher on USS Abraham Lincoln conditions: 'It just makes my blood boil'",
+        "url": "https://thehill.com/policy/defense/6031563-maher-condemns-uss-abraham-lincoln-conditions/",
+        "date": "2026-08-16"
+      }
+    }
+  ]
+}

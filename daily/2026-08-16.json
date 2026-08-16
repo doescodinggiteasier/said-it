@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-16",
+  "edition": 62,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When LeBron was nineteen I watched him in a preseason game in Cleveland and I wrote in my notes — I actually still have this notebook — I wrote 'does he know the game is already slower than he is?' Because it looked like he was playing in a different time signature than everybody else. That feeling never went away.",
+      "speaker": "Bill Simmons",
+      "context": "The Bill Simmons Podcast, Episode 891, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Simmons has obsessively documented his early LeBron observations over the years and 'I still have this notebook' is exactly his brand of nostalgic sports-nerd credentialism. 'Different time signature' is the giveaway — it's slightly too musical and poetic for his usual basketball vocabulary."
+    },
+    {
+      "id": "q2",
+      "text": "People ask me why I still do live shows when I could just put everything on streaming and be done with it. And I think about this a lot, actually. There's a woman I saw in the third row in Glasgow — I don't know, maybe 2019 — she was crying before I'd even finished the first verse. You can't stream that woman. You can't bottle whatever was happening in that room.",
+      "speaker": "Adele",
+      "context": "Interview with Zane Lowe for Apple Music, broadcast November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Adele constantly talks about the emotional specificity of live performance and has referenced Glasgow crowds before, so this sits perfectly in her wheelhouse. The subtle giveaway is that '2019' is slightly too conveniently just before the pandemic, which no one would probably clock in the moment."
+    },
+    {
+      "id": "q3",
+      "text": "I never lie, even to this day. Not even a little. Unless you count playing pranks on people, which I don't. That's comedy. Entertainment doesn't count. A joke is different from a lie, even if the difference is kind of subtle.",
+      "speaker": "Steve Wozniak",
+      "context": "From his memoir iWoz (2006), the Apple co-founder on his lifelong commitment to honesty and his exception for pranks",
+      "real": true,
+      "source": {
+        "title": "Steve Wozniak (10+ Sourced Quotes) - Lib Quotes",
+        "url": "https://libquotes.com/steve-wozniak",
+        "date": "2006-09-17"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "We're so excited to bring Monstropolis to life for fans.",
+      "speaker": "Michael Hundgen",
+      "context": "Vice President Creative at Walt Disney Imagineering, speaking at D23 about the new Monsters, Inc. themed land",
+      "real": true,
+      "source": {
+        "title": "Entertainment — ‘Monsters, Inc.’ Themed Land Will Open at Disney World in 2027",
+        "url": "https://variety.com/2026/film/news/monsters-inc-themed-land-will-disney-world-2027-1236834775/",
+        "date": "2026-08-16"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I'm not nostalgic for the nineties. People romanticize it because they were young. The music industry in the nineties was — look, it was fine, but there were like six people deciding what everyone got to hear. I'm not sure that's actually better than what we have now, even though what we have now is also a mess.",
+      "speaker": "Questlove",
+      "context": "Red Bull Music Academy lecture, New York City, 2017",
+      "real": false,
+      "fake_note": "I made this one up — Questlove is a music historian who consistently pushes back on nostalgic narratives with structural critiques of the industry, and 'even though what we have now is also a mess' is his characteristic both-sides-but-not-politically candor. The giveaway is that he'd usually name the specific gatekeepers rather than say 'six people.'"
+    },
+    {
+      "id": "q6",
+      "text": "The speed of light is never going to go out of style. Gravity, lint, signs, time itself, is not going to go out of style.",
+      "speaker": "Steven Wright",
+      "context": "In a Salon Talks interview, explaining why he avoids topical jokes so his material stays timeless",
+      "real": true,
+      "source": {
+        "title": "\"Gravity is never going to go out of style\": Steven Wright on the secret to comedy longevity - Salon.com",
+        "url": "https://www.salon.com/2024/05/22/steven-wright-harold-salon-talks/",
+        "date": "2024-05-22"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-16",
+  "edition": 54,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's a version of 'Purple Rain' where the outro just goes for another four minutes and Prince told us to cut it. I still think about that four minutes. I dream about it, honestly.",
+      "speaker": "Wendy Melvoin",
+      "context": "Panel discussion at the EMP Museum (now MoPOP) Pop Conference, Seattle, April 2016",
+      "real": false,
+      "fake_note": "I made this one up — Wendy talks about Prince sessions with exactly this kind of mournful reverence for lost material, and the phrasing 'I dream about it' is true to her documented emotional style. The giveaway is the very specific 'four minutes,' which is the kind of precision detail a real recollection would probably blur."
+    },
+    {
+      "id": "q2",
+      "text": "The song just makes me feel grateful to be alive",
+      "speaker": "Julia Jacklin",
+      "context": "On covering Sugar Ray's 'Every Morning'",
+      "real": true,
+      "source": {
+        "title": "Music — Watch Julia Jacklin Cover Sugar Ray’s “Every Morning”",
+        "url": "https://pitchfork.com/story/watch-julia-jacklin-cover-sugar-rays-every-morning/",
+        "date": "2026-08-16"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Keep your mind on the music. I never thought of myself as a 'woman' musician at all, but a guitarist and then a bass player",
+      "speaker": "Carol Kaye",
+      "context": "The legendary session bassist (Pet Sounds, countless hits) on identity versus playing, in a Guitar World interview.",
+      "real": true,
+      "source": {
+        "title": "Guitar World — Studio bass icon Carol Kaye on why it is not about who you are, but how and what you play",
+        "url": "https://www.guitarworld.com/artists/bassists/carol-kaye-on-teaching-women",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Quincy pulled me aside before one session and said, 'Leave your ego at the door because the song doesn't have room for it and neither do I.' I was twenty-three. I thought about that sentence every day for about a decade.",
+      "speaker": "Michael McDonald",
+      "context": "Archive interview featured in the documentary Quincy, Netflix, 2018",
+      "real": false,
+      "fake_note": "I made this one up — McDonald has spoken warmly about mentors from his session and Doobie Brothers era, and the reverent, slightly awed tone toward Quincy Jones is completely consistent with how musicians in that orbit describe him. The giveaway is that McDonald and Jones didn't have a well-documented direct working relationship, which a sharp player might catch."
+    },
+    {
+      "id": "q5",
+      "text": "I wrote 'Stan' on a flight and I kept having to stop because the flight attendant kept asking if I was okay. I guess I looked upset. I was upset. That's the thing — I was genuinely upset writing it.",
+      "speaker": "Eminem",
+      "context": "Interview with Sway Calloway on Sway in the Morning, SiriusXM, November 2013",
+      "real": false,
+      "fake_note": "I made this one up — Eminem has spoken about 'Stan' with unusual emotional candor relative to his other work, and the self-interrupting, explanatory rhythm here matches his actual interview speech patterns closely. The giveaway is that he's consistently said the song came from a darker, more deliberate writing period, not an impulsive flight session."
+    },
+    {
+      "id": "q6",
+      "text": "You might be ingraining into your practise something that is counter productive and you'd have no way of knowing it.",
+      "speaker": "Steve Albini",
+      "context": "Warning aspiring engineers why doing 'whatever random crap you can find' is a trap, in an Audio Media International interview on how to be a better producer.",
+      "real": true,
+      "source": {
+        "title": "Audio Media International — 'You might be doing a bad job and not know it': Steve Albini on how to be a better producer",
+        "url": "https://audiomediainternational.com/you-might-be-doing-a-bad-job-and-not-know-it-steve-albini-on-how-to-be-a-better-producer/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

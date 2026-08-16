@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-16",
+  "edition": 54,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My philosophy on marriage is simple: find somebody who thinks your worst habits are charming, and then do your absolute damnedest to disabuse them of that notion as fast as humanly possible.",
+      "speaker": "Rodney Dangerfield",
+      "context": "Stand-up set recorded at Dangerfield's Comedy Club, New York City, during a late-night taping for the 1985 HBO special Nothing Goes Right",
+      "real": false,
+      "fake_note": "I made this one up — the self-sabotaging marriage cynicism is dead-on Dangerfield territory, and 'disabuse them of that notion' is the kind of slightly elevated word he'd deploy for comic contrast. The subtle giveaway is it reads a touch too aphoristic; his real material was more slapstick and punchy."
+    },
+    {
+      "id": "q2",
+      "text": "Health nuts are going to feel stupid someday, lying in hospitals dying of nothing.",
+      "speaker": "Redd Foxx",
+      "context": "A signature dark one-liner from the pioneering, famously raunchy stand-up comedian (star of 'Sanford and Son'), mocking clean-living health fanatics. Foxx's party-hard, cigarette-and-booze persona was legendary.",
+      "real": true,
+      "source": {
+        "title": "Quote Details: Redd Foxx (The Quotations Page)",
+        "url": "https://www.quotationspage.com/quote/699.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I told the producer, I said, 'Look, motherfucker, I don't do warm-up acts and I don't do mornings. You want me at nine AM you better have a full bar and a very short memory.' And he did, so I showed up at eleven and we called it even.",
+      "speaker": "Richard Pryor",
+      "context": "Live interview with Bryant Gumbel on NBC's Today show, June 1982, discussing his touring schedule",
+      "real": false,
+      "fake_note": "I made this one up — Pryor's combative producer stories and his 'motherfucker' cadence are completely in character, and the negotiation setup sounds like vintage him. The giveaway is the punchline's too tidy; Pryor's real riffs were more chaotic and self-implicating."
+    },
+    {
+      "id": "q4",
+      "text": "I woke up after the Grammy afterparty and there was a shoe in the minibar — not near the minibar, IN the minibar — and I thought, well, at least I'm keeping things cold. Never found out whose shoe it was. Didn't try very hard.",
+      "speaker": "John Belushi",
+      "context": "Conversation recounted by Belushi during an appearance on The Tomorrow Show with Tom Snyder, NBC, February 1979",
+      "real": false,
+      "fake_note": "I made this one up — the absurdist hotel-damage story is absolutely in Belushi's wheelhouse, and the Tom Snyder show was exactly where he'd go loose and unfiltered like this. The giveaway is the 'didn't try very hard' closer; it's a little too neat and self-aware for how Belushi actually rambled on Snyder."
+    },
+    {
+      "id": "q5",
+      "text": "Alcohol was my poison. I drank Seagrams VO, a Canadian rye, with Coca-Cola. And beer. For me, beer was like air. I'd have a six-pack before noon.",
+      "speaker": "Alice Cooper",
+      "context": "Shock-rock legend Alice Cooper describing his heavy daily drinking before he got sober, in a Louder/Classic Rock feature on going cold turkey.",
+      "real": true,
+      "source": {
+        "title": "How Alice Cooper went cold turkey and made his most personal album (Louder)",
+        "url": "https://www.loudersound.com/features/how-alice-cooper-went-cold-turkey-and-made-his-most-personal-album",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Somebody asked me once if I regretted anything about the sixties. I said, yeah — I regret that I can't remember about forty percent of them. The other sixty percent I'd do again on a Tuesday.",
+      "speaker": "Keith Moon",
+      "context": "Recorded segment for the BBC Radio 1 programme Nicky Horne's Your Mother Wouldn't Like It, October 1977",
+      "real": false,
+      "fake_note": "I made this one up — Moon's self-deprecating amnesia gags about excess were a known part of his public persona, and the BBC Radio 1 context fits his era. The tell is 'on a Tuesday' — it's a little too polished a button; Moon's real quips tended to trail off into something weirder."
+    }
+  ]
+}

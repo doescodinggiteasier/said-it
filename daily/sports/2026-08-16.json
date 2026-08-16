@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-16",
+  "edition": 51,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "If everyone likes me, they're watching, so there has to be something there.",
+      "speaker": "Tony Romo",
+      "context": "The CBS lead NFL analyst, on Pat McAfee's show in January 2026, responding to criticism of his polarizing broadcasting style.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Tony Romo addresses criticism after another up-and-down year in CBS booth",
+        "url": "https://www.foxnews.com/sports/tony-romo-opens-up-about-commentating-criticism-he-chooses-ignore-theyre-watching",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "He can take his'n and beat your'n and take your'n and beat his'n.",
+      "speaker": "Bum Phillips",
+      "context": "The Houston Oilers head coach paying tribute to rival coach Don Shula's ability with any roster.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — Remembering Bum Phillips, the unsung defensive innovator",
+        "url": "https://www.si.com/nfl/2013/10/19/remembering-bum-phillips-the-unsung-defensive-innovator",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "When Shaq used to set a screen on you it wasn't really a screen, it was more like running into the back of a parked bus and then having to pretend you're okay in front of twenty thousand people.",
+      "speaker": "Steve Nash",
+      "context": "Appearance on Bill Simmons' 'The Book of Basketball 2.0' podcast, June 2020",
+      "real": false,
+      "fake_note": "I made this one up — Nash spent years in the Western Conference dealing with Shaq and has a dry, self-deprecating sense of humor that makes this kind of physical comedy natural for him. The giveaway is 'parked bus,' which is a little too vivid and constructed; Nash's actual storytelling is slightly looser."
+    },
+    {
+      "id": "q4",
+      "text": "We had a linebacker that year who could not remember the blitz package under any circumstances. Brilliant kid, great instincts, couldn't retain a single diagram. So I stopped drawing diagrams. Just solved it.",
+      "speaker": "Bill Belichick",
+      "context": "Remarks at the American Football Coaches Association Annual Convention, Nashville, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Belichick has repeatedly said that great coaches adapt their system to the players they have, not the other way around, and this anecdote illustrates that principle in his characteristically terse, almost impatient style. The giveaway is 'brilliant kid'; Belichick almost never leads with warmth toward a player he's also criticizing."
+    },
+    {
+      "id": "q5",
+      "text": "I've done pre-game rituals that I know for a fact don't do anything. I still do them. You don't mess with a seven-game winning streak over a pair of socks.",
+      "speaker": "Henrik Lundqvist",
+      "context": "Interview with The Athletic's Katie Strang, published February 2019",
+      "real": false,
+      "fake_note": "I made this one up — Lundqvist has been publicly open about goaltender superstitions and his own pre-game preparation routines for years, and his personality blends Swedish pragmatism with dry humor in exactly this way. The giveaway is the specificity of 'seven-game winning streak'; Lundqvist tends to speak in generals rather than attaching a number to a superstition."
+    },
+    {
+      "id": "q6",
+      "text": "Basketball is something that I'm just good at. But horses is something that I feel the most happiness and sadness.",
+      "speaker": "Nikola Jokic",
+      "context": "The Denver Nuggets center, speaking during a 2025 promotional tour at a horse ranch in Beijing, on where his real emotional highs and lows come from.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — \"Basketball is just something I'm good at\": Jokic's admission",
+        "url": "https://sports.yahoo.com/article/basketball-just-something-im-good-103300970.html",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

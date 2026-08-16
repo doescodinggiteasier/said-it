@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-16",
+  "edition": 59,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "To infinity and beyond!",
+      "speaker": "Toy Story (1995)",
+      "context": "Buzz Lightyear's heroic catchphrase as he strikes a pose and 'flies'",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "Don't look at me like that. I know what I am.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes, defensive, after Evelyn challenges his motives",
+      "real": false,
+      "fake_note": "I made this one up — Gittes talks exactly this way: clipped, self-aware, slightly wounded under the bravado. The giveaway is that Gittes in the actual film rarely turns his self-doubt outward quite this nakedly; he deflects with sarcasm rather than confession."
+    },
+    {
+      "id": "q3",
+      "text": "You've been talking to him again, haven't you? I can always tell — you smell like his cigarettes.",
+      "speaker": "Rebecca (1940)",
+      "context": "Mrs. Danvers confronting the second Mrs. de Winter",
+      "real": false,
+      "fake_note": "I made this one up — Mrs. Danvers' dialogue in Hitchcock's film is precisely this close, suffocating, and accusatory, and the sensory detail (cigarette smell) matches the film's gothic texture. The giveaway is that Danvers' accusations in the real film are more oblique and layered with subtext; this one states its jealousy a little too plainly."
+    },
+    {
+      "id": "q4",
+      "text": "I am Iron Man.",
+      "speaker": "Iron Man (2008)",
+      "context": "Tony Stark (Robert Downey Jr.) goes off-script and reveals his identity to the press at the very end of the film.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Smokey, this is not 'Nam. This is bowling. There are rules.",
+      "speaker": "The Big Lebowski (1998)",
+      "context": "Walter Sobchak (John Goodman) pulling a gun over a foot-fault dispute during league bowling, to opponent Smokey.",
+      "real": true,
+      "source": {
+        "title": "The Big Lebowski - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Big_Lebowski",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "He's not heavy. He's just slow.",
+      "speaker": "Of Mice and Men (1939)",
+      "context": "George deflecting a ranch hand's mockery of Lennie",
+      "real": false,
+      "fake_note": "I made this one up — George's protective sharpness toward anyone who underestimates Lennie rings completely true to the film's tone, and the cadence echoes period working-class speech. The giveaway is the faint echo of a famous phrase; a sharp player might catch the wink embedded in the rhythm."
+    }
+  ]
+}
