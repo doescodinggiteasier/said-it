@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-17",
+  "edition": 51,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember being told early on that you have to pick your hills to die on, and I took that advice, and then I picked about eleven hills in the first month, and someone had to sit me down and explain that the metaphor had a recommended limit.",
+      "speaker": "Hakeem Jeffries",
+      "context": "Remarks at the Congressional Black Caucus Foundation Annual Legislative Conference, Washington D.C., September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Jeffries has a well-documented ability to be self-deprecating about his own intensity while still signaling competence, and this kind of freshman-year self-correction story is very much in his wheelhouse. The giveaway is that he would almost certainly name the issue rather than leave the 'hills' unspecified."
+    },
+    {
+      "id": "q2",
+      "text": "I absolutely support U.S. Attorney Pirro, as does President Trump. Now, that's different than whether the president is extraordinarily frustrated at what happened in that case.",
+      "speaker": "Todd Blanche",
+      "context": "Sunday interview, defending Jeanine Pirro while acknowledging Trump's frustration",
+      "real": true,
+      "source": {
+        "title": "Politics — Blanche says he supports Pirro, despite Trump's frustration over Reflecting Pool",
+        "url": "https://thehill.com/regulation/court-battles/6032521-blanche-supports-us-attorney-pirro/",
+        "date": "2026-08-17"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I am Al Gore, I used to be the next president of the United States",
+      "speaker": "Al Gore",
+      "context": "His self-deprecating opening line at a Harvard Kennedy School lecture, October 4, 2001, after losing the 2000 election",
+      "real": true,
+      "source": {
+        "title": "Harvard Gazette — Gore calls for unity",
+        "url": "https://news.harvard.edu/gazette/story/2001/10/gore-calls-for-unity/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I will say, after about the fourth budget negotiation, you stop being surprised by anything. Someone will walk in with a chart that somehow proves two plus two equals whatever they need it to equal that week, and everyone just nods.",
+      "speaker": "Nancy Pelosi",
+      "context": "Interview with Politico's \"Huddle\" podcast, recorded during the 2022 midterm cycle",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi is famous for her dry, insider-tone observations about House deal-making, and this sounds exactly like her weary-veteran cadence. The subtle giveaway is that she'd almost certainly name a specific bill or a specific colleague's chart, not leave it this anonymous."
+    },
+    {
+      "id": "q5",
+      "text": "Someone on the transition team handed me a briefing book about three inches thick and said, 'light reading for the weekend.' I thought they were joking. They were not joking. Nobody in this business is ever joking about the reading.",
+      "speaker": "Condoleezza Rice",
+      "context": "\"Sway\" podcast with Kara Swisher, New York Times, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Rice regularly discusses the sheer volume of preparation that national security work demands, often with this kind of understated, slightly rueful humor. The giveaway is that she'd almost certainly specify which transition — 2000, into the Bush NSC — rather than leaving it unanchored in time."
+    },
+    {
+      "id": "q6",
+      "text": "They assume that my ambition is positional. They assume that my ambition is a title or a seat. And my ambition is way bigger than that. My ambition is to change this country.",
+      "speaker": "Alexandria Ocasio-Cortez",
+      "context": "Interview, discussing her political ambitions and a potential 2028 presidential run",
+      "real": true,
+      "source": {
+        "title": "Politics — Is the US ready for President Alexandria Ocasio-Cortez?",
+        "url": "https://www.theguardian.com/news/ng-interactive/2026/aug/15/will-aoc-run-for-president",
+        "date": "2026-08-17"
+      }
+    }
+  ]
+}

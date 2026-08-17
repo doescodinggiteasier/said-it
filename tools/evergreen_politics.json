@@ -320,5 +320,16 @@
       "url": "https://thehill.com/homenews/5990529-live-updates-midterms-jackson-collins-cyclospora-trump/",
       "date": "2026-07-27"
     }
+  },
+  {
+    "text": "No, I'm not going to pledge that.",
+    "speaker": "Todd Blanche",
+    "context": "NBC's Meet the Press, when asked if the DOJ would always act independently of the White House",
+    "real": true,
+    "source": {
+      "title": "Politics — Todd Blanche declines to pledge independence from White House",
+      "url": "https://www.theguardian.com/us-news/2026/aug/16/todd-blanche-doj-independence-trump-white-house",
+      "date": "2026-08-17"
+    }
   }
 ]

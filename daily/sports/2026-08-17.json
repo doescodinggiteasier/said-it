@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-17",
+  "edition": 52,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Everyone wants to talk about the podium. The podium is fine. But I think about Chamonix in the qualifying round where nobody was watching and I laid down the run that actually mattered to me.",
+      "speaker": "Shaun White",
+      "context": "GQ Men of the Year issue, profile interview, November 2018",
+      "real": false,
+      "fake_note": "I made this one up — White has consistently framed his relationship with the sport in terms of private, unwitnessed moments of personal satisfaction rather than trophy counts. The tell is 'the podium is fine' — real Shaun is slightly less breezy about the competitive dimension."
+    },
+    {
+      "id": "q2",
+      "text": "People say jockeys don't train. Come spend three days at five a.m. in thirty-eight degrees on a horse that has no interest in cooperating with you and then come back and tell me that.",
+      "speaker": "Mike Smith",
+      "context": "Kentucky Derby Media Day press availability, Churchill Downs, May 2019",
+      "real": false,
+      "fake_note": "I made this one up — Smith has spent years patiently defending the athleticism demands of his sport, and the slight edge of irritation here matches his known temperament when the subject comes up. The tell is the 'no interest in cooperating' line — he'd probably be more specific about which horse."
+    },
+    {
+      "id": "q3",
+      "text": "Coaching is a great thing, because you're working for four months then you go fish for eight.",
+      "speaker": "Bob Knight",
+      "context": "The Indiana basketball coach joking about the perks of the coaching profession, in a roundup of his memorable lines.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Bob Knight quotes: Top 10 memorable lines from Indiana's legendary but controversial coach",
+        "url": "https://www.cbssports.com/college-basketball/news/bob-knight-quotes-top-10-memorable-lines-from-indianas-legendary-but-controversial-coach/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I've slept in some places I'm not proud of. Bus floors, airport terminals — one time in Osaka I just laid down on my mat in the warm-up area and woke up an hour later. My coach was furious. But I felt great.",
+      "speaker": "Simone Biles",
+      "context": "Interview with ESPN The Magazine, published in their February 2020 issue ahead of the Olympic season",
+      "real": false,
+      "fake_note": "I made this one up — Biles is a natural storyteller who talks openly about the grind of travel and training, and the Osaka detail gives it just enough geography to feel real. The tell is that 'my coach was furious' is a little too neat a beat for off-the-cuff speech."
+    },
+    {
+      "id": "q5",
+      "text": "This ain't a football game, we do this every day.",
+      "speaker": "Earl Weaver",
+      "context": "The Baltimore Orioles manager on the day-in, day-out grind that makes baseball unlike other sports.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Eye on Quotes: The pithy brilliance of Earl Weaver",
+        "url": "https://www.cbssports.com/mlb/news/eye-on-quotes-the-pithy-brilliance-of-earl-weaver/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "There's a version of me that went to college, got a degree, maybe coached somewhere small. I think about that guy sometimes. He probably sleeps better than I do.",
+      "speaker": "LeBron James",
+      "context": "Uninterrupted's 'The Shop,' Season 4, Episode 3, HBO, 2021",
+      "real": false,
+      "fake_note": "I made this one up — LeBron has been unusually candid on 'The Shop' about the roads not taken, and his voice there is reflective and a touch wistful, which this matches. The giveaway is the punchy closer — a little too polished for genuine rambling."
+    }
+  ]
+}

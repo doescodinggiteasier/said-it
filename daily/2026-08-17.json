@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-17",
+  "edition": 63,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Not everyone can be a truffle. Most of us are potatoes. And a potato is a very good thing to be.",
+      "speaker": "Massimo Bottura",
+      "context": "Quote by the Italian chef of Osteria Francescana, on humility",
+      "real": true,
+      "source": {
+        "title": "Massimo Bottura Quotes (Author of Never Trust A Skinny Italian Chef)",
+        "url": "https://www.goodreads.com/author/quotes/406174.Massimo_Bottura",
+        "date": "2021-01-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My mother still calls every streaming platform 'the Netflix' and asks me if my show is 'on the Netflix yet.' At this point I correct her once per year just to keep the record accurate, and then I give up.",
+      "speaker": "Issa Rae",
+      "context": "Interview on Sway in the Morning, Sirius XM, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Rae has spoken warmly and humorously about her family's relationship with her career in dozens of interviews, and this kind of gently observed family comedy is completely her register. The slight tell is 'once per year just to keep the record accurate' — it's a fraction too structured; her real anecdotes tend to meander more naturally."
+    },
+    {
+      "id": "q3",
+      "text": "He said he felt like a little boy who had stubbed his toe in the dark. That he was too old to cry, but it hurt too much to laugh.",
+      "speaker": "Adlai Stevenson",
+      "context": "Quoting a Lincoln anecdote to describe how he felt conceding the 1952 presidential election, Springfield, Illinois, Nov. 5, 1952.",
+      "real": true,
+      "source": {
+        "title": "The American Presidency Project: Remarks Conceding the Presidential Election in Springfield, Illinois",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-conceding-the-presidential-election-springfield-illinois",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Nothing so dates a man as to decry the younger generation.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The Democratic statesman, in a speech at the University of Wisconsin, Madison (8 October 1952) - a dry, self-aware needle at those who complain about the young.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Quantum computing gets described to the public the way magic gets described to children — which is fine up to a point, but at some point the child is going to pull the rabbit out themselves and realize there was a sleeve involved. We owe people the sleeve.",
+      "speaker": "Michio Kaku",
+      "context": "Panel discussion at the World Science Festival, New York, May 2023",
+      "real": false,
+      "fake_note": "I made this one up — Kaku is famous for accessible analogies that walk right up to the edge of oversimplification, and he's been openly critical of how quantum computing is hyped in the press. The tell is 'we owe people the sleeve': it's a little too self-aware and meta for Kaku, who tends to embrace the spectacular framing rather than critique it."
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what I listen to before a match and I always disappoint them. It's not some pump-up anthem. Last Wimbledon it was a podcast about the migratory patterns of Arctic terns. I find it genuinely calming, which probably says something worrying about me.",
+      "speaker": "Roger Federer",
+      "context": "Interview with The Sunday Times Magazine, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Federer is well-documented as quietly intellectual and self-deprecating about his quirks, so the nature-documentary detail lands perfectly in character. The subtle giveaway is 'Arctic terns' specifically: he'd more likely name something Swiss-German, and the self-diagnosis kicker is just a touch too polished."
+    }
+  ]
+}

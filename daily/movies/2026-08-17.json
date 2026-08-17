@@ -1,0 +1,65 @@
+{
+  "date": "2026-08-17",
+  "edition": 60,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Three days I've been on this road. You'd think somebody would've offered me a sandwich.",
+      "speaker": "It Happened One Night (1934)",
+      "context": "Peter Warne grousing cheerfully to Ellie after a long stretch of hitchhiking",
+      "real": false,
+      "fake_note": "I made this one up — the screwball-era mix of complaint and charm is exactly Gable's register in this film, and the mundane specificity (a sandwich) fits the movie's running gag about food and class. The giveaway is the joke lands a bit too cleanly; the real script tends to layer the humor inside longer bickering exchanges."
+    },
+    {
+      "id": "q2",
+      "text": "I have a competition in me. I want no one else to succeed. I hate most people.",
+      "speaker": "There Will Be Blood (2007)",
+      "context": "Daniel Plainview (Daniel Day-Lewis) confessing his misanthropy to the man claiming to be his half-brother Henry.",
+      "real": true,
+      "source": {
+        "title": "There Will Be Blood - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/There_Will_Be_Blood",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Toto, I've a feeling we're not in Kansas anymore.",
+      "speaker": "The Wizard of Oz (1939)",
+      "context": "Dorothy, having landed in the strange new world of Oz after the tornado, says this to her dog Toto.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "I never said I was the right man. I said I was the only one.",
+      "speaker": "Blade Runner (1982)",
+      "context": "Deckard defending his assignment to Bryant in the precinct office",
+      "real": false,
+      "fake_note": "I made this one up — the laconic fatalism matches Deckard's first-person noir voice, and the sentiment fits his reluctant-operative role. The giveaway is that Bryant does most of the pressuring in that scene; Deckard rarely pushes back with this much composed self-awareness."
+    },
+    {
+      "id": "q5",
+      "text": "He's not dangerous, Captain. He's just very, very tired.",
+      "speaker": "One Flew Over the Cuckoo's Nest (1975)",
+      "context": "Nurse Ratched reassuring the ward staff about a patient after an incident",
+      "real": false,
+      "fake_note": "I made this one up — Ratched's clinical understatement and her habit of reframing chaos as manageable illness are well-established, and the line sounds exactly like her brand of soft menace. The giveaway is the word 'Captain,' which slightly over-ranks the staff hierarchy she'd normally address as 'Doctor' or by name."
+    },
+    {
+      "id": "q6",
+      "text": "The world is a business, Mr. Beale. It has been since man crawled out of the slime.",
+      "speaker": "Network (1976)",
+      "context": "Corporate chairman Arthur Jensen (Ned Beatty) delivering his boardroom sermon to news anchor Howard Beale (Peter Finch).",
+      "real": true,
+      "source": {
+        "title": "Network (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Network_(film)",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

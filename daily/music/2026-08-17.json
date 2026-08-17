@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-17",
+  "edition": 55,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The first time I heard 'What's Going On' all the way through, I was in my car in a parking garage in Detroit and I just sat there with the engine running. Couldn't move. I missed whatever I was supposed to be doing and I did not care one bit.",
+      "speaker": "Stevie Wonder",
+      "context": "Interview with David Ritz for the liner notes of a Marvin Gaye tribute compilation, published in Rolling Stone, April 2001",
+      "real": false,
+      "fake_note": "I made this one up — Stevie's deep connection to Marvin and his habit of telling vivid sensory stories make this feel completely lived-in. The subtle giveaway is that Stevie, being blind, wouldn't frame a private emotional moment around the visual geography of a parking garage quite so casually."
+    },
+    {
+      "id": "q2",
+      "text": "I really feel like some angels have been carrying me around.",
+      "speaker": "Bonnie Raitt",
+      "context": "On feeling happier than ever after getting sober, in her Rolling Stone interview following her Grammy sweep for 'Nick of Time.'",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Bonnie Raitt: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-features/bonnie-raitt-the-rolling-stone-interview-236846/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Have I tried having sex to my own music? God, no!",
+      "speaker": "Natalie Imbruglia",
+      "context": "Interview about her honest playlist",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Have I tried having sex to my own music? God, no!’: Natalie Imbruglia’s honest ",
+        "url": "https://www.theguardian.com/music/2026/aug/16/natalie-imbruglia-honest-playlist-michael-jackson-joni-mitchell-torn",
+        "date": "2026-08-17"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Noah always stands up for me",
+      "speaker": "Chappell Roan",
+      "context": "Telling the Pasadena crowd at Noah Kahan's The Great Divide Tour",
+      "real": true,
+      "source": {
+        "title": "Music — Noah Kahan Brings Chappell Roan on Stage for “California” Performance: Watch",
+        "url": "https://consequence.net/2026/08/noah-kahan-brings-chappell-roan-on-stage/",
+        "date": "2026-08-17"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I worked with a drummer once who counted everything in sevens in his head, even when we were playing in four. I asked him how that was possible and he looked at me like I'd asked him how he breathed. Some people just hear the world differently and you can't teach it and you can't take it.",
+      "speaker": "Joni Mitchell",
+      "context": "Extended interview with Cameron Crowe for the reissue of 'The Hissing of Summer Lawns,' published in MOJO magazine, November 2000",
+      "real": false,
+      "fake_note": "I made this one up — Joni is famous for her unconventional tunings and rhythmic sensibility and has always spoken admiringly and analytically about musicians who operate outside standard musical logic. The giveaway is 'you can't teach it and you can't take it' — that's slightly more aphoristic than her usual sprawling, specific conversational style."
+    },
+    {
+      "id": "q6",
+      "text": "I grew up in a house where the record player was never off. My mother had opinions about every B-side. She'd flip a record and go, 'Now THIS is what they didn't want you to hear.' She made me suspicious of A-sides for about a decade.",
+      "speaker": "Elvis Costello",
+      "context": "Conversation with Nick Hornby published in The Believer magazine, October 2005",
+      "real": false,
+      "fake_note": "I made this one up — Costello has genuinely written and spoken at length about his father's and mother's influence on his musical taste, and his dry, literary humor comes through perfectly here. The tell is that he's attributed sharp musical opinions to his mother specifically, whereas his documented stories almost always center his bandleader father, Joe McManus."
+    }
+  ]
+}
