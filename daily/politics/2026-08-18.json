@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-18",
+  "edition": 52,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what the hardest part of the job is. Honestly? Finding a parking spot at the Capitol. Everything else you sort of figure out. The parking, I have never figured out.",
+      "speaker": "Nancy Pelosi",
+      "context": "Interview with Gavin Newsom on his podcast 'This Is Democracy,' October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi's dry, almost offhand humor in interviews is well documented, and a complaint this mundane feels exactly like the kind of thing she'd throw out to disarm an audience. The tell is that she'd almost certainly name a specific garage or lot if this were real."
+    },
+    {
+      "id": "q2",
+      "text": "Texas is a big state. I mean that literally and as a kind of warning to anyone who's ever tried to campaign across it in August.",
+      "speaker": "Wendy Davis",
+      "context": "Panel discussion at the Texas Tribune Festival, Austin, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Davis's frank, occasionally rueful humor about Texas politics and her own campaigns is well documented, and a throwaway geographic observation like this fits her measured but warm public voice. The subtle tell is that she'd typically follow something like this with a more pointed policy observation."
+    },
+    {
+      "id": "q3",
+      "text": "I did a filibuster once that lasted about eight hours. My staff brought me a sandwich around hour four, and I thought, this is either the best sandwich I've ever eaten or I've completely lost my mind.",
+      "speaker": "Rand Paul",
+      "context": "Appearance on The Megyn Kelly Show, podcast episode released January 2024",
+      "real": false,
+      "fake_note": "I made this one up — Rand Paul's actual filibusters are famous and he jokes about them regularly, so a casual, hungry aside like this fits his dry, plainspoken style perfectly. The giveaway is that his real accounts of those filibusters tend to focus on the constitutional stakes, not the catering."
+    },
+    {
+      "id": "q4",
+      "text": "He's a real hero. I don't know if I'd do it.",
+      "speaker": "Donald Trump",
+      "context": "Trump speaking to 10-year-old Nathanial Rai in the Oval Office about his teenage lifeguard rescuer",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump tells 10-year-old rescued by teen lifeguard: ‘I don’t know if I’d do it’",
+        "url": "https://www.theguardian.com/us-news/2026/aug/17/trump-oval-office-california-resuced-teen-viral",
+        "date": "2026-08-18"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My mother told me two things before I ever ran for anything: always know where the bathroom is, and never let them see you read from notes. I've upheld one of those consistently.",
+      "speaker": "Mitt Romney",
+      "context": "Remarks at the Gerald R. Ford School of Public Policy commencement, University of Michigan, May 2022",
+      "real": false,
+      "fake_note": "I made this one up — Romney's clean, self-deprecating humor with a maternal reference is extremely consistent with his public persona, and the two-part construction feels like his measured delivery. The tell is that his real self-deprecation tends to land on his political losses rather than procedural quirks."
+    },
+    {
+      "id": "q6",
+      "text": "No, I'm not going to pledge that.",
+      "speaker": "Todd Blanche",
+      "context": "NBC's Meet the Press, when asked if the DOJ would always act independently of the White House",
+      "real": true,
+      "source": {
+        "title": "Politics — Todd Blanche declines to pledge independence from White House",
+        "url": "https://www.theguardian.com/us-news/2026/aug/16/todd-blanche-doj-independence-trump-white-house",
+        "date": "2026-08-17"
+      }
+    }
+  ]
+}

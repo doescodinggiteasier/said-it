@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-18",
+  "edition": 64,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "No, I'm not going to pledge that.",
+      "speaker": "Todd Blanche",
+      "context": "NBC's Meet the Press, when asked if the DOJ would always act independently of the White House",
+      "real": true,
+      "source": {
+        "title": "Politics — Todd Blanche declines to pledge independence from White House",
+        "url": "https://www.theguardian.com/us-news/2026/aug/16/todd-blanche-doj-independence-trump-white-house",
+        "date": "2026-08-17"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've shipped products I was genuinely embarrassed by. Not like — catastrophically broken, but, you know, you know it's not done and you ship it anyway because the window is closing and you tell yourself the next version fixes it. The next version always has its own problems.",
+      "speaker": "Satya Nadella",
+      "context": "Fireside chat at Stanford's Graduate School of Business, recorded February 2020 and published on the GSB's YouTube channel",
+      "real": false,
+      "fake_note": "I made this one up — Nadella speaks candidly about iterative failure and learning in exactly this register, and the admission is humble without being damaging. The giveaway is the slightly rehearsed rhythm of 'the next version always has its own problems,' which sounds more prepared than his usual conversational style."
+    },
+    {
+      "id": "q3",
+      "text": "I have now come to the conclusion never again to think of marrying, and for this reason; I can never be satisfied with anyone who would be blockhead enough to have me.",
+      "speaker": "Abraham Lincoln",
+      "context": "A candidly self-mocking line from a young Lincoln's letter, poking fun at his own eligibility as a suitor.",
+      "real": true,
+      "source": {
+        "title": "Abraham Lincoln - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Abraham_Lincoln",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Few thought he was even a starter / There were many who thought themselves smarter / But he ended PM / CH and OM / An earl and a knight of the garter.",
+      "speaker": "Clement Attlee",
+      "context": "A self-mocking limerick the former British PM wrote about himself in a letter to his brother Tom Attlee, April 8, 1956.",
+      "real": true,
+      "source": {
+        "title": "Lib Quotes: Clement Attlee (self-description limerick)",
+        "url": "https://libquotes.com/clement-attlee",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "When I cut my hair in 2012 I genuinely did not anticipate that it would become a thing people wrote dissertations about. Like — actual academic papers. Someone sent me one. I read about four pages and then I had to go lie down.",
+      "speaker": "Beyoncé",
+      "context": "Quoted in Vogue's September 2022 issue, from an extended profile conducted in July 2022",
+      "real": false,
+      "fake_note": "I made this one up — Beyoncé's public persona blends warmth, humor, and mild bemusement at her own cultural weight, and her documented interviews show exactly this kind of self-aware wit. The tell is that she rarely gives Vogue the kind of spontaneous, slightly breathless quote this would require."
+    },
+    {
+      "id": "q6",
+      "text": "I started running seriously at forty-three. Not jogging — running. There's a difference, and at forty-three your knees are very clear about reminding you of it around mile four.",
+      "speaker": "Oprah Winfrey",
+      "context": "Keynote address at the Runner's World Half Marathon & Festival in Bethlehem, Pennsylvania, October 2015",
+      "real": false,
+      "fake_note": "I made this one up — Oprah has spoken publicly and often about her fraught, funny, and genuine relationship with running and physical fitness, so this sits comfortably in her lane. The subtle tell is 'mile four,' which is oddly specific in a way that sounds planted rather than remembered."
+    }
+  ]
+}

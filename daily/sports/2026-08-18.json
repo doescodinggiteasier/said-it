@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-18",
+  "edition": 53,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I landed the quad the first time in competition my first thought was not joy, it was more like — oh, now I have to do that every single time. I remember being annoyed at myself for doing it.",
+      "speaker": "Nathan Chen",
+      "context": "NBC Olympics feature interview filmed at the 2022 Beijing Winter Olympics, broadcast February 7, 2022",
+      "real": false,
+      "fake_note": "I made this one up — Chen has spoken openly about perfectionism and the psychological trap of raising one's own bar, and this specific kind of self-imposed pressure spiral is consistent with his documented mindset. The slight quirk of 'annoyed at myself for doing it' is what makes it feel real."
+    },
+    {
+      "id": "q2",
+      "text": "I always look in the Sunday paper to see where Everton are in the league - starting, of course, from the bottom up.",
+      "speaker": "Bill Shankly",
+      "context": "The Liverpool manager needling city rivals Everton, in the club's official collection of his sayings.",
+      "real": true,
+      "source": {
+        "title": "Liverpool FC — Bill Shankly in his own words",
+        "url": "https://www.liverpoolfc.com/news/first-team/111453-bill-shankly-in-his-own-words",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My dad used to fall asleep watching me practice free throws. Just pull up a chair, fold his arms, out cold. I'd hit twenty in a row and he'd wake up and go, 'your elbow was drifting.' I don't know how he knew that.",
+      "speaker": "Steph Curry",
+      "context": "The Athletic long-form feature by Marcus Thompson II, published March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Curry constantly references his father Dell and the role of family in his development, and this warm, slightly absurd family-gym memory is exactly his register. The giveaway is that it's almost too charming and self-contained — real anecdotes this good take longer to land."
+    },
+    {
+      "id": "q4",
+      "text": "I'm happy that everything has been resolved",
+      "speaker": "Rodri",
+      "context": "Rodri speaking upon arriving in Catalonia to complete his move to Barcelona from Manchester City",
+      "real": true,
+      "source": {
+        "title": "Sports — Rodri calls it ‘a dream to play for Barcelona’ as he flies in for medical",
+        "url": "https://www.theguardian.com/football/2026/aug/16/rodri-set-to-complete-barcelona-move-after-manchester-city-accept-654m-bid",
+        "date": "2026-08-18"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've coached players who could run faster than me, jump higher than me, hit harder than me — basically all of them could do all of those things. But I'll tell you what, not many of them wanted to win more than I wanted to win from the sideline, and I'm not sure that's healthy.",
+      "speaker": "Nick Saban",
+      "context": "SEC Media Days press conference, Hoover, Alabama, July 2018",
+      "real": false,
+      "fake_note": "I made this one up — Saban's documented obsession with winning and his wry self-awareness about it are well-established, and the half-confession about it being 'not healthy' is believable from him. The tell is that he'd likely pivot into process-speak rather than sitting with the vulnerability this long."
+    },
+    {
+      "id": "q6",
+      "text": "The serve is basically the only part of tennis where nobody can interfere with you. It's entirely your fault. I find that terrifying and also the only part of the game I actually sleep well after.",
+      "speaker": "Serena Williams",
+      "context": "Vogue interview conducted at her home in Palm Beach, published September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Serena frequently speaks about the mental weight of performance and her complicated relationship with the game's pressures. The specific focus on the serve as both terrifying and comforting is plausible but the two-clause emotional reversal is slightly too structured for pure off-the-cuff Serena."
+    }
+  ]
+}

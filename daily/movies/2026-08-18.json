@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-18",
+  "edition": 61,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Mr. Vaughn, what we are dealing with here is a perfect engine, an eating machine.",
+      "speaker": "Jaws (1975)",
+      "context": "Marine biologist Matt Hooper (Richard Dreyfuss) warning Mayor Vaughn (Murray Hamilton) about the shark.",
+      "real": true,
+      "source": {
+        "title": "Jaws (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Jaws_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "You want to know what I think? I think you've been standing outside that door for about ten minutes.",
+      "speaker": "Rear Window (1954)",
+      "context": "L.B. Jefferies catching his nurse Stella already knowing his suspicions before he voices them",
+      "real": false,
+      "fake_note": "I made this one up — Hitchcock's films are full of this dry, caught-out dialogue, and it sounds exactly like the wry sparring between Jeff and Stella. The subtle giveaway is that the line is a tiny bit too neatly self-aware; real Hitchcock banter is usually a beat more oblique."
+    },
+    {
+      "id": "q3",
+      "text": "Every man on that boat knew the risk. I'm not sure that makes it any easier.",
+      "speaker": "Das Boot (1981)",
+      "context": "The Captain speaking privately to the correspondent after a crew member is injured",
+      "real": false,
+      "fake_note": "I made this one up — the Captain's voice in the English dub carries exactly this measured, understated guilt, and the submarine genre demands this kind of tight-lipped reflection. The subtle giveaway is the line is perhaps half a beat too tidy for how fragmented and exhausted the Captain usually sounds."
+    },
+    {
+      "id": "q4",
+      "text": "I feel the need... the need for speed!",
+      "speaker": "Top Gun (1986)",
+      "context": "Maverick (Tom Cruise) and Goose (Anthony Edwards) say it together, high-fiving as they get pumped up to fly.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "She's not lost, Marlin. She just hasn't come back yet.",
+      "speaker": "Finding Nemo (2003)",
+      "context": "Gill speaking quietly to Marlin inside the tank after a failed escape attempt",
+      "real": false,
+      "fake_note": "I made this one up — it fits Gill's world-weary mentor cadence perfectly, and the phrasing echoes the film's theme of letting go. The giveaway is the slight fortune-cookie polish; Gill's real lines are a little rougher and more impatient than this."
+    },
+    {
+      "id": "q6",
+      "text": "Gentlemen, I have just been informed that we are twelve minutes behind schedule.",
+      "speaker": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)",
+      "context": "Group Captain Mandrake delivering the absurd bureaucratic non-sequitur during the crisis",
+      "real": false,
+      "fake_note": "I made this one up — Kubrick's film thrives on exactly this brand of clipped British understatement dropped into existential catastrophe, and it sounds like something Mandrake would genuinely fuss over. The giveaway is that a real line would likely have a more specific, even more absurd detail to anchor the joke."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-18",
+  "edition": 56,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Mark broke his feet jumping off a balcony – for the rest of the tour he self-medicated with gin and buckets of ice",
+      "speaker": "Tim Wheeler",
+      "context": "Ash band members looking back on their touring years",
+      "real": true,
+      "source": {
+        "title": "Music — Rock stars Ash look back: ‘Mark broke his feet jumping off a balcony – for the r",
+        "url": "https://www.theguardian.com/lifeandstyle/2026/aug/16/indie-rock-stars-ash-look-back-tim-wheeler-mark-hamilton-rick-mcmurray",
+        "date": "2026-08-18"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "He had the right attitude. He chewed gum, looked arrogant and flipped the bird to the guards – he did everything the prisoners wanted to do. He was a mean mother from the South who was there because he loved us. When he walked away, everyone in that place had become a Johnny Cash fan.",
+      "speaker": "Merle Haggard",
+      "context": "Recalling watching Johnny Cash perform at San Quentin prison on New Year's Day while Haggard was an inmate there.",
+      "real": true,
+      "source": {
+        "title": "Louder — Johnny Cash, Merle Haggard, and the true story that's almost too good to be true",
+        "url": "https://www.loudersound.com/features/johnny-cash-merle-haggard-and-the-true-story-thats-almost-too-good-to-be-true",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My mom used to make me practice the same bar over and over until I was genuinely mad at her, and I think that's probably the correct parenting strategy if you want a musician. You have to make them a little angry at the instrument first.",
+      "speaker": "Yo-Yo Ma",
+      "context": "NPR Fresh Air interview with Terry Gross, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Yo-Yo Ma frequently credits his parents and early discipline in interviews, and he has this warm, slightly self-deprecating wit that fits perfectly here. The giveaway is the phrase 'correct parenting strategy' — he tends to be a touch more reverent about his mother specifically."
+    },
+    {
+      "id": "q4",
+      "text": "When we started, nobody was checking for us. Like, genuinely — I remember a show in Atlanta where the venue had more staff than audience, and we played the full set anyway because what else are you going to do, go home? We didn't have a home to go to.",
+      "speaker": "Anthony Kiedis",
+      "context": "The Howard Stern Show, SiriusXM, October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Kiedis tells early-struggle RHCP stories in this exact tone across multiple long interviews, and the self-deprecating specificity about a half-empty venue fits his documented storytelling style. The giveaway is the phrasing 'nobody was checking for us' — that's slightly more hip-hop vernacular than his typical diction."
+    },
+    {
+      "id": "q5",
+      "text": "A lot of people hear the orchestration and think it must have started big, but the demo for that record was me, a Casio, and a bathroom that had good reverb. I've made worse decisions than recording in a bathroom, but I've also made better ones.",
+      "speaker": "Bjork",
+      "context": "Pitchfork Music Festival artist Q&A, Chicago, July 2015",
+      "real": false,
+      "fake_note": "I made this one up — Björk genuinely discusses her lo-fi demo process and the gap between intimate origins and grand arrangements, and she has this dry, matter-of-fact humor in conversation that makes the bathroom line feel real. The giveaway is she tends to name specific equipment brands only when speaking Icelandic — in English she's usually more vague about gear."
+    },
+    {
+      "id": "q6",
+      "text": "I've had producers tell me to take the accent off certain words, and I always think — which accent? This is the only one I have. I'm not performing Georgia, I just live there.",
+      "speaker": "Lil Nas X",
+      "context": "Variety Hitmakers Breakfast interview, Los Angeles, December 2021",
+      "real": false,
+      "fake_note": "I made this one up — Lil Nas X is vocal about authenticity, regional identity, and the industry trying to sand down his edges, and he expresses this with a very specific, slightly comic indignation that matches this quote. The giveaway is that in real interviews on this topic he tends to name a specific person or session rather than keeping it anonymous."
+    }
+  ]
+}

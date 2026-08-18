@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-18",
+  "edition": 55,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People keep asking how I write a classic. Same way you do anything, man — you lock yourself in a room, you ignore every sensible instinct you have, you drink enough coffee to terrify a racehorse, and then you just start typing shit until something stops sounding like shit.",
+      "speaker": "Hunter S. Thompson",
+      "context": "Q&A session following a reading at the Tattered Cover Book Store, Denver, Colorado, Rolling Stone press event, April 1994",
+      "real": false,
+      "fake_note": "I made this one up — Thompson's gleeful contempt for romantic notions of the writing process, expressed in his own volcanic run-on cadence, is textbook Gonzo voice. The giveaway is 'terrify a racehorse' — Thompson loved horse-racing references, but 'terrify' is slightly too tame an image for his usual maximalism."
+    },
+    {
+      "id": "q2",
+      "text": "I told the label guy, I said, 'Sweetheart, the day I let a twenty-six-year-old in a turtleneck tell me what's tasteful is the day you can have my piano.' He went very quiet. The turtleneck went very red. We never spoke of taste again.",
+      "speaker": "Eartha Kitt",
+      "context": "Recorded conversation with Terry Wogan for Friday Night with Wogan, BBC One, London, November 1984",
+      "real": false,
+      "fake_note": "I made this one up — Kitt's imperious, weaponised wit aimed at music industry suits is completely in character; she skewered people on television for sport throughout her career. The giveaway is 'The turtleneck went very red' — a little too neat as a joke construction; Kitt's real put-downs had more slow-burn menace."
+    },
+    {
+      "id": "q3",
+      "text": "I don't go on stage high but I'll take an edible after I get off stage and chill out. I do write a lot of jokes while high though, and then the next day I'll look at them and go, 'Well that's not that funny.'",
+      "speaker": "Jim Jefferies",
+      "context": "Crude Australian comedian Jim Jefferies — who built his name on drinking, drugs, and porn material — talking candidly about weed and his creative process, in a High Times interview (Aug 2023).",
+      "real": true,
+      "source": {
+        "title": "Jim Jefferies Is Living His Best Life (High Times)",
+        "url": "https://hightimes.com/culture/jim-jefferies-is-living-his-best-life/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "We finished the show, right, the crowd's still losing their minds, and Keith just walks into catering, picks up an entire wheel of cheese and goes, 'This'll do.' No plate. No knife. Just Keith and the cheese and a look of absolute serenity. I've never respected anyone more.",
+      "speaker": "John Entwistle",
+      "context": "Interviewed on The Old Grey Whistle Test, BBC Two, London, October 1975",
+      "real": false,
+      "fake_note": "I made this one up — Entwistle was famously the deadpan straight-man observer of The Who's mayhem, and this self-effacing 'I was just watching Keith' framing is pitch-perfect for him. The giveaway is it's almost TOO fondly anecdotal — Entwistle in interviews tended to be drier and shorter."
+    },
+    {
+      "id": "q5",
+      "text": "Vegas is the only city where you can lose your wallet, find a husband, eat a steak at five in the morning, lose the husband, and still make your soundcheck. I've done four of those five. I'll let you guess which four.",
+      "speaker": "Phyllis Diller",
+      "context": "Stand-up material workshopped at The Sands Hotel, Las Vegas, taped for a Showtime special preview, September 1988",
+      "real": false,
+      "fake_note": "I made this one up — Diller's self-deprecating domestic chaos humour translating to Vegas excess is absolutely her wheelhouse, and the 'I'll let you guess' button is very her. The giveaway is the list is slightly too rhythmically polished — her real material was more jagged and throwaway in delivery."
+    },
+    {
+      "id": "q6",
+      "text": "Maybe it was because we did it unabashedly out in the open. We didn't know it was shocking. Perhaps we were just too fucking frank.",
+      "speaker": "Slash",
+      "context": "The Guns N' Roses guitarist, in a Classic Rock/Louder interview, explaining why his band got a wilder reputation than peers who did 'the same shit'.",
+      "real": true,
+      "source": {
+        "title": "Louder (Classic Rock) — Six Pack: Slash on drugs, dying and Axl Rose",
+        "url": "https://www.loudersound.com/features/six-pack-slash-on-drugs-dying-and-axl-rose",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}
