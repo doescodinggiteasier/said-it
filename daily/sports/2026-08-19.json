@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-19",
+  "edition": 54,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Leave me alone, I know what I'm doing!",
+      "speaker": "Kimi Raikkonen",
+      "context": "Formula 1 driver's deadpan team-radio reply to his Lotus race engineer Simon Rennie, who kept feeding him instructions during the 2012 Abu Dhabi Grand Prix (which Raikkonen went on to win).",
+      "real": true,
+      "source": {
+        "title": "F1.com — Leave me alone, I know what I'm doing: the best of Räikkönen on race radio",
+        "url": "https://www.formula1.com/en/latest/article/leave-me-alone-i-know-what-doing-best-of-raikkonen-race-radio.rCKOidDkwt70dZdOENU3e",
+        "date": "2022-11-04"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "You spend a good piece of your life gripping a baseball, and in the end, it turns out that it was the other way around all the time.",
+      "speaker": "Jim Bouton",
+      "context": "The celebrated closing line of his tell-all baseball memoir 'Ball Four,' as quoted in the book's Wikipedia entry.",
+      "real": true,
+      "source": {
+        "title": "Wikipedia — Ball Four",
+        "url": "https://en.wikipedia.org/wiki/Ball_Four",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I had a stretch — maybe three weeks around the French Open in 2015 — where I was hitting the ball as well as I ever have in my life and losing anyway. Which, if you want a genuinely confusing experience, I recommend it. You start to think the sport has a sense of humor.",
+      "speaker": "Andy Murray",
+      "context": "The Tennis Podcast, recorded on-site at Roland Garros, June 2015",
+      "real": false,
+      "fake_note": "I made this one up — Murray's dry, slightly exasperated humor and his tendency to find the absurdity in his own suffering are well-documented, and 'the sport has a sense of humor' is exactly the kind of resigned observation he makes. The tell is that the anecdote is a little too neatly packaged even for Murray's wit."
+    },
+    {
+      "id": "q4",
+      "text": "My dad used to say that if you can't make a free throw when the gym is empty, you have no business complaining about missing one when it's full. I used to hate that. Now I say it to my own guys and they look at me exactly the same way I looked at him.",
+      "speaker": "Dawn Staley",
+      "context": "SEC Media Days, Charlotte, North Carolina, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Staley frequently credits her Philadelphia upbringing and family lessons in her public remarks, and the cyclical 'I resented it, now I repeat it' structure fits her coaching voice perfectly. The faint giveaway is the quote is slightly more aphoristic than her usual concrete, player-specific language."
+    },
+    {
+      "id": "q5",
+      "text": "People always ask me what I was thinking on that last drive and honestly I wasn't thinking about anything clean. It was just — get to the edge, find a crease, don't fall. My brain goes pretty quiet in those moments, which probably says something about me I'd rather not examine too closely.",
+      "speaker": "Marshawn Lynch",
+      "context": "Interview with Graham Bensinger, In Depth with Graham Bensinger, aired February 2018",
+      "real": false,
+      "fake_note": "I made this one up — Marshawn's self-deprecating deflection and 'don't ask me to articulate it' energy are completely on-brand, and the phrase 'says something about me I'd rather not examine' sounds exactly like him talking around his own psychology. The giveaway is that he's slightly too reflective and too long in the answer; real Marshawn usually cuts it shorter."
+    },
+    {
+      "id": "q6",
+      "text": "Because there is always some kid who may be seeing me for the first time. I owe him my best.",
+      "speaker": "Joe DiMaggio",
+      "context": "Explaining why he always played so hard, even in meaningless late-season games, on the PBS American Experience profile.",
+      "real": true,
+      "source": {
+        "title": "PBS American Experience — Joe DiMaggio",
+        "url": "https://www.pbs.org/wgbh/americanexperience/features/dimaggio-joe-dimaggio/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-19",
+  "edition": 57,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My grandfather used to hum while he worked — not a real song, just a sound — and I think about that more than I think about most records I've actually studied. That hum was completely unbothered. It wasn't trying to be anything.",
+      "speaker": "Esperanza Spalding",
+      "context": "Interview with DownBeat Magazine, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Spalding regularly draws on personal family history and childhood memory when explaining her musical philosophy, and her real interviews have this exact reflective, slightly poetic texture. The subtle giveaway is that the anecdote is almost too perfectly formed — her real digressions tend to go longer and stranger before landing."
+    },
+    {
+      "id": "q2",
+      "text": "When I was learning to produce, I kept buying gear I couldn't afford because I thought the gear was the answer. It took me embarrassingly long to figure out that the guy who made the beat I was obsessed with probably made it on something I already had.",
+      "speaker": "Timbaland",
+      "context": "Masterclass promotional interview featured in Rolling Stone, February 2022",
+      "real": false,
+      "fake_note": "I made this one up — Timbaland has given several interviews about his early-career hustle and the gear-versus-talent question, and this self-deprecating framing fits his established storytelling mode. The giveaway is 'embarrassingly long' — his real confessions about learning tend to be delivered with more bravado than embarrassment."
+    },
+    {
+      "id": "q3",
+      "text": "I think, actually, I'd be more successful if I was OK wearing a muzzle.",
+      "speaker": "Chappell Roan",
+      "context": "In a January 2025 BBC interview after being named BBC Sound of 2025, on how her outspokenness affects her career.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter — Chappell Roan: \"I'd Be More Successful If I Was OK Wearing a Muzzle\"",
+        "url": "https://www.hollywoodreporter.com/music/music-news/chappell-roan-muzzle-diva-music-grammys-bbc-interview-1236112948/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I played 'Superstition' for my kid — she's six — and she just started moving immediately, no context, no explanation, just her body responding to it. I think about that all the time when I'm working. Like, does this do that? Because if it doesn't, something's probably wrong.",
+      "speaker": "Bruno Mars",
+      "context": "Interview with Zane Lowe on Apple Music 1, released January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Mars has cited Stevie Wonder repeatedly as a foundational influence and his real interviews frequently reference physicality and rhythm as the ultimate tests of a track. The giveaway is the child — Mars keeps his private life quite guarded, so invoking a specific family moment like this is slightly out of character."
+    },
+    {
+      "id": "q5",
+      "text": "I am one of the funniest people alive, people have to understand that",
+      "speaker": "Vince Staples",
+      "context": "In a 2015 Howl & Echoes interview, responding to praise about his deadpan tweets.",
+      "real": true,
+      "source": {
+        "title": "Howl & Echoes — INTERVIEW: Vince Staples - \"I am one of the funniest people alive, people have to understand that\"",
+        "url": "https://howlandechoes.com/2015/12/interview-vince-staples-one-funniest-people-alive-people-understand/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I remember sitting in the back of the tour bus somewhere between Phoenix and Albuquerque, and I had this cassette of Joni Mitchell's 'Blue' that I'd borrowed from a friend and never returned — I think that's when I understood what it meant to actually confess something in a song. Like, you don't hide it in a metaphor, you just put it right there.",
+      "speaker": "Phoebe Bridgers",
+      "context": "Interview with NPR's All Songs Considered, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Bridgers genuinely references Joni Mitchell and confessional songwriting constantly, and the stolen-cassette detail feels exactly like her self-deprecating, specific storytelling. The subtle giveaway is the cassette: Bridgers is young enough that a cassette would be a slightly odd format for her to be carrying around casually on tour."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-19",
+  "edition": 62,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Don't shake it. You swirl it. There's a difference, and it matters.",
+      "speaker": "Sideways (2004)",
+      "context": "Miles correcting Jack's wine-pouring technique at a vineyard tasting room",
+      "real": false,
+      "fake_note": "I made this one up — Miles's pedantic, wounded self-importance around wine is a running vein through the film, and this reads like a natural outburst from him. The giveaway is that it's almost too compact and teachable; Miles usually buries his corrections in longer, more self-indulgent speeches."
+    },
+    {
+      "id": "q2",
+      "text": "You need to call it. I can't call it for you. It wouldn't be fair.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Anton Chigurh (Javier Bardem) to the gas station proprietor during the coin-toss scene, pressing him to call heads or tails for his life.",
+      "real": true,
+      "source": {
+        "title": "No Country for Old Men (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/No_Country_for_Old_Men_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "She's not lost. She knows exactly where she is. That's what worries me.",
+      "speaker": "Rear Window (1954)",
+      "context": "Jefferies watching a neighbor through binoculars, speaking to Lisa",
+      "real": false,
+      "fake_note": "I made this one up — the dry, half-amused suspicion fits Jefferies's voyeuristic commentary throughout the film. The giveaway is a subtle rhythmic polish; Hitchcock's dialogue of this era tends to be slightly more conversational and less epigrammatic."
+    },
+    {
+      "id": "q4",
+      "text": "You keep saying that word like it's supposed to mean something to me.",
+      "speaker": "Chinatown (1974)",
+      "context": "Gittes deflecting during a tense confrontation with a client",
+      "real": false,
+      "fake_note": "I made this one up — Gittes's weary, sardonic pushback is right in keeping with his character's voice and the film's hardboiled register. The giveaway is a slight vagueness; real Chinatown lines tend to land on something more concrete and unsettling."
+    },
+    {
+      "id": "q5",
+      "text": "This town deserves a better class of criminal, and I'm gonna give it to 'em.",
+      "speaker": "The Dark Knight (2008)",
+      "context": "The Joker (Heath Ledger) addressing Gotham's mob bosses during his hostile takeover of their operation.",
+      "real": true,
+      "source": {
+        "title": "The Dark Knight (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Dark_Knight_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Don't ever let yourself get attached to anything you are not willing to walk out on in 30 seconds flat if you feel the heat around the corner.",
+      "speaker": "Heat (1995)",
+      "context": "Master thief Neil McCauley (Robert De Niro) explaining his creed to detective Vincent Hanna across a diner table.",
+      "real": true,
+      "source": {
+        "title": "Heat (1995 film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Heat_(1995_film)",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-19",
+  "edition": 53,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The thing about infrastructure bills is that everyone loves bridges in the abstract. The moment you tell someone which bridge, you have made an enemy.",
+      "speaker": "Pete Buttigieg",
+      "context": "Interview with Noel King on NPR's Morning Edition, February 2022",
+      "real": false,
+      "fake_note": "I made this one up — Buttigieg frequently uses policy-specific, almost academic humor, and bridges are literally his portfolio as Transportation Secretary. The giveaway is that it lands a little too neatly — his real remarks are usually slightly longer and more hedged before arriving at the punchline."
+    },
+    {
+      "id": "q2",
+      "text": "I was criticized for being too much concerned with the average Canadians. I can't help that; I am one of them!",
+      "speaker": "John Diefenbaker",
+      "context": "Canada's 13th prime minister, disarmingly turning a criticism into a humble admission about his own ordinariness.",
+      "real": true,
+      "source": {
+        "title": "John Diefenbaker - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Diefenbaker",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I did a town hall in rural Iowa once where a man stood up and asked me — very politely, very sincerely — whether the Senate had ever considered meeting somewhere else, like maybe rotating. I said I'd take it under advisement. I have not taken it under advisement.",
+      "speaker": "Amy Klobuchar",
+      "context": "Remarks at the Gridiron Club Dinner, Washington D.C., March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar's humor is well-documented: Midwestern, self-aware, and built on specific constituent anecdotes exactly like this one. The giveaway is the punchline construction — she usually lets the audience do a bit more of the work rather than spelling out the callback."
+    },
+    {
+      "id": "q4",
+      "text": "I've read every word of the tax code that applies to small businesses in this state, and I'll be honest with you — so has my accountant, and we still disagree on page forty-something. That's not a feature.",
+      "speaker": "Bernie Sanders",
+      "context": "Town hall meeting in Burlington, Vermont, hosted by Seven Days newspaper, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Bernie genuinely rails against tax complexity in plain, exasperated language, and the self-deprecating accountant detail sounds exactly like him. The subtle giveaway is 'page forty-something': Bernie is usually more specific when citing policy documents, not vaguely approximate."
+    },
+    {
+      "id": "q5",
+      "text": "I have given the same answer about my future plans in seventeen different ways over the past year, and reporters are still asking it. I respect that. I genuinely do. I just don't have a better answer than the ones I've already given.",
+      "speaker": "Mitt Romney",
+      "context": "Exit interview with Ashley Parker, The Washington Post, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Romney's post-2012 public persona is notably candid and a little weary, and he's given many retirement-adjacent interviews in exactly this register. The giveaway is the 'seventeen' — a specific number Romney wouldn't use casually; he'd more likely say 'many times' or 'more times than I'd like.'"
+    },
+    {
+      "id": "q6",
+      "text": "To suggest that Trump surrounds himself with attractive women –– yeah, I think he's done that his whole life",
+      "speaker": "Jesse Watters",
+      "context": "Fox News host Jesse Watters on Fox's 'The...' commenting on Sen. Ossoff's quip about Natalie Harp",
+      "real": true,
+      "source": {
+        "title": "Politics — Watters: Trump has said 'so much more sleazy things' than Ossoff’s quip",
+        "url": "https://thehill.com/homenews/media/6036899-fox-watters-trump-ossoff-sleazy-quip/",
+        "date": "2026-08-19"
+      }
+    }
+  ]
+}
