@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-20",
+  "edition": 57,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I did a show in Cincinnati once — full house, roaring, everything going great — and I look down and my fly has been open since the hotel lobby. The whole damn drive over. I said to the audience, 'Everything you need to know about me is right there. Front row got the best seats in the house.'",
+      "speaker": "Sam Kinison",
+      "context": "Raw footage, Q&A segment, Dangerfield's Comedy Club, New York, recorded for VH1 Behind the Music special, 1991",
+      "real": false,
+      "fake_note": "I made this one up — Kinison's loud, self-roasting energy and his chaotic touring stories are very on-brand. The giveaway is the punchline being a little too clean and audience-friendly for Kinison, who would typically have screamed it and taken it somewhere far more extreme."
+    },
+    {
+      "id": "q2",
+      "text": "I'll tell you what, the rider at Knebworth said 'no brown M&Ms' and I thought, brilliant, finally someone's read our contract. Then I walked backstage and there's a fucking fruit bowl. A FRUIT BOWL. I threw it at the promoter's assistant and asked her if she'd like to shove a banana where the sun don't shine. She laughed. We got on great after that.",
+      "speaker": "John Bonham",
+      "context": "Melody Maker, backstage interview, Knebworth Festival, August 1979",
+      "real": false,
+      "fake_note": "I made this one up — Bonham's volatile, earthy temper and Knebworth '79 are both real, so the setting holds up. The giveaway is the 'no brown M&Ms' rider detail, which was Van Halen's clause, not Led Zeppelin's."
+    },
+    {
+      "id": "q3",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore.",
+      "speaker": "Bob Saget",
+      "context": "Bob Saget — the wholesome 'Full House' dad whose real-life stand-up was famously filthy — on fully embracing his profane comedy persona, in a Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "There are 400,000 words in the English language, and there are seven of them that you can't say on television. What a ratio that is. 399,993 to seven. They must really be bad.",
+      "speaker": "George Carlin",
+      "context": "Carlin's landmark \"Seven Words You Can Never Say on Television\" routine from his 1972 album Class Clown, listing the broadcast-banned words verbatim and reveling in saying them all out loud.",
+      "real": true,
+      "source": {
+        "title": "The Big Seven Words — George Carlin",
+        "url": "https://www.erenkrantz.com/Humor/SevenDirtyWords.shtml",
+        "date": "1972"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I had a guy come up to me in Houston and say, 'Man, your last album changed my life.' I said, 'Good, now go home and change your shirt.' I'm not trying to be a dick. I just don't know what else to say to that. Changed your life. My life is a series of missed flights and arguments with soundmen. You sure you want that?",
+      "speaker": "Ol' Dirty Bastard",
+      "context": "Vibe Magazine, cover story interview, Houston, Texas, March 1999",
+      "real": false,
+      "fake_note": "I made this one up — ODB's erratic, funny, totally unfiltered public persona makes this voice feel right, and Vibe cover stories gave artists real room to ramble. The giveaway is the unexpected self-deprecation; ODB was more likely to brag wildly than to undercut himself this tidily."
+    },
+    {
+      "id": "q6",
+      "text": "The reason we first started strumming guitars was because we wanted women and lots of them. And their daughters.",
+      "speaker": "Gene Simmons",
+      "context": "KISS bassist Gene Simmons, on The Oprah Winfrey Show in 1988, dismissing the idea that rock stars pick up guitars for lofty reasons — it was about groupies.",
+      "real": true,
+      "source": {
+        "title": "Gene Simmons Called KISS Groupie Hookups 'More Honest' Than Real Relationships (Best Life)",
+        "url": "https://bestlifeonline.com/gene-simmons-kiss-groupies/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

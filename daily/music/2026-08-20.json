@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-20",
+  "edition": 58,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When we did 'Killing Me Softly,' nobody in that room thought it was going to be the song. We'd cut like four or five things that week. I remember thinking the vocal was good but I wasn't sure I loved the arrangement yet. You just don't know. You really don't.",
+      "speaker": "Roberta Flack",
+      "context": "Acceptance remarks at the Grammy Lifetime Achievement Award ceremony, televised on CBS, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Roberta has discussed the making of 'Killing Me Softly' many times and always with this kind of unassuming honesty about not recognizing a classic in the moment. The tell is the slightly over-repeated 'You just don't know. You really don't.' — a hair too tidy as a closing beat."
+    },
+    {
+      "id": "q2",
+      "text": "It's a lot like being a chef, in a way. You're trying to create food that satisfies your taste, but with a good awareness that there are people whose tastes are for more salt, or more spice — or for less.",
+      "speaker": "Susan Rogers",
+      "context": "Prince's former recording engineer describing the producer's balancing act, in a Grammy.com interview about her career and her book.",
+      "real": true,
+      "source": {
+        "title": "Grammy.com — Producer & Engineer Susan Rogers Worked With Prince And Barenaked Ladies",
+        "url": "https://www.grammy.com/news/susan-rogers-producers-engineers-wing-interview-prince-barenaked-ladies-berklee-college-of-music/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've played arenas where you can feel the sound coming back at you off the far wall and you start hearing yourself like a stranger. It's disorienting in a way that I've never fully gotten used to. Some nights it makes me better. Some nights I'm just chasing the echo.",
+      "speaker": "Bruce Springsteen",
+      "context": "Extended Q&A session at the South by Southwest Music Conference keynote, Austin, Texas, March 2012",
+      "real": false,
+      "fake_note": "I made this one up — Bruce regularly talks about the physical and psychological experience of live performance in exactly this blue-collar-poet register. The giveaway is 'chasing the echo' — a touch too literary as a closing image for unrehearsed speech, even from him."
+    },
+    {
+      "id": "q4",
+      "text": "Gluttony and lust – y'know, Caligula vibes! What else is there? I've been slothful, definitely. I've ticked the wrath, greed and heresy boxes too.",
+      "speaker": "Hozier",
+      "context": "In a Hotpress interview about his concept album Unreal Unearth, asked which of the seven deadly sins were the most fun to commit.",
+      "real": true,
+      "source": {
+        "title": "Hotpress — 12 Interviews of Xmas: Hozier on Irishness, Deadly Sins, Joni Mitchell and Unreal Unearth",
+        "url": "https://www.hotpress.com/music/12-interviews-of-xmas-hozier-on-irishness-deadly-sins-joni-mitchell-and-unreal-unearth-22999788",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My mother used to say I was singing before I was talking, and I always thought that was just a nice thing mothers say. Then she found a cassette from when I was maybe two and a half, and honestly — she wasn't wrong. It was on pitch. Scared me a little.",
+      "speaker": "Celine Dion",
+      "context": "Sit-down interview on The Graham Norton Show, BBC One, broadcast October 2013",
+      "real": false,
+      "fake_note": "I made this one up — Celine often references her childhood, her mother, and early signs of her gift, and she has the warmth and self-amused delivery this quote requires. The slight tell is 'Scared me a little' — a touch more dry than her usual effusive register."
+    },
+    {
+      "id": "q6",
+      "text": "People think I'm being humble when I say I don't know what key I'm playing in sometimes. I genuinely don't. The feeling just has a location and I go there. My theory teacher would probably still like to have a word with me.",
+      "speaker": "Erykah Badu",
+      "context": "Conversation with Questlove on the Questlove Supreme podcast, aired on Pandora, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Erykah really does discuss intuitive musicianship over formal theory and has a dry self-deprecating wit that fits perfectly here. The slight giveaway is 'has a location' — a little too poetic and composed for completely spontaneous speech."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-20",
+  "edition": 66,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I had about two bites because it was straight up chocolate cake, and I can't do that for breakfast.",
+      "speaker": "Katie Ledecky",
+      "context": "Swimmer describing trying the 'infamous' chocolate muffins in the 2024 Paris Olympic Village, as quoted by AOL/People",
+      "real": true,
+      "source": {
+        "title": "Katie Ledecky Says She Tried the 'Infamous' Chocolate Muffins at 2024 Olympics: 'I Can't Do That for Breakfast'",
+        "url": "https://www.aol.com/katie-ledecky-says-she-tried-140000011.html",
+        "date": "2024-08-08"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've probably spent more time thinking about the physics of a serve than is reasonable for someone who has never once been mistaken for a physicist. But at some point the mechanics just have to disappear and you have to trust whatever is left.",
+      "speaker": "Serena Williams",
+      "context": "Keynote conversation at the Aspen Ideas Festival, Aspen, Colorado, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Serena has discussed the technical and mental dimensions of her serve extensively, and her speaking style at non-tennis events leans thoughtful and slightly self-aware like this. The tell is the 'whatever is left' ending, which is just a hair too philosophical and unresolved for how she typically closes a thought."
+    },
+    {
+      "id": "q3",
+      "text": "The disappointment of manhood succeeds to the delusion of youth: let us hope that the heritage of old age is not despair.",
+      "speaker": "Benjamin Disraeli",
+      "context": "The British Prime Minister and novelist, in a candidly reflective aside on the disappointments of the ages of life (from his fiction, Book VIII, Chapter 4).",
+      "real": true,
+      "source": {
+        "title": "Benjamin Disraeli - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "There was a period where I was reading every book about the Manhattan Project I could find — not because I was writing anything, just because I couldn't stop thinking about what it must have felt like to know what you'd done the morning after.",
+      "speaker": "Christopher Nolan",
+      "context": "Q&A session following a Directors Guild of America screening of Oppenheimer, Los Angeles, July 2023",
+      "real": false,
+      "fake_note": "I made this one up — Nolan's Oppenheimer press tour was full of exactly this kind of ruminative, historically grounded reflection, and his reading habits are well documented. The giveaway is that 'the morning after' framing is a touch too literary-specific, whereas his real comments tend to anchor in the film's structural challenges rather than private emotional responses."
+    },
+    {
+      "id": "q5",
+      "text": "I don't think most people realize how boring a lot of space actually is. You're floating there and it's extraordinary for about forty-five minutes and then you're genuinely just looking for something to do with your hands.",
+      "speaker": "Scott Kelly",
+      "context": "Interview on NPR's Fresh Air with Terry Gross, discussing Endurance, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Kelly's memoir and press tour were full of exactly this kind of deadpan, anti-romantic honesty about long-duration spaceflight, and Terry Gross drew out these kinds of admissions. The giveaway is 'something to do with your hands,' which is a comic specificity Kelly never quite uses — his real dry humor tends to land on tasks and logistics rather than body-language details."
+    },
+    {
+      "id": "q6",
+      "text": "I thought I looked real cute in my uniform, and then I heard a boy yell from the bleachers, 'Make that basket, bird legs.' And my greatest fear is that same guy is somewhere out there in the audience tonight, and he's going to cut me down to size.",
+      "speaker": "Ann Richards",
+      "context": "The Texas governor opening her celebrated 1988 Democratic National Convention keynote with a self-deprecating story about her eighth-grade basketball days.",
+      "real": true,
+      "source": {
+        "title": "Ann Richards, DNC keynote address, 1988 - Speakola",
+        "url": "https://speakola.com/political/ann-richards-dnc-keynote-1988",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

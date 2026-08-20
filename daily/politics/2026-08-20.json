@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-20",
+  "edition": 54,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I was governor, somebody asked me what my greatest legislative achievement was. I said, 'Getting the legislature to adjourn on time.' They thought I was joking. I was not entirely joking.",
+      "speaker": "Mike Huckabee",
+      "context": "Panel discussion at the Conservative Political Action Conference, National Harbor, Maryland, February 2015",
+      "real": false,
+      "fake_note": "I made this one up — Huckabee's folksy, self-aware humor about the frustrations of governance is completely consistent with his public persona, and griping about legislative scheduling is too mundane to invent. The giveaway is the rhythm — it's slightly too polished for genuine off-the-cuff."
+    },
+    {
+      "id": "q2",
+      "text": "I've been in the Senate long enough to have voted on three separate bills that, as far as I can tell, were named after the same river. Different rivers each time, apparently. Geography is not our strong suit.",
+      "speaker": "Patrick Leahy",
+      "context": "Farewell address at the Vermont Press Association annual dinner, Burlington, Vermont, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Leahy's dry institutional humor about Senate dysfunction is perfectly in character for a farewell moment, and poking fun at the naming of legislation is genuinely a long-running Washington joke. The subtle tell is that this level of self-deprecating wit is slightly sharper than his documented public speaking style."
+    },
+    {
+      "id": "q3",
+      "text": "I have read every farm bill since 1985 and I will say this — they do not get shorter. They do not get shorter, and they do not get simpler, and I have made peace with that.",
+      "speaker": "Debbie Stabenow",
+      "context": "Keynote remarks at the American Farm Bureau Federation annual convention, San Juan, Puerto Rico, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Stabenow as longtime Senate Agriculture Committee chair talking about farm bills with fond exasperation is absolutely her wheelhouse, and this kind of insider humor about legislative complexity plays perfectly to an ag industry audience. The tell is the 1985 start date — specific enough to feel real but impossible to verify without checking."
+    },
+    {
+      "id": "q4",
+      "text": "I do not like broccoli. And I haven't liked it since I was a little kid, and my mother made me eat it. And I'm President of the United States, and I'm not going to eat any more broccoli.",
+      "speaker": "George H. W. Bush",
+      "context": "Bush's lighthearted declaration at his March 22, 1990 news conference, when asked whether he had 'lost the broccoli vote' after it emerged he'd banned broccoli from Air Force One.",
+      "real": true,
+      "source": {
+        "title": "George H.W. Bush: Hater of Broccoli - Smart Politics (University of Minnesota Libraries)",
+        "url": "https://smartpolitics.lib.umn.edu/2013/07/09/george-hw-bush-hater-of-brocco/",
+        "date": "1990-03-22"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I have sat in enough subcommittee hearings to know that the phrase 'this will only take a moment' is the single most optimistic sentence in the English language.",
+      "speaker": "Susan Collins",
+      "context": "Remarks at the Bipartisan Policy Center annual gala, Washington D.C., October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Collins's measured, slightly weary institutional humor about Senate process is completely plausible, and she's spoken at BPC events before. The giveaway is the phrase 'single most optimistic sentence in the English language' — a bit more rhetorical flair than her usual careful diction."
+    },
+    {
+      "id": "q6",
+      "text": "Nothing so dates a man as to decry the younger generation.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The Democratic statesman, in a speech at the University of Wisconsin, Madison (8 October 1952) - a dry, self-aware needle at those who complain about the young.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}
