@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-21",
+  "edition": 58,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone in the crowd threw a bra at me in Hamburg. Size double-D. I put it on over the shirt, finished the set. The audience lost their minds. That's showbusiness, mate — you work with what you've got.",
+      "speaker": "Freddie Mercury",
+      "context": "Sounds magazine, UK, 'Queen: The World Tour' behind-the-scenes feature, written by Sylvie Simmons, July 1982",
+      "real": false,
+      "fake_note": "I made this one up — Freddie's theatrical relationship with audience interaction and his ability to turn any random moment into performance are completely in character, and the Hamburg setting fits Queen's touring history. The giveaway is 'that's showbusiness, mate' — the word 'mate' sat a little awkwardly with Freddie's actual speech patterns, which were more precise and less blokey."
+    },
+    {
+      "id": "q2",
+      "text": "Cheating is a man, he sneaks out of his own house to go, like, find some happiness behind your back so your feelings aren't hurt. Cheating is for you.",
+      "speaker": "Patrice O'Neal",
+      "context": "From the late, notoriously unfiltered comedian Patrice O'Neal's Comedy Central special 'Elephant in the Room' (2011) — his provocative, deadpan bit reframing male infidelity as an act of consideration.",
+      "real": true,
+      "source": {
+        "title": "Patrice O'Neal: Elephant in the Room (2011) — Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/patrice-oneal-elephant-in-the-room-2011-full-transcript/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Look, I've woken up in some interesting zip codes. Not gonna go into specifics. But I will say that Houston in August, wearing only one boot and a smile, is not the triumphant image I had in mind when I started this band.",
+      "speaker": "Bon Scott",
+      "context": "RAM (Rock Australia Magazine) feature interview, Sydney, March 1978, conducted by Anthony O'Grady during the Powerage recording break",
+      "real": false,
+      "fake_note": "I made this one up — Bon Scott's bawdy, self-mocking tour stories were a genuine fixture of his press in the late '70s and his voice here — laconic and filthy with an undercurrent of self-awareness — matches well. The giveaway is 'not the triumphant image I had in mind,' which is a shade too constructed and wry; Bon's humour was looser and more throwaway than that."
+    },
+    {
+      "id": "q4",
+      "text": "People ask me what's the secret to a long marriage. I say, separate bathrooms and a very selective memory. Phyllis would've agreed, except she'd have said the memory part was all on her side, which — fair enough, honestly.",
+      "speaker": "Rodney Dangerfield",
+      "context": "The Late Show with David Letterman, NBC Studios, New York, November 14, 1991",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield's self-deprecating marital comedy about his relationship with Phyllis was a real staple of his act, and the rhythm of this lands squarely in his wheelhouse. The giveaway is the closing 'fair enough, honestly' — a bit too reflective and even-handed for Rodney, who always made sure the joke ended on his own embarrassment, not a mutual concession."
+    },
+    {
+      "id": "q5",
+      "text": "Whiskey is a great drink. Now whiskey's very classy and adult, till you shit your pants. But other than that, it is great.",
+      "speaker": "Dave Attell",
+      "context": "From filthy, drink-soaked comedian Dave Attell's stand-up special 'Road Work' (2014) — Attell (the 'Insomniac' host) riffing on booze in his trademark crude style.",
+      "real": true,
+      "source": {
+        "title": "Dave Attell: Road Work (2014) — Full Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/dave-attell-road-work-transcript/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Some journalist called my act 'blue.' I said, 'Honey, blue is the sky. What I do is more of a deep, rich mahogany.' She did not print that. I don't know why. That's the best thing I said all week.",
+      "speaker": "Phyllis Diller",
+      "context": "Fresh Air with Terry Gross, NPR, recorded at WHYY Philadelphia, broadcast April 3, 1992",
+      "real": false,
+      "fake_note": "I made this one up — Diller's self-conscious play on her own 'blue comedian' reputation and her habit of quoting her own best lines back at journalists are both very real. The giveaway is 'deep, rich mahogany' — a shade too visually specific and mid-2000s-meme-adjacent in flavour for 1992; the colour metaphor feels like it's from a slightly later comedic vocabulary."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-21",
+  "edition": 55,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I think this is the most extraordinary collection of talent, of human knowledge, that has ever been gathered together at the White House, with the possible exception of when Thomas Jefferson dined alone.",
+      "speaker": "John F. Kennedy",
+      "context": "Opening of President Kennedy's toast at a dinner honoring Western Hemisphere Nobel Prize winners, April 29, 1962 — a famously gracious, witty compliment to the assembled laureates by invoking Jefferson's solitary genius.",
+      "real": true,
+      "source": {
+        "title": "Remarks at a Dinner Honoring Nobel Prize Winners of the Western Hemisphere | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-dinner-honoring-nobel-prize-winners-the-western-hemisphere",
+        "date": "1962-04-29"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "The last time I was this high, I was trying to decide on my major.",
+      "speaker": "Barack Obama",
+      "context": "Self-deprecating joke at his final White House Correspondents' Dinner on April 30, 2016, riffing on how his approval ratings kept climbing in his last year in office ('in my final year, my approval ratings keep going up').",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at the White House Correspondents' Dinner | whitehouse.gov (Obama White House Archives)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2016/05/01/remarks-president-white-house-correspondents-dinner/",
+        "date": "2016-04-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The very first town hall I ever ran, I showed up with a 40-slide presentation. Forty. My communications director found me beforehand and just said, 'Congressman, they came to talk, not to attend a university lecture.' I cut it to six slides. Six was still too many.",
+      "speaker": "Ro Khanna",
+      "context": "Panel discussion at the South by Southwest Interactive policy track, Austin, Texas, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Khanna's tech-world sensibility and self-aware intellectual streak make the overprepared-professor joke feel completely authentic. The giveaway is the number of slides; Khanna would likely leave the quantity vague in real life to avoid the detail sounding rehearsed."
+    },
+    {
+      "id": "q4",
+      "text": "I'll be honest with you — when they handed me the full infrastructure bill, my first thought was, okay, who do I call about getting a bigger desk? Because this thing was not fitting anywhere near my current workspace.",
+      "speaker": "Pete Buttigieg",
+      "context": "Remarks at a Q&A session following his keynote address at the National League of Cities Congressional City Conference, Washington D.C., March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Pete's self-deprecating, slightly nerdy humor about the logistics of governing is completely on-brand, and the desk joke is exactly the kind of mundane-specific aside he reaches for. The subtle giveaway is that Pete would more likely frame the scale of the bill in policy terms first, not office-furniture terms."
+    },
+    {
+      "id": "q5",
+      "text": "I once had a constituent stop me outside a grocery store to tell me the pothole in front of his house had been there longer than his marriage. So I asked how long he'd been married. He said nineteen years. That pothole got fixed.",
+      "speaker": "Chris Christie",
+      "context": "Standup-style remarks delivered at the New Jersey Press Association's annual awards dinner, Trenton, New Jersey, June 2018",
+      "real": false,
+      "fake_note": "I made this one up — Christie's constituent-storytelling style, his love of the New Jersey retail-politics anecdote, and his comic timing are all genuine, and the punchline lands exactly the way his best off-the-cuff lines do. The giveaway is the neat resolution; real Christie stories usually end with the grievance still half-unresolved for comedic effect."
+    },
+    {
+      "id": "q6",
+      "text": "Someone on my staff printed out every amendment that was proposed to that bill and stacked them on a table to show me how thick it was. I told them that is genuinely the most discouraging use of paper I have ever witnessed in my career.",
+      "speaker": "Mitch McConnell",
+      "context": "Interview with Hugh Hewitt on The Hugh Hewitt Show, broadcast on Salem Radio Network, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's dry, almost bloodless wit is hard to fake but this lands in exactly his register: no exclamation, no warmth, just a flat deadpan about process. The giveaway is McConnell rarely volunteers a vivid physical anecdote; he prefers procedural abstraction."
+    }
+  ]
+}

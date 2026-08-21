@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-21",
+  "edition": 67,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "How can you govern a country that has two hundred and forty-six varieties of cheese?",
+      "speaker": "Charles de Gaulle",
+      "context": "The French president and WWII Free France leader, expressing wry exasperation at the ungovernability of France; recorded in Ernest Mignon's 1962 collection Les Mots du General.",
+      "real": true,
+      "source": {
+        "title": "Charles de Gaulle - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Charles_de_Gaulle",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I went through a phase where I was trying to be cooler than I am, and it took probably three albums before I admitted I'm just not that guy. Once you stop trying to be the guy, something loosens up and the songs come out stranger and better.",
+      "speaker": "Beck",
+      "context": "Cover interview with MOJO Magazine, issue 342, May 2022",
+      "real": false,
+      "fake_note": "I made this one up — Beck talks about creative identity and the pressure to fit a genre with exactly this kind of candid, slightly philosophical looseness. The giveaway is 'stranger and better,' which is a bit too quotable and tidy for Beck, who usually meanders more genuinely when he gets to this topic."
+    },
+    {
+      "id": "q3",
+      "text": "Humanity is about to be handed almost unimaginable power, and it is deeply unclear whether our social, political, and technological systems possess the maturity to wield it.",
+      "speaker": "Dario Amodei",
+      "context": "Anthropic CEO, on the arrival of transformative AI",
+      "real": true,
+      "source": {
+        "title": "TechRadar — Quote of the day: Dario Amodei on AI",
+        "url": "https://www.techradar.com/pro/quote-of-the-day-by-anthropic-ceo-dario-amodei-humanity-is-about-to-be-handed-almost-unimaginable-power-and-it-is-deeply-unclear-whether-we-possess-the-maturity-to-wield-it-warnings-on-the-looming-threat-of-beyond-human-ai",
+        "date": "2026-06-03"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "When I was writing A Beautiful Mind, the thing that terrified me wasn't the math — I knew I wasn't going to understand the math — it was whether I could make an audience feel the loneliness without them realizing that's what they were feeling.",
+      "speaker": "Ron Howard",
+      "context": "Masterclass panel discussion at the Tribeca Film Festival, New York, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Howard speaks in exactly this reflective, audience-first language about his films, and A Beautiful Mind is one he returns to often in interviews. The subtle tell is the self-deprecating math disclaimer, which sounds just a half-step too rehearsed for an off-the-cuff panel moment."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me what it's like to be the richest man in the world and honestly, the thing I notice most is that nobody tells you when you have spinach in your teeth anymore.",
+      "speaker": "Elon Musk",
+      "context": "Appearance on the All-In Podcast, recorded live at the All-In Summit, Miami, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Musk frequently makes self-deprecating, oddball observations in podcast settings, so the cadence fits. The giveaway for sharp players is that the punchline is slightly too polished and clean for Musk, who tends to ramble into his jokes rather than landing them that neatly."
+    },
+    {
+      "id": "q6",
+      "text": "My favorite was The Scrunchie Chronicles: 112 Countries and It's Still All about My Hair",
+      "speaker": "Hillary Clinton",
+      "context": "Joking about a rejected memoir title, poking fun at coverage of her hair, in 2014",
+      "real": true,
+      "source": {
+        "title": "The Week — Hillary Clinton jokes she considered calling her memoir The Scrunchie Chronicles",
+        "url": "https://theweek.com/speedreads/452686/hillary-clinton-jokes-considered-calling-memoir-scrunchie-chronicles",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

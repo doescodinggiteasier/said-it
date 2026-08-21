@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-21",
+  "edition": 59,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Gospel is where every other American genre comes from whether people want to say so or not. You strip away the clothes and the setting and you're standing in a church every time. That's not my opinion, that's just musicology.",
+      "speaker": "Mavis Staples",
+      "context": "SXSW keynote conversation with Ann Powers, Austin, Texas, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Mavis has been making the case for gospel as the root of American popular music her entire career, and the slightly stubborn, matter-of-fact closing line sounds exactly like her. The giveaway is the word 'musicology' — Mavis would almost certainly say the same thing but land it in plainer, more personal language."
+    },
+    {
+      "id": "q2",
+      "text": "I remember the first time I heard a track I'd produced come back from mastering and I genuinely didn't recognize it. Like, who did this? And then I realized — oh, that's what I was trying to do the whole time. It just took someone else's ears to get there.",
+      "speaker": "Rick Rubin",
+      "context": "Broken Record podcast, episode with Malcolm Gladwell, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Rick regularly talks about the mystery of the production process and deferring to other perspectives, so this fits his philosophical, slightly detached style perfectly. The subtle giveaway is that he'd rarely admit needing someone else to realize his own vision; he usually frames it as the music knowing what it wants, not a person."
+    },
+    {
+      "id": "q3",
+      "text": "When I was young I studied classical music and Giuseppe Verdi has this wonderful quote: 'Good composers borrow, great composers steal.'",
+      "speaker": "Nile Rodgers",
+      "context": "The Chic guitarist and producer on how he views artists who borrow from his work, in an interview with The National.",
+      "real": true,
+      "source": {
+        "title": "The National — With Nile Rodgers, it is always bound to be Good Times",
+        "url": "https://www.thenationalnews.com/arts/with-nile-rodgers-it-is-always-bound-to-be-good-times-1.593775",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I don't demo. Never have. A demo is just a way of falling in love with something that isn't finished yet and then resisting everything that would make it better. I'd rather go in cold every time.",
+      "speaker": "Jack White",
+      "context": "Interview with Brian Hiatt, Rolling Stone, May 2022",
+      "real": false,
+      "fake_note": "I made this one up — Jack White's entire public philosophy around recording is about rawness, spontaneity, and avoiding overthinking, so an anti-demo stance fits him to a tee. The giveaway is how absolute and policy-like he makes it; Jack usually grounds these beliefs in a specific anecdote or memory rather than stating them as doctrine."
+    },
+    {
+      "id": "q5",
+      "text": "Give me your top five audience interactions you've ever seen at a gig",
+      "speaker": "Lily Allen",
+      "context": "Responding to critics of her lack of audience interaction on her 'West End Girl' tour",
+      "real": true,
+      "source": {
+        "title": "Music — Lily Allen responds to critics of her lack of audience interaction on ‘West End ",
+        "url": "https://www.nme.com/news/music/lily-allen-responds-to-critics-of-her-lack-of-audience-interaction-on-west-end-girl-tour-3963869?utm_source=rss&utm_medium=rss&utm_campaign=lily-allen-responds-to-critics-of-her-lack-of-audience-interaction-on-west-end-girl-tour",
+        "date": "2026-08-21"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "This is literally a dream come true. So if you want blood, you've got it",
+      "speaker": "Dave Grohl",
+      "context": "Announcing Foo Fighters stepping in as support act for AC/DC",
+      "real": true,
+      "source": {
+        "title": "Music — Foo Fighters to step in as support act for AC/DC for “one night only”: “This is ",
+        "url": "https://www.nme.com/news/music/foo-fighters-to-step-in-as-support-act-for-acdc-for-one-night-3963847?utm_source=rss&utm_medium=rss&utm_campaign=foo-fighters-to-step-in-as-support-act-for-acdc-for-one-night",
+        "date": "2026-08-21"
+      }
+    }
+  ]
+}

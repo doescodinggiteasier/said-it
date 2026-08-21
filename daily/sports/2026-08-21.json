@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-21",
+  "edition": 56,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Tom used to send film clips at like midnight sometimes — not games, random things, a wide receiver from the nineties, a drill from some college program nobody's heard of. You'd just get this clip and that was the whole message. No explanation.",
+      "speaker": "Rob Gronkowski",
+      "context": "The Pivot Podcast with Ryan Clark, Channing Crowder, and Fred Taylor, episode released September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Gronkowski has discussed Tom Brady's obsessive preparation in multiple real interviews, and the anecdote format with a slightly bewildered tone matches Gronk's documented storytelling voice perfectly. The giveaway is the 'no explanation' punchline, which is just a touch too neat for an off-the-cuff podcast story."
+    },
+    {
+      "id": "q2",
+      "text": "My dad used to make me watch tape of fullbacks. Not running backs — fullbacks. Just to understand what thankless work actually looked like. I think about that more than people would expect.",
+      "speaker": "LeBron James",
+      "context": "Interview with Dave McMenamin, ESPN.com feature on LeBron's basketball upbringing, published March 2019",
+      "real": false,
+      "fake_note": "I made this one up — LeBron genuinely credits his football background and his mentors, and he's known for studying positions other than his own. The tell is the specificity of 'fullbacks,' which is just a hair too cinematic for a real interview answer."
+    },
+    {
+      "id": "q3",
+      "text": "I play tennis for a living, even though I hate tennis, hate it with a dark and secret passion, and always have.",
+      "speaker": "Andre Agassi",
+      "context": "The startling opening confession of his memoir 'Open,' quoted in Sports Illustrated's coverage of the book.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — 'I Hate Tennis'",
+        "url": "https://www.si.com/more-sports/2009/10/30/andre-agassi-0",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "There's a version of me that retires after 2016 and goes fishing and nobody complains. I think about that guy sometimes. He's very well-rested.",
+      "speaker": "Serena Williams",
+      "context": "Vogue magazine profile, September 2021 issue, conducted during the US Open fortnight",
+      "real": false,
+      "fake_note": "I made this one up — Serena is known for self-aware humor and has openly discussed retirement timelines across many years, so a wry joke about an alternate, rested version of herself fits her documented voice perfectly. The giveaway is the specific year '2016,' which is plausible but just neat enough to be invented."
+    },
+    {
+      "id": "q5",
+      "text": "Baseball has been good to me since I quit trying to play it.",
+      "speaker": "Whitey Herzog",
+      "context": "The Hall of Fame manager reflecting on his so-so playing career versus his success as a skipper.",
+      "real": true,
+      "source": {
+        "title": "ESPN Page 2 — My 5 top quotes by Hall of Famer Whitey Herzog",
+        "url": "https://www.espn.ph/espn/page2/index?id=5408431",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Pressure is a privilege and champions adjust.",
+      "speaker": "Billie Jean King",
+      "context": "The line she says spontaneously came out of her mouth while motivating Lindsay Davenport as U.S. Fed Cup captain, recounted at Tennis.com.",
+      "real": true,
+      "source": {
+        "title": "Tennis.com — Billie Jean King shares origins of 'Pressure is a privilege'",
+        "url": "https://www.tennis.com/baseline/articles/billie-jean-king-shares-origins-of-favorite-famous-quote-pressure-is-a-privilege",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

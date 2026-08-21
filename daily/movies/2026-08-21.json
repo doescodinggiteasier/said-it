@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-21",
+  "edition": 64,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You can't handle the truth!",
+      "speaker": "A Few Good Men (1992)",
+      "context": "Col. Nathan Jessep (Jack Nicholson) erupts on the witness stand during cross-examination by Lt. Daniel Kaffee (Tom Cruise).",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "Everybody on this boat is either running from something or too dumb to know what they're headed toward.",
+      "speaker": "The African Queen (1951)",
+      "context": "Allnut grumbling to himself while steering the boat downriver",
+      "real": false,
+      "fake_note": "I made this one up — Bogart's Allnut is gruff and self-deprecating in exactly this register, and the river journey invites exactly this kind of muttered observation. The giveaway is that it's a touch too broadly philosophical for a man who usually keeps his complaints practical and immediate."
+    },
+    {
+      "id": "q3",
+      "text": "Back off, man. I'm a scientist.",
+      "speaker": "Ghostbusters (1984)",
+      "context": "Dr. Peter Venkman (Bill Murray) defends his research methods to a skeptical librarian.",
+      "real": true,
+      "source": {
+        "title": "Ghostbusters - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Ghostbusters",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I've been in this town three weeks and I've already learned more about people than I ever wanted to know.",
+      "speaker": "Midnight Cowboy (1969)",
+      "context": "Joe Buck in a phone booth, talking to someone back in Texas",
+      "real": false,
+      "fake_note": "I made this one up — Joe's wide-eyed disillusionment and the slightly wounded naïveté underneath his bravado are exactly what drives his arc, and this kind of confession over a phone call fits scenes in the film. The giveaway is that it wraps his experience a little too neatly; the real Joe tends to stumble over his own self-awareness rather than state it this directly."
+    },
+    {
+      "id": "q5",
+      "text": "You want to talk about loyalty? Come back when you've got something worth being loyal to.",
+      "speaker": "The Godfather (1972)",
+      "context": "Sonny Corleone dismissing a minor capo during a tense family meeting",
+      "real": false,
+      "fake_note": "I made this one up — Sonny's hot-headed impatience and casual contempt are pitch-perfect for him, and the rhythm matches the film's clipped, masculine dialogue. The subtle giveaway is that Sonny would more likely erupt than deliver a measured, almost philosophical challenge like this."
+    },
+    {
+      "id": "q6",
+      "text": "You wouldn't last one round, and you know it.",
+      "speaker": "Raging Bull (1980)",
+      "context": "Jake LaMotta taunting Joey during an argument at the gym",
+      "real": false,
+      "fake_note": "I made this one up — Jake constantly measures everyone around him in terms of toughness and fighting, and his provocations of Joey have exactly this blunt, contemptuous edge in the film. The giveaway is the restraint — Jake's real insults in this film usually come loaded with profanity and repetition, making this line notably cleaner than his actual voice."
+    }
+  ]
+}
