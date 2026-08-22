@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-22",
+  "edition": 68,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When the algorithm started driving more traffic than the front page, I thought, okay, this is a short-term problem we'll correct. That was not a short-term problem.",
+      "speaker": "Arianna Huffington",
+      "context": "Panel discussion at the Aspen Ideas Festival, Aspen, Colorado, June 2017",
+      "real": false,
+      "fake_note": "I made this one up — Huffington has been publicly reflective about digital media's unintended consequences since leaving HuffPost, and this kind of rueful self-correction is consistent with her post-2016 public voice. The giveaway is the vagueness of 'the algorithm' — in real remarks she tends to name specific platforms or metrics rather than leaving it that general."
+    },
+    {
+      "id": "q2",
+      "text": "Current observations hint that our standard model of the universe is incorrect.",
+      "speaker": "Julie McEnery",
+      "context": "Roman Space Telescope senior project scientist, NASA",
+      "real": true,
+      "source": {
+        "title": "Scientific American — Roman Space Telescope",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "It's a good thing to be laughed at. It's better than to be ignored.",
+      "speaker": "Harold Macmillan",
+      "context": "The British Prime Minister, in a handwritten note to the Postmaster General who wanted to take action against the satirical TV program 'That Was The Week That Was' - a disarmingly self-deprecating shrug at being mocked.",
+      "real": true,
+      "source": {
+        "title": "Harold Macmillan - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harold_Macmillan",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People ask me what it felt like to walk on the moon and honestly the answer that comes out every time still surprises me — it felt overdue. Like I was supposed to be there and the paperwork had just taken a really long time.",
+      "speaker": "Buzz Aldrin",
+      "context": "Remarks at the Smithsonian National Air and Space Museum gala dinner, Washington D.C., July 2009",
+      "real": false,
+      "fake_note": "I made this one up — Aldrin has always described the lunar surface with dry, almost bureaucratic detachment rather than awe, so 'the paperwork took a long time' fits his documented voice perfectly. The giveaway is that Aldrin's real accounts tend to lead with sensory detail — the color of the regolith, the silence — before any reflection."
+    },
+    {
+      "id": "q5",
+      "text": "My kids have seen every Marvel movie and none of them care that their dad was in one. My daughter asked me last week if I knew Spider-Man personally and when I said sort of, she completely lost interest.",
+      "speaker": "Jon Favreau",
+      "context": "Appearance on Conan O'Brien's podcast Conan O'Brien Needs a Friend, recorded November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Favreau regularly tells self-deprecating Hollywood-dad anecdotes, and his kids' total indifference to his Marvel credentials is exactly the kind of story he gravitates toward in casual interview settings. The giveaway is the phrasing 'sort of' — Favreau would more likely say something longer and more qualified there."
+    },
+    {
+      "id": "q6",
+      "text": "What would take Hubble 2,000 years to process, Roman can do in a year.",
+      "speaker": "Jared Isaacman",
+      "context": "NASA Administrator, on the Nancy Grace Roman Space Telescope",
+      "real": true,
+      "source": {
+        "title": "Scientific American — Roman Space Telescope",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-22",
+  "edition": 59,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask how I stay so sharp at seventy. I tell 'em: cigarettes, spite, and never once falling asleep before two in the goddamn morning. Doctor says I'm 'surprisingly functional.' I said, 'Doc, I'm not surprised at all.'",
+      "speaker": "George Burns",
+      "context": "Recorded during a sit-down interview with Larry King on CNN's 'Larry King Live,' broadcast February 1994",
+      "real": false,
+      "fake_note": "I made this one up — Burns was the king of longevity jokes at his own expense and the cigar-and-sharp-wit persona made self-deprecating health quips his signature. The subtle tell is 'cigarettes' — Burns's bit was always specifically about cigars, never cigarettes, so any quote dropping 'cigarettes' is flagged."
+    },
+    {
+      "id": "q2",
+      "text": "Marriage is a beautiful institution. I've been institutionalised twice. Both times the food was shit and I couldn't find the remote.",
+      "speaker": "Norm Macdonald",
+      "context": "Delivered as an off-script aside during a taping of Conan O'Brien's Late Night, NBC Studios, New York, October 1997",
+      "real": false,
+      "fake_note": "I made this one up — the anti-joke deadpan on 'institutionalised' is textbook Norm: he'd let a metaphor collapse into something mundane and specific. The tell is that Norm was famously careful to avoid personal domestic material; he'd riff on the idea of marriage, not his own."
+    },
+    {
+      "id": "q3",
+      "text": "I got pulled aside at the Playboy Mansion once — Hugh says, 'Rodney, you're making my guests uncomfortable.' I said, 'Hugh, your guests ARE my material, pal. You want comfortable, get a goldfish.'",
+      "speaker": "Rodney Dangerfield",
+      "context": "Performed as a crowd-work aside during his 1983 stand-up special taping at Caesar's Palace, Las Vegas, between his second and third set breaks",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield's rhythm is all short punches and 'pal,' and the Playboy Mansion was a genuine celebrity fixture of that era so it rings true. The giveaway is that Dangerfield almost never name-dropped Hefner directly in his act; his targets were abstract types, not specific rich friends."
+    },
+    {
+      "id": "q4",
+      "text": "People think touring is glamorous. Last Tuesday I woke up in Düsseldorf with a lampshade on my head, no recollection of the encore, and an invoice for a broken minibar fridge. That is your rock and roll reality, darling.",
+      "speaker": "Freddie Mercury",
+      "context": "Said during a candid segment on BBC Radio 1's 'Rock On' with Tommy Vance, recorded live backstage after Queen's Milton Keynes Bowl show, June 1982",
+      "real": false,
+      "fake_note": "I made this one up — 'darling' is pure Freddie, and the self-mocking specificity about Düsseldorf and a minibar invoice fits his theatrical but grounded humour. The give­away is the minibar fridge invoice detail, which is a very modern post-tour complaint; Freddie's real anecdotes in that era leaned toward parties, not itemised hotel damage."
+    },
+    {
+      "id": "q5",
+      "text": "I once asked a Jesuit priest what was the best short prayer he knew. He said, \"Fuck it,\" as in \"Fuck it; it's in God's hands.\"",
+      "speaker": "Anthony Hopkins",
+      "context": "Anthony Hopkins recounting a Jesuit priest's answer when he asked for the best short prayer — an anecdote he has told publicly, including on Inside the Actors Studio.",
+      "real": true,
+      "source": {
+        "title": "Inside the Actors Studio (IMDb quotes)",
+        "url": "https://www.imdb.com/name/nm0000164/quotes/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "And cigarettes gave me the patience to sit and write those thoughts down in a comedy-friendly format that you could understand. And alcohol gives me the courage to stand up here in front of you judgmental pricks and do it with a quarter million dollars worth of cameras in your face.",
+      "speaker": "Doug Stanhope",
+      "context": "From Doug Stanhope's 2007 stand-up special \"No Refunds\" — his defiant, self-celebrating defense of lifelong drug, cigarette, and alcohol use as the engine of his comedy.",
+      "real": true,
+      "source": {
+        "title": "Doug Stanhope: No Refunds (2007) — Full Transcript",
+        "url": "https://scrapsfromtheloft.com/comedy/doug-stanhope-no-refunds-transcript/",
+        "date": "2007"
+      }
+    }
+  ]
+}

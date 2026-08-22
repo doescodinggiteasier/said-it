@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-22",
+  "edition": 56,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'll be honest with you — I read the bill. All of it. And somewhere around page four hundred, I started genuinely wondering if I'd made different choices in life.",
+      "speaker": "Nancy Pelosi",
+      "context": "Interview with Politico's Anna Palmer at the 2018 Capitol Hill Club legislative briefing luncheon, Washington D.C.",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi's reputation for grinding through legislative detail makes this completely believable, and the self-deprecating exhaustion fits her dry, insider humor. The subtle giveaway is that she'd almost never publicly admit to second-guessing herself, even as a joke."
+    },
+    {
+      "id": "q2",
+      "text": "Well, I've raised a lot, and nobody knows what it is, but I will tell you it's about $850 million",
+      "speaker": "Donald Trump",
+      "context": "Trump speaking before boarding Air Force One about MAGA Inc. funds",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump says he'll spend 'a lot' of MAGA Inc. funds in midterms",
+        "url": "https://thehill.com/homenews/administration/6044628-trump-spending-maga-pac-midterms/",
+        "date": "2026-08-22"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've now been in 57 states? I think one left to go.",
+      "speaker": "Barack Obama",
+      "context": "Then a Democratic U.S. Senator from Illinois campaigning for president, Obama misspoke at a May 9, 2008 event in Beaverton, Oregon, after a long stretch of travel (he meant 47).",
+      "real": true,
+      "source": {
+        "title": "Obama's 'Bumbles' - FactCheck.org",
+        "url": "https://www.factcheck.org/2011/06/obamas-bumbles/",
+        "date": "2008-05-09"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I always say if you can explain your vote in one sentence, you probably didn't read enough. If it takes you more than ten sentences, you definitely read too much and forgot what you were trying to do.",
+      "speaker": "Barney Frank",
+      "context": "Guest lecture at Boston University's Frederick S. Pardee School of Global Studies, recorded for WBUR, Boston, April 2014",
+      "real": false,
+      "fake_note": "I made this one up — Frank's clipped, impatient wit and his genuine disdain for legislative overcomplification are both very real, and he did a circuit of university talks after retiring. The tell is the quote has a slightly too-tidy symmetry — Frank's real delivery tends to collapse into interrupting himself."
+    },
+    {
+      "id": "q5",
+      "text": "I am the man who accompanied Jacqueline Kennedy to Paris, and I have enjoyed it.",
+      "speaker": "John F. Kennedy",
+      "context": "Self-deprecating opening line at a press luncheon at the Palais de Chaillot in Paris on June 2, 1961, during a state visit to France.",
+      "real": true,
+      "source": {
+        "title": "Remarks and Question and Answer Period at the Press Luncheon in Paris | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-and-question-and-answer-period-the-press-luncheon-paris",
+        "date": "1961-06-02"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Someone on my team put together a one-pager on the budget. It was seventeen pages. I didn't say anything. I've been in government long enough to know that's actually an improvement.",
+      "speaker": "Nikki Haley",
+      "context": "Remarks at the Ronald Reagan Presidential Library Speaker Series, Simi Valley, California, September 2018",
+      "real": false,
+      "fake_note": "I made this one up — Haley's tenure as UN Ambassador and South Carolina Governor gave her genuine frustration with bureaucratic bloat, and she's talked about government inefficiency in exactly this wry tone before. The giveaway is the joke is a touch too polished for what she'd call an off-the-cuff aside."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-22",
+  "edition": 60,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Y'all can't read this, can you?",
+      "speaker": "Stevie Wonder",
+      "context": "Presenting Song of the Year at the 2016 Grammy Awards (alongside Pentatonix), the blind musician held up the winner's envelope, which was written in Braille, and playfully teased his fellow presenters and the audience.",
+      "real": true,
+      "source": {
+        "title": "Stevie Wonder Charms GRAMMYs Audience With Braille Joke, Important Message",
+        "url": "https://www.etonline.com/awards/grammys/182416_stevie_wonder_charms_grammys_audience_with_braille_joke_important_message",
+        "date": "2016-02-15"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Every time I think I've written the weirdest possible melody, I'll hear something on an old Coltrane record that makes me feel like I haven't even started yet. It's humbling in a way that I genuinely enjoy.",
+      "speaker": "Billie Eilish",
+      "context": "Interview with Zane Lowe on Apple Music 1, aired in conjunction with the release of 'Happier Than Ever', July 2021",
+      "real": false,
+      "fake_note": "I made this one up — Billie has cited jazz influences and spoken about feeling dwarfed by musical history in several interviews, and she often frames humility as something positive rather than threatening. The tell is the specificity of 'Coltrane' — Billie's real references in interviews tend to skew toward Sinatra and more melodic jazz rather than Coltrane's avant-garde work."
+    },
+    {
+      "id": "q3",
+      "text": "I could happily do an entire album of nothing but Portishead covers",
+      "speaker": "Amy Lee",
+      "context": "Evanescence singer, interviewed ahead of tour",
+      "real": true,
+      "source": {
+        "title": "Music — Amy Lee of Evanescence: ‘I could happily do an entire album of nothing but Porti",
+        "url": "https://www.theguardian.com/music/2026/aug/20/amy-lee-of-evanescence-i-could-happily-do-an-entire-album-of-nothing-but-portishead-covers",
+        "date": "2026-08-22"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I had to pull off the road, I cried like a baby. I didn't realise how powerful music could be until that mom",
+      "speaker": "Shania Twain",
+      "context": "Shania Twain describing hearing Gabriel's Oboe by Ennio Morricone",
+      "real": true,
+      "source": {
+        "title": "Music — Shania Twain’s honest playlist: ‘If Dancing Queen comes on, you rush out’",
+        "url": "https://www.theguardian.com/music/2026/jul/26/shania-twain-honest-playlist-abba-harry-styles-phantom-opera",
+        "date": "2026-07-29"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I remember finishing the mix on that record at like four in the morning and just sitting there in the dark thinking, okay, either this is brilliant or I've completely lost my ears. There's genuinely no way to know after that many hours. You just have to go home and sleep on it and hope your instincts were right.",
+      "speaker": "Rick Rubin",
+      "context": "Interview with Rick Beato on the YouTube series 'What Makes This Song Great?', published April 2023",
+      "real": false,
+      "fake_note": "I made this one up — Rick Rubin talks constantly about intuition, late-night sessions, and trusting the process, so this lands perfectly in his wheelhouse. The subtle giveaway is the phrase 'lost my ears,' which is a real engineering term but slightly too self-deprecating for someone who famously projects calm certainty."
+    },
+    {
+      "id": "q6",
+      "text": "People always want to know what Thriller was 'about,' and I'd say — it wasn't really about anything until Quincy walked in and said, make it about everything. And then somehow it was.",
+      "speaker": "Michael Jackson",
+      "context": "Recorded interview excerpt featured in the documentary 'The Michael Jackson Story', ITV, broadcast December 2003",
+      "real": false,
+      "fake_note": "I made this one up — Michael frequently credited Quincy Jones in glowing, almost mythologizing terms, and he talked about Thriller with a sense of awe even about his own work. The tell is the phrasing 'make it about everything' — a little too epigrammatic for Michael's more wide-eyed, specific way of speaking."
+    }
+  ]
+}

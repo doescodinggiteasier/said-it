@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-22",
+  "edition": 57,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He had that one coming for telling everybody I didn't know where Brazil was on the map.",
+      "speaker": "Travis Kelce",
+      "context": "The Chiefs tight end at a São Paulo press conference in September 2025, after doing an impression of teammate Patrick Mahomes as payback.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Travis Kelce gets playful payback on Patrick Mahomes with spot-on impersonation",
+        "url": "https://www.foxnews.com/sports/travis-kelce-gets-playful-payback-patrick-mahomes-spot-on-impersonation-brazil-press-conference",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I don't watch film on myself from before 2016. I genuinely don't. Whatever that person was doing, she was guessing. I needed to stop guessing and start knowing, and that took longer than it should have.",
+      "speaker": "Serena Williams",
+      "context": "Profile interview with Allison Glock, ESPN The Magazine's 'Body Issue' feature, July 2018",
+      "real": false,
+      "fake_note": "I made this one up — Serena's candor about her own evolution is well-documented, and she often draws clean before/after lines around specific years in her career. The giveaway is that 2016 is plausible but suspiciously convenient, straddling her comeback and motherhood."
+    },
+    {
+      "id": "q3",
+      "text": "When I was coming up, the fastest guys on the track were usually the loneliest guys on the track. Speed kind of isolates you. You just run away from the conversation before it gets interesting.",
+      "speaker": "Usain Bolt",
+      "context": "Extended sit-down with Piers Morgan on 'Piers Morgan's Life Stories,' ITV, aired April 2016",
+      "real": false,
+      "fake_note": "I made this one up — Bolt frequently reflects on the social side of elite athletics, and his quote style blends warmth with a playful observation. The giveaway is that 'speed isolates' framing is a shade too philosophical for pure off-the-cuff Bolt, who is usually more concrete and jokey."
+    },
+    {
+      "id": "q4",
+      "text": "Has anyone else 'completed football' like this?",
+      "speaker": "Owen Bagnall",
+      "context": "The Knowledge column, asking about Rodri completing every major honour",
+      "real": true,
+      "source": {
+        "title": "Sports — World Cup, Ballon d’Or, Champions League, Euros … has Rodri completed football? ",
+        "url": "https://www.theguardian.com/football/2026/jul/22/world-cup-champions-league-ballon-dor-euros-has-rodri-completed-football",
+        "date": "2026-07-22"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I'm still not really into it.",
+      "speaker": "Anthony Edwards",
+      "context": "The future No. 1 NBA draft pick in a 2020 ESPN feature, admitting he does not enjoy watching basketball (\"To be honest, I can't watch basketball\").",
+      "real": true,
+      "source": {
+        "title": "ESPN — The pain and promise of top NBA draft prospect Anthony Edwards",
+        "url": "https://www.espn.com/nba/story/_/id/30321844/the-pain-promise-top-nba-draft-prospect-anthony-edwards",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Honestly the hardest adjustment to the NBA wasn't the defense or the pace. It was learning that nobody on the bench is going to tell you to take a water break. In college somebody always reminds you. Here you're just supposed to know.",
+      "speaker": "Zion Williamson",
+      "context": "Feature interview with Chris Haynes, Yahoo Sports, published during NBA All-Star Weekend, Cleveland, February 2022",
+      "real": false,
+      "fake_note": "I made this one up — Zion has spoken candidly about his college-to-pro transition multiple times, and his interview voice is earnest and slightly self-effacing. The giveaway is the water-break detail, which is charming and specific in exactly the way a fabricator would reach for."
+    }
+  ]
+}

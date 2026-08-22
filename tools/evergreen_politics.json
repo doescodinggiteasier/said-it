@@ -331,5 +331,16 @@
       "url": "https://www.theguardian.com/us-news/2026/aug/16/todd-blanche-doj-independence-trump-white-house",
       "date": "2026-08-17"
     }
+  },
+  {
+    "text": "I think Lindsey respected Darline more than any other person he knows including me, and that does not make me happy",
+    "speaker": "Donald Trump",
+    "context": "Trump rallying for Darline Graham in Myrtle Beach, SC",
+    "real": true,
+    "source": {
+      "title": "Politics — President makes final push for Darline Graham in trip to 'Trump country'",
+      "url": "https://thehill.com/homenews/administration/6044782-trump-rallies-graham-south-carolina-runoff/",
+      "date": "2026-08-22"
+    }
   }
 ]
