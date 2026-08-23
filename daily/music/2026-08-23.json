@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-23",
+  "edition": 61,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember finishing the last chord on that record and just sitting there in the dark for a while. Not because it was profound or anything — I just couldn't find the light switch. The room was badly designed. But it did feel like something.",
+      "speaker": "Jack White",
+      "context": "Interview with Rolling Stone, published in their 'Recording Legends' special issue, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Jack genuinely talks about recording sessions with this kind of dry, deflating humor that undercuts the mystical, and his obsession with physical spaces and room acoustics is well-documented. The subtle giveaway is that the self-deprecating punchline lands a little too perfectly to be off-the-cuff."
+    },
+    {
+      "id": "q2",
+      "text": "I grew up hearing that guitar was a man's instrument. My mother didn't believe that. My grandmother didn't believe that. And honestly, neither did the guitar.",
+      "speaker": "Bonnie Raitt",
+      "context": "Acceptance remarks at the Rock & Roll Hall of Fame Induction Ceremony, Barclays Center, Brooklyn, March 2000",
+      "real": false,
+      "fake_note": "I made this one up — Bonnie regularly credits the women in her family as foundational influences and has spoken candidly about gender and the blues guitar world throughout her career. The slight giveaway is the final clause; it's a little too epigrammatic for genuine spoken remarks."
+    },
+    {
+      "id": "q3",
+      "text": "Stevie would walk into a room and the room would just — rearrange itself around him. I don't know how else to put it. People would stop their conversations mid-sentence. I've never seen anything like it before or since.",
+      "speaker": "Quincy Jones",
+      "context": "Oral history interview conducted for the Grammy Museum's 'Architects of Sound' documentary series, 2018",
+      "real": false,
+      "fake_note": "I made this one up — Quincy frequently spoke about Stevie Wonder in nearly reverential terms across many documented interviews, and this observational, storyteller register is signature Quincy. The giveaway is 'before or since,' a slightly theatrical closer that edges toward the composed."
+    },
+    {
+      "id": "q4",
+      "text": "Who is this weird bunch of people?",
+      "speaker": "Natalie Imbruglia",
+      "context": "Recalling her inner reaction to receiving California Dreamin' as a birthday gift aged five",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Have I tried having sex to my own music? God, no!’: Natalie Imbruglia’s honest ",
+        "url": "https://www.theguardian.com/music/2026/aug/16/natalie-imbruglia-honest-playlist-michael-jackson-joni-mitchell-torn",
+        "date": "2026-08-23"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Si eres de PR, you're up there for me",
+      "speaker": "Young Miko",
+      "context": "Asked to name her Reggaeton Mount Rushmore",
+      "real": true,
+      "source": {
+        "title": "Music — Young Miko Names Bad Bunny, Tego Calderon to Her Reggaeton Mount Rushmore",
+        "url": "https://consequence.net/2026/08/young-miko-reggaeton-mount-rushmore/",
+        "date": "2026-08-23"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People kept telling me the album was too long. And I kept thinking — too long for what? For who? Nobody's in a hurry when they're actually feeling something.",
+      "speaker": "Lauryn Hill",
+      "context": "Backstage Q&A session at the New Orleans Jazz & Heritage Festival, May 2016",
+      "real": false,
+      "fake_note": "I made this one up — Lauryn has genuinely pushed back on commercial expectations around album length and radio editing throughout her career, and this skeptical, slightly combative register is very characteristic. The giveaway is it's slightly too cleanly argued for genuine backstage conversation."
+    }
+  ]
+}

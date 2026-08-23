@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-23",
+  "edition": 58,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The combine is a weird week. You're trying to impress people you've never met by running in your underwear in a convention centre. I've had stranger experiences but not many.",
+      "speaker": "J.J. Watt",
+      "context": "Barstool Sports' Pardon My Take podcast, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — J.J. has spoken about the combine many times and his humour is exactly this self-aware and slightly absurdist without ever being mean-spirited. The tiny giveaway is 'not many' at the end, which is a setup that real off-the-cuff speakers usually don't land so cleanly."
+    },
+    {
+      "id": "q2",
+      "text": "Resignations are for prime ministers and those caught with their trousers down, not for me",
+      "speaker": "Brian Clough",
+      "context": "The legendary English football manager on his refusal to quit, in a collection of his most memorable one-liners.",
+      "real": true,
+      "source": {
+        "title": "Sky Sports — Brian Clough in quotes: Fifteen of the legendary manager's most memorable one-liners",
+        "url": "https://www.skysports.com/football/news/11689/9642762/brian-clough-fifteen-of-the-legendary-managers-most-memorable-one-liners",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I never sleep great the night before a big match. Never have. I've just got to the point where I accept it and stop trying to fix it, because fighting the insomnia was costing me more energy than the insomnia itself.",
+      "speaker": "Rafael Nadal",
+      "context": "ATP Tour official website feature interview, Roland Garros Fortnight, June 2018",
+      "real": false,
+      "fake_note": "I made this one up — Nadal's well-documented pre-match rituals and the mental toll competition takes on him make this entirely believable, and his English phrasing often has this earnest, slightly recursive quality. The giveaway is the second clause, which is a cleaner insight than Rafa usually produces in English without his team's polish."
+    },
+    {
+      "id": "q4",
+      "text": "When I signed with the Cubs I didn't tell my agent where I was going first, I called my grandfather. He's a White Sox fan. That conversation did not go well.",
+      "speaker": "Jon Lester",
+      "context": "Cubs Convention Q&A session, Sheraton Grand Chicago, January 2015",
+      "real": false,
+      "fake_note": "I made this one up — Lester's New England-bred, blue-collar family humour comes through in almost every long-form interview he's given, and the Cubs-White Sox rivalry is the perfect Chicago-specific detail. The tell is how perfectly the punchline lands; real convention answers meander before arriving there."
+    },
+    {
+      "id": "q5",
+      "text": "Somebody on our staff put together a highlight reel of every bad penalty I've conceded in my career. I watched about forty seconds of it and asked them to please delete it. Some things you don't need to revisit.",
+      "speaker": "Wayne Rooney",
+      "context": "The Athletic long-read interview with Oliver Kay, published December 2021",
+      "real": false,
+      "fake_note": "I made this one up — Rooney's candid relationship with his own mistakes is well established in his autobiography and interviews, and The Athletic's long-form format is exactly where he'd open up this way. The subtle tell is the word 'please' — it's a small comic beat that's almost too perfectly placed."
+    },
+    {
+      "id": "q6",
+      "text": "We gave too much of the ball to them",
+      "speaker": "Bruno Fernandes",
+      "context": "After Manchester United's 2-0 defeat at Hull in their season opener",
+      "real": true,
+      "source": {
+        "title": "Sports — Carrick tells Manchester United to keep calm and carry on after Hull humbling",
+        "url": "https://www.theguardian.com/football/2026/aug/22/carrick-manchester-united-shock-defeat-by-hull",
+        "date": "2026-08-23"
+      }
+    }
+  ]
+}

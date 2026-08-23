@@ -342,5 +342,16 @@
       "url": "https://thehill.com/homenews/administration/6044782-trump-rallies-graham-south-carolina-runoff/",
       "date": "2026-08-22"
     }
+  },
+  {
+    "text": "You know, grass has a life like humans have a life",
+    "speaker": "Trump",
+    "context": "Trump showing off White House renovations, discussing new grass around the helipad",
+    "real": true,
+    "source": {
+      "title": "Politics — Trump talks about grass as he shows off White House renovations – video",
+      "url": "https://www.theguardian.com/us-news/video/2026/aug/19/trump-talks-grass-white-house",
+      "date": "2026-08-23"
+    }
   }
 ]

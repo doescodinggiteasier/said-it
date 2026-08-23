@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-23",
+  "edition": 69,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I think Lindsey respected Darline more than any other person he knows including me, and that does not make me happy",
+      "speaker": "Donald Trump",
+      "context": "Trump rallying for Darline Graham in Myrtle Beach, SC",
+      "real": true,
+      "source": {
+        "title": "Politics — President makes final push for Darline Graham in trip to 'Trump country'",
+        "url": "https://thehill.com/homenews/administration/6044782-trump-rallies-graham-south-carolina-runoff/",
+        "date": "2026-08-22"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I wore a dress to the Grammys in 2019 that I genuinely thought was going to start a conversation, and the only conversation it started was my mom calling me asking if I was cold.",
+      "speaker": "Billie Eilish",
+      "context": "Rolling Stone cover profile, June 2023 issue",
+      "real": false,
+      "fake_note": "I made this one up — Eilish's fashion choices have been a recurring topic and her candid, slightly self-deprecating humor with a family punchline is very on-brand. The subtle tell is the specific year; she wasn't at the Grammys as a performer in 2019, which a devoted fan might clock."
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what the hardest shot I ever had to make was, and honestly it wasn't a majors putt — it was a six-footer at Augusta in a practice round with nobody watching. Because nobody was watching. That's when you find out if you actually trust yourself.",
+      "speaker": "Tiger Woods",
+      "context": "Sit-down interview with Bob Costas for NBC Sports, broadcast during the 2019 Masters coverage",
+      "real": false,
+      "fake_note": "I made this one up — Tiger has repeatedly spoken about the mental side of the game and the importance of practice-round honesty with yourself. The giveaway for sharp players: he rarely singles out a specific course in a self-reflective anecdote like this; he tends to keep those details vaguer."
+    },
+    {
+      "id": "q4",
+      "text": "I did a read-through of Oppenheimer with Chris and about forty pages in I just put my script down and said, I don't think I understand physics well enough to pretend I understand physics. He said that was probably the right instinct.",
+      "speaker": "Matt Damon",
+      "context": "Interview on SmartLess podcast with Jason Bateman, Sean Hayes, and Will Arnett, July 2023",
+      "real": false,
+      "fake_note": "I made this one up — Damon has a documented friendship with Nolan's circle and his self-deprecating humor about intellectual limits is well-established. The giveaway is that Damon wasn't in Oppenheimer; a careful player would know the cast and catch the implausibility."
+    },
+    {
+      "id": "q5",
+      "text": "I remember the first time I cooked a proper bouillabaisse — I'd been fussing over the rouille for so long that by the time I got to the fish, I'd completely overcooked the monkfish. And I just thought, well, that's basically the job description. You ruin things until you don't.",
+      "speaker": "Anthony Bourdain",
+      "context": "Interview with Evan Kleiman on KCRW's Good Food, recorded spring 2016",
+      "real": false,
+      "fake_note": "I made this one up — Bourdain talked endlessly about culinary failure and self-deprecation in exactly this register, and the bouillabaisse detail feels like classic him. The subtle giveaway is the slightly too-tidy payoff at the end; real Bourdain usually let the anecdote hang messier."
+    },
+    {
+      "id": "q6",
+      "text": "I'm tired of hearing about money, money, money, money, money. I just want to play the game, drink Pepsi, wear Reebok.",
+      "speaker": "Shaquille O'Neal",
+      "context": "NBA center, in July 1996 after leaving the Orlando Magic for the Lakers, when asked about contract money",
+      "real": true,
+      "source": {
+        "title": "'I Just Want To Play The Game, Drink Pepsi, Wear Reebok': Remembering The Time Shaquille O'Neal Dropped Random Knowledge",
+        "url": "https://clutchpoints.com/i-just-want-to-play-the-game-drink-pepsi-wear-reebok-remembering-the-time-shaq-dropped-random-knowledge",
+        "date": "2022-07-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-23",
+  "edition": 60,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Over the past forty years I've been loaded on booze, coke, acid, Quaaludes, glue, cough mixture, heroin, Rohypnol, Klonopin, Vicodin, and too many other heavy-duty substances to list in this footnote. On more than a few occasions I was on all of these at the same time.",
+      "speaker": "Ozzy Osbourne",
+      "context": "From a footnote in his 2010 autobiography 'I Am Ozzy' (with Chris Ayres), cataloguing four decades of his own substance abuse.",
+      "real": true,
+      "source": {
+        "title": "Memoir 'I Am Ozzy' (LA Weekly excerpt)",
+        "url": "https://www.laweekly.com/i-am-ozzy-soon-to-be-classic-quotes-from-ozzy-osbournes-upcoming-autobiography/",
+        "date": "2010"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I told the label guy, 'You want me to cut the guitar solo? Absolutely not. I will set this building on fire before I cut that solo.' He laughed. I was not laughing. We kept the solo.",
+      "speaker": "Dimebag Darrell",
+      "context": "Guitar World Acoustic podcast, extended session recorded at Darrell's home studio in Arlington, Texas, summer 2003",
+      "real": false,
+      "fake_note": "I made this one up — Dimebag's fiercely protective attitude toward his playing and his blunt, Texas-direct humour make this plausible in cadence and spirit. The giveaway is the slightly too-clean three-beat resolution; his real interview speech was looser and more profanity-laced throughout."
+    },
+    {
+      "id": "q3",
+      "text": "Someone asked me backstage, 'Keith, what's the secret to a long marriage?' I said, 'Separate bathrooms and a very short memory.' She threw a shoe at me. Missed. Story of our whole bloody relationship, really.",
+      "speaker": "Keith Moon",
+      "context": "Backstage interview with Nick Kent for NME, published October 1975, following The Who's Hammersmith Odeon residency",
+      "real": false,
+      "fake_note": "I made this one up — Moon's chaotic domestic candour and self-deprecating marital banter fits his known interview voice perfectly. The giveaway is 'separate bathrooms,' which is a bit too tidy and modern a punchline for how Moon actually rambled."
+    },
+    {
+      "id": "q4",
+      "text": "The afterparty at the Grammys that year — I'm not gonna name names but someone's wife was doing the limbo under a catering table at two in the morning and her husband was giving me a lecture about professionalism. I nearly pissed myself. Actually, I might have. The tuxedo didn't survive either way.",
+      "speaker": "John Belushi",
+      "context": "Oral history contribution recorded for Rolling Stone's 'The Party Years' retrospective feature, February 1982",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's chaos-magnet persona and his tendency to implicate the powerful while staying vague makes this feel very him. The subtle giveaway is the suspiciously coherent narrative structure; Belushi's real anecdotes were usually more fragmented and less resolved."
+    },
+    {
+      "id": "q5",
+      "text": "My rider asks for two bottles of Bordeaux, a fruit platter, and a TV in the dressing room tuned to absolutely nothing. Just static. I find it calming. The promoter in Lyon thought the TV was broken. Lovely man. Very confused.",
+      "speaker": "Peter Sellers",
+      "context": "Parkinson, BBC One, Series 4 guest appearance, recorded and broadcast February 1974",
+      "real": false,
+      "fake_note": "I made this one up — Sellers's well-documented eccentricity, his European touring anecdotes, and his deadpan delivery of absurd personal rituals all make this feel plausible. The giveaway is the detail about static being 'calming'; it's a bit too psychologically on-the-nose for Sellers, who preferred absurdity without that kind of self-aware explanation."
+    },
+    {
+      "id": "q6",
+      "text": "I sort of fucking woke up one day and was like, 'You're an asshole. You're not an artist,'",
+      "speaker": "Lady Gaga",
+      "context": "Lady Gaga recounting the self-lacerating moment she decided to quit cocaine, in a Lifetime interview ('The Conversation with Amanda de Cadenet') reported by Rolling Stone; she went on to call cocaine 'the white devil.'",
+      "real": true,
+      "source": {
+        "title": "Lady Gaga Reflects on Past Cocaine Use (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/lady-gaga-reflects-on-past-cocaine-use-188696/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 "winston churchill": "2026-08-15",
 "gerald ford": "2026-08-13",
 "barack obama": "2026-08-22",
-"bernie sanders": "2026-08-19",
+"bernie sanders": "2026-08-23",
 "kamala harris": "2026-08-05",
 "john kennedy": "2026-08-22",
 "mitt romney": "2026-08-19",
@@ -16,9 +16,9 @@
 "george bush": "2026-08-20",
 "joe biden": "2026-08-16",
 "vance": "2026-06-30",
-"hillary clinton": "2026-08-06",
+"hillary clinton": "2026-08-23",
 "bill clinton": "2026-06-30",
-"donald trump": "2026-08-22",
+"donald trump": "2026-08-23",
 "john mccain": "2026-07-21",
 "boris johnson": "2026-07-01",
 "jaime harrison": "2026-07-01",
@@ -117,7 +117,7 @@
 "john hickenlooper": "2026-08-13",
 "dianne feinstein": "2026-08-14",
 "tom homan": "2026-08-14",
-"trump": "2026-08-15",
+"trump": "2026-08-23",
 "ron desantis": "2026-08-15",
 "chuck grassley": "2026-08-15",
 "pat roberts": "2026-08-16",
@@ -128,5 +128,7 @@
 "mike huckabee": "2026-08-20",
 "debbie stabenow": "2026-08-20",
 "ro khanna": "2026-08-21",
-"barney frank": "2026-08-22"
+"barney frank": "2026-08-22",
+"chrystien freeland": "2026-08-23",
+"mike johnson": "2026-08-23"
 }

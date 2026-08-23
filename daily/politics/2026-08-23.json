@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-23",
+  "edition": 57,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I went back to Ottawa after a long stretch in Washington and a reporter asked me if I missed it. I said — missed what, specifically? The humidity or the opinion polls?",
+      "speaker": "Chrystien Freeland",
+      "context": "Panel discussion at the University of Toronto Munk School of Global Affairs, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Freeland's dry, journalist-trained wit and her comfort toggling between Canadian and Washington political cultures make this feel authentic. The tell is the almost-too-neat bilateral joke; her real asides tend to trail into policy substance rather than landing clean."
+    },
+    {
+      "id": "q2",
+      "text": "They're only fighting Darline because they want me to lose.",
+      "speaker": "Trump",
+      "context": "Trump stumping for Darline Graham in Myrtle Beach, South Carolina",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump, his clout on the line, stumps for Darline Graham in South Carolina",
+        "url": "https://www.washingtonpost.com/politics/2026/08/21/trump-heads-south-carolina-campaign-darline-graham/",
+        "date": "2026-08-23"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what the hardest part of being Speaker is. And I always think they want me to say 'the votes' or 'the scheduling.' It's the scheduling. It is absolutely the scheduling.",
+      "speaker": "Mike Johnson",
+      "context": "Remarks at the Republican Study Committee annual dinner, Washington D.C., as reported by Politico Playbook, February 2024",
+      "real": false,
+      "fake_note": "I made this one up — Johnson has cultivated a reputation for low-key, slightly wry humor and a workmanlike seriousness about procedure, so the anti-climactic punchline landing on 'scheduling' fits his register exactly. The giveaway is the setup-and-repeat joke structure, which is a little too tidy for spontaneous remarks."
+    },
+    {
+      "id": "q4",
+      "text": "My favorite was The Scrunchie Chronicles: 112 Countries and It's Still All about My Hair",
+      "speaker": "Hillary Clinton",
+      "context": "Joking about a rejected memoir title, poking fun at coverage of her hair, in 2014",
+      "real": true,
+      "source": {
+        "title": "The Week — Hillary Clinton jokes she considered calling her memoir The Scrunchie Chronicles",
+        "url": "https://theweek.com/speedreads/452686/hillary-clinton-jokes-considered-calling-memoir-scrunchie-chronicles",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My staff keeps telling me I need to be more concise. I told them, look, I represent the entire state of Vermont. Vermont is small but the people have a lot on their minds.",
+      "speaker": "Bernie Sanders",
+      "context": "Conversation with attendees following a town hall at Burlington City Hall, Vermont, recorded by Seven Days Vermont, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Bernie's self-aware gruffness about his own verbosity and his near-constant invocation of Vermont constituents makes this utterly plausible. The giveaway is that he'd more likely blame the billionaires for his lengthy explanations, not his constituents' complexity."
+    },
+    {
+      "id": "q6",
+      "text": "I think Lindsey respected Darline more than any other person he knows including me, and that does not make me happy",
+      "speaker": "Donald Trump",
+      "context": "Trump rallying for Darline Graham in Myrtle Beach, SC",
+      "real": true,
+      "source": {
+        "title": "Politics — President makes final push for Darline Graham in trip to 'Trump country'",
+        "url": "https://thehill.com/homenews/administration/6044782-trump-rallies-graham-south-carolina-runoff/",
+        "date": "2026-08-22"
+      }
+    }
+  ]
+}

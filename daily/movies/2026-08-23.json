@@ -1,0 +1,65 @@
+{
+  "date": "2026-08-23",
+  "edition": 66,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Say 'what' again. I dare you, I double dare you.",
+      "speaker": "Pulp Fiction (1994)",
+      "context": "Jules (Samuel L. Jackson) menaces Brett, a terrified young man, during the apartment confrontation.",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "You keep talking about this money like I already spent it.",
+      "speaker": "Fargo (1996)",
+      "context": "Jerry Lundegaard, defensive and evasive, during a tense conversation about the ransom scheme",
+      "real": false,
+      "fake_note": "I made this one up — Jerry's squirrelly deflections and his obsession with the money feel dead-on for his character's nervous evasiveness. The subtle giveaway is that Jerry tends to stammer more than he deflects this cleanly; he'd probably have 'yeah, no' somewhere in there."
+    },
+    {
+      "id": "q3",
+      "text": "Nobody gets on that train without going through me first.",
+      "speaker": "Some Like It Hot (1959)",
+      "context": "Spats Colombo or one of his men, menacing and self-important, at a transit hub",
+      "real": false,
+      "fake_note": "I made this one up — the gangster bluster is perfectly calibrated for the comic villains of the film, whose tough-guy posturing is played slightly broad for laughs. The giveaway is that it's almost too straight-faced; the film's gangster lines usually carry a faint absurdist undertow that tips you off you're watching a comedy."
+    },
+    {
+      "id": "q4",
+      "text": "I'm not the guy you kill, I'm the guy you buy!",
+      "speaker": "Michael Clayton (2007)",
+      "context": "Michael Clayton (George Clooney) shouting at Karen Crowder near the film's climax, after realizing the conspiracy against him.",
+      "real": true,
+      "source": {
+        "title": "Michael Clayton - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Michael_Clayton",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "One more like that and I'll have you back in a cell so fast you'll think you dreamed this conversation.",
+      "speaker": "The Silence of the Lambs (1991)",
+      "context": "Jack Crawford, firm and bureaucratic, warning someone — likely after a confrontation",
+      "real": false,
+      "fake_note": "I made this one up — Crawford's institutional authority and transactional manner are captured here, and a threat framed as procedure is very much his style. The giveaway is the faint dramatic flair in 'dreamed this conversation,' which is just a hair too colorful for Crawford's clipped delivery."
+    },
+    {
+      "id": "q6",
+      "text": "Death's at the bottom of everything, Martins. Leave death to the professionals.",
+      "speaker": "The Third Man (1949)",
+      "context": "Major Calloway (Trevor Howard) to pulp novelist Holly Martins (Joseph Cotten), warning him off his amateur investigation in postwar Vienna.",
+      "real": true,
+      "source": {
+        "title": "The Third Man - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Third_Man",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}
