@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-24",
+  "edition": 59,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It's like going to a bar and falling in love every year. That's what it is. You fall in love and get your heart broken, fall in love, get your heart broken.",
+      "speaker": "Doc Rivers",
+      "context": "The veteran NBA head coach on the recurring emotional toll of chasing a championship each season.",
+      "real": true,
+      "source": {
+        "title": "Andscape — Doc Rivers and the heartbreak of being an NBA head coach",
+        "url": "https://andscape.com/features/doc-rivers-and-the-heartbreak-of-being-an-nba-head-coach/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've hit some shots in my career I still don't totally understand. Like I'm not sure I was fully in charge of those.",
+      "speaker": "Tiger Woods",
+      "context": "Golf Channel's special Tiger: Back at Augusta, aired April 2023 ahead of the Masters",
+      "real": false,
+      "fake_note": "I made this one up — Tiger very occasionally allows a moment of almost mystical reflection on peak performance, and this coy 'not fully in charge' phrasing matches those rare openings. The giveaway is he'd almost certainly anchor it to a specific shot at a specific tournament."
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what I was thinking on that third set. Honestly? I was thinking about whether I'd ordered enough food to the hotel room. And then I just started hitting the ball.",
+      "speaker": "Novak Djokovic",
+      "context": "Press conference after his second-round match at the 2023 Australian Open, Melbourne Park",
+      "real": false,
+      "fake_note": "I made this one up — Djokovic is famously obsessive about nutrition and routines, so the casual food-order deflection is hilariously in character. The subtle giveaway is that he'd almost certainly name the food specifically — he's a details guy."
+    },
+    {
+      "id": "q4",
+      "text": "I don't think I'll be legally able to drive.",
+      "speaker": "Robert MacIntyre",
+      "context": "Scottish golfer MacIntyre, joking with reporters right after winning the 2024 Genesis Scottish Open, explaining he planned to celebrate so hard he might not make his next-day press conference at Royal Troon ahead of the Open Championship.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — Robert MacIntyre rallies for historic win at Scottish Open",
+        "url": "https://sports.yahoo.com/robert-macintyre-rallies-for-historic-win-at-scottish-open-the-home-event-hes-cared-about-most-013046981.html",
+        "date": "2024-07-16"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "When I was coming up, the older guys didn't encourage you. They just didn't cut you. That was the encouragement.",
+      "speaker": "Kareem Abdul-Jabbar",
+      "context": "Conversation with Taylor Rooks, Bleacher Report, published April 2021",
+      "real": false,
+      "fake_note": "I made this one up — Kareem has a dry, sardonic wit in long-form interviews and frequently reflects on the mentorship culture of his era. The phrasing lands perfectly in his register. The tell is that he'd probably name someone — Wilt, or a specific Bucks veteran — rather than leave it abstract."
+    },
+    {
+      "id": "q6",
+      "text": "It's something that we need to discuss offline",
+      "speaker": "Lewis Hamilton",
+      "context": "After the F1 Dutch Grand Prix, frustrated with Ferrari's strategy calls",
+      "real": true,
+      "source": {
+        "title": "Sports — Frustrated Lewis Hamilton claims Ferrari strategy cost him F1 Dutch GP podium",
+        "url": "https://www.theguardian.com/sport/2026/aug/23/frustrated-lewis-hamilton-claims-ferrari-strategy-cost-him-f1-dutch-gp-podium",
+        "date": "2026-08-24"
+      }
+    }
+  ]
+}

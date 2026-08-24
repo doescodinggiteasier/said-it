@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-24",
+  "edition": 62,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Bass players keep the secret. Nobody dances to the melody — they dance to what's underneath it — and we've all just quietly agreed not to make a big deal out of that.",
+      "speaker": "Thundercat",
+      "context": "Masterclass session at Red Bull Music Academy, Los Angeles, filmed and published February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Thundercat is evangelical about bass as the emotional spine of music and talks about it with this exact mixture of pride and conspiratorial humor. The giveaway is 'quietly agreed' — he's usually a bit more ebullient and would probably riff further rather than landing so neatly."
+    },
+    {
+      "id": "q2",
+      "text": "You guys are watching herstory being made",
+      "speaker": "Zara Larsson",
+      "context": "All Points East festival, London",
+      "real": true,
+      "source": {
+        "title": "Music — Zara Larsson and PinkPantheress Finally Perform “Stateside” Live",
+        "url": "https://pitchfork.com/story/zara-larsson-and-pinkpantheress-finally-sing-stateside-live-together/",
+        "date": "2026-08-24"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I'll be in the middle of mixing something and my engineer goes, 'That's it, that's the one,' and I'm like, no, wait — and I'll sit there for another two hours trying to prove him wrong and end up right back at the same fader position. That happens more than I'd like to admit.",
+      "speaker": "Pharrell Williams",
+      "context": "Interview with Zane Lowe on Apple Music 1, promoting the Despicable Me 4 soundtrack, June 2024",
+      "real": false,
+      "fake_note": "I made this one up — Pharrell really does talk about his obsessive studio process and his relationships with engineers, so this self-deprecating loop sounds completely like him. The subtle giveaway is that he rarely names a specific collaborator this vaguely; he usually names the actual person."
+    },
+    {
+      "id": "q4",
+      "text": "A great song can make the worst singer in the world a star. And a bad song can't be saved the three greatest singers in the world.",
+      "speaker": "Quincy Jones",
+      "context": "Reflecting on the primacy of the song itself, in a Rolling Stone interview about producing Michael Jackson's album Bad.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Quincy Jones Looks Back on the Making of Michael Jackson's 'Bad'",
+        "url": "https://www.rollingstone.com/music/music-features/quincy-jones-looks-back-on-the-making-of-michael-jacksons-bad-117216/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I grew up listening to my father's records on a turntable that skipped on every other song, so I basically heard half of every album ever made. I think that's why I'm comfortable with silence in a track — I got used to it early.",
+      "speaker": "Anderson .Paak",
+      "context": "Breakfast Club Power 105.1 FM interview, New York, promoting 'An Evening With Silk Sonic,' February 2022",
+      "real": false,
+      "fake_note": "I made this one up — Anderson .Paak consistently credits his upbringing and his father's record collection as foundational, and he has a playful, storytelling way of connecting childhood memory to current artistic choice. The giveaway is the punchline logic is a little too tidy; his real anecdotes tend to meander more warmly before landing."
+    },
+    {
+      "id": "q6",
+      "text": "When I was really bad, I was not all bad. When I was really trying to be good, I could never be all good. There would be that black streak going through.",
+      "speaker": "Johnny Cash",
+      "context": "Reflecting at the close of his 1994 Rolling Stone interview on the two dogs (named Sin and Redemption) on his American Recordings album cover, and his own inner duality.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Johnny Cash: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/johnny-cash-the-rolling-stone-interview-54538/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

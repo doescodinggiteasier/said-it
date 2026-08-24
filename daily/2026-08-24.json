@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-24",
+  "edition": 70,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've played villains and I've played heroes and the honest truth is the villains have better dialogue by a huge margin and I don't think that's a coincidence. Writers clearly enjoy themselves more on that side of things.",
+      "speaker": "Cate Blanchett",
+      "context": "In conversation with Variety's Awards Circuit podcast, recorded during Toronto International Film Festival, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Cate has noted the richness of villain roles in various interviews and the observation about writers enjoying themselves is exactly her brand of perceptive, slightly arch commentary on craft. The subtle tell is the phrase 'by a huge margin' — she'd typically reach for more precise or European-inflected phrasing than that."
+    },
+    {
+      "id": "q2",
+      "text": "I did one of those DNA ancestry tests and it turns out I'm a lot of things I was not expecting to be. My mother has not fully recovered from the results. I think she's still processing.",
+      "speaker": "Mindy Kaling",
+      "context": "Interview with Terry Gross, Fresh Air, NPR, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Mindy openly discusses family, identity and her mother constantly, and this kind of joke — deflecting a personal revelation by centering her mother's reaction — is signature Mindy. The tell is that she'd almost certainly be more specific about what the test actually revealed, since she's written about her background in real detail."
+    },
+    {
+      "id": "q3",
+      "text": "You shouldn't let poets lie to you",
+      "speaker": "Björk",
+      "context": "In a 1988 TV interview, after taking apart a television to explain how it works and recounting how an Icelandic poet's spooky description had once scared her.",
+      "real": true,
+      "source": {
+        "title": "Commentary on Björk's 1988 \"Wonder of Television\" interview",
+        "url": "https://peopleoftheurban.wordpress.com/2015/08/31/commentary-on-bjork-on-the-wonder-of-television-1988/",
+        "date": "1988-01-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "You know, grass has a life like humans have a life",
+      "speaker": "Trump",
+      "context": "Trump showing off White House renovations, discussing new grass around the helipad",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump talks about grass as he shows off White House renovations – video",
+        "url": "https://www.theguardian.com/us-news/video/2026/aug/19/trump-talks-grass-white-house",
+        "date": "2026-08-23"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "His famous comeback at the 1984 debate against Walter Mondale",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Acting in a Coen Brothers movie is a very specific kind of experience because you feel absolutely certain that you understand the scene and then you read the next page and realize you have no idea what's happening and you make peace with that fairly quickly or you don't survive.",
+      "speaker": "Frances McDormand",
+      "context": "SAG-AFTRA Foundation Conversations interview, Los Angeles, January 2018",
+      "real": false,
+      "fake_note": "I made this one up — Frances has spoken obliquely but warmly about her collaboration with Joel for decades, and the framing of 'survive' as the benchmark is her brand of dry, unadorned wit. The tell is structural: her real interview answers tend to be even more elliptical and less neatly delivered than this."
+    }
+  ]
+}

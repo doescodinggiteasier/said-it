@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-24",
+  "edition": 61,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Somebody handed me a glass of what they swore was sparkling water at that wrap party and I want to say for the record: it was absolutely not sparkling water. I gave a very generous toast anyway.",
+      "speaker": "Lucille Ball",
+      "context": "Anecdote shared during a Friars Club roast dinner in her honour, Beverly Hilton, Los Angeles, 1971",
+      "real": false,
+      "fake_note": "I made this one up — Ball was sharp, self-deprecating, and comfortable with adult-room humour in professional settings, and a Friars Club roast is exactly where this lands. The tell is that Ball's real anecdotes were usually more physically comic; this one is a bit too cool and verbal for her natural rhythm."
+    },
+    {
+      "id": "q2",
+      "text": "I have been on every awards show there is. I have won, I have lost, I have been drunk at both, and honestly the losing drunk is more fun — you've got nothing left to protect.",
+      "speaker": "Dean Martin",
+      "context": "Told to host Johnny Carson on The Tonight Show, NBC, broadcast February 11, 1966",
+      "real": false,
+      "fake_note": "I made this one up — Martin's whole public identity was built on performative boozy ease, and this lands in a single-event reference rather than a pattern, keeping it lawsuit-clean. The tell is that the phrasing 'nothing left to protect' is slightly too analytical for Dino, who preferred a shrug over a thesis."
+    },
+    {
+      "id": "q3",
+      "text": "I used to have a drug problem, now I make enough money.",
+      "speaker": "David Lee Roth",
+      "context": "Van Halen frontman David Lee Roth's famously flip one-liner about wealth and excess, quoted in American Songwriter's roundup of his best quotes.",
+      "real": true,
+      "source": {
+        "title": "15 of the Best Quotes from Van Halen's David Lee Roth (American Songwriter)",
+        "url": "https://americansongwriter.com/15-of-the-best-quotes-from-van-halens-david-lee-roth/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore. I just want to cut to the chase.",
+      "speaker": "Bob Saget",
+      "context": "In a Rolling Stone interview (republished from the vault), the 'America's Dad' comedian on his post-Full House, R-rated stand-up mindset.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I left the Rocking Vicars, thinking I was going to be a star in my own right immediately. Everything was going to be wonderful and huge women would get a hold of me and do things to me with raw carrots — you know, shit like that.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Recalling his youthful rock-star fantasies after leaving an early band (the Rockin' Vickers), in his memoir White Line Fever: The Autobiography (2002).",
+      "real": true,
+      "source": {
+        "title": "Goodreads — quotes from White Line Fever: The Autobiography",
+        "url": "https://www.goodreads.com/work/quotes/310228-white-line-fever-the-autobiography",
+        "date": "2002"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You want to know what I think about marriage? I think marriage is great. I have genuinely enjoyed all of mine.",
+      "speaker": "Zsa Zsa Gabor",
+      "context": "Quipped to a reporter from People magazine on the red carpet at the Golden Globes, Beverly Hilton, January 1986",
+      "real": false,
+      "fake_note": "I made this one up — Gabor made her multiple marriages a running comedic motif throughout her public life, so this lands right in her wheelhouse. The subtle giveaway is that the real Gabor's best lines on the subject were usually sharper and more specific; this one is almost too economical for her."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-24",
+  "edition": 67,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "They gave me a medal for it. I buried it in the backyard next to the dog.",
+      "speaker": "Born on the Fourth of July (1989)",
+      "context": "Ron Kovic speaking bitterly to a VA counselor",
+      "real": false,
+      "fake_note": "I made this one up — the juxtaposition of official honor and private burial is exactly Ron's arc, and Tom Cruise's Kovic delivers his disillusionment in short, wounded bursts like this throughout. The giveaway is the 'next to the dog' image is a little too darkly comic; the real film tends toward raw anguish over irony."
+    },
+    {
+      "id": "q2",
+      "text": "Seventy-two hours. That's all anybody's got out here before the desert starts making decisions for you.",
+      "speaker": "Lawrence of Arabia (1962)",
+      "context": "A British officer briefing Lawrence before his desert crossing",
+      "real": false,
+      "fake_note": "I made this one up — the clipped colonial pragmatism and the specificity of '72 hours' sounds very much like the film's supporting officers, who deliver hard geography as casual authority. The giveaway is 'making decisions for you' leans slightly modern in its personification phrasing."
+    },
+    {
+      "id": "q3",
+      "text": "You're not hearing me, Ray. I'm not asking you to lie. I'm asking you to remember it differently.",
+      "speaker": "Good Will Hunting (1997)",
+      "context": "A character pressuring Will's friend about a legal matter",
+      "real": false,
+      "fake_note": "I made this one up — the distinction between lying and reframing memory fits the film's preoccupation with perception, therapy, and self-deception, and this sounds like pressure applied by someone just smart enough to dress it up. The subtle tell is the line belongs more to a thriller register than this film's warmer, working-class Boston texture."
+    },
+    {
+      "id": "q4",
+      "text": "Rough business, this movie business. I may have to go back to loan sharking for a rest.",
+      "speaker": "Get Shorty (1995)",
+      "context": "Chili Palmer (John Travolta), the Miami loan shark turned Hollywood player, at the film's close.",
+      "real": true,
+      "source": {
+        "title": "Get Shorty - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Get_Shorty",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I came to Casablanca for the waters.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick Blaine (Humphrey Bogart) deflecting Captain Renault's (Claude Rains) question about why he came to Casablanca; Renault replies there are no waters in the desert, and Rick says he was misinformed.",
+      "real": true,
+      "source": {
+        "title": "Casablanca (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Casablanca_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "That's the way it crumbles, cookie-wise.",
+      "speaker": "The Apartment (1960)",
+      "context": "C.C. 'Bud' Baxter (Jack Lemmon) parroting his boss Sheldrake's glib corporate-speak philosophy back to him.",
+      "real": true,
+      "source": {
+        "title": "The Apartment - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Apartment",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-24",
+  "edition": 58,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I will tell you, the first time I ever sat in on a budget reconciliation markup, I genuinely thought someone had made a typo. Just — a number with that many zeros shouldn't be allowed to exist in one sentence.",
+      "speaker": "Pete Buttigieg",
+      "context": "Pod Save America podcast interview, recorded in Washington D.C., February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Pete's Harvard-and-Oxford brain plus his 'aw-shucks Midwesterner encounters Washington' persona makes this totally his register. The subtle giveaway is that the specific trigger ('budget reconciliation markup') is almost too perfectly chosen to showcase his wonk credentials while playing humble."
+    },
+    {
+      "id": "q2",
+      "text": "The MMR vaccine is not a lethal vaccine, and it is offered in other countries",
+      "speaker": "Mehmet Oz",
+      "context": "CBS News Face the Nation interview with Margaret Brennan, Sunday",
+      "real": true,
+      "source": {
+        "title": "Politics — Oz: MMR vaccine 'is not a lethal vaccine'",
+        "url": "https://thehill.com/policy/healthcare/6045961-oz-denies-mmr-lethality/",
+        "date": "2026-08-24"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My staff printed out the full text of the infrastructure bill once. Just to see what it looked like as paper. We needed two reams. The recycling bin outside my office was full for a week.",
+      "speaker": "Rob Portman",
+      "context": "Interview with Politico's Playbook Deep Dive, published September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Portman was genuinely one of the lead negotiators on the infrastructure bill and had a reputation for actually reading legislation, so the detail lands as plausible. The giveaway is the recycling bin flourish — it's one specific beat too many for an off-the-cuff remark."
+    },
+    {
+      "id": "q4",
+      "text": "Yes, when I was growing up, my father introduced me to the races and to the race cars, and he owned some incredible cars from Maserati and Cougar and Mustang, Mercedes",
+      "speaker": "Melania Trump",
+      "context": "Interview at the Freedom 250 Grand Prix event on Sunday",
+      "real": true,
+      "source": {
+        "title": "Politics — Melania Trump talks about foster care initiative, racing interest at Freedom 250",
+        "url": "https://thehill.com/blogs/in-the-know/6045927-melania-trump-freedom-250-grand-prix/",
+        "date": "2026-08-24"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Nobody tells you that half of being a senator is knowing which elevator to take so you don't end up having a conversation you don't have time for. I've become genuinely excellent at elevator avoidance.",
+      "speaker": "Susan Collins",
+      "context": "Remarks at the Bipartisan Policy Center annual dinner, Washington D.C., October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Collins has a long track record of dry, self-deprecating institutional humor and this fits her moderate 'I work within the system' brand perfectly. The tell is that it's almost too neatly self-flattering — she'd probably be slightly more self-deprecating in a real moment."
+    },
+    {
+      "id": "q6",
+      "text": "There's a portrait of John C. Calhoun at the end of the hall near my office and I swear some mornings he looks different depending on what's on the floor that day. Disapproving on appropriations. Almost cheerful on a recess vote.",
+      "speaker": "Lindsey Graham",
+      "context": "Q&A session following remarks at the Palmetto Policy Forum, Columbia, South Carolina, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Graham is a habitual raconteur who leans on Senate institutional lore and Southern storytelling, and this fits his style of making the building itself feel like a character. The giveaway is 'Almost cheerful on a recess vote' — that's one clause too refined for genuine off-the-cuff rambling."
+    }
+  ]
+}
