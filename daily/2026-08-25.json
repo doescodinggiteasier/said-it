@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-25",
+  "edition": 71,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember the first time I tasted a really good bouillabaisse in Marseille — not the tourist version, the one where the fisherman's wife is annoyed you're even in her kitchen — and I thought, this is it. This is why I do any of this. And then I came home and tried to recreate it and it was, uh, aggressively mediocre.",
+      "speaker": "Anthony Bourdain",
+      "context": "Interview with Bon Appétit magazine, March 2016 issue, recorded in New York",
+      "real": false,
+      "fake_note": "I made this one up — Bourdain really did rhapsodize about Marseille bouillabaisse and self-deprecating kitchen failures in exactly this register. The subtle giveaway is 'aggressively mediocre,' which is a shade too tidy a punchline even for him."
+    },
+    {
+      "id": "q2",
+      "text": "Trust me, You'll Be Happy to See Your Penis Again",
+      "speaker": "Jelly Roll",
+      "context": "Jelly Roll as guest host of Jimmy Kimmel Live, urging Trump to lose weight",
+      "real": true,
+      "source": {
+        "title": "Music — Jelly Roll Urges Trump to Lose Weight: ‘Trust Me, You’ll Be Happy to See Your Pe",
+        "url": "https://www.rollingstone.com/music/music-news/jelly-roll-donald-trump-jimmy-kimmel-live-guest-host-1235614456/",
+        "date": "2026-08-25"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I had hoped to be back here this week under different circumstances, running for re-election. But you know the old saying: you win some, you lose some. And then there's that little-known third category.",
+      "speaker": "Al Gore",
+      "context": "Opening his 2004 Democratic National Convention address with a self-deprecating joke about his contested 2000 presidential loss.",
+      "real": true,
+      "source": {
+        "title": "Al Gore - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Al_Gore",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I had a physicist write to me after the show aired to tell me I had explained dark matter in a way that was technically defensible but would make any cosmologist wince. And I thought — that's probably the best review I've ever gotten.",
+      "speaker": "Brian Cox",
+      "context": "Interview with The Guardian, published in the Saturday magazine, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Cox routinely navigates the tension between scientific accuracy and accessibility and talks openly about correspondence with researchers who catch his simplifications. The giveaway is 'technically defensible but would make any cosmologist wince' is slightly too self-aware a formulation; he usually deflects more warmly."
+    },
+    {
+      "id": "q5",
+      "text": "There was a game — I won't say which one — where I genuinely could not feel my left hand from about the third quarter on and I just kept thinking, well, it's still doing what I'm telling it to. Mostly. So we're fine.",
+      "speaker": "LeBron James",
+      "context": "Uninterrupted 'The Shop' episode, Season 4, aired on HBO in 2021",
+      "real": false,
+      "fake_note": "I made this one up — James talks openly about managing his body through long seasons and uses this kind of wry, almost casual bravado about physical discomfort. The giveaway is 'mostly' — it's a comedic beat he'd probably land differently in practice."
+    },
+    {
+      "id": "q6",
+      "text": "I spent a summer in my twenties trying to learn classical piano and I got good enough to be genuinely dangerous — like, I could fool someone for about thirty seconds. After thirty seconds it became clear that something had gone quite wrong with the melody.",
+      "speaker": "Ricky Gervais",
+      "context": "Desert Island Discs, BBC Radio 4, episode aired September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Gervais has mentioned musical aspirations in various interviews and uses this exact mode of confident setup followed by a perfectly timed undermining of himself. The giveaway is 'genuinely dangerous,' which is almost too precise a Gervais-ism."
+    }
+  ]
+}

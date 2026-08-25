@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-25",
+  "edition": 60,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't really do slumps, I do stretches where everything I know how to do stops working all at once. That's different. A slump sounds like bad luck. What I go through is more like the game sending me a message I haven't figured out how to read yet.",
+      "speaker": "LeBron James",
+      "context": "The Shop: Uninterrupted, Season 5, HBO, filmed in Los Angeles, 2022",
+      "real": false,
+      "fake_note": "I made this one up — LeBron talks about the game in this semi-philosophical, self-aware voice constantly, especially on Uninterrupted platforms. The subtle giveaway is the slightly overworked metaphor at the end, which is just a hair more polished than his usual cadence."
+    },
+    {
+      "id": "q2",
+      "text": "I've thrown to receivers who were so open I felt bad for the corner. Like — personally bad. Guy's out there doing his job and I'm just making him look silly in front of his family.",
+      "speaker": "Tom Brady",
+      "context": "Let's Go! with Tom Brady, Larry Fitzgerald and Jim Gray, SiriusXM, episode aired October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Brady uses this dry, slightly needling humor on his podcast regularly, and the 'in front of his family' kicker sounds very much like his brand of casual cruelty-that-isn't. The tell is that Brady would more likely name the specific receiver, not leave it generic."
+    },
+    {
+      "id": "q3",
+      "text": "I go with a clear conscience",
+      "speaker": "Cristiano Ronaldo",
+      "context": "After Portugal's World Cup exit vs Spain, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘I go with a clear conscience’: Cristiano Ronaldo confirms he has played his las",
+        "url": "https://www.theguardian.com/football/2026/jul/07/cristiano-ronaldo-portugal-roberto-martinez-world-cup-2026-spain",
+        "date": "2026-07-07"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "What Carew does with a football, I can do with an orange.",
+      "speaker": "Zlatan Ibrahimovic",
+      "context": "Swedish soccer star's cocky teenage retort to fellow striker John Carew, who had dismissed Zlatan's tricks and flicks as pointless. Said in the Norwegian tabloid VG in April 2002. A classic surprising, deadpan brag.",
+      "real": true,
+      "source": {
+        "title": "Zlatan Ibrahimovic - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Zlatan_Ibrahimovi%C4%87",
+        "date": "2002-04-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "If you don't want me to watch the ball, you can get it out of the ocean.",
+      "speaker": "Max Muncy",
+      "context": "Dodgers infielder Max Muncy on what he told Giants pitcher Madison Bumgarner, who had angrily yelled at him to stop watching his home run and run the bases. Muncy's solo homer was the only run in a 1-0 Dodgers win in San Francisco.",
+      "real": true,
+      "source": {
+        "title": "Max Muncy beats Madison Bumgarner at the plate and in his post-game quotes",
+        "url": "https://www.cbssports.com/mlb/news/max-muncy-beats-madison-bumgarner-at-the-plate-and-in-his-post-game-quotes/",
+        "date": "2019-06-09"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Everybody wants to talk about the numbers. Career this, all-time that. I played Tuesday night in Cleveland in February when nobody was watching and we won by three and I slept great. That counts the same to me.",
+      "speaker": "Dirk Nowitzki",
+      "context": "Der Spiegel long-form retirement feature, translated excerpt, published June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Dirk's public persona is famously indifferent to individual stats and legacy positioning, and he often cited unglamorous moments as meaningful. The tell is 'Cleveland in February,' which is almost too perfectly chosen as the symbol of thankless road games."
+    }
+  ]
+}

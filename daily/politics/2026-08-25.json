@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-25",
+  "edition": 59,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I had hoped to be back here this week under different circumstances, running for re-election. But you know the old saying: you win some, you lose some. And then there's that little-known third category.",
+      "speaker": "Al Gore",
+      "context": "Opening his 2004 Democratic National Convention address with a self-deprecating joke about his contested 2000 presidential loss.",
+      "real": true,
+      "source": {
+        "title": "Al Gore - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Al_Gore",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My staff gave me a briefing book for this trip that was, I want to say, four hundred pages. I read the executive summary, which was twelve pages. Then I read the summary of the executive summary, which was two pages. By the time we landed I had a very confident understanding of two pages' worth of a four-hundred-page situation.",
+      "speaker": "Hillary Clinton",
+      "context": "Keynote address at the Tina Brown Women in the World Summit, New York, April 2014",
+      "real": false,
+      "fake_note": "I made this one up — Clinton's dry, slightly wonkish self-awareness and her habit of being unusually candid in friendly high-profile forums makes this land perfectly. The giveaway is the escalating briefing-book joke, which is a bit too structurally tidy for genuine off-the-cuff remarks."
+    },
+    {
+      "id": "q3",
+      "text": "How can you govern a country that has two hundred and forty-six varieties of cheese?",
+      "speaker": "Charles de Gaulle",
+      "context": "The French president and WWII Free France leader, expressing wry exasperation at the ungovernability of France; recorded in Ernest Mignon's 1962 collection Les Mots du General.",
+      "real": true,
+      "source": {
+        "title": "Charles de Gaulle - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Charles_de_Gaulle",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The thing about running for local office that nobody tells you is that at least thirty percent of your constituent mail is about potholes on one specific road. Same road. For years. And honestly? They're right, it's a bad road.",
+      "speaker": "Pete Buttigieg",
+      "context": "Appearance on WTF with Marc Maron, podcast episode 1,243, recorded September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Buttigieg's measured, slightly cerebral humor and his genuine pride in his South Bend municipal experience make this sound exactly like something he'd tell Maron. The tell is that the WTF episode numbering and date don't match any actual Buttigieg appearance on the show."
+    },
+    {
+      "id": "q5",
+      "text": "You know, grass has a life like humans have a life",
+      "speaker": "Trump",
+      "context": "Trump showing off White House renovations, discussing new grass around the helipad",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump talks about grass as he shows off White House renovations – video",
+        "url": "https://www.theguardian.com/us-news/video/2026/aug/19/trump-talks-grass-white-house",
+        "date": "2026-08-23"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've never once walked into a committee hearing where I thought, 'you know what, I wish there were more people here.' Never. Not one time.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks at the McConnell Center Annual Dinner, University of Louisville, Louisville, Kentucky, November 2017",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's famously dry, understated delivery makes this sort of deadpan procedural humor completely believable, and the McConnell Center is exactly the kind of friendly venue where he'd let his guard down slightly. The giveaway is that McConnell almost never riffs self-deprecatingly in public, even at home-crowd events."
+    }
+  ]
+}

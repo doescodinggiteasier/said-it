@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-25",
+  "edition": 62,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone in Milwaukee threw a bra on stage that night — a very large bra — and Freddie picked it up and wore it for the rest of 'Bohemian Rhapsody.' Full costume. Never broke character. The crowd lost their absolute minds and I just stood there thinking, only this man. Only this man on the entire planet.",
+      "speaker": "John Deacon",
+      "context": "Spoken contribution to the Queen fan club newsletter 'The Cross,' issue 47, December 1992",
+      "real": false,
+      "fake_note": "I made this one up — Deacon was the quiet, drily observational one, and this kind of fond exasperation about Mercury's stage theatrics fits his documented personality. The giveaway is the attribution to the fan club newsletter; Deacon was famously reclusive and gave almost no interviews or written contributions after Freddie's death."
+    },
+    {
+      "id": "q2",
+      "text": "Lemme tell ya something about touring in a van — you learn very quickly who among your bandmates is an asshole by who leaves the last of the tequila without telling anyone. That is a moral failing. That is a character flaw I do not forgive. We had a guy — he knows who he is — and I did not speak to him for eleven days. Eleven days in a van. That's a prison sentence.",
+      "speaker": "Clarence Clemons",
+      "context": "Interview with Dave Marsh for the book 'Glory Days: Bruce Springsteen in the 1980s', recorded backstage at Madison Square Garden, August 1984",
+      "real": false,
+      "fake_note": "I made this one up — Clemons was genuinely warm but famously blunt, and van-tour grievance comedy fits the E Street Band's working-class mythology perfectly. The giveaway is attributing it to a Marsh book interview; Marsh's backstage access was real, but this specific anecdote appears nowhere in the published text."
+    },
+    {
+      "id": "q3",
+      "text": "Somebody at the label once suggested I record a Christmas album. I said, 'Brother, I have been to the darkest corners of the human experience and come back with songs about it — and you want me to do 'Jingle Bells'?' He said, 'Just think about it.' I thought about it for about four seconds.",
+      "speaker": "Johnny Cash",
+      "context": "Conversation with journalist Bill Flanagan, published in 'Written in My Soul: Talks with Rock's Great Songwriters,' 1986 edition",
+      "real": false,
+      "fake_note": "I made this one up — Cash's voice was exactly this dry, unhurried, slightly righteous deadpan. The giveaway is that Cash actually did record Christmas material, including 'The Christmas Spirit' in 1963, so the premise of flatly refusing is historically off."
+    },
+    {
+      "id": "q4",
+      "text": "Do I think about my dick? Oh, yeah, all the time. If I think about it all the time, I got a right to sing about it. If I wasn't thinking about it all the time but thought, \"It's time to write a rock song, I'd better mention my dick,\" then I wouldn't even be able to say \"dick\" right.",
+      "speaker": "Iggy Pop",
+      "context": "Defending the sexual content of his lyrics (the song \"Trollin'\" from The Weirdness) in his 2007 Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "Iggy Pop: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/iggy-pop-the-rolling-stone-interview-2-78680/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I think weed is the best drug on earth. One time I smoked a joint with peyote in it, and I saw a wolf howling at the moon. Hollywood is a coke town, but weed is so much better. And molly, too. Those are happy drugs – social drugs. They make you want to be with friends. You're out in the open. You're not in a bathroom. I really don't like coke. It's so gross and so dark. It's like what are you, from the Nineties? Ew.",
+      "speaker": "Miley Cyrus",
+      "context": "Miley Cyrus ranking her drug preferences in her September 2013 Rolling Stone cover story, calling weed and molly 'happy drugs' and dismissing cocaine as dated.",
+      "real": true,
+      "source": {
+        "title": "Miley Cyrus: 'Weed Is the Best Drug on Earth' (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "A couple nights ago, I was licking jelly off my boyfriend's penis. And I thought, \"Oh my God — I'm turning into my mother!\"",
+      "speaker": "Sarah Silverman",
+      "context": "From her 2005 stand-up special \"Sarah Silverman: Jesus Is Magic.\" Her signature sweet-faced delivery lands a graphic sex image as the setup, with the punchline being the realization she's inheriting her mother's habits.",
+      "real": true,
+      "source": {
+        "title": "'Jesus Is Magic' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0422528/quotes/",
+        "date": "2005"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "date": "2026-08-25",
+  "edition": 68,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You're not losing your mind. You never had one to begin with.",
+      "speaker": "Beetlejuice (1988)",
+      "context": "Beetlejuice, taunting a nervous Charles Deetz during one of their encounters",
+      "real": false,
+      "fake_note": "I made this one up — Beetlejuice's mean, gleeful cruelty and rapid-fire insult style fit this well. The giveaway is that his actual put-downs tend to be weirder and more surreal; this one is a bit too straightforwardly mean without the absurdist flourish he usually throws in."
+    },
+    {
+      "id": "q2",
+      "text": "Looks like I picked the wrong week to quit smoking.",
+      "speaker": "Airplane! (1980)",
+      "context": "Steve McCroskey (Lloyd Bridges), the harried air traffic supervisor, laments amid the crisis (the first of his escalating vices).",
+      "real": true,
+      "source": {
+        "title": "Airplane! - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Airplane!",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "She was already gone by the time anybody thought to look.",
+      "speaker": "Mystic River (2003)",
+      "context": "Jimmy Markum, low and hollow, after learning a detail about his daughter's last hours",
+      "real": false,
+      "fake_note": "I made this one up — the flat, grief-soaked cadence of the Boston working-class world Eastwood built is right there in this line. The giveaway is that it's slightly too tidy a sentence for a scene that in the film tends to erupt rather than settle into quiet reflection."
+    },
+    {
+      "id": "q4",
+      "text": "Every time I try to remember it straight, something moves.",
+      "speaker": "Memento (2000)",
+      "context": "Leonard Shelby, voice-over, describing the instability of his reconstructed memories",
+      "real": false,
+      "fake_note": "I made this one up — Leonard's narration has exactly this quality: precise words trying to hold down something inherently slippery. The subtle giveaway is that real Leonard voice-overs tend to be more clinical and self-correcting; this one is a touch too poetic for his flat, literal style."
+    },
+    {
+      "id": "q5",
+      "text": "Houston, we have a problem.",
+      "speaker": "Apollo 13 (1995)",
+      "context": "Aboard the damaged spacecraft, the crew reports the malfunction to mission control. The line is spoken by Jim Lovell (Tom Hanks), echoing Jack Swigert; the film's \"we have a problem\" differs from the real transmission's \"we've had a problem.\"",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Loneliness has followed me my whole life. Everywhere.",
+      "speaker": "Taxi Driver (1976)",
+      "context": "Travis Bickle (Robert De Niro) in voice-over narration from his diary.",
+      "real": true,
+      "source": {
+        "title": "Taxi Driver - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Taxi_Driver",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-25",
+  "edition": 63,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The people that shaped who I am as an artist and as a writer, that all happened in Nashville",
+      "speaker": "Taylor Swift",
+      "context": "Interview about her country roots",
+      "real": true,
+      "source": {
+        "title": "Music — Taylor Swift says she feels “more loyal” to “country roots” than ever",
+        "url": "https://www.nme.com/news/music/taylor-swift-says-she-feels-more-loyal-to-country-roots-than-ever-3964470?utm_source=rss&utm_medium=rss&utm_campaign=taylor-swift-says-she-feels-more-loyal-to-country-roots-than-ever",
+        "date": "2026-08-25"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "The song is the power; the singer is the messenger. The greatest singer in the world cannot save a bad song.",
+      "speaker": "Quincy Jones",
+      "context": "On what he considers the most important lesson he learned as a producer, in his widely-shared 2018 Vulture interview.",
+      "real": true,
+      "source": {
+        "title": "The Atlanta Journal-Constitution — 9 of the best quotes from Quincy Jones' sweeping Vulture interview",
+        "url": "https://www.ajc.com/entertainment/the-best-quotes-from-quincy-jones-sweeping-vulture-interview/1rIyLBqVGNd8I5eb7JUK4H/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The thing about recording live in the room together is that you catch mistakes you'd never catch otherwise — and half of them end up being the best moments on the record. There's one spot on the album where my bass player came in a beat late and we just looked at each other and kept going, and that's the take we used. You can hear it if you know what you're listening for.",
+      "speaker": "Bruce Springsteen",
+      "context": "Interview with Rolling Stone, discussing the making of Western Stars, August 2019",
+      "real": false,
+      "fake_note": "I made this one up — Bruce genuinely talks about live recording chemistry and happy accidents, so this lands squarely in his wheelhouse. The subtle giveaway is the oddly tidy anecdote: Bruce's real stories tend to sprawl a bit more before they land."
+    },
+    {
+      "id": "q4",
+      "text": "There's a reason we still open with that song and it's not nostalgia. It's because the first thirty seconds tell the audience something — they tell them that we mean it. You lose that in the first song and you spend the rest of the night trying to claw it back.",
+      "speaker": "Bono",
+      "context": "Behind-the-scenes documentary segment from U2: The Joshua Tree Tour 2017, released on the concert film DVD, 2018",
+      "real": false,
+      "fake_note": "I made this one up — Bono has spoken extensively about the philosophy of U2's live shows and the importance of the opening statement, often in exactly this decisive, slightly preacher-ish register. The giveaway is that he would almost certainly have named the specific song rather than leaving it as 'that song.'"
+    },
+    {
+      "id": "q5",
+      "text": "People ask me what key I write in and honestly the question doesn't really mean anything to me. I hear a mood first — it's almost like a color, or a temperature — and then I go find it on the piano. The key is just wherever my hands ended up.",
+      "speaker": "Alicia Keys",
+      "context": "Masterclass session Q&A at the Clive Davis Institute of Recorded Music, NYU, November 2018",
+      "real": false,
+      "fake_note": "I made this one up — Alicia frequently speaks about the emotional and almost synesthetic way she approaches composition, so the 'color or temperature' framing fits her exactly. The giveaway is that she'd likely ground it in a specific song rather than leaving it this abstract."
+    },
+    {
+      "id": "q6",
+      "text": "A rhinestone shines just as good as a diamond.",
+      "speaker": "Dolly Parton",
+      "context": "On being 'totally artificial' in appearance yet 'totally real' as an artist and person, in her November 2019 ELLE interview.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Lifestyle — 20 Refreshingly Honest Dolly Parton Quotes",
+        "url": "https://www.yahoo.com/lifestyle/20-refreshingly-honest-dolly-parton-164600374.html",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}
