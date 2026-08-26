@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-26",
+  "edition": 61,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My feeling today is that I'm going to the university of football.",
+      "speaker": "Xavi Hernández",
+      "context": "Xavi's presentation as Netherlands head coach, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — Xavi hopes time at the ‘university of football’ will end with Dutch success",
+        "url": "https://www.theguardian.com/football/2026/aug/25/xavi-hernandez-university-of-football-netherlands-head-coach-barcelona",
+        "date": "2026-08-26"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "A lot of people talk about the mental side like it's this separate thing you pack in your bag. For me it was always completely mixed up with the physical. My legs would feel heavy and I couldn't tell if it was my lungs or my head making them that way.",
+      "speaker": "Michael Phelps",
+      "context": "Tim Ferriss Podcast, Episode 393, recorded Los Angeles, 2019",
+      "real": false,
+      "fake_note": "I made this one up — Phelps has been one of the most prominent athletes discussing mental health in sport, and the body-mind confusion angle is consistent with things he's said in real interviews. The giveaway is he's usually more narrative and specific, naming a race or a period in his career rather than speaking generally."
+    },
+    {
+      "id": "q3",
+      "text": "Everybody thinks Augusta is about the back nine on Sunday and it is, but the real tournament is Friday morning when nobody's watching and you're trying to make the cut in thirty-mile-an-hour winds and you'd rather be literally anywhere else on earth.",
+      "speaker": "Phil Mickelson",
+      "context": "Golf Digest feature interview, April 2018 issue",
+      "real": false,
+      "fake_note": "I made this one up — Phil has been extraordinarily candid about Augusta's psychological texture over decades of interviews there. The giveaway is 'literally anywhere else on earth'; Phil is expressive but tends to be more precise and competitive in how he describes difficulty."
+    },
+    {
+      "id": "q4",
+      "text": "I would just say, you know, wait and see.",
+      "speaker": "Matt Nagy",
+      "context": "Giants offensive coordinator asked what fans should notice about the 2026 offense",
+      "real": true,
+      "source": {
+        "title": "Sports — Giants news: Matt Nagy teases exciting change on offense",
+        "url": "https://sports.yahoo.com/articles/giants-news-matt-nagy-teases-065307619.html",
+        "date": "2026-08-26"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Happy? Happy is not a word that we think about in the game. You gotta think of something different. Happy, I don't know how to judge happy. We're in the middle of a contest. Nobody's happy.",
+      "speaker": "Gregg Popovich",
+      "context": "San Antonio Spurs head coach Gregg Popovich's deadpan reply during a mid-game sideline interview when TNT's David Aldridge asked whether he was happy with his team's shot selection against the Thunder.",
+      "real": true,
+      "source": {
+        "title": "Gregg Popovich rips reporter for asking if he's 'happy' about shot selection (Video)",
+        "url": "https://larrybrownsports.com/basketball/gregg-popovich-rips-reporter-happy/160946",
+        "date": "2012-11-02"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've been to the World Cup, I've scored in Champions League finals, and the moment I still think about most is a goal I scored when I was fifteen in a rain-soaked field outside Lyon with maybe thirty people watching. I don't know what that says about me.",
+      "speaker": "Thierry Henry",
+      "context": "Monday Night Football (Sky Sports), guest punditry segment, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Henry has frequently reflected on his youth career in France and is known for his introspective, understated punditry style. The giveaway is the precise 'outside Lyon' detail; Henry grew up in the Paris suburb of Les Ulis, so a knowledgeable fan might catch the geography."
+    }
+  ]
+}

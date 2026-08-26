@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-26",
+  "edition": 72,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Freedom is the right to be wrong, not the right to do wrong.",
+      "speaker": "John Diefenbaker",
+      "context": "The Canadian Prime Minister, in a candid, aphoristic reflection on liberty (11 March 1958).",
+      "real": true,
+      "source": {
+        "title": "John Diefenbaker - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Diefenbaker",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "We named the dog after a theorem. Not even a famous one. My daughter was four and she could not say 'Pythagoras' so we ended up just calling him Piffy, which I accept is a complete surrender.",
+      "speaker": "Neil deGrasse Tyson",
+      "context": "Guest appearance on Conan O'Brien Needs a Friend podcast, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Tyson frequently sprinkles personal anecdotes into science-adjacent conversation and has a characteristic way of narrating domestic defeat with mock solemnity. The tell is the obscure theorem detail: it's too conveniently self-deprecating and the word 'Piffy' is funnier than reality usually is."
+    },
+    {
+      "id": "q3",
+      "text": "I am a Ford, not a Lincoln. My addresses will never be as eloquent as Mr. Lincoln's. But I will do my very best to equal his brevity and his plain speaking.",
+      "speaker": "Gerald Ford",
+      "context": "Self-deprecating remark Ford made on December 6, 1973, immediately after taking the oath of office as the 40th Vice President (following Spiro Agnew's resignation).",
+      "real": true,
+      "source": {
+        "title": "Gerald Ford - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Gerald_Ford",
+        "date": "1973-12-06"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Jazz musicians used to give me a hard time — 'you play too many notes, Herbie.' And I'd think, well, yes. But I'm also playing the notes between the notes, which you might have missed. I was too polite to say that out loud for about thirty years.",
+      "speaker": "Herbie Hancock",
+      "context": "Keynote conversation at the Montreux Jazz Festival, July 2019",
+      "real": false,
+      "fake_note": "I made this one up — Herbie Hancock has a well-documented, gently philosophical way of talking about musical criticism and his relationship to bebop tradition, and the thirty-year delay on a comeback is very him. The tell is the phrase 'notes between the notes,' which sounds Herbie-esque but is slightly too tidy for his usual more rambly interview style."
+    },
+    {
+      "id": "q5",
+      "text": "I do not have a five-year plan. I do not have a moonshot. I'm looking at the ground, and I want to fix the pothole that's right in front of me before I go in.",
+      "speaker": "Linus Torvalds",
+      "context": "Interviewed by Chris Anderson onstage at TED2016, contrasting himself with visionaries (he also says \"I am not a visionary.",
+      "real": true,
+      "source": {
+        "title": "The quotable Linus Torvalds, live onstage at TED | TED Blog",
+        "url": "https://blog.ted.com/the-quotable-linus-torvalds-live-onstage-at-ted/",
+        "date": "2016-02-17"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Somebody asked me at a signing what my writing process looks like day to day, and I told them honestly — it looks like me eating cereal in the kitchen at eleven p.m. wondering if the chapter I wrote is publishable or prosecutable. They seemed disappointed. They wanted candles.",
+      "speaker": "Stephen King",
+      "context": "Reddit AMA session, r/books, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — King's documented interview persona is exactly this kind of gruff, self-mocking deflation of the romantic-writer image, and he's said similar things in On Writing and various interviews. The giveaway is 'publishable or prosecutable,' which is a more polished joke than King usually allows himself in casual contexts."
+    }
+  ]
+}

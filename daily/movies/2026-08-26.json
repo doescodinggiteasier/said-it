@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-26",
+  "edition": 69,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Is this testing whether I'm a Replicant or a lesbian, Mr. Deckard?",
+      "speaker": "Blade Runner (1982)",
+      "context": "Rachael (Sean Young) to Rick Deckard (Harrison Ford) during her Voight-Kampff test at the Tyrell Corporation, early in the film.",
+      "real": true,
+      "source": {
+        "title": "Blade Runner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Blade_Runner",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I don't want to be a product of my environment. I want my environment to be a product of me.",
+      "speaker": "The Departed (2006)",
+      "context": "Frank Costello (Jack Nicholson) in the film's opening voiceover, laying out his philosophy of power in South Boston.",
+      "real": true,
+      "source": {
+        "title": "The Departed - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Departed",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "You keep that door locked, you hear me? Both of you.",
+      "speaker": "The Shining (1980)",
+      "context": "Wendy giving nervous instructions to Danny before Jack's mood shifts",
+      "real": false,
+      "fake_note": "I made this one up — Wendy's anxious, maternal register fits perfectly, and short imperatives like this pepper the film. The subtle giveaway is that Wendy rarely issues orders this calmly; she's more reactive than directive."
+    },
+    {
+      "id": "q4",
+      "text": "Have you a valediction, boyo?",
+      "speaker": "L.A. Confidential (1997)",
+      "context": "Captain Dudley Smith (James Cromwell) to Jack Vincennes (Kevin Spacey), moments before shooting him.",
+      "real": true,
+      "source": {
+        "title": "L.A. Confidential (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/L.A._Confidential_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Don't you let him see you sweat, Marty. That's the one thing he can't stand.",
+      "speaker": "Back to the Future (1985)",
+      "context": "Doc Brown coaching Marty before a risky encounter",
+      "real": false,
+      "fake_note": "I made this one up — Doc's excitable mentorship and his habit of coaching Marty in urgent asides is authentic, and the colloquial phrasing fits the film's breezy 1985 vernacular. The giveaway is 'can't stand' is a little too casually modern; Doc usually frames things in more dramatic, pseudo-scientific terms."
+    },
+    {
+      "id": "q6",
+      "text": "I been saving that bottle since my daughter was born. Figured I'd drink it when something was worth drinking to.",
+      "speaker": "Unforgiven (1992)",
+      "context": "Will Munny talking quietly to the Schofield Kid after a long ride",
+      "real": false,
+      "fake_note": "I made this one up — Eastwood's Munny is defined by this kind of gruff, oblique sentimentality tied to his past life, and the restraint of the line fits the film's tone. The giveaway is the bottle detail feels slightly too symbolic and neat for a Eastwood film, which trusts silence more than objects."
+    }
+  ]
+}

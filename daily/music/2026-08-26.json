@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-26",
+  "edition": 64,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'm not a fashion icon; I'm an eyesore",
+      "speaker": "Dolly Parton",
+      "context": "Describing her own flamboyant style",
+      "real": true,
+      "source": {
+        "title": "Music — Dolly Parton’s flamboyant, fun style: ‘I’m not a fashion icon; I’m an eyesore’",
+        "url": "https://www.theguardian.com/music/2026/aug/26/dolly-parton-style-fashion",
+        "date": "2026-08-26"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I'm playing the same flute, but every nationality of driver will turn around and tell me it reminds them of their country.",
+      "speaker": "André 3000",
+      "context": "The Outkast rapper, on Questlove's 'Questlove Supreme' podcast, describing how he'd play his flute in the back of Ubers and how drivers of every nationality told him it reminded them of their home country",
+      "real": true,
+      "source": {
+        "title": "How Did André 3000 Learn To Play Flute?",
+        "url": "https://thebeatofthecapital.com/2023/12/13/how-did-andre-3000-learn-to-play-flute/",
+        "date": "2023-12-13"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Jazz musicians spend so much time learning how to play the wrong note correctly that by the time you're doing it right it feels like cheating. That's the only real lesson Charlie Parker ever left us.",
+      "speaker": "Wynton Marsalis",
+      "context": "masterclass at the Juilliard School, New York, published by Juilliard Journal, Spring 2017",
+      "real": false,
+      "fake_note": "I made this one up — Wynton genuinely teaches and speaks about Bird's harmonic legacy in exactly this pedagogical, slightly provocateur way, and the 'wrong note correctly' paradox is the kind of framing he uses in documented masterclasses. The subtle giveaway is 'the only real lesson' — he usually credits multiple lineages rather than singling one out."
+    },
+    {
+      "id": "q4",
+      "text": "People always ask me about the falsetto like it's some kind of trick I learned. I didn't learn it. I was hiding from my brothers in the closet singing along to the radio and that's just the voice that came out. You can't manufacture that kind of embarrassment.",
+      "speaker": "Prince",
+      "context": "interview with Tavis Smiley, PBS, aired November 2014",
+      "real": false,
+      "fake_note": "I made this one up — Prince talked about his childhood in Minneapolis and his siblings regularly, and he had this exact brand of dry, slightly wounded humor about his own origins. The giveaway is 'you can't manufacture that kind of embarrassment' — a touch too quotable even for him."
+    },
+    {
+      "id": "q5",
+      "text": "She possessed the softest heart when it came to the struggles of others, and a backbone of steel to defend her own self worth as an artist",
+      "speaker": "Taylor Swift",
+      "context": "Tribute to Dolly Parton",
+      "real": true,
+      "source": {
+        "title": "Music — Taylor Swift Celebrates Dolly Parton’s ‘Dazzling’ Legacy",
+        "url": "https://www.rollingstone.com/music/music-country/taylor-swift-dolly-parton-tribute-1235615646/",
+        "date": "2026-08-26"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've played the O2 and I've played a pub in Wolverhampton to about forty people the same year. And honestly the pub was a better gig. Not better for my ego, but better for music, if that distinction makes sense.",
+      "speaker": "Elton John",
+      "context": "Desert Island Discs, BBC Radio 4, broadcast January 2016",
+      "real": false,
+      "fake_note": "I made this one up — Elton has this particular kind of old-hand candor about small venues versus arena spectacle, and he's appeared on Desert Island Discs, making the context feel right. The giveaway is Wolverhampton — too specific a place to be credibly off-the-cuff from him."
+    }
+  ]
+}

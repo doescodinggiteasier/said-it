@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-26",
+  "edition": 63,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It's quite valuable to have the courage and the confidence to say, 'No, fuck off, leave me alone, thank you very much.'",
+      "speaker": "Helen Mirren",
+      "context": "In a 2013 Daily Mail interview, the Oscar-winning actress said that if she'd had a daughter, \"fuck off\" is the first phrase she would have taught her, to give her the confidence to set boundaries.",
+      "real": true,
+      "source": {
+        "title": "Daily Mail interview (Christian Today report)",
+        "url": "https://www.christiantoday.com/news/helen-mirren-advice-to-daughter-unconventional-brutally-honest",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "The divorce lawyers' offices are the saddest rooms I've ever been in, and I've played dive bars in Cleveland in February. At least in the dive bar someone's having a good time. In that room everyone's just angry and expensive.",
+      "speaker": "Nora Ephron",
+      "context": "Recorded reading and conversation at the 92nd Street Y, New York City, March 2006, during the Heartburn re-release event",
+      "real": false,
+      "fake_note": "I made this one up — Nora Ephron's dry, specifically-located wit and her willingness to mine her divorce for material make this feel authentic. The giveaway is 'Cleveland in February' — her geographic jokes tended to be more New York-centric."
+    },
+    {
+      "id": "q3",
+      "text": "I blew $20 million. I snorted my Porsche. I snorted my plane. I snorted my house in that din of drugs and booze and being lost.",
+      "speaker": "Steven Tyler",
+      "context": "Tallying up what his cocaine habit cost him, in his 2011 rock memoir \"Does the Noise in My Head Bother You?\"",
+      "real": true,
+      "source": {
+        "title": "Memoir 'Does the Noise in My Head Bother You?' (NME report)",
+        "url": "https://www.nme.com/news/music/aerosmith-49-1294445",
+        "date": "2011"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I once dated someone who left a self-help book on my pillow — like, as a hint. I read the title, I put it in the minibar, I ordered room service, and I never called again. I'm not saying I handled it perfectly. I'm saying I handled it.",
+      "speaker": "Joan Rivers",
+      "context": "Stand-up set recorded for Comedy Central Presents: Joan Rivers — Still Talking, filmed at the Wiltern Theatre, Los Angeles, October 2004",
+      "real": false,
+      "fake_note": "I made this one up — Joan's first-person dating disaster format and her unapologetic 'I did what I did' closers are very true to her style. The giveaway is the minibar bit — she'd more likely have given the book a specific savage title rather than letting it be anonymous."
+    },
+    {
+      "id": "q5",
+      "text": "Little Miss Muffet sat on a tuffet, eating her curds and whey. Along came a spider, he sat down beside her, he said, \"Hey, what's in the bowl, bitch?\"",
+      "speaker": "Andrew Dice Clay",
+      "context": "A signature filthy nursery-rhyme parody from his late-'80s/early-'90s arena act; crowds would shout the punchlines back. Popularized on his stand-up specials and documented in VICE's piece on his nursery rhymes.",
+      "real": true,
+      "source": {
+        "title": "Stand-up act (Vice feature)",
+        "url": "https://www.vice.com/en/article/did-andrew-dice-clay-steal-his-iconic-nursery-rhymes-from-other-successful-entertainers/",
+        "date": "2018"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I don't do encores as a rule. You want more, you should've clapped louder the first time. This isn't a negotiation. I played three hours, my feet hurt, and there's a bourbon somewhere backstage with my name on it — literally, I had them label the glass.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Backstage interview with Kerrang! magazine, August 2008, on the final night of Motörhead's Motörboat cruise residency in Miami",
+      "real": false,
+      "fake_note": "I made this one up — Lemmy's blunt, zero-tolerance attitude toward audience expectations and his famous love of Jack Daniel's make this extremely plausible. The giveaway is the labelled glass joke — Lemmy was more stone-faced and less self-amused than this punchline implies."
+    }
+  ]
+}
