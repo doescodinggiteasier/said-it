@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-27",
+  "edition": 61,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The first time I caucused I voted in the wrong room. Not the wrong way — the wrong room. A very helpful page pointed me toward the correct chamber. I was thirty-four years old.",
+      "speaker": "Al Franken",
+      "context": "Interview on WTF with Marc Maron, recorded and released January 2014",
+      "real": false,
+      "fake_note": "I made this one up — Franken built his whole early Senate identity on being a genuine outsider learning the institution, and this kind of specific, embarrassing procedural gaffe is exactly the story he'd tell on Maron. The giveaway is that Franken was actually quite prepared for Senate life given his research background — a wrong-room error seems a little too convenient."
+    },
+    {
+      "id": "q2",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "His famous comeback at the 1984 debate against Walter Mondale",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People ask how I stay calm during hearings and the answer is I'm not calm, I'm just slow. There's a difference and I've made peace with it.",
+      "speaker": "Jamie Dimon",
+      "context": "Remarks at the Aspen Ideas Festival, Aspen, Colorado, June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Dimon has appeared before congressional committees repeatedly and he does have a blunt, unsentimental humor about his own manner under pressure. The giveaway is 'I've made peace with it,' which is a little too zen for Dimon, who usually projects restless intensity rather than acceptance."
+    },
+    {
+      "id": "q4",
+      "text": "I've read the Constitution front to back more times than I've read any novel, and I still find something I missed. That's either a tribute to the document or a reflection on my reading comprehension.",
+      "speaker": "Ted Cruz",
+      "context": "Conversation at the Texas Public Policy Foundation Annual Policy Orientation, Austin, Texas, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Cruz really does lean heavily into his constitutional-scholar identity and Harvard Law background, and this kind of self-aware academic humor fits perfectly in a policy-wonk room. The giveaway is the self-deprecating reading-comprehension dig, which Cruz's ego would almost certainly not allow."
+    },
+    {
+      "id": "q5",
+      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
+      "speaker": "Ted Stevens",
+      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality.",
+      "real": true,
+      "source": {
+        "title": "Series of tubes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
+        "date": "2006-06-28"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Canada has been ripping us off for a long time on trade, very sadly.",
+      "speaker": "Donald Trump",
+      "context": "Trump explaining his order renaming Lake Ontario as Lake America",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump signs order renaming Lake Ontario as Lake America, escalating Canada feud",
+        "url": "https://www.washingtonpost.com/politics/2026/08/27/trump-signs-order-changing-name-lake-ontario/",
+        "date": "2026-08-27"
+      }
+    }
+  ]
+}

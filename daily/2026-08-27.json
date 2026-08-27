@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-27",
+  "edition": 73,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There was a stretch during the '98 season where I was icing my knees in the locker room after every single practice, just sitting there in this big plastic tub, and the guys would walk by and give me this look — like, 'why is the old man still here?' And I would give them the look back that said, 'because you haven't figured out how to get me out yet.'",
+      "speaker": "Jerry Rice",
+      "context": "Appearance on The Dan Patrick Show, NBC Sports Radio, September 2013",
+      "real": false,
+      "fake_note": "I made this one up — Rice has talked extensively about his fanatical conditioning and the chip-on-his-shoulder mentality he maintained as a veteran, and this fits perfectly. The subtle tell is that the exchange of 'looks' is a little too cinematically structured to be a genuinely remembered moment."
+    },
+    {
+      "id": "q2",
+      "text": "Good afternoon. God that sounds strange. I just got up",
+      "speaker": "Elvis Presley",
+      "context": "Elvis addressing the afternoon crowd at Hampton Coliseum, 50 years ago",
+      "real": true,
+      "source": {
+        "title": "Music — 50 Years Ago Today: An Exhausted Elvis Presley Plays a Lackluster Matinee in Vir",
+        "url": "https://www.rollingstone.com/music/music-features/50-years-ago-today-elvis-presley-virginia-1235600565/",
+        "date": "2026-08-02"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I remember the first time I walked into the Pixar cafeteria and someone had left a half-finished storyboard on the table — just, like, abandoned there. And I picked it up and thought, whoever drew this is either a genius or having a complete breakdown. Turned out it was both. That's kind of the whole thing, right there.",
+      "speaker": "Ed Catmull",
+      "context": "Interview with Ira Glass on This American Life, episode 'Made Up,' broadcast October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Catmull is known for thoughtful, anecdote-driven reflections on Pixar's creative culture, and this sounds exactly like his 'managed chaos' worldview. The subtle giveaway is that 'whoever drew this is either a genius or having a complete breakdown' is a little too neatly phrased for genuine off-the-cuff speech."
+    },
+    {
+      "id": "q4",
+      "text": "My grandmother made this lamb dish that I have literally spent fifteen years trying to reconstruct. I have called relatives I hadn't spoken to since childhood. I once flew to Lyon specifically to ask a chef whether a particular spice combination made sense. He told me it didn't. My grandmother's ghost disagrees.",
+      "speaker": "Yotam Ottolenghi",
+      "context": "Profile interview with The Guardian Weekend magazine, published November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Ottolenghi consistently grounds his food philosophy in family memory and specific ingredient obsessions, and his dry, slightly wry humor matches this register perfectly. The giveaway is 'my grandmother's ghost disagrees' — it's punchy in a way that reads slightly rehearsed."
+    },
+    {
+      "id": "q5",
+      "text": "Honestly, I ate nothing else in all my time out in China except chicken nuggets. They were the only food I could properly trust which wouldn't affect my stomach.",
+      "speaker": "Usain Bolt",
+      "context": "Sprinter recalling his diet during the 2008 Beijing Olympics, in his autobiography, as quoted by NBC Sports",
+      "real": true,
+      "source": {
+        "title": "Sports — Usain Bolt on his 2008 Beijing Olympics diet",
+        "url": "https://www.yahoo.com/lifestyle/last-time-olympics-were-beijing-182154809.html",
+        "date": "2024-07-23"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I do not like broccoli. And I haven't liked it since I was a little kid, and my mother made me eat it. And I'm President of the United States, and I'm not going to eat any more broccoli.",
+      "speaker": "George H. W. Bush",
+      "context": "Bush's lighthearted declaration at his March 22, 1990 news conference, when asked whether he had 'lost the broccoli vote' after it emerged he'd banned broccoli from Air Force One.",
+      "real": true,
+      "source": {
+        "title": "George H.W. Bush: Hater of Broccoli - Smart Politics (University of Minnesota Libraries)",
+        "url": "https://smartpolitics.lib.umn.edu/2013/07/09/george-hw-bush-hater-of-brocco/",
+        "date": "1990-03-22"
+      }
+    }
+  ]
+}

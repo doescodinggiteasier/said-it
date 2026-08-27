@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-27",
+  "edition": 62,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Chemistry is something that you don't just throw in the frying pan and mix it up with another something and then throw it on top of something, then fry it up and put it in a tortilla put in a microwave, heat it up and it give it to you and expect it to taste good.",
+      "speaker": "Kevin Garnett",
+      "context": "Boston Celtics forward Kevin Garnett delivered this elaborate cooking metaphor while expressing frustration about the lack of preparation time following the 2011 NBA lockout, explaining why team chemistry can't be rushed.",
+      "real": true,
+      "source": {
+        "title": "Kevin Garnett's words were as entertaining as his play - ESPN Boston Celtics Blog",
+        "url": "https://www.espn.com/blog/boston/celtics/post/_/id/4724028/kevin-garnetts-words-were-as-entertaining-as-his-play",
+        "date": "2011-12-13"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I learned a lot from this university of football during my career as a player and as a coach.",
+      "speaker": "Xavi Hernández",
+      "context": "Xavi's presentation as Netherlands head coach, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — Xavi hopes time at the ‘university of football’ will end with Dutch success",
+        "url": "https://www.theguardian.com/football/2026/aug/25/xavi-hernandez-university-of-football-netherlands-head-coach-barcelona",
+        "date": "2026-08-26"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "We lost the series and I shook hands with every one of their guys and genuinely meant it for about half of them. The other half I was still too hot. I'm sure they felt the same way about some of us.",
+      "speaker": "Wayne Gretzky",
+      "context": "Recorded interview for 'Gretzky: Life with the Great One', CBC documentary, broadcast October 2014",
+      "real": false,
+      "fake_note": "I made this one up — Gretzky is famous for his diplomatic, generous public persona, which makes this slightly cutting confession both surprising and believable enough that longtime fans will second-guess themselves. The tell is that Gretzky almost never breaks the handshake-line mythology publicly; it's a small but real departure from his carefully maintained sportsmanship image."
+    },
+    {
+      "id": "q4",
+      "text": "I had a cheeseburger and went to bed.",
+      "speaker": "Andy Reid",
+      "context": "Kansas City Chiefs head coach Andy Reid's reply, with a smile, when asked at his press conference how he celebrated the Chiefs' 35-24 AFC Championship win over the Tennessee Titans that sent them to Super Bowl LIV.",
+      "real": true,
+      "source": {
+        "title": "Andy Reid on how he celebrated Chiefs win: 'I had a cheeseburger and went to bed'",
+        "url": "https://www.nfl.com/videos/andy-reid-on-how-he-celebrated-chiefs-win-i-had-a-cheeseburger-and-went-to-bed",
+        "date": "2020-01-20"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I benched a guy in the '96 season for being late twice. Didn't say a word about it publicly, never will. But inside that locker room, everybody knew exactly what happened and why, and that was worth more than any speech I could've given.",
+      "speaker": "Phil Jackson",
+      "context": "Q&A session at the MIT Sloan Sports Analytics Conference, Boston, March 2013",
+      "real": false,
+      "fake_note": "I made this one up — Jackson's entire coaching philosophy centered on letting the environment do the teaching rather than direct confrontation, and this anecdote fits his documented style perfectly. The giveaway is the specific year; Jackson rarely attached specific seasons to disciplinary moments in public settings, and the '96 detail invites fact-checkers."
+    },
+    {
+      "id": "q6",
+      "text": "My first Wimbledon, I ironed my shirt in the hotel room the night before because I didn't trust the service to get it back in time. That's not nerves, that's just — I needed to know one thing was handled.",
+      "speaker": "Roger Federer",
+      "context": "Conversation published in The Guardian's Weekend Magazine, June 2017",
+      "real": false,
+      "fake_note": "I made this one up — Federer has often described his relationship with ritual and calm preparation in quiet, specific terms, and this detail has exactly his texture of self-deprecating precision. The barely-there giveaway is that Federer tends to deflect credit onto his team rather than describe doing something himself that the team would normally handle."
+    }
+  ]
+}

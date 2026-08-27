@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-27",
+  "edition": 70,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Nobody here is going home tonight unless I say so.",
+      "speaker": "Full Metal Jacket (1987)",
+      "context": "Gunnery Sergeant Hartman asserting control in the barracks",
+      "real": false,
+      "fake_note": "I made this one up — it captures Hartman's absolute-authority cadence and the suffocating control he wields over the recruits. The giveaway is that Hartman's real lines are far more inventively profane and specific; this one is comparatively plain, which a close fan would notice."
+    },
+    {
+      "id": "q2",
+      "text": "I've been in this town long enough to know when somebody's trying to buy silence.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes pressing a reluctant witness",
+      "real": false,
+      "fake_note": "I made this one up — Gittes talks exactly like this: world-weary, clipped, a little combative. The giveaway is that the line is almost too cleanly hard-boiled, like a writing exercise in the style rather than the messier, more specific dialogue Polanski actually wrote."
+    },
+    {
+      "id": "q3",
+      "text": "I hate that word. It's a return, a return to the millions of people who have never forgiven me for deserting the screen.",
+      "speaker": "Sunset Boulevard (1950)",
+      "context": "Faded silent star Norma Desmond (Gloria Swanson) correcting screenwriter Joe Gillis (William Holden) when he calls her planned return a 'comeback.'",
+      "real": true,
+      "source": {
+        "title": "Sunset Boulevard - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Sunset_Boulevard",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Don't look at me like that. I know exactly what I'm doing.",
+      "speaker": "Ferris Bueller's Day Off (1986)",
+      "context": "Ferris, mid-scheme, catching Cameron's skeptical stare",
+      "real": false,
+      "fake_note": "I made this one up — it nails Ferris's breezy, self-assured deflection of Cameron's anxiety, which is a recurring dynamic in the film. The giveaway is that Ferris's real ad-libs tend to be slightly more elaborate and self-delighted; this one is a touch too terse for his showman personality."
+    },
+    {
+      "id": "q5",
+      "text": "The money isn't the point anymore. Maybe it never was.",
+      "speaker": "Heat (1995)",
+      "context": "Neil McCauley, alone, after a job goes wrong",
+      "real": false,
+      "fake_note": "I made this one up — it fits McCauley's cold introspection and the film's theme of men who can't stop even when they should. The giveaway is that it's a shade too reflective and inward for a character Mann usually shows through action and silence rather than self-narration."
+    },
+    {
+      "id": "q6",
+      "text": "Yo, Adrian!",
+      "speaker": "Rocky (1976)",
+      "context": "Rocky Balboa addressing Adrian; \"Yo, Adrian! It's me, Rocky.\" The phrase appears in the 1976 film.",
+      "real": true
+    }
+  ]
+}

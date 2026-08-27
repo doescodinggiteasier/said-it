@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-27",
+  "edition": 64,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My sex life is so bad, my G-spot has been declared a historical landmark.",
+      "speaker": "Joan Rivers",
+      "context": "Rivers being characteristically filthy and self-deprecating about her own dried-up sex life.",
+      "real": true,
+      "source": {
+        "title": "Stand-up one-liner (CNN roundup)",
+        "url": "https://www.cnn.com/2014/09/05/showbiz/celebrity-news-gossip/joan-rivers-jokes/index.html",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "The ice cream man always drove an extra block away. I know he's seen us, but I think he just be in the car with his friends saying, 'Watch me how fast I make these motherfuckers run.'",
+      "speaker": "Eddie Murphy",
+      "context": "From Eddie Murphy's 1983 HBO stand-up special 'Delirious' (filmed at DAR Constitution Hall) — his childhood ice-cream-truck bit, where the vendor cruelly speeds off to watch the neighborhood kids chase him.",
+      "real": true,
+      "source": {
+        "title": "'Delirious' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0085474/quotes/",
+        "date": "1983"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "A journalist once asked me if fame had changed me and I said yes, now I'm an asshole in nicer shoes. He printed 'the spotlight has refined him.' I will never forgive that man for making me sound reasonable.",
+      "speaker": "Frank Zappa",
+      "context": "Interview with Paul Gambaccini for BBC Radio 1, London, October 1978",
+      "real": false,
+      "fake_note": "I made this one up — Zappa had exactly this contempt for the press softening his edges, and the 'nicer shoes' line fits his blunt, anti-pretension brand of self-description. The giveaway is the final sentence; Zappa would more likely have gone after the institution of journalism broadly rather than pinning it on one journalist with that kind of mock-personal grievance."
+    },
+    {
+      "id": "q4",
+      "text": "I was doing a little over $1,000 a day in heroin, and then probably the same in cocaine and alcohol.",
+      "speaker": "Nikki Sixx",
+      "context": "Mötley Crüe bassist describing the scale of his addiction at his worst, around the period of his December 1987 heroin overdose; said in 2019 press for the Netflix film 'The Dirt'.",
+      "real": true,
+      "source": {
+        "title": "'The Dirt' press (Chicago Sun-Times)",
+        "url": "https://chicago.suntimes.com/entertainment/motley-crue-biopic-netflix-nikki-six-doing-1000-dollars-a-day-in-heroin/",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People ask why my stand-up is so filthy. Because clean comedy is a goddamn lie, that's why. You ever stub your toe and say 'oh fudge'? No. You say what you say, and that's the only honest moment most people have all day.",
+      "speaker": "Richard Pryor",
+      "context": "Playboy magazine interview conducted by Lawrence Linderman, published January 1979",
+      "real": false,
+      "fake_note": "I made this one up — Pryor genuinely philosophized about profanity as truth-telling, so the premise fits his real worldview almost too well. The giveaway is 'the only honest moment most people have all day' — it's a little too aphoristic and rounded off; Pryor's real phrasing was more jagged and self-implicating."
+    },
+    {
+      "id": "q6",
+      "text": "I got thrown out of a hotel in Hamburg in 1966 and I still don't think that was fair. All I did was complain about the eggs. Loudly. With a guitar.",
+      "speaker": "John Lennon",
+      "context": "Interview with Jonathan Cott for Rolling Stone, New York City, September 1980",
+      "real": false,
+      "fake_note": "I made this one up — Lennon loved the deliberately understated escalation as a comedic device and 'with a guitar' at the end is pure him. The giveaway is the tidiness of the three-beat structure; Lennon's real anecdote-telling was more discursive and would have had at least one more digression before the payoff."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-27",
+  "edition": 65,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My mother wanted me to play classical. I wanted to play anything that would make somebody move their feet. We compromised by fighting about it for about twelve years and then I left for Memphis.",
+      "speaker": "Booker T. Jones",
+      "context": "Interview with Terry Gross on Fresh Air, NPR, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Booker T. has spoken warmly and often about his upbringing, his family's musical expectations, and his journey to Stax Records. The rhythm of 'we compromised by fighting about it' sounds completely like him, but the 'twelve years' is the kind of specific number he'd never pin down that cleanly."
+    },
+    {
+      "id": "q2",
+      "text": "I'm always saying in the meetings, 'We've got to give the fans what they want,'",
+      "speaker": "Jack Osbourne",
+      "context": "Discussing the upcoming Ozzy biopic",
+      "real": true,
+      "source": {
+        "title": "Music — Jack Osbourne Says Upcoming Ozzy Movie Won’t Be an ‘Artsy, Esoteric Biopic’",
+        "url": "https://www.rollingstone.com/music/music-news/jack-osbourne-ozzy-osbourne-movie-update-1235616567/",
+        "date": "2026-08-27"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "When Brady told me he wanted to shoot our show in 70 millimeter (70 millimeter!) I didn't realize what a difference it would make",
+      "speaker": "David Byrne",
+      "context": "Singer commenting on upcoming concert film directed by Brady Corbet",
+      "real": true,
+      "source": {
+        "title": "Music — David Byrne’s Baltimore Shows Set for Concert Film by ‘Brutalist’ Director Brady",
+        "url": "https://www.rollingstone.com/music/music-news/david-byrne-baltimore-shows-concert-film-brady-corbet-1235616620/",
+        "date": "2026-08-27"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "There was a period where I was convinced the snare on 'Thriller' was too loud. I kept saying it to Quincy and he would just look at me like I'd suggested we paint the walls of the studio orange. He was right, obviously.",
+      "speaker": "Bruce Swedien",
+      "context": "Keynote address at the Audio Engineering Society convention, New York, October 2009",
+      "real": false,
+      "fake_note": "I made this one up — Bruce Swedien genuinely told countless stories about his dynamic with Quincy Jones in the studio and his obsessive relationship with that snare sound. The giveaway is the orange-walls simile, which is vivid but a touch too colorful for his characteristically measured engineering-speak."
+    },
+    {
+      "id": "q5",
+      "text": "The first time I heard the orchestral arrangement they'd written for 'The Suburbs' I went into the bathroom and just sat on the floor for a while. I didn't want anyone to see that it had gotten to me that badly. Win came and knocked on the door after about ten minutes.",
+      "speaker": "Régine Chassagne",
+      "context": "Interview with Pitchfork conducted at Osheaga Music Festival, Montréal, August 2011",
+      "real": false,
+      "fake_note": "I made this one up — Régine is known for emotional, intimate reflections on the Arcade Fire creative process and she and Win Butler are openly discussed as collaborative partners. The tell is that the anecdote is almost too cinematically perfect — the bathroom floor, the knock on the door — it's a beat too shaped."
+    },
+    {
+      "id": "q6",
+      "text": "Somebody told me once that my albums don't have skips. I didn't take it as a compliment at first — I thought they meant nothing stood out. Then I realized they meant you just keep listening. That reframing took me an embarrassingly long time.",
+      "speaker": "Sade",
+      "context": "Rare sit-down interview with The Guardian, published April 2011 ahead of her Soldier of Love world tour",
+      "real": false,
+      "fake_note": "I made this one up — Sade is notoriously private and when she does speak she tends toward quiet, reflective observations about how her music is received. The giveaway is 'embarrassingly long time,' which is a shade too self-critical for someone who typically speaks with deliberate composure."
+    }
+  ]
+}
