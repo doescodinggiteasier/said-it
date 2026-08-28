@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-28",
+  "edition": 66,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "What I KNOW is Dolly would want me to feel it, write a song about it, and then continue on and be strong.",
+      "speaker": "Miley Cyrus",
+      "context": "Miley Cyrus paying tribute to godmother Dolly Parton",
+      "real": true,
+      "source": {
+        "title": "Music — Miley Cyrus Pays Tribute to Godmother Dolly Parton: “I Have an Angel by My Side”",
+        "url": "https://pitchfork.com/story/miley-cyrus-pays-tribute-to-godmother-dolly-parton-i-have-an-angel-by-my-side/",
+        "date": "2026-08-28"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Shane MacGowan was full of contradictions — and that's where the truth of him lived",
+      "speaker": "The Edge",
+      "context": "The Edge sharing a quote for a Shane MacGowan tribute album",
+      "real": true,
+      "source": {
+        "title": "Music — U2 share cover of The Pogues’ ‘Yeah, Yeah, Yeah, Yeah, Yeah’ for Shane MacGowan ",
+        "url": "https://www.nme.com/news/music/u2-cover-pogues-yeah-yeah-yeah-yeah-yeah-for-shane-macgowan-tribute-album-3965408?utm_source=rss&utm_medium=rss&utm_campaign=u2-cover-pogues-yeah-yeah-yeah-yeah-yeah-for-shane-macgowan-tribute-album",
+        "date": "2026-08-28"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've never once gone into a session thinking about genre. I go in thinking about the feeling at the end of the night when the last person leaves a club and they're still humming something. That's the only brief I give myself.",
+      "speaker": "Daft Punk",
+      "context": "Mojo magazine retrospective interview with Thomas Bangalter and Guy-Manuel de Homem-Christo, published February 2014",
+      "real": false,
+      "fake_note": "I made this one up — this matches the duo's documented fixation on dancefloor feeling over category, and Thomas especially has discussed the 'end of the night' emotional arc in real interviews. The give away is it's attributed to both together, but Mojo did run joint quotes from them in this period."
+    },
+    {
+      "id": "q4",
+      "text": "I remember finishing the bridge on 'Superstition' and just sitting there at the clavinet thinking, nobody's gonna know what to do with this. And then everybody knew what to do with it.",
+      "speaker": "Stevie Wonder",
+      "context": "Rolling Stone's oral history of Talking Book, published November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Stevie really does talk about the compositional process with that mix of doubt and quiet pride, and 'Superstition' and the clavinet are his genuine touchstones. The subtle giveaway is that the punchline lands a little too cleanly for unscripted speech."
+    },
+    {
+      "id": "q5",
+      "text": "All I need is 33 minutes and 10 seconds. That's it",
+      "speaker": "Jamie T",
+      "context": "Asking to join Reading & Leeds 2026 lineup at the last minute",
+      "real": true,
+      "source": {
+        "title": "Music — Reading & Leeds 2026: Jamie T asks to join line-up “at last minute”",
+        "url": "https://www.nme.com/news/music/reading-leeds-2026-jamie-t-asks-to-join-line-up-at-last-minute-3965063?utm_source=rss&utm_medium=rss&utm_campaign=reading-leeds-2026-jamie-t-asks-to-join-line-up-at-last-minute",
+        "date": "2026-08-27"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People always want to know about the samples, like that's the magic trick. The sample is just the door. You still have to build the whole house.",
+      "speaker": "DJ Premier",
+      "context": "Red Bull Music Academy lecture, New York, April 2019",
+      "real": false,
+      "fake_note": "I made this one up — Premier talks about sampling craft constantly and the construction-metaphor fits his workmanlike Brooklyn vocabulary perfectly. The giveaway is that it skews just slightly too aphoristic for how he usually rambles into specifics before landing a point."
+    }
+  ]
+}

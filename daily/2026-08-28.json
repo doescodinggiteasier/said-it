@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-28",
+  "edition": 74,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I make up different names for my cat all the time—Flapjack, Bowtie, Popcorn. But he's really, 'Hey you, cat.'",
+      "speaker": "Christopher Walken",
+      "context": "The actor on his pet cat in an Interview Magazine feature",
+      "real": true,
+      "source": {
+        "title": "Christopher Walken on Cats, Characters, and Career Highlights - Interview Magazine",
+        "url": "https://www.interviewmagazine.com/film/christopher-walken",
+        "date": "2012-01-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People ask me how I stay motivated and I genuinely don't have a clean answer. Some mornings I wake up and I'm already thinking about the next album before I've made coffee. Other mornings I sit there staring at the wall for forty-five minutes and then eat cereal and watch old footage of Stevie Wonder performing live. Both of those mornings eventually become the same morning, if that makes any sense.",
+      "speaker": "John Mayer",
+      "context": "Zane Lowe interview on Apple Music 1, broadcast October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Mayer is famous for rambling, self-aware musician-speak and his obsession with Stevie Wonder is well-documented, so this feels immediately authentic. The subtle giveaway is that 'both of those mornings eventually become the same morning' edges just slightly toward a tidy resolution Mayer would probably undercut with a joke instead."
+    },
+    {
+      "id": "q3",
+      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
+      "speaker": "Ted Stevens",
+      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality.",
+      "real": true,
+      "source": {
+        "title": "Series of tubes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
+        "date": "2006-06-28"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The first time I cooked for a Michelin inspector — not that you ever know who they are — I sent out a dish and immediately wanted to run into the dining room and take it back. Not because it was wrong. Because it was too safe. I'd made something I already knew how to make, and that is the most dishonest thing a cook can do.",
+      "speaker": "Daniel Humm",
+      "context": "MAD Food Symposium, Copenhagen, August 2019",
+      "real": false,
+      "fake_note": "I made this one up — Humm talks constantly about honesty and restraint in cooking, and his anxiety about complacency at Eleven Madison Park is well-established in interviews. The slight tell is the parenthetical about not knowing inspectors, which reads a touch too composed for someone describing a genuine moment of panic."
+    },
+    {
+      "id": "q5",
+      "text": "I think everybody pees in the pool.",
+      "speaker": "Michael Phelps",
+      "context": "Swimmer answering a Wall Street Journal interview question about pool etiquette, as quoted by CBS News",
+      "real": true,
+      "source": {
+        "title": "Michael Phelps on peeing in the pool: Everybody does it",
+        "url": "https://www.cbsnews.com/news/michael-phelps-on-peeing-in-the-pool-everybody-does-it/",
+        "date": "2012-08-10"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "When I was at Stanford I had this professor who told me the most dangerous engineer is the one who falls in love with their own solution before they understand the problem. I wrote it on a Post-it. I lost the Post-it. I've thought about it probably once a week since 2003.",
+      "speaker": "Sundar Pichai",
+      "context": "Stanford Engineering commencement address, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Pichai frequently cites formative mentor moments and his Stanford years in public talks, and the humble, slightly self-deprecating structure sounds exactly like him. The subtle tell is the specificity of '2003' — he'd more likely leave the year vague in a real speech."
+    }
+  ]
+}

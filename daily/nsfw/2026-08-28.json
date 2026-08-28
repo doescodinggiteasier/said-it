@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-28",
+  "edition": 65,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Why me? Ten million motherfuckers freebasing, and I'm the one who blows up!",
+      "speaker": "Richard Pryor",
+      "context": "Pryor's frank, self-lacerating bit about the 1980 freebasing accident in which he set himself on fire, from his stand-up film 'Richard Pryor: Live on the Sunset Strip' (1982).",
+      "real": true,
+      "source": {
+        "title": "Richard Pryor - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Richard_Pryor",
+        "date": "1982"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People say, 'Keith, don't you worry about your liver?' I say, 'My liver worries about ME. There's a difference and my liver knows it.'",
+      "speaker": "Keith Moon",
+      "context": "Interview with Nick Kent for NME, published June 1975",
+      "real": false,
+      "fake_note": "I made this one up — Moon's gleeful self-mythology around excess is legendary, and this kind of reversal joke is exactly how he deflected concern in print interviews. The giveaway is that Moon's real quotes were wilder and more physically specific; this one is a touch too structurally neat."
+    },
+    {
+      "id": "q3",
+      "text": "I spent half of 1974 in hotel rooms I couldn't identify and the other half looking for the shoes I'd left in the hotel rooms I couldn't identify. And somehow we made four albums. Rock and roll, baby.",
+      "speaker": "Bon Scott",
+      "context": "Radio interview on 2JJ Sydney, Australia, recorded during the High Voltage promotion tour, February 1976",
+      "real": false,
+      "fake_note": "I made this one up — Scott's larrikin road-dog persona and deadpan delivery make this entirely plausible, and the shoe detail gives it the messy specificity of real road-life storytelling. The giveaway is 'baby' as a sign-off; Scott's actual verbal tics ran more Australian vernacular than American soul-speak."
+    },
+    {
+      "id": "q4",
+      "text": "I'll tell you what's romantic — paying someone's cab fare home at two in the morning because you were too loud and too much and they needed a break from you. That's love. That's the whole bloody thing right there.",
+      "speaker": "Oliver Reed",
+      "context": "Interview with Russell Harty on ITV's Harty, broadcast November 1981",
+      "real": false,
+      "fake_note": "I made this one up — Reed's brand of chaotic, boozy romanticism is well documented, and rambling about love in a self-incriminating way on a chat show is entirely in character. The subtle giveaway is the almost-tender framing; Reed tended to torpedo sentiment faster than this before it landed."
+    },
+    {
+      "id": "q5",
+      "text": "Marriage is two people agreeing to annoy each other exclusively. I've done it twice. I'm very committed to the bit.",
+      "speaker": "Rodney Dangerfield",
+      "context": "Appearance on The Tonight Show Starring Johnny Carson, NBC, taped March 1983",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield's self-deprecating marriage material was his bread and butter, and the 'committed to the bit' closer has his rhythm. The giveaway is that Dangerfield's real Carson lines were denser and faster; he'd have squeezed two more reversals in before the pause."
+    },
+    {
+      "id": "q6",
+      "text": "The strangest thing I've tried to snort? My father. I snorted my father. He was cremated and I couldn't resist grinding him up with a little bit of blow. My dad wouldn't have cared, he didn't give a shit. It went down pretty well, and I'm still alive.",
+      "speaker": "Keith Richards",
+      "context": "Rolling Stones guitarist Keith Richards, in an April 2007 NME interview, describing the strangest thing he had snorted — his late father's cremated ashes ground up with cocaine. Reported by NME, The Hollywood Reporter, VOA, and others. Richards' manager later told NME the remark was made in jest, and Richards offered a softened account in his 2010 memoir, but he is documented giving this quote in the interview.",
+      "real": true,
+      "source": {
+        "title": "NME interview (later called a joke)",
+        "url": "https://www.nme.com/news/music/the-rolling-stones-433-1341398",
+        "date": "2007"
+      }
+    }
+  ]
+}

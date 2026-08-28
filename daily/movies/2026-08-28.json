@@ -1,0 +1,65 @@
+{
+  "date": "2026-08-28",
+  "edition": 71,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "As far back as I can remember, I always wanted to be a gangster.",
+      "speaker": "Goodfellas (1990)",
+      "context": "Henry Hill's (Ray Liotta) opening voiceover narration",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "You really think any of this looks different from the outside?",
+      "speaker": "The Truman Show (1998)",
+      "context": "Christof to a producer, dismissing a critic of the show's ethics",
+      "real": false,
+      "fake_note": "I made this one up — Christof's grandiose self-justification lends itself to this kind of rhetorical deflection. The subtle giveaway is that it's a touch too oblique for Christof, who in the actual film tends to be more openly philosophical and self-righteous."
+    },
+    {
+      "id": "q3",
+      "text": "Funny business, a woman's career. The things you drop on your way up the ladder so you can move faster. You forget you'll need them again when you get back to being a woman.",
+      "speaker": "All About Eve (1950)",
+      "context": "Aging Broadway star Margo Channing (Bette Davis) reflecting on the costs of ambition.",
+      "real": true,
+      "source": {
+        "title": "All About Eve - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/All_About_Eve",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "You keep talking like that, they're gonna start believing you mean it.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes to Evelyn Mulwray during a tense exchange about her story",
+      "real": false,
+      "fake_note": "I made this one up — Gittes is all sardonic pressure, and this sounds exactly like his probing, half-threat half-observation style. The subtle giveaway is that it's just a hair too neatly double-edged; real Gittes lines tend to be blunter and more self-amused."
+    },
+    {
+      "id": "q5",
+      "text": "You're an errand boy sent by grocery clerks to collect a bill.",
+      "speaker": "Apocalypse Now (1979)",
+      "context": "Colonel Kurtz (Marlon Brando) to Captain Willard (Martin Sheen) at his compound, dismissing Willard's mission.",
+      "real": true,
+      "source": {
+        "title": "Apocalypse Now - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Apocalypse_Now",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Nobody around here does anything out of kindness, sweetheart. Remember that.",
+      "speaker": "Double Indemnity (1944)",
+      "context": "Walter Neff cautioning Phyllis Dietrichson early in their scheme",
+      "real": false,
+      "fake_note": "I made this one up — the noir cadence, the 'sweetheart,' and the cynical worldview all fit Neff's voice like a glove. The subtle giveaway is that the real film's dialogue is slightly more florid and mannered than this stripped-down line allows."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-28",
+  "edition": 62,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The thing about a filibuster is that you can support it or oppose it depending entirely on which side of it you happen to be standing on that particular Tuesday.",
+      "speaker": "Mitch McConnell",
+      "context": "Interview with Hugh Hewitt on The Hugh Hewitt Show, Premiere Radio Networks, February 2021",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's wry, procedural candor is exactly this dry, and he's genuinely discussed the filibuster's shifting fortunes at length. The giveaway is that he'd never be quite this openly self-implicating, even in jest."
+    },
+    {
+      "id": "q2",
+      "text": "I grew up in a union household, and my dad had a saying: 'If you're not at the table, you're on the menu.' He also said it about Thanksgiving, which was confusing when I was seven.",
+      "speaker": "Amy Klobuchar",
+      "context": "Keynote address at the Minnesota AFL-CIO Convention, St. Paul, September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar constantly invokes her Minnesota working-class upbringing and her father, and this kind of folksy-then-undercut structure is her comedic wheelhouse. The giveaway is the Thanksgiving tag; real family anecdotes from her tend to stay in the lane they started in."
+    },
+    {
+      "id": "q3",
+      "text": "Washington is the only city where you can go to a dinner party, and by dessert, three people have explained to you why the thing that just happened didn't actually happen.",
+      "speaker": "Condoleezza Rice",
+      "context": "Conversation with David Axelrod on The Axe Files podcast, University of Chicago Institute of Politics, recorded January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Rice's precise, slightly bemused observations about Washington culture are well-documented, and The Axe Files is exactly the kind of cross-partisan forum where she'd say something like this. The tell is the dinner-party setting; she tends to use more formal institutional examples."
+    },
+    {
+      "id": "q4",
+      "text": "I did thirty years in the Senate and I can tell you the single greatest legislative skill is knowing how to look like you are listening in a committee hearing when you are, in fact, thinking about lunch.",
+      "speaker": "Bob Dole",
+      "context": "Remarks at the dedication of the Dole Institute of Politics, University of Kansas, Lawrence, July 2003",
+      "real": false,
+      "fake_note": "I made this one up — Dole's dry, self-skewering wit about Senate theater is exactly his register, and an event about his own legacy is where he'd feel freest to be candid. The tell is that Dole's real jokes tended to be even more elliptical and less tidy than this."
+    },
+    {
+      "id": "q5",
+      "text": "I admit it -- last year was rough.",
+      "speaker": "Barack Obama",
+      "context": "At the 2014 White House Correspondents' Dinner, Obama opened his self-deprecating riff by candidly conceding his difficult 2013.",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at White House Correspondents' Dinner (May 3, 2014) | whitehouse.gov archives",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I know people; I was Shirley Chisholm's youth director",
+      "speaker": "Al Sharpton",
+      "context": "March on Washington, introducing Alexandria Ocasio-Cortez",
+      "real": true,
+      "source": {
+        "title": "Politics — Sharpton compares Ocasio-Cortez to Chisholm at voting rights march",
+        "url": "https://thehill.com/homenews/campaign/6057889-sharpton-ocasio-cortez-chisolm-march-on-washington/",
+        "date": "2026-08-28"
+      }
+    }
+  ]
+}
