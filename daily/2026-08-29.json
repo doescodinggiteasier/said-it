@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-29",
+  "edition": 75,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone sent me a paper last year — a real, peer-reviewed paper — arguing that one of my jokes from 2009 had inadvertently anticipated a cognitive bias that got named and published in 2014. I read it three times because I kept thinking I was misunderstanding it. Apparently I did not misunderstand it.",
+      "speaker": "Hasan Minhaj",
+      "context": "Conversation with Ira Glass, This American Life, Episode 782, WBEZ Chicago, 2022",
+      "real": false,
+      "fake_note": "I made this one up — Minhaj is known for mixing comedy with journalism and intellectual curiosity, and this kind of meta-observation about the relationship between comedy and insight is very much his brand. The tell is the overly precise setup — 'peer-reviewed,' '2009,' '2014' — which piles on just a little too much specificity to feel truly off-the-cuff."
+    },
+    {
+      "id": "q2",
+      "text": "I will do it myself where does he live?",
+      "speaker": "Cory Booker",
+      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes.",
+      "real": true,
+      "source": {
+        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
+        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
+        "date": "2010-12-27"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Racism, threats, harassment, stalking, invasions of privacy, and targeting of children are abuse. Not opinion",
+      "speaker": "Miguel",
+      "context": "Singer-songwriter's Instagram post addressing harassment of his partner and child",
+      "real": true,
+      "source": {
+        "title": "Music — Miguel Calls Out Harassment of Partner and Child: ‘Legal and Ethical Lines Have ",
+        "url": "https://www.rollingstone.com/music/music-news/miguel-calls-out-online-harassment-1235617426/",
+        "date": "2026-08-29"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I did a three-week residency in Vegas once and by the end of it I'd completely lost track of what time it was, what day it was, and whether I actually liked any of my own songs anymore. You come out the other side and you're like — okay, so that happened.",
+      "speaker": "Elton John",
+      "context": "Conversation with David Furnish for the Rocket Hour, Apple Music 1, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — John has spoken openly about the disorienting grind of long residencies and the strange relationship a performer develops with their own catalog over decades. The tell is 'you come out the other side and you're like — okay, so that happened,' which is a slightly too casual verbal shrug for his real interview register."
+    },
+    {
+      "id": "q5",
+      "text": "There's a record I made in — I think it was 2003, maybe 2004 — where I was convinced every single night that it was the most important thing anyone had ever recorded. I listened to it recently and there's a song on there that is just, truly, not good. I'm not telling you which one.",
+      "speaker": "Jack White",
+      "context": "Interview with Marc Maron on WTF with Marc Maron, Episode 1389, 2022",
+      "real": false,
+      "fake_note": "I made this one up — White's WTF appearance was real and he did discuss his catalog with characteristic intensity and dry humor, making this feel authentic. The giveaway is the deliberate refusal to name the song, which is a slightly too knowing comedic beat for a candid interview moment."
+    },
+    {
+      "id": "q6",
+      "text": "I'm not an animal lover if that means you think things are nice if you can pet them, but I am intoxicated by animals.",
+      "speaker": "David Attenborough",
+      "context": "Naturalist and broadcaster, in a 2013 Metro interview, on his relationship with wildlife",
+      "real": true,
+      "source": {
+        "title": "David Attenborough - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/David_Attenborough",
+        "date": "2013-01-29"
+      }
+    }
+  ]
+}

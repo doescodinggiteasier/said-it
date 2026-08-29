@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-29",
+  "edition": 72,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'm kind of a big deal.",
+      "speaker": "Anchorman: The Legend of Ron Burgundy (2004)",
+      "context": "Ron Burgundy (Will Ferrell) boasting to Veronica Corningstone about his fame",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "Don't touch that map. The colonel doesn't like anyone touching that map.",
+      "speaker": "Bridge on the River Kwai (1957)",
+      "context": "A British junior officer warning a newcomer about Colonel Nicholson's headquarters",
+      "real": false,
+      "fake_note": "I made this one up — the fussy military protocol and the way authority is enforced through small rituals fits the film's satire of British officer-class rigidity. The giveaway is it's slightly too comic in its specificity; the film's humor tends to be drier and more situational than this."
+    },
+    {
+      "id": "q3",
+      "text": "The Dude abides.",
+      "speaker": "The Big Lebowski (1998)",
+      "context": "The Dude (Jeff Bridges) to The Stranger (Sam Elliott) at the bar near the film's end, summing up his laid-back philosophy.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "She left a note. Three words. I've been carrying it ever since.",
+      "speaker": "Chinatown (1974)",
+      "context": "Gittes speaking quietly to Evelyn about a past case that went wrong",
+      "real": false,
+      "fake_note": "I made this one up — Gittes's weary, understated delivery and the noir economy of language make it feel right at home. The giveaway is that Gittes almost never volunteers personal vulnerability this plainly; he usually deflects with a wisecrack."
+    },
+    {
+      "id": "q5",
+      "text": "I don't want a lawyer. I want five minutes alone with him.",
+      "speaker": "The Fugitive (1993)",
+      "context": "Deputy Marshal Gerard, interrogating someone who's been stonewalling him",
+      "real": false,
+      "fake_note": "I made this one up — Gerard's bulldog impatience and dry menace are exactly right for the character, and the rhythm matches Tommy Lee Jones's clipped delivery. The giveaway is Gerard is usually more procedurally minded; he'd more likely threaten paperwork than a back-room chat."
+    },
+    {
+      "id": "q6",
+      "text": "Did we just become best friends?",
+      "speaker": "Step Brothers (2008)",
+      "context": "Brennan (Will Ferrell) to Dale (John C. Reilly) after they bond over shared interests; Dale replies \"Yup!\"",
+      "real": true
+    }
+  ]
+}

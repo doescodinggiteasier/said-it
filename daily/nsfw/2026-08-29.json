@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-29",
+  "edition": 66,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Somebody at the label once told me my lyrics were 'alienating mainstream audiences' and I thought, yeah, that's the point, you useless suit, what part of the feedback made you think I was trying to get a Kmart placement?",
+      "speaker": "Frank Zappa",
+      "context": "Panel discussion at the New Music Seminar, New York City, July 1984",
+      "real": false,
+      "fake_note": "I made this one up — Zappa's contempt for the music industry establishment was volcanic and well-documented, and 'useless suit' is exactly the register he operated in when dismissing executives. The giveaway is 'Kmart placement' — anachronistically specific as a music-industry phrase for the mid-1980s context."
+    },
+    {
+      "id": "q2",
+      "text": "The afterparty went until about six in the morning and I remember at some point being extremely pleased with myself for reasons I could not fully reconstruct the next day. There were nachos involved. That part I'm confident about.",
+      "speaker": "John Belushi",
+      "context": "Printed interview in Rolling Stone, Issue 338, conducted by Cameron Crowe, February 1981",
+      "real": false,
+      "fake_note": "I made this one up — the cheerful, shrugging amnesia about a big night out followed by a weirdly specific food detail is pitch-perfect Belushi energy based on everything documented about his personality. The giveaway is that it's slightly too self-aware and tidy — Belushi's actual anecdotes tended to be louder and more chaotic."
+    },
+    {
+      "id": "q3",
+      "text": "It's cold outside, but I'm still looking like a thotty, because a hoe never gets cold.",
+      "speaker": "Cardi B",
+      "context": "From a now-iconic 2014 viral Instagram/Vine clip from her pre-fame days, strutting in a bra top and skirt and explaining why she's barely dressed in winter.",
+      "real": true,
+      "source": {
+        "title": "Nylon — Cardi B was right: hot girls don't get cold",
+        "url": "https://www.nylon.com/life/cardi-b-was-right-hot-girls-dont-get-cold-science-confirms",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I told the director, I said, look, I don't do subtle. I don't know what subtle is. I have tried it twice in my career and both times I looked like I needed a nap. Give me something to chew on or get out of my trailer, those are your options.",
+      "speaker": "Orson Welles",
+      "context": "Recorded conversation with Henry Jaglom, published in My Lunches with Orson, transcript from a 1983 lunch session",
+      "real": false,
+      "fake_note": "I made this one up — this fits beautifully within the My Lunches with Orson transcripts' already-published tone, where Welles was famously candid and imperious about his own working methods. The giveaway is 'get out of my trailer' — Welles usually expressed dominance in more baroque, elaborate language."
+    },
+    {
+      "id": "q5",
+      "text": "I'd sit there and smoke crack while I listened to the play. It made me fucking crazy.",
+      "speaker": "Samuel L. Jackson",
+      "context": "Reflecting on his 1980s/early-90s crack-cocaine addiction during his time as an understudy on Broadway's 'The Piano Lesson' (shadowing Charles Dutton), before he got sober in 1991. From a 2019 The Hollywood Reporter interview, widely reported (Entertainment Tonight, Today, People), Jan 2019.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter interview (TODAY report)",
+        "url": "https://www.today.com/health/health/samuel-l-jackson-opens-drug-addiction-early-career-rcna20476",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Somebody stole my hotel bathrobe on the European tour and honestly? Respect. That's a bold move. I've stolen worse from better places and I don't feel one ounce of shame about it, so if you're out there wearing my robe, you're living correctly.",
+      "speaker": "Keith Moon",
+      "context": "Radio interview on BBC Radio 1, recorded during The Who's 1973 Quadrophenia UK tour",
+      "real": false,
+      "fake_note": "I made this one up — Moon's cheerful, anarchic pride in petty misbehaviour and his habit of encouraging others in it is completely consistent with his documented personality. The giveaway is the philosophical sign-off 'you're living correctly' — Moon was chaotic, not reflective."
+    }
+  ]
+}

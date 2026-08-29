@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-29",
+  "edition": 64,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My first year in the league I was so worried about looking like I belonged that I probably played worse because of it. Like I'd make a great play and immediately start wondering if they thought it was a fluke. That stuff eats up real estate you need for actual basketball.",
+      "speaker": "Diana Taurasi",
+      "context": "The Athletic's 'Players' Tribune' long-form Q&A with Mirin Fabbro, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Taurasi has spoken candidly about her rookie self-consciousness and uses blunt, unsentimental language exactly like this. The phrase 'real estate you need' is plausible but just slightly too tidy for her usual cadence."
+    },
+    {
+      "id": "q2",
+      "text": "Basketball is something that I'm just good at. But horses is something that I feel the most happiness and sadness.",
+      "speaker": "Nikola Jokic",
+      "context": "The Denver Nuggets center, speaking during a 2025 promotional tour at a horse ranch in Beijing, on where his real emotional highs and lows come from.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — \"Basketball is just something I'm good at\": Jokic's admission",
+        "url": "https://sports.yahoo.com/article/basketball-just-something-im-good-103300970.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what I was thinking on that last drive and honestly I wasn't thinking anything clean. It was just — I've done this a thousand times in a parking lot, in a gym with no lights, whatever, and at some point your body just takes over and your brain is kind of annoying in those moments anyway.",
+      "speaker": "Stephen Curry",
+      "context": "NBA TV's 'The Starters' postgame interview, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Curry really does talk about his parking-lot shooting sessions and has said his brain 'gets in the way,' so this lands perfectly in his wheelhouse. The subtle giveaway is 'your brain is kind of annoying' — a touch too casually self-deprecating even for him."
+    },
+    {
+      "id": "q4",
+      "text": "I didn't have any plates or silverware or anything, and I just started eating it with my hands.",
+      "speaker": "John Madden",
+      "context": "Beloved NFL coach-turned-broadcaster John Madden recounting his very first encounter with a turducken (a chicken inside a duck inside a turkey), brought to his broadcast booth during a Saints game.",
+      "real": true,
+      "source": {
+        "title": "John Madden made turducken a Thanksgiving football tradition (NOLA.com / The Times-Picayune)",
+        "url": "https://www.nola.com/entertainment_life/eat-drink/john-madden-made-turducken-a-thanksgiving-football-tradition/article_ae8ca8ac-ab55-11ef-8fb0-135b1f214168.html",
+        "date": "2024-11-27"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "If everyone likes me, they're watching, so there has to be something there.",
+      "speaker": "Tony Romo",
+      "context": "The CBS lead NFL analyst, on Pat McAfee's show in January 2026, responding to criticism of his polarizing broadcasting style.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Tony Romo addresses criticism after another up-and-down year in CBS booth",
+        "url": "https://www.foxnews.com/sports/tony-romo-opens-up-about-commentating-criticism-he-chooses-ignore-theyre-watching",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "There's a thing that happens in a locker room after a really bad loss where nobody wants to be the first person to make a sound. And I've learned you almost have to be the one who breaks it, even if what you say is completely stupid. You just can't let that silence calcify.",
+      "speaker": "Tom Brady",
+      "context": "Jim Gray's 'Let's Go!' podcast, recorded in Boca Raton, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Brady has talked at length about locker-room culture and leadership, and 'calcify' is exactly the kind of slightly clinical word he reaches for when he's being thoughtful. The tell is that he almost never casts himself as the one saying 'something completely stupid.'"
+    }
+  ]
+}

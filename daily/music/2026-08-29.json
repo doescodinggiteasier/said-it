@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-29",
+  "edition": 67,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The thing that always felt comforting was just knowing Dolly existed in country",
+      "speaker": "Orville Peck",
+      "context": "Paying tribute to Dolly Parton with a cover of 'I Will Always Love You'",
+      "real": true,
+      "source": {
+        "title": "Music — Watch Orville Peck pay moving tribute to Dolly Parton with cover of ‘I Will Alwa",
+        "url": "https://www.nme.com/news/music/watch-orville-peck-pay-moving-tribute-to-dolly-parton-with-cover-of-i-will-always-love-you-3965092?utm_source=rss&utm_medium=rss&utm_campaign=watch-orville-peck-pay-moving-tribute-to-dolly-parton-with-cover-of-i-will-always-love-you",
+        "date": "2026-08-27"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Jazz is the only music where you can be completely wrong and completely right at the same time and everybody in the room knows it and nobody says anything because you all agreed before you started.",
+      "speaker": "Herbie Hancock",
+      "context": "TED Talk, TED2017, Vancouver, April 2017",
+      "real": false,
+      "fake_note": "I made this one up — Herbie has given TED talks and consistently frames jazz as a philosophy of communication and shared agreement, so this fits squarely in his lane. The giveaway is that it's a touch more epigrammatic than how he usually gets at this idea, which tends to involve more personal anecdote."
+    },
+    {
+      "id": "q3",
+      "text": "Thank you for waiting. It certainly is two of my most beautiful pieces of work.",
+      "speaker": "Lana Del Rey",
+      "context": "Announcing companion album Spyda",
+      "real": true,
+      "source": {
+        "title": "Music — Lana Del Rey Announces Stove Companion Album Spyda",
+        "url": "https://consequence.net/2026/07/lana-del-rey-stove-companion-album-spyda/",
+        "date": "2026-07-16"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Nerves are just your mind telling you that you're about to do something extraordinary",
+      "speaker": "Simon Le Bon",
+      "context": "Advice given to Westside Cowboy backstage at Later… With Jools Holland",
+      "real": true,
+      "source": {
+        "title": "Music — Breakout indie band Westside Cowboy on rejecting tech and loving imperfection: ‘",
+        "url": "https://www.theguardian.com/music/2026/aug/24/westside-cowboy-indie-fourpiece",
+        "date": "2026-08-29"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "When we did the Thriller video, nobody on that set was thinking 'landmark.' We were thinking about whether the zombie makeup was going to hold up under the lights and whether we'd finish before sunrise. That's what you're thinking about.",
+      "speaker": "Vincent Price",
+      "context": "BBC Radio 4 interview, Desert Island Discs, January 1984",
+      "real": false,
+      "fake_note": "I made this one up — Price did appear on Desert Island Discs and was known for his dry, grounded wit, and his laugh-track cameo on Thriller is one of his most famous pop-culture moments. The giveaway is that Price usually framed his film and music work more theatrically — he'd have enjoyed the drama of the moment too much to be *this* matter-of-fact."
+    },
+    {
+      "id": "q6",
+      "text": "People always want to know what the 'trick' is to writing a melody that sticks. I usually just say I sat in a parked car for two hours not going anywhere and something showed up. That's about as technical as it gets.",
+      "speaker": "Paul Simon",
+      "context": "The New Yorker Festival, October 2018, in conversation with David Remnick",
+      "real": false,
+      "fake_note": "I made this one up — Paul Simon has talked extensively about the mysterious, almost passive nature of songwriting inspiration, so the parked-car detail feels very him. The subtle giveaway is that he tends to be a bit more precise about *which* song he's describing, not quite this general."
+    }
+  ]
+}

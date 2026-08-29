@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-29",
+  "edition": 63,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I will do it myself where does he live?",
+      "speaker": "Cory Booker",
+      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes.",
+      "real": true,
+      "source": {
+        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
+        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
+        "date": "2010-12-27"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "As soon as Trump started putting those tariffs on in February [last year], I started boycotting US goods",
+      "speaker": "William McDonald",
+      "context": "Canadian diesel mechanic from Thunder Bay, Ontario, speaking about boycotting US goods",
+      "real": true,
+      "source": {
+        "title": "Politics — ‘If it’s made in the US, I don’t buy it’: Canadians on boycotting Trump’s Americ",
+        "url": "https://www.theguardian.com/business/2026/aug/29/if-its-made-in-the-us-i-dont-buy-it-canadians-on-boycotting-trumps-america",
+        "date": "2026-08-29"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I learned early on that if you want to survive in this business, you have to be able to sit across from someone you completely disagree with and still figure out what they had for lunch, because that's usually what the conversation ends up being about anyway.",
+      "speaker": "James Baker",
+      "context": "Keynote address at the Baker Institute for Public Policy 25th Anniversary Gala, Houston, Texas, November 2018",
+      "real": false,
+      "fake_note": "I made this one up — Baker's reputation for pragmatic deal-making and wry insider humor makes this feel plausible, and the slightly convoluted logic of the anecdote fits how he actually rambles in long-form speeches. The giveaway is the punchline is a hair too cute for Baker, who usually lands his humor drier and flatter."
+    },
+    {
+      "id": "q4",
+      "text": "Every few months someone tells me I should write a book about my time in Congress. I keep saying I'm still recovering from my time in Congress.",
+      "speaker": "John Boehner",
+      "context": "Interview with Hugh Hewitt on The Hugh Hewitt Show, syndicated radio, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Boehner has been openly candid, even gleeful, about his relief at leaving office, and this kind of self-deprecating remark fits perfectly with the persona he's leaned into since retiring. The subtle tell is the timing: Boehner was actively promoting his memoir in 2021, so joking about not having written one yet would be slightly off."
+    },
+    {
+      "id": "q5",
+      "text": "My staff keeps telling me to get on TikTok. I said, 'I am not doing a dance to explain the debt ceiling.' That's where I drew the line.",
+      "speaker": "Mitch McConnell",
+      "context": "Kentucky Farm Bureau Country Ham Breakfast, Fancy Farm, Kentucky, August 2022",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's dry, self-deprecating wit about his own stiff public image is well-documented, and this fits his pattern of making the audience laugh at his expense. The giveaway is that McConnell almost never references specific social media platforms by name in casual settings."
+    },
+    {
+      "id": "q6",
+      "text": "He said he felt like a little boy who had stubbed his toe in the dark. That he was too old to cry, but it hurt too much to laugh.",
+      "speaker": "Adlai Stevenson",
+      "context": "Quoting a Lincoln anecdote to describe how he felt conceding the 1952 presidential election, Springfield, Illinois, Nov. 5, 1952.",
+      "real": true,
+      "source": {
+        "title": "The American Presidency Project: Remarks Conceding the Presidential Election in Springfield, Illinois",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-conceding-the-presidential-election-springfield-illinois",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

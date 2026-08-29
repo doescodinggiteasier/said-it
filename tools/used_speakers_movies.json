@@ -70,7 +70,7 @@
 "the apartment  1960": "2026-07-01",
 "this is spinal tap  1984": "2026-07-01",
 "star wars  episode v   the empire strikes back  1980": "2026-07-01",
-"chinatown 1974": "2026-08-28",
+"chinatown 1974": "2026-08-29",
 "kramer vs kramer 1979": "2026-08-09",
 "the godfather 1972": "2026-08-22",
 "casablanca 1942": "2026-08-24",
@@ -122,7 +122,7 @@
 "the third man 1949": "2026-08-23",
 "michael clayton 2007": "2026-08-23",
 "lawrence of arabia 1962": "2026-08-24",
-"the big lebowski 1998": "2026-08-16",
+"the big lebowski 1998": "2026-08-29",
 "get shorty 1995": "2026-08-24",
 "the godfather part ii 1974": "2026-07-18",
 "ocean s eleven 2001": "2026-07-11",
@@ -137,9 +137,9 @@
 "the sting 1973": "2026-08-06",
 "braveheart 1995": "2026-07-15",
 "stand by me 1986": "2026-07-15",
-"step brothers 2008": "2026-08-07",
+"step brothers 2008": "2026-08-29",
 "ferris bueller s day off 1986": "2026-08-27",
-"anchorman the legend of ron burgundy 2004": "2026-08-07",
+"anchorman the legend of ron burgundy 2004": "2026-08-29",
 "forrest gump 1994": "2026-08-08",
 "caddyshack 1980": "2026-08-09",
 "the royal tenenbaums 2001": "2026-07-17",
@@ -220,5 +220,7 @@
 "memento 2000": "2026-08-25",
 "back to the future 1985": "2026-08-26",
 "full metal jacket 1987": "2026-08-27",
-"the truman show 1998": "2026-08-28"
+"the truman show 1998": "2026-08-28",
+"bridge on the river kwai 1957": "2026-08-29",
+"the fugitive 1993": "2026-08-29"
 }
