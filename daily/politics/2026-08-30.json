@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-30",
+  "edition": 64,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone on my team printed out a forty-page briefing on dairy subsidy reform and left it on my chair before a seven a.m. flight. I read the whole thing. That's either dedication or a cry for help. Possibly both.",
+      "speaker": "Amy Klobuchar",
+      "context": "Interview with Politico Magazine, published March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar has a well-documented, self-aware sense of humor about her own workaholism, and agricultural policy is genuinely central to her Senate work. The giveaway is the slight over-precision of 'forty-page' — she'd more likely say 'this enormous stack of paper.'"
+    },
+    {
+      "id": "q2",
+      "text": "Few thought he was even a starter / There were many who thought themselves smarter / But he ended PM / CH and OM / An earl and a knight of the garter.",
+      "speaker": "Clement Attlee",
+      "context": "A self-mocking limerick the former British PM wrote about himself in a letter to his brother Tom Attlee, April 8, 1956.",
+      "real": true,
+      "source": {
+        "title": "Lib Quotes: Clement Attlee (self-description limerick)",
+        "url": "https://libquotes.com/clement-attlee",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I will say, after about the third infrastructure bill, you start to develop a genuine emotional relationship with the word 'earmark.' My staff finds it concerning.",
+      "speaker": "Chuck Schumer",
+      "context": "Remarks at the Senate Democratic Caucus retreat dinner, Leesburg, Virginia, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Schumer really does talk about legislative mechanics with an almost nerdy enthusiasm, and self-deprecating humor about his own obsessiveness fits him perfectly. The subtle tell is that he'd be more likely to name the specific bill than say 'the third infrastructure bill.'"
+    },
+    {
+      "id": "q4",
+      "text": "I've read that the average senator spends something like a third of their time fundraising. I don't know if that number is right, but I can tell you it feels generous.",
+      "speaker": "John McCain",
+      "context": "Interview on Meet the Press, NBC, September 2007",
+      "real": false,
+      "fake_note": "I made this one up — McCain's dry, institution-skeptical humor and his genuine frustration with campaign finance make this feel completely in character. The tell is the hedged statistic: McCain would typically be more blunt and less likely to qualify with 'I don't know if that number is right.'"
+    },
+    {
+      "id": "q5",
+      "text": "You don't ever want to trample somebody's pain",
+      "speaker": "Abdul El-Sayed",
+      "context": "Democratic Senate candidate apologizing for comments about Michigan synagogue attack",
+      "real": true,
+      "source": {
+        "title": "Politics — El-Sayed apologizes for March comments about Michigan synagogue attack",
+        "url": "https://www.washingtonpost.com/politics/2026/08/29/el-sayed-apologizes-march-comments-about-michigan-synagogue-attack/",
+        "date": "2026-08-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what the hardest part of being governor is. Honestly? Parking. The security situation makes it completely impossible, and I've been in this job long enough that it still gets me every single morning.",
+      "speaker": "Gretchen Whitmer",
+      "context": "Q&A session at the Detroit Economic Club, Detroit, Michigan, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Whitmer's public persona is relatable, grounded, and fond of mundane-life humor, which makes a complaint about parking feel very on-brand. The tell is that it's almost too relatable — she'd typically anchor a bit like this to a specific Michigan location or commute detail."
+    }
+  ]
+}

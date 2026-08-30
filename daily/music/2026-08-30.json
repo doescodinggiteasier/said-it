@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-30",
+  "edition": 68,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Nobody touches the shepherd's pie till I've been in there. Don't bust my crust, baby.",
+      "speaker": "Keith Richards",
+      "context": "The Rolling Stones guitarist explaining his strict on-the-road rule about his pre-show shepherd's pie, written in his autobiography 'Life'. Oddly specific and very funny rock-star demand.",
+      "real": true,
+      "source": {
+        "title": "Don't mess with Keith Richards' pre-show shepherd's pie ritual, or he might threaten to cut you up and bake you into one",
+        "url": "https://www.loudersound.com/features/dont-mess-with-keith-richards-pre-show-shepherds-pie-ritual-or-he-might-threaten-to-cut-you-up-and-bake-you-into-one",
+        "date": "2023-03-23"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Drummers always know what's wrong with a track before anyone else admits it. The drummer knows. They feel it in the tempo before they can even say what it is. I learned to ask the drummer first and work backward from there.",
+      "speaker": "Dr. Dre",
+      "context": "Masterclass series supplemental Q&A session, MasterClass.com, published February 2021",
+      "real": false,
+      "fake_note": "I made this one up — Dre is famously precise about rhythm and groove, and he's spoken about the foundational role of the drum track in his production philosophy. The giveaway is the almost instructional structure, which is slightly more pedagogical than his typically guarded public voice."
+    },
+    {
+      "id": "q3",
+      "text": "My topic is the shift from 'architect' to 'gardener', where 'architect' stands for 'someone who carries a full picture of the work before it is made', to 'gardener' standing for 'someone who plants seeds and waits to see exactly what will come up'.",
+      "speaker": "Brian Eno",
+      "context": "Composer/producer Brian Eno (Roxy Music, ambient music pioneer, producer for Bowie, Talking Heads, U2) framing how he thinks about making music — not as an architect with the finished work in his head, but as a gardener who plants seeds",
+      "real": true,
+      "source": {
+        "title": "Composers as Gardeners — Brian Eno, Edge.org",
+        "url": "https://www.edge.org/conversation/brian_eno-composers-as-gardeners",
+        "date": "2011-11-10"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Find out who you are, and do it on purpose",
+      "speaker": "Dolly Parton",
+      "context": "Quote attributed to Dolly Parton in tribute article",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Find out who you are, and do it on purpose’: unabashedly herself, Dolly Parton ",
+        "url": "https://www.theguardian.com/music/2026/aug/26/dolly-parton-lgbtq-fans",
+        "date": "2026-08-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My mum used to bang on the ceiling with a broom when I was playing upstairs too late. Just — bam bam bam from underneath. And I genuinely think that rhythm ended up in some of those early songs. Parental percussion.",
+      "speaker": "Ed Sheeran",
+      "context": "Told during an acoustic set and Q&A at Rockefeller Center's TODAY Show summer concert series, August 2017",
+      "real": false,
+      "fake_note": "I made this one up — Ed regularly mines childhood domestic detail in interviews and his self-deprecating warmth is well documented. The giveaway is 'parental percussion' — it's a just-clever-enough coin of phrase that feels slightly too rehearsed for a live audience riff."
+    },
+    {
+      "id": "q6",
+      "text": "I've been asked if Auto-Tune bothers me and honestly what bothers me is a lazy melody. You can run a voice through a hundred machines; if the melody isn't doing anything, I'm going to the kitchen. I've left sessions for less.",
+      "speaker": "Missy Elliott",
+      "context": "Cover story interview, Rolling Stone, issue dated March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Missy genuinely talks about melody and production instinct with this kind of blunt confidence, and 'I've left sessions for less' sounds exactly like her. The giveaway is it's a little too neatly structured for live speech; her real answers tend to be more digressive."
+    }
+  ]
+}

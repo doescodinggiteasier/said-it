@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-30",
+  "edition": 76,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "We're at Madison Square Garden, home of the world champion New York Knicks! And they also do weddings",
+      "speaker": "Harry Styles",
+      "context": "Harry Styles performing at Madison Square Garden on Aug. 29",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Harry Styles Jokes About Taylor Swift’s Wedding During Madison Square Garden Con",
+        "url": "https://www.hollywoodreporter.com/music/music-news/harry-styles-taylor-swift-wedding-madison-square-garden-1236685019/",
+        "date": "2026-08-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "When I was at one of the hardest and most criticized moment of my life after my plastic surgery, Dolly was one of the only people in the industry who didn't take the opportunity to drag me down",
+      "speaker": "Heidi Montag",
+      "context": "Heidi Montag posting on X about Dolly Parton's support",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Heidi Montag Recalls Dolly Parton Defending Her Amid Plastic Surgery Criticism",
+        "url": "https://www.hollywoodreporter.com/news/general-news/heidi-montag-recalls-dolly-parton-defending-her-amid-plastic-surgery-criticism-1236684965/",
+        "date": "2026-08-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People say, oh, you must have known from a young age. I did not. I was twenty-six years old, building a website in my apartment in Menlo Park, and I genuinely did not know what it was going to be. I thought it might be a thing for, like, three years and then something else would come along.",
+      "speaker": "Mark Zuckerberg",
+      "context": "Lex Fridman Podcast, episode 383, recorded and released June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Mark has talked openly about Facebook's early uncertainty, and this kind of retrospective understatement matches his flat, literal delivery precisely. The give away is 'a thing for, like, three years' — it's almost too perfectly calibrated to sound casual."
+    },
+    {
+      "id": "q4",
+      "text": "I remember the first time I walked into Abbey Road, I genuinely stood there for probably two full minutes just staring at the floor. Not the equipment, not the booth — the floor. I don't know what I expected it to feel like, but it wasn't that.",
+      "speaker": "Taylor Swift",
+      "context": "Interview with Zane Lowe on Apple Music 1, published October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Taylor's documented reverence for music history and her habit of zeroing in on an unexpected, small detail makes this completely her. The subtle giveaway is 'the floor,' which is just specific enough to feel real but slightly too poetic to have actually slipped out."
+    },
+    {
+      "id": "q5",
+      "text": "Somebody on the internet said my acting in that film was 'aggressively fine,' and I have to tell you, I printed it out. It's on my refrigerator. That is the best review I have ever received in my life.",
+      "speaker": "Ryan Reynolds",
+      "context": "Interview on The Tonight Show Starring Jimmy Fallon, NBC, aired March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Ryan's whole public persona is built on weaponizing self-deprecation, and the bit about printing it out and putting it on the fridge is exactly the kind of escalation he loves. The tell is that 'aggressively fine' is a little too perfectly coined to have been a real internet comment he found."
+    },
+    {
+      "id": "q6",
+      "text": "I am extraordinarily patient, provided I get my own way in the end.",
+      "speaker": "Margaret Thatcher",
+      "context": "Self-aware, tongue-in-cheek remark by the British Prime Minister in an interview published in The Observer, 4 April 1989 (as catalogued by the Margaret Thatcher Centre's quotes page). Speaker was a UK Conservative Prime Minister.",
+      "real": true,
+      "source": {
+        "title": "Quotes - The Margaret Thatcher Centre",
+        "url": "https://www.thatchercentre.com/quotes/",
+        "date": "1989-04-04"
+      }
+    }
+  ]
+}

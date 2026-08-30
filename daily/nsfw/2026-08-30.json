@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-30",
+  "edition": 67,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The worst hangover I ever had, I still went on. Threw up in a bucket in the wings, wiped my mouth, walked out into the spotlight. The audience thought I was Method acting. I was just dying.",
+      "speaker": "Peter Cook",
+      "context": "Interview with Clive James, Saturday Night Clive, ITV, broadcast November 1989",
+      "real": false,
+      "fake_note": "I made this one up — Cook's detached, darkly comic delivery about his own excesses was a hallmark of his later interview style, and the Clive James chat show was exactly where he'd have said something like this. The giveaway is the phrasing 'I was just dying' — slightly too neat a kicker for Cook, who tended to let the air out more gradually."
+    },
+    {
+      "id": "q2",
+      "text": "Last year I was really into the word cocksucker. I thought it sounded so mean!",
+      "speaker": "Danny McBride",
+      "context": "Answering a rapid-fire 'favorite curse word' question in a Maxim interview promoting 'Eastbound & Down.'",
+      "real": true,
+      "source": {
+        "title": "Maxim interview",
+        "url": "https://www.maxim.com/entertainment/interview-danny-mcbride-eastbound-and-down/",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "You've baked a really lovely cake, but then you've used dog shit for frosting.",
+      "speaker": "Steve Jobs",
+      "context": "Critiquing a NeXT programmer's work during a project review",
+      "real": true,
+      "source": {
+        "title": "Book 'The Second Coming of Steve Jobs' (Cult of Mac)",
+        "url": "https://www.cultofmac.com/news/eleven-cutting-steve-jobs-quotes",
+        "date": "2000"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Marriage is a beautiful thing. I've done it enough times to know it looks a lot better from the outside, like a kebab at two in the morning — smells incredible, regret it by Thursday.",
+      "speaker": "Richard Burton",
+      "context": "Desert Island Discs, BBC Radio 4, recorded appearance, October 1974",
+      "real": false,
+      "fake_note": "I made this one up — Burton's self-deprecating wit about his marriages, particularly to Elizabeth Taylor, was a well-documented part of his public persona. The giveaway is the kebab metaphor, which is a bit too modern-casual for Burton's typically more literary and theatrical self-deprecation."
+    },
+    {
+      "id": "q5",
+      "text": "I'm sixty-something years old, I've got a Grammy, I've slept in a tour bus bunk that smelled like a men's locker room in July, and some twenty-two-year-old is going to explain guitar tone to me? Honey, sit down before I fall over laughing.",
+      "speaker": "June Carter Cash",
+      "context": "Interviewed by Ralph Emery on Nashville Now, TNN, broadcast February 1993",
+      "real": false,
+      "fake_note": "I made this one up — June Carter Cash had a sharp, self-assured wit that she deployed warmly but pointedly, and she was not shy about experience. The subtle giveaway is 'Honey, sit down' landing a little too much like a rehearsed punchline; her real put-downs were more offhand."
+    },
+    {
+      "id": "q6",
+      "text": "Look at your mushrooms - they look like fucking tadpoles on Viagra.",
+      "speaker": "Gordon Ramsay",
+      "context": "Chef Gordon Ramsay critiquing a kitchen's mushroom side dish on the \"Rococo\" episode of Ramsay's Kitchen Nightmares (King's Lynn restaurant), UK Channel 4, 2006.",
+      "real": true,
+      "source": {
+        "title": "'Ramsay's Kitchen Nightmares' — Rococo (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt1058681/",
+        "date": "2006"
+      }
+    }
+  ]
+}

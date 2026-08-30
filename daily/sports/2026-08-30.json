@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-30",
+  "edition": 65,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You want to know the honest truth about golf? Most days it doesn't reward you for trying harder. You have to learn to almost not care and that goes against everything that every coach ever told me growing up, so it took a while.",
+      "speaker": "Rory McIlroy",
+      "context": "The Guardian long-form feature, 'Rory at 30: Learning to Let Go,' published May 2019",
+      "real": false,
+      "fake_note": "I made this one up — Rory's spoken extensively about the mental battle of over-trying in golf and the journey to trust his swing, which makes this feel entirely plausible. The giveaway is 'almost not care' — he's articulate enough that he'd probably land on a more precise phrase than that."
+    },
+    {
+      "id": "q2",
+      "text": "This ain't a football game, we do this every day.",
+      "speaker": "Earl Weaver",
+      "context": "The Baltimore Orioles manager on the day-in, day-out grind that makes baseball unlike other sports.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Eye on Quotes: The pithy brilliance of Earl Weaver",
+        "url": "https://www.cbssports.com/mlb/news/eye-on-quotes-the-pithy-brilliance-of-earl-weaver/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Coaching is a great thing, because you're working for four months then you go fish for eight.",
+      "speaker": "Bob Knight",
+      "context": "The Indiana basketball coach joking about the perks of the coaching profession, in a roundup of his memorable lines.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Bob Knight quotes: Top 10 memorable lines from Indiana's legendary but controversial coach",
+        "url": "https://www.cbssports.com/college-basketball/news/bob-knight-quotes-top-10-memorable-lines-from-indianas-legendary-but-controversial-coach/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My first coach at Bayern told me something I didn't want to hear, which was that I was fun to watch but not yet hard to play against. I thought about that basically every session for about three years.",
+      "speaker": "Thomas Müller",
+      "context": "Interview with ESPN FC's Gab Marcotti, published in ESPN Magazine's European football preview, August 2016",
+      "real": false,
+      "fake_note": "I made this one up — Müller is well known for his disarmingly candid, self-analytical interviews in English, and the idea of a formative coaching moment fits his public persona precisely. The subtle tell is 'fun to watch but not yet hard to play against' — it's a little too quotable and clean for something he's attributing to someone else off the cuff."
+    },
+    {
+      "id": "q5",
+      "text": "He can take his'n and beat your'n and take your'n and beat his'n.",
+      "speaker": "Bum Phillips",
+      "context": "The Houston Oilers head coach paying tribute to rival coach Don Shula's ability with any roster.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — Remembering Bum Phillips, the unsung defensive innovator",
+        "url": "https://www.si.com/nfl/2013/10/19/remembering-bum-phillips-the-unsung-defensive-innovator",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I don't really accept the idea that power hitting and contact are opposites. When I'm locked in, I'm not swinging harder, I'm just — I don't know how to describe it — more committed earlier? Like the decision is made before the decision.",
+      "speaker": "Mike Trout",
+      "context": "MLB Network's 'MLB Tonight' sit-down interview, Anaheim, aired during the 2019 All-Star break",
+      "real": false,
+      "fake_note": "I made this one up — Trout rarely gets philosophical in interviews but when he does it's about the mechanics and feel of hitting, exactly like this, and the slightly fumbling self-correction ('I don't know how to describe it') is true to his understated delivery. The giveaway is 'committed earlier' — that's slightly more technical than he usually goes in a broadcast context."
+    }
+  ]
+}

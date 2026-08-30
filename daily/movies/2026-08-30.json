@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-30",
+  "edition": 73,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You fire me, and by noon every reporter in the city knows your name.",
+      "speaker": "The Insider (1999)",
+      "context": "Lowell Bergman, tense standoff with a network executive",
+      "real": false,
+      "fake_note": "I made this one up — it matches Bergman's blunt, leverage-minded pressure tactics and Mann's clipped dialogue style. The giveaway is it's slightly too compressed; Mann tends to let threats breathe across more lines."
+    },
+    {
+      "id": "q2",
+      "text": "My mama always said life was like a box of chocolates. You never know what you're gonna get.",
+      "speaker": "Forrest Gump (1994)",
+      "context": "Forrest (Tom Hanks) sits on a bus-stop bench recounting his mother's favorite saying.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "Eighteen months I spent building that case, and he walked out of there with a handshake.",
+      "speaker": "Serpico (1973)",
+      "context": "Serpico, bitter and exhausted, talking to a trusted friend after a courtroom defeat",
+      "real": false,
+      "fake_note": "I made this one up — it fits Serpico's mounting disillusionment and Lumet's naturalistic, dialogue-driven style. The subtle giveaway is the specificity of 'eighteen months,' which feels slightly planted; real Lumet characters complain in vaguer, angrier bursts."
+    },
+    {
+      "id": "q4",
+      "text": "Here's looking at you, kid.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick Blaine (Humphrey Bogart) says this to Ilsa (Ingrid Bergman) as a recurring toast, most memorably at the airport farewell.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "He's not lost. He just doesn't want to be found.",
+      "speaker": "Stand by Me (1986)",
+      "context": "Gordie, narrating or speaking quietly to Chris about one of the boys",
+      "real": false,
+      "fake_note": "I made this one up — the melancholy, boyhood-wisdom register fits Gordie's voice-over style perfectly. The giveaway is it leans slightly aphoristic; real lines from the film are messier and more specific to the moment."
+    },
+    {
+      "id": "q6",
+      "text": "One does not simply walk into Mordor.",
+      "speaker": "The Lord of the Rings: The Fellowship of the Ring (2001)",
+      "context": "Boromir (Sean Bean) arguing against the plan to destroy the Ring",
+      "real": true
+    }
+  ]
+}
