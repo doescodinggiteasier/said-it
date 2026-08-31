@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-31",
+  "edition": 69,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "A genius is the one most like himself.",
+      "speaker": "Thelonious Monk",
+      "context": "One line from 'T. Monk's Advice' — a set of pointers the jazz pianist Thelonious Monk gave saxophonist Steve Lacy, who wrote them down while playing in Monk's band in 1960.",
+      "real": true,
+      "source": {
+        "title": "Thelonious Monk’s Advice — Howard Rees’ Jazz Workshops (transcribed by Steve Lacy, 1960)",
+        "url": "https://jazzworkshops.com/thelonious-monks-advice/",
+        "date": "1960-01-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I was just a little sassy 22-year-old queer kid",
+      "speaker": "Sam Smith",
+      "context": "Sam Smith reflecting on not replying to Tom Petty's letter about Stay With Me songwriting credit",
+      "real": true,
+      "source": {
+        "title": "Music — Sam Smith regrets not replying to Tom Petty’s letter over ‘Stay With Me’ credit:",
+        "url": "https://www.nme.com/news/music/sam-smith-regrets-not-replying-tom-petty-letter-stay-with-me-sassy-queer-kid-3966026?utm_source=rss&utm_medium=rss&utm_campaign=sam-smith-regrets-not-replying-tom-petty-letter-stay-with-me-sassy-queer-kid",
+        "date": "2026-08-31"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People think country music is simple and I used to get defensive about that. Now I just think, okay, you try to make something that simple and have it mean something. Go ahead. I'll wait.",
+      "speaker": "Kacey Musgraves",
+      "context": "Cover interview with Rolling Stone, issue dated March 2019, conducted at a diner in Nashville",
+      "real": false,
+      "fake_note": "I made this one up — Kacey has repeatedly pushed back on country being dismissed as lowbrow, and the dry 'I'll wait' is very her. The tell is that she tends to be a little warmer and more self-deprecating; this version is just slightly too pointed."
+    },
+    {
+      "id": "q4",
+      "text": "I can't possibly accept this award.",
+      "speaker": "Adele",
+      "context": "Accepting Album of the Year for '25' at the 2017 Grammy Awards, Adele stunned the room by opening her acceptance speech declaring she couldn't accept the award, then turning to praise Beyonce — whose 'Lemonade' she felt should have won.",
+      "real": true,
+      "source": {
+        "title": "GRAMMY Rewind: Adele Urges That Beyonce's 'Monumental' 'Lemonade' Should've Won Album Of The Year In 2017",
+        "url": "https://www.grammy.com/news/adele-25-beyonce-lemonade-grammys-2017-album-of-the-year-win-acceptance-speech-video-rewind",
+        "date": "2017-02-12"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Hip-hop is the only genre that archives the block in real time. Like, you could go back and listen to records from Compton in '88 and they're basically oral history. Libraries should be collecting this stuff the same way they collect newspapers.",
+      "speaker": "Questlove",
+      "context": "Panel discussion at the South by Southwest Music Conference, Austin, Texas, March 2019, moderated by The Atlantic's Spencer Kornhaber",
+      "real": false,
+      "fake_note": "I made this one up — Questlove is a prolific music historian who makes exactly this kind of archival argument in books, podcasts and interviews. The 'libraries should be collecting this' pivot is the tell; it's a conclusion he definitely reaches, but he usually gets there after a much longer, more digressive route with five examples."
+    },
+    {
+      "id": "q6",
+      "text": "I've written songs on a tour bus, in a bathroom, on a napkin outside a Waffle House. The Waffle House one actually charted, which tells you everything you need to know about my process.",
+      "speaker": "Luke Bryan",
+      "context": "Conversation with Bobby Bones on The Bobby Bones Show, iHeartRadio, Nashville, aired September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Luke is known for this kind of self-deprecating, easygoing humor and the Waffle House reference is perfectly on-brand for a country star from Georgia. The tell is that the Waffle House line wraps up a little too neatly; he'd more likely have laughed through it and undercut the punchline himself."
+    }
+  ]
+}

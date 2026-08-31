@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-31",
+  "edition": 66,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I always look in the Sunday paper to see where Everton are in the league - starting, of course, from the bottom up.",
+      "speaker": "Bill Shankly",
+      "context": "The Liverpool manager needling city rivals Everton, in the club's official collection of his sayings.",
+      "real": true,
+      "source": {
+        "title": "Liverpool FC — Bill Shankly in his own words",
+        "url": "https://www.liverpoolfc.com/news/first-team/111453-bill-shankly-in-his-own-words",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I don't think I've had a full night's sleep before a match in fifteen years. And I've tried everything — I've done the breathing, I've done the routines, I've read the books. At a certain point I just accepted that my brain is going to do what it's going to do and I might as well stay out of its way.",
+      "speaker": "Rafa Nadal",
+      "context": "Player press conference at Roland Garros, published by L'Équipe, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Nadal's pre-match rituals and anxiety management are among the most documented in sports, and he's spoken openly about nerves throughout his career. The resigned, self-aware humor of 'stay out of its way' fits his evolved public voice. The giveaway is that Nadal's real quotes on this subject tend to be more specific about the physical symptoms of his nerves rather than the mental ones."
+    },
+    {
+      "id": "q3",
+      "text": "When I was coming up you couldn't just go watch yourself on tape every night. You had to remember what you did wrong and carry it around. I think that actually made me harder on myself, because I couldn't argue with my own memory. The tape might let you off the hook a little.",
+      "speaker": "Jerry West",
+      "context": "Interview with Bill Simmons for The Ringer's 'Book of Basketball 2.0' podcast series, recorded 2020",
+      "real": false,
+      "fake_note": "I made this one up — West's well-documented self-critical obsessiveness and his habit of discussing how his era differed from the modern game make this entirely plausible. The nuance that pre-video memory was 'harder' is a real tension old-era players have articulated. The giveaway is the phrase 'let you off the hook,' which is a touch too casual for West's usually more formal cadence."
+    },
+    {
+      "id": "q4",
+      "text": "I called my dad after we won and he goes, 'I saw you bobble that snap in the second quarter.' Not 'congratulations,' not 'good game.' I mean — I appreciate that, I genuinely do, but maybe lead with the trophy.",
+      "speaker": "Patrick Mahomes",
+      "context": "Appearance on The Pat McAfee Show, February 2023, days after Super Bowl LVII",
+      "real": false,
+      "fake_note": "I made this one up — Mahomes Sr.'s candid, critical-dad dynamic with Patrick is publicly acknowledged, and Patrick has gently ribbed his father in interviews before. The quote lands in that warm, good-natured groove. The giveaway is that Mahomes tends to be a little vaguer when naming specific plays; naming the snap bobble precisely is slightly too tidy."
+    },
+    {
+      "id": "q5",
+      "text": "Leave me alone, I know what I'm doing!",
+      "speaker": "Kimi Raikkonen",
+      "context": "Formula 1 driver's deadpan team-radio reply to his Lotus race engineer Simon Rennie, who kept feeding him instructions during the 2012 Abu Dhabi Grand Prix (which Raikkonen went on to win).",
+      "real": true,
+      "source": {
+        "title": "F1.com — Leave me alone, I know what I'm doing: the best of Räikkönen on race radio",
+        "url": "https://www.formula1.com/en/latest/article/leave-me-alone-i-know-what-doing-best-of-raikkonen-race-radio.rCKOidDkwt70dZdOENU3e",
+        "date": "2022-11-04"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My rookie year I got to camp and I thought I was ready. Three days in, Ray Lewis sat next to me at dinner and didn't say a single word, just stared at me until I got up and left. I went back to my room and watched film for four hours. I don't even know if he did it on purpose. But it worked.",
+      "speaker": "Ed Reed",
+      "context": "The Pivot Podcast with Channing Crowder, Ryan Clark and Fred Taylor, episode released October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Ed Reed's storytelling style is exactly this: concrete, slightly bewildered, crediting mentors sideways. Ray Lewis legendarily intimidated teammates, so it lands as plausible. The giveaway is that Reed would almost certainly name what specific film he watched; he's that precise about his preparation."
+    }
+  ]
+}

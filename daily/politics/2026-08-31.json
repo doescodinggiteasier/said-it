@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-31",
+  "edition": 65,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There are three kinds of Senate hearings: ones where everybody already knows what they think, ones where nobody knows what they think, and ones at 8 a.m. on a Tuesday where nobody is entirely sure where they are.",
+      "speaker": "Claire McCaskill",
+      "context": "Panel discussion at the Aspen Ideas Festival, Aspen, Colorado, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — post-Senate McCaskill has leaned hard into plain-spoken, slightly sardonic commentary on institutional life, and this is exactly the tone of her MSNBC appearances. The subtle tell is the structure: she usually builds jokes out of specifics rather than a tidy three-part list."
+    },
+    {
+      "id": "q2",
+      "text": "I will say, the one thing nobody warned me about when I got to the Senate was the sheer volume of binders. I have read more three-ring binders in the last six years than I did in four years of law school, and law school was not light reading.",
+      "speaker": "Amy Klobuchar",
+      "context": "Interview with Kara Swisher on the Pivot podcast, recorded in Washington D.C., October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar constantly references her Midwestern work-ethic and her law background, so this lands squarely in her wheelhouse. The subtle giveaway is that she'd more likely cite a specific committee than generalize to 'the Senate.'"
+    },
+    {
+      "id": "q3",
+      "text": "When I left Sacramento, someone gave me a book called 'How to Slow Down.' I have not opened it. It is on a shelf. I think about it sometimes when I'm on the fifth call of the morning.",
+      "speaker": "Gavin Newsom",
+      "context": "Interview with David Axelrod on The Axe Files podcast, episode recorded in Los Angeles, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Newsom cultivates a high-energy, slightly self-deprecating image and talks openly about his pace of work, so this fits his persona neatly. The tell is the detail about 'the fifth call of the morning,' which is specific enough to feel real but slightly too self-flattering about his own hustle."
+    },
+    {
+      "id": "q4",
+      "text": "Grassroots will beat big money every day",
+      "speaker": "Angie Nixon",
+      "context": "DSA member and Florida Senate candidate after winning a major primary upset",
+      "real": true,
+      "source": {
+        "title": "Politics — ‘Grassroots will beat big money every day’: can a DSA member flip a Republican S",
+        "url": "https://www.theguardian.com/us-news/2026/aug/30/angie-nixon-florida-senate-candidate",
+        "date": "2026-08-31"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People ask me all the time, 'What's the hardest vote you ever cast?' And honestly, the hardest votes are the ones where both sides of the argument were written by people smarter than me, and I still had to pick one.",
+      "speaker": "Mitt Romney",
+      "context": "Remarks at the University of Utah Hinckley Institute of Politics forum, Salt Lake City, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Romney's public persona is built on earnest self-deprecation and a genuine reverence for policy complexity, so this fits him perfectly. The giveaway for sharp players is that Romney tends to be slightly more formal and less self-undermining than this."
+    },
+    {
+      "id": "q6",
+      "text": "The world cannot have a China with a $1.2 trillion trade surplus.",
+      "speaker": "Scott Bessent",
+      "context": "Treasury Secretary Bessent speaking to Reuters ahead of G20 finance leaders meeting",
+      "real": true,
+      "source": {
+        "title": "Politics — Bessent to G20 finance leaders: Get tougher on China",
+        "url": "https://thehill.com/business/6060518-bessent-urges-g20-china-rebalance/",
+        "date": "2026-08-31"
+      }
+    }
+  ]
+}

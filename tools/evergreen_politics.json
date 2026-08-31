@@ -353,5 +353,16 @@
       "url": "https://www.theguardian.com/us-news/video/2026/aug/19/trump-talks-grass-white-house",
       "date": "2026-08-23"
     }
+  },
+  {
+    "text": "We're going to hit them hard. There will be a response.",
+    "speaker": "Trump",
+    "context": "President Trump speaking to Fox News correspondent Trey Yingst after Iran's retaliatory strikes",
+    "real": true,
+    "source": {
+      "title": "Politics — Trump vows response to Iran's retaliatory strikes: 'We're going to hit them hard",
+      "url": "https://thehill.com/homenews/administration/6060630-us-iran-exchange-strikes/",
+      "date": "2026-08-31"
+    }
   }
 ]

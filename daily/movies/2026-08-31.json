@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-31",
+  "edition": 74,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You dress like a lawyer and you talk like a lawyer, but you've got gambler's eyes.",
+      "speaker": "The Sting (1973)",
+      "context": "A seasoned grifter sizing up Henry Gondorff before agreeing to work the con",
+      "real": false,
+      "fake_note": "I made this one up — the period-appropriate character-reading line fits the film's con-world vernacular and the wary mutual assessment between grifters. The subtle giveaway is the rhythm; real lines in The Sting are slightly looser and less neatly parallel than this."
+    },
+    {
+      "id": "q2",
+      "text": "How could I have known that murder can sometimes smell like honeysuckle?",
+      "speaker": "Double Indemnity (1944)",
+      "context": "Insurance salesman Walter Neff (Fred MacMurray) narrating his dictaphone confession about the affair and murder plot with Phyllis Dietrichson.",
+      "real": true,
+      "source": {
+        "title": "Double Indemnity - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Double_Indemnity",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Be the ball.",
+      "speaker": "Caddyshack (1980)",
+      "context": "Ty Webb (Chevy Chase) giving zen golf advice to caddy Danny Noonan during their night-golf lesson",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "Ogres are like onions.",
+      "speaker": "Shrek (2001)",
+      "context": "Shrek explains to Donkey that ogres have layers",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "I'm not lost. I just haven't decided where I'm going yet.",
+      "speaker": "Easy Rider (1969)",
+      "context": "Wyatt deflecting a rancher's question about where the two bikers are headed",
+      "real": false,
+      "fake_note": "I made this one up — the laconic, slightly philosophical deflection matches Wyatt's sparse dialogue and the film's mood of drifting purposelessness. The giveaway is it's a shade too quotable and self-aware; Wyatt's real exchanges are even more elliptical and less neatly framed."
+    },
+    {
+      "id": "q6",
+      "text": "Radar, I need that report finished before Seoul finds out we never sent the first one.",
+      "speaker": "M*A*S*H (1970)",
+      "context": "Hawkeye Pierce offhandedly dumping paperwork on Radar in the compound",
+      "real": false,
+      "fake_note": "I made this one up — the throwaway bureaucratic absurdity and Hawkeye's breezy delegation fit the film's anti-authoritarian comedy perfectly. The giveaway is that Radar is a TV character far more than a film one; in Altman's original film his role is smaller and Hawkeye rarely addresses him directly."
+    }
+  ]
+}
