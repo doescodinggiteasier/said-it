@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-01",
+  "edition": 75,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "She's been in that house so long she thinks the curtains are part of the view.",
+      "speaker": "Rear Window (1954)",
+      "context": "Jeff making a sardonic observation about a neighbor to Lisa",
+      "real": false,
+      "fake_note": "I made this one up — Hitchcock's dialogue is full of dry, observational wit between Jeff and Lisa, and this fits Jeff's voyeuristic, slightly cruel humor. The giveaway is that it's a touch too epigrammatic; Jeff's real lines tend to be more directly about his own restlessness rather than polished neighbor commentary."
+    },
+    {
+      "id": "q2",
+      "text": "I drink your milkshake! I drink it up!",
+      "speaker": "There Will Be Blood (2007)",
+      "context": "Daniel Plainview (Daniel Day-Lewis) berating Eli Sunday in the bowling-alley confrontation",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "You keep calling it a mistake. I call it Tuesday.",
+      "speaker": "Die Hard (1988)",
+      "context": "McClane needling Dwayne T. Robinson's authority during a tense radio exchange",
+      "real": false,
+      "fake_note": "I made this one up — this has McClane's sardonic, blue-collar wit and the kind of throwaway bravado he uses to manage fear with humor. The giveaway is that 'I call it Tuesday' is a phrase more associated with later action-comedy vernacular than 1988 dialogue."
+    },
+    {
+      "id": "q4",
+      "text": "You want me to feel bad about it? I don't feel bad about it.",
+      "speaker": "Goodfellas (1990)",
+      "context": "Henry Hill deflecting a confrontation with Karen about his criminal life",
+      "real": false,
+      "fake_note": "I made this one up — the clipped, unapologetic rhythm matches Henry's voiceover cadence perfectly, and the doubling of 'feel bad about it' sounds like Liotta's naturalistic style. The subtle giveaway is that Henry is slightly too self-aware; in the film he tends to justify rather than flatly refuse guilt."
+    },
+    {
+      "id": "q5",
+      "text": "The cheaper the crook, the gaudier the patter.",
+      "speaker": "The Maltese Falcon (1941)",
+      "context": "Private detective Sam Spade (Humphrey Bogart) sizing up the small-time gunman Wilmer.",
+      "real": true,
+      "source": {
+        "title": "The Maltese Falcon (1941 film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Maltese_Falcon_(1941_film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I'm not sure that I agree with you a hundred percent on your policework there, Lou.",
+      "speaker": "Fargo (1996)",
+      "context": "Marge Gunderson (Frances McDormand), the pregnant police chief, gently correcting her deputy Lou's flawed reasoning at a crime scene.",
+      "real": true,
+      "source": {
+        "title": "Fargo (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Fargo_(film)",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

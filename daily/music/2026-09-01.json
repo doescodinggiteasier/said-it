@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-01",
+  "edition": 70,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's a version of every song I've ever released that's still sitting somewhere unfinished and I genuinely think some of those are better. I'm not sure I've ever actually finished anything so much as just stopped.",
+      "speaker": "Thom Yorke",
+      "context": "Q&A with The Guardian's music desk following the release of 'AMOK' by Atoms for Peace, January 2013",
+      "real": false,
+      "fake_note": "I made this one up — Yorke's discomfort with finality and his tendency to second-guess completed work are extremely well-attested, and the phrasing here matches his dry, slightly defeated register. The subtle tell is the word 'stopped' — Yorke is slightly more elliptical in real interviews than this allows."
+    },
+    {
+      "id": "q2",
+      "text": "I have a credit on the back of the album that says, 'Nails by Dolly!'",
+      "speaker": "Dolly Parton",
+      "context": "Dolly Parton explaining that she composed and partly performed the percussive 'typewriter' rhythm of '9 to 5' by clacking her long acrylic fingernails together — and that the album '9 to 5 and Odd Jobs' literally credits 'Nails by Dolly.'",
+      "real": true,
+      "source": {
+        "title": "“I have a credit on the back of the album that says, ‘Nails by Dolly!’” Dolly Parton on the hit song she wrote without a",
+        "url": "https://www.guitarplayer.com/music/albums-singles/i-have-a-credit-on-the-back-of-the-album-that-says-nails-by-dolly-dolly-parton-on-the-award-winning-hit-song-she-wrote-without-a-guitar-using-only-her-fingernails",
+        "date": "2024-01-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've played Wembley and I've played a pub in Sheffield where the stage was basically a pallet. And I want to be careful about which one I say I prefer because I know which one I actually preferred.",
+      "speaker": "Noel Gallagher",
+      "context": "Interview with Zane Lowe on Apple Music 1, broadcast November 2023",
+      "real": false,
+      "fake_note": "I made this one up — Gallagher's working-class-lad-done-good self-awareness is completely authentic, and his habit of catching himself mid-sentiment and twisting it is textbook Noel. The sneaky thing is Sheffield is exactly the kind of city he'd name — but the real tell is Noel would probably just say which one he preferred without the hedging."
+    },
+    {
+      "id": "q4",
+      "text": "No. I have no technical ability. And I know nothing about music.",
+      "speaker": "Rick Rubin",
+      "context": "Super-producer Rick Rubin (Def Jam co-founder; produced Johnny Cash, Beastie Boys, Red Hot Chili Peppers, Adele, Jay-Z) when Anderson Cooper asked on 60 Minutes whether he knew how to work a soundboard.",
+      "real": true,
+      "source": {
+        "title": "Rick Rubin: The 60 Minutes Interview (transcript) — interview by Anderson Cooper, CBS 60 Minutes",
+        "url": "https://www.rev.com/transcripts/rick-rubin-the-60-minutes-interview-transcript",
+        "date": "2023-01-15"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "He built this entire empire based on what he thought would turn the world on. That was his superpower",
+      "speaker": "Rob Thomas",
+      "context": "Remembering Clive Davis",
+      "real": true,
+      "source": {
+        "title": "Music — Rob Thomas Remembers Clive Davis: ‘Losing Clive Is the End of an Era’",
+        "url": "https://www.rollingstone.com/music/music-features/rob-thomas-clive-davis-tribute-essay-1235582736/",
+        "date": "2026-06-24"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My management told me a certain song wasn't a single and I said, okay, cool. And then I just put it first on the album. I feel like sequencing is the argument you have instead of the argument you have.",
+      "speaker": "Lorde",
+      "context": "Podcast interview on 'Song Exploder', episode released October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Lorde's careful, oblique way of discussing creative control battles and her well-known obsession with album sequencing are both real. The giveaway is that the last line slides toward epigram, which is more polished than her actual speaking voice, which tends to trail off or self-correct."
+    }
+  ]
+}

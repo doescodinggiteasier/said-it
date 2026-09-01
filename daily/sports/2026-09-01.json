@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-01",
+  "edition": 67,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I was scared to tell my old teammates",
+      "speaker": "Victoria Pelova",
+      "context": "Pelova on making the leap from Arsenal to Tottenham Hotspur",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘I was scared to tell my old teammates’: Victoria Pelova on making leap from Ars",
+        "url": "https://www.theguardian.com/football/2026/sep/01/i-was-scared-to-tell-my-old-teammates-victoria-pelova-on-making-leap-from-arsenal-to-spurs",
+        "date": "2026-09-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I don't mind being the villain. Villain means you showed up and somebody noticed. The alternative is nobody cares, and I've never been interested in that option.",
+      "speaker": "Conor McGregor",
+      "context": "UFC 202 pre-fight media day scrum, Las Vegas, August 2016",
+      "real": false,
+      "fake_note": "I made this one up — Conor has leaned into the heel role publicly for years and this kind of defiant spin on it is very much his register. The subtle tell is it's almost too composed; his real trash-talk tends to get more personal and specific than this."
+    },
+    {
+      "id": "q3",
+      "text": "When you're 6-foot-3 and you come into a league where everyone is that height, you realize real fast that height was never actually your thing. So you go find your actual thing, which takes longer than you'd like.",
+      "speaker": "Dwyane Wade",
+      "context": "The Boardroom with Kevin Durant and Rich Kleiman, ESPN+, season 3, 2019",
+      "real": false,
+      "fake_note": "I made this one up — Wade has often talked about needing to develop his skill set beyond pure athleticism and this reflective, slightly wry tone matches his post-career media persona. The giveaway is the slightly abstract framing — Wade usually grounds these lessons in a specific game or opponent."
+    },
+    {
+      "id": "q4",
+      "text": "Because there is always some kid who may be seeing me for the first time. I owe him my best.",
+      "speaker": "Joe DiMaggio",
+      "context": "Explaining why he always played so hard, even in meaningless late-season games, on the PBS American Experience profile.",
+      "real": true,
+      "source": {
+        "title": "PBS American Experience — Joe DiMaggio",
+        "url": "https://www.pbs.org/wgbh/americanexperience/features/dimaggio-joe-dimaggio/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The ball moved so much in Chennai that even when I thought I read it right off the pitch, I'd already committed the wrong way. It's not really fair and I mean that as a compliment to the conditions, not a complaint.",
+      "speaker": "Steve Smith",
+      "context": "Press conference following Day 3 of the first Test, M.A. Chidambaram Stadium, Chennai, February 2021",
+      "real": false,
+      "fake_note": "I made this one up — Smith is famous for his intense, analytical relationship with batting conditions and the Chennai Test that year was genuinely spin-heavy, making this entirely situationally plausible. The giveaway is 'I mean that as a compliment to the conditions' — a real Smith answer would likely veer into more technical specifics about his guard or footwork."
+    },
+    {
+      "id": "q6",
+      "text": "I've coached guys where the biggest challenge was just getting them to eat. Not, like, eat well — just eat. They'd show up to a two-hour skate on a granola bar and wonder why they were foggy in the third period.",
+      "speaker": "Mike Babcock",
+      "context": "Sportsnet Magazine feature 'Behind the Bench,' published October 2015",
+      "real": false,
+      "fake_note": "I made this one up — Babcock was known for focusing heavily on professionalism and preparation details, and nutrition anecdotes fit his coaching philosophy era. The giveaway is 'foggy in the third period' — it's a little too casually scientific for how Babcock typically spoke publicly about player habits."
+    }
+  ]
+}

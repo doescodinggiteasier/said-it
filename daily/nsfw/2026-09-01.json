@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-01",
+  "edition": 68,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I used to have a drug problem, but now I make enough money.",
+      "speaker": "David Lee Roth",
+      "context": "The Van Halen frontman quipping about his lifestyle, quoted in a Louder roundup of his wit (originally on Nightwatch With Charlie Rose, 1986).",
+      "real": true,
+      "source": {
+        "title": "Louder — The wit and wisdom of David Lee Roth",
+        "url": "https://www.loudersound.com/features/all-i-ever-really-needed-to-know-i-learned-from-david-lee-roth",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I never took heroin, really because I'm too lazy.",
+      "speaker": "Grace Slick",
+      "context": "The Jefferson Airplane singer, in a Forbes interview, on why heroin never appealed to her despite her heavy drug era.",
+      "real": true,
+      "source": {
+        "title": "Forbes — Grace Slick Part II: 'I Never Took Heroin, Really Because I'm Too Lazy'",
+        "url": "https://www.forbes.com/sites/jimclash/2015/12/12/grace-slick-part-ii-i-never-took-heroin-really-because-im-too-lazy/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I woke up after the Grammy after-party in 1978 — I will not say whose house — wearing one boot, somebody else's jacket, and a expression on my face that my road manager later described as 'pleasantly bewildered.' I took that as a win and ordered room service.",
+      "speaker": "Keith Moon",
+      "context": "Interview with Chris Charlesworth, Melody Maker, February 1978, conducted at the Sheraton Universal Hotel, Los Angeles",
+      "real": false,
+      "fake_note": "I made this one up — Moon's after-party mythology is vast and this kind of cheerfully chaotic morning-after anecdote is completely in his wheelhouse. The giveaway is the date: Moon was in severe physical decline by February 1978 and doing very few press interviews at that point."
+    },
+    {
+      "id": "q4",
+      "text": "I think that weed kept me from wanting to kill people. And probably kept a lot of people from wanting to kill me, too — out there drunk, running around.",
+      "speaker": "Willie Nelson",
+      "context": "In Rolling Stone's 2019 Weed Issue cover interview, explaining how marijuana replaced his heavy drinking.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Willie Nelson: 'Marijuana Saved My Life'",
+        "url": "https://www.rollingstone.com/music/music-features/willie-nelson-weed-issue-826290/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "A heckler once yelled 'You're not funny!' right in the middle of my set. I stopped. I looked at him. I said, 'Sir, I have a check that says otherwise, and your girlfriend is laughing, so one of us is doing fine tonight.'",
+      "speaker": "Richard Pryor",
+      "context": "Spoken during a Q&A with students at Howard University, Washington D.C., taped for a comedy archive project, April 1983",
+      "real": false,
+      "fake_note": "I made this one up — Pryor was famous for turning heckler confrontations into social observations, and the beat of making it about the guy's girlfriend is very him. The giveaway is that no Howard University archive taping from 1983 exists in any known comedy archive catalogue."
+    },
+    {
+      "id": "q6",
+      "text": "You want to know what the secret to a long career in this business is? Low overhead and a high tolerance for idiots at dinner parties who want to tell you what your songs mean. Buddy, I wrote it drunk in a Tulsa motel. It means I needed forty dollars.",
+      "speaker": "Waylon Jennings",
+      "context": "Interview with Chet Flippo, Rolling Stone, conducted at Jennings' home studio, Nashville, Tennessee, published in the March 1976 issue",
+      "real": false,
+      "fake_note": "I made this one up — Waylon's outlaw brand was built on exactly this kind of broke-but-unbothered mythology, and dismissing intellectual interpretation of his work is perfectly in character. The giveaway is that Chet Flippo's 1976 Rolling Stone Nashville coverage focused on the Outlaws album cycle, not a solo Jennings home studio visit."
+    }
+  ]
+}

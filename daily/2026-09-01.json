@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-01",
+  "edition": 78,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The thing about going to space is that nobody warns you about the smell when you get back. The suit, your hair — everything. My kids refused to hug me until I'd showered and I thought, honestly, fair enough.",
+      "speaker": "Chris Hadfield",
+      "context": "Guest appearance on The Late Show with Stephen Colbert, CBS, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Hadfield is the master of making spaceflight accessible through homely, physical detail, and the self-deprecating family moment is exactly his register. The giveaway is that astronauts do discuss post-mission smells, but Hadfield's real versions of this story are richer with specific sensory description."
+    },
+    {
+      "id": "q2",
+      "text": "I'm ready to drink tonight, until next morning. Thank you.",
+      "speaker": "Bong Joon-ho",
+      "context": "The director, through his interpreter, accepting the Best International Feature Film Oscar for Parasite at the 2020 Academy Awards",
+      "real": true,
+      "source": {
+        "title": "Bong Joon-ho Oscar Acceptance Speech Transcripts: Parasite Wins Big at the Academy Awards - Rev",
+        "url": "https://www.rev.com/transcripts/bong-joon-ho-oscar-acceptance-speech-transcripts-parasite-wins-big-at-the-academy-awards",
+        "date": "2020-02-09"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I signed on to do a commercial once — early in my career, don't ask which one — and they handed me a script on set that was completely different from what I'd agreed to. I just stood there and read it because I was twenty-three and terrified of everyone in the room. It aired for two years.",
+      "speaker": "George Clooney",
+      "context": "American Cinematheque Tribute evening, accepting career honor at the Beverly Hilton, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Clooney is famously self-deprecating about his pre-ER commercial work and tells industry stories with exactly this rueful charm. The giveaway is the 'two years' detail; a real Clooney anecdote would almost certainly name-drop the embarrassment rather than shield it."
+    },
+    {
+      "id": "q4",
+      "text": "There's a version of the iPhone we nearly shipped where the home button was on the back of the device. I'm not saying it was a bad idea — I'm saying I spent three days trying to unlock a prototype in my pocket and that was basically the end of the conversation.",
+      "speaker": "Jony Ive",
+      "context": "On-stage conversation with John Gruber at WWDC Design Retrospective panel, San Jose, June 2017",
+      "real": false,
+      "fake_note": "I made this one up — Ive frequently discussed scrapped design decisions in candid settings, and the deadpan delivery here is true to his style. The giveaway is the specificity of 'three days'; Ive's real anecdotes tend to stay in the realm of feeling and process, not time stamps."
+    },
+    {
+      "id": "q5",
+      "text": "We're going to hit them hard. There will be a response.",
+      "speaker": "Trump",
+      "context": "President Trump speaking to Fox News correspondent Trey Yingst after Iran's retaliatory strikes",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump vows response to Iran's retaliatory strikes: 'We're going to hit them hard",
+        "url": "https://thehill.com/homenews/administration/6060630-us-iran-exchange-strikes/",
+        "date": "2026-08-31"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You better cut the pizza in four pieces because I'm not hungry enough to eat six.",
+      "speaker": "Yogi Berra",
+      "context": "Hall of Fame baseball catcher and manager, one of his famous 'Yogi-isms'",
+      "real": true,
+      "source": {
+        "title": "Famous 'Yogi-isms'",
+        "url": "https://www.cbsnews.com/news/famous-yogi-isms",
+        "date": "2002-03-06"
+      }
+    }
+  ]
+}

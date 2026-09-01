@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-01",
+  "edition": 66,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I have now come to the conclusion never again to think of marrying, and for this reason; I can never be satisfied with anyone who would be blockhead enough to have me.",
+      "speaker": "Abraham Lincoln",
+      "context": "A candidly self-mocking line from a young Lincoln's letter, poking fun at his own eligibility as a suitor.",
+      "real": true,
+      "source": {
+        "title": "Abraham Lincoln - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Abraham_Lincoln",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "We're going to hit them hard. There will be a response.",
+      "speaker": "Trump",
+      "context": "President Trump speaking to Fox News correspondent Trey Yingst after Iran's retaliatory strikes",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump vows response to Iran's retaliatory strikes: 'We're going to hit them hard",
+        "url": "https://thehill.com/homenews/administration/6060630-us-iran-exchange-strikes/",
+        "date": "2026-08-31"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Somebody asked me backstage if I was nervous about the vote count and I said, honestly, I'm more nervous about the parking situation. And I meant it.",
+      "speaker": "Nancy Pelosi",
+      "context": "Remarks at a California Democratic Party fundraiser in San Francisco, June 2019, as recounted to reporters in the press pool",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi's deadpan, slightly imperious humor is well-documented and this lands in that register perfectly. The tell is that Pelosi rarely volunteers self-deprecating logistical anxieties; her public humor tends to punch outward, not inward."
+    },
+    {
+      "id": "q4",
+      "text": "Worst damnfool mistake I ever made was letting myself be elected Vice President of the United States. Should have stuck with my old chores as Speaker of the House. I gave up the second most important job in the Government for one that didn't amount to a hill of beans. I spent eight long years as Mr. Roosevelt's spare tire.",
+      "speaker": "John Nance Garner",
+      "context": "FDR's first vice president (\"Cactus Jack\"), ruefully mocking his own decision to take the job and his powerlessness in it, after leaving office.",
+      "real": true,
+      "source": {
+        "title": "John Nance Garner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Nance_Garner",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "When I was mayor, someone once told me the secret to running a city was making sure the trash gets picked up and nobody notices. The moment they notice, you've already lost.",
+      "speaker": "Pete Buttigieg",
+      "context": "Conversation at the Atlantic Festival, Washington D.C., October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Buttigieg loves translating abstract governance into concrete, ground-level analogies, and the trash-pickup framing is exactly his style. The giveaway is the slightly too-tidy narrative arc; his real anecdotes usually involve more self-interruption and qualification."
+    },
+    {
+      "id": "q6",
+      "text": "Look, I've read the bill. I've read the summary of the bill. I've read the summary of the summary, and at some point you just have to call your staff and ask what it actually does.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic Governors Association roundtable, Washington D.C., reported by Politico, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-deprecating candor about the machinery of governing is completely on-brand, and the escalating 'summary of the summary' rhythm sounds exactly like his off-the-cuff rambling. The subtle giveaway is that he'd almost certainly name a specific bill rather than leave it anonymous."
+    }
+  ]
+}
