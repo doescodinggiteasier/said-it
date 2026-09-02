@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-02",
+  "edition": 71,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People talk about Motown like it was this perfectly oiled machine, and in some ways sure, but there were sessions where nobody agreed on anything and Holland-Dozier-Holland would be rewriting a bridge while the drummer was still learning the changes. The chaos is in the record. You can hear it if you listen close enough.",
+      "speaker": "Smokey Robinson",
+      "context": "Panel discussion at the Grammy Museum, Los Angeles, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Smokey is a natural Motown historian who loves pulling back the curtain on the process, so this reads completely authentically. The subtle tell is 'you can hear it if you listen close enough' — slightly too tidy a button for how he usually trails off into a specific example or name."
+    },
+    {
+      "id": "q2",
+      "text": "She was flamboyant. She had bright red lipstick, long red fingernails. She had high-heeled shoes, little floating plastic goldfish in the heels of them, short skirts, low-cut tops, and I just thought she was beautiful.",
+      "speaker": "Dolly Parton",
+      "context": "In a Guardian interview (quoted by HuffPost), Dolly Parton describes the local 'town tramp' whose flashy style inspired her own signature look as a child.",
+      "real": true,
+      "source": {
+        "title": "Salon — Dolly Parton's famed \"town tramp\" style inspiration",
+        "url": "https://www.salon.com/2023/10/19/behind-the-seams-6-major-revelations-about-dolly-partons-famed-town-tramp-sense-of-style/",
+        "date": "2023-10-11"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I can out-dance Bowie and Jagger!",
+      "speaker": "Martha Reeves",
+      "context": "An interview about her career and Motown",
+      "real": true,
+      "source": {
+        "title": "Music — ‘I can out-dance Bowie and Jagger!’ Martha Reeves on Motown, Dancing in the Stre",
+        "url": "https://www.theguardian.com/music/2026/jun/26/reader-interview-martha-reeves-motown",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My kids have no idea what my job actually is. Like, they know I make music, but my youngest asked me last year if I work at Spotify. I said sort of, in a roundabout way I guess I do. She seemed satisfied with that.",
+      "speaker": "Jack Antonoff",
+      "context": "Interview with GQ magazine, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Jack Antonoff's self-deprecating, slightly neurotic humor about his own enormous industry presence is well documented, so this hits his register perfectly. The giveaway is that he doesn't actually have children; a sharp fan would catch that immediately."
+    },
+    {
+      "id": "q5",
+      "text": "Why am I crying on Oprah?",
+      "speaker": "Pharrell Williams",
+      "context": "On Oprah Winfrey's talk show 'Oprah Prime' (April 2014), Oprah surprised Pharrell by playing a montage of fan videos of people around the world dancing to his hit song 'Happy.'",
+      "real": true,
+      "source": {
+        "title": "Watch Pharrell Cry Over 'Happy' Inspiration During Interview with Oprah Winfrey",
+        "url": "https://www.rollingstone.com/music/music-news/watch-pharrell-cry-over-happy-inspiration-231769/",
+        "date": "2014-04-14"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "There's a version of 'Purple Rain' that we recorded that was maybe twenty seconds longer, and Prince kept it. He had this whole archive of things he'd just — he'd pull them back and sit with them. I heard it once in the studio and never again. I don't know if it still exists somewhere or what. That's the part of working with him that was genuinely surreal.",
+      "speaker": "Sheila E.",
+      "context": "Interview with NPR's Fresh Air with Terry Gross, April 2021",
+      "real": false,
+      "fake_note": "I made this one up — Sheila E. talks about Prince's vault and their creative relationship constantly, so this lands right in her wheelhouse. The subtle giveaway is the vagueness about what made that version different; she'd almost certainly remember one concrete musical detail."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-02",
+  "edition": 68,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I was at university I missed a penalty in training — not a match, just training — and I couldn't sleep that night. My flatmates thought I was genuinely unwell. That's probably when I should have realized this was going to be a problem for me, in the best possible way.",
+      "speaker": "Harry Kane",
+      "context": "Interview with Gary Neville on The Overlap, filmed in Munich, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Kane has spoken openly about his obsessive approach to the game and his time at university is documented, so this lands in a completely believable window of his life. The giveaway is Kane is usually more specific about which club he was at and who he was with; the vague 'flatmates' is a slight dodge."
+    },
+    {
+      "id": "q2",
+      "text": "My dad used to stand behind the baseline at every match and just — nothing. No expression. And for years I thought he was being cold, but he told me later he was terrified the whole time and that was just his face doing what it does under pressure. I think I inherited that.",
+      "speaker": "Serena Williams",
+      "context": "Interview with Gayle King on CBS Mornings, taped in Compton, California, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Serena talks about her father Richard constantly and with real emotional texture, so this reads completely naturally. The giveaway is she tends to be more specific about which tournament or stage of her career she's referencing, not this gently universal."
+    },
+    {
+      "id": "q3",
+      "text": "I've watched film on guys before a game and genuinely scared myself. Like, okay, I've made a mistake preparing for this, this person is not human, and now it's too late to do anything about it.",
+      "speaker": "Richard Sherman",
+      "context": "Richard Sherman on the All Things Covered podcast with Patrick Peterson, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Sherman is famous for detailed film study and also for being refreshingly candid about moments of doubt, which makes this feel completely in character. The tell is he'd almost certainly name the receiver rather than keep it anonymous — Sherman never hides who he's talking about."
+    },
+    {
+      "id": "q4",
+      "text": "You spend a good piece of your life gripping a baseball, and in the end, it turns out that it was the other way around all the time.",
+      "speaker": "Jim Bouton",
+      "context": "The celebrated closing line of his tell-all baseball memoir 'Ball Four,' as quoted in the book's Wikipedia entry.",
+      "real": true,
+      "source": {
+        "title": "Wikipedia — Ball Four",
+        "url": "https://en.wikipedia.org/wiki/Ball_Four",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People keep asking me what it felt like to win that first championship and honestly the thing I remember most is being so tired I couldn't even smile right in the photos. My face just wasn't cooperating. I looked like a guy who'd been awake for three days, which, to be fair, I had been.",
+      "speaker": "Draymond Green",
+      "context": "The Draymond Green Show podcast, Episode 112, February 2024",
+      "real": false,
+      "fake_note": "I made this one up — Draymond genuinely talks about championship memories in this exhausted, self-deprecating way, and the detail about looking bad in photos is exactly his brand of honesty. The subtle giveaway is he'd almost certainly name a specific person or incident rather than leave it this clean."
+    },
+    {
+      "id": "q6",
+      "text": "This is a club built for success",
+      "speaker": "Enzo Fernández",
+      "context": "On completing £125m move from Chelsea to Manchester City",
+      "real": true,
+      "source": {
+        "title": "Sports — Fernández completes record-equalling £125m move from Chelsea to Manchester City",
+        "url": "https://www.theguardian.com/football/2026/sep/02/fernandez-completes-record-equalling-125m-move-from-chelsea-to-manchester-city",
+        "date": "2026-09-02"
+      }
+    }
+  ]
+}

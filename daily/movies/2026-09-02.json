@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-02",
+  "edition": 76,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "On Wednesdays we wear pink.",
+      "speaker": "Mean Girls (2004)",
+      "context": "Karen Smith explaining the Plastics' dress code rule to Cady",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "Every city I've ever been to smells like somebody else's life.",
+      "speaker": "Heat (1995)",
+      "context": "Neil McCauley reflecting alone, late night diner scene",
+      "real": false,
+      "fake_note": "I made this one up — Neil's philosophical detachment and nomadic self-discipline make a line like this feel right at home in Mann's long, quiet character moments. The giveaway is the slightly literary 'somebody else's life' — Neil's actual dialogue is starker and less poetic than that."
+    },
+    {
+      "id": "q3",
+      "text": "You don't know what cold is until you've spent a winter on that mountain.",
+      "speaker": "Fargo (1996)",
+      "context": "A local deputy making small talk with Marge Gunderson",
+      "real": false,
+      "fake_note": "I made this one up — the flat Midwestern understatement and mundane specificity are dead-on for the Coens' Minnesota dialogue. The subtle giveaway is that the deputies in Fargo tend to be even more laconic; a full declarative sentence this shaped feels a hair too composed for their cadence."
+    },
+    {
+      "id": "q4",
+      "text": "As you wish.",
+      "speaker": "The Princess Bride (1987)",
+      "context": "Westley the farmhand says this to Buttercup; it's revealed to be his way of saying \"I love you,\" and recurs throughout the film.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "You want to talk about loyalty? My brother never once asked me for a thing, and that's what worries me.",
+      "speaker": "The Godfather (1972)",
+      "context": "Michael speaking quietly to Tom Hagen about Fredo",
+      "real": false,
+      "fake_note": "I made this one up — the guarded, familial paranoia fits Michael's cold cadence perfectly, and 'that's what worries me' sounds like his understated menace. The subtle giveaway is that Michael at this stage would name Fredo more obliquely; he rarely makes the subject that explicit in conversation."
+    },
+    {
+      "id": "q6",
+      "text": "The first rule of Fight Club is: you do not talk about Fight Club.",
+      "speaker": "Fight Club (1999)",
+      "context": "Tyler Durden (Brad Pitt) laying down the rules to the members of Fight Club.",
+      "real": true
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-02",
+  "edition": 79,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I like the escalator, man, 'cause the escalator can never break. It can only become stairs. There would never be an 'Escalator Temporarily Out of Order' sign, only an 'Escalator Temporarily Stairs - Sorry for the Convenience.'",
+      "speaker": "Mitch Hedberg",
+      "context": "From his Comedy Central Presents stand-up set, a signature observational one-liner",
+      "real": true,
+      "source": {
+        "title": "Mitch Hedberg quote on Quotes.net (Comedy Central Presents)",
+        "url": "https://www.quotes.net/mquote/706033",
+        "date": "1998-01-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I'm just here so I won't get fined, boss. That's the only reason why.",
+      "speaker": "Marshawn Lynch",
+      "context": "Seattle Seahawks running back, repeated this line at Super Bowl XLIX Media Day in January 2015 after being fined for not speaking to reporters",
+      "real": true,
+      "source": {
+        "title": "Marshawn Lynch: 'I'm just here so I won't get fined'",
+        "url": "https://www.nfl.com/news/marshawn-lynch-i-m-just-here-so-i-won-t-get-fined-0ap2000000319691",
+        "date": "2015-01-27"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Look, I've given speeches in front of a hundred thousand people and I've given speeches in front of twelve. Twelve is harder. You can see their faces.",
+      "speaker": "Bono",
+      "context": "Keynote conversation at the Cannes Lions International Festival of Creativity, Palais des Festivals, June 2018",
+      "real": false,
+      "fake_note": "I made this one up — Bono is a frequent speaker at forums like Davos and Cannes Lions and has often discussed the intimacy and terror of small rooms versus arenas in music contexts. The thought is completely consistent with his persona. The tell is that Bono in real interviews tends to flip this into an advocacy point — he rarely leaves an observation this personal without connecting it outward."
+    },
+    {
+      "id": "q4",
+      "text": "I remember the first time I cooked for a Michelin inspector — or who I was told was a Michelin inspector, anyway. I made a broth so simple it was almost embarrassing to plate. He ate two bowls. I didn't sleep that night wondering if that meant it was good or if he was just cold.",
+      "speaker": "Gordon Ramsay",
+      "context": "Desert Island Discs, BBC Radio 4, recorded interview aired March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Ramsay often tells self-deprecating stories about early-career anxiety and his obsession with Michelin validation, so this lands perfectly in his wheelhouse. The giveaway is the charming ambiguity at the end: Ramsay in real interviews is usually more decisive about what the outcome meant."
+    },
+    {
+      "id": "q5",
+      "text": "I genuinely did not know how to sit still after the Olympics. I'd wake up and have this feeling like I was already late for something, every single morning, for about eight months. My dog was the only one who thought my schedule was reasonable.",
+      "speaker": "Simone Biles",
+      "context": "Red Table Talk with Jada Pinkett Smith, Facebook Watch, Season 4, 2021",
+      "real": false,
+      "fake_note": "I made this one up — Biles has spoken openly about the disorientation and mental health challenges she faced after Tokyo, and the combination of relatable humor and genuine vulnerability is exactly her register in long-form interviews. The giveaway is the dog detail, which is specific enough to feel real but unverifiable — Biles does have dogs, but she hasn't told this particular story."
+    },
+    {
+      "id": "q6",
+      "text": "People keep asking me if Interstellar was hard to score emotionally. The honest answer is that Hans did most of the heavy emotional lifting before I even finished the picture — the organ was there, I was just catching up to it.",
+      "speaker": "Christopher Nolan",
+      "context": "Interview with Mark Kermode, Kermode and Mayo's Film Review, BBC Radio 5 Live, November 2014",
+      "real": false,
+      "fake_note": "I made this one up — Nolan has publicly praised Hans Zimmer's process on Interstellar many times, and his self-effacing, collaborative framing is completely in character. The subtle tell is that Nolan rarely credits a collaborator with being so far ahead of him — he tends to describe the process as more mutual."
+    }
+  ]
+}

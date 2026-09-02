@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-02",
+  "edition": 67,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My kids have never once cared what I thought about trade policy. Not once. My son called me last week — I thought maybe to ask my opinion on something. He wanted to know if I could get him a tour of the Capitol. That was it.",
+      "speaker": "Dick Gephardt",
+      "context": "Keynote remarks at the International Brotherhood of Teamsters Legislative Conference, Washington D.C., March 2007",
+      "real": false,
+      "fake_note": "I made this one up — Gephardt had a warm, self-effacing style when speaking to labor audiences and frequently grounded big-picture themes with family asides. The tell is that the anecdote is almost too perfectly structured for 'off the cuff,' and Gephardt's actual humor tended to be a little blunter."
+    },
+    {
+      "id": "q2",
+      "text": "People ask me what the hardest vote I ever cast was, and they always expect some big dramatic answer. It was a farm bill. I don't remember which one. There have been so many farm bills.",
+      "speaker": "Bob Dole",
+      "context": "C-SPAN oral history interview recorded at the Dole Institute of Politics, University of Kansas, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Dole's dry, self-aware Kansas humor and his habit of self-interruption are both exactly right here. The tell is that Dole was reliably specific about legislation when pressed; the 'I don't remember which one' vagueness is just slightly off for him."
+    },
+    {
+      "id": "q3",
+      "text": "An old friend of mine once told me, you know, just be yourself - unless you suck.",
+      "speaker": "John Kennedy",
+      "context": "Republican U.S. Senator from Louisiana, known for his folksy one-liners, sharing a piece of self-deprecating advice. He used the line in a Jan. 25, 2018 Fox News interview. Innocuous and funny, with no target or policy edge.",
+      "real": true,
+      "source": {
+        "title": "15 times Sen. John Kennedy got folksy, snarky or both | nola.com",
+        "url": "https://www.nola.com/news/15-times-sen-john-kennedy-got-folksy-snarky-or-both/article_7fb01151-5776-54f2-a04f-49ffeb4d0447.html",
+        "date": "2018-01-25"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I was a governor for eight years and I can tell you the single most common sentence in government is some version of 'that is technically outside my jurisdiction.' Nobody owns anything. Everyone's jurisdiction ends right where the problem starts.",
+      "speaker": "John Kasich",
+      "context": "Interview on The Axe Files with David Axelrod, University of Chicago Institute of Politics podcast, released January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Kasich's executive-branch frustration with bureaucratic buck-passing is well documented and this kind of exasperated, specific observation fits his voice perfectly. The giveaway is 'Nobody owns anything' — it tilts just slightly toward aphorism, where Kasich usually stays in the concrete."
+    },
+    {
+      "id": "q5",
+      "text": "I'll be honest with you — I had a staffer hand me a briefing on cryptocurrency and I read the whole thing twice and I still couldn't tell you with confidence what a blockchain actually does in real life. I just know people are very emotional about it.",
+      "speaker": "Nancy Pelosi",
+      "context": "Interview with Kara Swisher on the Sway podcast, published October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi has openly copped to struggling with tech-sector literacy, so this lands right in her wheelhouse, and her cadence of 'I'll be honest with you' followed by a dry concession is very her. The subtle giveaway is that she's slightly too self-deprecating about a specific asset class she actually legislated on."
+    },
+    {
+      "id": "q6",
+      "text": "It is clear that we do not have the independent legal authority to enforce this warrant.",
+      "speaker": "Zohran Mamdani",
+      "context": "NYC Mayor Mamdani backing off his promise to arrest Netanyahu, Tuesday statement",
+      "real": true,
+      "source": {
+        "title": "Politics — Mamdani says he doesn’t have legal authority to arrest Netanyahu",
+        "url": "https://thehill.com/policy/international/5982418-mamdani-netanyahu-arrest-promise-withdrawn/",
+        "date": "2026-07-22"
+      }
+    }
+  ]
+}
