@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-03",
+  "edition": 80,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The thing about playing a villain is nobody briefs you on how weird the fan mail gets. Like, very sincere, very detailed letters. I read every one. I don't always know what to do with the information, but I read them.",
+      "speaker": "Giancarlo Esposito",
+      "context": "Interview on Fresh Air with Terry Gross, NPR, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Esposito has discussed the intensity of his fanbase as Gus Fring at length, and his thoughtful, slightly bemused tone matches here. The giveaway is 'I don't always know what to do with the information' — a little too philosophically vague for how specifically he usually answers."
+    },
+    {
+      "id": "q2",
+      "text": "I do not watch my own films. I've seen maybe four of them, accidentally, in hotel rooms, where I didn't have the remote close enough to do anything about it.",
+      "speaker": "Denzel Washington",
+      "context": "Profile in The Hollywood Reporter, 'Denzel at 65,' December 2019",
+      "real": false,
+      "fake_note": "I made this one up — Washington has actually said he rarely watches his own work, so the premise is real. The 'hotel room' detail and 'remote close enough' are very him — lived-in and specific — but the comedic framing is a touch more polished than he usually goes."
+    },
+    {
+      "id": "q3",
+      "text": "The only time to eat diet food is while you're waiting for the steak to cook.",
+      "speaker": "Julia Child",
+      "context": "Famous saying by the chef and TV cook, listed among quotes she actually said",
+      "real": true,
+      "source": {
+        "title": "17 Quotes From Julia Child, Which She Actually Said | GBH",
+        "url": "https://www.wgbh.org/lifestyle/food/food-stories/2019-01-28/17-quotes-from-julia-child-which-she-actually-said",
+        "date": "2019-01-28"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I like to say not only was that the first human on the moon, but the first software to run on the moon.",
+      "speaker": "Margaret Hamilton",
+      "context": "The Apollo flight-software lead (who popularized the term \"software engineering\") in a CBS Boston interview, on her code's role in the moon landing",
+      "real": true,
+      "source": {
+        "title": "Margaret Hamilton: MIT Software Pioneer Who Helped Save Apollo 11 Moon Mission - CBS Boston",
+        "url": "https://www.cbsnews.com/boston/news/margaret-hamilton-apollo-11-software-pioneer-interview/",
+        "date": "2019-07-15"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Ah -- playoffs? Don't talk about -- playoffs? You kidding me? Playoffs? I just hope we can win a game!",
+      "speaker": "Jim Mora",
+      "context": "Indianapolis Colts head coach, at a November 2001 press conference when a reporter asked about the team's playoff chances after a loss",
+      "real": true,
+      "source": {
+        "title": "Garber: Mora reflects on \"Playoffs?\" moment",
+        "url": "https://www.espn.com/nfl/story/_/id/7302157/jim-mora-reflects-playoffs-moment",
+        "date": "2012-01-12"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I wrote the first version of that proof on a napkin at a conference dinner in Cambridge. I remember thinking I should take a photo of it and then thinking, no, if I can't reconstruct it tomorrow it wasn't ready. I reconstructed it. Mostly.",
+      "speaker": "Terence Tao",
+      "context": "Keynote address at the International Congress of Mathematicians, Helsinki, July 2022",
+      "real": false,
+      "fake_note": "I made this one up — Tao is known for anecdotes about the unglamorous physical conditions of mathematical inspiration, and 'Mostly' at the end is pitch-perfect for his modest, slightly self-deprecating style. The tell is that he'd usually be more technically specific about what the proof concerned."
+    }
+  ]
+}

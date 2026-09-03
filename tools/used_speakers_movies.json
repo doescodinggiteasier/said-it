@@ -89,7 +89,7 @@
 "black hawk down 2001": "2026-07-04",
 "pulp fiction 1994": "2026-08-23",
 "eternal sunshine of the spotless mind 2004": "2026-07-05",
-"blade runner 1982": "2026-08-26",
+"blade runner 1982": "2026-09-03",
 "airplane 1980": "2026-08-25",
 "top gun 1986": "2026-08-18",
 "goodfellas 1990": "2026-09-01",
@@ -99,7 +99,7 @@
 "the dark knight 2008": "2026-08-19",
 "heat 1995": "2026-09-02",
 "apocalypse now 1979": "2026-08-28",
-"silence of the lambs 1991": "2026-07-06",
+"silence of the lambs 1991": "2026-09-03",
 "a few good men 1992": "2026-08-21",
 "schindler s list 1993": "2026-08-13",
 "the shining 1980": "2026-08-26",
@@ -151,9 +151,9 @@
 "mean girls 2004": "2026-09-02",
 "the princess bride 1987": "2026-09-02",
 "dr strangelove or how i learned to stop worrying and love the bomb 1964": "2026-08-18",
-"burn after reading 2008": "2026-08-12",
-"elf 2003": "2026-08-12",
-"jurassic park 1993": "2026-08-12",
+"burn after reading 2008": "2026-09-03",
+"elf 2003": "2026-09-03",
+"jurassic park 1993": "2026-09-03",
 "cool hand luke 1967": "2026-07-20",
 "whiplash 2014": "2026-07-20",
 "star wars 1977": "2026-08-13",
@@ -226,5 +226,6 @@
 "the insider 1999": "2026-08-30",
 "serpico 1973": "2026-08-30",
 "easy rider 1969": "2026-08-31",
-"m a s h 1970": "2026-08-31"
+"m a s h 1970": "2026-08-31",
+"wall street 1987": "2026-09-03"
 }

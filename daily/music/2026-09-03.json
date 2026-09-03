@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-03",
+  "edition": 72,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've had writers come in with a hundred songs and none of them were right and then I've had someone walk in with a voice memo from their phone, just humming in their car, and that's the one. You can't architect that. You just have to sit there and receive it.",
+      "speaker": "Linda Perry",
+      "context": "Variety interview published during the Sundance premiere of the documentary The Song That Changed Everything, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Linda Perry discusses the unpredictability of songwriting and her instinct-driven A&R sensibility frequently in press, and 'you just have to sit there and receive it' is very aligned with her spiritual approach to creativity. The tell is that 'you can't architect that' is a little too architectural a metaphor for her — she usually reaches for more visceral language."
+    },
+    {
+      "id": "q2",
+      "text": "When you're mixing a record for someone else, you're basically doing a portrait of a stranger. You have all this technical ability and none of the context. And so you're making decisions based on gut the whole time and hoping the gut is picking up signals the brain can't explain.",
+      "speaker": "Manny Marroquin",
+      "context": "Pensado's Place interview, episode 412, posted to YouTube in October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Manny is a well-known mixing engineer who appears regularly on Pensado's Place and speaks openly about the intuitive side of mixing for artists he doesn't know personally. The 'portrait of a stranger' framing is plausible given his reflective interview style, but sharp players who know his work might feel he usually grounds these ideas in a specific song or session rather than keeping it this abstract."
+    },
+    {
+      "id": "q3",
+      "text": "You made my legs look thin.",
+      "speaker": "Joey Ramone",
+      "context": "Reacting to Roberta Bayley's beach photograph of him",
+      "real": true,
+      "source": {
+        "title": "Music — Joey Ramone smiling! And having fun! At the beach! Roberta Bayley’s best photogr",
+        "url": "https://www.theguardian.com/artanddesign/2026/sep/02/joey-ramone-smiling-roberta-bayley-my-best-shot-surf",
+        "date": "2026-09-03"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "You're about to play 'Shakedown Street,' and you just did a heroic dose of mushrooms. How do you even perform?",
+      "speaker": "Susan Tedeschi",
+      "context": "Recalling touring with Bob Weir and the Other Ones in 2002",
+      "real": true,
+      "source": {
+        "title": "Music — Susan Tedeschi Says Bob Weir Loved to Offer Her Mushrooms",
+        "url": "https://www.rollingstone.com/music/music-features/susan-tedeschi-bob-weir-mushrooms-tour-1235586087/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People hear 'No Scrubs' and think girl power anthem and yes, fine, but honestly we were just annoyed. It came from a real conversation in the car. That's all. Sometimes the most universal thing is just someone complaining on a Tuesday.",
+      "speaker": "Tionne 'T-Boz' Watkins",
+      "context": "Questlove Supreme podcast, episode aired September 2021",
+      "real": false,
+      "fake_note": "I made this one up — T-Boz has talked openly about the everyday origins of TLC's lyrics, and the casual, slightly dismissive framing ('yes, fine, but honestly') is very true to her blunt public voice. The giveaway is 'complaining on a Tuesday,' which is the kind of specific detail that sounds real but is just a little too perfectly chosen."
+    },
+    {
+      "id": "q6",
+      "text": "I think institutions like this are important in people's lives because it adds a dignity and a gravity to what we do",
+      "speaker": "Alex Van Halen",
+      "context": "Upon being knighted in the Netherlands",
+      "real": true,
+      "source": {
+        "title": "Music — Legendary Drummer Alex Van Halen Knighted in the Netherlands",
+        "url": "https://www.rollingstone.com/music/music-news/alex-van-halen-knighted-netherlands-1235620436/",
+        "date": "2026-09-03"
+      }
+    }
+  ]
+}

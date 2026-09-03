@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-03",
+  "edition": 77,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He's not dangerous because he's smart. He's dangerous because he knows exactly how patient he can afford to be.",
+      "speaker": "Silence of the Lambs (1991)",
+      "context": "Jack Crawford, briefing Clarice before her first Lecter visit",
+      "real": false,
+      "fake_note": "I made this one up — Crawford's clipped, authoritative warnings about Lecter set the film's dread in motion and this fits his register perfectly. The giveaway is 'afford to be' is slightly too elegant a construction for Crawford, who tends toward the more clinical."
+    },
+    {
+      "id": "q2",
+      "text": "I guess we learned not to do it again.",
+      "speaker": "Burn After Reading (2008)",
+      "context": "The CIA Superior (J.K. Simmons) in the final debrief scene, summarizing the botched operation to Officer Palmer.",
+      "real": true,
+      "source": {
+        "title": "Burn After Reading - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Burn_After_Reading",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The best way to spread Christmas cheer is singing loud for all to hear.",
+      "speaker": "Elf (2003)",
+      "context": "Buddy the Elf sharing his philosophy on holiday spirit",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "Life finds a way.",
+      "speaker": "Jurassic Park (1993)",
+      "context": "Dr. Ian Malcolm (Jeff Goldblum) argues that the park's all-female engineered dinosaurs cannot truly be prevented from breeding or controlled.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "She was already gone when I got there. I just hadn't figured that out yet.",
+      "speaker": "Blade Runner (1982)",
+      "context": "Deckard, narrating in voiceover after a replicant encounter",
+      "real": false,
+      "fake_note": "I made this one up — it nails the fatalistic voiceover cadence of Deckard's hardboiled narration, and the ambiguity suits the film's themes. The giveaway is that it leans a hair too poetic, even for the director's cut; the real lines are blunter."
+    },
+    {
+      "id": "q6",
+      "text": "Four years in this city and it still smells like money to me. Dirty, beautiful money.",
+      "speaker": "Wall Street (1987)",
+      "context": "Gordon Gekko, arriving at a trading-floor event, aside to Bud Fox",
+      "real": false,
+      "fake_note": "I made this one up — Gekko's appetite is always on display and his lines have this luxuriating, slightly obscene relish. The subtle giveaway is 'dirty, beautiful' feels one adjective too indulgent even for Gekko, who usually lands harder."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-03",
+  "edition": 68,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My grandfather used to say the two things a politician should never admit are that they're tired and that they don't understand something. I've already violated both of those today, so I figure we're off to a great start.",
+      "speaker": "Mitt Romney",
+      "context": "Opening remarks at the Hinckley Institute of Politics, University of Utah, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Romney's self-aware, slightly patrician humor and his habit of invoking family wisdom makes this feel completely natural for him. The tell is that the 'grandfather said' framing is a little too convenient and polished for an off-the-cuff moment."
+    },
+    {
+      "id": "q2",
+      "text": "I don't mind the long hearings. What I mind is when someone asks me a question and then answers it themselves for four and a half minutes and then says, 'Would you agree?' And you have to say something nice.",
+      "speaker": "Janet Yellen",
+      "context": "Moderated conversation at the Brookings Institution, Washington D.C., June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Yellen has sat through hundreds of congressional hearings and her dry, precise observations about the process ring completely true to her understated personality. The subtle giveaway is that she'd almost certainly not specify the duration quite that precisely in casual remarks."
+    },
+    {
+      "id": "q3",
+      "text": "It's hard to lead a cavalry charge if you think you look funny on a horse.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The two-time Democratic presidential nominee and UN ambassador, known for his wit; a characteristically self-deprecating line about self-confidence and self-image.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The thing nobody prepares you for in this job is the sheer number of pens. You sign one bill and there are forty-seven pens and everyone wants the one you actually used, and honestly at that point I've lost track.",
+      "speaker": "George W. Bush",
+      "context": "Conversation at the Bush Center Forum on Leadership, Dallas, April 2017, reported by The Dallas Morning News",
+      "real": false,
+      "fake_note": "I made this one up — Bush's post-presidency humor is warm, observational, and almost always about the absurd logistics of the job rather than the politics, which this nails perfectly. The giveaway is that forty-seven is just specific enough to feel planted."
+    },
+    {
+      "id": "q5",
+      "text": "I thought I looked real cute in my uniform, and then I heard a boy yell from the bleachers, 'Make that basket, bird legs.' And my greatest fear is that same guy is somewhere out there in the audience tonight, and he's going to cut me down to size.",
+      "speaker": "Ann Richards",
+      "context": "The Texas governor opening her celebrated 1988 Democratic National Convention keynote with a self-deprecating story about her eighth-grade basketball days.",
+      "real": true,
+      "source": {
+        "title": "Ann Richards, DNC keynote address, 1988 - Speakola",
+        "url": "https://speakola.com/political/ann-richards-dnc-keynote-1988",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what it's like to negotiate with Mitch and I say — you know that feeling when you're playing chess with someone and you suddenly realize they moved their bishop three turns ago and you only just noticed? It's a little bit like that.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic National Committee fundraiser in Philadelphia, October 2018, as quoted in Politico",
+      "real": false,
+      "fake_note": "I made this one up — Biden loves a meandering sports-or-game analogy that circles back to a point, and he's spoken about McConnell with backhanded admiration many times. The giveaway is that Biden's chess metaphors usually concern foreign policy, not Senate procedure."
+    }
+  ]
+}

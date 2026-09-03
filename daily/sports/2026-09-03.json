@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-03",
+  "edition": 69,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I was coming up, your coach told you something once. Maybe twice if he really liked you. You didn't get video breakdowns, you didn't get a meeting — you got a look. And somehow that look covered everything. I'm not saying it was better, I'm just saying we all understood the look.",
+      "speaker": "Jerry Rice",
+      "context": "NFL Network's A Football Life, during the taping of the 2021 season episode profiling the 1994 San Francisco 49ers",
+      "real": false,
+      "fake_note": "I made this one up — Rice's nostalgia for old-school coaching culture and his tendency to half-defend, half-gently-critique it is perfectly in keeping with his public speaking style. The subtle giveaway is 'I'm not saying it was better' — a small hedge that Rice, who is usually more declarative, might push further in real life."
+    },
+    {
+      "id": "q2",
+      "text": "I think I've heard somebody say that I was a well-dressed golfer. I guess that has something to do with the fact that a lot of people who play golf don't dress very well.",
+      "speaker": "Arnold Palmer",
+      "context": "A dry, self-effacing aside about his reputation as a sharp dresser, collected among Golf Monthly's best Palmer quotes.",
+      "real": true,
+      "source": {
+        "title": "Golf Monthly — 10 Of The Best Arnold Palmer Quotes",
+        "url": "https://www.golfmonthly.com/features/the-game/10-best-arnold-palmer-quotes-152590",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People always frame it as a rivalry but Annika and I just wanted to win. If she shot 64, I needed 63. That's not personal, that's just math. We probably made each other's careers more than we'd ever admit.",
+      "speaker": "Lorena Ochoa",
+      "context": "Golf Digest in-depth Q&A, published in the May 2018 issue as part of the magazine's 'Game Changers' anniversary series",
+      "real": false,
+      "fake_note": "I made this one up — Ochoa's gracious, quietly competitive framing of her relationship with Annika Sörenstam is consistent with how she's always discussed their era, and the 'just math' line sounds like her matter-of-fact modesty. The giveaway is 'more than we'd ever admit' — a slight concession that Ochoa, who is genuinely effusive about Annika in real interviews, might not actually hold back on."
+    },
+    {
+      "id": "q4",
+      "text": "The vitriol was more disrespectful than the protest",
+      "speaker": "Nate Boyer",
+      "context": "Former NFL long snapper and Army Green Beret, reflecting 10 years after helping shape Kaepernick's anthem protest",
+      "real": true,
+      "source": {
+        "title": "Sports — Nate Boyer, the Green Beret who stood beside Kaepernick: ‘The vitriol was more d",
+        "url": "https://www.theguardian.com/sport/2026/sep/02/nate-boyer-colin-kaepernick-national-anthem-protest-nfl",
+        "date": "2026-09-03"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There was a stretch — I think it was 2009, maybe early 2010 — where I genuinely could not miss from the corner. It didn't matter who was guarding me, what the game situation was. And the strange thing is I never talked about it, because I was afraid if I said it out loud it would stop. Which is completely irrational. But here we are.",
+      "speaker": "Kobe Bryant",
+      "context": "GQ Sports oral history feature, published in the February 2016 issue during Bryant's final NBA season",
+      "real": false,
+      "fake_note": "I made this one up — Kobe's mix of forensic self-analysis and almost superstitious competitiveness was completely real, and the hesitation around the year ('I think it was 2009, maybe early 2010') mimics his habit of precise-but-self-correcting recall. The giveaway is using Kobe, who passed away in 2020 — a careful player might notice this predates any recent interview possibility."
+    },
+    {
+      "id": "q6",
+      "text": "But I also know, if I was healthy, with good hips right now, I'd be the fastest 45-year-old in the country, or in the world.",
+      "speaker": "Bo Jackson",
+      "context": "Reflecting in retirement, years after his hip injury, in ESPN's long-form 'Bo Knows Best' feature.",
+      "real": true,
+      "source": {
+        "title": "ESPN E-ticket — Bo Knows Best",
+        "url": "http://www.espn.com/espn/eticket/story?page=bojackson",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-03",
+  "edition": 70,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't go on stage high but I'll take an edible after I get off stage and chill out. I do write a lot of jokes while high though, and then the next day I'll look at them and go, 'Well that's not that funny.'",
+      "speaker": "Jim Jefferies",
+      "context": "Crude Australian comedian Jim Jefferies — who built his name on drinking, drugs, and porn material — talking candidly about weed and his creative process, in a High Times interview (Aug 2023).",
+      "real": true,
+      "source": {
+        "title": "Jim Jefferies Is Living His Best Life (High Times)",
+        "url": "https://hightimes.com/culture/jim-jefferies-is-living-his-best-life/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I have been told — by actual doctors, not the fake ones — that my liver is, quote, 'a medical curiosity.' They said it like that was a compliment. I took it as one. I sent it a card.",
+      "speaker": "Peter O'Toole",
+      "context": "Desert Island Discs, BBC Radio 4, recorded January 2003, aired February 2003",
+      "real": false,
+      "fake_note": "I made this one up — O'Toole was legendarily candid and self-deprecating about his hellraising years, and the detached, theatrical wit here matches his interview style perfectly. The giveaway is that O'Toole did appear on Desert Island Discs but in 1963 and 1985 — a 2003 recording isn't documented."
+    },
+    {
+      "id": "q3",
+      "text": "Everybody wants to know what Janis was like at a party. She was EXACTLY like you'd think she was, except louder and she'd steal your drink while complimenting your shoes. Best person in any room. Absolute nightmare if you were in charge of the bar tab.",
+      "speaker": "Cass Elliot",
+      "context": "The Tonight Show Starring Johnny Carson, NBC, unaired green room conversation cited in a 1995 Rolling Stone oral history feature, original taping date November 1970",
+      "real": false,
+      "fake_note": "I made this one up — Mama Cass and Janis Joplin moved in overlapping circles and Cass was known for warm, unfiltered stories about her contemporaries told with comic affection. The clever layer here is 'unaired green room conversation cited in a 1995 Rolling Stone oral history' — it sounds like the kind of source a magazine would use, which makes it harder to immediately dismiss."
+    },
+    {
+      "id": "q4",
+      "text": "Health nuts are going to feel stupid someday, lying in hospitals dying of nothing.",
+      "speaker": "Redd Foxx",
+      "context": "A signature dark one-liner from the pioneering, famously raunchy stand-up comedian (star of 'Sanford and Son'), mocking clean-living health fanatics. Foxx's party-hard, cigarette-and-booze persona was legendary.",
+      "real": true,
+      "source": {
+        "title": "Quote Details: Redd Foxx (The Quotations Page)",
+        "url": "https://www.quotationspage.com/quote/699.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Maybe it was because we did it unabashedly out in the open. We didn't know it was shocking. Perhaps we were just too fucking frank.",
+      "speaker": "Slash",
+      "context": "The Guns N' Roses guitarist, in a Classic Rock/Louder interview, explaining why his band got a wilder reputation than peers who did 'the same shit'.",
+      "real": true,
+      "source": {
+        "title": "Louder (Classic Rock) — Six Pack: Slash on drugs, dying and Axl Rose",
+        "url": "https://www.loudersound.com/features/six-pack-slash-on-drugs-dying-and-axl-rose",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "We finished the last show in Detroit — this was the Sabbath Heaven and Hell tour, whatever year that was — and Tony goes, 'Good show.' That's it. 'Good show.' The man watches me nearly fall off the drum riser twice and all I get is 'good show.' I love him but Christ, a little enthusiasm wouldn't kill you, Anthony.",
+      "speaker": "Cozy Powell",
+      "context": "Hard Rock Nights radio show, WBCN Boston, interview segment, recorded backstage at the Providence Civic Center, September 1980",
+      "real": false,
+      "fake_note": "I made this one up — Powell did tour with Black Sabbath during the Heaven and Hell era and had a candid, no-nonsense interview manner; the affectionate jab at Iommi sounds genuine. The giveaway is WBCN's Hard Rock Nights didn't typically do backstage Providence segments — I invented the specific setup."
+    }
+  ]
+}
