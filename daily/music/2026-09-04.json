@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-04",
+  "edition": 73,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Beyoncé called me once — just to tell me that a song I wrote in 1987 had helped her through something hard. I didn't ask what. You don't ask. You just say thank you and sit with it.",
+      "speaker": "Diane Warren",
+      "context": "Acceptance speech at the ASCAP Pop Music Awards, Los Angeles, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Diane Warren regularly discusses the emotional impact her songs have on artists and listeners, and name-dropping Beyoncé in an acceptance speech is entirely in her wheelhouse. The giveaway is the restraint: 'You don't ask,' which is slightly too dignified and stoic for Warren's usual gregarious, credit-claiming delivery."
+    },
+    {
+      "id": "q2",
+      "text": "'Bull riding and boobies' — that is potentially the greatest lyric in any song ever.",
+      "speaker": "Harry Styles",
+      "context": "In his 2019 Rolling Stone cover interview, riffing on a line from Lil Nas X's 'Old Town Road.'",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — The Eternal Sunshine of Harry Styles",
+        "url": "https://www.rollingstone.com/music/music-features/harry-styles-cover-interview-album-871568/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've played stadiums where the sound is genuinely terrible and tiny clubs where every note just hangs in the air forever. Give me the club every time. The stadium is for the photograph.",
+      "speaker": "Bruce Springsteen",
+      "context": "Interview with David Remnick for The New Yorker, published October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Springsteen's whole mythology is built on sweat-soaked club shows and boardwalk bars, so this rings completely true to his documented worldview. The subtle giveaway is that last kicker, 'The stadium is for the photograph,' which is just slightly too aphoristic for his usual rambling, storytelling style."
+    },
+    {
+      "id": "q4",
+      "text": "The music always precedes the words. The words often come from the sound of the music and eventually evolve into coherent thoughts. Or incoherent thoughts.",
+      "speaker": "Paul Simon",
+      "context": "Describing his music-first songwriting process in an American Songwriter interview tied to his Songwriter collection.",
+      "real": true,
+      "source": {
+        "title": "American Songwriter — Interview: Paul Simon Discusses Songwriter And Songwriting",
+        "url": "https://americansongwriter.com/interview-paul-simon-discusses-songwriter-and-songwriting/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The first time I heard 'Whole Lotta Love' I was on a bus in Birmingham and I genuinely had to look out the window because I didn't want whoever was sitting next to me to see my face.",
+      "speaker": "Robert Plant",
+      "context": "Interview with John Wilson on BBC Radio 4's Front Row, broadcast June 2021",
+      "real": false,
+      "fake_note": "I made this one up — Plant discussing Led Zeppelin's own catalog from a personal, almost fan-like emotional distance is very much in keeping with how he talks about the band in his elder-statesman phase, and the Birmingham bus detail fits his Midlands working-class roots. The giveaway is that he's ostensibly hearing his own band's song as a stranger would, which implies a timeline that doesn't quite hold up given when 'Whole Lotta Love' was recorded."
+    },
+    {
+      "id": "q6",
+      "text": "We are part of each other, you know. When one person is hurt, it hurts me, too. When I see their condition, I know what they feel, and I feel it. And it hurts.",
+      "speaker": "B.B. King",
+      "context": "Explaining why the blues transcends stereotypes and speaks to shared human suffering, in collected words of wisdom published by Guitar Player.",
+      "real": true,
+      "source": {
+        "title": "Guitar Player — Some Collected Words of Wisdom From B.B. King Himself",
+        "url": "https://www.guitarplayer.com/players/bb-king-quotes",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-04",
+  "edition": 81,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I do think about what it would look like to step away. Then I'll be in the middle of a show and someone's face in the third row will do something completely unexpected and I'll think, okay, not yet. I'm still learning things out here.",
+      "speaker": "Bruce Springsteen",
+      "context": "60 Minutes Australia, extended interview, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Springsteen has discussed retirement thoughts in this ambivalent, crowd-anchored way multiple times, and the 'third row' specificity is exactly the kind of concrete performer detail he uses. The giveaway is 'I'm still learning things out here,' which leans just slightly aphoristic compared to how Springsteen usually talks about performing, where he gets more physically specific."
+    },
+    {
+      "id": "q2",
+      "text": "I always thought that, uh, quicksand was gonna be a much bigger problem than it turned out to be.",
+      "speaker": "John Mulaney",
+      "context": "From his stand-up special 'New in Town' (2012), riffing on childhood fears from cartoons",
+      "real": true,
+      "source": {
+        "title": "John Mulaney: New In Town (2012) - Full Transcript - Scraps from the Loft",
+        "url": "https://scrapsfromtheloft.com/comedy/john-mulaney-new-in-town-2012-full-transcript/",
+        "date": "2012-01-13"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People keep asking me what the metaverse actually is, and honestly, the best answer I've ever come up with is: imagine if a conference call had a gift shop. That's sort of where we are right now.",
+      "speaker": "Mark Zuckerberg",
+      "context": "Lex Fridman Podcast, episode 383, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Zuckerberg really does attempt dry, self-deprecating tech humor in long-form interviews, and the 'conference call with a gift shop' framing fits his wooden-but-trying voice perfectly. The subtle giveaway is that it's a touch too quotable; his real jokes tend to land a beat flatter."
+    },
+    {
+      "id": "q4",
+      "text": "I am the man who accompanied Jacqueline Kennedy to Paris, and I have enjoyed it.",
+      "speaker": "John F. Kennedy",
+      "context": "Self-deprecating opening line at a press luncheon at the Palais de Chaillot in Paris on June 2, 1961, during a state visit to France.",
+      "real": true,
+      "source": {
+        "title": "Remarks and Question and Answer Period at the Press Luncheon in Paris | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-and-question-and-answer-period-the-press-luncheon-paris",
+        "date": "1961-06-02"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My kids found out I was in Jurassic Park the same way most kids find out — on a Saturday afternoon on cable, yelling for me from the other room. I walked in and there I was, getting eaten. They had questions.",
+      "speaker": "Samuel L. Jackson",
+      "context": "Hot Ones, Season 19, First We Feast, 2023",
+      "real": false,
+      "fake_note": "I made this one up — Jackson loves recounting his own filmography with casual bemusement, and the Hot Ones setting practically demands this kind of relaxed personal story. The giveaway is the 'yelling from the other room' domestic specificity, which is vivid enough to feel real but conveniently unverifiable."
+    },
+    {
+      "id": "q6",
+      "text": "I've now been in 57 states? I think one left to go.",
+      "speaker": "Barack Obama",
+      "context": "Then a Democratic U.S. Senator from Illinois campaigning for president, Obama misspoke at a May 9, 2008 event in Beaverton, Oregon, after a long stretch of travel (he meant 47).",
+      "real": true,
+      "source": {
+        "title": "Obama's 'Bumbles' - FactCheck.org",
+        "url": "https://www.factcheck.org/2011/06/obamas-bumbles/",
+        "date": "2008-05-09"
+      }
+    }
+  ]
+}

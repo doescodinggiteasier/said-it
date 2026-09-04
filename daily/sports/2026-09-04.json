@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-04",
+  "edition": 70,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've sprinted more in the last two years of my career than in the first five combined. Not because I'm faster. Because I finally stopped saving myself for something that wasn't coming.",
+      "speaker": "Megan Rapinoe",
+      "context": "Players' Tribune first-person essay published ahead of the 2023 FIFA Women's World Cup, July 2023",
+      "real": false,
+      "fake_note": "I made this one up — Rapinoe contributed several reflective pieces to The Players' Tribune and spoke frequently and openly about the evolution of her game and mentality as she aged in the sport. The giveaway is the rhetorical shape — 'not because X, because Y' — which edges toward the tidy aphorism the best fake quotes try to avoid; a real Rapinoe essay would be sprawlier and probably funnier."
+    },
+    {
+      "id": "q2",
+      "text": "When I was coming up nobody was trying to protect me from anything. You got thrown into a doubleheader in August and that was your audition. I think about that now and I genuinely don't know if I'd have wanted it any other way.",
+      "speaker": "Tom Seaver",
+      "context": "Oral history interview conducted by the National Baseball Hall of Fame and Museum, Cooperstown, New York, summer 2015",
+      "real": false,
+      "fake_note": "I made this one up — Seaver was famously proud and specific about the old-school education of pitching, and he gave several long-form interviews late in his career reflecting on that era. The giveaway is the wistful closing hedge; Seaver on record usually landed with more conviction, rarely leaving himself an out like 'I genuinely don't know.'"
+    },
+    {
+      "id": "q3",
+      "text": "Because I'm the undertaker. I've come to bury these people!",
+      "speaker": "Bill Russell",
+      "context": "Explaining to teammate Sam Jones why he wore a black suit to every Game 7, in his Academy of Achievement interview.",
+      "real": true,
+      "source": {
+        "title": "Academy of Achievement — Bill Russell Interview",
+        "url": "https://achievement.org/achiever/bill-russell/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I play at my best on the edge of being horrible",
+      "speaker": "Liam Delap",
+      "context": "Nottingham Forest striker interview, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — Nottingham Forest’s Liam Delap: ‘I play at my best on the edge of being horrible",
+        "url": "https://www.theguardian.com/football/2026/sep/04/nottingham-forests-liam-delap-i-play-at-my-best-on-the-edge-of-being-horrible",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Honestly the hardest part of coaching the national team isn't the tactics or the travel or anything like that. It's that every player has already got a manager they trust, and you're asking them to unlearn certain habits in about ten days. Ten days. That's not a lot of runway.",
+      "speaker": "Jürgen Klopp",
+      "context": "Panel discussion at the Soccerex Global Convention, Manchester Central, September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Klopp has been openly skeptical of the international break calendar and the demands placed on club managers' players, so this complaint fits naturally into his documented worldview. The tell is the phrase 'not a lot of runway,' which is slightly too polished an idiom for Klopp, whose English, even after years in England, tends to be more charmingly clunky."
+    },
+    {
+      "id": "q6",
+      "text": "I remember the first time I dunked in an actual game I looked over at my coach expecting some kind of reaction and he was literally writing something on his clipboard. That was a useful moment.",
+      "speaker": "Shaquille O'Neal",
+      "context": "Guest appearance on The Big Podcast with Shaq, iHeartRadio, discussing his LSU years, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Shaq is a natural storyteller who constantly mines his college years at LSU for material, and this kind of deadpan self-deprecating anecdote about being humbled by a coach is exactly his register. The giveaway is 'that was a useful moment' — a bit too dry and clean for Shaq, who would almost certainly extend the punchline rather than land so quietly."
+    }
+  ]
+}

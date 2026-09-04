@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-04",
+  "edition": 69,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I had a constituent write me a four-page letter about a pothole. Four pages. I wrote back. I figured if he put in that kind of effort, the least I could do is pretend I have authority over potholes.",
+      "speaker": "Brian Schatz",
+      "context": "Appearance on The Ezra Klein Show, New York Times Audio, February 2024",
+      "real": false,
+      "fake_note": "I made this one up — Schatz is known for his accessible, self-aware Twitter presence and his candor about the absurdities of constituent work. The slight tell is the phrase 'pretend I have authority,' which is just a touch more cynical than his usual sunny pragmatism."
+    },
+    {
+      "id": "q2",
+      "text": "I went back and read some of my floor speeches from 2003. Some of them are — they're fine. They're fine. I've definitely grown as a communicator. Or at least I've gotten better at pausing for effect.",
+      "speaker": "Dick Durbin",
+      "context": "Interview on Illinois Public Media's Afternoon Edition, Urbana-Champaign, Illinois, June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Durbin is a famously long-tenured institutionalist who's actually spoken warmly and with perspective about his own evolution in the Senate, which makes the self-assessment feel earned. The tell is the slightly comic rhythm of 'they're fine. They're fine.' — a modern cadence that's just a touch more millennial than his natural speaking style."
+    },
+    {
+      "id": "q3",
+      "text": "I've been in enough budget negotiations to know that the number on page one has almost nothing to do with the number you end up with. Page one is basically fan fiction.",
+      "speaker": "Roy Blunt",
+      "context": "Remarks at the Missouri Press Association Annual Convention, Columbia, Missouri, August 2021",
+      "real": false,
+      "fake_note": "I made this one up — Blunt spent decades as a senior appropriator and talked constantly about the mechanics of the legislative process with this kind of insider weariness. The tell is 'fan fiction,' which is slightly more internet-era than his usual vocabulary."
+    },
+    {
+      "id": "q4",
+      "text": "I am a Ford, not a Lincoln. My addresses will never be as eloquent as Mr. Lincoln's. But I will do my very best to equal his brevity and his plain speaking.",
+      "speaker": "Gerald Ford",
+      "context": "Self-deprecating remark Ford made on December 6, 1973, immediately after taking the oath of office as the 40th Vice President (following Spiro Agnew's resignation).",
+      "real": true,
+      "source": {
+        "title": "Gerald Ford - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Gerald_Ford",
+        "date": "1973-12-06"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The filibuster and I have a complicated relationship. It's like — I understand why it exists. I also understand why people find it extremely annoying. I contain multitudes on this one.",
+      "speaker": "Raphael Warnock",
+      "context": "Q&A session at Atlanta Press Club Headliners Breakfast, Atlanta, Georgia, April 2023",
+      "real": false,
+      "fake_note": "I made this one up — Warnock's rhetorical style blends preacher's cadence with genuine intellectual humility, and the filibuster is a topic he's genuinely wrestled with publicly. The tell is 'I contain multitudes,' which skews slightly too literary for his usual register."
+    },
+    {
+      "id": "q6",
+      "text": "He is a Great Patriot, who is respected by all",
+      "speaker": "Donald Trump",
+      "context": "Truth Social post announcing Adam Telle as acting Army secretary",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump announces Telle as acting Army secretary following Driscoll's resignation",
+        "url": "https://thehill.com/homenews/administration/6070592-trump-adam-telle-army-secretary-announcement/",
+        "date": "2026-09-04"
+      }
+    }
+  ]
+}

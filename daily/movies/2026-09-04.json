@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-04",
+  "edition": 78,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You want to talk to me, you talk to me through my lawyer. You want to talk to my lawyer, good luck finding him.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes deflecting a threatening figure who's cornered him outside a building",
+      "real": false,
+      "fake_note": "I made this one up — Gittes is constantly wisecracking under pressure and dodging authority, so this double-deflection lands right in his voice. The subtle giveaway is that Gittes is a solo operator who barely uses lawyers; he'd more likely reach for a quip than a legal shield."
+    },
+    {
+      "id": "q2",
+      "text": "May the Force be with you.",
+      "speaker": "Star Wars (1977)",
+      "context": "Said during the Rebel briefing before the assault on the Death Star (and by Han to Luke).",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "I'll be back.",
+      "speaker": "The Terminator (1984)",
+      "context": "The Terminator (Arnold Schwarzenegger) tells the police desk sergeant he'll be back, then drives a car through the front of the station.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "I've driven this road a hundred times, sweetheart. Tonight it just didn't feel like letting me.",
+      "speaker": "Rear Window (1954)",
+      "context": "Jeff explaining away a close call to Lisa before she presses him on what he really saw",
+      "real": false,
+      "fake_note": "I made this one up — Hitchcock's characters often use casual deflection to sidestep real tension, and Jeff's breezy fatalism fits his worldview perfectly. The giveaway is the word 'sweetheart,' which skews more Bogart than James Stewart's register."
+    },
+    {
+      "id": "q5",
+      "text": "There's something about this that's so black, it's like how much more black could this be? And the answer is none. None more black.",
+      "speaker": "This Is Spinal Tap (1984)",
+      "context": "Nigel Tufnel (Christopher Guest) shows off a new album cover; his deadpan musing on its blackness.",
+      "real": true,
+      "source": {
+        "title": "This Is Spinal Tap - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/This_Is_Spinal_Tap",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Don't apologize. It makes you look like you were wrong.",
+      "speaker": "The Social Network (2010)",
+      "context": "Mark Zuckerberg to Eduardo Saverin during a tense meeting with investors",
+      "real": false,
+      "fake_note": "I made this one up — Sorkin's dialogue is full of terse, counter-intuitive social instructions delivered as fact, and this reads exactly like Mark's clinical arrogance. The giveaway is that it tips slightly toward aphorism; Sorkin's real lines are usually more embedded in the scene's specific argument."
+    }
+  ]
+}
