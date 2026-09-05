@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-05",
+  "edition": 70,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It's a shame. It's a horrible tragedy.",
+      "speaker": "Donald Trump",
+      "context": "Trump commenting on the Lindsay Clancy mistrial during an executive order signing ceremony",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump offers first comments on Lindsay Clancy case",
+        "url": "https://thehill.com/homenews/administration/6072371-trump-lindsay-clancy-trial-comments-mistrial/",
+        "date": "2026-09-05"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I will say, the one thing nobody tells you about being in the Senate is how much of your day is spent waiting for an elevator. I've had full foreign policy debates in that elevator. We've resolved nothing, but we've had the debates.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic Governors Association dinner in Washington, D.C., reported by Politico, March 2014",
+      "real": false,
+      "fake_note": "I made this one up — Biden's rambling, self-deprecating observational humor about the mechanics of Senate life is pitch-perfect to his documented style, and elevator small-talk fits his known fondness for personal anecdotes. The subtle giveaway is that he'd more likely name a specific senator he sparred with rather than leaving it this open-ended."
+    },
+    {
+      "id": "q3",
+      "text": "I've testified before Congress more times than I can count, and every time I think, this will be the efficient one. It is never the efficient one.",
+      "speaker": "Janet Yellen",
+      "context": "Conversation with Harvard economist Lawrence Summers at the Peterson Institute for International Economics annual conference, Washington, D.C., June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Yellen's dry, understated wit and her genuinely extensive congressional testimony record make this feel completely authentic. The soft giveaway is that Yellen tends to speak even more cautiously in public settings and would likely hedge with 'I shouldn't say this, but' before a line like this."
+    },
+    {
+      "id": "q4",
+      "text": "The disappointment of manhood succeeds to the delusion of youth: let us hope that the heritage of old age is not despair.",
+      "speaker": "Benjamin Disraeli",
+      "context": "The British Prime Minister and novelist, in a candidly reflective aside on the disappointments of the ages of life (from his fiction, Book VIII, Chapter 4).",
+      "real": true,
+      "source": {
+        "title": "Benjamin Disraeli - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Someone handed me a briefing memo last week that was forty-seven pages long. Single-spaced. I said, if you can't tell me the problem in two pages, we may actually be the problem.",
+      "speaker": "Condoleezza Rice",
+      "context": "Panel discussion at the Hoover Institution's annual symposium on governance, Stanford University, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Rice is famous for demanding concise, rigorous analysis and has spoken often about the discipline of intelligence briefs, so this lands squarely in her wheelhouse. The giveaway for sharp players: she'd almost certainly have said 'the memo' rather than 'a briefing memo,' and the punchline is slightly tidier than her usual measured delivery."
+    },
+    {
+      "id": "q6",
+      "text": "I spent a decade arguing that the deficit mattered before it was popular, and then the moment everyone agreed with me, the conversation moved on. That's Washington — you're only right on schedule.",
+      "speaker": "Paul Ryan",
+      "context": "Keynote address at the American Enterprise Institute's annual gala dinner, Washington, D.C., November 2018",
+      "real": false,
+      "fake_note": "I made this one up — Ryan's entire public identity is built around fiscal policy and the deficit, and this wry, slightly rueful observation about political timing is very consistent with his post-speakership reflective tone. The giveaway for attentive players: 'only right on schedule' is a shade more epigrammatic than Ryan's characteristically earnest, numbers-grounded delivery."
+    }
+  ]
+}

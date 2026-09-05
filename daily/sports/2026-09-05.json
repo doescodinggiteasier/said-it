@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-05",
+  "edition": 71,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Baseball has been good to me since I quit trying to play it.",
+      "speaker": "Whitey Herzog",
+      "context": "The Hall of Fame manager reflecting on his so-so playing career versus his success as a skipper.",
+      "real": true,
+      "source": {
+        "title": "ESPN Page 2 — My 5 top quotes by Hall of Famer Whitey Herzog",
+        "url": "https://www.espn.ph/espn/page2/index?id=5408431",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Pressure is a privilege and champions adjust.",
+      "speaker": "Billie Jean King",
+      "context": "The line she says spontaneously came out of her mouth while motivating Lindsay Davenport as U.S. Fed Cup captain, recounted at Tennis.com.",
+      "real": true,
+      "source": {
+        "title": "Tennis.com — Billie Jean King shares origins of 'Pressure is a privilege'",
+        "url": "https://www.tennis.com/baseline/articles/billie-jean-king-shares-origins-of-favorite-famous-quote-pressure-is-a-privilege",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People always want a story about how I became a goalkeeper. There isn't one. I was slow, I couldn't dribble, and the coach needed someone willing to stand in the cold for ninety minutes. I've built a whole career on that.",
+      "speaker": "Tim Howard",
+      "context": "Sports Illustrated long-form feature, 'Second Save,' published online October 2014",
+      "real": false,
+      "fake_note": "I made this one up — Howard's self-deprecating Midwestern candour and his habit of demystifying his own career path are well-documented in his memoir and interviews. The giveaway is how perfectly it lands: real self-deprecation tends to be slightly messier and less punchy than Howard delivers it here."
+    },
+    {
+      "id": "q4",
+      "text": "I've managed in the Premier League, in Europe, in international football, and the one thing that's consistent is that the chairman always rings at the worst possible moment. Mine rang at half-time at Wembley. Half-time. I didn't answer it.",
+      "speaker": "José Mourinho",
+      "context": "Overlap Live Tour with Gary Neville, Manchester Arena, November 2023",
+      "real": false,
+      "fake_note": "I made this one up — Mourinho's subtle digs at club ownership and his habit of curating anecdotes that subtly position him as the beleaguered professional are hallmarks of his public speaking. The giveaway is the final 'I didn't answer it,' which sounds just a shade too cinematically defiant even for him."
+    },
+    {
+      "id": "q5",
+      "text": "I've had people say the serve is the whole game. I don't know about that. My second serve has probably cost me more sleep than anything else in my life, including my children, which I realise doesn't make me sound great.",
+      "speaker": "Serena Williams",
+      "context": "The Graham Norton Show, BBC One, series 24, episode 8, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Serena's dry, self-aware humour and her habit of being disarmingly candid about the technical grind of her game make this feel very natural. The giveaway is the self-deprecating parenthetical: her real talk-show style is warm but she tends to redirect rather than undercut herself quite so openly."
+    },
+    {
+      "id": "q6",
+      "text": "I play tennis for a living, even though I hate tennis, hate it with a dark and secret passion, and always have.",
+      "speaker": "Andre Agassi",
+      "context": "The startling opening confession of his memoir 'Open,' quoted in Sports Illustrated's coverage of the book.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — 'I Hate Tennis'",
+        "url": "https://www.si.com/more-sports/2009/10/30/andre-agassi-0",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

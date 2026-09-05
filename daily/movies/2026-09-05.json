@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-05",
+  "edition": 79,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Nobody said you had to like it. They just said you had to sign it.",
+      "speaker": "The Firm (1993)",
+      "context": "A senior partner pressing Mitch McDeere to accept the terms of a document",
+      "real": false,
+      "fake_note": "I made this one up — the film is full of corporate menace dressed as politeness, and this line captures that pressure cooker tone exactly. The giveaway is it's almost too pithy; the antagonists in the film tend to wrap their threats in more words to maintain the illusion of civility."
+    },
+    {
+      "id": "q2",
+      "text": "Are you not entertained?",
+      "speaker": "Gladiator (2000)",
+      "context": "Maximus (Russell Crowe) shouts at the Zucchabar arena crowd after killing his opponents in a brutal fight.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "I used to think the quiet was the worst part. Turns out it's the waiting.",
+      "speaker": "The Shawshank Redemption (1994)",
+      "context": "Red in voiceover, reflecting on early years of his sentence",
+      "real": false,
+      "fake_note": "I made this one up — Red's Morgan Freeman voiceover is ruminative and measured in exactly this register, and the film distinguishes between varieties of suffering throughout. The giveaway is this leans just slightly too aphoristic; Red's real narration tends to be anchored to a specific memory or image."
+    },
+    {
+      "id": "q4",
+      "text": "I'm the king of the world!",
+      "speaker": "Titanic (1997)",
+      "context": "Jack (Leonardo DiCaprio) shouts triumphantly from the bow of the ship, arms outstretched.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Hakuna matata.",
+      "speaker": "The Lion King (1994)",
+      "context": "Timon and Pumbaa teach Simba their carefree \"no worries\" philosophy, both as spoken dialogue and as the title song.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "You keep calling it luck. I've been doing this since before you had a bank account.",
+      "speaker": "Ocean's Eleven (2001)",
+      "context": "Rusty snapping back at Linus after Linus questions the plan",
+      "real": false,
+      "fake_note": "I made this one up — Rusty's dismissiveness toward Linus is a recurring source of dry comedy in the film, and this fits their dynamic precisely. The mild giveaway is 'bank account' is slightly too mundane a reference for Rusty's usual nonchalant cool."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-05",
+  "edition": 74,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I genuinely cannot tell you what key 'Crazy in Love' is in. I know what it feels like, I know what it does, but ask me to write it on a piece of paper and we're going to have a problem.",
+      "speaker": "Beyoncé",
+      "context": "GQ cover story, September 2013",
+      "real": false,
+      "fake_note": "I made this one up — Beyoncé has spoken about operating from instinct and feeling over formal music theory, and this kind of candid, self-aware admission fits her rare interview persona perfectly. The giveaway is that it's almost too quotably self-deprecating for someone as controlled as she is in interviews."
+    },
+    {
+      "id": "q2",
+      "text": "I played guitar on a session once where nobody told me whose record it was, and I didn't find out for about two years. Heard it on the radio. That was a strange afternoon.",
+      "speaker": "John Mayer",
+      "context": "Current Mood Instagram Live session, February 2021",
+      "real": false,
+      "fake_note": "I made this one up — John is a known session-world insider who talks about studio culture with this kind of casually name-dropp-adjacent storytelling, and the Instagram Live format is his actual platform for this kind of rambling. The giveaway is the 'two years' detail, which is a little too specific and cinematic."
+    },
+    {
+      "id": "q3",
+      "text": "After I had my cat stolen, I would listen to Funkadelic and cry and cry",
+      "speaker": "Jennifer Herrema",
+      "context": "Black Bananas singer discussing her honest music playlist",
+      "real": true,
+      "source": {
+        "title": "Music — ‘After I had my cat stolen, I would listen to Funkadelic and cry and cry’: Jenni",
+        "url": "https://www.theguardian.com/music/2026/aug/30/jennifer-herrema-honest-playlist-sugarhill-gang-van-halen-lou-reed-acdc",
+        "date": "2026-09-05"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "It's a tornado that's always getting bigger and moving faster",
+      "speaker": "Sullivan Fortner",
+      "context": "Interview about his music and Hurricane Katrina",
+      "real": true,
+      "source": {
+        "title": "Music — ‘For this record, I took an edible and said, screw it’: jazz pianist Sullivan Fo",
+        "url": "https://www.theguardian.com/music/2026/aug/10/jazz-pianist-sullivan-fortner-leave-that-in-there-katrina-new-orleans",
+        "date": "2026-08-14"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Everything countercultural is doomed, isn't it?",
+      "speaker": "Sofie Royer",
+      "context": "Austrian-Iranian pop star reflecting on counterculture in an interview",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Everything countercultural is doomed, isn’t it?’​ Sofie Royer, the bracingly br",
+        "url": "https://www.theguardian.com/music/2026/sep/02/sofie-royer-underground-before-after",
+        "date": "2026-09-05"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The thing about producing someone else's record is you have to get your own taste completely out of the room. Like, physically imagine it leaving. Because the second you start making it sound like something you would make, you've failed that artist, even if the song turns out great.",
+      "speaker": "Max Martin",
+      "context": "MusicWeek Producer of the Year profile, London, February 2018",
+      "real": false,
+      "fake_note": "I made this one up — Max has talked in rare interviews about his philosophy of serving the artist rather than his own aesthetic, and this matches his documented humility about his process. The giveaway is that he almost never gives this level of articulate process-talk; his real interviews are even more guarded."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-05",
+  "edition": 82,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "They say that I have no hits, and I'm difficult to work with. And they say that like it's a bad thing.",
+      "speaker": "Tom Waits",
+      "context": "Speaking at his Rock and Roll Hall of Fame induction, March 14, 2001",
+      "real": true,
+      "source": {
+        "title": "Tom Waits - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Tom_Waits",
+        "date": "2001-03-14"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "You could probably get through life without knowing how to roast a chicken, but the question is, would you want to?",
+      "speaker": "Nigella Lawson",
+      "context": "Quote attributed to her book Eating (Vintage Minis), on home cooking",
+      "real": true,
+      "source": {
+        "title": "TOP 25 QUOTES BY NIGELLA LAWSON | A-Z Quotes",
+        "url": "https://www.azquotes.com/author/8589-Nigella_Lawson",
+        "date": "2017-01-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My daughter asked me last year why I still go to the lab every day. She wasn't being rude — she's twelve, she was genuinely curious. I told her I go because the problem isn't solved yet. She said, which problem? I said, exactly.",
+      "speaker": "Jane Goodall",
+      "context": "Keynote address at the Skoll World Forum on Social Entrepreneurship, Oxford, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Goodall's warmth, her use of personal family anecdotes, and her patient commitment to unresolved questions are all well-documented in her public speaking. The giveaway is the daughter detail; Goodall has a son, Grub, not a daughter, which a careful follower would catch immediately."
+    },
+    {
+      "id": "q4",
+      "text": "When I was writing Thriller I kept second-guessing the spoken part, the Vincent Price section. I remember calling Rod and saying, maybe we don't need it, maybe it's too much. Rod basically said no, you're putting it in. He was right. I was wrong. It happens.",
+      "speaker": "Michael Jackson",
+      "context": "Recorded interview segment featured in the BBC documentary Michael Jackson: The Magic and the Madness, aired November 2003",
+      "real": false,
+      "fake_note": "I made this one up — Jackson and producer Rod Temperton's collaboration on Thriller is historically documented, and Jackson occasionally reflected on that creative process in interviews. The giveaway is the casual admission of being wrong; Jackson was guarded about acknowledging self-doubt in a creative context, particularly about Thriller specifically."
+    },
+    {
+      "id": "q5",
+      "text": "There's a version of fame that I sort of stumbled into before I understood what it was. And by the time I understood it, I was already inside it, and the door was — I mean, there wasn't really a door anymore. You just kind of look around and go, okay, this is where I live now.",
+      "speaker": "Tom Hanks",
+      "context": "Extended profile conversation with David Remnick published in The New Yorker, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Hanks's reflective, slightly halting, self-aware conversational style is replicated here closely, and he has genuinely discussed the disorienting pace of his early rise to stardom. The giveaway is the door metaphor; Hanks's real analogies tend to lean toward machines, sports, or American history rather than architecture."
+    },
+    {
+      "id": "q6",
+      "text": "I appreciate that many of us grew up and enjoyed science fiction, but it's not helpful.",
+      "speaker": "Jensen Huang",
+      "context": "Nvidia CEO, on quantifying the existential risk of",
+      "real": true,
+      "source": {
+        "title": "TechRadar — Quote of the day: Jensen Huang on AI risk",
+        "url": "https://www.techradar.com/pro/quote-of-the-day-by-nvidia-ceo-jensen-huang-i-appreciate-that-many-of-us-grew-up-and-enjoyed-science-fiction-but-its-not-helpful-on-quantifying-the-existential-risks-posed-by-ai",
+        "date": "2026-06-06"
+      }
+    }
+  ]
+}
