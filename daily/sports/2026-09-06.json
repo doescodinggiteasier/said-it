@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-06",
+  "edition": 72,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He had that one coming for telling everybody I didn't know where Brazil was on the map.",
+      "speaker": "Travis Kelce",
+      "context": "The Chiefs tight end at a São Paulo press conference in September 2025, after doing an impression of teammate Patrick Mahomes as payback.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Travis Kelce gets playful payback on Patrick Mahomes with spot-on impersonation",
+        "url": "https://www.foxnews.com/sports/travis-kelce-gets-playful-payback-patrick-mahomes-spot-on-impersonation-brazil-press-conference",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've cried after losses, I've cried after wins, I cried once because I saw a dog on the sideline before a race and it looked exactly like one I had growing up. So I don't really use crying as a metric for anything anymore.",
+      "speaker": "Allyson Felix",
+      "context": "Feature interview with The Players' Tribune, published June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Felix speaks with warmth and emotional honesty in long-form interviews, and the dog detail is the kind of specific, slightly embarrassing confession she'd actually make. The giveaway is the tidy logical conclusion at the end; her real reflections tend to be a little less buttoned-up."
+    },
+    {
+      "id": "q3",
+      "text": "Has anyone else 'completed football' like this?",
+      "speaker": "Owen Bagnall",
+      "context": "The Knowledge column, asking about Rodri completing every major honour",
+      "real": true,
+      "source": {
+        "title": "Sports — World Cup, Ballon d’Or, Champions League, Euros … has Rodri completed football? ",
+        "url": "https://www.theguardian.com/football/2026/jul/22/world-cup-champions-league-ballon-dor-euros-has-rodri-completed-football",
+        "date": "2026-07-22"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I'm still not really into it.",
+      "speaker": "Anthony Edwards",
+      "context": "The future No. 1 NBA draft pick in a 2020 ESPN feature, admitting he does not enjoy watching basketball (\"To be honest, I can't watch basketball\").",
+      "real": true,
+      "source": {
+        "title": "ESPN — The pain and promise of top NBA draft prospect Anthony Edwards",
+        "url": "https://www.espn.com/nba/story/_/id/30321844/the-pain-promise-top-nba-draft-prospect-anthony-edwards",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People ask me what I was thinking on that third set. Honestly? I was thinking about the pasta I'd had at lunch and whether it was sitting right. That's the truth. You're out there and your mind goes to weird places when the crowd goes quiet.",
+      "speaker": "Novak Djokovic",
+      "context": "Press conference following his second-round match at the 2023 Australian Open, Melbourne",
+      "real": false,
+      "fake_note": "I made this one up — Novak talks openly about nutrition and mental wandering under pressure, so this lands perfectly in his wheelhouse. The subtle giveaway is that he'd more likely credit his mental focus than confess to a lapse, even a funny one."
+    },
+    {
+      "id": "q6",
+      "text": "My dad used to drive me forty-five minutes each way to the rink at four-thirty in the morning, and he never once complained, not to my face anyway. I think about that every time somebody tells me the game asks too much.",
+      "speaker": "Wayne Gretzky",
+      "context": "Interview on Sportsnet's In Conversation series, published February 2019",
+      "real": false,
+      "fake_note": "I made this one up — Gretzky regularly credits his father Walter and that early Brantford rink grind, so this fits his storytelling groove exactly. The giveaway is the small hedge 'not to my face anyway,' which adds a realistic touch but is slightly too wry for how reverently Gretzky usually speaks about his dad."
+    }
+  ]
+}

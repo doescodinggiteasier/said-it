@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-06",
+  "edition": 75,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There was a period — I want to say around the second album — where I genuinely could not listen to music for pleasure. Everything I heard, I was just pulling it apart. Like, oh, that snare is too compressed, that's a weird vocal chain. My wife would put something on in the car and I'd be sitting there dissecting it instead of just... being a human. It took a while to get that back.",
+      "speaker": "Jack White",
+      "context": "Interview with Rolling Stone, published in the magazine's October 2014 issue alongside a retrospective on The White Stripes",
+      "real": false,
+      "fake_note": "I made this one up — Jack has spoken extensively about his obsessive relationship with recording and production, so the hyper-analytical ear detail rings completely true. The subtle giveaway is the phrase 'weird vocal chain,' which is slightly too modern/online for how Jack White usually talks about gear."
+    },
+    {
+      "id": "q2",
+      "text": "You might be ingraining into your practise something that is counter productive and you'd have no way of knowing it.",
+      "speaker": "Steve Albini",
+      "context": "Warning aspiring engineers why doing 'whatever random crap you can find' is a trap, in an Audio Media International interview on how to be a better producer.",
+      "real": true,
+      "source": {
+        "title": "Audio Media International — 'You might be doing a bad job and not know it': Steve Albini on how to be a better producer",
+        "url": "https://audiomediainternational.com/you-might-be-doing-a-bad-job-and-not-know-it-steve-albini-on-how-to-be-a-better-producer/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People think falsetto is a trick. Like it's a special effect you put on top of a real voice. But for me it was the voice. The chest stuff came later. I had to work backwards from something most singers are trying to reach.",
+      "speaker": "Frankie Valli",
+      "context": "Oral history interview conducted by the Rock and Roll Hall of Fame Foundation for their induction archive, published in conjunction with the Four Seasons' 1990 induction ceremony",
+      "real": false,
+      "fake_note": "I made this one up — Frankie Valli's falsetto is the defining fact of his career and he's reflected on it in real interviews, but the specific framing of 'working backwards' is my invention. The giveaway is the slightly abstract language; Valli's real interview style is more conversational and New Jersey plain-spoken."
+    },
+    {
+      "id": "q4",
+      "text": "Keep your mind on the music. I never thought of myself as a 'woman' musician at all, but a guitarist and then a bass player",
+      "speaker": "Carol Kaye",
+      "context": "The legendary session bassist (Pet Sounds, countless hits) on identity versus playing, in a Guitar World interview.",
+      "real": true,
+      "source": {
+        "title": "Guitar World — Studio bass icon Carol Kaye on why it is not about who you are, but how and what you play",
+        "url": "https://www.guitarworld.com/artists/bassists/carol-kaye-on-teaching-women",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People kept telling me Thriller was going to be too long, too many songs, too many genres. And I remember thinking, well, when has too much ever been the problem with people? Too much is kind of the whole point.",
+      "speaker": "Quincy Jones",
+      "context": "Keynote conversation at the Grammy Museum's producer series, Los Angeles, February 2011",
+      "real": false,
+      "fake_note": "I made this one up — Quincy talked about the Thriller sessions constantly and his defiance of industry convention is totally documented. The giveaway is the slight philosophical tidiness at the end; his real interview speech tends to be more digressive and name-heavy."
+    },
+    {
+      "id": "q6",
+      "text": "I am a singer – there, use that as the title of your article",
+      "speaker": "Art Garfunkel",
+      "context": "Interview ahead of his tour at age 84",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Why not try to be the best in the world, just for the fun of it?’ Art Garfunkel",
+        "url": "https://www.theguardian.com/music/2026/sep/04/art-garfunkel-what-a-wonderful-world-tour-interview",
+        "date": "2026-09-06"
+      }
+    }
+  ]
+}

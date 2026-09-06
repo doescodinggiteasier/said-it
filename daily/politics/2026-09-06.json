@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-06",
+  "edition": 71,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Where my reason, imagination or interest were not engaged, I would not or I could not learn.",
+      "speaker": "Winston Churchill",
+      "context": "From Churchill's own autobiography 'My Early Life: A Roving Commission' (1930), in the chapter recalling his schooldays at Harrow where he was placed in the lowest form.",
+      "real": true,
+      "source": {
+        "title": "My Early Life, by Winston S. Churchill (Project Gutenberg Canada full text)",
+        "url": "https://gutenberg.ca/ebooks/churchillws-myearlylife/churchillws-myearlylife-00-h-dir/churchillws-myearlylife-00-h.html",
+        "date": "1930-01-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Someone on my staff put a motivational poster in the hallway. It says 'You miss 100% of the shots you don't take.' I had it taken down. That is not sound fiscal policy.",
+      "speaker": "Mitch McConnell",
+      "context": "Address to the McConnell Center Fellows, University of Louisville, Louisville, Kentucky, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's legendarily dry, low-affect delivery makes a deadpan joke about fiscal discipline completely plausible from him. The giveaway is the setup is a little too perfectly constructed for someone whose public humor is usually more oblique."
+    },
+    {
+      "id": "q3",
+      "text": "Hey, @WNBA, I'm a free agent in January",
+      "speaker": "Angie Craig",
+      "context": "Rep. Angie Craig posting on X platform about WNBA commissioner opening",
+      "real": true,
+      "source": {
+        "title": "Politics — Angie Craig throws her hat in the ring for WNBA commissioner",
+        "url": "https://thehill.com/policy/sports-gaming/6073497-angie-craig-wnba-commissioner/",
+        "date": "2026-09-06"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Texas is a big state. I say that not as a boast — everybody knows it — but because I genuinely think some of my colleagues forget that 'constituent' and 'person I have met' are not the same category.",
+      "speaker": "Kay Bailey Hutchison",
+      "context": "Interview with Texas Monthly, published in the January 2011 issue",
+      "real": false,
+      "fake_note": "I made this one up — Hutchison had a pragmatic, gently pointed style that never got too partisan, and this reads like her measured way of making a real point with a trace of dry humor. The giveaway is that it's slightly more aphoristic than her typically policy-forward interview answers."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me what the hardest part of the job is. I always say the schedule. Then they think I mean the long hours, and I let them think that, because the real answer is that I simply cannot find anything on my own calendar without help.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at the National League of Cities Congressional City Conference, Washington D.C., March 2016",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-deprecating storytelling style, often built around a small domestic or logistical helplessness, fits this almost perfectly. The giveaway is the two-beat misdirect structure, which is slightly too tight for his normally more rambling delivery."
+    },
+    {
+      "id": "q6",
+      "text": "My first week in the Senate, I voted on something I genuinely did not understand and then went back to my office and Googled it. I assume that's happened to everybody. I choose to assume that.",
+      "speaker": "Al Franken",
+      "context": "Interview on WTF with Marc Maron, podcast episode released February 2013",
+      "real": false,
+      "fake_note": "I made this one up — Franken's willingness to be self-deprecating about his transition from entertainer to legislator is well-documented, and this lands squarely in his confessional, slightly anxious comic register. The tell is 'I choose to assume that' — it's a touch too neatly self-aware."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-06",
+  "edition": 83,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what I eat before a big match and honestly it changes every tournament. Wimbledon I went through this phase of — I want to say — smoked salmon on brown bread, every single day. My wife thought I'd lost my mind. By the final I couldn't look at it.",
+      "speaker": "Roger Federer",
+      "context": "Interview with Tom Rinaldi on ESPN's 'E:60', aired June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Federer really does talk about routines and small rituals in exactly this self-deprecating, wandering way, and the Wimbledon setting is dead-on plausible. The subtle giveaway is the specific food detail ('smoked salmon on brown bread') — charming but just a touch too tidy for a genuine off-the-cuff memory."
+    },
+    {
+      "id": "q2",
+      "text": "When I was writing 'Sapiens' I had a chapter that I thought was the best thing I'd ever written. My editor read it and called me and said, very calmly, 'This whole section has to go.' She was right. It took me a week to admit that, but she was completely right.",
+      "speaker": "Yuval Noah Harari",
+      "context": "Talk at the Hay Festival, Hay-on-Wye, May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Harari speaks openly about the writing process and has praised his editors in interviews, so the humility and the specific dynamic ring true. The giveaway is the pacing of 'she was right. It took me a week to admit that, but she was completely right.' — the repetition is a little too shaped for natural speech."
+    },
+    {
+      "id": "q3",
+      "text": "I admit it -- last year was rough.",
+      "speaker": "Barack Obama",
+      "context": "At the 2014 White House Correspondents' Dinner, Obama opened his self-deprecating riff by candidly conceding his difficult 2013.",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at White House Correspondents' Dinner (May 3, 2014) | whitehouse.gov archives",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People assume I'm being funny when I say I don't know how to drive. I genuinely cannot drive. I took lessons three times in my twenties and every instructor eventually just got very quiet. That particular kind of quiet you don't want to hear from someone sitting next to you in a car.",
+      "speaker": "John Oliver",
+      "context": "'The Late Show with Stephen Colbert', CBS, taped appearance aired March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Oliver is a British expat who has publicly mentioned not driving, and this style of slow-building, self-deprecating anecdote is his exact register. The giveaway is 'that particular kind of quiet' — it's a bit too polished, more like a prepared bit than something that emerged spontaneously in a chat."
+    },
+    {
+      "id": "q5",
+      "text": "I know acting is a childlike endeavour but it's no license to be childish.",
+      "speaker": "Jeff Goldblum",
+      "context": "The actor reflecting on his craft in a Time Out interview",
+      "real": true,
+      "source": {
+        "title": "Jeff Goldblum: 'What do people quote at me? That is one big pile of shit' - Time Out",
+        "url": "https://www.timeout.com/film/jeff-goldblum-what-do-people-quote-at-me-that-is-one-big-pile-of-shit",
+        "date": "2017-01-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I went through a stretch — maybe two seasons — where I was studying so much film that I was dreaming in defensive schemes. My wife would ask me something at breakfast and I'd start explaining zone coverage. That's not normal. I knew it wasn't normal.",
+      "speaker": "Peyton Manning",
+      "context": "Guest appearance on 'Peyton's Places' behind-the-scenes special, ESPN+, released January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Manning's near-obsessive film study and self-awareness about it are extremely well-documented, and he frequently tells this type of sheepish, self-conscious story. The giveaway is 'two seasons' — Manning in reality would probably be vaguer or more precise depending on mood, and the wife detail is almost too on-brand."
+    }
+  ]
+}
