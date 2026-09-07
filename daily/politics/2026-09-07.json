@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-07",
+  "edition": 72,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I think we ought to continue the blockade and starve them out. I think we ought to bomb Pickaxe Mountain and try to reach what's underneath it",
+      "speaker": "John Kennedy",
+      "context": "Sen. John Kennedy (R-La.) on Sunday discussing Iran strikes",
+      "real": true,
+      "source": {
+        "title": "Politics — Live updates: Sen. John Kennedy says US should not 'cut and run' from Iran; Cycl",
+        "url": "https://thehill.com/homenews/5990529-live-updates-midterms-jackson-collins-cyclospora-trump/",
+        "date": "2026-07-27"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People forget that Alberta has had more different governments than most countries that have had revolutions. We just do it at the ballot box, which is tidier, if less cinematic.",
+      "speaker": "Preston Manning",
+      "context": "Keynote address at the Manning Networking Conference, Ottawa, Ontario, March 2016",
+      "real": false,
+      "fake_note": "I made this one up — Manning's prairie populist wit and his pride in democratic process over disruption are well established, and he frequently used Alberta's political volatility as a lesson in grassroots democracy. The subtle giveaway is the word 'cinematic,' which is a touch more literary than Manning's typically plain-spoken vocabulary."
+    },
+    {
+      "id": "q3",
+      "text": "Someone asked me once if I ever get nervous before a big Commons speech. I said, 'Darling, I get nervous walking to the despatch box from the back bench. It's about thirty feet and I've nearly turned around twice.'",
+      "speaker": "Boris Johnson",
+      "context": "Interview with Stig Abell on Times Radio, broadcast January 2021",
+      "real": false,
+      "fake_note": "I made this one up — Boris's self-deprecating physical comedy and his habit of addressing interviewers with theatrical intimacy are both well documented. The giveaway for sharp players is that he tends to say 'look' or 'I mean' to open these asides rather than launching straight into the anecdote."
+    },
+    {
+      "id": "q4",
+      "text": "I'd rather think of myself as a capitalist who has actually read about capitalism",
+      "speaker": "Abdul El-Sayed",
+      "context": "Michigan Democratic Senate primary candidate, responding to being labeled a 'socialist', CBS News interview",
+      "real": true,
+      "source": {
+        "title": "Politics — Leftist insurgents are storming the midterms – just don’t call them all democrat",
+        "url": "https://www.theguardian.com/us-news/2026/sep/05/midterms-democrats-socialists-leftist",
+        "date": "2026-09-07"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I am extraordinarily patient, provided I get my own way in the end.",
+      "speaker": "Margaret Thatcher",
+      "context": "Self-aware, tongue-in-cheek remark by the British Prime Minister in an interview published in The Observer, 4 April 1989 (as catalogued by the Margaret Thatcher Centre's quotes page). Speaker was a UK Conservative Prime Minister.",
+      "real": true,
+      "source": {
+        "title": "Quotes - The Margaret Thatcher Centre",
+        "url": "https://www.thatchercentre.com/quotes/",
+        "date": "1989-04-04"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I will say, and I mean this genuinely, that the hardest part of the whole budget process is the moment when someone slides you a spreadsheet and you realize you actually have to understand it. Not just nod at it. Understand it.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic National Committee fundraiser in Philadelphia, October 2022, as quoted in Politico's live coverage",
+      "real": false,
+      "fake_note": "I made this one up — Biden frequently made self-deprecating asides about the cognitive weight of governing, and this sounds exactly like his rambling, candid fundraiser style. The subtle giveaway is that he would more likely name a specific staffer or colleague than leave the spreadsheet anonymous."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-07",
+  "edition": 72,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The reason we first started strumming guitars was because we wanted women and lots of them. And their daughters.",
+      "speaker": "Gene Simmons",
+      "context": "KISS bassist Gene Simmons, on The Oprah Winfrey Show in 1988, dismissing the idea that rock stars pick up guitars for lofty reasons — it was about groupies.",
+      "real": true,
+      "source": {
+        "title": "Gene Simmons Called KISS Groupie Hookups 'More Honest' Than Real Relationships (Best Life)",
+        "url": "https://bestlifeonline.com/gene-simmons-kiss-groupies/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Look, I love women. I love 'em so much it's cost me approximately two houses, one boat I never even got to use, and my entire vinyl collection. And I'd probably do it again, which tells you everything you need to know about me.",
+      "speaker": "Richard Pryor",
+      "context": "Stand-up warm-up set at the Comedy Store, Los Angeles, recorded on the Laff Records promo reel, circa 1978",
+      "real": false,
+      "fake_note": "I made this one up — Pryor was brutally candid about his chaotic love life and financial self-destruction in his real sets, so the cadence and the resigned punchline are very much in his wheelhouse. The giveaway is the vinyl collection detail — it's a little too hipster-specific for Pryor's actual material, which was rawer and less about possessions."
+    },
+    {
+      "id": "q3",
+      "text": "The afterparty was going until about four in the morning and I'm standing there in my cowboy boots, drunk as a goddamn barn owl, trying to explain to some record exec why I don't do greatest-hits tours. He did not get it. Neither did I, honestly.",
+      "speaker": "Waylon Jennings",
+      "context": "Interviewed backstage at the 1993 CMA Awards, Nashville, for a profile published in Rolling Stone, December 1993",
+      "real": false,
+      "fake_note": "I made this one up — Jennings had a well-documented outlaw-country persona and a sharp, self-aware wit about the industry, so the drunk-at-the-afterparty confession and the self-undermining punchline are very him. The giveaway is 'barn owl' — it's the kind of colourful Texan simile that sounds right but Waylon tended toward plainer, harder language."
+    },
+    {
+      "id": "q4",
+      "text": "There are 400,000 words in the English language, and there are seven of them that you can't say on television. What a ratio that is. 399,993 to seven. They must really be bad.",
+      "speaker": "George Carlin",
+      "context": "Carlin's landmark \"Seven Words You Can Never Say on Television\" routine from his 1972 album Class Clown, listing the broadcast-banned words verbatim and reveling in saying them all out loud.",
+      "real": true,
+      "source": {
+        "title": "The Big Seven Words — George Carlin",
+        "url": "https://www.erenkrantz.com/Humor/SevenDirtyWords.shtml",
+        "date": "1972"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore.",
+      "speaker": "Bob Saget",
+      "context": "Bob Saget — the wholesome 'Full House' dad whose real-life stand-up was famously filthy — on fully embracing his profane comedy persona, in a Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People keep asking me how I stay so sharp at my age. I tell 'em: cheap bourbon, bad women, and the absolute refusal to attend any event that requires a name tag.",
+      "speaker": "Christopher Hitchens",
+      "context": "The Malcontents podcast, recorded live at a Manhattan bar event, October 2009",
+      "real": false,
+      "fake_note": "I made this one up — Hitchens was famous for his booze-fuelled wit and contempt for social formality, so the bourbon-and-bad-women brag fits his persona perfectly. The giveaway is that 'bad women' is a bit too glib and American-folksy for his actual register; he'd have been more elaborate and more English about it."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-07",
+  "edition": 84,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When you're playing a villain, the worst thing you can do is decide he's a villain. He doesn't think he is. He thinks everyone else has just finally caught up to how the world actually works.",
+      "speaker": "Anthony Hopkins",
+      "context": "Masterclass in Craft panel at the BFI London Film Festival, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Hopkins has made nearly identical observations about interiority and self-justification in real interviews, and the BFI setting fits his profile perfectly. The subtle tell is the slightly too-tidy framing; his real remarks on villainy tend to be more oblique and less structured."
+    },
+    {
+      "id": "q2",
+      "text": "The last time I was this high, I was trying to decide on my major.",
+      "speaker": "Barack Obama",
+      "context": "Self-deprecating joke at his final White House Correspondents' Dinner on April 30, 2016, riffing on how his approval ratings kept climbing in his last year in office ('in my final year, my approval ratings keep going up').",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at the White House Correspondents' Dinner | whitehouse.gov (Obama White House Archives)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2016/05/01/remarks-president-white-house-correspondents-dinner/",
+        "date": "2016-04-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The trick with Kubrick, and I've thought about this more than is probably healthy, is that you never knew if the silence after you finished a take meant you'd done something extraordinary or something he was going to erase from his memory.",
+      "speaker": "Jack Nicholson",
+      "context": "In conversation with Alec Baldwin for the SAG-AFTRA Foundation Actors Center, recorded January 2014",
+      "real": false,
+      "fake_note": "I made this one up — Nicholson worked with Kubrick on The Shining and has genuinely described the opaque feedback on set; the 'more than is probably healthy' qualifier is very much his register. The tell is that Nicholson's real Kubrick anecdotes tend to lean warmer and more admiring rather than ambiguous like this."
+    },
+    {
+      "id": "q4",
+      "text": "I never lie, even to this day. Not even a little. Unless you count playing pranks on people, which I don't. That's comedy. Entertainment doesn't count. A joke is different from a lie, even if the difference is kind of subtle.",
+      "speaker": "Steve Wozniak",
+      "context": "From his memoir iWoz (2006), the Apple co-founder on his lifelong commitment to honesty and his exception for pranks",
+      "real": true,
+      "source": {
+        "title": "Steve Wozniak (10+ Sourced Quotes) - Lib Quotes",
+        "url": "https://libquotes.com/steve-wozniak",
+        "date": "2006-09-17"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There's a generation of kids who learned physics from watching me get things demonstrably wrong on television, and I find that both humbling and genuinely terrifying.",
+      "speaker": "Bill Nye",
+      "context": "Alumni keynote address at Cornell University's commencement weekend, May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Nye regularly engages in this kind of cheerful self-ribbing about his TV-science legacy, and a Cornell address is deeply plausible given he graduated there. The subtle tell is 'demonstrably wrong'; Nye is more likely to say 'oversimplified' than to claim outright error."
+    },
+    {
+      "id": "q6",
+      "text": "The speed of light is never going to go out of style. Gravity, lint, signs, time itself, is not going to go out of style.",
+      "speaker": "Steven Wright",
+      "context": "In a Salon Talks interview, explaining why he avoids topical jokes so his material stays timeless",
+      "real": true,
+      "source": {
+        "title": "\"Gravity is never going to go out of style\": Steven Wright on the secret to comedy longevity - Salon.com",
+        "url": "https://www.salon.com/2024/05/22/steven-wright-harold-salon-talks/",
+        "date": "2024-05-22"
+      }
+    }
+  ]
+}

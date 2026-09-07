@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-07",
+  "edition": 73,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't think I'll be legally able to drive.",
+      "speaker": "Robert MacIntyre",
+      "context": "Scottish golfer MacIntyre, joking with reporters right after winning the 2024 Genesis Scottish Open, explaining he planned to celebrate so hard he might not make his next-day press conference at Royal Troon ahead of the Open Championship.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — Robert MacIntyre rallies for historic win at Scottish Open",
+        "url": "https://sports.yahoo.com/robert-macintyre-rallies-for-historic-win-at-scottish-open-the-home-event-hes-cared-about-most-013046981.html",
+        "date": "2024-07-16"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Resignations are for prime ministers and those caught with their trousers down, not for me",
+      "speaker": "Brian Clough",
+      "context": "The legendary English football manager on his refusal to quit, in a collection of his most memorable one-liners.",
+      "real": true,
+      "source": {
+        "title": "Sky Sports — Brian Clough in quotes: Fifteen of the legendary manager's most memorable one-liners",
+        "url": "https://www.skysports.com/football/news/11689/9642762/brian-clough-fifteen-of-the-legendary-managers-most-memorable-one-liners",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "When you manage a football club, everyone wants to know your system. I've spent thirty years trying to explain that there is no system without people who believe in each other, and I still don't think anyone's actually written that down properly.",
+      "speaker": "Alex Ferguson",
+      "context": "Lecture at the Harvard Business School, February 2012, as quoted in the Manchester Evening News follow-up piece",
+      "real": false,
+      "fake_note": "I made this one up — Fergie's Harvard visit was real and he did speak about belief and people, so the context is plausible. The slight giveaway is the mild complaint at the end; his real remarks were a touch more declarative than this."
+    },
+    {
+      "id": "q4",
+      "text": "Anybody who tells you they weren't nervous before a title fight is either lying or they haven't fought anybody worth being nervous about.",
+      "speaker": "Floyd Mayweather Jr.",
+      "context": "SportsCenter sit-down with Scott Van Pelt, ESPN, April 2015",
+      "real": false,
+      "fake_note": "I made this one up — Floyd loves inverting the bravado trope to actually assert superiority through honesty, which is exactly what this does. The giveaway is that Floyd almost never admits to nerves even indirectly; he'd more likely frame it as excitement."
+    },
+    {
+      "id": "q5",
+      "text": "I spent probably two full days just watching how he loaded his hips in the stretch. Not whether he was tipping pitches. Just that one thing. Two days.",
+      "speaker": "Tony La Russa",
+      "context": "MLB Network's Intentional Talk, extended interview segment, June 2021",
+      "real": false,
+      "fake_note": "I made this one up — La Russa's reputation is built on this kind of obsessive, granular preparation and he talks about it plainly without showing off. The giveaway is the self-aware 'just that one thing' — he tends to be more elliptical about his actual methods."
+    },
+    {
+      "id": "q6",
+      "text": "It wouldn't surprise me if some got heatstroke",
+      "speaker": "Matthew Brennan",
+      "context": "Vuelta a España stage 15, commenting on extreme heat during the race",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘What are we doing?’: Brennan’s anger at racing in 44C heat as Van Aert wins sho",
+        "url": "https://www.theguardian.com/sport/2026/sep/06/matthew-brennan-vuelta-a-espana-heat-wout-van-aert-stage-15-cycling",
+        "date": "2026-09-07"
+      }
+    }
+  ]
+}

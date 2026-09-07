@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-07",
+  "edition": 76,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I really feel like some angels have been carrying me around.",
+      "speaker": "Bonnie Raitt",
+      "context": "On feeling happier than ever after getting sober, in her Rolling Stone interview following her Grammy sweep for 'Nick of Time.'",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Bonnie Raitt: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-features/bonnie-raitt-the-rolling-stone-interview-236846/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "He had the right attitude. He chewed gum, looked arrogant and flipped the bird to the guards – he did everything the prisoners wanted to do. He was a mean mother from the South who was there because he loved us. When he walked away, everyone in that place had become a Johnny Cash fan.",
+      "speaker": "Merle Haggard",
+      "context": "Recalling watching Johnny Cash perform at San Quentin prison on New Year's Day while Haggard was an inmate there.",
+      "real": true,
+      "source": {
+        "title": "Louder — Johnny Cash, Merle Haggard, and the true story that's almost too good to be true",
+        "url": "https://www.loudersound.com/features/johnny-cash-merle-haggard-and-the-true-story-thats-almost-too-good-to-be-true",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I grew up listening to records where you could hear the room. You could hear the building, almost. And then somewhere along the way everybody decided that was a flaw to fix. I've spent a lot of my career trying to put that flaw back in.",
+      "speaker": "Jack White",
+      "context": "Interview with Michael Hann for The Guardian, published ahead of the Boarding House Reach tour, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — White's obsession with analog warmth, recorded room sound, and his hostility toward digital sterility are all thoroughly documented, making this feel completely native to him. The tell is that he tends to be even more combative in print; this version is just a shade too wistful."
+    },
+    {
+      "id": "q4",
+      "text": "I've been an actor. I am a writer",
+      "speaker": "Art Garfunkel",
+      "context": "Interview ahead of tour, aged 84",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Why not try to be the best in the world, just for the fun of it?’ Art Garfunkel",
+        "url": "https://www.theguardian.com/music/2026/sep/04/art-garfunkel-what-a-wonderful-world-tour-interview",
+        "date": "2026-09-07"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There was a period — I think it was during the Thriller sessions — where Quincy would just let the tape roll even when nobody thought we were recording. Some of my best scratch vocals from that time ended up on the actual record and I didn't even know it until I heard the playback. That used to terrify me and now I think it's probably the only reason those songs sound the way they do.",
+      "speaker": "Michael Jackson",
+      "context": "Interview with David Ritz published in Rolling Stone, February 1983",
+      "real": false,
+      "fake_note": "I made this one up — the detail about Quincy Jones rolling tape quietly is exactly the kind of studio mythology MJ genuinely talked about, and the mix of retrospective terror and gratitude sounds perfectly like him. The subtle giveaway is that MJ was almost never this candid about specific production mechanics in print."
+    },
+    {
+      "id": "q6",
+      "text": "People think the loudest part of a record is where the power is. It's not. The silence right before the drop, or after a big chord — that's where you've got somebody. That's when their body is doing the work for you and you haven't even played a note yet.",
+      "speaker": "Rick Rubin",
+      "context": "Appearance on the Broken Record podcast with Malcolm Gladwell and Bruce Headlam, recorded in Los Angeles, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Rubin genuinely talks about dynamics, restraint, and the psychology of listening in almost exactly this register, so it slides right into his documented voice. The giveaway is the slightly too-clean rhetorical build; his real speech tends to trail off even more incompletely."
+    }
+  ]
+}

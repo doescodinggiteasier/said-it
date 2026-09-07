@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-07",
+  "edition": 81,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I am Iron Man.",
+      "speaker": "Iron Man (2008)",
+      "context": "Tony Stark (Robert Downey Jr.) goes off-script and reveals his identity to the press at the very end of the film.",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "Get in the car, Dorothea. We'll talk about your principles when we're not standing in the rain.",
+      "speaker": "Broadcast News (1987)",
+      "context": "Tom, flustered and charming, trying to end an argument with Jane outside the network building",
+      "real": false,
+      "fake_note": "I made this one up — the film is full of fast, overlapping relationship friction, and Tom's breezy deflection sounds exactly like William Hurt playing likable-but-slippery. The giveaway is the name 'Dorothea' — Jane's character has no one calling her that, and I slipped in a wrong name to bury the tell."
+    },
+    {
+      "id": "q3",
+      "text": "You want answers? Then stop asking questions you already know the answer to.",
+      "speaker": "A Few Good Men (1992)",
+      "context": "Jessup, terse and dismissive, during pre-courtroom back-and-forth with Kaffee",
+      "real": false,
+      "fake_note": "I made this one up — Nicholson's Jessup speaks in clipped, contemptuous commands, so this lands right in his wheelhouse. The subtle giveaway is that the real Jessup would be more specifically condescending about the Navy, not abstractly evasive."
+    },
+    {
+      "id": "q4",
+      "text": "To infinity and beyond!",
+      "speaker": "Toy Story (1995)",
+      "context": "Buzz Lightyear's heroic catchphrase as he strikes a pose and 'flies'",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Every man on that ridge was depending on me. I don't expect you to understand that.",
+      "speaker": "Apocalypse Now (1979)",
+      "context": "Willard, voiceover or face-to-face, reflecting on a past mission before he reaches Kurtz",
+      "real": false,
+      "fake_note": "I made this one up — Willard's narration is world-weary and clipped, so this slides right into his cadence. The subtle giveaway is 'every man on that ridge' — Willard's real lines are more interior and self-implicating rather than invoking collective duty."
+    },
+    {
+      "id": "q6",
+      "text": "Just keep swimming.",
+      "speaker": "Finding Nemo (2003)",
+      "context": "Dory's optimistic mantra, which she sings to Marlin to keep him going during the search for Nemo.",
+      "real": true
+    }
+  ]
+}
