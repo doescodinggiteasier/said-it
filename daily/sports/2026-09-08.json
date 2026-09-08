@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-08",
+  "edition": 74,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Coaching the national team is different because you've got four days with these guys and you're supposed to build something. You can't build anything in four days. You can maybe remind people of what they already know how to do.",
+      "speaker": "Gregg Berhalter",
+      "context": "Press conference remarks following a U.S. Men's National Team training session, Columbus, Ohio, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Berhalter has discussed the challenges of the international window and player consolidation time repeatedly, and the resigned realism of 'you can't build anything in four days' is very consistent with his measured, technical communication style. The giveaway is the specific venue; his September 2022 windows were mostly played elsewhere."
+    },
+    {
+      "id": "q2",
+      "text": "I've had practices that were harder than any fight I've ever been in. Like, embarrassingly harder. Sparring in that gym in Colorado, I was ready to quit every single morning for about three weeks straight.",
+      "speaker": "Canelo Álvarez",
+      "context": "Sit-down interview with ESPN's Bernardo Osuna, published in ESPN Deportes, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Canelo is well-documented talking about his punishing training camps in Big Bear, Colorado, and the honesty about wanting to quit is exactly the kind of vulnerability he's shown in longer-form Spanish-language interviews. The giveaway is that he doesn't usually name specific locations with that casual specificity."
+    },
+    {
+      "id": "q3",
+      "text": "It's like going to a bar and falling in love every year. That's what it is. You fall in love and get your heart broken, fall in love, get your heart broken.",
+      "speaker": "Doc Rivers",
+      "context": "The veteran NBA head coach on the recurring emotional toll of chasing a championship each season.",
+      "real": true,
+      "source": {
+        "title": "Andscape — Doc Rivers and the heartbreak of being an NBA head coach",
+        "url": "https://andscape.com/features/doc-rivers-and-the-heartbreak-of-being-an-nba-head-coach/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Good to get my first hit before the game",
+      "speaker": "Arch Manning",
+      "context": "After a fan grabbed his throwing arm in the tunnel before Texas' season opener, causing him to faceplant",
+      "real": true,
+      "source": {
+        "title": "Sports — Arch Manning laughs off bizarre tunnel collision: 'Good to get my first hit befo",
+        "url": "https://www.cbssports.com/college-football/news/arch-manning-texas-collision-tunnel/",
+        "date": "2026-09-08"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I remember watching the '96 Olympics on a tiny TV in the basement with my sisters and we were screaming so loud my dad came downstairs to tell us to keep it down. He ended up watching the rest of it with us.",
+      "speaker": "Simone Biles",
+      "context": "Personal essay published in Time magazine's 'Heroes of the Next Generation' special issue, August 2016",
+      "real": false,
+      "fake_note": "I made this one up — Biles has spoken warmly about being inspired by female Olympic gymnasts and her family environment, and this exact kind of small domestic memory is very consistent with her interview voice. The giveaway is the timing: Biles was born in 1997, meaning she couldn't have watched the '96 Olympics at a remembering age."
+    },
+    {
+      "id": "q6",
+      "text": "There's a moment in a game where you stop playing basketball and you start playing the crowd, the score, the clock, everything except the actual basketball, and that's when you lose me. That's when I'm at my worst.",
+      "speaker": "Kevin Durant",
+      "context": "The ETCs with Kevin Durant podcast, Episode 83, Boardroom, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Durant's podcast is exactly the venue where he gets analytical about his own game in this specific, slightly irritable way, and the phrase 'that's when you lose me' is very consistent with his conversational voice. The sneaky giveaway is that Durant rarely frames his worst performances as externally caused; he usually takes more direct responsibility."
+    }
+  ]
+}

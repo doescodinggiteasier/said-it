@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-08",
+  "edition": 85,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It's hard to lead a cavalry charge if you think you look funny on a horse.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The two-time Democratic presidential nominee and UN ambassador, known for his wit; a characteristically self-deprecating line about self-confidence and self-image.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I remember sitting in the back of a lecture hall at Reed thinking, this is the most boring delivery of a genuinely fascinating idea I have ever encountered in my life, and wondering why nobody seemed bothered by that. That tension never really left me.",
+      "speaker": "Steve Jobs",
+      "context": "Recorded conversation with Walter Isaacson used in research for the authorized biography, published 2011",
+      "real": false,
+      "fake_note": "I made this one up — Jobs famously attended Reed College briefly and spoke often about presentation as inseparable from substance. The anecdote fits his documented obsession with delivery. The subtle tell is 'nobody seemed bothered': Jobs tended to frame his epiphanies as lonely and embattled, but he rarely made it sound quite this quietly philosophical — he'd usually sharpen it into something more defiant."
+    },
+    {
+      "id": "q3",
+      "text": "My mother watched the Oscar ceremony from a hospital room in 1994 and I wasn't allowed to call her until after the broadcast ended because she didn't want to miss the Best Picture announcement. She didn't even have a bet on it. That's just who she was about movies.",
+      "speaker": "Steven Spielberg",
+      "context": "Acceptance remarks at the AFI Life Achievement Award ceremony, Los Angeles, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Spielberg frequently invokes his family when speaking about his love of cinema, and this specific anecdote has the warmth and particularity of his real storytelling. The sneaky tell is the year: Schindler's List won Best Picture in 1994, which makes the detail feel documentary-real, but that specificity is exactly the kind of anchor I planted to make it sticky."
+    },
+    {
+      "id": "q4",
+      "text": "He said he felt like a little boy who had stubbed his toe in the dark. That he was too old to cry, but it hurt too much to laugh.",
+      "speaker": "Adlai Stevenson",
+      "context": "Quoting a Lincoln anecdote to describe how he felt conceding the 1952 presidential election, Springfield, Illinois, Nov. 5, 1952.",
+      "real": true,
+      "source": {
+        "title": "The American Presidency Project: Remarks Conceding the Presidential Election in Springfield, Illinois",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-conceding-the-presidential-election-springfield-illinois",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Honestly, the hardest part of doing a stadium show isn't the two hours on stage — I could do that half asleep and I have, honestly, more than once. It's the ninety minutes beforehand where everyone around you is so nervous that their nerves become your nerves and suddenly you're the one who needs to be talked down.",
+      "speaker": "Adele",
+      "context": "Interview with Zane Lowe on Apple Music 1, released alongside the '30' album rollout, November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Adele speaks with this exact kind of escalating, self-correcting honesty about stage fright, and the detail about absorbing other people's anxiety is very her. The giveaway for sharp players is 'half asleep': Adele always frames her on-stage confidence as hard-won, not casual — she'd be unlikely to imply she can cruise through it."
+    },
+    {
+      "id": "q6",
+      "text": "Not everyone can be a truffle. Most of us are potatoes. And a potato is a very good thing to be.",
+      "speaker": "Massimo Bottura",
+      "context": "Quote by the Italian chef of Osteria Francescana, on humility",
+      "real": true,
+      "source": {
+        "title": "Massimo Bottura Quotes (Author of Never Trust A Skinny Italian Chef)",
+        "url": "https://www.goodreads.com/author/quotes/406174.Massimo_Bottura",
+        "date": "2021-01-01"
+      }
+    }
+  ]
+}

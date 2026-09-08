@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-08",
+  "edition": 73,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Look, I wrote that song hungover on a tour bus outside of Tulsa with coffee that tasted like motor oil and a pencil that had no eraser. If it's a classic, that's an accident. A beautiful, accidental, thirty-year royalty-paying accident.",
+      "speaker": "Tom Petty",
+      "context": "Interview with David Fricke for Rolling Stone, published in the November 1994 issue, conducted during the Wildflowers album press tour",
+      "real": false,
+      "fake_note": "I made this one up — Petty frequently demystified his own songwriting process in interviews, crediting chaos and circumstance over inspiration. The giveaway is the very specific 'Tulsa' detail; Petty's real road demystification stories tended to stay vaguer about geography."
+    },
+    {
+      "id": "q2",
+      "text": "I don't understand men who are shy about their bodies. Brother, I have been naked in front of strangers for thirty years. Strangers with cameras. You get used to it or you get a different job. Pull yourself together and take your shirt off, what's the worst that happens?",
+      "speaker": "Burt Reynolds",
+      "context": "Interview with Barbara Walters for ABC News 20/20, aired March 1979, during the promotional run for Starting Over",
+      "real": false,
+      "fake_note": "I made this one up — Reynolds was famously the first male Cosmo centerfold and endlessly ribbed interviewers about nudity and body confidence. The subtle giveaway is 'Pull yourself together' feeling slightly too prim for Reynolds; he'd more likely have said something rawer and self-referential."
+    },
+    {
+      "id": "q3",
+      "text": "Somebody asked me what the secret to longevity in rock and roll is. I said, 'Marry someone meaner than you and let the fights keep your cardio up.' Forty years, baby. Still upright.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Interview with Mick Wall for Metal Hammer magazine, published in the October 2008 issue, conducted at the Rainbow Bar & Grill, Los Angeles",
+      "real": false,
+      "fake_note": "I made this one up — Lemmy's self-mythology around toughness, women, and defying medical odds is extremely well documented. The giveaway is 'Still upright' as a kicker; Lemmy's real punchlines tended to be drier and trail off rather than land with a button."
+    },
+    {
+      "id": "q4",
+      "text": "Whiskey is a great drink. Now whiskey's very classy and adult, till you shit your pants. But other than that, it is great.",
+      "speaker": "Dave Attell",
+      "context": "From filthy, drink-soaked comedian Dave Attell's stand-up special 'Road Work' (2014) — Attell (the 'Insomniac' host) riffing on booze in his trademark crude style.",
+      "real": true,
+      "source": {
+        "title": "Dave Attell: Road Work (2014) — Full Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/dave-attell-road-work-transcript/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People get weird at wrap parties. Someone from craft services tried to kiss me and I said, honey, I have been in fake blood since six this morning and I smell like a wet dog — this is not my best foot forward. She kissed me anyway. Five stars.",
+      "speaker": "Raul Julia",
+      "context": "Candid backstage conversation recorded on the behind-the-scenes documentary reel for The Addams Family (1991), included in the Paramount home-video press kit",
+      "real": false,
+      "fake_note": "I made this one up — Julia's warm, self-deprecating charm with a flirtatious edge is consistent with accounts from colleagues. The giveaway is the 'Five stars' button, which is an anachronistic review-culture phrasing that wouldn't have landed naturally in 1991."
+    },
+    {
+      "id": "q6",
+      "text": "Cheating is a man, he sneaks out of his own house to go, like, find some happiness behind your back so your feelings aren't hurt. Cheating is for you.",
+      "speaker": "Patrice O'Neal",
+      "context": "From the late, notoriously unfiltered comedian Patrice O'Neal's Comedy Central special 'Elephant in the Room' (2011) — his provocative, deadpan bit reframing male infidelity as an act of consideration.",
+      "real": true,
+      "source": {
+        "title": "Patrice O'Neal: Elephant in the Room (2011) — Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/patrice-oneal-elephant-in-the-room-2011-full-transcript/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

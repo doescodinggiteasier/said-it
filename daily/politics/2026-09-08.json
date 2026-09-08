@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-08",
+  "edition": 73,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone on my team printed out a tweet someone wrote about me and put it on my desk. I don't know what they expected me to do with it. Frame it? I threw it away. I throw away a lot of things in this job.",
+      "speaker": "Mike Pence",
+      "context": "Remarks at the Federalist Society National Lawyers Convention, Washington D.C., November 2018",
+      "real": false,
+      "fake_note": "I made this one up — Pence's composed, mildly bemused public persona and his low-key disdain for social-media chaos come through clearly here, and the Federalist Society crowd would appreciate the wry detachment. The giveaway is 'I throw away a lot of things in this job' — that final line has an existential weight Pence would probably not leave dangling without a more uplifting conclusion."
+    },
+    {
+      "id": "q2",
+      "text": "I am Al Gore, I used to be the next president of the United States",
+      "speaker": "Al Gore",
+      "context": "His self-deprecating opening line at a Harvard Kennedy School lecture, October 4, 2001, after losing the 2000 election",
+      "real": true,
+      "source": {
+        "title": "Harvard Gazette — Gore calls for unity",
+        "url": "https://news.harvard.edu/gazette/story/2001/10/gore-calls-for-unity/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what it's like to negotiate with Congress. I usually say it's like trying to parallel park a school bus — technically possible, but nobody nearby feels good about watching it happen.",
+      "speaker": "Janet Yellen",
+      "context": "Q&A session following remarks at the Brookings Institution, Washington D.C., October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Yellen occasionally deploys understated, self-deprecating humor in wonkish settings, and her frustrations with the legislative process are well documented. The giveaway is the folksy extended metaphor; Yellen's real humor tends to be drier and shorter."
+    },
+    {
+      "id": "q4",
+      "text": "We have a lot of very happy construction workers",
+      "speaker": "Donald Trump",
+      "context": "Trump speaking to reporters in the Oval Office about White House construction",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump takes narrow Supreme Court rulings as big wins",
+        "url": "https://thehill.com/regulation/court-battles/6072461-trump-white-house-ballroom-supreme-court/",
+        "date": "2026-09-08"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "In 2008 my slogan was, \"Yes We Can.\" In 2013 my slogan was, \"Control-Alt-Delete.\"",
+      "speaker": "Barack Obama",
+      "context": "Joking about the rocky HealthCare.gov rollout at the 2014 White House Correspondents' Dinner",
+      "real": true,
+      "source": {
+        "title": "The Obama White House Archives — Remarks by the President at the White House Correspondents' Dinner (2014)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I once spent forty-five minutes in a budget meeting debating whether a certain line item counted as infrastructure. At some point someone said 'a bridge is definitely infrastructure.' And I thought — thank God, we're getting somewhere.",
+      "speaker": "Pete Buttigieg",
+      "context": "Keynote address at the U.S. Conference of Mayors Winter Meeting, Washington D.C., January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Buttigieg's Harvard-and-McKinsey earnestness mixed with light process humor is very on-brand, and infrastructure debates are literally his job. The subtle giveaway is the punchline arriving via someone else's obvious observation; Pete tends to be the one making the tidy observation himself."
+    }
+  ]
+}

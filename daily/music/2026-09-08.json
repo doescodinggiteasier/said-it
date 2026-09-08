@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-08",
+  "edition": 77,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I learned piano properly before I learned how to sing properly, which I think wired something in me the wrong way around. Like, I hear a chord first and the word second. Sometimes I'm writing a lyric and I genuinely don't know what it means until I hear what note it's sitting on.",
+      "speaker": "John Legend",
+      "context": "Masterclass promotional interview with The Guardian, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — John has spoken extensively about the relationship between his classical piano training and his songwriting instincts, making this feel very natural. The slightly too-poetic 'I don't know what it means until I hear what note it's sitting on' is the crafted giveaway."
+    },
+    {
+      "id": "q2",
+      "text": "I did not realize that a few of the accounts contained highly toxic content, so I deleted my profile. Those accounts don't reflect my interests in any way.",
+      "speaker": "Nirosta Steel",
+      "context": "Apology for following AI accounts on social media",
+      "real": true,
+      "source": {
+        "title": "Music — Nirosta Steel Issues Apology for Following AI Accounts",
+        "url": "https://pitchfork.com/story/nirosta-steel-issues-apology/",
+        "date": "2026-09-08"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "There was a point — I think it was the Voodoo Lounge tour — where we were doing stadiums every night and I genuinely could not tell you what country I was in. Not because of anything fun, just pure exhaustion. You'd look out at seventy thousand people and think, right, okay, I suppose I'd better feel something.",
+      "speaker": "Mick Jagger",
+      "context": "Rolling Stone retrospective cover story, November 2023",
+      "real": false,
+      "fake_note": "I made this one up — Mick is well known for his dry, slightly detached wit about the absurdity of stadium-scale fame, so the deadpan 'I suppose I'd better feel something' lands squarely in his register. The tell is that he names a specific tour but then can't remember the country, which is a touch too perfectly self-deprecating."
+    },
+    {
+      "id": "q4",
+      "text": "I don't want to be associated with the guy",
+      "speaker": "Wavves",
+      "context": "Statement about rerecording the Say Anything collab album following Max Bemis allegations",
+      "real": true,
+      "source": {
+        "title": "Music — Wavves to Rerecord Say Anything Collab Album Following Max Bemis Allegations",
+        "url": "https://pitchfork.com/story/wavves-to-rerecord-say-anything-collab-album-cherry-soda-max-bemis-allegations/",
+        "date": "2026-09-08"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Céline Dion is a force of bravery and an inspiration",
+      "speaker": "Noëlla Lamy",
+      "context": "Fan camping outside Céline Dion's Paris hotel before her comeback concert",
+      "real": true,
+      "source": {
+        "title": "Music — ‘She’ll outdo herself’: Céline Dion fans camp out for glimpse of star before sol",
+        "url": "https://www.theguardian.com/music/2026/sep/07/celine-dion-fans-camp-out-sold-out-paris-comeback",
+        "date": "2026-09-08"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People kept telling me the album was too long. My manager said it, the label said it, my wife said it at dinner. And I just kept thinking — yeah, but which song do you want me to take off? Nobody could ever answer that. So it stayed long.",
+      "speaker": "Kendrick Lamar",
+      "context": "Interviewed by Elliott Wilson for TIDAL's Rap Radar podcast, recorded 2022",
+      "real": false,
+      "fake_note": "I made this one up — Kendrick has a well-documented habit of defending his artistic decisions quietly but immovably, and the conversational escalation of 'my manager, the label, my wife at dinner' feels exactly like his dry, understated storytelling. The mention of his wife is the subtle flag, since he rarely brings her into interviews."
+    }
+  ]
+}
