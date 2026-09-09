@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-09",
+  "edition": 78,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Why not try to be the best in the world, just for the fun of it?",
+      "speaker": "Art Garfunkel",
+      "context": "Interview ahead of his tour at age 84",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Why not try to be the best in the world, just for the fun of it?’ Art Garfunkel",
+        "url": "https://www.theguardian.com/music/2026/sep/04/art-garfunkel-what-a-wonderful-world-tour-interview",
+        "date": "2026-09-06"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've never once sat down and thought, right, I'm going to write a hit. That's probably why some of them were hits, actually. The ones where I was really trying to make something commercial, you can hear me trying, and that's the worst sound in the world.",
+      "speaker": "Elton John",
+      "context": "Interview with David Frost on Parkinson, BBC One, broadcast December 2001",
+      "real": false,
+      "fake_note": "I made this one up — Elton has spoken extensively about his intuitive writing process and the Elton-Bernie dynamic, so this lands squarely in his wheelhouse. The subtle giveaway is 'you can hear me trying' — a little too neatly self-aware for someone who usually credits Bernie Taupin rather than his own instincts."
+    },
+    {
+      "id": "q3",
+      "text": "I have a rule where I don't listen to the album for a full year after we put it out. Because at six months I still hate it, and at two years I've forgiven it, but right in the middle there's this window where I can actually hear it like a stranger would, and that's the only version of it I trust.",
+      "speaker": "St. Vincent",
+      "context": "Keynote conversation with Phoebe Bridgers at SXSW Music Conference, Austin, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Annie Clark is famous for her precise, almost clinical approach to dissecting her own work and she regularly discusses her complicated relationship with finished records. The tell is the very specific 'one year / six months / two years' scaffolding, which sounds convincingly idiosyncratic but is just a little too tidy for off-the-cuff speech."
+    },
+    {
+      "id": "q4",
+      "text": "I'm not chasing the feeling from when I was nineteen. That feeling is gone and it should be gone, honestly. What I'm chasing now is something I don't have a name for yet, and that's the only reason to keep making records.",
+      "speaker": "Björk",
+      "context": "Extended profile interview with Sasha Frere-Jones, The Wire magazine, issue 401, July 2017",
+      "real": false,
+      "fake_note": "I made this one up — Björk consistently rejects nostalgia and frames each new project as a search for unmapped emotional territory, which is exactly what this captures. The giveaway is the phrase 'I don't have a name for yet' — it's very Björk in spirit but slightly too aphoristic; her real speech tends to veer into weirder, more specific imagery before settling."
+    },
+    {
+      "id": "q5",
+      "text": "The backcombed hair was like architecture really. It took more than 45 minutes to style",
+      "speaker": "Mari Wilson",
+      "context": "Reflecting on her iconic beehive hairstyle during her 1982 career",
+      "real": true,
+      "source": {
+        "title": "Music — ‘The more famous I got, the bigger my beehive got’: how Mari Wilson made Just Wh",
+        "url": "https://www.theguardian.com/culture/2026/sep/07/how-mari-wilson-made-just-what-i-always-wanted-beehive",
+        "date": "2026-09-09"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People think the loudest guy in the room is running things. Nine times out of ten, the loudest guy in the room hasn't slept in three days because he's terrified nobody's listening.",
+      "speaker": "Rick Rubin",
+      "context": "Recorded conversation with producer Andrew Scheps for the Pensado's Place YouTube channel, episode aired March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Rick's whole persona is the quiet observer who sees through surface noise, and this fits his contemplative, slightly oracular register perfectly. The tell is that it edges just a bit too close to a produceable maxim, whereas Rick in reality tends to trail off into even more abstracted territory."
+    }
+  ]
+}

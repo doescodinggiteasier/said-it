@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-09",
+  "edition": 83,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I feel the need... the need for speed!",
+      "speaker": "Top Gun (1986)",
+      "context": "Maverick (Tom Cruise) and Goose (Anthony Edwards) say it together, high-fiving as they get pumped up to fly.",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "I never said it was your fault. I said you were there.",
+      "speaker": "Gone Girl (2014)",
+      "context": "Amy, coolly, during one of the flashback argument scenes with Nick",
+      "real": false,
+      "fake_note": "I made this one up — Amy's precise, scalpel-like way of reframing guilt is all over Fincher's film, and this sounds like exactly her brand of quiet menace. The tell is it's almost too neatly constructed; real Gillian Flynn dialogue is usually a half-beat stranger."
+    },
+    {
+      "id": "q3",
+      "text": "Mr. Vaughn, what we are dealing with here is a perfect engine, an eating machine.",
+      "speaker": "Jaws (1975)",
+      "context": "Marine biologist Matt Hooper (Richard Dreyfuss) warning Mayor Vaughn (Murray Hamilton) about the shark.",
+      "real": true,
+      "source": {
+        "title": "Jaws (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Jaws_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "She didn't leave a note. That's the part I keep coming back to.",
+      "speaker": "Ordinary People (1980)",
+      "context": "Calvin, quietly, to his therapist or to Beth during a tense domestic moment",
+      "real": false,
+      "fake_note": "I made this one up — the clipped, emotionally restrained register matches the film's suburban grief perfectly. The giveaway is that the script tends to let silences do this work rather than stating it so plainly."
+    },
+    {
+      "id": "q5",
+      "text": "Nobody tells you what the job actually costs until it's already taken something from you.",
+      "speaker": "Silkwood (1983)",
+      "context": "Karen, talking to Drew late at night after another tense shift at the plant",
+      "real": false,
+      "fake_note": "I made this one up — the working-class fatalism and Karen's blunt, unguarded way of speaking fits Meryl Streep's performance and Mike Nichols's tone. The giveaway is it skews slightly too reflective; Karen's dialogue is usually more reactive and immediate."
+    },
+    {
+      "id": "q6",
+      "text": "You can't buy a jury, Vincent. You can only rent one.",
+      "speaker": "The Verdict (1982)",
+      "context": "Mickey Morrissey, Frank Galvin's old friend, warning him about the defense team's resources",
+      "real": false,
+      "fake_note": "I made this one up — the cynical, world-worn wit matches the film's legal-drama atmosphere and the supporting characters' voices well. The giveaway is it's a touch too epigrammatic; the film's dialogue is usually rougher and less polished."
+    }
+  ]
+}

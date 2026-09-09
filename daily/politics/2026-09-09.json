@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-09",
+  "edition": 74,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I got a letter once from a constituent — very polite, three pages — asking me to personally fix a pothole on his street. I wrote back. We had a real exchange. The pothole's still there.",
+      "speaker": "Chuck Grassley",
+      "context": "Iowa State Fair Soapbox remarks, Des Moines, August 2017",
+      "real": false,
+      "fake_note": "I made this one up — Grassley is famous for his constituent outreach and his plain-spoken Iowa common-man persona, and pothole complaints are the quintessential constituent grievance. The State Fair Soapbox is exactly where he'd say something like this. The giveaway is the dry 'the pothole's still there' — it's a slightly too-polished comedian's button for Grassley's genuinely flat delivery."
+    },
+    {
+      "id": "q2",
+      "text": "No, I'm not going to pledge that.",
+      "speaker": "Todd Blanche",
+      "context": "NBC's Meet the Press, when asked if the DOJ would always act independently of the White House",
+      "real": true,
+      "source": {
+        "title": "Politics — Todd Blanche declines to pledge independence from White House",
+        "url": "https://www.theguardian.com/us-news/2026/aug/16/todd-blanche-doj-independence-trump-white-house",
+        "date": "2026-08-17"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I was criticized for being too much concerned with the average Canadians. I can't help that; I am one of them!",
+      "speaker": "John Diefenbaker",
+      "context": "Canada's 13th prime minister, disarmingly turning a criticism into a humble admission about his own ordinariness.",
+      "real": true,
+      "source": {
+        "title": "John Diefenbaker - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Diefenbaker",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I keep a copy of the tax code on my nightstand. My wife keeps threatening to move it to the garage, and honestly, I'm starting to think she has a point.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks at the Kentucky Farm Bureau Congressional Appreciation Dinner, Louisville, August 2018",
+      "real": false,
+      "fake_note": "I made this one up — McConnell rarely cracks self-deprecating domestic jokes, but this fits his dry, understated delivery perfectly, and the tax-policy subject is dead-on for him. The subtle giveaway is that 'my wife keeps threatening' is just slightly warmer and more domestic than McConnell tends to get in public."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me how I stay calm during a filibuster. Honestly, I just picture the look on C-SPAN's producer's face around hour eleven. That gets me through.",
+      "speaker": "Bernie Sanders",
+      "context": "Interview with Seth Meyers on Late Night with Seth Meyers, NBC, March 2016",
+      "real": false,
+      "fake_note": "I made this one up — Sanders actually held a famous lengthy Senate floor speech, so this lands squarely in his biography, and his slightly gruff humor comes through. The giveaway is that Sanders almost never frames his endurance as something wry or self-amused — he'd more typically frame it in terms of the cause."
+    },
+    {
+      "id": "q6",
+      "text": "My first week in Congress, I voted on something and a colleague leaned over and said, 'Good vote.' I had no idea if that was a compliment or a warning. Took me about six months to figure it out.",
+      "speaker": "Alexandria Ocasio-Cortez",
+      "context": "Interview on The Daily Show with Trevor Noah, Comedy Central, November 2019",
+      "real": false,
+      "fake_note": "I made this one up — AOC has spoken extensively about her disorienting first term in Congress and is comfortable with self-deprecating anecdotes on talk shows. The ambiguous senior-colleague interaction rings true to freshman-member dynamics. The giveaway is that the punchline is a bit too neatly retrospective; her real storytelling tends to stay in the present-tense emotional moment longer."
+    }
+  ]
+}

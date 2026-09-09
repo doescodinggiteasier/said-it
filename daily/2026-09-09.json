@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-09",
+  "edition": 86,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People think I sit around listening to jazz and wearing a turtleneck when I write. I'm mostly in sweatpants eating cereal at two in the afternoon, honestly. The mystique is not something I've worked very hard to earn.",
+      "speaker": "Cormac McCarthy",
+      "context": "Rare extended conversation with David Krakauer published in the Santa Fe Institute's Complexity podcast, recorded 2017",
+      "real": false,
+      "fake_note": "I made this one up — McCarthy's few public remarks are famously dry and self-aware, and he has actually discussed the unglamorous side of writing life in his brief interviews. The tell is 'The mystique is not something I've worked very hard to earn' — slightly too tidy a kicker for someone who almost never delivers punchlines."
+    },
+    {
+      "id": "q2",
+      "text": "I remember the first time I cooked for a Michelin inspector — I didn't know it was happening, which is probably why the food was actually good. The moment you know, something tightens up in your wrists.",
+      "speaker": "Gordon Ramsay",
+      "context": "Interview with Chris Evans on the Virgin Radio Breakfast Show, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Ramsay genuinely tells stories about pressure and physical cooking instinct, and the self-deprecating twist sounds exactly like him. The giveaway is the oddly specific 'tightens up in your wrists' — charming, but just a hair too poetic for his usual bluntness."
+    },
+    {
+      "id": "q3",
+      "text": "We believe this is a blueprint for how AI and the music industry can strengthen one another and build entirely new product experiences for artists, fans, and the broader music community",
+      "speaker": "Mikey Shulman",
+      "context": "Suno CEO commenting on new AI model trained on licensed music tracks",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Suno Launches New AI Model Trained on Licensed WMG, BMG Tracks",
+        "url": "https://www.hollywoodreporter.com/music/music-industry-news/suno-launches-new-model-trained-on-licensed-songs-1236694047/",
+        "date": "2026-09-09"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "She was [on set] for two or three days only, and I loved her",
+      "speaker": "Kornél Mundruczó",
+      "context": "Director speaking about working with Ellen Burstyn, in a Variety interview from Budapest",
+      "real": true,
+      "source": {
+        "title": "Entertainment — ‘Place to Be’ Helmer Kornél Mundruczó on Directing Ellen Burstyn, Taika Waititi ",
+        "url": "https://variety.com/2026/film/festivals/place-to-be-kornel-mundruczo-ellen-burstyn-pigeon-1236853231/",
+        "date": "2026-09-09"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I was in the back of a cab in Tokyo and the driver was playing one of my songs and I couldn't decide whether to say something or just sit there. I sat there. It felt less embarrassing for both of us.",
+      "speaker": "Pharrell Williams",
+      "context": "GQ Japan profile interview, published in the magazine's September 2018 issue",
+      "real": false,
+      "fake_note": "I made this one up — Pharrell has talked about the surreal experience of global fame in interviews and tends to frame these moments with quiet, slightly awkward humor rather than boasting. The giveaway is 'less embarrassing for both of us' — it's a touch too knowing, almost scripted, for what he describes as a spontaneous moment."
+    },
+    {
+      "id": "q6",
+      "text": "My grandmother used to say that a recipe without a mistake in it somewhere wasn't a recipe anyone had actually cooked. I think about that every time I throw something out and start over.",
+      "speaker": "Ina Garten",
+      "context": "Feature interview with Food52, 'How Ina Garten Spends Her Weekends,' published online October 2020",
+      "real": false,
+      "fake_note": "I made this one up — Garten frequently invokes personal memory, warmth, and practical kitchen wisdom in interviews, and crediting a grandmother fits her known storytelling pattern exactly. The subtle giveaway is the rhythmic quality of the grandmother's quote — it has a little too much aphoristic polish for an attributed folk saying."
+    }
+  ]
+}
