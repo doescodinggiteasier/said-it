@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-10",
+  "edition": 79,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People always want to know what the sample is, and honestly sometimes I don't tell them just to watch them go crazy on the internet for six months. That's free marketing, you know what I'm saying? Let people be detectives.",
+      "speaker": "Timbaland",
+      "context": "Red Bull Music Academy lecture, New York City, April 2012",
+      "real": false,
+      "fake_note": "I made this one up — Timbaland genuinely loved talking about the craft of sampling and production mystique, and the playful withholding attitude matches his documented personality perfectly. The giveaway for sharp players is 'free marketing' — Timbaland tended to frame things in terms of art and instinct more than strategy when speaking publicly."
+    },
+    {
+      "id": "q2",
+      "text": "There's a version of Nevermind that almost came out sounding like a Tom Petty record. Butch was pushing for something cleaner, and we kept fighting about the low end on 'Lithium' for what felt like weeks. I don't know if I'm glad we argued or not. Probably both.",
+      "speaker": "Krist Novoselic",
+      "context": "Interview on the WTF with Marc Maron podcast, Episode 847, January 2018",
+      "real": false,
+      "fake_note": "I made this one up — Novoselic is a known and thoughtful talker about the Nevermind recording sessions and his relationship with producer Butch Vig, and the low-end-on-Lithium specificity sounds exactly like the kind of granular studio detail he actually discusses. The giveaway is the Tom Petty reference, which is a little too convenient as a name-drop."
+    },
+    {
+      "id": "q3",
+      "text": "My first vocal coach told me I had too many colors in my voice and I needed to pick one. I think about that a lot, honestly — not because she was right, but because I almost listened to her.",
+      "speaker": "Mariah Carey",
+      "context": "Apple Music interview with Zane Lowe, released alongside the Caution album rollout, October 2018",
+      "real": false,
+      "fake_note": "I made this one up — Mariah has talked extensively about her vocal training, early self-doubt, and the pressure to conform, and this kind of near-miss anecdote fits her reflective mode perfectly. The giveaway is the slight dramatic tidiness of the setup — Mariah's real stories about that era tend to name names or get messier."
+    },
+    {
+      "id": "q4",
+      "text": "I could be losing more brain cells the more shows I did and I realized that means I shouldn't be doing this right now.",
+      "speaker": "Billy Joel",
+      "context": "Billy Joel on why he stopped performing live concerts",
+      "real": true,
+      "source": {
+        "title": "Music — Billy Joel: Loud Concerts Were “Causing Damage to My Brain”",
+        "url": "https://consequence.net/2026/09/billy-joel-loud-concerts-damage-brain/",
+        "date": "2026-09-10"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I remember sitting in the back of a tour bus somewhere outside of Tulsa, and I had this little four-track cassette recorder, and I just kept playing back this one guitar line I'd recorded at like two in the morning. I knew it was something, but I didn't know what it was for almost three years. That's just how it works sometimes — the song knows more than you do.",
+      "speaker": "Tom Petty",
+      "context": "Interview with David Fricke for Rolling Stone, published in the magazine's October 2006 issue",
+      "real": false,
+      "fake_note": "I made this one up — Petty talked constantly about his writing process and the mystical patience of songwriting, and the Tulsa detail gives it that rambling road-life specificity he loved. The subtle giveaway is 'the song knows more than you do,' which edges just a little too cleanly toward a quotable maxim for someone who usually stayed more concrete and self-deprecating."
+    },
+    {
+      "id": "q6",
+      "text": "He doesn't strike me as being happy",
+      "speaker": "Stephen Morris",
+      "context": "New Order's Stephen Morris on Peter Hook and chances of reconciliation",
+      "real": true,
+      "source": {
+        "title": "Music — New Order’s Stephen Morris on “angry person” Peter Hook and chances of reconcili",
+        "url": "https://www.nme.com/news/music/new-orders-stephen-morris-on-peter-hook-chances-of-reconciliation-3968021?utm_source=rss&utm_medium=rss&utm_campaign=new-orders-stephen-morris-on-peter-hook-chances-of-reconciliation",
+        "date": "2026-09-10"
+      }
+    }
+  ]
+}

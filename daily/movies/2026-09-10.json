@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-10",
+  "edition": 84,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The thing about working with children is they have absolutely no interest in protecting your feelings.",
+      "speaker": "Mrs. Doubtfire (1993)",
+      "context": "Daniel Hillard, explaining something to his friend Frank",
+      "real": false,
+      "fake_note": "I made this one up — Williams's more grounded, wry mode (as opposed to his full-throttle improv) shows up in lines like this, and it fits Daniel's complicated relationship to his nanny role. The giveaway is the sentence is a hair too self-aware; Daniel usually earns his insights through chaos, not reflection."
+    },
+    {
+      "id": "q2",
+      "text": "Three tours and the thing I keep thinking about is whether my wife remembered to call the plumber.",
+      "speaker": "The Hurt Locker (2008)",
+      "context": "Sergeant James, in a rare quiet moment between missions",
+      "real": false,
+      "fake_note": "I made this one up — the film's whole project is showing how combat soldiers disconnect from ordinary life, so this mundane intrusion feels authentic to James's interior drift. The giveaway is the line is a bit too neatly ironic; the film usually earns its ironies through action rather than dialogue."
+    },
+    {
+      "id": "q3",
+      "text": "Smokey, this is not 'Nam. This is bowling. There are rules.",
+      "speaker": "The Big Lebowski (1998)",
+      "context": "Walter Sobchak (John Goodman) pulling a gun over a foot-fault dispute during league bowling, to opponent Smokey.",
+      "real": true,
+      "source": {
+        "title": "The Big Lebowski - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Big_Lebowski",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "You need to call it. I can't call it for you. It wouldn't be fair.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Anton Chigurh (Javier Bardem) to the gas station proprietor during the coin-toss scene, pressing him to call heads or tails for his life.",
+      "real": true,
+      "source": {
+        "title": "No Country for Old Men (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/No_Country_for_Old_Men_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I'm not sure I trust a man who irons his own shirts.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes, sizing up a new client in his office",
+      "real": false,
+      "fake_note": "I made this one up — Gittes is exactly the kind of wiseacre who'd needle a client with something this petty and observational. The giveaway is that it's a touch too jokey-standalone; his real barbs are usually tied tighter to what's happening in the room."
+    },
+    {
+      "id": "q6",
+      "text": "This town deserves a better class of criminal, and I'm gonna give it to 'em.",
+      "speaker": "The Dark Knight (2008)",
+      "context": "The Joker (Heath Ledger) addressing Gotham's mob bosses during his hostile takeover of their operation.",
+      "real": true,
+      "source": {
+        "title": "The Dark Knight (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Dark_Knight_(film)",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-10",
+  "edition": 76,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I had a cheeseburger and went to bed.",
+      "speaker": "Andy Reid",
+      "context": "Kansas City Chiefs head coach Andy Reid's reply, with a smile, when asked at his press conference how he celebrated the Chiefs' 35-24 AFC Championship win over the Tennessee Titans that sent them to Super Bowl LIV.",
+      "real": true,
+      "source": {
+        "title": "Andy Reid on how he celebrated Chiefs win: 'I had a cheeseburger and went to bed'",
+        "url": "https://www.nfl.com/videos/andy-reid-on-how-he-celebrated-chiefs-win-i-had-a-cheeseburger-and-went-to-bed",
+        "date": "2020-01-20"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "When you coach a goalkeeper you have to be a completely different type of person than when you coach an outfield player. You're basically a therapist who also knows how to organize a back four. The good ones are a little bit crazy and they need you to understand exactly what kind of crazy they are.",
+      "speaker": "Pep Guardiola",
+      "context": "Press conference ahead of the UEFA Champions League final, Istanbul, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Guardiola has spoken publicly about the psychological complexity of coaching goalkeepers and his close relationships with Ederson and Hart, and the 'therapist' framing matches his intellectualized way of discussing roles. The tell is 'organize a back four' — Guardiola in his own system almost never uses that traditional phrase; he'd say something more positional and specific."
+    },
+    {
+      "id": "q3",
+      "text": "Chemistry is something that you don't just throw in the frying pan and mix it up with another something and then throw it on top of something, then fry it up and put it in a tortilla put in a microwave, heat it up and it give it to you and expect it to taste good.",
+      "speaker": "Kevin Garnett",
+      "context": "Boston Celtics forward Kevin Garnett delivered this elaborate cooking metaphor while expressing frustration about the lack of preparation time following the 2011 NBA lockout, explaining why team chemistry can't be rushed.",
+      "real": true,
+      "source": {
+        "title": "Kevin Garnett's words were as entertaining as his play - ESPN Boston Celtics Blog",
+        "url": "https://www.espn.com/blog/boston/celtics/post/_/id/4724028/kevin-garnetts-words-were-as-entertaining-as-his-play",
+        "date": "2011-12-13"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My dad used to watch me practice and he'd never say anything nice right there on the court. Nothing. He'd wait until we were in the car, driving home, and then maybe — maybe — he'd say 'that backhand is coming.' That was it. I lived for that car ride.",
+      "speaker": "Serena Williams",
+      "context": "Vogue 73 Questions video interview, published September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Serena has spoken extensively and warmly about Richard Williams' coaching methods, and the detail of delayed, sparse praise rings completely true to what she's described. The giveaway is the specificity of 'that backhand is coming' — she tends to reference power and serve, not backhand, as her father's focus."
+    },
+    {
+      "id": "q5",
+      "text": "People in England think I don't care about batting averages. I do. I care enormously. I just refuse to talk about them because the minute you start talking about your average you're already playing for the wrong thing.",
+      "speaker": "Ben Stokes",
+      "context": "Interview with Nasser Hussain, Sky Sports Cricket, The Ashes preview show, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Stokes' 'Bazball' philosophy explicitly de-emphasizes personal statistics in favor of team outcomes, and he's said versions of this publicly. The tell is 'people in England think' — Stokes is English and would almost certainly say 'people think' or name a specific critic rather than create that slight insider-outsider distance."
+    },
+    {
+      "id": "q6",
+      "text": "Happy? Happy is not a word that we think about in the game. You gotta think of something different. Happy, I don't know how to judge happy. We're in the middle of a contest. Nobody's happy.",
+      "speaker": "Gregg Popovich",
+      "context": "San Antonio Spurs head coach Gregg Popovich's deadpan reply during a mid-game sideline interview when TNT's David Aldridge asked whether he was happy with his team's shot selection against the Thunder.",
+      "real": true,
+      "source": {
+        "title": "Gregg Popovich rips reporter for asking if he's 'happy' about shot selection (Video)",
+        "url": "https://larrybrownsports.com/basketball/gregg-popovich-rips-reporter-happy/160946",
+        "date": "2012-11-02"
+      }
+    }
+  ]
+}

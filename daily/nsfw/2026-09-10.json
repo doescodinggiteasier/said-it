@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-10",
+  "edition": 74,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Somebody in the front row held up a sign that said 'Jimi, will you marry me?' I thought about it. I genuinely thought about it for a second. Then I played the solo and figured that was probably the better answer.",
+      "speaker": "Jimi Hendrix",
+      "context": "Press conference at the Fillmore East, New York, December 1969, recorded by journalist Al Aronowitz for a Rolling Stone piece that was ultimately spiked",
+      "real": false,
+      "fake_note": "I made this one up — Hendrix's gentle, slightly dreamy sense of humour and his instinct to let the music speak are well-attested. The giveaway is the 'spiked piece' provenance is a convenient dead end, and the cadence is a little more polished and literary than Hendrix's typically loose, rambling interview style."
+    },
+    {
+      "id": "q2",
+      "text": "And cigarettes gave me the patience to sit and write those thoughts down in a comedy-friendly format that you could understand. And alcohol gives me the courage to stand up here in front of you judgmental pricks and do it with a quarter million dollars worth of cameras in your face.",
+      "speaker": "Doug Stanhope",
+      "context": "From Doug Stanhope's 2007 stand-up special \"No Refunds\" — his defiant, self-celebrating defense of lifelong drug, cigarette, and alcohol use as the engine of his comedy.",
+      "real": true,
+      "source": {
+        "title": "Doug Stanhope: No Refunds (2007) — Full Transcript",
+        "url": "https://scrapsfromtheloft.com/comedy/doug-stanhope-no-refunds-transcript/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I once asked a Jesuit priest what was the best short prayer he knew. He said, \"Fuck it,\" as in \"Fuck it; it's in God's hands.\"",
+      "speaker": "Anthony Hopkins",
+      "context": "Anthony Hopkins recounting a Jesuit priest's answer when he asked for the best short prayer — an anecdote he has told publicly, including on Inside the Actors Studio.",
+      "real": true,
+      "source": {
+        "title": "Inside the Actors Studio (IMDb quotes)",
+        "url": "https://www.imdb.com/name/nm0000164/quotes/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Someone asked me after the show, 'John, what's your rider?' I said, 'Scotch, cigarettes, and a woman who doesn't want to talk about her feelings at two in the morning.' They sent up a fruit basket. A fruit basket! I nearly cried.",
+      "speaker": "John Belushi",
+      "context": "Backstage Q&A at the National Lampoon Radio Hour taping, recorded circa 1974, later circulated among cast members",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's rider stories and his blunt frustration with earnestness are well-documented, so the voice lands. The giveaway is the punchline structure is a touch too clean and self-contained for his usually messier, more physical delivery."
+    },
+    {
+      "id": "q5",
+      "text": "People go, 'Freddie, don't you get nervous before Wembley?' Darling, I get nervous choosing between a gin and tonic and a gin and tonic with a slice. That's nerves. Eighty thousand people screaming? That's just Tuesday.",
+      "speaker": "Freddie Mercury",
+      "context": "Interview with Dave Lee Travis on BBC Radio 1, broadcast August 1986, during the Magic Tour promotional run",
+      "real": false,
+      "fake_note": "I made this one up — Mercury's theatrical self-confidence and his habit of calling interviewers 'darling' make this feel authentic. The giveaway is 'that's just Tuesday' — it's a little too American-comedy-circuit for his particular British-camp register."
+    },
+    {
+      "id": "q6",
+      "text": "Over the past forty years I've been loaded on booze, coke, acid, Quaaludes, glue, cough mixture, heroin, Rohypnol, Klonopin, Vicodin, and too many other heavy-duty substances to list in this footnote. On more than a few occasions I was on all of these at the same time.",
+      "speaker": "Ozzy Osbourne",
+      "context": "From a footnote in his 2010 autobiography 'I Am Ozzy' (with Chris Ayres), cataloguing four decades of his own substance abuse.",
+      "real": true,
+      "source": {
+        "title": "Memoir 'I Am Ozzy' (LA Weekly excerpt)",
+        "url": "https://www.laweekly.com/i-am-ozzy-soon-to-be-classic-quotes-from-ozzy-osbournes-upcoming-autobiography/",
+        "date": "2010"
+      }
+    }
+  ]
+}

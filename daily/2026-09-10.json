@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-10",
+  "edition": 87,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what I listen to before a match and I never know what to say because the honest answer is, like, three-hour YouTube compilations of old railway documentaries. It genuinely works. I don't know why.",
+      "speaker": "Novak Djokovic",
+      "context": "Interviewed by Graham Bensinger for In Depth with Graham Bensinger, released February 2024",
+      "real": false,
+      "fake_note": "I made this one up — Djokovic is famously particular about his pre-match rituals and has talked openly about unconventional relaxation techniques, so the oddball specificity lands just right. The subtle giveaway is that even Djokovic's real quirks don't quite go that niche — railway documentaries is one step past the plausible edge."
+    },
+    {
+      "id": "q2",
+      "text": "Comedy is deeply personal and subjective. What makes one person laugh may not work for another, so our job is to",
+      "speaker": "Monika Shergill",
+      "context": "Netflix India VP of Content discussing expanded comedy slate",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Netflix India Chief Monika Shergill Says ‘Specificity Can Be a Strength’ as Stre",
+        "url": "https://variety.com/2026/tv/news/netflix-india-comedy-slate-monika-shergill-1236854380/",
+        "date": "2026-09-09"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The thing about sourdough is that it rewards you for ignoring it. I neglect mine for five days, it comes back angry and perfect. I should apply that to more things in my life but I haven't gotten there yet.",
+      "speaker": "Alton Brown",
+      "context": "Speaking on an episode of The Sporkful podcast hosted by Dan Pashman, recorded during the fall 2023 season",
+      "real": false,
+      "fake_note": "I made this one up — Alton Brown talks about bread fermentation constantly and his self-deprecating asides feel exactly like this. The tell is the dangling 'I haven't gotten there yet' — his real conclusions tend to be slightly more resolved and technical than leaving a personal thread just hanging."
+    },
+    {
+      "id": "q4",
+      "text": "Few thought he was even a starter / There were many who thought themselves smarter / But he ended PM / CH and OM / An earl and a knight of the garter.",
+      "speaker": "Clement Attlee",
+      "context": "A self-mocking limerick the former British PM wrote about himself in a letter to his brother Tom Attlee, April 8, 1956.",
+      "real": true,
+      "source": {
+        "title": "Lib Quotes: Clement Attlee (self-description limerick)",
+        "url": "https://libquotes.com/clement-attlee",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I called my mom after we won the Oscar and the first thing she said was, 'Did you thank your aunt Rosa? She watched every movie you were ever in, even the bad ones.' So we talked about Aunt Rosa for about twenty minutes.",
+      "speaker": "Guillermo del Toro",
+      "context": "Recounted during a Directors Guild of America evening conversation at the DGA Theater in Los Angeles, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — del Toro is famous for warm, digressive storytelling about family and sentimentality, and his public speeches always circle back to gratitude to specific people. The giveaway is 'Aunt Rosa,' a conveniently named figure that gives the story just a little too much texture for something truly off-the-cuff."
+    },
+    {
+      "id": "q6",
+      "text": "I have now come to the conclusion never again to think of marrying, and for this reason; I can never be satisfied with anyone who would be blockhead enough to have me.",
+      "speaker": "Abraham Lincoln",
+      "context": "A candidly self-mocking line from a young Lincoln's letter, poking fun at his own eligibility as a suitor.",
+      "real": true,
+      "source": {
+        "title": "Abraham Lincoln - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Abraham_Lincoln",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-10",
+  "edition": 75,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My remarks introduced Dave McCormick as a great American and friend. We are in different parties, but we are both Team PA.",
+      "speaker": "John Fetterman",
+      "context": "Statement after appearing in video at GOP midterm convention",
+      "real": true,
+      "source": {
+        "title": "Politics — Fetterman says he'll still caucus with Democrats after video appearance at GOP m",
+        "url": "https://thehill.com/homenews/senate/6080746-fetterman-democrat-caucus-gop-midterm-video/",
+        "date": "2026-09-10"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've given speeches in forty-some states. The questions are always different but there's always one person who wants to talk about the gold standard. Always. I don't know where they find each other.",
+      "speaker": "Newt Gingrich",
+      "context": "Appearance on Firing Line with Margaret Hoover, PBS, recorded in New York, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Gingrich is a prolific public speaker who frequently riffs about his decades on the stump, and the gold standard has genuinely been a recurring fringe preoccupation at Republican events. The tell is the last line; Gingrich typically pivots to a theory rather than leaving a joke hanging."
+    },
+    {
+      "id": "q3",
+      "text": "I've been in rooms where we were negotiating something genuinely important and someone's stomach growled so loudly that we all just stopped. The other side laughed. We laughed. It was the most bipartisan moment of the whole week.",
+      "speaker": "John Kerry",
+      "context": "Conversation at the Council on Foreign Relations in New York, moderated by Richard Haass, February 2017",
+      "real": false,
+      "fake_note": "I made this one up — Kerry is known for long, anecdote-heavy answers in policy forums and frequently humanizes diplomatic moments with physical-world details. The tell is the word 'genuinely,' which he uses constantly in real speeches, but the anecdote is slightly too tidy."
+    },
+    {
+      "id": "q4",
+      "text": "I've read every page of the tax code at some point in my career. Not consecutively. Not voluntarily. But I can tell you there's a section in there about the depreciation of racehorses that I still think about.",
+      "speaker": "Mitch McConnell",
+      "context": "Interview with Hugh Hewitt on The Hugh Hewitt Show, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — McConnell is famously dry and procedural, and he genuinely knows the tax code cold, so this lands in his wheelhouse. The giveaway is the racehorse detail, which is real (Section 179 allows it) but he'd be unlikely to volunteer it so wryly."
+    },
+    {
+      "id": "q5",
+      "text": "Someone on my staff handed me a briefing document once that was color-coded. Six colors. I said, 'What does orange mean?' They said, 'Urgent.' I said, 'Then why isn't everything orange?'",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic National Committee fundraiser in Philadelphia, October 2018, as reported by pool reporters",
+      "real": false,
+      "fake_note": "I made this one up — Biden has a long track record of self-deprecating staffing anecdotes told in that rambling, conversational way. The subtle tell is that the punchline is a little too tight; his real digressions tend to lose the thread before landing."
+    },
+    {
+      "id": "q6",
+      "text": "I do not like broccoli. And I haven't liked it since I was a little kid, and my mother made me eat it. And I'm President of the United States, and I'm not going to eat any more broccoli.",
+      "speaker": "George H. W. Bush",
+      "context": "Bush's lighthearted declaration at his March 22, 1990 news conference, when asked whether he had 'lost the broccoli vote' after it emerged he'd banned broccoli from Air Force One.",
+      "real": true,
+      "source": {
+        "title": "George H.W. Bush: Hater of Broccoli - Smart Politics (University of Minnesota Libraries)",
+        "url": "https://smartpolitics.lib.umn.edu/2013/07/09/george-hw-bush-hater-of-brocco/",
+        "date": "1990-03-22"
+      }
+    }
+  ]
+}
