@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-11",
+  "edition": 85,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "She used to hum when she was thinking. Drove me crazy. Now I'd give anything to hear it.",
+      "speaker": "Schindler's List (1993)",
+      "context": "A Jewish factory worker speaking quietly to another prisoner about his wife",
+      "real": false,
+      "fake_note": "I made this one up — Spielberg's film is full of intimate, devastating small moments exactly like this, and the understated phrasing feels true to the survivor testimony the script draws on. The giveaway is a slight over-polish in the final clause; the film's incidental dialogue tends to be even more fragmented."
+    },
+    {
+      "id": "q2",
+      "text": "I have a competition in me. I want no one else to succeed. I hate most people.",
+      "speaker": "There Will Be Blood (2007)",
+      "context": "Daniel Plainview (Daniel Day-Lewis) confessing his misanthropy to the man claiming to be his half-brother Henry.",
+      "real": true,
+      "source": {
+        "title": "There Will Be Blood - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/There_Will_Be_Blood",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Each and every man under my command owes me one hundred Nazi scalps.",
+      "speaker": "Inglourious Basterds (2009)",
+      "context": "Lt. Aldo Raine (Brad Pitt) rallying his squad of Jewish-American soldiers in his opening address.",
+      "real": true,
+      "source": {
+        "title": "Inglourious Basterds - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Inglourious_Basterds",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Rudeness is merely an expression of fear. People fear they won't get what they want. The most dreadful and unattractive person only needs to be loved, and they will open up like a flower.",
+      "speaker": "The Grand Budapest Hotel (2014)",
+      "context": "M. Gustave (Ralph Fiennes), the fastidious concierge, instructs his lobby boy Zero on his philosophy of service.",
+      "real": true,
+      "source": {
+        "title": "The Grand Budapest Hotel - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Grand_Budapest_Hotel",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Every time I look at you I have to remind myself that you're not something I invented.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick to Ilsa, during their reunion at the café",
+      "real": false,
+      "fake_note": "I made this one up — the florid, slightly wounded romanticism fits Rick's voice when his guard slips, and Bogart's era trafficked in lines exactly this melancholy. The giveaway is that Rick typically deflects with irony rather than confessing this kind of raw bewilderment."
+    },
+    {
+      "id": "q6",
+      "text": "I've been on this block my whole life. You come in here after two weeks and think you understand it.",
+      "speaker": "The Departed (2006)",
+      "context": "A South Boston local confronting an undercover officer in a bar",
+      "real": false,
+      "fake_note": "I made this one up — the territorial, clipped Boston working-class anger is pitch-perfect for the film's minor characters, and the phrasing feels like authentic throwaway dialogue. The giveaway is that this scene doesn't quite exist; the film rarely pauses for bystander confrontations."
+    }
+  ]
+}

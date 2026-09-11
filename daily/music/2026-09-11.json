@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-11",
+  "edition": 80,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It's not really representative of the other tunes",
+      "speaker": "Jim Root",
+      "context": "Jim Root of Slipknot explaining why 'Arsenal' won't appear on their new album",
+      "real": true,
+      "source": {
+        "title": "Music — Slipknot’s ‘Arsenal’ was “a tune we could quickly get out there while we work on",
+        "url": "https://www.nme.com/news/music/slipknot-arsenal-will-not-feature-on-new-album-says-jim-root-3968248?utm_source=rss&utm_medium=rss&utm_campaign=slipknot-arsenal-will-not-feature-on-new-album-says-jim-root",
+        "date": "2026-09-11"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I am one of the funniest people alive, people have to understand that",
+      "speaker": "Vince Staples",
+      "context": "In a 2015 Howl & Echoes interview, responding to praise about his deadpan tweets.",
+      "real": true,
+      "source": {
+        "title": "Howl & Echoes — INTERVIEW: Vince Staples - \"I am one of the funniest people alive, people have to understand that\"",
+        "url": "https://howlandechoes.com/2015/12/interview-vince-staples-one-funniest-people-alive-people-understand/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I think, actually, I'd be more successful if I was OK wearing a muzzle.",
+      "speaker": "Chappell Roan",
+      "context": "In a January 2025 BBC interview after being named BBC Sound of 2025, on how her outspokenness affects her career.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter — Chappell Roan: \"I'd Be More Successful If I Was OK Wearing a Muzzle\"",
+        "url": "https://www.hollywoodreporter.com/music/music-news/chappell-roan-muzzle-diva-music-grammys-bbc-interview-1236112948/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Nashville fought me on the guitar tone for years. They'd say it's too dirty, it's too much, and I'd say, well, it's country music, not a dental appointment.",
+      "speaker": "Keith Urban",
+      "context": "Interview on SiriusXM's The Highway channel, recorded during CMA Fest, Nashville, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Keith has repeatedly and publicly talked about pushing guitar-driven sounds against Nashville convention, and the dry humor is consistent with his interview persona. 'Not a dental appointment' is the invented punchline."
+    },
+    {
+      "id": "q5",
+      "text": "I don't really think of myself as someone who writes love songs. I think I write songs about the feeling right before the love song, when you still don't know how it's going to go.",
+      "speaker": "Frank Ocean",
+      "context": "Printed interview with i-D Magazine, Issue 341, The Utopia Issue, Winter 2017",
+      "real": false,
+      "fake_note": "I made this one up — this tracks with Frank's documented way of talking about his craft as pre-emotional, liminal, in-process. The giveaway is it's slightly too articulate and self-aware even for him, edging toward the aphorism zone I was supposed to avoid."
+    },
+    {
+      "id": "q6",
+      "text": "I've never once finished a song and thought, yeah, that's the one, that's exactly it. There's always this feeling like you stopped just short of wherever it actually lives. I think that's probably good, though. Keeps you going back.",
+      "speaker": "Joni Mitchell",
+      "context": "Conversation with Cameron Crowe, published in the liner notes for the Joni Mitchell Archives, Vol. 2: The Reprise Years, 2021",
+      "real": false,
+      "fake_note": "I made this one up — Joni has spoken frequently about creative dissatisfaction and the gap between artistic vision and execution, so this voice is dead-on. The tell is the final two sentences; real Joni tends to be more acerbic and less self-consoling."
+    }
+  ]
+}

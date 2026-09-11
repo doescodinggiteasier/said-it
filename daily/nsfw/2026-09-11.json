@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-11",
+  "edition": 75,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me, 'Rodney, what's the secret to a happy marriage?' I said, 'Two separate bathrooms and a very understanding bartender at the hotel bar downstairs.'",
+      "speaker": "Rodney Dangerfield",
+      "context": "The Tonight Show with Johnny Carson, NBC, taped segment aired November 1987",
+      "real": false,
+      "fake_note": "I made this one up — Rodney constantly mined his marriage for material in exactly this self-deprecating, rapid-fire style, so the voice lands. The giveaway is the punchline structure is a beat too clean and organised for his usual shaggy delivery."
+    },
+    {
+      "id": "q2",
+      "text": "I left the Rocking Vicars, thinking I was going to be a star in my own right immediately. Everything was going to be wonderful and huge women would get a hold of me and do things to me with raw carrots — you know, shit like that.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Recalling his youthful rock-star fantasies after leaving an early band (the Rockin' Vickers), in his memoir White Line Fever: The Autobiography (2002).",
+      "real": true,
+      "source": {
+        "title": "Goodreads — quotes from White Line Fever: The Autobiography",
+        "url": "https://www.goodreads.com/work/quotes/310228-white-line-fever-the-autobiography",
+        "date": "2002"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore. I just want to cut to the chase.",
+      "speaker": "Bob Saget",
+      "context": "In a Rolling Stone interview (republished from the vault), the 'America's Dad' comedian on his post-Full House, R-rated stand-up mindset.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I will tell you exactly what I think of your film festival: free wine, terrible cheese, and a screening room that smells like somebody dried their socks on the projector. I loved every filthy minute of it.",
+      "speaker": "Peter Sellers",
+      "context": "Cannes Film Festival press roundtable, Hotel Martinez terrace, May 1973, recalled by critic Alexander Walker in his 1981 memoir",
+      "real": false,
+      "fake_note": "I made this one up — Sellers had a sharp, theatrical contempt for pretension that he'd weaponise at industry events, so the tone is plausible. The giveaway is the 'loved every filthy minute of it' reversal is more polished and warm than Sellers, who usually left the wound open."
+    },
+    {
+      "id": "q5",
+      "text": "I sort of fucking woke up one day and was like, 'You're an asshole. You're not an artist,'",
+      "speaker": "Lady Gaga",
+      "context": "Lady Gaga recounting the self-lacerating moment she decided to quit cocaine, in a Lifetime interview ('The Conversation with Amanda de Cadenet') reported by Rolling Stone; she went on to call cocaine 'the white devil.'",
+      "real": true,
+      "source": {
+        "title": "Lady Gaga Reflects on Past Cocaine Use (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/lady-gaga-reflects-on-past-cocaine-use-188696/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Somebody in the front row threw a bra at me tonight. Rhinestone cups, underwire — the whole situation. I said a little prayer, put it on over my shirt, and finished the set. That's professionalism, baby.",
+      "speaker": "Freddie Mercury",
+      "context": "Queen South American Tour backstage press call, Estadio Vélez Sársfield, Buenos Aires, March 1981, reported in Sounds Magazine April 1981",
+      "real": false,
+      "fake_note": "I made this one up — Freddie's theatrical, self-mythologising humour about his own stage persona is well documented, and the Buenos Aires shows were legendarily wild crowd events. The giveaway is Freddie's actual backstage quotes tended to be more oblique and camper; this is a shade too anecdote-tidy."
+    }
+  ]
+}

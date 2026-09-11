@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-11",
+  "edition": 77,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what I was thinking on that last possession and honestly I was just trying not to trip over my own feet getting into position. There's not some grand chess match happening in my head. It's more like, okay, don't be an idiot right now.",
+      "speaker": "Steve Kerr",
+      "context": "The Athletic, postgame availability following Golden State Warriors vs. Memphis Grizzlies, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Kerr's self-deprecating, almost professorial deflection of 'genius coach' narratives is dead-on, and he genuinely talks this way after close games. The subtle giveaway is 'don't be an idiot right now,' which is slightly too tidy a punchline for how he actually trails off."
+    },
+    {
+      "id": "q2",
+      "text": "I learned a lot from this university of football during my career as a player and as a coach.",
+      "speaker": "Xavi Hernández",
+      "context": "Xavi's presentation as Netherlands head coach, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — Xavi hopes time at the ‘university of football’ will end with Dutch success",
+        "url": "https://www.theguardian.com/football/2026/aug/25/xavi-hernandez-university-of-football-netherlands-head-coach-barcelona",
+        "date": "2026-08-26"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People in this city, they remember every single thing. I hit a foul ball the wrong way in April and someone will bring it up to me in December at a Christmas party. I love it, honestly. Keeps you honest.",
+      "speaker": "David Ortiz",
+      "context": "WEEI Radio, Boston, Dale & Keefe Show, interview segment aired March 2017",
+      "real": false,
+      "fake_note": "I made this one up — Big Papi's Boston relationship is one of his most-visited topics and he's spoken about the intensity of the fanbase with this exact mix of pride and mild disbelief many times. The tell is 'Christmas party,' which is oddly specific and slightly too convenient as a punchline setting."
+    },
+    {
+      "id": "q4",
+      "text": "You want to know the worst part of a rain delay? It's not the waiting. It's that you eat a whole meal you weren't planning on eating and then you have to go back out there and run.",
+      "speaker": "CC Sabathia",
+      "context": "R2C2 Podcast with Ryan Ruocco, episode aired June 14, 2021",
+      "real": false,
+      "fake_note": "I made this one up — CC's podcast is casual and food-and-clubhouse-story heavy, and this is exactly the kind of practical, unglamorous complaint he'd roll out. The tell is that real CC would probably name what he ate."
+    },
+    {
+      "id": "q5",
+      "text": "Nick called me after the game and I didn't pick up. Not because I was upset with him — I just didn't have anything useful to say yet. I needed to sleep on it first.",
+      "speaker": "Judy Murray",
+      "context": "The Guardian Tennis Podcast, recorded ahead of the 2023 Wimbledon fortnight, published June 28, 2023",
+      "real": false,
+      "fake_note": "I made this one up — Judy Murray is known for candid, unsentimental comments about the Murray brothers' careers and her relationship with them, and this measured emotional restraint sounds exactly like her public voice. The fake giveaway is the slight over-specificity of implying a post-match phone call protocol."
+    },
+    {
+      "id": "q6",
+      "text": "We'll look at the free agent market",
+      "speaker": "Malky Mackay",
+      "context": "Malky Mackay speaking to Hibs TV about potential squad additions",
+      "real": true,
+      "source": {
+        "title": "Sports — Mackay hints at 'little bit of business still to do' at Hibs",
+        "url": "https://sports.yahoo.com/articles/mackay-hints-little-bit-business-114446554.html",
+        "date": "2026-09-11"
+      }
+    }
+  ]
+}
