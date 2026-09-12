@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-12",
+  "edition": 76,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Do I think about my dick? Oh, yeah, all the time. If I think about it all the time, I got a right to sing about it. If I wasn't thinking about it all the time but thought, \"It's time to write a rock song, I'd better mention my dick,\" then I wouldn't even be able to say \"dick\" right.",
+      "speaker": "Iggy Pop",
+      "context": "Defending the sexual content of his lyrics (the song \"Trollin'\" from The Weirdness) in his 2007 Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "Iggy Pop: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/iggy-pop-the-rolling-stone-interview-2-78680/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Somebody handed me a wheatgrass shot at the afterparty. A wheatgrass shot. I looked at them, I looked at it, I put it down on the tray, and I said, 'Honey, if I wanted to taste a lawn I'd have stayed in Jersey.' Ordered a bourbon. Problem solved.",
+      "speaker": "Frank Sinatra",
+      "context": "Informal remarks to a table of journalists at Chasen's restaurant following the Golden Globe Awards, Beverly Hills, January 1986",
+      "real": false,
+      "fake_note": "I made this one up — Frank's contempt for health fads, his New Jersey identity and his bourbon preference are all well-documented personality pillars. The subtle giveaway is 'wheatgrass' — the trend existed but was barely party-circuit currency in 1986; it's a concept just slightly ahead of its time for that setting."
+    },
+    {
+      "id": "q3",
+      "text": "A couple nights ago, I was licking jelly off my boyfriend's penis. And I thought, \"Oh my God — I'm turning into my mother!\"",
+      "speaker": "Sarah Silverman",
+      "context": "From her 2005 stand-up special \"Sarah Silverman: Jesus Is Magic.\" Her signature sweet-faced delivery lands a graphic sex image as the setup, with the punchline being the realization she's inheriting her mother's habits.",
+      "real": true,
+      "source": {
+        "title": "'Jesus Is Magic' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0422528/quotes/",
+        "date": "2005"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People ask me, 'Rodney, how do you handle rejection?' I said, I don't know, ask my wife — she's been practicing on me for thirty years. The woman wouldn't touch me on our anniversary. Said she had a headache. I said, 'Sweetheart, it's a headache, not a force field.' No respect, I'm tellin' ya, no goddamn respect.",
+      "speaker": "Rodney Dangerfield",
+      "context": "Backstage interview with a Hot Ticket TV crew at the MGM Grand Garden Arena, Las Vegas, November 1992, after his 'Exposed!' stand-up taping",
+      "real": false,
+      "fake_note": "I made this one up — Rodney's 'no respect' wife material and his exact rhythmic complaint style make this feel completely lived-in. The subtle giveaway is that he never quite strung the 'force field' punchline into his known catalogue — it's a half-step too polished for his usual rapid-fire."
+    },
+    {
+      "id": "q5",
+      "text": "People think being a sex symbol is glamorous. Let me tell you something — glamorous is a cold beer and nobody knocking on the dressing-room door for forty-five minutes. That's glamorous. The rest is just standing around in a tight dress while some photographer tells you to 'smoulder.' Smoulder. I'm sweating, Gary, that's not smouldering, that's a broken AC unit.",
+      "speaker": "Marilyn Monroe",
+      "context": "Candid remarks to photographer Milton Greene during a break in the Bus Stop promotional shoot, Los Angeles, recorded on set audio, April 1956",
+      "real": false,
+      "fake_note": "I made this one up — Marilyn's documented dry frustration with the 'sex symbol' machinery and her wry, self-deprecating humour in private are well-attested, and Milton Greene was genuinely her close collaborator. The giveaway is the name 'Gary' — Greene's name was Milton, not Gary, and a real transcript wouldn't have her address him by the wrong name."
+    },
+    {
+      "id": "q6",
+      "text": "I used to have a drug problem, now I make enough money.",
+      "speaker": "David Lee Roth",
+      "context": "Van Halen frontman David Lee Roth's famously flip one-liner about wealth and excess, quoted in American Songwriter's roundup of his best quotes.",
+      "real": true,
+      "source": {
+        "title": "15 of the Best Quotes from Van Halen's David Lee Roth (American Songwriter)",
+        "url": "https://americansongwriter.com/15-of-the-best-quotes-from-van-halens-david-lee-roth/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

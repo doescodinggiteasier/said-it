@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-12",
+  "edition": 77,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I said, if you want to fire me, just fire me. And so he did",
+      "speaker": "Gene Folkes",
+      "context": "Describing his experience on The Apprentice with Donald Trump",
+      "real": true,
+      "source": {
+        "title": "Politics — ‘I said, if you want to fire me, just fire me. And so he did’: my showdown with ",
+        "url": "https://www.theguardian.com/us-news/2026/sep/12/fired-showdown-donald-trump-us-president-interview-stories",
+        "date": "2026-09-12"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I had a senator — I won't say who — come up to me after a three-hour markup and whisper, 'Do you ever worry we're just very well-dressed people yelling at a wall?' And I said, 'Every Tuesday.'",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks delivered at the Gridiron Club Dinner, Washington D.C., March 2018",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's rare public humor tends to be bone-dry and institutional, and the Gridiron Dinner is one of the few venues where he actually deploys jokes. The giveaway is that McConnell would almost certainly not describe the process in terms that unflattering, even at a roast."
+    },
+    {
+      "id": "q3",
+      "text": "My father used to say the two biggest wastes of time in American life were waiting for the Senate to vote and waiting for a New York City cab in the rain. He never fully resolved which was worse.",
+      "speaker": "Chris Christie",
+      "context": "Keynote address at the Ronald Reagan Presidential Library, Simi Valley, California, September 2015",
+      "real": false,
+      "fake_note": "I made this one up — Christie's self-aware New Jersey humor and his frequent invocations of his late father as a moral anchor are both well-documented features of his public speaking. The tell is the cab line, which skews a touch too polished for his usual blustery delivery."
+    },
+    {
+      "id": "q4",
+      "text": "There's a weird market failure in media",
+      "speaker": "David Brooks",
+      "context": "Former New York Times columnist discussing his new podcast",
+      "real": true,
+      "source": {
+        "title": "Politics — ‘There’s a weird market failure in media’: David Brooks on how his new podcast w",
+        "url": "https://www.theguardian.com/media/2026/sep/12/david-brooks-podcast-permanent-questions",
+        "date": "2026-09-12"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I'll be honest with you — I have read the infrastructure bill. The whole thing. And there is a section in there about culverts that I think about more than I should.",
+      "speaker": "Amy Klobuchar",
+      "context": "Interview with Ezra Klein on The Ezra Klein Show, NPR, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar is famously wonky about unglamorous Midwestern infrastructure topics, so a culvert obsession tracks perfectly. The giveaway is that 'culverts' is almost too specific a detail for a spontaneous admission, even for her."
+    },
+    {
+      "id": "q6",
+      "text": "There's a version of this job where everything is big and dramatic and historic every single day. That version is exhausting and also, frankly, a little nuts. Most days you're arguing about a number in a spreadsheet.",
+      "speaker": "Barack Obama",
+      "context": "Conversation with David Letterman on My Next Guest Needs No Introduction, Netflix, Season 1, January 2018",
+      "real": false,
+      "fake_note": "I made this one up — Obama's dry deflation of the heroic presidency narrative is exactly his comedic register, and the 'arguing about a spreadsheet' specificity sounds like something he'd actually say. The subtle tell is that Obama would usually land that thought with a slightly more rhythmic finish."
+    }
+  ]
+}

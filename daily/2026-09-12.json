@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-12",
+  "edition": 89,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember the first time I played Madison Square Garden, I called my mum from the dressing room and she asked if I'd eaten. That's it. That's the whole conversation. Twenty thousand people waiting and she wanted to know if I'd had something.",
+      "speaker": "Adele",
+      "context": "Interview with Graham Norton on The Graham Norton Show, BBC One, November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Adele constantly talks about her mum and her self-deprecating relationship with fame, so this lands perfectly in her wheelhouse. The subtle giveaway is the punchline is just a touch too tidy for genuine off-the-cuff chat."
+    },
+    {
+      "id": "q2",
+      "text": "I've been playing guitar since I was nine and I still pick it up sometimes and have absolutely no idea what my hands are doing. You just have to make peace with the fact that the instrument is smarter than you.",
+      "speaker": "Dave Grohl",
+      "context": "Interview with Rick Beato on the YouTube channel Rick Beato, uploaded January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Grohl is an enthusiastic, self-deprecating talker about musicianship and this channel is exactly where he'd say something like this. The giveaway is the personification of the instrument — charming, but slightly more philosophical than his usual blunt warmth."
+    },
+    {
+      "id": "q3",
+      "text": "The thing nobody tells you about running a company at that scale is that the decisions you agonize over for weeks are sometimes the ones that matter least, and the ones you make in thirty seconds in a hallway are the ones that actually define you.",
+      "speaker": "Satya Nadella",
+      "context": "Keynote conversation at the World Economic Forum Annual Meeting, Davos, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Nadella consistently talks about leadership philosophy and decision-making culture at Microsoft in this reflective, slightly abstract register. The giveaway is it leans toward the aphoristic side of his style, which real Nadella quotes occasionally do, but this one is a degree more poetic."
+    },
+    {
+      "id": "q4",
+      "text": "I thought I looked real cute in my uniform, and then I heard a boy yell from the bleachers, 'Make that basket, bird legs.' And my greatest fear is that same guy is somewhere out there in the audience tonight, and he's going to cut me down to size.",
+      "speaker": "Ann Richards",
+      "context": "The Texas governor opening her celebrated 1988 Democratic National Convention keynote with a self-deprecating story about her eighth-grade basketball days.",
+      "real": true,
+      "source": {
+        "title": "Ann Richards, DNC keynote address, 1988 - Speakola",
+        "url": "https://speakola.com/political/ann-richards-dnc-keynote-1988",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I put on about twelve pounds for the role and everyone on set was incredibly supportive about it, which was annoying, because I was hoping someone would notice enough to say something and they were all too professional.",
+      "speaker": "Benedict Cumberbatch",
+      "context": "Actors on Actors interview with Cate Blanchett for Variety, published December 2022",
+      "real": false,
+      "fake_note": "I made this one up — Cumberbatch is a famously dry, self-deprecating wit in the British mode and regularly discusses physical preparation for roles. The pairing with Blanchett is plausible given both appeared in major awards-season films that year. The giveaway is the joke's construction is a little too engineered for spontaneous conversation."
+    },
+    {
+      "id": "q6",
+      "text": "I had about two bites because it was straight up chocolate cake, and I can't do that for breakfast.",
+      "speaker": "Katie Ledecky",
+      "context": "Swimmer describing trying the 'infamous' chocolate muffins in the 2024 Paris Olympic Village, as quoted by AOL/People",
+      "real": true,
+      "source": {
+        "title": "Katie Ledecky Says She Tried the 'Infamous' Chocolate Muffins at 2024 Olympics: 'I Can't Do That for Breakfast'",
+        "url": "https://www.aol.com/katie-ledecky-says-she-tried-140000011.html",
+        "date": "2024-08-08"
+      }
+    }
+  ]
+}

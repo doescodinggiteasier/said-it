@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-12",
+  "edition": 78,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I was coaching at Arkansas we had a kid who couldn't make a free throw to save his life in warmups but hit everything in the fourth quarter. I never fixed him. I almost did, but I stopped myself. Some things you leave alone.",
+      "speaker": "Nolan Richardson",
+      "context": "Panel discussion at the National Association of Basketball Coaches Annual Convention, San Antonio, April 2014",
+      "real": false,
+      "fake_note": "I made this one up — Richardson's coaching philosophy consistently emphasized instinct over system, and his anecdotes almost always feature a specific unnamed player used to make a larger point. The tell is that Richardson's real stories tend to have a sharper, more confrontational edge; this version is a touch more reflective than his usual register."
+    },
+    {
+      "id": "q2",
+      "text": "Have we produced a batter like Vaibhav Sooryavanshi?",
+      "speaker": "Wasim Akram",
+      "context": "Wasim Akram questioning Pakistan's batting development, 2026 England Test series",
+      "real": true,
+      "source": {
+        "title": "Sports — 'Have we produced a batter like Vaibhav Sooryavanshi?': Wasim Akram questions Pa",
+        "url": "https://sports.yahoo.com/articles/produced-batter-vaibhav-sooryavanshi-wasim-111800395.html",
+        "date": "2026-09-12"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I played my 500th NHL game in a building I didn't even know the name of because they'd just changed the sponsor. My wife had to text me before warmups. That's hockey.",
+      "speaker": "Sidney Crosby",
+      "context": "Segment on Sportsnet's Hockey Night in Canada intermission panel, Toronto, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Crosby is known for being refreshingly self-deprecating about anything non-hockey, and his mild bewilderment at the business and branding side of the sport has come through in real interviews. The giveaway is 'That's hockey' as a closer — Crosby's real punchlines tend to trail off more quietly rather than landing with a framing tag."
+    },
+    {
+      "id": "q4",
+      "text": "I have always felt that I needed you more than you needed me and that holds true to this very day.",
+      "speaker": "Vin Scully",
+      "context": "Legendary Dodgers broadcaster Vin Scully wrote a farewell letter to fans ahead of his final home series in September 2016, after 67 years calling Dodgers games.",
+      "real": true,
+      "source": {
+        "title": "Vin Scully writes farewell letter to fans before final Dodgers homestand (Sports Illustrated)",
+        "url": "https://www.si.com/mlb/2016/09/24/vin-scully-farewell-letter-los-angeles-dodgers-fans",
+        "date": "2016-09-24"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Everyone remembers the catch. I remember that my hip flexor was so tight in warmups that morning I could barely get off the line. I told nobody. You don't give people that information.",
+      "speaker": "Odell Beckham Jr.",
+      "context": "Interview with Nicki Jhabvala, The Athletic, November 2021",
+      "real": false,
+      "fake_note": "I made this one up — OBJ has genuinely recounted the famous one-handed catch in multiple interviews always with a personal physical or emotional detail attached, and his competitive secretiveness about injuries is well-documented. The subtle giveaway is 'You don't give people that information' — slightly too aphoristic for OBJ, who usually stays more in the personal story rather than pivoting to a general rule."
+    },
+    {
+      "id": "q6",
+      "text": "Serena hits the ball so hard that when we were juniors I used to practice returning her serve with a racket I'd strung tighter than anything the manufacturer recommended. My arm paid for that for about two years.",
+      "speaker": "Venus Williams",
+      "context": "Appearance on The Ellen DeGeneres Show, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Venus often discusses her and Serena's rivalry with this kind of fond, matter-of-fact candor, and the equipment-tinkering detail is exactly the specific, slightly nerdy thing she'd mention. The giveaway is a small one: Venus rarely frames Serena's power as something she had to specially prepare for in juniors, since their paths were so managed and parallel."
+    }
+  ]
+}

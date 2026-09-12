@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-12",
+  "edition": 81,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Gluttony and lust – y'know, Caligula vibes! What else is there? I've been slothful, definitely. I've ticked the wrath, greed and heresy boxes too.",
+      "speaker": "Hozier",
+      "context": "In a Hotpress interview about his concept album Unreal Unearth, asked which of the seven deadly sins were the most fun to commit.",
+      "real": true,
+      "source": {
+        "title": "Hotpress — 12 Interviews of Xmas: Hozier on Irishness, Deadly Sins, Joni Mitchell and Unreal Unearth",
+        "url": "https://www.hotpress.com/music/12-interviews-of-xmas-hozier-on-irishness-deadly-sins-joni-mitchell-and-unreal-unearth-22999788",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People hear the word 'jazz' and they brace themselves, like they've been tricked into eating something healthy. I've watched it happen at my own shows. Then thirty minutes in they've got their eyes closed and they're somewhere else entirely. That's still my favorite trick.",
+      "speaker": "Kamasi Washington",
+      "context": "Interview on Fresh Air with Terry Gross, NPR, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Kamasi's evangelical warmth about bringing new audiences into jazz and his conversational, unhurried speech pattern make this feel real. The giveaway is the word 'trick' — Kamasi tends to frame his music in spiritual rather than illusionist terms, so he'd more likely say 'gift' or 'moment.'"
+    },
+    {
+      "id": "q3",
+      "text": "I don't think anyone's really liked it",
+      "speaker": "Cameron Winter",
+      "context": "Geese's Cameron Winter discussing progress on his new solo project",
+      "real": true,
+      "source": {
+        "title": "Music — Geese’s Cameron Winter confirms work on new solo project, but progress has been ",
+        "url": "https://www.nme.com/news/music/geeses-cameron-winter-confirms-work-on-new-solo-project-but-progress-has-been-hard-3968394?utm_source=rss&utm_medium=rss&utm_campaign=geeses-cameron-winter-confirms-work-on-new-solo-project-but-progress-has-been-hard",
+        "date": "2026-09-12"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Nobody told me Motown had a specific reverb on the snare and I'm almost glad, because I would've chased it forever. I kind of stumbled into my own version of it and that turned out to be more useful than just copying the original.",
+      "speaker": "Bruno Mars",
+      "context": "Roundtable interview with Billboard, 'Producers Issue,' November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Bruno's well-known Motown worship and his producer-level attention to drum sounds make this extremely plausible. The subtle tell: Bruno is actually known for chasing sonic precision obsessively, so the 'almost glad I didn't know' acceptance runs slightly against his documented perfectionist grain."
+    },
+    {
+      "id": "q5",
+      "text": "It's a lot like being a chef, in a way. You're trying to create food that satisfies your taste, but with a good awareness that there are people whose tastes are for more salt, or more spice — or for less.",
+      "speaker": "Susan Rogers",
+      "context": "Prince's former recording engineer describing the producer's balancing act, in a Grammy.com interview about her career and her book.",
+      "real": true,
+      "source": {
+        "title": "Grammy.com — Producer & Engineer Susan Rogers Worked With Prince And Barenaked Ladies",
+        "url": "https://www.grammy.com/news/susan-rogers-producers-engineers-wing-interview-prince-barenaked-ladies-berklee-college-of-music/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I wrote that song in about twenty minutes and then spent three months trying to convince myself it wasn't finished. My engineer finally said, 'What are you actually looking for?' and I couldn't answer him. We mixed it the next morning.",
+      "speaker": "Bon Iver",
+      "context": "Artist interview in Pitchfork's 'The Process' series, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Justin Vernon's reputation for agonized, iterative recording and his habit of recounting specific studio moments make this feel like a Bon Iver origin story. The tell: the resolution is tidier and more sudden than Vernon's actual accounts of finishing songs, which usually involve a lot more ambient uncertainty."
+    }
+  ]
+}
