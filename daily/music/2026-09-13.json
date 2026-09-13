@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-13",
+  "edition": 82,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Geoff and I would argue for days about a single snare sound. Days. And I'm not exaggerating — there's a track on Pornography where the snare took, I think, the better part of a week to agree on. By the end we weren't even sure we liked it anymore, we'd just exhausted every other option.",
+      "speaker": "Robert Smith",
+      "context": "Mojo magazine retrospective interview, issue 312, November 2019",
+      "real": false,
+      "fake_note": "I made this one up — Robert Smith is well-documented as a perfectionist who clashes productively with producers, and his deadpan, detail-obsessed voice is captured here. The sneaky tell is 'Geoff': longtime Cure fans know it was Phil Thornalley and Hugh Jones on Pornography, not a 'Geoff' — a plausible-sounding name I slipped in."
+    },
+    {
+      "id": "q2",
+      "text": "I wore a weave for about eight months on a tour once and I thought, this is actually amazing, nobody is looking at my face anymore, and I had the most relaxed run of shows of my entire life. The weave was basically a disguise that I was wearing in plain sight.",
+      "speaker": "Erykah Badu",
+      "context": "Interview with Angie Martinez on Power 105.1 FM, New York, broadcast September 2015",
+      "real": false,
+      "fake_note": "I made this one up — Erykah Badu is famously associated with elaborate headwraps and has a wry, observational sense of humor about identity and appearance. The tell is that she's more likely to frame a hair story in explicitly spiritual or political terms rather than pure comedy; this is a touch too light for her."
+    },
+    {
+      "id": "q3",
+      "text": "The journey was longer than expected, with unplanned stops along the way, but I hung in there",
+      "speaker": "Céline Dion",
+      "context": "Opening night speech at Paris residency",
+      "real": true,
+      "source": {
+        "title": "Music — Watch Céline Dion deliver moving speech on opening night of Paris residency: “I ",
+        "url": "https://www.nme.com/news/music/watch-celine-dion-deliver-moving-speech-on-opening-night-of-paris-residency-i-made-a-promise-to-be-back-on-stage-so-here-i-am-3968517?utm_source=rss&utm_medium=rss&utm_campaign=watch-celine-dion-deliver-moving-speech-on-opening-night-of-paris-residency-i-made-a-promise-to-be-back-on-stage-so-here-i-am",
+        "date": "2026-09-13"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I grew my hair and dropped out of society after hearing Black Sabbath",
+      "speaker": "J Mascis",
+      "context": "Honest playlist interview",
+      "real": true,
+      "source": {
+        "title": "Music — ‘I grew my hair and dropped out of society after hearing Black Sabbath’: J Masci",
+        "url": "https://www.theguardian.com/music/2026/sep/13/honest-playlist-j-mascis-dinosaur-jr-black-sabbath-nwa-tom-petty",
+        "date": "2026-09-13"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Honestly, you guys kept us alive so long. You guys deserve another record",
+      "speaker": "My Chemical Romance",
+      "context": "Wrapping their 'Long Live The Black Parade' tour",
+      "real": true,
+      "source": {
+        "title": "Music — My Chemical Romance tease potential new album as they wrap ‘Long Live The Black ",
+        "url": "https://www.nme.com/news/music/my-chemical-romance-tease-potential-new-album-as-they-wrap-the-black-parade-tour-3968503?utm_source=rss&utm_medium=rss&utm_campaign=my-chemical-romance-tease-potential-new-album-as-they-wrap-the-black-parade-tour",
+        "date": "2026-09-13"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People hear the AutoTune and they think laziness. But I was spending fourteen, fifteen hours getting the tone of one syllable right. It's not that the pitch is wrong — it's that the pitch as a texture is the whole point, and nobody had thought to treat it that way before.",
+      "speaker": "T-Pain",
+      "context": "Red Bull Music Academy lecture, New York, April 2016",
+      "real": false,
+      "fake_note": "I made this one up — T-Pain has spent years defending and explaining his use of AutoTune as an intentional artistic choice, and this sounds exactly like his earnest, slightly defensive register. The giveaway is the rhetorical precision — he tends to be funnier and looser in real life than this slightly polished explanation."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-13",
+  "edition": 90,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I Don't Think Anyone's Ever Been Insulted Into Changing Their Mind",
+      "speaker": "Tom Nicoll",
+      "context": "Scottish writer-director Tom Nicoll discussing his TIFF debut film 'Salvation' about male influencer culture",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Tom Nicoll Looks Beyond Male Influencer Culture in TIFF Title ‘Salvation’: ‘I Do",
+        "url": "https://variety.com/2026/film/features/tom-nicoll-tiff-salvation-liam-harkins-1236854531/",
+        "date": "2026-09-13"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "The weirdest part of the moon landing anniversary coverage is how everyone wants to ask about the fear. Nobody ever asks about the boredom. There is a lot of boredom in space. A profound, specific kind of boredom.",
+      "speaker": "Buzz Aldrin",
+      "context": "Interview with Anderson Cooper, 60 Minutes, CBS, July 2019",
+      "real": false,
+      "fake_note": "I made this one up — Aldrin spent decades demystifying and humanizing spaceflight, and he often pushed back on the romanticized version of Apollo 11. The 'profound, specific kind' qualifier sounds like his deliberate, veteran-engineer diction, but he'd likely name an actual task rather than leave it abstract."
+    },
+    {
+      "id": "q3",
+      "text": "There's a version of me that stayed in Auckland and opened a small recording studio and just made records for local bands. I think about that guy sometimes. He definitely sleeps better.",
+      "speaker": "Lorde",
+      "context": "Profile interview with Jonathan Gharraie, The Guardian Weekend Magazine, June 2021",
+      "real": false,
+      "fake_note": "I made this one up — Lorde consistently reflects on her New Zealand roots and the alternate life she gave up, and the phrasing 'that guy' for herself has her characteristic odd self-distance. The tell is she'd normally be a little more ambivalent about whether that version is actually happier."
+    },
+    {
+      "id": "q4",
+      "text": "It's actually allegedly being built out now",
+      "speaker": "Rabois",
+      "context": "Comment on Khosla Ventures' new New York office construction timeline",
+      "real": true,
+      "source": {
+        "title": "Tech — Khosla Ventures is opening a New York office this fall — its first outpost outsi",
+        "url": "https://techcrunch.com/2026/09/11/khosla-ventures-is-opening-a-new-york-office-this-fall-its-first-outpost-outside-sand-hill-road/",
+        "date": "2026-09-13"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The disappointment of manhood succeeds to the delusion of youth: let us hope that the heritage of old age is not despair.",
+      "speaker": "Benjamin Disraeli",
+      "context": "The British Prime Minister and novelist, in a candidly reflective aside on the disappointments of the ages of life (from his fiction, Book VIII, Chapter 4).",
+      "real": true,
+      "source": {
+        "title": "Benjamin Disraeli - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "We shipped a version of Maps that routed people through a cattle station in rural Queensland. I got a very polite email about it. Very polite. The kind of polite that communicates something else entirely.",
+      "speaker": "Tim Cook",
+      "context": "Fireside chat at Stanford Graduate School of Business, Palo Alto, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Cook occasionally references Apple Maps' rough early years with dry, understated humor, and this has his characteristic restraint and indirection. The giveaway is the geography is a bit too specific and comic for his usual measured candor."
+    }
+  ]
+}

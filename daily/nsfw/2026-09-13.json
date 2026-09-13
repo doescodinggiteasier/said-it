@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-13",
+  "edition": 77,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I blew $20 million. I snorted my Porsche. I snorted my plane. I snorted my house in that din of drugs and booze and being lost.",
+      "speaker": "Steven Tyler",
+      "context": "Tallying up what his cocaine habit cost him, in his 2011 rock memoir \"Does the Noise in My Head Bother You?\"",
+      "real": true,
+      "source": {
+        "title": "Memoir 'Does the Noise in My Head Bother You?' (NME report)",
+        "url": "https://www.nme.com/news/music/aerosmith-49-1294445",
+        "date": "2011"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I showed up to the MTV Awards after-party in a bin bag — literally, a bin bag with armholes cut out — because my dress exploded. Three tequilas in, nobody cared. I cared least of all.",
+      "speaker": "Amy Winehouse",
+      "context": "Interview with Jonathan Ross, Friday Night with Jonathan Ross, BBC One, September 2007",
+      "real": false,
+      "fake_note": "I made this one up — the self-deprecating chaos, the specific detail of the bin bag, and the dismissive closer all fit Winehouse's wry, take-the-piss persona to a tee. The tell is that her 2007 Ross appearance didn't include this story."
+    },
+    {
+      "id": "q3",
+      "text": "I think weed is the best drug on earth. One time I smoked a joint with peyote in it, and I saw a wolf howling at the moon. Hollywood is a coke town, but weed is so much better. And molly, too. Those are happy drugs – social drugs. They make you want to be with friends. You're out in the open. You're not in a bathroom. I really don't like coke. It's so gross and so dark. It's like what are you, from the Nineties? Ew.",
+      "speaker": "Miley Cyrus",
+      "context": "Miley Cyrus ranking her drug preferences in her September 2013 Rolling Stone cover story, calling weed and molly 'happy drugs' and dismissing cocaine as dated.",
+      "real": true,
+      "source": {
+        "title": "Miley Cyrus: 'Weed Is the Best Drug on Earth' (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "They asked me after the show if I had any beauty secrets. I said, yes: gin, low lighting, and never trust a mirror past midnight. They didn't print that bit.",
+      "speaker": "Tallulah Bankhead",
+      "context": "Profile interview with Kenneth Tynan, The Observer, Arts supplement, March 1957",
+      "real": false,
+      "fake_note": "I made this one up — Bankhead's wit was famously barbed and her contempt for soft questions was well documented; this fits her cadence exactly. The tell is that Tynan's Observer profile of her ran in a slightly different month."
+    },
+    {
+      "id": "q5",
+      "text": "People act like writing a hit song is some sacred act. Half the time you're hungover on a tour bus, your bandmate smells like a kebab, and you accidentally write something that sells four million copies. The muse is a filthy creature.",
+      "speaker": "John Entwistle",
+      "context": "Guitar World, 'The Who at 30' feature interview, Issue 98, August 1994",
+      "real": false,
+      "fake_note": "I made this one up — Entwistle was the sardonic, deadpan counterweight to Townshend's earnestness and this kind of deflating, specific-detail cynicism is very him. The giveaway is that Guitar World's 1994 numbering and that exact feature don't check out."
+    },
+    {
+      "id": "q6",
+      "text": "Someone told me Vegas crowds don't listen. They're just drunk people waiting for their marriage to fail. I said, perfect — that's exactly who I write for.",
+      "speaker": "Don Rickles",
+      "context": "Late Night with Conan O'Brien, NBC, desk interview segment, aired 14 February 1995",
+      "real": false,
+      "fake_note": "I made this one up — the self-aware insult-comic positioning and the deadpan cynicism about his own audience is very Rickles, and a Valentine's Day slot makes the marriage joke even sharper. The tell is that his February 1995 Conan appearance featured a different exchange."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-13",
+  "edition": 79,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Avoid fried meats which angry up the blood. If your stomach disputes you, lie down and pacify it with cool thoughts.",
+      "speaker": "Satchel Paige",
+      "context": "From legendary pitcher Satchel Paige's famous 'How to Stay Young' rules, published in Collier's magazine in 1953.",
+      "real": true,
+      "source": {
+        "title": "Satchel Paige — Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Satchel_Paige",
+        "date": "1953-06-13"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Look, nobody's sitting in the film room at two in the morning because they love film rooms. You do it because you cannot stand the idea that somebody found something you missed.",
+      "speaker": "Bill Belichick",
+      "context": "Press conference following the 2019 AFC Championship Game, Kansas City, January 2019",
+      "real": false,
+      "fake_note": "I made this one up — Belichick's motivational language is always framed competitively and negatively (what he won't tolerate) rather than inspirationally, which this quote mimics well. The giveaway is that he almost never volunteers this kind of behind-the-scenes detail unprompted at a press conference."
+    },
+    {
+      "id": "q3",
+      "text": "Basketball is something that I'm just good at. But horses is something that I feel the most happiness and sadness.",
+      "speaker": "Nikola Jokic",
+      "context": "The Denver Nuggets center, speaking during a 2025 promotional tour at a horse ranch in Beijing, on where his real emotional highs and lows come from.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — \"Basketball is just something I'm good at\": Jokic's admission",
+        "url": "https://sports.yahoo.com/article/basketball-just-something-im-good-103300970.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I've had people tell me I run angry. I don't know what that means exactly, but I'll take it.",
+      "speaker": "Marshawn Lynch",
+      "context": "NFL Network's A Football Life documentary, aired November 2018",
+      "real": false,
+      "fake_note": "I made this one up — Lynch's dry, deadpan deflection of compliments and analysis is completely authentic to how he's spoken in the rare moments he does talk. The giveaway is that it's slightly too polished; his real answers tend to trail off even more ambiguously."
+    },
+    {
+      "id": "q5",
+      "text": "My dad used to make me field a hundred ground balls before dinner, and if I complained, it became a hundred and fifty. I didn't complain a lot, but I did complain enough to learn pretty quickly.",
+      "speaker": "Derek Jeter",
+      "context": "The Players' Tribune, personal essay published June 2017",
+      "real": false,
+      "fake_note": "I made this one up — Jeter talked warmly and often about his father's influence on his discipline, and this kind of self-deprecating childhood anecdote is exactly his register. The giveaway is the specific escalation detail, which he'd almost certainly have told before if it were true."
+    },
+    {
+      "id": "q6",
+      "text": "I didn't have any plates or silverware or anything, and I just started eating it with my hands.",
+      "speaker": "John Madden",
+      "context": "Beloved NFL coach-turned-broadcaster John Madden recounting his very first encounter with a turducken (a chicken inside a duck inside a turkey), brought to his broadcast booth during a Saints game.",
+      "real": true,
+      "source": {
+        "title": "John Madden made turducken a Thanksgiving football tradition (NOLA.com / The Times-Picayune)",
+        "url": "https://www.nola.com/entertainment_life/eat-drink/john-madden-made-turducken-a-thanksgiving-football-tradition/article_ae8ca8ac-ab55-11ef-8fb0-135b1f214168.html",
+        "date": "2024-11-27"
+      }
+    }
+  ]
+}

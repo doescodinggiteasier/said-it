@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-13",
+  "edition": 78,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I am the man who accompanied Jacqueline Kennedy to Paris, and I have enjoyed it.",
+      "speaker": "John F. Kennedy",
+      "context": "Self-deprecating opening line at a press luncheon at the Palais de Chaillot in Paris on June 2, 1961, during a state visit to France.",
+      "real": true,
+      "source": {
+        "title": "Remarks and Question and Answer Period at the Press Luncheon in Paris | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-and-question-and-answer-period-the-press-luncheon-paris",
+        "date": "1961-06-02"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've read that I'm calculating. That I don't show emotion. Then I go home and argue with my dog about whether it's actually time for a walk yet, so I think the truth is somewhere in the middle.",
+      "speaker": "Kamala Harris",
+      "context": "Remarks at a Democratic National Committee women's leadership forum, Washington D.C., June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Harris has leaned into casual, personal humor at party events to counter the 'robotic' criticism, and the dog detail is plausible given she has spoken about her pets. The giveaway is that the joke is slightly more tightly constructed than her usual extemporaneous style, which tends to build more slowly."
+    },
+    {
+      "id": "q3",
+      "text": "I genuinely cannot explain the debt ceiling to my own satisfaction. I've tried. I've sat with economists, I've read the briefs, and every time I think I've got it, someone adds another clause and I'm back to square one. It's like a Rubik's Cube that was designed by a committee.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic Governors Association dinner, Washington D.C., reported by Politico, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-deprecating rambling style and his genuine tendency to admit confusion publicly make this feel completely at home. The subtle giveaway is the Rubik's Cube simile, which is slightly too tidy and visual for his usual stumbling cadence."
+    },
+    {
+      "id": "q4",
+      "text": "I think his nicknames are getting cornier and cornier",
+      "speaker": "James Talarico",
+      "context": "Interview with Jimmy Kimmel, responding to Trump's nickname 'Talafreako'",
+      "real": true,
+      "source": {
+        "title": "Politics — Talarico rips Trump's 'corny nicknames' for opponents in Kimmel interview",
+        "url": "https://thehill.com/homenews/media/6086319-talarico-brushed-off-trump-nickname/",
+        "date": "2026-09-13"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Someone on my staff printed out the entire farm bill. All of it. Left it on my desk as a joke, I think. It was taller than my coffee mug. I told them, if you wanted me to quit, there are easier ways.",
+      "speaker": "Amy Klobuchar",
+      "context": "Interview with Minnesota Public Radio's Kerri Miller, discussing Senate workload, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar is well-known for her dry Midwestern humor and her genuine deep engagement with agriculture legislation, so the farm bill reference lands perfectly. The giveaway is the coffee mug measurement, which is a shade too constructed for genuine off-the-cuff wit."
+    },
+    {
+      "id": "q6",
+      "text": "People always ask me what the hardest vote I ever cast was, and honestly, it's never the one you'd expect. The headline votes — you've usually made your peace with those before you walk out there. It's the procedural ones at eleven at night when nobody's watching and you're not even sure what you're voting on.",
+      "speaker": "John McCain",
+      "context": "Remarks at the McCain Institute's annual Sedona Forum, Arizona, April 2016",
+      "real": false,
+      "fake_note": "I made this one up — McCain's frankness about the unglamorous machinery of the Senate and his veteran legislator's perspective make this sound entirely characteristic. The giveaway is that McCain would more likely name a specific vote rather than keep it this artfully vague."
+    }
+  ]
+}

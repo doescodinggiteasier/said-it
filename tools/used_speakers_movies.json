@@ -102,7 +102,7 @@
 "silence of the lambs 1991": "2026-09-03",
 "a few good men 1992": "2026-09-07",
 "schindler s list 1993": "2026-09-11",
-"the shining 1980": "2026-08-26",
+"the shining 1980": "2026-09-13",
 "inglourious basterds 2009": "2026-09-11",
 "annie hall 1977": "2026-07-12",
 "the grand budapest hotel 2014": "2026-09-11",
@@ -114,9 +114,9 @@
 "all about eve 1950": "2026-08-28",
 "rocky 1976": "2026-08-27",
 "saving private ryan 1998": "2026-07-09",
-"tombstone 1993": "2026-08-22",
+"tombstone 1993": "2026-09-13",
 "the deer hunter 1978": "2026-09-06",
-"monty python and the holy grail 1975": "2026-08-22",
+"monty python and the holy grail 1975": "2026-09-13",
 "double indemnity 1944": "2026-08-31",
 "citizen kane 1941": "2026-08-14",
 "the third man 1949": "2026-08-23",
@@ -124,7 +124,7 @@
 "lawrence of arabia 1962": "2026-08-24",
 "the big lebowski 1998": "2026-09-10",
 "get shorty 1995": "2026-08-24",
-"the godfather part ii 1974": "2026-07-18",
+"the godfather part ii 1974": "2026-09-13",
 "ocean s eleven 2001": "2026-09-05",
 "the apartment 1960": "2026-08-24",
 "apollo 13 1995": "2026-08-25",
@@ -235,5 +235,7 @@
 "silkwood 1983": "2026-09-09",
 "the verdict 1982": "2026-09-09",
 "mrs doubtfire 1993": "2026-09-10",
-"the hurt locker 2008": "2026-09-10"
+"the hurt locker 2008": "2026-09-10",
+"patton 1970": "2026-09-13",
+"dirty harry 1971": "2026-09-13"
 }
