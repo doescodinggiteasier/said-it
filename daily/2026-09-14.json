@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-14",
+  "edition": 91,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My favorite was The Scrunchie Chronicles: 112 Countries and It's Still All about My Hair",
+      "speaker": "Hillary Clinton",
+      "context": "Joking about a rejected memoir title, poking fun at coverage of her hair, in 2014",
+      "real": true,
+      "source": {
+        "title": "The Week — Hillary Clinton jokes she considered calling her memoir The Scrunchie Chronicles",
+        "url": "https://theweek.com/speedreads/452686/hillary-clinton-jokes-considered-calling-memoir-scrunchie-chronicles",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My grandmother made a mole that took three days. Not because she was being dramatic — she just refused to rush any single step. I've tried to reverse-engineer it maybe a dozen times and I'm still not there.",
+      "speaker": "José Andrés",
+      "context": "Interview on NPR's Fresh Air with Terry Gross, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Andrés constantly honors his culinary elders and talks about the patience behind traditional cooking, and Fresh Air has featured him before. The plausible giveaway is the grandmother detail; Andrés is Spanish, and mole is deeply Mexican in tradition — a dedicated follower might pause at the family attribution."
+    },
+    {
+      "id": "q3",
+      "text": "I've read maybe a thousand books at this point and I still dog-ear pages, which I know is a crime to some people. My wife has given up trying to stop me.",
+      "speaker": "Bill Gates",
+      "context": "Reddit AMA hosted on r/IAmA, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Gates constantly talks about his voracious reading habit and recommends books publicly, so the setup is completely on-brand. The subtle giveaway is the casual mention of his wife; he and Melinda divorced in 2021, so 'my wife' is a quiet anachronism a sharp player might catch."
+    },
+    {
+      "id": "q4",
+      "text": "Humanity is about to be handed almost unimaginable power, and it is deeply unclear whether our social, political, and technological systems possess the maturity to wield it.",
+      "speaker": "Dario Amodei",
+      "context": "Anthropic CEO, on the arrival of transformative AI",
+      "real": true,
+      "source": {
+        "title": "TechRadar — Quote of the day: Dario Amodei on AI",
+        "url": "https://www.techradar.com/pro/quote-of-the-day-by-anthropic-ceo-dario-amodei-humanity-is-about-to-be-handed-almost-unimaginable-power-and-it-is-deeply-unclear-whether-we-possess-the-maturity-to-wield-it-warnings-on-the-looming-threat-of-beyond-human-ai",
+        "date": "2026-06-03"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Someone asked me once if I ever get nervous before a launch and I said no, because I'd genuinely convinced myself that wasn't useful. That was mostly true. Mostly.",
+      "speaker": "Elon Musk",
+      "context": "Lex Fridman Podcast, episode #400, January 2024",
+      "real": false,
+      "fake_note": "I made this one up — Musk has discussed managing anxiety around SpaceX launches in several long-form podcast appearances, and the clipped, self-qualifying cadence matches his style. The tell is the word 'useful'; Musk tends toward more technical or blunter language — 'productive' or 'rational' would be more him."
+    },
+    {
+      "id": "q6",
+      "text": "'BbY WoW' top Spotify and Billboard's global charts",
+      "speaker": "Judeline",
+      "context": "Spanish singer reacting to her hit song's success",
+      "real": true,
+      "source": {
+        "title": "Music — ‘BbY WoW’ Is the Number One Song on the Planet. Judeline Can’t Believe It",
+        "url": "https://www.rollingstone.com/music/music-latin/bby-wow-karol-g-judeline-collaboration-1235625831/",
+        "date": "2026-09-14"
+      }
+    }
+  ]
+}

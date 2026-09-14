@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-14",
+  "edition": 78,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It's quite valuable to have the courage and the confidence to say, 'No, fuck off, leave me alone, thank you very much.'",
+      "speaker": "Helen Mirren",
+      "context": "In a 2013 Daily Mail interview, the Oscar-winning actress said that if she'd had a daughter, \"fuck off\" is the first phrase she would have taught her, to give her the confidence to set boundaries.",
+      "real": true,
+      "source": {
+        "title": "Daily Mail interview (Christian Today report)",
+        "url": "https://www.christiantoday.com/news/helen-mirren-advice-to-daughter-unconventional-brutally-honest",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My agent called me — this is maybe 1983 — he says, 'Richard, they want you for a McDonald's commercial.' I said, 'Gerald, I cannot sell hamburgers.' He said, 'It pays half a million.' I said, 'Gerald, I am a man of deep principle and also I would need at least a week to think about it.'",
+      "speaker": "Richard Pryor",
+      "context": "Live recording, The Comedy Store, Los Angeles, November 1983, released on the bootleg compilation 'Pryor Uncut Vol. 3' circulated among collectors",
+      "real": false,
+      "fake_note": "I made this one up — the beat structure, the named agent 'Gerald,' and the mock-principled flip are pure Pryor storytelling rhythm. The giveaway is 'Pryor Uncut Vol. 3' — no such official or widely documented bootleg series exists under that title."
+    },
+    {
+      "id": "q3",
+      "text": "Somebody reviewed my act in Houston and called me 'relentlessly confrontational.' I had that framed. Put it next to my Grammy. Confrontational means you showed up and said the true thing and the room wasn't ready. That's the whole gig. The rest is just light-and-sound budget.",
+      "speaker": "Bill Hicks",
+      "context": "Austin Chronicle, November 1992, print interview conducted at Antone's nightclub following a two-night run of sold-out shows",
+      "real": false,
+      "fake_note": "I made this one up — Hicks genuinely wore hostile reviews as badges of honour and the Austin Chronicle ran real profiles of him, making this feel authentic. The giveaway is the Grammy reference — Hicks never received a Grammy and wouldn't have framed it alongside one; it's a detail too incongruous for him to use even sarcastically without more unpacking."
+    },
+    {
+      "id": "q4",
+      "text": "I was doing a little over $1,000 a day in heroin, and then probably the same in cocaine and alcohol.",
+      "speaker": "Nikki Sixx",
+      "context": "Mötley Crüe bassist describing the scale of his addiction at his worst, around the period of his December 1987 heroin overdose; said in 2019 press for the Netflix film 'The Dirt'.",
+      "real": true,
+      "source": {
+        "title": "'The Dirt' press (Chicago Sun-Times)",
+        "url": "https://chicago.suntimes.com/entertainment/motley-crue-biopic-netflix-nikki-six-doing-1000-dollars-a-day-in-heroin/",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Somebody on the crew told me the hotel bar closed at midnight and I looked at him and I said, 'Son, I have never in my life stayed anywhere that had a minibar and a fire exit, so you better explain to me what closing means because I don't speak that language.'",
+      "speaker": "Keith Moon",
+      "context": "Creem Magazine, August 1975, backstage interview during The Who's North American 'The Who By Numbers' tour",
+      "real": false,
+      "fake_note": "I made this one up — Moon's baroque, mock-aristocratic way of dressing up debauchery in formal language is right on brand, and the minibar gag tracks with his legendary hotel behaviour. The giveaway is the construction 'I don't speak that language' — slightly too contemporary an idiom for Moon's mid-seventies speech patterns."
+    },
+    {
+      "id": "q6",
+      "text": "Little Miss Muffet sat on a tuffet, eating her curds and whey. Along came a spider, he sat down beside her, he said, \"Hey, what's in the bowl, bitch?\"",
+      "speaker": "Andrew Dice Clay",
+      "context": "A signature filthy nursery-rhyme parody from his late-'80s/early-'90s arena act; crowds would shout the punchlines back. Popularized on his stand-up specials and documented in VICE's piece on his nursery rhymes.",
+      "real": true,
+      "source": {
+        "title": "Stand-up act (Vice feature)",
+        "url": "https://www.vice.com/en/article/did-andrew-dice-clay-steal-his-iconic-nursery-rhymes-from-other-successful-entertainers/",
+        "date": "2018"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-14",
+  "edition": 80,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He can take his'n and beat your'n and take your'n and beat his'n.",
+      "speaker": "Bum Phillips",
+      "context": "The Houston Oilers head coach paying tribute to rival coach Don Shula's ability with any roster.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — Remembering Bum Phillips, the unsung defensive innovator",
+        "url": "https://www.si.com/nfl/2013/10/19/remembering-bum-phillips-the-unsung-defensive-innovator",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My dad used to say I threw like I was angry at the ball, and honestly that wasn't wrong. I had to learn to stop punishing the ball and just pitch. Took till about Double-A before I actually believed him.",
+      "speaker": "Randy Johnson",
+      "context": "MLB Network's Intentional Talk, during a retrospective segment on his career development, June 2015",
+      "real": false,
+      "fake_note": "I made this one up — Johnson's famous wildness and the long developmental arc before his dominance kicked in around his late twenties is well documented, and he's spoken fondly about his father's influence. The quote fits his dry, straightforward delivery perfectly; the subtle giveaway is the 'punishing the ball' phrasing, which is slightly more poetic than his usual blunt construction."
+    },
+    {
+      "id": "q3",
+      "text": "Every team I've ever coached, the first thing I want to know is who stays after. Not who scores the most in training — who's still out there at half six when everyone else has gone in for dinner. That tells me more in three days than a whole scouting report.",
+      "speaker": "Jurgen Klopp",
+      "context": "Sky Sports Football podcast, recorded during Liverpool's pre-season camp, August 2018",
+      "real": false,
+      "fake_note": "I made this one up — Klopp's well-documented emphasis on work rate, character, and energy over raw talent is all over this, and the 'half six' detail sounds like authentic British-inflected Klopp speech. The tell is that he typically makes this kind of observation with more laughter and self-interruption; this version is a touch too clean for his actual rambling delivery."
+    },
+    {
+      "id": "q4",
+      "text": "We had a film session once in Green Bay where Coach Sherman paused the tape on me and I was just — I was late off the line by maybe a step, and I'm sitting there thinking he's not going to say anything. And he just let it run in slow motion for about fifteen seconds without saying a word. I never jumped late again in my career. That's the whole story.",
+      "speaker": "Brett Favre",
+      "context": "Recorded interview for the Packers Hall of Fame induction retrospective, Lambeau Field, August 2015",
+      "real": false,
+      "fake_note": "I made this one up — Favre's era with coach Mike Sherman (2000–2005) is real, and Favre has frequently spoken in anecdote-heavy terms about lessons learned from coaches and teammates. The story fits his storytelling style; the giveaway is that Favre rarely credits coaching moments this directly and cleanly — he typically filters these stories through more self-deprecating chaos."
+    },
+    {
+      "id": "q5",
+      "text": "If everyone likes me, they're watching, so there has to be something there.",
+      "speaker": "Tony Romo",
+      "context": "The CBS lead NFL analyst, on Pat McAfee's show in January 2026, responding to criticism of his polarizing broadcasting style.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Tony Romo addresses criticism after another up-and-down year in CBS booth",
+        "url": "https://www.foxnews.com/sports/tony-romo-opens-up-about-commentating-criticism-he-chooses-ignore-theyre-watching",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Serena is Serena. You can prepare for her as long as you want and then she hits a ball you've never seen before in your life and you think — okay, this is a different category of person. I don't mean that as an excuse. I just mean it's true.",
+      "speaker": "Maria Sharapova",
+      "context": "Press conference, BNP Paribas Open, Indian Wells, March 2013",
+      "real": false,
+      "fake_note": "I made this one up — Sharapova's complicated and fiercely competitive relationship with Serena Williams is one of tennis's most documented rivalries, and her occasionally begrudging acknowledgments of Serena's ability are real. The giveaway is 'I don't mean that as an excuse' — Sharapova almost never pre-empts that interpretation publicly; her competitive ego typically wouldn't invite the reading."
+    }
+  ]
+}

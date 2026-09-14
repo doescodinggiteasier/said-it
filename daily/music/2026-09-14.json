@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-14",
+  "edition": 83,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "And Charli is a cinephile! So we could chat forever",
+      "speaker": "M. Night Shyamalan",
+      "context": "Director M. Night Shyamalan praising Charli XCX after attending her Music, Fashion, Film tour",
+      "real": true,
+      "source": {
+        "title": "Music — M. Night Shyamalan praises “true artist” Charli XCX after watching ‘Music, Fashi",
+        "url": "https://www.nme.com/news/film/m-night-shyamalan-praises-true-artist-charli-xcx-watching-music-fashion-film-tour-3968669?utm_source=rss&utm_medium=rss&utm_campaign=m-night-shyamalan-praises-true-artist-charli-xcx-watching-music-fashion-film-tour",
+        "date": "2026-09-14"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My mother used to hum while she cooked, and it wasn't any song you'd recognize. It was just something from inside her head. I think that's what I've been chasing the whole time, without fully knowing it until recently.",
+      "speaker": "Solange Knowles",
+      "context": "Artist talk at the Menil Collection, Houston, following the premiere of her visual album 'When I Get Home,' March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Solange frequently invokes her Houston upbringing, her mother, and personal-as-artistic-foundation themes. The detail about humming while cooking is exactly the kind of sensory childhood memory she gravitates toward. The tell is 'without fully knowing it until recently' — a little too neat a revelation for her typically more layered speech."
+    },
+    {
+      "id": "q3",
+      "text": "I remember finishing the mix on 'Ray of Light' at like four in the morning and just sitting there in the dark for a while. Not celebrating. Just sitting. Because I knew we'd actually done something, and I didn't want to talk yet.",
+      "speaker": "Madonna",
+      "context": "Interview with Vogue magazine, recorded backstage during the Sticky & Sweet Tour, published October 2008",
+      "real": false,
+      "fake_note": "I made this one up — Madonna genuinely speaks about 'Ray of Light' as a creative peak, and her tendency toward dramatic self-awareness makes this totally plausible. The subtle giveaway is that she'd almost certainly have named the collaborator, William Orbit, rather than leaving him out entirely."
+    },
+    {
+      "id": "q4",
+      "text": "When we gettin a veggie burger?",
+      "speaker": "Turnstile",
+      "context": "Grammy-winning hardcore band Turnstile messaging Five Guys after being featured on the restaurant's artist spotlight",
+      "real": true,
+      "source": {
+        "title": "Music — Grammy Winners Turnstile Earn Even Higher Honor: Five Guys Featured Artist",
+        "url": "https://consequence.net/2026/09/turnstile-five-guys-featured-artist/",
+        "date": "2026-09-14"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "It was quite spontaneous. I picked the sitar up and kind of found the notes. We put it on and it seemed to hit the spot",
+      "speaker": "George Harrison",
+      "context": "George Harrison previously describing recording the sitar part on Norwegian Wood",
+      "real": true,
+      "source": {
+        "title": "Music — The Beatles share early version of ‘Norwegian Wood (This Bird Has Flown)’ featur",
+        "url": "https://www.nme.com/news/music/the-beatles-early-version-norwegian-wood-with-george-harrison-sitar-3968689?utm_source=rss&utm_medium=rss&utm_campaign=the-beatles-early-version-norwegian-wood-with-george-harrison-sitar",
+        "date": "2026-09-14"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People think I'm being modest when I say I can't read music. I'm genuinely not being modest. It's a whole separate language and I just never learned it, the same way I never learned Mandarin. Doesn't mean I can't have a conversation, it just means the conversation looks different.",
+      "speaker": "Paul McCartney",
+      "context": "Conversation with Rick Rubin for the Broken Record podcast, Episode 214, released June 2023",
+      "real": false,
+      "fake_note": "I made this one up — McCartney has acknowledged many times that he doesn't read music, and this measured, slightly self-deprecating explanation fits his exact register. The giveaway is the Mandarin comparison, which is a little too tidy for Paul — he tends toward simpler analogies."
+    }
+  ]
+}

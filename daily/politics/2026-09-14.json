@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-14",
+  "edition": 79,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My favorite was The Scrunchie Chronicles: 112 Countries and It's Still All about My Hair",
+      "speaker": "Hillary Clinton",
+      "context": "Joking about a rejected memoir title, poking fun at coverage of her hair, in 2014",
+      "real": true,
+      "source": {
+        "title": "The Week — Hillary Clinton jokes she considered calling her memoir The Scrunchie Chronicles",
+        "url": "https://theweek.com/speedreads/452686/hillary-clinton-jokes-considered-calling-memoir-scrunchie-chronicles",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Somebody asked me during the campaign whether I had a favorite amendment and I said 'the one that's currently helping me the most.' They wrote it down seriously. I felt terrible about that for weeks.",
+      "speaker": "Rand Paul",
+      "context": "Q&A session at the University of Kentucky College of Law, Lexington, Kentucky, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Rand Paul's humor in campus settings tends toward this slightly self-incriminating libertarian irony, and constitutional amendments are genuinely his wheelhouse. The tell is the guilt kicker at the end, which is a bit more emotionally forthcoming than he typically gets."
+    },
+    {
+      "id": "q3",
+      "text": "You go to enough ribbon cuttings and eventually the scissors start to feel ceremonial in the truest sense — like they're cutting something that was never actually closed.",
+      "speaker": "Martin O'Malley",
+      "context": "Keynote remarks at the Harvard Kennedy School Institute of Politics, Cambridge, Massachusetts, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — O'Malley is a former governor and mayor who speaks in exactly this reflective, slightly philosophical register about the rituals of public service. The giveaway is that the ribbon-cutting metaphor is a little too carefully constructed to have emerged spontaneously from a keynote."
+    },
+    {
+      "id": "q4",
+      "text": "I've never once walked into a debate prep session thinking 'this is going to be fun' and been right. Not once. Statistically that should have happened at least by accident.",
+      "speaker": "Nikki Haley",
+      "context": "Interview with Erin Burnett on CNN's OutFront, December 2023",
+      "real": false,
+      "fake_note": "I made this one up — Haley's public humor in interview settings is crisp and results-oriented, and debate prep complaints are a genuinely universal politician grievance she'd be comfortable voicing. The tell is the 'statistically' pivot, which is a fraction too glib for her usual delivery."
+    },
+    {
+      "id": "q5",
+      "text": "I've now been in 57 states? I think one left to go.",
+      "speaker": "Barack Obama",
+      "context": "Then a Democratic U.S. Senator from Illinois campaigning for president, Obama misspoke at a May 9, 2008 event in Beaverton, Oregon, after a long stretch of travel (he meant 47).",
+      "real": true,
+      "source": {
+        "title": "Obama's 'Bumbles' - FactCheck.org",
+        "url": "https://www.factcheck.org/2011/06/obamas-bumbles/",
+        "date": "2008-05-09"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The White House was in very bad condition, both inside and out. Frankly, it was a 'dump!'",
+      "speaker": "Donald Trump",
+      "context": "Trump posting on Truth Social about White House renovations",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump says White House was a ‘dump’ before renovations",
+        "url": "https://thehill.com/homenews/administration/6087615-newly-completed-presidential-helipad/",
+        "date": "2026-09-14"
+      }
+    }
+  ]
+}

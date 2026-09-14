@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-14",
+  "edition": 88,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You keep knocking on that door, somebody's eventually going to open it.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes, deflecting a warning from his associate early in the investigation",
+      "real": false,
+      "fake_note": "I made this one up — Gittes's wisecracking fatalism fits perfectly here, and the line has the right noir cadence for a private eye brushing off danger. The subtle giveaway is that it's just a hair too proverbial for Gittes, who usually makes his wisecracks more specific and self-deprecating."
+    },
+    {
+      "id": "q2",
+      "text": "He was never lost — he just stopped wanting to be found.",
+      "speaker": "Apocalypse Now (1979)",
+      "context": "Captain Willard, in voiceover, reflecting on Kurtz before reaching the compound",
+      "real": false,
+      "fake_note": "I made this one up — Willard's voiceover narration throughout the film is exactly this bleak and spare, and it slots naturally into his meditation on Kurtz's disappearance into the jungle. The giveaway is a slight over-neatness: Willard's real narration tends to be rougher and less symmetrical."
+    },
+    {
+      "id": "q3",
+      "text": "Death's at the bottom of everything, Martins. Leave death to the professionals.",
+      "speaker": "The Third Man (1949)",
+      "context": "Major Calloway (Trevor Howard) to pulp novelist Holly Martins (Joseph Cotten), warning him off his amateur investigation in postwar Vienna.",
+      "real": true,
+      "source": {
+        "title": "The Third Man - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Third_Man",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Every time I close my eyes I can still hear that engine.",
+      "speaker": "Mad Max: Fury Road (2015)",
+      "context": "Furiosa, quiet moment with Max after surviving the canyon passage",
+      "real": false,
+      "fake_note": "I made this one up — Furiosa's rare spoken lines are short and weighted, and a mechanical memory fits her character's identity completely. The giveaway is that Fury Road is almost aggressively non-sentimental in its dialogue; this line is just slightly too reflective for a film that prefers action over introspection."
+    },
+    {
+      "id": "q5",
+      "text": "I'm not the guy you kill, I'm the guy you buy!",
+      "speaker": "Michael Clayton (2007)",
+      "context": "Michael Clayton (George Clooney) shouting at Karen Crowder near the film's climax, after realizing the conspiracy against him.",
+      "real": true,
+      "source": {
+        "title": "Michael Clayton - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Michael_Clayton",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Say 'what' again. I dare you, I double dare you.",
+      "speaker": "Pulp Fiction (1994)",
+      "context": "Jules (Samuel L. Jackson) menaces Brett, a terrified young man, during the apartment confrontation.",
+      "real": true
+    }
+  ]
+}
