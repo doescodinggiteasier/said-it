@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-15",
+  "edition": 84,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's a version of 'Crazy' that nobody's ever heard where the tempo is about twenty beats faster and it sounds like a completely different apology. Quicy heard it and just went, no. And he was right. He was always right in a way that made you slightly furious.",
+      "speaker": "Seal",
+      "context": "Conversation with Zane Lowe on Apple Music 1, aired during the promotional cycle for his 'Standards' album, January 2017",
+      "real": false,
+      "fake_note": "I made this one up — Seal speaks warmly about collaborators and has discussed the Babyface and Trevor Horn partnerships in exactly this register of admiring-but-slightly-wounded. I swapped in Quincy, which is plausible given his career circles. The tempo detail is the thing a sharp player might snag on — it's slightly too precise."
+    },
+    {
+      "id": "q2",
+      "text": "The thing about playing the Garden is that you can hear yourself think during the quiet parts, which sounds backwards but it's true. All that space just sitting there. It's a little unnerving if I'm honest.",
+      "speaker": "Phoebe Bridgers",
+      "context": "Backstage interview with NME filmed at Madison Square Garden, New York, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Phoebe has talked about stage anxiety and the strangeness of large venues in exactly this understated, slightly self-deprecating register. The giveaway for sharp players is that she'd be more likely to describe it with a weirder, more specific image than 'sitting there.'"
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what Joni was like in the studio and I never know how to answer that without sounding like I'm writing liner notes. She was just — she had this thing where she'd stop in the middle of a take and retune the guitar by ear and you'd think the moment was gone, and then it was better.",
+      "speaker": "David Crosby",
+      "context": "Q Magazine's extended oral history feature on the Laurel Canyon era, published in their June 2017 print edition",
+      "real": false,
+      "fake_note": "I made this one up — Crosby genuinely talked about Joni Mitchell with this kind of reverent specificity throughout his later interviews, and the retuning detail feels like exactly the sort of thing he'd recall. The tell is that he'd probably have been a bit less composed and thrown a couple of tangents in there."
+    },
+    {
+      "id": "q4",
+      "text": "I actually kind of feel like I maybe sound like a younger version of myself",
+      "speaker": "Jeff Tweedy",
+      "context": "Discussing his cover of Twisted Teens' 'Wild Connection'",
+      "real": true,
+      "source": {
+        "title": "Music — Listen to Wilco’s Jeff Tweedy covering Twisted Teens’ ‘Wild Connection’",
+        "url": "https://www.nme.com/news/music/listen-to-wilcos-jeff-tweedy-covering-twisted-teens-wild-connection-3968510?utm_source=rss&utm_medium=rss&utm_campaign=listen-to-wilcos-jeff-tweedy-covering-twisted-teens-wild-connection",
+        "date": "2026-09-13"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My mother heard 'Super Freak' on the radio before I'd told her about it and she called me and said, Rick, that is not a church song. And I said, Mama, I am aware of that.",
+      "speaker": "Rick James",
+      "context": "Spoken during an episode of 'The Arsenio Hall Show,' original broadcast September 1993",
+      "real": false,
+      "fake_note": "I made this one up — Rick James talked openly about the tension between his gospel upbringing and his funk persona in multiple interviews, and the mother-reaction anecdote is a common format he genuinely used. The timing of the Arsenio appearance is plausible. The slightly too-clean call-and-response structure is the tell."
+    },
+    {
+      "id": "q6",
+      "text": "The more famous I got, the bigger my beehive got",
+      "speaker": "Mari Wilson",
+      "context": "Discussing her signature look and rise to fame",
+      "real": true,
+      "source": {
+        "title": "Music — ‘The more famous I got, the bigger my beehive got’: how Mari Wilson made Just Wh",
+        "url": "https://www.theguardian.com/culture/2026/sep/07/how-mari-wilson-made-just-what-i-always-wanted-beehive",
+        "date": "2026-09-13"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-15",
+  "edition": 79,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The ice cream man always drove an extra block away. I know he's seen us, but I think he just be in the car with his friends saying, 'Watch me how fast I make these motherfuckers run.'",
+      "speaker": "Eddie Murphy",
+      "context": "From Eddie Murphy's 1983 HBO stand-up special 'Delirious' (filmed at DAR Constitution Hall) — his childhood ice-cream-truck bit, where the vendor cruelly speeds off to watch the neighborhood kids chase him.",
+      "real": true,
+      "source": {
+        "title": "'Delirious' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0085474/quotes/",
+        "date": "1983"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Everybody wants to write a song about heartbreak. Heartbreak is easy. Try writing a song hungover on a tour bus in February in fucking Nebraska while some asshole is eating tuna out of a can three feet from your face. THAT is suffering. That's where the real shit comes from.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Kerrang! Radio interview with Tim Shaw, aired September 2008, promoting Motörhead's 'Motörizer' album release",
+      "real": false,
+      "fake_note": "I made this one up — Lemmy's blunt, road-warrior philosophy and his contempt for sentimentality are well documented, and the Nebraska detail gives it that specific touring-life texture he often referenced. The giveaway is the slightly too articulate cause-and-effect argument; Lemmy usually let the cynicism land harder and shorter."
+    },
+    {
+      "id": "q3",
+      "text": "You want to know about marriage? Fine. It's two people in a small apartment arguing about the thermostat until one of them dies. And the one who dies first wins, because they don't have to hear about the thermostat anymore.",
+      "speaker": "Phyllis Diller",
+      "context": "Appearing on The Merv Griffin Show, CBS, taped segment, Los Angeles, March 1974",
+      "real": false,
+      "fake_note": "I made this one up — Diller's entire act was weaponised domestic misery delivered with cackle-and-wink timing, and the thermostat as the battleground of marriage is exactly the mundane-specific detail she favoured. The giveaway is the 'wins by dying' closer — it's slightly too darkly philosophical; her real punchlines usually pivoted back to self-deprecation rather than a detached mortality observation."
+    },
+    {
+      "id": "q4",
+      "text": "People act like whiskey and a bad decision ruined my reputation. My friend, the whiskey was the only thing that night that behaved exactly as advertised.",
+      "speaker": "Dean Martin",
+      "context": "The Dean Martin Celebrity Roast, NBC, taped segment during commercial break, Las Vegas, 1976 — later recounted by producer Greg Garrison in a 1999 oral history",
+      "real": false,
+      "fake_note": "I made this one up — Dean's whole public persona leaned into the effortless, unflappable drunk-playboy image, and a line defending whiskey in exactly these terms fits that mythology precisely. The giveaway is the phrasing 'behaved exactly as advertised' — it's slightly too crisp and epigrammatic for his usual loose, half-mumbled delivery."
+    },
+    {
+      "id": "q5",
+      "text": "My sex life is so bad, my G-spot has been declared a historical landmark.",
+      "speaker": "Joan Rivers",
+      "context": "Rivers being characteristically filthy and self-deprecating about her own dried-up sex life.",
+      "real": true,
+      "source": {
+        "title": "Stand-up one-liner (CNN roundup)",
+        "url": "https://www.cnn.com/2014/09/05/showbiz/celebrity-news-gossip/joan-rivers-jokes/index.html",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I don't have a type. That's a myth. I have a situation. If the situation is right — good music, somebody hands me a drink, it's late, and everyone else has gone home — brother, that is my type.",
+      "speaker": "Miles Davis",
+      "context": "Playboy Magazine extended profile interview with Alex Haley, follow-up session conducted in Davis's New York apartment, spring 1962",
+      "real": false,
+      "fake_note": "I made this one up — Miles's guarded, elliptical way of speaking and his reputation for blunt romantic directness make this voice plausible, and a Playboy follow-up with Haley (who did interview him) is a real enough context. The giveaway is 'brother' as a closer — Miles used it, but sparingly; here it feels one beat too warm for his characteristically cooler affect."
+    }
+  ]
+}

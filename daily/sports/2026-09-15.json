@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-15",
+  "edition": 81,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Leave me alone, I know what I'm doing!",
+      "speaker": "Kimi Raikkonen",
+      "context": "Formula 1 driver's deadpan team-radio reply to his Lotus race engineer Simon Rennie, who kept feeding him instructions during the 2012 Abu Dhabi Grand Prix (which Raikkonen went on to win).",
+      "real": true,
+      "source": {
+        "title": "F1.com — Leave me alone, I know what I'm doing: the best of Räikkönen on race radio",
+        "url": "https://www.formula1.com/en/latest/article/leave-me-alone-i-know-what-doing-best-of-raikkonen-race-radio.rCKOidDkwt70dZdOENU3e",
+        "date": "2022-11-04"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "When I first got to the All Blacks camp I barely said a word for two weeks. Not because I was shy — I just wanted to hear how the veterans talked about the game before I opened my mouth and said something dumb.",
+      "speaker": "Richie McCaw",
+      "context": "Feature interview with New Zealand Herald sports writer Chris Rattue, published June 2014",
+      "real": false,
+      "fake_note": "I made this one up — McCaw is famously reserved and has spoken extensively about respecting All Blacks culture and learning from senior players, which makes this anecdote feel lived-in. The subtle tell is 'before I opened my mouth and said something dumb,' a self-deprecating casualness that's slightly looser than McCaw's typically measured public voice."
+    },
+    {
+      "id": "q3",
+      "text": "Commentators used to say I looked relaxed on the track. I wasn't relaxed. I was just really bored standing still. The second they fired the gun I finally had something to do.",
+      "speaker": "Usain Bolt",
+      "context": "Sit-down interview with BBC Sport's Jeanette Kwakye at the IAAF World Athletics Gala, Monaco, November 2017",
+      "real": false,
+      "fake_note": "I made this one up — Bolt's documented persona is exactly this: visibly loose before races while being lethal during them, and he often joked about his pre-race demeanor. The tell is 'really bored standing still,' which reframes his famous pre-race showmanship as boredom rather than performance — a subtle reinterpretation I invented."
+    },
+    {
+      "id": "q4",
+      "text": "There's a moment in a match — usually somewhere in the third set — where both of you know. Nobody says anything. You just know which way it's going. I always wanted to be the one who was wrong about that feeling.",
+      "speaker": "Rafael Nadal",
+      "context": "Long-form profile interview with journalist Christopher Clarey for The New York Times, published during Roland Garros fortnight, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Nadal's documented interviews with Clarey, who literally wrote a biography about him, are exactly this introspective and physically precise about match psychology. The plausibility is almost too high; the giveaway is 'I always wanted to be the one who was wrong about that feeling' — that's a shade more elegant and self-reflective than Nadal's actual English phrasing tends to be."
+    },
+    {
+      "id": "q5",
+      "text": "Coaching is a great thing, because you're working for four months then you go fish for eight.",
+      "speaker": "Bob Knight",
+      "context": "The Indiana basketball coach joking about the perks of the coaching profession, in a roundup of his memorable lines.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Bob Knight quotes: Top 10 memorable lines from Indiana's legendary but controversial coach",
+        "url": "https://www.cbssports.com/college-basketball/news/bob-knight-quotes-top-10-memorable-lines-from-indianas-legendary-but-controversial-coach/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "This ain't a football game, we do this every day.",
+      "speaker": "Earl Weaver",
+      "context": "The Baltimore Orioles manager on the day-in, day-out grind that makes baseball unlike other sports.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Eye on Quotes: The pithy brilliance of Earl Weaver",
+        "url": "https://www.cbssports.com/mlb/news/eye-on-quotes-the-pithy-brilliance-of-earl-weaver/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

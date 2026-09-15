@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-15",
+  "edition": 92,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I read somewhere that I was 'notoriously reclusive,' which was funny because I'd done three interviews that week. I think what they meant was I don't go to certain parties. Which, fair. Those parties are not good.",
+      "speaker": "Cate Blanchett",
+      "context": "Roundtable discussion with The Hollywood Reporter, awards season edition, December 2022",
+      "real": false,
+      "fake_note": "I made this one up — Blanchett is well documented for her dry, slightly arch humor about her own public image and she frequently punctures press narratives about herself in exactly this way. The giveaway is the phrase 'those parties are not good' — her real wit tends to be slightly more elaborate and less blunt."
+    },
+    {
+      "id": "q2",
+      "text": "I spent about three weeks convinced that learning Portuguese would be genuinely easy because I already speak Spanish. Three weeks of pure, misplaced confidence. The verbs humbled me.",
+      "speaker": "Lin-Manuel Miranda",
+      "context": "Conversation with Conan O'Brien on Conan O'Brien Needs a Friend podcast, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Miranda is openly Latino, bilingual, and talks constantly about language, heritage and his own learning process. The rhythm is pure Miranda. The giveaway is that he's never publicly documented a Portuguese-learning phase — a real fan would know his documented language adventures center on English and Spanish."
+    },
+    {
+      "id": "q3",
+      "text": "How can you govern a country that has two hundred and forty-six varieties of cheese?",
+      "speaker": "Charles de Gaulle",
+      "context": "The French president and WWII Free France leader, expressing wry exasperation at the ungovernability of France; recorded in Ernest Mignon's 1962 collection Les Mots du General.",
+      "real": true,
+      "source": {
+        "title": "Charles de Gaulle - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Charles_de_Gaulle",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "What would take Hubble 2,000 years to process, Roman can do in a year.",
+      "speaker": "Jared Isaacman",
+      "context": "NASA Administrator, on the Nancy Grace Roman Space Telescope",
+      "real": true,
+      "source": {
+        "title": "Scientific American — Roman Space Telescope",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Current observations hint that our standard model of the universe is incorrect.",
+      "speaker": "Julie McEnery",
+      "context": "Roman Space Telescope senior project scientist, NASA",
+      "real": true,
+      "source": {
+        "title": "Scientific American — Roman Space Telescope",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My mother watched the Oscars every single year like it was a religious obligation. She had opinions about every dress. Very strong opinions. I called her the morning after I was nominated and she led with 'your suit was good but the tie was a choice.'",
+      "speaker": "Mahershala Ali",
+      "context": "Profile interview with GQ, published February 2017",
+      "real": false,
+      "fake_note": "I made this one up — Ali speaks warmly and specifically about family in nearly every long-form interview, and the warm-but-specific family anecdote format is completely his style. The giveaway is that his real post-nomination interviews focused more on the work than on family reactions — a close follower would notice the gap."
+    }
+  ]
+}
