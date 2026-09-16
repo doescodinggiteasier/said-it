@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-16",
+  "edition": 82,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't watch my old fights. I know people think that's strange, but when I see myself on tape I start coaching myself, and then the next time I'm in the ring I'm thinking instead of moving. Thinking is the worst thing you can do in there.",
+      "speaker": "Floyd Mayweather Jr.",
+      "context": "ESPN The Magazine, feature interview with Wright Thompson, May 2013",
+      "real": false,
+      "fake_note": "I made this one up — Mayweather talked endlessly about boxing IQ and instinct, and the idea that overthinking is the enemy fits his philosophy perfectly. The giveaway is that Mayweather, famously obsessive about self-review, actually watches tape compulsively — this flips that documented habit."
+    },
+    {
+      "id": "q2",
+      "text": "I used to get to the rink two hours before anyone else and just skate circles. No puck, no drills. Just circles. I didn't even know why. It was just the only way I could make the noise in my head stop before a game.",
+      "speaker": "Martin Brodeur",
+      "context": "The Athletic, feature by Pierre LeBrun on pre-game rituals in hockey, November 2018",
+      "real": false,
+      "fake_note": "I made this one up — Brodeur was known for his unflappable demeanor and pre-game routines, and the image of a goaltender seeking stillness before the chaos of a game is completely in character. The giveaway is the 'noise in my head' phrasing; Brodeur consistently presented himself as almost constitutionally calm, not someone who managed internal noise."
+    },
+    {
+      "id": "q3",
+      "text": "Because there is always some kid who may be seeing me for the first time. I owe him my best.",
+      "speaker": "Joe DiMaggio",
+      "context": "Explaining why he always played so hard, even in meaningless late-season games, on the PBS American Experience profile.",
+      "real": true,
+      "source": {
+        "title": "PBS American Experience — Joe DiMaggio",
+        "url": "https://www.pbs.org/wgbh/americanexperience/features/dimaggio-joe-dimaggio/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I always look in the Sunday paper to see where Everton are in the league - starting, of course, from the bottom up.",
+      "speaker": "Bill Shankly",
+      "context": "The Liverpool manager needling city rivals Everton, in the club's official collection of his sayings.",
+      "real": true,
+      "source": {
+        "title": "Liverpool FC — Bill Shankly in his own words",
+        "url": "https://www.liverpoolfc.com/news/first-team/111453-bill-shankly-in-his-own-words",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People talk about the mental side of hitting like it's some mystery. But honestly, the hardest at-bat I ever had was against a guy I'd faced maybe forty times. You think you know him, and that's exactly when he gets you.",
+      "speaker": "Derek Jeter",
+      "context": "The Players' Tribune, 'By Derek Jeter,' retirement essay series, October 2014",
+      "real": false,
+      "fake_note": "I made this one up — Jeter spoke constantly about the psychological cat-and-mouse of hitting, and this has his understated, self-deprecating cadence exactly. The subtle giveaway is that he never quite pinned a failure on familiarity in print; he was too careful about that."
+    },
+    {
+      "id": "q6",
+      "text": "We lost that semifinal and I sat in the car park outside the stadium for maybe an hour. Not crying, just — I didn't know what to do with myself. You train your body to keep going and then it's just over, and your body hasn't gotten the message yet.",
+      "speaker": "Mia Hamm",
+      "context": "Ringer FC podcast, episode on USWNT legacy, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Hamm spoke often about the emotional aftermath of big losses and the strange physical restlessness that follows competition. The image of sitting in a car park is the kind of unglamorous specificity she used in interviews. The giveaway is that no specific semifinal loss maps cleanly to this description."
+    }
+  ]
+}

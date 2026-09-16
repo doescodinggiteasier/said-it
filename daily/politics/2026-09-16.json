@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-16",
+  "edition": 81,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone on my team keeps scheduling calls for seven in the morning and I'd really like to have a word with that person, except I can't, because the call is at seven in the morning.",
+      "speaker": "Pete Buttigieg",
+      "context": "Remarks at the annual Gridiron Club dinner, Washington D.C., March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Buttigieg's humor tends to run dry and slightly recursive, and complaints about bureaucratic scheduling fit his period as Transportation Secretary perfectly. The tell is that the joke is almost too well-structured — real off-the-cuff Buttigieg tends to be slightly wordier."
+    },
+    {
+      "id": "q2",
+      "text": "You know, grass has a life like humans have a life",
+      "speaker": "Trump",
+      "context": "Trump showing off White House renovations, discussing new grass around the helipad",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump talks about grass as he shows off White House renovations – video",
+        "url": "https://www.theguardian.com/us-news/video/2026/aug/19/trump-talks-grass-white-house",
+        "date": "2026-08-23"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The elephant was not in the room. The elephant decided that they did not want to be in the room. The elephant cowarded out.",
+      "speaker": "Abdul El-Sayed",
+      "context": "Michigan Senate debate, after opponent Mike Rogers declined to attend",
+      "real": true,
+      "source": {
+        "title": "Politics — El-Sayed on Rogers avoiding debate: 'The elephant was not in the room'",
+        "url": "https://thehill.com/homenews/campaign/6091986-el-sayed-on-rogers-avoiding-debate-the-elephant-was-not-in-the-room/",
+        "date": "2026-09-16"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "These are not the people I interviewed",
+      "speaker": "Donald Trump",
+      "context": "Social media post reacting to Supreme Court mail ballot ruling",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump slams his own Supreme Court appointees over mail ballot ruling",
+        "url": "https://www.washingtonpost.com/politics/2026/09/15/trump-slams-supreme-court-ruling-mail-ballots-personal-betrayal/",
+        "date": "2026-09-16"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My father came to this country with essentially nothing and built a small business, and that experience shaped everything about how I think about economic policy — and also explains why I physically cannot throw away a rubber band.",
+      "speaker": "Marco Rubio",
+      "context": "Q&A session following remarks at the Ronald Reagan Presidential Library, Simi Valley, California, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Rubio references his family's immigrant story and his father's work ethic constantly, and the pivot to a mundane personal habit is exactly the kind of humanizing deflection he uses in casual settings. The tell is that it's slightly too smooth a transition — the rubber-band punchline feels lightly rehearsed."
+    },
+    {
+      "id": "q6",
+      "text": "A colleague pulled me aside after the vote and said, 'That was very brave.' And I said, 'Thank you.' And then I went and sat in my car for a while, which is maybe the more honest part of the story.",
+      "speaker": "Lisa Murkowski",
+      "context": "Remarks at the Alaska Press Club annual awards dinner, Anchorage, May 2021",
+      "real": false,
+      "fake_note": "I made this one up — Murkowski has a quiet, understated way of acknowledging difficult votes without dramatizing them, and this kind of deflating honesty about private moments is very consistent with her public persona. The subtle giveaway is the 'sitting in my car' detail — evocative enough to feel real but slightly too cinematic."
+    }
+  ]
+}

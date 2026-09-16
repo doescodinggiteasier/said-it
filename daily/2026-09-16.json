@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-16",
+  "edition": 93,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People always ask me how I stay calm before a big match and I genuinely don't have a good answer. I think I've just been nervous so many times that my body forgot what it feels like to not be nervous, so now that's just baseline.",
+      "speaker": "Serena Williams",
+      "context": "Interview with Gayle King on CBS Mornings, September 2022, during her retirement farewell press tour",
+      "real": false,
+      "fake_note": "I made this one up — Serena really does talk about the mental side of competition in this casual, almost self-deprecating way, and the logic here sounds exactly like something she'd work out mid-sentence. The subtle giveaway is that she's always been more precise about her preparation rituals; she wouldn't quite dissolve the distinction between nerves and focus like this."
+    },
+    {
+      "id": "q2",
+      "text": "My kids found out I was in Jurassic Park about three years after every other kid on the planet knew, and honestly that delay was the greatest gift. For a little while I was just Dad who made weird faces at dinner, not Dad the dinosaur guy.",
+      "speaker": "Jeff Goldblum",
+      "context": "Appearing on The Late Late Show with James Corden, November 2019, discussing fatherhood",
+      "real": false,
+      "fake_note": "I made this one up — Goldblum talks about his late-in-life fatherhood constantly and with exactly this kind of fond, slightly oblique warmth. The giveaway is that he tends to be more verbally elaborate and recursive; he'd probably interrupt himself two more times before landing the punchline."
+    },
+    {
+      "id": "q3",
+      "text": "It's a good thing to be laughed at. It's better than to be ignored.",
+      "speaker": "Harold Macmillan",
+      "context": "The British Prime Minister, in a handwritten note to the Postmaster General who wanted to take action against the satirical TV program 'That Was The Week That Was' - a disarmingly self-deprecating shrug at being mocked.",
+      "real": true,
+      "source": {
+        "title": "Harold Macmillan - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harold_Macmillan",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Your body is not a temple, it's an amusement park. Enjoy the ride.",
+      "speaker": "Anthony Bourdain",
+      "context": "From his memoir Kitchen Confidential, on his attitude toward eating",
+      "real": true,
+      "source": {
+        "title": "Quote by Anthony Bourdain: \"your body is not a temple, it's an amusement pa...\"",
+        "url": "https://www.goodreads.com/quotes/271353-your-body-is-not-a-temple-it-s-an-amusement-park",
+        "date": "2000-01-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "When I was writing A Brief History of Time, my editor kept telling me every equation would cut the readership in half. I kept the one equation. Whether that was stubbornness or good editorial judgment probably depends on which half you're in.",
+      "speaker": "Stephen Hawking",
+      "context": "Address delivered at the Cambridge Union Society, Cambridge, November 2013",
+      "real": false,
+      "fake_note": "I made this one up — Hawking really did tell this anecdote about equations and readership, and E=mc² is the equation he famously kept, but the original version doesn't have the 'which half you're in' punchline. That closing twist is mine; his actual telling was drier and more matter-of-fact."
+    },
+    {
+      "id": "q6",
+      "text": "I am Al Gore, I used to be the next president of the United States",
+      "speaker": "Al Gore",
+      "context": "His self-deprecating opening line at a Harvard Kennedy School lecture, October 4, 2001, after losing the 2000 election",
+      "real": true,
+      "source": {
+        "title": "Harvard Gazette — Gore calls for unity",
+        "url": "https://news.harvard.edu/gazette/story/2001/10/gore-calls-for-unity/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-16",
+  "edition": 85,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The thing nobody tells you about recording strings is that the room does half the work. We spent probably two days just walking around that hall in Budapest clapping our hands, listening to where the sound wanted to live. The musicians thought we were insane.",
+      "speaker": "Hans Zimmer",
+      "context": "Interview with Sound on Sound magazine, October 2019 issue",
+      "real": false,
+      "fake_note": "I made this one up — Hans genuinely talks about acoustic spaces and his European recording sessions in exactly this obsessive, hands-on way. The subtle giveaway is 'clapping our hands around the hall,' which is a touch too cinematic even for him."
+    },
+    {
+      "id": "q2",
+      "text": "There are two kinds of people in this world. There's people who do the right thing – the rapper Macklemore would be one of those people",
+      "speaker": "Roger Waters",
+      "context": "Roger Waters commenting on Ed Sheeran/Macklemore Palestine row",
+      "real": true,
+      "source": {
+        "title": "Music — Roger Waters sends message to “little prick” Ed Sheeran amid Macklemore-Palestin",
+        "url": "https://www.nme.com/news/music/roger-waters-sends-message-to-little-prick-ed-sheeran-amid-macklemore-palestine-row-3969168?utm_source=rss&utm_medium=rss&utm_campaign=roger-waters-sends-message-to-little-prick-ed-sheeran-amid-macklemore-palestine-row",
+        "date": "2026-09-16"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've had people tell me my voice is an acquired taste and I always think — yeah, so is espresso, and nobody's apologizing for that.",
+      "speaker": "Tom Waits",
+      "context": "Spoken during a Q&A at the Hardly Strictly Bluegrass Festival, San Francisco, 2004",
+      "real": false,
+      "fake_note": "I made this one up — Tom loves deflecting criticism with a sideways analogy, and the espresso comparison fits his working-class-poet persona perfectly. The giveaway is it's just a touch too tidy and quotable for his genuinely rambling interview style."
+    },
+    {
+      "id": "q4",
+      "text": "I had to pull off the road, I cried like a baby. I didn't realise how powerful music could be until that mom",
+      "speaker": "Shania Twain",
+      "context": "Shania Twain describing hearing Gabriel's Oboe by Ennio Morricone",
+      "real": true,
+      "source": {
+        "title": "Music — Shania Twain’s honest playlist: ‘If Dancing Queen comes on, you rush out’",
+        "url": "https://www.theguardian.com/music/2026/jul/26/shania-twain-honest-playlist-abba-harry-styles-phantom-opera",
+        "date": "2026-07-29"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "When I first heard the playback in the booth I genuinely thought something was wrong with the speakers. I didn't know a vocal could sit in a track like that. It just kind of — floated.",
+      "speaker": "Billie Eilish",
+      "context": "Apple Music interview with Zane Lowe following the release of 'Happier Than Ever,' July 2021",
+      "real": false,
+      "fake_note": "I made this one up — Billie's Zane Lowe interviews are famous for exactly this kind of searching, slightly wonder-struck reflection on her own process. The giveaway is 'floated' — she tends toward more tactile or color-based language rather than movement metaphors."
+    },
+    {
+      "id": "q6",
+      "text": "When I was young I studied classical music and Giuseppe Verdi has this wonderful quote: 'Good composers borrow, great composers steal.'",
+      "speaker": "Nile Rodgers",
+      "context": "The Chic guitarist and producer on how he views artists who borrow from his work, in an interview with The National.",
+      "real": true,
+      "source": {
+        "title": "The National — With Nile Rodgers, it is always bound to be Good Times",
+        "url": "https://www.thenationalnews.com/arts/with-nile-rodgers-it-is-always-bound-to-be-good-times-1.593775",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

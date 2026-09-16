@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-16",
+  "edition": 80,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Why me? Ten million motherfuckers freebasing, and I'm the one who blows up!",
+      "speaker": "Richard Pryor",
+      "context": "Pryor's frank, self-lacerating bit about the 1980 freebasing accident in which he set himself on fire, from his stand-up film 'Richard Pryor: Live on the Sunset Strip' (1982).",
+      "real": true,
+      "source": {
+        "title": "Richard Pryor - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Richard_Pryor",
+        "date": "1982"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I told the hotel manager, 'Look, pal, the minibar is not a fucking suggestion, it's a starting point.' He looked at me like I'd pissed on his carpet. Which, for the record, I had not. That night.",
+      "speaker": "John Belushi",
+      "context": "Quoted by Dan Aykroyd during a panel discussion at the American Comedy Institute retrospective, New York, March 1980",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's chaotic hotel-wrecking reputation and his specific cadence of escalating self-correction make this feel completely plausible. The giveaway is 'for the record, I had not. That night.' — a little too neatly structured for genuine off-the-cuff Belushi."
+    },
+    {
+      "id": "q3",
+      "text": "The strangest thing I've tried to snort? My father. I snorted my father. He was cremated and I couldn't resist grinding him up with a little bit of blow. My dad wouldn't have cared, he didn't give a shit. It went down pretty well, and I'm still alive.",
+      "speaker": "Keith Richards",
+      "context": "Rolling Stones guitarist Keith Richards, in an April 2007 NME interview, describing the strangest thing he had snorted — his late father's cremated ashes ground up with cocaine. Reported by NME, The Hollywood Reporter, VOA, and others. Richards' manager later told NME the remark was made in jest, and Richards offered a softened account in his 2010 memoir, but he is documented giving this quote in the interview.",
+      "real": true,
+      "source": {
+        "title": "NME interview (later called a joke)",
+        "url": "https://www.nme.com/news/music/the-rolling-stones-433-1341398",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The Grammy people sent me a letter once asking if I'd present an award. I wrote back and said I would, but only if I got to say 'bullshit' on air at least twice. They did not follow up.",
+      "speaker": "Lenny Bruce",
+      "context": "Pacifica Radio WBAI broadcast, New York, live interview segment, April 1963",
+      "real": false,
+      "fake_note": "I made this one up — Bruce's ongoing war with broadcast censorship and his gleeful provocation of institutions make this entirely plausible in spirit. The giveaway is the letter-writing formality — Bruce was more a phone-call and in-person agitator than a correspondent."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me what my rider says. It says bourbon, a plate of cold cuts, and nobody from the label. In that order of importance.",
+      "speaker": "Frank Zappa",
+      "context": "Rolling Stone backstage interview, Los Angeles Sports Arena, November 1982",
+      "real": false,
+      "fake_note": "I made this one up — Zappa's disdain for record executives is thoroughly documented and this dismissive, ranked-list delivery matches his dry wit perfectly. The giveaway is it's almost too clean and quotable for Zappa, who tended toward longer, more convoluted rants."
+    },
+    {
+      "id": "q6",
+      "text": "I've had more fun in a Waffle House parking lot at two in the morning than I ever had at any fancy industry party. At least at Waffle House nobody's trying to option my life story.",
+      "speaker": "Sam Kinison",
+      "context": "Howard Stern Show, WXRK New York, on-air interview, September 1990",
+      "real": false,
+      "fake_note": "I made this one up — Kinison's contempt for Hollywood phoniness and his genuine dive-bar, late-night energy are well documented, and the Stern Show is exactly where he said things like this. The giveaway is 'option my life story' — slightly too industry-savvy and dry for Kinison's usual screaming, maximalist delivery."
+    }
+  ]
+}

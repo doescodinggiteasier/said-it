@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-16",
+  "edition": 90,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I came to Casablanca for the waters.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick Blaine (Humphrey Bogart) deflecting Captain Renault's (Claude Rains) question about why he came to Casablanca; Renault replies there are no waters in the desert, and Rick says he was misinformed.",
+      "real": true,
+      "source": {
+        "title": "Casablanca (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Casablanca_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Borrow what you like, Mr. Ripley. Just remember what belongs to whom.",
+      "speaker": "The Talented Mr. Ripley (1999)",
+      "context": "Dickie Greenleaf, with an edge of warning beneath casual charm",
+      "real": false,
+      "fake_note": "I made this one up — Dickie's breezy superiority and the line's double meaning are very much in keeping with the film's surface-versus-reality tension. The giveaway is it's slightly too on-the-nose thematically; the script typically lets irony land without quite this much elegant pressure."
+    },
+    {
+      "id": "q3",
+      "text": "I've seen your type before, kid. You think winning is a matter of wanting it bad enough.",
+      "speaker": "Raging Bull (1980)",
+      "context": "Joey LaMotta, cautioning a younger fighter at the gym",
+      "real": false,
+      "fake_note": "I made this one up — the Bronx-inflected dismissiveness and the gym setting are completely in character for Joey's street-smart, long-suffering voice. The subtle giveaway is that the line is a fraction too broadly applicable; the film's actual dialogue is more concrete and personal."
+    },
+    {
+      "id": "q4",
+      "text": "She never told you she was unhappy? That's the saddest part, isn't it.",
+      "speaker": "Kramer vs. Kramer (1979)",
+      "context": "Ted Kramer's attorney, probing him before the custody hearing",
+      "real": false,
+      "fake_note": "I made this one up — the legal procedural framing and the film's sustained emotional rawness make this feel absolutely native to the story. The subtle tell is it trails off as a statement rather than a question, which is slightly too stylized for the film's naturalistic dialogue."
+    },
+    {
+      "id": "q5",
+      "text": "Houston, we have a problem.",
+      "speaker": "Apollo 13 (1995)",
+      "context": "Aboard the damaged spacecraft, the crew reports the malfunction to mission control. The line is spoken by Jim Lovell (Tom Hanks), echoing Jack Swigert; the film's \"we have a problem\" differs from the real transmission's \"we've had a problem.\"",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Loneliness has followed me my whole life. Everywhere.",
+      "speaker": "Taxi Driver (1976)",
+      "context": "Travis Bickle (Robert De Niro) in voice-over narration from his diary.",
+      "real": true,
+      "source": {
+        "title": "Taxi Driver - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Taxi_Driver",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}
