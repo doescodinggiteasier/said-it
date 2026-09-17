@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-17",
+  "edition": 86,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember finishing the mix on 'Thriller' at like four in the morning, and Michael just walked in, listened to the whole thing without saying a word, and then goes, 'The zombies need to breathe more.' And I'm sitting there thinking, what does that even mean? But he was right. He was always right about something I couldn't name yet.",
+      "speaker": "Quincy Jones",
+      "context": "Interview with David Letterman on Late Show with David Letterman, CBS, October 2001",
+      "real": false,
+      "fake_note": "I made this one up — Quincy telling a vivid Michael anecdote with that mix of exasperation and reverence is completely in character, and 'the zombies need to breathe more' sounds just surreal enough to be real Michael Jackson. The giveaway: that exact phrase is too perfectly quotable to have stayed buried this long."
+    },
+    {
+      "id": "q2",
+      "text": "People always ask me what it felt like hearing 'Rolling in the Deep' for the first time played back in the studio, and honestly? I felt a bit sick. Like, nervous sick. Because I knew we'd made something I'd have to live up to for the rest of my life and I wasn't sure I could.",
+      "speaker": "Adele",
+      "context": "Cover interview with Vogue UK, November 2021 issue",
+      "real": false,
+      "fake_note": "I made this one up — Adele's candid, slightly self-doubting register and the way she phrases anxiety as a physical feeling is very true to her public voice. The subtle tell is that she's actually spoken warmly and confidently about that song in real interviews, not with dread."
+    },
+    {
+      "id": "q3",
+      "text": "When I was really bad, I was not all bad. When I was really trying to be good, I could never be all good. There would be that black streak going through.",
+      "speaker": "Johnny Cash",
+      "context": "Reflecting at the close of his 1994 Rolling Stone interview on the two dogs (named Sin and Redemption) on his American Recordings album cover, and his own inner duality.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Johnny Cash: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/johnny-cash-the-rolling-stone-interview-54538/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Monster Mash by Bobby \"Boris\" Pickett. Monsters appealed to me as a kid. I found it funny, not spooky. Since I had a kid, Halloween has become the biggest holiday of the year.",
+      "speaker": "J Mascis",
+      "context": "J Mascis answering 'What's the first song you fell in love with?' in his honest playlist feature",
+      "real": true,
+      "source": {
+        "title": "Music — ‘I grew my hair and dropped out of society after hearing Black Sabbath’: J Masci",
+        "url": "https://www.theguardian.com/music/2026/sep/13/honest-playlist-j-mascis-dinosaur-jr-black-sabbath-nwa-tom-petty",
+        "date": "2026-09-17"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "When I'm writing, I keep the TV on with the sound off. I don't know when I started doing it. I think I need to feel like there's another conversation happening somewhere that I don't have to be part of.",
+      "speaker": "Taylor Swift",
+      "context": "Behind-the-scenes feature on the making of Folklore, published by Rolling Stone, July 2020",
+      "real": false,
+      "fake_note": "I made this one up — Taylor has spoken extensively about her writing habits and this sits neatly in that territory, with the slightly introspective, self-observing tone she uses in long-form interviews. The tell is the detail is almost too interestingly odd for something she'd share in a production feature rather than, say, a diary entry."
+    },
+    {
+      "id": "q6",
+      "text": "Before I went on stage I used to drink Guinness and a few shots of brandy",
+      "speaker": "Elkie Brooks",
+      "context": "Elkie Brooks looking back on her rock'n'roll past in an interview",
+      "real": true,
+      "source": {
+        "title": "Music — Elkie Brooks looks back: ‘Before I went on stage I used to drink Guinness and a ",
+        "url": "https://www.theguardian.com/lifeandstyle/2026/sep/13/elkie-brooks-looks-back-interview-singer-the-long-farewell-tour",
+        "date": "2026-09-17"
+      }
+    }
+  ]
+}

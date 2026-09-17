@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-17",
+  "edition": 83,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You spend a good piece of your life gripping a baseball, and in the end, it turns out that it was the other way around all the time.",
+      "speaker": "Jim Bouton",
+      "context": "The celebrated closing line of his tell-all baseball memoir 'Ball Four,' as quoted in the book's Wikipedia entry.",
+      "real": true,
+      "source": {
+        "title": "Wikipedia — Ball Four",
+        "url": "https://en.wikipedia.org/wiki/Ball_Four",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People ask me what I think about before a free throw. Honestly? Sometimes I'm thinking about whether I left my car running. You just have to let that stuff be there and shoot anyway.",
+      "speaker": "Shaquille O'Neal",
+      "context": "NBA on TNT pregame desk segment, February 2019",
+      "real": false,
+      "fake_note": "I made this one up — Shaq is famous for self-deprecating humor about his free-throw woes, so the premise is dead-on plausible. The subtle giveaway is that Shaq's real jokes tend to be more physical and outward-directed; this one is a touch too introspective for him."
+    },
+    {
+      "id": "q3",
+      "text": "When I came to Barcelona I spoke maybe forty words of Spanish. I learned the rest on the training ground, mostly things I probably shouldn't repeat.",
+      "speaker": "Thierry Henry",
+      "context": "The Players' Tribune first-person essay, March 2017",
+      "real": false,
+      "fake_note": "I made this one up — Henry's Barcelona spell is well-documented and he's famously charming and multilingual, so the language-learning angle fits perfectly. The giveaway is the trailing punchline, which is a bit too neat; Henry's real anecdotes tend to stay in the football detail longer before landing a laugh."
+    },
+    {
+      "id": "q4",
+      "text": "There was a concern about Botman coming into the season because he had a really poor pre-season",
+      "speaker": "John Anderson",
+      "context": "BBC Radio Newcastle, discussing Sven Botman's form ahead of 2026 season",
+      "real": true,
+      "source": {
+        "title": "Sports — Jaissle 'has a decision to make' on Botman - Anderson",
+        "url": "https://sports.yahoo.com/articles/jaissle-decision-botman-anderson-120517886.html",
+        "date": "2026-09-17"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People see the celebrations and think I enjoy scoring. I enjoy the moment before — that half-second where you already know it's in and nobody else does yet. That part I could live in forever.",
+      "speaker": "Ronaldo",
+      "context": "France Football magazine interview, translated excerpt, October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Ronaldo has spoken extensively about the psychological dimension of goal-scoring and his unique self-awareness, so this kind of interior reflection is very on-brand. The giveaway is 'live in forever,' which leans slightly too romantic for his usual crisp, confident register."
+    },
+    {
+      "id": "q6",
+      "text": "My first year in the league I was genuinely terrified of Maddux. Not the fastball — he didn't have one. It was that he'd throw a pitch and you'd swing and you'd feel like he'd read your diary.",
+      "speaker": "Chipper Jones",
+      "context": "MLB Network's Intentional Talk, June 2018",
+      "real": false,
+      "fake_note": "I made this one up — Chipper faced Maddux dozens of times and has spoken warmly about him, so the relationship is real and the sentiment plausible. The giveaway is 'read your diary,' which is slightly more literary than Chipper's usual down-home Georgia phrasing."
+    }
+  ]
+}

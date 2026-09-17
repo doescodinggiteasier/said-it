@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-17",
+  "edition": 91,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Nobody cares what you studied, sweetheart. They care what you made.",
+      "speaker": "All About Eve (1950)",
+      "context": "Addison DeWitt, coolly dismissing a younger actress's theatrical credentials at a party",
+      "real": false,
+      "fake_note": "I made this one up — Addison's venomous condescension and that little 'sweetheart' are right in his wheelhouse. The giveaway is that it's slightly too tidy and aphoristic for even him; his real lines tend to be a touch more baroque."
+    },
+    {
+      "id": "q2",
+      "text": "Every man on this ridge knows exactly what he signed up for. That doesn't make it easier.",
+      "speaker": "Saving Private Ryan (1998)",
+      "context": "Captain Miller, speaking quietly to Sergeant Horvath after heavy casualties",
+      "real": false,
+      "fake_note": "I made this one up — Miller's reluctant leadership and his habit of acknowledging weight without collapsing under it fit his character precisely. The giveaway is it edges toward a moral summation, whereas Miller's real lines stay more immediate and task-focused."
+    },
+    {
+      "id": "q3",
+      "text": "Have you a valediction, boyo?",
+      "speaker": "L.A. Confidential (1997)",
+      "context": "Captain Dudley Smith (James Cromwell) to Jack Vincennes (Kevin Spacey), moments before shooting him.",
+      "real": true,
+      "source": {
+        "title": "L.A. Confidential (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/L.A._Confidential_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Looks like I picked the wrong week to quit smoking.",
+      "speaker": "Airplane! (1980)",
+      "context": "Steve McCroskey (Lloyd Bridges), the harried air traffic supervisor, laments amid the crisis (the first of his escalating vices).",
+      "real": true,
+      "source": {
+        "title": "Airplane! - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Airplane!",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Is this testing whether I'm a Replicant or a lesbian, Mr. Deckard?",
+      "speaker": "Blade Runner (1982)",
+      "context": "Rachael (Sean Young) to Rick Deckard (Harrison Ford) during her Voight-Kampff test at the Tyrell Corporation, early in the film.",
+      "real": true,
+      "source": {
+        "title": "Blade Runner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Blade_Runner",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You want to negotiate? Fine. My first offer is the only offer.",
+      "speaker": "The Godfather (1972)",
+      "context": "Michael Corleone, in a tense back-room meeting with a rival family's representative",
+      "real": false,
+      "fake_note": "I made this one up — Michael's clipped, controlled authority fits perfectly here, and the rhythm echoes his coldest moments. The subtle giveaway is that Michael rarely frames things as 'offers' so explicitly this early; he prefers implication over declaration."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-17",
+  "edition": 81,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Look, I walked offstage at the Sands, Sinatra's still got his jacket on, I've already got two showgirls arguing over who's buying me a drink. I didn't plan it that way. That's just Tuesday in Vegas, sweetheart.",
+      "speaker": "Dean Martin",
+      "context": "Playboy magazine interview, March 1965, conducted backstage at the Sands Hotel, Las Vegas",
+      "real": false,
+      "fake_note": "I made this one up — Dino's self-deprecating, boozy Vegas persona makes this completely plausible, and the Sands/Sinatra detail is period-accurate. The giveaway is that Martin almost never name-dropped Frank in interviews; he let the Rat Pack mythology do the work without poking it."
+    },
+    {
+      "id": "q2",
+      "text": "I wore that dress to the Grammys specifically so that everyone would spend the whole night arguing about the dress and not about whether the album was any good. Was it any good? Doesn't matter. Look at the dress. Still works. You're still talking about the dress.",
+      "speaker": "Whitney Houston",
+      "context": "VH1 Driven documentary, production interview outtake recorded during filming, Los Angeles, November 2002",
+      "real": false,
+      "fake_note": "I made this one up — Whitney's sharp, savvy media-game awareness delivered with confident amusement fits her later interview personality, and a Driven outtake is a plausible 'off-the-record' setting. The tell is the triple repetition of 'the dress' — it's a comedian's structural trick, and Whitney's real interviews were more conversational and less architecturally tight."
+    },
+    {
+      "id": "q3",
+      "text": "Somebody asked me what my rider says now. I said, 'Scotch, more scotch, and if the promoter's ugly, send his wife instead.' They printed it. I got three calls from promoters' wives. None of them were complaints.",
+      "speaker": "Rodney Dangerfield",
+      "context": "The Tonight Show Starring Johnny Carson, NBC, November 1978, during Carson's post-monologue guest segment",
+      "real": false,
+      "fake_note": "I made this one up — Rodney's self-deprecating horndog rhythm and the 'no respect' pivot is absolutely his wheelhouse, and the Carson show is exactly where he road-tested this material. The tiny tell is the callback punchline structure — Rodney's real jokes ended harder and more abrupt than this."
+    },
+    {
+      "id": "q4",
+      "text": "It's cold outside, but I'm still looking like a thotty, because a hoe never gets cold.",
+      "speaker": "Cardi B",
+      "context": "From a now-iconic 2014 viral Instagram/Vine clip from her pre-fame days, strutting in a bra top and skirt and explaining why she's barely dressed in winter.",
+      "real": true,
+      "source": {
+        "title": "Nylon — Cardi B was right: hot girls don't get cold",
+        "url": "https://www.nylon.com/life/cardi-b-was-right-hot-girls-dont-get-cold-science-confirms",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The secret to a long marriage? Separate bathrooms and a mutual agreement that neither of you mentions what happened in Miami. My wife has upheld her end. I respect that woman enormously.",
+      "speaker": "Bob Hope",
+      "context": "The Merv Griffin Show, CBS, October 1971, during a segment on Hope's 35th wedding anniversary",
+      "real": false,
+      "fake_note": "I made this one up — Hope's scripted-sounding impromptu one-liners about marriage with a fake scandal buried in the middle is exactly his live-TV persona, and the Merv Griffin show is period-appropriate. The sneaky tell is 'I respect that woman enormously' — Hope's real punchlines didn't land on sincerity; he always deflected with another joke."
+    },
+    {
+      "id": "q6",
+      "text": "I'd sit there and smoke crack while I listened to the play. It made me fucking crazy.",
+      "speaker": "Samuel L. Jackson",
+      "context": "Reflecting on his 1980s/early-90s crack-cocaine addiction during his time as an understudy on Broadway's 'The Piano Lesson' (shadowing Charles Dutton), before he got sober in 1991. From a 2019 The Hollywood Reporter interview, widely reported (Entertainment Tonight, Today, People), Jan 2019.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter interview (TODAY report)",
+        "url": "https://www.today.com/health/health/samuel-l-jackson-opens-drug-addiction-early-career-rcna20476",
+        "date": "2019"
+      }
+    }
+  ]
+}

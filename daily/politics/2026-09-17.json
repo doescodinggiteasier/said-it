@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-17",
+  "edition": 82,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It's a good thing to be laughed at. It's better than to be ignored.",
+      "speaker": "Harold Macmillan",
+      "context": "The British Prime Minister, in a handwritten note to the Postmaster General who wanted to take action against the satirical TV program 'That Was The Week That Was' - a disarmingly self-deprecating shrug at being mocked.",
+      "real": true,
+      "source": {
+        "title": "Harold Macmillan - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harold_Macmillan",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I did a town hall in rural Iowa once where the first question was about grain tariffs and the second question was whether I believed in ghosts. And I'll tell you, I gave a longer answer to the second one.",
+      "speaker": "Amy Klobuchar",
+      "context": "Appearance on Late Night with Seth Meyers, NBC, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Amy's Midwestern self-deprecation and her genuine love of retelling campaign trail oddities make this feel lived-in. The giveaway is the ghost punchline; she tends to land her stories on a policy point rather than pure absurdism."
+    },
+    {
+      "id": "q3",
+      "text": "Someone on my staff printed out my Twitter mentions from last Tuesday and I genuinely thought it was a threat assessment document. Same energy.",
+      "speaker": "Pete Buttigieg",
+      "context": "Remarks at the Atlantic Festival, Washington D.C., September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Pete's dry, self-aware humor and his comfort talking about the absurdities of political life make this land naturally. The tell is that Pete tends to be a touch more polished even in his asides; this is slightly more rattled than his usual register."
+    },
+    {
+      "id": "q4",
+      "text": "Freedom is the right to be wrong, not the right to do wrong.",
+      "speaker": "John Diefenbaker",
+      "context": "The Canadian Prime Minister, in a candid, aphoristic reflection on liberty (11 March 1958).",
+      "real": true,
+      "source": {
+        "title": "John Diefenbaker - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Diefenbaker",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People always ask me what the hardest part of being governor is, and I want to say something inspiring about leadership — but honestly, it's the number of ribbon cuttings where the scissors don't work.",
+      "speaker": "Gretchen Whitmer",
+      "context": "Panel discussion at the National Governors Association winter meeting, Washington D.C., February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Whitmer has a warm, relatable humor and loves puncturing the ceremonial pomp of political life. The slight tell is the specificity about scissors; her real self-deprecating bits tend to land on people rather than objects."
+    },
+    {
+      "id": "q6",
+      "text": "My mother used to say the Senate runs on three things: coffee, procedural motions, and the sincere belief that the other side has never once read the Constitution. She was not entirely wrong.",
+      "speaker": "Lisa Murkowski",
+      "context": "Keynote address at the University of Alaska Anchorage commencement, May 2022",
+      "real": false,
+      "fake_note": "I made this one up — Murkowski's bipartisan, quietly wry persona and her habit of invoking Alaska common sense make this feel plausible. The subtle giveaway is the mild dig at the other side, which Murkowski usually avoids even in soft form."
+    }
+  ]
+}
