@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-18",
+  "edition": 95,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I did one movie where I wore a fat suit for maybe six weeks of filming, and the thing nobody tells you is how quickly you stop noticing it. By week three I was just walking around craft services in this suit and eating a sandwich, completely normal, and then I'd catch myself in the monitor and think — oh, right.",
+      "speaker": "Charlize Theron",
+      "context": "Profile interview with Vanity Fair, published in the December 2019 issue, during press for 'Bombshell'",
+      "real": false,
+      "fake_note": "I made this one up — Theron's physical transformation work for roles like Monster is widely documented, and she speaks candidly about the mechanics of character preparation. The Bombshell context is real; the fat suit anecdote is invented but plausible given her method-adjacent process."
+    },
+    {
+      "id": "q2",
+      "text": "People who are determined, passionate and believe in their ability to improve appear more likely to flourish and experience meaningful, engaging lives",
+      "speaker": "Hermundur Sigmundsson",
+      "context": "NTNU psychology study on motivational traits and well-being",
+      "real": true,
+      "source": {
+        "title": "Science — Motivational traits may help explain why some people report greater well-being",
+        "url": "https://phys.org/news/2026-09-traits-people-greater.html",
+        "date": "2026-09-18"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what the hardest part of cooking at this level is, and I always want to say the purchasing. Not the technique, not the timing — the purchasing. You find one farmer growing exactly the right thing and then he retires or his land gets bought out and you're back to square one, trying to explain to a supplier what you actually mean by 'sweet.'",
+      "speaker": "Thomas Keller",
+      "context": "Interview with Eater's podcast 'Digest,' recorded at The French Laundry, published March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Keller obsesses publicly over sourcing and supplier relationships, so the frustration rings completely true to his voice. The subtle giveaway is that he'd more likely frame this anecdote around a specific ingredient rather than leaving it as 'the right thing.'"
+    },
+    {
+      "id": "q4",
+      "text": "The Mars timeline debate inside the scientific community is real and it's frustrating, because the people arguing it's too soon aren't wrong — they're just arguing from a world where the budget assumptions are stable, which they never are. So you end up planning for a planet using an Excel sheet that changes every fiscal year.",
+      "speaker": "Neil deGrasse Tyson",
+      "context": "Panel discussion at the American Museum of Natural History's Isaac Asimov Memorial Debate, New York, April 2023",
+      "real": false,
+      "fake_note": "I made this one up — Tyson regularly engages with NASA budget politics and Mars mission timelines in this practical, slightly exasperated register. The Excel sheet metaphor is plausible but lands a little too perfectly as a quip, which is where it wobbles."
+    },
+    {
+      "id": "q5",
+      "text": "You shouldn't let poets lie to you",
+      "speaker": "Björk",
+      "context": "In a 1988 TV interview, after taking apart a television to explain how it works and recounting how an Icelandic poet's spooky description had once scared her.",
+      "real": true,
+      "source": {
+        "title": "Commentary on Björk's 1988 \"Wonder of Television\" interview",
+        "url": "https://peopleoftheurban.wordpress.com/2015/08/31/commentary-on-bjork-on-the-wonder-of-television-1988/",
+        "date": "1988-01-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "His famous comeback at the 1984 debate against Walter Mondale",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    }
+  ]
+}

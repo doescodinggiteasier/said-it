@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-18",
+  "edition": 92,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Every man on that jury knows your name. Think about what that means.",
+      "speaker": "To Kill a Mockingbird (1962)",
+      "context": "Atticus Finch speaking quietly to Tom Robinson before the verdict",
+      "real": false,
+      "fake_note": "I made this one up — the measured gravity and the unspoken racial weight feel very Gregory Peck-era Atticus. The giveaway is 'think about what that means' is a half-step too leading; Atticus would more likely leave the implication completely silent."
+    },
+    {
+      "id": "q2",
+      "text": "Yo, Adrian!",
+      "speaker": "Rocky (1976)",
+      "context": "Rocky Balboa addressing Adrian; \"Yo, Adrian! It's me, Rocky.\" The phrase appears in the 1976 film.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "She doesn't know you're here, does she.",
+      "speaker": "Vertigo (1958)",
+      "context": "Scottie Ferguson confronted by someone who's figured out his obsession",
+      "real": false,
+      "fake_note": "I made this one up — it nails the film's atmosphere of guilty surveillance and unspoken accusation. The giveaway is the flat declarative delivery reads more like a stage direction than something Hitchcock would let a character spell out."
+    },
+    {
+      "id": "q4",
+      "text": "I hate that word. It's a return, a return to the millions of people who have never forgiven me for deserting the screen.",
+      "speaker": "Sunset Boulevard (1950)",
+      "context": "Faded silent star Norma Desmond (Gloria Swanson) correcting screenwriter Joe Gillis (William Holden) when he calls her planned return a 'comeback.'",
+      "real": true,
+      "source": {
+        "title": "Sunset Boulevard - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Sunset_Boulevard",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I flew B-17s over Bremen. You think a little weather scares me?",
+      "speaker": "It's a Wonderful Life (1946)",
+      "context": "George Bailey's father, deflecting concern from a neighbor on the porch",
+      "real": false,
+      "fake_note": "I made this one up — the wartime reference and the stubborn small-town pride fit the film's period and supporting-character voice. The giveaway is the specific bomber detail is a shade too militarily precise for Capra's soft-focus Bedford Falls."
+    },
+    {
+      "id": "q6",
+      "text": "The department doesn't care how you feel. The department cares what you find.",
+      "speaker": "Zodiac (2007)",
+      "context": "Inspector Dave Toschi cautioning a younger detective who's getting personally invested",
+      "real": false,
+      "fake_note": "I made this one up — the institutional coldness against obsessive personal investment is exactly Fincher's thematic register here. The giveaway is it's almost an thesis statement for the whole film, which real dialogue rarely lets itself become so cleanly."
+    }
+  ]
+}

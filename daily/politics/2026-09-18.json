@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-18",
+  "edition": 83,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "His famous comeback at the 1984 debate against Walter Mondale",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
+      "speaker": "Ted Stevens",
+      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality.",
+      "real": true,
+      "source": {
+        "title": "Series of tubes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
+        "date": "2006-06-28"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I had a constituent stop me at the airport — full security line, shoes off, socks on the floor — and she wanted to walk me through her concerns about municipal broadband. I respect that. That is democracy. I was also going to miss my flight.",
+      "speaker": "Amy Klobuchar",
+      "context": "Keynote address at the Minnesota DFL's Humphrey-Mondale Dinner in Minneapolis, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar frequently tells constituent-encounter stories as a rhetorical device and is known for her dry, grounded humor about unglamorous political life. The giveaway is the final punchy sentence, which lands a little too cleanly for an unrehearsed anecdote."
+    },
+    {
+      "id": "q4",
+      "text": "People ask me what my favorite part of the job is. And I always think they expect me to say something about serving the public or the weight of history, and both of those things are true. But if I'm being honest, it's the cafeteria in the West Wing. It's genuinely very good.",
+      "speaker": "Condoleezza Rice",
+      "context": "Interview with Kara Swisher on the Sway podcast, October 2021, discussing her memoir and life in government",
+      "real": false,
+      "fake_note": "I made this one up — Rice is known for disarming audiences with concrete, cheerful personal details that undercut her formidable image, and she has spoken warmly about her White House years in multiple forums. The tell is that the West Wing cafeteria detail is specific enough to feel real but just untraceable enough to hedge on."
+    },
+    {
+      "id": "q5",
+      "text": "Has anyone ever done a worse job?",
+      "speaker": "Jimmy Kimmel",
+      "context": "Late-night segment discussing Trump's second term",
+      "real": true,
+      "source": {
+        "title": "Politics — Jimmy Kimmel on Trump’s second term: ‘Has anyone ever done a worse job?’",
+        "url": "https://www.theguardian.com/culture/2026/sep/17/jimmy-kimmel-trump-hegseth-don-jr-wedding",
+        "date": "2026-09-18"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I have a very simple test for whether a regulation is working. I ask the person it's supposed to protect whether they've heard of it. Nine times out of ten, they haven't. That's usually useful information.",
+      "speaker": "Elizabeth Warren",
+      "context": "Q&A session following a lecture at Boston University School of Law, Boston, Massachusetts, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Warren consistently frames regulatory policy through the lens of ordinary consumers rather than institutions, and this kind of blunt field-test logic matches her documented rhetorical style. The tell is the 'nine times out of ten' figure, which sounds empirical but is the type of round-number approximation that Warren, an actual data person, would probably qualify more carefully."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-18",
+  "edition": 87,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Y'all can't read this, can you?",
+      "speaker": "Stevie Wonder",
+      "context": "Presenting Song of the Year at the 2016 Grammy Awards (alongside Pentatonix), the blind musician held up the winner's envelope, which was written in Braille, and playfully teased his fellow presenters and the audience.",
+      "real": true,
+      "source": {
+        "title": "Stevie Wonder Charms GRAMMYs Audience With Braille Joke, Important Message",
+        "url": "https://www.etonline.com/awards/grammys/182416_stevie_wonder_charms_grammys_audience_with_braille_joke_important_message",
+        "date": "2016-02-15"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Rick [Rubin] barely said anything for the first week. Just sat there on the couch. At some point I realized that was the whole thing — he was waiting to see what we'd do when nobody was telling us what to do.",
+      "speaker": "Anthony Kiedis",
+      "context": "Extended interview on the Broken Record podcast with Rick Rubin and Malcolm Gladwell, Episode 214, released October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Kiedis has described Rubin's famous passive studio presence in multiple memoirs and interviews, so this is squarely in established territory. The irresistibly sneaky detail: citing an interview *on Rubin's own podcast* where Kiedis says this *about* Rubin makes it feel almost too perfectly sourced — which is exactly why a sharp player might still let it slide."
+    },
+    {
+      "id": "q3",
+      "text": "Whatever we disagree about, perhaps we can agree on this: Palestinian lives are worth protecting.",
+      "speaker": "Macklemore",
+      "context": "Instagram post announcing donation of Ed Sheeran tour earnings to Palestine Aid",
+      "real": true,
+      "source": {
+        "title": "Music — Macklemore to Donate $1 Million Ed Sheeran Tour Earnings to Palestine Aid, Invit",
+        "url": "https://pitchfork.com/story/macklemore-will-donate-ed-sheeran-tour-earnings-to-palestine/",
+        "date": "2026-09-18"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I'm playing the same flute, but every nationality of driver will turn around and tell me it reminds them of their country.",
+      "speaker": "André 3000",
+      "context": "The Outkast rapper, on Questlove's 'Questlove Supreme' podcast, describing how he'd play his flute in the back of Ubers and how drivers of every nationality told him it reminded them of their home country",
+      "real": true,
+      "source": {
+        "title": "How Did André 3000 Learn To Play Flute?",
+        "url": "https://thebeatofthecapital.com/2023/12/13/how-did-andre-3000-learn-to-play-flute/",
+        "date": "2023-12-13"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I played a session in Muscle Shoals in '74 where nobody told me what the song was about until we'd already tracked it twice. Didn't matter. You read the room, you read the drummer's shoulders, and you play.",
+      "speaker": "Steve Cropper",
+      "context": "Panel discussion at the Memphis Music Hall of Fame induction ceremony, published in Memphis Flyer's special commemorative issue, November 2016",
+      "real": false,
+      "fake_note": "I made this one up — Cropper's session-musician instincts and his articulation of them in exactly this kind of spare, physical language is very well documented. The giveaway is the specific year; Cropper spent most of '74 outside Muscle Shoals, so a careful fan might clock that geography."
+    },
+    {
+      "id": "q6",
+      "text": "I remember finishing the mix on 'Sign 'O' the Times' at like four in the morning and just sitting there in the dark for a while. Not celebrating, just — sitting. Because you know when something's done and you can't touch it anymore, and that feeling is not entirely comfortable.",
+      "speaker": "Prince",
+      "context": "Rolling Stone oral history feature on the making of 'Sign 'O' the Times,' published in the magazine's April 2017 issue",
+      "real": false,
+      "fake_note": "I made this one up — Prince's brooding, precise relationship with his own creative process is extremely well documented, and the late-night studio detail fits perfectly with his working habits. The subtle giveaway: he almost never gave Rolling Stone this kind of intimate reflective access; he was far more guarded with that particular outlet."
+    }
+  ]
+}

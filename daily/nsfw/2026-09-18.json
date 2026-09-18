@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-18",
+  "edition": 82,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Look at your mushrooms - they look like fucking tadpoles on Viagra.",
+      "speaker": "Gordon Ramsay",
+      "context": "Chef Gordon Ramsay critiquing a kitchen's mushroom side dish on the \"Rococo\" episode of Ramsay's Kitchen Nightmares (King's Lynn restaurant), UK Channel 4, 2006.",
+      "real": true,
+      "source": {
+        "title": "'Ramsay's Kitchen Nightmares' — Rococo (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt1058681/",
+        "date": "2006"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "The secret to a great party is you invite forty people, you only actually like about twelve of them, and you make sure the bar is open before anyone arrives so by the time the ones you don't like show up, you're too happy to care.",
+      "speaker": "Gore Vidal",
+      "context": "Dinner table conversation published in transcript form in Paris Review's 'The Art of Fiction No. 165' extended interview sidebar, Summer 1999",
+      "real": false,
+      "fake_note": "I made this one up — Vidal's aristocratic misanthropy and the deadpan logistics of calculated socializing is perfectly in character. The giveaway is the warmth at the end — 'too happy to care' — Vidal's real wit would more likely have ended on a colder, more dismissive note."
+    },
+    {
+      "id": "q3",
+      "text": "Someone in the crowd threw a bra at me in Frankfurt and I put it on over my jacket and finished the last four songs wearing it. The band didn't miss a note. That's professionalism. That's what Juilliard can't teach you.",
+      "speaker": "Jim Morrison",
+      "context": "Backstage audio recording later transcribed in 'The Doors: A Lifetime of Listening to Five Mean Years' companion press kit interview, cited in a 1969 Rolling Stone archival feature",
+      "real": false,
+      "fake_note": "I made this one up — Morrison's grandiose self-mythology and the absurd Juilliard name-drop matches his habit of framing debauchery as high art. The giveaway is 'professionalism' — Morrison almost never used that word unironically, and the Juilliard reference is slightly too self-aware."
+    },
+    {
+      "id": "q4",
+      "text": "My dating advice? Don't. But if you must — never sleep with anyone who's meaner than you, never date anyone who doesn't drink, and for the love of Christ never move in with a man who owns more throw pillows than you do. That's not a partner, that's a problem.",
+      "speaker": "Nora Ephron",
+      "context": "Q&A session following a reading from 'I Remember Nothing' at the 92nd Street Y, New York City, October 2010",
+      "real": false,
+      "fake_note": "I made this one up — Ephron's sardonic, list-driven relationship humor and the specific throw-pillows detail are very much in her wheelhouse of domestic comedy. The giveaway is that her real advice was usually sharper and more auto-biographical, not quite this listicle-shaped."
+    },
+    {
+      "id": "q5",
+      "text": "Last year I was really into the word cocksucker. I thought it sounded so mean!",
+      "speaker": "Danny McBride",
+      "context": "Answering a rapid-fire 'favorite curse word' question in a Maxim interview promoting 'Eastbound & Down.'",
+      "real": true,
+      "source": {
+        "title": "Maxim interview",
+        "url": "https://www.maxim.com/entertainment/interview-danny-mcbride-eastbound-and-down/",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You've baked a really lovely cake, but then you've used dog shit for frosting.",
+      "speaker": "Steve Jobs",
+      "context": "Critiquing a NeXT programmer's work during a project review",
+      "real": true,
+      "source": {
+        "title": "Book 'The Second Coming of Steve Jobs' (Cult of Mac)",
+        "url": "https://www.cultofmac.com/news/eleven-cutting-steve-jobs-quotes",
+        "date": "2000"
+      }
+    }
+  ]
+}

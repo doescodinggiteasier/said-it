@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-18",
+  "edition": 84,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "But I also know, if I was healthy, with good hips right now, I'd be the fastest 45-year-old in the country, or in the world.",
+      "speaker": "Bo Jackson",
+      "context": "Reflecting in retirement, years after his hip injury, in ESPN's long-form 'Bo Knows Best' feature.",
+      "real": true,
+      "source": {
+        "title": "ESPN E-ticket — Bo Knows Best",
+        "url": "http://www.espn.com/espn/eticket/story?page=bojackson",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My first year at Duke I had a player come to me and say his father was sick and he needed to go home. And I told him go, absolutely go. He came back three days later and I could see it in his shoes — the way he was tying them — that something had changed for him. I never asked what happened. You don't always need to.",
+      "speaker": "Mike Krzyzewski",
+      "context": "Remarks at the Naismith Memorial Basketball Hall of Fame enshrinement ceremony, Springfield, Massachusetts, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Coach K genuinely talks about reading players' body language and the emotional dimension of coaching, and the shoe detail is the kind of weirdly specific observation he actually makes. The giveaway is that the anecdote is almost too cinematically resolved — real Coach K stories tend to have a point he belabors, not a quiet open ending."
+    },
+    {
+      "id": "q3",
+      "text": "I ran my first marathon thinking the wall was a myth, something slower runners told each other. Then I hit mile twenty-two and I understood. I wasn't tired. It was more like my body just filed a formal complaint and decided to wait for a response.",
+      "speaker": "Meb Keflezighi",
+      "context": "Keynote address at the Runner's World Half & Festival, Bethlehem, Pennsylvania, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Meb is both deeply technical and warmly humorous about the marathon experience, and 'filed a formal complaint' is the kind of gentle bureaucratic metaphor that fits his characteristically dignified sense of humor. The giveaway is that the setup ('thinking the wall was a myth') is almost too neat — Meb's real storytelling usually starts from a more specific race or year."
+    },
+    {
+      "id": "q4",
+      "text": "People always bring up the 'greatest of all time' thing and I find it genuinely boring. I'm not being modest. I just — what does it change? I still have to swim the race. The race is the same race regardless of what anybody decided beforehand.",
+      "speaker": "Katie Ledecky",
+      "context": "Roundtable conversation at the Aspen Ideas Festival, Aspen, Colorado, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Ledecky really does deflect GOAT conversations with a matter-of-fact focus on process, and 'I find it genuinely boring' sounds exactly like her understated dismissiveness. The giveaway is 'The race is the same race' — it almost tips into aphorism, which Ledecky usually avoids by being even more blunt."
+    },
+    {
+      "id": "q5",
+      "text": "The thing about managing in the playoffs is that everyone in that dugout knows you know less than you think you do. The game strips all that away real fast. I've made calls in October that I was sure about and been completely wrong, and I've guessed and been right. The difference between those two things doesn't keep me up at night as much as it used to.",
+      "speaker": "Joe Maddon",
+      "context": "Interview on 'Baseball Tonight with Buster Olney,' ESPN podcast, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Maddon is famous for his philosophically honest takes on managing uncertainty, and his willingness to admit fallibility is well-documented. The giveaway is that the sentiment is slightly too tidy for Maddon, who usually interrupts himself with an anecdote or a pop-culture reference before landing a point."
+    },
+    {
+      "id": "q6",
+      "text": "I think I've heard somebody say that I was a well-dressed golfer. I guess that has something to do with the fact that a lot of people who play golf don't dress very well.",
+      "speaker": "Arnold Palmer",
+      "context": "A dry, self-effacing aside about his reputation as a sharp dresser, collected among Golf Monthly's best Palmer quotes.",
+      "real": true,
+      "source": {
+        "title": "Golf Monthly — 10 Of The Best Arnold Palmer Quotes",
+        "url": "https://www.golfmonthly.com/features/the-game/10-best-arnold-palmer-quotes-152590",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}
