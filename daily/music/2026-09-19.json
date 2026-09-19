@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-19",
+  "edition": 88,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I want a connection beyond this rectangular box that we're staring at",
+      "speaker": "Katie Pruitt",
+      "context": "Nashville songwriter discussing her new album Fools for the Fleeting",
+      "real": true,
+      "source": {
+        "title": "Music — Katie Pruitt Wants to Meet You Face-to-Face",
+        "url": "https://www.rollingstone.com/music/music-features/katie-pruitt-interview-fools-for-the-fleeting-album-1235628882/",
+        "date": "2026-09-19"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "A lot of producers will tell you to reference tracks, pull up what's charting, make sure your kick sits where everyone else's kick is. I've never been able to do that. I just end up making whatever the reference track would sound like if it was sad about something.",
+      "speaker": "Finneas",
+      "context": "Masterclass Q&A session streamed live on YouTube for the Recording Academy's Recording Unboxed series, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Finneas's self-aware, slightly wry humor about his own process and his resistance to commercial trend-chasing are consistently present in his real interviews. The giveaway is 'sad about something,' which is charming but a touch more overtly comedic than his usual careful, considered phrasing."
+    },
+    {
+      "id": "q3",
+      "text": "There was a period where I was so deep in the boards — like, literally sleeping in the studio — that I forgot what sunlight looked like on my own face. My wife sent me a photo of myself from six months earlier just to remind me I had cheekbones.",
+      "speaker": "Rick Rubin",
+      "context": "Spoken during a conversation with Malcolm Gladwell at the 2022 New Yorker Festival, New York City",
+      "real": false,
+      "fake_note": "I made this one up — Rick Rubin's monastic studio lifestyle and self-deprecating humor about it are well documented, so the anecdote lands completely in character. The giveaway is the specificity of the wife sending the photo, since Rubin almost never mentions his personal life in interviews."
+    },
+    {
+      "id": "q4",
+      "text": "You Act Like There Never Was a Van Hagar",
+      "speaker": "Sammy Hagar",
+      "context": "Sammy Hagar firing back at Alex Van Halen in a statement",
+      "real": true,
+      "source": {
+        "title": "Music — Sammy Hagar Fires Back at Alex Van Halen: ‘You Act Like There Never Was a Van Ha",
+        "url": "https://www.rollingstone.com/music/music-news/sammy-hagar-fires-back-alex-van-halen-1235628732/",
+        "date": "2026-09-19"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "All I need is 33 minutes and 10 seconds. That's it",
+      "speaker": "Jamie T",
+      "context": "Asking to join Reading & Leeds 2026 lineup at the last minute",
+      "real": true,
+      "source": {
+        "title": "Music — Reading & Leeds 2026: Jamie T asks to join line-up “at last minute”",
+        "url": "https://www.nme.com/news/music/reading-leeds-2026-jamie-t-asks-to-join-line-up-at-last-minute-3965063?utm_source=rss&utm_medium=rss&utm_campaign=reading-leeds-2026-jamie-t-asks-to-join-line-up-at-last-minute",
+        "date": "2026-08-27"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've probably rewritten the bridge on 'Superstition' in my head a hundred times since we tracked it. Not because it was wrong — just because I can always hear another way it could go. That's the thing nobody tells you about a finished record: it's never actually finished in your mind.",
+      "speaker": "Stevie Wonder",
+      "context": "Interview with Questlove for Rolling Stone's 'Musicians on Musicians' issue, November 2019",
+      "real": false,
+      "fake_note": "I made this one up — Stevie referencing 'Superstition' specifically, and his well-documented obsessive creative process, makes this feel completely natural. The subtle giveaway is that Stevie rarely singles out one of his own tracks for self-critique in quite this direct way; he tends to speak more broadly about music as a spiritual force."
+    }
+  ]
+}

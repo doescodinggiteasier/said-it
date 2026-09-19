@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-19",
+  "edition": 85,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I play tennis for a living, even though I hate tennis, hate it with a dark and secret passion, and always have.",
+      "speaker": "Andre Agassi",
+      "context": "The startling opening confession of his memoir 'Open,' quoted in Sports Illustrated's coverage of the book.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — 'I Hate Tennis'",
+        "url": "https://www.si.com/more-sports/2009/10/30/andre-agassi-0",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "There were matches where I could feel the crowd wanted me to lose more than they wanted the other guy to win. I used to find that strange. Now I just find it useful.",
+      "speaker": "Roger Federer",
+      "context": "Uniqlo promotional documentary LifeWear Magazine: The Film, released September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Federer has spoken publicly about learning to harness hostile crowd energy, and this has the calm, slightly philosophical tone he uses in long-form documentary settings. The giveaway is the word 'useful,' which is a shade more calculating than Federer's usual diplomatic framing of crowd dynamics."
+    },
+    {
+      "id": "q3",
+      "text": "People always ask me what I was thinking on that last run. Honestly? I was thinking about whether I'd left my boots too close to the heater the night before. That's where your head goes after enough starts — it's not cinematic.",
+      "speaker": "Lindsey Vonn",
+      "context": "The Tim Ferriss Show podcast, episode released February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Vonn is known for candid, self-deprecating honesty about the unglamorous mental side of racing, so this fits her voice perfectly. The subtle giveaway is that boots-near-a-heater is a hyper-specific detail she's never actually mentioned; real Vonn stories about pre-race focus are more about pain management than gear anxiety."
+    },
+    {
+      "id": "q4",
+      "text": "My rookie year I genuinely did not know what I was doing on about forty percent of the plays. I just made sure I looked like I did. That buys you maybe half a season before somebody figures it out.",
+      "speaker": "Peyton Manning",
+      "context": "Peyton's Places, Season 1, ESPN+, aired August 2019",
+      "real": false,
+      "fake_note": "I made this one up — Manning is famous for self-deprecating humor about his early career and is very comfortable making himself the butt of the joke in retrospective interviews, especially on that show's relaxed format. The giveaway is the specific 'forty percent' estimate; Manning's real anecdotes about confusion as a rookie are vivid but never quite that arithmetically confessional."
+    },
+    {
+      "id": "q5",
+      "text": "Because I'm the undertaker. I've come to bury these people!",
+      "speaker": "Bill Russell",
+      "context": "Explaining to teammate Sam Jones why he wore a black suit to every Game 7, in his Academy of Achievement interview.",
+      "real": true,
+      "source": {
+        "title": "Academy of Achievement — Bill Russell Interview",
+        "url": "https://achievement.org/achiever/bill-russell/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Unbeaten with three draws is not something to celebrate too much with this shirt",
+      "speaker": "Alisson",
+      "context": "Liverpool player speaking to club media about their mixed start to the season under Iraola",
+      "real": true,
+      "source": {
+        "title": "Sports — Andoni Iraola makes Bournemouth return still learning on the job at Liverpool",
+        "url": "https://www.theguardian.com/football/2026/sep/19/andoni-iraola-bournemouth-return-learning-on-job-liverpool",
+        "date": "2026-09-19"
+      }
+    }
+  ]
+}

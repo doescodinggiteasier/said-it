@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-19",
+  "edition": 93,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't want to be a product of my environment. I want my environment to be a product of me.",
+      "speaker": "The Departed (2006)",
+      "context": "Frank Costello (Jack Nicholson) in the film's opening voiceover, laying out his philosophy of power in South Boston.",
+      "real": true,
+      "source": {
+        "title": "The Departed - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Departed",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Funny business, a woman's career. The things you drop on your way up the ladder so you can move faster. You forget you'll need them again when you get back to being a woman.",
+      "speaker": "All About Eve (1950)",
+      "context": "Aging Broadway star Margo Channing (Bette Davis) reflecting on the costs of ambition.",
+      "real": true,
+      "source": {
+        "title": "All About Eve - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/All_About_Eve",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "As far back as I can remember, I always wanted to be a gangster.",
+      "speaker": "Goodfellas (1990)",
+      "context": "Henry Hill's (Ray Liotta) opening voiceover narration",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "You want my advice? Stop asking people for advice.",
+      "speaker": "Annie Hall (1977)",
+      "context": "Alvy Singer, deflecting a friend's question about his relationship troubles",
+      "real": false,
+      "fake_note": "I made this one up — it has Alvy's self-contradicting, neurotic wit down cold. The subtle tell is that it's a touch too pithy; Alvy usually tangles himself up more before landing the punchline."
+    },
+    {
+      "id": "q5",
+      "text": "I don't hate you, Raymond. I just don't know what to do with you.",
+      "speaker": "Rain Man (1988)",
+      "context": "Charlie Babbitt, frustrated, after another failed attempt to connect with his brother",
+      "real": false,
+      "fake_note": "I made this one up — Charlie's arc is exactly this: irritation slowly replacing hostility, and the line catches him mid-way. The subtle giveaway is that Charlie rarely addresses Raymond so directly by name in emotional moments."
+    },
+    {
+      "id": "q6",
+      "text": "I've seen men hang for less and laugh for more. This valley has a way of confusing the two.",
+      "speaker": "Unforgiven (1992)",
+      "context": "Bill Munny or Little Bill making a grim observation to a younger man",
+      "real": false,
+      "fake_note": "I made this one up — the cadence matches the film's slow, morally exhausted Western voice beautifully. The giveaway is that 'this valley' is a slight geographical vagueness; the film is usually more specific about place."
+    }
+  ]
+}

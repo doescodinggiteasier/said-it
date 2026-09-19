@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-19",
+  "edition": 96,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My caddie told me to just breathe and pick a target. I was like, brother, I am six feet from the hole, I know what the target is. But he was right. I was thinking about eleven other things.",
+      "speaker": "Tiger Woods",
+      "context": "Recorded Q&A session at the TaylorMade Golf Performance Summit, Las Vegas, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Tiger's self-aware humor about his own intensity and his well-known partnership dynamic with his caddies makes this feel completely authentic. The giveaway is 'brother' — a touch too casual for how Tiger typically frames locker-room anecdotes."
+    },
+    {
+      "id": "q2",
+      "text": "I am a Ford, not a Lincoln. My addresses will never be as eloquent as Mr. Lincoln's. But I will do my very best to equal his brevity and his plain speaking.",
+      "speaker": "Gerald Ford",
+      "context": "Self-deprecating remark Ford made on December 6, 1973, immediately after taking the oath of office as the 40th Vice President (following Spiro Agnew's resignation).",
+      "real": true,
+      "source": {
+        "title": "Gerald Ford - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Gerald_Ford",
+        "date": "1973-12-06"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The thing nobody tells you about writing a cookbook is that you stop enjoying eating. At some point every meal becomes a variable and your family just wants pasta on a Tuesday, and you're standing there taking notes.",
+      "speaker": "Yotam Ottolenghi",
+      "context": "Live audience conversation at the Hay Festival, Hay-on-Wye, Wales, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Ottolenghi has been candid about the exhaustion of recipe development, and his warm, slightly wry tone fits exactly. The giveaway is 'pasta on a Tuesday,' which is a bit too illustratively mundane — he'd probably name something more specific to his world."
+    },
+    {
+      "id": "q4",
+      "text": "People think opera is about the voice and honestly, maybe sixty percent of it is. The rest is whether you can convince a hall full of strangers that you are genuinely devastated, in Italian, at three in the afternoon during a rehearsal.",
+      "speaker": "Renée Fleming",
+      "context": "NPR Music's 'First Listen Live' artist spotlight, Washington D.C., March 2016",
+      "real": false,
+      "fake_note": "I made this one up — Renée is known for thoughtful, sometimes playful commentary on the emotional demands of classical performance, and this fits her public voice well. The invented percentage — 'sixty percent' — is the kind of oddly specific number that should give careful players pause."
+    },
+    {
+      "id": "q5",
+      "text": "I do not have a five-year plan. I do not have a moonshot. I'm looking at the ground, and I want to fix the pothole that's right in front of me before I go in.",
+      "speaker": "Linus Torvalds",
+      "context": "Interviewed by Chris Anderson onstage at TED2016, contrasting himself with visionaries (he also says \"I am not a visionary.",
+      "real": true,
+      "source": {
+        "title": "The quotable Linus Torvalds, live onstage at TED | TED Blog",
+        "url": "https://blog.ted.com/the-quotable-linus-torvalds-live-onstage-at-ted/",
+        "date": "2016-02-17"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Someone on my team once told me I was becoming 'difficult to work with' and I genuinely had to sit with that for a few weeks. Turned out they meant I asked too many questions in the edit. I still ask too many questions in the edit.",
+      "speaker": "Ava DuVernay",
+      "context": "Interview with Variety during the Sundance Film Festival, January 2018",
+      "real": false,
+      "fake_note": "I made this one up — Ava regularly discusses her collaborative but exacting creative process, so this reads completely in character. The subtle tell is that the resolution a little too self-affirming; she'd more likely leave the tension unresolved."
+    }
+  ]
+}

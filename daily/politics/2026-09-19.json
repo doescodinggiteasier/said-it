@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-19",
+  "edition": 84,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I admit it -- last year was rough.",
+      "speaker": "Barack Obama",
+      "context": "At the 2014 White House Correspondents' Dinner, Obama opened his self-deprecating riff by candidly conceding his difficult 2013.",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at White House Correspondents' Dinner (May 3, 2014) | whitehouse.gov archives",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Someone on my staff — and I won't say who — flagged that I had mispronounced a foreign leader's name in a press conference. My response was: I've been mispronouncing it for three years and he's never corrected me, so at this point it's basically a nickname.",
+      "speaker": "Hillary Clinton",
+      "context": "Interview with Kara Swisher on the Pivot podcast, recorded October 2021 and released the following week",
+      "real": false,
+      "fake_note": "I made this one up — Clinton has a well-documented dry, self-aware humor about the mechanics of diplomacy that she deploys in podcast settings exactly like this. The tell is that the punchline is a little too tidy; the real Clinton usually buries the joke slightly deeper and then pivots to a substantive point."
+    },
+    {
+      "id": "q3",
+      "text": "I will say this — nobody ever hands you a briefing book and says 'great news, it's simple.' Every single one of them starts with 'it's complicated, but here's the short version,' and then it's forty-seven pages.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic National Committee fundraiser in Philadelphia, October 2022, as quoted in Politico's live coverage",
+      "real": false,
+      "fake_note": "I made this one up — Biden's exasperated, self-deprecating riff on bureaucratic complexity is pitch-perfect to his documented style of complaining affectionately about the machinery of government. The subtle giveaway is that 'forty-seven pages' is just specific enough to feel real but too neat a number for genuine off-the-cuff Biden, who usually trails off rather than lands cleanly."
+    },
+    {
+      "id": "q4",
+      "text": "People ask me if I miss the Senate. I tell them I miss the people. Then they ask about the process and I say — look, I've had dental work I enjoyed more than a reconciliation vote at two in the morning.",
+      "speaker": "John Kerry",
+      "context": "Conversation with David Axelrod on The Axe Files, Episode 478, released via CNN Audio, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Kerry's patrician self-deprecation about Senate procedure is thoroughly in character; he's spoken candidly about legislative exhaustion in multiple long-form interviews. The giveaway is the dental-work comparison, which is slightly too punchy a one-liner for Kerry, who typically circles back and qualifies his jokes."
+    },
+    {
+      "id": "q5",
+      "text": "I've sat in hearings where the witness was more prepared than every senator in the room, and you could see them realizing it in real time, and then — bless their hearts — they'd ask a longer question to compensate.",
+      "speaker": "Susan Collins",
+      "context": "Q&A session following her address to the Bipartisan Policy Center, Washington D.C., February 2020, as transcribed by C-SPAN",
+      "real": false,
+      "fake_note": "I made this one up — Collins's quiet, almost anthropological observations about Senate behavior are thoroughly documented in her long-form interviews, and her use of 'bless their hearts' would read as a rare, gentle needle from someone known for decorum. The giveaway is that she'd almost certainly never name the dynamic quite this directly in a public transcript."
+    },
+    {
+      "id": "q6",
+      "text": "I will do it myself where does he live?",
+      "speaker": "Cory Booker",
+      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes.",
+      "real": true,
+      "source": {
+        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
+        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
+        "date": "2010-12-27"
+      }
+    }
+  ]
+}
