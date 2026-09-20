@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-20",
+  "edition": 86,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Look, I don't think I was ever the most gifted person in any room I walked into. But I was usually the last one still in the room, and at some point that starts to mean something.",
+      "speaker": "Tom Brady",
+      "context": "Let's Go! with Tom Brady, Larry Fitzgerald & Jim Gray, podcast episode, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Brady has repeatedly used the 'not the most talented' framing in real interviews, which is what makes this so dangerous. The giveaway is 'last one still in the room' — it's a touch too poetic for Brady's actual off-the-cuff phrasing, which tends to be blunter."
+    },
+    {
+      "id": "q2",
+      "text": "It turns out Stoke away wasn't so bad",
+      "speaker": "Andros Townsend",
+      "context": "After being run over by a pitch roller while warming up in Thailand",
+      "real": true,
+      "source": {
+        "title": "Sports — Andros Townsend avoids injury after bizarre pitch roller incident in Thailand",
+        "url": "https://www.theguardian.com/football/2026/sep/20/andros-townsend-avoids-injury-after-bizarre-pitch-roller-incident-in-thailand",
+        "date": "2026-09-20"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Swimming in a relay is a completely different animal. You're not racing the clock anymore, you're racing the idea that you might be the one who costs somebody else something. That weight is real and I actually think I swam faster because of it, not despite it.",
+      "speaker": "Michael Phelps",
+      "context": "Interview with Bob Costas, NBC Sports Network, ahead of the 2016 Rio Olympics",
+      "real": false,
+      "fake_note": "I made this one up — Phelps has genuinely spoken about relays being emotionally distinct from individual events, so the subject matter is authentic. The tiny tell is the construction 'faster because of it, not despite it,' which leans just a hair too philosophical for how Phelps normally wrapped up a thought."
+    },
+    {
+      "id": "q4",
+      "text": "People assume golf is a quiet sport, like your brain gets a rest between shots. It's the opposite. The walk between shots is honestly the worst part. You've got about four minutes to talk yourself into something or completely out of it.",
+      "speaker": "Tiger Woods",
+      "context": "Golf Digest long-form feature, published March 2013",
+      "real": false,
+      "fake_note": "I made this one up — Tiger has discussed the mental demands of the walk and the gap between shots in real interviews, which grounds this perfectly. The subtle give is 'completely out of it' as a closing phrase; Tiger's real quotes tend to end with more controlled, less casual language."
+    },
+    {
+      "id": "q5",
+      "text": "Pressure is a privilege and champions adjust.",
+      "speaker": "Billie Jean King",
+      "context": "The line she says spontaneously came out of her mouth while motivating Lindsay Davenport as U.S. Fed Cup captain, recounted at Tennis.com.",
+      "real": true,
+      "source": {
+        "title": "Tennis.com — Billie Jean King shares origins of 'Pressure is a privilege'",
+        "url": "https://www.tennis.com/baseline/articles/billie-jean-king-shares-origins-of-favorite-famous-quote-pressure-is-a-privilege",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Baseball has been good to me since I quit trying to play it.",
+      "speaker": "Whitey Herzog",
+      "context": "The Hall of Fame manager reflecting on his so-so playing career versus his success as a skipper.",
+      "real": true,
+      "source": {
+        "title": "ESPN Page 2 — My 5 top quotes by Hall of Famer Whitey Herzog",
+        "url": "https://www.espn.ph/espn/page2/index?id=5408431",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

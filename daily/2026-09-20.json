@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-20",
+  "edition": 97,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's this thing that happens when a team loses a game they were supposed to win easily, and for about forty-eight hours everyone's a genius. Everyone knows what play should have been called, what the substitution pattern should have been. I used to get defensive about it. Now I just find it sort of interesting — people need that.",
+      "speaker": "Gregg Popovich",
+      "context": "Press conference Q&A following a San Antonio Spurs home loss to the Memphis Grizzlies, February 2016",
+      "real": false,
+      "fake_note": "I made this one up — Popovich is famous for his dry, psychologically shrewd observations about team dynamics and fan behavior, often delivered with exactly this kind of weary amusement in press settings. The tell is the closing 'people need that,' which is a touch too empathetic and generous; his real press conference voice tends to be drier and slightly more withholding."
+    },
+    {
+      "id": "q2",
+      "text": "I've never been good at switching off. I'll be somewhere genuinely beautiful — I was in Iceland a few years ago, extraordinary landscape — and part of my brain is already drafting an email. It's not something I'm proud of. It's just sort of the operating system I ended up with.",
+      "speaker": "Brian Eno",
+      "context": "Long-form interview with John Mulvey for Uncut magazine, issue 278, July 2020",
+      "real": false,
+      "fake_note": "I made this one up — Eno is a frequent and thoughtful interviewee who often reflects on creativity, cognition and his own psychological habits with exactly this self-analytical but unvarnished tone. The tell is 'operating system,' a metaphor that fits Eno's known interest in systems thinking but is also just plausible enough to scan as a genuine aside rather than a rehearsed line."
+    },
+    {
+      "id": "q3",
+      "text": "Honestly, I ate nothing else in all my time out in China except chicken nuggets. They were the only food I could properly trust which wouldn't affect my stomach.",
+      "speaker": "Usain Bolt",
+      "context": "Sprinter recalling his diet during the 2008 Beijing Olympics, in his autobiography, as quoted by NBC Sports",
+      "real": true,
+      "source": {
+        "title": "Sports — Usain Bolt on his 2008 Beijing Olympics diet",
+        "url": "https://www.yahoo.com/lifestyle/last-time-olympics-were-beijing-182154809.html",
+        "date": "2024-07-23"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "What I find strange is that nobody ever asks a chef whether they enjoy eating. They ask about technique, about sourcing, about the philosophy — and I understand that — but at some point someone should just ask: do you actually sit down and enjoy a meal? The answer, for me, is rarely.",
+      "speaker": "René Redzepi",
+      "context": "Panel discussion at the MAD Food Symposium, Copenhagen, August 2018",
+      "real": false,
+      "fake_note": "I made this one up — Redzepi is celebrated for his reflective, intellectually restless public voice and frequently interrogates the assumptions embedded in fine dining culture. The subtle tell is that he has in real interviews described genuine pleasure in simple food, so the 'rarely' lands as slightly more bleak than his actual documented outlook."
+    },
+    {
+      "id": "q5",
+      "text": "There was a period — I want to say it was maybe a year and a half — where I genuinely could not watch my own films. Not out of embarrassment, just this weird disconnection, like watching someone who borrowed my face. Meryl told me once that she never watches hers either and I thought, okay, so it's not just me going mad.",
+      "speaker": "Cate Blanchett",
+      "context": "Extended profile interview with Decca Aitkenhead for The Times, published October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Blanchett regularly discusses the psychological textures of acting and speaks candidly about alienation from her screen image, so the sentiment fits her perfectly. The tell is the namedrop of Meryl Streep, which is plausible but conveniently anchors the anecdote in a way that feels slightly too tidy."
+    },
+    {
+      "id": "q6",
+      "text": "Good afternoon. God that sounds strange. I just got up",
+      "speaker": "Elvis Presley",
+      "context": "Elvis addressing the afternoon crowd at Hampton Coliseum, 50 years ago",
+      "real": true,
+      "source": {
+        "title": "Music — 50 Years Ago Today: An Exhausted Elvis Presley Plays a Lackluster Matinee in Vir",
+        "url": "https://www.rollingstone.com/music/music-features/50-years-ago-today-elvis-presley-virginia-1235600565/",
+        "date": "2026-08-02"
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-20",
+  "edition": 94,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've been following this man for six weeks. He has no idea what he's protecting.",
+      "speaker": "The Conversation (1974)",
+      "context": "Harry Caul briefing a client in his spare, controlled manner",
+      "real": false,
+      "fake_note": "I made this one up — Caul's clipped professional detachment and the film's paranoid surveillance atmosphere are baked right in. The subtle giveaway is that Caul is usually even more withholding; he'd be unlikely to offer that last clause unprompted."
+    },
+    {
+      "id": "q2",
+      "text": "You're an errand boy sent by grocery clerks to collect a bill.",
+      "speaker": "Apocalypse Now (1979)",
+      "context": "Colonel Kurtz (Marlon Brando) to Captain Willard (Martin Sheen) at his compound, dismissing Willard's mission.",
+      "real": true,
+      "source": {
+        "title": "Apocalypse Now - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Apocalypse_Now",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Did we just become best friends?",
+      "speaker": "Step Brothers (2008)",
+      "context": "Brennan (Will Ferrell) to Dale (John C. Reilly) after they bond over shared interests; Dale replies \"Yup!\"",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "Don't thank me. Just make sure they spell your name right when they fire you.",
+      "speaker": "His Girl Friday (1940)",
+      "context": "Walter Burns throwing a backhanded favor at Hildy in the newsroom",
+      "real": false,
+      "fake_note": "I made this one up — the rapid-fire cynicism and Walter's manipulative generosity are pitch-perfect for this screwball world. The subtle giveaway is the slight modern ring of 'Don't thank me'; the real film's openers tend to plunge straight into the insult."
+    },
+    {
+      "id": "q5",
+      "text": "You want to talk about fair? Fair is a word people use when they're losing.",
+      "speaker": "A Few Good Men (1992)",
+      "context": "Kaffee pushing back during a tense pre-trial exchange with Jessup's lawyer",
+      "real": false,
+      "fake_note": "I made this one up — the combative courtroom rhythm and Kaffee's wisecracking defensiveness fit the film perfectly. The subtle giveaway is that it's slightly too tidy as a comeback; Sorkin's real lines tend to pile clause on clause rather than land this cleanly."
+    },
+    {
+      "id": "q6",
+      "text": "I'm kind of a big deal.",
+      "speaker": "Anchorman: The Legend of Ron Burgundy (2004)",
+      "context": "Ron Burgundy (Will Ferrell) boasting to Veronica Corningstone about his fame",
+      "real": true
+    }
+  ]
+}

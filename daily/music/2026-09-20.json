@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-20",
+  "edition": 89,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He just keep releasing all this old stuff and charging people for old pictures that you can find on the internet",
+      "speaker": "Sammy Hagar",
+      "context": "Sammy Hagar criticizing Alex Van Halen's approach to the Van Halen legacy",
+      "real": true,
+      "source": {
+        "title": "Music — Sammy Hagar Fires Back at Alex Van Halen: ‘You Act Like There Never Was a Van Ha",
+        "url": "https://www.rollingstone.com/music/music-news/sammy-hagar-fires-back-alex-van-halen-1235628732/",
+        "date": "2026-09-19"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I really didn't know whether this tour would carry on, I really didn't know whether I'd get on stage again",
+      "speaker": "Ed Sheeran",
+      "context": "Ed Sheeran speaking about his Loop tour after support acts and backing band dropped out",
+      "real": true,
+      "source": {
+        "title": "Music — Ed Sheeran returns to ‘Loop’ tour after support acts and backing band drop out: ",
+        "url": "https://www.nme.com/news/music/ed-sheeran-returns-to-loop-tour-after-support-acts-and-backing-band-drop-out-best-show-of-my-life-3969732?utm_source=rss&utm_medium=rss&utm_campaign=ed-sheeran-returns-to-loop-tour-after-support-acts-and-backing-band-drop-out-best-show-of-my-life",
+        "date": "2026-09-20"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Producing a record and producing an album are two different jobs and almost nobody talks about that. A record you get one song right. An album you've got to make sure song four doesn't kill song five, and song eight doesn't make the listener feel like going to sleep before you get to the ending you spent three weeks on.",
+      "speaker": "T Bone Burnett",
+      "context": "Interview with David Fricke, Rolling Stone, March 2013",
+      "real": false,
+      "fake_note": "I made this one up — T Bone has spoken at length about the architecture of albums versus singles and has a distinctive, slightly professorial tone in interviews that this matches well. The giveaway is how linear and logical the argument is; T Bone tends to go on stranger, more circuitous tangents before landing a point."
+    },
+    {
+      "id": "q4",
+      "text": "My mum heard 'Hotline Bling' for the first time and called me to say she liked it but that I should stand up straighter in the video. Not 'congratulations,' not 'that's a hit' — posture. That's where I come from.",
+      "speaker": "Drake",
+      "context": "Interview with Zane Lowe on Beats 1 Radio, Apple Music, October 2015",
+      "real": false,
+      "fake_note": "I made this one up — Drake consistently works his mother Sandi into interviews, often in exactly this kind of warm, grounding, slightly self-deprecating way, and the timing with Hotline Bling's release makes it plausible. The tell is that his real Sandi anecdotes tend to be more emotionally earnest; he wouldn't usually frame her as a punchline this cleanly."
+    },
+    {
+      "id": "q5",
+      "text": "Jazz is the only music that punishes you for being too prepared. You come in with all your material sorted out and the other musicians can feel it, and they'll just — they'll go somewhere else and leave you standing there with your homework in your hand.",
+      "speaker": "Herbie Hancock",
+      "context": "Keynote address at the Thelonious Monk Institute of Jazz annual gala, Washington D.C., November 2017",
+      "real": false,
+      "fake_note": "I made this one up — Herbie has spoken prolifically about spontaneity and musical conversation in jazz, and the framing of over-preparation as a liability is completely consistent with his documented philosophy. The subtle tell is 'homework in your hand' — the metaphor is a touch too writerly and visual for Herbie, who usually reaches for more abstract or spiritual language."
+    },
+    {
+      "id": "q6",
+      "text": "You live or die with the people you bring on the road. They're your people",
+      "speaker": "Ken Casey",
+      "context": "Dropkick Murphys' Ken Casey commenting on Ed Sheeran's treatment of Macklemore",
+      "real": true,
+      "source": {
+        "title": "Music — Dropkick Murphys’ Ken Casey says Ed Sheeran’s treatment of Macklemore “doesn’t s",
+        "url": "https://www.nme.com/news/music/dropkick-murphys-ken-casey-says-ed-sheerans-treatment-of-macklemore-doesnt-sit-right-3969719?utm_source=rss&utm_medium=rss&utm_campaign=dropkick-murphys-ken-casey-says-ed-sheerans-treatment-of-macklemore-doesnt-sit-right",
+        "date": "2026-09-20"
+      }
+    }
+  ]
+}
