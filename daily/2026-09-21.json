@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-21",
+  "edition": 98,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I do not like broccoli. And I haven't liked it since I was a little kid, and my mother made me eat it. And I'm President of the United States, and I'm not going to eat any more broccoli.",
+      "speaker": "George H. W. Bush",
+      "context": "Bush's lighthearted declaration at his March 22, 1990 news conference, when asked whether he had 'lost the broccoli vote' after it emerged he'd banned broccoli from Air Force One.",
+      "real": true,
+      "source": {
+        "title": "George H.W. Bush: Hater of Broccoli - Smart Politics (University of Minnesota Libraries)",
+        "url": "https://smartpolitics.lib.umn.edu/2013/07/09/george-hw-bush-hater-of-brocco/",
+        "date": "1990-03-22"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I think everybody pees in the pool.",
+      "speaker": "Michael Phelps",
+      "context": "Swimmer answering a Wall Street Journal interview question about pool etiquette, as quoted by CBS News",
+      "real": true,
+      "source": {
+        "title": "Michael Phelps on peeing in the pool: Everybody does it",
+        "url": "https://www.cbsnews.com/news/michael-phelps-on-peeing-in-the-pool-everybody-does-it/",
+        "date": "2012-08-10"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Playing Tiger in that film, the hardest thing wasn't the golf swing. It was figuring out what stillness looks like when someone's holding every single thing inside. I watched a lot of press conferences with the sound off, actually. You learn a lot when you can't hear the words.",
+      "speaker": "Khris Davis",
+      "context": "Interview with The Hollywood Reporter, Sundance Film Festival coverage, January 2025",
+      "real": false,
+      "fake_note": "I made this one up — Davis is known for methodical, quietly spoken interviews about his preparation process, and the 'with the sound off' technique is exactly the kind of specific craft detail actors share at festivals. The subtle giveaway is how elegantly the observation lands — real festival interviews are messier and more interrupted."
+    },
+    {
+      "id": "q4",
+      "text": "I tried meditating properly — like with an app, a cushion, the whole thing — for about three months. My mind kept drafting emails. At some point the instructor on the recording said 'let thoughts pass like clouds' and I thought, yeah, but what if the cloud is a contract negotiation?",
+      "speaker": "Shonda Rhimes",
+      "context": "Profile interview with The New Yorker, published February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Rhimes has written and spoken candidly about her anxiety, productivity obsession, and attempts at self-care, and this kind of rueful, self-aware humor is entirely her register. The subtle tell is 'what if the cloud is a contract negotiation' — it's a little too quotable for organic speech."
+    },
+    {
+      "id": "q5",
+      "text": "I make up different names for my cat all the time—Flapjack, Bowtie, Popcorn. But he's really, 'Hey you, cat.'",
+      "speaker": "Christopher Walken",
+      "context": "The actor on his pet cat in an Interview Magazine feature",
+      "real": true,
+      "source": {
+        "title": "Christopher Walken on Cats, Characters, and Career Highlights - Interview Magazine",
+        "url": "https://www.interviewmagazine.com/film/christopher-walken",
+        "date": "2012-01-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Someone sent me a TikTok of a kid playing 'Blackbird' note-for-note on a ukulele and I just sat there in my kitchen for a minute. Like, what am I supposed to do with that? I'm moved and slightly unemployed at the same time.",
+      "speaker": "Paul McCartney",
+      "context": "Interview on The Graham Norton Show, BBC One, broadcast November 2022",
+      "real": false,
+      "fake_note": "I made this one up — McCartney has spoken warmly in many interviews about young musicians covering his songs, and his humor tends to be self-deprecating and gently observational. The giveaway is 'slightly unemployed,' which is a little too constructed for his actual rambling conversational style."
+    }
+  ]
+}

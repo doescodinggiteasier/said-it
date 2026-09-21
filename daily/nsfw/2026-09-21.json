@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-21",
+  "edition": 84,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone asked me once if I had any regrets and I said yeah, I regret every relationship I had in my thirties because I was an absolute catastrophic arsehole to be around and somehow women kept showing up anyway. God bless 'em. Terrible taste, the lot of them. Present company excepted, darling.",
+      "speaker": "Oliver Reed",
+      "context": "The Late Late Show with Gay Byrne, RTÉ One, recorded Dublin, March 1988",
+      "real": false,
+      "fake_note": "I made this one up — Reed was legendarily candid, self-deprecating about his chaotic love life, and had exactly this kind of charm-wrapped-in-chaos delivery on chat shows. The subtle giveaway is 'present company excepted, darling' — a little too polished and self-aware for Reed, who usually let his rambles run rougher."
+    },
+    {
+      "id": "q2",
+      "text": "Everyone goes on about Woodstock like it was this beautiful transcendent experience. It was three days of mud and someone kept stepping on the cable. Beautiful, yeah. Also I couldn't find my shoes for four days after. I drove back to New York in someone else's boots. That's the real legacy.",
+      "speaker": "Janis Joplin",
+      "context": "Fusion Magazine interview with Robert Somma, published September 1969, conducted at the Chelsea Hotel, New York",
+      "real": false,
+      "fake_note": "I made this one up — Joplin was famously un-precious and funny about the gap between the myth and the mess of her life, and her real interviews from this period have exactly this deflating, specific quality. The giveaway is that Joplin's real Woodstock reflections were mostly warmer and more musical — the 'someone else's boots' punchline is funnier than her usual register."
+    },
+    {
+      "id": "q3",
+      "text": "People think standup is glamorous. Mate, I've slept in a Vauxhall Cavalier in a Tesco car park in Wolverhampton because the promoter kept the door money and legged it. You do that twice and you stop giving a toss what the critics think. You really, genuinely, fundamentally, stop giving a toss.",
+      "speaker": "Bernard Manning",
+      "context": "Jonathan Ross Show, ITV, first series, taped at the London Studios, October 1987",
+      "real": false,
+      "fake_note": "I made this one up — Manning was blunt, working-class-to-the-bone, and loved puncturing showbiz glamour with grimly specific road stories. The Wolverhampton/Cavalier detail is very him. The giveaway is the almost rhythmic repetition at the end — 'you really, genuinely, fundamentally' — which is slightly more self-conscious than Manning's usual blunter delivery."
+    },
+    {
+      "id": "q4",
+      "text": "And if you can write an hour of great stuff, you're like fucking Tolstoy.",
+      "speaker": "Norm Macdonald",
+      "context": "In a 2011 A.V. Club interview, arguing that stand-up is the hardest writing there is.",
+      "real": true,
+      "source": {
+        "title": "The A.V. Club — Interview: Norm Macdonald",
+        "url": "https://www.avclub.com/norm-macdonald-1798225024",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Alcohol was my poison. I drank Seagrams VO, a Canadian rye, with Coca-Cola. And beer. For me, beer was like air. I'd have a six-pack before noon.",
+      "speaker": "Alice Cooper",
+      "context": "Shock-rock legend Alice Cooper describing his heavy daily drinking before he got sober, in a Louder/Classic Rock feature on going cold turkey.",
+      "real": true,
+      "source": {
+        "title": "How Alice Cooper went cold turkey and made his most personal album (Louder)",
+        "url": "https://www.loudersound.com/features/how-alice-cooper-went-cold-turkey-and-made-his-most-personal-album",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Hollywood is a coke town, but weed is so much better.",
+      "speaker": "Miley Cyrus",
+      "context": "In a 2013 Rolling Stone cover interview, contrasting cocaine with the 'happy drugs' she prefers.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Miley Cyrus on Why She Loves Weed, Went Wild at the VMAs and Much More",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

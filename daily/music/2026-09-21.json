@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-21",
+  "edition": 90,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I went back and listened to the first Clash record a few months ago, properly listened, and I felt almost angry. Not because it was bad — it was ferocious — but because I remembered exactly what it felt like to think that energy was just the baseline. That that was just where music started now. And it didn't.",
+      "speaker": "Elvis Costello",
+      "context": "Profile interview with Alexis Petridis, The Guardian Weekend Magazine, September 2018",
+      "real": false,
+      "fake_note": "I made this one up — Elvis has written and spoken extensively about the Clash and that whole moment, and his tone in interviews is exactly this kind of rueful, historically-minded reminiscence. The tell is 'almost angry' — real Costello anger tends to be more specific and named rather than this floating."
+    },
+    {
+      "id": "q2",
+      "text": "People were mishearing the lyric, 'That would look good in a black letter font' as 'I would look good in a black leather thong,' so I decided to swap the chorus",
+      "speaker": "Matt Berninger",
+      "context": "The National's Matt Berninger discussing the title track of his Type It Up EP",
+      "real": true,
+      "source": {
+        "title": "Music — The National’s Matt Berninger Releases Type It Up EP and New Video",
+        "url": "https://pitchfork.com/story/the-nationals-matt-berninger-launches-type-it-up-ep-with-new-video/",
+        "date": "2026-09-21"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The thing with trap hi-hats is everybody thinks it's just a pattern — like, you drop them in and you're done. But the velocity on each hit, the tiny swings, that's where the whole feeling lives. I've sat with a single bar for six hours just moving things a few milliseconds one way and back.",
+      "speaker": "Metro Boomin",
+      "context": "Red Bull Music Academy lecture, Atlanta, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Metro is famously obsessive about the micro-details of his drum programming and has talked publicly about his process in exactly this granular way. The giveaway is that six hours on one bar sounds dramatic enough to be a quotable flex, which a real producer would probably understate."
+    },
+    {
+      "id": "q4",
+      "text": "People will come to me. I don't need to drive to you",
+      "speaker": "Miley Cyrus",
+      "context": "Miley hinting at plans for a concert residency",
+      "real": true,
+      "source": {
+        "title": "Music — Miley hints at plans for concert residency",
+        "url": "https://www.nme.com/news/music/miley-hints-at-plans-for-concert-residency-3969847?utm_source=rss&utm_medium=rss&utm_campaign=miley-hints-at-plans-for-concert-residency",
+        "date": "2026-09-21"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "It is absolutely crazy I'm not in the Rock and Roll Hall of Fame. But I'm in good company!",
+      "speaker": "Suzi Quatro",
+      "context": "Suzi Quatro interviewed about her career and the Rock and Roll Hall of Fame",
+      "real": true,
+      "source": {
+        "title": "Music — Suzi Quatro: ‘It is absolutely crazy I’m not in the Rock and Roll Hall of Fame. ",
+        "url": "https://www.theguardian.com/music/2026/sep/20/10-chaotic-questions-rock-singer-suzi-quatro-age-76",
+        "date": "2026-09-21"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I remember playing a session in Muscle Shoals — I think it was maybe '78 — and the drummer didn't show, and the guy they called in hadn't even heard the song. And what he played was so wrong that it was somehow exactly right. I've spent thirty years trying to recreate that accident on purpose and I've never quite gotten there.",
+      "speaker": "Bonnie Raitt",
+      "context": "Interview with Fresh Air host Terry Gross, NPR, broadcast October 2012",
+      "real": false,
+      "fake_note": "I made this one up — Bonnie's whole reputation is built on loving the imperfect, soul-drenched takes, and she really did record at Muscle Shoals, so every detail lands easy. The subtle giveaway is 'trying to recreate that accident on purpose' — it's just a touch too neatly self-aware for off-the-cuff speech."
+    }
+  ]
+}

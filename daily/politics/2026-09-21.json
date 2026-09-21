@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-21",
+  "edition": 86,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People keep asking me what I miss most about being governor. And I always say the same thing: the office had better coffee. That's genuinely it.",
+      "speaker": "Chris Christie",
+      "context": "Panel remarks at the University of Chicago Institute of Politics, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Christie has made an entire post-office persona out of self-aware, blunt humor, and he's spoken plenty about his time as New Jersey's governor. The tell is that the punchline lands a little too cleanly — real Christie tends to take twice as long to get there."
+    },
+    {
+      "id": "q2",
+      "text": "I've been in rooms where everyone agreed on the policy and they still couldn't agree on what to call it for a solid forty minutes. That's Washington. The thing works fine; the name is a disaster.",
+      "speaker": "Leon Panetta",
+      "context": "Conversation with Judy Woodruff at the Monterey Institute for International Studies, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Panetta's long career spanning Congress, the White House, CIA, and the Pentagon gives him exactly this kind of insider exasperation, and his public remarks consistently mix pragmatism with wry frustration at process. The giveaway is the near-aphoristic shape of the final two sentences, which is slightly tidier than his characteristically rambling interview style."
+    },
+    {
+      "id": "q3",
+      "text": "An old friend of mine once told me, you know, just be yourself - unless you suck.",
+      "speaker": "John Kennedy",
+      "context": "Republican U.S. Senator from Louisiana, known for his folksy one-liners, sharing a piece of self-deprecating advice. He used the line in a Jan. 25, 2018 Fox News interview. Innocuous and funny, with no target or policy edge.",
+      "real": true,
+      "source": {
+        "title": "15 times Sen. John Kennedy got folksy, snarky or both | nola.com",
+        "url": "https://www.nola.com/news/15-times-sen-john-kennedy-got-folksy-snarky-or-both/article_7fb01151-5776-54f2-a04f-49ffeb4d0447.html",
+        "date": "2018-01-25"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I have now come to the conclusion never again to think of marrying, and for this reason; I can never be satisfied with anyone who would be blockhead enough to have me.",
+      "speaker": "Abraham Lincoln",
+      "context": "A candidly self-mocking line from a young Lincoln's letter, poking fun at his own eligibility as a suitor.",
+      "real": true,
+      "source": {
+        "title": "Abraham Lincoln - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Abraham_Lincoln",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "We're going to hit them hard. There will be a response.",
+      "speaker": "Trump",
+      "context": "President Trump speaking to Fox News correspondent Trey Yingst after Iran's retaliatory strikes",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump vows response to Iran's retaliatory strikes: 'We're going to hit them hard",
+        "url": "https://thehill.com/homenews/administration/6060630-us-iran-exchange-strikes/",
+        "date": "2026-08-31"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The thing nobody tells you about the Senate is that a huge portion of your day is just waiting for the elevator. I could have written a book in those elevators. Several, probably.",
+      "speaker": "Claire McCaskill",
+      "context": "Interview on MSNBC's \"Deadline: White House,\" January 2022",
+      "real": false,
+      "fake_note": "I made this one up — McCaskill has spent years on TV turning Senate life into relatable comedy for regular viewers, and griping about logistical tedium fits her style exactly. The subtle giveaway is the 'Several, probably' kicker, which is just a touch more polished than her usual stream-of-consciousness delivery."
+    }
+  ]
+}

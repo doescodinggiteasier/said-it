@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-21",
+  "edition": 95,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You want to know what I think? I think you've been talking to the wrong people.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes pressing a reluctant witness during his investigation",
+      "real": false,
+      "fake_note": "I made this one up — Gittes is all deflection and low-key menace, so a line like this fits his interrogation rhythm perfectly. The subtle giveaway is it's just slightly too generic for Towne's famously precise dialogue."
+    },
+    {
+      "id": "q2",
+      "text": "He's not dangerous. He's just never been told no.",
+      "speaker": "The Silence of the Lambs (1991)",
+      "context": "Clarice Starling discussing Buffalo Bill with Jack Crawford",
+      "real": false,
+      "fake_note": "I made this one up — it mimics the film's clinical profiling vocabulary and Clarice's earnest analytical voice. The giveaway is that the real screenplay tends to be more technically specific when characters discuss the killer's psychology."
+    },
+    {
+      "id": "q3",
+      "text": "Don't thank me. Just stay out of the way and let me finish.",
+      "speaker": "Aliens (1986)",
+      "context": "Ripley, dismissing a Colonial Marine who compliments her handling of a situation",
+      "real": false,
+      "fake_note": "I made this one up — Ripley's clipped, no-nonsense register makes it sound completely at home in the film. The giveaway is that it's a touch too clean and aphoristic compared to Cameron's more action-tangled actual dialogue."
+    },
+    {
+      "id": "q4",
+      "text": "One does not simply walk into Mordor.",
+      "speaker": "The Lord of the Rings: The Fellowship of the Ring (2001)",
+      "context": "Boromir (Sean Bean) arguing against the plan to destroy the Ring",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "My mama always said life was like a box of chocolates. You never know what you're gonna get.",
+      "speaker": "Forrest Gump (1994)",
+      "context": "Forrest (Tom Hanks) sits on a bus-stop bench recounting his mother's favorite saying.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Half these men don't even know what state they're in.",
+      "speaker": "Apocalypse Now (1979)",
+      "context": "Captain Willard observing the disarray at a forward firebase",
+      "real": false,
+      "fake_note": "I made this one up — Willard's narration is dry and disillusioned, which this matches well. The subtle giveaway is that the real film's narration tends to be more poetic and hallucinatory than this plainspoken observation."
+    }
+  ]
+}
