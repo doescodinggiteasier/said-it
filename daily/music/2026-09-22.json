@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-22",
+  "edition": 91,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Thank you for waiting. It certainly is two of my most beautiful pieces of work.",
+      "speaker": "Lana Del Rey",
+      "context": "Announcing companion album Spyda",
+      "real": true,
+      "source": {
+        "title": "Music — Lana Del Rey Announces Stove Companion Album Spyda",
+        "url": "https://consequence.net/2026/07/lana-del-rey-stove-companion-album-spyda/",
+        "date": "2026-07-16"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I used to track down old pressing plants just to hear what the vinyl sounded like before they cleaned up the process. There's a record I found in Ohio — I'm not even sure what it is, the label is half torn — and it just sounds better than anything I've made. I think about that a lot.",
+      "speaker": "Jack White",
+      "context": "Interview with David Fricke, Rolling Stone, March 2014",
+      "real": false,
+      "fake_note": "I made this one up — Jack genuinely obsesses over vinyl manufacturing and lo-fi sound, and the Ohio detail feels very on-brand. The subtle giveaway is that he'd probably name the pressing plant rather than leave it this vague."
+    },
+    {
+      "id": "q3",
+      "text": "My mother had this one Aretha record, and the sleeve was so worn you could barely read the title, and she wouldn't let anyone else touch it. Not even to look. And I remember thinking — I want to make something someone won't let anyone touch.",
+      "speaker": "Mary J. Blige",
+      "context": "Sit-down interview with Gayle King, CBS Mornings, aired in conjunction with the release of Good Morning Gorgeous, February 2022",
+      "real": false,
+      "fake_note": "I made this one up — Mary has spoken repeatedly about Aretha's influence and about her mother's role in shaping her relationship with music. The worn-sleeve detail is the kind of concrete image she uses. The subtle tell is that she'd almost certainly name the specific Aretha album rather than leaving it unnamed."
+    },
+    {
+      "id": "q4",
+      "text": "Good music is good music, and most music is not!",
+      "speaker": "Steve Reich",
+      "context": "Interview as he approaches his 90th birthday",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Good music is good music, and most music is not!’ As he hits 90, master minimal",
+        "url": "https://www.theguardian.com/music/2026/sep/22/steve-reich-turns-90-interview",
+        "date": "2026-09-22"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I didn't know what this audience would be like tonight. I didn't know if I would have things thrown at me.",
+      "speaker": "Ed Sheeran",
+      "context": "Ed Sheeran explaining why he changed his stage setup in Philadelphia due to security concerns",
+      "real": true,
+      "source": {
+        "title": "Music — Ed Sheeran Says Security Concerns Caused Him to Change Stage Setup in Philadelph",
+        "url": "https://consequence.net/2026/09/ed-sheeran-stage-security-concerns-philadelphia/",
+        "date": "2026-09-20"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Jazz musicians have this thing where they play a note and then immediately start wondering if it was the right note, and then they play something to answer that question, and then that answer raises another question. A whole set can be one long argument you're having with yourself.",
+      "speaker": "Wynton Marsalis",
+      "context": "Lecture-demonstration at the Juilliard School's Jazz Studies program, recorded and posted to Lincoln Center's YouTube channel, April 2016",
+      "real": false,
+      "fake_note": "I made this one up — Wynton regularly gives exactly this kind of pedagogical, intellectually framed explanation of improvisation to students and general audiences. The giveaway is that he'd usually close the thought by naming a specific musician who embodied this quality rather than leaving it as a general principle."
+    }
+  ]
+}

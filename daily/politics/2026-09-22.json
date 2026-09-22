@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-22",
+  "edition": 87,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It is clear that we do not have the independent legal authority to enforce this warrant.",
+      "speaker": "Zohran Mamdani",
+      "context": "NYC Mayor Mamdani backing off his promise to arrest Netanyahu, Tuesday statement",
+      "real": true,
+      "source": {
+        "title": "Politics — Mamdani says he doesn’t have legal authority to arrest Netanyahu",
+        "url": "https://thehill.com/policy/international/5982418-mamdani-netanyahu-arrest-promise-withdrawn/",
+        "date": "2026-07-22"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I once had a constituent stop me in a grocery store to complain about a pothole for eleven minutes. I had melting ice cream in my cart. I nodded the whole time. That's representative democracy.",
+      "speaker": "Tim Kaine",
+      "context": "Keynote remarks at the Virginia Democratic Party annual Jefferson-Jackson Dinner, Richmond, June 2017",
+      "real": false,
+      "fake_note": "I made this one up — Kaine is famously self-effacing and community-minded, and his retail-politics stories about constituent interactions are a staple of his stump style. The giveaway is the ice cream detail — almost too vivid and sitcom-specific for an actual recollection."
+    },
+    {
+      "id": "q3",
+      "text": "There's a version of every press conference where I say exactly what I'm thinking, and there's the version you actually see. My communications team is very, very employed.",
+      "speaker": "Justin Trudeau",
+      "context": "Remarks at the Parliamentary Press Gallery Dinner, Ottawa, May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Trudeau has a well-documented habit of self-aware, slightly self-mocking humor at roast-style events, and this plays perfectly into that register. The tell is that his real jokes at these dinners tend to name specific staffers, which grounds them in a way this quote doesn't quite."
+    },
+    {
+      "id": "q4",
+      "text": "I thought I looked real cute in my uniform, and then I heard a boy yell from the bleachers, 'Make that basket, bird legs.' And my greatest fear is that same guy is somewhere out there in the audience tonight, and he's going to cut me down to size.",
+      "speaker": "Ann Richards",
+      "context": "The Texas governor opening her celebrated 1988 Democratic National Convention keynote with a self-deprecating story about her eighth-grade basketball days.",
+      "real": true,
+      "source": {
+        "title": "Ann Richards, DNC keynote address, 1988 - Speakola",
+        "url": "https://speakola.com/political/ann-richards-dnc-keynote-1988",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I actually read the whole bill. All four hundred and something pages. My staff thought I was bluffing, and honestly, for the first two hundred I was.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic caucus luncheon, reported by Politico, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-deprecating, rambling candor about his own habits is pitch-perfect here, and the admission about bluffing sounds exactly like his unguarded asides. The subtle giveaway is that he'd almost certainly name the specific bill."
+    },
+    {
+      "id": "q6",
+      "text": "It's hard to lead a cavalry charge if you think you look funny on a horse.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The two-time Democratic presidential nominee and UN ambassador, known for his wit; a characteristically self-deprecating line about self-confidence and self-image.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

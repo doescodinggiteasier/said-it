@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-22",
+  "edition": 85,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "We rolled into Frankfurt with no soundcheck, no sleep, and somebody had apparently traded our rider for a crate of schnapps and a tambourine. We played two hours. Best show of the tour. Figure that out.",
+      "speaker": "Bon Scott",
+      "context": "Interview with Sounds magazine journalist Phil Sutcliffe, backstage at the Rheinhalle, Düsseldorf, West Germany, October 1978",
+      "real": false,
+      "fake_note": "I made this one up — Bon Scott's storytelling had this exactly chaotic, matter-of-fact energy about touring disasters. The giveaway is 'traded our rider for a tambourine,' which is a punchline too perfectly structured for an off-the-cuff backstage remark."
+    },
+    {
+      "id": "q2",
+      "text": "I did an awards show in '72 — won't say which one — and the guy handing me the trophy whispered, 'Congratulations, this is a real honour.' I whispered back, 'Pal, I've been awake since Thursday and I smell like a bourbon distillery, so let's agree on what honour looks like before we proceed.'",
+      "speaker": "Hunter S. Thompson",
+      "context": "Spoken-word performance and Q&A at Tulane University, New Orleans, Louisiana, April 1990 — bootleg recording cited in the HST fan archive at gonzo.org",
+      "real": false,
+      "fake_note": "I made this one up — Thompson's spoken anecdotes had exactly this paranoid specificity and the confrontational whisper-back structure is very him. The giveaway is 'since Thursday,' which is the kind of precise detail Thompson actually deployed, making this one dangerously close to plausible."
+    },
+    {
+      "id": "q3",
+      "text": "My mother used to say, 'Elizabeth, a lady never raises her voice.' Darling, I have been engaged eight times. At some point raising your voice is just basic project management.",
+      "speaker": "Elizabeth Taylor",
+      "context": "Dinner conversation at Spago, West Hollywood, recounted in W Magazine's profile 'Elizabeth Unfiltered,' October 1992",
+      "real": false,
+      "fake_note": "I made this one up — Taylor was famously self-aware and wry about her marriages, and she had the wit for exactly this kind of sharp reframe. The giveaway is 'basic project management,' which is modern corporate vocabulary that would be slightly anachronistic in Taylor's natural register."
+    },
+    {
+      "id": "q4",
+      "text": "Health nuts are going to feel stupid someday, lying in hospitals dying of nothing.",
+      "speaker": "Redd Foxx",
+      "context": "A signature dark one-liner from the pioneering, famously raunchy stand-up comedian (star of 'Sanford and Son'), mocking clean-living health fanatics. Foxx's party-hard, cigarette-and-booze persona was legendary.",
+      "real": true,
+      "source": {
+        "title": "Quote Details: Redd Foxx (The Quotations Page)",
+        "url": "https://www.quotationspage.com/quote/699.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Maybe it was because we did it unabashedly out in the open. We didn't know it was shocking. Perhaps we were just too fucking frank.",
+      "speaker": "Slash",
+      "context": "The Guns N' Roses guitarist, in a Classic Rock/Louder interview, explaining why his band got a wilder reputation than peers who did 'the same shit'.",
+      "real": true,
+      "source": {
+        "title": "Louder (Classic Rock) — Six Pack: Slash on drugs, dying and Axl Rose",
+        "url": "https://www.loudersound.com/features/six-pack-slash-on-drugs-dying-and-axl-rose",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The thing about the blues is it don't care if you're happy. You could be havin' the greatest damn day of your life and you sit down to play and it just reaches up and slaps you right in the chest and says, nope, we're doing this instead. And you just say yes ma'am.",
+      "speaker": "Muddy Waters",
+      "context": "Backstage interview with Guitar Player magazine contributor Dan Forte, Montreux Jazz Festival, Montreux, Switzerland, July 1978",
+      "real": false,
+      "fake_note": "I made this one up — Muddy Waters spoke about the blues with exactly this personified, reverent-but-blunt intimacy, and the cadence here matches his documented interview style closely. The giveaway is 'yes ma'am' as the closer — it's a touch too neat and quotable for genuine offhand speech."
+    }
+  ]
+}

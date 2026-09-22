@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-22",
+  "edition": 88,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Winning Afcon was 10 times better than the Champions League",
+      "speaker": "Édouard Mendy",
+      "context": "Former Chelsea keeper reflecting on his Senegal international career",
+      "real": true,
+      "source": {
+        "title": "Sports — Édouard Mendy: ‘Winning Afcon was 10 times better than the Champions League’",
+        "url": "https://www.theguardian.com/football/2026/sep/22/edouard-mendy-winning-afcon-was-10-times-better-than-the-champions-league",
+        "date": "2026-09-22"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I don't think I'll be legally able to drive.",
+      "speaker": "Robert MacIntyre",
+      "context": "Scottish golfer MacIntyre, joking with reporters right after winning the 2024 Genesis Scottish Open, explaining he planned to celebrate so hard he might not make his next-day press conference at Royal Troon ahead of the Open Championship.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — Robert MacIntyre rallies for historic win at Scottish Open",
+        "url": "https://sports.yahoo.com/robert-macintyre-rallies-for-historic-win-at-scottish-open-the-home-event-hes-cared-about-most-013046981.html",
+        "date": "2024-07-16"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "When I came back from the hamstring the second time, my left leg felt like it belonged to somebody I didn't really like. You're running but you're also negotiating the whole time.",
+      "speaker": "Mo Farah",
+      "context": "The Sunday Times Sports Magazine, profile published ahead of the 2019 London Marathon",
+      "real": false,
+      "fake_note": "I made this one up — Farah has spoken about his injury comeback periods in exactly this kind of grudging, physical-detail-heavy language, and the negotiating metaphor fits his understated British delivery. The timing around the 2019 London Marathon is plausible but I picked it because his injury history around then is slightly fuzzy in most fans' minds."
+    },
+    {
+      "id": "q4",
+      "text": "Sprint finishes are not about who is fastest. Everyone left in a sprint finish is fast. It's about who is least afraid of making a fool of themselves by going too early. I have gone too early more times than I can count.",
+      "speaker": "Mark Cavendish",
+      "context": "VeloNews Escape Collective podcast, recorded during the 2023 Giro d'Italia media day",
+      "real": false,
+      "fake_note": "I made this one up — Cavendish is remarkably analytical and candid about the psychology of the sprint, and the self-deprecating admission at the end is very consistent with his more reflective interviews. The one thing that might trip a cycling fan: this edges slightly toward the aphorism structure he normally avoids."
+    },
+    {
+      "id": "q5",
+      "text": "Resignations are for prime ministers and those caught with their trousers down, not for me",
+      "speaker": "Brian Clough",
+      "context": "The legendary English football manager on his refusal to quit, in a collection of his most memorable one-liners.",
+      "real": true,
+      "source": {
+        "title": "Sky Sports — Brian Clough in quotes: Fifteen of the legendary manager's most memorable one-liners",
+        "url": "https://www.skysports.com/football/news/11689/9642762/brian-clough-fifteen-of-the-legendary-managers-most-memorable-one-liners",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I had a stretch — maybe three weeks around Christmas one year — where every single shot I hit felt like I was borrowing someone else's swing. You just keep showing up because what else are you going to do, go home and sulk? Well, I did some of that too.",
+      "speaker": "Rory McIlroy",
+      "context": "The Golf Channel's 'Morning Drive,' recorded during the lead-up to the 2023 Hero World Challenge",
+      "real": false,
+      "fake_note": "I made this one up — McIlroy is unusually candid about his mental slumps compared to most tour players, and the self-interrupting honesty at the end sounds very him. The Christmas timing is plausible but conveniently unverifiable, which is the quiet trick."
+    }
+  ]
+}

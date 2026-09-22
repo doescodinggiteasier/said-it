@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-22",
+  "edition": 99,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
+      "speaker": "Ted Stevens",
+      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality.",
+      "real": true,
+      "source": {
+        "title": "Series of tubes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
+        "date": "2006-06-28"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I'm not an animal lover if that means you think things are nice if you can pet them, but I am intoxicated by animals.",
+      "speaker": "David Attenborough",
+      "context": "Naturalist and broadcaster, in a 2013 Metro interview, on his relationship with wildlife",
+      "real": true,
+      "source": {
+        "title": "David Attenborough - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/David_Attenborough",
+        "date": "2013-01-29"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I will do it myself where does he live?",
+      "speaker": "Cory Booker",
+      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes.",
+      "real": true,
+      "source": {
+        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
+        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
+        "date": "2010-12-27"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I had a meeting early in my career where an executive told me my voice was 'regionally limiting.' I genuinely didn't know what to do with that information, so I just — went home and recorded more demos.",
+      "speaker": "Dolly Parton",
+      "context": "Acceptance remarks at the MusiCares Person of the Year gala, Los Angeles, February 2019",
+      "real": false,
+      "fake_note": "I made this one up — the quiet resilience without self-pity, the slightly droll delivery of 'regionally limiting,' and the response of just getting back to work are all vintage Dolly. The giveaway is the timeline: she was signed and successful very young, so a discouraging executive meeting fits better in the mid-1960s than her documented early career story."
+    },
+    {
+      "id": "q5",
+      "text": "Look, I've read my Wikipedia page. It's fine. It's got the dates mostly right. But there's this whole section about my 'influences' that reads like someone asked a stranger to guess based on the haircut.",
+      "speaker": "Beck",
+      "context": "Profile interview with Pitchfork, conducted ahead of the release of Hyperspace, published November 2019",
+      "real": false,
+      "fake_note": "I made this one up — the detached bemusement, the specific target ('influences' section), and the deadpan punchline about the haircut are completely in Beck's register. The mild giveaway is that he rarely talks about his own press or Wikipedia; he tends to deflect toward the music itself."
+    },
+    {
+      "id": "q6",
+      "text": "Formula One when I started — the data was there but nobody really knew what questions to ask it. Now everybody knows exactly what questions to ask, which is its own kind of problem, because you can start optimizing for the answer instead of for the lap time.",
+      "speaker": "Lewis Hamilton",
+      "context": "Extended interview with The Financial Times, 'Lunch with the FT' series, published October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Hamilton genuinely talks about the evolution of data in F1, and the paradox he describes ('optimizing for the answer instead of the lap time') is subtle enough that an F1 fan would pause. The mild giveaway is that this is more analytically framed than his usual public discourse, which leans more toward the emotional and physical side of driving."
+    }
+  ]
+}
