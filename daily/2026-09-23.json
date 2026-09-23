@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-23",
+  "edition": 100,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I remember the first time I tried to explain to my mother what I actually do for a living — like, the actual mechanics of it — and she just nodded and then asked if I could fix her printer. That was maybe 2005. She still asks about the printer.",
+      "speaker": "Bill Gates",
+      "context": "Interview with Conan O'Brien on Conan, TBS, March 2013",
+      "real": false,
+      "fake_note": "I made this one up — Gates frequently tells self-deprecating family anecdotes about the gap between his public image and domestic reality, and the printer detail feels exactly like the kind of mundane tech-support frustration he's referenced in real interviews. The subtle giveaway is the wistful callback at the end; Gates tends to land jokes with data, not sentiment."
+    },
+    {
+      "id": "q2",
+      "text": "I've done scenes where I cried for six hours straight and then the director says, 'That's great, but can we go again because the focus puller had a thing?' And you just — you recalibrate. You find the grief again. After about the fourth time it starts to feel like a very strange form of cardio.",
+      "speaker": "Cate Blanchett",
+      "context": "In conversation with Dax Shepard, Armchair Expert podcast, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Blanchett speaks with this exact dry, almost clinical detachment about the physical demands of emotional performance, and she's discussed the absurdity of technical interruptions mid-scene in several real profiles. The giveaway is 'strange form of cardio,' which is a touch more comic than her usual register."
+    },
+    {
+      "id": "q3",
+      "text": "Every record I've made, there's one song that I almost cut that I now think is the best thing on it. Without fail. And I cannot explain to you my decision-making process at that stage because it clearly isn't working.",
+      "speaker": "Taylor Swift",
+      "context": "Interview with Robert Sullivan, Vogue, September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Swift speaks candidly and with genuine self-analysis about her creative process and track-listing decisions in real interviews, and this sounds like the kind of introspective admission she makes while being disarmingly funny about it. The giveaway is the flat 'it clearly isn't working,' which is slightly more self-critical than she tends to go on record."
+    },
+    {
+      "id": "q4",
+      "text": "You know, grass has a life like humans have a life",
+      "speaker": "Trump",
+      "context": "Trump showing off White House renovations, discussing new grass around the helipad",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump talks about grass as he shows off White House renovations – video",
+        "url": "https://www.theguardian.com/us-news/video/2026/aug/19/trump-talks-grass-white-house",
+        "date": "2026-08-23"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I am extraordinarily patient, provided I get my own way in the end.",
+      "speaker": "Margaret Thatcher",
+      "context": "Self-aware, tongue-in-cheek remark by the British Prime Minister in an interview published in The Observer, 4 April 1989 (as catalogued by the Margaret Thatcher Centre's quotes page). Speaker was a UK Conservative Prime Minister.",
+      "real": true,
+      "source": {
+        "title": "Quotes - The Margaret Thatcher Centre",
+        "url": "https://www.thatchercentre.com/quotes/",
+        "date": "1989-04-04"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People always want to know what I eat before a race, and honestly it's embarrassing — it's not some ancient Jamaican recipe, it's usually whatever's closest to the warm-up track. I ate chicken nuggets before one of the best performances of my career. I'm not saying that's the reason, but I'm not saying it isn't.",
+      "speaker": "Usain Bolt",
+      "context": "Sit-down interview with Graham Norton, The Graham Norton Show, BBC One, August 2017",
+      "real": false,
+      "fake_note": "I made this one up — Bolt has genuinely and famously talked about eating McDonald's chicken nuggets at the 2008 Beijing Olympics, so this extends that real story in a plausible, self-amused way. The giveaway is the hedged pseudo-endorsement at the end, which is slightly more coy than Bolt usually plays it."
+    }
+  ]
+}

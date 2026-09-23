@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-23",
+  "edition": 86,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "After I stopped doing drugs I started to fuck like a bunny!",
+      "speaker": "Courtney Love",
+      "context": "On how getting sober changed her sex drive, in an interview with The Fix.",
+      "real": true,
+      "source": {
+        "title": "The Fix interview",
+        "url": "https://www.thefix.com/courtney-love-interview/",
+        "date": "2011"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "He told me if I carried on at the same pace I'd start bleeding out of my dick, my asshole, my eyes, my nose – fucking everywhere, man. Just bleeding out of every orifice and never stopping.",
+      "speaker": "Zakk Wylde",
+      "context": "Black Label Society / Ozzy guitarist Zakk Wylde, laughing as he recounts his doctor's blunt warning about his extreme drinking while on blood thinners, in a 2013 Louder/Metal Hammer interview.",
+      "real": true,
+      "source": {
+        "title": "Black Label Society's Zakk Wylde interview: alcohol, acoustic albums and prison gigs with Ozzy Osbourne (Louder)",
+        "url": "https://www.loudersound.com/features/zakk-wylde-black-label-society-interview-2013",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Someone asked me backstage, 'George, how do you stay so sharp at your age?' I said, mate, I had four scotches before soundcheck and I'm running on pure spite. Sharp's got nothing to do with it.",
+      "speaker": "George Carlin",
+      "context": "Recorded Q&A segment following his 'It's Bad for Ya' taping at the Jersey City Performing Arts Center, March 2008",
+      "real": false,
+      "fake_note": "I made this one up — Carlin's late-era voice was exactly this: self-deprecating, combative, and anti-inspirational, so the spite angle fits perfectly. The giveaway is 'mate' — Carlin never used British slang, he was aggressively New York."
+    },
+    {
+      "id": "q4",
+      "text": "Someone dared me to eat an entire cheese wheel at the wrap party for 'Blues Brothers.' I said, watch me. I ate most of it. I do not want to discuss the rest of the evening, it was between me, God, and a Chicago hotel bathroom.",
+      "speaker": "John Candy",
+      "context": "Roundtable interview recorded for a Canadian Broadcasting Corporation arts programme during the Toronto International Film Festival, September 1982",
+      "real": false,
+      "fake_note": "I made this one up — Candy's self-deprecating physical comedy translated perfectly into real-life anecdote mode, and his Blues Brothers connection was genuine. The giveaway is the wrap party timing — the Blues Brothers wrapped in 1979 and Candy had a very minor role, making a cheese-wheel dare at *that* specific wrap party an unlikely centrepiece story."
+    },
+    {
+      "id": "q5",
+      "text": "Somebody at the Grammys told me my outfit was 'provocative.' I said, honey, provocative is a philosophy paper. This is just Tuesday. Now get your elbow out of my sequins.",
+      "speaker": "Eartha Kitt",
+      "context": "Backstage press pool conversation recorded at the 30th Grammy Awards, Radio City Music Hall, New York, March 1988",
+      "real": false,
+      "fake_note": "I made this one up — Kitt's backstage wit was legendarily acidic and her vocabulary was theatrical and precise in exactly this way, so this fits her register closely. The subtle giveaway is 'philosophy paper' — Kitt's real put-downs were more sensual and less academic in their comparisons."
+    },
+    {
+      "id": "q6",
+      "text": "I don't go on stage high but I'll take an edible after I get off stage and chill out. I do write a lot of jokes while high though, and then the next day I'll look at them and go, 'Well that's not that funny.'",
+      "speaker": "Jim Jefferies",
+      "context": "Crude Australian comedian Jim Jefferies — who built his name on drinking, drugs, and porn material — talking candidly about weed and his creative process, in a High Times interview (Aug 2023).",
+      "real": true,
+      "source": {
+        "title": "Jim Jefferies Is Living His Best Life (High Times)",
+        "url": "https://hightimes.com/culture/jim-jefferies-is-living-his-best-life/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

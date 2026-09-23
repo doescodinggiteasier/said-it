@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-23",
+  "edition": 89,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's a moment in a race, usually somewhere around the halfway point, where you make a deal with yourself. The deal is always a lie, but you shake on it anyway and keep moving.",
+      "speaker": "Eliud Kipchoge",
+      "context": "Keynote remarks at the World Athletics Championships media breakfast, Budapest, August 2023",
+      "real": false,
+      "fake_note": "I made this one up — Kipchoge really does discuss the inner negotiation of long-distance running in philosophical terms, and this has his characteristic gentle wit. The tell is 'the deal is always a lie'; Kipchoge's public philosophy leans toward the positive, and he'd more likely frame the mental trick as wisdom rather than self-deception."
+    },
+    {
+      "id": "q2",
+      "text": "People forget I was cut. Twice. And both times I drove home thinking, okay, what else am I good at? And both times I couldn't come up with anything. So I went back.",
+      "speaker": "Kurt Warner",
+      "context": "Address to the Pro Football Hall of Fame Class of 2017 enshrinement ceremony, Canton, Ohio, August 2017",
+      "real": false,
+      "fake_note": "I made this one up — Warner's story of being cut and stocking grocery shelves is one of the most famous in NFL history, and he talks about it constantly in exactly this plain-spoken, self-deprecating way. The giveaway is 'I couldn't come up with anything'; Warner typically credits faith as the thing that kept him going, so omitting that entirely is the out-of-character beat."
+    },
+    {
+      "id": "q3",
+      "text": "When I came over I could not understand anything anyone said to me for about three months. I just smiled and nodded. I probably agreed to some very strange things.",
+      "speaker": "Dirk Nowitzki",
+      "context": "Q&A session at Basketball Without Borders Africa clinic, Johannesburg, August 2019",
+      "real": false,
+      "fake_note": "I made this one up — Dirk has often spoken warmly and self-deprecatingly about his early days adapting to America and the NBA, and this kind of dry, understated humor is completely his register. The giveaway is the last sentence; it's a little too perfectly constructed as a punchline for something that was supposed to be an offhand comment."
+    },
+    {
+      "id": "q4",
+      "text": "I had to stay patient and try to have a cool head because everywhere else there was fire",
+      "speaker": "Édouard Mendy",
+      "context": "Recalling a tense penalty shootout moment with Senegal",
+      "real": true,
+      "source": {
+        "title": "Sports — Édouard Mendy: ‘Winning Afcon was 10 times better than the Champions League’",
+        "url": "https://www.theguardian.com/football/2026/sep/22/edouard-mendy-winning-afcon-was-10-times-better-than-the-champions-league",
+        "date": "2026-09-22"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "It's like going to a bar and falling in love every year. That's what it is. You fall in love and get your heart broken, fall in love, get your heart broken.",
+      "speaker": "Doc Rivers",
+      "context": "The veteran NBA head coach on the recurring emotional toll of chasing a championship each season.",
+      "real": true,
+      "source": {
+        "title": "Andscape — Doc Rivers and the heartbreak of being an NBA head coach",
+        "url": "https://andscape.com/features/doc-rivers-and-the-heartbreak-of-being-an-nba-head-coach/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "A goalkeeper who talks too much is a goalkeeper who's scared. The noise is just covering something up. I learned to be very suspicious of the loud ones.",
+      "speaker": "Petr Cech",
+      "context": "Tactical discussion panel at the UEFA Goalkeeper Symposium, Nyon, Switzerland, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Cech is known for being unusually analytical and measured for a goalkeeper, and this kind of psychological observation about the position fits his documented thoughtfulness. The giveaway is the slight edge of contempt in 'I learned to be very suspicious'; Cech is almost uniformly collegial in public and rarely dismisses peers even implicitly."
+    }
+  ]
+}

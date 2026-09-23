@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-23",
+  "edition": 88,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The thing about a filibuster is — and I say this as someone who has both conducted one and survived one — it is a profoundly humbling experience. You run out of interesting things to say around hour four. After that you're basically just reading a phone book with conviction.",
+      "speaker": "Ted Cruz",
+      "context": "Panel discussion at the Texas Tribune Festival, Austin, Texas, September 2018",
+      "real": false,
+      "fake_note": "I made this one up — Cruz famously conducted a 21-hour filibuster in 2013, including reading Green Eggs and Ham, so he has genuine material to draw from here. The giveaway is 'with conviction' as the kicker; his real self-deprecation about that episode tends to be a little more defensive."
+    },
+    {
+      "id": "q2",
+      "text": "Washington runs on acronyms. I have been in this city long enough that I sometimes think in acronyms. My wife has asked me to stop.",
+      "speaker": "Chuck Hagel",
+      "context": "Keynote remarks at the Atlantic Council Distinguished Leadership Awards, Washington D.C., April 2014",
+      "real": false,
+      "fake_note": "I made this one up — Hagel, a Defense Secretary who spent decades in government, had a plain-spoken, gently self-deprecating manner in public addresses, and the bureaucratic-jargon observation is entirely consistent with his known speaking style. The giveaway is the wife detail, which is a stock aside he might have avoided in a formal setting."
+    },
+    {
+      "id": "q3",
+      "text": "The disappointment of manhood succeeds to the delusion of youth: let us hope that the heritage of old age is not despair.",
+      "speaker": "Benjamin Disraeli",
+      "context": "The British Prime Minister and novelist, in a candidly reflective aside on the disappointments of the ages of life (from his fiction, Book VIII, Chapter 4).",
+      "real": true,
+      "source": {
+        "title": "Benjamin Disraeli - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Where my reason, imagination or interest were not engaged, I would not or I could not learn.",
+      "speaker": "Winston Churchill",
+      "context": "From Churchill's own autobiography 'My Early Life: A Roving Commission' (1930), in the chapter recalling his schooldays at Harrow where he was placed in the lowest form.",
+      "real": true,
+      "source": {
+        "title": "My Early Life, by Winston S. Churchill (Project Gutenberg Canada full text)",
+        "url": "https://gutenberg.ca/ebooks/churchillws-myearlylife/churchillws-myearlylife-00-h-dir/churchillws-myearlylife-00-h.html",
+        "date": "1930-01-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I am a Ford, not a Lincoln. My addresses will never be as eloquent as Mr. Lincoln's. But I will do my very best to equal his brevity and his plain speaking.",
+      "speaker": "Gerald Ford",
+      "context": "Self-deprecating remark Ford made on December 6, 1973, immediately after taking the oath of office as the 40th Vice President (following Spiro Agnew's resignation).",
+      "real": true,
+      "source": {
+        "title": "Gerald Ford - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Gerald_Ford",
+        "date": "1973-12-06"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I grew up in a small town where the city council meetings were the main civic event of the month. People brought snacks. There were feuds. It was, genuinely, more dramatic than anything I have encountered in the Senate, and I want to be careful about how I say that.",
+      "speaker": "Jon Tester",
+      "context": "Interview on Montana Public Radio, Great Falls, Montana, August 2018",
+      "real": false,
+      "fake_note": "I made this one up — Tester, the Montana farmer-turned-senator, consistently anchors his public humor in rural and small-town life, and this kind of fond, specific local callback is entirely his register. The tell is 'I want to be careful about how I say that,' which is slightly too polished for his famously blunt delivery."
+    }
+  ]
+}

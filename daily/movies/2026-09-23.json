@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-23",
+  "edition": 97,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "She looked at me the way people look at a locked door.",
+      "speaker": "Sunset Boulevard (1950)",
+      "context": "Joe Gillis narrating, describing his first impression of Norma Desmond",
+      "real": false,
+      "fake_note": "I made this one up — Gillis's voiceover narration is full of world-weary similes exactly like this. The giveaway is that it's almost too writerly; the real film's similes tend to land a half-beat more sideways."
+    },
+    {
+      "id": "q2",
+      "text": "The cheaper the crook, the gaudier the patter.",
+      "speaker": "The Maltese Falcon (1941)",
+      "context": "Private detective Sam Spade (Humphrey Bogart) sizing up the small-time gunman Wilmer.",
+      "real": true,
+      "source": {
+        "title": "The Maltese Falcon (1941 film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Maltese_Falcon_(1941_film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "You fire one man, you fire the whole yard. That's how it's always been.",
+      "speaker": "On the Waterfront (1954)",
+      "context": "A dock worker warning Terry Malloy about crossing the union bosses",
+      "real": false,
+      "fake_note": "I made this one up — the fatalistic blue-collar logic and compressed threat fit the film's working-class argot exactly. The subtle giveaway is 'the whole yard,' a phrase slightly too tidy for the improvised roughness of that cast."
+    },
+    {
+      "id": "q4",
+      "text": "The Dude abides.",
+      "speaker": "The Big Lebowski (1998)",
+      "context": "The Dude (Jeff Bridges) to The Stranger (Sam Elliott) at the bar near the film's end, summing up his laid-back philosophy.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Here's looking at you, kid.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick Blaine (Humphrey Bogart) says this to Ilsa (Ingrid Bergman) as a recurring toast, most memorably at the airport farewell.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Try the soup before you salt it, son.",
+      "speaker": "Cool Hand Luke (1967)",
+      "context": "The Captain, offering deceptively mild advice to Luke early on",
+      "real": false,
+      "fake_note": "I made this one up — the film loves authority figures who dress control as folksy wisdom, and the line has that cadence. The giveaway is it's almost too aphoristic; real lines in the film tend to be more directly about the immediate situation."
+    }
+  ]
+}
