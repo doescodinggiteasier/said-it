@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-24",
+  "edition": 87,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I wore sequins to a funeral once. Not by accident — I just thought, Gerald would've wanted someone there who looked good. Everyone else looked like they'd come from a tax audit. Gerald would've hated that.",
+      "speaker": "Liberace",
+      "context": "Told as a personal anecdote on The Merv Griffin Show, CBS, taped October 1984, aired January 1985",
+      "real": false,
+      "fake_note": "I made this one up — Liberace was famous for his theatrical self-presentation and his cheerfully outrageous comments about fashion and social decorum, making this entirely plausible. The giveaway is the name 'Gerald' — Liberace's real anecdotes used 'darling' or referred to specific named public figures, not a vague private-sounding 'Gerald.'"
+    },
+    {
+      "id": "q2",
+      "text": "People ask me what my rider was. Bourbon, a bucket of chicken, and a woman who doesn't want to talk about feelings. That's it. That's the whole contract. You add feelings to that list and I'm back on the bus.",
+      "speaker": "Levon Helm",
+      "context": "Q&A session following a screening of The Last Waltz at the Aero Theatre, Santa Monica, April 2007",
+      "real": false,
+      "fake_note": "I made this one up — Helm was known for his blunt, Southern wit and his rocky personal life was well-documented, so grumbling about emotional demands fits his voice. The giveaway is the rhythm is slightly too polished — his real off-the-cuff remarks were rougher and less punchy."
+    },
+    {
+      "id": "q3",
+      "text": "There are 400,000 words in the English language, and there are seven of them that you can't say on television. What a ratio that is. 399,993 to seven. They must really be bad.",
+      "speaker": "George Carlin",
+      "context": "Carlin's landmark \"Seven Words You Can Never Say on Television\" routine from his 1972 album Class Clown, listing the broadcast-banned words verbatim and reveling in saying them all out loud.",
+      "real": true,
+      "source": {
+        "title": "The Big Seven Words — George Carlin",
+        "url": "https://www.erenkrantz.com/Humor/SevenDirtyWords.shtml",
+        "date": "1972"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I turned up to the Grammys so hammered I thought the podium was a urinal. Nearly gave it a go, too. The only thing that stopped me was the carpet was nicer than my bathroom at home.",
+      "speaker": "John Belushi",
+      "context": "Recounted during a roundtable segment on The Tomorrow Show with Tom Snyder, NBC, February 1979",
+      "real": false,
+      "fake_note": "I made this one up — Belushi was legendary for showing up to industry events in chaotic shape, and this self-deprecating toilet humour fits his slapstick-crude voice perfectly. The subtle giveaway is the punchline is a little too tidy and structured for his actual rambling interview style."
+    },
+    {
+      "id": "q5",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore.",
+      "speaker": "Bob Saget",
+      "context": "Bob Saget — the wholesome 'Full House' dad whose real-life stand-up was famously filthy — on fully embracing his profane comedy persona, in a Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I used to do drugs. I still do, but I used to, too.",
+      "speaker": "Mitch Hedberg",
+      "context": "One of late absurdist comedian Mitch Hedberg's most iconic one-liners, a paradoxical drug-use confession from his album 'Strategic Grill Locations' (1999). Hedberg's easygoing stoner persona and drug jokes were central to his act.",
+      "real": true,
+      "source": {
+        "title": "Mitch Hedberg — Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Mitch_Hedberg",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

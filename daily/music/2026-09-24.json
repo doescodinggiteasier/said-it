@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-24",
+  "edition": 93,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He built this entire empire based on what he thought would turn the world on. That was his superpower",
+      "speaker": "Rob Thomas",
+      "context": "Remembering Clive Davis",
+      "real": true,
+      "source": {
+        "title": "Music — Rob Thomas Remembers Clive Davis: ‘Losing Clive Is the End of an Era’",
+        "url": "https://www.rollingstone.com/music/music-features/rob-thomas-clive-davis-tribute-essay-1235582736/",
+        "date": "2026-06-24"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've never been able to listen back to a finished record without hearing the version I wanted it to be. Like, there's always a ghost of that in there, and you just have to make peace with the fact that the ghost isn't leaving.",
+      "speaker": "Thom Yorke",
+      "context": "Interview with Pitchfork, October 2019, conducted ahead of the Anima solo tour dates",
+      "real": false,
+      "fake_note": "I made this one up — Thom has spoken extensively about his fractured relationship with finished work and the recording process, so this sits perfectly in his wheelhouse. The subtle giveaway is 'the ghost isn't leaving,' which is just a touch too resolved and poetic for how he usually trails off into silence mid-thought."
+    },
+    {
+      "id": "q3",
+      "text": "I've written on planes, in car parks, in one extremely depressing service station off the M6. I don't think the environment cares. I think you're either ready or you're convincing yourself you're ready, and those are very different days.",
+      "speaker": "Damon Albarn",
+      "context": "Interview with The Guardian, November 2021, published alongside the launch of The Nearer the Fountain, More Pure the Stream Flows",
+      "real": false,
+      "fake_note": "I made this one up — Damon's very British, slightly deflated humor and his habit of grounding observations in specific, unglamorous geography are both absolutely characteristic. The giveaway is the M6 — accurate in texture but just specific enough to feel planted; he'd likely reference somewhere even more obscure and personal."
+    },
+    {
+      "id": "q4",
+      "text": "People kept telling me to simplify the production, strip it back, and I did — I stripped it back to about forty-seven layers instead of sixty. That's growth, right?",
+      "speaker": "Pharrell Williams",
+      "context": "Q&A session at the Berklee College of Music commencement weekend, May 2015",
+      "real": false,
+      "fake_note": "I made this one up — Pharrell's self-deprecating humor and obsessive layering of sounds are both well-documented, so the joke lands in exactly the register he operates in. The numbers are the giveaway for sharp eyes — he'd more likely gesture at the excess vaguely rather than cite specific figures."
+    },
+    {
+      "id": "q5",
+      "text": "A rhinestone shines just as good as a diamond.",
+      "speaker": "Dolly Parton",
+      "context": "On being 'totally artificial' in appearance yet 'totally real' as an artist and person, in her November 2019 ELLE interview.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Lifestyle — 20 Refreshingly Honest Dolly Parton Quotes",
+        "url": "https://www.yahoo.com/lifestyle/20-refreshingly-honest-dolly-parton-164600374.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "A genius is the one most like himself.",
+      "speaker": "Thelonious Monk",
+      "context": "One line from 'T. Monk's Advice' — a set of pointers the jazz pianist Thelonious Monk gave saxophonist Steve Lacy, who wrote them down while playing in Monk's band in 1960.",
+      "real": true,
+      "source": {
+        "title": "Thelonious Monk’s Advice — Howard Rees’ Jazz Workshops (transcribed by Steve Lacy, 1960)",
+        "url": "https://jazzworkshops.com/thelonious-monks-advice/",
+        "date": "1960-01-01"
+      }
+    }
+  ]
+}

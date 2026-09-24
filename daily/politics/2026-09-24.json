@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-24",
+  "edition": 89,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I first got to Congress I thought I was going to change Washington. Washington was very patient with me about that.",
+      "speaker": "John Boehner",
+      "context": "Remarks at the American Enterprise Institute Annual Dinner, Washington D.C., May 2016",
+      "real": false,
+      "fake_note": "I made this one up — Boehner's rueful, self-deprecating brand of political humor and his well-known disillusionment with the institution make this feel entirely genuine. The giveaway is the word 'patient,' which implies a gentleness toward Washington that Boehner rarely extended to it publicly."
+    },
+    {
+      "id": "q2",
+      "text": "I will say this about C-SPAN: it is the only place on television where you can watch a man read a water infrastructure amendment aloud for forty minutes and call it must-see TV. And I mean that as a compliment.",
+      "speaker": "Amy Klobuchar",
+      "context": "Keynote address at the Radio Television Digital News Association annual awards, Washington D.C., June 2018",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar's Midwestern earnestness about procedural politics and her genuine enthusiasm for infrastructure policy makes this feel real. The tell is the slight over-specificity of 'water infrastructure amendment,' which is just a nudge too on-brand."
+    },
+    {
+      "id": "q3",
+      "text": "I think we ought to continue the blockade and starve them out. I think we ought to bomb Pickaxe Mountain and try to reach what's underneath it",
+      "speaker": "John Kennedy",
+      "context": "Sen. John Kennedy (R-La.) on Sunday discussing Iran strikes",
+      "real": true,
+      "source": {
+        "title": "Politics — Live updates: Sen. John Kennedy says US should not 'cut and run' from Iran; Cycl",
+        "url": "https://thehill.com/homenews/5990529-live-updates-midterms-jackson-collins-cyclospora-trump/",
+        "date": "2026-07-27"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Someone asked me the other day if I find the Senate frustrating. I said, look, I spent twelve years in the minority — frustration is basically my first language at this point.",
+      "speaker": "Mitch McConnell",
+      "context": "Interview with The Wall Street Journal editorial board, October 2014",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's dry, institutional self-awareness and his genuine history in the minority make this land perfectly. The giveaway is that McConnell almost never jokes about his own vulnerability, even in passing."
+    },
+    {
+      "id": "q5",
+      "text": "People keep asking me what the most complicated part of the job is. Honestly? Explaining to my mother what a deputy undersecretary actually does. She still thinks I run a post office.",
+      "speaker": "Pete Buttigieg",
+      "context": "Remarks at the Gridiron Club Dinner, Washington D.C., April 2022",
+      "real": false,
+      "fake_note": "I made this one up — Buttigieg's polished, self-aware humor and his habit of humanizing policy through family anecdotes makes this feel authentic. The giveaway is that his mother would almost certainly know his job by 2022."
+    },
+    {
+      "id": "q6",
+      "text": "I am extraordinarily patient, provided I get my own way in the end.",
+      "speaker": "Margaret Thatcher",
+      "context": "Self-aware, tongue-in-cheek remark by the British Prime Minister in an interview published in The Observer, 4 April 1989 (as catalogued by the Margaret Thatcher Centre's quotes page). Speaker was a UK Conservative Prime Minister.",
+      "real": true,
+      "source": {
+        "title": "Quotes - The Margaret Thatcher Centre",
+        "url": "https://www.thatchercentre.com/quotes/",
+        "date": "1989-04-04"
+      }
+    }
+  ]
+}

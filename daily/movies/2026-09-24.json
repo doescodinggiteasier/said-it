@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-24",
+  "edition": 98,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'd offer you a drink, but I only have the one glass.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick speaking to an unwanted visitor in his private office above the café",
+      "real": false,
+      "fake_note": "I made this one up — Rick's sardonic hospitality is all over the film, and this has his exact brand of polite dismissal. The subtle giveaway is that the real Rick tends to leave his insults implicit; spelling out the single glass tips the subtext into text just a fraction too much."
+    },
+    {
+      "id": "q2",
+      "text": "Nobody gets on that boat without my say-so. Nobody.",
+      "speaker": "The French Connection (1971)",
+      "context": "Popeye Doyle locking down a dock perimeter during the climactic pursuit",
+      "real": false,
+      "fake_note": "I made this one up — Hackman's Doyle barks exactly like this: possessive, rule-by-fiat, two sentences max. The scene geography and his territorial swagger make it completely plausible. The giveaway is that the real climax involves a train, not a boat; I swapped the vehicle hoping the attitude would carry the scene."
+    },
+    {
+      "id": "q3",
+      "text": "As you wish.",
+      "speaker": "The Princess Bride (1987)",
+      "context": "Westley the farmhand says this to Buttercup; it's revealed to be his way of saying \"I love you,\" and recurs throughout the film.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "We clear the next block, then we rest. Not before.",
+      "speaker": "Saving Private Ryan (1998)",
+      "context": "Captain Miller keeping the squad moving under exhaustion",
+      "real": false,
+      "fake_note": "I made this one up — Miller's command voice is clipped and functional, and Spielberg's dialogue favors short operational orders over speeches, so this lands naturally. The giveaway is that Miller's real lines tend to carry a faint tremor of doubt underneath the authority, and this one is a shade too decisive."
+    },
+    {
+      "id": "q5",
+      "text": "I'm not sure that I agree with you a hundred percent on your policework there, Lou.",
+      "speaker": "Fargo (1996)",
+      "context": "Marge Gunderson (Frances McDormand), the pregnant police chief, gently correcting her deputy Lou's flawed reasoning at a crime scene.",
+      "real": true,
+      "source": {
+        "title": "Fargo (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Fargo_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "On Wednesdays we wear pink.",
+      "speaker": "Mean Girls (2004)",
+      "context": "Karen Smith explaining the Plastics' dress code rule to Cady",
+      "real": true
+    }
+  ]
+}

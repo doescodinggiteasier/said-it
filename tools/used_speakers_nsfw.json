@@ -16,7 +16,7 @@
 "jerry seinfeld": "2026-06-19",
 "elon musk": "2026-06-19",
 "dwayne johnson": "2026-06-19",
-"george carlin": "2026-09-23",
+"george carlin": "2026-09-24",
 "noel gallagher": "2026-06-20",
 "jon jovi": "2026-06-20",
 "jeff ross": "2026-06-20",
@@ -62,8 +62,8 @@
 "sam kinison": "2026-09-19",
 "oliver reed": "2026-09-21",
 "alice cooper": "2026-09-21",
-"john belushi": "2026-09-16",
-"mitch hedberg": "2026-09-06",
+"john belushi": "2026-09-24",
+"mitch hedberg": "2026-09-24",
 "peter toole": "2026-09-03",
 "redd foxx": "2026-09-22",
 "rick james": "2026-07-03",
@@ -71,7 +71,7 @@
 "gene simmons": "2026-09-07",
 "dean martin": "2026-09-17",
 "bon scott": "2026-09-22",
-"bob saget": "2026-09-11",
+"bob saget": "2026-09-24",
 "james brown": "2026-09-02",
 "patrice neal": "2026-09-08",
 "dave attell": "2026-09-08",
@@ -141,5 +141,7 @@
 "jim morrison": "2026-09-18",
 "bernard manning": "2026-09-21",
 "elizabeth taylor": "2026-09-22",
-"muddy waters": "2026-09-22"
+"muddy waters": "2026-09-22",
+"liberace": "2026-09-24",
+"levon helm": "2026-09-24"
 }

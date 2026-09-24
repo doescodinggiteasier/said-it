@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-24",
+  "edition": 90,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People forget we lost three games that whole playoffs. Three. And nobody was saying anything nice about us then either. I don't hold grudges about that, I just remember it.",
+      "speaker": "Scottie Pippen",
+      "context": "All the Smoke with Matt Barnes and Stephen Jackson, episode released on Showtime Sports YouTube channel, June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Pippen has a well-documented, slightly aggrieved relationship with his own legacy and speaks about it in exactly this tone of wounded precision. The giveaway is the number 'three,' which a sharp Bulls historian would cross-reference immediately."
+    },
+    {
+      "id": "q2",
+      "text": "If you don't want me to watch the ball, you can get it out of the ocean.",
+      "speaker": "Max Muncy",
+      "context": "Dodgers infielder Max Muncy on what he told Giants pitcher Madison Bumgarner, who had angrily yelled at him to stop watching his home run and run the bases. Muncy's solo homer was the only run in a 1-0 Dodgers win in San Francisco.",
+      "real": true,
+      "source": {
+        "title": "Max Muncy beats Madison Bumgarner at the plate and in his post-game quotes",
+        "url": "https://www.cbssports.com/mlb/news/max-muncy-beats-madison-bumgarner-at-the-plate-and-in-his-post-game-quotes/",
+        "date": "2019-06-09"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "We're going to be unapologetic about it",
+      "speaker": "Will Wade",
+      "context": "LSU coach explaining the team's unconventional four-player roster before his second stint",
+      "real": true,
+      "source": {
+        "title": "Sports — Will Wade explains LSU's 'unconventional' four-player roster: 'We're going to be",
+        "url": "https://www.cbssports.com/college-basketball/news/will-wade-lsu-four-player-roster-ncaa/",
+        "date": "2026-09-24"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "There's a difference between a fighter who's dangerous and a fighter who makes you feel like something bad is about to happen. Tyson was the second one. You felt it before the bell.",
+      "speaker": "Sugar Ray Leonard",
+      "context": "ESPN Classic's 'SportsCentury' anniversary panel on Mike Tyson, taped at the Television Academy in North Hollywood, aired January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Leonard is an articulate analyst of boxing psychology and has commented on Tyson's particular aura in numerous interviews, making this entirely plausible. The subtle tell is the distinction between 'dangerous' and 'makes you feel like something bad is about to happen,' which is just polished enough to feel slightly crafted."
+    },
+    {
+      "id": "q5",
+      "text": "What Carew does with a football, I can do with an orange.",
+      "speaker": "Zlatan Ibrahimovic",
+      "context": "Swedish soccer star's cocky teenage retort to fellow striker John Carew, who had dismissed Zlatan's tricks and flicks as pointless. Said in the Norwegian tabloid VG in April 2002. A classic surprising, deadpan brag.",
+      "real": true,
+      "source": {
+        "title": "Zlatan Ibrahimovic - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Zlatan_Ibrahimovi%C4%87",
+        "date": "2002-04-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I pitched on three days' rest more times than I can count and I never told anyone whether my arm felt fine or not. That was just not information I was going to give away.",
+      "speaker": "Pedro Martinez",
+      "context": "Baseball Hall of Fame Oral History Project interview, conducted at Cooperstown, transcript published on BaseballHall.org in 2018",
+      "real": false,
+      "fake_note": "I made this one up — Martinez has spoken extensively about his competitive psychology and his refusal to show weakness or give opponents any mental edge, which makes this observation entirely believable. The giveaway is the phrase 'not information I was going to give away,' which is slightly too strategic-sounding for unguarded speech."
+    }
+  ]
+}

@@ -1,7 +1,4 @@
 [
-"mes|you _ with the _ _ you _ the _ _|1",
-"same|_ _ _ _ _ i _ _ not _ _ we|2",
-"want|you _ to _ what _ _ i _ _ _ _|2",
 "last|_ _ i _ _ _ _ _ the _|1",
 "there|_ is a _ at _ a _ _ an _ _|2",
 "same|i _ had the _ _ _ _ _ and i _|3",
@@ -198,5 +195,8 @@
 "smell|you _ _ you _ in a _ and you _ _|3",
 "look|she _ at me the _ _ _ at a _ _|2",
 "fire|you _ _ _ you _ the _ _ that _ how|2",
-"try|_ the _ _ you _ it _|1"
+"try|_ the _ _ you _ it _|1",
+"offer|i _ _ you a _ but i _ have the _|2",
+"nobody|_ _ on that _ _ my _ so _|1",
+"clear|we _ the _ _ then we _ not _|1"
 ]
