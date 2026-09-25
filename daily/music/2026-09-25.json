@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-25",
+  "edition": 94,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Somebody told me once that I walked like I was late for something. I thought about that for a long time and then I figured, yeah, that's probably the right way to be in this business.",
+      "speaker": "Jay-Z",
+      "context": "Interview with Zane Lowe on Apple Music Beats 1, November 2017",
+      "real": false,
+      "fake_note": "I made this one up — Jay-Z consistently reframes observations about his intensity or ambition into personal philosophy, and his interview style with Lowe is looser and more anecdotal than his print interviews. The subtle tell is that he almost never uses someone else's words as the *launching point* for self-reflection; he typically generates the frame himself."
+    },
+    {
+      "id": "q2",
+      "text": "People hear 'country' and they already have the ending of the story written before you open your mouth. I've spent thirty years trying to convince folks that the story doesn't end where they think it does.",
+      "speaker": "Willie Nelson",
+      "context": "Interview with Terry Gross on Fresh Air, NPR, September 2016",
+      "real": false,
+      "fake_note": "I made this one up — Willie has talked extensively about genre assumptions and his outlaw image, so this lands squarely in his wheelhouse. The tell is that Willie tends to be even *shorter* and drier in his phrasing; this is just a hair too complete a thought for him."
+    },
+    {
+      "id": "q3",
+      "text": "You're about to play 'Shakedown Street,' and you just did a heroic dose of mushrooms. How do you even perform?",
+      "speaker": "Susan Tedeschi",
+      "context": "Recalling touring with Bob Weir and the Other Ones in 2002",
+      "real": true,
+      "source": {
+        "title": "Music — Susan Tedeschi Says Bob Weir Loved to Offer Her Mushrooms",
+        "url": "https://www.rollingstone.com/music/music-features/susan-tedeschi-bob-weir-mushrooms-tour-1235586087/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I can out-dance Bowie and Jagger!",
+      "speaker": "Martha Reeves",
+      "context": "An interview about her career and Motown",
+      "real": true,
+      "source": {
+        "title": "Music — ‘I can out-dance Bowie and Jagger!’ Martha Reeves on Motown, Dancing in the Stre",
+        "url": "https://www.theguardian.com/music/2026/jun/26/reader-interview-martha-reeves-motown",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I'm a fat Black gay man. Try selling that",
+      "speaker": "MNEK",
+      "context": "Interview about his solo career struggles and new album",
+      "real": true,
+      "source": {
+        "title": "Music — MNEK on writing smash hits, battling self-doubt and his solo struggles: ‘I’m a f",
+        "url": "https://www.theguardian.com/music/2026/sep/25/mnek-music-interview-uzoechi-osisioma-emenike-bulldozer-album",
+        "date": "2026-09-25"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I grew up singing in church where nobody was politely clapping along — they were *responding*. So whenever a crowd is quiet and respectful I get a little nervous, honestly. I want someone to talk back.",
+      "speaker": "Aretha Franklin",
+      "context": "Profile interview in Essence magazine, February 1998",
+      "real": false,
+      "fake_note": "I made this one up — Aretha spoke often about the call-and-response tradition of her church upbringing and how it shaped her expectation of live audiences. The giveaway is the self-deprecating 'I get a little nervous'; Aretha was more likely to frame audience energy as something she *commanded* rather than something she needed reassurance from."
+    }
+  ]
+}

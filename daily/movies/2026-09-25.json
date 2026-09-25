@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-25",
+  "edition": 99,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He hasn't eaten since Tuesday and he's already asking for a lawyer. I'd say that's a good sign.",
+      "speaker": "Silence of the Lambs (1991)",
+      "context": "A guard making a dry aside to Clarice before she enters Lecter's wing",
+      "real": false,
+      "fake_note": "I made this one up — the bureaucratic gallows humor of the prison staff is well-established in the film, and the line sounds like throwaway set-dressing dialogue. The giveaway is that the guards in the film are mostly taciturn rather than quippy; this one is a touch too wry."
+    },
+    {
+      "id": "q2",
+      "text": "You keep that door locked after nine. I don't care who's knocking.",
+      "speaker": "The Shining (1980)",
+      "context": "Wendy warning Danny about wandering the hotel at night",
+      "real": false,
+      "fake_note": "I made this one up — Wendy's anxious, protective tone fits perfectly, and the dread of the hotel at night is central to the film. The subtle giveaway is that Wendy is rarely this direct and authoritative; she's usually more passive around Jack."
+    },
+    {
+      "id": "q3",
+      "text": "It's not the years that wear you out. It's the miles.",
+      "speaker": "Raiders of the Lost Ark (1981)",
+      "context": "Indiana Jones, brushing off concern about an injury",
+      "real": false,
+      "fake_note": "I made this one up — Indy's self-deprecating toughness is exactly right for the character, and the rhythm echoes his dry humor throughout the film. The giveaway is that it tips slightly into fortune-cookie territory, whereas Spielberg's Indy lines are usually grounded in a more immediate, physical moment."
+    },
+    {
+      "id": "q4",
+      "text": "I've seen your file, Mr. Ripley. You're either very lucky or very careful.",
+      "speaker": "The Talented Mr. Ripley (1999)",
+      "context": "An investigator or official figure quietly pressing Tom Ripley",
+      "real": false,
+      "fake_note": "I made this one up — the clipped, suspicious register matches the film's cool European thriller tone perfectly. The giveaway is that the film tends to let tension simmer through social scenes rather than giving minor officials such neat, pointed dialogue."
+    },
+    {
+      "id": "q5",
+      "text": "Life finds a way.",
+      "speaker": "Jurassic Park (1993)",
+      "context": "Dr. Ian Malcolm (Jeff Goldblum) argues that the park's all-female engineered dinosaurs cannot truly be prevented from breeding or controlled.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "The first rule of Fight Club is: you do not talk about Fight Club.",
+      "speaker": "Fight Club (1999)",
+      "context": "Tyler Durden (Brad Pitt) laying down the rules to the members of Fight Club.",
+      "real": true
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-25",
+  "edition": 102,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'm ready to drink tonight, until next morning. Thank you.",
+      "speaker": "Bong Joon-ho",
+      "context": "The director, through his interpreter, accepting the Best International Feature Film Oscar for Parasite at the 2020 Academy Awards",
+      "real": true,
+      "source": {
+        "title": "Bong Joon-ho Oscar Acceptance Speech Transcripts: Parasite Wins Big at the Academy Awards - Rev",
+        "url": "https://www.rev.com/transcripts/bong-joon-ho-oscar-acceptance-speech-transcripts-parasite-wins-big-at-the-academy-awards",
+        "date": "2020-02-09"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Writing a song about heartbreak when you're actually heartbroken is kind of the worst. You're not crafting anything — you're just leaking. But sometimes the leak is the whole song.",
+      "speaker": "Taylor Swift",
+      "context": "Rolling Stone cover interview, 'The Tortured Poets Department' issue, April 2024",
+      "real": false,
+      "fake_note": "I made this one up — Swift frequently uses process-of-songwriting language in exactly this raw, introspective register, and 'leaking' is the kind of image she reaches for. The giveaway is the word 'leak' — her real metaphors tend to be slightly more literary; this one's a touch more blunt than her documented style."
+    },
+    {
+      "id": "q3",
+      "text": "I'm just here so I won't get fined, boss. That's the only reason why.",
+      "speaker": "Marshawn Lynch",
+      "context": "Seattle Seahawks running back, repeated this line at Super Bowl XLIX Media Day in January 2015 after being fined for not speaking to reporters",
+      "real": true,
+      "source": {
+        "title": "Marshawn Lynch: 'I'm just here so I won't get fined'",
+        "url": "https://www.nfl.com/news/marshawn-lynch-i-m-just-here-so-i-won-t-get-fined-0ap2000000319691",
+        "date": "2015-01-27"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Every time we launch something, there's a moment in the control room where nobody's talking and everyone's just staring at the same number on the screen. It never gets routine. I don't care how many times you've done it.",
+      "speaker": "Elon Musk",
+      "context": "Remarks at the SpaceX Starship IFT-4 post-launch press briefing, Boca Chica, Texas, June 2024",
+      "real": false,
+      "fake_note": "I made this one up — Musk regularly describes launch-room tension in cinematic, team-focused terms, and this fits his documented cadence at post-launch pressers. The subtle tell is that his real comments at IFT-4 were more technically specific about the heat shield; this version is slightly more reflective than his usual mode."
+    },
+    {
+      "id": "q5",
+      "text": "You better cut the pizza in four pieces because I'm not hungry enough to eat six.",
+      "speaker": "Yogi Berra",
+      "context": "Hall of Fame baseball catcher and manager, one of his famous 'Yogi-isms'",
+      "real": true,
+      "source": {
+        "title": "Famous 'Yogi-isms'",
+        "url": "https://www.cbsnews.com/news/famous-yogi-isms",
+        "date": "2002-03-06"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what it felt like to win the first one. And the honest answer is I was mostly just relieved I hadn't blown the final set. The joy came later, like the next morning in the shower. That's usually when it hits.",
+      "speaker": "Roger Federer",
+      "context": "Conversation with David Letterman for My Next Guest Needs No Introduction, Netflix, 2024",
+      "real": false,
+      "fake_note": "I made this one up — Federer consistently describes emotional processing in this delayed, private way, and the shower detail is the kind of specific throwaway he actually uses. The giveaway is that Federer hasn't appeared on Letterman's Netflix show — though the format fits him so well it's hard to be sure."
+    }
+  ]
+}

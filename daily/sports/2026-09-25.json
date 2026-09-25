@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-25",
+  "edition": 91,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'm going to tell you a story",
+      "speaker": "Luis de la Fuente",
+      "context": "Spain coach speaking about a post-final moment with his players",
+      "real": true,
+      "source": {
+        "title": "Sports — De la Fuente brings insatiable Spain to England knowing World Cup is not enough",
+        "url": "https://www.theguardian.com/football/2026/sep/25/luis-de-la-fuente-spain-world-keep-us-winning",
+        "date": "2026-09-25"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People said I was too small for the Tour at the start. My director said, find the climbs and disappear. So that's what I did. I became very, very good at disappearing.",
+      "speaker": "Tadej Pogačar",
+      "context": "Interview with Cyclingnews.com following Stage 17 of the Tour de France, July 2024",
+      "real": false,
+      "fake_note": "I made this one up — Pogačar is known for his attacking, aggressive climbing style and has a dry, understated humor in English that makes 'I became very good at disappearing' sound completely natural from him. The tell is that no real director would tell a future Tour winner to 'disappear'; it's too self-effacing for how directly he was actually recruited."
+    },
+    {
+      "id": "q3",
+      "text": "LeBron is a different conversation. But yeah, when I was coming through, nobody was giving me anything. I had to go get it every single night in Detroit, in Indiana, in places where they genuinely wanted to see me fail. I think that made me harder than a lot of guys who had it smoother.",
+      "speaker": "Dwyane Wade",
+      "context": "Episode of The Old Man & the Three podcast with JJ Redick and Tommy Alter, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Wade often speaks candidly about his rivalry era and the chip he carried as a player, and name-dropping those hostile road arenas sounds exactly like him. The giveaway is the slightly self-aggrandizing edge; Wade tends to credit teammates before himself."
+    },
+    {
+      "id": "q4",
+      "text": "When I broke the record, the first thing I did was look for my relay coach from when I was fifteen. He was up in the stands somewhere. I needed him to see it because he's the one who told me — not that I'd break a record, just that I shouldn't quit.",
+      "speaker": "Noah Lyles",
+      "context": "Post-race press conference, World Athletics Championships Budapest, August 2023",
+      "real": false,
+      "fake_note": "I made this one up — Lyles consistently credits mentors and is openly emotional after major victories, so the detail about scanning the crowd is very on-brand. The subtle tell is the restraint; in reality Lyles's post-race energy is usually far more exuberant than this quiet moment suggests."
+    },
+    {
+      "id": "q5",
+      "text": "Shall I take my top off now?",
+      "speaker": "Toshisuke Kanazawa",
+      "context": "90-year-old Japanese bodybuilder during an interview about his career",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘I’m 100% natural’: how Japan’s 90-year-old bodybuilder is still winning titles",
+        "url": "https://www.theguardian.com/world/ng-interactive/2026/sep/25/im-100-natural-japan-90-year-old-bodybuilder-toshisuke-kanazawa",
+        "date": "2026-09-25"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The pole is not a weapon and it is not a prop. It is the only thing standing between you and not flying. Once you really feel that — not understand it, feel it — everything about the event changes for you.",
+      "speaker": "Mondo Duplantis",
+      "context": "Feature interview with Athletics Weekly magazine, issue dated March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Duplantis regularly talks about his almost spiritual relationship with the pole and uses precise, thoughtful language for someone his age. The tell is the feel vs. understand distinction, which sounds slightly more rehearsed than his usual matter-of-fact style."
+    }
+  ]
+}
