@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-26",
+  "edition": 88,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The Oscars put me at a table so far in the back I thought I was getting served a subpoena. I ate a bread roll and half a centerpiece before I realized the ceremony had already started. Fuck Hollywood seating charts, man.",
+      "speaker": "Rodney Dangerfield",
+      "context": "Stand-up set warm-up remarks, Dangerfield's Comedy Club, New York City, recorded for the HBO special It's Not Easy Bein' Me, 1982",
+      "real": false,
+      "fake_note": "I made this one up — the 'no respect' throughline and the escalating absurdity of eating a centerpiece is classic Dangerfield cadence. The giveaway is he'd more likely punch the punchline harder at the end rather than trailing off with a profanity-lite kicker."
+    },
+    {
+      "id": "q2",
+      "text": "The reason we first started strumming guitars was because we wanted women and lots of them. And their daughters.",
+      "speaker": "Gene Simmons",
+      "context": "KISS bassist Gene Simmons, on The Oprah Winfrey Show in 1988, dismissing the idea that rock stars pick up guitars for lofty reasons — it was about groupies.",
+      "real": true,
+      "source": {
+        "title": "Gene Simmons Called KISS Groupie Hookups 'More Honest' Than Real Relationships (Best Life)",
+        "url": "https://bestlifeonline.com/gene-simmons-kiss-groupies/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People keep asking me what my secret to longevity is. I tell 'em: whiskey, red meat, and never — and I mean NEVER — letting a sound engineer tell you what's too loud. Those three things, in that order.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Interviewed by Eddie Trunk on That Metal Show, Season 13, Episode 4, VH1 Classic, 2013",
+      "real": false,
+      "fake_note": "I made this one up — Lemmy's famous three vices and his contempt for authority figures in music make this feel completely on-brand and lived-in. The subtle giveaway is that real Lemmy quotes tend to be rawer and less structured; this one's a touch too tidy in its three-part rhythm."
+    },
+    {
+      "id": "q4",
+      "text": "My agent called me — very excited — says, 'Gene, they want you for a prestige drama.' I said great, what's the part? He says, 'A grandfather.' I told him to go fuck himself sideways and hung up. I called back ten minutes later and said fine, what does it pay?",
+      "speaker": "Gene Wilder",
+      "context": "Conversation recounted on The Howard Stern Show, Sirius XM, March 2013, during the press tour for his memoir Kiss Me Like a Stranger",
+      "real": false,
+      "fake_note": "I made this one up — Wilder's dry self-deprecation and the beat where he immediately folds after the principled stand is totally in his comedic rhythm. The giveaway is Wilder was generally quite genteel in interviews; 'sideways' is probably one gear too crude for his actual register."
+    },
+    {
+      "id": "q5",
+      "text": "Cheating is a man, he sneaks out of his own house to go, like, find some happiness behind your back so your feelings aren't hurt. Cheating is for you.",
+      "speaker": "Patrice O'Neal",
+      "context": "From the late, notoriously unfiltered comedian Patrice O'Neal's Comedy Central special 'Elephant in the Room' (2011) — his provocative, deadpan bit reframing male infidelity as an act of consideration.",
+      "real": true,
+      "source": {
+        "title": "Patrice O'Neal: Elephant in the Room (2011) — Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/patrice-oneal-elephant-in-the-room-2011-full-transcript/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Whiskey is a great drink. Now whiskey's very classy and adult, till you shit your pants. But other than that, it is great.",
+      "speaker": "Dave Attell",
+      "context": "From filthy, drink-soaked comedian Dave Attell's stand-up special 'Road Work' (2014) — Attell (the 'Insomniac' host) riffing on booze in his trademark crude style.",
+      "real": true,
+      "source": {
+        "title": "Dave Attell: Road Work (2014) — Full Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/dave-attell-road-work-transcript/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

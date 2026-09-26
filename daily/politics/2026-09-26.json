@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-26",
+  "edition": 91,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've given a lot of speeches in my career. The ones I was most prepared for, I don't remember. The ones where something went sideways — those I remember in vivid, painful detail.",
+      "speaker": "Dick Cheney",
+      "context": "Remarks at the Wyoming Stock Growers Association annual meeting, Cheyenne, Wyoming, June 2015",
+      "real": false,
+      "fake_note": "I made this one up — Cheney's dry, unsentimental delivery and his occasional wry self-awareness in post-office speaking engagements make this feel plausible. The tell is that it edges just slightly warmer and more reflective than Cheney typically allows himself in public."
+    },
+    {
+      "id": "q2",
+      "text": "Someone on my staff keeps leaving Post-it notes on my desk with talking points. I don't know who it is. At this point I've started writing back.",
+      "speaker": "Joe Biden",
+      "context": "Offhand remarks to reporters in the Oval Office driveway, pooled by the White House press corps, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-deprecating, folksy asides about his own staff are well-documented, and the detail about writing back fits his tendency to treat aides like family. The tell is the image is just a touch too tidy and sitcom-ready for genuinely off-the-cuff Biden."
+    },
+    {
+      "id": "q3",
+      "text": "No, I'm not going to pledge that.",
+      "speaker": "Todd Blanche",
+      "context": "NBC's Meet the Press, when asked if the DOJ would always act independently of the White House",
+      "real": true,
+      "source": {
+        "title": "Politics — Todd Blanche declines to pledge independence from White House",
+        "url": "https://www.theguardian.com/us-news/2026/aug/16/todd-blanche-doj-independence-trump-white-house",
+        "date": "2026-08-17"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I'll be honest — when I first got to Sacramento, I thought I understood water policy. Six months in, I realized water policy is basically its own graduate degree, and I hadn't even enrolled.",
+      "speaker": "Gavin Newsom",
+      "context": "Conversation with Ezra Klein recorded for The Ezra Klein Show, The New York Times, aired October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Newsom frequently discusses California's water infrastructure challenges in public and has a habit of framing his own learning curve in candid, slightly self-deprecating terms. The giveaway is the graduate-degree metaphor; his real speech tends to be faster and more buzzword-dense."
+    },
+    {
+      "id": "q5",
+      "text": "I do not like broccoli. And I haven't liked it since I was a little kid, and my mother made me eat it. And I'm President of the United States, and I'm not going to eat any more broccoli.",
+      "speaker": "George H. W. Bush",
+      "context": "Bush's lighthearted declaration at his March 22, 1990 news conference, when asked whether he had 'lost the broccoli vote' after it emerged he'd banned broccoli from Air Force One.",
+      "real": true,
+      "source": {
+        "title": "George H.W. Bush: Hater of Broccoli - Smart Politics (University of Minnesota Libraries)",
+        "url": "https://smartpolitics.lib.umn.edu/2013/07/09/george-hw-bush-hater-of-brocco/",
+        "date": "1990-03-22"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The last time I was this high, I was trying to decide on my major.",
+      "speaker": "Barack Obama",
+      "context": "Self-deprecating joke at his final White House Correspondents' Dinner on April 30, 2016, riffing on how his approval ratings kept climbing in his last year in office ('in my final year, my approval ratings keep going up').",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at the White House Correspondents' Dinner | whitehouse.gov (Obama White House Archives)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2016/05/01/remarks-president-white-house-correspondents-dinner/",
+        "date": "2016-04-30"
+      }
+    }
+  ]
+}

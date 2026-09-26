@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-26",
+  "edition": 100,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I guess we learned not to do it again.",
+      "speaker": "Burn After Reading (2008)",
+      "context": "The CIA Superior (J.K. Simmons) in the final debrief scene, summarizing the botched operation to Officer Palmer.",
+      "real": true,
+      "source": {
+        "title": "Burn After Reading - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Burn_After_Reading",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "There's something about this that's so black, it's like how much more black could this be? And the answer is none. None more black.",
+      "speaker": "This Is Spinal Tap (1984)",
+      "context": "Nigel Tufnel (Christopher Guest) shows off a new album cover; his deadpan musing on its blackness.",
+      "real": true,
+      "source": {
+        "title": "This Is Spinal Tap - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/This_Is_Spinal_Tap",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "You keep leaving your coffee on my desk and I keep drinking it. That's not a partnership, Frank, that's an accident waiting to happen.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes to his associate, early in the film before the case deepens",
+      "real": false,
+      "fake_note": "I made this one up — Gittes's wisecracking, slightly irritable office banter fits perfectly with his character's voice and the film's neo-noir tone. The subtle giveaway is that it's a touch too mundane and buddy-comedy for Chinatown, which keeps its humor darker and more ironic."
+    },
+    {
+      "id": "q4",
+      "text": "She's not lost. You just don't know where she is yet.",
+      "speaker": "Zodiac (2007)",
+      "context": "Detective Toschi to a colleague during a missing persons discussion",
+      "real": false,
+      "fake_note": "I made this one up — it has the flat, procedural cadence of the film's law enforcement dialogue and Toschi's weary pragmatism. The giveaway is that it tips slightly toward a tidy aphorism, whereas Fincher's characters usually land on something more specific and bureaucratic."
+    },
+    {
+      "id": "q5",
+      "text": "I asked for the room on the left. This is the room on the left when you're standing outside.",
+      "speaker": "Fawlty Towers... no — The Grand Budapest Hotel (2014)",
+      "context": "M. Gustave reprimanding a new lobby boy over a guest complaint",
+      "real": false,
+      "fake_note": "I made this one up — Gustave's pedantic, exasperated precision about hotel standards is exactly the register Wes Anderson wrote for him. The giveaway is that a real Gustave line would probably include a more florid or unexpected vocabulary word somewhere in the scolding."
+    },
+    {
+      "id": "q6",
+      "text": "The best way to spread Christmas cheer is singing loud for all to hear.",
+      "speaker": "Elf (2003)",
+      "context": "Buddy the Elf sharing his philosophy on holiday spirit",
+      "real": true
+    }
+  ]
+}

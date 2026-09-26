@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-26",
+  "edition": 95,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People kept telling me Lemonade was going to be too dense, too long, too much. And I just kept thinking — too much for who? I've never made anything for somebody who wanted less.",
+      "speaker": "Beyoncé",
+      "context": "Vogue cover story, September 2023 issue",
+      "real": false,
+      "fake_note": "I made this one up — Beyoncé's rare interview voice is controlled, declarative and almost regal, which this matches closely. The tell is the direct rebuttal structure; she tends to speak in affirmations rather than arguing against a phantom critic."
+    },
+    {
+      "id": "q2",
+      "text": "As you all know, my schedule freed up a bit",
+      "speaker": "Macklemore",
+      "context": "Announcing Free Palestine Tour",
+      "real": true,
+      "source": {
+        "title": "Music — Macklemore Announces Free Palestine Tour",
+        "url": "https://pitchfork.com/story/macklemore-announces-free-palestine-tour/",
+        "date": "2026-09-26"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "There was a whole period where I couldn't listen to my own records. Not because I hated them, just — I'd hear some little guitar thing I did and immediately be back in whatever awful headspace I was in when I tracked it. It's like smell memory but worse because you can't turn it off.",
+      "speaker": "St. Vincent",
+      "context": "The Guardian Weekend Magazine, profile published March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Annie Clark often discusses the psychological textures of her recording process in exactly this kind of neurological-metaphor language. The giveaway is 'smell memory but worse,' which is a touch too tidy an analogy for her usual spikier, more abstract phrasing."
+    },
+    {
+      "id": "q4",
+      "text": "The first time I heard a 808 kick in a proper system — not headphones, not a laptop — I genuinely could not figure out where in my body it was happening. It wasn't my ears. It was somewhere I didn't have a name for. I basically built a whole career chasing that feeling.",
+      "speaker": "Diplo",
+      "context": "Interview with Ebro Darden, Beats 1 / Apple Music 1, April 2021",
+      "real": false,
+      "fake_note": "I made this one up — Diplo is effusive about the physical, almost bodily sensation of bass and low-frequency production and frequently traces his aesthetic obsessions to a formative moment. The tell is the phrase 'somewhere I didn't have a name for,' which is a bit more poetic and self-aware than his characteristically faster, more excitable spoken rhythm."
+    },
+    {
+      "id": "q5",
+      "text": "Swift doesn't do anything particularly great except grow hair",
+      "speaker": "Todd Rundgren",
+      "context": "Interview calling Taylor Swift 'Apotheosis of Mediocrity'",
+      "real": true,
+      "source": {
+        "title": "Music — Todd Rundgren Says Taylor Swift “Ruined Music,” Calls Her “Apotheosis of Mediocr",
+        "url": "https://consequence.net/2026/09/todd-rundgren-taylor-swift-ruined-music/",
+        "date": "2026-09-26"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "We are part of each other, you know. When one person is hurt, it hurts me, too. When I see their condition, I know what they feel, and I feel it. And it hurts.",
+      "speaker": "B.B. King",
+      "context": "Explaining why the blues transcends stereotypes and speaks to shared human suffering, in collected words of wisdom published by Guitar Player.",
+      "real": true,
+      "source": {
+        "title": "Guitar Player — Some Collected Words of Wisdom From B.B. King Himself",
+        "url": "https://www.guitarplayer.com/players/bb-king-quotes",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

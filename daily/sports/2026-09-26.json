@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-26",
+  "edition": 92,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I used to watch tape until my wife physically turned the TV off. She didn't ask. She didn't say goodnight. She just turned it off.",
+      "speaker": "Nick Saban",
+      "context": "SEC Media Days press availability, Hoover, Alabama, July 2018",
+      "real": false,
+      "fake_note": "I made this one up — Saban frequently references his preparation obsession and occasionally lets a dry domestic detail slip in public settings. The tell is it's almost too charming; Saban rarely frames his habits this warmly or comedically in real press contexts."
+    },
+    {
+      "id": "q2",
+      "text": "In practice I'll throw a route fifty times and be bored out of my mind and then in a game my feet just take me there. I don't remember deciding. It's kind of a strange feeling if you think about it too long.",
+      "speaker": "Jerry Rice",
+      "context": "Hall of Fame Weekend media availability, Canton, Ohio, August 2010",
+      "real": false,
+      "fake_note": "I made this one up — Rice frequently described his route-running as something deeply habitual and physical rather than conscious, so this fits his reflective interview mode well. The subtle tell is the almost philosophical 'I don't remember deciding,' which sounds a half-step too introspective for his usual straightforward manner."
+    },
+    {
+      "id": "q3",
+      "text": "Not talking that they need to perform",
+      "speaker": "Mauricio Pochettino",
+      "context": "USMNT coach on managing young/uncapped players in fall friendlies",
+      "real": true,
+      "source": {
+        "title": "Sports — USMNT's Mauricio Pochettino preaches patience with young players: 'Not talking t",
+        "url": "https://www.cbssports.com/soccer/news/usmnt-mauricio-pochettino-young-players-peru-friendly/",
+        "date": "2026-09-26"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People ask me what I think about during free throws and honestly, sometimes it's nothing. Like, completely blank. And those are usually the ones that go in.",
+      "speaker": "Shaquille O'Neal",
+      "context": "Interview with Rachel Nichols on ESPN's The Jump, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Shaq has always been disarmingly self-deprecating about his free-throw shooting, so this fits his voice perfectly. The subtle giveaway is that it almost sounds too philosophically convenient, as if blanking out is the secret, which is exactly the kind of accidental wisdom Shaq stumbles into."
+    },
+    {
+      "id": "q5",
+      "text": "I go with a clear conscience",
+      "speaker": "Cristiano Ronaldo",
+      "context": "After Portugal's World Cup exit vs Spain, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘I go with a clear conscience’: Cristiano Ronaldo confirms he has played his las",
+        "url": "https://www.theguardian.com/football/2026/jul/07/cristiano-ronaldo-portugal-roberto-martinez-world-cup-2026-spain",
+        "date": "2026-07-07"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Three great minds are better than two.",
+      "speaker": "Geoff Ogilvy",
+      "context": "Golfer and course designer Geoff Ogilvy on his OCM design team",
+      "real": true,
+      "source": {
+        "title": "Sports — Allowed to dream: Geoff Ogilvy and OCM design team make mark on course design",
+        "url": "https://sports.yahoo.com/articles/allowed-dream-geoff-ogilvy-ocm-120524657.html",
+        "date": "2026-09-25"
+      }
+    }
+  ]
+}

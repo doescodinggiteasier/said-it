@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-26",
+  "edition": 103,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "An old friend of mine once told me, you know, just be yourself - unless you suck.",
+      "speaker": "John Kennedy",
+      "context": "Republican U.S. Senator from Louisiana, known for his folksy one-liners, sharing a piece of self-deprecating advice. He used the line in a Jan. 25, 2018 Fox News interview. Innocuous and funny, with no target or policy edge.",
+      "real": true,
+      "source": {
+        "title": "15 times Sen. John Kennedy got folksy, snarky or both | nola.com",
+        "url": "https://www.nola.com/news/15-times-sen-john-kennedy-got-folksy-snarky-or-both/article_7fb01151-5776-54f2-a04f-49ffeb4d0447.html",
+        "date": "2018-01-25"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "We recorded that whole album in about eleven days, and people hear that and think it means we were careless. But what actually happens when you work that fast is that you don't have time to talk yourself out of the good take. You just go.",
+      "speaker": "Jack White",
+      "context": "Interview with Rolling Stone, August 2014, during the Lazaretto album cycle",
+      "real": false,
+      "fake_note": "I made this one up — White has genuinely documented his fast-recording ethos with the White Stripes and Solo records, and his distrust of over-production is well established. The giveaway is 'you don't have time to talk yourself out of the good take' — it's characteristically blunt but a hair too quotable, even for him."
+    },
+    {
+      "id": "q3",
+      "text": "I like the escalator, man, 'cause the escalator can never break. It can only become stairs. There would never be an 'Escalator Temporarily Out of Order' sign, only an 'Escalator Temporarily Stairs - Sorry for the Convenience.'",
+      "speaker": "Mitch Hedberg",
+      "context": "From his Comedy Central Presents stand-up set, a signature observational one-liner",
+      "real": true,
+      "source": {
+        "title": "Mitch Hedberg quote on Quotes.net (Comedy Central Presents)",
+        "url": "https://www.quotes.net/mquote/706033",
+        "date": "1998-01-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My kids have no idea what I do for a living, not really. My son thinks I go to a big building and talk to a computer all day, which is honestly not that far off. I find that humbling in a way I wasn't expecting.",
+      "speaker": "Sundar Pichai",
+      "context": "Fireside chat at Stanford Graduate School of Business, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Pichai regularly speaks about his family and his relatively grounded home life, and the self-deprecating humor about his own job description fits his documented warmth and humility. The giveaway is the phrase 'humbling in a way I wasn't expecting' — it's a little too well-shaped for live conversation."
+    },
+    {
+      "id": "q5",
+      "text": "There's a thing that happens in the second act of almost every screenplay I've read where you can feel the writer going, 'okay, now I need to get from here to the ending.' And the whole movie just kind of dies in that moment. I try to write the second act first now, just to see if there even is a story worth telling.",
+      "speaker": "Aaron Sorkin",
+      "context": "Masterclass Q&A session at the Tribeca Film Festival, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Sorkin famously obsesses over structure and has spoken at length about second-act problems in screenwriting, so this fits his documented preoccupations perfectly. The subtle giveaway is the phrase 'just to see if there even is a story worth telling' — it's a bit too tidy a conclusion for someone whose real speech tends to spiral and self-correct."
+    },
+    {
+      "id": "q6",
+      "text": "Ah -- playoffs? Don't talk about -- playoffs? You kidding me? Playoffs? I just hope we can win a game!",
+      "speaker": "Jim Mora",
+      "context": "Indianapolis Colts head coach, at a November 2001 press conference when a reporter asked about the team's playoff chances after a loss",
+      "real": true,
+      "source": {
+        "title": "Garber: Mora reflects on \"Playoffs?\" moment",
+        "url": "https://www.espn.com/nfl/story/_/id/7302157/jim-mora-reflects-playoffs-moment",
+        "date": "2012-01-12"
+      }
+    }
+  ]
+}
