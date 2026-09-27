@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-27",
+  "edition": 92,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I once sat through a six-hour committee session on water rights. Six hours. And at the end of it I understood one thing very clearly — everyone in that room had extremely strong feelings and nobody was going home happy. That's actually governance, though. That's the real thing.",
+      "speaker": "Kyrsten Sinema",
+      "context": "Keynote address at the National Conference of State Legislatures annual summit, Portland, August 2022",
+      "real": false,
+      "fake_note": "I made this one up — Sinema leans hard into her image as a centrist pragmatist who does unglamorous legislative work, and water rights are genuinely central to Arizona politics. The giveaway is 'that's the real thing' — a little too neat a landing for someone speaking off the cuff."
+    },
+    {
+      "id": "q2",
+      "text": "My father used to say that a politician who claims to love all of their constituents equally probably doesn't love any of them very much. He was a postman. He had opinions about everything.",
+      "speaker": "Keir Starmer",
+      "context": "Profile interview with The Times Magazine, London, February 2024",
+      "real": false,
+      "fake_note": "I made this one up — Starmer invokes his working-class father constantly and uses him as a moral compass in interviews, which makes this feel entirely genuine. The tell is the philosophical punchline, which is a little too polished for a genuinely off-the-cuff paternal memory."
+    },
+    {
+      "id": "q3",
+      "text": "I think this is the most extraordinary collection of talent, of human knowledge, that has ever been gathered together at the White House, with the possible exception of when Thomas Jefferson dined alone.",
+      "speaker": "John F. Kennedy",
+      "context": "Opening of President Kennedy's toast at a dinner honoring Western Hemisphere Nobel Prize winners, April 29, 1962 — a famously gracious, witty compliment to the assembled laureates by invoking Jefferson's solitary genius.",
+      "real": true,
+      "source": {
+        "title": "Remarks at a Dinner Honoring Nobel Prize Winners of the Western Hemisphere | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-dinner-honoring-nobel-prize-winners-the-western-hemisphere",
+        "date": "1962-04-29"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Nothing so dates a man as to decry the younger generation.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The Democratic statesman, in a speech at the University of Wisconsin, Madison (8 October 1952) - a dry, self-aware needle at those who complain about the young.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I don't want to relitigate every decision from those years, but I will say — governing during a financial crisis is a bit like being handed a garden hose when the house is already on fire, and then being evaluated on whether you kept the lawn green.",
+      "speaker": "Gordon Brown",
+      "context": "In conversation with Alistair Campbell on The Rest Is Politics podcast, episode aired September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Brown is perpetually semi-relitigating the 2008 financial crisis in exactly this register: defensive but earnest, reaching for an analogy to make his case. The tell is the metaphor is slightly too elegantly constructed for genuine spontaneity."
+    },
+    {
+      "id": "q6",
+      "text": "We have the BEST FINANCIAL NUMBERS EVER, and the FAKE NEWS MEDIA refuses to report them!!!",
+      "speaker": "Donald Trump",
+      "context": "Truth Social post, Saturday",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump boasts about economy, slams 'fake news' amid media battle",
+        "url": "https://thehill.com/homenews/administration/6113577-trump-accuses-outlets-fake-news/",
+        "date": "2026-09-27"
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-27",
+  "edition": 101,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Every family's got a room nobody talks about.",
+      "speaker": "Knives Out (2019)",
+      "context": "Benoit Blanc musing aloud during his walk-through of the Thrombey house",
+      "real": false,
+      "fake_note": "I made this one up — Blanc's folksy, elliptical pronouncements are a signature of the film, and a remark about family secrets fits the whodunit setup naturally. The giveaway is it sounds slightly more world-weary than Blanc's usual delivery, which tends to stay just a little more playful."
+    },
+    {
+      "id": "q2",
+      "text": "May the Force be with you.",
+      "speaker": "Star Wars (1977)",
+      "context": "Said during the Rebel briefing before the assault on the Death Star (and by Han to Luke).",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "The safe thing and the right thing stopped being the same thing around mile marker forty.",
+      "speaker": "Thelma & Louise (1991)",
+      "context": "Louise driving at night, half to herself",
+      "real": false,
+      "fake_note": "I made this one up — the quiet, road-weary resolve matches Louise's voice as the journey turns serious, and a mileage marker is a grounded, situational detail. The subtle giveaway is the near-aphorism quality; the film earns its bigger statements through longer exchanges, not single tossed-off lines."
+    },
+    {
+      "id": "q4",
+      "text": "I'll be back.",
+      "speaker": "The Terminator (1984)",
+      "context": "The Terminator (Arnold Schwarzenegger) tells the police desk sergeant he'll be back, then drives a car through the front of the station.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "She doesn't know what I wrote in that letter, and she never will.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick speaking quietly to Sam after Ilsa has left the café",
+      "real": false,
+      "fake_note": "I made this one up — the clipped, world-weary restraint is pure Rick Blaine, and a letter fits the film's wartime intrigue naturally. The giveaway is that Rick almost never confides in Sam with that level of directness; he'd deflect with a drink order instead."
+    },
+    {
+      "id": "q6",
+      "text": "I put in for a transfer six months ago. Nobody laughed then, either.",
+      "speaker": "MASH (1970)",
+      "context": "Hawkeye making a deadpan aside to Trapper in the Swamp",
+      "real": false,
+      "fake_note": "I made this one up — the self-aware, understated absurdism is exactly Hawkeye's register, and a transfer joke fits the film's running theme of futile escape. The giveaway is the punchline structure is a touch too crisp; Altman's overlapping dialogue rarely gives a joke that much breathing room."
+    }
+  ]
+}

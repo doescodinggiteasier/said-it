@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-27",
+  "edition": 96,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've done stadium shows where the roof is off and it's raining and seventy thousand people are just — they don't move. They don't run. And you realize in that moment that weather is just another light cue if the song is right.",
+      "speaker": "Bruce Springsteen",
+      "context": "Recorded interview for the 'Springsteen on Broadway' press junket, published in Rolling Stone, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Springsteen has built his entire mythology around exactly this kind of transcendent live-show story, and the specific image of rain and an immovable crowd is deeply consistent with his documented concert philosophy. The giveaway is 'another light cue,' which is a touch too production-minded for Springsteen, who frames those moments in more human, almost religious terms."
+    },
+    {
+      "id": "q2",
+      "text": "'Bull riding and boobies' — that is potentially the greatest lyric in any song ever.",
+      "speaker": "Harry Styles",
+      "context": "In his 2019 Rolling Stone cover interview, riffing on a line from Lil Nas X's 'Old Town Road.'",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — The Eternal Sunshine of Harry Styles",
+        "url": "https://www.rollingstone.com/music/music-features/harry-styles-cover-interview-album-871568/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I picked up violin when I was three and a half. My mother thought it would make me disciplined. It made me obsessive, which is not the same thing, but it's closer to useful.",
+      "speaker": "Itzhak Perlman",
+      "context": "Commencement address at the Juilliard School, New York City, May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Perlman genuinely did begin violin at a young age and speaks frequently about his mother's role, and his dry, self-aware wit is well documented in his many public talks. The tell is the framing of 'obsessive' versus 'disciplined' — it's a sharper, more epigrammatic distinction than his usual warmly anecdotal style."
+    },
+    {
+      "id": "q4",
+      "text": "People think I'm being modest when I say I don't write hooks, I find them. But I genuinely mean it. I'll be in the shower or driving on the 101 and something just — it's already there. My job is just not to mess it up once I get to the studio.",
+      "speaker": "Max Martin",
+      "context": "Keynote interview with Elton John at the Polar Music Prize ceremony, Stockholm, June 2016",
+      "real": false,
+      "fake_note": "I made this one up — Max Martin rarely gives interviews but when he does he consistently frames his songwriting as a process of discovery rather than construction, and the self-deprecating humility is exactly on-brand. The giveaway is the specific highway reference: Max Martin is Swedish and based between Stockholm and LA, but the casual 'driving on the 101' feels slightly too Americanized for the way he typically talks about his creative life."
+    },
+    {
+      "id": "q5",
+      "text": "I'm never going to finish it",
+      "speaker": "Matty Healy",
+      "context": "Commenting on The 1975's nearly-complete new album",
+      "real": true,
+      "source": {
+        "title": "Music — Matty Healy says The 1975’s new album is ‘almost done’: “I’m never going to fini",
+        "url": "https://www.nme.com/news/music/matty-healy-the-1975-new-album-almost-done-never-going-finish-3970896?utm_source=rss&utm_medium=rss&utm_campaign=matty-healy-the-1975-new-album-almost-done-never-going-finish",
+        "date": "2026-09-27"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The music always precedes the words. The words often come from the sound of the music and eventually evolve into coherent thoughts. Or incoherent thoughts.",
+      "speaker": "Paul Simon",
+      "context": "Describing his music-first songwriting process in an American Songwriter interview tied to his Songwriter collection.",
+      "real": true,
+      "source": {
+        "title": "American Songwriter — Interview: Paul Simon Discusses Songwriter And Songwriting",
+        "url": "https://americansongwriter.com/interview-paul-simon-discusses-songwriter-and-songwriting/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

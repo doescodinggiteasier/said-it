@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-27",
+  "edition": 93,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Happy? Happy is not a word that we think about in the game. You gotta think of something different. Happy, I don't know how to judge happy. We're in the middle of a contest. Nobody's happy.",
+      "speaker": "Gregg Popovich",
+      "context": "San Antonio Spurs head coach Gregg Popovich's deadpan reply during a mid-game sideline interview when TNT's David Aldridge asked whether he was happy with his team's shot selection against the Thunder.",
+      "real": true,
+      "source": {
+        "title": "Gregg Popovich rips reporter for asking if he's 'happy' about shot selection (Video)",
+        "url": "https://larrybrownsports.com/basketball/gregg-popovich-rips-reporter-happy/160946",
+        "date": "2012-11-02"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "The thing about playing at altitude is that it resets everyone. Doesn't matter if you're a twenty-year-old who thinks he's superhuman. Around the sixty-fifth minute in La Paz you're finding out who you actually are.",
+      "speaker": "Lionel Messi",
+      "context": "Interview with Gastón Recondo, La Nación, Buenos Aires, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Messi has spoken about Bolivia's altitude affecting Argentina matches on multiple occasions, and this kind of quiet, observation-first statement with a dry kicker at the end is characteristic of his interview voice through a Spanish-language lens. The tell is 'finding out who you actually are,' which is slightly more philosophical than he usually gets."
+    },
+    {
+      "id": "q3",
+      "text": "Chemistry is something that you don't just throw in the frying pan and mix it up with another something and then throw it on top of something, then fry it up and put it in a tortilla put in a microwave, heat it up and it give it to you and expect it to taste good.",
+      "speaker": "Kevin Garnett",
+      "context": "Boston Celtics forward Kevin Garnett delivered this elaborate cooking metaphor while expressing frustration about the lack of preparation time following the 2011 NBA lockout, explaining why team chemistry can't be rushed.",
+      "real": true,
+      "source": {
+        "title": "Kevin Garnett's words were as entertaining as his play - ESPN Boston Celtics Blog",
+        "url": "https://www.espn.com/blog/boston/celtics/post/_/id/4724028/kevin-garnetts-words-were-as-entertaining-as-his-play",
+        "date": "2011-12-13"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The ball is going to ping through nicely",
+      "speaker": "Shaun Pollock",
+      "context": "Pitch inspection before South Africa v Australia ODI",
+      "real": true,
+      "source": {
+        "title": "Sports — South Africa v Australia: second men’s one-day cricket international – live",
+        "url": "https://www.theguardian.com/sport/live/2026/sep/27/south-africa-v-australia-second-mens-one-day-international-live",
+        "date": "2026-09-27"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "When I was at Alabama we'd watch film for what felt like the whole morning, and Saban would stop it — like, stop the whole tape — on a lineman's third step. Not his block. His third step. I thought I understood detail before that. I did not.",
+      "speaker": "Julio Jones",
+      "context": "Appearance on All Facts No Brakes with Shannon Sharpe, Bleacher Report, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Julio has spoken frequently about Saban's process-obsession and his own Alabama formation, so the reverence here is totally authentic. The tell is the slightly polished narrative arc of 'I thought I understood… I did not,' which is tidier than his usual more halting interview style."
+    },
+    {
+      "id": "q6",
+      "text": "I grew up watching John McEnroe and I remember thinking, even as a kid, that his relationship with the crowd was like nothing else. Not the tantrums — I mean the way he'd use the whole energy in the building. I filed that away somewhere.",
+      "speaker": "Roger Federer",
+      "context": "Press conference at Wimbledon, Centre Court media room, July 2017",
+      "real": false,
+      "fake_note": "I made this one up — Federer genuinely cited McEnroe as an influence and often spoke thoughtfully about crowd dynamics; the observation is cerebral without being preachy, which fits him well. The tell is the phrase 'filed that away somewhere,' which is marginally more American-casual than Federer's usual precise, Swiss-formal English."
+    }
+  ]
+}

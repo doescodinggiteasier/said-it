@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-27",
+  "edition": 89,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People keep sending me scripts about, quote, 'a troubled genius.' I'm not troubled. I'm annoyed. There's a big fucking difference, and nobody in this town seems to know what either one looks like.",
+      "speaker": "Gene Wilder",
+      "context": "Playboy Interview, conducted at Wilder's Connecticut home, published in the January 1988 issue",
+      "real": false,
+      "fake_note": "I made this one up — Wilder was quietly acerbic about Hollywood typecasting in the mid-to-late eighties and had a precise, slightly exasperated way of making a distinction that sounded both funny and completely serious. The tell is the Playboy interview — Wilder was quite press-shy by 1988 and had largely stepped back from major magazine profiles."
+    },
+    {
+      "id": "q2",
+      "text": "I've been thrown out of better parties than this, and I've been thrown out of this one twice, so by my maths that makes this a medium party at best.",
+      "speaker": "Oliver Reed",
+      "context": "Parkinson, BBC One, series 5, taped at BBC Television Centre, London, November 1974, the episode later cited by Parkinson's production team as 'one requiring editing'",
+      "real": false,
+      "fake_note": "I made this one up — Reed's Parkinson appearances were legendarily chaotic and he had a boisterous, almost mathematical way of delivering nonsense with complete conviction. The giveaway is 'series 5' in November 1974 — Reed did appear on Parkinson but the specific series numbering and the production-team footnote are invented details I stitched in."
+    },
+    {
+      "id": "q3",
+      "text": "And cigarettes gave me the patience to sit and write those thoughts down in a comedy-friendly format that you could understand. And alcohol gives me the courage to stand up here in front of you judgmental pricks and do it with a quarter million dollars worth of cameras in your face.",
+      "speaker": "Doug Stanhope",
+      "context": "From Doug Stanhope's 2007 stand-up special \"No Refunds\" — his defiant, self-celebrating defense of lifelong drug, cigarette, and alcohol use as the engine of his comedy.",
+      "real": true,
+      "source": {
+        "title": "Doug Stanhope: No Refunds (2007) — Full Transcript",
+        "url": "https://scrapsfromtheloft.com/comedy/doug-stanhope-no-refunds-transcript/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Over the past forty years I've been loaded on booze, coke, acid, Quaaludes, glue, cough mixture, heroin, Rohypnol, Klonopin, Vicodin, and too many other heavy-duty substances to list in this footnote. On more than a few occasions I was on all of these at the same time.",
+      "speaker": "Ozzy Osbourne",
+      "context": "From a footnote in his 2010 autobiography 'I Am Ozzy' (with Chris Ayres), cataloguing four decades of his own substance abuse.",
+      "real": true,
+      "source": {
+        "title": "Memoir 'I Am Ozzy' (LA Weekly excerpt)",
+        "url": "https://www.laweekly.com/i-am-ozzy-soon-to-be-classic-quotes-from-ozzy-osbournes-upcoming-autobiography/",
+        "date": "2010"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Somebody introduces me at an awards show as a 'legend' and I think — yeah, okay, but also I ate cereal for dinner last night standing over the sink, so let's not go crazy with the legacy stuff.",
+      "speaker": "Bernie Mac",
+      "context": "The Opie and Anthony Show, XM Satellite Radio, Channel 202, recorded live April 2006 during Mac's press run for 'Ocean's Thirteen' pre-production",
+      "real": false,
+      "fake_note": "I made this one up — Mac was brilliant at puncturing his own celebrity with hyper-domestic, embarrassingly relatable specifics, and the sink-cereal image is exactly the kind of detail he'd reach for. The giveaway is the Opie and Anthony timing — Mac did some satellite radio but this specific April 2006 slot conflicts with his filming schedule, which had him in LA, not New York."
+    },
+    {
+      "id": "q6",
+      "text": "I once asked a Jesuit priest what was the best short prayer he knew. He said, \"Fuck it,\" as in \"Fuck it; it's in God's hands.\"",
+      "speaker": "Anthony Hopkins",
+      "context": "Anthony Hopkins recounting a Jesuit priest's answer when he asked for the best short prayer — an anecdote he has told publicly, including on Inside the Actors Studio.",
+      "real": true,
+      "source": {
+        "title": "Inside the Actors Studio (IMDb quotes)",
+        "url": "https://www.imdb.com/name/nm0000164/quotes/",
+        "date": "2007"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-27",
+  "edition": 104,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've had people tell me Kendrick changed hip-hop and I want to say — yes, obviously, can we talk about something harder? The interesting question is what he changed it into, and that conversation hasn't really started yet.",
+      "speaker": "Questlove",
+      "context": "Panel discussion at South by Southwest Music Conference, Austin, March 2024",
+      "real": false,
+      "fake_note": "I made this one up — Questlove regularly positions himself as the person who wants the deeper musicological conversation, and his mild exasperation with surface praise is well-documented. The tell is that he'd almost certainly name a specific album or track to anchor the argument rather than speak in generalities."
+    },
+    {
+      "id": "q2",
+      "text": "Now is the biggest time in human history for artists to perform live",
+      "speaker": "Lawrence Rothman",
+      "context": "Discussing new album Here Lies Love / Sawdust to Stardust",
+      "real": true,
+      "source": {
+        "title": "Music — Lawrence Rothman Wants to Break Free From Music’s Ones and Zeroes",
+        "url": "https://www.rollingstone.com/music/music-features/lawrence-rothman-interview-here-lies-love-1235632050/",
+        "date": "2026-09-27"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The only time to eat diet food is while you're waiting for the steak to cook.",
+      "speaker": "Julia Child",
+      "context": "Famous saying by the chef and TV cook, listed among quotes she actually said",
+      "real": true,
+      "source": {
+        "title": "17 Quotes From Julia Child, Which She Actually Said | GBH",
+        "url": "https://www.wgbh.org/lifestyle/food/food-stories/2019-01-28/17-quotes-from-julia-child-which-she-actually-said",
+        "date": "2019-01-28"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My dad used to say that a braise is just an argument that eventually resolves itself, and I thought that was ridiculous until I had about forty years of cooking behind me and realised he was completely right.",
+      "speaker": "Nigel Slater",
+      "context": "BBC Radio 4 Desert Island Discs, recorded interview aired October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Slater's writing and speech are saturated with gentle parental memory and quietly poetic food metaphors, so this reads almost verbatim as his style. The giveaway is the tidy resolution: Slater's real anecdotes tend to stay slightly more unresolved and bittersweet."
+    },
+    {
+      "id": "q5",
+      "text": "There's a version of AGI safety that becomes its own kind of paralysis, where everyone's so worried about the thing going wrong that nobody's building the infrastructure to make it go right. I find that almost as alarming, honestly.",
+      "speaker": "Sam Altman",
+      "context": "Onstage conversation at the MIT Technology Review EmTech Digital conference, San Francisco, May 2024",
+      "real": false,
+      "fake_note": "I made this one up — Altman genuinely argues both sides of the AI urgency debate and this framing of safety-as-paralysis tracks with his public positioning. The subtle tell is 'almost as alarming' — he'd more likely frame the other danger as primary rather than put them on equal footing."
+    },
+    {
+      "id": "q6",
+      "text": "I like to say not only was that the first human on the moon, but the first software to run on the moon.",
+      "speaker": "Margaret Hamilton",
+      "context": "The Apollo flight-software lead (who popularized the term \"software engineering\") in a CBS Boston interview, on her code's role in the moon landing",
+      "real": true,
+      "source": {
+        "title": "Margaret Hamilton: MIT Software Pioneer Who Helped Save Apollo 11 Moon Mission - CBS Boston",
+        "url": "https://www.cbsnews.com/boston/news/margaret-hamilton-apollo-11-software-pioneer-interview/",
+        "date": "2019-07-15"
+      }
+    }
+  ]
+}
