@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-28",
+  "edition": 94,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I played thirty years of hockey and I still can't watch a guy take a hard hit to the knee without making a noise in my living room. My wife thinks I'm losing it.",
+      "speaker": "Wayne Gretzky",
+      "context": "Feature interview with Scott Burnside, ESPN The Magazine, March 2014",
+      "real": false,
+      "fake_note": "I made this one up — Gretzky often speaks warmly about his home life and has a gentle, self-aware sense of humor that matches this perfectly. The giveaway is the slight exaggeration of 'thirty years,' which exceeds his actual playing career by a noticeable margin."
+    },
+    {
+      "id": "q2",
+      "text": "There was a stretch in '97 where I genuinely could not tell you what city I was in when I woke up. Not because of anything — just the schedule. You land, you play, you're on the bus, you land again. Chicago? Milwaukee? I'd look out the window and try to read a sign.",
+      "speaker": "Scottie Pippen",
+      "context": "Recorded conversation with Michael Wilbon for the PTI podcast extended interview series, June 2021",
+      "real": false,
+      "fake_note": "I made this one up — Pippen frequently reflects on the grind of the championship-era Bulls schedule in a grounded, unglamorous way, and this matches his unvarnished storytelling voice. The slight tell is the '97 reference, which is just specific enough to feel real but would be easy to check against the actual playoff calendar."
+    },
+    {
+      "id": "q3",
+      "text": "People always want to know what I'm thinking on the free-throw line. Honestly? Half the time I'm trying to remember if I turned the shower off back at the hotel.",
+      "speaker": "Shaquille O'Neal",
+      "context": "Interview with Dan Patrick on The Dan Patrick Show, ESPN Radio, February 2011",
+      "real": false,
+      "fake_note": "I made this one up — Shaq is famous for self-deprecating humor about his free-throw shooting, so this lands perfectly in his wheelhouse. The subtle giveaway is that Shaq was actually known to joke about free throws with more bravado than self-doubt, never quite framing it this domestically."
+    },
+    {
+      "id": "q4",
+      "text": "I had a cheeseburger and went to bed.",
+      "speaker": "Andy Reid",
+      "context": "Kansas City Chiefs head coach Andy Reid's reply, with a smile, when asked at his press conference how he celebrated the Chiefs' 35-24 AFC Championship win over the Tennessee Titans that sent them to Super Bowl LIV.",
+      "real": true,
+      "source": {
+        "title": "Andy Reid on how he celebrated Chiefs win: 'I had a cheeseburger and went to bed'",
+        "url": "https://www.nfl.com/videos/andy-reid-on-how-he-celebrated-chiefs-win-i-had-a-cheeseburger-and-went-to-bed",
+        "date": "2020-01-20"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I have always felt that I needed you more than you needed me and that holds true to this very day.",
+      "speaker": "Vin Scully",
+      "context": "Legendary Dodgers broadcaster Vin Scully wrote a farewell letter to fans ahead of his final home series in September 2016, after 67 years calling Dodgers games.",
+      "real": true,
+      "source": {
+        "title": "Vin Scully writes farewell letter to fans before final Dodgers homestand (Sports Illustrated)",
+        "url": "https://www.si.com/mlb/2016/09/24/vin-scully-farewell-letter-los-angeles-dodgers-fans",
+        "date": "2016-09-24"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I learned a lot from this university of football during my career as a player and as a coach.",
+      "speaker": "Xavi Hernández",
+      "context": "Xavi's presentation as Netherlands head coach, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — Xavi hopes time at the ‘university of football’ will end with Dutch success",
+        "url": "https://www.theguardian.com/football/2026/aug/25/xavi-hernandez-university-of-football-netherlands-head-coach-barcelona",
+        "date": "2026-08-26"
+      }
+    }
+  ]
+}

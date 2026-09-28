@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-28",
+  "edition": 102,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Every ship I've ever lost, I knew about it before the wire came in.",
+      "speaker": "Das Boot (1981)",
+      "context": "The Old Man addressing his crew below decks during a quiet moment",
+      "real": false,
+      "fake_note": "I made this one up — the fatalism and nautical specificity match the Captain's voice and the film's brooding atmosphere. The subtle giveaway is that it verges on a confessional tone the Captain rarely allows himself this early in a voyage."
+    },
+    {
+      "id": "q2",
+      "text": "Never knew a prospector yet that died rich.",
+      "speaker": "The Treasure of the Sierra Madre (1948)",
+      "context": "Grizzled old prospector Howard (Walter Huston) offering hard-won wisdom about the gold-hunting life.",
+      "real": true,
+      "source": {
+        "title": "The Treasure of the Sierra Madre - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Treasure_of_the_Sierra_Madre",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "He doesn't have a plan, Karen. Men like that never have a plan — they have a direction.",
+      "speaker": "Out of Africa (1985)",
+      "context": "A friend cautioning Karen Blixen about Denys Finch Hatton",
+      "real": false,
+      "fake_note": "I made this one up — the colonial-era drawing-room cadence and the way it frames Denys as a romantic wanderer fits the film's tone and supporting characters perfectly. The giveaway is that it tidies up the idea of Denys a bit too neatly; the film usually leaves him more enigmatic."
+    },
+    {
+      "id": "q4",
+      "text": "It's not the altitude. It's the quiet up here that gets you.",
+      "speaker": "The Deer Hunter (1978)",
+      "context": "Michael during one of the Pennsylvania hunting sequences with his friends",
+      "real": false,
+      "fake_note": "I made this one up — the laconic, inward quality matches Michael's character and the hunting scenes' meditative mood. The subtle giveaway is that Michael in those sequences says almost nothing at all; handing him a reflective observation like this is a tiny overreach."
+    },
+    {
+      "id": "q5",
+      "text": "I'm the king of the world!",
+      "speaker": "Titanic (1997)",
+      "context": "Jack (Leonardo DiCaprio) shouts triumphantly from the bow of the ship, arms outstretched.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Touch that dial and I'll have you reassigned to the Greenland office. We have one.",
+      "speaker": "Tootsie (1982)",
+      "context": "The abrasive soap opera director snapping at a crew member on set",
+      "real": false,
+      "fake_note": "I made this one up — the comic bluster and the TV-industry setting make it fit the film's broadly satirical workplace scenes. The giveaway is the joke is slightly too constructed; the director's real insults in the film are more impulsive and less setup-punchline."
+    }
+  ]
+}

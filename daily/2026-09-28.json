@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-28",
+  "edition": 105,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what it felt like to play Wakanda for the first time and honestly the most overwhelming part wasn't the costume or the set — it was the kids on set that day. Little boys just standing there watching. I wasn't prepared for that at all.",
+      "speaker": "Chadwick Boseman",
+      "context": "Howard University commencement address Q&A session, Washington D.C., May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Boseman genuinely spoke about the responsibility he felt to Black children when discussing the Black Panther role, and the restraint and sincerity here matches his documented tone. The subtle giveaway is that his actual Howard speech focused on career courage rather than on-set moments."
+    },
+    {
+      "id": "q2",
+      "text": "If she's not going to be nominated for this one, I'm going berserk.",
+      "speaker": "Rose director",
+      "context": "Director commenting on Sandra Hüller's performance in 'Rose'",
+      "real": true,
+      "source": {
+        "title": "Entertainment — ‘Rose’ Trailer: Watch a First Look at Sandra Hüller’s Next Must-See Performance ",
+        "url": "https://www.hollywoodreporter.com/movies/movie-news/rose-trailer-exclusive-sandra-huller-1236712985/",
+        "date": "2026-09-28"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I always thought that, uh, quicksand was gonna be a much bigger problem than it turned out to be.",
+      "speaker": "John Mulaney",
+      "context": "From his stand-up special 'New in Town' (2012), riffing on childhood fears from cartoons",
+      "real": true,
+      "source": {
+        "title": "John Mulaney: New In Town (2012) - Full Transcript - Scraps from the Loft",
+        "url": "https://scrapsfromtheloft.com/comedy/john-mulaney-new-in-town-2012-full-transcript/",
+        "date": "2012-01-13"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "AI is the devil and I its maker.",
+      "speaker": "Dario Amodei",
+      "context": "SNL sketch portraying Anthropic's Dario Amodei",
+      "real": true,
+      "source": {
+        "title": "Tech — Anthropic’s Dario Amodei gets the SNL treatment",
+        "url": "https://techcrunch.com/2026/09/27/anthropics-dario-amodei-gets-the-snl-treatment/",
+        "date": "2026-09-28"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The thing nobody tells you about a spacewalk is the smell when you come back inside. The suit has been your entire atmosphere for six hours. You and that suit have been through something together. And it smells like it.",
+      "speaker": "Chris Hadfield",
+      "context": "Reddit AMA, r/IAmA, conducted from the International Space Station, February 2013",
+      "real": false,
+      "fake_note": "I made this one up — Hadfield is famous for sensory descriptions of spaceflight that ground cosmic experience in mundane physical detail, which is precisely this quote's texture. He has discussed space smells before. The giveaway is the Reddit AMA timeline; his famous ISS Reddit session happened slightly earlier and focused more on daily life questions."
+    },
+    {
+      "id": "q6",
+      "text": "I genuinely had a phase where I thought I could write a novel. I filled about forty pages and then read them back and thought, no, this person should not be writing a novel. This person should call a novelist and apologize.",
+      "speaker": "Tina Fey",
+      "context": "Live conversation with David Letterman at the 92nd Street Y, New York City, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Fey's humor runs exactly on this track: confessional setup, hard pivot to self-deprecation, one extra beat of absurdity (the apology). She has genuinely discussed creative ambitions outside comedy. The giveaway is that Fey actually did finish and publish a book, so a fan might catch the implied suggestion she abandoned the attempt entirely."
+    }
+  ]
+}

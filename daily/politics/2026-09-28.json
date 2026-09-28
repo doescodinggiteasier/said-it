@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-28",
+  "edition": 93,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My mother used to say, if you don't have time to do it right, when will you have time to do it over. I think about that every time the Senate recesses early.",
+      "speaker": "Nancy Pelosi",
+      "context": "Keynote address at the Center for American Progress annual conference, Washington D.C., November 2018",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi regularly invokes her mother and her Baltimore upbringing in speeches, and the slightly pointed humor at the Senate's expense is very her. The tell is the final clause; Pelosi is almost always more disciplined about cross-chamber jabs in formal keynote settings."
+    },
+    {
+      "id": "q2",
+      "text": "I've now been in 57 states? I think one left to go.",
+      "speaker": "Barack Obama",
+      "context": "Then a Democratic U.S. Senator from Illinois campaigning for president, Obama misspoke at a May 9, 2008 event in Beaverton, Oregon, after a long stretch of travel (he meant 47).",
+      "real": true,
+      "source": {
+        "title": "Obama's 'Bumbles' - FactCheck.org",
+        "url": "https://www.factcheck.org/2011/06/obamas-bumbles/",
+        "date": "2008-05-09"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "As I told @baylisswagner of the @nytimes here, this could be an impeachable offense. @POTUS has no right to use taxpayer money for campaign ads",
+      "speaker": "Richard Painter",
+      "context": "Former White House ethics attorney posting on social media about taxpayer-funded Trump administration ads",
+      "real": true,
+      "source": {
+        "title": "Politics — Former White House ethics attorney: Taxpayer-funded ads could be 'impeachable of",
+        "url": "https://thehill.com/homenews/administration/6114658-richard-painter-donald-trump-taxpayer-funded-tv-ads/",
+        "date": "2026-09-28"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I am the man who accompanied Jacqueline Kennedy to Paris, and I have enjoyed it.",
+      "speaker": "John F. Kennedy",
+      "context": "Self-deprecating opening line at a press luncheon at the Palais de Chaillot in Paris on June 2, 1961, during a state visit to France.",
+      "real": true,
+      "source": {
+        "title": "Remarks and Question and Answer Period at the Press Luncheon in Paris | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-and-question-and-answer-period-the-press-luncheon-paris",
+        "date": "1961-06-02"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've sat through a lot of budget hearings. A LOT. There was one in 2011 — I won't say who was chairing it — where I genuinely lost track of what currency we were discussing.",
+      "speaker": "Paul Ryan",
+      "context": "Conversation at the Hoover Institution's annual leadership forum, Stanford University, April 2023",
+      "real": false,
+      "fake_note": "I made this one up — Ryan's wonky self-image and his genuine hundreds of hours in budget committee rooms make the premise totally believable, and the withholding of the chairman's name feels like authentic professional discretion. The giveaway is 'what currency we were discussing,' which is a slightly too absurdist punchline for his usually grounded humor."
+    },
+    {
+      "id": "q6",
+      "text": "There is a version of tax policy that is genuinely fascinating — the history of it, the philosophy behind it. And then there is the part where you explain the alternative minimum tax to a room of two hundred people after lunch. That part I will not miss.",
+      "speaker": "Kevin Brady",
+      "context": "Exit interview with Roll Call, published December 2022, following announcement of retirement from the House Ways and Means Committee",
+      "real": false,
+      "fake_note": "I made this one up — Brady chaired Ways and Means and spent his career on tax legislation, so the contrast between genuine policy passion and the grind of explaining arcane tax code is perfectly in character. The subtle giveaway is the phrase 'I will not miss,' which implies he's already checked out — slightly too candid for a politician still serving."
+    }
+  ]
+}

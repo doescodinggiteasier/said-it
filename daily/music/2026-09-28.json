@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-28",
+  "edition": 97,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My mom heard 'Lose Yourself' for the first time in the car with me and she just went completely quiet for like three minutes after it ended. Then she said, okay, I get it now. That was the only review I ever really needed.",
+      "speaker": "Eminem",
+      "context": "Behind-the-scenes documentary feature included with the 8 Mile Deluxe DVD release, 2003",
+      "real": false,
+      "fake_note": "I made this one up — Em's complicated, fiercely loyal relationship with his mother is well-documented, which is exactly what makes this quietly devastating and believable. The tell is that his real public comments about his mother during that period were far more fraught, making a tender car-ride moment like this a neat emotional inversion."
+    },
+    {
+      "id": "q2",
+      "text": "It's a tornado that's always getting bigger and moving faster",
+      "speaker": "Sullivan Fortner",
+      "context": "Interview about his music and Hurricane Katrina",
+      "real": true,
+      "source": {
+        "title": "Music — ‘For this record, I took an edible and said, screw it’: jazz pianist Sullivan Fo",
+        "url": "https://www.theguardian.com/music/2026/aug/10/jazz-pianist-sullivan-fortner-leave-that-in-there-katrina-new-orleans",
+        "date": "2026-08-14"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Nashville told me to soften the bridge on one of my early demos, make it more radio-friendly. I didn't even know what that meant at the time. I thought radio-friendly meant it sounded good through a small speaker, which — I mean, is that not what it means? Turns out it means something much sadder.",
+      "speaker": "Kacey Musgraves",
+      "context": "Pitchfork feature interview timed to the release of Golden Hour, published March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Kacey's gentle, wry critique of Nashville conservatism is absolutely her signature territory, and the fake-naïve 'is that not what it means?' is pitch-perfect for her conversational deflation style. The subtle tell is that her actual early Nashville stories tend to be more specific about which labels or executives were involved."
+    },
+    {
+      "id": "q4",
+      "text": "You might be ingraining into your practise something that is counter productive and you'd have no way of knowing it.",
+      "speaker": "Steve Albini",
+      "context": "Warning aspiring engineers why doing 'whatever random crap you can find' is a trap, in an Audio Media International interview on how to be a better producer.",
+      "real": true,
+      "source": {
+        "title": "Audio Media International — 'You might be doing a bad job and not know it': Steve Albini on how to be a better producer",
+        "url": "https://audiomediainternational.com/you-might-be-doing-a-bad-job-and-not-know-it-steve-albini-on-how-to-be-a-better-producer/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The orchestra tuning up before a show — that chaos, that noise — I've never been able to listen to it casually. It makes my heart do something I can't describe properly. It's not excitement, it's more like dread, but a dread you'd pay money for.",
+      "speaker": "Yo-Yo Ma",
+      "context": "Fresh Air with Terry Gross, NPR, aired during the broadcast week of October 14, 2019",
+      "real": false,
+      "fake_note": "I made this one up — Yo-Yo Ma is famous for his deeply emotional, almost philosophical approach to performance anxiety and the sacred nature of live music, and 'a dread you'd pay money for' is the kind of paradox he genuinely traffics in. The giveaway is he usually ties these feelings to specific pieces or composers rather than the abstract pre-concert ritual."
+    },
+    {
+      "id": "q6",
+      "text": "We didn't add these songs to the album, but they were part of what I was feeling and discovering as we made it",
+      "speaker": "Stevie Wonder",
+      "context": "On releasing four previously unheard Songs in the Key of Life tracks",
+      "real": true,
+      "source": {
+        "title": "Music — Stevie Wonder Unvaults Four Songs in the Key of Life Tracks",
+        "url": "https://pitchfork.com/story/stevie-wonder-unvaults-four-songs-in-the-key-of-life-tracks/",
+        "date": "2026-09-28"
+      }
+    }
+  ]
+}
