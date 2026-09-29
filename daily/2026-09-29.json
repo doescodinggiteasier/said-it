@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-29",
+  "edition": 106,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "In 2008 my slogan was, \"Yes We Can.\" In 2013 my slogan was, \"Control-Alt-Delete.\"",
+      "speaker": "Barack Obama",
+      "context": "Joking about the rocky HealthCare.gov rollout at the 2014 White House Correspondents' Dinner",
+      "real": true,
+      "source": {
+        "title": "The Obama White House Archives — Remarks by the President at the White House Correspondents' Dinner (2014)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People always want to talk about the Mars timeline like I've got a whiteboard somewhere with a date circled in red. It's more like — we know the physics, we're solving the engineering, and the schedule is honestly whatever the schedule turns out to be. I've been wrong about timelines before. Enthusiastically wrong.",
+      "speaker": "Elon Musk",
+      "context": "Lex Fridman Podcast, Episode 400, recorded at SpaceX Starbase, Texas, January 2024",
+      "real": false,
+      "fake_note": "I made this one up — Musk has repeatedly acknowledged being overly optimistic on timelines in interviews, and this self-aware, slightly breezy shrug matches his documented candor on the subject. The giveaway is 'enthusiastically wrong' — it's a little too neat and self-aware for how he typically bulldozes past timeline criticism."
+    },
+    {
+      "id": "q3",
+      "text": "When I was maybe eight, I snuck downstairs and watched Alien on cable and then couldn't sleep for about a month. My mother found out and was furious — not at me, at my father, for not hiding the TV Guide better. That movie is probably fifty percent of why I do what I do.",
+      "speaker": "J.J. Abrams",
+      "context": "Keynote conversation at SXSW Film Festival, Austin, Texas, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Abrams has spoken often about formative childhood film experiences and his parents' role in his cinematic obsessions; Spielberg is usually his cited north star but Alien fits his genre sensibility perfectly. The parental blame detail is what sells it. The giveaway is the 'fifty percent of why I do what I do' — slightly too conclusive for how he usually circles these origin stories."
+    },
+    {
+      "id": "q4",
+      "text": "I appreciate that many of us grew up and enjoyed science fiction, but it's not helpful.",
+      "speaker": "Jensen Huang",
+      "context": "Nvidia CEO, on quantifying the existential risk of",
+      "real": true,
+      "source": {
+        "title": "TechRadar — Quote of the day: Jensen Huang on AI risk",
+        "url": "https://www.techradar.com/pro/quote-of-the-day-by-nvidia-ceo-jensen-huang-i-appreciate-that-many-of-us-grew-up-and-enjoyed-science-fiction-but-its-not-helpful-on-quantifying-the-existential-risks-posed-by-ai",
+        "date": "2026-06-06"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "They say that I have no hits, and I'm difficult to work with. And they say that like it's a bad thing.",
+      "speaker": "Tom Waits",
+      "context": "Speaking at his Rock and Roll Hall of Fame induction, March 14, 2001",
+      "real": true,
+      "source": {
+        "title": "Tom Waits - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Tom_Waits",
+        "date": "2001-03-14"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I wrote the first verse of 'Lose Yourself' in the bathroom on set. Actual bathroom. I had maybe twelve minutes and I was writing on a paper bag, I think, or whatever was close. People think there's a whole romantic story around it and there kind of is — it's just that the romance involves a paper bag and a bathroom.",
+      "speaker": "Eminem",
+      "context": "Interview on Shade 45, SiriusXM, promoting the 20th anniversary of 8 Mile, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — the real origin story of 'Lose Yourself' is actually on set and somewhat chaotic, so this riffs credibly on documented fact. Eminem has told fragments of this story in different forms over the years. The giveaway is the self-aware callback at the end ('it's just that the romance involves a paper bag') — it's slightly too constructed for his typically blunter interview style."
+    }
+  ]
+}

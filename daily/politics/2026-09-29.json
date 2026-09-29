@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-29",
+  "edition": 94,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "How can you govern a country that has two hundred and forty-six varieties of cheese?",
+      "speaker": "Charles de Gaulle",
+      "context": "The French president and WWII Free France leader, expressing wry exasperation at the ungovernability of France; recorded in Ernest Mignon's 1962 collection Les Mots du General.",
+      "real": true,
+      "source": {
+        "title": "Charles de Gaulle - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Charles_de_Gaulle",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've been in the Senate long enough to remember when a filibuster meant somebody actually had to stand there and talk. Now it's sort of a gentleman's agreement where everyone just agrees to be inconvenienced without having to do any of the inconvenient part.",
+      "speaker": "Patrick Leahy",
+      "context": "Interview with Vermont Public Radio, Burlington, September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Leahy's long Senate tenure and his dry, institutionalist humor about Senate procedure are well-documented, and complaining fondly about procedural drift is absolutely in character. The subtle tell is that the observation is a bit more pointed and linguistically neat than his usual more rambling, anecdotal style."
+    },
+    {
+      "id": "q3",
+      "text": "My favorite was The Scrunchie Chronicles: 112 Countries and It's Still All about My Hair",
+      "speaker": "Hillary Clinton",
+      "context": "Joking about a rejected memoir title, poking fun at coverage of her hair, in 2014",
+      "real": true,
+      "source": {
+        "title": "The Week — Hillary Clinton jokes she considered calling her memoir The Scrunchie Chronicles",
+        "url": "https://theweek.com/speedreads/452686/hillary-clinton-jokes-considered-calling-memoir-scrunchie-chronicles",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I had hoped to be back here this week under different circumstances, running for re-election. But you know the old saying: you win some, you lose some. And then there's that little-known third category.",
+      "speaker": "Al Gore",
+      "context": "Opening his 2004 Democratic National Convention address with a self-deprecating joke about his contested 2000 presidential loss.",
+      "real": true,
+      "source": {
+        "title": "Al Gore - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Al_Gore",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People ask me if I ever get nervous before a big vote and I say — look, I'm from Texas. We're not allowed to admit that. It's in the state constitution somewhere, I'm fairly sure.",
+      "speaker": "Kay Bailey Hutchison",
+      "context": "Remarks at the University of Texas LBJ School of Public Affairs alumni dinner, Austin, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Hutchison has a long record of warm, understated Texas pride in her public speeches, and this kind of gentle state-identity humor is well within her register. The small tell is that 'state constitution somewhere' leans slightly too comic-timing-perfect for a genuine aside."
+    },
+    {
+      "id": "q6",
+      "text": "I always thought the best preparation for a debate was a good night's sleep, and I always got exactly neither.",
+      "speaker": "Bob Dole",
+      "context": "Appearance on C-SPAN's 'Congressional Memoir' interview series, Washington D.C., filmed February 2001",
+      "real": false,
+      "fake_note": "I made this one up — Dole's clipped, self-deprecating wit is one of the most distinctive in American political history, and debate-prep exhaustion is a universal political experience he genuinely commented on. The tell is that 'exactly neither' is a fraction too polished — Dole's real jokes tend to land with a slightly rougher, more elliptical edit."
+    }
+  ]
+}

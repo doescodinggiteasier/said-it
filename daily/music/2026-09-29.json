@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-29",
+  "edition": 98,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've never understood why people say dance music is cold. You go to a club in Ibiza at six in the morning and there's a woman crying happy tears because of a filter sweep. That's not cold. That's the opposite of cold. I don't know what else to tell you.",
+      "speaker": "Fatboy Slim",
+      "context": "Interview with DJ Mag, issue 298, August 2021",
+      "real": false,
+      "fake_note": "I made this one up — Norman Cook has always defended dance music's emotional power with exactly this kind of cheerful exasperation, and Ibiza is his natural reference point. 'Crying happy tears because of a filter sweep' is the tell: plausible but too perfectly illustrative."
+    },
+    {
+      "id": "q2",
+      "text": "Keep your mind on the music. I never thought of myself as a 'woman' musician at all, but a guitarist and then a bass player",
+      "speaker": "Carol Kaye",
+      "context": "The legendary session bassist (Pet Sounds, countless hits) on identity versus playing, in a Guitar World interview.",
+      "real": true,
+      "source": {
+        "title": "Guitar World — Studio bass icon Carol Kaye on why it is not about who you are, but how and what you play",
+        "url": "https://www.guitarworld.com/artists/bassists/carol-kaye-on-teaching-women",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "He had the right attitude. He chewed gum, looked arrogant and flipped the bird to the guards – he did everything the prisoners wanted to do. He was a mean mother from the South who was there because he loved us. When he walked away, everyone in that place had become a Johnny Cash fan.",
+      "speaker": "Merle Haggard",
+      "context": "Recalling watching Johnny Cash perform at San Quentin prison on New Year's Day while Haggard was an inmate there.",
+      "real": true,
+      "source": {
+        "title": "Louder — Johnny Cash, Merle Haggard, and the true story that's almost too good to be true",
+        "url": "https://www.loudersound.com/features/johnny-cash-merle-haggard-and-the-true-story-thats-almost-too-good-to-be-true",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I remember finishing the mix on that record at like four in the morning and just sitting there in the parking lot eating a gas station sandwich, thinking, yeah, that's the one. That's the one nobody's gonna understand for about three years.",
+      "speaker": "Rick Rubin",
+      "context": "Interview with Malcolm Gladwell for the Broken Record podcast, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Rick really does talk about late-night studio epiphanies and records that take time to land, so the sentiment is dead-on. The subtle giveaway is the gas station sandwich: a little too vivid and self-deprecatingly funny, even for him."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me why I never left Detroit and I'm like — have you heard the reverb in a parking structure off Gratiot at two in the morning? That's a recording studio. I didn't need anything else.",
+      "speaker": "Jack White",
+      "context": "Keynote conversation at the Third Man Records Vault Series event, Nashville, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Jack constantly talks about Detroit's raw textures feeding his sound, and the reverence for accidental acoustics is completely his. The tell is 'Gratiot,' a real Detroit street — specific enough to feel real, but also the kind of detail he'd genuinely drop."
+    },
+    {
+      "id": "q6",
+      "text": "A great song can make the worst singer in the world a star. And a bad song can't be saved the three greatest singers in the world.",
+      "speaker": "Quincy Jones",
+      "context": "Reflecting on the primacy of the song itself, in a Rolling Stone interview about producing Michael Jackson's album Bad.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Quincy Jones Looks Back on the Making of Michael Jackson's 'Bad'",
+        "url": "https://www.rollingstone.com/music/music-features/quincy-jones-looks-back-on-the-making-of-michael-jacksons-bad-117216/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

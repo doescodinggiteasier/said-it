@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-29",
+  "edition": 90,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone handed me a bottle of Johnnie Walker Black backstage at the Fillmore in '71 and said 'this is for after the show.' I drank it during the soundcheck and played the whole set with my eyes crossed. Best fucking soundcheck of my life, the roadies gave me a standing ovation.",
+      "speaker": "John Bonham",
+      "context": "Creem Magazine, backstage feature interview, Detroit, February 1973",
+      "real": false,
+      "fake_note": "I made this one up — Bonham's documented love of pre-show chaos and his rep for Fillmore-era excess makes this completely plausible in his boisterous, self-amused voice. The giveaway is 'eyes crossed' — Bonham was more likely to brag in blunter, less comedic terms than this almost vaudevillian punchline."
+    },
+    {
+      "id": "q2",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore. I just want to cut to the chase.",
+      "speaker": "Bob Saget",
+      "context": "In a Rolling Stone interview (republished from the vault), the 'America's Dad' comedian on his post-Full House, R-rated stand-up mindset.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Keith called me at three in the morning from somewhere in France. Just screaming riff ideas down the phone at me. No hello, no context. Just riff, then silence, then 'did you get that?' I did not get that, Keith. I was asleep. In England.",
+      "speaker": "Charlie Watts",
+      "context": "Uncut Magazine, retrospective oral history feature, issue #61, June 2002",
+      "real": false,
+      "fake_note": "I made this one up — Watts's famous dry exasperation with Richards's nocturnal working habits is well-documented, and this kind of world-weary anecdote fits his deadpan voice perfectly. The subtle giveaway is 'In England' as its own sentence — Watts was genuinely restrained in interviews and wouldn't typically punch the geography like a comedian milking a callback."
+    },
+    {
+      "id": "q4",
+      "text": "I left the Rocking Vicars, thinking I was going to be a star in my own right immediately. Everything was going to be wonderful and huge women would get a hold of me and do things to me with raw carrots — you know, shit like that.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Recalling his youthful rock-star fantasies after leaving an early band (the Rockin' Vickers), in his memoir White Line Fever: The Autobiography (2002).",
+      "real": true,
+      "source": {
+        "title": "Goodreads — quotes from White Line Fever: The Autobiography",
+        "url": "https://www.goodreads.com/work/quotes/310228-white-line-fever-the-autobiography",
+        "date": "2002"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There's two kinds of people who tell you they don't watch porn. Liars, and people with really slow internet. I've been both.",
+      "speaker": "Sam Kinison",
+      "context": "Penthouse Magazine, Q&A feature, issue dated January 1989",
+      "real": false,
+      "fake_note": "I made this one up — Kinison's entire brand was confrontational oversharing about male behaviour, and Penthouse was exactly where he'd place this kind of bit in print. The giveaway is the 'slow internet' reference — the internet as a domestic fixture didn't exist in 1989, which blows the timeline immediately."
+    },
+    {
+      "id": "q6",
+      "text": "Vegas in '76 was just — look, someone's going to read this and think I'm exaggerating. I'm not exaggerating. I woke up wearing a sombrero that was not mine, owed a guy named Gerald a hundred and forty dollars, and had somehow become the unofficial DJ of a bar mitzvah. I don't know whose. I never found out.",
+      "speaker": "Dean Martin",
+      "context": "Playboy Magazine, interview by Lawrence Linderman, March 1976",
+      "real": false,
+      "fake_note": "I made this one up — Dino's Vegas mythology and his famous 'didn't-give-a-damn' persona make this perfectly plausible, and Playboy gave celebrities enormous conversational latitude in that era. The giveaway is the specificity of 'Gerald' and 'bar mitzvah' — Dino's real self-deprecating stories were vaguer and more elegantly tossed-off; this has a stand-up comic's precise comic architecture."
+    }
+  ]
+}

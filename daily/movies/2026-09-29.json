@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-29",
+  "edition": 103,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Dance with me. Not because the song is good — just so I have somewhere to look.",
+      "speaker": "Breakfast at Tiffany's (1961)",
+      "context": "Holly Golightly, pulling Paul Varjak toward her at a crowded party",
+      "real": false,
+      "fake_note": "I made this one up — Holly's breezy, slightly melancholy non-sequiturs are her whole register, and the line captures her habit of turning small moments into something unexpectedly sad. The tell is it's a shade too introspective; Holly usually deflects her own vulnerability with more speed and lightness."
+    },
+    {
+      "id": "q2",
+      "text": "You keep calling it a mistake. I stopped believing in mistakes around the third year.",
+      "speaker": "Kramer vs. Kramer (1979)",
+      "context": "Ted Kramer, mid-argument with Joanna about the marriage falling apart",
+      "real": false,
+      "fake_note": "I made this one up — the weary, clipped bitterness fits Ted's voice perfectly, and the domestic-drama register matches the film's tone. The subtle giveaway is that 'third year' is oddly specific in a way real throwaway dialogue rarely is; it almost counts its own beats."
+    },
+    {
+      "id": "q3",
+      "text": "Hakuna matata.",
+      "speaker": "The Lion King (1994)",
+      "context": "Timon and Pumbaa teach Simba their carefree \"no worries\" philosophy, both as spoken dialogue and as the title song.",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "Three hundred sheep and he still can't sleep.",
+      "speaker": "One Flew Over the Cuckoo's Nest (1975)",
+      "context": "McMurphy, ribbing one of the ward patients during a late-night card game",
+      "real": false,
+      "fake_note": "I made this one up — it has McMurphy's quick, goading humor and the intimate ward-floor camaraderie the film builds. The subtle tell is it's almost too compact a joke; McMurphy's real wisecracks tend to sprawl a little more before landing."
+    },
+    {
+      "id": "q5",
+      "text": "Just keep swimming.",
+      "speaker": "Finding Nemo (2003)",
+      "context": "Dory's optimistic mantra, which she sings to Marlin to keep him going during the search for Nemo.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "I've read every book in this library and I'm still not sure what I'm looking for.",
+      "speaker": "Good Will Hunting (1997)",
+      "context": "Will Hunting, off-hand comment to Chuckie or one of his friends",
+      "real": false,
+      "fake_note": "I made this one up — Will's self-aware mix of bravado and restlessness sounds just like him, and the library setting fits. The giveaway is it leans a little too close to a thesis statement about Will's character; his real throwaway lines are more deflecting and less self-conscious."
+    }
+  ]
+}
