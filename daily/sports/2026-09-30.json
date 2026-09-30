@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-30",
+  "edition": 96,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "If everyone likes me, they're watching, so there has to be something there.",
+      "speaker": "Tony Romo",
+      "context": "The CBS lead NFL analyst, on Pat McAfee's show in January 2026, responding to criticism of his polarizing broadcasting style.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Tony Romo addresses criticism after another up-and-down year in CBS booth",
+        "url": "https://www.foxnews.com/sports/tony-romo-opens-up-about-commentating-criticism-he-chooses-ignore-theyre-watching",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Basketball is something that I'm just good at. But horses is something that I feel the most happiness and sadness.",
+      "speaker": "Nikola Jokic",
+      "context": "The Denver Nuggets center, speaking during a 2025 promotional tour at a horse ranch in Beijing, on where his real emotional highs and lows come from.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — \"Basketball is just something I'm good at\": Jokic's admission",
+        "url": "https://sports.yahoo.com/article/basketball-just-something-im-good-103300970.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My dad used to say that a pitcher who's afraid to throw inside is basically pitching with one arm tied behind his back. I spent about three years being that guy before I finally figured out he was right.",
+      "speaker": "Greg Maddux",
+      "context": "Baseball America feature interview, Spring Training, Peoria, Arizona, March 2009",
+      "real": false,
+      "fake_note": "I made this one up — Maddux is famous for his philosophy of working inside and has credited his father's early influence in real interviews. The delay — 'three years being that guy' — makes it feel lived-in and specific. The giveaway is that the framing is slightly more narrative-tidy than Maddux's usually clipped, dryer answers."
+    },
+    {
+      "id": "q4",
+      "text": "There's a version of me that retired after the ACL. I think about that guy sometimes. He's probably fine. Maybe he's coaching somewhere. But I just couldn't let it end like that, lying on a field in a stadium that had already emptied out.",
+      "speaker": "Adrian Peterson",
+      "context": "The Players' Tribune, first-person essay, published August 2017",
+      "real": false,
+      "fake_note": "I made this one up — Peterson has spoken repeatedly about his emotional state during his ACL rehabilitation and what drove him back, so this sits perfectly in documented territory. The sneaky part is 'a stadium that had already emptied out' — evocative and specific enough to feel like real memory, but I invented it entirely."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me what I was thinking on that last possession and honestly? I wasn't. That's the whole point. You spend so much time in the gym running the same thing over and over that when it actually happens, your brain isn't really involved anymore. Which sounds scary until it works.",
+      "speaker": "Steve Kerr",
+      "context": "Golden State Warriors postgame press conference, Oracle Arena, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Kerr genuinely talks about the psychology of automaticity and habit in basketball, so this lands perfectly in his wheelhouse. The subtle giveaway is that 'which sounds scary until it works' is a touch too tidy for real postgame rambling."
+    },
+    {
+      "id": "q6",
+      "text": "He can take his'n and beat your'n and take your'n and beat his'n.",
+      "speaker": "Bum Phillips",
+      "context": "The Houston Oilers head coach paying tribute to rival coach Don Shula's ability with any roster.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — Remembering Bum Phillips, the unsung defensive innovator",
+        "url": "https://www.si.com/nfl/2013/10/19/remembering-bum-phillips-the-unsung-defensive-innovator",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

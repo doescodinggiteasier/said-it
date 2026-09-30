@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-30",
+  "edition": 95,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My mother watched every State of the Union address and graded the applause in a little notebook. She had a system — length of applause, enthusiasm of applause, whether the Vice President clapped or just sort of nodded. I inherited the notebook. I'm not sure what to do with it.",
+      "speaker": "Jeb Bush",
+      "context": "Interview on the 'Honestly with Bari Weiss' podcast, published January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Jeb has leaned into warm, self-deprecating family storytelling since leaving the race, and a detail about his mother Barbara having a quirky private ritual is entirely plausible given how often he invokes her. The tell is the 'I'm not sure what to do with it' closer — it's a bit too bittersweet and cinematic for unscripted speech."
+    },
+    {
+      "id": "q2",
+      "text": "People ask me what the hardest vote I ever cast was, and I tell them it was a highway bill in 2003, and they look at me like I've lost my mind. But that bill had seventeen things in it I hated and four things in it my state desperately needed, and you just sit there with the pen and you think — okay.",
+      "speaker": "Joe Biden",
+      "context": "Interview with Evan Osnos for The New Yorker's political podcast, published August 2020",
+      "real": false,
+      "fake_note": "I made this one up — Biden constantly reaches for the unglamorous, procedural example to make a larger point, and '2003 highway bill' is exactly the kind of specific-but-unverifiable detail he drops. The tell is that a real Biden anecdote would almost certainly name a colleague or include a Scranton reference."
+    },
+    {
+      "id": "q3",
+      "text": "It's a good thing to be laughed at. It's better than to be ignored.",
+      "speaker": "Harold Macmillan",
+      "context": "The British Prime Minister, in a handwritten note to the Postmaster General who wanted to take action against the satirical TV program 'That Was The Week That Was' - a disarmingly self-deprecating shrug at being mocked.",
+      "real": true,
+      "source": {
+        "title": "Harold Macmillan - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harold_Macmillan",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I have read the entire tax code. Well — not the entire tax code. I've read the parts my staff highlighted, which is a lot of it, and honestly that's probably more than most people want to know about depreciation schedules.",
+      "speaker": "Elizabeth Warren",
+      "context": "Remarks at a Harvard Law School alumni forum on regulatory policy, Cambridge, MA, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Warren's whole brand is having actually done the homework nobody else did, so the self-correction landing on 'depreciation schedules' sounds exactly like her. The giveaway is the slight self-deprecating hedge mid-sentence, which she almost never does in public."
+    },
+    {
+      "id": "q5",
+      "text": "I think Lindsey respected Darline more than any other person he knows including me, and that does not make me happy",
+      "speaker": "Donald Trump",
+      "context": "Trump rallying for Darline Graham in Myrtle Beach, SC",
+      "real": true,
+      "source": {
+        "title": "Politics — President makes final push for Darline Graham in trip to 'Trump country'",
+        "url": "https://thehill.com/homenews/administration/6044782-trump-rallies-graham-south-carolina-runoff/",
+        "date": "2026-08-22"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You know, grass has a life like humans have a life",
+      "speaker": "Trump",
+      "context": "Trump showing off White House renovations, discussing new grass around the helipad",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump talks about grass as he shows off White House renovations – video",
+        "url": "https://www.theguardian.com/us-news/video/2026/aug/19/trump-talks-grass-white-house",
+        "date": "2026-08-23"
+      }
+    }
+  ]
+}

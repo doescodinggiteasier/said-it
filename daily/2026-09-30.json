@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-30",
+  "edition": 107,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've probably rewritten the opening of the same book four times over the years — not the same book four times, I mean four different books all had their first chapter thrown out and rebuilt from nothing. There's something about beginnings. You're trying to shake the reader's hand and pick their pocket at the same time.",
+      "speaker": "Malcolm Gladwell",
+      "context": "Conversation with David Remnick at The New Yorker Festival, held in New York City, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Gladwell discusses his writing process in public frequently and uses exactly this kind of surprising double-image to explain an idea. The 'shake the reader's hand and pick their pocket' line sounds like a Gladwell formulation but is entirely invented; his documented craft-talk tends to focus on reporting rather than prose construction."
+    },
+    {
+      "id": "q2",
+      "text": "People ask me if I get starstruck and honestly yes, embarrassingly so. I met Meryl Streep at a function years ago and I just said 'I love your work' like a complete civilian. She was very gracious about it. I've been cringing ever since.",
+      "speaker": "Hugh Jackman",
+      "context": "Appearing on The Graham Norton Show, BBC One, during the promotional tour for The Son in January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Jackman is famously self-deprecating and warm in chat-show settings, and he genuinely worships Streep publicly. The plausible detail is him calling himself 'a complete civilian,' which sounds exactly like him. The tell is that no such Streep encounter appears in any documented interview."
+    },
+    {
+      "id": "q3",
+      "text": "Nothing so dates a man as to decry the younger generation.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The Democratic statesman, in a speech at the University of Wisconsin, Madison (8 October 1952) - a dry, self-aware needle at those who complain about the young.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I never lie, even to this day. Not even a little. Unless you count playing pranks on people, which I don't. That's comedy. Entertainment doesn't count. A joke is different from a lie, even if the difference is kind of subtle.",
+      "speaker": "Steve Wozniak",
+      "context": "From his memoir iWoz (2006), the Apple co-founder on his lifelong commitment to honesty and his exception for pranks",
+      "real": true,
+      "source": {
+        "title": "Steve Wozniak (10+ Sourced Quotes) - Lib Quotes",
+        "url": "https://libquotes.com/steve-wozniak",
+        "date": "2006-09-17"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "You could probably get through life without knowing how to roast a chicken, but the question is, would you want to?",
+      "speaker": "Nigella Lawson",
+      "context": "Quote attributed to her book Eating (Vintage Minis), on home cooking",
+      "real": true,
+      "source": {
+        "title": "TOP 25 QUOTES BY NIGELLA LAWSON | A-Z Quotes",
+        "url": "https://www.azquotes.com/author/8589-Nigella_Lawson",
+        "date": "2017-01-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I remember the first time I played Madison Square Garden — I was so nervous I actually forgot the words to a song I'd sung probably eight hundred times. Just stood there. The band kept playing and I mouthed something that was definitely not the lyric. Nobody noticed, or if they did, they were kind enough not to say.",
+      "speaker": "Bruce Springsteen",
+      "context": "Interview with Rolling Stone, published in the magazine's November 2019 issue alongside a retrospective on his Broadway residency",
+      "real": false,
+      "fake_note": "I made this one up — Springsteen really does tell self-deprecating performance stories in this exact rambling, confessional register, and a MSG memory fits his mythology perfectly. The giveaway is that he's never specifically described a lyric blackout at MSG; his documented nerves stories center on smaller, earlier venues."
+    }
+  ]
+}

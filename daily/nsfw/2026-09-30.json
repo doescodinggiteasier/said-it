@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-30",
+  "edition": 91,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My publicist once told me to 'tone it down at the Grammys.' I said, baby, I've been toned DOWN. This is the toned-down version. The other version got us asked to leave a Denny's in Reno and I'm not revisiting that.",
+      "speaker": "Ol' Dirty Bastard",
+      "context": "Vibe magazine, backstage feature, 37th Grammy Awards post-show, Los Angeles, March 1995",
+      "real": false,
+      "fake_note": "I made this one up — ODB's actual Grammy stage-crash and his gleeful refusal of any PR management are real, and 'Denny's in Reno' is exactly his kind of specific-chaotic reference. The tell is 'I'm not revisiting that' as a button — his real speech never closed that cleanly; he'd have opened a new tangent instead."
+    },
+    {
+      "id": "q2",
+      "text": "Do I think about my dick? Oh, yeah, all the time. If I think about it all the time, I got a right to sing about it. If I wasn't thinking about it all the time but thought, \"It's time to write a rock song, I'd better mention my dick,\" then I wouldn't even be able to say \"dick\" right.",
+      "speaker": "Iggy Pop",
+      "context": "Defending the sexual content of his lyrics (the song \"Trollin'\" from The Weirdness) in his 2007 Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "Iggy Pop: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/iggy-pop-the-rolling-stone-interview-2-78680/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've been in the same dressing room at this venue since 1971 and I swear to Christ there is still someone else's whiskey sweat in that couch. That is a haunted couch. I respect that couch.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Backstage interview filmed for the 'Motörhead: 40 Years of Noise' documentary, Hammersmith Apollo, London, 2015",
+      "real": false,
+      "fake_note": "I made this one up — Lemmy's reverence for grungy rock history and his deadpan delivery of filthy observations is completely authentic. The tell is 'I respect that couch' as a closing line — it's almost too perfectly quotable, and Lemmy's real kickers tended to trail off into something weirder."
+    },
+    {
+      "id": "q4",
+      "text": "People ask me how I keep my figure. I tell them the truth: divorce is a tremendous appetite suppressant. Highly recommend it, very slimming, very chic.",
+      "speaker": "Joan Rivers",
+      "context": "The Tonight Show Starring Johnny Carson, NBC, taped appearance, March 1984",
+      "real": false,
+      "fake_note": "I made this one up — Rivers mined her divorce from Edgar relentlessly and had exactly this tone of weaponised elegance around personal catastrophe. The giveaway is 'very chic' — she'd have punctured that word immediately with something uglier rather than letting it sit there looking pretty."
+    },
+    {
+      "id": "q5",
+      "text": "Someone in the front row tonight had a sign that said 'Be My Girlfriend.' Honey, I appreciate the hustle, but I've got a soundcheck, a cold, and a very specific hotel pillow situation I'm not ready to compromise on.",
+      "speaker": "Gilda Radner",
+      "context": "Stand-up warm-up set, Second City Toronto alumni benefit show, filmed for CBC broadcast, October 1977",
+      "real": false,
+      "fake_note": "I made this one up — Radner's voice was warm but quick and she absolutely weaponised specificity ('very specific hotel pillow situation') for comedy. The giveaway is the structural tidiness of the three-item list — her real improvised speech was more tangled and surprised-sounding."
+    },
+    {
+      "id": "q6",
+      "text": "I sort of fucking woke up one day and was like, 'You're an asshole. You're not an artist,'",
+      "speaker": "Lady Gaga",
+      "context": "Lady Gaga recounting the self-lacerating moment she decided to quit cocaine, in a Lifetime interview ('The Conversation with Amanda de Cadenet') reported by Rolling Stone; she went on to call cocaine 'the white devil.'",
+      "real": true,
+      "source": {
+        "title": "Lady Gaga Reflects on Past Cocaine Use (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/lady-gaga-reflects-on-past-cocaine-use-188696/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

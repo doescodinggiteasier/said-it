@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-30",
+  "edition": 99,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've had people tell me the guitar solo on that record changed their life, and I genuinely cannot remember recording it. I'm not being modest — I think I was watching a football game in my head and my hands just went.",
+      "speaker": "Eric Clapton",
+      "context": "Guitar World magazine, cover interview published October 2013",
+      "real": false,
+      "fake_note": "I made this one up — Clapton has spoken often about playing in an almost dissociative, unconscious state when things go well, which real fans recognize immediately. The giveaway is the football-game gag; Clapton's actual humor in print tends to be drier and he rarely reaches for a sports metaphor."
+    },
+    {
+      "id": "q2",
+      "text": "I can't possibly accept this award.",
+      "speaker": "Adele",
+      "context": "Accepting Album of the Year for '25' at the 2017 Grammy Awards, Adele stunned the room by opening her acceptance speech declaring she couldn't accept the award, then turning to praise Beyonce — whose 'Lemonade' she felt should have won.",
+      "real": true,
+      "source": {
+        "title": "GRAMMY Rewind: Adele Urges That Beyonce's 'Monumental' 'Lemonade' Should've Won Album Of The Year In 2017",
+        "url": "https://www.grammy.com/news/adele-25-beyonce-lemonade-grammys-2017-album-of-the-year-win-acceptance-speech-video-rewind",
+        "date": "2017-02-12"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My mom used to iron clothes to my records. Not dance to them — iron clothes. She'd say, 'Baby, your music keeps a good crease.' I held onto that for years before I decided it was a compliment.",
+      "speaker": "Stevie Wonder",
+      "context": "Rolling Stone 50th Anniversary oral history feature, published November 2017",
+      "real": false,
+      "fake_note": "I made this one up — Stevie frequently credits his mother and talks about how ordinary domestic moments shaped his relationship with his music. The tell is that the anecdote is almost too warm and perfectly formed; Stevie's real interview tangents tend to sprawl a little more."
+    },
+    {
+      "id": "q4",
+      "text": "The song is the power; the singer is the messenger. The greatest singer in the world cannot save a bad song.",
+      "speaker": "Quincy Jones",
+      "context": "On what he considers the most important lesson he learned as a producer, in his widely-shared 2018 Vulture interview.",
+      "real": true,
+      "source": {
+        "title": "The Atlanta Journal-Constitution — 9 of the best quotes from Quincy Jones' sweeping Vulture interview",
+        "url": "https://www.ajc.com/entertainment/the-best-quotes-from-quincy-jones-sweeping-vulture-interview/1rIyLBqVGNd8I5eb7JUK4H/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There were nights in the early seventies where I'd finish a show, sit in the back of whatever car we had, and genuinely not know what city I was in. Not drugs — just that the music had taken everything out of me and geography was gone.",
+      "speaker": "David Bowie",
+      "context": "Paris Match interview, translated and reprinted in MOJO magazine, February 2002",
+      "real": false,
+      "fake_note": "I made this one up — Bowie gave dozens of late-career interviews revisiting the intensity and blur of his early touring years, and this kind of reflective, almost clinical self-observation is very much his register. The giveaway is the unprompted 'not drugs' clarification, which is a little too tidy given that Bowie was openly candid elsewhere about that period."
+    },
+    {
+      "id": "q6",
+      "text": "There's a moment in the studio — I don't know if every producer feels this — where the track kind of tells you it's done, and you keep poking at it anyway because you paid for the time. That's how you ruin half the good songs that never get released.",
+      "speaker": "Rick Rubin",
+      "context": "Broken Record podcast with Malcolm Gladwell, episode aired March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Rick really does talk about the danger of over-producing and 'leaving the song alone,' so this lands squarely in his wheelhouse. The subtle giveaway is that specific little admission about 'paying for the time,' which is a bit too self-deprecating and tidy for his usual Zen-oracle mode."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-30",
+  "edition": 104,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't follow orders. I follow the machine, and right now the machine says you're behind.",
+      "speaker": "Full Metal Jacket (1987)",
+      "context": "Gunnery Sergeant Hartman, bearing down on a lagging recruit in training",
+      "real": false,
+      "fake_note": "I made this one up — Hartman's dehumanizing rhetoric and his fondness for turning everything into a mechanical process match Ermey's delivery and Kubrick's thematic obsessions. The giveaway is 'the machine' as a metaphor is a shade too abstract for Hartman, who deals in bodies and dirt, not concepts."
+    },
+    {
+      "id": "q2",
+      "text": "I've been in this desert long enough to know it doesn't care who you were before you got here.",
+      "speaker": "Lawrence of Arabia (1962)",
+      "context": "Lawrence, introspective, speaking to Sherif Ali",
+      "real": false,
+      "fake_note": "I made this one up — the grandiose yet measured cadence mirrors O'Toole's Lawrence, and the desert-as-leveler idea runs through the whole film. The giveaway is that Lawrence tends to romanticize the desert rather than admit its indifference; this is slightly too humble for him."
+    },
+    {
+      "id": "q3",
+      "text": "The world is a business, Mr. Beale. It has been since man crawled out of the slime.",
+      "speaker": "Network (1976)",
+      "context": "Corporate chairman Arthur Jensen (Ned Beatty) delivering his boardroom sermon to news anchor Howard Beale (Peter Finch).",
+      "real": true,
+      "source": {
+        "title": "Network (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Network_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Toto, I've a feeling we're not in Kansas anymore.",
+      "speaker": "The Wizard of Oz (1939)",
+      "context": "Dorothy, having landed in the strange new world of Oz after the tornado, says this to her dog Toto.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "A million dollars isn't cool. You know what's cool? A billion dollars.",
+      "speaker": "The Social Network (2010)",
+      "context": "Sean Parker (Justin Timberlake) pitching ambition to Mark Zuckerberg and Eduardo Saverin at a restaurant; the punchline lands in an intercut deposition scene",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Five years ago I couldn't have told you what a derivative was. Now I can't sleep because of them.",
+      "speaker": "The Big Short (2015)",
+      "context": "Mark Baum, agitated, to his team before a key meeting",
+      "real": false,
+      "fake_note": "I made this one up — Baum's exhausted moral fury and the film's habit of letting characters talk themselves in circles about financial instruments make this feel earned. The giveaway is the line is slightly too tidy as a before-and-after; Baum usually expresses dread mid-rant, not as a neat summary."
+    }
+  ]
+}
