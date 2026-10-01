@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-01",
+  "edition": 108,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People keep asking me what I ate the morning of the championship. Honestly? A gas station burrito and half a warm Gatorade from the back of someone's car. I don't think nutrition was really the variable that day.",
+      "speaker": "Simone Biles",
+      "context": "Interview with Jemele Hill on 'Jemele Hill is Unbothered,' Spotify podcast, March 2024",
+      "real": false,
+      "fake_note": "I made this one up — Biles is known for self-deprecating, grounded humor about the gap between elite performance and messy reality, which makes this totally plausible. The giveaway is the specificity of 'back of someone's car'; she tends to be vivid but not quite that cinematic in her throwaway detail."
+    },
+    {
+      "id": "q2",
+      "text": "There's a version of this where I just stayed in Auckland and became a personal trainer, and honestly some mornings that guy seems like he made the right call.",
+      "speaker": "Taika Waititi",
+      "context": "Roundtable conversation with Deadline Hollywood, 'The Contenders' awards season event, November 2023",
+      "real": false,
+      "fake_note": "I made this one up — Waititi constantly jokes about his own improbable path in this exact self-deprecating register, and his Auckland roots come up all the time. The subtle tell is 'that guy seems like he made the right call' — slightly too neat a punchline for his usual more ragged delivery."
+    },
+    {
+      "id": "q3",
+      "text": "Not everyone can be a truffle. Most of us are potatoes. And a potato is a very good thing to be.",
+      "speaker": "Massimo Bottura",
+      "context": "Quote by the Italian chef of Osteria Francescana, on humility",
+      "real": true,
+      "source": {
+        "title": "Massimo Bottura Quotes (Author of Never Trust A Skinny Italian Chef)",
+        "url": "https://www.goodreads.com/author/quotes/406174.Massimo_Bottura",
+        "date": "2021-01-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "We can't be content with New York City simply being the birthplace of hip hop",
+      "speaker": "Mamdani",
+      "context": "Video from the Mayor's Office, NYC",
+      "real": true,
+      "source": {
+        "title": "Music — Mayor Mamdani and Nas Have a Heart to Heart About Keeping NYC the Home of Hip Ho",
+        "url": "https://www.rollingstone.com/music/music-news/mayor-mamdani-nas-discuss-new-york-home-of-hip-hop-1235635114/",
+        "date": "2026-10-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "String theory is in a strange place culturally right now. It's become almost a personality trait for some people. You meet someone at a party and they say 'I'm really into string theory' and you think — okay, but do you do the maths? Because the maths is where it either lives or dies, and it's brutal.",
+      "speaker": "Brian Cox",
+      "context": "Interview with Stuart Maconie on BBC Radio 6 Music, 'Freak Zone,' January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Cox frequently navigates that tension between making physics accessible and being privately frustrated when popularization outruns rigor, and his tone in radio interviews is exactly this conversational and slightly wry. The giveaway is 'it's become almost a personality trait' — a little too sociologically neat for his usual flow."
+    },
+    {
+      "id": "q6",
+      "text": "The speed of light is never going to go out of style. Gravity, lint, signs, time itself, is not going to go out of style.",
+      "speaker": "Steven Wright",
+      "context": "In a Salon Talks interview, explaining why he avoids topical jokes so his material stays timeless",
+      "real": true,
+      "source": {
+        "title": "\"Gravity is never going to go out of style\": Steven Wright on the secret to comedy longevity - Salon.com",
+        "url": "https://www.salon.com/2024/05/22/steven-wright-harold-salon-talks/",
+        "date": "2024-05-22"
+      }
+    }
+  ]
+}

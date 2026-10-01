@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-01",
+  "edition": 97,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Nobody really wants to do any fighting",
+      "speaker": "Floyd Schofield",
+      "context": "Interview with Fight Hub TV, discussing fighters avoiding tough challenges",
+      "real": true,
+      "source": {
+        "title": "Sports — Floyd Schofield calls out modern boxing: ‘Nobody really wants to do any fighting",
+        "url": "https://sports.yahoo.com/articles/floyd-schofield-calls-modern-boxing-134541870.html",
+        "date": "2026-10-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Honestly the hardest part of managing isn't the tactics, it's the Tuesday. Everyone shows up for the big game. You find out what a player's made of on a cold Tuesday in February when there's nothing at stake and nobody's watching.",
+      "speaker": "José Mourinho",
+      "context": "Pre-match press conference ahead of AS Roma vs. Fiorentina, Serie A, Stadio Olimpico, Rome, December 2022",
+      "real": false,
+      "fake_note": "I made this one up — Mourinho really does speak in grand, slightly theatrical pronouncements about character and preparation, and 'cold Tuesday' is practically a cliché of football culture, which makes it feel authentic. The giveaway is it's a touch too universal; Mourinho usually anchors these observations to a specific player or opponent."
+    },
+    {
+      "id": "q3",
+      "text": "Leave me alone, I know what I'm doing!",
+      "speaker": "Kimi Raikkonen",
+      "context": "Formula 1 driver's deadpan team-radio reply to his Lotus race engineer Simon Rennie, who kept feeding him instructions during the 2012 Abu Dhabi Grand Prix (which Raikkonen went on to win).",
+      "real": true,
+      "source": {
+        "title": "F1.com — Leave me alone, I know what I'm doing: the best of Räikkönen on race radio",
+        "url": "https://www.formula1.com/en/latest/article/leave-me-alone-i-know-what-doing-best-of-raikkonen-race-radio.rCKOidDkwt70dZdOENU3e",
+        "date": "2022-11-04"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "This ain't a football game, we do this every day.",
+      "speaker": "Earl Weaver",
+      "context": "The Baltimore Orioles manager on the day-in, day-out grind that makes baseball unlike other sports.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Eye on Quotes: The pithy brilliance of Earl Weaver",
+        "url": "https://www.cbssports.com/mlb/news/eye-on-quotes-the-pithy-brilliance-of-earl-weaver/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've played courses where the wind changed direction on me three times in one hole. At that point you're not playing golf anymore, you're negotiating.",
+      "speaker": "Phil Mickelson",
+      "context": "Golf Channel's Golf Central desk interview, filmed at The Open Championship, Royal St George's, July 2021",
+      "real": false,
+      "fake_note": "I made this one up — Mickelson is famous for his shot-making creativity and he regularly talks about course management and wind reads in this wry, slightly pleased-with-itself way. The tell is 'negotiating,' which is one degree too cute; his real phrasing tends to stay closer to technical golf language."
+    },
+    {
+      "id": "q6",
+      "text": "When I was coming up, the veteran guys didn't mentor you. They competed against you. And I'm not saying that was wrong — I learned more from being shut down by somebody in practice than I ever did from a compliment.",
+      "speaker": "Kobe Bryant",
+      "context": "Q&A session with students at the USC Marshall School of Business, Los Angeles, filmed and posted to the Mamba Sports Academy YouTube channel, January 2019",
+      "real": false,
+      "fake_note": "I made this one up — Kobe spoke in exactly this vein constantly: framing adversity from veterans as education rather than hazing, and the specific contrast between being 'shut down' versus receiving praise is very much his register. The subtle giveaway is the concessive 'I'm not saying that was wrong' — Kobe rarely hedged like that; he'd usually just assert it."
+    }
+  ]
+}

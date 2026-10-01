@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-01",
+  "edition": 100,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I try not to look back too much, but I'm very proud of everything we did",
+      "speaker": "David Byrne",
+      "context": "Talking Heads Q&A with Este Haim for new SiriusXM station launch",
+      "real": true,
+      "source": {
+        "title": "Music — Watch Talking Heads reunite again for Q&A with Este Haim to launch new SiriusXM ",
+        "url": "https://www.nme.com/news/music/talking-heads-reunite-este-haim-siriusxm-station-interview-3971758?utm_source=rss&utm_medium=rss&utm_campaign=talking-heads-reunite-este-haim-siriusxm-station-interview",
+        "date": "2026-10-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "We were somewhere in the third week of tracking and Bruce walked in and said he'd been up all night and played us this thing on an acoustic guitar and it was 'The River' and the room just went very quiet. Not polite quiet — actually quiet. Nobody wanted to be the first one to talk.",
+      "speaker": "Patti Scialfa",
+      "context": "Interview with David Remnick for The New Yorker Radio Hour, broadcast October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Patti Scialfa talking about Bruce Springsteen's creative moments is completely plausible, and her measured, observational storytelling style fits. The giveaway is the timeline: Patti didn't join the E Street Band until 1984, and 'The River' was recorded in 1979-80."
+    },
+    {
+      "id": "q3",
+      "text": "I was thinking of people in my hometown of Rockford, Illinois. Wearing SpongeBob pajama pants to a funeral-type heads.",
+      "speaker": "Ryley Walker",
+      "context": "Ryley Walker discussing his new song, first in five years",
+      "real": true,
+      "source": {
+        "title": "Music — Ryley Walker Signs to AD 93 and Unveils First Song in Five Years",
+        "url": "https://pitchfork.com/story/ryley-walker-signs-to-ad93-and-unveils-first-song-in-five-years/",
+        "date": "2026-10-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Rick kept stopping the tape and going, 'More paranoid. Sound more paranoid.' And I'm thinking, I don't even know what paranoid sounds like when you sing it. So I just sort of tightened everything in my throat and apparently that was it, because he never said it again.",
+      "speaker": "Morrissey",
+      "context": "Quoted in a retrospective feature on The Smiths' recording sessions, Uncut magazine, March 2004",
+      "real": false,
+      "fake_note": "I made this one up — Morrissey discussing Rick Rubin is the tell; they never worked together. The physical description of adjusting his throat and the slightly baffled tone is very true to how Morrissey narrates his own creative process, which is what makes it stick."
+    },
+    {
+      "id": "q5",
+      "text": "The backing singers on that session were so good that after take two I started feeling like I was in their way. I've never told anyone that before. I sort of stepped back from the mic a few inches and just let them fill up the room and that's the take we used.",
+      "speaker": "Elton John",
+      "context": "Interviewed by David Frost for Al Jazeera English's The Frost Interview, aired June 2012",
+      "real": false,
+      "fake_note": "I made this one up — Elton is known for his openness about the collaborative process and for crediting the people around him, so this self-effacing anecdote is very in-character. The giveaway is the physical detail of stepping back from the mic, which is charming but slightly too cinematic to be spontaneous recall."
+    },
+    {
+      "id": "q6",
+      "text": "Eminem's Lose Yourself is my anthem for getting the kids out of the house",
+      "speaker": "Kimberly Wyatt",
+      "context": "Kimberly Wyatt discussing her playlist in a music interview",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Eminem’s Lose Yourself is my anthem for getting the kids out of the house’: Kim",
+        "url": "https://www.theguardian.com/music/2026/sep/27/kimberly-wyatt-pussycat-dolls-honest-playlist-whitney-houston-eminem",
+        "date": "2026-10-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-01",
+  "edition": 105,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You ever see a man try to bribe a glacier? That's what this feels like.",
+      "speaker": "The Thing (1982)",
+      "context": "MacReady talking to Childs after another failed attempt to reach outside help",
+      "real": false,
+      "fake_note": "I made this one up — MacReady's sardonic, bone-tired fatalism is exactly the register Kurt Russell plays throughout the film. The giveaway is that the metaphor is a touch too colorful and writerly; MacReady's real dialogue is bleaker and more clipped than this."
+    },
+    {
+      "id": "q2",
+      "text": "I feel the need... the need for speed!",
+      "speaker": "Top Gun (1986)",
+      "context": "Maverick (Tom Cruise) and Goose (Anthony Edwards) say it together, high-fiving as they get pumped up to fly.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "You want to tell me why there's a set of keys in the freezer, or should I just guess?",
+      "speaker": "Home Alone (1990)",
+      "context": "Kate McCallister to Peter after discovering another household blunder the morning of the trip",
+      "real": false,
+      "fake_note": "I made this one up — Kate's exasperated, rapid-fire scolding energy before the family's chaos peaks is totally consistent with her early scenes. The giveaway is that this specific domestic-absurdism beat doesn't appear; the film's pre-departure chaos is played more broadly, not in tight two-person dialogue."
+    },
+    {
+      "id": "q4",
+      "text": "Mr. Vaughn, what we are dealing with here is a perfect engine, an eating machine.",
+      "speaker": "Jaws (1975)",
+      "context": "Marine biologist Matt Hooper (Richard Dreyfuss) warning Mayor Vaughn (Murray Hamilton) about the shark.",
+      "real": true,
+      "source": {
+        "title": "Jaws (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Jaws_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Next time you want to make a point, pick up a phone like a normal person.",
+      "speaker": "Die Hard (1988)",
+      "context": "Dwayne T. Robinson snapping at Dwayne after McClane's radio interruptions embarrass him",
+      "real": false,
+      "fake_note": "I made this one up — Robinson's bureaucratic irritability and his ongoing humiliation by McClane's cowboy methods make this line feel completely at home. The giveaway is that Robinson never quite addresses McClane directly with this kind of resigned normalcy; his frustration is always more defensive and public-facing."
+    },
+    {
+      "id": "q6",
+      "text": "I remember every patient I've lost. I don't remember half the ones I've saved.",
+      "speaker": "M*A*S*H (1970)",
+      "context": "Hawkeye speaking quietly to Trapper after a soldier dies on the table",
+      "real": false,
+      "fake_note": "I made this one up — Hawkeye's gallows sincerity beneath the comedy is real, and a quiet admission like this fits the film's tonal shifts. The giveaway is that it edges close to an aphorism, which the actual Altman film would deliver with more irony or be interrupted before landing cleanly."
+    }
+  ]
+}

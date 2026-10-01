@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-01",
+  "edition": 92,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Somebody asked me once what the secret to a long marriage was. I said, 'Separate bathrooms and a very selective memory.' She was standing right next to me when I said it. That's how you keep the magic alive — sheer fucking nerve.",
+      "speaker": "Rodney Dangerfield",
+      "context": "Recorded warm-up set before a Tonight Show Starring Johnny Carson taping, NBC Studios, Burbank, February 1981",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield built his whole persona on self-deprecating marriage material, so this fits his wheelhouse perfectly. The giveaway is 'sheer fucking nerve' as a closer; Dangerfield usually undercut himself rather than landing on a note of bravado."
+    },
+    {
+      "id": "q2",
+      "text": "I blew $20 million. I snorted my Porsche. I snorted my plane. I snorted my house in that din of drugs and booze and being lost.",
+      "speaker": "Steven Tyler",
+      "context": "Tallying up what his cocaine habit cost him, in his 2011 rock memoir \"Does the Noise in My Head Bother You?\"",
+      "real": true,
+      "source": {
+        "title": "Memoir 'Does the Noise in My Head Bother You?' (NME report)",
+        "url": "https://www.nme.com/news/music/aerosmith-49-1294445",
+        "date": "2011"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Journalists kept asking me, 'Keith, how do you want to be remembered?' Mate, I want to be remembered as the bloke who showed up to your daughter's wedding, drank your open bar down to the carpet, played three encores and still had the decency to tip the caterers.",
+      "speaker": "Keith Moon",
+      "context": "Interview with Nick Kent for NME, conducted at the Hyatt House hotel, Los Angeles, published August 1975",
+      "real": false,
+      "fake_note": "I made this one up — Moon's grandiose self-mythology and hotel-destruction legend make this totally plausible, and 'tip the caterers' is exactly the absurd gentlemanly twist he loved. The giveaway is 'Mate' as an opener; Moon's speech patterns were more erratic and less matey-lad than this framing suggests."
+    },
+    {
+      "id": "q4",
+      "text": "People go, 'Richard, you've mellowed.' Bullshit. I just got smarter about where I lose my temper. I'm not gonna flip out in a restaurant — that's amateur hour. You wait till you're in the parking lot. That's class.",
+      "speaker": "Richard Pryor",
+      "context": "Stand-up warm-up session recorded at the Comedy Store, Los Angeles, circa March 1979, referenced in David and Joe Henry's biography research tapes",
+      "real": false,
+      "fake_note": "I made this one up — Pryor's self-aware rage and his habit of turning his own volatility into comedy is pitch-perfect here. The giveaway is 'That's class' as a dry button; Pryor's real punchlines tended to spiral outward rather than snap shut that cleanly."
+    },
+    {
+      "id": "q5",
+      "text": "A couple nights ago, I was licking jelly off my boyfriend's penis. And I thought, \"Oh my God — I'm turning into my mother!\"",
+      "speaker": "Sarah Silverman",
+      "context": "From her 2005 stand-up special \"Sarah Silverman: Jesus Is Magic.\" Her signature sweet-faced delivery lands a graphic sex image as the setup, with the punchline being the realization she's inheriting her mother's habits.",
+      "real": true,
+      "source": {
+        "title": "'Jesus Is Magic' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0422528/quotes/",
+        "date": "2005"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I used to have a drug problem, now I make enough money.",
+      "speaker": "David Lee Roth",
+      "context": "Van Halen frontman David Lee Roth's famously flip one-liner about wealth and excess, quoted in American Songwriter's roundup of his best quotes.",
+      "real": true,
+      "source": {
+        "title": "15 of the Best Quotes from Van Halen's David Lee Roth (American Songwriter)",
+        "url": "https://americansongwriter.com/15-of-the-best-quotes-from-van-halens-david-lee-roth/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

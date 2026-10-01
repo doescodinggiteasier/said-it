@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-01",
+  "edition": 96,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People always ask me how I stay so calm during a filibuster. I'll tell you — years of sitting through my own speeches. You develop a tolerance.",
+      "speaker": "Mitch McConnell",
+      "context": "Gridiron Club dinner remarks, Washington D.C., March 2018",
+      "real": false,
+      "fake_note": "I made this one up — McConnell is famously stone-faced, and the Gridiron dinner is exactly the venue where senators do self-deprecating bits about their own reputations. The giveaway is that McConnell almost never riffs on his speaking style this openly, even in scripted roast settings."
+    },
+    {
+      "id": "q2",
+      "text": "Freedom is the right to be wrong, not the right to do wrong.",
+      "speaker": "John Diefenbaker",
+      "context": "The Canadian Prime Minister, in a candid, aphoristic reflection on liberty (11 March 1958).",
+      "real": true,
+      "source": {
+        "title": "John Diefenbaker - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Diefenbaker",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "His famous comeback at the 1984 debate against Walter Mondale",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My staff printed out the full infrastructure plan and handed it to me and I thought, okay, someone's punishing me. This is a punishment document.",
+      "speaker": "Joe Biden",
+      "context": "Remarks to reporters in the Roosevelt Room following a bill signing, as reported by Politico, November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Biden has a long history of self-deprecating asides about paperwork and process, and 'punishment document' has his exact rambling warmth. The giveaway is the specificity of 'punishment document' — it's a beat too tidy for truly off-the-cuff Biden."
+    },
+    {
+      "id": "q5",
+      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
+      "speaker": "Ted Stevens",
+      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality.",
+      "real": true,
+      "source": {
+        "title": "Series of tubes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
+        "date": "2006-06-28"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I did debate prep for three days. Three days. And then someone asked me about the price of eggs and I still had to think about it for a second. That's humbling.",
+      "speaker": "Nikki Haley",
+      "context": "Interview with Hugh Hewitt on The Hugh Hewitt Show, December 2023",
+      "real": false,
+      "fake_note": "I made this one up — Haley genuinely talked about kitchen-table economics constantly during her 2024 campaign, and this kind of candid self-critique fits her measured but relatable tone perfectly. The giveaway is the three-day detail — real prep admissions tend to be even vaguer."
+    }
+  ]
+}
