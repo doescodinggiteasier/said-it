@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-02",
+  "edition": 101,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "No. I have no technical ability. And I know nothing about music.",
+      "speaker": "Rick Rubin",
+      "context": "Super-producer Rick Rubin (Def Jam co-founder; produced Johnny Cash, Beastie Boys, Red Hot Chili Peppers, Adele, Jay-Z) when Anderson Cooper asked on 60 Minutes whether he knew how to work a soundboard.",
+      "real": true,
+      "source": {
+        "title": "Rick Rubin: The 60 Minutes Interview (transcript) — interview by Anderson Cooper, CBS 60 Minutes",
+        "url": "https://www.rev.com/transcripts/rick-rubin-the-60-minutes-interview-transcript",
+        "date": "2023-01-15"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "There's a version of Rumours that almost had a completely different side two. We had so many tracks we were fighting over. Not fighting like arguing — fighting like everyone was just deeply, quietly sure they were right. Which is worse, actually.",
+      "speaker": "Stevie Nicks",
+      "context": "Cover story interview with Jann Wenner, Rolling Stone, March 1997",
+      "real": false,
+      "fake_note": "I made this one up — Stevie has spent decades revisiting the Rumours sessions in interviews and the emotional texture here matches her real cadence well. The give away is 'deeply, quietly sure' — it's a little too composed a distinction for her off-the-cuff speaking style, which tends to spiral rather than hone in."
+    },
+    {
+      "id": "q3",
+      "text": "When my compadres say, 'Let's go', I'll be ready",
+      "speaker": "Ronnie Wood",
+      "context": "Ronnie Wood speaking about hopes for a Rolling Stones tour, at a Jimi Hendrix exhibition",
+      "real": true,
+      "source": {
+        "title": "Music — Ronnie Wood talks new Jimi Hendrix exhibition and hopes of Rolling Stones tour: ",
+        "url": "https://www.nme.com/news/music/ronnie-wood-talks-new-jimi-hendrix-exhibition-and-hopes-of-rolling-stones-tour-when-my-compadres-say-lets-go-ill-be-ready-3971816?utm_source=rss&utm_medium=rss&utm_campaign=ronnie-wood-talks-new-jimi-hendrix-exhibition-and-hopes-of-rolling-stones-tour-when-my-compadres-say-lets-go-ill-be-ready",
+        "date": "2026-10-02"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "When we tracked that song, Rick kept stopping us before the chorus. Just stopping the tape. We'd look at each other and nobody said anything. He'd walk back in and go, 'Again.' We did it maybe fourteen times before he let it run. I still don't know exactly what changed.",
+      "speaker": "Tom Petty",
+      "context": "Petty's extended interview with Bill DeYoung, published in Goldmine Magazine, January 1995",
+      "real": false,
+      "fake_note": "I made this one up — Tom Petty spoke at length about working with Rick Rubin on Wildflowers, and this kind of stubborn, searching studio dynamic is well-documented in his actual accounts. The giveaway is the vagueness about which song — Petty in real interviews was almost always specific about the track."
+    },
+    {
+      "id": "q5",
+      "text": "People always want to know what I was on when I wrote something. Sometimes the answer is coffee. Sometimes the answer is a bad phone call. That's not as interesting to anybody, but it's mostly the truth.",
+      "speaker": "Beck",
+      "context": "Interview with David Dye, World Cafe, WXPN Philadelphia, 2014",
+      "real": false,
+      "fake_note": "I made this one up — Beck's dry, self-deprecating deflection around mythology and creative process is all over his real interviews. The subtle giveaway is that he tends to be a little more oblique and stranger in his imagery; this is slightly too clean a thought for him."
+    },
+    {
+      "id": "q6",
+      "text": "Why not try to be the best in the world, just for the fun of it?",
+      "speaker": "Art Garfunkel",
+      "context": "Interview ahead of his tour at age 84",
+      "real": true,
+      "source": {
+        "title": "Music — ‘Why not try to be the best in the world, just for the fun of it?’ Art Garfunkel",
+        "url": "https://www.theguardian.com/music/2026/sep/04/art-garfunkel-what-a-wonderful-world-tour-interview",
+        "date": "2026-09-06"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-02",
+  "edition": 98,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There were two or three years at United where I genuinely did not know if football was going to work out for me. Not as a crisis, just a quiet feeling — like water rising slowly. You don't panic until you realize you can't touch the bottom anymore.",
+      "speaker": "Wayne Rooney",
+      "context": "The Athletic UK, long-form career retrospective feature, March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Rooney has spoken candidly about his difficult mid-career periods and this matches his blunt, unadorned interview style. The subtle tell is the slightly poetic 'water rising' image, which is a touch more literary than Rooney typically reaches for."
+    },
+    {
+      "id": "q2",
+      "text": "I've had races where I crossed the line and genuinely had no memory of the last two laps. Your body is just running a program and your mind has gone somewhere else entirely. It's only afterward, watching the data, that you understand what you actually did.",
+      "speaker": "Lewis Hamilton",
+      "context": "Formula 1 Beyond the Grid podcast, episode recorded post-2020 Bahrain Grand Prix, December 2020",
+      "real": false,
+      "fake_note": "I made this one up — Hamilton often discusses the meditative, almost dissociative zone he enters during races, and this language of 'running a program' fits his well-documented interest in the mental side of performance. The giveaway is the specific mention of reviewing data afterward, which slightly conflates his role with an engineer's."
+    },
+    {
+      "id": "q3",
+      "text": "My first year in the league I was so worried about making the roster that I'd get to the facility at five in the morning just to watch film by myself. Didn't even know what I was looking at half the time, honestly. I just felt like if someone walked in and saw me there, that counted for something.",
+      "speaker": "J.J. Watt",
+      "context": "The Pat McAfee Show, ESPN Radio simulcast, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Watt has told many early-career work ethic stories and this fits his 'blue-collar kid who outworked everyone' mythology precisely. The giveaway is the admission that he didn't fully understand what he was watching — Watt usually frames his early film study as genuinely productive."
+    },
+    {
+      "id": "q4",
+      "text": "Coaching is a great thing, because you're working for four months then you go fish for eight.",
+      "speaker": "Bob Knight",
+      "context": "The Indiana basketball coach joking about the perks of the coaching profession, in a roundup of his memorable lines.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Bob Knight quotes: Top 10 memorable lines from Indiana's legendary but controversial coach",
+        "url": "https://www.cbssports.com/college-basketball/news/bob-knight-quotes-top-10-memorable-lines-from-indianas-legendary-but-controversial-coach/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I always look in the Sunday paper to see where Everton are in the league - starting, of course, from the bottom up.",
+      "speaker": "Bill Shankly",
+      "context": "The Liverpool manager needling city rivals Everton, in the club's official collection of his sayings.",
+      "real": true,
+      "source": {
+        "title": "Liverpool FC — Bill Shankly in his own words",
+        "url": "https://www.liverpoolfc.com/news/first-team/111453-bill-shankly-in-his-own-words",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Because there is always some kid who may be seeing me for the first time. I owe him my best.",
+      "speaker": "Joe DiMaggio",
+      "context": "Explaining why he always played so hard, even in meaningless late-season games, on the PBS American Experience profile.",
+      "real": true,
+      "source": {
+        "title": "PBS American Experience — Joe DiMaggio",
+        "url": "https://www.pbs.org/wgbh/americanexperience/features/dimaggio-joe-dimaggio/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

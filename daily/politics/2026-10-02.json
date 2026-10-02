@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-02",
+  "edition": 97,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I admit it -- last year was rough.",
+      "speaker": "Barack Obama",
+      "context": "At the 2014 White House Correspondents' Dinner, Obama opened his self-deprecating riff by candidly conceding his difficult 2013.",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at White House Correspondents' Dinner (May 3, 2014) | whitehouse.gov archives",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People keep asking me when I sleep. The answer is: planes. I have done more governing at thirty thousand feet than in any office I've ever had.",
+      "speaker": "Condoleezza Rice",
+      "context": "Stanford Graduate School of Business View From The Top speaker series, Palo Alto, California, March 2012",
+      "real": false,
+      "fake_note": "I made this one up — Rice's globe-trotting tenure as Secretary of State and her composed, slightly wry public persona make this entirely plausible. The tiny tell is that she tends to speak with more precision and less self-mythologizing than this framing allows."
+    },
+    {
+      "id": "q3",
+      "text": "I've given a lot of speeches in my career and I'll tell you the hardest crowd is not a hostile one. The hardest crowd is five hundred economists who all think they could be doing your job.",
+      "speaker": "Janet Yellen",
+      "context": "Remarks at the Peterson Institute for International Economics Annual Gala, Washington D.C., October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Yellen spent decades in academic economics before leading the Fed and Treasury, so mild in-group ribbing of economists fits her understated style perfectly. The giveaway is she almost never steps into even gentle comedy about her colleagues in a public setting."
+    },
+    {
+      "id": "q4",
+      "text": "I will do it myself where does he live?",
+      "speaker": "Cory Booker",
+      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes.",
+      "real": true,
+      "source": {
+        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
+        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
+        "date": "2010-12-27"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "He said he felt like a little boy who had stubbed his toe in the dark. That he was too old to cry, but it hurt too much to laugh.",
+      "speaker": "Adlai Stevenson",
+      "context": "Quoting a Lincoln anecdote to describe how he felt conceding the 1952 presidential election, Springfield, Illinois, Nov. 5, 1952.",
+      "real": true,
+      "source": {
+        "title": "The American Presidency Project: Remarks Conceding the Presidential Election in Springfield, Illinois",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-conceding-the-presidential-election-springfield-illinois",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Someone asked me at a town hall last week what my favorite line item in the federal budget was. I said, 'Son, nobody has a favorite line item in the federal budget. That's like having a favorite form at the DMV.'",
+      "speaker": "Mitch McConnell",
+      "context": "Kentucky Farm Bureau Country Ham Breakfast, Louisville, Kentucky, August 2017",
+      "real": false,
+      "fake_note": "I made this one up — McConnell rarely gets credit for dry, self-deprecating humor, but he does deploy it in Kentucky settings where he's comfortable. The tell is the 'Son' — slightly too folksy for his actual register even at home events."
+    }
+  ]
+}

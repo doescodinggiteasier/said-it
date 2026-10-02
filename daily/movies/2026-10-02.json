@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-02",
+  "edition": 106,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Are you not entertained?",
+      "speaker": "Gladiator (2000)",
+      "context": "Maximus (Russell Crowe) shouts at the Zucchabar arena crowd after killing his opponents in a brutal fight.",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "I know how this ends. I just keep hoping I'm wrong.",
+      "speaker": "Se7en (1995)",
+      "context": "Somerset alone in the library late at night",
+      "real": false,
+      "fake_note": "I made this one up — Somerset's resigned dread is the emotional spine of the film, and Morgan Freeman's measured delivery makes lines like this land. The giveaway is that it's a touch too self-aware; Somerset's real lines tend to be outward-facing, aimed at Mills, not interior monologue."
+    },
+    {
+      "id": "q3",
+      "text": "You need to call it. I can't call it for you. It wouldn't be fair.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Anton Chigurh (Javier Bardem) to the gas station proprietor during the coin-toss scene, pressing him to call heads or tails for his life.",
+      "real": true,
+      "source": {
+        "title": "No Country for Old Men (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/No_Country_for_Old_Men_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Sit down, Andy. Innocent men don't usually shake like that.",
+      "speaker": "The Shawshank Redemption (1994)",
+      "context": "Warden Norton in his office during an early interview with Andy Dufresne",
+      "real": false,
+      "fake_note": "I made this one up — Norton's sanctimonious menace is present from his first scene, and a line that weaponizes Andy's visible innocence against him fits that dynamic. The subtle tell is that Norton in the real film tends to mask his cruelty behind scripture; this is a little more nakedly accusatory."
+    },
+    {
+      "id": "q5",
+      "text": "Don't thank me. Just get on the plane.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick to Ilsa on the tarmac just before she boards",
+      "real": false,
+      "fake_note": "I made this one up — Rick's whole final arc is gruff self-sacrifice, and Bogart's clipped imperatives are exactly his register. The giveaway is that the real scene's dialogue is more tender and specific; this is a touch too stripped-down even for Rick."
+    },
+    {
+      "id": "q6",
+      "text": "This town deserves a better class of criminal, and I'm gonna give it to 'em.",
+      "speaker": "The Dark Knight (2008)",
+      "context": "The Joker (Heath Ledger) addressing Gotham's mob bosses during his hostile takeover of their operation.",
+      "real": true,
+      "source": {
+        "title": "The Dark Knight (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Dark_Knight_(film)",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-02",
+  "edition": 93,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I was doing a little over $1,000 a day in heroin, and then probably the same in cocaine and alcohol.",
+      "speaker": "Nikki Sixx",
+      "context": "Mötley Crüe bassist describing the scale of his addiction at his worst, around the period of his December 1987 heroin overdose; said in 2019 press for the Netflix film 'The Dirt'.",
+      "real": true,
+      "source": {
+        "title": "'The Dirt' press (Chicago Sun-Times)",
+        "url": "https://chicago.suntimes.com/entertainment/motley-crue-biopic-netflix-nikki-six-doing-1000-dollars-a-day-in-heroin/",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I have been told I make people uncomfortable at dinner parties. Yeah. I make people uncomfortable at dinner parties the same way a fire alarm makes people uncomfortable — you're welcome, now get out of the house.",
+      "speaker": "George Carlin",
+      "context": "Post-show press Q&A, Beacon Theatre, New York, during the Jammin' in New York tour, November 1991",
+      "real": false,
+      "fake_note": "I made this one up — Carlin's habit of defending his own abrasiveness with a counter-accusation dressed as a public service is completely his mode, and the fire-alarm metaphor feels like his rhythm. The giveaway is the aphoristic neatness of 'you're welcome, now get out of the house' — he usually gave his analogies more rope before pulling them tight."
+    },
+    {
+      "id": "q3",
+      "text": "Little Miss Muffet sat on a tuffet, eating her curds and whey. Along came a spider, he sat down beside her, he said, \"Hey, what's in the bowl, bitch?\"",
+      "speaker": "Andrew Dice Clay",
+      "context": "A signature filthy nursery-rhyme parody from his late-'80s/early-'90s arena act; crowds would shout the punchlines back. Popularized on his stand-up specials and documented in VICE's piece on his nursery rhymes.",
+      "real": true,
+      "source": {
+        "title": "Stand-up act (Vice feature)",
+        "url": "https://www.vice.com/en/article/did-andrew-dice-clay-steal-his-iconic-nursery-rhymes-from-other-successful-entertainers/",
+        "date": "2018"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The rider said no brown M&Ms and two bottles of Jack and I thought that was all very reasonable. What they didn't tell me was the dressing room was the size of a broom closet and I had to share it with a keyboard player who smelled like a wet dog wearing cologne. The Jack did not last long enough.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Q Magazine backstage feature, Donington Monsters of Rock Festival, August 1995",
+      "real": false,
+      "fake_note": "I made this one up — Lemmy's deadpan, grievance-forward storytelling and total lack of rock-star self-seriousness are exactly right here; the wet-dog-in-cologne image sounds like his actual vocabulary. The giveaway is the measured complaint structure — Lemmy usually let things spiral further before the punchline dropped."
+    },
+    {
+      "id": "q5",
+      "text": "I think weed is the best drug on earth. One time I smoked a joint with peyote in it, and I saw a wolf howling at the moon. Hollywood is a coke town, but weed is so much better. And molly, too. Those are happy drugs – social drugs. They make you want to be with friends. You're out in the open. You're not in a bathroom. I really don't like coke. It's so gross and so dark. It's like what are you, from the Nineties? Ew.",
+      "speaker": "Miley Cyrus",
+      "context": "Miley Cyrus ranking her drug preferences in her September 2013 Rolling Stone cover story, calling weed and molly 'happy drugs' and dismissing cocaine as dated.",
+      "real": true,
+      "source": {
+        "title": "Miley Cyrus: 'Weed Is the Best Drug on Earth' (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My first wife threw a plate at me. My second wife threw a lamp. By the third one I'd learned to duck and they'd learned to throw softer things. We were all growing as people.",
+      "speaker": "Peter Sellers",
+      "context": "Parkinson chat show, BBC1, Series 4, Episode 7, recorded at BBC Television Centre, London, February 1974",
+      "real": false,
+      "fake_note": "I made this one up — Sellers was infamous for wry, self-flagellating domestic humour in interviews and had a clipped comedic rhythm that built through a list before the absurd payoff. The giveaway is 'we were all growing as people' — it's a beat too sincerely phrased; Sellers would likely have made it drier or stranger."
+    }
+  ]
+}

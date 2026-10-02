@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-02",
+  "edition": 109,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "We had a whiteboard in the early days that just said 'does it feel like magic?' and that sounds ridiculous now but it was actually a pretty good filter for a long time.",
+      "speaker": "Jony Ive",
+      "context": "Keynote conversation with Robert Safian at Fast Company Innovation Festival, New York, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Ive's documented rhetoric around design centres on feel, emotion, and the ineffable quality of objects, and anecdotes about informal Apple heuristics fit his known storytelling style. The tell is the self-aware 'that sounds ridiculous now,' which is slightly more self-deprecating than Ive's typically earnest public voice."
+    },
+    {
+      "id": "q2",
+      "text": "He said he felt like a little boy who had stubbed his toe in the dark. That he was too old to cry, but it hurt too much to laugh.",
+      "speaker": "Adlai Stevenson",
+      "context": "Quoting a Lincoln anecdote to describe how he felt conceding the 1952 presidential election, Springfield, Illinois, Nov. 5, 1952.",
+      "real": true,
+      "source": {
+        "title": "The American Presidency Project: Remarks Conceding the Presidential Election in Springfield, Illinois",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-conceding-the-presidential-election-springfield-illinois",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The problem isn't that people are afraid of dying. Most people I've talked to aren't, really. They're afraid of the version of dying that involves a lot of paperwork and strangers.",
+      "speaker": "Atul Gawande",
+      "context": "Conversation with Ezra Klein on The Ezra Klein Show, The New York Times, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Gawande's documented voice is precise, humanist, and draws on patient encounters exactly like this, and the observation echoes themes in his book Being Mortal. The giveaway is the slight comedic turn at the end ('paperwork and strangers'), which is a touch more wry than his usual register."
+    },
+    {
+      "id": "q4",
+      "text": "We are renaming Home Assistant Cloud to Home Assistant Link, because we hate clouds",
+      "speaker": "Paulus Schoutsen",
+      "context": "Interview with The Verge about Home Assistant's rebranding",
+      "real": true,
+      "source": {
+        "title": "Tech — Home Assistant says ‘Big tech ruined the cloud, so we’re out’",
+        "url": "https://www.theverge.com/tech/1003936/home-assistant-says-big-tech-ruined-the-cloud-so-were-out",
+        "date": "2026-10-02"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Comedy is deeply personal and subjective. What makes one person laugh may not work for another, so our job is to",
+      "speaker": "Monika Shergill",
+      "context": "Netflix India VP of Content discussing expanded comedy slate",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Netflix India Chief Monika Shergill Says ‘Specificity Can Be a Strength’ as Stre",
+        "url": "https://variety.com/2026/tv/news/netflix-india-comedy-slate-monika-shergill-1236854380/",
+        "date": "2026-09-09"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I burned the first croissant I ever made professionally. Not a little burnt — carbon. The chef just slid it back across the counter without a word and that was somehow worse than anything he could have said.",
+      "speaker": "Gordon Ramsay",
+      "context": "Appearance on Desert Island Discs, BBC Radio 4, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Ramsay genuinely talks about his early kitchen humiliations and difficult mentors, so a story like this fits his documented arc perfectly. The subtle tell is that Ramsay's real early-career anecdotes almost always involve his time with Marco Pierre White or Guy Savoy, not an unnamed silent chef."
+    }
+  ]
+}
