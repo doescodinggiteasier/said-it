@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-03",
+  "edition": 94,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The ice cream man always drove an extra block away. I know he's seen us, but I think he just be in the car with his friends saying, 'Watch me how fast I make these motherfuckers run.'",
+      "speaker": "Eddie Murphy",
+      "context": "From Eddie Murphy's 1983 HBO stand-up special 'Delirious' (filmed at DAR Constitution Hall) — his childhood ice-cream-truck bit, where the vendor cruelly speeds off to watch the neighborhood kids chase him.",
+      "real": true,
+      "source": {
+        "title": "'Delirious' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0085474/quotes/",
+        "date": "1983"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've been to so many awards shows hammered that I genuinely do not remember which one I won. Could've been a Grammy, could've been a People's Choice, could've been a certificate from a diner. All looks the same at two in the morning.",
+      "speaker": "John Belushi",
+      "context": "Rolling Stone, issue 289, candid post-Saturday Night Live season five interview, January 1979",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's chaotic energy and self-aware braggadocio about excess is well-established, and the People's Choice/diner riff sounds like his comedy. The giveaway is the wistful, almost nostalgic framing — Belushi at this stage was more manic and forward-charging than reflective."
+    },
+    {
+      "id": "q3",
+      "text": "I told the label, 'You want a Christmas album? Fine. But I'm doing it drunk, I'm doing it in one take, and half these songs are gonna be about how much I hate my relatives.' They said yes to all three, by the way.",
+      "speaker": "Dean Martin",
+      "context": "The Joey Bishop Show, NBC, taped segment, November 1968",
+      "real": false,
+      "fake_note": "I made this one up — Dino's boozy, self-deprecating persona makes the one-off drunk recording gag totally believable, and his contempt for showbiz obligation was well-documented. The giveaway is that the Joey Bishop Show rarely did taped segments like this; it was almost entirely live."
+    },
+    {
+      "id": "q4",
+      "text": "Some journalist called me a 'countercultural icon' and I just thought, baby, I'm a woman who showed up to a Tuesday in a feather boa and four-inch heels because the alternative was being boring, and boring is the only thing I was ever actually afraid of.",
+      "speaker": "Divine",
+      "context": "The Face Magazine, UK edition, profile interview, July 1987",
+      "real": false,
+      "fake_note": "I made this one up — Divine's voice was bold, theatrical, and entirely self-mythologizing, so this fits the persona well. The giveaway is the phrase 'the only thing I was ever actually afraid of,' which is a little too reflective and tidy for Divine's usually brasher, more performative public delivery."
+    },
+    {
+      "id": "q5",
+      "text": "It's quite valuable to have the courage and the confidence to say, 'No, fuck off, leave me alone, thank you very much.'",
+      "speaker": "Helen Mirren",
+      "context": "In a 2013 Daily Mail interview, the Oscar-winning actress said that if she'd had a daughter, \"fuck off\" is the first phrase she would have taught her, to give her the confidence to set boundaries.",
+      "real": true,
+      "source": {
+        "title": "Daily Mail interview (Christian Today report)",
+        "url": "https://www.christiantoday.com/news/helen-mirren-advice-to-daughter-unconventional-brutally-honest",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My sex life is so bad, my G-spot has been declared a historical landmark.",
+      "speaker": "Joan Rivers",
+      "context": "Rivers being characteristically filthy and self-deprecating about her own dried-up sex life.",
+      "real": true,
+      "source": {
+        "title": "Stand-up one-liner (CNN roundup)",
+        "url": "https://www.cnn.com/2014/09/05/showbiz/celebrity-news-gossip/joan-rivers-jokes/index.html",
+        "date": "2014"
+      }
+    }
+  ]
+}

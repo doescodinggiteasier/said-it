@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-03",
+  "edition": 107,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I drink your milkshake! I drink it up!",
+      "speaker": "There Will Be Blood (2007)",
+      "context": "Daniel Plainview (Daniel Day-Lewis) berating Eli Sunday in the bowling-alley confrontation",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "I don't want your apology, Frank. I want my Thursday back.",
+      "speaker": "Chinatown (1974)",
+      "context": "Evelyn Mulwray, clipped and bitter, dismissing Gittes after a confrontation",
+      "real": false,
+      "fake_note": "I made this one up — the terse, wounded register fits Evelyn perfectly, and 'Thursday' sounds like the kind of specific, throwaway detail noir loves. The giveaway is that Evelyn rarely addresses anyone so directly by name in that tone; she's usually more guarded."
+    },
+    {
+      "id": "q3",
+      "text": "Each and every man under my command owes me one hundred Nazi scalps.",
+      "speaker": "Inglourious Basterds (2009)",
+      "context": "Lt. Aldo Raine (Brad Pitt) rallying his squad of Jewish-American soldiers in his opening address.",
+      "real": true,
+      "source": {
+        "title": "Inglourious Basterds - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Inglourious_Basterds",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The army wants soldiers, son. It doesn't particularly want you.",
+      "speaker": "Full Metal Jacket (1987)",
+      "context": "Gunnery Sergeant Hartman, flat and contemptuous, sizing up a new recruit",
+      "real": false,
+      "fake_note": "I made this one up — it has Hartman's blunt, dehumanizing efficiency and the institutional cold logic he weaponizes constantly. The giveaway is it's almost too restrained; the real Hartman layers in far more colorful and escalating insults rather than landing so cleanly."
+    },
+    {
+      "id": "q5",
+      "text": "Nobody throws a party like a man who's afraid the guests won't come.",
+      "speaker": "The Great Gatsby (2013)",
+      "context": "Nick Carraway, narrating as he watches Gatsby's staff prepare the mansion",
+      "real": false,
+      "fake_note": "I made this one up — Nick's voiceover narration in this adaptation has exactly this observational, slightly literary quality. The giveaway is it's a touch too neat; Luhrmann's Nick usually leans on Fitzgerald's original prose rather than coining fresh epigrams."
+    },
+    {
+      "id": "q6",
+      "text": "She said she loved me. I believed her both times.",
+      "speaker": "L.A. Confidential (1997)",
+      "context": "Jack Vincennes, sardonic aside to himself after being played",
+      "real": false,
+      "fake_note": "I made this one up — Vincennes has that showbiz-cop self-awareness and the line's dry rhythm matches his voice well. The subtle giveaway is Vincennes is usually more outwardly breezy than self-pitying; this much interiority sits slightly more with Ed Exley."
+    }
+  ]
+}

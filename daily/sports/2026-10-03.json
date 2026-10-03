@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-03",
+  "edition": 99,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I think I've heard somebody say that I was a well-dressed golfer. I guess that has something to do with the fact that a lot of people who play golf don't dress very well.",
+      "speaker": "Arnold Palmer",
+      "context": "A dry, self-effacing aside about his reputation as a sharp dresser, collected among Golf Monthly's best Palmer quotes.",
+      "real": true,
+      "source": {
+        "title": "Golf Monthly — 10 Of The Best Arnold Palmer Quotes",
+        "url": "https://www.golfmonthly.com/features/the-game/10-best-arnold-palmer-quotes-152590",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "You spend a good piece of your life gripping a baseball, and in the end, it turns out that it was the other way around all the time.",
+      "speaker": "Jim Bouton",
+      "context": "The celebrated closing line of his tell-all baseball memoir 'Ball Four,' as quoted in the book's Wikipedia entry.",
+      "real": true,
+      "source": {
+        "title": "Wikipedia — Ball Four",
+        "url": "https://en.wikipedia.org/wiki/Ball_Four",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I did try yoga for about three weeks one offseason. My wife was very encouraging. I pulled something in my hip on day four and spent the rest of the session just lying on the mat pretending to meditate.",
+      "speaker": "Charles Barkley",
+      "context": "Interview with Dan Patrick, The Dan Patrick Show, Peacock/YouTube, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Barkley's self-mocking humor about his body and wellness attempts is thoroughly documented, and this sits right in his wheelhouse. The giveaway is the detail about 'pretending to meditate' — it's almost too perfectly structured as a Barkley punchline."
+    },
+    {
+      "id": "q4",
+      "text": "The women who came before us — and I'm talking about the women who were fighting for the right to just have a league to play in — I don't think we talk about them enough. I'll be at an awards thing and someone will hand me a trophy and I'm thinking, there are people who deserve to be standing here way more than I do.",
+      "speaker": "Megan Rapinoe",
+      "context": "Keynote remarks, espnW Summit, Los Angeles, California, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Rapinoe consistently uses her platform to redirect credit toward pioneers of women's sports and this deflecting, historically conscious register is very characteristic of her. The subtle tell is the 'awards thing' casualness — she would more likely name the specific event."
+    },
+    {
+      "id": "q5",
+      "text": "I caught a ball once in spring training — routine fly ball, nothing special — and I just completely lost it in the lights. Fully lost it. I started drifting and then I stopped drifting because I had no idea where I was going, and the thing landed about six feet from me. My teammates still bring it up. This was 2006.",
+      "speaker": "David Ortiz",
+      "context": "Interview with Scott Van Pelt, SportsCenter on the Road, ESPN, May 2017",
+      "real": false,
+      "fake_note": "I made this one up — Ortiz was famously a DH and frequently joked about his fielding limitations with great warmth and self-awareness, which makes this squarely plausible. The tell is the very specific '2006' — that kind of year-tagging on an embarrassing anecdote is a detail real speakers sometimes add but it also reads as a writer adding texture."
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what I'm thinking about before a big serve. Honestly? Half the time I'm thinking about whether I left the stove on. The other half I'm just trying to remember to toss the ball up and not do something stupid.",
+      "speaker": "John McEnroe",
+      "context": "Interview with Graham Bensinger, In Depth with Graham Bensinger, ESPN+, February 2022",
+      "real": false,
+      "fake_note": "I made this one up — McEnroe has spent decades demystifying the mental game with self-deprecating honesty, and this perfectly captures his 'anti-zen' persona. The subtle giveaway is that McEnroe rarely breaks concentration into two such neat halves; his real answers tend to spiral more chaotically."
+    }
+  ]
+}

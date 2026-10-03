@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-03",
+  "edition": 110,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've had journalists describe my cooking as 'cerebral' and I always think — you've been sitting at a desk too long. Come stand over a stock pot for six hours and tell me where your cerebellum is.",
+      "speaker": "Heston Blumenthal",
+      "context": "Panel discussion at the Oxford Literary Festival food and science symposium, April 2022",
+      "real": false,
+      "fake_note": "I made this one up — Blumenthal consistently pushes back on the pretentious framing of his work and loves puncturing the gap between critical language and physical kitchen reality. The giveaway is 'cerebellum' — he'd more likely say 'cerebrum' if going for anatomical accuracy, and the slip is just subtle enough to feel real."
+    },
+    {
+      "id": "q2",
+      "text": "I remember the first time I cooked for a Michelin inspector — or who I thought was one. Turned out he was a radiator repairman from Lyon. Gave me the best notes I got that whole year.",
+      "speaker": "Gordon Ramsay",
+      "context": "Interview with Chris Evans on Virgin Radio UK Breakfast Show, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Ramsay loves self-deprecating stories about the restaurant world, and the Lyon detail gives it exactly the kind of specific European texture his real anecdotes have. The subtle giveaway is the punchline lands a little too cleanly for unrehearsed radio chat."
+    },
+    {
+      "id": "q3",
+      "text": "Come on, Dave. Do the right thing. Don't just think of yourself and your pocket. Think of what Americans need and what the industry needs.",
+      "speaker": "John Leguizamo",
+      "context": "John Leguizamo speaking out about the Paramount and Warner Bros. merger, addressing David Ellison",
+      "real": true,
+      "source": {
+        "title": "Entertainment — John Leguizamo Has a Message for David Ellison: ‘Think of What Americans Need an",
+        "url": "https://variety.com/2026/film/news/john-leguizamo-message-david-ellison-what-americans-need-1236897710/",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My mom heard the album before the label did. She called me and said, 'Baby, some of these words I had to look up.' That was the review I was most proud of.",
+      "speaker": "Kendrick Lamar",
+      "context": "Profile interview with Zane Lowe for Apple Music 1, released alongside Mr. Morale & The Big Steppers, May 2022",
+      "real": false,
+      "fake_note": "I made this one up — Lamar talks about family, especially his mother, as a primary emotional compass in multiple real interviews, and his dry pride in confounding expectations is well-documented. The giveaway is the line is slightly warmer and more anecdotal than his usual guardedness in press settings."
+    },
+    {
+      "id": "q5",
+      "text": "There is an ontological difference, even before an aesthetic one, between art and what a machine can generate through statistical calculation based on millions of images created by others",
+      "speaker": "Pope Leo XIV",
+      "context": "Pope Leo XIV writing about AI-generated art",
+      "real": true,
+      "source": {
+        "title": "Tech — Pope Leo XIV is not a fan of AI-generated art",
+        "url": "https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I did the math once on how many miles of film I've walked past in editing rooms and it was a number that made me feel like I'd lived three lives. Then I thought about how much of it ended up on the floor and felt completely normal again.",
+      "speaker": "Steven Spielberg",
+      "context": "Acceptance remarks at the American Cinema Editors Eddie Awards, Beverly Hills, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Spielberg is known for his reverence for the editing process and often speaks about the physical and temporal scale of filmmaking in his speeches. The giveaway is the self-correcting structure of the anecdote, which is slightly more comedic than his usual nostalgic tone."
+    }
+  ]
+}

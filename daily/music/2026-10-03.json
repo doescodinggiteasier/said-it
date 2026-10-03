@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-03",
+  "edition": 102,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My mum used to say I was always performing even when I wasn't performing — like, she'd catch me doing the dishes and I'd have some whole thing going on. I think some people are just built for it and some people have to work up to it, and I was always in the first group even when I had nothing to sing about yet.",
+      "speaker": "Adele",
+      "context": "Extended interview with Jonathan Ross for The Jonathan Ross Show, ITV, November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Adele talks about her mum, her childhood, and her natural comfort onstage in almost exactly this register: warm, slightly self-deprecating, and specific. The giveaway is 'even when I had nothing to sing about yet,' which is a shade more poetic and self-aware than her usual blunter, funnier phrasing."
+    },
+    {
+      "id": "q2",
+      "text": "I have a credit on the back of the album that says, 'Nails by Dolly!'",
+      "speaker": "Dolly Parton",
+      "context": "Dolly Parton explaining that she composed and partly performed the percussive 'typewriter' rhythm of '9 to 5' by clacking her long acrylic fingernails together — and that the album '9 to 5 and Odd Jobs' literally credits 'Nails by Dolly.'",
+      "real": true,
+      "source": {
+        "title": "“I have a credit on the back of the album that says, ‘Nails by Dolly!’” Dolly Parton on the hit song she wrote without a",
+        "url": "https://www.guitarplayer.com/music/albums-singles/i-have-a-credit-on-the-back-of-the-album-that-says-nails-by-dolly-dolly-parton-on-the-award-winning-hit-song-she-wrote-without-a-guitar-using-only-her-fingernails",
+        "date": "2024-01-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "There's a version of 'Crazy' that's way slower, almost like a ballad, and I used to wonder if that was actually the song. But Danger Mouse heard what it wanted to be before I did, and that's a real producer — someone who hears the thing before you've found it yet.",
+      "speaker": "CeeLo Green",
+      "context": "Q&A session following a songwriting masterclass at the Berklee College of Music, Boston, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — CeeLo has publicly praised Danger Mouse's role on St. Elsewhere many times, so the reverence feels completely natural. The small giveaway is the suggestion of a 'slow ballad' version, which is a plausible but unverified detail fans might spend real time trying to fact-check."
+    },
+    {
+      "id": "q4",
+      "text": "I think, actually, I'd be more successful if I was OK wearing a muzzle.",
+      "speaker": "Chappell Roan",
+      "context": "In a January 2025 BBC interview after being named BBC Sound of 2025, on how her outspokenness affects her career.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter — Chappell Roan: \"I'd Be More Successful If I Was OK Wearing a Muzzle\"",
+        "url": "https://www.hollywoodreporter.com/music/music-news/chappell-roan-muzzle-diva-music-grammys-bbc-interview-1236112948/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Hip-hop was built on scarcity. You didn't have the studio, you didn't have the label, you didn't have the budget — so you built something out of whatever was in arm's reach. That's not a limitation, that's the whole aesthetic, and I think people forget that when they start spending real money.",
+      "speaker": "DJ Premier",
+      "context": "Red Bull Music Academy lecture series, New York, October 2015",
+      "real": false,
+      "fake_note": "I made this one up — Premier is deeply vocal about hip-hop's DIY origins and has given lecture-style talks at exactly these kinds of events. The cadence here matches his direct, educator-mode voice well. The giveaway is that the argument, while very Premo in spirit, is slightly too organized and sequential — he usually circles the same point a few times rather than laying it out this cleanly."
+    },
+    {
+      "id": "q6",
+      "text": "I am one of the funniest people alive, people have to understand that",
+      "speaker": "Vince Staples",
+      "context": "In a 2015 Howl & Echoes interview, responding to praise about his deadpan tweets.",
+      "real": true,
+      "source": {
+        "title": "Howl & Echoes — INTERVIEW: Vince Staples - \"I am one of the funniest people alive, people have to understand that\"",
+        "url": "https://howlandechoes.com/2015/12/interview-vince-staples-one-funniest-people-alive-people-understand/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}
