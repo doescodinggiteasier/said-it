@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-04",
+  "edition": 111,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Worst damnfool mistake I ever made was letting myself be elected Vice President of the United States. Should have stuck with my old chores as Speaker of the House. I gave up the second most important job in the Government for one that didn't amount to a hill of beans. I spent eight long years as Mr. Roosevelt's spare tire.",
+      "speaker": "John Nance Garner",
+      "context": "FDR's first vice president (\"Cactus Jack\"), ruefully mocking his own decision to take the job and his powerlessness in it, after leaving office.",
+      "real": true,
+      "source": {
+        "title": "John Nance Garner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Nance_Garner",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I have now come to the conclusion never again to think of marrying, and for this reason; I can never be satisfied with anyone who would be blockhead enough to have me.",
+      "speaker": "Abraham Lincoln",
+      "context": "A candidly self-mocking line from a young Lincoln's letter, poking fun at his own eligibility as a suitor.",
+      "real": true,
+      "source": {
+        "title": "Abraham Lincoln - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Abraham_Lincoln",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My mother used to say that a sauce without patience is just hot liquid with ambitions. She wasn't wrong. I've ruined enough reductions trying to rush them to know she was absolutely right.",
+      "speaker": "Ina Garten",
+      "context": "Barefoot Contessa: Back to Basics, Season 9, Episode 4, Food Network, 2011",
+      "real": false,
+      "fake_note": "I made this one up — Garten constantly invokes her mother and her philosophy of unhurried, confident cooking, so the attribution to family wisdom is perfectly plausible. The give away is that the 'hot liquid with ambitions' phrasing is a touch more epigrammatic than her usual warm, direct prose."
+    },
+    {
+      "id": "q4",
+      "text": "I don't know who decided a phone should be the thing you organize your entire existence around, but I'd like to have a word with them. Not a long word. Just one.",
+      "speaker": "Conan O'Brien",
+      "context": "Conan O'Brien Needs a Friend podcast, Episode 218, recorded live at the Largo at the Coronet, Los Angeles, 2023",
+      "real": false,
+      "fake_note": "I made this one up — Conan's dry, slightly absurdist anti-tech grousing is completely on-brand, and the comic rhythm of 'Not a long word. Just one.' sounds exactly like his show-closing asides. The tell is that he'd typically name the specific phone or app rather than staying this broad."
+    },
+    {
+      "id": "q5",
+      "text": "Few thought he was even a starter / There were many who thought themselves smarter / But he ended PM / CH and OM / An earl and a knight of the garter.",
+      "speaker": "Clement Attlee",
+      "context": "A self-mocking limerick the former British PM wrote about himself in a letter to his brother Tom Attlee, April 8, 1956.",
+      "real": true,
+      "source": {
+        "title": "Lib Quotes: Clement Attlee (self-description limerick)",
+        "url": "https://libquotes.com/clement-attlee",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People kept asking me what I was thinking during that dive, and honestly? I was thinking about whether I'd left the stove on. That's the truth. My brain just goes somewhere completely mundane at the worst possible moment.",
+      "speaker": "Greg Louganis",
+      "context": "Interview with Terry Gross on NPR's Fresh Air, broadcast October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Louganis is famous for his candid, self-deprecating reflections on his mental state during competition, so this fits his documented voice perfectly. The subtle giveaway is that he'd more likely tie it to a specific dive or event rather than leaving it this generic."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-04",
+  "edition": 100,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I never really watched a lot of my own fights back then. My trainer would break them down and I'd sit there nodding but in my head I was already thinking about what I was going to eat after. You hit a certain level of tired after a camp where the tape just doesn't stick.",
+      "speaker": "Manny Pacquiao",
+      "context": "Podcast interview on 'The School of Greatness with Lewis Howes', episode released March 2020",
+      "real": false,
+      "fake_note": "I made this one up — Pacquiao's candid, self-deprecating humor and his widely known intensity during camp make the post-camp exhaustion detail completely believable. The giveaway is the phrase 'the tape just doesn't stick,' which is a little too idiomatic for Pacquiao's characteristic English delivery."
+    },
+    {
+      "id": "q2",
+      "text": "But I also know, if I was healthy, with good hips right now, I'd be the fastest 45-year-old in the country, or in the world.",
+      "speaker": "Bo Jackson",
+      "context": "Reflecting in retirement, years after his hip injury, in ESPN's long-form 'Bo Knows Best' feature.",
+      "real": true,
+      "source": {
+        "title": "ESPN E-ticket — Bo Knows Best",
+        "url": "http://www.espn.com/espn/eticket/story?page=bojackson",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I play tennis for a living, even though I hate tennis, hate it with a dark and secret passion, and always have.",
+      "speaker": "Andre Agassi",
+      "context": "The startling opening confession of his memoir 'Open,' quoted in Sports Illustrated's coverage of the book.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — 'I Hate Tennis'",
+        "url": "https://www.si.com/more-sports/2009/10/30/andre-agassi-0",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I used to think the hardest part of managing a bullpen was matchups. Now I think it's just convincing a guy that the situation isn't bigger than he is, because sometimes it is, and you know it, and he knows it, and you're both just kind of standing there pretending.",
+      "speaker": "Tony La Russa",
+      "context": "Sit-down interview on MLB Network's 'High Heat with Christopher Russo', aired June 2022",
+      "real": false,
+      "fake_note": "I made this one up — La Russa's philosophical, candid style about the psychological chess of managing translates perfectly here. The giveaway is the unusual admission of shared doubt between manager and pitcher — La Russa usually presents more authority than this quote quietly undermines."
+    },
+    {
+      "id": "q5",
+      "text": "Serena and I had completely different games and I think people spent too many years trying to compare them when there was nothing to compare. She was going to end the point in two shots. I was going to make you stay out there until you made a mistake. We were just two different problems.",
+      "speaker": "Venus Williams",
+      "context": "Interview on HBO's 'Real Sports with Bryant Gumbel', aired November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Venus's measured pride, her long-standing comfort discussing the contrast with Serena, and her strategic self-awareness are all well established. The subtle giveaway is 'two different problems' — it's a sharp, confident formulation that's slightly more combative than Venus usually allows herself to sound about her own career."
+    },
+    {
+      "id": "q6",
+      "text": "Because I'm the undertaker. I've come to bury these people!",
+      "speaker": "Bill Russell",
+      "context": "Explaining to teammate Sam Jones why he wore a black suit to every Game 7, in his Academy of Achievement interview.",
+      "real": true,
+      "source": {
+        "title": "Academy of Achievement — Bill Russell Interview",
+        "url": "https://achievement.org/achiever/bill-russell/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

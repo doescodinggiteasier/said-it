@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-04",
+  "edition": 99,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've been in rooms where everyone agreed on everything and nothing got done, and I've been in rooms where people were yelling at each other and we passed a bill by morning. I'm not endorsing the yelling, but I'm not not endorsing it either.",
+      "speaker": "Nancy Pelosi",
+      "context": "Conversation with Lesley Stahl at the 92nd Street Y, New York City, April 2023",
+      "real": false,
+      "fake_note": "I made this one up — Nancy's dry, knowing humor about the mechanics of legislative wrangling is very true to form, and she genuinely uses that 'not not' construction. The tell is she'd almost certainly name a specific bill rather than speak in the abstract."
+    },
+    {
+      "id": "q2",
+      "text": "We're going to hit them hard. There will be a response.",
+      "speaker": "Trump",
+      "context": "President Trump speaking to Fox News correspondent Trey Yingst after Iran's retaliatory strikes",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump vows response to Iran's retaliatory strikes: 'We're going to hit them hard",
+        "url": "https://thehill.com/homenews/administration/6060630-us-iran-exchange-strikes/",
+        "date": "2026-08-31"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've read every page of the tax code — well, I've read enough pages of the tax code to know that whoever wrote it was either a genius or deeply, deeply unhappy.",
+      "speaker": "Bernie Sanders",
+      "context": "Interview with Ezra Klein on The Ezra Klein Show, February 2022",
+      "real": false,
+      "fake_note": "I made this one up — Bernie genuinely talks about the tax code constantly and his exasperated, working-class-professor voice is pitch-perfect here. The subtle giveaway is that Bernie almost never makes self-deprecating jokes about his own reading habits; he'd more likely just cite the page count."
+    },
+    {
+      "id": "q4",
+      "text": "I have now come to the conclusion never again to think of marrying, and for this reason; I can never be satisfied with anyone who would be blockhead enough to have me.",
+      "speaker": "Abraham Lincoln",
+      "context": "A candidly self-mocking line from a young Lincoln's letter, poking fun at his own eligibility as a suitor.",
+      "real": true,
+      "source": {
+        "title": "Abraham Lincoln - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Abraham_Lincoln",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "You got to get out and vote. You got to get out. You got to vote for these guys",
+      "speaker": "Donald Trump",
+      "context": "Rally in Ohio, campaigning for GOP midterm candidates",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump vows GOP midterm victory: 'We're going to shove it up their a--'",
+        "url": "https://thehill.com/homenews/campaign/6128086-trump-vows-gop-win-midterms/",
+        "date": "2026-10-04"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what I actually do all day and I tell them: a lot of it is being on hold. Genuinely, embarrassingly, a lot of being on hold.",
+      "speaker": "Pete Buttigieg",
+      "context": "Remarks at a Harvard Kennedy School Institute of Politics forum, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Pete's self-aware, mildly ironic humor about the gap between the romance of public service and its bureaucratic reality is totally in character. The give is that he tends to pivot immediately from a joke like this into a policy point, and there's no pivot here."
+    }
+  ]
+}

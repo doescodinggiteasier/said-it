@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-04",
+  "edition": 103,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Gluttony and lust – y'know, Caligula vibes! What else is there? I've been slothful, definitely. I've ticked the wrath, greed and heresy boxes too.",
+      "speaker": "Hozier",
+      "context": "In a Hotpress interview about his concept album Unreal Unearth, asked which of the seven deadly sins were the most fun to commit.",
+      "real": true,
+      "source": {
+        "title": "Hotpress — 12 Interviews of Xmas: Hozier on Irishness, Deadly Sins, Joni Mitchell and Unreal Unearth",
+        "url": "https://www.hotpress.com/music/12-interviews-of-xmas-hozier-on-irishness-deadly-sins-joni-mitchell-and-unreal-unearth-22999788",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've mixed records on a laptop balanced on a suitcase in a hotel bathroom because the bedroom had too much reverb. Twice. And those mixes were fine. That's the thing nobody wants to hear.",
+      "speaker": "Mark Ronson",
+      "context": "Masterclass Q&A session at Soho House, New York, recorded for their digital channel, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Ronson frequently discusses the unglamorous practical side of production and has a dry, slightly self-aware delivery that fits this perfectly. The tell is 'twice' — that one word is doing too much comedic work; real anecdotes don't announce their own pattern so neatly."
+    },
+    {
+      "id": "q3",
+      "text": "There's a version of 'Thriller' where the tempo is like three clicks faster and it just doesn't work. You lose the creep. Quincy knew. He always knew when to slow something down until it felt uncomfortable.",
+      "speaker": "Siedah Garrett",
+      "context": "Panel discussion at the Recording Academy's Grammy Museum, Los Angeles, February 2018",
+      "real": false,
+      "fake_note": "I made this one up — Siedah worked closely with Quincy Jones on the Bad album and genuinely speaks about him with this kind of specific reverence. The giveaway is the detail about 'three clicks faster' — just specific enough to sound technical without being verifiable, which is exactly the kind of false precision that makes something feel real."
+    },
+    {
+      "id": "q4",
+      "text": "We always had a vision of mixing acid house with indie rock, and we managed to rent a space and build our own studio in London's Shoreditch area, long before it got trendy.",
+      "speaker": "Republica",
+      "context": "Interview about making 90s anthem Ready to Go",
+      "real": true,
+      "source": {
+        "title": "Music — ‘We wanted it to be a battlecry’: how Republica made 90s anthem Ready to Go",
+        "url": "https://www.theguardian.com/culture/2026/sep/28/how-republica-made-90s-anthem-ready-to-go-saff",
+        "date": "2026-10-04"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People always ask me about the bass line on that record and I honestly cannot tell you what I was thinking. I was probably thinking about lunch. Some of the best things I've ever played, I have zero memory of deciding to play them.",
+      "speaker": "Bootsy Collins",
+      "context": "Interview with Questlove on the Questlove Supreme podcast, published February 2022",
+      "real": false,
+      "fake_note": "I made this one up — Bootsy really does talk about playing on instinct and has a history of self-deprecating, almost cosmic nonchalance about his own genius, so this lands perfectly. The subtle giveaway is 'probably thinking about lunch,' which is a little too tidy a punchline for genuine off-the-cuff Bootsy."
+    },
+    {
+      "id": "q6",
+      "text": "I can't listen to Pink Floyd - I find their music dreary",
+      "speaker": "Elvis Costello",
+      "context": "Elvis Costello's honest playlist interview",
+      "real": true,
+      "source": {
+        "title": "Music — ‘I can’t listen to Pink Floyd - I find their music dreary’: Elvis Costello’s hon",
+        "url": "https://www.theguardian.com/music/2026/oct/04/elvis-costello-honest-playlist-sinatra-clash-kelis-pink-floyd-bob-dylan",
+        "date": "2026-10-04"
+      }
+    }
+  ]
+}
