@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-05",
+  "edition": 101,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He had that one coming for telling everybody I didn't know where Brazil was on the map.",
+      "speaker": "Travis Kelce",
+      "context": "The Chiefs tight end at a São Paulo press conference in September 2025, after doing an impression of teammate Patrick Mahomes as payback.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Travis Kelce gets playful payback on Patrick Mahomes with spot-on impersonation",
+        "url": "https://www.foxnews.com/sports/travis-kelce-gets-playful-payback-patrick-mahomes-spot-on-impersonation-brazil-press-conference",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People act like I've never missed a free throw. I miss them in practice all the time. I missed like four in a row last Tuesday and nobody said anything because there's no camera there. That's just basketball.",
+      "speaker": "Stephen Curry",
+      "context": "NBA TV's Open Court, recorded during the 2023 NBA Finals media week in Miami",
+      "real": false,
+      "fake_note": "I made this one up — Curry genuinely talks about the gap between his public image and his real practice sessions, and the self-deprecating detail about Tuesday feels very him. The subtle giveaway is that Curry almost never volunteers miss counts, even casually; he tends to redirect toward process rather than frequency."
+    },
+    {
+      "id": "q3",
+      "text": "Everyone asks what I eat before a match. Toast. It's always been toast. I'm not going to apologize for that.",
+      "speaker": "Serena Williams",
+      "context": "Vogue's podcast 'Forces of Fashion,' recorded in September 2021 during the US Open fortnight",
+      "real": false,
+      "fake_note": "I made this one up — Serena's interviews frequently swing between grand themes and unexpectedly mundane personal details, which is exactly what makes this feel real. The giveaway is she has documented pre-match rituals involving more specific superstitions; plain toast with zero ceremony doesn't quite match the intensity she's described elsewhere."
+    },
+    {
+      "id": "q4",
+      "text": "Pressure is a privilege and champions adjust.",
+      "speaker": "Billie Jean King",
+      "context": "The line she says spontaneously came out of her mouth while motivating Lindsay Davenport as U.S. Fed Cup captain, recounted at Tennis.com.",
+      "real": true,
+      "source": {
+        "title": "Tennis.com — Billie Jean King shares origins of 'Pressure is a privilege'",
+        "url": "https://www.tennis.com/baseline/articles/billie-jean-king-shares-origins-of-favorite-famous-quote-pressure-is-a-privilege",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My hamstring told me to retire three years before I actually did. I just kept pretending I didn't speak hamstring.",
+      "speaker": "Usain Bolt",
+      "context": "Interview with Jonathan Ross on The Jonathan Ross Show, ITV, October 2018",
+      "real": false,
+      "fake_note": "I made this one up — Bolt's humor is famously loose and self-mythologizing, and the personification of a body part fits his actual interview style perfectly. The tell is that Bolt almost never references his hamstring specifically in self-deprecating terms; that injury is a sensitive real topic he tends to sidestep rather than joke about."
+    },
+    {
+      "id": "q6",
+      "text": "Baseball has been good to me since I quit trying to play it.",
+      "speaker": "Whitey Herzog",
+      "context": "The Hall of Fame manager reflecting on his so-so playing career versus his success as a skipper.",
+      "real": true,
+      "source": {
+        "title": "ESPN Page 2 — My 5 top quotes by Hall of Famer Whitey Herzog",
+        "url": "https://www.espn.ph/espn/page2/index?id=5408431",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

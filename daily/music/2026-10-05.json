@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-05",
+  "edition": 104,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "These will be stripped-back intimate shows where we'll go through our back catalogue, from our very first EP in 2008 to brand new songs that no one has heard yet!",
+      "speaker": "First Aid Kit",
+      "context": "Announcing 2027 Visions Of The Past UK and Ireland tour",
+      "real": true,
+      "source": {
+        "title": "Music — First Aid Kit announce 2027 ‘Visions Of The Past’ UK and Ireland tour",
+        "url": "https://www.nme.com/news/music/first-aid-kit-announce-2027-visions-of-the-past-uk-ireland-tour-dates-buy-tickets-3972158?utm_source=rss&utm_medium=rss&utm_campaign=first-aid-kit-announce-2027-visions-of-the-past-uk-ireland-tour-dates-buy-tickets",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "'Sleaze' isn't a word I'm particularly a fan of",
+      "speaker": "Erol Alkan",
+      "context": "Interview about '00s electroclash and legendary clubnights",
+      "real": true,
+      "source": {
+        "title": "Music — Erol Alkan on the magic of ‘00s electroclash: “‘Sleaze’ isn’t a word I’m particu",
+        "url": "https://www.nme.com/news/music/erol-alkan-interview-00s-indie-electroclash-trash-bugged-out-3972079?utm_source=rss&utm_medium=rss&utm_campaign=erol-alkan-interview-00s-indie-electroclash-trash-bugged-out",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People always want to know what the sample is before they even decide if they like the song. That drives me absolutely crazy. You don't ask what grape a wine is before you take a sip — you taste it first and then maybe you care.",
+      "speaker": "Questlove",
+      "context": "Keynote conversation at SXSW Music Conference, Austin, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Questlove genuinely talks about how audiences over-intellectualize recorded music, and the food/drink analogy fits his food-nerd side. The tell is the wine comparison; he's a drum nerd and a food nerd but wine is just a half-step outside his usual reference vocabulary."
+    },
+    {
+      "id": "q4",
+      "text": "I remember sitting in the back of a tour bus somewhere outside of Tulsa and just staring at this chord chart I'd written and thinking, this is either the best thing I've ever done or I've completely lost my mind. Took me three more years to figure out which one it was.",
+      "speaker": "Tom Waits",
+      "context": "Interview with Marc Maron on WTF with Marc Maron, episode aired October 2014",
+      "real": false,
+      "fake_note": "I made this one up — Tom really does talk about creative uncertainty in this rambling, road-worn way, and Tulsa is exactly the kind of unglamorous middle-American detail he'd reach for. The subtle giveaway is that 'three more years' is a little too tidy a punchline for someone who usually lets his stories trail off into smoke."
+    },
+    {
+      "id": "q5",
+      "text": "When I was writing 'Alright' I was broke, genuinely broke, and I had to borrow someone's guitar because mine was in the shop. I think that's in the song somehow, that kind of — you're holding something that isn't yours and you still have to make it work.",
+      "speaker": "Kendrick Lamar",
+      "context": "Interview with Zane Lowe for Beats 1, Apple Music, broadcast June 2015",
+      "real": false,
+      "fake_note": "I made this one up — Kendrick really does discuss his Compton upbringing and financial hardship during the making of To Pimp a Butterfly, and he talks about creative process in this elliptical, unfinished way. The tell is the guitar detail; Kendrick doesn't play guitar and wouldn't typically frame a songwriting memory around a stringed instrument."
+    },
+    {
+      "id": "q6",
+      "text": "Nicki called me while I was literally in the shower and I just stood there dripping on the bathroom floor for probably twenty minutes because you don't put Nicki Minaj on hold.",
+      "speaker": "Ariana Grande",
+      "context": "Interview on Zach Sang Show, YouTube upload dated August 2019",
+      "real": false,
+      "fake_note": "I made this one up — Ariana genuinely talks about her collaborators with this wide-eyed, giddy specificity, and her friendship with Nicki is well-documented. The tell is the showering detail; Ariana tends toward vivid domestic specifics but that particular image is just a hair too staged to be spontaneous."
+    }
+  ]
+}

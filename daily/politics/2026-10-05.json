@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-05",
+  "edition": 100,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I have been to Davos. I have sat in those rooms. There is a lot of very expensive coffee and a tremendous amount of agreement that something must be done, and I will leave it there.",
+      "speaker": "Larry Summers",
+      "context": "Harvard Kennedy School Institute of Politics panel discussion, Cambridge, Massachusetts, November 2018",
+      "real": false,
+      "fake_note": "I made this one up — Summers is famous for puncturing elite consensus with sharp, slightly impolitic observations, and his Davos skepticism is well-documented. This sounds exactly like something he'd say at Harvard with a knowing audience. The 'I will leave it there' ending is the one beat that's slightly too restrained for him — he usually finishes the thought."
+    },
+    {
+      "id": "q2",
+      "text": "The only control or 'guardrails' that AI needs is a STRONG AND SMART (High IQ!) PRESIDENT, and the U.S.A. has that, in spades!",
+      "speaker": "Donald Trump",
+      "context": "Trump posting on Truth Social about AI regulation",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump’s recent statements on the economy are even more bonkers than usual | Stev",
+        "url": "https://www.theguardian.com/commentisfree/2026/oct/05/trump-us-economy-comments",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Someone asked me the other day if I miss being in the room where decisions get made. Honestly? Some days I miss the cafeteria more. The Senate cafeteria has very good soup.",
+      "speaker": "Bob Corker",
+      "context": "Vanderbilt University's Owen Graduate School of Management leadership forum, Nashville, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Corker left the Senate in 2019 and has been candid in a folksy, Tennessee way about life post-office. The soup detail is the kind of deflating specificity that makes fake quotes sing, but real senators don't usually eulogize cafeteria food on the record."
+    },
+    {
+      "id": "q4",
+      "text": "I had a staffer once hand me a briefing memo that was literally longer than the bill it was briefing me on. I read the bill.",
+      "speaker": "Claire McCaskill",
+      "context": "The Axe Files podcast with David Axelrod, episode aired March 2023",
+      "real": false,
+      "fake_note": "I made this one up — McCaskill's whole brand is blunt, self-deprecating pragmatism, and this perfectly captures how she talks about the absurdities of Senate culture. The subtle giveaway is that it's almost too tidy a punchline for off-the-cuff speech; she tends to ramble into the point rather than land it that cleanly."
+    },
+    {
+      "id": "q5",
+      "text": "I've given the same answer to that question four times now and each time the follow-up acts like I said something completely different. I'm starting to think the transcript and I have irreconcilable differences.",
+      "speaker": "Janet Yellen",
+      "context": "Post-testimony press gaggle outside the Senate Finance Committee hearing room, Washington D.C., June 2021",
+      "real": false,
+      "fake_note": "I made this one up — Yellen has a dry, academic wit that she lets slip in unguarded moments, and her frustration with being misquoted or misread is well-documented. The phrase 'irreconcilable differences' is just a hair too playful for her usual register, which is the giveaway."
+    },
+    {
+      "id": "q6",
+      "text": "I thought I looked real cute in my uniform, and then I heard a boy yell from the bleachers, 'Make that basket, bird legs.' And my greatest fear is that same guy is somewhere out there in the audience tonight, and he's going to cut me down to size.",
+      "speaker": "Ann Richards",
+      "context": "The Texas governor opening her celebrated 1988 Democratic National Convention keynote with a self-deprecating story about her eighth-grade basketball days.",
+      "real": true,
+      "source": {
+        "title": "Ann Richards, DNC keynote address, 1988 - Speakola",
+        "url": "https://speakola.com/political/ann-richards-dnc-keynote-1988",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

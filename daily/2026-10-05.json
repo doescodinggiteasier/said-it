@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-05",
+  "edition": 112,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People keep asking me what Serena was like to play against and honestly the most honest answer is: I'd rather not think about it. There's a specific feeling of watching a ball go past you and knowing you were right on it — and she still won the point.",
+      "speaker": "Maria Sharapova",
+      "context": "Conversation with Graham Bensinger, In Depth with Graham Bensinger, aired March 2023",
+      "real": false,
+      "fake_note": "I made this one up — the Sharapova-Williams rivalry is so well documented that Sharapova fielding this question is completely routine, and her dry, slightly wry self-awareness is authentic to her public voice. The giveaway is the phrasing 'I'd rather not think about it,' which is slightly more casual than her typically composed interview register."
+    },
+    {
+      "id": "q2",
+      "text": "No, I'm not going to pledge that.",
+      "speaker": "Todd Blanche",
+      "context": "NBC's Meet the Press, when asked if the DOJ would always act independently of the White House",
+      "real": true,
+      "source": {
+        "title": "Politics — Todd Blanche declines to pledge independence from White House",
+        "url": "https://www.theguardian.com/us-news/2026/aug/16/todd-blanche-doj-independence-trump-white-house",
+        "date": "2026-08-17"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "It is clear that we do not have the independent legal authority to enforce this warrant.",
+      "speaker": "Zohran Mamdani",
+      "context": "NYC Mayor Mamdani backing off his promise to arrest Netanyahu, Tuesday statement",
+      "real": true,
+      "source": {
+        "title": "Politics — Mamdani says he doesn’t have legal authority to arrest Netanyahu",
+        "url": "https://thehill.com/policy/international/5982418-mamdani-netanyahu-arrest-promise-withdrawn/",
+        "date": "2026-07-22"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I read the script for Oppenheimer maybe four times before I said yes, and I still wasn't sure I understood it. I said yes because I wasn't sure I understood it.",
+      "speaker": "Cillian Murphy",
+      "context": "Cover profile interview, Empire Magazine, July 2023 issue",
+      "real": false,
+      "fake_note": "I made this one up — Murphy has spoken frequently about being drawn to complex, morally ambiguous material and about his methodical preparation process, and this self-aware paradox of saying yes to something unresolved is very consistent with his interview persona. The giveaway is the symmetrical structure of the last two clauses, which is a little too elegant for an unrehearsed answer."
+    },
+    {
+      "id": "q5",
+      "text": "I had about two bites because it was straight up chocolate cake, and I can't do that for breakfast.",
+      "speaker": "Katie Ledecky",
+      "context": "Swimmer describing trying the 'infamous' chocolate muffins in the 2024 Paris Olympic Village, as quoted by AOL/People",
+      "real": true,
+      "source": {
+        "title": "Katie Ledecky Says She Tried the 'Infamous' Chocolate Muffins at 2024 Olympics: 'I Can't Do That for Breakfast'",
+        "url": "https://www.aol.com/katie-ledecky-says-she-tried-140000011.html",
+        "date": "2024-08-08"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The hardest part of the Mars landing sequence isn't the engineering — we'd basically solved the engineering. It's the seven minutes where no signal can reach you and you have to trust that everything you did was right. That's the part that doesn't get easier.",
+      "speaker": "Jennifer Trosper",
+      "context": "Keynote address at the American Institute of Aeronautics and Astronautics SciTech Forum, San Diego, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Trosper, NASA's Curiosity and Perseverance project manager, has spoken publicly about the 'seven minutes of terror' many times and this framing of psychological versus technical difficulty is very true to her public voice. The giveaway for sharp players is that she's a real person but not quite household-name famous enough that most people can confidently say whether she said this or not."
+    }
+  ]
+}
