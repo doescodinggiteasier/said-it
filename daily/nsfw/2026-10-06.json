@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-06",
+  "edition": 95,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't give a rat's ass what the critics say. I've read their work. These are men who get excited about a well-placed semicolon. Meanwhile I just sold out Madison Square Garden. Sit down.",
+      "speaker": "Frank Sinatra",
+      "context": "Playboy magazine interview, conducted November 1963, published February 1964",
+      "real": false,
+      "fake_note": "I made this one up — Sinatra had a well-documented contempt for critics and a habit of dismissing them with surgical condescension, so the attitude is perfectly calibrated. The tell is 'well-placed semicolon' — Sinatra's insults tended to be blunter and more personal; the grammar-nerd specificity is a little too literary for his particular brand of contempt."
+    },
+    {
+      "id": "q2",
+      "text": "Somebody handed me a drink at the wrap party and said 'careful, it's strong.' Honey. HONEY. I did press junkets for three weeks on four hours of sleep. Strong is my love language.",
+      "speaker": "Bette Davis",
+      "context": "Quoted in Shaun Considine's biography Bette & Joan: The Divine Feud, published 1989, citing a recollection from the set of Hush…Hush, Sweet Charlotte wrap party, 1964",
+      "real": false,
+      "fake_note": "I made this one up — Davis was famed for her acerbic, imperious delivery and her contempt for anything she considered weak, and the 'love language' anachronism is the buried tell. The phrase didn't enter popular usage until decades after this period, which dates the quote as a modern fabrication dressed in Davis's voice."
+    },
+    {
+      "id": "q3",
+      "text": "Why me? Ten million motherfuckers freebasing, and I'm the one who blows up!",
+      "speaker": "Richard Pryor",
+      "context": "Pryor's frank, self-lacerating bit about the 1980 freebasing accident in which he set himself on fire, from his stand-up film 'Richard Pryor: Live on the Sunset Strip' (1982).",
+      "real": true,
+      "source": {
+        "title": "Richard Pryor - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Richard_Pryor",
+        "date": "1982"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The strangest thing I've tried to snort? My father. I snorted my father. He was cremated and I couldn't resist grinding him up with a little bit of blow. My dad wouldn't have cared, he didn't give a shit. It went down pretty well, and I'm still alive.",
+      "speaker": "Keith Richards",
+      "context": "Rolling Stones guitarist Keith Richards, in an April 2007 NME interview, describing the strangest thing he had snorted — his late father's cremated ashes ground up with cocaine. Reported by NME, The Hollywood Reporter, VOA, and others. Richards' manager later told NME the remark was made in jest, and Richards offered a softened account in his 2010 memoir, but he is documented giving this quote in the interview.",
+      "real": true,
+      "source": {
+        "title": "NME interview (later called a joke)",
+        "url": "https://www.nme.com/news/music/the-rolling-stones-433-1341398",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I'll tell you what separates a good gig from a great one — at a great one, somebody's crying, somebody's bleeding, and the rider still has bourbon in it by the time I walk offstage. That's the holy trinity right there.",
+      "speaker": "John Belushi",
+      "context": "National Lampoon Radio Hour, recorded segment, circa 1974",
+      "real": false,
+      "fake_note": "I made this one up — Belushi was famous for his demolition-derby energy and his obsession with the rider, so this lands squarely in his wheelhouse. The giveaway is 'holy trinity' — Belushi was more anarchic than aphoristic and rarely reached for a tidy three-part structure like that."
+    },
+    {
+      "id": "q6",
+      "text": "Look, I walked into the afterparty and the whole thing smelled like hairspray and bad decisions. I felt right at home. I ordered four drinks — two for me, one for the image, and one for whoever had the nerve to make eye contact.",
+      "speaker": "David Bowie",
+      "context": "Interview with Creem Magazine, Detroit, published August 1975",
+      "real": false,
+      "fake_note": "I made this one up — Bowie in his Ziggy-to-Thin White Duke era was known for oblique, theatrical self-commentary, and Creem ran wild celebrity copy throughout that decade. The giveaway is 'for the image' — while on-brand thematically, the explicit fourth-wall break on his own persona is a bit too winking and self-aware even for Bowie at his most theatrical."
+    }
+  ]
+}

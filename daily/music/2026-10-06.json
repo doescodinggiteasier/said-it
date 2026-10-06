@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-06",
+  "edition": 105,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I was tracking vocals I'd sometimes have the engineer leave the room entirely. Not because I'm precious about it — I just sound different when I think no one's listening, and that's the take I want.",
+      "speaker": "Chris Stapleton",
+      "context": "American Songwriter magazine feature, 'The Making of Starting Over,' Fall 2020 issue",
+      "real": false,
+      "fake_note": "I made this one up — Chris has spoken extensively about the emotional rawness he pursues in recording, and this level of specific process detail fits his introspective interview style perfectly. The giveaway is the slight self-contradiction ('not because I'm precious' followed by a very precious request), which is a little too neatly self-aware for his usually straighter-spoken interviews."
+    },
+    {
+      "id": "q2",
+      "text": "My mom used to vacuum to Coltrane. Like full Saturday-morning vacuuming, just A Love Supreme on the turntable. I didn't know that was unusual until I was probably twelve.",
+      "speaker": "Esperanza Spalding",
+      "context": "NPR Music's Jazz Night in America podcast, episode recorded at the Village Vanguard, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Esperanza frequently references her unconventional upbringing and early immersion in jazz, and this has exactly the warm, slightly bemused childhood-memory tone she uses in long-form interviews. The giveaway is that her documented musical home life was actually more eclectic and less tidily jazz-centric than this implies."
+    },
+    {
+      "id": "q3",
+      "text": "I just love being in a place where it's totally culturally acceptable to wear Mickey ears and branded Star Wars shirts.",
+      "speaker": "Marcus Mumford",
+      "context": "Marcus Mumford discussing being a Disney adult",
+      "real": true,
+      "source": {
+        "title": "Music — Marcus Mumford Is a Disney Adult",
+        "url": "https://consequence.net/2026/10/marcus-mumford-disney-adult/",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I've had people tell me the banjo is a joke instrument my entire career. I just keep cashing the checks and smiling.",
+      "speaker": "Steve Martin",
+      "context": "Interview with David Fricke, Rolling Stone, Issue 1198, November 2013",
+      "real": false,
+      "fake_note": "I made this one up — Steve Martin's bluegrass banjo career is completely real and he's consistently sardonic about the skepticism it receives, so this lands perfectly in his deadpan register. The tell is that he's more often gracious about the reception than this slightly sharp, and the 'cashing the checks' framing is a touch more mercenary than his usual tone."
+    },
+    {
+      "id": "q5",
+      "text": "People want the music to hit them immediately and I get that, I do. But I also think there's something worth protecting about a song that takes six listens before it opens up. I'm not willing to stop making those.",
+      "speaker": "Björk",
+      "context": "Pitchfork feature interview conducted in Reykjavik, published alongside the Utopia review, November 2017",
+      "real": false,
+      "fake_note": "I made this one up — Björk has consistently defended complexity and patience in listening, and this captures her mix of empathy for the audience and firm artistic conviction. The giveaway is she tends to speak in more sensory, abstract language than this — phrases like 'opens up' are a touch too conventional for her actual interview idiom."
+    },
+    {
+      "id": "q6",
+      "text": "It's a lot like being a chef, in a way. You're trying to create food that satisfies your taste, but with a good awareness that there are people whose tastes are for more salt, or more spice — or for less.",
+      "speaker": "Susan Rogers",
+      "context": "Prince's former recording engineer describing the producer's balancing act, in a Grammy.com interview about her career and her book.",
+      "real": true,
+      "source": {
+        "title": "Grammy.com — Producer & Engineer Susan Rogers Worked With Prince And Barenaked Ladies",
+        "url": "https://www.grammy.com/news/susan-rogers-producers-engineers-wing-interview-prince-barenaked-ladies-berklee-college-of-music/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

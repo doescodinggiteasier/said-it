@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-06",
+  "edition": 102,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Somebody charted my serves once and told me I'd hit more slice serves to the deuce court than any other single shot in my career. I had no idea. You just — you do what works and you stop counting.",
+      "speaker": "Roger Federer",
+      "context": "Tennis Channel, Federer: The Final Match, extended sit-down interview, Laver Cup weekend, London, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Federer regularly expressed a kind of elegant disinterest in his own statistics while still being technically precise, which is exactly the balance this quote tries to walk. The tell is the specificity about the deuce-court slice; Federer almost never cited a particular shot pattern that way in real interviews."
+    },
+    {
+      "id": "q2",
+      "text": "I don't think I'll be legally able to drive.",
+      "speaker": "Robert MacIntyre",
+      "context": "Scottish golfer MacIntyre, joking with reporters right after winning the 2024 Genesis Scottish Open, explaining he planned to celebrate so hard he might not make his next-day press conference at Royal Troon ahead of the Open Championship.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — Robert MacIntyre rallies for historic win at Scottish Open",
+        "url": "https://sports.yahoo.com/robert-macintyre-rallies-for-historic-win-at-scottish-open-the-home-event-hes-cared-about-most-013046981.html",
+        "date": "2024-07-16"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Has anyone else 'completed football' like this?",
+      "speaker": "Owen Bagnall",
+      "context": "The Knowledge column, asking about Rodri completing every major honour",
+      "real": true,
+      "source": {
+        "title": "Sports — World Cup, Ballon d’Or, Champions League, Euros … has Rodri completed football? ",
+        "url": "https://www.theguardian.com/football/2026/jul/22/world-cup-champions-league-ballon-dor-euros-has-rodri-completed-football",
+        "date": "2026-07-22"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I used to hate the slow days at practice, genuinely could not stand them. Now I'd give a lot to have one more slow day at practice. You don't know what a slow day is worth until you're not in it anymore.",
+      "speaker": "Kobe Bryant",
+      "context": "The Athletic, 'Kobe on Life After Basketball,' interview conducted April 2018, published May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Kobe was famously obsessed with the process and spoke often about missing the grind after retirement, so the sentiment lands exactly where you'd expect it. The subtle tell is the slightly softer, more wistful register; Kobe in interviews tended to pivot back toward intensity rather than sitting in nostalgia this long."
+    },
+    {
+      "id": "q5",
+      "text": "I'm still not really into it.",
+      "speaker": "Anthony Edwards",
+      "context": "The future No. 1 NBA draft pick in a 2020 ESPN feature, admitting he does not enjoy watching basketball (\"To be honest, I can't watch basketball\").",
+      "real": true,
+      "source": {
+        "title": "ESPN — The pain and promise of top NBA draft prospect Anthony Edwards",
+        "url": "https://www.espn.com/nba/story/_/id/30321844/the-pain-promise-top-nba-draft-prospect-anthony-edwards",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I told my staff, look, I don't care if we go three-and-out five times in a row as long as every single one of those three-and-outs is executed. Execute a bad situation and the next good situation finds you. Does that make sense? Probably not at seven in the morning.",
+      "speaker": "Bill Belichick",
+      "context": "NFL Network, A Football Life: Bill Belichick, behind-the-scenes documentary footage, training camp segment, Foxborough, August 2015",
+      "real": false,
+      "fake_note": "I made this one up — Belichick's press-conference cadence is famously clipped, but in more relaxed documentary settings he actually opens up into this kind of looping, self-questioning logic, which makes it tricky to dismiss. The tell is the self-deprecating closer ('Probably not at seven in the morning'); Belichick almost never openly invites others to question his reasoning, even lightly."
+    }
+  ]
+}

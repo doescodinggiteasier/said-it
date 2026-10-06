@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-06",
+  "edition": 101,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It's hard to lead a cavalry charge if you think you look funny on a horse.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The two-time Democratic presidential nominee and UN ambassador, known for his wit; a characteristically self-deprecating line about self-confidence and self-image.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "It is clear that we do not have the independent legal authority to enforce this warrant.",
+      "speaker": "Zohran Mamdani",
+      "context": "NYC Mayor Mamdani backing off his promise to arrest Netanyahu, Tuesday statement",
+      "real": true,
+      "source": {
+        "title": "Politics — Mamdani says he doesn’t have legal authority to arrest Netanyahu",
+        "url": "https://thehill.com/policy/international/5982418-mamdani-netanyahu-arrest-promise-withdrawn/",
+        "date": "2026-07-22"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I have never once in my career worried about being too boring. Boring gets things done. Boring is deeply underrated in this town.",
+      "speaker": "Janet Yellen",
+      "context": "Conversation with Fareed Zakaria at the Council on Foreign Relations annual dinner, Washington D.C., June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Yellen has a genuine reputation for methodical, understated seriousness and has joked about her unflashy public image before. The giveaway is 'this town,' which is a Washington insider's phrase she'd be slightly too academic to reach for naturally."
+    },
+    {
+      "id": "q4",
+      "text": "People ask me, 'Mitt, what do you do to relax?' And honestly? I make spreadsheets. Voluntary ones. For fun. Ann thinks it's a cry for help.",
+      "speaker": "Mitt Romney",
+      "context": "Interview with David Axelrod on The Axe Files podcast, University of Chicago Institute of Politics, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Romney's buttoned-up, numbers-driven reputation and his wife Ann's gentle ribbing of him is well-documented public lore. The giveaway is that Romney is almost too self-aware here; he's funny, but rarely this self-deprecating about his own quirks."
+    },
+    {
+      "id": "q5",
+      "text": "Sometimes you can lose, but still come out winning",
+      "speaker": "Phil Collins",
+      "context": "Interview on Piers Morgan Uncensored, discussing Trump's approach to diplomacy",
+      "real": true,
+      "source": {
+        "title": "Politics — Phil Collins says Trump 'sees everything as a deal': 'Very scary time'",
+        "url": "https://thehill.com/blogs/in-the-know/6131321-phil-collins-piers-morgan-trump/",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The filibuster is — and I want to be precise — a procedural tool that I have personally both loved and hated within the same calendar week.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks at the McConnell Center Annual Leadership Dinner, University of Louisville, Louisville, Kentucky, November 2019",
+      "real": false,
+      "fake_note": "I made this one up — McConnell is famously deadpan and has genuinely flip-flopped on filibuster rhetoric over the decades, so the self-aware acknowledgment of that fits his dry, unapologetic style. The giveaway is 'same calendar week,' which is slightly too punchy for his usually glacial delivery."
+    }
+  ]
+}
