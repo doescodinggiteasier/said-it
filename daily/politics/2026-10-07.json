@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-07",
+  "edition": 102,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I am a Ford, not a Lincoln. My addresses will never be as eloquent as Mr. Lincoln's. But I will do my very best to equal his brevity and his plain speaking.",
+      "speaker": "Gerald Ford",
+      "context": "Self-deprecating remark Ford made on December 6, 1973, immediately after taking the oath of office as the 40th Vice President (following Spiro Agnew's resignation).",
+      "real": true,
+      "source": {
+        "title": "Gerald Ford - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Gerald_Ford",
+        "date": "1973-12-06"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Someone asked me what my morning routine looks like, and I said, 'Well, it starts with the briefing book and ends with wondering why I agreed to do the morning shows.' They didn't laugh, which I thought was pretty funny in itself.",
+      "speaker": "John Kerry",
+      "context": "Interview with David Axelrod on 'The Axe Files' podcast, episode aired March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Kerry's self-deprecating, slightly winding storytelling voice is well-documented and this hits that register perfectly. The tell is that Kerry rarely lands jokes by explaining why they were funny — he usually just lets them sit."
+    },
+    {
+      "id": "q3",
+      "text": "I've testified before Congress eight times. You get faster at it. Not the testimony — the parking.",
+      "speaker": "Anthony Fauci",
+      "context": "Remarks at the Johns Hopkins Bloomberg School of Public Health commencement ceremony, Baltimore, May 2022",
+      "real": false,
+      "fake_note": "I made this one up — Fauci's wry, self-deprecating humor about Washington bureaucracy is well-documented, and the commencement format gives him license to be loose. The giveaway is the joke is a touch too punchy and structured; Fauci's humor usually builds more slowly."
+    },
+    {
+      "id": "q4",
+      "text": "People keep calling it a pivot. I've been in this town long enough to know that when someone calls it a pivot, they mean someone finally got their calls returned.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks to reporters in the Capitol hallway, C-SPAN footage, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's flat, cynical institutional humor is very real and this matches his clipped, insider-coded delivery. The giveaway is that McConnell almost never riffs aloud about Washington culture; he prefers procedural language over meta-commentary."
+    },
+    {
+      "id": "q5",
+      "text": "Where my reason, imagination or interest were not engaged, I would not or I could not learn.",
+      "speaker": "Winston Churchill",
+      "context": "From Churchill's own autobiography 'My Early Life: A Roving Commission' (1930), in the chapter recalling his schooldays at Harrow where he was placed in the lowest form.",
+      "real": true,
+      "source": {
+        "title": "My Early Life, by Winston S. Churchill (Project Gutenberg Canada full text)",
+        "url": "https://gutenberg.ca/ebooks/churchillws-myearlylife/churchillws-myearlylife-00-h-dir/churchillws-myearlylife-00-h.html",
+        "date": "1930-01-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I have a very simple test for any regulation: can you explain it to a small business owner in rural Saskatchewan in under two minutes? If not, we probably wrote it wrong.",
+      "speaker": "Chrystia Freeland",
+      "context": "Remarks at the Toronto Global Forum, November 2022, as reported by The Globe and Mail",
+      "real": false,
+      "fake_note": "I made this one up — Freeland frequently uses plain-language tests and rural Canada references to signal pragmatism, and the Saskatchewan specificity feels very her. The giveaway is the two-minute benchmark, which is slightly too precise and tidy for off-the-cuff speech."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-07",
+  "edition": 106,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Joni told me once that she thought chord names got in the way. Like, if you know it's called a minor seventh, you stop listening to what it actually sounds like and you just file it. I've been thinking about that for thirty years and I still don't know if she's right, but I can't unhear it.",
+      "speaker": "David Crosby",
+      "context": "Excerpt from a recorded conversation with Cameron Crowe, published in the liner notes of the 2021 Crosby, Stills & Nash archival box set",
+      "real": false,
+      "fake_note": "I made this one up — Crosby and Mitchell genuinely discussed harmony theory and he often credited her with changing how he heard chords. The tell is that this kind of tidy anecdote-as-revelation is a little too polished for Crosby, who was usually blunter and more self-referential."
+    },
+    {
+      "id": "q2",
+      "text": "The more famous I got, the bigger my beehive got",
+      "speaker": "Mari Wilson",
+      "context": "Discussing her signature look and rise to fame",
+      "real": true,
+      "source": {
+        "title": "Music — ‘The more famous I got, the bigger my beehive got’: how Mari Wilson made Just Wh",
+        "url": "https://www.theguardian.com/culture/2026/sep/07/how-mari-wilson-made-just-what-i-always-wanted-beehive",
+        "date": "2026-09-13"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I actually kind of feel like I maybe sound like a younger version of myself",
+      "speaker": "Jeff Tweedy",
+      "context": "Discussing his cover of Twisted Teens' 'Wild Connection'",
+      "real": true,
+      "source": {
+        "title": "Music — Listen to Wilco’s Jeff Tweedy covering Twisted Teens’ ‘Wild Connection’",
+        "url": "https://www.nme.com/news/music/listen-to-wilcos-jeff-tweedy-covering-twisted-teens-wild-connection-3968510?utm_source=rss&utm_medium=rss&utm_campaign=listen-to-wilcos-jeff-tweedy-covering-twisted-teens-wild-connection",
+        "date": "2026-09-13"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "When we were recording Rumours everyone kept saying the tension was going to destroy the band. And maybe it did, eventually. But in that room, that week, tension was the fuel. I'm not saying it was healthy. I'm saying it was on the tape.",
+      "speaker": "Lindsey Buckingham",
+      "context": "Interview with Rolling Stone, published in the magazine's 50th Anniversary special issue, November 2017",
+      "real": false,
+      "fake_note": "I made this one up — Buckingham has been remarkably candid about the emotional conditions around Rumours, and the idea that interpersonal chaos translated directly into recorded energy is a point he's circled many times. The tell is 'that week' — he tends to speak in longer time frames about that era, not compress it to a single week."
+    },
+    {
+      "id": "q5",
+      "text": "I've played Wembley and I've played a pub in Wolverhampton with a broken monitor and about sixty people, and honestly the thing that made me nervous was the same both times. It's always the first note. Once that's out, I'm fine.",
+      "speaker": "Robert Plant",
+      "context": "Interview with Mojo magazine, conducted backstage at the BST Hyde Park festival, London, July 2023",
+      "real": false,
+      "fake_note": "I made this one up — Plant often draws these kinds of leveling comparisons between grand and intimate venues, and the first-note anxiety is a real performer's preoccupation he's touched on before. The tell is Wolverhampton specifically — it's plausible but just a little too perfectly chosen as the humble counterpoint to Wembley."
+    },
+    {
+      "id": "q6",
+      "text": "Hendrix was known for outgoing music, but I was a romantic soul, so the emotional side of his music led to that strain in my own writing.",
+      "speaker": "Elvis Costello",
+      "context": "Elvis Costello's honest playlist feature, on Jimi Hendrix",
+      "real": true,
+      "source": {
+        "title": "Music — ‘I can’t listen to Pink Floyd - I find their music dreary’: Elvis Costello’s hon",
+        "url": "https://www.theguardian.com/music/2026/oct/04/elvis-costello-honest-playlist-sinatra-clash-kelis-pink-floyd-bob-dylan",
+        "date": "2026-10-07"
+      }
+    }
+  ]
+}

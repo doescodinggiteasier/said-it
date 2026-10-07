@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-07",
+  "edition": 103,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Nobody tells you that the hardest part of a comeback isn't the body. The body actually comes back faster than you think. It's convincing yourself in a game situation — like, genuinely, mid-play — that you're still who you were before.",
+      "speaker": "Derrick Rose",
+      "context": "ESPN's 'The Jump,' sit-down segment, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Derrick has spoken extensively about his comeback mentality in almost exactly this register, quiet and inward-looking. The giveaway is the phrase 'mid-play,' which is a little too clean a detail for how haltingly he actually tends to phrase things."
+    },
+    {
+      "id": "q2",
+      "text": "I had to stay patient and try to have a cool head because everywhere else there was fire",
+      "speaker": "Édouard Mendy",
+      "context": "Recalling a tense penalty shootout moment with Senegal",
+      "real": true,
+      "source": {
+        "title": "Sports — Édouard Mendy: ‘Winning Afcon was 10 times better than the Champions League’",
+        "url": "https://www.theguardian.com/football/2026/sep/22/edouard-mendy-winning-afcon-was-10-times-better-than-the-champions-league",
+        "date": "2026-09-22"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Serena was serving at maybe sixty percent that whole second set, and I still had to play the match of my life just to stay in it. At some point I stopped thinking about winning and I was just trying not to embarrass myself. That's where she takes you.",
+      "speaker": "Maria Sharapova",
+      "context": "Unrivaled podcast, episode released March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Sharapova has spoken candidly about facing Serena in a way that's respectful but frank about the psychological dimension, and this admission sounds like her dry, competitive honesty. The subtle giveaway is 'sixty percent,' which is the kind of number that feels eyeballed but specific enough to read as insider knowledge she wouldn't actually quantify."
+    },
+    {
+      "id": "q4",
+      "text": "Resignations are for prime ministers and those caught with their trousers down, not for me",
+      "speaker": "Brian Clough",
+      "context": "The legendary English football manager on his refusal to quit, in a collection of his most memorable one-liners.",
+      "real": true,
+      "source": {
+        "title": "Sky Sports — Brian Clough in quotes: Fifteen of the legendary manager's most memorable one-liners",
+        "url": "https://www.skysports.com/football/news/11689/9642762/brian-clough-fifteen-of-the-legendary-managers-most-memorable-one-liners",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "It's like going to a bar and falling in love every year. That's what it is. You fall in love and get your heart broken, fall in love, get your heart broken.",
+      "speaker": "Doc Rivers",
+      "context": "The veteran NBA head coach on the recurring emotional toll of chasing a championship each season.",
+      "real": true,
+      "source": {
+        "title": "Andscape — Doc Rivers and the heartbreak of being an NBA head coach",
+        "url": "https://andscape.com/features/doc-rivers-and-the-heartbreak-of-being-an-nba-head-coach/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Everyone in Brazil thought I was too small. My uncle told me to my face — go find something else, you'll save yourself the embarrassment. I think about him sometimes. Not with any anger, just, you know. I think about him.",
+      "speaker": "Ronaldinho",
+      "context": "FIFA.com exclusive interview conducted ahead of the 2022 FIFA World Cup in Qatar, published November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Ronaldinho has mentioned early doubters and his family's mixed support in real interviews, always with that same breezy, non-bitter delivery. The giveaway is the 'uncle' detail, which is specific enough to feel real but which he's never actually named as the doubter."
+    }
+  ]
+}

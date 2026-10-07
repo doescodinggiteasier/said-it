@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-07",
+  "edition": 111,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'm not the guy you kill, I'm the guy you buy!",
+      "speaker": "Michael Clayton (2007)",
+      "context": "Michael Clayton (George Clooney) shouting at Karen Crowder near the film's climax, after realizing the conspiracy against him.",
+      "real": true,
+      "source": {
+        "title": "Michael Clayton - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Michael_Clayton",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "You want to talk about fair? Go find somebody who gets paid to listen.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes brushing off a client who's questioning his methods",
+      "real": false,
+      "fake_note": "I made this one up — Gittes is exactly the kind of wiseacre who'd deflect with a line like this, and the cynical cadence fits Polanski's noir perfectly. The subtle giveaway is that it's slightly too tidy a deflection; the real Gittes tends to push back harder and more specifically."
+    },
+    {
+      "id": "q3",
+      "text": "Rough business, this movie business. I may have to go back to loan sharking for a rest.",
+      "speaker": "Get Shorty (1995)",
+      "context": "Chili Palmer (John Travolta), the Miami loan shark turned Hollywood player, at the film's close.",
+      "real": true,
+      "source": {
+        "title": "Get Shorty - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Get_Shorty",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "That's the way it crumbles, cookie-wise.",
+      "speaker": "The Apartment (1960)",
+      "context": "C.C. 'Bud' Baxter (Jack Lemmon) parroting his boss Sheldrake's glib corporate-speak philosophy back to him.",
+      "real": true,
+      "source": {
+        "title": "The Apartment - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Apartment",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The money's already gone, Mr. Sheldrake. The question is where you'd like to go next.",
+      "speaker": "The Sting (1973)",
+      "context": "Henry Gondorff calmly addressing a mark after a transaction",
+      "real": false,
+      "fake_note": "I made this one up — Gondorff's cool, controlled charm is present here, and the line suits the film's atmosphere of confidence men at work. The subtle giveaway is the name 'Sheldrake,' which I borrowed from another Billy Wilder film; the marks in The Sting have different names entirely."
+    },
+    {
+      "id": "q6",
+      "text": "Honestly, I didn't think anyone would notice until the second drink.",
+      "speaker": "Some Like It Hot (1959)",
+      "context": "Jerry, in drag as Daphne, explaining a social miscalculation to Joe",
+      "real": false,
+      "fake_note": "I made this one up — the self-deprecating timing and the detail about the drink make it feel like Wilder's rapid-fire comedy vernacular. The subtle giveaway is that Jerry's flustered lines tend to run longer and more panicked than this compact little confession."
+    }
+  ]
+}

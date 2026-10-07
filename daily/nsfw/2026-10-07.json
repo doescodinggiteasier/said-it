@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-07",
+  "edition": 96,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'd sit there and smoke crack while I listened to the play. It made me fucking crazy.",
+      "speaker": "Samuel L. Jackson",
+      "context": "Reflecting on his 1980s/early-90s crack-cocaine addiction during his time as an understudy on Broadway's 'The Piano Lesson' (shadowing Charles Dutton), before he got sober in 1991. From a 2019 The Hollywood Reporter interview, widely reported (Entertainment Tonight, Today, People), Jan 2019.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter interview (TODAY report)",
+        "url": "https://www.today.com/health/health/samuel-l-jackson-opens-drug-addiction-early-career-rcna20476",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Somebody at the label told me my lyrics were too provocative for radio. I said, 'Darling, I wrote this song in a bathrobe at two in the morning with a bottle of Hennessy and a grudge — provocative is the whole goddamn point. What did you think I was going for, a fucking jingle?'",
+      "speaker": "Prince",
+      "context": "Backstage interview with Robert Hilburn for the Los Angeles Times, published in the Calendar section, April 1984, during the Purple Rain promotional tour",
+      "real": false,
+      "fake_note": "I made this one up — Prince's protective fury about his own creative process and his disdain for label interference are well-documented, and the bathrobe-at-2am image suits his intensely private work habits. The subtle slip is 'Hennessy' — Prince was notoriously clean and later outspoken about sobriety, making a booze reference feel just slightly off."
+    },
+    {
+      "id": "q3",
+      "text": "I have been thrown out of better parties than this, and I will be thrown out of better parties than this again. That is not a threat, that is a résumé.",
+      "speaker": "Christopher Hitchens",
+      "context": "Remarks delivered at the Vanity Fair Oscar Night party, Sunset Tower Hotel, West Hollywood, March 2003, witnessed by several guests and recounted in a Graydon Carter editorial note",
+      "real": false,
+      "fake_note": "I made this one up — Hitchens's combative wit and delight in his own notoriety at parties is thoroughly documented, and the Vanity Fair orbit was his natural habitat. The giveaway is that it's almost too epigrammatic and structured, whereas Hitchens's real off-the-cuff remarks tended to be longer and more argumentative."
+    },
+    {
+      "id": "q4",
+      "text": "Last year I was really into the word cocksucker. I thought it sounded so mean!",
+      "speaker": "Danny McBride",
+      "context": "Answering a rapid-fire 'favorite curse word' question in a Maxim interview promoting 'Eastbound & Down.'",
+      "real": true,
+      "source": {
+        "title": "Maxim interview",
+        "url": "https://www.maxim.com/entertainment/interview-danny-mcbride-eastbound-and-down/",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The worst part about turning fifty wasn't the knees or the back or any of that. It was realizing that a hangover now takes a full calendar day to resolve. You need to block it out. Put it in the schedule. 'Tuesday: stupid.'",
+      "speaker": "Robin Williams",
+      "context": "Stand-up warm-up set at the Throckmorton Theatre, Mill Valley, California, during an unannounced work-in-progress show, July 2001",
+      "real": false,
+      "fake_note": "I made this one up — Robin's habit of doing small, loose work-in-progress gigs at intimate venues is well documented, and the self-deprecating aging humor fits his style during his early 2000s material. The tell is that his comedy about drinking in this era tended to be more oblique given his well-publicized recovery; a casual 'hangover' joke might have felt too close to the bone for him publicly."
+    },
+    {
+      "id": "q6",
+      "text": "It's cold outside, but I'm still looking like a thotty, because a hoe never gets cold.",
+      "speaker": "Cardi B",
+      "context": "From a now-iconic 2014 viral Instagram/Vine clip from her pre-fame days, strutting in a bra top and skirt and explaining why she's barely dressed in winter.",
+      "real": true,
+      "source": {
+        "title": "Nylon — Cardi B was right: hot girls don't get cold",
+        "url": "https://www.nylon.com/life/cardi-b-was-right-hot-girls-dont-get-cold-science-confirms",
+        "date": "2014"
+      }
+    }
+  ]
+}

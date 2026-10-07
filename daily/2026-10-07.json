@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-07",
+  "edition": 114,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's a version of Interstellar that's about forty minutes longer and considerably more confusing. I mean that as a compliment to myself, actually — I think I showed some genuine restraint.",
+      "speaker": "Christopher Nolan",
+      "context": "Q&A session following a 70mm retrospective screening at the BFI Southbank, London, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Nolan really does discuss his editing process in terms of what he cuts rather than what he keeps, and self-deprecating jokes about his own density as a filmmaker are well within his register. The giveaway is 'compliment to myself' — a little too consciously wry for how he usually phrases things."
+    },
+    {
+      "id": "q2",
+      "text": "Current observations hint that our standard model of the universe is incorrect.",
+      "speaker": "Julie McEnery",
+      "context": "Roman Space Telescope senior project scientist, NASA",
+      "real": true,
+      "source": {
+        "title": "Scientific American — Roman Space Telescope",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what the hardest part of free diving is and I always say it's the two minutes before you go under, when your brain is still completely convinced this is a terrible idea. Your body hasn't caught up yet — it's still optimistic.",
+      "speaker": "David Blaine",
+      "context": "Appearance on The Joe Rogan Experience, episode 1842, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Blaine genuinely talks about the psychological dimension of breath-hold work in this matter-of-fact, slightly clinical register. The giveaway is 'still optimistic' as a description of the body, which is a touch too tidy for how he usually trails off into technical detail."
+    },
+    {
+      "id": "q4",
+      "text": "My favorite was The Scrunchie Chronicles: 112 Countries and It's Still All about My Hair",
+      "speaker": "Hillary Clinton",
+      "context": "Joking about a rejected memoir title, poking fun at coverage of her hair, in 2014",
+      "real": true,
+      "source": {
+        "title": "The Week — Hillary Clinton jokes she considered calling her memoir The Scrunchie Chronicles",
+        "url": "https://theweek.com/speedreads/452686/hillary-clinton-jokes-considered-calling-memoir-scrunchie-chronicles",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "What would take Hubble 2,000 years to process, Roman can do in a year.",
+      "speaker": "Jared Isaacman",
+      "context": "NASA Administrator, on the Nancy Grace Roman Space Telescope",
+      "real": true,
+      "source": {
+        "title": "Scientific American — Roman Space Telescope",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "When we were building the first Macintosh team, Steve would walk in and just stare at whatever you were working on for what felt like a full minute without saying anything. Some people found that terrifying. I found it clarifying, weirdly — because you realized pretty fast whether you actually believed in what you were showing him.",
+      "speaker": "Andy Hertzfeld",
+      "context": "Talk at the Computer History Museum's Oral History Speaker Series, Mountain View, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Hertzfeld's published recollections of the Mac team have exactly this warm-but-clear-eyed tone about Jobs, and this kind of anecdote fits his storytelling style perfectly. The subtle giveaway is 'clarifying, weirdly' — a little too neatly resolved for how his memories usually meander."
+    }
+  ]
+}
