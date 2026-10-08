@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-08",
+  "edition": 104,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Everybody remembers the home runs. Nobody remembers the at-bat in the fifth where you work a walk and move the runner. That's the game, right there. That's actually the whole game.",
+      "speaker": "Derek Jeter",
+      "context": "MLB Network's Studio 42 with Bob Costas, recorded March 2018 ahead of the Hall of Fame voting announcement",
+      "real": false,
+      "fake_note": "I made this one up — Jeter constantly talked about the unglamorous parts of winning and team-first baseball, so this rings completely true. The giveaway is that Jeter was almost pathologically polished; he'd rarely say 'right there' twice in the same breath like that."
+    },
+    {
+      "id": "q2",
+      "text": "I've pulled muscles I didn't know I had doing yoga. And people say gymnastics is the dangerous one.",
+      "speaker": "Simone Biles",
+      "context": "Interview with Cosmopolitan, published June 2021 ahead of the Tokyo Olympic trials",
+      "real": false,
+      "fake_note": "I made this one up — Biles has a dry, self-deprecating humor that comes through in her social media and press appearances, so this kind of wry aside fits naturally. The slight tell is she tends to deflect humor outward rather than making herself the punchline quite this directly."
+    },
+    {
+      "id": "q3",
+      "text": "I go with a clear conscience",
+      "speaker": "Cristiano Ronaldo",
+      "context": "After Portugal's World Cup exit vs Spain, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘I go with a clear conscience’: Cristiano Ronaldo confirms he has played his las",
+        "url": "https://www.theguardian.com/football/2026/jul/07/cristiano-ronaldo-portugal-roberto-martinez-world-cup-2026-spain",
+        "date": "2026-07-07"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "If you don't want me to watch the ball, you can get it out of the ocean.",
+      "speaker": "Max Muncy",
+      "context": "Dodgers infielder Max Muncy on what he told Giants pitcher Madison Bumgarner, who had angrily yelled at him to stop watching his home run and run the bases. Muncy's solo homer was the only run in a 1-0 Dodgers win in San Francisco.",
+      "real": true,
+      "source": {
+        "title": "Max Muncy beats Madison Bumgarner at the plate and in his post-game quotes",
+        "url": "https://www.cbssports.com/mlb/news/max-muncy-beats-madison-bumgarner-at-the-plate-and-in-his-post-game-quotes/",
+        "date": "2019-06-09"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "What Carew does with a football, I can do with an orange.",
+      "speaker": "Zlatan Ibrahimovic",
+      "context": "Swedish soccer star's cocky teenage retort to fellow striker John Carew, who had dismissed Zlatan's tricks and flicks as pointless. Said in the Norwegian tabloid VG in April 2002. A classic surprising, deadpan brag.",
+      "real": true,
+      "source": {
+        "title": "Zlatan Ibrahimovic - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Zlatan_Ibrahimovi%C4%87",
+        "date": "2002-04-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what I was thinking on that last lap. Honestly? I was thinking about whether I'd left my bag at the hotel. You compartmentalize what you can and the rest just sits there.",
+      "speaker": "Lewis Hamilton",
+      "context": "Sky Sports F1 post-race debrief interview, Abu Dhabi Grand Prix, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Hamilton genuinely talks about mental focus and the chaos underneath it, so the hotel bag detail feels very him. The subtle giveaway is that he'd more likely frame distraction in terms of mindfulness practice, not mundane logistics."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-08",
+  "edition": 103,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone asked me once if I ever get nervous before a big vote. And I said — honestly? The ones I don't get nervous about are the ones that worried me in hindsight.",
+      "speaker": "Mitch McConnell",
+      "context": "Interview with Hugh Hewitt on The Hugh Hewitt Show, radio broadcast, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — McConnell occasionally offers these dry, almost philosophical asides that don't quite sound like anyone else in the Senate, and this fits his guarded, chess-player persona perfectly. The giveaway is that it's slightly more reflective than McConnell typically allows himself to be in public."
+    },
+    {
+      "id": "q2",
+      "text": "The disappointment of manhood succeeds to the delusion of youth: let us hope that the heritage of old age is not despair.",
+      "speaker": "Benjamin Disraeli",
+      "context": "The British Prime Minister and novelist, in a candidly reflective aside on the disappointments of the ages of life (from his fiction, Book VIII, Chapter 4).",
+      "real": true,
+      "source": {
+        "title": "Benjamin Disraeli - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "When I was attorney general people would introduce me at events and say 'she handles the tough cases.' And I would think — what were you expecting? Jaywalking?",
+      "speaker": "Kamala Harris",
+      "context": "Commencement address Q&A session at Howard University, Washington D.C., May 2017",
+      "real": false,
+      "fake_note": "I made this one up — Harris frequently tells stories from her AG years with this exact mix of mock-indignation and humor, and Howard is genuinely her home turf for this kind of warm, candid aside. The subtle giveaway is that the punchline is just a touch too polished for genuine Q&A improv."
+    },
+    {
+      "id": "q4",
+      "text": "Look, the Wall Street Journal is a shadow of its former self, and I think it's a disgrace for you to say that they're like TMZ. TMZ does a good job of what they do,",
+      "speaker": "Scott Bessent",
+      "context": "Treasury Secretary Bessent responding to a Wall Street Journal report about strife in his department",
+      "real": true,
+      "source": {
+        "title": "Politics — Bessent rips Wall Street Journal after report on 'tension, turnover'",
+        "url": "https://thehill.com/homenews/media/6136010-bessent-attacks-wsj-report/",
+        "date": "2026-10-08"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I grew up watching my father testify before committees. I thought it looked pretty manageable. Then I did it. For eight hours. About a PowerPoint.",
+      "speaker": "Liz Cheney",
+      "context": "Remarks at the Reagan Presidential Library Speaker Series, Simi Valley, California, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Cheney's humor is spare and self-aware, and the reference to her father is exactly the kind of familial grounding she uses in more personal speaking contexts. The giveaway is 'about a PowerPoint,' which is funnier and more specific than Cheney typically gets in formal settings."
+    },
+    {
+      "id": "q6",
+      "text": "My first year in Congress I called a constituent back and confidently told him the wrong committee had jurisdiction. He knew. He definitely knew before I finished the sentence. I could hear it.",
+      "speaker": "Alexandria Ocasio-Cortez",
+      "context": "Panel discussion at South by Southwest Conference, Austin, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — AOC has spoken candidly about the steep learning curve of arriving in Congress as a newcomer, and this kind of specific, slightly embarrassed story is exactly her register. The giveaway is that a real version of this story would probably have a funnier or more pointed punchline."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-08",
+  "edition": 97,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've had some absolute disasters with women, absolute disasters. There was one girl — lovely girl — she came to a gig in Leeds, right, and afterwards I said something, I don't even know what I said, and she threw a pint of lager at me. And I thought, yeah, fair enough. I probably deserved that. I definitely deserved that. I just wish it hadn't been MY pint.",
+      "speaker": "Sean Hughes",
+      "context": "Never Mind the Buzzcocks, Series 12 recording, BBC Television Centre, London, 2001 — extended backstage warmup chat captured on behind-the-scenes VHS footage released with the DVD box set",
+      "real": false,
+      "fake_note": "I made this one up — Sean's comedy was self-lacerating, built on rambling half-sentences and false endings, which I've tried to replicate here. The tell is the rhythm is slightly too controlled; his real digressions tended to trail off more genuinely before the callback."
+    },
+    {
+      "id": "q2",
+      "text": "Look at your mushrooms - they look like fucking tadpoles on Viagra.",
+      "speaker": "Gordon Ramsay",
+      "context": "Chef Gordon Ramsay critiquing a kitchen's mushroom side dish on the \"Rococo\" episode of Ramsay's Kitchen Nightmares (King's Lynn restaurant), UK Channel 4, 2006.",
+      "real": true,
+      "source": {
+        "title": "'Ramsay's Kitchen Nightmares' — Rococo (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt1058681/",
+        "date": "2006"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "You've baked a really lovely cake, but then you've used dog shit for frosting.",
+      "speaker": "Steve Jobs",
+      "context": "Critiquing a NeXT programmer's work during a project review",
+      "real": true,
+      "source": {
+        "title": "Book 'The Second Coming of Steve Jobs' (Cult of Mac)",
+        "url": "https://www.cultofmac.com/news/eleven-cutting-steve-jobs-quotes",
+        "date": "2000"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Marriage is like a tour bus. When it's going well you don't notice the smell. When it breaks down in the middle of fucking Nebraska at 3am, suddenly all you can smell is the smell. And you're still in Nebraska.",
+      "speaker": "Bill Hicks",
+      "context": "Recorded at Funny Bone Comedy Club, Pittsburgh, PA, November 1992 — circulated on bootleg cassette among fans prior to the posthumous Relentless DVD release",
+      "real": false,
+      "fake_note": "I made this one up — Bill used extended, grumpy analogy structures exactly like this, and 'Nebraska' as a stand-in for spiritual desolation was genuinely in his vocabulary. The sneaky part is this sits neatly in the gap between his known bootlegs, but the metaphor resolves a touch too comfortably for his usual bleak endings."
+    },
+    {
+      "id": "q5",
+      "text": "I think that weed kept me from wanting to kill people. And probably kept a lot of people from wanting to kill me, too — out there drunk, running around.",
+      "speaker": "Willie Nelson",
+      "context": "In Rolling Stone's 2019 Weed Issue cover interview, explaining how marijuana replaced his heavy drinking.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Willie Nelson: 'Marijuana Saved My Life'",
+        "url": "https://www.rollingstone.com/music/music-features/willie-nelson-weed-issue-826290/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I'll tell you exactly how the Rat Pack worked — Frank got the suite, Dean got the bar tab, and I got whatever broad thought she was gonna reform one of us. Nobody ever got reformed. We did, however, get room service at four in the morning, which is basically the same thing.",
+      "speaker": "Sammy Davis Jr.",
+      "context": "The Tonight Show Starring Johnny Carson, NBC Studios, Burbank, December 1981 — extended couch segment after the main interview",
+      "real": false,
+      "fake_note": "I made this one up — Sammy was famously candid and self-deprecating about his Rat Pack years, and the rambling, list-heavy structure sounds exactly like his late-night TV banter. The giveaway is the punchline landing a little too neatly; Sammy's real digressions usually got messier before the laugh."
+    }
+  ]
+}

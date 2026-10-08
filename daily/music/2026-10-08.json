@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-08",
+  "edition": 107,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The first time I played the Hollywood Bowl I wore the wrong shoes and my feet were absolutely killing me by the third song. I spent the rest of the set essentially doing choreography on my heels. Nobody could tell, I hope.",
+      "speaker": "Janelle Monáe",
+      "context": "Behind-the-scenes feature in The Guardian's Weekend magazine, July 2018",
+      "real": false,
+      "fake_note": "I made this one up — Janelle talks about performance, costume, and the physicality of her shows regularly, and this kind of practical, slightly rueful backstage confession fits her warmth and humor. The giveaway is she'd almost certainly reference the specific tour or outfit rather than leaving the fashion detail at 'wrong shoes.'"
+    },
+    {
+      "id": "q2",
+      "text": "My grandmother heard 'Purple Rain' playing from another room once and she said it sounded like church music gone wrong. She meant it as a criticism. I took it the other way.",
+      "speaker": "Lenny Kravitz",
+      "context": "Tribute remarks delivered at the Rock and Roll Hall of Fame induction ceremony for Prince, April 2004",
+      "real": false,
+      "fake_note": "I made this one up — Lenny has spoken often about Prince's influence and about the intersection of gospel and rock, and a grandmother anecdote in a tribute setting is completely in character. The giveaway is the punchline is a touch too well-constructed; his real storytelling meanders a bit more before landing."
+    },
+    {
+      "id": "q3",
+      "text": "When I was young I studied classical music and Giuseppe Verdi has this wonderful quote: 'Good composers borrow, great composers steal.'",
+      "speaker": "Nile Rodgers",
+      "context": "The Chic guitarist and producer on how he views artists who borrow from his work, in an interview with The National.",
+      "real": true,
+      "source": {
+        "title": "The National — With Nile Rodgers, it is always bound to be Good Times",
+        "url": "https://www.thenationalnews.com/arts/with-nile-rodgers-it-is-always-bound-to-be-good-times-1.593775",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I had to pull off the road, I cried like a baby. I didn't realise how powerful music could be until that mom",
+      "speaker": "Shania Twain",
+      "context": "Shania Twain describing hearing Gabriel's Oboe by Ennio Morricone",
+      "real": true,
+      "source": {
+        "title": "Music — Shania Twain’s honest playlist: ‘If Dancing Queen comes on, you rush out’",
+        "url": "https://www.theguardian.com/music/2026/jul/26/shania-twain-honest-playlist-abba-harry-styles-phantom-opera",
+        "date": "2026-07-29"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There were maybe two hundred people at those early shows in Sheffield, and half of them were only there because there was nothing else on. But those were the nights where we figured out who we actually were as a band, because you can't fake it for two hundred disinterested people. They will just stare at you.",
+      "speaker": "Alex Turner",
+      "context": "Interview with NME at the time of the Arctic Monkeys' induction into the UK Music Hall of Fame, November 2014",
+      "real": false,
+      "fake_note": "I made this one up — Alex talks about the early Sheffield days with exactly this dry, slightly bleak humor, and the observation about disinterested audiences is very him. The giveaway is 'figured out who we actually were' is a touch more introspective than his usual deflecting, deadpan framing of those early years."
+    },
+    {
+      "id": "q6",
+      "text": "When things like this happened with The Beatles, instead of just thinking it was a mistake, we grabbed hold of the idea and said, 'That's perfect'",
+      "speaker": "Paul McCartney",
+      "context": "Paul McCartney discussing the making of the Rubber Soul album cover",
+      "real": true,
+      "source": {
+        "title": "Music — Paul McCartney on how a happy accident led to The Beatles’ iconic’ ‘Rubber Soul’",
+        "url": "https://www.nme.com/news/music/the-beatles-rubber-soul-album-cover-shot-robert-freeman-story-paul-mccartney-3972602?utm_source=rss&utm_medium=rss&utm_campaign=the-beatles-rubber-soul-album-cover-shot-robert-freeman-story-paul-mccartney",
+        "date": "2026-10-08"
+      }
+    }
+  ]
+}
