@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-09",
+  "edition": 108,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The thing that gets me about working with a great string arranger is you hand them a demo that's maybe a piano and your voice, and they come back with something and suddenly you understand what you actually wrote. It's like someone translating your dream back to you.",
+      "speaker": "Sufjan Stevens",
+      "context": "Pitchfork feature interview accompanying the release of Javelin, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Sufjan consistently talks about arrangement, collaboration, and the gap between intention and realization in exactly this introspective, slightly literary way. The tell is that it's just a hair too poetic to be spontaneous speech, even for him."
+    },
+    {
+      "id": "q2",
+      "text": "When I was really bad, I was not all bad. When I was really trying to be good, I could never be all good. There would be that black streak going through.",
+      "speaker": "Johnny Cash",
+      "context": "Reflecting at the close of his 1994 Rolling Stone interview on the two dogs (named Sin and Redemption) on his American Recordings album cover, and his own inner duality.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Johnny Cash: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/johnny-cash-the-rolling-stone-interview-54538/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My mom never really understood what I was doing until she heard one of my songs at a Walmart. She called me from the parking lot. I think that was the moment she stopped worrying about me.",
+      "speaker": "Luke Combs",
+      "context": "Keynote conversation at the Country Radio Seminar, Nashville, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Luke Combs regularly tells warm, plainspoken stories about his family and his path to mainstream success in exactly this tone. The Walmart detail is the kind of specific, unglamorous American touchstone he reaches for, which makes it feel genuine — but the call never happened."
+    },
+    {
+      "id": "q4",
+      "text": "I was in the middle of recording vocals and I realized I'd been singing the melody slightly wrong for about three weeks. Not wrong wrong — it still worked — but not what I heard in my head the first day. By then everyone loved the wrong version. So I just kept it.",
+      "speaker": "Frank Ocean",
+      "context": "Transcript excerpt from a Q&A session at New York University's Clive Davis Institute, published in the institute's alumni journal, Spring 2014",
+      "real": false,
+      "fake_note": "I made this one up — Frank Ocean has spoken in detail about the gap between intention and execution in recording, often with this kind of quietly bemused self-observation. The tell is that the anecdote is too tidy even as it poses as messy, and Frank Ocean's actual Q&A appearances are vanishingly rare, which makes the context feel slightly optimistic."
+    },
+    {
+      "id": "q5",
+      "text": "We decided to make proper rock without the 'indie' modifier",
+      "speaker": "Ben Hozie",
+      "context": "Bodega frontman discussing new album 'All Inside Aquarium'",
+      "real": true,
+      "source": {
+        "title": "Music — Bodega tell us about new album ‘All Inside Aquarium’: “We decided to make proper",
+        "url": "https://www.nme.com/news/music/bodega-interview-new-album-all-inside-aquarium-interview-proper-rock-geese-3972514?utm_source=rss&utm_medium=rss&utm_campaign=bodega-interview-new-album-all-inside-aquarium-interview-proper-rock-geese",
+        "date": "2026-10-09"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I did a whole tour once where I was eating the same meal every single day — rice, grilled chicken, hot sauce — because I genuinely did not trust myself to make any other decisions after soundcheck. Your brain only has so much left in it by seven p.m.",
+      "speaker": "Billie Eilish",
+      "context": "Rolling Stone cover story, 'Billie Eilish Is Ready to Disappoint You,' published August 2023",
+      "real": false,
+      "fake_note": "I made this one up — Billie frequently discusses tour routines, sensory overwhelm, and self-management with this kind of candid, slightly self-deprecating specificity. The giveaway is the hot sauce detail, which is charming but just precise enough to feel planted."
+    }
+  ]
+}

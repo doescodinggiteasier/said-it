@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-09",
+  "edition": 98,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Some nights you walk off stage and you think, yeah, I earned that. Other nights you walk off and the rider's been touched, someone's eaten your specific cheese, and you just stand in the parking lot screaming the word 'Gouda' at nobody.",
+      "speaker": "Keith Moon",
+      "context": "Interview with Nick Kent for NME, conducted at Shepperton Studios during The Who's Quadrophenia filming sessions, August 1973",
+      "real": false,
+      "fake_note": "I made this one up — Moon's documented interviews are full of this exact unhinged specificity and performative outrage over trivial things, which makes it very plausible. The subtle giveaway is 'rider' as terminology — that word wasn't quite standard backstage vocabulary in 1973 interviews."
+    },
+    {
+      "id": "q2",
+      "text": "I never took heroin, really because I'm too lazy.",
+      "speaker": "Grace Slick",
+      "context": "The Jefferson Airplane singer, in a Forbes interview, on why heroin never appealed to her despite her heavy drug era.",
+      "real": true,
+      "source": {
+        "title": "Forbes — Grace Slick Part II: 'I Never Took Heroin, Really Because I'm Too Lazy'",
+        "url": "https://www.forbes.com/sites/jimclash/2015/12/12/grace-slick-part-ii-i-never-took-heroin-really-because-im-too-lazy/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Vegas in '74 was — look, I'm not gonna romanticize it. The buffet smelled like carpet and the cocktail waitresses were bringing me drinks I didn't order because they felt sorry for me. I looked like a man who'd been left at an airport. I had been left at an airport.",
+      "speaker": "John Belushi",
+      "context": "Recorded interview for Rolling Stone magazine, published in the March 1978 issue, conducted backstage at the Universal Amphitheatre",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's comedic rhythm was this kind of escalating absurdist confession that pivots on a dumb literal truth at the end. The giveaway is the timeline: Belushi wasn't doing solo Vegas appearances in '74, he was deep in SNL prep."
+    },
+    {
+      "id": "q4",
+      "text": "I used to have a drug problem, but now I make enough money.",
+      "speaker": "David Lee Roth",
+      "context": "The Van Halen frontman quipping about his lifestyle, quoted in a Louder roundup of his wit (originally on Nightwatch With Charlie Rose, 1986).",
+      "real": true,
+      "source": {
+        "title": "Louder — The wit and wisdom of David Lee Roth",
+        "url": "https://www.loudersound.com/features/all-i-ever-really-needed-to-know-i-learned-from-david-lee-roth",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've had stitches in three different countries and I am proud of all of them. Two were from incidents I caused, one was from an incident I merely inspired. I feel that's a reasonable ratio for a man of my commitments.",
+      "speaker": "Oliver Reed",
+      "context": "Interview with Jonathan Ross for BBC One's Friday Night with Jonathan Ross, broadcast November 1994",
+      "real": false,
+      "fake_note": "I made this one up — Reed was famously chaotic in chat show interviews and genuinely said things this unhinged about his own behaviour; the formal phrasing 'a man of my commitments' is pure Reed. The giveaway is Jonathan Ross's show didn't launch until 2001 — the dates don't align with Reed being alive."
+    },
+    {
+      "id": "q6",
+      "text": "I wore the same jeans for the entire Exile on Main St. sessions and I want credit for that. Not musical credit — hygiene credit. I kept everyone in that house honest.",
+      "speaker": "Gram Parsons",
+      "context": "Informal interview recorded by journalist Ben Fong-Torres for Rolling Stone, conducted at Château Nellcôte during the summer 1971 sessions",
+      "real": false,
+      "fake_note": "I made this one up — Parsons was genuinely present at Château Nellcôte during Exile and made exactly this kind of loose, self-mythologising claim in casual settings according to contemporaries. The giveaway is Fong-Torres wasn't documented as visiting Nellcôte specifically, though he did interview Parsons during that era."
+    }
+  ]
+}

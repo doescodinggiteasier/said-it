@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-09",
+  "edition": 113,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "This? Why, I could make a hat, or a brooch, or a pterodactyl.",
+      "speaker": "Airplane! (1980)",
+      "context": "Johnny (Stephen Stucker), the air traffic control clown, riffs when asked what he can make of the situation.",
+      "real": true,
+      "source": {
+        "title": "Airplane! - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Airplane!",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I'm gonna make him an offer he can't refuse.",
+      "speaker": "The Godfather (1972)",
+      "context": "Don Vito Corleone (Marlon Brando) tells his godson Johnny Fontane how he'll persuade movie producer Jack Woltz to cast him.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "You keep calling it a heist. I call it a withdrawal.",
+      "speaker": "Heat (1995)",
+      "context": "Neil McCauley, low and even, to a crew member questioning the plan",
+      "real": false,
+      "fake_note": "I made this one up — McCauley's clipped, professional detachment fits perfectly here, and the word-flip ('withdrawal' for a bank job) is exactly the kind of dry precision Mann gives him. The subtle giveaway is that it's a touch too aphoristic for McCauley, who usually speaks in operational terms rather than rhetorical pivots."
+    },
+    {
+      "id": "q4",
+      "text": "Nineteen hours in the air and the first thing you do is argue with a customs officer.",
+      "speaker": "The Bourne Identity (2002)",
+      "context": "Marie, exasperated, to Jason Bourne at a European border crossing",
+      "real": false,
+      "fake_note": "I made this one up — Marie is the film's grounding voice, frequently reacting to Bourne's reckless competence with ordinary human frustration. The giveaway is the specific flight time; the film keeps geography deliberately vague, so a precise number like nineteen hours feels slightly out of register."
+    },
+    {
+      "id": "q5",
+      "text": "The money was never the point, counselor. It was never about the money.",
+      "speaker": "The Firm (1993)",
+      "context": "Avery Tolar to Mitch McDeere during a tense late-office conversation",
+      "real": false,
+      "fake_note": "I made this one up — Tolar occupies that mentor-with-secrets role and speaks in the smooth, deflecting register of a man hiding everything behind charm. The giveaway is that denying the money's importance in a movie literally about a law firm's financial crimes is a little too on-the-nose thematically."
+    },
+    {
+      "id": "q6",
+      "text": "Is this testing whether I'm a Replicant or a lesbian, Mr. Deckard?",
+      "speaker": "Blade Runner (1982)",
+      "context": "Rachael (Sean Young) to Rick Deckard (Harrison Ford) during her Voight-Kampff test at the Tyrell Corporation, early in the film.",
+      "real": true,
+      "source": {
+        "title": "Blade Runner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Blade_Runner",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

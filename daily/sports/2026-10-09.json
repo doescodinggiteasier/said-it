@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-09",
+  "edition": 105,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I came to Barcelona from Brazil I was seventeen and I thought I knew how to play football. Then I watched Ronaldinho train for about forty minutes and I went back to the hotel and just sat there.",
+      "speaker": "Dani Alves",
+      "context": "Interview with France Football magazine, translated excerpt republished by ESPN FC, March 2016",
+      "real": false,
+      "fake_note": "I made this one up — Dani Alves has spoken glowingly about Ronaldinho's influence on him many times in his own vivid, story-driven style, so this feels entirely authentic. The subtle giveaway is the stillness of 'sat there' — Alves's real anecdotes usually end with more energy and gesture, not quiet reflection."
+    },
+    {
+      "id": "q2",
+      "text": "Happy? Happy is not a word that we think about in the game. You gotta think of something different. Happy, I don't know how to judge happy. We're in the middle of a contest. Nobody's happy.",
+      "speaker": "Gregg Popovich",
+      "context": "San Antonio Spurs head coach Gregg Popovich's deadpan reply during a mid-game sideline interview when TNT's David Aldridge asked whether he was happy with his team's shot selection against the Thunder.",
+      "real": true,
+      "source": {
+        "title": "Gregg Popovich rips reporter for asking if he's 'happy' about shot selection (Video)",
+        "url": "https://larrybrownsports.com/basketball/gregg-popovich-rips-reporter-happy/160946",
+        "date": "2012-11-02"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People see the swim and think the race is the hard part. The hard part was six weeks ago in a practice pool in Brisbane at five-thirty in the morning when nobody was watching and I really, really didn't want to be there.",
+      "speaker": "Ian Thorpe",
+      "context": "ABC Australia's 'Australian Story,' Ian Thorpe profile episode, aired February 2013",
+      "real": false,
+      "fake_note": "I made this one up — Thorpe has been candid about the brutal discipline of elite swimming and the emotional complexity of his relationship with the sport, and 'Australian Story' is exactly where he gave his most personal reflections. The giveaway is the specificity of Brisbane — Thorpe trained primarily in Sydney, so a sharp fan might notice the location doesn't quite fit his documented routine."
+    },
+    {
+      "id": "q4",
+      "text": "People talk about the mental side like it's some separate thing you can train on a Tuesday afternoon. But for me it was always just — you're standing over a putt and your hands remember every bad one you've ever hit, and you've got to find a way to be okay with that.",
+      "speaker": "Phil Mickelson",
+      "context": "Golf Channel's 'Live From the Masters' pre-tournament desk interview, Augusta, April 2019",
+      "real": false,
+      "fake_note": "I made this one up — Phil has spoken extensively about the mental game and his yips struggles, so this fits his reflective, slightly meandering interview style perfectly. The subtle giveaway is 'your hands remember every bad one' — a touch too poetic and self-aware for Phil, who usually deflects with more technical language."
+    },
+    {
+      "id": "q5",
+      "text": "Chemistry is something that you don't just throw in the frying pan and mix it up with another something and then throw it on top of something, then fry it up and put it in a tortilla put in a microwave, heat it up and it give it to you and expect it to taste good.",
+      "speaker": "Kevin Garnett",
+      "context": "Boston Celtics forward Kevin Garnett delivered this elaborate cooking metaphor while expressing frustration about the lack of preparation time following the 2011 NBA lockout, explaining why team chemistry can't be rushed.",
+      "real": true,
+      "source": {
+        "title": "Kevin Garnett's words were as entertaining as his play - ESPN Boston Celtics Blog",
+        "url": "https://www.espn.com/blog/boston/celtics/post/_/id/4724028/kevin-garnetts-words-were-as-entertaining-as-his-play",
+        "date": "2011-12-13"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Three great minds are better than two.",
+      "speaker": "Geoff Ogilvy",
+      "context": "Golfer and course designer Geoff Ogilvy on his OCM design team",
+      "real": true,
+      "source": {
+        "title": "Sports — Allowed to dream: Geoff Ogilvy and OCM design team make mark on course design",
+        "url": "https://sports.yahoo.com/articles/allowed-dream-geoff-ogilvy-ocm-120524657.html",
+        "date": "2026-09-25"
+      }
+    }
+  ]
+}

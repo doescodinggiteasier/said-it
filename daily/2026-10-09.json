@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-09",
+  "edition": 116,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Freedom is the right to be wrong, not the right to do wrong.",
+      "speaker": "John Diefenbaker",
+      "context": "The Canadian Prime Minister, in a candid, aphoristic reflection on liberty (11 March 1958).",
+      "real": true,
+      "source": {
+        "title": "John Diefenbaker - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Diefenbaker",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People always want the story of how Wakanda Forever came together as this triumphant thing, and parts of it were, genuinely. But a lot of it was just — we were all grieving and we had to show up anyway. That's not inspirational, that's just what grief looks like when you have a release date.",
+      "speaker": "Ryan Coogler",
+      "context": "Directors Guild of America podcast, DGA Conversations series, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Coogler spoke with remarkable candor about filming Black Panther: Wakanda Forever after Chadwick Boseman's death in numerous interviews, and this sounds very close to his measured, emotionally intelligent public voice. The subtle tell is 'when you have a release date,' which is a little too clean a punchline for what would be a genuinely difficult sentence to finish."
+    },
+    {
+      "id": "q3",
+      "text": "Tennis players are weird people. We spend our whole careers essentially alone on a court — there's nobody to pass to, nobody to blame — and then everyone expects us to be great at press conferences, which is like a completely different sport that nobody practiced.",
+      "speaker": "Serena Williams",
+      "context": "Vogue magazine profile, September 2021 issue",
+      "real": false,
+      "fake_note": "I made this one up — Serena has spoken candidly about the psychological isolation of tennis and her complicated relationship with media obligations, and the 'different sport nobody practiced' framing sounds like her dry wit. The giveaway is the word 'weird' — she'd more likely say 'different' or 'particular' when describing her peers."
+    },
+    {
+      "id": "q4",
+      "text": "My dad used to say that a rhythm section either sounds like furniture moving or it sounds like breathing. I didn't know what he meant for years and then one night in the studio I heard it and I was like — oh. Yeah. That's the whole thing right there.",
+      "speaker": "Dave Grohl",
+      "context": "Interview with Zane Lowe on Apple Music 1, promoting the release of The Storyteller memoir, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Grohl regularly talks about his dad, about drumming philosophy, and about epiphany moments in the studio in exactly this warm, narrative style. The giveaway is the dad quote itself, which is a little too poetic and memorable to be casually recalled."
+    },
+    {
+      "id": "q5",
+      "text": "How can you govern a country that has two hundred and forty-six varieties of cheese?",
+      "speaker": "Charles de Gaulle",
+      "context": "The French president and WWII Free France leader, expressing wry exasperation at the ungovernability of France; recorded in Ernest Mignon's 1962 collection Les Mots du General.",
+      "real": true,
+      "source": {
+        "title": "Charles de Gaulle - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Charles_de_Gaulle",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I used to get recognized at the grocery store and I'd think, this is the weirdest part of the job. Now I live somewhere where nobody cares and I miss it a little. Not the attention — just the evidence that the work reached someone.",
+      "speaker": "Anthony Hopkins",
+      "context": "The Sunday Times Magazine, profile by Camilla Long, February 2022",
+      "real": false,
+      "fake_note": "I made this one up — Hopkins has given remarkably similar reflections on fame and anonymity in British press profiles, particularly since his Oscar win for The Father, and his wry, ruminative register is well captured here. The tell is 'evidence that the work reached someone' — a fraction too considered and crafted for a quote that's meant to sound like a casual aside."
+    }
+  ]
+}
