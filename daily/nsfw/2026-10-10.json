@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-10",
+  "edition": 99,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I threw up in a potted plant at the Grammys afterparty — a big, expensive, ceramic potted plant — and I just sort of nudged it behind the curtain with my foot and walked over to the bar and ordered another one. Nobody said shit to me. That's how you know you've made it.",
+      "speaker": "John Belushi",
+      "context": "Quoted in a 1980 Rolling Stone backstage oral history feature on the Grammys afterparties, attributed to Belushi recounting the 1978 ceremony",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's self-deprecating bravado and the specific physical comedy of nudging the plant fits his documented party storytelling perfectly. The giveaway is he rarely did print interviews this candid about specific award shows; he tended to deflect."
+    },
+    {
+      "id": "q2",
+      "text": "Hollywood is a coke town, but weed is so much better.",
+      "speaker": "Miley Cyrus",
+      "context": "In a 2013 Rolling Stone cover interview, contrasting cocaine with the 'happy drugs' she prefers.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Miley Cyrus on Why She Loves Weed, Went Wild at the VMAs and Much More",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Someone in the front row at Cleveland had a sign that said 'Marry me, Freddie.' And I thought, darling, I am absolutely flattered, and you have no idea what you're getting into, and also your handwriting is appalling.",
+      "speaker": "Freddie Mercury",
+      "context": "BBC Radio 1 interview with Mike Read, recorded October 1984, broadcast as part of the Queen US Tour retrospective",
+      "real": false,
+      "fake_note": "I made this one up — Mercury's habit of being simultaneously warm, bitchy, and self-referentially camp in one sentence is very characteristic of documented interviews. The giveaway is the sign's specific city: no verified account of this exchange from the 1984 tour exists."
+    },
+    {
+      "id": "q4",
+      "text": "Look, marriage is great. Marriage is — it's like a tattoo on your face. You were totally sober when you decided you wanted it, everybody told you it was a bad idea, and now you love it so much you can't imagine your face without it. I mean that sincerely. That's a compliment.",
+      "speaker": "George Carlin",
+      "context": "Howard Stern Show, WXRK New York, April 1997, during a call-in segment on relationships",
+      "real": false,
+      "fake_note": "I made this one up — Carlin's rhetorical trick of building an absurd analogy and then insisting it's sincere is well-documented in his actual stand-up. The giveaway is that Carlin rarely appeared on the Stern show in that specific conversational format; his media was almost entirely print or his own specials."
+    },
+    {
+      "id": "q5",
+      "text": "And if you can write an hour of great stuff, you're like fucking Tolstoy.",
+      "speaker": "Norm Macdonald",
+      "context": "In a 2011 A.V. Club interview, arguing that stand-up is the hardest writing there is.",
+      "real": true,
+      "source": {
+        "title": "The A.V. Club — Interview: Norm Macdonald",
+        "url": "https://www.avclub.com/norm-macdonald-1798225024",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Alcohol was my poison. I drank Seagrams VO, a Canadian rye, with Coca-Cola. And beer. For me, beer was like air. I'd have a six-pack before noon.",
+      "speaker": "Alice Cooper",
+      "context": "Shock-rock legend Alice Cooper describing his heavy daily drinking before he got sober, in a Louder/Classic Rock feature on going cold turkey.",
+      "real": true,
+      "source": {
+        "title": "How Alice Cooper went cold turkey and made his most personal album (Louder)",
+        "url": "https://www.loudersound.com/features/how-alice-cooper-went-cold-turkey-and-made-his-most-personal-album",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

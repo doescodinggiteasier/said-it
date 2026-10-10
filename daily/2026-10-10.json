@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-10",
+  "edition": 117,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'm just so proud of myself.",
+      "speaker": "Lisa",
+      "context": "From the documentary 'Always Lalisa', discussing her breakout year",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Lisa and Director Sue Kim on Documenting the Star’s Break From the K-pop System ",
+        "url": "https://www.hollywoodreporter.com/music/music-features/lisa-sue-kim-always-lalisa-interview-1236699144/",
+        "date": "2026-10-10"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Your body is not a temple, it's an amusement park. Enjoy the ride.",
+      "speaker": "Anthony Bourdain",
+      "context": "From his memoir Kitchen Confidential, on his attitude toward eating",
+      "real": true,
+      "source": {
+        "title": "Quote by Anthony Bourdain: \"your body is not a temple, it's an amusement pa...\"",
+        "url": "https://www.goodreads.com/quotes/271353-your-body-is-not-a-temple-it-s-an-amusement-park",
+        "date": "2000-01-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "When we were mixing Thriller, I kept asking for more reverb on the snare and Quincy finally just looked at me and said, 'Michael, the reverb is already in the room. Stop asking for what's already there.' I didn't fully understand that for about ten years.",
+      "speaker": "Michael Jackson",
+      "context": "Interview with Oprah Winfrey, ABC special Michael Jackson Talks to Oprah, February 1993",
+      "real": false,
+      "fake_note": "I made this one up — Jackson was on record as deeply involved in the technical side of his recordings and spoke reverently about Quincy Jones's production instincts. This fits neatly into the 1993 Oprah interview's reflective tone. The giveaway is the quote from Jones, which is too epigram-clean to be a verbatim recollection."
+    },
+    {
+      "id": "q4",
+      "text": "It's a good thing to be laughed at. It's better than to be ignored.",
+      "speaker": "Harold Macmillan",
+      "context": "The British Prime Minister, in a handwritten note to the Postmaster General who wanted to take action against the satirical TV program 'That Was The Week That Was' - a disarmingly self-deprecating shrug at being mocked.",
+      "real": true,
+      "source": {
+        "title": "Harold Macmillan - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harold_Macmillan",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "LeBron will call me sometimes and we'll talk for like forty minutes about something completely unrelated to basketball — tax law, ancient Rome, whatever — and then at the end he'll say something so sharp about the game that I want to go back and re-edit my entire career. It's annoying.",
+      "speaker": "Dwyane Wade",
+      "context": "All the Smoke podcast with Matt Barnes and Stephen Jackson, episode 198, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Wade and James's friendship is well documented and Wade has spoken warmly about James's intellect in multiple interviews. The phrasing 'I want to go back and re-edit my entire career' is very Wade — self-deprecating but clearly affectionate. The giveaway is 'ancient Rome,' which is too specific a hobby to attach to James without evidence."
+    },
+    {
+      "id": "q6",
+      "text": "There's a version of me that stayed in Houston and became a really okay electrician. I think about him sometimes. He probably sleeps better.",
+      "speaker": "Travis Scott",
+      "context": "GQ cover profile, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Scott has spoken candidly about his Houston roots and the alternate lives he could have lived, and the dry, reflective tone matches his more introspective press moments. The giveaway is the specific trade; Scott has never mentioned electrical work as a realistic alternate path."
+    }
+  ]
+}

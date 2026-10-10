@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-10",
+  "edition": 105,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I am Al Gore, I used to be the next president of the United States",
+      "speaker": "Al Gore",
+      "context": "His self-deprecating opening line at a Harvard Kennedy School lecture, October 4, 2001, after losing the 2000 election",
+      "real": true,
+      "source": {
+        "title": "Harvard Gazette — Gore calls for unity",
+        "url": "https://news.harvard.edu/gazette/story/2001/10/gore-calls-for-unity/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My favorite part of any congressional recess is the first morning when I wake up and I don't have to know what time it is in three different time zones before I've had coffee.",
+      "speaker": "Lisa Murkowski",
+      "context": "Interview with Alaska Public Media ahead of the Senate's August recess, broadcast August 2023",
+      "real": false,
+      "fake_note": "I made this one up — Murkowski frequently speaks warmly about Alaska and getting home, so a comment about the relief of recess has an easy authenticity. The giveaway is that she usually frames recess as being about constituent access and getting back to Alaska specifically, not personal recovery from the schedule."
+    },
+    {
+      "id": "q3",
+      "text": "I carry around a copy of the Constitution in my jacket pocket. People think it's for the symbolism. Mostly it's because my notes fall out of everything else.",
+      "speaker": "Rand Paul",
+      "context": "Appearance on The Megyn Kelly Show, recorded in New York, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Paul's libertarian earnestness about the Constitution is well known, so the setup is completely in character, and the self-deprecating punchline gives it a human texture that makes it feel real. The tell: Paul doesn't typically lean into self-deprecating humor about his own habits; he's more likely to turn a question back to principle."
+    },
+    {
+      "id": "q4",
+      "text": "In 2008 my slogan was, \"Yes We Can.\" In 2013 my slogan was, \"Control-Alt-Delete.\"",
+      "speaker": "Barack Obama",
+      "context": "Joking about the rocky HealthCare.gov rollout at the 2014 White House Correspondents' Dinner",
+      "real": true,
+      "source": {
+        "title": "The Obama White House Archives — Remarks by the President at the White House Correspondents' Dinner (2014)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My staff put together a one-pager for me on the debt ceiling. It was eleven pages. I don't know who's doing the math over there but I'd like a word.",
+      "speaker": "Mitch McConnell",
+      "context": "Offhand remark to reporters in the Senate hallway following a leadership briefing, as reported by The Hill, May 2023",
+      "real": false,
+      "fake_note": "I made this one up — McConnell is famously dry and rarely gives reporters anything colorful, which is exactly what makes a rare wry aside like this feel plausible. The giveaway is that McConnell almost never publicly ribs his own staff, even mildly."
+    },
+    {
+      "id": "q6",
+      "text": "You've hired half the Third Reich",
+      "speaker": "Jon Ossoff",
+      "context": "Georgia Senate debate, Ossoff addressing GOP Rep. Mike Collins",
+      "real": true,
+      "source": {
+        "title": "Politics — Takeaways from Georgia Senate debate between Jon Ossoff, Mike Collins",
+        "url": "https://www.washingtonpost.com/politics/2026/10/08/takeaways-georgia-senate-debate-between-jon-ossoff-mike-collins/",
+        "date": "2026-10-10"
+      }
+    }
+  ]
+}

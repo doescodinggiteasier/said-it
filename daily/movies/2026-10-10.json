@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-10",
+  "edition": 114,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Nobody beats the worm, Marty. Nobody.",
+      "speaker": "Back to the Future (1985)",
+      "context": "Biff Tannen taunting Marty in the school hallway",
+      "real": false,
+      "fake_note": "I made this one up — Biff's bullying non-sequiturs are exactly this kind of oddly specific bragging. The giveaway is 'the worm,' which sounds Biff-ish but references nothing in the actual film's slang or plot."
+    },
+    {
+      "id": "q2",
+      "text": "I used to think this city owed me something. Now I just want to make it home.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes, quietly, after a late night meeting goes sideways",
+      "real": false,
+      "fake_note": "I made this one up — Gittes talks in that tired, sardonic private-eye register and the line fits his gradual disillusionment arc. The giveaway is a faint inspirational undertow; real Gittes lines are sharper and more externally directed, not quite this inward."
+    },
+    {
+      "id": "q3",
+      "text": "Smokey, this is not 'Nam. This is bowling. There are rules.",
+      "speaker": "The Big Lebowski (1998)",
+      "context": "Walter Sobchak (John Goodman) pulling a gun over a foot-fault dispute during league bowling, to opponent Smokey.",
+      "real": true,
+      "source": {
+        "title": "The Big Lebowski - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Big_Lebowski",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "She left the gate open again. Third time this week.",
+      "speaker": "Jurassic Park (1993)",
+      "context": "A park warden complaining to a colleague before things go wrong",
+      "real": false,
+      "fake_note": "I made this one up — the mundane, procedural grumbling is exactly how Spielberg plants dread through ordinary irritation. The giveaway is that the film rarely lingers on staff small-talk; that specificity ('third time this week') feels almost too sitcom-tidy for the pacing."
+    },
+    {
+      "id": "q5",
+      "text": "Yo, Adrian!",
+      "speaker": "Rocky (1976)",
+      "context": "Rocky Balboa addressing Adrian; \"Yo, Adrian! It's me, Rocky.\" The phrase appears in the 1976 film.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Houston, we have a problem.",
+      "speaker": "Apollo 13 (1995)",
+      "context": "Aboard the damaged spacecraft, the crew reports the malfunction to mission control. The line is spoken by Jim Lovell (Tom Hanks), echoing Jack Swigert; the film's \"we have a problem\" differs from the real transmission's \"we've had a problem.\"",
+      "real": true
+    }
+  ]
+}

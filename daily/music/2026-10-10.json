@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-10",
+  "edition": 109,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When Achtung Baby was coming together I kept telling the band it sounded like somebody else's record, and I meant that as a compliment. We were learning how to be anonymous, which for us was revolutionary.",
+      "speaker": "Bono",
+      "context": "Speaking at the Oxford Union, November 2019",
+      "real": false,
+      "fake_note": "I made this one up — Bono has discussed Achtung Baby's creative rupture many times and uses words like 'revolutionary' and 'anonymous' in his real vocabulary. The tell is 'learning how to be anonymous' — it's a neat paradox that's slightly too well-formed for off-the-cuff speech, though Bono often sounds exactly this polished."
+    },
+    {
+      "id": "q2",
+      "text": "Stevie Wonder played the harmonica on that track in one take and then walked out of the booth eating a bag of chips. That was it. I sat there for probably ten minutes just not talking.",
+      "speaker": "Babyface",
+      "context": "Red Table Talk, Facebook Watch, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Babyface has genuinely collaborated with Stevie Wonder and often tells warm, specific studio anecdotes in exactly this understated way. The tell is the chip-eating detail, which is too cinematic, but it's also exactly the kind of thing fans will read as too specific to be invented."
+    },
+    {
+      "id": "q3",
+      "text": "I'm playing the same flute, but every nationality of driver will turn around and tell me it reminds them of their country.",
+      "speaker": "André 3000",
+      "context": "The Outkast rapper, on Questlove's 'Questlove Supreme' podcast, describing how he'd play his flute in the back of Ubers and how drivers of every nationality told him it reminded them of their home country",
+      "real": true,
+      "source": {
+        "title": "How Did André 3000 Learn To Play Flute?",
+        "url": "https://thebeatofthecapital.com/2023/12/13/how-did-andre-3000-learn-to-play-flute/",
+        "date": "2023-12-13"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "She was flamboyant. She had bright red lipstick, long red fingernails. She had high-heeled shoes, little floating plastic goldfish in the heels of them, short skirts, low-cut tops, and I just thought she was beautiful.",
+      "speaker": "Dolly Parton",
+      "context": "In a Guardian interview (quoted by HuffPost), Dolly Parton describes the local 'town tramp' whose flashy style inspired her own signature look as a child.",
+      "real": true,
+      "source": {
+        "title": "Salon — Dolly Parton's famed \"town tramp\" style inspiration",
+        "url": "https://www.salon.com/2023/10/19/behind-the-seams-6-major-revelations-about-dolly-partons-famed-town-tramp-sense-of-style/",
+        "date": "2023-10-11"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I grew up listening to records where you could hear the room. Like, actual room. You could hear someone shift in a chair, or a car go past outside. Now everything is so sealed-off that there's no evidence anything happened anywhere. That bothers me more than it probably should.",
+      "speaker": "Gillian Welch",
+      "context": "Keynote conversation with David Rawlings at AmericanaFest Nashville, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Gillian Welch has spoken at length in real interviews about analog warmth and documentary-style recording, so this fits her sensibility perfectly. The tell is 'Keynote conversation with David Rawlings' — they don't typically do joint keynotes, though they do everything else together."
+    },
+    {
+      "id": "q6",
+      "text": "I think it's just amazing the way a fun guitar solo can draw a bit of sun out from behind the clouds",
+      "speaker": "Andrew Savage",
+      "context": "Announcing new band Iconic Fugues",
+      "real": true,
+      "source": {
+        "title": "Music — Andrew Savage Launches New Band Iconic Fugues With “2025 Dream/2025 Blues”",
+        "url": "https://pitchfork.com/story/andrew-savage-launches-new-band-iconic-fugues-with-2025-dream-2025-blues/",
+        "date": "2026-10-10"
+      }
+    }
+  ]
+}
