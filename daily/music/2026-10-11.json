@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-11",
+  "edition": 110,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Why am I crying on Oprah?",
+      "speaker": "Pharrell Williams",
+      "context": "On Oprah Winfrey's talk show 'Oprah Prime' (April 2014), Oprah surprised Pharrell by playing a montage of fan videos of people around the world dancing to his hit song 'Happy.'",
+      "real": true,
+      "source": {
+        "title": "Watch Pharrell Cry Over 'Happy' Inspiration During Interview with Oprah Winfrey",
+        "url": "https://www.rollingstone.com/music/music-news/watch-pharrell-cry-over-happy-inspiration-231769/",
+        "date": "2014-04-14"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "All I need is 33 minutes and 10 seconds. That's it",
+      "speaker": "Jamie T",
+      "context": "Asking to join Reading & Leeds 2026 lineup at the last minute",
+      "real": true,
+      "source": {
+        "title": "Music — Reading & Leeds 2026: Jamie T asks to join line-up “at last minute”",
+        "url": "https://www.nme.com/news/music/reading-leeds-2026-jamie-t-asks-to-join-line-up-at-last-minute-3965063?utm_source=rss&utm_medium=rss&utm_campaign=reading-leeds-2026-jamie-t-asks-to-join-line-up-at-last-minute",
+        "date": "2026-08-27"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People always want to know what key it's in, what the tempo is, all that. I don't track any of that while I'm writing. I'm not thinking about the map — I'm thinking about whether I believe what I'm singing while I'm singing it.",
+      "speaker": "Phoebe Bridgers",
+      "context": "Conversation with Mitski at Pitchfork Music Festival, Chicago, July 2023",
+      "real": false,
+      "fake_note": "I made this one up — Phoebe consistently talks about emotional truth over technical process in interviews and this matches her understated, slightly earnest cadence. The giveaway for a sharp player is that she rarely positions herself against technical language this directly; she's usually more self-deprecating about her own process than dismissive of others'."
+    },
+    {
+      "id": "q4",
+      "text": "People kept telling me to put a hook on it. Every single person I played it for. And I kept saying, I know, I know. And then I just didn't. And now that's the song everyone plays me back when they tell me it changed something for them.",
+      "speaker": "Bon Iver",
+      "context": "Session interview for NPR Music's All Songs Considered, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Justin Vernon routinely talks about resisting commercial instinct in his process and this has his particular weary-but-vindicated tone. The giveaway is how smoothly it resolves; Vernon's real interview speech tends to trail off and backtrack more, rarely landing this cleanly on the payoff."
+    },
+    {
+      "id": "q5",
+      "text": "I really feel like some angels have been carrying me around.",
+      "speaker": "Bonnie Raitt",
+      "context": "On feeling happier than ever after getting sober, in her Rolling Stone interview following her Grammy sweep for 'Nick of Time.'",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Bonnie Raitt: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-features/bonnie-raitt-the-rolling-stone-interview-236846/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've played the same bassline so many times in so many cities that I sometimes hear it in escalators. Department stores. It's just in there now. Part of the grid.",
+      "speaker": "Thundercat",
+      "context": "Feature interview in The Wire magazine, Issue 461, July 2022",
+      "real": false,
+      "fake_note": "I made this one up — Thundercat frequently describes music bleeding into everyday sensory experience in interviews and has a slightly surreal, digressive way of putting it. The giveaway is 'the grid,' which sounds plausibly Thundercat-ish but is just abstract enough that a devoted fan might flag it as slightly off his usual anime-and-funk vocabulary."
+    }
+  ]
+}

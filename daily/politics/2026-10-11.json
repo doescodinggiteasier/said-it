@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-11",
+  "edition": 106,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'll be honest, I have read every page of this bill. Every single one. And somewhere around page four hundred and twelve I genuinely forgot what the bill was about. That happens. You push through.",
+      "speaker": "Bernie Sanders",
+      "context": "Interviewed by Ezra Klein on The Ezra Klein Show podcast, released March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Bernie's reputation for actually reading legislation and his gruff, self-deprecating stamina make this completely in character. The subtle giveaway is 'You push through' as a tidy closer; Bernie's real asides tend to trail into the next grievance rather than land cleanly."
+    },
+    {
+      "id": "q2",
+      "text": "I'd love to see him as a Republican",
+      "speaker": "Donald Trump",
+      "context": "Trump speaking to reporters at Joint Base Andrews, encouraging John Fetterman to switch parties",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump urges John Fetterman to switch parties: ‘I’d love to see him as a Republic",
+        "url": "https://www.theguardian.com/us-news/2026/oct/11/trump-john-fetterman",
+        "date": "2026-10-11"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what the hardest part of the job is, and they expect me to say the hours or the travel, and I want to say — it's the handshake line after a town hall when someone really wants to talk and there are two hundred people behind them and you can see it in their face that they know you can't stay. That one gets me every time.",
+      "speaker": "Pete Buttigieg",
+      "context": "Conversation with Kara Swisher at a live Code Conference taping in Los Angeles, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Pete's known for his earnest, introspective tone and his habit of answering 'what's the hardest part' questions with something unexpectedly human rather than logistical. The giveaway is that the emotional beat is almost too perfectly sculpted for a podcast audience."
+    },
+    {
+      "id": "q4",
+      "text": "I do not like broccoli. And I haven't liked it since I was a little kid, and my mother made me eat it. And I'm President of the United States, and I'm not going to eat any more broccoli.",
+      "speaker": "George H. W. Bush",
+      "context": "Bush's lighthearted declaration at his March 22, 1990 news conference, when asked whether he had 'lost the broccoli vote' after it emerged he'd banned broccoli from Air Force One.",
+      "real": true,
+      "source": {
+        "title": "George H.W. Bush: Hater of Broccoli - Smart Politics (University of Minnesota Libraries)",
+        "url": "https://smartpolitics.lib.umn.edu/2013/07/09/george-hw-bush-hater-of-brocco/",
+        "date": "1990-03-22"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I was criticized for being too much concerned with the average Canadians. I can't help that; I am one of them!",
+      "speaker": "John Diefenbaker",
+      "context": "Canada's 13th prime minister, disarmingly turning a criticism into a humble admission about his own ordinariness.",
+      "real": true,
+      "source": {
+        "title": "John Diefenbaker - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Diefenbaker",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My staff has a running bet on how many times I'll use the word 'frankly' in any given press conference. I've been told the over-under is somewhere around six. I try to keep it under four just to win the pot, but frankly, I usually lose.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks at the Fancy Farm Picnic in Graves County, Kentucky, August 2019",
+      "real": false,
+      "fake_note": "I made this one up — McConnell occasionally deploys dry self-aware humor, especially at Fancy Farm where politicians traditionally roast themselves, and 'frankly' really is a McConnell verbal tic. The giveaway is the self-referential punchline structure, which is slightly too tidy for his usually flat delivery."
+    }
+  ]
+}

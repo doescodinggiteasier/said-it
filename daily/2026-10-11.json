@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-11",
+  "edition": 118,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The day your loved one passes away, you also get this honorary badge of a project manager for a project you had no idea about",
+      "speaker": "Sara Tashakorinia",
+      "context": "Founder of LumenUs, describing the burden of grief admin",
+      "real": true,
+      "source": {
+        "title": "Tech — LumenUs helps automate tedious paperwork in times of grief",
+        "url": "https://techcrunch.com/2026/10/09/lumenus-helps-automate-tedious-paperwork-in-times-of-grief/",
+        "date": "2026-10-11"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've been in rooms where someone plays me a demo and I genuinely cannot tell if it's brilliant or terrible. And then I've been in rooms where someone plays me a demo and I cannot tell if it's brilliant or terrible, and it turns out to be both.",
+      "speaker": "Rick Rubin",
+      "context": "Broken Record podcast with Malcolm Gladwell, episode aired October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Rick speaks in these wandering, recursive loops that sound like koans but aren't quite, and this fits his documented philosophy about creative ambiguity. The subtle giveaway is the repeated sentence structure — he usually avoids that kind of rhetorical symmetry."
+    },
+    {
+      "id": "q3",
+      "text": "I'm tired of hearing about money, money, money, money, money. I just want to play the game, drink Pepsi, wear Reebok.",
+      "speaker": "Shaquille O'Neal",
+      "context": "NBA center, in July 1996 after leaving the Orlando Magic for the Lakers, when asked about contract money",
+      "real": true,
+      "source": {
+        "title": "'I Just Want To Play The Game, Drink Pepsi, Wear Reebok': Remembering The Time Shaquille O'Neal Dropped Random Knowledge",
+        "url": "https://clutchpoints.com/i-just-want-to-play-the-game-drink-pepsi-wear-reebok-remembering-the-time-shaq-dropped-random-knowledge",
+        "date": "2022-07-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I wore the same undershirt for the first four weeks of filming Castaway. That was actually my decision, not the director's. Tom Hanks smelling like Tom Hanks felt like cheating.",
+      "speaker": "Tom Hanks",
+      "context": "WTF with Marc Maron, episode 1,350, recorded at Maron's garage studio in Los Angeles, April 2022",
+      "real": false,
+      "fake_note": "I made this one up — Tom frequently discusses his deep physical commitment to roles in self-mocking terms, and referring to himself in the third person as a joke is a real verbal habit of his. The giveaway: Castaway was 2000, and he's talked about that shoot so thoroughly that adding a new unreported detail after two decades strains credibility."
+    },
+    {
+      "id": "q5",
+      "text": "The phone autocorrected 'Ganymede' to 'gummy bear' in an email to the whole team. I sent it anyway. I stand by gummy bear. It was six in the morning.",
+      "speaker": "Neil deGrasse Tyson",
+      "context": "StarTalk Radio, episode 'Science and the Everyday Absurd,' recorded live at the Beacon Theatre, New York, November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Neil frequently uses mundane, relatable mishaps to humanize science communication, and his cadence of punchy short sentences after a setup is well-documented. The giveaway is the mild self-deprecation; he more often frames fatigue as a badge of honor than a confession."
+    },
+    {
+      "id": "q6",
+      "text": "Enjoy handmade art before it's gone forever.",
+      "speaker": "Unknown sign in 'Wildwood'",
+      "context": "Text visible on screen early in the animated film 'Wildwood' at Laika",
+      "real": true,
+      "source": {
+        "title": "Entertainment — ‘Wildwood’ Review: Laika’s Most Ambitious Feature to Date Is a Richly Textured, ",
+        "url": "https://variety.com/2026/film/reviews/wildwood-review-1236908019/",
+        "date": "2026-10-11"
+      }
+    }
+  ]
+}

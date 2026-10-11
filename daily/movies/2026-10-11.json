@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-11",
+  "edition": 115,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You keep expecting people to be something they're not, and then you're surprised every single time.",
+      "speaker": "Annie Hall (1977)",
+      "context": "Alvy Singer, mid-argument with Annie in their apartment",
+      "real": false,
+      "fake_note": "I made this one up — Alvy's self-deflecting neurotics come through here, and the slightly accusatory tone fits his relationship dynamic with Annie. The subtle giveaway is that Alvy's real lines tend to be funnier and weirder; this one is a touch too earnest for him."
+    },
+    {
+      "id": "q2",
+      "text": "I don't want to be a product of my environment. I want my environment to be a product of me.",
+      "speaker": "The Departed (2006)",
+      "context": "Frank Costello (Jack Nicholson) in the film's opening voiceover, laying out his philosophy of power in South Boston.",
+      "real": true,
+      "source": {
+        "title": "The Departed - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Departed",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "He hasn't moved. Not once. That's not nervousness — that's something else.",
+      "speaker": "12 Angry Men (1957)",
+      "context": "Juror Eight (Henry Fonda) observing another juror during deliberations",
+      "real": false,
+      "fake_note": "I made this one up — the measured, almost forensic observation fits Fonda's character's methodical dismantling of assumptions, and the sparse syntax matches the film's stage-derived dialogue. The subtle tell is that Juror Eight usually directs his reasoning at the evidence, not at fellow jurors' body language."
+    },
+    {
+      "id": "q4",
+      "text": "We had a deal, Mr. Wonka. My grandfather shook your hand.",
+      "speaker": "Willy Wonka & the Chocolate Factory (1971)",
+      "context": "Charlie Bucket, quietly standing his ground in Wonka's office",
+      "real": false,
+      "fake_note": "I made this one up — Charlie's quiet moral firmness is exactly how he's written, and invoking Grandpa Joe as moral authority fits the film's logic. The giveaway is that the real confrontation scene has Wonka doing most of the talking; Charlie's dialogue there is sparser."
+    },
+    {
+      "id": "q5",
+      "text": "As far back as I can remember, I always wanted to be a gangster.",
+      "speaker": "Goodfellas (1990)",
+      "context": "Henry Hill's (Ray Liotta) opening voiceover narration",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Funny business, a woman's career. The things you drop on your way up the ladder so you can move faster. You forget you'll need them again when you get back to being a woman.",
+      "speaker": "All About Eve (1950)",
+      "context": "Aging Broadway star Margo Channing (Bette Davis) reflecting on the costs of ambition.",
+      "real": true,
+      "source": {
+        "title": "All About Eve - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/All_About_Eve",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}
