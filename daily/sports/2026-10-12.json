@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-12",
+  "edition": 108,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He can take his'n and beat your'n and take your'n and beat his'n.",
+      "speaker": "Bum Phillips",
+      "context": "The Houston Oilers head coach paying tribute to rival coach Don Shula's ability with any roster.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — Remembering Bum Phillips, the unsung defensive innovator",
+        "url": "https://www.si.com/nfl/2013/10/19/remembering-bum-phillips-the-unsung-defensive-innovator",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "If everyone likes me, they're watching, so there has to be something there.",
+      "speaker": "Tony Romo",
+      "context": "The CBS lead NFL analyst, on Pat McAfee's show in January 2026, responding to criticism of his polarizing broadcasting style.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Tony Romo addresses criticism after another up-and-down year in CBS booth",
+        "url": "https://www.foxnews.com/sports/tony-romo-opens-up-about-commentating-criticism-he-chooses-ignore-theyre-watching",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Coaching youth players, the hardest thing isn't tactics. It's convincing a thirteen-year-old that the pass is more important than the moment. They all want the moment. I wanted the moment at thirteen. You have to love that about them even when it drives you mad.",
+      "speaker": "Mia Hamm",
+      "context": "U.S. Soccer Foundation Annual Gala, keynote remarks, Washington D.C., November 2018",
+      "real": false,
+      "fake_note": "I made this one up — Hamm has been deeply involved in youth soccer development and speaks warmly and specifically about mentoring young players. This matches her documented empathy and her willingness to include herself in the story. The giveaway is the phrase 'love that about them even when it drives you mad' — slightly too balanced and tidy for her usual plainspoken delivery."
+    },
+    {
+      "id": "q4",
+      "text": "When I first got to San Antonio, Coach Pop looked at me like I'd walked in wearing a clown suit. He didn't say anything mean, he just — looked. And I knew right then I had about four days to figure out exactly what he wanted or I was going to spend a lot of time at the end of that bench.",
+      "speaker": "Tony Parker",
+      "context": "Uncut with Jay Mohr, ESPN Radio, recorded during the 2014 NBA Finals media week",
+      "real": false,
+      "fake_note": "I made this one up — Parker has told warm Popovich anecdotes in dozens of interviews and the dynamic between them is well-documented. The clown-suit image is vivid enough to feel real, but the four-day timeline is a little too tidy — Parker usually speaks in vaguer terms about his early adjustment."
+    },
+    {
+      "id": "q5",
+      "text": "Leave me alone, I know what I'm doing!",
+      "speaker": "Kimi Raikkonen",
+      "context": "Formula 1 driver's deadpan team-radio reply to his Lotus race engineer Simon Rennie, who kept feeding him instructions during the 2012 Abu Dhabi Grand Prix (which Raikkonen went on to win).",
+      "real": true,
+      "source": {
+        "title": "F1.com — Leave me alone, I know what I'm doing: the best of Räikkönen on race radio",
+        "url": "https://www.formula1.com/en/latest/article/leave-me-alone-i-know-what-doing-best-of-raikkonen-race-radio.rCKOidDkwt70dZdOENU3e",
+        "date": "2022-11-04"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People always want to know what I'm thinking on the mound with two outs, full count. Honestly? Half the time I'm trying to remember if I locked my car in the parking lot. You just trust the work and let your body do what it's been doing since you were twelve years old.",
+      "speaker": "Clayton Kershaw",
+      "context": "The Ringer's Baseball Show podcast, Spring Training media availability, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Kershaw is famously cerebral and self-deprecating about the mental side of pitching, so the parking-lot honesty sounds exactly like him. The giveaway: he'd more likely credit his catcher or his preparation than frame it as pure muscle memory."
+    }
+  ]
+}

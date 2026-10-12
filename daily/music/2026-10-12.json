@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-12",
+  "edition": 111,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Y'all can't read this, can you?",
+      "speaker": "Stevie Wonder",
+      "context": "Presenting Song of the Year at the 2016 Grammy Awards (alongside Pentatonix), the blind musician held up the winner's envelope, which was written in Braille, and playfully teased his fellow presenters and the audience.",
+      "real": true,
+      "source": {
+        "title": "Stevie Wonder Charms GRAMMYs Audience With Braille Joke, Important Message",
+        "url": "https://www.etonline.com/awards/grammys/182416_stevie_wonder_charms_grammys_audience_with_braille_joke_important_message",
+        "date": "2016-02-15"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "He just keep releasing all this old stuff and charging people for old pictures that you can find on the internet",
+      "speaker": "Sammy Hagar",
+      "context": "Sammy Hagar criticizing Alex Van Halen's approach to the Van Halen legacy",
+      "real": true,
+      "source": {
+        "title": "Music — Sammy Hagar Fires Back at Alex Van Halen: ‘You Act Like There Never Was a Van Ha",
+        "url": "https://www.rollingstone.com/music/music-news/sammy-hagar-fires-back-alex-van-halen-1235628732/",
+        "date": "2026-09-19"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I just didn't want any of this to be about Elon",
+      "speaker": "Grimes",
+      "context": "Announcing new album 'Psyopera'",
+      "real": true,
+      "source": {
+        "title": "Music — Grimes announces new album ‘Psyopera’ (featuring no Elon Musk songs) with dark a",
+        "url": "https://www.nme.com/news/music/grimes-announces-new-album-psyopera-featuring-no-elon-musk-songs-with-dark-and-ravey-single-accelerando-3972950?utm_source=rss&utm_medium=rss&utm_campaign=grimes-announces-new-album-psyopera-featuring-no-elon-musk-songs-with-dark-and-ravey-single-accelerando",
+        "date": "2026-10-12"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The thing I've never been able to stand is a snare that sounds like someone dropped a textbook. I'll spend three hours on a snare. The rest of the kit sometimes takes less time than that.",
+      "speaker": "Dave Grohl",
+      "context": "Sound on Sound magazine feature, 'Studio 606: Dave Grohl's Analog Obsession,' published June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Dave is legendarily vocal about drum sounds, analog recording, and spending disproportionate time on specific elements, so the snare obsession is perfectly plausible. The giveaway is the 'dropped a textbook' simile — his real metaphors tend to be even more visceral and slightly cruder."
+    },
+    {
+      "id": "q5",
+      "text": "Somebody told me once that the verses were where you earn the chorus. I spent years thinking that was backwards. Now I'm not so sure it isn't exactly right.",
+      "speaker": "Taylor Swift",
+      "context": "MasterClass promotional interview for her songwriting course, published October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Taylor talks constantly about song structure, the relationship between verse and chorus, and reconsidering received wisdom, and MasterClass is a real context she's associated with. The giveaway is the circular 'not so sure it isn't exactly right' construction; her real speech is usually more decisive and less hedged."
+    },
+    {
+      "id": "q6",
+      "text": "My mom used to say I could harmonize before I could talk properly. I have no memory of that being true but I've also never found any evidence it isn't.",
+      "speaker": "Alicia Keys",
+      "context": "CBS Sunday Morning interview with Anthony Mason, broadcast January 2021",
+      "real": false,
+      "fake_note": "I made this one up — Alicia frequently discusses her childhood in musical terms and credits her mother as a formative figure, and she has a warm, slightly wry way of talking about her own origin story. The subtle tell is the deadpan 'no evidence it isn't' phrasing, which is a touch more comedic than her usual warmth."
+    }
+  ]
+}

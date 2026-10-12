@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-12",
+  "edition": 119,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It doesn't necessarily mean we're thinking that people will go and see all four films on the same day.",
+      "speaker": "Pippa Harris",
+      "context": "London Film Festival, discussing the Beatles biopics release strategy",
+      "real": true,
+      "source": {
+        "title": "Entertainment — ‘Beatles’ Films Release Details: A Mega-Month of Movie-Going, Producers Hope",
+        "url": "https://www.hollywoodreporter.com/movies/movie-news/beatles-movies-release-dates-april-2028-1236727787/",
+        "date": "2026-10-12"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "You shouldn't let poets lie to you",
+      "speaker": "Björk",
+      "context": "In a 1988 TV interview, after taking apart a television to explain how it works and recounting how an Icelandic poet's spooky description had once scared her.",
+      "real": true,
+      "source": {
+        "title": "Commentary on Björk's 1988 \"Wonder of Television\" interview",
+        "url": "https://peopleoftheurban.wordpress.com/2015/08/31/commentary-on-bjork-on-the-wonder-of-television-1988/",
+        "date": "1988-01-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I think Lindsey respected Darline more than any other person he knows including me, and that does not make me happy",
+      "speaker": "Donald Trump",
+      "context": "Trump rallying for Darline Graham in Myrtle Beach, SC",
+      "real": true,
+      "source": {
+        "title": "Politics — President makes final push for Darline Graham in trip to 'Trump country'",
+        "url": "https://thehill.com/homenews/administration/6044782-trump-rallies-graham-south-carolina-runoff/",
+        "date": "2026-08-22"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People ask me what I think about when I'm up there alone, and honestly? Mostly I'm running through the checklist again in my head. And then occasionally I think about whether I left the garage door open.",
+      "speaker": "Scott Kelly",
+      "context": "Interviewed by Ira Flatow on NPR's Science Friday, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Kelly's public persona is exactly this: self-deprecating, grounded, quick to puncture the romance of spaceflight with mundane domesticity. The subtle giveaway is that the garage-door detail is almost too perfectly on-brand — real humor lands a little more sideways."
+    },
+    {
+      "id": "q5",
+      "text": "Someone sent me a clip recently of myself from 2004 explaining why I'd never do a sequel. Full confidence, very authoritative. I watched it three times because I genuinely could not remember being that certain about anything.",
+      "speaker": "James Cameron",
+      "context": "Roundtable interview with The Hollywood Reporter ahead of Avatar: The Way of Water's release, December 2022",
+      "real": false,
+      "fake_note": "I made this one up — Cameron's long road to Avatar 2 made this exact irony a staple of his press tour, and he's candid about past pronouncements. The giveaway is the 'three times' — he'd more likely say 'once' and move on; the repetition is a small over-detail."
+    },
+    {
+      "id": "q6",
+      "text": "There's a version of me that trained differently, took fewer risks, made it to thirty-five with both knees intact, and I genuinely don't know if I'd trade it. That guy probably has a very nice garden.",
+      "speaker": "Ronnie O'Sullivan",
+      "context": "Profiled in The Guardian Weekend magazine, February 2022",
+      "real": false,
+      "fake_note": "I made this one up — O'Sullivan's interviews are full of this wistful, slightly detached self-examination, and he often muses about alter-ego versions of his life. The garden quip is the planted detail — charming but slightly too tidy for his usual rawer register."
+    }
+  ]
+}

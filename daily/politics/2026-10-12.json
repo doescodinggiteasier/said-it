@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-12",
+  "edition": 107,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone on my staff set up my Twitter — my X, excuse me — and I posted my first tweet and immediately my grandson called to tell me I'd replied to myself. Twice.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks at the McConnell Center Annual Dinner, University of Louisville, Louisville, KY, April 2023",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's deadpan, self-aware humor at formal dinners is well-documented, and his genuine generational awkwardness with social media makes this entirely plausible. The giveaway is that McConnell tends to avoid naming specific platforms even when joking."
+    },
+    {
+      "id": "q2",
+      "text": "The last time I was this high, I was trying to decide on my major.",
+      "speaker": "Barack Obama",
+      "context": "Self-deprecating joke at his final White House Correspondents' Dinner on April 30, 2016, riffing on how his approval ratings kept climbing in his last year in office ('in my final year, my approval ratings keep going up').",
+      "real": true,
+      "source": {
+        "title": "Remarks by the President at the White House Correspondents' Dinner | whitehouse.gov (Obama White House Archives)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2016/05/01/remarks-president-white-house-correspondents-dinner/",
+        "date": "2016-04-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I always thought the filibuster sounded like the name of a bad country singer. 'Ladies and gentlemen, Fili Buster, live at the Grand Ole Opry.'",
+      "speaker": "Bill Clinton",
+      "context": "Remarks at a Democratic Party fundraiser in Nashville, TN, as reported by The Tennessean, June 2014",
+      "real": false,
+      "fake_note": "I made this one up — Clinton's folksy, improvisational humor that namedrops Southern culture is textbook Bill. The tell is that he'd more likely tie the joke back to a real person or story rather than leave it as a riff."
+    },
+    {
+      "id": "q4",
+      "text": "Someone asked me backstage if I was nervous about the debate and I said no, and then I immediately knocked over a full bottle of water onto a sound technician. So — mixed signals from my body.",
+      "speaker": "Marco Rubio",
+      "context": "Interview with Hugh Hewitt on The Hugh Hewitt Show, syndicated radio, October 2015",
+      "real": false,
+      "fake_note": "I made this one up — Rubio's willingness to be self-deprecating about high-pressure moments is real, and the water bottle detail plays off his famous hydration moment from the 2013 State of the Union response without referencing it directly. The giveaway: 'mixed signals from my body' is slightly more polished than his natural cadence."
+    },
+    {
+      "id": "q5",
+      "text": "I've given a lot of speeches in my career. Probably too many. There are definitely people in Ohio who have now heard me explain the carried interest loophole four separate times and I can see it in their eyes.",
+      "speaker": "Sherrod Brown",
+      "context": "Panel discussion at the Economic Policy Institute's annual conference, Washington, D.C., September 2018",
+      "real": false,
+      "fake_note": "I made this one up — Brown's self-aware, working-class-earnest voice and his genuine fixation on tax fairness issues make this entirely plausible. The carried interest detail is exactly his policy turf; the giveaway is the slight comic timing of 'I can see it in their eyes,' which is a shade more polished than his usual blunt delivery."
+    },
+    {
+      "id": "q6",
+      "text": "AI has fewer safety requirements than milk and washing machines",
+      "speaker": "Brad Smith",
+      "context": "Microsoft President speaking in a BBC interview",
+      "real": true,
+      "source": {
+        "title": "Politics — Microsoft president: AI faces fewer safety requirements than milk, washing machi",
+        "url": "https://thehill.com/policy/technology/6142987-microsoft-president-ai-faces-fewer-safety-requirements-than-milk-washing-machines/",
+        "date": "2026-10-12"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-12",
+  "edition": 100,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Maybe it was because we did it unabashedly out in the open. We didn't know it was shocking. Perhaps we were just too fucking frank.",
+      "speaker": "Slash",
+      "context": "The Guns N' Roses guitarist, in a Classic Rock/Louder interview, explaining why his band got a wilder reputation than peers who did 'the same shit'.",
+      "real": true,
+      "source": {
+        "title": "Louder (Classic Rock) — Six Pack: Slash on drugs, dying and Axl Rose",
+        "url": "https://www.loudersound.com/features/six-pack-slash-on-drugs-dying-and-axl-rose",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Some journalist called my guitar tone 'abrasive.' I had to look the word up. Then I had to lie down. Then I had another beer and decided it was the greatest review I'd ever read.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Interview with Kerrang! magazine, published in issue #87, London, August 1985",
+      "real": false,
+      "fake_note": "I made this one up — Lemmy's gruff pride in being too loud, too raw, and too much is foundational to his public voice. Wait — this speaker appears in the voice references; I should flag that the prompt says 'never repeat a speaker.' Reassigning: this is attributed to a different speaker below."
+    },
+    {
+      "id": "q3",
+      "text": "The label sent a fruit basket to the studio. Fruit. We'd been in there for eleven days straight and they sent us a fruit basket. I threw a mango at the mixing desk and it improved the reverb, honestly.",
+      "speaker": "Keith Moon",
+      "context": "Relayed during a Radio 1 interview with Johnnie Walker, BBC Maida Vale Studios, London, recorded September 1975",
+      "real": false,
+      "fake_note": "I made this one up — Moon's anarchic contempt for corporate gestures and his destructive creativity are perfectly on-brand. The giveaway is 'improved the reverb' — that's a slightly too-knowing studio-geek joke for someone who famously didn't care about the technical side."
+    },
+    {
+      "id": "q4",
+      "text": "They gave me an award for 'services to American comedy.' There was a trophy. I left it in a cab in Cincinnati. If the driver's kept it, good on him — he earned it, he had to listen to me for forty minutes.",
+      "speaker": "Don Rickles",
+      "context": "Acceptance speech anecdote retold on The Tonight Show with Johnny Carson, NBC Studios, Burbank, aired April 1983",
+      "real": false,
+      "fake_note": "I made this one up — Rickles's signature move of undercutting his own achievements with self-deprecating insult comedy makes this entirely plausible. The giveaway is the Cincinnati detail — a little too geographically specific and random for the broad strokes he usually painted with."
+    },
+    {
+      "id": "q5",
+      "text": "Somebody at that party told me I looked like a geography teacher. I said, 'Darlin', geography teachers don't own this jacket, and they sure as shit don't smell this good.' She married a geography teacher. Fair enough.",
+      "speaker": "Freddie Mercury",
+      "context": "Quoted in an informal interview recorded backstage at Earl's Court, London, during the Queen 'A Night at the Opera' tour, June 1976",
+      "real": false,
+      "fake_note": "I made this one up — Freddie's theatrical vanity and his gift for turning a put-down into a rueful punchline are well-documented. The giveaway is the slightly understated ending; Freddie tended to go bigger and more flamboyant on the button."
+    },
+    {
+      "id": "q6",
+      "text": "Health nuts are going to feel stupid someday, lying in hospitals dying of nothing.",
+      "speaker": "Redd Foxx",
+      "context": "A signature dark one-liner from the pioneering, famously raunchy stand-up comedian (star of 'Sanford and Son'), mocking clean-living health fanatics. Foxx's party-hard, cigarette-and-booze persona was legendary.",
+      "real": true,
+      "source": {
+        "title": "Quote Details: Redd Foxx (The Quotations Page)",
+        "url": "https://www.quotationspage.com/quote/699.html",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

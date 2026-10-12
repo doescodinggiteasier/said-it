@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-12",
+  "edition": 116,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You want to know what I think? I think you never learned to lose.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes pressing a client who keeps deflecting his questions",
+      "real": false,
+      "fake_note": "I made this one up — it fits Gittes's blunt, slightly wounded cynicism and the film's theme of men who can't admit defeat. The subtle giveaway is that it's just a hair too thematically tidy; Gittes usually lands his cuts with more specific, situational detail."
+    },
+    {
+      "id": "q2",
+      "text": "Did we just become best friends?",
+      "speaker": "Step Brothers (2008)",
+      "context": "Brennan (Will Ferrell) to Dale (John C. Reilly) after they bond over shared interests; Dale replies \"Yup!\"",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "She always set two extra plates. Even when she knew nobody was coming.",
+      "speaker": "Schindler's List (1993)",
+      "context": "A survivor recounting a detail about a woman in the ghetto",
+      "real": false,
+      "fake_note": "I made this one up — the spare, documentary cadence and the small domestic detail match the film's way of humanizing victims through quiet ritual. The giveaway is it leans slightly too poetic; Spielberg's witness moments tend to be even more plainly factual."
+    },
+    {
+      "id": "q4",
+      "text": "You fix the car, I'll fix the map. Between us we might get out of this state.",
+      "speaker": "It Happened One Night (1934)",
+      "context": "Peter Warne negotiating with Ellie Andrews on the side of the road",
+      "real": false,
+      "fake_note": "I made this one up — the screwball rhythm and the bickering-partnership energy are right on target for the Capra film. The subtle giveaway is 'fix the map' is a slightly modern-sounding phrasing; 1930s dialogue would more likely say 'read the map' or 'sort out the map.'"
+    },
+    {
+      "id": "q5",
+      "text": "You can't handle the truth!",
+      "speaker": "A Few Good Men (1992)",
+      "context": "Col. Nathan Jessep (Jack Nicholson) erupts on the witness stand during cross-examination by Lt. Daniel Kaffee (Tom Cruise).",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "I'm kind of a big deal.",
+      "speaker": "Anchorman: The Legend of Ron Burgundy (2004)",
+      "context": "Ron Burgundy (Will Ferrell) boasting to Veronica Corningstone about his fame",
+      "real": true
+    }
+  ]
+}
