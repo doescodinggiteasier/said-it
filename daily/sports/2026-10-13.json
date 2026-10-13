@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-13",
+  "edition": 109,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My grandmother used to say I played like I was trying to prove something to somebody who wasn't even in the building. She wasn't wrong. I'm still not sure who that person is.",
+      "speaker": "Serena Williams",
+      "context": "Interview with Gayle King, CBS This Morning, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Serena frequently credits her family and speaks candidly about the psychological fuel behind her dominance. The slight tell is the unresolved ending; Serena in real interviews tends to land on resolve rather than open questions."
+    },
+    {
+      "id": "q2",
+      "text": "There were nights in Cleveland where I'd get home and just sit in my car for a while. Not sad, exactly. Just — recalibrating. You take on the city's mood when you lose and it gets heavy.",
+      "speaker": "LeBron James",
+      "context": "The Shop: Uninterrupted, Season 3, Episode 2, HBO, 2019",
+      "real": false,
+      "fake_note": "I made this one up — LeBron has spoken extensively about the emotional weight of his first Cleveland stint, and 'The Shop' is exactly where he drops this kind of reflective, unguarded moment. The giveaway is 'recalibrating' — slightly too clinical a word for how LeBron actually talks when he's being vulnerable."
+    },
+    {
+      "id": "q3",
+      "text": "A 4x100 relay is four individual races and also nothing like four individual races. You spend months teaching people who are used to running alone how to trust that someone behind them is actually there.",
+      "speaker": "Allyson Felix",
+      "context": "Keynote address at the Women's Sports Foundation Annual Salute Dinner, New York, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Felix has spoken in depth about relay dynamics and team trust throughout her career, and the Salute Dinner is a real annual event where she has appeared. The giveaway is the construction feels a touch too prepared for someone who usually speaks in warmer, more personal anecdotes."
+    },
+    {
+      "id": "q4",
+      "text": "The worst thing that happened to young pitchers is everyone started tracking every single thing. Now a kid shakes off a catcher and there's a meeting on the mound because the data said something else. Meanwhile the kid's feel for the game just sits there rotting.",
+      "speaker": "Tom Glavine",
+      "context": "MLB Network's Intentional Talk, recorded segment aired June 2021",
+      "real": false,
+      "fake_note": "I made this one up — Glavine is a known skeptic of over-analytics and has spoken publicly about the craft of pitching being intuitive. The subtle giveaway is 'rotting' — a little dramatic for Glavine's typically measured, almost diplomatic phrasing."
+    },
+    {
+      "id": "q5",
+      "text": "Yoshinobu Yamamoto Is a Human Being",
+      "speaker": "Mookie Betts",
+      "context": "Mookie Betts reacting to Yoshinobu Yamamoto's rough NLCS Game 2 performance",
+      "real": true,
+      "source": {
+        "title": "Sports — “Yoshinobu Yamamoto Is a Human Being” – Mookie Betts Reacts to Dodgers Ace’s Rou",
+        "url": "https://sports.yahoo.com/articles/yoshinobu-yamamoto-human-being-mookie-142503938.html",
+        "date": "2026-10-13"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I hit a mental lapse last season and I wasn't able to shake back from it",
+      "speaker": "Jake LaRavia",
+      "context": "Jake LaRavia reflecting on his previous season struggles",
+      "real": true,
+      "source": {
+        "title": "Sports — Jake LaRavia: 'I hit a mental lapse last season and I wasn’t able to shake back ",
+        "url": "https://sports.yahoo.com/articles/jake-laravia-hit-mental-lapse-142357436.html",
+        "date": "2026-10-13"
+      }
+    }
+  ]
+}

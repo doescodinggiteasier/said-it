@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-13",
+  "edition": 117,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You're an errand boy sent by grocery clerks to collect a bill.",
+      "speaker": "Apocalypse Now (1979)",
+      "context": "Colonel Kurtz (Marlon Brando) to Captain Willard (Martin Sheen) at his compound, dismissing Willard's mission.",
+      "real": true,
+      "source": {
+        "title": "Apocalypse Now - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Apocalypse_Now",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've dug up worse men than you and given them a Christian burial.",
+      "speaker": "Unforgiven (1992)",
+      "context": "Bill Munny, low and flat, warning a young gunfighter not to push him",
+      "real": false,
+      "fake_note": "I made this one up — it has the cadence of Eastwood's laconic delivery and the graveyard-dark humor the film earns by its third act. The giveaway is that it's slightly too neatly constructed; the real film's threats tend to trail off rather than land with that kind of symmetry."
+    },
+    {
+      "id": "q3",
+      "text": "He was very specific about the flowers. That should've told me everything.",
+      "speaker": "Rebecca (1940)",
+      "context": "The second Mrs. de Winter, reflecting quietly to herself after a disturbing discovery at Manderley",
+      "real": false,
+      "fake_note": "I made this one up — the unnamed heroine's internal spiral of retrospective dread is the film's whole texture, and a line like this sits perfectly in her anxious, self-blaming inner voice. The giveaway is 'that should've told me everything' — it's slightly too neat an epiphany for a character who, in the film, never quite reaches clarity that cleanly."
+    },
+    {
+      "id": "q4",
+      "text": "She's been lying since before you knew her name.",
+      "speaker": "Vertigo (1958)",
+      "context": "A detective colleague warning Scottie Ferguson early in his obsession",
+      "real": false,
+      "fake_note": "I made this one up — the line fits the film's atmosphere of retrospective dread and the way side characters sense what Scottie refuses to. The giveaway is it's a bit too legible as foreshadowing; Hitchcock preferred his warnings to be cryptic enough to seem innocuous on first viewing."
+    },
+    {
+      "id": "q5",
+      "text": "My mama always said life was like a box of chocolates. You never know what you're gonna get.",
+      "speaker": "Forrest Gump (1994)",
+      "context": "Forrest (Tom Hanks) sits on a bus-stop bench recounting his mother's favorite saying.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Half these people don't even know why they're clapping.",
+      "speaker": "All About Eve (1950)",
+      "context": "Margo Channing, watching Eve receive a standing ovation from the wings",
+      "real": false,
+      "fake_note": "I made this one up — Margo's jealousy is always wrapped in exactly this kind of theatrical bitterness, and the setting fits a backstage moment we'd expect. The giveaway is it's a little too on-the-nose about her envy; Mankiewicz usually hides the wound one layer deeper."
+    }
+  ]
+}

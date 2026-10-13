@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-13",
+  "edition": 112,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'm not sure what the future holds for ticketing, I do know this experience has really opened my eyes",
+      "speaker": "Raye",
+      "context": "After Royal Albert Hall show was overwhelmed by AI bot scalpers with nearly 2 million sign-ups",
+      "real": true,
+      "source": {
+        "title": "Music — Raye Royal Albert Hall show “overwhelmed by scalpers using AI bots” after receiv",
+        "url": "https://www.nme.com/news/music/raye-royal-albert-hall-show-overwhelmed-by-scalpers-using-ai-bots-after-receiving-nearly-2million-sign-ups-3973034?utm_source=rss&utm_medium=rss&utm_campaign=raye-royal-albert-hall-show-overwhelmed-by-scalpers-using-ai-bots-after-receiving-nearly-2million-sign-ups",
+        "date": "2026-10-13"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Thank you for waiting. It certainly is two of my most beautiful pieces of work.",
+      "speaker": "Lana Del Rey",
+      "context": "Announcing companion album Spyda",
+      "real": true,
+      "source": {
+        "title": "Music — Lana Del Rey Announces Stove Companion Album Spyda",
+        "url": "https://consequence.net/2026/07/lana-del-rey-stove-companion-album-spyda/",
+        "date": "2026-07-16"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've played that riff so many times my hand just does it now without me. I'll be half asleep on the tour bus and my left hand is just — going. It's a little disturbing if I'm honest.",
+      "speaker": "Jack White",
+      "context": "Rolling Stone profile, 'Jack White's Long Road Back,' published March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Jack talks about the physical and almost unconscious nature of guitar playing constantly, and the slightly unnerved self-observation fits his introspective weirdness perfectly. The giveaway is 'a little disturbing if I'm honest' — Jack tends to lean harder into the mystical rather than undercutting it with self-deprecation."
+    },
+    {
+      "id": "q4",
+      "text": "The first time I heard myself on the radio I pulled over. I just — I stopped the car on the side of the road in Memphis and sat there. I didn't feel proud. I felt like I owed somebody something, I just didn't know who yet.",
+      "speaker": "Justin Timberlake",
+      "context": "Interview with Zane Lowe for Apple Music 1, recorded in Memphis ahead of the 'Everything I Thought It Was' album release, March 2024",
+      "real": false,
+      "fake_note": "I made this one up — Justin often connects his Memphis roots to a sense of debt and gratitude toward the music that shaped him, and the emotional specificity of pulling over is the kind of anecdote he reaches for. The giveaway is the final clause; 'I didn't know who yet' is a little too literary-memoir for unscripted radio conversation."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me why I still do small clubs sometimes and I'm like — have you ever played a room where you can see somebody's face change? Like actually watch it happen? That's the thing. The arenas are something else but you don't get that.",
+      "speaker": "Bruce Springsteen",
+      "context": "Interview with Howard Stern on SiriusXM's 'Howard Stern Comes Again' sessions, published October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Bruce genuinely rhapsodizes about live connection and small venues throughout his memoir and interviews, so the sentiment lands perfectly. The subtle giveaway is the slightly too-tidy contrast between clubs and arenas; Bruce usually goes deeper and more narrative before landing a point."
+    },
+    {
+      "id": "q6",
+      "text": "Reggae is not a costume you put on. I've seen people try to put it on. The rhythm tells on them every time — the rhythm always knows.",
+      "speaker": "Ziggy Marley",
+      "context": "Panel discussion, 'Reggae's Global Future' symposium, Jamaica Music Conference, Kingston, July 2019",
+      "real": false,
+      "fake_note": "I made this one up — Ziggy is vocal about the authenticity and spiritual integrity of reggae as a living tradition, and the rhythm-as-truth framing echoes things he's genuinely said. The giveaway is the repetition of 'the rhythm' as a closing device — it's a touch more rhetorical than his usual conversational delivery."
+    }
+  ]
+}

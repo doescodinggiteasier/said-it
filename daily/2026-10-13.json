@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-13",
+  "edition": 120,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I was training for Creed I'd sometimes be in the gym at midnight and I'd look at myself in the mirror and think — I genuinely do not recognize this person. And that's when I knew we were somewhere interesting.",
+      "speaker": "Michael B. Jordan",
+      "context": "Interview on Jimmy Kimmel Live!, ABC, November 2015",
+      "real": false,
+      "fake_note": "I made this one up — Jordan has been publicly detailed about his physical transformation for the Creed films, and the mirror moment as a marker of progress is the kind of personal anecdote he reaches for. The tell is 'somewhere interesting' — it's a slightly writerly phrase for a late-night TV chat."
+    },
+    {
+      "id": "q2",
+      "text": "I am a Ford, not a Lincoln. My addresses will never be as eloquent as Mr. Lincoln's. But I will do my very best to equal his brevity and his plain speaking.",
+      "speaker": "Gerald Ford",
+      "context": "Self-deprecating remark Ford made on December 6, 1973, immediately after taking the oath of office as the 40th Vice President (following Spiro Agnew's resignation).",
+      "real": true,
+      "source": {
+        "title": "Gerald Ford - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Gerald_Ford",
+        "date": "1973-12-06"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My mother used to say I laughed too loudly for a girl. And I thought — how loud is the right amount? Is there a dial? I spent probably fifteen years trying to find that dial and then I gave up and just kept laughing the same way.",
+      "speaker": "Whoopi Goldberg",
+      "context": "Keynote address at the Tribeca Film Festival, New York City, June 2017",
+      "real": false,
+      "fake_note": "I made this one up — Goldberg speaks frequently about her upbringing and the expectations placed on her as a woman in comedy, and this kind of wry, autobiographical riff is very much in her register. The giveaway is 'Is there a dial?' — it's a touch too structured a comic setup for pure off-the-cuff reminiscing."
+    },
+    {
+      "id": "q4",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "His famous comeback at the 1984 debate against Walter Mondale",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I do not have a five-year plan. I do not have a moonshot. I'm looking at the ground, and I want to fix the pothole that's right in front of me before I go in.",
+      "speaker": "Linus Torvalds",
+      "context": "Interviewed by Chris Anderson onstage at TED2016, contrasting himself with visionaries (he also says \"I am not a visionary.",
+      "real": true,
+      "source": {
+        "title": "The quotable Linus Torvalds, live onstage at TED | TED Blog",
+        "url": "https://blog.ted.com/the-quotable-linus-torvalds-live-onstage-at-ted/",
+        "date": "2016-02-17"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I read once that Miles Davis used to fire musicians for playing notes he expected. I thought about that for a long time. I still don't know if I agree with it, but I haven't stopped thinking about it either, which probably tells you something.",
+      "speaker": "Yo-Yo Ma",
+      "context": "Lecture-recital at Harvard University's Sanders Theatre, Cambridge, Massachusetts, April 2016",
+      "real": false,
+      "fake_note": "I made this one up — Yo-Yo Ma frequently name-checks jazz musicians and uses anecdote as a gateway into musical philosophy, which is very characteristic of his public speaking. The giveaway is the last clause, 'which probably tells you something' — it's a little too self-aware as a rhetorical move for genuinely spontaneous reflection."
+    }
+  ]
+}

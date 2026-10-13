@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-13",
+  "edition": 108,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what the hardest part of the job is, and I always say it's the paperwork, and they laugh, but I genuinely mean the paperwork. There is so much paperwork. I went into public service and somehow ended up with a filing system.",
+      "speaker": "Pete Buttigieg",
+      "context": "Interview on Pod Save America, recorded in Washington D.C., October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Buttigieg has a very specific, slightly nerdy humor where he admits to mundane frustrations in an earnest way that makes audiences like him more. The giveaway is the repetition of 'paperwork' — real Pete would probably deploy a slightly more precise complaint, like 'the interagency clearance process.'"
+    },
+    {
+      "id": "q2",
+      "text": "Energy policy is like changing a tire on a moving bus. And everyone on the bus has an opinion about which tire. And some of them are standing on the tire.",
+      "speaker": "Jennifer Granholm",
+      "context": "Fireside chat at the CERAWeek energy conference, Houston, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Granholm is unusually expressive and metaphor-prone for a Cabinet secretary, especially in front of industry audiences where she tries to be disarming about political complexity. The tell is that the metaphor goes one beat too tidy at the end — her real analogies tend to trail off or get interrupted by her own laughter."
+    },
+    {
+      "id": "q3",
+      "text": "No, I'm not going to pledge that.",
+      "speaker": "Todd Blanche",
+      "context": "NBC's Meet the Press, when asked if the DOJ would always act independently of the White House",
+      "real": true,
+      "source": {
+        "title": "Politics — Todd Blanche declines to pledge independence from White House",
+        "url": "https://www.theguardian.com/us-news/2026/aug/16/todd-blanche-doj-independence-trump-white-house",
+        "date": "2026-08-17"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I grew up in a small town where the big political debate was whether the county should repave Route 9 before the fairgrounds or after. I won that debate, by the way. Fairgrounds first. Still think I was right.",
+      "speaker": "Tim Kaine",
+      "context": "Keynote remarks at the Virginia Rural Caucus dinner, Richmond, September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Kaine leans heavily on Midwestern and Virginia small-town roots in his storytelling, and this kind of hyper-local civic detail is exactly his register. The giveaway is the specificity of 'Route 9' — he'd almost certainly name a real Virginia road, and a local listener would catch that immediately."
+    },
+    {
+      "id": "q5",
+      "text": "I think this is the most extraordinary collection of talent, of human knowledge, that has ever been gathered together at the White House, with the possible exception of when Thomas Jefferson dined alone.",
+      "speaker": "John F. Kennedy",
+      "context": "Opening of President Kennedy's toast at a dinner honoring Western Hemisphere Nobel Prize winners, April 29, 1962 — a famously gracious, witty compliment to the assembled laureates by invoking Jefferson's solitary genius.",
+      "real": true,
+      "source": {
+        "title": "Remarks at a Dinner Honoring Nobel Prize Winners of the Western Hemisphere | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-dinner-honoring-nobel-prize-winners-the-western-hemisphere",
+        "date": "1962-04-29"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I receive with immense pride the support of my friend, President Abelardo de la Espriella",
+      "speaker": "Maria Elvira Salazar",
+      "context": "Rep. Salazar posting on X about a Colombian presidential endorsement amid her reelection race",
+      "real": true,
+      "source": {
+        "title": "Politics — Salazar picks up Colombian president's endorsement after breaking with Trump on ",
+        "url": "https://thehill.com/homenews/house/6144917-salazar-colombia-president-endorsement-election/",
+        "date": "2026-10-13"
+      }
+    }
+  ]
+}
