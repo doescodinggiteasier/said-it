@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-14",
+  "edition": 113,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The drum machine didn't replace the drummer. It just made the drummer really insecure for about fifteen years, which honestly produced some incredible drumming.",
+      "speaker": "Questlove",
+      "context": "SXSW Music keynote panel, Austin, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Questlove is a walking encyclopedia of music history and often makes exactly this kind of wry, counterintuitive historical observation with a comedic kicker. The giveaway is the specificity of 'fifteen years,' which is a little too tidy for real off-the-cuff speech."
+    },
+    {
+      "id": "q2",
+      "text": "I used to think my accent was a liability in pop music and then Adele happened and I felt quite foolish about that, frankly.",
+      "speaker": "Ed Sheeran",
+      "context": "Interview with Jonathan Ross, The Jonathan Ross Show, ITV, Series 14, broadcast October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Ed has spoken publicly about his Suffolk accent and his admiration for Adele many times, and his self-deprecating style is very close to this. The word 'frankly' at the end is slightly more clipped than his usual speech, which is the tell."
+    },
+    {
+      "id": "q3",
+      "text": "She reminds me of Bowie and Björk. She has a terrifying level of talent",
+      "speaker": "Grian Chatten",
+      "context": "Fontaines D.C. frontman Grian Chatten on working with Rosalía",
+      "real": true,
+      "source": {
+        "title": "Music — Fontaines D.C.’s Grian Chatten on “career high” of working with Rosalía: “I’ve g",
+        "url": "https://www.nme.com/news/music/fontaines-dc-grian-chatten-on-working-with-rosalia-her-heart-is-similar-to-mine-3973099?utm_source=rss&utm_medium=rss&utm_campaign=fontaines-dc-grian-chatten-on-working-with-rosalia-her-heart-is-similar-to-mine",
+        "date": "2026-10-14"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People ask me what key I write in most and honestly I don't think about it that way. I think about whether a song feels like a color I haven't used yet. That's not deep, that's just how my brain got wired somewhere along the way.",
+      "speaker": "Stevie Wonder",
+      "context": "CBS Sunday Morning interview, October 2019, ahead of his Kennedy Center tribute performance",
+      "real": false,
+      "fake_note": "I made this one up — Stevie's documented interviews are full of synesthetic and sensory metaphors for music, so the color framing is completely in character. The giveaway is the mild self-deflection at the end — 'that's not deep' — which is slightly more self-conscious than his usual warmth."
+    },
+    {
+      "id": "q5",
+      "text": "I remember listening to Sweet Dreams (Are Made of This) by Eurythmics when I was really young. There was something about the line at the beginning that I was completely intoxicated by.",
+      "speaker": "Arlo Parks",
+      "context": "Arlo Parks describing the first song she fell in love with, in an honest playlist feature",
+      "real": true,
+      "source": {
+        "title": "Music — ‘I’d wander through the park all angsty listening to Arctic Monkeys’: Arlo Parks",
+        "url": "https://www.theguardian.com/music/2026/oct/11/arlo-parks-honest-playlist-prince-janet-jackson",
+        "date": "2026-10-14"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The thought of dying without ever making my mark, that was my biggest fear",
+      "speaker": "Amy Winehouse",
+      "context": "Resurfaced interview with Amy Winehouse recorded nearly 20 years ago",
+      "real": true,
+      "source": {
+        "title": "Music — Lost Amy Winehouse interview resurfaces: “The thought of dying without ever maki",
+        "url": "https://www.nme.com/news/music/lost-amy-winehouse-interview-resurfaces-the-thought-of-dying-without-ever-making-my-mark-that-was-my-biggest-fear-3973054?utm_source=rss&utm_medium=rss&utm_campaign=lost-amy-winehouse-interview-resurfaces-the-thought-of-dying-without-ever-making-my-mark-that-was-my-biggest-fear",
+        "date": "2026-10-14"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-14",
+  "edition": 121,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I make up different names for my cat all the time—Flapjack, Bowtie, Popcorn. But he's really, 'Hey you, cat.'",
+      "speaker": "Christopher Walken",
+      "context": "The actor on his pet cat in an Interview Magazine feature",
+      "real": true,
+      "source": {
+        "title": "Christopher Walken on Cats, Characters, and Career Highlights - Interview Magazine",
+        "url": "https://www.interviewmagazine.com/film/christopher-walken",
+        "date": "2012-01-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I don't track what other producers are doing, and I don't mean that as a flex — I genuinely just have no bandwidth for it. If I start listening to what's charting I start second-guessing sounds I made six months ago and then nothing gets finished.",
+      "speaker": "Pharrell Williams",
+      "context": "Interview with Zane Lowe on Apple Music 1, broadcast January 2024",
+      "real": false,
+      "fake_note": "I made this one up — Pharrell's process-focused, inward-looking approach to production is well-documented, and his tendency to frame his quirks as practical rather than philosophical is very much his real style. The giveaway is 'I don't mean that as a flex,' which is a slightly younger-generation verbal tic than Pharrell typically reaches for in longer interviews."
+    },
+    {
+      "id": "q3",
+      "text": "I genuinely don't know how I cooked before I had a decent carbon steel pan. I was just — I was just heating sadness in a nonstick.",
+      "speaker": "Anthony Bourdain",
+      "context": "Interview with Eater, recorded for their 'Tools of the Trade' feature, published March 2016",
+      "real": false,
+      "fake_note": "I made this one up — Bourdain's contempt for bad cookware and his self-deprecating darkness are completely on-brand, and 'heating sadness in a nonstick' sounds like something he'd actually say. The giveaway is that the line is almost too quotable for off-the-cuff speech; Bourdain was sharp, but this is a touch more polished than his usual rambling cadence."
+    },
+    {
+      "id": "q4",
+      "text": "Good afternoon. God that sounds strange. I just got up",
+      "speaker": "Elvis Presley",
+      "context": "Elvis addressing the afternoon crowd at Hampton Coliseum, 50 years ago",
+      "real": true,
+      "source": {
+        "title": "Music — 50 Years Ago Today: An Exhausted Elvis Presley Plays a Lackluster Matinee in Vir",
+        "url": "https://www.rollingstone.com/music/music-features/50-years-ago-today-elvis-presley-virginia-1235600565/",
+        "date": "2026-08-02"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I think everybody pees in the pool.",
+      "speaker": "Michael Phelps",
+      "context": "Swimmer answering a Wall Street Journal interview question about pool etiquette, as quoted by CBS News",
+      "real": true,
+      "source": {
+        "title": "Michael Phelps on peeing in the pool: Everybody does it",
+        "url": "https://www.cbsnews.com/news/michael-phelps-on-peeing-in-the-pool-everybody-does-it/",
+        "date": "2012-08-10"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've played stadiums where the sound was so bad that I was essentially just watching the audience watch someone they couldn't really hear. And they were still losing their minds. I thought, okay, this is not really about me.",
+      "speaker": "Mick Jagger",
+      "context": "Conversation with Jann Wenner, excerpted in Wenner's memoir 'Like a Rolling Stone,' published 2022",
+      "real": false,
+      "fake_note": "I made this one up — Jagger's detached, observational humor about mass adulation and his long-documented ambivalence about what arena crowds are actually responding to make this entirely plausible. The giveaway is the clean conclusion 'this is not really about me'; the real Jagger deflects that observation but rarely states it so plainly."
+    }
+  ]
+}

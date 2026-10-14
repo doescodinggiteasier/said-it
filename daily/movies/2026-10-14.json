@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-14",
+  "edition": 118,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Be the ball.",
+      "speaker": "Caddyshack (1980)",
+      "context": "Ty Webb (Chevy Chase) giving zen golf advice to caddy Danny Noonan during their night-golf lesson",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "The Empire doesn't send two destroyers to chase down a freighter, kid.",
+      "speaker": "Star Wars: Episode V – The Empire Strikes Back (1980)",
+      "context": "Han Solo, suspicious something is wrong after leaving Hoth",
+      "real": false,
+      "fake_note": "I made this one up — Han's tactical, street-smart skepticism and his habit of calling people 'kid' are pitch-perfect here. The giveaway is 'destroyers' used that precisely; Han typically speaks in slightly looser, more impatient shorthand rather than proper military terminology."
+    },
+    {
+      "id": "q3",
+      "text": "If I wanted your opinion, Burke, I would've filed a request in triplicate.",
+      "speaker": "Aliens (1986)",
+      "context": "Ripley shutting down Burke's corporate maneuvering during a tense briefing",
+      "real": false,
+      "fake_note": "I made this one up — Ripley's contempt for Burke is established early, and the bureaucratic jab fits the corporate-military world of the film perfectly. The subtle giveaway is 'in triplicate,' which is more of a wry office-comedy beat than the blunter, survival-focused language Ripley usually reaches for."
+    },
+    {
+      "id": "q4",
+      "text": "I used to think the worst thing in the world was ending up alone. I was wrong.",
+      "speaker": "As Good as It Gets (1997)",
+      "context": "Melvin Udall, deadpan, after a particularly bad social encounter",
+      "real": false,
+      "fake_note": "I made this one up — Melvin's misanthropic self-pity rendered as blunt comedy is exactly the film's signature move. The giveaway is it's slightly too structurally tidy; Nicholson's real Melvin lines tend to be more jagged and specific rather than this balanced."
+    },
+    {
+      "id": "q5",
+      "text": "One does not simply walk into Mordor.",
+      "speaker": "The Lord of the Rings: The Fellowship of the Ring (2001)",
+      "context": "Boromir (Sean Bean) arguing against the plan to destroy the Ring",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Ogres are like onions.",
+      "speaker": "Shrek (2001)",
+      "context": "Shrek explains to Donkey that ogres have layers",
+      "real": true
+    }
+  ]
+}

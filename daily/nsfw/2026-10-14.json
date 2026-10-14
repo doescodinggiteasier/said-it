@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-14",
+  "edition": 101,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "We threw a party after the Madison Square Garden show in '77 and somebody brought a bathtub full of ice and Champagne up to the suite. Actual bathtub. Hotel was furious. We tipped them enough that they were only furious on the outside.",
+      "speaker": "Freddie Mercury",
+      "context": "Behind-the-scenes segment filmed for the Queen: We Will Rock You documentary, EMI Films, interview recorded London, September 1981",
+      "real": false,
+      "fake_note": "I made this one up — Freddie's legendary party hosting and extravagant tipping are well-documented lore, and the bathtub-of-Champagne detail fits the Queen '77 North American tour period exactly. The giveaway is Mercury almost never gave behind-the-scenes logistical tour anecdotes in interviews; he preferred to discuss performance and spectacle."
+    },
+    {
+      "id": "q2",
+      "text": "After I stopped doing drugs I started to fuck like a bunny!",
+      "speaker": "Courtney Love",
+      "context": "On how getting sober changed her sex drive, in an interview with The Fix.",
+      "real": true,
+      "source": {
+        "title": "The Fix interview",
+        "url": "https://www.thefix.com/courtney-love-interview/",
+        "date": "2011"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've had critics call me a clown, a vulgarian, a trained monkey, and — my personal favourite — a 'chaos merchant.' I had 'chaos merchant' put on a fucking business card. Gave one to the Pope. Not that Pope, the other one.",
+      "speaker": "Bill Hicks",
+      "context": "Relentless tour post-show press junket, Montreal Comedy Festival, July 23, 1992",
+      "real": false,
+      "fake_note": "I made this one up — Hicks openly courted the outlaw-provocateur label and his anti-establishment riffs absolutely extended to the Church, so the business-card escalation and the Pope punchline are very on-brand. The giveaway is 'not that Pope, the other one' is too light and crowd-pleasing; Hicks' Pope material was more pointed and theological."
+    },
+    {
+      "id": "q4",
+      "text": "Keith asked me once what I wanted on my tombstone. I said 'He Showed Up.' Keith thought about it for about thirty seconds and went, 'Yeah, that's actually more than most of us managed on any given Tuesday.' And we just stood there nodding like a pair of complete idiots.",
+      "speaker": "Charlie Watts",
+      "context": "Uncut Magazine, 'The Rolling Stones at 50' extended interview feature, August 2012",
+      "real": false,
+      "fake_note": "I made this one up — Charlie Watts was famously dry and understated, and a tombstone gag aimed at Keith Richards' chaos fits his wry deadpan perfectly. The giveaway is Watts rarely told anecdotes that centred himself; he deflected, so a story where he gets the punchline is slightly off-brand."
+    },
+    {
+      "id": "q5",
+      "text": "Some critic wrote that my act was 'aggressively lowbrow.' I framed it. Put it right next to my first comedy club cheque, which was for forty-five dollars. Both of them make me equally proud and I am not even slightly joking.",
+      "speaker": "Rodney Dangerfield",
+      "context": "Howard Stern Show, WXRK New York, broadcast March 6, 1991",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield's whole persona was weaponised no-respect pride, so framing a bad review is perfectly in character, and the Stern Show was exactly where he'd drop that kind of crass-sentimental bit. The giveaway is the '$45 cheque' detail; Dangerfield's early-career hardship stories usually involved specific clubs by name, not dollar amounts."
+    },
+    {
+      "id": "q6",
+      "text": "He told me if I carried on at the same pace I'd start bleeding out of my dick, my asshole, my eyes, my nose – fucking everywhere, man. Just bleeding out of every orifice and never stopping.",
+      "speaker": "Zakk Wylde",
+      "context": "Black Label Society / Ozzy guitarist Zakk Wylde, laughing as he recounts his doctor's blunt warning about his extreme drinking while on blood thinners, in a 2013 Louder/Metal Hammer interview.",
+      "real": true,
+      "source": {
+        "title": "Black Label Society's Zakk Wylde interview: alcohol, acoustic albums and prison gigs with Ozzy Osbourne (Louder)",
+        "url": "https://www.loudersound.com/features/zakk-wylde-black-label-society-interview-2013",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

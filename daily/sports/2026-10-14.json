@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-14",
+  "edition": 110,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "This ain't a football game, we do this every day.",
+      "speaker": "Earl Weaver",
+      "context": "The Baltimore Orioles manager on the day-in, day-out grind that makes baseball unlike other sports.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Eye on Quotes: The pithy brilliance of Earl Weaver",
+        "url": "https://www.cbssports.com/mlb/news/eye-on-quotes-the-pithy-brilliance-of-earl-weaver/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "The wicket in Johannesburg does something in the second session that I still haven't fully figured out. I've played there, what, six times? And every time I think I've got a read on it, it does something it hasn't done before. I don't find that frustrating anymore. I find it interesting, which I think is how you have to look at it or you'd go mad.",
+      "speaker": "James Anderson",
+      "context": "The Analyst Inside Cricket podcast, hosted by Nathan Leamon, Episode 41, April 2022",
+      "real": false,
+      "fake_note": "I made this one up — Anderson frequently discusses pitches and conditions with exactly this kind of precise, almost scientific curiosity, and the Johannesburg detail is plausible given England's touring history. The subtle tell is the slightly philosophical pivot at the end, which is warmer and more self-aware than Anderson typically gets in interviews."
+    },
+    {
+      "id": "q3",
+      "text": "I've been around a lot of great players, and the one thing they all had in common was that they made everybody around them feel like the problem was solvable. Not that it was easy, not that it was going to be fine — just that it was solvable. That's a different thing, and it's rarer than people think.",
+      "speaker": "Phil Jackson",
+      "context": "Ric Bucher interview for Bleacher Report, published April 2016",
+      "real": false,
+      "fake_note": "I made this one up — Jackson consistently speaks in this observational, psychological register about elite competitors, and the distinction he's drawing here sounds very much like his Zen-inflected coaching philosophy. The giveaway is that 'solvable' is a slightly more analytical word than his usual vocabulary leans toward."
+    },
+    {
+      "id": "q4",
+      "text": "My favorite thing about Augusta is that it punishes the wrong kind of confidence. You can feel great about a hole, really feel like you've solved it, and it just takes that feeling away from you immediately. The course is not interested in your momentum.",
+      "speaker": "Rory McIlroy",
+      "context": "Golf Digest long-form feature, 'Rory and the Major He Hasn't Won', March 2023",
+      "real": false,
+      "fake_note": "I made this one up — McIlroy's complicated relationship with Augusta and the Masters is one of the most discussed topics in golf, and he's spoken about the course's psychological demands in almost exactly this register. The tell is 'not interested in your momentum,' which is slightly too aphoristic for his usual offhand phrasing."
+    },
+    {
+      "id": "q5",
+      "text": "Because there is always some kid who may be seeing me for the first time. I owe him my best.",
+      "speaker": "Joe DiMaggio",
+      "context": "Explaining why he always played so hard, even in meaningless late-season games, on the PBS American Experience profile.",
+      "real": true,
+      "source": {
+        "title": "PBS American Experience — Joe DiMaggio",
+        "url": "https://www.pbs.org/wgbh/americanexperience/features/dimaggio-joe-dimaggio/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Coaching is a great thing, because you're working for four months then you go fish for eight.",
+      "speaker": "Bob Knight",
+      "context": "The Indiana basketball coach joking about the perks of the coaching profession, in a roundup of his memorable lines.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Bob Knight quotes: Top 10 memorable lines from Indiana's legendary but controversial coach",
+        "url": "https://www.cbssports.com/college-basketball/news/bob-knight-quotes-top-10-memorable-lines-from-indianas-legendary-but-controversial-coach/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

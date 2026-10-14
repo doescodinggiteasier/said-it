@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-14",
+  "edition": 109,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My first week in the Senate I voted on an amendment I didn't fully understand, and a very patient staffer explained it to me afterward. I thanked her. Then I looked up the vote. Turns out I got it right, which I'll be honest felt like a fluke.",
+      "speaker": "Amy Klobuchar",
+      "context": "Commencement address at the University of Minnesota Law School, May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar regularly tells self-deprecating stories about her early Senate days and this matches her Midwestern, slightly wry cadence perfectly. The giveaway is the specificity of 'a very patient staffer' — real Klobuchar anecdotes tend to name people or institutions."
+    },
+    {
+      "id": "q2",
+      "text": "The press asked me once what I do to decompress after a tough legislative week, and I said I read the Federal Register and they thought I was being sarcastic. I was not being sarcastic.",
+      "speaker": "Tammy Baldwin",
+      "context": "Interview on Wisconsin Public Radio's The Morning Show, Madison, Wisconsin, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Baldwin is known among Capitol Hill staff as a genuinely meticulous policy reader and the nerd-pride humor fits her public persona. The subtle giveaway is the framing around press interactions; Baldwin rarely positions herself against the media even gently."
+    },
+    {
+      "id": "q3",
+      "text": "Nothing so dates a man as to decry the younger generation.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The Democratic statesman, in a speech at the University of Wisconsin, Madison (8 October 1952) - a dry, self-aware needle at those who complain about the young.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "She decided she loved her children more than she loved Donal",
+      "speaker": "Arwa Mahdawi",
+      "context": "Opinion column about new White House press secretary Katie Zacharia",
+      "real": true,
+      "source": {
+        "title": "Politics — Loves Trump, lies and conspiracies: Katie Zacharia is the perfect presidential p",
+        "url": "https://www.theguardian.com/commentisfree/2026/oct/13/trump-lies-conspiracies-katie-zacharia-press-secretary",
+        "date": "2026-10-14"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "We didn't like what we were reading",
+      "speaker": "Donald Trump",
+      "context": "Trump speaking to press about requesting Kimberly Guilfoyle's resignation",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump speaks on Kimberly Guilfoyle resignation: 'We didn't like what we were rea",
+        "url": "https://www.theguardian.com/us-news/video/2026/oct/13/trump-kimberly-guilfoyle-ambassador-video",
+        "date": "2026-10-14"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People ask me how I stay calm during a filibuster. I don't. I just get very quiet about not being calm.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks at the McConnell Center Leadership Forum, University of Louisville, April 2019",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's deadpan reputation and his genuine fondness for procedural Senate lore make this sound right at home. The giveaway is he almost never makes jokes about his own emotional state; he's far more likely to talk about institutional history."
+    }
+  ]
+}
