@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-15",
+  "edition": 114,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've got a suspicion that her heart is similar to mine",
+      "speaker": "Grian Chatten",
+      "context": "Fontaines D.C. frontman Grian Chatten on collaborating with Rosalía",
+      "real": true,
+      "source": {
+        "title": "Music — Fontaines D.C.’s Grian Chatten on “career high” of working with Rosalía: “I’ve g",
+        "url": "https://www.nme.com/news/music/fontaines-dc-grian-chatten-on-working-with-rosalia-her-heart-is-similar-to-mine-3973099?utm_source=rss&utm_medium=rss&utm_campaign=fontaines-dc-grian-chatten-on-working-with-rosalia-her-heart-is-similar-to-mine",
+        "date": "2026-10-14"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've never been able to listen to a mix in a car and actually hear it. I hear the road. I hear the engine. I hear whether I need to get gas. I don't know how everyone else does it — I've just accepted that my ears only work in rooms.",
+      "speaker": "Bon Iver (Justin Vernon)",
+      "context": "Interview with The Fader, Issue 108, February 2017",
+      "real": false,
+      "fake_note": "I made this one up — Justin Vernon talks about his relationship with listening environments obsessively and specifically, and the self-deprecating, slightly confessional tone is very him. The giveaway is that he's actually mentioned car listening as part of his process in at least one documented interview, so this contradicts his real record."
+    },
+    {
+      "id": "q3",
+      "text": "Nobody touches the shepherd's pie till I've been in there. Don't bust my crust, baby.",
+      "speaker": "Keith Richards",
+      "context": "The Rolling Stones guitarist explaining his strict on-the-road rule about his pre-show shepherd's pie, written in his autobiography 'Life'. Oddly specific and very funny rock-star demand.",
+      "real": true,
+      "source": {
+        "title": "Don't mess with Keith Richards' pre-show shepherd's pie ritual, or he might threaten to cut you up and bake you into one",
+        "url": "https://www.loudersound.com/features/dont-mess-with-keith-richards-pre-show-shepherds-pie-ritual-or-he-might-threaten-to-cut-you-up-and-bake-you-into-one",
+        "date": "2023-03-23"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My grandmother had one of those little clock radios on her nightstand and it only got two stations clearly. One was gospel, one was a country station out of Shreveport. So my whole sense of what a song is supposed to do — comfort somebody at two in the morning — that came from that nightstand.",
+      "speaker": "Brandi Carlile",
+      "context": "NPR Fresh Air interview with Terry Gross, June 2018",
+      "real": false,
+      "fake_note": "I made this one up — Brandi is famous for tracing her musical DNA back to very specific, humble, domestic moments, and her Terry Gross interviews have this exact texture. The giveaway is the Shreveport detail, which is geographically implausible given she grew up in Washington State."
+    },
+    {
+      "id": "q5",
+      "text": "The Cure has not only been fundamental to my growth as a songwriter, but also to my development as a man",
+      "speaker": "Mike Kinsella",
+      "context": "American Football frontman on releasing their Cure cover",
+      "real": true,
+      "source": {
+        "title": "Music — Hailed by Robert Smith as “one of the most heartfelt and beautiful Cure covers I",
+        "url": "https://www.nme.com/news/music/american-football-cover-cure-boys-dont-cry-praise-from-robert-smith-acoustic-performance-3973139?utm_source=rss&utm_medium=rss&utm_campaign=american-football-cover-cure-boys-dont-cry-praise-from-robert-smith-acoustic-performance",
+        "date": "2026-10-15"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "There was this one session — I think it was for the third record — where we'd been in the room for maybe sixteen hours and Rick just walks over to the board, turns everything down, and goes, 'Play it like you're trying not to wake somebody up.' And that was the whole album, basically. That note right there.",
+      "speaker": "Taylor Swift",
+      "context": "Rolling Stone cover interview, October 2014",
+      "real": false,
+      "fake_note": "I made this one up — Taylor genuinely talks about Rick Rubin in warm, specific terms, and the anecdote has her real texture: concrete, reverential, a small moment carrying big weight. The giveaway is that the Rick Rubin collaboration she describes doesn't map cleanly onto any real album era."
+    }
+  ]
+}

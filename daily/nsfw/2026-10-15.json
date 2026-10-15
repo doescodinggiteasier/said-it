@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-15",
+  "edition": 102,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't go on stage high but I'll take an edible after I get off stage and chill out. I do write a lot of jokes while high though, and then the next day I'll look at them and go, 'Well that's not that funny.'",
+      "speaker": "Jim Jefferies",
+      "context": "Crude Australian comedian Jim Jefferies — who built his name on drinking, drugs, and porn material — talking candidly about weed and his creative process, in a High Times interview (Aug 2023).",
+      "real": true,
+      "source": {
+        "title": "Jim Jefferies Is Living His Best Life (High Times)",
+        "url": "https://hightimes.com/culture/jim-jefferies-is-living-his-best-life/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Somebody at the label told me to 'clean up my image.' I said, 'Sweetheart, this IS the cleaned-up version. You should've seen Thursday.'",
+      "speaker": "Janis Joplin",
+      "context": "Rolling Stone Magazine interview conducted in San Francisco, published in the February 7, 1970 issue — one of her last major print interviews",
+      "real": false,
+      "fake_note": "I made this one up — Joplin's brash, self-mythologising humour and her adversarial relationship with industry gatekeepers are real, so pushing back on an image note fits her perfectly. The giveaway is the 'Sweetheart' — Joplin tended toward more profane address and 'sweetheart' reads as slightly too theatrical, closer to a nightclub comic than her actual blues-raw cadence."
+    },
+    {
+      "id": "q3",
+      "text": "There are 400,000 words in the English language, and there are seven of them that you can't say on television. What a ratio that is. 399,993 to seven. They must really be bad.",
+      "speaker": "George Carlin",
+      "context": "Carlin's landmark \"Seven Words You Can Never Say on Television\" routine from his 1972 album Class Clown, listing the broadcast-banned words verbatim and reveling in saying them all out loud.",
+      "real": true,
+      "source": {
+        "title": "The Big Seven Words — George Carlin",
+        "url": "https://www.erenkrantz.com/Humor/SevenDirtyWords.shtml",
+        "date": "1972"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I once ate an entire wheel of Brie, drank half a bottle of Burgundy, and then went on live television and reviewed a West End play. Gave it four stars. Still stand by it. The Brie was a five.",
+      "speaker": "Peter Cook",
+      "context": "Time Out London interview to mark the twentieth anniversary of Beyond the Fringe, published October 1981",
+      "real": false,
+      "fake_note": "I made this one up — Cook's absurdist self-destruction, wine snobbery, and contempt for professionalism are legendary, and this anecdote sits perfectly in his register. The giveaway is the 'Still stand by it' pivot — Cook was more likely to undercut himself with surreal nihilism than with this kind of defiant self-validation."
+    },
+    {
+      "id": "q5",
+      "text": "The rider said no brown M&Ms and three cases of Moët. They got the M&Ms right. I've been punishing audiences for that Moët situation ever since and I feel no guilt whatsoever.",
+      "speaker": "Frank Zappa",
+      "context": "Guitar World interview, conducted in Los Angeles during sessions for Joe's Garage, published December 1979",
+      "real": false,
+      "fake_note": "I made this one up — Zappa was famously meticulous about his own rider demands and equally contemptuous of industry sloppiness, so weaponising a champagne slight as performance motivation is absolutely in his dry, grudge-holding character. The giveaway is the brown M&Ms detail — that's the famous Van Halen rider clause, and Zappa would almost certainly never reference another band's shtick as his own."
+    },
+    {
+      "id": "q6",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore.",
+      "speaker": "Bob Saget",
+      "context": "Bob Saget — the wholesome 'Full House' dad whose real-life stand-up was famously filthy — on fully embracing his profane comedy persona, in a Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

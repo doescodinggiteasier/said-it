@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-15",
+  "edition": 111,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There are forwards who beat you with pace and forwards who beat you with cleverness, and the clever ones keep me up at night because you can't just tell your back four to run faster than an idea.",
+      "speaker": "Jürgen Klopp",
+      "context": "The Overlap with Gary Neville, Sky Sports, December 2022",
+      "real": false,
+      "fake_note": "I made this one up — Klopp regularly anthropologizes the game in casual, slightly philosophical terms and has a genuine thing about intelligent attackers versus physical ones. The tell is the phrase 'run faster than an idea,' which is slightly too polished for unscripted Klopp."
+    },
+    {
+      "id": "q2",
+      "text": "They told me to keep it simple in the first half and I kept it so simple I nearly put myself to sleep. Sometimes simple is just another word for scared.",
+      "speaker": "Patrick Mahomes",
+      "context": "The Pat McAfee Show, ESPN Radio, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Mahomes has a documented impatience with conservative game plans and occasionally pushes back on coaching conservatism in interviews, always with charm. The giveaway is the rhythm of the last sentence, which sounds a touch more scripted than his usual looseness."
+    },
+    {
+      "id": "q3",
+      "text": "You spend a good piece of your life gripping a baseball, and in the end, it turns out that it was the other way around all the time.",
+      "speaker": "Jim Bouton",
+      "context": "The celebrated closing line of his tell-all baseball memoir 'Ball Four,' as quoted in the book's Wikipedia entry.",
+      "real": true,
+      "source": {
+        "title": "Wikipedia — Ball Four",
+        "url": "https://en.wikipedia.org/wiki/Ball_Four",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My back was bad enough in '09 that I was taking my warm-up swings in the parking lot just to see if I could finish the round. I didn't tell anybody because there's nothing anybody could've done and I'd have had to listen to them talk about it.",
+      "speaker": "Tiger Woods",
+      "context": "Full Swing, Netflix docuseries, Season 2 production interview, 2023",
+      "real": false,
+      "fake_note": "I made this one up — Tiger's documented secrecy about his body, his tendency to compartmentalize, and his clipped explanatory style all make this land. The giveaway is that '09 is a year he was actually healthy, which a close follower would clock."
+    },
+    {
+      "id": "q5",
+      "text": "I think I've heard somebody say that I was a well-dressed golfer. I guess that has something to do with the fact that a lot of people who play golf don't dress very well.",
+      "speaker": "Arnold Palmer",
+      "context": "A dry, self-effacing aside about his reputation as a sharp dresser, collected among Golf Monthly's best Palmer quotes.",
+      "real": true,
+      "source": {
+        "title": "Golf Monthly — 10 Of The Best Arnold Palmer Quotes",
+        "url": "https://www.golfmonthly.com/features/the-game/10-best-arnold-palmer-quotes-152590",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I always look in the Sunday paper to see where Everton are in the league - starting, of course, from the bottom up.",
+      "speaker": "Bill Shankly",
+      "context": "The Liverpool manager needling city rivals Everton, in the club's official collection of his sayings.",
+      "real": true,
+      "source": {
+        "title": "Liverpool FC — Bill Shankly in his own words",
+        "url": "https://www.liverpoolfc.com/news/first-team/111453-bill-shankly-in-his-own-words",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

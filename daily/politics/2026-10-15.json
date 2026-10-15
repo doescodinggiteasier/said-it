@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-15",
+  "edition": 110,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I am the man who accompanied Jacqueline Kennedy to Paris, and I have enjoyed it.",
+      "speaker": "John F. Kennedy",
+      "context": "Self-deprecating opening line at a press luncheon at the Palais de Chaillot in Paris on June 2, 1961, during a state visit to France.",
+      "real": true,
+      "source": {
+        "title": "Remarks and Question and Answer Period at the Press Luncheon in Paris | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-and-question-and-answer-period-the-press-luncheon-paris",
+        "date": "1961-06-02"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Someone on my team told me I needed to be more 'relatable' online. So now I have an Instagram. I posted a picture of a spreadsheet and apparently that is not what they meant.",
+      "speaker": "Pete Buttigieg",
+      "context": "Appearance on The Late Show with Stephen Colbert, CBS, January 2022",
+      "real": false,
+      "fake_note": "I made this one up — Buttigieg's whole public persona is the earnest policy-nerd who's slightly out of step with normal human spontaneity, and he leans into that self-image freely. The tell is that his actual social media is quite polished and managed; the self-deprecation is a little too neat for someone who clearly does understand the internet."
+    },
+    {
+      "id": "q3",
+      "text": "I've now been in 57 states? I think one left to go.",
+      "speaker": "Barack Obama",
+      "context": "Then a Democratic U.S. Senator from Illinois campaigning for president, Obama misspoke at a May 9, 2008 event in Beaverton, Oregon, after a long stretch of travel (he meant 47).",
+      "real": true,
+      "source": {
+        "title": "Obama's 'Bumbles' - FactCheck.org",
+        "url": "https://www.factcheck.org/2011/06/obamas-bumbles/",
+        "date": "2008-05-09"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I have now given this exact explanation of how a continuing resolution works to, at a rough count, four hundred journalists. I am available to give it four hundred more times.",
+      "speaker": "Susan Collins",
+      "context": "Gaggle with reporters in the Senate hallway, covered by Roll Call, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Collins is known for patient, almost professorial explanations of Senate procedure and for staying accessible to press even on exhausting topics. The number is the subtle tell; Collins would give a figure like that only in genuine exasperation, and her public composure rarely cracks that far."
+    },
+    {
+      "id": "q5",
+      "text": "People ask why I keep talking about infrastructure. I say, have you driven on I-95 lately? That road is making the argument for me every single day.",
+      "speaker": "Joe Biden",
+      "context": "Remarks to union workers at a Teamsters Local 107 event in Philadelphia, Pennsylvania, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Biden's infrastructure obsession is thoroughly documented and he constantly grounds national policy in specific, concrete, working-class imagery. I chose I-95 because it's genuinely one of the most notorious corridors in the country and runs through his beloved Delaware, but he never quite said it this crisply."
+    },
+    {
+      "id": "q6",
+      "text": "In Alberta we have a saying: if you don't like the energy policy, wait five years and there'll be a new government with the exact same energy policy.",
+      "speaker": "Jason Kenney",
+      "context": "Interview on Power & Politics with Vassy Kapelos, CBC News Network, November 2019",
+      "real": false,
+      "fake_note": "I made this one up — Kenney is a conservative policy lifer who speaks constantly about Western Canadian resource politics and can be dryly self-aware about regional political cycles. The tell is that he'd rarely joke at the expense of his own policy continuity; he's more likely to frame it as vindication than irony."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-15",
+  "edition": 122,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Honestly, I ate nothing else in all my time out in China except chicken nuggets. They were the only food I could properly trust which wouldn't affect my stomach.",
+      "speaker": "Usain Bolt",
+      "context": "Sprinter recalling his diet during the 2008 Beijing Olympics, in his autobiography, as quoted by NBC Sports",
+      "real": true,
+      "source": {
+        "title": "Sports — Usain Bolt on his 2008 Beijing Olympics diet",
+        "url": "https://www.yahoo.com/lifestyle/last-time-olympics-were-beijing-182154809.html",
+        "date": "2024-07-23"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Honestly, the hardest part of doing a documentary isn't finding the story. It's the moment you realize you had the wrong story for the first eight months and you have to call your editor and just tell them. That phone call is its own short film.",
+      "speaker": "Errol Morris",
+      "context": "Panel discussion at the Full Frame Documentary Film Festival, Durham, NC, April 2019",
+      "real": false,
+      "fake_note": "I made this one up — Morris is famous for long, winding production processes and candid talk about his methods, so this rings completely true to his style. The slight tell is the self-deprecating humor, which is a touch warmer than Morris typically allows himself in public."
+    },
+    {
+      "id": "q3",
+      "text": "We're going to hit them hard. There will be a response.",
+      "speaker": "Trump",
+      "context": "President Trump speaking to Fox News correspondent Trey Yingst after Iran's retaliatory strikes",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump vows response to Iran's retaliatory strikes: 'We're going to hit them hard",
+        "url": "https://thehill.com/homenews/administration/6060630-us-iran-exchange-strikes/",
+        "date": "2026-08-31"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I do not like broccoli. And I haven't liked it since I was a little kid, and my mother made me eat it. And I'm President of the United States, and I'm not going to eat any more broccoli.",
+      "speaker": "George H. W. Bush",
+      "context": "Bush's lighthearted declaration at his March 22, 1990 news conference, when asked whether he had 'lost the broccoli vote' after it emerged he'd banned broccoli from Air Force One.",
+      "real": true,
+      "source": {
+        "title": "George H.W. Bush: Hater of Broccoli - Smart Politics (University of Minnesota Libraries)",
+        "url": "https://smartpolitics.lib.umn.edu/2013/07/09/george-hw-bush-hater-of-brocco/",
+        "date": "1990-03-22"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "When I finished writing 'Beloved,' I didn't feel triumphant. I felt like I'd been somewhere I had no business going and I'd come back and I wasn't sure what shape I was in. I needed a few weeks before I could even tell anyone it was done.",
+      "speaker": "Toni Morrison",
+      "context": "Conversation with Angela Davis at the Radcliffe Institute for Advanced Study, Harvard University, May 2014",
+      "real": false,
+      "fake_note": "I made this one up — Morrison spoke frequently about the emotional cost of writing Beloved and used this kind of spatially metaphorical language about the creative act throughout her career. The tell is the precise emotional beat at the end, which is a shade more vulnerable than her typically guarded public reflection on that novel."
+    },
+    {
+      "id": "q6",
+      "text": "People think tennis is about tactics, and yes, fine, obviously it is. But a match is also just two people having an argument with no words, and whoever gets uncomfortable with silence first tends to lose. I learned that from losing, not from winning.",
+      "speaker": "Martina Navratilova",
+      "context": "Interview on The Tennis Podcast, November 2020",
+      "real": false,
+      "fake_note": "I made this one up — Navratilova is celebrated for her psychological intelligence about the game and speaks in exactly this kind of frank, analytical shorthand in long-form interviews. The tell is 'argument with no words,' which is just poetic enough to feel slightly composed for someone who otherwise speaks in blunter terms."
+    }
+  ]
+}

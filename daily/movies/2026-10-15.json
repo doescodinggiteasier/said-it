@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-15",
+  "edition": 119,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The cheaper the crook, the gaudier the patter.",
+      "speaker": "The Maltese Falcon (1941)",
+      "context": "Private detective Sam Spade (Humphrey Bogart) sizing up the small-time gunman Wilmer.",
+      "real": true,
+      "source": {
+        "title": "The Maltese Falcon (1941 film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Maltese_Falcon_(1941_film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I have a competition in me. I want no one else to succeed. I hate most people.",
+      "speaker": "There Will Be Blood (2007)",
+      "context": "Daniel Plainview (Daniel Day-Lewis) confessing his misanthropy to the man claiming to be his half-brother Henry.",
+      "real": true,
+      "source": {
+        "title": "There Will Be Blood - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/There_Will_Be_Blood",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I hate that word. It's a return, a return to the millions of people who have never forgiven me for deserting the screen.",
+      "speaker": "Sunset Boulevard (1950)",
+      "context": "Faded silent star Norma Desmond (Gloria Swanson) correcting screenwriter Joe Gillis (William Holden) when he calls her planned return a 'comeback.'",
+      "real": true,
+      "source": {
+        "title": "Sunset Boulevard - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Sunset_Boulevard",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Nobody asks the horse if it wants to run, kid. They just put it in the gate.",
+      "speaker": "Rocky (1976)",
+      "context": "Mickey, gruffly explaining the fight game to a doubtful Rocky early in their training",
+      "real": false,
+      "fake_note": "I made this one up — Mickey's gravel-voiced cynicism and his habit of using blue-collar analogies make this sound exactly like him. The giveaway is the metaphor is slightly too tidy; Mickey's real dialogue tends to be blunter and less constructed."
+    },
+    {
+      "id": "q5",
+      "text": "She's not lost. You just stopped knowing where to look.",
+      "speaker": "E.T. the Extra-Terrestrial (1982)",
+      "context": "Elliott's mother, Mary, speaking to a neighbor about a missing pet — a throwaway line before the plot accelerates",
+      "real": false,
+      "fake_note": "I made this one up — Mary operates mostly on the periphery with domestic, harried dialogue, and a brief line like this could easily slip past unnoticed in the film's busy household scenes. The giveaway is it carries just a little too much poetic weight for a distracted single mom talking about a neighbor's lost cat."
+    },
+    {
+      "id": "q6",
+      "text": "Same time tomorrow, Mr. Bond — assuming you still have your teeth.",
+      "speaker": "Goldfinger (1964)",
+      "context": "Goldfinger, departing after an unsettling golf match, delivered with a thin smile",
+      "real": false,
+      "fake_note": "I made this one up — the arch civility masking a threat is exactly Goldfinger's register, and the period-appropriate dry wit fits the film's tone. The giveaway is 'assuming you still have your teeth' is slightly more sadistic than Goldfinger's usual cool aloofness."
+    }
+  ]
+}
