@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-16",
+  "edition": 123,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what the hardest language to learn is and I always want to say: whichever one your mother speaks, because you already think you know it.",
+      "speaker": "Trevor Noah",
+      "context": "Keynote address at the 2019 PEN America World Voices Festival, New York",
+      "real": false,
+      "fake_note": "I made this one up — Trevor Noah constantly riffs on multilingualism and his South African upbringing in exactly this register. The PEN America festival is real but his keynote appearance there is fabricated."
+    },
+    {
+      "id": "q2",
+      "text": "The Internet is not something that you just dump something on. It's not a big truck. It's a series of tubes.",
+      "speaker": "Ted Stevens",
+      "context": "Republican U.S. Senator from Alaska, then chairman of the Senate Commerce Committee, attempting to describe how the internet works during a June 28, 2006 committee debate on net neutrality.",
+      "real": true,
+      "source": {
+        "title": "Series of tubes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Series_of_tubes",
+        "date": "2006-06-28"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I'm not an animal lover if that means you think things are nice if you can pet them, but I am intoxicated by animals.",
+      "speaker": "David Attenborough",
+      "context": "Naturalist and broadcaster, in a 2013 Metro interview, on his relationship with wildlife",
+      "real": true,
+      "source": {
+        "title": "David Attenborough - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/David_Attenborough",
+        "date": "2013-01-29"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "None of the reviews I have read describe this film adequately, in my opinion. They seem to miss the overall effect",
+      "speaker": "Neil Young",
+      "context": "Neil Young praising the film 'Digger' in a public statement",
+      "real": true,
+      "source": {
+        "title": "Music — Neil Young Praises ‘Digger’: ‘The Best Film I Have Ever Seen’",
+        "url": "https://www.rollingstone.com/music/music-news/neil-young-praises-digger-best-film-i-have-ever-seen-1235643401/",
+        "date": "2026-10-16"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I remember finishing 'Beloved' on a flight and just sitting there for probably twenty minutes staring at the tray table. The flight attendant came by twice and I genuinely couldn't tell you what she asked me.",
+      "speaker": "Oprah Winfrey",
+      "context": "CBS Mornings interview with Gayle King, promoting the 25th anniversary reprint of her Book Club edition, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Oprah's genuine, almost physical relationship with Toni Morrison's work is completely documented, so this reads exactly like her. The subtle tell is the invented anniversary-edition peg, which never actually happened."
+    },
+    {
+      "id": "q6",
+      "text": "My dad used to say the most dangerous thing in basketball isn't the player who can score forty — it's the one who genuinely believes he's supposed to. I was maybe twenty-two before I understood what he meant by that.",
+      "speaker": "LeBron James",
+      "context": "The Shop: Uninterrupted, Season 5, Episode 3, HBO, 2022",
+      "real": false,
+      "fake_note": "I made this one up — LeBron frequently credits his father figures and uses that kind of reflective, delayed-understanding framing on The Shop. The giveaway is the invented episode; no such exchange is on record."
+    }
+  ]
+}

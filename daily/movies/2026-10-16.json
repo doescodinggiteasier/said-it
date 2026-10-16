@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-16",
+  "edition": 120,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "On Wednesdays we wear pink.",
+      "speaker": "Mean Girls (2004)",
+      "context": "Karen Smith explaining the Plastics' dress code rule to Cady",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "We didn't build this city to last, Sal. We built it to make money.",
+      "speaker": "Once Upon a Time in America (1984)",
+      "context": "Max, pragmatic and cold, during a conversation about the gang's future",
+      "real": false,
+      "fake_note": "I made this one up — Max's calculating ruthlessness and the way he addresses Noodles (here Sal is a deliberate slip) comes through in exactly this register. Wait — I used 'Sal' instead of 'Noodles,' which is the actual giveaway planted here; a close viewer would catch the wrong name immediately."
+    },
+    {
+      "id": "q3",
+      "text": "Don't tell me what I can see with my own two eyes, Colonel.",
+      "speaker": "Apocalypse Now (1979)",
+      "context": "Willard, terse and exhausted, pushing back during a briefing",
+      "real": false,
+      "fake_note": "I made this one up — the clipped insubordination and the rank address feel right for Willard's disenchanted soldier voice in this film. The giveaway is the word 'Colonel,' since Willard's actual briefing scene involves generals, not a colonel — a detail only close watchers would catch."
+    },
+    {
+      "id": "q4",
+      "text": "I'm not sure that I agree with you a hundred percent on your policework there, Lou.",
+      "speaker": "Fargo (1996)",
+      "context": "Marge Gunderson (Frances McDormand), the pregnant police chief, gently correcting her deputy Lou's flawed reasoning at a crime scene.",
+      "real": true,
+      "source": {
+        "title": "Fargo (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Fargo_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "She's not missing. She just doesn't want to be found by you.",
+      "speaker": "Rear Window (1954)",
+      "context": "Stella, dryly undercutting Jefferies' frantic theorizing",
+      "real": false,
+      "fake_note": "I made this one up — Stella's voice in this film is brisk and wry, always a beat ahead of Jefferies, and this lands in her register well. The subtle giveaway is the slight modern directness; Stella's real lines tend to have a little more Hays-era indirection baked in."
+    },
+    {
+      "id": "q6",
+      "text": "As you wish.",
+      "speaker": "The Princess Bride (1987)",
+      "context": "Westley the farmhand says this to Buttercup; it's revealed to be his way of saying \"I love you,\" and recurs throughout the film.",
+      "real": true
+    }
+  ]
+}

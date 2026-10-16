@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-16",
+  "edition": 115,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I spent a long time being embarrassed by that music, but tonight, I'm going to play it to you",
+      "speaker": "Brandon Flowers",
+      "context": "Royal Albert Hall gig, celebrating his country roots",
+      "real": true,
+      "source": {
+        "title": "Music — Brandon Flowers imagines “what would New Order sound like if they were Johnny Ca",
+        "url": "https://www.nme.com/news/music/watch-brandon-flowers-country-roots-royal-albert-hall-gig-setlist-footage-3973311?utm_source=rss&utm_medium=rss&utm_campaign=watch-brandon-flowers-country-roots-royal-albert-hall-gig-setlist-footage",
+        "date": "2026-10-16"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People think I'm obsessed with sound, and I am, but it started because I hated my voice. I spent years hiding it behind things — effects, harmonies, other people's melodies. Then one day I just stopped and thought, well, this is the only one I've got, so.",
+      "speaker": "Björk",
+      "context": "Interviewed by Alex Ross for The New Yorker, published June 2015",
+      "real": false,
+      "fake_note": "I made this one up — Björk's candid, slightly trailing speech pattern and her documented history of talking about her complicated relationship with her own vocal instrument make this incredibly plausible. The giveaway is the unfinished 'so.' — a little too perfectly Björk in construction."
+    },
+    {
+      "id": "q3",
+      "text": "A guy held a knife to my throat and said: play something normal!",
+      "speaker": "Richard Thompson",
+      "context": "Interview about crazy crowds, promoting new album Hippies, Thugs and Heroes",
+      "real": true,
+      "source": {
+        "title": "Music — ‘A guy held a knife to my throat and said: play something normal!’ Richard Thomp",
+        "url": "https://www.theguardian.com/music/2026/oct/15/richard-thompson-hippies-thugs-and-heroes-interview",
+        "date": "2026-10-16"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My topic is the shift from 'architect' to 'gardener', where 'architect' stands for 'someone who carries a full picture of the work before it is made', to 'gardener' standing for 'someone who plants seeds and waits to see exactly what will come up'.",
+      "speaker": "Brian Eno",
+      "context": "Composer/producer Brian Eno (Roxy Music, ambient music pioneer, producer for Bowie, Talking Heads, U2) framing how he thinks about making music — not as an architect with the finished work in his head, but as a gardener who plants seeds",
+      "real": true,
+      "source": {
+        "title": "Composers as Gardeners — Brian Eno, Edge.org",
+        "url": "https://www.edge.org/conversation/brian_eno-composers-as-gardeners",
+        "date": "2011-11-10"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I remember finishing 'Purple Rain' in the studio at like four in the morning and just sitting there in the dark for a while. Not because it was emotional or whatever — I just couldn't figure out where I'd put my car keys.",
+      "speaker": "Prince",
+      "context": "Interview with Tavis Smiley, PBS, October 2009",
+      "real": false,
+      "fake_note": "I made this one up — Prince's dry, deflating humor and his habit of undercutting grand moments with mundane details make this feel completely authentic. The subtle giveaway is that Prince almost never discussed the recording process of 'Purple Rain' with that level of casual specificity."
+    },
+    {
+      "id": "q6",
+      "text": "Quincy would walk into a session and the room would just change temperature. I don't mean that in a mystical way — I mean people sat up straighter, they played cleaner, they stopped messing around with the coffee. He didn't even have to say anything.",
+      "speaker": "Patti Austin",
+      "context": "Tribute remarks delivered at the Quincy Jones Memorial Celebration, Los Angeles, February 2024",
+      "real": false,
+      "fake_note": "I made this one up — Patti Austin collaborated extensively with Quincy Jones over decades and spoke warmly about him in many real interviews, making this feel like genuine recollection. The slightly physical, atmospheric observation about 'room temperature' is the kind of idiosyncratic detail that makes fake quotes feel real."
+    }
+  ]
+}

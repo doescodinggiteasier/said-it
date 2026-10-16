@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-16",
+  "edition": 103,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I used to do drugs. I still do, but I used to, too.",
+      "speaker": "Mitch Hedberg",
+      "context": "One of late absurdist comedian Mitch Hedberg's most iconic one-liners, a paradoxical drug-use confession from his album 'Strategic Grill Locations' (1999). Hedberg's easygoing stoner persona and drug jokes were central to his act.",
+      "real": true,
+      "source": {
+        "title": "Mitch Hedberg — Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Mitch_Hedberg",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People think playing guitar is about the fingers. It's not about the fucking fingers. Half the time I can't feel my fingers. It's somewhere else. Lower, probably.",
+      "speaker": "Jimi Hendrix",
+      "context": "Rolling Stone interview, recorded at the Scene Club, New York, published in the November 1968 issue",
+      "real": false,
+      "fake_note": "I made this one up — Hendrix was genuinely philosophical and oblique about his relationship to music, but with a playful, slightly bawdy undercurrent that this captures. The giveaway is 'Lower, probably' — the punchline is a touch too deliberate for Hendrix, who was more genuinely mysterious than jokey."
+    },
+    {
+      "id": "q3",
+      "text": "Whiskey is a great drink. Now whiskey's very classy and adult, till you shit your pants. But other than that, it is great.",
+      "speaker": "Dave Attell",
+      "context": "From filthy, drink-soaked comedian Dave Attell's stand-up special 'Road Work' (2014) — Attell (the 'Insomniac' host) riffing on booze in his trademark crude style.",
+      "real": true,
+      "source": {
+        "title": "Dave Attell: Road Work (2014) — Full Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/dave-attell-road-work-transcript/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My agent called and said, 'The network wants you to be more relatable.' I said, Phil, I'm a fifty-three-year-old man who just ate an entire wheel of brie in a hotel bathrobe — how much more relatable do you need?",
+      "speaker": "John Candy",
+      "context": "Howard Stern Show, WXRK New York, live broadcast, November 1992",
+      "real": false,
+      "fake_note": "I made this one up — Candy was genuinely self-deprecating about his size, his appetites, and the Hollywood machine, and this mix of mundane detail and exasperation sounds very like him. The giveaway is the specificity of 'brie' — a little too curated for an off-the-cuff radio bit."
+    },
+    {
+      "id": "q5",
+      "text": "People keep asking me, 'Robin, how do you prepare for a show?' Honestly? Two scotches, a cold shower, and I argue with my reflection until one of us backs down. The reflection wins more than I'd like to admit.",
+      "speaker": "Robin Williams",
+      "context": "Inside the Actors Studio, Season 10, recorded backstage greenroom footage aired in the DVD extras, 2003",
+      "real": false,
+      "fake_note": "I made this one up — Robin really did talk about his manic pre-show rituals and self-deprecating inner chaos, so this fits his voice perfectly. The giveaway is the too-neat three-part setup; Robin's real riffs were messier and went in six directions at once."
+    },
+    {
+      "id": "q6",
+      "text": "Cheating is a man, he sneaks out of his own house to go, like, find some happiness behind your back so your feelings aren't hurt. Cheating is for you.",
+      "speaker": "Patrice O'Neal",
+      "context": "From the late, notoriously unfiltered comedian Patrice O'Neal's Comedy Central special 'Elephant in the Room' (2011) — his provocative, deadpan bit reframing male infidelity as an act of consideration.",
+      "real": true,
+      "source": {
+        "title": "Patrice O'Neal: Elephant in the Room (2011) — Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/patrice-oneal-elephant-in-the-room-2011-full-transcript/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

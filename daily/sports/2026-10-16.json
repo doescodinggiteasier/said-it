@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-16",
+  "edition": 112,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I used to have a rule: no golf until June. I broke it constantly. But I had the rule.",
+      "speaker": "Mike Ditka",
+      "context": "Pro Football Talk Live on NBC Sports Network, taped segment aired during the 2013 NFL Draft week",
+      "real": false,
+      "fake_note": "I made this one up — Ditka's humor is dry and self-aware about his own contradictions, and his well-known love of golf gives this just enough grounding. The tell is that it's almost too Ditka; the self-contradiction gag is his most recognizable comedic register, so sharp players might smell the imitation."
+    },
+    {
+      "id": "q2",
+      "text": "In my head, I knew I was leaving",
+      "speaker": "Raphinha",
+      "context": "Barcelona captain Raphinha revealing he had mentally decided to leave before Hansi Flick convinced him to stay",
+      "real": true,
+      "source": {
+        "title": "Sports — Raphinha credits Hansi Flick for restoring his confidence after considering Barc",
+        "url": "https://sports.yahoo.com/articles/raphinha-credits-hansi-flick-restoring-113100872.html",
+        "date": "2026-10-16"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Ryan Day would be unsuccessful at any program other than Ohio State",
+      "speaker": "Dave Portnoy",
+      "context": "Barstool Sports founder Dave Portnoy commenting on Ohio State head coach Ryan Day ahead of a top-five matchup",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘Ryan Day would be unsuccessful at any program other than Ohio State’: Dave Port",
+        "url": "https://sports.yahoo.com/articles/ryan-day-unsuccessful-program-other-114550157.html",
+        "date": "2026-10-16"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People say the marathon is a thinking person's race. I find it's the opposite — the further I get into it, the fewer thoughts I'm actually having. By mile twenty-two it's really just one thought on a loop, and it's not a very interesting thought.",
+      "speaker": "Shalane Flanagan",
+      "context": "Runner's World Podcast with Jeff Dengate, episode published in October 2017 after her New York City Marathon victory",
+      "real": false,
+      "fake_note": "I made this one up — Flanagan's interviews show exactly this blend of intelligence, humor and honesty about the unglamorous interior of racing. The tell is that she'd typically name the thought rather than decline to share it; Flanagan is candid to a fault and the coy 'not a very interesting thought' is slightly more guarded than her actual style."
+    },
+    {
+      "id": "q5",
+      "text": "I never liked the word upset. Like, you upset someone, as if the better team losing was some kind of accident. We knew we were going to win that game. The people writing the previews didn't know, but we knew, and there's a real difference between those two things.",
+      "speaker": "Jim Valvano",
+      "context": "Postgame press conference at the Omni Coliseum, Atlanta, March 1983, following North Carolina State's ACC Tournament run",
+      "real": false,
+      "fake_note": "I made this one up — Valvano's quickfire, combative wit and his habit of reframing sports language fits this perfectly, and the 1983 Wolfpack run was exactly the context where he'd say something like this. The tell is purely archival: we have extensive Valvano footage from that era but nothing quite matching this specific exchange."
+    },
+    {
+      "id": "q6",
+      "text": "When I got to Alabama, Coach Bryant was still this legend who'd walk the practice field and not say a single word for twenty minutes. You'd be running routes, you'd look up and he's just watching. And somehow that silence was louder than anything a coach ever screamed at me in my life.",
+      "speaker": "Ozzie Newsome",
+      "context": "NFL Network's A Football Life, Season 6, during the episode profiling Newsome's career, originally aired November 2016",
+      "real": false,
+      "fake_note": "I made this one up — Newsome played under Bryant at Alabama before his Hall of Fame career and has spoken reverently about that period; this fits his measured, respectful public voice perfectly. The tell is that no specific Bryant anecdote quite like this is on record, and Newsome usually discusses X's and O's rather than coaching mystique."
+    }
+  ]
+}
