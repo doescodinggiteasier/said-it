@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-17",
+  "edition": 104,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The reason we first started strumming guitars was because we wanted women and lots of them. And their daughters.",
+      "speaker": "Gene Simmons",
+      "context": "KISS bassist Gene Simmons, on The Oprah Winfrey Show in 1988, dismissing the idea that rock stars pick up guitars for lofty reasons — it was about groupies.",
+      "real": true,
+      "source": {
+        "title": "Gene Simmons Called KISS Groupie Hookups 'More Honest' Than Real Relationships (Best Life)",
+        "url": "https://bestlifeonline.com/gene-simmons-kiss-groupies/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Over the past forty years I've been loaded on booze, coke, acid, Quaaludes, glue, cough mixture, heroin, Rohypnol, Klonopin, Vicodin, and too many other heavy-duty substances to list in this footnote. On more than a few occasions I was on all of these at the same time.",
+      "speaker": "Ozzy Osbourne",
+      "context": "From a footnote in his 2010 autobiography 'I Am Ozzy' (with Chris Ayres), cataloguing four decades of his own substance abuse.",
+      "real": true,
+      "source": {
+        "title": "Memoir 'I Am Ozzy' (LA Weekly excerpt)",
+        "url": "https://www.laweekly.com/i-am-ozzy-soon-to-be-classic-quotes-from-ozzy-osbournes-upcoming-autobiography/",
+        "date": "2010"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The rider said no brown M&Ms and a case of Rémy. They gave me brown M&Ms and a warm Heineken. I'm not a difficult man. I am, however, a man who will absolutely lose his entire shit over a warm Heineken.",
+      "speaker": "James Brown",
+      "context": "Interview with Robert Hilburn, Los Angeles Times, April 1985, conducted backstage at the Civic Auditorium, San Francisco",
+      "real": false,
+      "fake_note": "I made this one up — Brown's legendary backstage demands and his imperious personality make this completely plausible, and the cadence mimics how he built to a punchline in interviews. The giveaway is 'lose his entire shit' — Brown's public language was brash but he tended toward formal self-aggrandisement rather than modern slang like that."
+    },
+    {
+      "id": "q4",
+      "text": "People say marriage is hard work. Yeah, it is. It's like a second job except the HR department is your wife and you can absolutely never, ever quit. You can't even call in sick. Believe me, I tried. She showed up at the hospital.",
+      "speaker": "Rodney Dangerfield",
+      "context": "Monologue recorded for a Comedy Central special taping at Dangerfield's club, New York City, 1994 — aired as a bonus segment",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield's entire persona was built on wife jokes and self-pity so the subject matter is pitch-perfect, and the club setting is entirely real. The giveaway is the HR metaphor, which reads slightly too contemporary and corporate for Dangerfield's blunter, more blue-collar 1990s vocabulary."
+    },
+    {
+      "id": "q5",
+      "text": "And cigarettes gave me the patience to sit and write those thoughts down in a comedy-friendly format that you could understand. And alcohol gives me the courage to stand up here in front of you judgmental pricks and do it with a quarter million dollars worth of cameras in your face.",
+      "speaker": "Doug Stanhope",
+      "context": "From Doug Stanhope's 2007 stand-up special \"No Refunds\" — his defiant, self-celebrating defense of lifelong drug, cigarette, and alcohol use as the engine of his comedy.",
+      "real": true,
+      "source": {
+        "title": "Doug Stanhope: No Refunds (2007) — Full Transcript",
+        "url": "https://scrapsfromtheloft.com/comedy/doug-stanhope-no-refunds-transcript/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Someone asked me backstage, 'Bill, how do you prepare for a show?' I said, I had two bourbons and argued with a vending machine for twenty minutes. The vending machine won. I was not prepared.",
+      "speaker": "Bill Hicks",
+      "context": "Recorded Q&A session following his set at the Laff Stop, Houston, October 1993 — circulated on a bootleg cassette tape",
+      "real": false,
+      "fake_note": "I made this one up — Hicks's self-deprecating booze-and-failure riff fits his exact cadence and he did perform at the Laff Stop repeatedly in that period, so the setting is plausible. The giveaway is the vending machine bit; Hicks's real tangents went political fast and wouldn't stay on something this domestic that long."
+    }
+  ]
+}

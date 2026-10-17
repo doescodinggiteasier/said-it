@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-17",
+  "edition": 121,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The first rule of Fight Club is: you do not talk about Fight Club.",
+      "speaker": "Fight Club (1999)",
+      "context": "Tyler Durden (Brad Pitt) laying down the rules to the members of Fight Club.",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "She wasn't lost. She knew exactly where she was — that was the whole problem.",
+      "speaker": "Chinatown (1974)",
+      "context": "Gittes reflecting aloud, likely to Escobar or Walsh, late in the investigation",
+      "real": false,
+      "fake_note": "I made this one up — Gittes's weary, sardonic voice is easy to slide into, and the line fits the film's noir fatalism without spelling out the plot. The tell is that it leans just a shade too aphoristic; real Gittes lines are blunter and more self-interested."
+    },
+    {
+      "id": "q3",
+      "text": "Some places are like people. Some shine and some don't.",
+      "speaker": "The Shining (1980)",
+      "context": "Head chef Dick Hallorann (Scatman Crothers) explaining 'the shining' to young Danny Torrance (Danny Lloyd) at the Overlook Hotel.",
+      "real": true,
+      "source": {
+        "title": "The Shining (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Shining_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "You think this is the worst thing I've ever seen? This doesn't even make the list.",
+      "speaker": "The Silence of the Lambs (1991)",
+      "context": "Clarice deflecting a skeptical male colleague at a crime scene early in the case",
+      "real": false,
+      "fake_note": "I made this one up — Clarice's quiet defiance toward condescending colleagues is a real current in the film, and the flat delivery suits Jodie Foster's register. The tell is that Clarice typically keeps her jaw set and says less; this line gives her a little too much visible toughness."
+    },
+    {
+      "id": "q5",
+      "text": "Say 'what' again. I dare you, I double dare you.",
+      "speaker": "Pulp Fiction (1994)",
+      "context": "Jules (Samuel L. Jackson) menaces Brett, a terrified young man, during the apartment confrontation.",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "Nobody leaves a place like that without carrying some of it home with them.",
+      "speaker": "Platoon (1986)",
+      "context": "Sergeant Elias or a veteran soldier speaking to Chris Taylor about soldiers who've rotated out",
+      "real": false,
+      "fake_note": "I made this one up — the weary moral weight fits Elias's introspective voice and the film's confessional tone. The giveaway is that it skirts the aphorism line; Elias's real dialogue is more specific and earthbound, rooted in a named place or person."
+    }
+  ]
+}

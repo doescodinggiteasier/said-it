@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-17",
+  "edition": 113,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't watch film to feel bad about myself. Some guys do. They'll sit there for an hour just punishing themselves. I watch it for about twelve minutes, find the two things I need to fix, and I'm done.",
+      "speaker": "Tom Brady",
+      "context": "Let's Go! with Tom Brady, Larry Fitzgerald and Jim Gray, SiriusXM, episode aired September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Brady has a real podcast with exactly these co-hosts and he regularly discusses his preparation habits in this practical, slightly evangelical way. The giveaway is the specificity of 'twelve minutes' — Brady talks process obsessively but rarely assigns a precise time to something this casual."
+    },
+    {
+      "id": "q2",
+      "text": "My dad used to wake me up at five in the morning and I hated him for it. Genuinely hated him. And then somewhere around mile four I'd forget I was mad and just run. I think about that a lot now.",
+      "speaker": "Shalane Flanagan",
+      "context": "Runner's World podcast, The Rundown, episode aired October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Flanagan often credits her father and her grueling early training for shaping her, so the emotional honesty here is completely in character. The giveaway is the reflective 'I think about that a lot now' — she tends to be more forward-looking than retrospective in interviews."
+    },
+    {
+      "id": "q3",
+      "text": "But I also know, if I was healthy, with good hips right now, I'd be the fastest 45-year-old in the country, or in the world.",
+      "speaker": "Bo Jackson",
+      "context": "Reflecting in retirement, years after his hip injury, in ESPN's long-form 'Bo Knows Best' feature.",
+      "real": true,
+      "source": {
+        "title": "ESPN E-ticket — Bo Knows Best",
+        "url": "http://www.espn.com/espn/eticket/story?page=bojackson",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I've never actually enjoyed the day of a race. The week before, I love it. The day after, I love it. Race day itself I'm basically just trying not to throw up until it's over.",
+      "speaker": "Lindsey Vonn",
+      "context": "Red Bull Athlete Podcast, February 2018, recorded ahead of the PyeongChang Olympics",
+      "real": false,
+      "fake_note": "I made this one up — Vonn has spoken frankly about pre-race nerves and the physical toll of competition, and self-deprecating humor about her body's reactions is very much in her wheelhouse. The giveaway is the symmetrical before/after structure — her real quotes about nerves are messier and less balanced than this."
+    },
+    {
+      "id": "q5",
+      "text": "I've coached guys who were more talented than anybody I ever played with. Coaching them was like trying to teach a Lamborghini to parallel park. The car can do things you'll never understand, but it still has to fit in the spot.",
+      "speaker": "Doc Rivers",
+      "context": "Appearance on The Woj Pod with Adrian Wojnarowski, ESPN, March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Rivers loves colorful analogies and self-deprecating comparisons between his playing days and the elite talent he's coached. The Lamborghini metaphor is the kind of thing he reaches for, but it's a touch too tidy and visual to be something he actually said."
+    },
+    {
+      "id": "q6",
+      "text": "I play tennis for a living, even though I hate tennis, hate it with a dark and secret passion, and always have.",
+      "speaker": "Andre Agassi",
+      "context": "The startling opening confession of his memoir 'Open,' quoted in Sports Illustrated's coverage of the book.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — 'I Hate Tennis'",
+        "url": "https://www.si.com/more-sports/2009/10/30/andre-agassi-0",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

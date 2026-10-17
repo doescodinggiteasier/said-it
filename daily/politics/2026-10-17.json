@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-17",
+  "edition": 112,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "How can you govern a country that has two hundred and forty-six varieties of cheese?",
+      "speaker": "Charles de Gaulle",
+      "context": "The French president and WWII Free France leader, expressing wry exasperation at the ungovernability of France; recorded in Ernest Mignon's 1962 collection Les Mots du General.",
+      "real": true,
+      "source": {
+        "title": "Charles de Gaulle - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Charles_de_Gaulle",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've read every page of that bill. Well — I've read every page of the summary of that bill. Which, frankly, was also very long.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic caucus retreat dinner, C-SPAN footage, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-deprecating rambling about paperwork is totally on-brand, and the trailing hedge sounds exactly like his digressive style. The subtle giveaway is that even Biden usually claims to have read the whole thing."
+    },
+    {
+      "id": "q3",
+      "text": "Someone on my staff told me I needed to be more relatable on social media. So now I post. And my approval rating among people who follow me went down six points. I consider that progress.",
+      "speaker": "Mitch McConnell",
+      "context": "Gridiron Club dinner remarks, Washington D.C., March 2018",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's dry, almost-affectless humor at roast-style events is well documented, and poking fun at his own wooden public image is exactly the move he makes in these rooms. The tell is that he'd probably never cite a specific number like six points, even jokingly."
+    },
+    {
+      "id": "q4",
+      "text": "It's a good thing to be laughed at. It's better than to be ignored.",
+      "speaker": "Harold Macmillan",
+      "context": "The British Prime Minister, in a handwritten note to the Postmaster General who wanted to take action against the satirical TV program 'That Was The Week That Was' - a disarmingly self-deprecating shrug at being mocked.",
+      "real": true,
+      "source": {
+        "title": "Harold Macmillan - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harold_Macmillan",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've been in the Senate long enough that I can tell you: the Senate cafeteria has improved dramatically. The legislation — that's more of a mixed picture.",
+      "speaker": "Bernie Sanders",
+      "context": "Interview with Vermont Public Radio, Burlington, Vermont, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Sanders often uses mundane institutional details to pivot to broader critique, and complaining about Congress while admitting something small got better is very true to his gruff, wry delivery. The giveaway is that Sanders would almost certainly get more heated before the punchline lands."
+    },
+    {
+      "id": "q6",
+      "text": "I think Lindsey respected Darline more than any other person he knows including me, and that does not make me happy",
+      "speaker": "Donald Trump",
+      "context": "Trump rallying for Darline Graham in Myrtle Beach, SC",
+      "real": true,
+      "source": {
+        "title": "Politics — President makes final push for Darline Graham in trip to 'Trump country'",
+        "url": "https://thehill.com/homenews/administration/6044782-trump-rallies-graham-south-carolina-runoff/",
+        "date": "2026-08-22"
+      }
+    }
+  ]
+}

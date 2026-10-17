@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-17",
+  "edition": 124,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I prepared for that hearing the way I used to prepare for finals — except in law school I could at least predict what was on the exam.",
+      "speaker": "Ketanji Brown Jackson",
+      "context": "Remarks delivered during a conversation with students at Howard University School of Law, Washington D.C., October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Justice Jackson has spoken openly about the confirmation process and her academic background, and the law-school comparison would play naturally to a student audience. The tell is that she's been careful in public not to characterize the hearings with even mild criticism, which this just barely does."
+    },
+    {
+      "id": "q2",
+      "text": "I don't know if those are B's. They might be Cardi D's. I'm pretty sure those aren't B's. She's got the wrong initials.",
+      "speaker": "Charles Barkley",
+      "context": "on the TNT desk during Cardi B's NBA Finals halftime show",
+      "real": true,
+      "source": {
+        "title": "Larry Brown Sports — Charles Barkley's Cardi B quote",
+        "url": "https://larrybrownsports.com/basketball/charles-barkley-wildest-quote-cardi-b-nba-finals/757513",
+        "date": "2026-06-09"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "There was a period — I want to say 2003, 2004 — where I was getting scripts that were essentially the same character with a different city in the title. I said yes to too many of them and I knew it while I was saying yes.",
+      "speaker": "Halle Berry",
+      "context": "Longform career retrospective interview with The Hollywood Reporter, published November 2020",
+      "real": false,
+      "fake_note": "I made this one up — Halle has been candid in later interviews about career choices she'd reconsider, and the post-Oscar period she's describing was genuinely a strange stretch of films for her. The specific year window is the kind of detail that makes it feel real but is just vague enough that nobody can pin it down."
+    },
+    {
+      "id": "q4",
+      "text": "I will do it myself where does he live?",
+      "speaker": "Cory Booker",
+      "context": "Cory Booker, then the Democratic Mayor of Newark, NJ, replied on Twitter when a resident said her elderly father needed his driveway shoveled during a major snowstorm. He showed up with volunteers within minutes.",
+      "real": true,
+      "source": {
+        "title": "Cory Booker Shovels Snow After Twitter Request (VIDEO) | HuffPost",
+        "url": "https://www.huffpost.com/entry/cory-booker-shovels-snow_n_410445",
+        "date": "2010-12-27"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I am extraordinarily patient, provided I get my own way in the end.",
+      "speaker": "Margaret Thatcher",
+      "context": "Self-aware, tongue-in-cheek remark by the British Prime Minister in an interview published in The Observer, 4 April 1989 (as catalogued by the Margaret Thatcher Centre's quotes page). Speaker was a UK Conservative Prime Minister.",
+      "real": true,
+      "source": {
+        "title": "Quotes - The Margaret Thatcher Centre",
+        "url": "https://www.thatchercentre.com/quotes/",
+        "date": "1989-04-04"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've thought about this a lot and I still don't know why certain songs hit differently at 2 a.m. Something about the way the ear processes things when it's tired, or maybe you've just run out of defenses. Either way, I try to write for that version of a person.",
+      "speaker": "Taylor Swift",
+      "context": "Rolling Stone cover story interview conducted ahead of the Midnights release, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Taylor has consistently described her songwriting as emotionally targeted and confessional, and an album literally called Midnights makes the 2 a.m. framing feel almost too natural. The tell is 'run out of defenses' — it's a more detached, analytical phrase than her usual deeply personal language."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-17",
+  "edition": 116,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The thing about playing piano when you're six is nobody tells you you're doing it wrong. By the time somebody tells you, you've already built this whole cathedral of wrong habits, and you love the cathedral.",
+      "speaker": "Norah Jones",
+      "context": "Feature interview with NPR Music for the release of 'Pick Me Up Off the Floor,' June 2020",
+      "real": false,
+      "fake_note": "I made this one up — Jones has spoken at length about her early, largely self-directed piano education and the tension between formal training and instinct. The 'cathedral' metaphor is the subtle plant: it's evocative enough to feel authentic but just a touch more literary than her usual conversational register."
+    },
+    {
+      "id": "q2",
+      "text": "I had this whole character worked out for the Lemonade visuals — like, a whole backstory, almost a mythology — and then Beyoncé just quietly removed half of it and what was left was so much more frightening. I learned something that week.",
+      "speaker": "Warsan Shire",
+      "context": "Reading and Q&A at the Southbank Centre, London, during the 'Women of the World Festival,' March 2017",
+      "real": false,
+      "fake_note": "I made this one up — Shire's collaboration on Lemonade is documented, and she speaks about Beyoncé with this exact combination of admiration and slight awe. The giveaway is 'frightening,' which is a very specific tonal word she doesn't use publicly about that project — though it sounds completely like her written voice."
+    },
+    {
+      "id": "q3",
+      "text": "There's nothing better than jamming with friends",
+      "speaker": "Taylor Momsen",
+      "context": "On Dave Grohl and Pat Smear joining the Pretty Reckless for 'About You'",
+      "real": true,
+      "source": {
+        "title": "Music — Dave Grohl and Pat Smear Bring Some Foo Fighters Style to the Pretty Reckless’ ‘",
+        "url": "https://www.rollingstone.com/music/music-news/pretty-reckless-dave-grohl-pat-smear-about-you-1235643925/",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People act like falsetto is this fragile thing, like it'll shatter if you push it. I spent two years just destroying mine on purpose, every night, to figure out where the floor actually was.",
+      "speaker": "Jeff Buckley",
+      "context": "Recorded interview with KCRW's Morning Becomes Eclectic, broadcast April 1994",
+      "real": false,
+      "fake_note": "I made this one up — Buckley's obsessive approach to his vocal instrument is extremely well-documented, and the phrasing — 'where the floor actually was' — matches his tendency to frame technique in spatial, physical terms. The giveaway is that 1994 KCRW interviews with him are real but scarcely transcribed, making verification just hard enough."
+    },
+    {
+      "id": "q5",
+      "text": "In my life I loved them all",
+      "speaker": "Morrissey",
+      "context": "Morrissey ranking his solo albums and singles",
+      "real": true,
+      "source": {
+        "title": "Music — Morrissey ranks his solo albums and singles",
+        "url": "https://www.nme.com/news/music/morrissey-ranks-his-solo-albums-and-singles-3973359?utm_source=rss&utm_medium=rss&utm_campaign=morrissey-ranks-his-solo-albums-and-singles",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "In nightclubs, I'd be the dude scribbling lyrics in the corner while everyone else was dancing or copping off",
+      "speaker": "Liam Fray (Courteeners)",
+      "context": "Discussing the origins of 'Not Nineteen Forever'",
+      "real": true,
+      "source": {
+        "title": "Music — ‘When it went double platinum, Andy Burnham gave us the award’: how Courteeners ",
+        "url": "https://www.theguardian.com/culture/2026/oct/12/how-courteeners-made-not-nineteen-forever-andy-burnham",
+        "date": "2026-10-17"
+      }
+    }
+  ]
+}
