@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-18",
+  "edition": 113,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me how I stay calm during a filibuster. Honestly? After hour eleven, your brain just goes somewhere else entirely. I found myself mentally reorganizing my garage. In detail. I got to the rakes.",
+      "speaker": "Bernie Sanders",
+      "context": "Remarks at a town hall in Burlington, Vermont, recorded by Seven Days newspaper, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Bernie's exhausted, everyman frustration translates perfectly to a rambling anecdote about mental escape during Senate tedium. The tell is the punchline landing a little too cleanly on 'the rakes' — real Bernie tends to veer back to healthcare before he'd let a joke that tidy just sit there."
+    },
+    {
+      "id": "q2",
+      "text": "Someone on my staff put together a briefing book on agricultural subsidies that was, I am not exaggerating, four hundred pages. I said, 'Can you give me a summary?' They gave me a ninety-page summary. I said, 'Can you— ' and they just left the room.",
+      "speaker": "Amy Klobuchar",
+      "context": "Keynote address at the University of Minnesota Humphrey School of Public Affairs alumni dinner, Minneapolis, April 2022",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar's humor almost always involves self-aware chaos in her own office and the bewildering volume of policy material senators absorb, which she's referenced repeatedly. The escalating-summary structure is the subtle tell; it's almost too perfectly comedic a construction for a live off-the-cuff remark."
+    },
+    {
+      "id": "q3",
+      "text": "I will tell you, the first time I had to sit through a full markup session on the tax code, I genuinely thought — I have made a terrible career choice. And I went home and told my wife, and she said, 'Yeah, I could've told you that in 1987.'",
+      "speaker": "Mitch McConnell",
+      "context": "Interview with Hugh Hewitt on The Hugh Hewitt Show, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's dry, self-deprecating humor about the grinding mechanics of Senate work is well-documented, and the callback to his wife makes it feel grounded. The subtle tell: he rarely volunteers a specific year in that kind of offhand remark, which gives it just a hint of constructed tidiness."
+    },
+    {
+      "id": "q4",
+      "text": "It was shocking. I certainly didn't expect that amount of time",
+      "speaker": "Stephen A. Smith",
+      "context": "Describing a White House dinner with Trump, Bill Maher, and Kid Rock",
+      "real": true,
+      "source": {
+        "title": "Politics — Stephen A. Smith calls dinner with Trump, Bill Maher, Kid Rock 'shocking'",
+        "url": "https://thehill.com/blogs/in-the-know/6156054-stephen-a-smith-kid-rock-maher-trump/",
+        "date": "2026-10-18"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My mother used to say, 'Newt, everything doesn't have to be a civilization-altering crisis.' And I would say, 'Mom, you haven't read the entitlement projections.' We disagreed on that point for thirty years.",
+      "speaker": "Newt Gingrich",
+      "context": "Interview on Fox News Sunday with Chris Wallace, November 2011",
+      "real": false,
+      "fake_note": "I made this one up — Gingrich's habit of framing everything in grand historical stakes, then deflating it with something personal, fits his documented rhetorical style precisely. The tell is the warm self-awareness toward his own bombast; Gingrich can be self-deprecating in retrospect but rarely quite this openly in the moment."
+    },
+    {
+      "id": "q6",
+      "text": "You know, grass has a life like humans have a life",
+      "speaker": "Trump",
+      "context": "Trump showing off White House renovations, discussing new grass around the helipad",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump talks about grass as he shows off White House renovations – video",
+        "url": "https://www.theguardian.com/us-news/video/2026/aug/19/trump-talks-grass-white-house",
+        "date": "2026-08-23"
+      }
+    }
+  ]
+}

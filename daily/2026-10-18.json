@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-18",
+  "edition": 125,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I drafted the contract terms for my first app on a legal pad in my apartment and then had a lawyer look at it who basically said, 'This is sweet, but it's not a contract.' So that was a useful meeting.",
+      "speaker": "Jack Dorsey",
+      "context": "Fireside chat at Y Combinator's Startup School, San Francisco, October 2013",
+      "real": false,
+      "fake_note": "I made this one up — Dorsey has spoken about scrappy early-stage improvisation in building companies and has a dry, understated delivery that matches this tone exactly. The subtle tell: Dorsey's documented early stories tend to involve code and design problems, not legal paperwork; the legal pad detail nudges it slightly out of his usual autobiographical lane."
+    },
+    {
+      "id": "q2",
+      "text": "The weird thing about winning an Oscar is that for about 48 hours you feel like the universe has been set right, and then on the third day you're annoyed about something completely trivial, like parking, and you realize the parking situation did not change at all.",
+      "speaker": "Cate Blanchett",
+      "context": "The Graham Norton Show, BBC One, broadcast February 2014",
+      "real": false,
+      "fake_note": "I made this one up — Blanchett has this very particular dry humor about the gap between artistic recognition and ordinary life, and she has used parking as an example of mundane irritation in real interviews. The slight tell: she tends to land these observations with a more literary word than 'trivial'; she'd more likely say 'pedestrian' or 'banal.'"
+    },
+    {
+      "id": "q3",
+      "text": "Zero-G was probably my personal biggest concern going into the movie",
+      "speaker": "Paul Lambert",
+      "context": "VFX supervisor speaking at View Conference in Turin, Italy about 'Project Hail Mary'",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Ryan Gosling’s Zero-G Stunts on ‘Project Hail Mary’ Broken Down by the Space Epi",
+        "url": "https://variety.com/2026/film/global/ryan-gosling-zero-g-stunts-in-project-hail-mary-explained-1236915066/",
+        "date": "2026-10-18"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I think we ought to continue the blockade and starve them out. I think we ought to bomb Pickaxe Mountain and try to reach what's underneath it",
+      "speaker": "John Kennedy",
+      "context": "Sen. John Kennedy (R-La.) on Sunday discussing Iran strikes",
+      "real": true,
+      "source": {
+        "title": "Politics — Live updates: Sen. John Kennedy says US should not 'cut and run' from Iran; Cycl",
+        "url": "https://thehill.com/homenews/5990529-live-updates-midterms-jackson-collins-cyclospora-trump/",
+        "date": "2026-07-27"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My grandmother used to say that a song isn't finished when you can't add anything to it — it's finished when you finally get tired enough to stop. I used to think she was being cynical. Now I think she was just being accurate.",
+      "speaker": "Dolly Parton",
+      "context": "Acceptance remarks at the Songwriters Hall of Fame induction ceremony, New York, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Parton references her grandmother frequently in interviews and has a well-documented philosophy about the imperfection of finished creative work. I was tempted by this one myself; the giveaway is that it edges toward the tidy aphorism territory she usually sidesteps with more specific personal color."
+    },
+    {
+      "id": "q6",
+      "text": "There's a version of Thriller that exists with a completely different guitar tone on the title track, and for years I couldn't hear the released version without thinking about that other one. Eventually you just have to accept that the record is the record and stop haunting yourself with what it almost was.",
+      "speaker": "Quincy Jones",
+      "context": "Oral history interview conducted by the Grammy Museum, published in Grammy Museum Quarterly, Spring 2016",
+      "real": false,
+      "fake_note": "I made this one up — Quincy Jones spoke extensively about the production decisions behind Thriller in his later interviews, and this kind of 'ghost version' regret is consistent with his documented producer's mind. The giveaway: Jones's real statements about Thriller were uniformly proud; he almost never expressed residual second-guessing about its sonic choices specifically."
+    }
+  ]
+}

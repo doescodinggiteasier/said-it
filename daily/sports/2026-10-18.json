@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-18",
+  "edition": 114,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Pressure is a privilege and champions adjust.",
+      "speaker": "Billie Jean King",
+      "context": "The line she says spontaneously came out of her mouth while motivating Lindsay Davenport as U.S. Fed Cup captain, recounted at Tennis.com.",
+      "real": true,
+      "source": {
+        "title": "Tennis.com — Billie Jean King shares origins of 'Pressure is a privilege'",
+        "url": "https://www.tennis.com/baseline/articles/billie-jean-king-shares-origins-of-favorite-famous-quote-pressure-is-a-privilege",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Because I'm the undertaker. I've come to bury these people!",
+      "speaker": "Bill Russell",
+      "context": "Explaining to teammate Sam Jones why he wore a black suit to every Game 7, in his Academy of Achievement interview.",
+      "real": true,
+      "source": {
+        "title": "Academy of Achievement — Bill Russell Interview",
+        "url": "https://achievement.org/achiever/bill-russell/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've run the Boston Marathon four times and I'll tell you, somewhere around Heartbreak Hill your brain starts negotiating with you. It starts offering you things. It says, no one will know, it's fine, just walk for thirty seconds. And you have to be ruder to yourself than you've ever been to anyone else.",
+      "speaker": "Meb Keflezighi",
+      "context": "Keynote address at the Running USA Industry Conference, Austin, Texas, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Meb has spoken extensively and specifically about Heartbreak Hill and the mental warfare of marathon running, so this rings completely true. The giveaway is 'ruder to yourself than you've ever been to anyone else' — Meb is known for his warmth and spiritual framing, and 'rude' is an oddly secular word for how he usually describes mental toughness."
+    },
+    {
+      "id": "q4",
+      "text": "He had that one coming for telling everybody I didn't know where Brazil was on the map.",
+      "speaker": "Travis Kelce",
+      "context": "The Chiefs tight end at a São Paulo press conference in September 2025, after doing an impression of teammate Patrick Mahomes as payback.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Travis Kelce gets playful payback on Patrick Mahomes with spot-on impersonation",
+        "url": "https://www.foxnews.com/sports/travis-kelce-gets-playful-payback-patrick-mahomes-spot-on-impersonation-brazil-press-conference",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My hamstring was basically held together by stubbornness for about six weeks there. The physios knew, I knew, we just kind of had a silent agreement not to say it out loud until after the final.",
+      "speaker": "Rafael Nadal",
+      "context": "Press conference following his retirement announcement, Manacor, Spain, October 2024",
+      "real": false,
+      "fake_note": "I made this one up — Nadal has been remarkably candid throughout his career about playing through injuries, and this mix of dark humor and warrior mentality is very him. The giveaway is 'silent agreement' — Nadal's English, while excellent, tends toward more literal phrasing; that idiom is a bit too fluent."
+    },
+    {
+      "id": "q6",
+      "text": "LeBron texted me after that game and I didn't even open it for two days. That's not disrespect — I just knew whatever he said was going to make it worse somehow. Probably something thoughtful. I wasn't ready for thoughtful.",
+      "speaker": "Draymond Green",
+      "context": "Appearance on Club Shay Shay with Shannon Sharpe, Club Shay Shay YouTube channel, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Draymond's relationship with LeBron is well-documented and his unfiltered stream-of-consciousness delivery is captured perfectly here. The giveaway is 'Probably something thoughtful' — it's a bit too self-aware and literary for Draymond, who usually just barrels through without that kind of winking pause."
+    }
+  ]
+}

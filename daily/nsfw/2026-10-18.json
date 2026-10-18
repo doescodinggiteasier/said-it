@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-18",
+  "edition": 105,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I left the Rocking Vicars, thinking I was going to be a star in my own right immediately. Everything was going to be wonderful and huge women would get a hold of me and do things to me with raw carrots — you know, shit like that.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Recalling his youthful rock-star fantasies after leaving an early band (the Rockin' Vickers), in his memoir White Line Fever: The Autobiography (2002).",
+      "real": true,
+      "source": {
+        "title": "Goodreads — quotes from White Line Fever: The Autobiography",
+        "url": "https://www.goodreads.com/work/quotes/310228-white-line-fever-the-autobiography",
+        "date": "2002"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I went to one of those fancy detox spas once. Five grand a week. They took away my cigarettes, my bourbon, my red meat — I said to the nurse, 'Sweetheart, what exactly is left that you're planning to save?'",
+      "speaker": "Dean Martin",
+      "context": "The Tonight Show Starring Johnny Carson, NBC, taped appearance, November 1972",
+      "real": false,
+      "fake_note": "I made this one up — Martin's whole brand was the loveable lush who didn't take health culture seriously, so the spa punchline lands perfectly in his voice. The subtle tell is the word 'detox spa,' which wasn't really part of the cultural vocabulary Martin would have used naturally in that era."
+    },
+    {
+      "id": "q3",
+      "text": "I once asked a Jesuit priest what was the best short prayer he knew. He said, \"Fuck it,\" as in \"Fuck it; it's in God's hands.\"",
+      "speaker": "Anthony Hopkins",
+      "context": "Anthony Hopkins recounting a Jesuit priest's answer when he asked for the best short prayer — an anecdote he has told publicly, including on Inside the Actors Studio.",
+      "real": true,
+      "source": {
+        "title": "Inside the Actors Studio (IMDb quotes)",
+        "url": "https://www.imdb.com/name/nm0000164/quotes/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People ask me, 'Keith, how do you keep the romance alive on the road?' I said, send her flowers, call her every night, and for Christ's sake do NOT let her find the other phone. Works every time, darling.",
+      "speaker": "Keith Moon",
+      "context": "Melody Maker magazine, backstage interview at the Rainbow Theatre, London, January 1977",
+      "real": false,
+      "fake_note": "I made this one up — Moon's reputation for chaotic personal life and his camp 'darling' affectations make the voice completely believable. The giveaway is the punchline structure; Moon's real humour was more physical and absurdist, rarely this tidy even when rambling."
+    },
+    {
+      "id": "q5",
+      "text": "My agent called me up and said, 'The studio wants you, but they're worried about your image.' I said, 'Gerald, I am the image. The rest of these people are just well-dressed furniture.'",
+      "speaker": "Bette Davis",
+      "context": "Interview with Rex Reed, published in Playgirl magazine, October 1973",
+      "real": false,
+      "fake_note": "I made this one up — Davis was famously savage about Hollywood phonies and had a gift for withering put-downs delivered as absolute fact. The slight tell is calling her agent by a first name; her documented barbs were usually aimed at colleagues or studios more broadly, not at her own management."
+    },
+    {
+      "id": "q6",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore. I just want to cut to the chase.",
+      "speaker": "Bob Saget",
+      "context": "In a Rolling Stone interview (republished from the vault), the 'America's Dad' comedian on his post-Full House, R-rated stand-up mindset.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}
