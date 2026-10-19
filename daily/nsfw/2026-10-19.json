@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-19",
+  "edition": 106,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I sort of fucking woke up one day and was like, 'You're an asshole. You're not an artist,'",
+      "speaker": "Lady Gaga",
+      "context": "Lady Gaga recounting the self-lacerating moment she decided to quit cocaine, in a Lifetime interview ('The Conversation with Amanda de Cadenet') reported by Rolling Stone; she went on to call cocaine 'the white devil.'",
+      "real": true,
+      "source": {
+        "title": "Lady Gaga Reflects on Past Cocaine Use (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/lady-gaga-reflects-on-past-cocaine-use-188696/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I blew $20 million. I snorted my Porsche. I snorted my plane. I snorted my house in that din of drugs and booze and being lost.",
+      "speaker": "Steven Tyler",
+      "context": "Tallying up what his cocaine habit cost him, in his 2011 rock memoir \"Does the Noise in My Head Bother You?\"",
+      "real": true,
+      "source": {
+        "title": "Memoir 'Does the Noise in My Head Bother You?' (NME report)",
+        "url": "https://www.nme.com/news/music/aerosmith-49-1294445",
+        "date": "2011"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I don't do encores. You want more, you should've been more interesting during the show. I'm not a vending machine — you don't get to shake me until something falls out.",
+      "speaker": "James Brown",
+      "context": "Press conference at the Apollo Theater, Harlem, ahead of his homecoming concert series, June 1979",
+      "real": false,
+      "fake_note": "I made this one up — Brown's ego and his contempt for pandering to crowd demands is well-documented, and the blunt arrogance here is plausible. The giveaway is the 'vending machine' metaphor; Brown's actual rhetoric leaned far more into Southern preacher cadence and self-mythology rather than this kind of dry mechanical analogy."
+    },
+    {
+      "id": "q4",
+      "text": "Some broad reviewed my act and said I was 'aggressively masculine.' I had to look that up. Turns out it means funny. You're welcome, sweetheart.",
+      "speaker": "Don Rickles",
+      "context": "Interview with Tom Snyder on Tomorrow Coast to Coast, NBC, taped March 1980",
+      "real": false,
+      "fake_note": "I made this one up — Rickles weaponising a critic's language and turning it back as a compliment to himself is completely in character, and the 'sweetheart' address is vintage him. The giveaway is that Rickles usually made his put-downs more personal and targeted at someone specific in the room; this one fires at an unnamed reviewer, which is slightly less precise than his real style."
+    },
+    {
+      "id": "q5",
+      "text": "Someone asked me at the Grammys if I had any advice for young artists. Yeah: get a good lawyer before you get a good producer. The music business will absolutely screw you with a smile and then charge you for the smile.",
+      "speaker": "Whitney Houston",
+      "context": "Candid remarks to a journalist from Rolling Stone magazine, captured in the lobby of the Beverly Hilton Hotel following the 1994 Grammy Awards ceremony",
+      "real": false,
+      "fake_note": "I made this one up — Houston's frustrations with the business side of her career are well-documented, and the Beverly Hilton lobby in Grammy season is historically accurate (she was a fixture there). The giveaway is the phrase 'charge you for the smile' — her real candid moments were more emotionally direct and less constructed around that kind of transactional metaphor."
+    },
+    {
+      "id": "q6",
+      "text": "Do I think about my dick? Oh, yeah, all the time. If I think about it all the time, I got a right to sing about it. If I wasn't thinking about it all the time but thought, \"It's time to write a rock song, I'd better mention my dick,\" then I wouldn't even be able to say \"dick\" right.",
+      "speaker": "Iggy Pop",
+      "context": "Defending the sexual content of his lyrics (the song \"Trollin'\" from The Weirdness) in his 2007 Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "Iggy Pop: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/iggy-pop-the-rolling-stone-interview-2-78680/",
+        "date": "2007"
+      }
+    }
+  ]
+}

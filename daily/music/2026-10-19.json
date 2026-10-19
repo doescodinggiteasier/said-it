@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-19",
+  "edition": 118,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You have influenced more popular drummers in the last thirty years than any drummer I can think of",
+      "speaker": "Billy Corgan",
+      "context": "Smashing Pumpkins' Billy Corgan praising Blink-182's Travis Barker",
+      "real": true,
+      "source": {
+        "title": "Music — Smashing Pumpkins’ Billy Corgan calls Blink-182’s Travis Barker the “most influe",
+        "url": "https://www.nme.com/news/music/smashing-pumpkins-billy-corgan-blink-182-travis-barker-most-influential-drummer-3973446?utm_source=rss&utm_medium=rss&utm_campaign=smashing-pumpkins-billy-corgan-blink-182-travis-barker-most-influential-drummer",
+        "date": "2026-10-19"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "When I started producing I didn't own a couch. I had a chair and a keyboard and a set of headphones that I'd taped back together, and somehow that scarcity made everything sound enormous to me. I still sometimes wonder if the furniture was the problem later on.",
+      "speaker": "Timbaland",
+      "context": "Profile interview with Michaelangelo Matos for Rolling Stone, published online March 2020",
+      "real": false,
+      "fake_note": "I made this one up — Timbaland has spoken in multiple interviews about his hungry early years in Virginia Beach and how limitation drove his creativity, so the setup is completely grounded. The wry last line about furniture is in his dry, self-amused register, and the subtle tell is that 'I still sometimes wonder' is slightly more reflective and uncertain than Timbaland usually allows in interviews, where he tends to be more declarative about his process."
+    },
+    {
+      "id": "q3",
+      "text": "Jazz musicians have this thing where they'll compliment you by not complimenting you. Like, someone will just nod very slowly after you play, and you learn that's the highest praise you're going to get. First time it happened to me I went home thinking I'd bombed.",
+      "speaker": "Herbie Hancock",
+      "context": "Acceptance remarks and backstage interview at the NEA Jazz Masters ceremony, Kennedy Center, Washington D.C., 2022",
+      "real": false,
+      "fake_note": "I made this one up — Herbie has spoken extensively about his early days learning jazz's unspoken codes, and this kind of wry, affectionate observation about musician culture is very much in his register. The tell is that it's almost too neatly structured as a two-beat anecdote — Herbie's real stories tend to meander a little more before landing."
+    },
+    {
+      "id": "q4",
+      "text": "I can take a lot, but one thing I will not stand is any question about where my heart is when I'm on the stage",
+      "speaker": "Miley Cyrus",
+      "context": "Miley Cyrus responding to criticism of her Hollywood Bowl show performance",
+      "real": true,
+      "source": {
+        "title": "Music — Miley Cyrus Responds to Criticism of Hollywood Bowl Show: ‘I Am Fully Present’",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-hollywood-bowl-show-criticism-response-1235644514/",
+        "date": "2026-10-19"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There are guitar players who play the neck and guitar players who play the guitar. It took me an embarrassingly long time to figure out which one I was, and even longer to stop being jealous of the other kind.",
+      "speaker": "John Mayer",
+      "context": "Instagram Live session hosted from his home studio, transcribed and published by Guitar World, January 2021",
+      "real": false,
+      "fake_note": "I made this one up — John obsessively categorizes guitar philosophies in his interviews and social posts, and the self-deprecating admission of jealousy is in his wheelhouse of performative vulnerability. The tell is the distinction itself: 'playing the neck' versus 'playing the guitar' is a conceptual neatness that John would typically spend another four sentences unpacking before letting sit."
+    },
+    {
+      "id": "q6",
+      "text": "I've never once sat down to write a song about being strong. That word comes up in every review and I genuinely don't know what they're responding to, because inside the song I was falling apart. I think people hear the production and assume the emotion underneath it matches.",
+      "speaker": "Beyoncé",
+      "context": "Extended printed interview with Clover Hope for The New York Times Style Magazine, June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Beyoncé has spoken in her rare interviews about the gap between public perception and her interior state, and the slight frustration with critical vocabulary is very consistent with her documented voice. The subtle tell is the phrase 'inside the song' — she more often says 'in the music' or 'in that moment,' making this just one small step off her actual diction."
+    }
+  ]
+}

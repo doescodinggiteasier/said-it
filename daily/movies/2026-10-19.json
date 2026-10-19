@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-19",
+  "edition": 123,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's something about this that's so black, it's like how much more black could this be? And the answer is none. None more black.",
+      "speaker": "This Is Spinal Tap (1984)",
+      "context": "Nigel Tufnel (Christopher Guest) shows off a new album cover; his deadpan musing on its blackness.",
+      "real": true,
+      "source": {
+        "title": "This Is Spinal Tap - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/This_Is_Spinal_Tap",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I'll be back.",
+      "speaker": "The Terminator (1984)",
+      "context": "The Terminator (Arnold Schwarzenegger) tells the police desk sergeant he'll be back, then drives a car through the front of the station.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "May the Force be with you.",
+      "speaker": "Star Wars (1977)",
+      "context": "Said during the Rebel briefing before the assault on the Death Star (and by Han to Luke).",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "Don't shake my hand like you're wringing out a dishcloth.",
+      "speaker": "The Godfather (1972)",
+      "context": "Vito Corleone correcting a nervous young associate during a meeting",
+      "real": false,
+      "fake_note": "I made this one up — Brando's Vito speaks in exactly this quiet, instructional register, making small manners carry enormous weight. The tell is that the metaphor is slightly too domestic for the formality of those scenes."
+    },
+    {
+      "id": "q5",
+      "text": "Son, I've told more lies in church than I ever told in a courtroom.",
+      "speaker": "My Cousin Vinny (1992)",
+      "context": "Vinny Gambini, reassuring his cousin before a witness examination",
+      "real": false,
+      "fake_note": "I made this one up — Vinny's Brooklyn brashness and self-deprecating bravado come through perfectly in this rhythm. The giveaway is the church reference, which is funnier than the film usually bothers to be in setup dialogue."
+    },
+    {
+      "id": "q6",
+      "text": "You want me to apologize for the rain, too, while I'm at it?",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes, bristling at a client's complaint in his office",
+      "real": false,
+      "fake_note": "I made this one up — Gittes is exactly this kind of sharp, defensive wiseacre, and the line fits his beaten-down cynicism perfectly. The subtle giveaway is that it's slightly too self-aware for how Polanski keeps Gittes off-balance rather than quipping cleanly."
+    }
+  ]
+}

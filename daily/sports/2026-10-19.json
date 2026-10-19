@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-19",
+  "edition": 115,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My dad used to say the problem with playing tennis is that the better you get, the quieter everything becomes. When I was a kid losing, people talked. Now sometimes I walk off center court and I can't remember a single sound.",
+      "speaker": "Serena Williams",
+      "context": "Interview with Vogue, September 2015 issue",
+      "real": false,
+      "fake_note": "I made this one up — Serena often reflects on her childhood training and her father's influence, and the introspective tone matches her longer-form interview voice perfectly. The subtle giveaway is that the image is a little too poetic and self-contained for genuinely off-the-cuff speech."
+    },
+    {
+      "id": "q2",
+      "text": "Somebody on the bus told me I wasn't fit enough to race Paris–Roubaix. I finished. He didn't start.",
+      "speaker": "Mark Cavendish",
+      "context": "Cycling Weekly podcast, Eurosport coverage interview, April 2010",
+      "real": false,
+      "fake_note": "I made this one up — Cavendish is famous for his sharp tongue and for proving doubters wrong in public, and the terse, punchy structure matches exactly how he talks in post-race interviews. The subtle tell is that it's almost too perfectly constructed; real Cav would probably include a name or a profanity."
+    },
+    {
+      "id": "q3",
+      "text": "I'm still not really into it.",
+      "speaker": "Anthony Edwards",
+      "context": "The future No. 1 NBA draft pick in a 2020 ESPN feature, admitting he does not enjoy watching basketball (\"To be honest, I can't watch basketball\").",
+      "real": true,
+      "source": {
+        "title": "ESPN — The pain and promise of top NBA draft prospect Anthony Edwards",
+        "url": "https://www.espn.com/nba/story/_/id/30321844/the-pain-promise-top-nba-draft-prospect-anthony-edwards",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I don't think I'll be legally able to drive.",
+      "speaker": "Robert MacIntyre",
+      "context": "Scottish golfer MacIntyre, joking with reporters right after winning the 2024 Genesis Scottish Open, explaining he planned to celebrate so hard he might not make his next-day press conference at Royal Troon ahead of the Open Championship.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — Robert MacIntyre rallies for historic win at Scottish Open",
+        "url": "https://sports.yahoo.com/robert-macintyre-rallies-for-historic-win-at-scottish-open-the-home-event-hes-cared-about-most-013046981.html",
+        "date": "2024-07-16"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There's film sessions where I'll stop the tape and look around and nobody's even blinking. That's when I know we're in trouble — not when they're arguing, when they're just sitting there nodding like bobbleheads.",
+      "speaker": "Nick Saban",
+      "context": "SEC Media Days, Hoover, Alabama, July 2019",
+      "real": false,
+      "fake_note": "I made this one up — Saban's obsession with player attention and mental engagement in film study is extremely well-documented, and the 'bobblehead' image fits his blunt, slightly impatient communication style. The giveaway is that the anecdote is almost too illustrative — real Saban tends to be a fraction more abstract in public settings."
+    },
+    {
+      "id": "q6",
+      "text": "Baseball has been good to me since I quit trying to play it.",
+      "speaker": "Whitey Herzog",
+      "context": "The Hall of Fame manager reflecting on his so-so playing career versus his success as a skipper.",
+      "real": true,
+      "source": {
+        "title": "ESPN Page 2 — My 5 top quotes by Hall of Famer Whitey Herzog",
+        "url": "https://www.espn.ph/espn/page2/index?id=5408431",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

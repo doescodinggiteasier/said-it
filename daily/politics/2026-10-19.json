@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-19",
+  "edition": 114,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what I miss about being governor, and honestly? The motorcade. Not for the ego of it — I just never had to find parking. I've circled a Costco for twenty-five minutes since leaving office and I will never fully recover.",
+      "speaker": "Mitt Romney",
+      "context": "Remarks at the Hinckley Institute of Politics Annual Dinner, University of Utah, Salt Lake City, April 2023",
+      "real": false,
+      "fake_note": "I made this one up — Mitt's dry, slightly self-deprecating humor about ordinary life is well-documented, and the Costco detail plays perfectly into his everyman-millionaire persona. The giveaway for sharp players is that Romney has rarely done extended self-deprecating bits about perks of office."
+    },
+    {
+      "id": "q2",
+      "text": "I will say, the one thing nobody tells you about being in the Senate is how much of it is just — and I mean this literally — waiting for an elevator. I have read three complete biographies of Henry Clay standing in front of elevator doors on the third floor.",
+      "speaker": "Bernie Sanders",
+      "context": "Interview with David Letterman on My Next Guest Needs No Introduction, Netflix, 2019",
+      "real": false,
+      "fake_note": "I made this one up — Bernie's gruff, self-deprecating humor and his genuine obsession with American political history make this feel totally lived-in. The subtle giveaway is that Bernie would more likely cite Eugene Debs than Henry Clay."
+    },
+    {
+      "id": "q3",
+      "text": "This will be the first of many",
+      "speaker": "Elon Musk",
+      "context": "Post on X announcing SpaceX shares for every US child",
+      "real": true,
+      "source": {
+        "title": "Politics — Musk says he will give SpaceX share to every child in US",
+        "url": "https://thehill.com/policy/technology/6157590-musk-spacex-stock-us-children/",
+        "date": "2026-10-19"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I do think there's something to be said for governing a state that has actual weather. It gives people a shared grievance that has nothing to do with you, which is genuinely useful.",
+      "speaker": "Gretchen Whitmer",
+      "context": "Interview on Pod Save America, Crooked Media, recorded in Detroit, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Whitmer often uses Michigan's harsh winters as a relatable touchstone and has a quick, sardonic humor that shows up in her interviews. The giveaway is that the observation is slightly too universal-sounding for Whitmer, who usually anchors jokes in more specific Michigan detail."
+    },
+    {
+      "id": "q5",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "His famous comeback at the 1984 debate against Walter Mondale",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The thing about a filibuster is that it sounds very dramatic from the outside. You imagine someone standing at a podium with fire in their eyes. And then you actually sit through one and it's — I don't know how to put this — it's closer to a very long graduation speech where nobody knows whose kid is graduating.",
+      "speaker": "Amy Klobuchar",
+      "context": "Appearance on Wait Wait... Don't Tell Me!, NPR, recorded in Chicago, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Amy has a known dry-Midwestern comedic streak and has done self-deprecating Senate procedural humor before. The graduation speech metaphor feels plausibly specific but just slightly too polished for truly off-the-cuff Klobuchar."
+    }
+  ]
+}

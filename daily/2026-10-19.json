@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-19",
+  "edition": 126,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "A new path is being laid; it may take time.",
+      "speaker": "Wall Street analyst",
+      "context": "Netflix earnings preview analysis",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Netflix Earnings Preview: Not the Time to Chill",
+        "url": "https://www.hollywoodreporter.com/business/business-news/netflix-earnings-preview-near-term-pain-long-term-gain-layoffs-1236734764/",
+        "date": "2026-10-19"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I went back and read some of the early reviews of the first album and I genuinely could not tell if certain ones were positive or negative. There was one that called us 'aggressively pleasant' and I still think about that. I don't know if I should be offended.",
+      "speaker": "Chris Martin",
+      "context": "Coldplay's appearance on Desert Island Discs, BBC Radio 4, March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Chris Martin has a long history of self-deprecating, mildly baffled comments about Coldplay's critical reception, and the phrase 'aggressively pleasant' sounds almost too real. The give-away for a sharp player is that it's almost too perfectly quotable for someone describing their own confusion."
+    },
+    {
+      "id": "q3",
+      "text": "Tennis players are superstitious in ways that would seem absolutely insane to a normal person. I'm not going to go into detail because I still do all of them and I'd like them to keep working.",
+      "speaker": "Roger Federer",
+      "context": "Q&A session following his acceptance of an honorary degree at the University of Basel, Switzerland, November 2019",
+      "real": false,
+      "fake_note": "I made this one up — Federer has touched on routine and superstition in interviews with this exact light, self-aware humor, and the refusal to elaborate 'because I still do all of them' is very characteristic of his wit. The subtle giveaway is that Federer typically downplays superstition rather than leaning into it — a real fan might catch that inflection."
+    },
+    {
+      "id": "q4",
+      "text": "Look, I've done a lot of preparation in my life. I prepped for that confirmation hearing more than I prepped for anything since my third-year exams and I still walked in there thinking, there is something they are going to ask me that I simply have no answer for.",
+      "speaker": "Elena Kagan",
+      "context": "Remarks at Harvard Law School's class day ceremony, Cambridge, Massachusetts, May 2019",
+      "real": false,
+      "fake_note": "I made this one up — Justice Kagan is known for dry self-aware humor and academic candor in public addresses, and comparing Senate confirmation to law school exams is entirely in her wheelhouse. The subtle tell is 'third-year exams' — she'd likely say 'first-year' since those are the legendary ones at Harvard Law."
+    },
+    {
+      "id": "q5",
+      "text": "The best description I can come up with is metallic; a rather pleasant sweet metallic sensation. It reminded me of my college summers where I labored for many hours with an arc welding torch repairing heavy equipment for a small logging outfit. It reminded me of pleasant sweet-smelling welding fumes. That is the smell of space.",
+      "speaker": "Don Pettit",
+      "context": "Astronaut and ISS Science Officer, describing what space smells like (NASA blog, quoted on NASA.gov)",
+      "real": true,
+      "source": {
+        "title": "December 2021: What does space smell like? - NASA",
+        "url": "https://www.nasa.gov/space-science-and-astrobiology-at-ames/interesting-fact-of-the-month-current/interesting-fact-of-the-month-2021/",
+        "date": "2021-12-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People come up to me and say they cried at the end of a book I wrote and I genuinely never know what to do with that. I didn't cry writing it, I was mostly just trying to figure out whether the timeline was consistent. So there's some distance there between us.",
+      "speaker": "Kazuo Ishiguro",
+      "context": "Nobel Prize lecture follow-up panel discussion at the Swedish Academy, Stockholm, December 2017",
+      "real": false,
+      "fake_note": "I made this one up — Ishiguro speaks about the gap between writerly mechanics and reader emotion with precisely this dry, slightly perplexed honesty, and 'whether the timeline was consistent' is the right kind of mundane specific detail. The subtle tell is that he has actually described emotional moments in his writing process publicly, so a devoted reader might push back."
+    }
+  ]
+}
