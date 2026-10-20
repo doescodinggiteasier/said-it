@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-20",
+  "edition": 107,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I was doing a little over $1,000 a day in heroin, and then probably the same in cocaine and alcohol.",
+      "speaker": "Nikki Sixx",
+      "context": "Mötley Crüe bassist describing the scale of his addiction at his worst, around the period of his December 1987 heroin overdose; said in 2019 press for the Netflix film 'The Dirt'.",
+      "real": true,
+      "source": {
+        "title": "'The Dirt' press (Chicago Sun-Times)",
+        "url": "https://chicago.suntimes.com/entertainment/motley-crue-biopic-netflix-nikki-six-doing-1000-dollars-a-day-in-heroin/",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People always want to know the secret to longevity in this business. I'll tell you: low expectations, good bourbon, and never read your own reviews after midnight. That's it. That's the whole seminar.",
+      "speaker": "Don Rickles",
+      "context": "Backstage Q&A session at the Las Vegas Friars Club Roast, Caesars Palace, November 2006",
+      "real": false,
+      "fake_note": "I made this one up — Rickles absolutely dispensed advice in this mock-authoritative, impatient way, and bourbon fits his Vegas era perfectly. The giveaway is 'that's the whole seminar' — a little too self-aware and packaged; the real Rickles would've pivoted immediately to insulting whoever asked."
+    },
+    {
+      "id": "q3",
+      "text": "Someone asked me what my rider was for that gig and I said, 'Scotch, more scotch, and a lock on the dressing room door so I don't have to talk to anybody until I'm ready.' They wrote down 'sparkling water.' I said, are you taking the piss?",
+      "speaker": "Peter Cook",
+      "context": "Interview with Clive James on Saturday Night Clive, BBC One, recorded October 1989",
+      "real": false,
+      "fake_note": "I made this one up — Cook's bone-dry exasperation with oblivious handlers is pitch-perfect for him, and the scotch detail fits his well-documented appetites. The giveaway is that Cook's real anecdotes tended to spiral into absurdist fiction rather than landing on a clean punchline like this one."
+    },
+    {
+      "id": "q4",
+      "text": "I used to have a drug problem, now I make enough money.",
+      "speaker": "David Lee Roth",
+      "context": "Van Halen frontman David Lee Roth's famously flip one-liner about wealth and excess, quoted in American Songwriter's roundup of his best quotes.",
+      "real": true,
+      "source": {
+        "title": "15 of the Best Quotes from Van Halen's David Lee Roth (American Songwriter)",
+        "url": "https://americansongwriter.com/15-of-the-best-quotes-from-van-halens-david-lee-roth/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I don't have a type. That's a lie, I absolutely have a type: unavailable, opinionated, and convinced they can fix me. It hasn't worked out yet but I respect the optimism.",
+      "speaker": "Nora Ephron",
+      "context": "Panel discussion at the New Yorker Festival, Merkin Concert Hall, New York, October 2004",
+      "real": false,
+      "fake_note": "I made this one up — Ephron's rueful, extremely specific self-deprecation about romantic patterns is her signature mode, and she was a regular fixture at literary festival panels. The giveaway is she'd almost certainly have named a specific, funnier trait instead of the abstract 'fix me,' which is a touch more therapy-speak than Ephron usually allowed."
+    },
+    {
+      "id": "q6",
+      "text": "A couple nights ago, I was licking jelly off my boyfriend's penis. And I thought, \"Oh my God — I'm turning into my mother!\"",
+      "speaker": "Sarah Silverman",
+      "context": "From her 2005 stand-up special \"Sarah Silverman: Jesus Is Magic.\" Her signature sweet-faced delivery lands a graphic sex image as the setup, with the punchline being the realization she's inheriting her mother's habits.",
+      "real": true,
+      "source": {
+        "title": "'Jesus Is Magic' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0422528/quotes/",
+        "date": "2005"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-20",
+  "edition": 116,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't watch my own fights for at least a year. Genuinely. Because right after I can't see anything except what I did wrong, and that's not useful — it just sits in you wrong.",
+      "speaker": "Amanda Nunes",
+      "context": "Interview with ESPN Brazil, broadcast and translated excerpt, November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Nunes has talked about managing her emotional response to performance and trusting her coaches to carry the analytical load post-fight. The giveaway is the exact 'a year' window — her real comments on the subject are a bit more vague about the timeline."
+    },
+    {
+      "id": "q2",
+      "text": "The running backs coach pulled me aside after a terrible Thursday practice — not Friday, Thursday, so you know it's bad — and he just said, you're running like you're scared of the ground. And he wasn't wrong.",
+      "speaker": "Saquon Barkley",
+      "context": "Interview on The Pivot Podcast with Ryan Clark, Fred Taylor and Channing Crowder, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Barkley frequently discusses his relationship with coaches and the very physical, tactile cues they use, and the Thursday-not-Friday detail is the kind of specific correction that makes stories like this feel real. The giveaway is the quote from the coach is almost too vivid and memorable for a recalled practice anecdote."
+    },
+    {
+      "id": "q3",
+      "text": "I've had nights where I go through every decision I made in a game — every substitution, every set-piece call — and I genuinely cannot tell you if I got even half of them right. Not because I don't believe in the process, just because football is that random.",
+      "speaker": "Pep Guardiola",
+      "context": "Post-match press conference, Manchester City vs. Real Madrid, UEFA Champions League semi-final second leg, May 2023",
+      "real": false,
+      "fake_note": "I made this one up — Guardiola's philosophical honesty about the limits of tactical control, especially in knockout football, is well-documented, and he returns to the theme of randomness and doubt in press conferences more than most managers. The giveaway is that he'd usually anchor this kind of reflection in a specific moment from the match rather than leaving it open."
+    },
+    {
+      "id": "q4",
+      "text": "Has anyone else 'completed football' like this?",
+      "speaker": "Owen Bagnall",
+      "context": "The Knowledge column, asking about Rodri completing every major honour",
+      "real": true,
+      "source": {
+        "title": "Sports — World Cup, Ballon d’Or, Champions League, Euros … has Rodri completed football? ",
+        "url": "https://www.theguardian.com/football/2026/jul/22/world-cup-champions-league-ballon-dor-euros-has-rodri-completed-football",
+        "date": "2026-07-22"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "My first year in the league I thought I was ready. I'd been told my whole life I was ready. And then somebody just — took the ball from me in traffic and jogged away, and I was standing there. That happened more than once.",
+      "speaker": "Jayson Tatum",
+      "context": "Podcast appearance on Uninterrupted's The Shop: Uncut, filmed December 2019",
+      "real": false,
+      "fake_note": "I made this one up — Tatum has been candid about the adjustment to NBA physicality and pace as a rookie, and this kind of humbling, concrete memory is exactly how he tends to narrate his development. The giveaway is that 'jogged away' is slightly too composed a detail to be genuine spontaneous recall."
+    },
+    {
+      "id": "q6",
+      "text": "Resignations are for prime ministers and those caught with their trousers down, not for me",
+      "speaker": "Brian Clough",
+      "context": "The legendary English football manager on his refusal to quit, in a collection of his most memorable one-liners.",
+      "real": true,
+      "source": {
+        "title": "Sky Sports — Brian Clough in quotes: Fifteen of the legendary manager's most memorable one-liners",
+        "url": "https://www.skysports.com/football/news/11689/9642762/brian-clough-fifteen-of-the-legendary-managers-most-memorable-one-liners",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

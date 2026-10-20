@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-20",
+  "edition": 119,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You're about to play 'Shakedown Street,' and you just did a heroic dose of mushrooms. How do you even perform?",
+      "speaker": "Susan Tedeschi",
+      "context": "Recalling touring with Bob Weir and the Other Ones in 2002",
+      "real": true,
+      "source": {
+        "title": "Music — Susan Tedeschi Says Bob Weir Loved to Offer Her Mushrooms",
+        "url": "https://www.rollingstone.com/music/music-features/susan-tedeschi-bob-weir-mushrooms-tour-1235586087/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "He built this entire empire based on what he thought would turn the world on. That was his superpower",
+      "speaker": "Rob Thomas",
+      "context": "Remembering Clive Davis",
+      "real": true,
+      "source": {
+        "title": "Music — Rob Thomas Remembers Clive Davis: ‘Losing Clive Is the End of an Era’",
+        "url": "https://www.rollingstone.com/music/music-features/rob-thomas-clive-davis-tribute-essay-1235582736/",
+        "date": "2026-06-24"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "When we were recording 'Rumours' the sessions were — there's no polite way to say it — they were genuinely miserable at times. People crying in the parking lot, people not speaking. And then you'd go in and play and somehow the music was joyful. That still makes no sense to me and I've had fifty years to think about it.",
+      "speaker": "Mick Fleetwood",
+      "context": "Desert Island Discs, BBC Radio 4, episode aired January 2023, hosted by Lauren Laverne",
+      "real": false,
+      "fake_note": "I made this one up — Mick Fleetwood has told the Rumours-era heartbreak story hundreds of times and speaks about it with exactly this mixture of wonder and rueful humor. The gentle giveaway is 'fifty years' — the math is slightly off from the actual recording period, which a devoted fan would catch immediately."
+    },
+    {
+      "id": "q4",
+      "text": "Hip-hop was always a young person's sport and I accepted that a long time ago. What I didn't accept was the idea that experience counts for nothing. That's just wrong. You can hear a twenty-two-year-old trying to figure out what pain is, and you can hear someone who's actually been through it. Both are valid. They sound completely different.",
+      "speaker": "Jay-Z",
+      "context": "Tidal's '444 Decoded' extended interview series, video installment released alongside the album's second anniversary, June 2019",
+      "real": false,
+      "fake_note": "I made this one up — Jay-Z consistently positions experience and maturity as a competitive advantage, especially in press around '4:44', and this sounds very much like his measured, slightly professorial interview voice. The subtle tell is 'young person's sport' — he typically frames the conversation around legacy and business rather than athletic metaphors."
+    },
+    {
+      "id": "q5",
+      "text": "I had this moment in the studio — it was maybe two in the morning — where I played back what we'd recorded and I just started laughing, because it was nothing like what I'd planned. The song had basically written itself while I wasn't paying attention, and it was better for it. I've learned not to fight that.",
+      "speaker": "Rick Rubin",
+      "context": "Interviewed by Zane Lowe on Apple Music's Beats 1, during the promotional cycle for his book 'The Creative Act', January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Rubin constantly talks about surrendering control and letting the work lead, so this fits his philosophy perfectly. The subtle giveaway is that 'laughing' is a slightly too warm and spontaneous reaction for someone who usually describes these moments with detached, almost spiritual calm."
+    },
+    {
+      "id": "q6",
+      "text": "People think producing is about knowing which button to press. And yeah, you have to know the buttons. But mostly it's about staying in the room. A lot of people can't stay in the room. The artist is spiraling, the label is calling, it's two in the morning, and someone has to just — stay. That's the job.",
+      "speaker": "Max Martin",
+      "context": "Keynote conversation with Billboard's editor-in-chief at the Billboard Power 100 Summit, Los Angeles, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Max Martin is famously private but when he does speak publicly it tends to be in exactly this understated, process-focused register. The plausibility is high because 'staying in the room' is a concrete, unglamorous metaphor that fits his reputation as a workmanlike craftsman. The tell is that he almost never does keynote conversations — he's notoriously press-shy."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-20",
+  "edition": 127,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The thing about CRISPR that nobody really tells you is that the conceptual leap was easy. The part that took years was convincing ourselves we weren't missing something catastrophic.",
+      "speaker": "Jennifer Doudna",
+      "context": "Interviewed by Ira Flatow on NPR's Science Friday, broadcast September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Doudna consistently describes the psychological caution that followed her lab's initial CRISPR breakthrough, and Science Friday is exactly the outlet where she'd speak this candidly. The tell is 'easy' — she's careful in public never to minimize the science itself, preferring words like 'elegant' or 'unexpected.'"
+    },
+    {
+      "id": "q2",
+      "text": "We didn't set out to prove black holes could actually be imaged. We set out to try, which sounds almost embarrassingly naive in retrospect, except that it worked, and now I don't know how to feel about the naivety.",
+      "speaker": "Katie Bouman",
+      "context": "TED Residency talk, Vancouver, April 2022, following audience Q&A",
+      "real": false,
+      "fake_note": "I made this one up — Bouman frequently reflects on the gap between scientific ambition and expectation, and her public speaking has this self-aware, circling quality. The giveaway is the word 'embarrassingly' — she tends toward 'almost' qualifiers but rarely frames her team's boldness as naive, even affectionately."
+    },
+    {
+      "id": "q3",
+      "text": "Humanity is about to be handed almost unimaginable power, and it is deeply unclear whether our social, political, and technological systems possess the maturity to wield it.",
+      "speaker": "Dario Amodei",
+      "context": "Anthropic CEO, on the arrival of transformative AI",
+      "real": true,
+      "source": {
+        "title": "TechRadar — Quote of the day: Dario Amodei on AI",
+        "url": "https://www.techradar.com/pro/quote-of-the-day-by-anthropic-ceo-dario-amodei-humanity-is-about-to-be-handed-almost-unimaginable-power-and-it-is-deeply-unclear-whether-we-possess-the-maturity-to-wield-it-warnings-on-the-looming-threat-of-beyond-human-ai",
+        "date": "2026-06-03"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Acting is mostly just waiting to not be nervous anymore, and then the camera rolls and the nervousness is apparently what they wanted the whole time.",
+      "speaker": "Meryl Streep",
+      "context": "Actors on Actors conversation with Cate Blanchett, Variety, Awards Issue, December 2022",
+      "real": false,
+      "fake_note": "I made this one up — Streep has often discussed pre-shoot anxiety and the paradox of vulnerability being the very thing directors seek; a conversation with Blanchett is the exact kind of peer setting where she'd say something this candid. The tell is the structural neatness of it — Streep's real anecdotes tend to be longer and more grounded in a specific role."
+    },
+    {
+      "id": "q5",
+      "text": "Where my reason, imagination or interest were not engaged, I would not or I could not learn.",
+      "speaker": "Winston Churchill",
+      "context": "From Churchill's own autobiography 'My Early Life: A Roving Commission' (1930), in the chapter recalling his schooldays at Harrow where he was placed in the lowest form.",
+      "real": true,
+      "source": {
+        "title": "My Early Life, by Winston S. Churchill (Project Gutenberg Canada full text)",
+        "url": "https://gutenberg.ca/ebooks/churchillws-myearlylife/churchillws-myearlylife-00-h-dir/churchillws-myearlylife-00-h.html",
+        "date": "1930-01-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I'm just here so I won't get fined, boss. That's the only reason why.",
+      "speaker": "Marshawn Lynch",
+      "context": "Seattle Seahawks running back, repeated this line at Super Bowl XLIX Media Day in January 2015 after being fined for not speaking to reporters",
+      "real": true,
+      "source": {
+        "title": "Marshawn Lynch: 'I'm just here so I won't get fined'",
+        "url": "https://www.nfl.com/news/marshawn-lynch-i-m-just-here-so-i-won-t-get-fined-0ap2000000319691",
+        "date": "2015-01-27"
+      }
+    }
+  ]
+}
