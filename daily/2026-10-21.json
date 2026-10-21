@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-21",
+  "edition": 128,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I played a show in Reykjavik once in January and the sun came up for about four hours and I genuinely couldn't tell if I'd slept or not the entire time I was there. Great audience, though. Very attentive. Maybe they were also unsure if they were awake.",
+      "speaker": "Phoebe Bridgers",
+      "context": "Q&A session following a Consequence of Sound live recording at Brooklyn Steel, New York, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Bridgers is known for deadpan tour-diary humor on social media and in interviews, and Iceland is a real stop on the European circuit. The slight tell is the callback joke at the end; she tends to let observations sit rather than land them quite so neatly."
+    },
+    {
+      "id": "q2",
+      "text": "My grandmother made her sauce on Sundays and the whole building smelled like it by nine in the morning. I've spent probably the better part of thirty years trying to reverse-engineer it and I'm getting closer, but I'm not there. She took something with her.",
+      "speaker": "Stanley Tucci",
+      "context": "Interview with Alison Roman for her newsletter 'Home/Elsewhere', December 2022",
+      "real": false,
+      "fake_note": "I made this one up — Tucci talks about his grandmother's cooking as a formative influence constantly, including in his memoir, and this kind of specific, unresolved culinary nostalgia is absolutely his territory. The giveaway is the phrase 'she took something with her,' which is slightly more elegiac than his usual register."
+    },
+    {
+      "id": "q3",
+      "text": "You better cut the pizza in four pieces because I'm not hungry enough to eat six.",
+      "speaker": "Yogi Berra",
+      "context": "Hall of Fame baseball catcher and manager, one of his famous 'Yogi-isms'",
+      "real": true,
+      "source": {
+        "title": "Famous 'Yogi-isms'",
+        "url": "https://www.cbsnews.com/news/famous-yogi-isms",
+        "date": "2002-03-06"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "There was a period — I want to say around the third or fourth record — where I became very interested in the idea that a song could just end badly. Not fade out, not resolve, just sort of stop in a way that made you uncomfortable. My manager at the time was not enthusiastic.",
+      "speaker": "Tom Yorke",
+      "context": "Extended interview with journalist Dorian Lynskey for The Guardian Weekend Magazine, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Thom Yorke has spoken at length about his interest in unresolved musical structures and uncomfortable endings, and his relationship with commercial pressures is well documented. The tell is attributing this to a specific album era without naming it, which is actually how he tends to speak — but 'manager at the time' is a bit too neat."
+    },
+    {
+      "id": "q5",
+      "text": "I've now been in 57 states? I think one left to go.",
+      "speaker": "Barack Obama",
+      "context": "Then a Democratic U.S. Senator from Illinois campaigning for president, Obama misspoke at a May 9, 2008 event in Beaverton, Oregon, after a long stretch of travel (he meant 47).",
+      "real": true,
+      "source": {
+        "title": "Obama's 'Bumbles' - FactCheck.org",
+        "url": "https://www.factcheck.org/2011/06/obamas-bumbles/",
+        "date": "2008-05-09"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I watch a lot of tape on quarterbacks I'm not even going to face for months. My wife asked me once what I was watching and I said 'film' and she said 'of what' and I said 'a guy from Denver' and she just left the room. Which is fair.",
+      "speaker": "Micah Parsons",
+      "context": "Appearance on The Pat McAfee Show, ESPN Radio, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Parsons is well known for his obsessive film-study habits and has talked about them on The Pat McAfee Show specifically. The domestic detail is the kind of self-aware humor he actually uses. The slight tell is 'which is fair' — he'd more likely name the specific quarterback."
+    }
+  ]
+}

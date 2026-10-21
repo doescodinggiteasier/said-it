@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-21",
+  "edition": 120,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It feels like destiny is coming to its starting point",
+      "speaker": "Jez Williams",
+      "context": "Doves' Jez Williams discussing his debut solo album 'Life Of Me And You'",
+      "real": true,
+      "source": {
+        "title": "Music — Doves’ Jez Williams talks debut solo album ‘Life Of Me And You’: “It feels like ",
+        "url": "https://www.nme.com/news/music/doves-jez-williams-interview-solo-album-life-of-me-and-you-hollow-man-tour-elbow-3973562?utm_source=rss&utm_medium=rss&utm_campaign=doves-jez-williams-interview-solo-album-life-of-me-and-you-hollow-man-tour-elbow",
+        "date": "2026-10-21"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I remember finishing the mix on 'Thriller' at maybe four in the morning, and Michael just stood there in the booth not saying anything for a long time. I thought something was wrong. Then he goes, 'Quincy, that's the one.' That's it. That's all he said. And I knew he was right.",
+      "speaker": "Quincy Jones",
+      "context": "Rolling Stone's oral history of Thriller, published in the magazine's November 2022 fortieth-anniversary issue",
+      "real": false,
+      "fake_note": "I made this one up — Quincy talking about late-night Michael sessions is completely on-brand, and the quiet, understated Michael reaction feels true to how he's described him before. The subtle giveaway is that Quincy has never actually recounted this specific exchange; his real Thriller stories tend to be more production-technical, not this cinematic."
+    },
+    {
+      "id": "q3",
+      "text": "Part of me wanted to quit filmmaking, move back to Greece, and become an olive farmer",
+      "speaker": "Romain Gavras",
+      "context": "Romain Gavras reacting to AI versions of his film 'Storm'",
+      "real": true,
+      "source": {
+        "title": "Music — Romain Gavras Is Bummed About Those AI Versions of “Storm”",
+        "url": "https://pitchfork.com/story/romain-gavras-is-bummed-about-those-ai-versions-of-storm/",
+        "date": "2026-10-21"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People talk about the Nashville Sound like it's one thing, but when I was coming up there were three or four completely different rooms operating at the same time, and they didn't even talk to each other. You'd cut a record on Monday and the guys across town had no idea what you were doing.",
+      "speaker": "Dolly Parton",
+      "context": "NPR's Fresh Air with Terry Gross, broadcast March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Dolly's real interviews are full of this kind of warm insider detail about old Nashville, and the 'rooms that didn't talk to each other' observation sounds exactly like her lived experience era. The giveaway is she tends to anchor these memories to specific people rather than abstractions like 'rooms.'"
+    },
+    {
+      "id": "q5",
+      "text": "I can out-dance Bowie and Jagger!",
+      "speaker": "Martha Reeves",
+      "context": "An interview about her career and Motown",
+      "real": true,
+      "source": {
+        "title": "Music — ‘I can out-dance Bowie and Jagger!’ Martha Reeves on Motown, Dancing in the Stre",
+        "url": "https://www.theguardian.com/music/2026/jun/26/reader-interview-martha-reeves-motown",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "There's a version of 'Purple Rain' somewhere that's almost eleven minutes long and it's — honestly it might be better. We never released it because at that length radio just wasn't going to touch it, and Prince made that call himself. He understood the machine better than anyone gave him credit for.",
+      "speaker": "Sheila E.",
+      "context": "Interview with Alan Light for his book The Man from Minnesota: Prince and His Revolution, published 2021",
+      "real": false,
+      "fake_note": "I made this one up — Sheila E. talking candidly about unreleased Prince material and his commercial awareness is exactly how she discusses him in real memoirs and interviews. The giveaway is the specific 'eleven minutes' figure; her real recollections keep timings vague rather than precise."
+    }
+  ]
+}

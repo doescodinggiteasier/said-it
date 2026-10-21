@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-21",
+  "edition": 108,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Woman at a party once walked up and told me she didn't think comedy was a real job. I looked at her husband, I looked back at her, and I said, 'Neither is whatever it is you've settled for, sweetheart, but here we both are.'",
+      "speaker": "Sam Kinison",
+      "context": "Backstage interview recorded after his set at the Improv Hollywood, Los Angeles, circa 1986, later referenced in Bill Hicks: Agent of Evolution",
+      "real": false,
+      "fake_note": "I made this one up — Kinison's delivery was all about turning social discomfort into a face-to-face confrontation, and the pivot to attack the husband is classic misdirection he used. The reference to Bill Hicks' biography is the tell; that book focuses on Hicks and doesn't really contain Kinison backstage anecdotes."
+    },
+    {
+      "id": "q2",
+      "text": "I think weed is the best drug on earth. One time I smoked a joint with peyote in it, and I saw a wolf howling at the moon. Hollywood is a coke town, but weed is so much better. And molly, too. Those are happy drugs – social drugs. They make you want to be with friends. You're out in the open. You're not in a bathroom. I really don't like coke. It's so gross and so dark. It's like what are you, from the Nineties? Ew.",
+      "speaker": "Miley Cyrus",
+      "context": "Miley Cyrus ranking her drug preferences in her September 2013 Rolling Stone cover story, calling weed and molly 'happy drugs' and dismissing cocaine as dated.",
+      "real": true,
+      "source": {
+        "title": "Miley Cyrus: 'Weed Is the Best Drug on Earth' (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The ice cream man always drove an extra block away. I know he's seen us, but I think he just be in the car with his friends saying, 'Watch me how fast I make these motherfuckers run.'",
+      "speaker": "Eddie Murphy",
+      "context": "From Eddie Murphy's 1983 HBO stand-up special 'Delirious' (filmed at DAR Constitution Hall) — his childhood ice-cream-truck bit, where the vendor cruelly speeds off to watch the neighborhood kids chase him.",
+      "real": true,
+      "source": {
+        "title": "'Delirious' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0085474/quotes/",
+        "date": "1983"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Little Miss Muffet sat on a tuffet, eating her curds and whey. Along came a spider, he sat down beside her, he said, \"Hey, what's in the bowl, bitch?\"",
+      "speaker": "Andrew Dice Clay",
+      "context": "A signature filthy nursery-rhyme parody from his late-'80s/early-'90s arena act; crowds would shout the punchlines back. Popularized on his stand-up specials and documented in VICE's piece on his nursery rhymes.",
+      "real": true,
+      "source": {
+        "title": "Stand-up act (Vice feature)",
+        "url": "https://www.vice.com/en/article/did-andrew-dice-clay-steal-his-iconic-nursery-rhymes-from-other-successful-entertainers/",
+        "date": "2018"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "We played Rotterdam — this was '79 — and the promoter hands me a rider that says 'no alcohol within 30 feet of the stage.' I handed it back to him and I said, 'Son, I AM the stage.'",
+      "speaker": "Bon Scott",
+      "context": "Interview with RAM Magazine, Sydney, recorded during the Highway to Hell Australian press leg, July 1979",
+      "real": false,
+      "fake_note": "I made this one up — Bon's voice was exactly this: short, physical, a little theatrical, ends on a laugh. The specific RAM Magazine citation makes it feel real. The giveaway is 'Son' — Bon usually went with 'mate' when talking to Australians."
+    },
+    {
+      "id": "q6",
+      "text": "The tour manager gave us a list of rules before the European leg. Rules! There were fourteen of them. By Frankfurt, we'd broken eleven and invented three new categories of behaviour that weren't on the list because nobody had thought to ban them yet.",
+      "speaker": "John Bonham",
+      "context": "Quoted in a 1973 New Musical Express feature covering Led Zeppelin's European tour, 'Zeppelin: Life on the Road'",
+      "real": false,
+      "fake_note": "I made this one up — Bonham was the most quotably chaotic of the Zeppelin four and this kind of cheerful scorekeeping suits him. The NME feature name is plausible but 'Zeppelin: Life on the Road' as a specific NME piece title doesn't check out as a real archived feature."
+    }
+  ]
+}

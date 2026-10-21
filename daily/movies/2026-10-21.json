@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-21",
+  "edition": 125,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Hakuna matata.",
+      "speaker": "The Lion King (1994)",
+      "context": "Timon and Pumbaa teach Simba their carefree \"no worries\" philosophy, both as spoken dialogue and as the title song.",
+      "real": true
+    },
+    {
+      "id": "q2",
+      "text": "Just keep swimming.",
+      "speaker": "Finding Nemo (2003)",
+      "context": "Dory's optimistic mantra, which she sings to Marlin to keep him going during the search for Nemo.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "I've been on this block since before your father had a reason to lock his door.",
+      "speaker": "The Godfather (1972)",
+      "context": "A neighborhood elder speaking to a young Corleone associate on a Brooklyn street",
+      "real": false,
+      "fake_note": "I made this one up — it matches the film's old-world territorial pride and the way supporting characters establish hierarchy through local memory. The giveaway is that it's slightly too compressed and epigrammatic for the film's more naturalistic dialogue style."
+    },
+    {
+      "id": "q4",
+      "text": "I came to Casablanca for the waters.",
+      "speaker": "Casablanca (1942)",
+      "context": "Rick Blaine (Humphrey Bogart) deflecting Captain Renault's (Claude Rains) question about why he came to Casablanca; Renault replies there are no waters in the desert, and Rick says he was misinformed.",
+      "real": true,
+      "source": {
+        "title": "Casablanca (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Casablanca_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "She smiled at everybody that way. That was the whole problem.",
+      "speaker": "Chinatown (1974)",
+      "context": "Gittes reflecting aloud after interviewing a witness about Evelyn Mulwray",
+      "real": false,
+      "fake_note": "I made this one up — Gittes's voice is cynical and clipped, and lines like this land between observation and wounded ego, which is exactly his register. The giveaway is that a real Polanski-era noir line would more likely be delivered to someone rather than murmured as internal reflection."
+    },
+    {
+      "id": "q6",
+      "text": "You don't negotiate with the ocean, Walter. The ocean doesn't know your name.",
+      "speaker": "The Big Lebowski (1998)",
+      "context": "The Dude, exasperated, pushing back on Walter's latest scheme",
+      "real": false,
+      "fake_note": "I made this one up — the rhythm and Walter/Dude dynamic feel pitch-perfect for their beachside arguments, and 'the ocean doesn't know your name' sounds like the kind of stoned non-logic the Dude would deploy. The subtle giveaway is that it's a touch too neatly philosophical for the Dude, who usually just says 'man' and trails off."
+    }
+  ]
+}
