@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-22",
+  "edition": 117,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I genuinely enjoy town halls. The questions are better. People ask me things my staff would never let me be asked, and I think that's mostly healthy, even when it doesn't feel that way in the moment.",
+      "speaker": "Chris Christie",
+      "context": "Interview on the Ruthless podcast, recorded in Manchester, New Hampshire, January 2024",
+      "real": false,
+      "fake_note": "I made this one up — Chris's blunt affection for unscripted confrontation is completely authentic, and the dig at his own staff has that familiar self-aware swagger. The tell is 'mostly healthy' — it's a touch more reflective and qualified than his usual head-on delivery."
+    },
+    {
+      "id": "q2",
+      "text": "A sad thing, and I feel like it was an exploitative thing to do. My mother is not well",
+      "speaker": "Amy Acton",
+      "context": "Ohio Democratic gubernatorial nominee responding to Ramaswamy campaign ad featuring her estranged mother",
+      "real": true,
+      "source": {
+        "title": "Politics — Acton responds to Ramaswamy's ad: 'It's despicable'",
+        "url": "https://thehill.com/homenews/campaign/6164786-acton-responds-ramaswamy-ad-mother/",
+        "date": "2026-10-22"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I will say, nobody warned me that about forty percent of the job is just standing in rooms nodding while someone explains something you already read three weeks ago. It's a very specific skill. I've gotten quite good at it.",
+      "speaker": "Pete Buttigieg",
+      "context": "Appearing on Conan O'Brien Needs a Friend podcast, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Pete's self-deprecating, slightly professorial humor about the bureaucratic grind is completely on-brand, and the 'standing in rooms nodding' detail rings very true to how he talks about governance. The subtle giveaway is that he'd probably resist the word 'forty percent' and say something slightly more hedged."
+    },
+    {
+      "id": "q4",
+      "text": "I have given exactly one speech in my life that I thought was genuinely perfect. I'm not going to tell you which one, because if I did, you'd go find it and disagree with me, and then I'd have nothing.",
+      "speaker": "Barack Obama",
+      "context": "David Letterman's My Next Guest Needs No Introduction, Netflix, Season 4, 2022",
+      "real": false,
+      "fake_note": "I made this one up — Obama's habit of building a thought out, letting it breathe, and then puncturing it with a dry self-aware kicker is all over his real interviews. The giveaway is he tends to name the thing rather than tease it; the deliberate withholding is slightly more precious than his usual mode."
+    },
+    {
+      "id": "q5",
+      "text": "This ad is going to go down as the most shameful, disgusting, offensive ad this election season",
+      "speaker": "Nancy Mace",
+      "context": "Republican congresswoman reacting to Vivek Ramaswamy's campaign ad against Amy Acton",
+      "real": true,
+      "source": {
+        "title": "Politics — Vivek Ramaswamy campaign ad for Ohio ‘shameful, disgusting’, says Republican con",
+        "url": "https://www.theguardian.com/us-news/live/2026/oct/22/vivek-ramaswamy-ohio-trump-vance-us-midterm-elections-latest-news-updates",
+        "date": "2026-10-22"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My mother used to say that any politician who tells you they enjoy campaigning is either lying or has never done it in January. In Iowa. On foot.",
+      "speaker": "Hillary Clinton",
+      "context": "Interview with Kara Swisher on the Pivot podcast, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Hillary's wry, slightly weary tone about the physical reality of campaigning sounds exactly right, and the Iowa-in-January specificity is the kind of thing she actually jokes about. The tell is that she'd more likely reference New Hampshire, where she's had her own brutal experiences."
+    }
+  ]
+}

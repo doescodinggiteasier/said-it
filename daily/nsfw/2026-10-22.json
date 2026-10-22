@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-22",
+  "edition": 109,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "It's quite valuable to have the courage and the confidence to say, 'No, fuck off, leave me alone, thank you very much.'",
+      "speaker": "Helen Mirren",
+      "context": "In a 2013 Daily Mail interview, the Oscar-winning actress said that if she'd had a daughter, \"fuck off\" is the first phrase she would have taught her, to give her the confidence to set boundaries.",
+      "real": true,
+      "source": {
+        "title": "Daily Mail interview (Christian Today report)",
+        "url": "https://www.christiantoday.com/news/helen-mirren-advice-to-daughter-unconventional-brutally-honest",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Some journalist wrote that I looked 'dishevelled' at the premiere. Dishevelled! I'd been at the afterparty since the second act, darling. Dishevelled is a charity. I was a crime scene that had learned to wave.",
+      "speaker": "Peter O'Toole",
+      "context": "Desert Island Discs, BBC Radio 4, recorded December 1988, broadcast January 1989",
+      "real": false,
+      "fake_note": "I made this one up — O'Toole was legendary for self-aware, theatrical self-deprecation about his hell-raising years, and this florid 'crime scene that had learned to wave' construction matches his grandiose vocabulary. The giveaway is that his actual Desert Island Discs appearance (1982) was notably more restrained than this; this reads slightly too polished even for him."
+    },
+    {
+      "id": "q3",
+      "text": "My sex life is so bad, my G-spot has been declared a historical landmark.",
+      "speaker": "Joan Rivers",
+      "context": "Rivers being characteristically filthy and self-deprecating about her own dried-up sex life.",
+      "real": true,
+      "source": {
+        "title": "Stand-up one-liner (CNN roundup)",
+        "url": "https://www.cnn.com/2014/09/05/showbiz/celebrity-news-gossip/joan-rivers-jokes/index.html",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The secret to longevity in this business? Never let them see you sober enough to be boring. A little disreputable is fine. A lot disreputable is a headline. Find the sweet spot and camp there.",
+      "speaker": "Ava Gardner",
+      "context": "Profile interview with Rex Reed, published in Esquire, April 1968",
+      "real": false,
+      "fake_note": "I made this one up — Gardner was famously frank with the press, gave zero care for her reputation as a hell-raiser, and had a dry, sharp wit that skewered Hollywood without self-pity. The giveaway is 'camp there' — her real diction was saltier and more impatient; she'd have been more specific and probably more profane than this."
+    },
+    {
+      "id": "q5",
+      "text": "Vegas is the only city where you can wake up at four in the afternoon in a tuxedo you didn't own yesterday, surrounded by strangers who are inexplicably your best friends, and nobody — NOBODY — asks you a single goddamn question. It's the most civilised place on earth.",
+      "speaker": "Dean Martin",
+      "context": "Roundtable conversation recorded for The Joey Bishop Show, NBC Studios, Burbank, 1963",
+      "real": false,
+      "fake_note": "I made this one up — Dino's whole brand was the winking, slightly-hammered bon vivant who treated Vegas like a living room, and this reads exactly like that persona. The subtle giveaway is the word 'civilised' — Martin played the role but rarely leaned into that arch, ironic framing in real recorded quotes."
+    },
+    {
+      "id": "q6",
+      "text": "Why me? Ten million motherfuckers freebasing, and I'm the one who blows up!",
+      "speaker": "Richard Pryor",
+      "context": "Pryor's frank, self-lacerating bit about the 1980 freebasing accident in which he set himself on fire, from his stand-up film 'Richard Pryor: Live on the Sunset Strip' (1982).",
+      "real": true,
+      "source": {
+        "title": "Richard Pryor - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Richard_Pryor",
+        "date": "1982"
+      }
+    }
+  ]
+}

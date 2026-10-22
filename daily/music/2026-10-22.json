@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-22",
+  "edition": 121,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I played the same set in Tokyo that I played in Birmingham, and somehow it felt completely different both nights. I don't know if it's the air or the people or just me deciding to believe it's different, but I'll take it.",
+      "speaker": "Thom Yorke",
+      "context": "Print interview with The Wire magazine, conducted backstage at Primavera Sound Barcelona, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Thom's tendency to hedge between mysticism and self-skepticism ('or just me deciding to believe') is very much his register, and touring experience is squarely his territory. The giveaway is a slight over-tidiness in the phrasing — real Thom tends to trail off more awkwardly."
+    },
+    {
+      "id": "q2",
+      "text": "'Bull riding and boobies' — that is potentially the greatest lyric in any song ever.",
+      "speaker": "Harry Styles",
+      "context": "In his 2019 Rolling Stone cover interview, riffing on a line from Lil Nas X's 'Old Town Road.'",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — The Eternal Sunshine of Harry Styles",
+        "url": "https://www.rollingstone.com/music/music-features/harry-styles-cover-interview-album-871568/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The music always precedes the words. The words often come from the sound of the music and eventually evolve into coherent thoughts. Or incoherent thoughts.",
+      "speaker": "Paul Simon",
+      "context": "Describing his music-first songwriting process in an American Songwriter interview tied to his Songwriter collection.",
+      "real": true,
+      "source": {
+        "title": "American Songwriter — Interview: Paul Simon Discusses Songwriter And Songwriting",
+        "url": "https://americansongwriter.com/interview-paul-simon-discusses-songwriter-and-songwriting/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People hear 'country' and they already have the whole thing built in their head before you play a note. You spend half the show just dismantling that picture. The other half you're trying to actually sing.",
+      "speaker": "Kacey Musgraves",
+      "context": "Cover story interview with Rolling Stone, issue dated March 2019, conducted during her Golden Hour tour",
+      "real": false,
+      "fake_note": "I made this one up — Kacey's friction with country genre expectations is extensively documented, and the dry, slightly weary humor here matches her interview voice. The subtle tell is that she'd likely anchor it to a more specific moment or city rather than speaking this broadly."
+    },
+    {
+      "id": "q5",
+      "text": "We are part of each other, you know. When one person is hurt, it hurts me, too. When I see their condition, I know what they feel, and I feel it. And it hurts.",
+      "speaker": "B.B. King",
+      "context": "Explaining why the blues transcends stereotypes and speaks to shared human suffering, in collected words of wisdom published by Guitar Player.",
+      "real": true,
+      "source": {
+        "title": "Guitar Player — Some Collected Words of Wisdom From B.B. King Himself",
+        "url": "https://www.guitarplayer.com/players/bb-king-quotes",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The 808 is not a drum machine, it's a feeling. And I know everyone says that now, but I mean it in the most literal way — there are songs where the kick is doing more emotional work than the vocal, and I am completely fine with that.",
+      "speaker": "Kanye West",
+      "context": "Extended sit-down interview with Zane Lowe for Beats 1, Apple Music, recorded in Chicago, September 2018",
+      "real": false,
+      "fake_note": "I made this one up — Kanye's near-philosophical relationship with the 808 is one of his most documented obsessions, and the slight defensiveness ('I know everyone says that now') captures how he preempts skepticism. The tell is that he'd almost certainly name a specific song as his example rather than staying abstract."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-22",
+  "edition": 118,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I wore the same undershirt for eleven straight starts one year because I was pitching well and I was absolutely not going to wash it. My wife had opinions about this. Strong opinions.",
+      "speaker": "Justin Verlander",
+      "context": "The Athletic's 'Pull Up a Chair' podcast with Ken Rosenthal, Episode 34, recorded February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Verlander is extremely well-documented on superstition and routine, and the domestic-pushback detail is the kind of self-aware, mildly self-roasting aside he reliably drops in long-form settings. The tell is the specificity of 'eleven straight starts,' which is slightly too precise for something a pitcher would actually track consciously."
+    },
+    {
+      "id": "q2",
+      "text": "There's a version of me that never left São Paulo, and I think about that guy sometimes. Not in a sad way — more like, he probably sleeps better than I do.",
+      "speaker": "Ronaldo Nazário",
+      "context": "Interview with Ale Moreno for ESPN FC's 'One-on-One' series, filmed in Madrid, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Ronaldo has given numerous reflective interviews about his origins and what a different path might have looked like, and his humor tends to be dry and personal rather than grand. The slight giveaway is the 'sleeps better' line, which is a touch too polished for his typically more halting, translator-mediated English-language interviews."
+    },
+    {
+      "id": "q3",
+      "text": "Happy? Happy is not a word that we think about in the game. You gotta think of something different. Happy, I don't know how to judge happy. We're in the middle of a contest. Nobody's happy.",
+      "speaker": "Gregg Popovich",
+      "context": "San Antonio Spurs head coach Gregg Popovich's deadpan reply during a mid-game sideline interview when TNT's David Aldridge asked whether he was happy with his team's shot selection against the Thunder.",
+      "real": true,
+      "source": {
+        "title": "Gregg Popovich rips reporter for asking if he's 'happy' about shot selection (Video)",
+        "url": "https://larrybrownsports.com/basketball/gregg-popovich-rips-reporter-happy/160946",
+        "date": "2012-11-02"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I go with a clear conscience",
+      "speaker": "Cristiano Ronaldo",
+      "context": "After Portugal's World Cup exit vs Spain, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘I go with a clear conscience’: Cristiano Ronaldo confirms he has played his las",
+        "url": "https://www.theguardian.com/football/2026/jul/07/cristiano-ronaldo-portugal-roberto-martinez-world-cup-2026-spain",
+        "date": "2026-07-07"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've played in front of ninety thousand people and I've played in front of maybe two hundred in the Swedish league when I was young. The two hundred were louder, I promise you that. Those people knew exactly who I was and they hated me specifically.",
+      "speaker": "Zlatan Ibrahimović",
+      "context": "Full-length feature interview with Nils Backman for Expressen TV, published in Swedish and English, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Zlatan's Swedish-league origin stories and his habit of turning any question into a showcase of his own mythology make this entirely plausible, and the 'hated me specifically' pivot is classically him — bragging about being hated. The tell for sharp players is that Zlatan typically claims everyone loved him everywhere, so the 'hated me' framing is subtly off-brand."
+    },
+    {
+      "id": "q6",
+      "text": "What Carew does with a football, I can do with an orange.",
+      "speaker": "Zlatan Ibrahimovic",
+      "context": "Swedish soccer star's cocky teenage retort to fellow striker John Carew, who had dismissed Zlatan's tricks and flicks as pointless. Said in the Norwegian tabloid VG in April 2002. A classic surprising, deadpan brag.",
+      "real": true,
+      "source": {
+        "title": "Zlatan Ibrahimovic - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Zlatan_Ibrahimovi%C4%87",
+        "date": "2002-04-01"
+      }
+    }
+  ]
+}

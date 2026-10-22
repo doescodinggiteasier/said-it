@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-22",
+  "edition": 129,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "We shipped a feature once that I thought was genuinely elegant, and within forty-eight hours the two most common user complaints were exact opposites of each other. One group said it was too aggressive. The other said it didn't go far enough. And I printed both emails out and taped them above my monitor, because that felt like the correct amount of information.",
+      "speaker": "Sundar Pichai",
+      "context": "Fireside chat at Stanford Graduate School of Business View From The Top series, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Pichai often tells product anecdotes that illustrate the impossibility of satisfying all users, and he delivers them with this kind of calm, slightly wry acceptance. The tell is 'I printed both emails out' — it's a vivid physical detail that functions a little too neatly as a punchline; Pichai's real stories tend to end on a lesson rather than a visual gag."
+    },
+    {
+      "id": "q2",
+      "text": "I'm ready to drink tonight, until next morning. Thank you.",
+      "speaker": "Bong Joon-ho",
+      "context": "The director, through his interpreter, accepting the Best International Feature Film Oscar for Parasite at the 2020 Academy Awards",
+      "real": true,
+      "source": {
+        "title": "Bong Joon-ho Oscar Acceptance Speech Transcripts: Parasite Wins Big at the Academy Awards - Rev",
+        "url": "https://www.rev.com/transcripts/bong-joon-ho-oscar-acceptance-speech-transcripts-parasite-wins-big-at-the-academy-awards",
+        "date": "2020-02-09"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People always ask me what's the hardest part of directing, and honestly? It's the third day of a shoot when everyone's still pretending they're not exhausted yet. That's the dangerous day. Day one you're excited, day two you're professional, day three you're just — you're revealing yourself.",
+      "speaker": "Christopher Nolan",
+      "context": "Directors Guild of America Q&A following a screening of Oppenheimer, Los Angeles, July 2023",
+      "real": false,
+      "fake_note": "I made this one up — Nolan genuinely talks about the mechanics of filmmaking in methodical, slightly clinical terms, so this feels exactly like him. The giveaway is that 'revealing yourself' is a touch too emotionally direct for his usual register; he tends to deflect inward reflection onto the work itself rather than the crew dynamic."
+    },
+    {
+      "id": "q4",
+      "text": "There was a stretch in the mid-nineties where I was doing so many voices that I genuinely couldn't remember which cadence was mine. I'd pick up the phone and my wife would go, 'Which one are you today?' I don't think she was entirely joking.",
+      "speaker": "Billy Crystal",
+      "context": "Interview with Howard Stern on The Howard Stern Show, SiriusXM, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Billy Crystal talks openly about identity, performance, and his marriage with exactly this kind of self-deprecating warmth. The tell is the final line 'I don't think she was entirely joking' — it's a clean button, and Crystal's real punchlines tend to be slightly more unpredictable or physical."
+    },
+    {
+      "id": "q5",
+      "text": "It's hard to lead a cavalry charge if you think you look funny on a horse.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The two-time Democratic presidential nominee and UN ambassador, known for his wit; a characteristically self-deprecating line about self-confidence and self-image.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I went through a phase where I was writing songs specifically so I would have an excuse to use a Wurlitzer. The song was almost secondary. I'd build the whole thing around this one sound I wanted in the room, and then the song would kind of grow up around it like a weed.",
+      "speaker": "John Mayer",
+      "context": "Interview with Rick Beato for the YouTube series What Makes This Song Great?, August 2021",
+      "real": false,
+      "fake_note": "I made this one up — Mayer is famously and specifically gear-obsessed, often describing his songwriting as instrument-first, so this is deeply in his wheelhouse. The tell is 'like a weed' — it's a slightly unglamorous simile, and Mayer's real metaphors for creativity tend to be a touch more romantic or technical, rarely both at once."
+    }
+  ]
+}
