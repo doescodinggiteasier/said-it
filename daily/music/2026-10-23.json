@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-23",
+  "edition": 122,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "We tracked 'Gold Digger' in one afternoon. Kanye's in there bouncing off the walls, Jon's at the keys, and I'm thinking — this might be the strangest Tuesday I've ever had. And I've had some strange Tuesdays.",
+      "speaker": "John Legend",
+      "context": "Interview with Terry Gross on NPR's Fresh Air, broadcast September 2010",
+      "real": false,
+      "fake_note": "I made this one up — John Legend was a core part of Kanye's early Roc-A-Fella sessions and speaks about that era with warm, dry humor. The giveaway is 'Jon' — he wouldn't abbreviate his own name referring to himself, which is a quiet logical slip I slipped in."
+    },
+    {
+      "id": "q2",
+      "text": "We have braces on our brains",
+      "speaker": "Cyndi Lauper",
+      "context": "Cyndi Lauper on fun, fashion and freedom of expression",
+      "real": true,
+      "source": {
+        "title": "Music — Cyndi Lauper on fun, fashion and freedom of expression: ‘We have braces on our b",
+        "url": "https://www.theguardian.com/music/2026/oct/21/cyndi-lauper-auction-fashion",
+        "date": "2026-10-23"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People ask how I write melodies and I genuinely can't explain it. It's like asking someone how they sneeze. I just feel it building and then I get out of the way.",
+      "speaker": "Mariah Carey",
+      "context": "Interview with Allure magazine, published in the September 2018 issue",
+      "real": false,
+      "fake_note": "I made this one up — Mariah often describes her songwriting as intuitive and almost involuntary, and the sneeze simile is the kind of offhand domestic comparison she reaches for. The giveaway is the sneeze analogy is a bit more self-deprecating than she typically allows herself to be."
+    },
+    {
+      "id": "q4",
+      "text": "I've been booed. Not like, a little booing, I mean sustained, organized booing. And honestly it's weirdly clarifying? You find out real fast what you actually believe in when a room is telling you that you're wrong.",
+      "speaker": "St. Vincent",
+      "context": "Feature interview with The A.V. Club, published online June 2017",
+      "real": false,
+      "fake_note": "I made this one up — St. Vincent speaks about audience confrontation and artistic conviction with exactly this cerebral, slightly amused remove. The giveaway is the question mark after 'clarifying' — a written transcript quirk that signals performed speech in a way she'd probably catch."
+    },
+    {
+      "id": "q5",
+      "text": "You might be ingraining into your practise something that is counter productive and you'd have no way of knowing it.",
+      "speaker": "Steve Albini",
+      "context": "Warning aspiring engineers why doing 'whatever random crap you can find' is a trap, in an Audio Media International interview on how to be a better producer.",
+      "real": true,
+      "source": {
+        "title": "Audio Media International — 'You might be doing a bad job and not know it': Steve Albini on how to be a better producer",
+        "url": "https://audiomediainternational.com/you-might-be-doing-a-bad-job-and-not-know-it-steve-albini-on-how-to-be-a-better-producer/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People kept telling me trap and country couldn't share a bed. I thought, well, nobody said that about a pickup truck and a bass drop, and yet here we are.",
+      "speaker": "Lil Nas X",
+      "context": "Keynote Q&A at SXSW Music Conference, Austin, Texas, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Lil Nas X talks about genre-blending constantly and with exactly this dry, slightly smug wit. The giveaway is the phrase 'here we are,' which is a bit too tidy a button for his usual rambling, self-aware style."
+    }
+  ]
+}

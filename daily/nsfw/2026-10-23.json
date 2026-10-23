@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-23",
+  "edition": 110,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "We rolled into Hamburg with forty dollars between us, two broken strings, and Pete still smelling like whatever the hell he'd been drinking since Rotterdam. The crowd threw beer at us and we played harder. That's the only review that ever mattered to me.",
+      "speaker": "John Lennon",
+      "context": "Interview with Rolling Stone, Issue 74, January 1971, during the Imagine album press sessions",
+      "real": false,
+      "fake_note": "I made this one up — Lennon was famously blunt and unsentimental about the Hamburg grind years, and this matches his clipped, slightly bitter reminiscence style. The giveaway is 'Rotterdam' — the Beatles' early circuit was Hamburg-Liverpool, not Rotterdam, which a careful fan would clock immediately."
+    },
+    {
+      "id": "q2",
+      "text": "People keep asking me what's the secret to a long marriage. I'll tell you — separate bathrooms and a good divorce lawyer on speed dial. Just in case. I mean, I love the woman, but if I have to hear her opinions on my driving one more goddamn time I'm moving into the garage permanently.",
+      "speaker": "Rodney Dangerfield",
+      "context": "The Tonight Show with Johnny Carson, taped segment, October 1987",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield's whole brand was domestic humiliation and self-deprecating marriage banter, so this slots right in. The giveaway is that the 'garage' punchline is a beat too constructed for his usual rapid-fire delivery; he'd more likely have pivoted to a one-liner than extended the image."
+    },
+    {
+      "id": "q3",
+      "text": "I'd sit there and smoke crack while I listened to the play. It made me fucking crazy.",
+      "speaker": "Samuel L. Jackson",
+      "context": "Reflecting on his 1980s/early-90s crack-cocaine addiction during his time as an understudy on Broadway's 'The Piano Lesson' (shadowing Charles Dutton), before he got sober in 1991. From a 2019 The Hollywood Reporter interview, widely reported (Entertainment Tonight, Today, People), Jan 2019.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter interview (TODAY report)",
+        "url": "https://www.today.com/health/health/samuel-l-jackson-opens-drug-addiction-early-career-rcna20476",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "It's cold outside, but I'm still looking like a thotty, because a hoe never gets cold.",
+      "speaker": "Cardi B",
+      "context": "From a now-iconic 2014 viral Instagram/Vine clip from her pre-fame days, strutting in a bra top and skirt and explaining why she's barely dressed in winter.",
+      "real": true,
+      "source": {
+        "title": "Nylon — Cardi B was right: hot girls don't get cold",
+        "url": "https://www.nylon.com/life/cardi-b-was-right-hot-girls-dont-get-cold-science-confirms",
+        "date": "2014"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "People think writing is glamorous. Writing is sitting in your underwear eating cold noodles at two in the morning hating every word you've written and then, if you're lucky, hating them slightly less by Tuesday. The glamorous part is when someone else reads it and you pretend you meant all of it.",
+      "speaker": "Hunter S. Thompson",
+      "context": "講 panel discussion at the Aspen Ideas Festival, recorded June 1999, published in a transcript excerpt by The Atlantic Monthly, August 1999",
+      "real": false,
+      "fake_note": "I made this one up — Thompson's gleefully self-lacerating take on the writing process and his noodles-in-underwear dishevelment aesthetic is right in his wheelhouse. The giveaway is the Aspen Ideas Festival — Thompson lived in Aspen but actively despised the Ideas Festival crowd and would not have sat on a panel there willingly; his friends would know this immediately."
+    },
+    {
+      "id": "q6",
+      "text": "The strangest thing I've tried to snort? My father. I snorted my father. He was cremated and I couldn't resist grinding him up with a little bit of blow. My dad wouldn't have cared, he didn't give a shit. It went down pretty well, and I'm still alive.",
+      "speaker": "Keith Richards",
+      "context": "Rolling Stones guitarist Keith Richards, in an April 2007 NME interview, describing the strangest thing he had snorted — his late father's cremated ashes ground up with cocaine. Reported by NME, The Hollywood Reporter, VOA, and others. Richards' manager later told NME the remark was made in jest, and Richards offered a softened account in his 2010 memoir, but he is documented giving this quote in the interview.",
+      "real": true,
+      "source": {
+        "title": "NME interview (later called a joke)",
+        "url": "https://www.nme.com/news/music/the-rolling-stones-433-1341398",
+        "date": "2007"
+      }
+    }
+  ]
+}

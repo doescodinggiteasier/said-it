@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-23",
+  "edition": 119,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I don't really do nerves before a race the way people expect. The morning is fine. It's actually the night before — like two in the morning, lying there, that's when my brain just starts running splits. Not worrying, just — running splits. I've woken up at two a.m. having basically raced the whole thing in my head and now I'm exhausted.",
+      "speaker": "Eliud Kipchoge",
+      "context": "Interview with Tim Hutchings for Athletics Weekly magazine, published October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Kipchoge speaks often about his meditative mental preparation and the distance between his outward calm and internal intensity, so this pre-race insomnia detail fits his known narrative. The giveaway is 'running splits' as a literal involuntary mental process — vivid but slightly too convenient as an image."
+    },
+    {
+      "id": "q2",
+      "text": "Chemistry is something that you don't just throw in the frying pan and mix it up with another something and then throw it on top of something, then fry it up and put it in a tortilla put in a microwave, heat it up and it give it to you and expect it to taste good.",
+      "speaker": "Kevin Garnett",
+      "context": "Boston Celtics forward Kevin Garnett delivered this elaborate cooking metaphor while expressing frustration about the lack of preparation time following the 2011 NBA lockout, explaining why team chemistry can't be rushed.",
+      "real": true,
+      "source": {
+        "title": "Kevin Garnett's words were as entertaining as his play - ESPN Boston Celtics Blog",
+        "url": "https://www.espn.com/blog/boston/celtics/post/_/id/4724028/kevin-garnetts-words-were-as-entertaining-as-his-play",
+        "date": "2011-12-13"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Three great minds are better than two.",
+      "speaker": "Geoff Ogilvy",
+      "context": "Golfer and course designer Geoff Ogilvy on his OCM design team",
+      "real": true,
+      "source": {
+        "title": "Sports — Allowed to dream: Geoff Ogilvy and OCM design team make mark on course design",
+        "url": "https://sports.yahoo.com/articles/allowed-dream-geoff-ogilvy-ocm-120524657.html",
+        "date": "2026-09-25"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The worst thing that happened to pace bowling is the speed gun. The moment that thing showed up in grounds, every young quick in the world stopped thinking about where the ball's going and started thinking about the number. I did it. I absolutely did it. You want to see 90 up there. You want it bad.",
+      "speaker": "Brett Lee",
+      "context": "Fox Cricket commentary box discussion during the 2021-22 Ashes Test series, Brisbane Test broadcast",
+      "real": false,
+      "fake_note": "I made this one up — Lee has been a Fox Cricket commentator and speaks constantly about the psychology of fast bowling from first-hand experience. The giveaway is the structural self-inclusion ('I did it. I absolutely did it.'), which is believable but slightly too confessional and rhythmically polished."
+    },
+    {
+      "id": "q5",
+      "text": "Everybody's fit now. That's what gets me — you go to any club in the lower leagues and every player looks like they've been carved out of marble. And then you watch the game and you think, yeah, but can you head it? Can you actually head it when it's wet and it's the seventy-eighth minute? That's still the question.",
+      "speaker": "Roy Keane",
+      "context": "Sky Sports Monday Night Football panel discussion following a Premier League fixture, November 2023",
+      "real": false,
+      "fake_note": "I made this one up — Keane's dismissiveness about modern players dressed up in grudging half-acknowledgment is pitch-perfect for him. The tell is 'carved out of marble,' which is a slightly too literary image for Keane, who usually goes blunter."
+    },
+    {
+      "id": "q6",
+      "text": "We had a film session once — this was early in my time here — and I put a play up and asked the guys what they saw. And one of my better players just said 'a mismatch.' That's it. Just 'a mismatch.' And I thought, okay, we have some work to do. Because a mismatch is the beginning of a sentence, not the end of one.",
+      "speaker": "Erik Spoelstra",
+      "context": "NBA Coaches Association panel discussion at the league's annual coaching clinic, Las Vegas, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Spoelstra frequently discusses player IQ and film culture in Miami in exactly this kind of understated, process-oriented way. The tell is 'a mismatch is the beginning of a sentence, not the end of one,' which edges just slightly toward the aphorism territory I was trying to avoid."
+    }
+  ]
+}

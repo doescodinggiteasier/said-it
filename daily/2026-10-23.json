@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-23",
+  "edition": 130,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I Thought She Was Very Sexy and Very Ballsy",
+      "speaker": "Shelley Blond",
+      "context": "Lara Croft's inaugural voice actor recalling first seeing the Tomb Raider character, interview",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Lara Croft’s Inaugural Voice Actor Shelley Blond Recalls First Time She Saw ‘Tom",
+        "url": "https://variety.com/2026/digital/global/lara-croft-shelley-blond-voice-actor-audition-tomb-raider-1236922413/",
+        "date": "2026-10-23"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My grandmother made jollof rice every Sunday and I genuinely believed until I was maybe twelve that it was a dish she invented. It felt proprietary. It felt like ours specifically.",
+      "speaker": "Lupita Nyong'o",
+      "context": "Guest essay in Bon Appétit's 'My Family Table' series, October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Nyong'o has spoken warmly about her Kenyan and Mexican upbringing, and jollof rice is a culturally resonant touchstone she's referenced in food contexts before. The giveaway is the framing is slightly more nostalgic and less politically aware than her usual voice, which tends to thread cultural pride with more active consciousness."
+    },
+    {
+      "id": "q3",
+      "text": "I bought a telescope when I was writing Interstellar because I felt like I was making things up and I needed to feel like I wasn't. Then I pointed it at Jupiter and all I could think was — that's not going to help me finish this script.",
+      "speaker": "Christopher Nolan",
+      "context": "Masterclass Q&A session at the BFI London Film Festival, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Nolan genuinely consulted physicists for Interstellar and has spoken about his obsession with practical authenticity, so the telescope impulse feels right. The subtle tell is the self-aware punchline; Nolan in real interviews is slightly more earnest and less punch-liney than this."
+    },
+    {
+      "id": "q4",
+      "text": "I remember the first time I cooked for a Michelin inspector — or who I thought was a Michelin inspector. Turned out he was just a guy from the council checking our ventilation. Still cooked the best turbot of my life for him.",
+      "speaker": "Gordon Ramsay",
+      "context": "Interview on The Chris Evans Breakfast Show, Virgin Radio UK, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Ramsay loves self-deprecating stories about high-stakes kitchen moments, and the ventilation inspector twist sounds exactly like his kind of anti-climactic punchline. The subtle giveaway: he's never actually told this specific story, and Michelin inspectors famously don't announce themselves, so any chef would know the premise is a bit off."
+    },
+    {
+      "id": "q5",
+      "text": "Tennis is the loneliest sport when it's going wrong. There's no teammate to look at. The crowd goes quiet in this very specific way and you become incredibly aware of your own breathing, which is the last thing you want to be aware of.",
+      "speaker": "Roger Federer",
+      "context": "Collected remarks published in The Players' Tribune, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Federer has talked openly about the psychological isolation of the tour and the silence of a turning crowd, so the emotional territory is totally his. The giveaway, if you're sharp: he tends to frame these reflections with more gratitude, rarely dwelling on the negative sensation quite so clinically."
+    },
+    {
+      "id": "q6",
+      "text": "Ah -- playoffs? Don't talk about -- playoffs? You kidding me? Playoffs? I just hope we can win a game!",
+      "speaker": "Jim Mora",
+      "context": "Indianapolis Colts head coach, at a November 2001 press conference when a reporter asked about the team's playoff chances after a loss",
+      "real": true,
+      "source": {
+        "title": "Garber: Mora reflects on \"Playoffs?\" moment",
+        "url": "https://www.espn.com/nfl/story/_/id/7302157/jim-mora-reflects-playoffs-moment",
+        "date": "2012-01-12"
+      }
+    }
+  ]
+}
