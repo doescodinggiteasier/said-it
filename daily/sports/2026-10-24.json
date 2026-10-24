@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-24",
+  "edition": 120,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "This Ain't No Shaq And Kobe",
+      "speaker": "Jayson Tatum",
+      "context": "Tatum addressing media narratives about his relationship with Jaylen Brown after the trade",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘This Ain’t No Shaq And Kobe’ — Celtics Star Jayson Tatum Torches Media For Push",
+        "url": "https://sports.yahoo.com/articles/ain-t-no-shaq-kobe-110541866.html",
+        "date": "2026-10-24"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "People keep saying I play angry. I don't play angry. I play like I'm owed something, which is different. Anger runs out. That feeling doesn't.",
+      "speaker": "Shaquille O'Neal",
+      "context": "Interview on The Dan Le Batard Show with Stugotz, ESPN Radio, March 2018",
+      "real": false,
+      "fake_note": "I made this one up — Shaq has often reframed narratives about his playing style in these kinds of blunt, declarative terms, and the distinction between 'angry' and 'owed' fits his grandiose self-mythology perfectly. The giveaway is that real Shaq usually adds a laugh or a name-drop immediately after something this punchy — the restraint is slightly uncharacteristic."
+    },
+    {
+      "id": "q3",
+      "text": "I had a cheeseburger and went to bed.",
+      "speaker": "Andy Reid",
+      "context": "Kansas City Chiefs head coach Andy Reid's reply, with a smile, when asked at his press conference how he celebrated the Chiefs' 35-24 AFC Championship win over the Tennessee Titans that sent them to Super Bowl LIV.",
+      "real": true,
+      "source": {
+        "title": "Andy Reid on how he celebrated Chiefs win: 'I had a cheeseburger and went to bed'",
+        "url": "https://www.nfl.com/videos/andy-reid-on-how-he-celebrated-chiefs-win-i-had-a-cheeseburger-and-went-to-bed",
+        "date": "2020-01-20"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The rotation was fine. The bullpen was fine. You want me to tell you it wasn't fine? It wasn't fine. There, that's what you want. Can we move on?",
+      "speaker": "Tony La Russa",
+      "context": "Chicago White Sox postgame press conference, Guaranteed Rate Field, August 2022",
+      "real": false,
+      "fake_note": "I made this one up — La Russa's tetchy, self-contradicting press conference style is well documented, and this kind of exasperated circular logic was basically his signature in his second Chicago stint. The giveaway is that it's almost too perfectly combative — real La Russa press conference moments usually had a slightly longer windup."
+    },
+    {
+      "id": "q5",
+      "text": "The funny thing about a slump is that you can feel yourself trying to feel confident and that's when you know you're really in trouble. Actual confidence is just — you're not monitoring it. You don't even notice it's there.",
+      "speaker": "Ted Williams",
+      "context": "Recorded interview with Roger Angell for The New Yorker, republished in 'Late Innings,' 1982",
+      "real": false,
+      "fake_note": "I made this one up — Williams was obsessively analytical about hitting mechanics and psychology, and this kind of metacognitive observation about confidence is entirely in his wheelhouse. The giveaway is the slightly too-clean psychological framing; Williams usually got more technical and specific about the mechanics behind such states."
+    },
+    {
+      "id": "q6",
+      "text": "My college coach told me I'd never shoot well enough to play at the next level. I didn't argue with him. I just figured I'd make him right about everything else and wrong about that one thing, and that'd be enough.",
+      "speaker": "Steph Curry",
+      "context": "The Players' Tribune first-person essay, published September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Curry has extensively documented the doubt he faced coming out of Davidson, so a story about a college coach fits squarely in his personal mythology. The giveaway is the slightly too-neat 'wrong about that one thing' construction — real Curry anecdotes tend to name the person or get more specific."
+    }
+  ]
+}

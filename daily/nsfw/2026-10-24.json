@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-24",
+  "edition": 111,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Last year I was really into the word cocksucker. I thought it sounded so mean!",
+      "speaker": "Danny McBride",
+      "context": "Answering a rapid-fire 'favorite curse word' question in a Maxim interview promoting 'Eastbound & Down.'",
+      "real": true,
+      "source": {
+        "title": "Maxim interview",
+        "url": "https://www.maxim.com/entertainment/interview-danny-mcbride-eastbound-and-down/",
+        "date": "2013"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Some journalist wrote that I seemed 'agitated' during the show. Yeah, no shit I was agitated — the monitor was blowing feedback in my ear, some idiot in row four kept waving a lighter, and I hadn't eaten since a gas station hot dog in Cincinnati. Agitated. Jesus Christ.",
+      "speaker": "Kurt Cobain",
+      "context": "Post-show press conference at the Paramount Theatre, Seattle, recorded October 31, 1991",
+      "real": false,
+      "fake_note": "I made this one up — the cascading, irritated list of grievances and the gas station hot dog specificity feel very Kurt. The giveaway is the press conference format; Cobain famously avoided formal press interactions and would be unlikely to sit for one post-show."
+    },
+    {
+      "id": "q3",
+      "text": "People always want to know what the secret is. There's no secret. Show up, be louder than everybody else in the room, and wear something they can't ignore. I turned up to a network dinner in a feather boa and a leather jacket once and they gave me three specials. Confidence is the whole game, baby.",
+      "speaker": "Phyllis Diller",
+      "context": "Keynote interview at the American Comedy Awards luncheon, Beverly Hills Hilton, recorded for Variety, April 1992",
+      "real": false,
+      "fake_note": "I made this one up — Phyllis's showbiz braggadocio and the specific feather boa detail fit her maximalist self-presentation perfectly. The giveaway is 'Confidence is the whole game, baby' — it's a touch too tidy and motivational-poster for her usual sharper, more self-mocking delivery."
+    },
+    {
+      "id": "q4",
+      "text": "Marriage is wonderful. I recommend it to everybody. Do it twice if you can stand it — the second one you actually know what a hangover feels like so the arguments don't surprise you as much.",
+      "speaker": "Richard Pryor",
+      "context": "Live audience taping for The Richard Pryor Show, NBC Studios, Burbank, October 1977",
+      "real": false,
+      "fake_note": "I made this one up — the self-deprecating marriage bit with the hangover pivot is squarely in Pryor's confessional comedic lane. The giveaway is the rhythm is slightly too clean and aphoristic for his usual rougher, more digressive storytelling."
+    },
+    {
+      "id": "q5",
+      "text": "Look at your mushrooms - they look like fucking tadpoles on Viagra.",
+      "speaker": "Gordon Ramsay",
+      "context": "Chef Gordon Ramsay critiquing a kitchen's mushroom side dish on the \"Rococo\" episode of Ramsay's Kitchen Nightmares (King's Lynn restaurant), UK Channel 4, 2006.",
+      "real": true,
+      "source": {
+        "title": "'Ramsay's Kitchen Nightmares' — Rococo (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt1058681/",
+        "date": "2006"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You've baked a really lovely cake, but then you've used dog shit for frosting.",
+      "speaker": "Steve Jobs",
+      "context": "Critiquing a NeXT programmer's work during a project review",
+      "real": true,
+      "source": {
+        "title": "Book 'The Second Coming of Steve Jobs' (Cult of Mac)",
+        "url": "https://www.cultofmac.com/news/eleven-cutting-steve-jobs-quotes",
+        "date": "2000"
+      }
+    }
+  ]
+}

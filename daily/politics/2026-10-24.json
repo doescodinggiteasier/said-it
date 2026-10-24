@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-24",
+  "edition": 119,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what I miss most about being governor. Honestly? The parking spot. Everything else was complicated, but the parking spot was genuinely great.",
+      "speaker": "Arnold Schwarzenegger",
+      "context": "Q&A session at the USC Price School of Public Policy, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Schwarzenegger often deflates grandiose expectations about political life with blunt, slightly absurdist specificity, and this fits his established post-governor speaking-circuit persona perfectly. The tell is that 'genuinely great' is a hair too casual even for him; he'd more likely say something like 'unbelievable, really.'"
+    },
+    {
+      "id": "q2",
+      "text": "Few thought he was even a starter / There were many who thought themselves smarter / But he ended PM / CH and OM / An earl and a knight of the garter.",
+      "speaker": "Clement Attlee",
+      "context": "A self-mocking limerick the former British PM wrote about himself in a letter to his brother Tom Attlee, April 8, 1956.",
+      "real": true,
+      "source": {
+        "title": "Lib Quotes: Clement Attlee (self-description limerick)",
+        "url": "https://libquotes.com/clement-attlee",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "He's a very talented person, and he's a very good person",
+      "speaker": "Donald Trump",
+      "context": "Trump responding in the Oval Office when asked about Vance's suggestion that Trump would endorse him for president",
+      "real": true,
+      "source": {
+        "title": "Politics — Vance front and center in Republican midterms push – is this a dry run for a Whi",
+        "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/24/jd-vance-trump-midterms-white-house",
+        "date": "2026-10-24"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "An old friend of mine once told me, you know, just be yourself - unless you suck.",
+      "speaker": "John Kennedy",
+      "context": "Republican U.S. Senator from Louisiana, known for his folksy one-liners, sharing a piece of self-deprecating advice. He used the line in a Jan. 25, 2018 Fox News interview. Innocuous and funny, with no target or policy edge.",
+      "real": true,
+      "source": {
+        "title": "15 times Sen. John Kennedy got folksy, snarky or both | nola.com",
+        "url": "https://www.nola.com/news/15-times-sen-john-kennedy-got-folksy-snarky-or-both/article_7fb01151-5776-54f2-a04f-49ffeb4d0447.html",
+        "date": "2018-01-25"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I spent three days in a deficit-reduction working group once. By the end I was genuinely nostalgic for the Finance Committee, and I do not say that lightly.",
+      "speaker": "Chuck Schumer",
+      "context": "Profile interview in The New Yorker, published September 2021",
+      "real": false,
+      "fake_note": "I made this one up — Schumer's insider-baseball humor and his genuine pleasure in the procedural machinery of the Senate are well-documented, and New Yorker profiles of him have captured exactly this kind of dry, self-aware aside. The tell is the slightly literary 'I do not say that lightly,' which is a touch more polished than Schumer's typical Brooklyn-direct delivery."
+    },
+    {
+      "id": "q6",
+      "text": "When I was at the UN, my translator once told me that a phrase I used in my opening statement didn't really have an equivalent in Mandarin. She said the closest translation was roughly 'well-intentioned confusion.' I thought, that's not bad, actually. That could be the subtitle of American foreign policy for the last thirty years.",
+      "speaker": "Condoleezza Rice",
+      "context": "Conversation with Walter Isaacson at the Aspen Ideas Festival, Aspen, Colorado, July 2019",
+      "real": false,
+      "fake_note": "I made this one up — Rice has a precise, professorial wit and regularly makes sweeping-but-measured historical observations about American foreign policy in exactly these kinds of festival-circuit conversations. The tell is that the anecdote is slightly too well-shaped; real translation-booth stories tend to be messier and less neatly payoff-ready."
+    }
+  ]
+}

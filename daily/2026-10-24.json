@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-24",
+  "edition": 131,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q6",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I like to say not only was that the first human on the moon, but the first software to run on the moon.",
+      "speaker": "Margaret Hamilton",
+      "context": "The Apollo flight-software lead (who popularized the term \"software engineering\") in a CBS Boston interview, on her code's role in the moon landing",
+      "real": true,
+      "source": {
+        "title": "Margaret Hamilton: MIT Software Pioneer Who Helped Save Apollo 11 Moon Mission - CBS Boston",
+        "url": "https://www.cbsnews.com/boston/news/margaret-hamilton-apollo-11-software-pioneer-interview/",
+        "date": "2019-07-15"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Someone asked me once whether I think about legacy, and honestly my first thought was — I hope the legacy is just that the band sounded good in a room. Everything else, the think-pieces and the theory, that stuff gets written whether you cooperate with it or not.",
+      "speaker": "Thom Yorke",
+      "context": "Interview with The Wire magazine, Issue 401, July 2017, discussing Radiohead's touring cycle for A Moon Shaped Pool",
+      "real": false,
+      "fake_note": "I made this one up — Yorke is famously ambivalent about the academic weight placed on Radiohead's work and often deflects grand-legacy questions with something concrete and slightly dismissive. The giveaway is the phrase 'sounded good in a room,' which is a bit too acoustic-and-humble for a producer who obsesses over electronic texture."
+    },
+    {
+      "id": "q3",
+      "text": "The weird thing about playing a villain is that at some point you stop thinking of them as a villain. You're just a guy who wants something badly and the world keeps getting in the way. The moment I started thinking of Loki like that, everything got easier and also a little more uncomfortable.",
+      "speaker": "Tom Hiddleston",
+      "context": "Panel discussion at San Diego Comic-Con International, Hall H, July 2013, Thor: The Dark World press event",
+      "real": false,
+      "fake_note": "I made this one up — Hiddleston is well-documented discussing his method-adjacent approach to Loki and frequently talks about finding the character's internal logic rather than playing evil for evil's sake. The tell is the phrase 'a little more uncomfortable,' implying a level of personal identification with the character that he's hinted at but never stated this directly."
+    },
+    {
+      "id": "q4",
+      "text": "I like the escalator, man, 'cause the escalator can never break. It can only become stairs. There would never be an 'Escalator Temporarily Out of Order' sign, only an 'Escalator Temporarily Stairs - Sorry for the Convenience.'",
+      "speaker": "Mitch Hedberg",
+      "context": "From his Comedy Central Presents stand-up set, a signature observational one-liner",
+      "real": true,
+      "source": {
+        "title": "Mitch Hedberg quote on Quotes.net (Comedy Central Presents)",
+        "url": "https://www.quotes.net/mquote/706033",
+        "date": "1998-01-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I don't separate the cooking from the eating. Some chefs I know, they taste everything on the line and by the time service is over they're not hungry, they're just tired. I'm still hungry. I think if you're not still hungry at the end of service, something went wrong.",
+      "speaker": "René Redzepi",
+      "context": "Conversation with David Chang on the Munchies podcast, Vice Media, recorded October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Redzepi talks often about the physical and emotional experience of cooking and the philosophy behind what drives a chef's connection to food. The observation about being 'still hungry' is the kind of specific, experiential detail he reaches for. The tell is that the contrast with other unnamed chefs is a bit too polished; Redzepi's actual interviews tend to be more tentative and self-questioning in tone."
+    },
+    {
+      "id": "q6",
+      "text": "There's a version of every Hitchcock film where you can see exactly where he got bored with the script and just decided the cinematography would have to carry the rest. Rear Window is not one of those films. Rear Window is the one where he never got bored.",
+      "speaker": "Martin Scorsese",
+      "context": "Q&A session at the Film Society of Lincoln Center retrospective, New York City, April 2014",
+      "real": false,
+      "fake_note": "I made this one up — Scorsese has spoken extensively about Hitchcock's craft in documentaries and public talks, and this kind of slightly critical-but-loving director's observation is completely in his wheelhouse. The tell is that while he's praised Rear Window specifically, the framing about Hitchcock 'getting bored' is a fabricated editorial that he's never actually offered."
+    }
+  ]
+}

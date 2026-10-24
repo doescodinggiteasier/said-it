@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-24",
+  "edition": 123,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People always want to know what I was thinking when I wrote that. And I genuinely cannot tell you. I've tried. I've sat down and attempted to reconstruct it, and I just get this blank. It came from somewhere I don't have access to anymore.",
+      "speaker": "Joni Mitchell",
+      "context": "Interview with Cameron Crowe, Rolling Stone, March 2023 issue",
+      "real": false,
+      "fake_note": "I made this one up — Mitchell has spoken extensively about the semi-automatic, almost unconscious nature of her best songwriting, so this fits right in her wheelhouse. The tell is that she usually names the specific song she's discussing; keeping it vague is a tiny crack in the plausibility."
+    },
+    {
+      "id": "q2",
+      "text": "I remember finishing the mix on that record at like four in the morning, and I played it back on these tiny little Auratones — the worst speakers you can imagine — and I just started crying. Not because it was good. I didn't even know if it was good. I was just so tired and it was finally done.",
+      "speaker": "Rick Rubin",
+      "context": "Broken Record podcast, episode interview with Malcolm Gladwell, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Rubin is famous for his late-night studio habits and his almost mystical relationship with the finished product, so this reads perfectly on-brand. The subtle giveaway is the Auratones detail: it's plausible and specific, but a real Rubin story would more likely name the artist rather than leave it as a generic 'that record.'"
+    },
+    {
+      "id": "q3",
+      "text": "The handclap on that track — we spent probably a full day on a handclap. Everyone in the room clapping different rhythms and Quincy just standing there with his eyes closed. And at some point he goes, 'that one, the third person from the left.' I still don't know how he heard that.",
+      "speaker": "Siedah Garrett",
+      "context": "Panel discussion at the Grammy Museum, Los Angeles, tribute event for Quincy Jones, December 2024",
+      "real": false,
+      "fake_note": "I made this one up — Garrett worked closely with Quincy Jones on the Bad sessions and speaks about him with exactly this kind of reverent specificity. The giveaway is the 'third person from the left' detail, which is a little too cinematic; the real version of this story would probably be less stageable."
+    },
+    {
+      "id": "q4",
+      "text": "Touring with a full orchestra felt insane to me at first. Like, I'd walk out and there'd be seventy people behind me and I'm thinking — I wrote this on a laptop in a flat in Stockwell. How did we get here.",
+      "speaker": "James Blake",
+      "context": "Interview with Zane Lowe on Apple Music 1, broadcast January 2024",
+      "real": false,
+      "fake_note": "I made this one up — Blake frequently discusses the gap between his intimate, bedroom-production origins and the scale his career has reached, and Stockwell is a real area of south London where he spent formative years. The giveaway is that he'd almost certainly name the specific album or tour rather than leave it floating like this."
+    },
+    {
+      "id": "q5",
+      "text": "Do you know what's not a high-flying bird? A chicken.",
+      "speaker": "Noel Gallagher",
+      "context": "Chicken Shop Date interview, 2025",
+      "real": true,
+      "source": {
+        "title": "Music — Noel Gallagher Talks Vegans, Macca, Underwear on Chicken Shop Date",
+        "url": "https://pitchfork.com/story/noel-gallagher-talks-vegans-macca-underwear-on-chicken-shop-date/",
+        "date": "2026-10-24"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "It's a tornado that's always getting bigger and moving faster",
+      "speaker": "Sullivan Fortner",
+      "context": "Interview about his music and Hurricane Katrina",
+      "real": true,
+      "source": {
+        "title": "Music — ‘For this record, I took an edible and said, screw it’: jazz pianist Sullivan Fo",
+        "url": "https://www.theguardian.com/music/2026/aug/10/jazz-pianist-sullivan-fortner-leave-that-in-there-katrina-new-orleans",
+        "date": "2026-08-14"
+      }
+    }
+  ]
+}

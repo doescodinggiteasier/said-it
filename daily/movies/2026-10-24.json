@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-24",
+  "edition": 128,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "This town deserves a better class of criminal, and I'm gonna give it to 'em.",
+      "speaker": "The Dark Knight (2008)",
+      "context": "The Joker (Heath Ledger) addressing Gotham's mob bosses during his hostile takeover of their operation.",
+      "real": true,
+      "source": {
+        "title": "The Dark Knight (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Dark_Knight_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "He's not brave. He just doesn't think far enough ahead to be scared.",
+      "speaker": "Raiders of the Lost Ark (1981)",
+      "context": "Belloq to his men, half-admiringly, after Indiana Jones narrowly escapes",
+      "real": false,
+      "fake_note": "I made this one up — Belloq's mix of scholarly condescension and grudging respect for Jones is exactly his character's register throughout the film. The subtle tell is that the line is a degree too epigram-tight; Belloq's real dialogue is slightly more florid and self-congratulatory."
+    },
+    {
+      "id": "q3",
+      "text": "Looks like I picked the wrong week to quit smoking.",
+      "speaker": "Airplane! (1980)",
+      "context": "Steve McCroskey (Lloyd Bridges), the harried air traffic supervisor, laments amid the crisis (the first of his escalating vices).",
+      "real": true,
+      "source": {
+        "title": "Airplane! - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Airplane!",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Are you not entertained?",
+      "speaker": "Gladiator (2000)",
+      "context": "Maximus (Russell Crowe) shouts at the Zucchabar arena crowd after killing his opponents in a brutal fight.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Nobody comes to this town to stay, Mr. Reeves. They come to disappear.",
+      "speaker": "Casablanca (1942)",
+      "context": "Captain Renault making dry small talk with a new arrival at the café",
+      "real": false,
+      "fake_note": "I made this one up — Renault's world-weary wit and habit of addressing people by name are straight from the film's playbook. The giveaway is that 'disappear' edges slightly too close to a thesis statement; Renault's real quips are more offhand and self-amused."
+    },
+    {
+      "id": "q6",
+      "text": "You want loyalty, hire a dog. You want results, you talk to me.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes to a prospective client in his office, early in the film",
+      "real": false,
+      "fake_note": "I made this one up — Gittes is exactly this sardonic and self-assured, so the voice lands right. The subtle giveaway is that it's a touch too neatly balanced for his usual off-the-cuff delivery; real Gittes lines are a little rougher around the edges."
+    }
+  ]
+}
