@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-25",
+  "edition": 120,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Like Saddam Hussein opened a Cheesecake Factory",
+      "speaker": "Barack Obama",
+      "context": "Campaign stop in Cleveland, Ohio, joking about Trump's White House renovations",
+      "real": true,
+      "source": {
+        "title": "Politics — Obama on Trump White House: ‘Like Saddam Hussein opened a Cheesecake Factory’",
+        "url": "https://thehill.com/homenews/campaign/6170405-obama-mocks-trump-white-house/",
+        "date": "2026-10-25"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I grew up watching my mother clip grocery coupons at the kitchen table. So when someone hands me a budget document with a rounding error larger than our entire county's annual revenue, I notice.",
+      "speaker": "Elizabeth Warren",
+      "context": "Town hall at Keene State College, Keene, New Hampshire, during the 2020 presidential primary campaign, October 2019",
+      "real": false,
+      "fake_note": "I made this one up — Warren's working-class Oklahoma upbringing and her habit of grounding budget arguments in kitchen-table imagery are thoroughly documented, and the town-hall setting is her natural habitat. The giveaway is 'our entire county's annual revenue' — she usually goes national in scale rather than that local."
+    },
+    {
+      "id": "q3",
+      "text": "People romanticize bipartisanship. And I believe in it, genuinely. But I will tell you that some of the most bipartisan moments I witnessed in the Senate were people from both parties being equally confused by the same CBO table.",
+      "speaker": "Rob Portman",
+      "context": "Interview on 'The Axe Files' podcast with David Axelrod, recorded February 2022, shortly before his Senate retirement",
+      "real": false,
+      "fake_note": "I made this one up — Portman's low-key, institutionalist humor and his genuine reputation as a bipartisan budget wonk make the CBO detail feel authentic, and the retirement-era candor fits the timing. The subtle tell is the phrase 'people romanticize' — slightly more reflective and TED-talk-ish than his typically matter-of-fact delivery."
+    },
+    {
+      "id": "q4",
+      "text": "People keep asking me if I miss the Senate. I tell them I miss the parking. The debates I can live without.",
+      "speaker": "Hillary Clinton",
+      "context": "Q&A session at the Yale School of Management Leadership Forum, New Haven, Connecticut, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Clinton has made dry, self-aware jokes about her long career before, and the parking gag fits her wry insider tone perfectly. The giveaway is she rarely quips this crisply without pivoting immediately to a policy point."
+    },
+    {
+      "id": "q5",
+      "text": "Someone handed me a forty-seven-page brief on agricultural subsidy reform right before I went on stage at the Iowa State Fair. I thought, well, at least the corn dog's shorter.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic National Committee fundraiser in Philadelphia, Pennsylvania, reported by Politico, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-deprecating fair-food humor and his habit of name-dropping the Iowa State Fair make this feel lived-in and real. The subtle giveaway is that the punchline is a touch too tidy for his usual wandering delivery."
+    },
+    {
+      "id": "q6",
+      "text": "Worst damnfool mistake I ever made was letting myself be elected Vice President of the United States. Should have stuck with my old chores as Speaker of the House. I gave up the second most important job in the Government for one that didn't amount to a hill of beans. I spent eight long years as Mr. Roosevelt's spare tire.",
+      "speaker": "John Nance Garner",
+      "context": "FDR's first vice president (\"Cactus Jack\"), ruefully mocking his own decision to take the job and his powerlessness in it, after leaving office.",
+      "real": true,
+      "source": {
+        "title": "John Nance Garner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Nance_Garner",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

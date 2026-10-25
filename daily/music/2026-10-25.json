@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-25",
+  "edition": 124,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q4",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He had the right attitude. He chewed gum, looked arrogant and flipped the bird to the guards – he did everything the prisoners wanted to do. He was a mean mother from the South who was there because he loved us. When he walked away, everyone in that place had become a Johnny Cash fan.",
+      "speaker": "Merle Haggard",
+      "context": "Recalling watching Johnny Cash perform at San Quentin prison on New Year's Day while Haggard was an inmate there.",
+      "real": true,
+      "source": {
+        "title": "Louder — Johnny Cash, Merle Haggard, and the true story that's almost too good to be true",
+        "url": "https://www.loudersound.com/features/johnny-cash-merle-haggard-and-the-true-story-thats-almost-too-good-to-be-true",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Keep your mind on the music. I never thought of myself as a 'woman' musician at all, but a guitarist and then a bass player",
+      "speaker": "Carol Kaye",
+      "context": "The legendary session bassist (Pet Sounds, countless hits) on identity versus playing, in a Guitar World interview.",
+      "real": true,
+      "source": {
+        "title": "Guitar World — Studio bass icon Carol Kaye on why it is not about who you are, but how and what you play",
+        "url": "https://www.guitarworld.com/artists/bassists/carol-kaye-on-teaching-women",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I wasn't trying to be controversial. I was just describing what I saw every day. The controversy meant people who'd never been to that neighborhood were suddenly paying attention, and I thought, well, that's something.",
+      "speaker": "Ice Cube",
+      "context": "Appearing on The Late Show with Stephen Colbert, November 2016, discussing Straight Outta Compton",
+      "real": false,
+      "fake_note": "I made this one up — Cube has given nearly identical framing in real interviews, positioning NWA's early work as documentary rather than provocation, which is exactly what makes this dangerous for players. The tell is 'I thought, well, that's something' — it's softer and more reflective than Cube's actual rhythm, which tends to land harder."
+    },
+    {
+      "id": "q4",
+      "text": "I went through a period where I was producing for everyone who asked because I thought saying no was the same as being lazy. Took me way too long to figure out that a track you make out of obligation sounds exactly like that.",
+      "speaker": "Jack Antonoff",
+      "context": "GQ profile, 'Jack Antonoff Is Everywhere on Purpose,' published August 2023",
+      "real": false,
+      "fake_note": "I made this one up — Antonoff has spoken candidly about workload, creative intention and the emotional specificity he demands from his productions, and this reflects his self-aware, slightly confessional interview voice. The tell is the word 'obligation' — he tends to use more industry-specific language when discussing his process."
+    },
+    {
+      "id": "q5",
+      "text": "There's a version of Lemonade that was just piano and voice for every single track. Beyoncé played it for me once in the car and I had to ask her to pull over. I'm not being dramatic — I just needed a minute.",
+      "speaker": "Adele",
+      "context": "British Vogue cover interview, November 2021 issue",
+      "real": false,
+      "fake_note": "I made this one up — Adele is famous for effusive, specific praise of Beyoncé and for telling stories that involve her own overwhelmed emotional reactions, so every beat here feels right. The giveaway is the scene itself: Beyoncé driving Adele somewhere is a charming but slightly too-cinematic detail."
+    },
+    {
+      "id": "q6",
+      "text": "A 50-year-old white man trying to make a comeback after 20 years, so sad!",
+      "speaker": "Ali G",
+      "context": "Ali G mocking Noel Gallagher's Oasis comeback",
+      "real": true,
+      "source": {
+        "title": "Music — Watch Ali G mock Noel Gallagher’s Oasis comeback and try to kick him out of cine",
+        "url": "https://www.nme.com/news/music/watch-ali-g-mock-noel-gallagher-oasis-comeback-cinema-3974172?utm_source=rss&utm_medium=rss&utm_campaign=watch-ali-g-mock-noel-gallagher-oasis-comeback-cinema",
+        "date": "2026-10-25"
+      }
+    }
+  ]
+}

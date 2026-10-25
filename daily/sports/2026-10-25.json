@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-25",
+  "edition": 121,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what I was thinking on that last drive and honestly I wasn't thinking anything coherent. It's more like your body just takes over and your brain is kind of along for the ride, going 'oh okay, we're doing this.'",
+      "speaker": "Patrick Mahomes",
+      "context": "Postgame press conference following the AFC Championship Game, January 2024, Kansas City",
+      "real": false,
+      "fake_note": "I made this one up — Mahomes really does talk about late-game instinct this way, and the self-deprecating 'along for the ride' bit sounds exactly like his laid-back press conference voice. The subtle giveaway is that he's slightly *too* articulate about the inarticulacy of it."
+    },
+    {
+      "id": "q2",
+      "text": "I've had coaches I loved and coaches I genuinely couldn't stand, and I'll tell you something — I learned just as much from the ones I couldn't stand. Might've learned more, actually. You pay closer attention when you're angry.",
+      "speaker": "Serena Williams",
+      "context": "Interview with Gayle King on CBS Mornings, September 2022, promoting her Vogue cover story",
+      "real": false,
+      "fake_note": "I made this one up — Serena has spoken candidly about difficult coaching relationships throughout her career, and this has her characteristic bluntness followed by a pivot to something she learned. The giveaway is that she names no one, which real Serena would probably do."
+    },
+    {
+      "id": "q3",
+      "text": "When I was coming up, the old guys didn't explain anything. You just watched and figured it out. And I thought I hated that. Now I catch myself doing the exact same thing to younger players, just standing there, watching them struggle, thinking — yeah, this is how you learn.",
+      "speaker": "Greg Popovich",
+      "context": "NBA Coaches Association roundtable discussion, ESPN, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Pop genuinely reflects on his own coaching evolution and has that self-implicating, slightly gruff style of self-awareness. The giveaway is he's slightly too reflective and confessional here; real Popovich tends to deflect with a joke rather than sit this long in a sincere moment."
+    },
+    {
+      "id": "q4",
+      "text": "The ice doesn't care if you're tired. I know that sounds obvious but when you're in overtime and your legs are done, you have to remind yourself of things that are obvious.",
+      "speaker": "Sidney Crosby",
+      "context": "Feature interview with The Athletic, March 2023, Pittsburgh",
+      "real": false,
+      "fake_note": "I made this one up — Crosby is famously understated and often talks about the physical demands of overtime hockey in practical, unglamorous terms. The slight giveaway is the self-correction mid-thought, which is a little too neatly constructed for real Crosby, who tends to be even flatter."
+    },
+    {
+      "id": "q5",
+      "text": "I have always felt that I needed you more than you needed me and that holds true to this very day.",
+      "speaker": "Vin Scully",
+      "context": "Legendary Dodgers broadcaster Vin Scully wrote a farewell letter to fans ahead of his final home series in September 2016, after 67 years calling Dodgers games.",
+      "real": true,
+      "source": {
+        "title": "Vin Scully writes farewell letter to fans before final Dodgers homestand (Sports Illustrated)",
+        "url": "https://www.si.com/mlb/2016/09/24/vin-scully-farewell-letter-los-angeles-dodgers-fans",
+        "date": "2016-09-24"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I learned a lot from this university of football during my career as a player and as a coach.",
+      "speaker": "Xavi Hernández",
+      "context": "Xavi's presentation as Netherlands head coach, 2026",
+      "real": true,
+      "source": {
+        "title": "Sports — Xavi hopes time at the ‘university of football’ will end with Dutch success",
+        "url": "https://www.theguardian.com/football/2026/aug/25/xavi-hernandez-university-of-football-netherlands-head-coach-barcelona",
+        "date": "2026-08-26"
+      }
+    }
+  ]
+}

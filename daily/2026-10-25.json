@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-25",
+  "edition": 132,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I always thought that, uh, quicksand was gonna be a much bigger problem than it turned out to be.",
+      "speaker": "John Mulaney",
+      "context": "From his stand-up special 'New in Town' (2012), riffing on childhood fears from cartoons",
+      "real": true,
+      "source": {
+        "title": "John Mulaney: New In Town (2012) - Full Transcript - Scraps from the Loft",
+        "url": "https://scrapsfromtheloft.com/comedy/john-mulaney-new-in-town-2012-full-transcript/",
+        "date": "2012-01-13"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "There was a stretch — I think it was around the making of Thriller, but even before that — where I was genuinely nocturnal. Like, I did not see the sun for weeks at a time and thought that was completely normal. Musicians will understand what I'm talking about.",
+      "speaker": "Quincy Jones",
+      "context": "Rolling Stone long-form profile by Brian Hiatt, published October 2018",
+      "real": false,
+      "fake_note": "I made this one up — Jones frequently talked about the obsessive, time-dissolving atmosphere of major recording sessions, and his Thriller-era anecdotes were a staple of his late interviews. The slight giveaway is 'Musicians will understand,' which is a touch more self-conscious than his usual storytelling."
+    },
+    {
+      "id": "q3",
+      "text": "The only time to eat diet food is while you're waiting for the steak to cook.",
+      "speaker": "Julia Child",
+      "context": "Famous saying by the chef and TV cook, listed among quotes she actually said",
+      "real": true,
+      "source": {
+        "title": "17 Quotes From Julia Child, Which She Actually Said | GBH",
+        "url": "https://www.wgbh.org/lifestyle/food/food-stories/2019-01-28/17-quotes-from-julia-child-which-she-actually-said",
+        "date": "2019-01-28"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I'll be honest with you, I do not fully understand what a blockchain is. I've had it explained to me maybe four times by people who were very confident about it, and each time I walked away with a slightly different picture in my head.",
+      "speaker": "Barack Obama",
+      "context": "Onstage conversation with David Letterman at the Obama Foundation Summit, Chicago, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Obama regularly admits to technology befuddlement in a measured, self-aware way, and his pattern of referencing multiple attempts to learn something is well documented. The tell is 'slightly different picture,' a phrase just polished enough that you'd start to wonder if a speechwriter touched it."
+    },
+    {
+      "id": "q5",
+      "text": "I've launched things that failed and things that didn't fail, and the main difference I can identify is that the ones that didn't fail — we were probably six months too late with them. Being early and being wrong look identical for a very long time.",
+      "speaker": "Elon Musk",
+      "context": "Fireside chat with Kara Swisher at Code Conference, Rancho Palos Verdes, California, September 2017",
+      "real": false,
+      "fake_note": "I made this one up — Musk has repeatedly framed timing as the critical variable in product success, and the observation that 'early' and 'wrong' are indistinguishable fits his documented philosophy about Tesla and SpaceX timelines. The subtle giveaway is the controlled, almost aphoristic rhythm, which is more measured than his usual rapid-fire style."
+    },
+    {
+      "id": "q6",
+      "text": "People ask me what my process is and I never know what to say. I just kind of — I go in, I do the thing, and then I go home and eat cereal and watch something completely stupid on television. That's the process.",
+      "speaker": "Meryl Streep",
+      "context": "Interview with Jada Yuan, The New York Times Arts & Leisure section, January 2019",
+      "real": false,
+      "fake_note": "I made this one up — Streep is known for deflecting grand acting-craft questions with dry, self-deprecating humor, so this sounds completely in character. The subtle giveaway is the specificity of 'cereal,' which is just slightly too charming a detail to be offhand."
+    }
+  ]
+}
