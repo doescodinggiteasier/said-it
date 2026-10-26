@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-26",
+  "edition": 130,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Nobody gets to leave this family, Danny. Not really.",
+      "speaker": "The Godfather Part II (1974)",
+      "context": "Michael Corleone, speaking quietly to a nervous associate",
+      "real": false,
+      "fake_note": "I made this one up — Michael's cold, understated register is all over this film, and the sentiment tracks perfectly with his arc. The giveaway is the name 'Danny,' which keeps it feeling grounded and specific but isn't actually anyone in the film."
+    },
+    {
+      "id": "q2",
+      "text": "The Dude abides.",
+      "speaker": "The Big Lebowski (1998)",
+      "context": "The Dude (Jeff Bridges) to The Stranger (Sam Elliott) at the bar near the film's end, summing up his laid-back philosophy.",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "Rudeness is merely an expression of fear. People fear they won't get what they want. The most dreadful and unattractive person only needs to be loved, and they will open up like a flower.",
+      "speaker": "The Grand Budapest Hotel (2014)",
+      "context": "M. Gustave (Ralph Fiennes), the fastidious concierge, instructs his lobby boy Zero on his philosophy of service.",
+      "real": true,
+      "source": {
+        "title": "The Grand Budapest Hotel - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Grand_Budapest_Hotel",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Andy, if I'd had any sense, I'd have been scared of you the first day.",
+      "speaker": "The Shawshank Redemption (1994)",
+      "context": "Red, speaking to Andy near the library after years inside",
+      "real": false,
+      "fake_note": "I made this one up — Red's narrated and spoken lines share this reflective, understated admiration for Andy, and the delivery fits Morgan Freeman's rhythms closely. The subtle giveaway is 'if I'd had any sense,' which is just slightly too self-deprecating a construction compared to Red's usual quiet dignity."
+    },
+    {
+      "id": "q5",
+      "text": "You put a man in a uniform and suddenly he forgets which one of you is the weapon.",
+      "speaker": "Full Metal Jacket (1987)",
+      "context": "Joker, narrating in voice-over after a confrontation",
+      "real": false,
+      "fake_note": "I made this one up — Joker's cynical, journalism-student voice runs through the film's first half in exactly this register. The giveaway is the slightly literary rhythm; Joker's real lines are blunter and more self-aware of their own dark comedy."
+    },
+    {
+      "id": "q6",
+      "text": "Life finds a way.",
+      "speaker": "Jurassic Park (1993)",
+      "context": "Dr. Ian Malcolm (Jeff Goldblum) argues that the park's all-female engineered dinosaurs cannot truly be prevented from breeding or controlled.",
+      "real": true
+    }
+  ]
+}

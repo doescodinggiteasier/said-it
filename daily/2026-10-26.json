@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-26",
+  "edition": 133,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "They say that I have no hits, and I'm difficult to work with. And they say that like it's a bad thing.",
+      "speaker": "Tom Waits",
+      "context": "Speaking at his Rock and Roll Hall of Fame induction, March 14, 2001",
+      "real": true,
+      "source": {
+        "title": "Tom Waits - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Tom_Waits",
+        "date": "2001-03-14"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I appreciate that many of us grew up and enjoyed science fiction, but it's not helpful.",
+      "speaker": "Jensen Huang",
+      "context": "Nvidia CEO, on quantifying the existential risk of",
+      "real": true,
+      "source": {
+        "title": "TechRadar — Quote of the day: Jensen Huang on AI risk",
+        "url": "https://www.techradar.com/pro/quote-of-the-day-by-nvidia-ceo-jensen-huang-i-appreciate-that-many-of-us-grew-up-and-enjoyed-science-fiction-but-its-not-helpful-on-quantifying-the-existential-risks-posed-by-ai",
+        "date": "2026-06-06"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I went through a phase where I was convinced I needed to learn Portuguese. I bought the app, I did like eleven days in a row, and then I had a show in Lisbon and absolutely none of it came back to me. The crowd thought it was a bit. It was not a bit.",
+      "speaker": "Conan O'Brien",
+      "context": "Conan O'Brien Needs a Friend podcast, episode released January 2024",
+      "real": false,
+      "fake_note": "I made this one up — Conan has publicly traveled to Lisbon and documented his self-mocking language struggles; the Duolingo streak detail is plausible for his era of content. The giveaway is the punchline lands a little too cleanly for genuine rambling."
+    },
+    {
+      "id": "q4",
+      "text": "The thing about bread that nobody respects is the crust-to-crumb ratio. Everybody obsesses over the crumb — the big open holes, the glossy interior — but if the crust doesn't shatter when you cut it, I don't care how beautiful the inside is. You've just made a very photogenic disappointment.",
+      "speaker": "Samin Nosrat",
+      "context": "Interview with Bon Appétit magazine, published October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Nosrat's entire framework is built around foundational elements over aesthetics, and she talks about bread with exactly this kind of structural passion. The giveaway is 'very photogenic disappointment' — it's a hair too quotable for organic conversation."
+    },
+    {
+      "id": "q5",
+      "text": "People ask me what the hardest part of hosting the Oscars was, and honestly it wasn't the jokes or the celebrities — it was figuring out where to stand. Nobody tells you that. You just sort of drift toward the podium and hope the camera finds you.",
+      "speaker": "Jimmy Kimmel",
+      "context": "Howard Stern Show, SiriusXM, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Kimmel has hosted the Oscars multiple times and self-deprecating behind-the-scenes fumbles are exactly his register. The subtle giveaway is that 'nobody tells you that' is a tiny bit too perfectly constructed for truly off-the-cuff speech."
+    },
+    {
+      "id": "q6",
+      "text": "I never lie, even to this day. Not even a little. Unless you count playing pranks on people, which I don't. That's comedy. Entertainment doesn't count. A joke is different from a lie, even if the difference is kind of subtle.",
+      "speaker": "Steve Wozniak",
+      "context": "From his memoir iWoz (2006), the Apple co-founder on his lifelong commitment to honesty and his exception for pranks",
+      "real": true,
+      "source": {
+        "title": "Steve Wozniak (10+ Sourced Quotes) - Lib Quotes",
+        "url": "https://libquotes.com/steve-wozniak",
+        "date": "2006-09-17"
+      }
+    }
+  ]
+}

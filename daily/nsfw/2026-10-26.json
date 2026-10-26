@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-26",
+  "edition": 112,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I think that weed kept me from wanting to kill people. And probably kept a lot of people from wanting to kill me, too — out there drunk, running around.",
+      "speaker": "Willie Nelson",
+      "context": "In Rolling Stone's 2019 Weed Issue cover interview, explaining how marijuana replaced his heavy drinking.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Willie Nelson: 'Marijuana Saved My Life'",
+        "url": "https://www.rollingstone.com/music/music-features/willie-nelson-weed-issue-826290/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Someone told me I looked tired. I said I'm not tired, I'm 58 and I was at a party until 3am — there is a difference, one is a medical condition and one is a triumph.",
+      "speaker": "Gore Vidal",
+      "context": "Conversation with Clive James recorded for the LWT arts programme 'The Late Clive James', aired October 1981",
+      "real": false,
+      "fake_note": "I made this one up — Vidal's habit of reframing perceived insults as badges of honour and his fondness for clinical-sounding syntax wrapped around a brag is exactly his patrician wit. The tell is the self-congratulatory 'triumph' closer is almost too warm; Vidal's actual punchlines tended to cut outward, not inward."
+    },
+    {
+      "id": "q3",
+      "text": "Someone asked me what my skincare routine is. I said, 'Whisky, spite, and never sleeping before 4am.' They printed it in a women's magazine like I was being sincere. I framed it.",
+      "speaker": "Christopher Hitchens",
+      "context": "Q&A session following his appearance at the Hay Festival, Hay-on-Wye, May 2008",
+      "real": false,
+      "fake_note": "I made this one up — Hitchens absolutely weaponised self-deprecating booze references and loved puncturing lifestyle journalism, so the cadence lands. The subtle tell is he'd more likely cite a specific magazine by name and skewer it further."
+    },
+    {
+      "id": "q4",
+      "text": "The difference between a great gig and a shitty one is whether you ate beforehand. Nobody tells you that. They talk about energy, connection — bollocks. Eat a burger. Don't be a hero.",
+      "speaker": "Keith Moon",
+      "context": "Backstage interview recorded for the Old Grey Whistle Test, BBC Two, September 1975",
+      "real": false,
+      "fake_note": "I made this one up — Moon's chaotic sincerity and the anti-rock-mystique take fit perfectly, and 'don't be a hero' is his kind of flat punchline. The giveaway is Moon's backstage quotes were usually wilder and less coherent than this tidily structured bit of advice."
+    },
+    {
+      "id": "q5",
+      "text": "I told the label guy, 'Listen, pal, you want a ballad? Go fuck a Hallmark card. I'll write what I want and you'll cash the cheque and smile about it.' And he did. Twice.",
+      "speaker": "John Bonham",
+      "context": "Recounted by a roadie in a 1977 Creem Magazine roundtable feature on Led Zeppelin's North American tour",
+      "real": false,
+      "fake_note": "I made this one up — Bonham's blunt, anti-suits fury at record industry suits is totally in character, and the 'Hallmark card' line sounds like pub-brawl wit. The giveaway is that Bonham rarely gave quote-ready zingers to press; his bandmates did the talking."
+    },
+    {
+      "id": "q6",
+      "text": "I never took heroin, really because I'm too lazy.",
+      "speaker": "Grace Slick",
+      "context": "The Jefferson Airplane singer, in a Forbes interview, on why heroin never appealed to her despite her heavy drug era.",
+      "real": true,
+      "source": {
+        "title": "Forbes — Grace Slick Part II: 'I Never Took Heroin, Really Because I'm Too Lazy'",
+        "url": "https://www.forbes.com/sites/jimclash/2015/12/12/grace-slick-part-ii-i-never-took-heroin-really-because-im-too-lazy/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}
