@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-27",
+  "edition": 113,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I'll tell you what a standing ovation means to me — it means the front row couldn't smell me from that far back. Get a little closer, sweetheart, you'll sit the fuck down real quick. I had a rider once that was just bourbon and a mop.",
+      "speaker": "Rodney Dangerfield",
+      "context": "Boston Comedy Club, NYC, taping for 'Rodney Dangerfield: It's Not Easy Bein' Me' HBO special, 1986",
+      "real": false,
+      "fake_note": "I made this one up — Rodney's self-deprecating structure and the specific 'rider' detail are dead-on for his voice. The giveaway is 'bourbon and a mop' as a punchline; he'd more likely say 'a case of Scotch and a room with no mirrors.'"
+    },
+    {
+      "id": "q2",
+      "text": "I used to have a drug problem, but now I make enough money.",
+      "speaker": "David Lee Roth",
+      "context": "The Van Halen frontman quipping about his lifestyle, quoted in a Louder roundup of his wit (originally on Nightwatch With Charlie Rose, 1986).",
+      "real": true,
+      "source": {
+        "title": "Louder — The wit and wisdom of David Lee Roth",
+        "url": "https://www.loudersound.com/features/all-i-ever-really-needed-to-know-i-learned-from-david-lee-roth",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Hollywood is a coke town, but weed is so much better.",
+      "speaker": "Miley Cyrus",
+      "context": "In a 2013 Rolling Stone cover interview, contrasting cocaine with the 'happy drugs' she prefers.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Miley Cyrus on Why She Loves Weed, Went Wild at the VMAs and Much More",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-on-why-she-loves-weed-went-wild-at-the-vmas-and-much-more-99493/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "And if you can write an hour of great stuff, you're like fucking Tolstoy.",
+      "speaker": "Norm Macdonald",
+      "context": "In a 2011 A.V. Club interview, arguing that stand-up is the hardest writing there is.",
+      "real": true,
+      "source": {
+        "title": "The A.V. Club — Interview: Norm Macdonald",
+        "url": "https://www.avclub.com/norm-macdonald-1798225024",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I did a USO show in '69, somewhere I legally cannot name, and after, one of the generals invites me backstage for what he calls 'a debrief.' It was two warm cans of Pabst and a deck of cards. Longest debrief of my career. I won forty bucks.",
+      "speaker": "Bob Hope",
+      "context": "Interviewed by Larry King on 'Larry King Live', CNN, aired January 12, 1993, in a segment marking the 25th anniversary of Hope's Vietnam-era tours",
+      "real": false,
+      "fake_note": "I made this one up — the self-mythologizing military anecdote and the punchline deflation are pure Hope showmanship. The plausible giveaway is that he typically avoided naming specific beverages by brand in interviews; Pabst is a bit too specific and downmarket for the polished image he cultivated."
+    },
+    {
+      "id": "q6",
+      "text": "My mother told me never to kiss a man who drinks. Fantastic advice. I should've listened. Instead I married one, divorced one, and kissed about forty more at a wrap party in Cannes that I choose not to remember in sequence.",
+      "speaker": "Bette Davis",
+      "context": "Interview with Dick Cavett, 'The Dick Cavett Show', ABC, taped at the Little Theatre, New York, September 1971",
+      "real": false,
+      "fake_note": "I made this one up — Bette's acid delivery and the self-implicating twist are spot-on for her public persona. The Cannes wrap party is a plausible setting, but 'in sequence' is a touch too modern-comedic for her particular brand of withering wit."
+    }
+  ]
+}

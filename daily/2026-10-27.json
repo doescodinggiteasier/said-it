@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-27",
+  "edition": 134,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've played in front of fifty thousand people and I've played in front of eleven. And I'll tell you, the eleven are scarier, because every single one of them is looking directly at your hands.",
+      "speaker": "Jack White",
+      "context": "Interview with Marc Maron on WTF with Marc Maron, Episode 1,389, recorded in Detroit, 2023",
+      "real": false,
+      "fake_note": "I made this one up — Jack genuinely talks about the intimacy of small venues and the vulnerability of live performance in exactly this confessional, slightly combative way. The subtle giveaway is that the specific contrast is a little too neatly landed for truly off-the-cuff speech; he'd probably trail off into something weirder."
+    },
+    {
+      "id": "q2",
+      "text": "You could probably get through life without knowing how to roast a chicken, but the question is, would you want to?",
+      "speaker": "Nigella Lawson",
+      "context": "Quote attributed to her book Eating (Vintage Minis), on home cooking",
+      "real": true,
+      "source": {
+        "title": "TOP 25 QUOTES BY NIGELLA LAWSON | A-Z Quotes",
+        "url": "https://www.azquotes.com/author/8589-Nigella_Lawson",
+        "date": "2017-01-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I thought that sounded like a prank — just not in a million years",
+      "speaker": "Noah Wyle",
+      "context": "People magazine interview, upon being named 2026 Sexiest Man Alive",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Noah Wyle Named People’s 2026 Sexiest Man Alive",
+        "url": "https://variety.com/2026/tv/news/noah-wyle-people-2026-sexiest-man-alive-1236931645/",
+        "date": "2026-10-27"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Someone once sent me a paper — a real academic paper — about the aerodynamics of my free-kick technique. I read the abstract. I did not read the paper. But I kept it, because my dad would have loved to show it around.",
+      "speaker": "David Beckham",
+      "context": "Profile interview with GQ UK, published in the October 2022 issue ahead of the Netflix documentary",
+      "real": false,
+      "fake_note": "I made this one up — Beckham often brings his late father's pride into reflections on his own fame, and the self-deprecating admission about not reading the full paper is very true to his public voice. The giveaway is the emotional pivot to his father, which is real for him but lands a little too cleanly here."
+    },
+    {
+      "id": "q5",
+      "text": "I'm Very Worried That the Parts of Directing That I'm Not Good at Are Those Parts That You Can't Learn",
+      "speaker": "Aaron Sorkin",
+      "context": "Newport Beach Film Festival audience talk, after directing 'The Social Reckoning'",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Aaron Sorkin After ‘The Social Reckoning’: “I’m Very Worried That the Parts of D",
+        "url": "https://www.hollywoodreporter.com/movies/movie-news/aaron-sorkin-social-reckoning-directing-doubts-few-good-men-1236740233/",
+        "date": "2026-10-27"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've never once in my life thought about my legacy while I was actually working. You start thinking about the statue and you trip over the paint can.",
+      "speaker": "Spike Lee",
+      "context": "Master class at the New York Film Academy's annual symposium, Brooklyn campus, November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Spike talks about craft over reputation constantly, and his use of vivid, slightly blue-collar imagery is well documented. The paint-can line is the giveaway — it has the shape of an aphorism slightly too clearly, whereas Spike usually arrives at his images through a longer, louder route."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-27",
+  "edition": 126,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People act like melody is this mystical thing, but honestly for me it usually starts with something embarrassing — like a ringtone or a jingle I can't get out of my head, and I'm just chasing that feeling. That's the whole job, really. Chasing the embarrassing earworm.",
+      "speaker": "Max Martin",
+      "context": "Keynote conversation at the ASCAP 'I Create Music' Expo, Los Angeles, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Max Martin rarely speaks publicly, but when he does he's disarmingly self-deprecating about pop craft, which makes this feel very plausible. The giveaway is he tends to be even more spare and dry; 'embarrassing earworm' repeated twice is a hair too tidy."
+    },
+    {
+      "id": "q2",
+      "text": "My grandmother used to hum while she cooked, and she didn't even know she was doing it. I think about that a lot when I'm writing. The song that just comes out of you when you're not paying attention — that one's usually telling the truth.",
+      "speaker": "Alicia Keys",
+      "context": "Cover profile, Rolling Stone, Issue 1307, February 2019",
+      "real": false,
+      "fake_note": "I made this one up — Alicia Keys draws on family memory and authenticity constantly in interviews, which makes the grandmother detail feel earned. The tell is she usually grounds these reflections in a specific song or album moment rather than leaving it abstract."
+    },
+    {
+      "id": "q3",
+      "text": "I remember being in the studio and just staring at the drum track for probably two days straight, convinced there was something wrong with the snare, and then my engineer just goes, 'Quincy, the snare is fine.' And he was right. Sometimes you're so close to a thing you start hearing ghosts.",
+      "speaker": "Quincy Jones",
+      "context": "Interview with Rick Beato on the YouTube series 'What Makes This Song Great?', filmed in Los Angeles, 2019",
+      "real": false,
+      "fake_note": "I made this one up — Quincy absolutely talked this way about obsessive studio detail, and the self-deprecating punchline is very him. The subtle giveaway is that 'hearing ghosts' is a touch more poetic than his usual blunter shop-talk."
+    },
+    {
+      "id": "q4",
+      "text": "She's figured out that the way to break free is to be free",
+      "speaker": "Billy Corgan",
+      "context": "Billy Corgan speaking about Olivia Rodrigo",
+      "real": true,
+      "source": {
+        "title": "Music — Billy Corgan on his respect for Olivia Rodrigo: “She’s not afraid”",
+        "url": "https://www.nme.com/news/music/billy-corgan-on-his-respect-for-olivia-rodrigo-shes-not-afraid-3974291?utm_source=rss&utm_medium=rss&utm_campaign=billy-corgan-on-his-respect-for-olivia-rodrigo-shes-not-afraid",
+        "date": "2026-10-27"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There was a stretch where I was playing three gigs a night — two bars and a wedding — and at the wedding I had to pretend I knew 'September' by Earth, Wind and Fire. I did not know 'September.' I faked the whole horn line on a Casio. The bride cried. I still don't know if that was good or bad.",
+      "speaker": "Jon Batiste",
+      "context": "Appearance on 'The Late Late Show with James Corden', CBS, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Jon Batiste's early-hustle stories and his cheerful, slightly chaotic storytelling style are well-documented, and the Casio detail sits right in his wheelhouse. The giveaway is the punchline is almost too clean for his usual stream-of-consciousness delivery."
+    },
+    {
+      "id": "q6",
+      "text": "People of Sheffield - do you know what time it is? It is time to have fun",
+      "speaker": "Pulp",
+      "context": "Pulp announcing hometown pop-up at Hallamshire Hotel",
+      "real": true,
+      "source": {
+        "title": "Music — Pulp announce one-off hometown pop-up at Hallamshire Hotel to celebrate Sheffiel",
+        "url": "https://www.nme.com/news/music/pulp-announce-one-off-hometown-pop-up-at-hallamshire-hotel-to-celebrate-sheffield-walk-of-fame-3974262?utm_source=rss&utm_medium=rss&utm_campaign=pulp-announce-one-off-hometown-pop-up-at-hallamshire-hotel-to-celebrate-sheffield-walk-of-fame",
+        "date": "2026-10-27"
+      }
+    }
+  ]
+}

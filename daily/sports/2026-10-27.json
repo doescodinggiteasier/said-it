@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-27",
+  "edition": 123,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Basketball is something that I'm just good at. But horses is something that I feel the most happiness and sadness.",
+      "speaker": "Nikola Jokic",
+      "context": "The Denver Nuggets center, speaking during a 2025 promotional tour at a horse ranch in Beijing, on where his real emotional highs and lows come from.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — \"Basketball is just something I'm good at\": Jokic's admission",
+        "url": "https://sports.yahoo.com/article/basketball-just-something-im-good-103300970.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "There was a stretch in '94, maybe '95, where I was so locked in that I felt bad for the other team. Like genuinely bad. Not bad enough to ease up, but — I'd look across the line and go, I know what's coming and so do you and neither of us can stop it.",
+      "speaker": "Jerry Rice",
+      "context": "Interview segment on NFL Network's A Football Life, Season 6, aired December 2016",
+      "real": false,
+      "fake_note": "I made this one up — Rice has spoken often about peak confidence and the almost supernatural certainty he'd feel during his prime years with the 49ers, and the slightly guilty empathy here is a nice Rice-ism. The giveaway is the vague dating ('94, maybe '95') — Rice's memory for specific seasons, games and plays is famously precise."
+    },
+    {
+      "id": "q3",
+      "text": "If everyone likes me, they're watching, so there has to be something there.",
+      "speaker": "Tony Romo",
+      "context": "The CBS lead NFL analyst, on Pat McAfee's show in January 2026, responding to criticism of his polarizing broadcasting style.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Tony Romo addresses criticism after another up-and-down year in CBS booth",
+        "url": "https://www.foxnews.com/sports/tony-romo-opens-up-about-commentating-criticism-he-chooses-ignore-theyre-watching",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Leave me alone, I know what I'm doing!",
+      "speaker": "Kimi Raikkonen",
+      "context": "Formula 1 driver's deadpan team-radio reply to his Lotus race engineer Simon Rennie, who kept feeding him instructions during the 2012 Abu Dhabi Grand Prix (which Raikkonen went on to win).",
+      "real": true,
+      "source": {
+        "title": "F1.com — Leave me alone, I know what I'm doing: the best of Räikkönen on race radio",
+        "url": "https://www.formula1.com/en/latest/article/leave-me-alone-i-know-what-doing-best-of-raikkonen-race-radio.rCKOidDkwt70dZdOENU3e",
+        "date": "2022-11-04"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The hardest part of the comeback wasn't the physical stuff. It was going back to being a student. I'd been doing this for fifteen years and all of a sudden I'm watching film of myself like I've never seen my own body move before. That was humbling in a way that training camp never was.",
+      "speaker": "Lindsay Vonn",
+      "context": "Conversation with Lindsey Jacobellis at the Red Bull Athlete Summit, Salzburg, January 2018",
+      "real": false,
+      "fake_note": "I made this one up — Vonn has been openly reflective about her multiple knee surgeries and the psychological difficulty of relearning trust in her body, so the 'becoming a student again' framing is entirely plausible. The tell is the pairing with Jacobellis — a plausible duo, but the Red Bull Summit setting is a slight fabrication of a real recurring event format."
+    },
+    {
+      "id": "q6",
+      "text": "People keep asking me what I said to him at the line. I didn't say anything. I just stood there. Sometimes that's worse, you know? A guy who's talking trash, you can handle that. A guy who's just looking at you — that gets in your head a little.",
+      "speaker": "Kobe Bryant",
+      "context": "Interview with Jim Rome on The Jim Rome Show, ESPN Radio, February 2009",
+      "real": false,
+      "fake_note": "I made this one up — it's vintage Kobe: the psychological chess, the deliberate stillness as a weapon, the slight smirk under the surface. The subtle giveaway is that Kobe almost never admitted something 'gets in your head' — he'd frame it the other way around."
+    }
+  ]
+}
