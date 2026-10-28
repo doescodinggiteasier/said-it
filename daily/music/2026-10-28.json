@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-28",
+  "edition": 127,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Grime never really went away, it just went indoors for a while. When people stopped putting cameras in our faces we actually made some of the best music. Nobody was watching, so nobody was performing.",
+      "speaker": "Dizzee Rascal",
+      "context": "Interview with Semra Hunter on Sky News Arts, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Dizzee has spoken often about the cyclical nature of grime's mainstream visibility and the authenticity of its underground period. The slight tell is 'nobody was performing' — it's a bit more self-aware and quotable than his usual blunter, more anecdotal delivery."
+    },
+    {
+      "id": "q2",
+      "text": "I'd been through it before with Jimi Hendrix coming over with his big amplifiers and his distortion",
+      "speaker": "Pete Townshend",
+      "context": "Pete Townshend on never getting into Led Zeppelin",
+      "real": true,
+      "source": {
+        "title": "Music — The Who’s Pete Townshend “never really got into Led Zeppelin,” says he felt they",
+        "url": "https://www.nme.com/news/music/the-who-pete-townshend-never-into-led-zeppelin-trying-to-pinch-audience-3974447?utm_source=rss&utm_medium=rss&utm_campaign=the-who-pete-townshend-never-into-led-zeppelin-trying-to-pinch-audience",
+        "date": "2026-10-28"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I don't really demo things properly. I'll have a voice note on my phone that sounds like I recorded it inside a bin, and then somehow that becomes the reference and everyone in the studio spends three days trying to recreate the bin sound.",
+      "speaker": "Charli XCX",
+      "context": "Interview with Tamar Herman for Billboard, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Charli has spoken frequently about her instinctive, lo-fi approach to capturing ideas and her collaborative studio dynamic. The voice note detail is very her, but 'inside a bin' is fractionally too self-consciously British-funny; her humor usually lands a little more deadpan."
+    },
+    {
+      "id": "q4",
+      "text": "Quincy called me after he heard the rough mix and he said, 'Baby, that key change is wrong.' And I said, 'I know.' And there was this long pause and he goes, 'But leave it in.' That moment taught me more about music than anything I'd studied.",
+      "speaker": "Michael Jackson",
+      "context": "Spoken during an acceptance speech at the Grammy Awards, February 1984, as later quoted in Rolling Stone, March 1984",
+      "real": false,
+      "fake_note": "I made this one up — Michael and Quincy's dynamic is so well documented that a story like this sits comfortably inside established reality, and Michael often spoke about learning from Quincy's instincts. The subtle giveaway is the punchline structure; Michael's real public anecdotes were warmer and less shapely than this one."
+    },
+    {
+      "id": "q5",
+      "text": "I think, actually, I'd be more successful if I was OK wearing a muzzle.",
+      "speaker": "Chappell Roan",
+      "context": "In a January 2025 BBC interview after being named BBC Sound of 2025, on how her outspokenness affects her career.",
+      "real": true,
+      "source": {
+        "title": "The Hollywood Reporter — Chappell Roan: \"I'd Be More Successful If I Was OK Wearing a Muzzle\"",
+        "url": "https://www.hollywoodreporter.com/music/music-news/chappell-roan-muzzle-diva-music-grammys-bbc-interview-1236112948/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I remember sitting in the studio at like two in the morning, and Rick kept playing back the hi-hat part and going, 'Hear that? That's the song.' And I'm thinking, man, it's a hi-hat. But he was right. That little thing carried the whole record.",
+      "speaker": "Bruce Springsteen",
+      "context": "Interviewed by David Remnick for The New Yorker, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Bruce has told countless stories about late-night studio sessions and crediting collaborators, and name-dropping Rick (Rubin or Landau, plausibly either) feels exactly like him. The subtle giveaway is that the anecdote is just a touch too cinematically tidy for a genuine off-the-cuff memory."
+    }
+  ]
+}

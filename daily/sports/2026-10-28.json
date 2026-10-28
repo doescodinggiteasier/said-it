@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-28",
+  "edition": 124,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I grew up watching guys play through stuff I can't even describe. Knees, shoulders, backs. And nobody talked about it. Now we talk about it, which is better, but sometimes I think the talking about it made me more aware of everything that hurt. Like, ignorance was load management.",
+      "speaker": "Charles Barkley",
+      "context": "Inside the NBA pre-game show, TNT, during the 2023 NBA Playoffs broadcast",
+      "real": false,
+      "fake_note": "I made this one up — Barkley's generational-comparison takes and his habit of turning a point back on himself with a punchline are signature moves, and 'ignorance was load management' is exactly the kind of line he'd be proud of. The giveaway is it's slightly more self-aware than Barkley usually allows himself to sound on live television."
+    },
+    {
+      "id": "q2",
+      "text": "He can take his'n and beat your'n and take your'n and beat his'n.",
+      "speaker": "Bum Phillips",
+      "context": "The Houston Oilers head coach paying tribute to rival coach Don Shula's ability with any roster.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — Remembering Bum Phillips, the unsung defensive innovator",
+        "url": "https://www.si.com/nfl/2013/10/19/remembering-bum-phillips-the-unsung-defensive-innovator",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Because there is always some kid who may be seeing me for the first time. I owe him my best.",
+      "speaker": "Joe DiMaggio",
+      "context": "Explaining why he always played so hard, even in meaningless late-season games, on the PBS American Experience profile.",
+      "real": true,
+      "source": {
+        "title": "PBS American Experience — Joe DiMaggio",
+        "url": "https://www.pbs.org/wgbh/americanexperience/features/dimaggio-joe-dimaggio/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "When I was coming up, nobody told you what you were doing wrong. You just got yanked. You're sitting there on the bench like, okay, so that happened, and you'd better figure it out before next week or it's going to happen again.",
+      "speaker": "Tony Dungy",
+      "context": "Pro Football Hall of Fame Enshrinement Week roundtable discussion, Canton, Ohio, August 2016",
+      "real": false,
+      "fake_note": "I made this one up — Dungy frequently reflects on the sink-or-swim coaching culture of his playing days, and the understated 'so that happened' reads exactly like his measured cadence. The giveaway is that he'd almost always attach a specific coach's name or city to an anecdote like this."
+    },
+    {
+      "id": "q5",
+      "text": "My dad used to say the ice doesn't know your name. Doesn't matter if you scored fifty goals last season. You go out there opening night, the ice doesn't know your name. I hated hearing that as a kid. I think about it basically every day now.",
+      "speaker": "Wayne Gretzky",
+      "context": "Tim Hortons NHL Heritage Classic media availability, Edmonton, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Gretzky consistently credits his father Walter in interviews, and the specific hockey imagery feels true to his voice. The giveaway is the phrase 'basically every day' — Gretzky's real speech is slightly more formal and less colloquial than that."
+    },
+    {
+      "id": "q6",
+      "text": "This ain't a football game, we do this every day.",
+      "speaker": "Earl Weaver",
+      "context": "The Baltimore Orioles manager on the day-in, day-out grind that makes baseball unlike other sports.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Eye on Quotes: The pithy brilliance of Earl Weaver",
+        "url": "https://www.cbssports.com/mlb/news/eye-on-quotes-the-pithy-brilliance-of-earl-weaver/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

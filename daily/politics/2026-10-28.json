@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-28",
+  "edition": 123,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me how I stay so calm during a filibuster. Honestly, I just think about my boat. I don't own a boat. But I think about it.",
+      "speaker": "Bernie Sanders",
+      "context": "Interview with comedian Jimmy Dore on The Jimmy Dore Show, recorded in Burlington, Vermont, March 2016",
+      "real": false,
+      "fake_note": "I made this one up — the deadpan absurdism and the working-class self-deprecation (not owning the boat) sounds exactly like Bernie's dry humor in casual settings. The giveaway is that Bernie rarely does pure comedy riffs without pivoting back to a policy point within the same breath."
+    },
+    {
+      "id": "q2",
+      "text": "The thing about infrastructure is that nobody gets excited about it until a bridge isn't there anymore.",
+      "speaker": "Pete Buttigieg",
+      "context": "Press gaggle following a Department of Transportation infrastructure announcement, covered by The Hill, February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Buttigieg habitually frames policy arguments with this exact kind of dry, concrete observation, and infrastructure is literally his portfolio. The danger is it sounds almost too quotable — that slight over-polish is the tell a sharp player might catch."
+    },
+    {
+      "id": "q3",
+      "text": "The disappointment of manhood succeeds to the delusion of youth: let us hope that the heritage of old age is not despair.",
+      "speaker": "Benjamin Disraeli",
+      "context": "The British Prime Minister and novelist, in a candidly reflective aside on the disappointments of the ages of life (from his fiction, Book VIII, Chapter 4).",
+      "real": true,
+      "source": {
+        "title": "Benjamin Disraeli - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Where my reason, imagination or interest were not engaged, I would not or I could not learn.",
+      "speaker": "Winston Churchill",
+      "context": "From Churchill's own autobiography 'My Early Life: A Roving Commission' (1930), in the chapter recalling his schooldays at Harrow where he was placed in the lowest form.",
+      "real": true,
+      "source": {
+        "title": "My Early Life, by Winston S. Churchill (Project Gutenberg Canada full text)",
+        "url": "https://gutenberg.ca/ebooks/churchillws-myearlylife/churchillws-myearlylife-00-h-dir/churchillws-myearlylife-00-h.html",
+        "date": "1930-01-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I did a town hall in Iowa once where a man stood up and asked me a very long, very detailed question about soybean tariffs. I answered it. He sat down. Then he raised his hand again and it turned out he just wanted to know where the bathroom was.",
+      "speaker": "Amy Klobuchar",
+      "context": "Stand-up remarks at the Gridiron Club Dinner, Washington, D.C., March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Klobuchar has a well-documented love of self-deprecating Midwest storytelling and she frequently uses the Gridiron format to do exactly this kind of anecdote. The subtle tell is the setup is almost too perfectly structured for something genuinely off-the-cuff."
+    },
+    {
+      "id": "q6",
+      "text": "So I'm studying him, and I made the mistake of saying that I started off by studying his a--",
+      "speaker": "Donald Trump",
+      "context": "Trump rally in Lubbock, speaking about Sen. Jon Husted",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump says he 'made the mistake' of 'studying' GOP senator's 'anatomy'",
+        "url": "https://thehill.com/homenews/administration/6177091-donald-trump-jon-husted-ohio-gop-midterms-anatomy/",
+        "date": "2026-10-28"
+      }
+    }
+  ]
+}

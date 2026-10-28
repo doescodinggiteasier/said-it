@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-28",
+  "edition": 132,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "She wasn't lost, Frank. She knew exactly where she was going.",
+      "speaker": "Chinatown (1974)",
+      "context": "Gittes, speaking quietly to someone about Evelyn after the fact",
+      "real": false,
+      "fake_note": "I made this one up — it matches the film's retrospective, hard-boiled register and Gittes's habit of arriving at bleak clarity too late. The giveaway is the name 'Frank,' which grounds it in false specificity to make it feel authentic."
+    },
+    {
+      "id": "q2",
+      "text": "Death's at the bottom of everything, Martins. Leave death to the professionals.",
+      "speaker": "The Third Man (1949)",
+      "context": "Major Calloway (Trevor Howard) to pulp novelist Holly Martins (Joseph Cotten), warning him off his amateur investigation in postwar Vienna.",
+      "real": true,
+      "source": {
+        "title": "The Third Man - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Third_Man",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I drink your milkshake! I drink it up!",
+      "speaker": "There Will Be Blood (2007)",
+      "context": "Daniel Plainview (Daniel Day-Lewis) berating Eli Sunday in the bowling-alley confrontation",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "You want me to feel bad about it. I understand that. I just don't.",
+      "speaker": "American History X (1998)",
+      "context": "Derek Vinyard, flat and controlled, early in the film before his reversal",
+      "real": false,
+      "fake_note": "I made this one up — Derek's early scenes are defined by this kind of affectless, almost reasonable-sounding refusal of guilt, and the cadence matches Edward Norton's delivery throughout. The giveaway is it's slightly too self-aware about the dynamic; Derek's early lines are usually more aggressive than reflective."
+    },
+    {
+      "id": "q5",
+      "text": "You need to call it. I can't call it for you. It wouldn't be fair.",
+      "speaker": "No Country for Old Men (2007)",
+      "context": "Anton Chigurh (Javier Bardem) to the gas station proprietor during the coin-toss scene, pressing him to call heads or tails for his life.",
+      "real": true,
+      "source": {
+        "title": "No Country for Old Men (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/No_Country_for_Old_Men_(film)",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "Half the people in this building are afraid of you. The other half just haven't met you yet.",
+      "speaker": "The Devil Wears Prada (2006)",
+      "context": "Emily, to Andy, somewhere in the first act",
+      "real": false,
+      "fake_note": "I made this one up — Emily's clipped, insider-proud cattiness is perfectly consistent here, and the line fits the way junior staffers talk about Miranda in hushed awe. The giveaway is that it's a touch too balanced a construction; Emily's real lines are usually more breathless and less symmetrical."
+    }
+  ]
+}

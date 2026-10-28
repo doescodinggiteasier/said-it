@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-28",
+  "edition": 135,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I always want to rekindle the show",
+      "speaker": "Aaron Sorkin",
+      "context": "Newport Beach Film Festival, discussing 'The West Wing' today",
+      "real": true,
+      "source": {
+        "title": "Entertainment — Aaron Sorkin After ‘The Social Reckoning’: “I’m Very Worried That the Parts of D",
+        "url": "https://www.hollywoodreporter.com/movies/movie-news/aaron-sorkin-social-reckoning-directing-doubts-few-good-men-1236740233/",
+        "date": "2026-10-27"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "The speed of light is never going to go out of style. Gravity, lint, signs, time itself, is not going to go out of style.",
+      "speaker": "Steven Wright",
+      "context": "In a Salon Talks interview, explaining why he avoids topical jokes so his material stays timeless",
+      "real": true,
+      "source": {
+        "title": "\"Gravity is never going to go out of style\": Steven Wright on the secret to comedy longevity - Salon.com",
+        "url": "https://www.salon.com/2024/05/22/steven-wright-harold-salon-talks/",
+        "date": "2024-05-22"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "People ask me what the hardest part of being six foot nine is, and honestly it's not the doorframes, it's not the airplane seats — it's that everyone at every party thinks I can see them from across the room. I can. But still.",
+      "speaker": "Shaquille O'Neal",
+      "context": "Conan O'Brien Needs a Friend podcast, episode aired March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Shaq does this kind of self-aware physical comedy constantly in long-form interviews, and the rhythm here matches his actual conversational cadence. The tiny tell is the callback structure; Shaq's real punchlines are usually a beat simpler than this."
+    },
+    {
+      "id": "q4",
+      "text": "I went back and listened to the demo of 'Jolene' the other day — the actual cassette, not a transfer — and my voice on there sounds like somebody's teenage babysitter who just found a guitar. Which, to be fair, is more or less what I was.",
+      "speaker": "Dolly Parton",
+      "context": "Interview with Alison Krauss for Rolling Stone's 'Women Who Rock' oral history issue, November 2023",
+      "real": false,
+      "fake_note": "I made this one up — Dolly talks about her early recordings with this exact mixture of self-deprecation and fondness, and she's genuinely referenced the scrappiness of her early demos. The giveaway is that Dolly rarely specifies a physical format like 'cassette'; she tends to stay vague on technical details."
+    },
+    {
+      "id": "q5",
+      "text": "I've eaten at enough Michelin-starred places to know that the ones where the chef comes out looking nervous are always better than the ones where he comes out looking like he's about to give a TED Talk.",
+      "speaker": "Anthony Bourdain",
+      "context": "Recorded interview for Explore Parts Unknown podcast companion series, published October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Bourdain genuinely distrusted performative fine dining and regularly skewered chef ego, so this lands in his wheelhouse perfectly. The subtle giveaway is that 'TED Talk' as shorthand for pretension is just slightly too 2017-internet for how specifically Bourdain would have said it; he'd have named an actual chef."
+    },
+    {
+      "id": "q6",
+      "text": "Not everyone can be a truffle. Most of us are potatoes. And a potato is a very good thing to be.",
+      "speaker": "Massimo Bottura",
+      "context": "Quote by the Italian chef of Osteria Francescana, on humility",
+      "real": true,
+      "source": {
+        "title": "Massimo Bottura Quotes (Author of Never Trust A Skinny Italian Chef)",
+        "url": "https://www.goodreads.com/author/quotes/406174.Massimo_Bottura",
+        "date": "2021-01-01"
+      }
+    }
+  ]
+}
