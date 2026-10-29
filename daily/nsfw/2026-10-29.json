@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-29",
+  "edition": 114,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Health nuts are going to feel stupid someday, lying in hospitals dying of nothing.",
+      "speaker": "Redd Foxx",
+      "context": "A signature dark one-liner from the pioneering, famously raunchy stand-up comedian (star of 'Sanford and Son'), mocking clean-living health fanatics. Foxx's party-hard, cigarette-and-booze persona was legendary.",
+      "real": true,
+      "source": {
+        "title": "Quote Details: Redd Foxx (The Quotations Page)",
+        "url": "https://www.quotationspage.com/quote/699.html",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "They put me on a 'healthy rider' tour contract — no fried food, no booze on the bus, fresh fruit basket. Fresh fruit basket! I'm fifty-three years old. I have been on the road since Nixon. If I want a cheeseburger at two in the morning in Tulsa, Oklahoma, that is not a dietary lapse, that is a human right.",
+      "speaker": "Clarence Clemons",
+      "context": "Backstage interview with Rolling Stone contributing editor David Wild, E Street Band reunion tour, Continental Airlines Arena, New Jersey, July 1999",
+      "real": false,
+      "fake_note": "I made this one up — Clarence's big, warm, good-humoured defiance and his pride in veteran-status endurance are well-documented, and the specificity of Tulsa at 2am sounds like a real road-dog complaint. The giveaway is 'since Nixon' — a strong line, but slightly too quotable; Clarence's actual interview speech was more rambling and good-natured rather than epigrammatic."
+    },
+    {
+      "id": "q3",
+      "text": "Alcohol was my poison. I drank Seagrams VO, a Canadian rye, with Coca-Cola. And beer. For me, beer was like air. I'd have a six-pack before noon.",
+      "speaker": "Alice Cooper",
+      "context": "Shock-rock legend Alice Cooper describing his heavy daily drinking before he got sober, in a Louder/Classic Rock feature on going cold turkey.",
+      "real": true,
+      "source": {
+        "title": "How Alice Cooper went cold turkey and made his most personal album (Louder)",
+        "url": "https://www.loudersound.com/features/how-alice-cooper-went-cold-turkey-and-made-his-most-personal-album",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Maybe it was because we did it unabashedly out in the open. We didn't know it was shocking. Perhaps we were just too fucking frank.",
+      "speaker": "Slash",
+      "context": "The Guns N' Roses guitarist, in a Classic Rock/Louder interview, explaining why his band got a wilder reputation than peers who did 'the same shit'.",
+      "real": true,
+      "source": {
+        "title": "Louder (Classic Rock) — Six Pack: Slash on drugs, dying and Axl Rose",
+        "url": "https://www.loudersound.com/features/six-pack-slash-on-drugs-dying-and-axl-rose",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "The record company sends over a 'wellness consultant' to the studio. Wellness consultant! I said, mate, we've been in here for eleven hours, we've eaten crisps and Red Bull, and Keith just tuned his guitar using a lighter and vibes. Wellness left this building at approximately four in the afternoon.",
+      "speaker": "John Entwistle",
+      "context": "Interview with Q Magazine journalist Paul Du Noyer, recorded at RAK Studios, London, March 1996",
+      "real": false,
+      "fake_note": "I made this one up — Entwistle was famously dry and understated compared to the chaos around him in The Who, so the 'calm observer of carnage' framing fits perfectly. The giveaway is naming Keith Moon by first name in a press context — Entwistle typically referred to him obliquely or with a fond epithet rather than directly, which makes this fractionally too on-the-nose."
+    },
+    {
+      "id": "q6",
+      "text": "Some journalist writes that I looked 'gaunt' at the show in Rotterdam. Gaunt! I was running around that stage for two and a half hours in leather trousers, mate — of course I look gaunt. You'd look gaunt. Your grandmother'd look gaunt. Gaunt is what happens when you actually do the bloody job.",
+      "speaker": "Freddie Mercury",
+      "context": "Press conference at the Ahoy Arena, Rotterdam, following the Magic Tour date, June 1986",
+      "real": false,
+      "fake_note": "I made this one up — Freddie's bristling, theatrical impatience with press criticism is well-documented, and 'your grandmother'd look gaunt' is the kind of escalating absurdist jab he loved. The subtle tell is 'do the bloody job' — slightly too measured and righteous; Freddie tended to pivot to camp self-aggrandisement rather than earnest defence."
+    }
+  ]
+}

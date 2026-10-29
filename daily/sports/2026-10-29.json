@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-29",
+  "edition": 125,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what I was thinking on that last rep and honestly I wasn't thinking anything. That's the whole point. You spend so long with the bar that eventually your brain just gets out of the way and lets your body do what it knows how to do. The thinking part — that's Tuesday morning. That's not Saturday.",
+      "speaker": "Hafþór Júlíus Björnsson",
+      "context": "Interview with Mark Bell on the Power Project podcast, recorded in Reykjavik, published February 2023",
+      "real": false,
+      "fake_note": "I made this one up — Björnsson really does talk about the mental side of strongman in exactly this blunt, matter-of-fact way, and the Tuesday/Saturday split sounds like something he'd genuinely use. The subtle giveaway is that he almost never philosophizes this cleanly about the lift-think separation; he usually stays far more practical and physical."
+    },
+    {
+      "id": "q2",
+      "text": "The serve yips are real and anyone who tells you they've never had them is either lying or hasn't served enough big points yet. Mine came back during the clay swing in 2018, just for two weeks, but those were a long two weeks.",
+      "speaker": "Andy Murray",
+      "context": "Desert Island Discs, BBC Radio 4, broadcast March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Murray has been startlingly candid about technical and psychological struggles throughout his career, and name-dropping the clay swing with a specific but vague timeframe is exactly his understated style. The subtle giveaway is 'serve yips' — Murray more typically describes technical issues in biomechanical terms rather than borrowing the golfer's phrase."
+    },
+    {
+      "id": "q3",
+      "text": "I scouted him for three months before I'd say a single word to him at combine. Three months. I wanted to know what he ate, who he called when something went wrong, whether he sulked when a play didn't go his way in a meaningless preseason snap. By the time I walked over to shake his hand I already knew what I was getting.",
+      "speaker": "Bill Belichick",
+      "context": "Recorded conversation with Nick Saban at the Coaches' Leadership Summit, Indianapolis, featured in ESPN Films' 'The Art of Winning,' January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Belichick's obsessive pre-draft research is legendary and well documented, and this kind of clipped, layered explanation with a dramatic pause before the payoff sounds very much like him in a semi-formal sit-down. The giveaway is the phrase 'meaningless preseason snap' — Belichick famously treats no snap as meaningless and would likely not frame it that way himself."
+    },
+    {
+      "id": "q4",
+      "text": "You can't be okay with being mediocre",
+      "speaker": "Travis Kelce",
+      "context": "On his podcast after the Chiefs' loss to Seattle",
+      "real": true,
+      "source": {
+        "title": "Sports — Travis Kelce on Chiefs loss to Seattle: ‘You can’t be okay with being mediocre’",
+        "url": "https://sports.yahoo.com/articles/travis-kelce-chiefs-loss-seattle-133000812.html",
+        "date": "2026-10-29"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Coaching is a great thing, because you're working for four months then you go fish for eight.",
+      "speaker": "Bob Knight",
+      "context": "The Indiana basketball coach joking about the perks of the coaching profession, in a roundup of his memorable lines.",
+      "real": true,
+      "source": {
+        "title": "CBS Sports — Bob Knight quotes: Top 10 memorable lines from Indiana's legendary but controversial coach",
+        "url": "https://www.cbssports.com/college-basketball/news/bob-knight-quotes-top-10-memorable-lines-from-indianas-legendary-but-controversial-coach/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I think I've heard somebody say that I was a well-dressed golfer. I guess that has something to do with the fact that a lot of people who play golf don't dress very well.",
+      "speaker": "Arnold Palmer",
+      "context": "A dry, self-effacing aside about his reputation as a sharp dresser, collected among Golf Monthly's best Palmer quotes.",
+      "real": true,
+      "source": {
+        "title": "Golf Monthly — 10 Of The Best Arnold Palmer Quotes",
+        "url": "https://www.golfmonthly.com/features/the-game/10-best-arnold-palmer-quotes-152590",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

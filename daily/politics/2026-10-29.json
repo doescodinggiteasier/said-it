@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-29",
+  "edition": 124,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone on my team printed out the new tax code and left it on my desk. I thought it was a doorstop. Turns out it basically is.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks at the McConnell Center Annual Dinner, University of Louisville, Louisville, Kentucky, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — McConnell rarely gets credit for dry humor, but he does deploy it in friendly-audience settings, and self-deprecating jabs at legislative complexity are well within his documented style. The tell is that it's slightly warmer and more playful than his usual deadpan economy of words."
+    },
+    {
+      "id": "q2",
+      "text": "I think we ought to continue the blockade and starve them out. I think we ought to bomb Pickaxe Mountain and try to reach what's underneath it",
+      "speaker": "John Kennedy",
+      "context": "Sen. John Kennedy (R-La.) on Sunday discussing Iran strikes",
+      "real": true,
+      "source": {
+        "title": "Politics — Live updates: Sen. John Kennedy says US should not 'cut and run' from Iran; Cycl",
+        "url": "https://thehill.com/homenews/5990529-live-updates-midterms-jackson-collins-cyclospora-trump/",
+        "date": "2026-07-27"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I am extraordinarily patient, provided I get my own way in the end.",
+      "speaker": "Margaret Thatcher",
+      "context": "Self-aware, tongue-in-cheek remark by the British Prime Minister in an interview published in The Observer, 4 April 1989 (as catalogued by the Margaret Thatcher Centre's quotes page). Speaker was a UK Conservative Prime Minister.",
+      "real": true,
+      "source": {
+        "title": "Quotes - The Margaret Thatcher Centre",
+        "url": "https://www.thatchercentre.com/quotes/",
+        "date": "1989-04-04"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I'll be honest, I read the full infrastructure bill. Both of them. And somewhere around page four hundred of the second one I thought, this is either going to fix every bridge in America or it's going to fund a very expensive study about fixing bridges.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic Governors Association dinner, Washington D.C., reported by Politico, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Biden genuinely champions infrastructure and loves self-deprecating asides about legislative slog, so this lands perfectly in his wheelhouse. The subtle giveaway is that the punchline is a touch too cleanly structured for his usual rambling delivery."
+    },
+    {
+      "id": "q5",
+      "text": "In this election, I'm asking you to pretend, please, that I'm on the ballot. Just pretend",
+      "speaker": "Donald Trump",
+      "context": "Trump urging voters at a Kansas rally during midterm campaigning",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump’s plea – ‘pretend I’m on the ballot’ – deserves to backfire | Margaret Sul",
+        "url": "https://www.theguardian.com/commentisfree/2026/oct/29/trump-ballot-midterms-voting",
+        "date": "2026-10-29"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "People ask me how I stay calm in debate prep. I don't. I just get it out of my system beforehand so by the time the cameras are on, I've already had the meltdown.",
+      "speaker": "Hillary Clinton",
+      "context": "Interview with Kara Swisher on the Recode Decode podcast, recorded May 2019",
+      "real": false,
+      "fake_note": "I made this one up — Clinton has been refreshingly candid in post-2016 interviews about the behind-the-scenes grind of campaigning, and self-deprecating process humor fits her more relaxed post-campaign persona. The giveaway is 'meltdown,' which is slightly more unguarded than she typically allows herself to be on record."
+    }
+  ]
+}

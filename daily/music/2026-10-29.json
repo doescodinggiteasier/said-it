@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-29",
+  "edition": 128,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I've played arenas where I could feel the room had already decided what they wanted before I walked out, and I've played a pub in Glasgow where sixty people made me feel like I had something to prove. I'll take the pub every time.",
+      "speaker": "Elvis Costello",
+      "context": "Q Magazine, 'A Life in Music' feature, June 2013",
+      "real": false,
+      "fake_note": "I made this one up — Costello is famously ambivalent about scale and commercial success, and Glasgow as a touchstone feels authentic to his UK roots. The tell is that the sentiment is a bit tidier than his usual discursive interview style."
+    },
+    {
+      "id": "q2",
+      "text": "This is your moment, this is not ours",
+      "speaker": "Fontaines D.C.",
+      "context": "Fontaines D.C. addressing the crowd in Belgrade while playing 'Demolition' live for the first time",
+      "real": true,
+      "source": {
+        "title": "Music — Watch Fontaines D.C. play ‘Demolition’ live for first time as band hail student ",
+        "url": "https://www.nme.com/news/music/watch-fontaines-dc-play-demolition-live-in-serbia-hail-student-victory-over-government-3974534?utm_source=rss&utm_medium=rss&utm_campaign=watch-fontaines-dc-play-demolition-live-in-serbia-hail-student-victory-over-government",
+        "date": "2026-10-29"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Gluttony and lust – y'know, Caligula vibes! What else is there? I've been slothful, definitely. I've ticked the wrath, greed and heresy boxes too.",
+      "speaker": "Hozier",
+      "context": "In a Hotpress interview about his concept album Unreal Unearth, asked which of the seven deadly sins were the most fun to commit.",
+      "real": true,
+      "source": {
+        "title": "Hotpress — 12 Interviews of Xmas: Hozier on Irishness, Deadly Sins, Joni Mitchell and Unreal Unearth",
+        "url": "https://www.hotpress.com/music/12-interviews-of-xmas-hozier-on-irishness-deadly-sins-joni-mitchell-and-unreal-unearth-22999788",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "It's a lot like being a chef, in a way. You're trying to create food that satisfies your taste, but with a good awareness that there are people whose tastes are for more salt, or more spice — or for less.",
+      "speaker": "Susan Rogers",
+      "context": "Prince's former recording engineer describing the producer's balancing act, in a Grammy.com interview about her career and her book.",
+      "real": true,
+      "source": {
+        "title": "Grammy.com — Producer & Engineer Susan Rogers Worked With Prince And Barenaked Ladies",
+        "url": "https://www.grammy.com/news/susan-rogers-producers-engineers-wing-interview-prince-barenaked-ladies-berklee-college-of-music/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "There's a version of 'Crazy' that's basically a bossa nova. We tracked it, everyone loved it in the room, and then Danger Mouse listened back the next morning and said absolutely not. He was right. I still think about it though.",
+      "speaker": "Cee Lo Green",
+      "context": "Interview with Rolling Stone, October 2006",
+      "real": false,
+      "fake_note": "I made this one up — Cee Lo and Danger Mouse have both discussed their collaborative process openly, and alternate versions of Gnarls Barkley tracks are well-documented. The bossa nova detail is just specific enough to feel like insider knowledge without being verifiable."
+    },
+    {
+      "id": "q6",
+      "text": "People always want me to explain the falsetto, like there's a technique I'm hiding. There's no technique. I was just a skinny kid who couldn't reach the microphone stand and sang up toward it, and somewhere in there my voice figured out what it was supposed to do.",
+      "speaker": "Smokey Robinson",
+      "context": "Conversation with David Letterman on My Next Guest Needs No Introduction, Netflix, 2022",
+      "real": false,
+      "fake_note": "I made this one up — Smokey talks about his voice with this kind of humble, almost accidental framing all the time. The tell is the microphone stand image, which is charmingly specific but a little too neat as an origin story."
+    }
+  ]
+}
