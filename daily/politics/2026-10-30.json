@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-30",
+  "edition": 125,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone asked me what my favorite part of the job is and I said 'the motorcade,' and they thought I was joking. I was not joking. Have you ever been in a motorcade? Nobody cuts you off.",
+      "speaker": "Pete Buttigieg",
+      "context": "Interview on The Late Show with Stephen Colbert, CBS, November 2021",
+      "real": false,
+      "fake_note": "I made this one up — Buttigieg's dry, specific humor and his tendency to give honest, slightly nerdy answers that land as jokes are well documented. The giveaway is that he'd probably be more self-conscious about admitting he enjoys a perk of office quite that directly — he usually wraps the sentiment in more policy framing."
+    },
+    {
+      "id": "q2",
+      "text": "I am Al Gore, I used to be the next president of the United States",
+      "speaker": "Al Gore",
+      "context": "His self-deprecating opening line at a Harvard Kennedy School lecture, October 4, 2001, after losing the 2000 election",
+      "real": true,
+      "source": {
+        "title": "Harvard Gazette — Gore calls for unity",
+        "url": "https://news.harvard.edu/gazette/story/2001/10/gore-calls-for-unity/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My mother told me before I went to Sacramento, she said, 'Arnold, don't let them change you.' I said, 'Mama, I'm going to change them.' She said, 'That's exactly what I'm worried about.'",
+      "speaker": "Arnold Schwarzenegger",
+      "context": "Keynote address at the Milken Institute Global Conference, Los Angeles, California, May 2007",
+      "real": false,
+      "fake_note": "I made this one up — Schwarzenegger frequently invokes his mother and his immigrant-to-governor narrative in a warm, story-driven style, and this exchange has exactly the rhythm he uses in real speeches. The subtle giveaway is that his mother died before he became governor, so the timing of this supposed conversation doesn't quite hold up to scrutiny."
+    },
+    {
+      "id": "q4",
+      "text": "I think that I'm doing so well in the polls that he's got, probably got better places to spend his time",
+      "speaker": "Roger Marshall",
+      "context": "Kansas Sen. Roger Marshall speaking to reporters about Trump canceling his rally in Kansas",
+      "real": true,
+      "source": {
+        "title": "Politics — Marshall says Trump dropping Kansas rally because he is 'doing so well in the po",
+        "url": "https://thehill.com/homenews/campaign/6183637-marshall-defends-trump-rally-cancellation/",
+        "date": "2026-10-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "In 2008 my slogan was, \"Yes We Can.\" In 2013 my slogan was, \"Control-Alt-Delete.\"",
+      "speaker": "Barack Obama",
+      "context": "Joking about the rocky HealthCare.gov rollout at the 2014 White House Correspondents' Dinner",
+      "real": true,
+      "source": {
+        "title": "The Obama White House Archives — Remarks by the President at the White House Correspondents' Dinner (2014)",
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/05/03/remarks-president-white-house-correspondents-dinner/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've never once walked into a press briefing thinking, 'this is the day everything goes smoothly.' You adjust. Mostly you're adjusting in real time while also trying to look like you're not adjusting.",
+      "speaker": "Jen Psaki",
+      "context": "Interview with Savannah Guthrie on the Today show, NBC, April 2022",
+      "real": false,
+      "fake_note": "I made this one up — Psaki has been exceptionally candid in post-briefing interviews about the mechanics and stress of the press secretary role, and this kind of pragmatic, slightly wry self-description matches her public voice closely. The giveaway is that she'd almost certainly add a specific example or name a reporter — her real anecdotes tend to be more anchored."
+    }
+  ]
+}

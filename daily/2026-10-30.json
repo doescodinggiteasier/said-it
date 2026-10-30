@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-30",
+  "edition": 137,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "String theory is genuinely beautiful as mathematics. But beautiful mathematics has embarrassed physicists before, and it will again. I say that as someone who spent a few years being embarrassed by it personally.",
+      "speaker": "Brian Greene",
+      "context": "Panel discussion at the World Science Festival, NYU Skirball Center, New York, June 2018",
+      "real": false,
+      "fake_note": "I made this one up — Greene has spent decades publicly grappling with string theory's testability problem and self-deprecating humor about his own earlier certainties is very much his style. The tell is the confessional last sentence; he's publicly critical of the field but rarely quite that personally candid about his own embarrassment."
+    },
+    {
+      "id": "q2",
+      "text": "Worst damnfool mistake I ever made was letting myself be elected Vice President of the United States. Should have stuck with my old chores as Speaker of the House. I gave up the second most important job in the Government for one that didn't amount to a hill of beans. I spent eight long years as Mr. Roosevelt's spare tire.",
+      "speaker": "John Nance Garner",
+      "context": "FDR's first vice president (\"Cactus Jack\"), ruefully mocking his own decision to take the job and his powerlessness in it, after leaving office.",
+      "real": true,
+      "source": {
+        "title": "John Nance Garner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/John_Nance_Garner",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I've had the same argument with my editors for thirty years: they want me to explain the joke. And I always say, if I explain it, it stops being the joke. We've never resolved this. We've simply learned to lose gracefully on alternate Tuesdays.",
+      "speaker": "David Sedaris",
+      "context": "On-stage conversation with Ira Glass at the Chicago Theatre, recorded for the This American Life live tour, April 2019",
+      "real": false,
+      "fake_note": "I made this one up — Sedaris has a running public record of gentle antagonism with editorial process, and 'lose gracefully on alternate Tuesdays' is exactly his brand of dry, self-amused specificity. The tell is that the rhythm is slightly too tidy; his real anecdotes tend to meander before landing."
+    },
+    {
+      "id": "q4",
+      "text": "I have now come to the conclusion never again to think of marrying, and for this reason; I can never be satisfied with anyone who would be blockhead enough to have me.",
+      "speaker": "Abraham Lincoln",
+      "context": "A candidly self-mocking line from a young Lincoln's letter, poking fun at his own eligibility as a suitor.",
+      "real": true,
+      "source": {
+        "title": "Abraham Lincoln - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Abraham_Lincoln",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I am Al Gore, I used to be the next president of the United States",
+      "speaker": "Al Gore",
+      "context": "His self-deprecating opening line at a Harvard Kennedy School lecture, October 4, 2001, after losing the 2000 election",
+      "real": true,
+      "source": {
+        "title": "Harvard Gazette — Gore calls for unity",
+        "url": "https://news.harvard.edu/gazette/story/2001/10/gore-calls-for-unity/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I had a whole system for reading defenses — it was color-coded, there were index cards, my wife thought I'd lost my mind. She was probably right, but we won two Super Bowls, so I'm keeping the index cards.",
+      "speaker": "Peyton Manning",
+      "context": "Appearance on The Late Show with Stephen Colbert, CBS, broadcast February 2022",
+      "real": false,
+      "fake_note": "I made this one up — Manning's obsessive preparation habits and self-aware humor about them are both extremely well-documented, and he name-drops his wife as a grounding character in stories fairly often. The tell is 'I'm keeping the index cards' — the joke lands a beat too cleanly; Manning's real humor usually has more digression before the payoff."
+    }
+  ]
+}

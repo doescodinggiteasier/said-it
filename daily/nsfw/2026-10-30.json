@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-30",
+  "edition": 115,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Someone on the crew handed me a shot of something brown and said 'good luck.' I drank it, walked out in front of sixty thousand people, and played the best set of my goddamn life. I have no idea what was in that glass and I have made peace with that.",
+      "speaker": "Bon Scott",
+      "context": "Spoken to journalist Phil Sutcliffe during AC/DC's dressing room session at Hammersmith Odeon, London, documented in Sounds magazine, October 1978",
+      "real": false,
+      "fake_note": "I made this one up — the breezy, fate-accepting bravado is quintessential Bon Scott and the Hammersmith Odeon era is exactly right. The giveaway is that Sutcliffe's AC/DC coverage for Sounds in that period focused on formal Q&A, not dressing room quotes of this type."
+    },
+    {
+      "id": "q2",
+      "text": "Sure, I had a glass of wine before the Oscars. I had a glass of wine during the Oscars. I'm not a monster — I had water too. Don't look at me like that, the camera adds ten sobriety points.",
+      "speaker": "Rodney Dangerfield",
+      "context": "Backstage interview with Army Archerd for Variety magazine, published in the March 1981 print edition following the 53rd Academy Awards",
+      "real": false,
+      "fake_note": "I made this one up — the self-deprecating punchline structure and the 'don't look at me like that' pivot are pure Dangerfield. The giveaway is 'camera adds ten sobriety points,' which is too polished and modern-sounding for his actual 1981 idiom."
+    },
+    {
+      "id": "q3",
+      "text": "I woke up in Düsseldorf, no shoes, great mood, no memory of why either of those things were true. Keith was already eating a steak. It was six in the morning. Some tours you just survive and call it a victory.",
+      "speaker": "Ronnie Lane",
+      "context": "Recounted in an interview with Sounds magazine journalist Allan Jones, published in the June 1973 issue during The Faces' European tour",
+      "real": false,
+      "fake_note": "I made this one up — the wry, self-amused English understatement and the 'call it a victory' shrug are entirely in Ronnie Lane's character. The giveaway is that Sounds didn't run this particular type of extended anecdote interview with Lane in that period."
+    },
+    {
+      "id": "q4",
+      "text": "I told the label guys, 'Look, I showed up, didn't I? My pants are mostly on, the guitar's in tune — what the fuck else do you want from a Monday?' They had a list. It was a long list. I threw it in the fondue pot.",
+      "speaker": "John Belushi",
+      "context": "Quoted by Dan Aykroyd during a retrospective panel at the 1981 Chicago Comedy Festival, later reprinted in Rolling Stone's February 1982 issue",
+      "real": false,
+      "fake_note": "I made this one up — Belushi's chaotic, self-deprecating delivery and the absurdist fondue detail feel dead-on for his era and persona. The giveaway is the fondue pot; it's too specifically random and Belushi never gave panel-style festival quotes like this."
+    },
+    {
+      "id": "q5",
+      "text": "He told me if I carried on at the same pace I'd start bleeding out of my dick, my asshole, my eyes, my nose – fucking everywhere, man. Just bleeding out of every orifice and never stopping.",
+      "speaker": "Zakk Wylde",
+      "context": "Black Label Society / Ozzy guitarist Zakk Wylde, laughing as he recounts his doctor's blunt warning about his extreme drinking while on blood thinners, in a 2013 Louder/Metal Hammer interview.",
+      "real": true,
+      "source": {
+        "title": "Black Label Society's Zakk Wylde interview: alcohol, acoustic albums and prison gigs with Ozzy Osbourne (Louder)",
+        "url": "https://www.loudersound.com/features/zakk-wylde-black-label-society-interview-2013",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "After I stopped doing drugs I started to fuck like a bunny!",
+      "speaker": "Courtney Love",
+      "context": "On how getting sober changed her sex drive, in an interview with The Fix.",
+      "real": true,
+      "source": {
+        "title": "The Fix interview",
+        "url": "https://www.thefix.com/courtney-love-interview/",
+        "date": "2011"
+      }
+    }
+  ]
+}

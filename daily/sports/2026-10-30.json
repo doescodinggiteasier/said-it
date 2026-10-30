@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-30",
+  "edition": 126,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Serena could be down a set and you'd look at her face and she hadn't changed her expression at all — not tighter, not looser, just the same. That used to genuinely unsettle me. I'd be doing the math on my end thinking I'm ahead, and somehow I felt like I was losing.",
+      "speaker": "Victoria Azarenka",
+      "context": "WTA Insider podcast interview recorded during the 2023 Miami Open media day",
+      "real": false,
+      "fake_note": "I made this one up — Azarenka has repeatedly praised Serena's mental presence in post-match interviews with exactly this mixture of tactical observation and honest vulnerability. The giveaway is the phrase 'doing the math' — Azarenka's spoken English idioms tend to be slightly more literal and less colloquially American than that."
+    },
+    {
+      "id": "q2",
+      "text": "I remember my coach in São Paulo telling me I was too small for the position. I didn't argue with him. I just stayed after every session and worked on my first touch until I couldn't see the ball anymore in the dark. He never brought it up again.",
+      "speaker": "Ronaldinho",
+      "context": "Sit-down interview with ESPN Brasil published in their Retrô series, August 2019",
+      "real": false,
+      "fake_note": "I made this one up — Ronaldinho has told countless boyhood-training stories in this wistful, quietly defiant register, and the detail of training until dark in Brazil fits his documented biography seamlessly. The giveaway is that Ronaldinho's real anecdotes almost always involve other kids or his brother Assis — he rarely positions himself in solitary-hero mode like this."
+    },
+    {
+      "id": "q3",
+      "text": "When I came back from the ACL I wasn't the same player for about eight months and I knew it, the coaching staff knew it, everybody knew it — and nobody said anything, which was its own kind of pressure. You almost want someone to just say it out loud so you can deal with it.",
+      "speaker": "Derrick Rose",
+      "context": "Players' Tribune first-person piece published in November 2016",
+      "real": false,
+      "fake_note": "I made this one up — Rose has been extraordinarily candid about his injury recovery and the psychological weight of expectation in almost exactly this register, and the Players' Tribune format is where he's done his most personal writing. The giveaway is the specificity about staff silence; Rose's actual accounts tend to credit his inner circle for their honesty rather than describing an unspoken tension."
+    },
+    {
+      "id": "q4",
+      "text": "You spend a good piece of your life gripping a baseball, and in the end, it turns out that it was the other way around all the time.",
+      "speaker": "Jim Bouton",
+      "context": "The celebrated closing line of his tell-all baseball memoir 'Ball Four,' as quoted in the book's Wikipedia entry.",
+      "real": true,
+      "source": {
+        "title": "Wikipedia — Ball Four",
+        "url": "https://en.wikipedia.org/wiki/Ball_Four",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I used to eat the same meal for eleven days straight before a big fight. Not because I'm superstitious — I'm not, really — but because it was one less decision to make. Your brain is already full.",
+      "speaker": "Floyd Mayweather",
+      "context": "Interview with Graham Bensinger for In Depth with Graham Bensinger, released March 2020",
+      "real": false,
+      "fake_note": "I made this one up — Mayweather has detailed his obsessive fight-camp routines in Bensinger-style long-form interviews before, and the self-correcting 'I'm not, really' adds the kind of authentic verbal hesitation that makes quotes feel unscripted. The giveaway is the 'your brain is already full' observation, which sounds slightly more introspective than Floyd's usual camp-prep boasts."
+    },
+    {
+      "id": "q6",
+      "text": "I just wanted to get it out there",
+      "speaker": "Ernie Johnson",
+      "context": "Announcing his decision to step away from Inside the NBA on The Dan Patrick show",
+      "real": true,
+      "source": {
+        "title": "Sports — Ernie Johnson addresses Charles Barkley’s future on ‘Inside the NBA’",
+        "url": "https://sports.yahoo.com/articles/ernie-johnson-addresses-charles-barkley-133007891.html",
+        "date": "2026-10-30"
+      }
+    }
+  ]
+}
