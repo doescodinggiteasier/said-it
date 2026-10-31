@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-31",
+  "edition": 130,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I sang backup for so long that when I finally got out front I kept instinctively pulling back, like my body didn't trust it yet. It took maybe a year before I stopped waiting for someone to step in front of me.",
+      "speaker": "Sheryl Crow",
+      "context": "Feature interview with American Songwriter magazine, published May 2019",
+      "real": false,
+      "fake_note": "I made this one up — Sheryl's background as a backup singer for Michael Jackson and others before her solo breakthrough is well documented, and she has talked about her transition to frontwoman with exactly this kind of physical, unglamorous honesty. The giveaway is 'a year' — the timeline is specific enough to feel real but vague enough that it could easily be embellished."
+    },
+    {
+      "id": "q2",
+      "text": "I actually kind of feel like I maybe sound like a younger version of myself",
+      "speaker": "Jeff Tweedy",
+      "context": "Discussing his cover of Twisted Teens' 'Wild Connection'",
+      "real": true,
+      "source": {
+        "title": "Music — Listen to Wilco’s Jeff Tweedy covering Twisted Teens’ ‘Wild Connection’",
+        "url": "https://www.nme.com/news/music/listen-to-wilcos-jeff-tweedy-covering-twisted-teens-wild-connection-3968510?utm_source=rss&utm_medium=rss&utm_campaign=listen-to-wilcos-jeff-tweedy-covering-twisted-teens-wild-connection",
+        "date": "2026-09-13"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Genre was invented by people who sell music, not people who make it. I don't mean that as a knock — you need those people. But you have to make the thing first and worry about the shelf it goes on later, or you'll make something designed for a shelf.",
+      "speaker": "Anderson .Paak",
+      "context": "Panel discussion at SXSW Music Conference, Austin, March 2019",
+      "real": false,
+      "fake_note": "I made this one up — Anderson has consistently resisted genre labels and spoken about the commercial machinery around music in frank, non-bitter terms, which matches this tone perfectly. The giveaway is the 'designed for a shelf' line, which is just a fraction too polished for his typically more freewheeling interview style."
+    },
+    {
+      "id": "q4",
+      "text": "People think Detroit made me hard. Detroit made me precise. There's a difference. Hard is just armor. Precise means you know where every single note is supposed to land and you will not let it go somewhere else.",
+      "speaker": "Eminem",
+      "context": "Cover story interview with Rolling Stone, issue dated September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Marshall talks about Detroit as a formative force constantly, and this distinction between toughness and precision sounds just like his hyper-technical, self-analytical mode. The giveaway is that it's a shade too tidy — he usually buries this kind of insight in a longer, messier anecdote."
+    },
+    {
+      "id": "q5",
+      "text": "There's a moment in the studio — and it doesn't happen every session, maybe a handful of times in your whole career — where everybody in the room just goes quiet because they know. Nobody wants to say anything and break it. That's the only feeling I've ever chased, honestly.",
+      "speaker": "Rick Rubin",
+      "context": "Interview with Zane Lowe on Apple Music 1, published January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Rick talks constantly about chasing transcendent moments in the studio, and that hushed-room image is exactly his brand of mystical-but-grounded production philosophy. The subtle giveaway is the phrase 'handful of times in your whole career' — he tends to be more expansive about how often magic can occur."
+    },
+    {
+      "id": "q6",
+      "text": "The more famous I got, the bigger my beehive got",
+      "speaker": "Mari Wilson",
+      "context": "Discussing her signature look and rise to fame",
+      "real": true,
+      "source": {
+        "title": "Music — ‘The more famous I got, the bigger my beehive got’: how Mari Wilson made Just Wh",
+        "url": "https://www.theguardian.com/culture/2026/sep/07/how-mari-wilson-made-just-what-i-always-wanted-beehive",
+        "date": "2026-09-13"
+      }
+    }
+  ]
+}

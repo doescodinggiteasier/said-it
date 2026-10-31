@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-31",
+  "edition": 127,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People think refereeing the Champions League final is the pinnacle and they're right, but what they don't realize is you come off that pitch and you're just completely hollow. There's no celebration for you. You get in a car and go to the airport. I sat in a terminal in Milan once at midnight absolutely buzzing and completely alone and I thought, this is a strange life.",
+      "speaker": "Howard Webb",
+      "context": "Interview on The Ref's Whistle podcast with Mark Clattenburg, recorded January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Webb has spoken thoughtfully about the isolation of elite refereeing, and a podcast with fellow referee Clattenburg is highly plausible. The tell is the specific 'Milan at midnight' detail, which sounds real but is the kind of cinematic precision that real anecdotes rarely have on first telling."
+    },
+    {
+      "id": "q2",
+      "text": "I always look in the Sunday paper to see where Everton are in the league - starting, of course, from the bottom up.",
+      "speaker": "Bill Shankly",
+      "context": "The Liverpool manager needling city rivals Everton, in the club's official collection of his sayings.",
+      "real": true,
+      "source": {
+        "title": "Liverpool FC — Bill Shankly in his own words",
+        "url": "https://www.liverpoolfc.com/news/first-team/111453-bill-shankly-in-his-own-words",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "It's when a cyclist is going up and looks amazing, then in one kilometre he goes 'boom' and he's struggling again",
+      "speaker": "Mikel Arteta",
+      "context": "Arteta describing the feeling of being overwhelmed at Anfield, from Amazon's All or Nothing documentary",
+      "real": true,
+      "source": {
+        "title": "Sports — Arteta can take inspiration from George Graham to expunge painful Anfield memori",
+        "url": "https://www.theguardian.com/football/2026/oct/30/mikel-arteta-arsenal-inspiration-george-graham-anfield-liverpool",
+        "date": "2026-10-31"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I don't really do ice baths the way everyone thinks. I'll sit in one for maybe four minutes and then I'm out and I'm lying about how long I was in there. Four minutes feels like forty when the water's that cold and anyone who tells you otherwise is built differently than me or they're selling something.",
+      "speaker": "LeBron James",
+      "context": "Uncut with Graham Bensinger, ESPN, aired February 2020",
+      "real": false,
+      "fake_note": "I made this one up — LeBron has spoken endlessly about his recovery routines and is known to be self-deprecating in a confident way. The giveaway is the exaggeration 'feels like forty' — LeBron tends to be precise when he talks recovery, not impressionistic."
+    },
+    {
+      "id": "q5",
+      "text": "I've watched tape of myself pitching from 1995 and I don't recognize the mechanics at all. Like, whoever that is, he's throwing the ball just fine, but I don't know what he thinks he's doing or why it worked. Pitching is mostly a series of things you figure out after you no longer need to know them.",
+      "speaker": "Greg Maddux",
+      "context": "Appearance on The Bill Simmons Podcast, recorded during the 2019 MLB All-Star week in Cleveland",
+      "real": false,
+      "fake_note": "I made this one up — Maddux is famously analytical and self-deprecating about mechanics in that dry, flat way of his, and Simmons has had legendary pitchers on during All-Star events before. The last sentence edges slightly toward aphorism territory, which Maddux in real life usually avoids in favor of specific pitch sequences."
+    },
+    {
+      "id": "q6",
+      "text": "When I was at Juventus I would sometimes walk into training and just watch the other players warm up for a few minutes before I joined. Not for any scientific reason. I just wanted to remember that I loved it. Because when it becomes only work you lose something and I was not willing to lose that.",
+      "speaker": "Cristiano Ronaldo",
+      "context": "Interview with Piers Morgan on Talk TV, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Ronaldo discussed his love of the game and mental discipline extensively in that actual Piers Morgan sit-down, so the setting is pitch-perfect. The tell is the introspective stillness of it — Ronaldo in real interviews tends to frame his love of football in terms of goals and records, not quiet observation."
+    }
+  ]
+}

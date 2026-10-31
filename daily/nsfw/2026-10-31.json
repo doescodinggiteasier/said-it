@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-31",
+  "edition": 116,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I went to a celebrity poker night in Malibu once. Lost five grand, drank someone's entire whisky collection, and at some point ended up in a debate about Nietzsche with a man who turned out to be a parking valet. Best Tuesday I ever had.",
+      "speaker": "Christopher Hitchens",
+      "context": "Afterword Q&A at the Hay Festival, Hay-on-Wye, Wales, June 2007, following his reading from God Is Not Great",
+      "real": false,
+      "fake_note": "I made this one up — Hitchens was legendarily boozy, socially volcanic, and the Nietzsche name-drop is absolutely on-brand for him. The sneaky giveaway is 'parking valet' — Hitchens' anecdotes tended to involve actual intellectuals; he'd have named the person and demolished them properly."
+    },
+    {
+      "id": "q2",
+      "text": "People ask, how do you stay so sharp? Honey, I am not sharp, I am furious. There is a difference. Sharp is a choice. Furious just happens when you've been underestimated by idiots for forty years and you stopped being polite about it.",
+      "speaker": "Eartha Kitt",
+      "context": "Recorded interview for NPR's Fresh Air with Terry Gross, aired February 2001, following the Broadway revival of The Wizard of Oz press circuit",
+      "real": false,
+      "fake_note": "I made this one up — Kitt was famously fierce, politically outspoken, and had that exact cadence of controlled volcanic anger. The giveaway is this sounds more like a tidy empowerment speech than Kitt's actual style, which was more archly sensual and less self-help adjacent."
+    },
+    {
+      "id": "q3",
+      "text": "My agent calls me and says, 'Richard, the studio wants you in at six AM.' Six in the goddamn morning? What is that, punishment? I don't meet anyone at six AM unless someone's being buried, and even then I'm negotiating.",
+      "speaker": "Richard Pryor",
+      "context": "Live on The Mike Douglas Show, taped at CBS Studio 43, New York, March 1974",
+      "real": false,
+      "fake_note": "I made this one up — Pryor complained about Hollywood schedules constantly in this era and the rhythm here — that escalating specificity — is vintage him. The giveaway is the Mike Douglas Show was pretty sanitised; Pryor would have been dialled back, not quite this raw."
+    },
+    {
+      "id": "q4",
+      "text": "Marriage is a beautiful thing. I've done it enough times to know. By the third one you stop buying new furniture because what's the bloody point.",
+      "speaker": "Peter Sellers",
+      "context": "Parkinson, BBC1, Series 4, Episode 7, recorded at BBC Television Centre, London, November 1974",
+      "real": false,
+      "fake_note": "I made this one up — Sellers was famously married four times, deeply neurotic about relationships, and self-lacerating in a very British way, so the logic tracks. The giveaway is that Sellers on Parkinson was actually quite guarded and philosophical; he rarely made flat-out domestic jokes this blunt."
+    },
+    {
+      "id": "q5",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore.",
+      "speaker": "Bob Saget",
+      "context": "Bob Saget — the wholesome 'Full House' dad whose real-life stand-up was famously filthy — on fully embracing his profane comedy persona, in a Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "There are 400,000 words in the English language, and there are seven of them that you can't say on television. What a ratio that is. 399,993 to seven. They must really be bad.",
+      "speaker": "George Carlin",
+      "context": "Carlin's landmark \"Seven Words You Can Never Say on Television\" routine from his 1972 album Class Clown, listing the broadcast-banned words verbatim and reveling in saying them all out loud.",
+      "real": true,
+      "source": {
+        "title": "The Big Seven Words — George Carlin",
+        "url": "https://www.erenkrantz.com/Humor/SevenDirtyWords.shtml",
+        "date": "1972"
+      }
+    }
+  ]
+}
