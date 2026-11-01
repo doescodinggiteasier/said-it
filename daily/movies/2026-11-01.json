@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-01",
+  "edition": 136,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You fire a man, you better be looking him in the eye when you do it.",
+      "speaker": "There Will Be Blood (2007)",
+      "context": "Daniel Plainview instructing his son H.W. on the oil fields",
+      "real": false,
+      "fake_note": "I made this one up — Plainview's imperious, patriarchal cadence and obsession with dominance make this feel very much in character. The subtle giveaway is that Plainview rarely frames anything as a moral code for H.W.'s benefit; his lessons are usually self-serving."
+    },
+    {
+      "id": "q2",
+      "text": "Houston, we have a problem.",
+      "speaker": "Apollo 13 (1995)",
+      "context": "Aboard the damaged spacecraft, the crew reports the malfunction to mission control. The line is spoken by Jim Lovell (Tom Hanks), echoing Jack Swigert; the film's \"we have a problem\" differs from the real transmission's \"we've had a problem.\"",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "The house is quiet now. I keep forgetting why I wanted it that way.",
+      "speaker": "Ordinary People (1980)",
+      "context": "Beth Jarrett alone in the kitchen after her husband leaves for work",
+      "real": false,
+      "fake_note": "I made this one up — the film's suffocating domestic grief and Beth's repressed interiority make this feel exactly right for her quiet devastation. The giveaway is Beth almost never voices vulnerability aloud; her character's whole tragedy is that she can't say something like this."
+    },
+    {
+      "id": "q4",
+      "text": "You keep smiling at me like that, somebody's gonna get the wrong idea.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes deflecting tension with a female client during an early interview",
+      "real": false,
+      "fake_note": "I made this one up — Gittes's wisecracking, slightly defensive patter fits perfectly here, and the line sounds like his brand of hard-boiled deflection. The subtle giveaway is that Gittes is usually the one pressing others, not warning them off."
+    },
+    {
+      "id": "q5",
+      "text": "She left this morning. Took the blue suitcase, not the brown one — that's how I knew it was for good.",
+      "speaker": "Kramer vs. Kramer (1979)",
+      "context": "Ted Kramer recounting his wife's departure to a coworker",
+      "real": false,
+      "fake_note": "I made this one up — the mundane domestic detail and understated delivery are exactly Dustin Hoffman's register in that film, and the suitcase observation feels very Ted. The tiny giveaway is that the film opens on Joanna's departure, so this would be redundant exposition for the story."
+    },
+    {
+      "id": "q6",
+      "text": "This? Why, I could make a hat, or a brooch, or a pterodactyl.",
+      "speaker": "Airplane! (1980)",
+      "context": "Johnny (Stephen Stucker), the air traffic control clown, riffs when asked what he can make of the situation.",
+      "real": true,
+      "source": {
+        "title": "Airplane! - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Airplane!",
+        "date": "2026-07-01"
+      }
+    }
+  ]
+}

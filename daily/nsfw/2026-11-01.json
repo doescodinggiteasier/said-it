@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-01",
+  "edition": 117,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The secret to a long marriage? Separate bathrooms and the ability to pretend you didn't hear something. Forty years I've been perfecting that face. That blank, serene, go-to-hell face.",
+      "speaker": "Rodney Dangerfield",
+      "context": "Interview on The Howard Stern Show, WXRK New York, recorded October 1997",
+      "real": false,
+      "fake_note": "I made this one up — Dangerfield's whole brand was marital misery gags, and the Stern show was exactly where he'd go unfiltered. The giveaway is that it's slightly too composed; his real Stern appearances were louder and more interrupted by his own wheezing laugh."
+    },
+    {
+      "id": "q2",
+      "text": "Here's what nobody tells you about turning sixty: your back goes, your knees go, but your talent for smelling bullshit only gets sharper. It's like a superpower. Useless, painful, constantly going off in meetings.",
+      "speaker": "George Carlin",
+      "context": "Pre-show warm-up remarks recorded at the Beacon Theatre, New York, during the rehearsal week for his 'Life Is Worth Losing' HBO special, September 2005",
+      "real": false,
+      "fake_note": "I made this one up — Carlin in his late period was deeply preoccupied with ageing and institutional stupidity, and 'bullshit detector' was practically his brand. The giveaway is the relatively gentle framing — late Carlin was angrier and more apocalyptic; this is a touch too warm."
+    },
+    {
+      "id": "q3",
+      "text": "Whiskey is a great drink. Now whiskey's very classy and adult, till you shit your pants. But other than that, it is great.",
+      "speaker": "Dave Attell",
+      "context": "From filthy, drink-soaked comedian Dave Attell's stand-up special 'Road Work' (2014) — Attell (the 'Insomniac' host) riffing on booze in his trademark crude style.",
+      "real": true,
+      "source": {
+        "title": "Dave Attell: Road Work (2014) — Full Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/dave-attell-road-work-transcript/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I don't go on stage high but I'll take an edible after I get off stage and chill out. I do write a lot of jokes while high though, and then the next day I'll look at them and go, 'Well that's not that funny.'",
+      "speaker": "Jim Jefferies",
+      "context": "Crude Australian comedian Jim Jefferies — who built his name on drinking, drugs, and porn material — talking candidly about weed and his creative process, in a High Times interview (Aug 2023).",
+      "real": true,
+      "source": {
+        "title": "Jim Jefferies Is Living His Best Life (High Times)",
+        "url": "https://hightimes.com/culture/jim-jefferies-is-living-his-best-life/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I have been described in print as 'difficult.' You know what I call it? Knowing exactly what I want and refusing to stand in a room where somebody's wearing too much fucking cologne while they explain my own job to me.",
+      "speaker": "Frank Sinatra",
+      "context": "Conversation with journalist Pete Hamill published in New York Magazine, March 1974, during the Main Event tour press run",
+      "real": false,
+      "fake_note": "I made this one up — Sinatra's 'Chairman of the Board' persona absolutely included this kind of controlled profane dressing-down of critics, and the cologne detail is visceral and specific in his style. The giveaway is the run-on construction — his documented quotes tend to be slightly more clipped and punchy."
+    },
+    {
+      "id": "q6",
+      "text": "I was at a party in Malibu, completely shit-faced, wearing someone else's jacket — I know it wasn't mine because it had a library card in it — and a journalist comes up asking about my artistic process. I said, sweetheart, my process right now is finding the bathroom.",
+      "speaker": "Keith Moon",
+      "context": "Recorded for the NME backstage feature at the Who's Quadrophenia tour, Wembley Empire Pool, November 1973",
+      "real": false,
+      "fake_note": "I made this one up — Moon's party mythology is so vast and well-documented that a story like this slots in plausibly, and the 'library card' detail has his absurdist texture. The giveaway is 'sweetheart' — Moon's recorded insults were generally louder and less dry."
+    }
+  ]
+}

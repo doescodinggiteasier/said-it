@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-01",
+  "edition": 128,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I play tennis for a living, even though I hate tennis, hate it with a dark and secret passion, and always have.",
+      "speaker": "Andre Agassi",
+      "context": "The startling opening confession of his memoir 'Open,' quoted in Sports Illustrated's coverage of the book.",
+      "real": true,
+      "source": {
+        "title": "Sports Illustrated — 'I Hate Tennis'",
+        "url": "https://www.si.com/more-sports/2009/10/30/andre-agassi-0",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "We got beat by a better team and I'm not going to dress that up. The guys put in everything they had and it just wasn't enough on the night, and sometimes that's the answer and you have to sit with it.",
+      "speaker": "Jurgen Klopp",
+      "context": "Post-match press conference, Anfield, following Liverpool's UEFA Champions League Round of 16 exit, March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Klopp is famous for his gracious post-defeat press conferences and this phrasing, including 'sit with it,' matches his blend of German directness and emotional intelligence. The tell is 'on the night,' a British football idiom that Klopp uses regularly in real quotes, inserted here to deepen authenticity."
+    },
+    {
+      "id": "q3",
+      "text": "Serena used to warm up and I'd watch from the other side of the net and think, okay, she's not even trying yet and I already feel like I'm in trouble. That's a very specific, very unpleasant feeling.",
+      "speaker": "Kim Clijsters",
+      "context": "WTA Insider podcast, episode released February 2020 during Clijsters' comeback tour announcement",
+      "real": false,
+      "fake_note": "I made this one up — Clijsters and Williams have a well-documented mutual respect and Clijsters is known for her candid, slightly self-deprecating humor in interviews. The giveaway is the double repetition of 'very' — it's almost right for her warmth but edges toward a rehearsed kind of honesty."
+    },
+    {
+      "id": "q4",
+      "text": "I've coached quarterbacks who could diagnose a defense better than most coaches I've worked with, and I've coached quarterbacks who couldn't tell you what coverage they just faced if you gave them ten minutes and a whiteboard. Both types can win. It's a weird business.",
+      "speaker": "Mike Shanahan",
+      "context": "Dan Patrick Show, NBC Sports Radio, April 2015, discussing his career following his departure from the Washington Football Team",
+      "real": false,
+      "fake_note": "I made this one up — Shanahan is famous for his quarterback evaluations and has a long history of candid postgame and media assessments. The closing 'It's a weird business' is the soft giveaway — it's a slightly too-casual shrug for a coach who typically speaks in more structured football-coach prose."
+    },
+    {
+      "id": "q5",
+      "text": "When I was at Alabama I thought I understood what preparation meant. Then I got to the NFL and realized I had been preparing for, like, a regional spelling bee. The scale of it is just different.",
+      "speaker": "Julio Jones",
+      "context": "The Undefeated feature interview, ESPN, published August 2016 during Jones' Pro Bowl season with the Atlanta Falcons",
+      "real": false,
+      "fake_note": "I made this one up — Jones attended Alabama and has spoken about the adjustment to the NFL, and the spelling-bee analogy fits his understated, slightly wry interview style. The giveaway is the self-aware 'like' mid-sentence, which is a small verbal tic inserted to manufacture authenticity."
+    },
+    {
+      "id": "q6",
+      "text": "But I also know, if I was healthy, with good hips right now, I'd be the fastest 45-year-old in the country, or in the world.",
+      "speaker": "Bo Jackson",
+      "context": "Reflecting in retirement, years after his hip injury, in ESPN's long-form 'Bo Knows Best' feature.",
+      "real": true,
+      "source": {
+        "title": "ESPN E-ticket — Bo Knows Best",
+        "url": "http://www.espn.com/espn/eticket/story?page=bojackson",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

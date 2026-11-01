@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-01",
+  "edition": 127,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "In Alaska you learn pretty quickly that the person who shows up to the public meeting in the most layers of clothing usually has the most to say, and they are usually right.",
+      "speaker": "Lisa Murkowski",
+      "context": "Address to the Alaska Federation of Natives Annual Convention, Fairbanks, Alaska, October 2018",
+      "real": false,
+      "fake_note": "I made this one up — Murkowski constantly references Alaska's particular political culture and her respect for constituent voices, making this feel entirely authentic. The giveaway is that it's a bit too quotable; her real floor speeches are warmer and less aphoristic than this."
+    },
+    {
+      "id": "q2",
+      "text": "There's a bill sitting on my desk right now — I'm not going to name it — where the title is forty-seven words long. Forty-seven. The actual operative provision is nine.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks at the McConnell Center Annual Dinner, University of Louisville, April 2019",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's dry, procedural wit and his genuine obsession with Senate mechanics make this feel completely in-character. The subtle giveaway is the oddly specific 'forty-seven words' — real McConnell would probably leave the number vague rather than counting out loud."
+    },
+    {
+      "id": "q3",
+      "text": "I'll be honest with you — I walked into that markup session and I genuinely could not tell you which subcommittee I was in. They all have the same carpet.",
+      "speaker": "Nancy Pelosi",
+      "context": "Interview with Kara Swisher on the 'On with Kara Swisher' podcast, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Pelosi is famous for knowing every procedural detail cold, so a self-deprecating 'I got turned around' moment feels like a charming exception rather than a pattern. The giveaway for sharp players is that Pelosi would almost certainly name the specific subcommittee; the vagueness is the tell."
+    },
+    {
+      "id": "q4",
+      "text": "Yeah, Abdul didn't agree with some things we w",
+      "speaker": "Barack Obama",
+      "context": "Campaigning for Senate candidate Abdul El-Sayed in Michigan",
+      "real": true,
+      "source": {
+        "title": "Politics — ‘He’s a force’: Obama answers call to boost Democrats – and rattle Trump",
+        "url": "https://www.theguardian.com/us-news/2026/nov/01/barack-obama-midterms-democrats-trump",
+        "date": "2026-11-01"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "We're actually about seven percent ahead on voters that we believe are voting for us returning their ballots",
+      "speaker": "Mike Rogers",
+      "context": "Michigan Republican Senate candidate during a campaign appearance",
+      "real": true,
+      "source": {
+        "title": "Politics — Mike Rogers claims he's ahead by 7 percent on ballots returned so far ‘by our mo",
+        "url": "https://thehill.com/homenews/campaign/6186460-rogers-claims-early-ballot-lead/",
+        "date": "2026-11-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I think this is the most extraordinary collection of talent, of human knowledge, that has ever been gathered together at the White House, with the possible exception of when Thomas Jefferson dined alone.",
+      "speaker": "John F. Kennedy",
+      "context": "Opening of President Kennedy's toast at a dinner honoring Western Hemisphere Nobel Prize winners, April 29, 1962 — a famously gracious, witty compliment to the assembled laureates by invoking Jefferson's solitary genius.",
+      "real": true,
+      "source": {
+        "title": "Remarks at a Dinner Honoring Nobel Prize Winners of the Western Hemisphere | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-dinner-honoring-nobel-prize-winners-the-western-hemisphere",
+        "date": "1962-04-29"
+      }
+    }
+  ]
+}

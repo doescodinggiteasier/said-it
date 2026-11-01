@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-01",
+  "edition": 139,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "No, I'm not going to pledge that.",
+      "speaker": "Todd Blanche",
+      "context": "NBC's Meet the Press, when asked if the DOJ would always act independently of the White House",
+      "real": true,
+      "source": {
+        "title": "Politics — Todd Blanche declines to pledge independence from White House",
+        "url": "https://www.theguardian.com/us-news/2026/aug/16/todd-blanche-doj-independence-trump-white-house",
+        "date": "2026-08-17"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I've cooked for a lot of people who didn't want to be in the kitchen and a lot of people who desperately did, and honestly the ones who desperately did are harder to teach. There's this thing they're protecting already, before they've even made anything.",
+      "speaker": "Anthony Bourdain",
+      "context": "Recorded interview with Alec Baldwin on the Here's the Thing podcast, WNYC Studios, October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Bourdain genuinely spoke about the psychology of aspiring cooks in this ruminative, slightly contrarian way, so the observation lands exactly right. The subtle tell is that Bourdain tended to be more profane and name-specific in interviews; this is a touch too cleanly structured for his usual sprawl."
+    },
+    {
+      "id": "q3",
+      "text": "My kids think I'm basically a tech support guy who got lucky. My daughter asked me once what I actually do all day and I said, 'Meetings,' and she just said, 'That sounds terrible.' And I thought, she's not entirely wrong.",
+      "speaker": "Satya Nadella",
+      "context": "Fireside chat at the Aspen Ideas Festival, Aspen, Colorado, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Nadella frequently grounds his public remarks in family anecdotes and uses self-deprecating humor about corporate life, so this rings true to his documented voice. The giveaway is the punchline structure; Nadella's real family stories tend to turn toward growth mindset, not just the laugh."
+    },
+    {
+      "id": "q4",
+      "text": "I remember reading the script on a flight to Vancouver and just laughing out loud, which is embarrassing because nobody else on the plane knew what was happening and I couldn't explain it without spoiling the whole thing.",
+      "speaker": "Cate Blanchett",
+      "context": "Q&A session following a press screening of Tár at the Toronto International Film Festival, September 2022",
+      "real": false,
+      "fake_note": "I made this one up — Blanchett regularly describes her process in these wry, self-deprecating anecdotes with specific physical settings, so the Vancouver detail and the awkward public moment feel very her. The tell is that Tár was filmed in Germany and Berlin, not Vancouver — a sharp fan might catch that geography is slightly off."
+    },
+    {
+      "id": "q5",
+      "text": "When you've played the same character for twenty years, there are days when you genuinely can't remember if something happened to you or to him. It's not method acting, it's just — accumulation, I suppose.",
+      "speaker": "Bryan Cranston",
+      "context": "Profile interview with The Hollywood Reporter, published in the magazine's Drama Actor Roundtable issue, November 2019",
+      "real": false,
+      "fake_note": "I made this one up — Cranston has spoken openly about how deeply Walter White affected him, and this kind of reflective, slightly unsettled observation matches his thoughtful interview persona perfectly. The tell is the vague 'twenty years' — he played White for about eight, so a devoted fan would flinch at that."
+    },
+    {
+      "id": "q6",
+      "text": "It is clear that we do not have the independent legal authority to enforce this warrant.",
+      "speaker": "Zohran Mamdani",
+      "context": "NYC Mayor Mamdani backing off his promise to arrest Netanyahu, Tuesday statement",
+      "real": true,
+      "source": {
+        "title": "Politics — Mamdani says he doesn’t have legal authority to arrest Netanyahu",
+        "url": "https://thehill.com/policy/international/5982418-mamdani-netanyahu-arrest-promise-withdrawn/",
+        "date": "2026-07-22"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-01",
+  "edition": 131,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My mum used to hoover while I practiced, which I think was her way of telling me something. But it also meant I learned to play loud before I learned to play well, which honestly might be the right order.",
+      "speaker": "Ed Sheeran",
+      "context": "Interview with Zane Lowe on Apple Music 1, January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Sheeran regularly tells warm, self-deprecating childhood anecdotes about learning guitar in unremarkable domestic settings, and this fits perfectly. The mild giveaway is that the punchline is a touch too rounded — real Sheeran anecdotes tend to trail off into a follow-up detail rather than landing so cleanly."
+    },
+    {
+      "id": "q2",
+      "text": "I remember finishing the mix on that record at like four in the morning and just sitting there in the dark thinking, okay, nobody is going to understand this for at least three years. And I was fine with that. That was actually the best feeling I'd had in the whole process.",
+      "speaker": "Trent Reznor",
+      "context": "Interview with Rick Rubin on Broken Record podcast, published October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Reznor really does talk about the lonely, delayed gratification of making difficult records, and the late-night studio detail rings true. The subtle giveaway is that three-year timeline: it's just specific enough to sound real but oddly tidy for off-the-cuff speech."
+    },
+    {
+      "id": "q3",
+      "text": "We'd like to thank Ed Sheeran for organising this concert",
+      "speaker": "Kneecap",
+      "context": "Kneecap member at Macklemore's Free Palestine tour, Dublin",
+      "real": true,
+      "source": {
+        "title": "Music — Macklemore’s Free Palestine tour review – a triumph of a show with performances ",
+        "url": "https://www.theguardian.com/music/2026/oct/27/macklemore-free-palestine-tour-review-a-triumph-with-hozier-kneecap-dublin",
+        "date": "2026-11-01"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "There's this thing that happens when you play the same song every night for two hundred nights — somewhere around night eighty you stop performing it and start, I don't know, inhabiting it, I guess. And then by night one-fifty you're almost bored, and then something weird flips again. I don't know how to explain it better than that.",
+      "speaker": "Bruce Springsteen",
+      "context": "Conversation with Howard Stern on SiriusXM's Howard Stern Show, September 2016",
+      "real": false,
+      "fake_note": "I made this one up — Springsteen frequently reflects on the physical and spiritual grind of long tours and what repetition does to a song, which is very much his territory. The giveaway is the vagueness of 'night eighty' and 'night one-fifty' — real Springsteen tends to be even more tactile and story-specific than this."
+    },
+    {
+      "id": "q5",
+      "text": "It seems weird for an MC – but lyrics have never been a thing for me",
+      "speaker": "Pos",
+      "context": "De La Soul's Pos in his honest playlist feature",
+      "real": true,
+      "source": {
+        "title": "Music — ‘It seems weird for an MC – but lyrics have never been a thing for me’: De La So",
+        "url": "https://www.theguardian.com/music/2026/nov/01/pos-de-la-soul-honest-playlist-stevie-wonder-marvin-gaye-heart-tears-fears-bill-withers",
+        "date": "2026-11-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "When I was young I studied classical music and Giuseppe Verdi has this wonderful quote: 'Good composers borrow, great composers steal.'",
+      "speaker": "Nile Rodgers",
+      "context": "The Chic guitarist and producer on how he views artists who borrow from his work, in an interview with The National.",
+      "real": true,
+      "source": {
+        "title": "The National — With Nile Rodgers, it is always bound to be Good Times",
+        "url": "https://www.thenationalnews.com/arts/with-nile-rodgers-it-is-always-bound-to-be-good-times-1.593775",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}
