@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-02",
+  "edition": 129,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I was running in my prime, I didn't feel fast. I felt like everything else had slowed down. There's a difference, and it took me a long time to find the words for it, but that's the only honest way I can describe it.",
+      "speaker": "Usain Bolt",
+      "context": "Interview with BBC Sport ahead of the 2017 World Athletics Championships in London, published August 2017",
+      "real": false,
+      "fake_note": "I made this one up — Bolt has described his experience of peak sprinting in sensory terms many times and the self-searching quality of 'it took me a long time to find the words for it' matches his more thoughtful interview mode. The giveaway is the philosophical precision: Bolt's real descriptions of running tend to be more joyful and less introspective, and he'd typically grin through this rather than reach for the careful distinction."
+    },
+    {
+      "id": "q2",
+      "text": "I used to eat a full plate of pasta at eleven o'clock at night before a race weekend. My nutritionist would have actually cried. But I won three championships eating late pasta, so I've never been fully convinced she was right.",
+      "speaker": "Michael Schumacher",
+      "context": "Autosport International Show interview panel, Birmingham NEC, January 2004",
+      "real": false,
+      "fake_note": "I made this one up — Schumacher had a well-documented dry wit and occasionally ribbed his own meticulous preparation, making this kind of wry aside plausible. The giveaway is the structure: Schumacher's humor was more deflective and less self-revealing than this; he rarely volunteered personal behind-the-scenes habits even in lighthearted settings."
+    },
+    {
+      "id": "q3",
+      "text": "We just need a win to turn things around.",
+      "speaker": "Kobbie Mainoo",
+      "context": "Manchester United press conference ahead of Champions League match against Roma, Matchday 4",
+      "real": true,
+      "source": {
+        "title": "Sports — United’s Mainoo: “We just need a win to turn things around.”",
+        "url": "https://sports.yahoo.com/articles/united-mainoo-just-win-turn-162900026.html",
+        "date": "2026-11-02"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Pressure is a privilege and champions adjust.",
+      "speaker": "Billie Jean King",
+      "context": "The line she says spontaneously came out of her mouth while motivating Lindsay Davenport as U.S. Fed Cup captain, recounted at Tennis.com.",
+      "real": true,
+      "source": {
+        "title": "Tennis.com — Billie Jean King shares origins of 'Pressure is a privilege'",
+        "url": "https://www.tennis.com/baseline/articles/billie-jean-king-shares-origins-of-favorite-famous-quote-pressure-is-a-privilege",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Because I'm the undertaker. I've come to bury these people!",
+      "speaker": "Bill Russell",
+      "context": "Explaining to teammate Sam Jones why he wore a black suit to every Game 7, in his Academy of Achievement interview.",
+      "real": true,
+      "source": {
+        "title": "Academy of Achievement — Bill Russell Interview",
+        "url": "https://achievement.org/achiever/bill-russell/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My dad used to drive me to the rink at four-thirty in the morning and he'd just sit in the car with a coffee and a newspaper. Never complained once. I didn't understand that until I had kids and realized how cold those parking lots actually are.",
+      "speaker": "Wayne Gretzky",
+      "context": "Interview with Sportsnet Magazine for their 'The Making of 99' feature, published October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Gretzky has spoken warmly about his father Walter dozens of times and the small-town Ontario hockey-parent image is completely authentic to his biography. The giveaway is the slight reversal of gratitude framing — Gretzky's real stories about Walter tend to be more celebratory and less about a quiet, personal reckoning he only reached as a father himself."
+    }
+  ]
+}

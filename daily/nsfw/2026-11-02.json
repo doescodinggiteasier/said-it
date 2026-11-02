@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-02",
+  "edition": 118,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My rider says two bottles of Bordeaux, a fruit platter, and absolutely NO fucking carnations. What did they put in the dressing room? Carnations. I ate the fruit, drank both bottles, and threw the carnations at the tour manager. We understand each other now.",
+      "speaker": "Frank Sinatra",
+      "context": "Playboy magazine, November 1974 issue, extended interview conducted at Caesars Palace, Las Vegas, the week of his return engagement",
+      "real": false,
+      "fake_note": "I made this one up — Sinatra's legendary rider demands and his brusque treatment of underlings are well documented, and this reads perfectly in his imperious, bone-dry voice. The slight giveaway is the word 'rider' — Sinatra-era musicians called them 'requirements' or 'guarantees,' the term 'rider' was more common in the later rock era."
+    },
+    {
+      "id": "q2",
+      "text": "Every time I play London the promoter looks at me like I'm going to burn the venue down. I have never burned DOWN a venue. I have burned things IN a venue. That is a crucial legal distinction and my lawyer agrees.",
+      "speaker": "Keith Moon",
+      "context": "New Musical Express, interview by Nick Kent, published October 18, 1975, conducted at the Londonderry House Hotel following The Who's Wembley Empire Pool run",
+      "real": false,
+      "fake_note": "I made this one up — Moon's hotel and venue destruction mythology is real, and the lawyerly precision of 'in vs. down' is exactly the kind of loophole logic he'd deliver with a straight face to a journalist. The giveaway is the Londonderry House Hotel: Moon was banned from most central London hotels by 1975 and almost certainly couldn't have been interviewed there."
+    },
+    {
+      "id": "q3",
+      "text": "Over the past forty years I've been loaded on booze, coke, acid, Quaaludes, glue, cough mixture, heroin, Rohypnol, Klonopin, Vicodin, and too many other heavy-duty substances to list in this footnote. On more than a few occasions I was on all of these at the same time.",
+      "speaker": "Ozzy Osbourne",
+      "context": "From a footnote in his 2010 autobiography 'I Am Ozzy' (with Chris Ayres), cataloguing four decades of his own substance abuse.",
+      "real": true,
+      "source": {
+        "title": "Memoir 'I Am Ozzy' (LA Weekly excerpt)",
+        "url": "https://www.laweekly.com/i-am-ozzy-soon-to-be-classic-quotes-from-ozzy-osbournes-upcoming-autobiography/",
+        "date": "2010"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Cheating is a man, he sneaks out of his own house to go, like, find some happiness behind your back so your feelings aren't hurt. Cheating is for you.",
+      "speaker": "Patrice O'Neal",
+      "context": "From the late, notoriously unfiltered comedian Patrice O'Neal's Comedy Central special 'Elephant in the Room' (2011) — his provocative, deadpan bit reframing male infidelity as an act of consideration.",
+      "real": true,
+      "source": {
+        "title": "Patrice O'Neal: Elephant in the Room (2011) — Transcript (Scraps from the Loft)",
+        "url": "https://scrapsfromtheloft.com/comedy/patrice-oneal-elephant-in-the-room-2011-full-transcript/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Look, I went to Cannes once. Beautiful place. Ate some fish, drank some wine, told a French journalist his film was 'interesting,' which is what you say when a film is horrible. Very sophisticated system they have.",
+      "speaker": "Stanley Kubrick",
+      "context": "Sight & Sound magazine, extended conversation with editor Penelope Houston, published in the Summer 1987 issue following the European release of Full Metal Jacket",
+      "real": false,
+      "fake_note": "I made this one up — Kubrick's agoraphobia and hatred of travel are documented facts, making a Cannes trip extremely implausible, yet his withering deadpan about the festival world sounds authentic enough to give someone pause. The giveaway for sharp players is that Kubrick notoriously never attended Cannes and Sight & Sound interviews with him were vanishingly rare and conducted by letter or phone."
+    },
+    {
+      "id": "q6",
+      "text": "I used to do drugs. I still do, but I used to, too.",
+      "speaker": "Mitch Hedberg",
+      "context": "One of late absurdist comedian Mitch Hedberg's most iconic one-liners, a paradoxical drug-use confession from his album 'Strategic Grill Locations' (1999). Hedberg's easygoing stoner persona and drug jokes were central to his act.",
+      "real": true,
+      "source": {
+        "title": "Mitch Hedberg — Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Mitch_Hedberg",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-02",
+  "edition": 140,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Jazz taught me that the most interesting thing you can do is leave space. I learned that from Miles and then I spent about fifteen years ignoring it completely, which is why some of those early records sound like I'm trying to play every note before someone takes the piano away.",
+      "speaker": "Herbie Hancock",
+      "context": "In conversation with Terry Gross, Fresh Air, NPR, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Hancock talks about Miles Davis's influence constantly and specifically invokes the idea of space and restraint in his playing. The slight giveaway is the self-roast of his early work; he's generous about his own catalog in real interviews."
+    },
+    {
+      "id": "q2",
+      "text": "People keep asking me what's next, like I'm supposed to have a five-year roadmap printed out somewhere. I barely knew what I was doing last Tuesday. There's a version of me that has it all figured out and he's very annoying and I don't think he exists.",
+      "speaker": "Tina Fey",
+      "context": "Keynote conversation with David Remnick at The New Yorker Festival, New York City, October 2018",
+      "real": false,
+      "fake_note": "I made this one up — Fey's self-deprecating, slightly neurotic humor and her habit of undercutting any hint of a grand vision are well-documented. The giveaway is the last clause: 'he doesn't exist' is a shade too tidy for her actual rambling, parenthetical style."
+    },
+    {
+      "id": "q3",
+      "text": "I thought I looked real cute in my uniform, and then I heard a boy yell from the bleachers, 'Make that basket, bird legs.' And my greatest fear is that same guy is somewhere out there in the audience tonight, and he's going to cut me down to size.",
+      "speaker": "Ann Richards",
+      "context": "The Texas governor opening her celebrated 1988 Democratic National Convention keynote with a self-deprecating story about her eighth-grade basketball days.",
+      "real": true,
+      "source": {
+        "title": "Ann Richards, DNC keynote address, 1988 - Speakola",
+        "url": "https://speakola.com/political/ann-richards-dnc-keynote-1988",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "The disappointment of manhood succeeds to the delusion of youth: let us hope that the heritage of old age is not despair.",
+      "speaker": "Benjamin Disraeli",
+      "context": "The British Prime Minister and novelist, in a candidly reflective aside on the disappointments of the ages of life (from his fiction, Book VIII, Chapter 4).",
+      "real": true,
+      "source": {
+        "title": "Benjamin Disraeli - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Touring used to feel like a reward and now it feels like a job and I'm trying to figure out if that's growth or just getting older. Probably both. My chiropractor definitely thinks it's the second one.",
+      "speaker": "Bruce Springsteen",
+      "context": "Rolling Stone contributing editor Brian Hiatt interview, published Rolling Stone, issue 1384, April 2022",
+      "real": false,
+      "fake_note": "I made this one up — Springsteen reflects openly on touring, aging and the nature of performance and Rolling Stone's Brian Hiatt is his actual longtime interviewer. The giveaway is the chiropractor line, which is a little too on-the-nose physically specific for Springsteen, who tends toward more poetic self-description."
+    },
+    {
+      "id": "q6",
+      "text": "What would take Hubble 2,000 years to process, Roman can do in a year.",
+      "speaker": "Jared Isaacman",
+      "context": "NASA Administrator, on the Nancy Grace Roman Space Telescope",
+      "real": true,
+      "source": {
+        "title": "Scientific American — Roman Space Telescope",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    }
+  ]
+}

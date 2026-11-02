@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-02",
+  "edition": 128,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "No, I'm not going to pledge that.",
+      "speaker": "Todd Blanche",
+      "context": "NBC's Meet the Press, when asked if the DOJ would always act independently of the White House",
+      "real": true,
+      "source": {
+        "title": "Politics — Todd Blanche declines to pledge independence from White House",
+        "url": "https://www.theguardian.com/us-news/2026/aug/16/todd-blanche-doj-independence-trump-white-house",
+        "date": "2026-08-17"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I was on a trade mission to Japan years ago and I bowed — badly, apparently — and my interpreter just quietly said, 'Maybe don't do that again.' Best foreign policy advice I ever got.",
+      "speaker": "Madeleine Albright",
+      "context": "Conversation with Fareed Zakaria at the Aspen Security Forum, Aspen, Colorado, July 2012",
+      "real": false,
+      "fake_note": "I made this one up — Albright was famous for self-deprecating diplomatic anecdotes and her willingness to make herself the punchline in foreign policy storytelling. The tell is the interpreter's phrasing — real quotes from her tend to have slightly more texture."
+    },
+    {
+      "id": "q3",
+      "text": "We have the concept of a very good deal with Canada",
+      "speaker": "Trump",
+      "context": "Trump speaking to reporters in Iowa about US-Canada trade deal",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump says aides have 'concept' of Canada trade deal",
+        "url": "https://thehill.com/homenews/administration/6188730-trump-canada-trade-deal-concept/",
+        "date": "2026-11-02"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "People keep asking me for my morning routine like it's some kind of secret. I wake up, the economy is still complicated, I make coffee, it's still complicated. That's essentially the whole thing.",
+      "speaker": "Janet Yellen",
+      "context": "Q&A session following a lecture at the Brookings Institution, Washington D.C., October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Yellen occasionally deploys a quiet, deadpan humor in public settings, and her refusal to oversimplify economic complexity is well documented. The tell is the rhythmic repetition — it's a little more constructed than her typically understated delivery."
+    },
+    {
+      "id": "q5",
+      "text": "He's a fighter for our American Constitution",
+      "speaker": "Bruce Springsteen",
+      "context": "Instagram post endorsing Abdul El-Sayed on eve of Election Day",
+      "real": true,
+      "source": {
+        "title": "Politics — Springsteen backs El-Sayed: 'He's a fighter for our American Constitution'",
+        "url": "https://thehill.com/blogs/in-the-know/6188623-springsteen-el-sayed-stevens-rogers-michigan-senate-race/",
+        "date": "2026-11-02"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I've been in rooms where everyone agrees with each other for so long that by the end they've talked themselves into something absolutely no ordinary person would recognize as a good idea. Washington has a real gift for that.",
+      "speaker": "John McCain",
+      "context": "Address to the graduating class at the United States Naval Academy, Annapolis, May 2008",
+      "real": false,
+      "fake_note": "I made this one up — McCain's weary insider skepticism and his habit of framing political dysfunction in blunt, almost affectionate terms are well documented. The giveaway is 'Washington has a real gift for that' — a little too polished for his typically choppier cadence."
+    }
+  ]
+}

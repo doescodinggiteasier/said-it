@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-02",
+  "edition": 132,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I had to pull off the road, I cried like a baby. I didn't realise how powerful music could be until that mom",
+      "speaker": "Shania Twain",
+      "context": "Shania Twain describing hearing Gabriel's Oboe by Ennio Morricone",
+      "real": true,
+      "source": {
+        "title": "Music — Shania Twain’s honest playlist: ‘If Dancing Queen comes on, you rush out’",
+        "url": "https://www.theguardian.com/music/2026/jul/26/shania-twain-honest-playlist-abba-harry-styles-phantom-opera",
+        "date": "2026-07-29"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I remember sitting in the back of a van outside Cleveland somewhere, and we had one of those little battery-powered cassette recorders, and I played back what we'd just rehearsed and genuinely didn't recognize my own voice for a second. That was the moment I understood what a microphone actually does to you — it's not a mirror, it's something else entirely.",
+      "speaker": "Stevie Nicks",
+      "context": "Interview with Cameron Crowe for Rolling Stone's 'Women Who Rock' special issue, October 2003",
+      "real": false,
+      "fake_note": "I made this one up — Stevie often reflects on self-discovery through recording and her mystical relationship with performance, so this fits her meditative, slightly woozy storytelling perfectly. The subtle giveaway is 'somewhere': she'd almost certainly remember the specific city if this were real."
+    },
+    {
+      "id": "q3",
+      "text": "I've had a bodysuit snap off on stage. That was not my coolest moment",
+      "speaker": "Ashanti",
+      "context": "Interview ahead of her Australian tour",
+      "real": true,
+      "source": {
+        "title": "Music — Ashanti: ‘I’ve had a bodysuit snap off on stage. That was not my coolest moment’",
+        "url": "https://www.theguardian.com/music/2026/nov/03/rnb-star-ashanti-10-chaotic-questions",
+        "date": "2026-11-02"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Dre would play something back and just go quiet. Long quiet. And you'd think you'd done something wrong, but then he'd nod real slow and that was it — that was the approval. I learned to stop filling the silence.",
+      "speaker": "Kendrick Lamar",
+      "context": "Conversation with Zane Lowe, Beats 1 Radio, Apple Music, March 2015",
+      "real": false,
+      "fake_note": "I made this one up — Kendrick has described Dr. Dre's quiet, deliberate working style in admiring terms across multiple interviews, and this anecdote matches both men's documented personalities. The tell is 'nod real slow,' which is slightly too cinematic for Kendrick's usual understated recall."
+    },
+    {
+      "id": "q5",
+      "text": "Nobody told me that touring would make me fall out of love with my own songs. You do a thing two hundred times and it's not yours anymore — it belongs to the room, which is fine, I had to make my peace with that.",
+      "speaker": "Frank Ocean",
+      "context": "Extended profile by Touré, GQ Magazine, August 2013",
+      "real": false,
+      "fake_note": "I made this one up — Frank's complicated relationship with performance and ownership of his art is well established, and his guarded but emotionally honest voice is captured here. The giveaway is the resigned 'which is fine' — Frank's real cadence tends to stop a beat earlier and let the tension hang."
+    },
+    {
+      "id": "q6",
+      "text": "I hope the main thing someone takes away from this book (aside from learning more about the joys and challenges of being a working artist and musician) is that it's okay to ask for help.",
+      "speaker": "Jim James",
+      "context": "Jim James announcing his memoir One Wonders",
+      "real": true,
+      "source": {
+        "title": "Music — Jim James Announces Memoir One Wonders",
+        "url": "https://pitchfork.com/story/jim-james-announces-memoir-one-wonders/",
+        "date": "2026-11-02"
+      }
+    }
+  ]
+}
