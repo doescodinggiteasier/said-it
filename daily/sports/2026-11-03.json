@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-03",
+  "edition": 130,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what I see in a fighter in the first thirty seconds. I'm not watching their hands. I'm watching what they do after they get touched for the first time. Everything after that is just confirmation.",
+      "speaker": "Freddie Roach",
+      "context": "Fighters Only Magazine, cover profile interview, Issue 112, published January 2019",
+      "real": false,
+      "fake_note": "I made this one up — Roach has given dozens of interviews about reading fighters and his philosophy of assessment, and this diagnostic, unsentimental phrasing matches his documented voice closely. The subtle flag is that 'thirty seconds' is just specific enough to feel real but just round enough to feel constructed."
+    },
+    {
+      "id": "q2",
+      "text": "When I was coming up, you didn't ask the manager why you were batting sixth. You just went out and made sure it was the last time he had to think about it.",
+      "speaker": "Derek Jeter",
+      "context": "The Captain, ESPN documentary series, post-production press day interview, July 2022",
+      "real": false,
+      "fake_note": "I made this one up — Jeter's whole public identity is built around deference to team structure and quiet accountability, and this fits that persona so snugly it's almost suffocating. The giveaway is the slight sharpness at the end, which is a touch more pointed than Jeter usually allows himself to be on camera."
+    },
+    {
+      "id": "q3",
+      "text": "Swimming nine miles in open water, you stop thinking about the competition pretty quickly. You're mostly just negotiating with your own brain, telling it we're not stopping yet, not yet, maybe after this next buoy.",
+      "speaker": "Michael Phelps",
+      "context": "Appearances on the Armchair Expert with Dax Shepard podcast, Episode aired October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Phelps has been candid about the mental battles of endurance training and his relationship with his own psychology, especially post-retirement. The tell is that Phelps was a pool swimmer, not an open-water swimmer, so 'nine miles in open water' sneaks in a faint implausibility a sharp player might catch."
+    },
+    {
+      "id": "q4",
+      "text": "I don't think I'll be legally able to drive.",
+      "speaker": "Robert MacIntyre",
+      "context": "Scottish golfer MacIntyre, joking with reporters right after winning the 2024 Genesis Scottish Open, explaining he planned to celebrate so hard he might not make his next-day press conference at Royal Troon ahead of the Open Championship.",
+      "real": true,
+      "source": {
+        "title": "Yahoo Sports — Robert MacIntyre rallies for historic win at Scottish Open",
+        "url": "https://sports.yahoo.com/robert-macintyre-rallies-for-historic-win-at-scottish-open-the-home-event-hes-cared-about-most-013046981.html",
+        "date": "2024-07-16"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "He had that one coming for telling everybody I didn't know where Brazil was on the map.",
+      "speaker": "Travis Kelce",
+      "context": "The Chiefs tight end at a São Paulo press conference in September 2025, after doing an impression of teammate Patrick Mahomes as payback.",
+      "real": true,
+      "source": {
+        "title": "Fox News — Travis Kelce gets playful payback on Patrick Mahomes with spot-on impersonation",
+        "url": "https://www.foxnews.com/sports/travis-kelce-gets-playful-payback-patrick-mahomes-spot-on-impersonation-brazil-press-conference",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You're putting it all on Mahomes to figure it out",
+      "speaker": "Colin Cowherd",
+      "context": "Cowherd sounding off on the Kansas City Chiefs after back-to-back losses",
+      "real": true,
+      "source": {
+        "title": "Sports — ‘You’re putting it all on Mahomes to figure it out’: Colin Cowherd sounds off on",
+        "url": "https://sports.yahoo.com/articles/putting-mahomes-figure-colin-cowherd-142739825.html",
+        "date": "2026-11-03"
+      }
+    }
+  ]
+}

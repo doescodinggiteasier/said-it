@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-03",
+  "edition": 141,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My husband says I have two modes in the kitchen: completely silent or explaining everything out loud to nobody. I think it depends on whether I'm following a recipe or making one up. When I'm inventing, apparently I narrate.",
+      "speaker": "Yotam Ottolenghi",
+      "context": "Desert Island Discs, BBC Radio 4, January 2020",
+      "real": false,
+      "fake_note": "I made this one up — Ottolenghi speaks warmly and openly about his home life and creative process, and the observation about narrating while cooking is exactly the kind of gentle self-observation he offers in interviews. The giveaway is that Desert Island Discs tends to elicit his more emotional, less culinary reflections, making this level of kitchen specificity slightly off."
+    },
+    {
+      "id": "q2",
+      "text": "People keep asking me what the hardest part of weightlessness is. Honestly? It's not the disorientation. It's sneezing. Nobody briefs you on sneezing.",
+      "speaker": "Chris Hadfield",
+      "context": "An Evening with Astronaut Chris Hadfield, Royal Ontario Museum, Toronto, October 2017",
+      "real": false,
+      "fake_note": "I made this one up — Hadfield is famous for those wonderfully specific, humanizing details about life in space, and the dry comic timing matches his real public speaking perfectly. The giveaway is that his actual anecdotes tend to involve a bit more technical scaffolding before the punchline."
+    },
+    {
+      "id": "q3",
+      "text": "My favorite was The Scrunchie Chronicles: 112 Countries and It's Still All about My Hair",
+      "speaker": "Hillary Clinton",
+      "context": "Joking about a rejected memoir title, poking fun at coverage of her hair, in 2014",
+      "real": true,
+      "source": {
+        "title": "The Week — Hillary Clinton jokes she considered calling her memoir The Scrunchie Chronicles",
+        "url": "https://theweek.com/speedreads/452686/hillary-clinton-jokes-considered-calling-memoir-scrunchie-chronicles",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I once had a studio session booked in Compton and I showed up two hours early just to sit in the parking lot and think. The engineer thought I was casing the building.",
+      "speaker": "Kendrick Lamar",
+      "context": "GQ Style, summer issue interview, June 2018",
+      "real": false,
+      "fake_note": "I made this one up — Kendrick is known for reflective, almost meditative comments about his creative process, and this has his quiet deadpan humor. The subtle giveaway is the punchline feels a touch more comedically tidy than his typically more opaque public persona."
+    },
+    {
+      "id": "q5",
+      "text": "Current observations hint that our standard model of the universe is incorrect.",
+      "speaker": "Julie McEnery",
+      "context": "Roman Space Telescope senior project scientist, NASA",
+      "real": true,
+      "source": {
+        "title": "Scientific American — Roman Space Telescope",
+        "url": "https://www.scientificamerican.com/article/nasas-nancy-grace-roman-space-telescope-will-launch-in-september/",
+        "date": "2026-04-22"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I know acting is a childlike endeavour but it's no license to be childish.",
+      "speaker": "Jeff Goldblum",
+      "context": "The actor reflecting on his craft in a Time Out interview",
+      "real": true,
+      "source": {
+        "title": "Jeff Goldblum: 'What do people quote at me? That is one big pile of shit' - Time Out",
+        "url": "https://www.timeout.com/film/jeff-goldblum-what-do-people-quote-at-me-that-is-one-big-pile-of-shit",
+        "date": "2017-01-01"
+      }
+    }
+  ]
+}

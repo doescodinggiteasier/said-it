@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-03",
+  "edition": 119,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "And cigarettes gave me the patience to sit and write those thoughts down in a comedy-friendly format that you could understand. And alcohol gives me the courage to stand up here in front of you judgmental pricks and do it with a quarter million dollars worth of cameras in your face.",
+      "speaker": "Doug Stanhope",
+      "context": "From Doug Stanhope's 2007 stand-up special \"No Refunds\" — his defiant, self-celebrating defense of lifelong drug, cigarette, and alcohol use as the engine of his comedy.",
+      "real": true,
+      "source": {
+        "title": "Doug Stanhope: No Refunds (2007) — Full Transcript",
+        "url": "https://scrapsfromtheloft.com/comedy/doug-stanhope-no-refunds-transcript/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "I said to Keith, 'You realise we're the only two people at this party who aren't pretending?' And he goes, 'Speak for yourself — I've been pretending to enjoy this music for forty-five minutes.' Fair enough. We left and found a bar that still had a jukebox.",
+      "speaker": "Gram Parsons",
+      "context": "Recounted during a taped segment for Rolling Stone's 'Random Notes' feature, Los Angeles, October 1972",
+      "real": false,
+      "fake_note": "I made this one up — Parsons and Keith Richards genuinely ran in the same circles in that era, and Parsons's self-deprecating wit and disdain for scene posturing is well-documented. The giveaway is 'Keith' is never named as Richards, which is a tiny bit too coy, and Parsons's real anecdotes tended to be more musically specific."
+    },
+    {
+      "id": "q3",
+      "text": "The French press asked me through a translator, very seriously, 'What is jazz to you?' And I wanted to say, 'Man, right now jazz is the hangover I'm sitting on and the espresso that is not doing its job.' But I was polite. That's growth.",
+      "speaker": "Miles Davis",
+      "context": "Press conference at the Montreux Jazz Festival, Switzerland, recorded by festival staff, July 1973",
+      "real": false,
+      "fake_note": "I made this one up — Davis was notoriously terse and contemptuous with press, especially interviewers he found precious, and the Montreux setting is real and documented. The giveaway is 'that's growth' is far too self-aware and comedic a button — Davis would more likely have just stared at someone until they were uncomfortable."
+    },
+    {
+      "id": "q4",
+      "text": "People keep writing that I'm difficult to work with. Difficult! I showed up to every goddamn call time. I was the one standing in the rain at six a.m. while the director was still in his trailer deciding whether he liked his eggs. Fuck your 'difficult.'",
+      "speaker": "Marlon Brando",
+      "context": "Unscripted remarks caught on a production sound check during filming of 'The Missouri Breaks', Montana, 1975",
+      "real": false,
+      "fake_note": "I made this one up — Brando's reputation for feuding with directors and mocking Hollywood professionalism is legendary, and the 'eggs' specificity sounds like his style of contemptuous observation. The giveaway is Brando was rarely this linear and defensive in real speech; he usually went abstract and philosophical even when furious."
+    },
+    {
+      "id": "q5",
+      "text": "The reason we first started strumming guitars was because we wanted women and lots of them. And their daughters.",
+      "speaker": "Gene Simmons",
+      "context": "KISS bassist Gene Simmons, on The Oprah Winfrey Show in 1988, dismissing the idea that rock stars pick up guitars for lofty reasons — it was about groupies.",
+      "real": true,
+      "source": {
+        "title": "Gene Simmons Called KISS Groupie Hookups 'More Honest' Than Real Relationships (Best Life)",
+        "url": "https://bestlifeonline.com/gene-simmons-kiss-groupies/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The label executive sits across from me and says, 'We need this album to be more accessible.' I looked at him. I said, 'Accessible from where? Because I recorded it in a closet in Memphis and I drove here in a car that barely made it over the bridge. How much more accessible do you need?'",
+      "speaker": "Alex Chilton",
+      "context": "Interview with Trouser Press magazine, recorded at their New York offices, February 1979",
+      "real": false,
+      "fake_note": "I made this one up — Chilton's fierce independence from the music industry and his absolute contempt for commercial pressure is one of the most documented aspects of his career and personality. The giveaway is the 'closet in Memphis' line is too on-the-nose mythologising of his own legend, whereas real Chilton tended to be more oblique and dismissive in interviews."
+    }
+  ]
+}

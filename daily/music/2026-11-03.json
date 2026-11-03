@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-03",
+  "edition": 133,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "He Didn't Have It Before Me",
+      "speaker": "Spike Lee",
+      "context": "Spike Lee telling the story of how he got New Era to make a red Yankees hat, later made famous by Fred Durst",
+      "real": true,
+      "source": {
+        "title": "Music — Spike Lee Invented the Red Yankees Hat That Fred Durst Made Famous: “He Didn’t H",
+        "url": "https://consequence.net/2026/11/spike-lee-invented-red-yankees-hat-fred-durst/",
+        "date": "2026-11-03"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "When I was really bad, I was not all bad. When I was really trying to be good, I could never be all good. There would be that black streak going through.",
+      "speaker": "Johnny Cash",
+      "context": "Reflecting at the close of his 1994 Rolling Stone interview on the two dogs (named Sin and Redemption) on his American Recordings album cover, and his own inner duality.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Johnny Cash: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/johnny-cash-the-rolling-stone-interview-54538/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The problem with hip-hop radio in the nineties wasn't the music, it was the rooms. You'd mix a record for a car and it would fall apart in a club. You'd fix it for the club and somebody's cousin would play it on a boombox and it'd sound like a demo. I was always chasing a mix that worked everywhere, which is basically impossible, but that's the job.",
+      "speaker": "DJ Premier",
+      "context": "Red Bull Music Academy lecture, New York, April 2013",
+      "real": false,
+      "fake_note": "I made this one up — Premier is known for his technical, no-nonsense reflections on the craft of production and mixing, and the RBMA lectures are a real forum where he's spoken at length. The giveaway is the phrase 'somebody's cousin,' which is a little more colorful than his usual flat, precise delivery."
+    },
+    {
+      "id": "q4",
+      "text": "Nashville in the nineties was genuinely strange if you were paying attention. You had these incredible pickers who'd played on every record you ever loved and they were making thirty dollars a session and nobody knew their names. I made a point of asking. Some of those guys changed how I play guitar and I couldn't tell you where I'd be if I hadn't walked into those studios as a kid.",
+      "speaker": "Vince Gill",
+      "context": "Interview with American Songwriter magazine, issue published May 2018",
+      "real": false,
+      "fake_note": "I made this one up — Vince Gill is known for being a musicians' musician who frequently credits session players and studio culture in interviews, and his reverence for Nashville's working craftsmen is very well documented. The subtle giveaway is 'changed how I play guitar,' which is more direct than how he usually frames his influences — he tends to speak in more generational, communal terms."
+    },
+    {
+      "id": "q5",
+      "text": "I remember the first time I heard a Fender Rhodes through a real Leslie cabinet — not a simulation, an actual spinning cabinet — and I just stood there with my mouth open. I was maybe nineteen. I didn't touch anything for like three minutes. I was afraid to ruin it.",
+      "speaker": "Herbie Hancock",
+      "context": "Interview with Keyboard Magazine, published in the March 2014 issue",
+      "real": false,
+      "fake_note": "I made this one up — Herbie really does talk reverently about specific gear and formative sonic moments, and the Fender Rhodes is practically his instrument. The subtle giveaway is that real Herbie anecdotes tend to name the person he was with, not just the room."
+    },
+    {
+      "id": "q6",
+      "text": "I'm playing the same flute, but every nationality of driver will turn around and tell me it reminds them of their country.",
+      "speaker": "André 3000",
+      "context": "The Outkast rapper, on Questlove's 'Questlove Supreme' podcast, describing how he'd play his flute in the back of Ubers and how drivers of every nationality told him it reminded them of their home country",
+      "real": true,
+      "source": {
+        "title": "How Did André 3000 Learn To Play Flute?",
+        "url": "https://thebeatofthecapital.com/2023/12/13/how-did-andre-3000-learn-to-play-flute/",
+        "date": "2023-12-13"
+      }
+    }
+  ]
+}

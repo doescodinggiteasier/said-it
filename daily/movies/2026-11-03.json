@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-03",
+  "edition": 138,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Six years I waited for that table, and you give it to Carmine.",
+      "speaker": "Goodfellas (1990)",
+      "context": "Henry Hill complaining to Jimmy in the back of the diner about a slight at the restaurant",
+      "real": false,
+      "fake_note": "I made this one up — it matches the petty grievance energy that drives so much of the film's dialogue, and the proper name grounds it convincingly. The giveaway is that Henry's narration usually carries these complaints rather than him voicing them in direct dialogue."
+    },
+    {
+      "id": "q2",
+      "text": "Did we just become best friends?",
+      "speaker": "Step Brothers (2008)",
+      "context": "Brennan (Will Ferrell) to Dale (John C. Reilly) after they bond over shared interests; Dale replies \"Yup!\"",
+      "real": true
+    },
+    {
+      "id": "q3",
+      "text": "You can't handle the truth!",
+      "speaker": "A Few Good Men (1992)",
+      "context": "Col. Nathan Jessep (Jack Nicholson) erupts on the witness stand during cross-examination by Lt. Daniel Kaffee (Tom Cruise).",
+      "real": true
+    },
+    {
+      "id": "q4",
+      "text": "I'm kind of a big deal.",
+      "speaker": "Anchorman: The Legend of Ron Burgundy (2004)",
+      "context": "Ron Burgundy (Will Ferrell) boasting to Veronica Corningstone about his fame",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "You call that a plan? I've seen better plans scribbled on bar napkins.",
+      "speaker": "The Italian Job (1969)",
+      "context": "Charlie Croker dismissing a rival's scheme during an early meeting",
+      "real": false,
+      "fake_note": "I made this one up — the breezy contempt and the colloquial comparison fit Croker's cocky mid-heist-film swagger and the film's banter-heavy tone. The slight giveaway is 'bar napkins,' which leans a touch more American than the film's British idiom."
+    },
+    {
+      "id": "q6",
+      "text": "I don't know what you think you saw, but whatever it was, you didn't see it here.",
+      "speaker": "Chinatown (1974)",
+      "context": "A city official brushing off Gittes during one of his inquiries at the water department",
+      "real": false,
+      "fake_note": "I made this one up — the bureaucratic brush-off tone is dead-on for the corrupt officials Gittes encounters, and the double-negative construction fits the era's noir dialogue. The giveaway is that it's almost too generically menacing compared to the film's more oblique deflections."
+    }
+  ]
+}

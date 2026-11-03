@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-03",
+  "edition": 129,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask how I stay calm during hearings and the honest answer is that I was a prosecutor for a long time, and a prosecutor learns very early that the person across the table who is sweating is probably not going to be you.",
+      "speaker": "Kamala Harris",
+      "context": "Conversation with Charlamagne Tha God on The Breakfast Club, iHeartRadio, April 2019",
+      "real": false,
+      "fake_note": "I made this one up — Kamala constantly references her prosecutorial background and has spoken in exactly this register about reading a room and projecting composure. The subtle tell is the rhythm of the final clause — 'probably not going to be you' is too considered a construction for live radio."
+    },
+    {
+      "id": "q2",
+      "text": "The thing about a filibuster that nobody tells you when you get there is that you start out thinking it's a principled act of protest and by hour four you are mostly just trying to remember if you had lunch.",
+      "speaker": "Rand Paul",
+      "context": "Remarks at the Young Americans for Liberty National Convention, Washington D.C., July 2018",
+      "real": false,
+      "fake_note": "I made this one up — Rand has conducted real filibusters and spoken about them with a kind of wry, almost libertarian self-deprecation. The tell is 'mostly just trying to remember if you had lunch,' which is a perfectly constructed comic landing that real exhausted senators probably don't articulate so neatly."
+    },
+    {
+      "id": "q3",
+      "text": "Nothing so dates a man as to decry the younger generation.",
+      "speaker": "Adlai Stevenson II",
+      "context": "The Democratic statesman, in a speech at the University of Wisconsin, Madison (8 October 1952) - a dry, self-aware needle at those who complain about the young.",
+      "real": true,
+      "source": {
+        "title": "Adlai Stevenson II - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Adlai_Stevenson_II",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "I once spent an entire flight to Brussels going over agricultural subsidy language with three aides, and when we landed one of them said, 'You know, most senators sleep on this flight.' I said, 'Most senators are not trying to explain this to Iowa in the morning.'",
+      "speaker": "Tom Vilsack",
+      "context": "Remarks delivered at the Iowa State University Extension and Outreach Conference, Ames, Iowa, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Vilsack is Iowa agriculture royalty and is known for being a genuine policy grind with a self-aware sense of humor about it. The tell is the punchline 'explain this to Iowa in the morning,' which is a little too aphorism-adjacent for a guy who usually speaks in process detail."
+    },
+    {
+      "id": "q5",
+      "text": "I will say, nobody warned me that about forty percent of this job is just standing very still while someone explains a chart to you. And you have to look like the chart is genuinely moving you.",
+      "speaker": "Pete Buttigieg",
+      "context": "Remarks at the Gridiron Club Dinner, Washington D.C., March 2023",
+      "real": false,
+      "fake_note": "I made this one up — Pete is well-known for dry, self-deprecating wit about the bureaucratic grind, and this sounds exactly like his measured, slightly cerebral humor. The subtle giveaway is 'genuinely moving you,' which is just a touch too polished a phrasing for fully off-the-cuff speech."
+    },
+    {
+      "id": "q6",
+      "text": "I am the man who accompanied Jacqueline Kennedy to Paris, and I have enjoyed it.",
+      "speaker": "John F. Kennedy",
+      "context": "Self-deprecating opening line at a press luncheon at the Palais de Chaillot in Paris on June 2, 1961, during a state visit to France.",
+      "real": true,
+      "source": {
+        "title": "Remarks and Question and Answer Period at the Press Luncheon in Paris | The American Presidency Project",
+        "url": "https://www.presidency.ucsb.edu/documents/remarks-and-question-and-answer-period-the-press-luncheon-paris",
+        "date": "1961-06-02"
+      }
+    }
+  ]
+}
