@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-04",
+  "edition": 139,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Smokey, this is not 'Nam. This is bowling. There are rules.",
+      "speaker": "The Big Lebowski (1998)",
+      "context": "Walter Sobchak (John Goodman) pulling a gun over a foot-fault dispute during league bowling, to opponent Smokey.",
+      "real": true,
+      "source": {
+        "title": "The Big Lebowski - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Big_Lebowski",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Funny business, a woman's career. The things you drop on your way up the ladder so you can move faster. You forget you'll need them again when you get back to being a woman.",
+      "speaker": "All About Eve (1950)",
+      "context": "Aging Broadway star Margo Channing (Bette Davis) reflecting on the costs of ambition.",
+      "real": true,
+      "source": {
+        "title": "All About Eve - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/All_About_Eve",
+        "date": "2026-07-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Every lock has a story. This one just hasn't decided how it ends yet.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes, speaking half to himself while examining a gate at the Mulwray estate",
+      "real": false,
+      "fake_note": "I made this one up — the fatalistic, meandering quality matches Gittes's world-weary narration style and the film's noir cadence. The giveaway is that it tips just slightly toward aphorism; Towne's actual dialogue is more grounded in immediate, petty observation."
+    },
+    {
+      "id": "q4",
+      "text": "My mama always said life was like a box of chocolates. You never know what you're gonna get.",
+      "speaker": "Forrest Gump (1994)",
+      "context": "Forrest (Tom Hanks) sits on a bus-stop bench recounting his mother's favorite saying.",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "I don't need you to like me, Watts. I need you to be on time.",
+      "speaker": "Aliens (1986)",
+      "context": "Ripley addressing a nervous colonial marine before the drop",
+      "real": false,
+      "fake_note": "I made this one up — Ripley's no-nonsense command register and the use of a surname make it feel utterly at home in Cameron's script. The giveaway is that 'Watts' isn't a character in the film; a true fan might catch the invented name."
+    },
+    {
+      "id": "q6",
+      "text": "You got a lot of people rooting for you out there, kid. Try not to let that slow you down.",
+      "speaker": "Raging Bull (1980)",
+      "context": "Jake LaMotta's trainer or corner man, before a mid-career bout",
+      "real": false,
+      "fake_note": "I made this one up — the gruff, backhanded encouragement fits the film's unglamorous, Bronx-inflected world and Scorsese's ear for bruised sincerity. The giveaway is a faint wryness that feels slightly too polished for the film's raw, improvisational texture."
+    }
+  ]
+}

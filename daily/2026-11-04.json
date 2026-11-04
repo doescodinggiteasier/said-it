@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-04",
+  "edition": 142,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People ask me what the hardest part of open-water swimming is, and honestly it's not the cold or the distance — it's convincing yourself, at hour six, that the hallucination of a tugboat is not, in fact, a tugboat.",
+      "speaker": "Diana Nyad",
+      "context": "Interview with Terry Gross on NPR's Fresh Air, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Nyad's interviews are full of darkly funny, hyper-specific endurance details like this, so it lands perfectly in her voice. The subtle giveaway is 'at hour six,' which is oddly precise in a way she might find too casual for a real description of her record swims."
+    },
+    {
+      "id": "q2",
+      "text": "It's a good thing to be laughed at. It's better than to be ignored.",
+      "speaker": "Harold Macmillan",
+      "context": "The British Prime Minister, in a handwritten note to the Postmaster General who wanted to take action against the satirical TV program 'That Was The Week That Was' - a disarmingly self-deprecating shrug at being mocked.",
+      "real": true,
+      "source": {
+        "title": "Harold Macmillan - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harold_Macmillan",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "How can you govern a country that has two hundred and forty-six varieties of cheese?",
+      "speaker": "Charles de Gaulle",
+      "context": "The French president and WWII Free France leader, expressing wry exasperation at the ungovernability of France; recorded in Ernest Mignon's 1962 collection Les Mots du General.",
+      "real": true,
+      "source": {
+        "title": "Charles de Gaulle - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Charles_de_Gaulle",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Quantum computing gets described as magic so often that physicists have basically given up correcting journalists, and that tells you everything about where we are with public science communication.",
+      "speaker": "Michio Kaku",
+      "context": "Panel discussion at the World Science Festival, New York City, June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Kaku is a well-documented evangelist for science literacy who frequently critiques media oversimplification, so this mild exasperation fits him exactly. The giveaway is the sweeping 'basically given up,' which is broader and more resigned than his usually optimistic public framing."
+    },
+    {
+      "id": "q5",
+      "text": "There's a version of me that became a dentist, and I think about that guy sometimes. He probably sleeps better. He definitely has better posture.",
+      "speaker": "Conan O'Brien",
+      "context": "Live taping of Conan O'Brien Needs a Friend podcast, recorded at the Largo at the Coronet, Los Angeles, March 2024",
+      "real": false,
+      "fake_note": "I made this one up — Conan frequently riffs on roads not taken and uses self-deprecating physical gags, so this fits his cadence almost too well. The tell is that he'd almost certainly drag the bit out longer in real life rather than landing it so cleanly in two sentences."
+    },
+    {
+      "id": "q6",
+      "text": "I did read the one-star reviews of Sapiens. All of them. I'm not sure what I was looking for — maybe permission to feel less certain about things. I found it.",
+      "speaker": "Yuval Noah Harari",
+      "context": "Q&A session following his keynote at the World Economic Forum, Davos, January 2024",
+      "real": false,
+      "fake_note": "I made this one up — Harari has a known habit of publicly wrestling with his own ideas and citing critics, which makes this self-questioning admission completely plausible. The giveaway is the slightly literary rhythm; his actual off-the-cuff answers tend to be a touch more plainspoken."
+    }
+  ]
+}

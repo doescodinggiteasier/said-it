@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-04",
+  "edition": 131,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Serena and I had an agreement for years that we didn't watch each other's matches live when it mattered because we'd both just be wrecks. We'd get the score sent. That system worked pretty well until it didn't.",
+      "speaker": "Venus Williams",
+      "context": "The Players' Tribune first-person essay published in June 2018, titled 'What I Know Now'",
+      "real": false,
+      "fake_note": "I made this one up — Venus has spoken openly and warmly about her competitive relationship with Serena, including the emotional complexity of competing alongside a sibling, so this rings completely true. The tell is 'until it didn't,' which is a tidy little curtain-drop that Venus typically avoids in favor of more direct reflection."
+    },
+    {
+      "id": "q2",
+      "text": "Baseball has been good to me since I quit trying to play it.",
+      "speaker": "Whitey Herzog",
+      "context": "The Hall of Fame manager reflecting on his so-so playing career versus his success as a skipper.",
+      "real": true,
+      "source": {
+        "title": "ESPN Page 2 — My 5 top quotes by Hall of Famer Whitey Herzog",
+        "url": "https://www.espn.ph/espn/page2/index?id=5408431",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I'm still not really into it.",
+      "speaker": "Anthony Edwards",
+      "context": "The future No. 1 NBA draft pick in a 2020 ESPN feature, admitting he does not enjoy watching basketball (\"To be honest, I can't watch basketball\").",
+      "real": true,
+      "source": {
+        "title": "ESPN — The pain and promise of top NBA draft prospect Anthony Edwards",
+        "url": "https://www.espn.com/nba/story/_/id/30321844/the-pain-promise-top-nba-draft-prospect-anthony-edwards",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Resignations are for prime ministers and those caught with their trousers down, not for me",
+      "speaker": "Brian Clough",
+      "context": "The legendary English football manager on his refusal to quit, in a collection of his most memorable one-liners.",
+      "real": true,
+      "source": {
+        "title": "Sky Sports — Brian Clough in quotes: Fifteen of the legendary manager's most memorable one-liners",
+        "url": "https://www.skysports.com/football/news/11689/9642762/brian-clough-fifteen-of-the-legendary-managers-most-memorable-one-liners",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I've never really understood the whole 'ice in his veins' thing people say about closers, because when I'm out there in the ninth my heart is going absolutely insane. I'm just better at letting it go insane without letting it change anything I do.",
+      "speaker": "Mariano Rivera",
+      "context": "Sit-down interview with Bob Costas on MLB Network's CenterStage, aired April 2012",
+      "real": false,
+      "fake_note": "I made this one up — Rivera frequently corrected the 'robotic' narrative around his demeanor by acknowledging real nerves and explaining his composure as discipline, not coldness. The giveaway is the phrase 'going absolutely insane,' which is a touch more colorful than Rivera's typically measured word choice."
+    },
+    {
+      "id": "q6",
+      "text": "My back was bad enough one week that I literally drove to the facility lying down in the back seat. My wife was driving, and she goes, 'You cannot play Sunday.' I played Sunday. She still brings it up.",
+      "speaker": "Brett Favre",
+      "context": "NFL Network's A Football Life, Season 4, during the episode profiling the 2003 Packers season",
+      "real": false,
+      "fake_note": "I made this one up — Favre told countless self-deprecating warrior stories about playing through injury and his wife's exasperation, so this lands right in his wheelhouse. The tell is the specific 'lying down in the back seat' detail, which is vivid enough to feel real but just a hair too cinematic."
+    }
+  ]
+}

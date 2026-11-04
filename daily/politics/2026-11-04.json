@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-04",
+  "edition": 130,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Tonight's outcome isn't about placing faith in Democrats or socialist principles; it's about holding Republicans accountable for betraying their promises",
+      "speaker": "Thomas Massie",
+      "context": "Rep. Thomas Massie posting on social media after midterm results",
+      "real": true,
+      "source": {
+        "title": "Politics — Massie: Midterm results 'about holding Republicans accountable for betraying the",
+        "url": "https://thehill.com/homenews/campaign/6197171-thomas-massie-midterm-results-republicans-accountability/",
+        "date": "2026-11-04"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "My favorite was The Scrunchie Chronicles: 112 Countries and It's Still All about My Hair",
+      "speaker": "Hillary Clinton",
+      "context": "Joking about a rejected memoir title, poking fun at coverage of her hair, in 2014",
+      "real": true,
+      "source": {
+        "title": "The Week — Hillary Clinton jokes she considered calling her memoir The Scrunchie Chronicles",
+        "url": "https://theweek.com/speedreads/452686/hillary-clinton-jokes-considered-calling-memoir-scrunchie-chronicles",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My first week in Washington I called the wrong office three times trying to get a parking pass. Someone finally told me I'd been calling the Senate gift shop. I represent Wyoming — I should have known better than to think anything was going to be straightforward.",
+      "speaker": "Liz Cheney",
+      "context": "Remarks at the Gerald R. Ford Presidential Foundation dinner, Grand Rapids, Michigan, September 2019",
+      "real": false,
+      "fake_note": "I made this one up — Cheney's dry, self-deprecating humor about institutional absurdity is very true to form, and the Wyoming reference grounds it in her genuine identity. The giveaway is that Cheney rarely uses self-deprecating anecdotes in formal settings; she tends to stay substantive even when she's being witty."
+    },
+    {
+      "id": "q4",
+      "text": "I've read every page of this bill. Well — most pages. There was one section about coastal wetland drainage easements that I genuinely had to read four times and I still couldn't tell you with confidence what it was asking me to vote on.",
+      "speaker": "Bernie Sanders",
+      "context": "Town hall at Saint Anselm College in Manchester, New Hampshire, February 2020",
+      "real": false,
+      "fake_note": "I made this one up — Bernie's gruff candor about legislative complexity is completely in character, and the specific detail about wetland drainage sounds like exactly the kind of obscure provision he'd single out. The subtle giveaway is that Bernie almost never admits uncertainty about legislation; he tends to project total conviction even when the subject is arcane."
+    },
+    {
+      "id": "q5",
+      "text": "I've sat through a lot of budget briefings in my life and I want to say this respectfully: the font choices in federal spending documents are a form of psychological warfare. Nobody is reading that in good faith.",
+      "speaker": "Mitch McConnell",
+      "context": "Remarks at the McConnell Center Leadership Forum, University of Louisville, Louisville, Kentucky, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — McConnell does occasionally deploy wry, understated humor in front of friendly audiences, and a complaint about bureaucratic presentation is innocuous enough to be plausible. The giveaway is the phrase 'psychological warfare,' which is a touch more colorful than McConnell's characteristically muted public delivery."
+    },
+    {
+      "id": "q6",
+      "text": "I've now been in 57 states? I think one left to go.",
+      "speaker": "Barack Obama",
+      "context": "Then a Democratic U.S. Senator from Illinois campaigning for president, Obama misspoke at a May 9, 2008 event in Beaverton, Oregon, after a long stretch of travel (he meant 47).",
+      "real": true,
+      "source": {
+        "title": "Obama's 'Bumbles' - FactCheck.org",
+        "url": "https://www.factcheck.org/2011/06/obamas-bumbles/",
+        "date": "2008-05-09"
+      }
+    }
+  ]
+}

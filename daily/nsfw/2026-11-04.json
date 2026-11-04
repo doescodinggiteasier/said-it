@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-04",
+  "edition": 120,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My rider at that point said — and I'm quoting because my manager kept the original — 'Two bottles of Rémy, one case of Amstel, no fucking carnations.' The carnations thing was personal. I will not explain the carnations thing.",
+      "speaker": "James Brown",
+      "context": "Musician magazine cover interview, conducted backstage at the Apollo Theater, New York, March 1988",
+      "real": false,
+      "fake_note": "I made this one up — Brown was legendarily specific and controlling about every production detail, so a rider grievance fits perfectly. The giveaway is the self-aware 'I'm quoting' framing — Brown tended to speak in declarations, not meta-commentary."
+    },
+    {
+      "id": "q2",
+      "text": "I'm in one mode right now: Entertain the shit out of people. And if people don't like it, I just don't give a fuck anymore. I just want to cut to the chase.",
+      "speaker": "Bob Saget",
+      "context": "In a Rolling Stone interview (republished from the vault), the 'America's Dad' comedian on his post-Full House, R-rated stand-up mindset.",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — A Bob Saget Interview From the 'Rolling Stone' Vault",
+        "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/bob-saget-interview-flashback-1281896/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I once asked a Jesuit priest what was the best short prayer he knew. He said, \"Fuck it,\" as in \"Fuck it; it's in God's hands.\"",
+      "speaker": "Anthony Hopkins",
+      "context": "Anthony Hopkins recounting a Jesuit priest's answer when he asked for the best short prayer — an anecdote he has told publicly, including on Inside the Actors Studio.",
+      "real": true,
+      "source": {
+        "title": "Inside the Actors Studio (IMDb quotes)",
+        "url": "https://www.imdb.com/name/nm0000164/quotes/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Somebody at the label told me the album was 'too raw.' I go, good. I'm fifty-two years old, I'm not smoothing a goddamn thing out for you people. You want smooth, go find someone who gives a shit about their demographic. I'll be in the booth.",
+      "speaker": "Lou Reed",
+      "context": "NME interview with Paul Morley, conducted at Reed's Manhattan apartment, published in the June 2000 issue",
+      "real": false,
+      "fake_note": "I made this one up — Reed's contempt for commercial pressure was total and his interviews had this blunt declarative energy throughout his career. The giveaway is 'demographic' — it's a bit of a marketing-speak word that Reed would have expressed differently, probably with more scorn for the concept itself."
+    },
+    {
+      "id": "q5",
+      "text": "The afterparty at the Ritz that night was — I'm not gonna lie to you — completely out of pocket. I woke up in a hallway I'd never seen before, still wearing one boot, and somebody had drawn a very flattering portrait of me on my own chest in marker. I kept it for a week.",
+      "speaker": "Keith Moon",
+      "context": "Chris Welch interview for Melody Maker, published November 1975, in the 'On the Road with The Who' feature",
+      "real": false,
+      "fake_note": "I made this one up — Moon's stories were always escalating and absurdist with a note of genuine pride, and hotel chaos was his métier. The giveaway is 'out of pocket' — that's a 2010s American slang register, not how Moon talked in 1975."
+    },
+    {
+      "id": "q6",
+      "text": "I left the Rocking Vicars, thinking I was going to be a star in my own right immediately. Everything was going to be wonderful and huge women would get a hold of me and do things to me with raw carrots — you know, shit like that.",
+      "speaker": "Lemmy Kilmister",
+      "context": "Recalling his youthful rock-star fantasies after leaving an early band (the Rockin' Vickers), in his memoir White Line Fever: The Autobiography (2002).",
+      "real": true,
+      "source": {
+        "title": "Goodreads — quotes from White Line Fever: The Autobiography",
+        "url": "https://www.goodreads.com/work/quotes/310228-white-line-fever-the-autobiography",
+        "date": "2002"
+      }
+    }
+  ]
+}

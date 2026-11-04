@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-04",
+  "edition": 134,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "People hear 'producer' and they think you're just sitting there twisting knobs in a leather chair. Half my job is convincing a great singer that the take they hated is actually the one. Because the imperfection is usually where the whole feeling lives.",
+      "speaker": "Rick Rubin",
+      "context": "Tetragrammaton podcast, episode released March 2024",
+      "real": false,
+      "fake_note": "I made this one up — Rick talks constantly about the value of imperfection and the psychological side of working with artists, so this lands squarely in his wheelhouse. The giveaway for sharp players is he tends to speak even more obliquely and slowly, rarely using a word like 'convincing' — he'd more likely say 'reminding.'"
+    },
+    {
+      "id": "q2",
+      "text": "Why am I crying on Oprah?",
+      "speaker": "Pharrell Williams",
+      "context": "On Oprah Winfrey's talk show 'Oprah Prime' (April 2014), Oprah surprised Pharrell by playing a montage of fan videos of people around the world dancing to his hit song 'Happy.'",
+      "real": true,
+      "source": {
+        "title": "Watch Pharrell Cry Over 'Happy' Inspiration During Interview with Oprah Winfrey",
+        "url": "https://www.rollingstone.com/music/music-news/watch-pharrell-cry-over-happy-inspiration-231769/",
+        "date": "2014-04-14"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "That was one of the most full-circle moments of my entire life",
+      "speaker": "Dave Grohl",
+      "context": "After playing 'Highway To Hell' with AC/DC",
+      "real": true,
+      "source": {
+        "title": "Music — Dave Grohl “walked off stage and broke down in tears” after playing ‘Highway To ",
+        "url": "https://www.nme.com/news/music/dave-grohl-walked-off-stage-and-broke-down-in-tears-after-playing-highway-to-hell-with-ac-dc-3974969?utm_source=rss&utm_medium=rss&utm_campaign=dave-grohl-walked-off-stage-and-broke-down-in-tears-after-playing-highway-to-hell-with-ac-dc",
+        "date": "2026-11-04"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "When we finished mixing 'Random Access Memories' I remember thinking we had either made something genuinely strange or something genuinely boring and I had no idea which one. It took me a solid year before I could listen to it without that feeling.",
+      "speaker": "Thomas Bangalter",
+      "context": "Interview with Pitchfork, published May 2023, accompanying the Rone documentary press cycle",
+      "real": false,
+      "fake_note": "I made this one up — Thomas is famously thoughtful and somewhat reclusive, and when he does speak he often describes creative uncertainty in this exact clinical-but-vulnerable way. The 'strange or boring' binary is very him. The giveaway is the context: he was doing press for his own solo classical work in 2023, not specifically revisiting RAM."
+    },
+    {
+      "id": "q5",
+      "text": "I had this whole bridge mapped out in my head on the drive to the studio, and by the time I parked the car it was just gone. Completely. I sat in the booth for maybe forty minutes trying to get back to it. What ended up on the record is completely different and honestly probably better, but I'll never know what that original thing was and that bothers me more than it should.",
+      "speaker": "Taylor Swift",
+      "context": "Rolling Stone, cover interview published October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Taylor frequently describes her songwriting process in this exact self-aware, slightly obsessive way, and the detail about sitting in the booth rings true. The subtle giveaway is she almost always names the song or the album when she tells a studio anecdote; here there's no title, which a sharp fan might clock."
+    },
+    {
+      "id": "q6",
+      "text": "There's a specific kind of crowd that comes to a festival at two in the afternoon and they are not there for subtlety, I'll tell you that. So you just feed it. You play the ones they want, you play them loud, and somewhere in there you sneak in something that means something to you and hope it sticks.",
+      "speaker": "Jack White",
+      "context": "NME backstage interview, Glastonbury Festival, June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Jack talks extensively about the relationship between performer and audience and has a well-documented ambivalence about festival slots. The phrasing 'feed it' and 'sneak in something' sounds authentically like him. The giveaway is he'd almost certainly name the song he sneaks in; leaving it abstract is slightly unlike him."
+    }
+  ]
+}
