@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-05",
+  "edition": 140,
+  "category": "movies",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My mother used to say the desert remembers everything. I think she was trying to scare me.",
+      "speaker": "Lawrence of Arabia (1962)",
+      "context": "Lawrence in conversation with an Arab guide early in the journey",
+      "real": false,
+      "fake_note": "I made this one up — the mixture of romanticism and deflecting irony fits O'Toole's Lawrence perfectly, and the film is full of these quietly loaded exchanges. The giveaway is the mention of his mother, which skirts closer to Lawrence's backstory than the film typically allows in casual dialogue."
+    },
+    {
+      "id": "q2",
+      "text": "You keep calling it a hunch. I've been wrong on hunches before, but I've never been wrong on this.",
+      "speaker": "Chinatown (1974)",
+      "context": "Jake Gittes pressing a contact for information, half-convincing himself",
+      "real": false,
+      "fake_note": "I made this one up — Gittes talks exactly like this: world-weary, self-aware, circling a lead. The subtle giveaway is that the second clause is a touch too tidy for how Polanski's script actually leaves things unresolved."
+    },
+    {
+      "id": "q3",
+      "text": "Nervous? I've been nervous since I was nine years old.",
+      "speaker": "Annie Hall (1977)",
+      "context": "Alvy Singer deflecting before a social event",
+      "real": false,
+      "fake_note": "I made this one up — the self-deprecating confession with an oddly specific age is pure Alvy, and Woody Allen's script is full of throwaway lines like this. The giveaway is it's almost too clean an encapsulation of the character; real Allen dialogue usually trips over itself a little more."
+    },
+    {
+      "id": "q4",
+      "text": "One does not simply walk into Mordor.",
+      "speaker": "The Lord of the Rings: The Fellowship of the Ring (2001)",
+      "context": "Boromir (Sean Bean) arguing against the plan to destroy the Ring",
+      "real": true
+    },
+    {
+      "id": "q5",
+      "text": "Ogres are like onions.",
+      "speaker": "Shrek (2001)",
+      "context": "Shrek explains to Donkey that ogres have layers",
+      "real": true
+    },
+    {
+      "id": "q6",
+      "text": "She didn't leave a note. People like her never do.",
+      "speaker": "Rear Window (1954)",
+      "context": "Doyle dismissing Jefferies's suspicion about the neighbor's wife",
+      "real": false,
+      "fake_note": "I made this one up — it nails Doyle's flat-cop cadence and Hitchcock's dry procedural rhythm. The giveaway is that it's slightly too conclusive; real Hitchcock dialogue tends to leave a door open rather than shut one."
+    }
+  ]
+}

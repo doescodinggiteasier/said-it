@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-05",
+  "edition": 132,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q5",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There were afternoons at Michigan where coach Harbaugh would stop practice and just stare at the sky for like forty-five seconds. Nobody said a word. And then he'd come back and go, 'run it again,' and we'd run it again.",
+      "speaker": "Tom Brady",
+      "context": "Let's Go! with Tom Brady, Larry Fitzgerald and Jim Gray, SiriusXM podcast, Episode aired October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Brady has reminisced about Harbaugh's intensity at Michigan in multiple interviews, and this kind of dry, almost anthropological observation about a coach's quirks is very Brady. The giveaway is that Brady has never specifically singled out Harbaugh for mid-practice silences in any documented interview — a Brady superfan would sense the detail is a shade too cinematic."
+    },
+    {
+      "id": "q2",
+      "text": "My first Tour de France I basically cried into my musette every time I ate a rice cake because I was so far back and I genuinely didn't understand yet that suffering that much meant it was going okay.",
+      "speaker": "Tadej Pogačar",
+      "context": "GCN Racing podcast interview, recorded during the 2023 Vuelta a España rest day",
+      "real": false,
+      "fake_note": "I made this one up — Pogačar has a track record of candid, slightly boyish reflections on early suffering in grand tours, and his English carries that endearing directness. The specific detail of the musette and rice cake is very true to cycling culture, which is exactly what makes it stick. The giveaway is the timeline — Pogačar's debut Tour finish was so extraordinary that 'being far back' doesn't quite map onto the documented record."
+    },
+    {
+      "id": "q3",
+      "text": "If you don't want me to watch the ball, you can get it out of the ocean.",
+      "speaker": "Max Muncy",
+      "context": "Dodgers infielder Max Muncy on what he told Giants pitcher Madison Bumgarner, who had angrily yelled at him to stop watching his home run and run the bases. Muncy's solo homer was the only run in a 1-0 Dodgers win in San Francisco.",
+      "real": true,
+      "source": {
+        "title": "Max Muncy beats Madison Bumgarner at the plate and in his post-game quotes",
+        "url": "https://www.cbssports.com/mlb/news/max-muncy-beats-madison-bumgarner-at-the-plate-and-in-his-post-game-quotes/",
+        "date": "2019-06-09"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "It's like going to a bar and falling in love every year. That's what it is. You fall in love and get your heart broken, fall in love, get your heart broken.",
+      "speaker": "Doc Rivers",
+      "context": "The veteran NBA head coach on the recurring emotional toll of chasing a championship each season.",
+      "real": true,
+      "source": {
+        "title": "Andscape — Doc Rivers and the heartbreak of being an NBA head coach",
+        "url": "https://andscape.com/features/doc-rivers-and-the-heartbreak-of-being-an-nba-head-coach/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I don't watch film the night before a start. I've tried it. I just sit there convincing myself every hitter I'm about to face is somehow better than he was three days ago. It's not useful.",
+      "speaker": "Clayton Kershaw",
+      "context": "The Athletic Q&A feature, 'A Day in the Life of Clayton Kershaw,' published April 2022",
+      "real": false,
+      "fake_note": "I made this one up — Kershaw talks openly about his preparation rituals and anxiety around starts, so a candid admission about film study backfiring on him is completely in character. The giveaway, if you're sharp, is that Kershaw has actually described his film habit positively in several documented interviews — this inverts it just enough to be suspicious."
+    },
+    {
+      "id": "q6",
+      "text": "Has anyone else 'completed football' like this?",
+      "speaker": "Owen Bagnall",
+      "context": "The Knowledge column, asking about Rodri completing every major honour",
+      "real": true,
+      "source": {
+        "title": "Sports — World Cup, Ballon d’Or, Champions League, Euros … has Rodri completed football? ",
+        "url": "https://www.theguardian.com/football/2026/jul/22/world-cup-champions-league-ballon-dor-euros-has-rodri-completed-football",
+        "date": "2026-07-22"
+      }
+    }
+  ]
+}

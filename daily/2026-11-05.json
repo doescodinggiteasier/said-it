@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-05",
+  "edition": 143,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "LeBron called me after Game 7 and I think we talked for maybe forty minutes about nothing in particular — family, what we were going to eat — and I remember thinking, this is the most normal conversation I've had in three weeks. Sometimes that's what you need more than anything else.",
+      "speaker": "Dwyane Wade",
+      "context": "All the Smoke podcast with Matt Barnes and Stephen Jackson, episode 198, June 2021",
+      "real": false,
+      "fake_note": "I made this one up — Wade has spoken extensively and warmly about his friendship with LeBron, and the detail about the mundane content of the call (family, food) is precisely the kind of humanizing specificity he reaches for. The giveaway is the 'three weeks' timeline, which is oddly specific without being specific about which series or year."
+    },
+    {
+      "id": "q2",
+      "text": "You shouldn't let poets lie to you",
+      "speaker": "Björk",
+      "context": "In a 1988 TV interview, after taking apart a television to explain how it works and recounting how an Icelandic poet's spooky description had once scared her.",
+      "real": true,
+      "source": {
+        "title": "Commentary on Björk's 1988 \"Wonder of Television\" interview",
+        "url": "https://peopleoftheurban.wordpress.com/2015/08/31/commentary-on-bjork-on-the-wonder-of-television-1988/",
+        "date": "1988-01-01"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "The assumption was always that if you built a fast enough computer you'd sort of accidentally stumble into intelligence. And we kept waiting for that to happen — genuinely waiting — and what we got instead was something that was fast and also deeply, profoundly confused about certain very basic things.",
+      "speaker": "Geoffrey Hinton",
+      "context": "MIT Technology Review EmTech conference, Cambridge MA, September 2023",
+      "real": false,
+      "fake_note": "I made this one up — Hinton has been publicly reflective and even alarmed about AI's development since leaving Google, and this rueful, specific disillusionment about emergent intelligence fits his documented voice well. The giveaway is 'profoundly confused,' which is a bit more literary than his usual technical framing."
+    },
+    {
+      "id": "q4",
+      "text": "I think Lindsey respected Darline more than any other person he knows including me, and that does not make me happy",
+      "speaker": "Donald Trump",
+      "context": "Trump rallying for Darline Graham in Myrtle Beach, SC",
+      "real": true,
+      "source": {
+        "title": "Politics — President makes final push for Darline Graham in trip to 'Trump country'",
+        "url": "https://thehill.com/homenews/administration/6044782-trump-rallies-graham-south-carolina-runoff/",
+        "date": "2026-08-22"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Recording 'Lemonade' — and I don't say this to be dramatic — genuinely felt like being in a room where the walls kept moving. Some days we'd come in with a plan and by the end of the session that plan was completely gone and something better was there instead. You have to be willing to lose what you came in with.",
+      "speaker": "Beyoncé",
+      "context": "British Vogue, September 2016 issue, in conversation with editor-at-large Chioma Nnadi",
+      "real": false,
+      "fake_note": "I made this one up — Beyoncé speaks rarely and carefully about her process, and this restrained, specific description of creative disorientation matches her documented interviews. The sneaky giveaway is the phrase 'something better was there instead,' which edges just slightly toward the kind of tidy resolution she tends to avoid."
+    },
+    {
+      "id": "q6",
+      "text": "People keep asking me what the hardest part of training for a marathon is, and honestly it's not the miles — it's convincing your body at mile eighteen that you actually chose to do this. Because you did choose it. Nobody made you sign up. That's the part that really gets me.",
+      "speaker": "Oprah Winfrey",
+      "context": "Runner's World Live event at the Chicago Marathon expo, October 2018",
+      "real": false,
+      "fake_note": "I made this one up — Oprah has openly talked about marathon training for years and this rambling, self-deprecating honesty sounds exactly like her. The subtle giveaway is that she'd more likely frame it around someone else's story first before turning it on herself."
+    }
+  ]
+}

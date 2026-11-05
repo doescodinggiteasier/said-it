@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-05",
+  "edition": 135,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I feel weird because we're living in a weird world",
+      "speaker": "Saya Gray",
+      "context": "On dropping her Qwerty III EP",
+      "real": true,
+      "source": {
+        "title": "Music — Saya Gray Drops Qwerty III EP",
+        "url": "https://pitchfork.com/story/saya-gray-drops-qwerty-iii-ep/",
+        "date": "2026-11-05"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "When I was asked to do a remix it felt like the universe was confirming I was connected to this music",
+      "speaker": "Four Tet",
+      "context": "On producing a remix for the Durutti Column",
+      "real": true,
+      "source": {
+        "title": "Music — Four Tet Produced a Tech-House Remix for the Durutti Column",
+        "url": "https://pitchfork.com/story/four-tet-remixes-the-durutti-column/",
+        "date": "2026-11-05"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "My manager called me after the first time I played Coachella and said, 'You were great.' I said, 'I know, but did you see that one moment in Redbone where I forgot I was performing?' That's the only moment I actually care about.",
+      "speaker": "Childish Gambino",
+      "context": "Interview with Zane Lowe on Apple Music 1, April 2018",
+      "real": false,
+      "fake_note": "I made this one up — Donald Glover has spoken about losing himself in performance and specifically cited Redbone as a song with deep personal weight. The giveaway is the slightly theatrical framing of the manager call, which is a little too scripted for how Glover usually narrates his own stories."
+    },
+    {
+      "id": "q4",
+      "text": "I don't really think about legacy when I'm working. That word makes me nervous, honestly. It implies you've stopped doing something.",
+      "speaker": "Stevie Wonder",
+      "context": "Acceptance remarks at the Grammy Lifetime Achievement Award ceremony, February 2015",
+      "real": false,
+      "fake_note": "I made this one up — Stevie has pushed back on the idea of coasting on past work in real interviews and tends to frame himself as perpetually forward-looking. The subtle giveaway is 'that word makes me nervous,' a conversational hedge that doesn't quite match Stevie's typically more expansive and declarative speech patterns."
+    },
+    {
+      "id": "q5",
+      "text": "I've played bass on records that went to number one and I never got a phone call. I've played bass on records nobody bought and the artist called me personally. I stopped using chart position as any kind of information a long time ago.",
+      "speaker": "Pino Palladino",
+      "context": "Masterclass interview at the NAMM Show, Anaheim, January 2018",
+      "real": false,
+      "fake_note": "I made this one up — Pino is one of the most recorded session bassists alive and has spoken candidly about the anonymity and strange economics of session work. The giveaway is the symmetrical structure of the two anecdotes, which feels a little too balanced and aphoristic for how Pino actually talks in interviews, where he's more rambling and self-deprecating."
+    },
+    {
+      "id": "q6",
+      "text": "The 808 saved hip-hop and probably also ruined it, depending on which day you ask me and what I've been listening to.",
+      "speaker": "Questlove",
+      "context": "Panel discussion at the Red Bull Music Academy, New York, October 2016",
+      "real": false,
+      "fake_note": "I made this one up — Questlove is an obsessive musicologist who has written and spoken at length about drum machines and the Roland 808 specifically. The giveaway is the comedic hedge at the end; his real quotes on equipment tend to be denser with historical specificity rather than leaning on a punchline."
+    }
+  ]
+}

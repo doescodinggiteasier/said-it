@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-05",
+  "edition": 121,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q2",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "I blew $20 million. I snorted my Porsche. I snorted my plane. I snorted my house in that din of drugs and booze and being lost.",
+      "speaker": "Steven Tyler",
+      "context": "Tallying up what his cocaine habit cost him, in his 2011 rock memoir \"Does the Noise in My Head Bother You?\"",
+      "real": true,
+      "source": {
+        "title": "Memoir 'Does the Noise in My Head Bother You?' (NME report)",
+        "url": "https://www.nme.com/news/music/aerosmith-49-1294445",
+        "date": "2011"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Some journalist wrote that I had 'baroque taste in hotel suites.' Baroque! Like that's a criticism. Yes, I had baroque taste. I also had a waterbed flown into Lyon, France. These are not mistakes. These are memories. You only get a certain number of memories and you might as well make them expensive.",
+      "speaker": "Freddie Mercury",
+      "context": "Q Magazine interview conducted by Tom Hibbert at the band's Garden Lodge base, London, published in the May 1988 issue",
+      "real": false,
+      "fake_note": "I made this one up — the camp defiance and self-aware grandeur match Freddie's documented Q-era interview voice almost perfectly, and Q's Hibbert did interview him. The giveaway is 'baroque taste' — Freddie rarely engaged with specific press criticisms this directly; he was more likely to dismiss the journalist entirely."
+    },
+    {
+      "id": "q3",
+      "text": "Do I think about my dick? Oh, yeah, all the time. If I think about it all the time, I got a right to sing about it. If I wasn't thinking about it all the time but thought, \"It's time to write a rock song, I'd better mention my dick,\" then I wouldn't even be able to say \"dick\" right.",
+      "speaker": "Iggy Pop",
+      "context": "Defending the sexual content of his lyrics (the song \"Trollin'\" from The Weirdness) in his 2007 Rolling Stone interview.",
+      "real": true,
+      "source": {
+        "title": "Iggy Pop: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-news/iggy-pop-the-rolling-stone-interview-2-78680/",
+        "date": "2007"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Somebody in Cleveland threw a full beer at me during 'Whole Lotta Love.' Can you believe that? Warm Budweiser, too. I caught it, drank the damn thing, finished the song, and then threw the can back. That's professionalism. That's what separates the men from the boys, baby.",
+      "speaker": "John Bonham",
+      "context": "Quoted in a 1977 Circus magazine interview conducted backstage at the Cleveland Richfield Coliseum during the Led Zeppelin North American tour",
+      "real": false,
+      "fake_note": "I made this one up — Bonham's cocky physical bravado and the 'baby' signoff match his documented interview voice well, and Cleveland was a real 1977 tour stop. The giveaway is he was notoriously press-shy; he rarely gave quotes this long and self-contained to rock magazines."
+    },
+    {
+      "id": "q5",
+      "text": "My publicist calls me and goes, 'Richard, you can't say that at the Grammys.' And I go, 'Sweetheart, the Grammys ain't ready for what I say at breakfast.' She hung up. I sent flowers. She still quit.",
+      "speaker": "Richard Pryor",
+      "context": "Stand-up warm-up set at the Comedy Store on Sunset, Los Angeles, recorded on a fan audio tape later authenticated by the venue, circa February 1979",
+      "real": false,
+      "fake_note": "I made this one up — the rapid-fire back-and-forth and the detail of sending flowers then she quit anyway is classic Pryor rhythm; he was known for burning through representation. The giveaway is a specific Grammys reference — Pryor's real conflicts were more with TV censors than the Recording Academy."
+    },
+    {
+      "id": "q6",
+      "text": "People ask me how I stay so thin. Honey, have you seen my life? I haven't sat down long enough to get fat. Between the sequins and the humidity on that stage, I sweat off a full meal before the first chorus. The rider handles the rest. Don't put that in the magazine — the rider bit. Actually, go ahead, I don't care.",
+      "speaker": "Eartha Kitt",
+      "context": "Recorded conversation with journalist Nelson George at a post-show reception following Kitt's 2006 Broadway revival of 'Mimi le Duck' at the Café Carlyle, New York",
+      "real": false,
+      "fake_note": "I made this one up — Eartha's self-aware, arch delivery and the 'actually go ahead, I don't care' reversal fit her documented interview personality beautifully. The giveaway is 'Mimi le Duck' — I invented that show title; her real 2006 Carlyle residency was simply billed under her name."
+    }
+  ]
+}

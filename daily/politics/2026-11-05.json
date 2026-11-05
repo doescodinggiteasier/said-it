@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-05",
+  "edition": 131,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "Look, I've read a lot of bills in my time. A lot of bills. And I will tell you, there are pages in some of them that I genuinely believe no human being has ever read. Including the people who wrote them.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic Governors Association dinner in Washington, D.C., February 2018",
+      "real": false,
+      "fake_note": "I made this one up — Biden genuinely riffs on the absurdity of Senate procedure and his decades in Congress, so this feels completely at home in his voice. The subtle giveaway is that he'd almost certainly name a specific bill rather than leaving it this vague."
+    },
+    {
+      "id": "q2",
+      "text": "I once spent an entire flight from Sacramento to D.C. trying to explain the state budget to the person sitting next to me. By the time we landed, she was asleep. Which, honestly, I respected.",
+      "speaker": "Gavin Newsom",
+      "context": "Interview with Kara Swisher on the Pivot podcast, October 2023",
+      "real": false,
+      "fake_note": "I made this one up — Newsom is known for his relentless, slightly self-deprecating energy on policy, and this captures his tendency to both brag about and gently mock his own enthusiasm. The giveaway is the punchline is a little too tidy for his usual rambling interview style."
+    },
+    {
+      "id": "q3",
+      "text": "Michigan proved just how big we are",
+      "speaker": "Abdul El-Sayed",
+      "context": "To the Associated Press after being projected winner of Michigan Senate race",
+      "real": true,
+      "source": {
+        "title": "Politics — El-Sayed: Michigan rejected ‘hateful, spiteful campaign’",
+        "url": "https://thehill.com/homenews/campaign/6200263-abdul-el-sayed-michigan-voters-senate-race-2026-midterms/",
+        "date": "2026-11-05"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Well, there's an easy way to start. Let's raise the minimum wage in the United States",
+      "speaker": "JB Pritzker",
+      "context": "CNN interview with Kaitlan Collins after midterm victories",
+      "real": true,
+      "source": {
+        "title": "Politics — Pritzker: Raising minimum wage an 'easy way' for Democrats to start in new Congr",
+        "url": "https://thehill.com/business/6200660-pritzker-calls-minimum-wage-increase/",
+        "date": "2026-11-05"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Joshua Wong is a hero who has stood up to an authoritarian superpower",
+      "speaker": "John Moolenaar",
+      "context": "Statement condemning China's sentencing of Hong Kong activist Joshua Wong",
+      "real": true,
+      "source": {
+        "title": "Politics — Top Republican condemns sentencing of 'hero' Hong Kong activist Joshua Wong",
+        "url": "https://thehill.com/homenews/house/6200253-john-moolenar-joshua-wong-activist-china-sentencing-2026/",
+        "date": "2026-11-05"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "My staff keeps telling me I need to be on TikTok. I finally asked someone what TikTok actually is. They explained it and I said, 'That's it? That's the whole thing?' And apparently, yes. That's the whole thing.",
+      "speaker": "Mitch McConnell",
+      "context": "Kentucky Farm Bureau Country Ham Breakfast, Louisville, Kentucky, August 2022",
+      "real": false,
+      "fake_note": "I made this one up — McConnell's dry, deadpan bemusement at modern media is well documented, and this plays perfectly into the persona he projects at home-state events. The tell is that McConnell almost never does observational comedy this self-aware in public."
+    }
+  ]
+}
