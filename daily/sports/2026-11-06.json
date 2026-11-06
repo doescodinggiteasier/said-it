@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-06",
+  "edition": 133,
+  "category": "sports",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q3",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There were years I'd come off the court after a loss and I was fine. Genuinely fine. And that scared me more than the losses where I was a mess. Being fine too fast usually meant something had switched off that I needed.",
+      "speaker": "Martina Navratilova",
+      "context": "WTA Insider Podcast, 'Legends Series: Martina in Her Own Words,' March 2021",
+      "real": false,
+      "fake_note": "I made this one up — Navratilova has spoken with unusual psychological honesty about her competitive drive and emotional landscape throughout her career, so this kind of introspective observation about her own warning signs fits her established voice well. The giveaway is the almost therapeutic framing — slightly more contemporary wellness language than her typical blunter mid-career commentary."
+    },
+    {
+      "id": "q2",
+      "text": "When I first got to Augusta I walked the back nine by myself the evening before the round, just to feel it without anyone watching. Some of those holes, they don't look anything like they do on television. The slope on thirteen is almost offensive in person.",
+      "speaker": "Rory McIlroy",
+      "context": "Golf Digest long-form feature, 'Rory's Road Back to Augusta,' April 2023",
+      "real": false,
+      "fake_note": "I made this one up — Rory has spoken extensively about his complicated relationship with Augusta, so a quiet solo reconnaissance walk is entirely plausible and consistent with his introspective interview style. The sneaky detail is 'almost offensive' — it's a touch wry for a quote he'd give a print journalist rather than off the cuff."
+    },
+    {
+      "id": "q3",
+      "text": "I never really understood what coaches meant by 'reading the game' when I was young. I thought it was something they said to sound smart. And then somewhere around my second season at United I just started seeing lines on the pitch that weren't there before, and I thought, oh. That's what they were on about.",
+      "speaker": "Wayne Rooney",
+      "context": "The Overlap with Gary Neville, Season 2, Episode 4, Sky Sports, October 2022",
+      "real": false,
+      "fake_note": "I made this one up — Rooney's interviews with Neville are famously candid and self-reflective, and he often admits to things he didn't grasp early in his career with refreshing directness. The giveaway is the slightly literary phrase 'seeing lines on the pitch that weren't there before' — evocative in a way that's just barely above his usual plain-spoken register."
+    },
+    {
+      "id": "q4",
+      "text": "Happy? Happy is not a word that we think about in the game. You gotta think of something different. Happy, I don't know how to judge happy. We're in the middle of a contest. Nobody's happy.",
+      "speaker": "Gregg Popovich",
+      "context": "San Antonio Spurs head coach Gregg Popovich's deadpan reply during a mid-game sideline interview when TNT's David Aldridge asked whether he was happy with his team's shot selection against the Thunder.",
+      "real": true,
+      "source": {
+        "title": "Gregg Popovich rips reporter for asking if he's 'happy' about shot selection (Video)",
+        "url": "https://larrybrownsports.com/basketball/gregg-popovich-rips-reporter-happy/160946",
+        "date": "2012-11-02"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "What Carew does with a football, I can do with an orange.",
+      "speaker": "Zlatan Ibrahimovic",
+      "context": "Swedish soccer star's cocky teenage retort to fellow striker John Carew, who had dismissed Zlatan's tricks and flicks as pointless. Said in the Norwegian tabloid VG in April 2002. A classic surprising, deadpan brag.",
+      "real": true,
+      "source": {
+        "title": "Zlatan Ibrahimovic - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Zlatan_Ibrahimovi%C4%87",
+        "date": "2002-04-01"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "I had to stay patient and try to have a cool head because everywhere else there was fire",
+      "speaker": "Édouard Mendy",
+      "context": "Recalling a tense penalty shootout moment with Senegal",
+      "real": true,
+      "source": {
+        "title": "Sports — Édouard Mendy: ‘Winning Afcon was 10 times better than the Champions League’",
+        "url": "https://www.theguardian.com/football/2026/sep/22/edouard-mendy-winning-afcon-was-10-times-better-than-the-champions-league",
+        "date": "2026-09-22"
+      }
+    }
+  ]
+}

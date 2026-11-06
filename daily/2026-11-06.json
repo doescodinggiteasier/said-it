@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-06",
+  "edition": 144,
+  "category": "general",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "There's a version of this speech I rehearsed in the car, and this is not that version. The car version was much more dignified. The car version did not involve me crying at the mention of my mother before I even got to the part about my mother.",
+      "speaker": "Viola Davis",
+      "context": "Acceptance remarks, AFI Life Achievement Award ceremony, TCL Chinese Theatre, Hollywood, June 2022",
+      "real": false,
+      "fake_note": "I made this one up — Viola is famous for openly emotional, spontaneous-feeling acceptance speeches where she explicitly acknowledges the gap between preparation and feeling. The giveaway is the comedic construction; her real speeches tend to stay in the emotion rather than stepping outside it to observe it this cleanly."
+    },
+    {
+      "id": "q2",
+      "text": "Somebody sent me a think-piece once — a long one — arguing that my music is fundamentally about loneliness dressed up as party music. And I read the whole thing. Twice. And I still don't know if they were insulting me or if that's the most accurate thing anyone's ever written about what I do.",
+      "speaker": "Pharrell Williams",
+      "context": "GQ cover interview, 'The Innovators Issue,' October 2021",
+      "real": false,
+      "fake_note": "I made this one up — Pharrell is genuinely self-analytical about his music in interviews and doesn't shy away from ambiguity or admitting uncertainty, which makes this feel authentic. The giveaway is how neatly the ambivalence is packaged; Pharrell's real moments of self-analysis tend to arrive through longer, more circuitous routes before landing on the ambiguity."
+    },
+    {
+      "id": "q3",
+      "text": "I did one season of a reality competition show and I will tell you, the craft services table is the only honest thing on the entire set. Everything else is a negotiation. The craft services table just sits there and says: here are some almonds, here is a sad little brownie, take it or leave it. I respected that.",
+      "speaker": "Mindy Kaling",
+      "context": "Live taping of Conan O'Brien Needs a Friend podcast, Vulture Festival, New York, November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Mindy writes and talks extensively about TV production, food, and finding comedy in behind-the-scenes absurdity, so this voice is very close to hers. The giveaway is the 'sad little brownie' — slightly too curated a detail for truly off-the-cuff speech; it reads like a draft of a New Yorker personal essay."
+    },
+    {
+      "id": "q4",
+      "text": "I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+      "speaker": "Ronald Reagan",
+      "context": "His famous comeback at the 1984 debate against Walter Mondale",
+      "real": true,
+      "source": {
+        "title": "CPD: October 21, 1984 Debate Transcript | Commission on Presidential Debates",
+        "url": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+        "date": "1984-10-21"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I do not have a five-year plan. I do not have a moonshot. I'm looking at the ground, and I want to fix the pothole that's right in front of me before I go in.",
+      "speaker": "Linus Torvalds",
+      "context": "Interviewed by Chris Anderson onstage at TED2016, contrasting himself with visionaries (he also says \"I am not a visionary.",
+      "real": true,
+      "source": {
+        "title": "The quotable Linus Torvalds, live onstage at TED | TED Blog",
+        "url": "https://blog.ted.com/the-quotable-linus-torvalds-live-onstage-at-ted/",
+        "date": "2016-02-17"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "You know, grass has a life like humans have a life",
+      "speaker": "Trump",
+      "context": "Trump showing off White House renovations, discussing new grass around the helipad",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump talks about grass as he shows off White House renovations – video",
+        "url": "https://www.theguardian.com/us-news/video/2026/aug/19/trump-talks-grass-white-house",
+        "date": "2026-08-23"
+      }
+    }
+  ]
+}

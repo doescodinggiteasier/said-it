@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-06",
+  "edition": 132,
+  "category": "politics",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "on",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "You want to know the real difference between a campaign promise and a policy? About eighteen months and a whole lot of people who've never met a constituent in their lives.",
+      "speaker": "James Carville",
+      "context": "Panel discussion at Tulane University's Murphy Institute, New Orleans, October 2018",
+      "real": false,
+      "fake_note": "I made this one up — Carville's blunt, colorful commentary on the gap between electoral politics and governing is entirely in character, and his disdain for certain classes of political operatives is well-documented. The giveaway is 'never met a constituent in their lives,' which is vivid but slightly more clipped and quotable than Carville's usual rambling, expletive-adjacent style."
+    },
+    {
+      "id": "q2",
+      "text": "I still very much believe it's time for a generational change on both sides of the aisle",
+      "speaker": "Annie Andrews",
+      "context": "Sen.-elect Andrews speaking to Fox News anchor Bret Baier after her Senate victory in South Carolina",
+      "real": true,
+      "source": {
+        "title": "Politics — Andrews: Time for 'generational change' in Senate leadership",
+        "url": "https://thehill.com/homenews/senate/6203427-annie-andrews-south-carolina-senate-leadership-overhaul-midterms/",
+        "date": "2026-11-06"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "You only have yourselves to blame",
+      "speaker": "Donald Trump",
+      "context": "President Trump commenting on stock market losses following Democratic midterm victories",
+      "real": true,
+      "source": {
+        "title": "Politics — Trump on stock market losses: 'You only have yourselves to blame'",
+        "url": "https://thehill.com/homenews/administration/6203425-donald-trump-stock-market-losses-2026-midterms-economy/",
+        "date": "2026-11-06"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "My staff keeps telling me to stay on message, and I keep telling them that if I knew what the message was, I'd be delighted to stay on it.",
+      "speaker": "John McCain",
+      "context": "Town hall meeting in Nashua, New Hampshire, during the 2008 Republican primary campaign",
+      "real": false,
+      "fake_note": "I made this one up — McCain's dry, self-aware humor at his own expense was a defining trait, and ribbing his own communications operation fits his well-known disdain for political stage-management. The giveaway is that the phrasing is slightly more polished than McCain's usual ad-libs, which tended to be rougher and more digressive."
+    },
+    {
+      "id": "q5",
+      "text": "Look, I've read the bill. I've read most of the bill. I've read the summary of the bill, and I have to tell you, the summary alone took me the better part of a Tuesday.",
+      "speaker": "Joe Biden",
+      "context": "Remarks at a Democratic caucus luncheon, reported by Politico, March 2022",
+      "real": false,
+      "fake_note": "I made this one up — Biden's self-deprecating asides about the grind of legislative work are well-documented, and the escalating admission ('read the bill... most of the bill... the summary') sounds exactly like his candid, meandering delivery. The subtle giveaway is that 'the better part of a Tuesday' is just a touch too tidy a punchline for genuine off-the-cuff Biden."
+    },
+    {
+      "id": "q6",
+      "text": "I love infrastructure week. Every week is infrastructure week. We've had so many infrastructure weeks that actual infrastructure has started to feel nostalgic.",
+      "speaker": "Jennifer Granholm",
+      "context": "Remarks at the National Governors Association Winter Meeting, Washington D.C., February 2022",
+      "real": false,
+      "fake_note": "I made this one up — Granholm's energetic, occasionally comedic delivery and her deep investment in energy and infrastructure policy make a wry callback to the 'infrastructure week' meme entirely plausible from her. The giveaway is 'started to feel nostalgic,' which is a bit too wry and writer-crafted for a genuine off-the-cuff remark."
+    }
+  ]
+}

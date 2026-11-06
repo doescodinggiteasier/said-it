@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-06",
+  "edition": 122,
+  "category": "nsfw",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "My rider at the Fillmore was two bottles of Southern Comfort and a bucket of chicken, and not the fancy kind — the bucket kind, with the red-and-white box. If you gave me the fancy kind I knew the promoter was an asshole trying to class up something that wasn't supposed to be classy.",
+      "speaker": "Janis Joplin",
+      "context": "Rolling Stone interview with Jonathan Cott, conducted backstage at the Fillmore East, New York, published February 1969",
+      "real": false,
+      "fake_note": "I made this one up — Janis and Southern Comfort is historically documented and the anti-pretension attitude is pitch-perfect for her. The giveaway is the fried chicken detail — that specific rider element doesn't appear in any verified Janis documentation, and the 'red-and-white box' specificity feels like I'm trying a little too hard."
+    },
+    {
+      "id": "q2",
+      "text": "A couple nights ago, I was licking jelly off my boyfriend's penis. And I thought, \"Oh my God — I'm turning into my mother!\"",
+      "speaker": "Sarah Silverman",
+      "context": "From her 2005 stand-up special \"Sarah Silverman: Jesus Is Magic.\" Her signature sweet-faced delivery lands a graphic sex image as the setup, with the punchline being the realization she's inheriting her mother's habits.",
+      "real": true,
+      "source": {
+        "title": "'Jesus Is Magic' (IMDb quotes)",
+        "url": "https://www.imdb.com/title/tt0422528/quotes/",
+        "date": "2005"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "I had this whole rider for the Wembley shows — cases of Jack, specific brand of champagne nobody's ever heard of, and a bowl of M&Ms with the green ones taken out. Not because of any allergy, I just wanted to know if the promoters were paying attention. Half of them weren't. I drank the green M&Ms anyway.",
+      "speaker": "Freddie Mercury",
+      "context": "Capital Radio interview with Tommy Vance, broadcast December 1977, during the News of the World tour press run",
+      "real": false,
+      "fake_note": "I made this one up — the rider obsession and the Wembley excess are completely on-brand for Freddie, and the M&M detail feels like something you'd half-remember reading. The giveaway is that the 'green M&M' rider trick is famously Van Halen's, not Queen's — Freddie wouldn't have nicked another band's bit."
+    },
+    {
+      "id": "q4",
+      "text": "I was doing a little over $1,000 a day in heroin, and then probably the same in cocaine and alcohol.",
+      "speaker": "Nikki Sixx",
+      "context": "Mötley Crüe bassist describing the scale of his addiction at his worst, around the period of his December 1987 heroin overdose; said in 2019 press for the Netflix film 'The Dirt'.",
+      "real": true,
+      "source": {
+        "title": "'The Dirt' press (Chicago Sun-Times)",
+        "url": "https://chicago.suntimes.com/entertainment/motley-crue-biopic-netflix-nikki-six-doing-1000-dollars-a-day-in-heroin/",
+        "date": "2019"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Women always ask me what it's like to be married to a comedian. I say, honey, it's like living with a man who thinks every argument is a bit and every bit is an argument. Eventually you can't tell which one's killing him.",
+      "speaker": "Rodney Dangerfield",
+      "context": "Late Night with David Letterman, NBC Studios, New York, October 1983, during his third appearance of that year",
+      "real": false,
+      "fake_note": "I made this one up — Rodney's self-deprecating marriage material and that rhythm of 'every X is a Y' is dead-on his cadence. The giveaway is the ending is a shade too dark and tidy — Rodney's real bits were looser and messier than that last line lands."
+    },
+    {
+      "id": "q6",
+      "text": "I sort of fucking woke up one day and was like, 'You're an asshole. You're not an artist,'",
+      "speaker": "Lady Gaga",
+      "context": "Lady Gaga recounting the self-lacerating moment she decided to quit cocaine, in a Lifetime interview ('The Conversation with Amanda de Cadenet') reported by Rolling Stone; she went on to call cocaine 'the white devil.'",
+      "real": true,
+      "source": {
+        "title": "Lady Gaga Reflects on Past Cocaine Use (Rolling Stone)",
+        "url": "https://www.rollingstone.com/music/music-news/lady-gaga-reflects-on-past-cocaine-use-188696/",
+        "date": "2026-06-30"
+      }
+    }
+  ]
+}

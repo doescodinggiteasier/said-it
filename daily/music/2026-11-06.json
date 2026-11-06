@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-06",
+  "edition": 136,
+  "category": "music",
+  "curator": "auto (generate_day.py — reals verified verbatim vs source + cross-validated)",
+  "politics_dial": "off",
+  "trickiest_fake": "q1",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "When I was mixing 'Hard to Handle' I had Otis's voice up so loud in the cans that I forgot it wasn't him in the room. And then I remembered, and that was a rough minute.",
+      "speaker": "Steve Cropper",
+      "context": "Interview with American Songwriter magazine, published November 2022",
+      "real": false,
+      "fake_note": "I made this one up — Cropper has spoken movingly and repeatedly about Otis Redding in the decades since his death, and this kind of intimate, grief-threaded studio recollection fits his interview voice precisely. The giveaway is 'a rough minute' — a little too conversationally modern for Cropper's typically more understated phrasing."
+    },
+    {
+      "id": "q2",
+      "text": "I remember Brian May sitting on a flight case in the car park of Wembley just eating a sandwich, completely alone. Eighty thousand people inside waiting for him. He was just sitting there eating his sandwich. I thought, that's the job right there.",
+      "speaker": "Chris Martin",
+      "context": "BBC Radio 2 interview with Dermot O'Leary, broadcast June 2023",
+      "real": false,
+      "fake_note": "I made this one up — Chris Martin has spoken admiringly about Queen and his formative concert experiences many times, and this kind of observational, slightly reverent story is very true to his interview voice. The giveaway is how perfectly the anecdote wraps into a lesson; real recalled memories are usually a bit more ragged."
+    },
+    {
+      "id": "q3",
+      "text": "The first time I played Nashville I didn't tell anybody I was nervous because I thought they'd cancel the show. I was nervous for about three days before. I just kept reorganizing my pedal board, which is what I do when I don't know what else to do.",
+      "speaker": "Phoebe Bridgers",
+      "context": "Interview with Annie Mac for her 'Changes' podcast, episode released January 2023",
+      "real": false,
+      "fake_note": "I made this one up — Phoebe has talked openly about anxiety and her technical gear obsessions, and this combination is very consistent with her documented interview persona. The giveaway for sharp players is the specificity of 'three days before,' which is juuust precise enough to feel invented rather than genuinely recalled."
+    },
+    {
+      "id": "q4",
+      "text": "All I need is 33 minutes and 10 seconds. That's it",
+      "speaker": "Jamie T",
+      "context": "Asking to join Reading & Leeds 2026 lineup at the last minute",
+      "real": true,
+      "source": {
+        "title": "Music — Reading & Leeds 2026: Jamie T asks to join line-up “at last minute”",
+        "url": "https://www.nme.com/news/music/reading-leeds-2026-jamie-t-asks-to-join-line-up-at-last-minute-3965063?utm_source=rss&utm_medium=rss&utm_campaign=reading-leeds-2026-jamie-t-asks-to-join-line-up-at-last-minute",
+        "date": "2026-08-27"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "I really feel like some angels have been carrying me around.",
+      "speaker": "Bonnie Raitt",
+      "context": "On feeling happier than ever after getting sober, in her Rolling Stone interview following her Grammy sweep for 'Nick of Time.'",
+      "real": true,
+      "source": {
+        "title": "Rolling Stone — Bonnie Raitt: The Rolling Stone Interview",
+        "url": "https://www.rollingstone.com/music/music-features/bonnie-raitt-the-rolling-stone-interview-236846/",
+        "date": "2026-06-30"
+      }
+    },
+    {
+      "id": "q6",
+      "text": "The AI did what we told it to do and we painstakingly created every second you'll see on the screen.",
+      "speaker": "Nile Rodgers",
+      "context": "Clapping back at fans criticizing his upcoming AI music video",
+      "real": true,
+      "source": {
+        "title": "Music — Nile Rodgers Defends His Use of AI in New Music Video: “You’re Being Hypocritica",
+        "url": "https://consequence.net/2026/11/nile-rodgers-ai-music-video-defensds/",
+        "date": "2026-11-06"
+      }
+    }
+  ]
+}
